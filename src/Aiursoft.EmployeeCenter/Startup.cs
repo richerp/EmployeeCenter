@@ -21,6 +21,7 @@ public class Startup : IWebStartup
     {
         // AppSettings.
         services.Configure<AppSettings>(configuration.GetSection("AppSettings"));
+        services.Configure<GitLabSettings>(configuration.GetSection("GitLab"));
 
         // Relational database
         var (connectionString, dbType, allowCache) = configuration.GetDbSettings();
