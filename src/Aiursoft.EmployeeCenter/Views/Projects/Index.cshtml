@@ -1,4 +1,5 @@
 @model Aiursoft.EmployeeCenter.Models.ProjectsViewModels.IndexViewModel
+@using System.Linq
 @{
     ViewData["Title"] = "Projects";
 }
@@ -20,50 +21,68 @@
                         <span class="text-muted ms-2">(@tagGroup.Projects.Count @Localizer["projects"])</span>
                     </h5>
                 </div>
-                <div class="card-body">
-                    <div class="row">
-                        @foreach (var project in tagGroup.Projects)
-                        {
-                            <div class="col-12 col-md-6 col-lg-4 mb-3">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title">
-                                            <a href="@project.WebUrl" target="_blank" class="text-decoration-none">
+                <div class="table-responsive">
+                    <table class="table table-hover table-striped mb-0">
+                        <thead>
+                            @{
+                                var maxBadges = tagGroup.Projects.Any() ? tagGroup.Projects.Max(p => p.Badges.Count) : 0;
+                            }
+                            <tr>
+                                <th style="min-width: 250px;">@Localizer["Project"]</th>
+                                @for (var i = 0; i < maxBadges; i++)
+                                {
+                                    <th>@Localizer["Badge"] @(i + 1)</th>
+                                }
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var project in tagGroup.Projects.OrderBy(p => p.Name))
+                            {
+                                <tr>
+                                    <td class="align-middle">
+                                        <div class="mb-1">
+                                            <a href="@project.WebUrl" target="_blank" class="fw-bold text-dark text-decoration-none">
                                                 @project.Name
                                             </a>
-                                        </h5>
+                                        </div>
                                         @if (!string.IsNullOrWhiteSpace(project.Description))
                                         {
-                                            <p class="card-text text-muted">@project.Description</p>
+                                            <small class="text-muted d-block text-truncate" style="max-width: 400px;">@project.Description</small>
                                         }
-                                        <div class="d-flex gap-2">
-                                            @if (project.Topics.Any())
+                                        <div class="mt-1">
+                                            <small>
+                                                <a href="@project.HttpUrlToRepo" class="text-muted me-2 text-decoration-none">
+                                                    <i class="align-middle" data-lucide="link" style="width: 14px; height: 14px;"></i> HTTPS
+                                                </a>
+                                                <a href="@project.SshUrlToRepo" class="text-muted text-decoration-none">
+                                                    <i class="align-middle" data-lucide="terminal" style="width: 14px; height: 14px;"></i> SSH
+                                                </a>
+                                            </small>
+                                        </div>
+                                    </td>
+                                    @for (var i = 0; i < maxBadges; i++)
+                                    {
+                                        <td class="align-middle">
+                                            @if (i < project.Badges.Count)
                                             {
-                                                @foreach (var topic in project.Topics.Take(3))
+                                                var badge = project.Badges[i];
+                                                if (!string.IsNullOrWhiteSpace(badge.LinkUrl))
                                                 {
-                                                    <span class="badge bg-secondary">@topic</span>
+                                                    <a href="@badge.LinkUrl" target="_blank">
+                                                        <img src="@badge.ImageUrl" alt="@badge.AltText" style="height: 20px;" />
+                                                    </a>
                                                 }
-                                                @if (project.Topics.Count > 3)
+                                                else
                                                 {
-                                                    <span class="badge bg-light text-dark">+@(project.Topics.Count - 3)</span>
+                                                    <img src="@badge.ImageUrl" alt="@badge.AltText" style="height: 20px;" />
                                                 }
                                             }
-                                        </div>
-                                    </div>
-                                    <div class="card-footer bg-transparent">
-                                        <small class="text-muted">
-                                            <a href="@project.HttpUrlToRepo" target="_blank" class="me-3">
-                                                <i class="align-middle" data-lucide="link"></i> HTTPS
-                                            </a>
-                                            <a href="@project.SshUrlToRepo" target="_blank">
-                                                <i class="align-middle" data-lucide="terminal"></i> SSH
-                                            </a>
-                                        </small>
-                                    </div>
-                                </div>
-                            </div>
-                        }
-                    </div>
+                                        </td>
+                                    }
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
                 </div>
             </div>
         }

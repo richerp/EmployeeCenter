@@ -40,23 +40,105 @@ public class GitLabService : IScopedDependency
         // Get all projects in the group
         var projectsUrl = $"{baseUrl}/api/v4/groups/{groupId}/projects?simple=true&per_page=999&visibility=public&page=1";
         var projectsResponse = await _httpClient.GetStringAsync(projectsUrl);
-        var projects = JsonConvert.DeserializeObject<List<GitLabProjectDto>>(projectsResponse) ?? new List<GitLabProjectDto>();
+        var projectsDto = JsonConvert.DeserializeObject<List<GitLabProjectDto>>(projectsResponse) ?? new List<GitLabProjectDto>();
         
-        // Filter out archived projects and map to our model
-        return projects
-            .Where(p => !p.Archived)
-            .Select(p => new GitLabProject
+        // Filter out archived projects
+        var activeProjects = projectsDto.Where(p => !p.Archived).ToList();
+
+        var resultProjects = new List<GitLabProject>();
+
+        // Fetch READMEs in parallel
+        var tasks = activeProjects.Select(async projectDto =>
+        {
+            var project = new GitLabProject
             {
-                Id = p.Id,
-                Name = p.Name,
-                Description = p.Description ?? string.Empty,
-                WebUrl = p.WebUrl,
-                HttpUrlToRepo = p.HttpUrlToRepo,
-                SshUrlToRepo = p.SshUrlToRepo,
-                Archived = p.Archived,
-                Topics = p.Topics ?? new List<string>()
-            })
-            .ToList();
+                Id = projectDto.Id,
+                Name = projectDto.Name,
+                Description = projectDto.Description ?? string.Empty,
+                WebUrl = projectDto.WebUrl,
+                HttpUrlToRepo = projectDto.HttpUrlToRepo,
+                SshUrlToRepo = projectDto.SshUrlToRepo,
+                Archived = projectDto.Archived,
+                Topics = projectDto.Topics ?? new List<string>()
+            };
+
+            try 
+            {
+                var readmeUrl = $"{baseUrl}/api/v4/projects/{projectDto.Id}/repository/files/README.md/raw?ref={projectDto.DefaultBranch}";
+                var readmeContent = await _httpClient.GetStringAsync(readmeUrl);
+                project.Badges = ExtractBadges(readmeContent);
+            }
+            catch
+            {
+                // Ignore if README not found or other errors
+            }
+
+            lock (resultProjects)
+            {
+                resultProjects.Add(project);
+            }
+        });
+
+        await Task.WhenAll(tasks);
+
+        return resultProjects;
+    }
+
+    private List<Badge> ExtractBadges(string markdown)
+    {
+        var badges = new List<Badge>();
+        var lines = markdown.Split('\n');
+        // Regex for linked image: [![Alt](ImgUrl)](LinkUrl)
+        var linkedImageRegex = new System.Text.RegularExpressions.Regex(@"^\[!\[(.*?)\]\((.*?)\)\]\((.*?)\)");
+        // Regex for image: ![Alt](ImgUrl)
+        var imageRegex = new System.Text.RegularExpressions.Regex(@"^!\[(.*?)\]\((.*?)\)");
+
+        foreach (var line in lines)
+        {
+            var trimmedLine = line.Trim();
+            if (string.IsNullOrWhiteSpace(trimmedLine)) continue;
+            if (trimmedLine.StartsWith("#")) continue; // Skip headers
+
+            // Attempt to match linked image first
+            var linkedMatch = linkedImageRegex.Match(trimmedLine);
+            if (linkedMatch.Success)
+            {
+                badges.Add(new Badge
+                {
+                    AltText = linkedMatch.Groups[1].Value,
+                    ImageUrl = linkedMatch.Groups[2].Value,
+                    LinkUrl = linkedMatch.Groups[3].Value
+                });
+                continue;
+            }
+
+            // Attempt to match simple image
+            var imageMatch = imageRegex.Match(trimmedLine);
+            if (imageMatch.Success)
+            {
+                badges.Add(new Badge
+                {
+                    AltText = imageMatch.Groups[1].Value,
+                    ImageUrl = imageMatch.Groups[2].Value
+                });
+                continue;
+            }
+
+            // Detect end of badge section: a line that is not a badge?
+            // The prompt says "continuous badge part".
+            // If the line has content but is not a badge, we stop assuming the badge section is over.
+            // But sometimes badges are inline. The user example shows one per line basically or same line.
+            // If the line doesn't start with ! or [, it's likely text.
+            if (!trimmedLine.StartsWith("[") && !trimmedLine.StartsWith("!"))
+            {
+                // If we already found badges, break.
+                if (badges.Count > 0)
+                {
+                    break;
+                }
+            }
+        }
+        return badges;
     }
 
     public List<ProjectsByTag> GroupProjectsByFirstTag(List<GitLabProject> projects)
@@ -97,5 +179,8 @@ public class GitLabService : IScopedDependency
         
         public bool Archived { get; set; }
         public List<string>? Topics { get; set; }
+
+        [JsonProperty("default_branch")]
+        public string DefaultBranch { get; set; } = "master";
     }
 }

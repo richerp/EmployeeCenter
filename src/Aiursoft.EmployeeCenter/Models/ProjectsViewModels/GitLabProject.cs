@@ -1,5 +1,12 @@
 namespace Aiursoft.EmployeeCenter.Models.ProjectsViewModels;
 
+public class Badge
+{
+    public string ImageUrl { get; set; } = string.Empty;
+    public string LinkUrl { get; set; } = string.Empty;
+    public string AltText { get; set; } = string.Empty;
+}
+
 public class GitLabProject
 {
     public int Id { get; set; }
@@ -10,4 +17,5 @@ public class GitLabProject
     public string SshUrlToRepo { get; set; } = string.Empty;
     public bool Archived { get; set; }
     public List<string> Topics { get; set; } = new();
+    public List<Badge> Badges { get; set; } = new();
 }
