@@ -28,6 +28,9 @@
                                 var maxBadges = tagGroup.Projects.Any() ? tagGroup.Projects.Max(p => p.Badges.Count) : 0;
                             }
                             <tr>
+                                <th style="width: 50px; text-align: center;">
+                                    <i class="align-middle" data-lucide="star"></i>
+                                </th>
                                 <th style="min-width: 250px;">@Localizer["Project"]</th>
                                 @for (var i = 0; i < maxBadges; i++)
                                 {
@@ -39,6 +42,16 @@
                             @foreach (var project in tagGroup.Projects.OrderBy(p => p.Name))
                             {
                                 <tr>
+                                    <td class="align-middle text-center">
+                                        @if (project.IsStarredByRequiredUser)
+                                        {
+                                            <i class="align-middle" data-lucide="star" style="color: #ffc107; fill: #ffc107;"></i>
+                                        }
+                                        else
+                                        {
+                                            <i class="align-middle" data-lucide="star" style="color: #dee2e6;"></i>
+                                        }
+                                    </td>
                                     <td class="align-middle">
                                         <div class="mb-1">
                                             <a href="@project.WebUrl" target="_blank" class="fw-bold text-dark text-decoration-none">

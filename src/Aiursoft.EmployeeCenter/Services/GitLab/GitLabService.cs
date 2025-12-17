@@ -24,24 +24,27 @@ public class GitLabService : IScopedDependency
         var segments = orgUrl.Split('/');
         var orgName = segments[^1];
         var baseUrl = string.Join('/', segments[0..^1]);
-        
+
+        // Get the user ID for the configured username
+        var userId = await GetUserIdByUsernameAsync(baseUrl, _gitLabSettings.ProjectMustBeStaredBy);
+
         // Get group ID by name
         var groupSearchUrl = $"{baseUrl}/api/v4/groups?search={orgName}";
         var groupResponse = await _httpClient.GetStringAsync(groupSearchUrl);
         var groups = JsonConvert.DeserializeObject<List<GitLabGroup>>(groupResponse);
-        
+
         if (groups == null || groups.Count == 0)
         {
             return new List<GitLabProject>();
         }
-        
+
         var groupId = groups[0].Id;
-        
+
         // Get all projects in the group
         var projectsUrl = $"{baseUrl}/api/v4/groups/{groupId}/projects?simple=true&per_page=999&visibility=public&page=1";
         var projectsResponse = await _httpClient.GetStringAsync(projectsUrl);
         var projectsDto = JsonConvert.DeserializeObject<List<GitLabProjectDto>>(projectsResponse) ?? new List<GitLabProjectDto>();
-        
+
         // Filter out archived projects
         var activeProjects = projectsDto.Where(p => !p.Archived).ToList();
 
@@ -62,7 +65,7 @@ public class GitLabService : IScopedDependency
                 Topics = projectDto.Topics ?? new List<string>()
             };
 
-            try 
+            try
             {
                 var readmeUrl = $"{baseUrl}/api/v4/projects/{projectDto.Id}/repository/files/README.md/raw?ref={projectDto.DefaultBranch}";
                 var readmeContent = await _httpClient.GetStringAsync(readmeUrl);
@@ -71,6 +74,12 @@ public class GitLabService : IScopedDependency
             catch
             {
                 // Ignore if README not found or other errors
+            }
+
+            // Check if the project is starred by the required user
+            if (userId.HasValue)
+            {
+                project.IsStarredByRequiredUser = await IsProjectStarredByUserAsync(baseUrl, projectDto.Id, userId.Value);
             }
 
             lock (resultProjects)
@@ -156,10 +165,54 @@ public class GitLabService : IScopedDependency
         return grouped;
     }
 
+    private async Task<int?> GetUserIdByUsernameAsync(string baseUrl, string username)
+    {
+        try
+        {
+            var userSearchUrl = $"{baseUrl}/api/v4/users?username={username}";
+            var userResponse = await _httpClient.GetStringAsync(userSearchUrl);
+            var users = JsonConvert.DeserializeObject<List<GitLabUser>>(userResponse);
+
+            if (users != null && users.Count > 0)
+            {
+                return users[0].Id;
+            }
+        }
+        catch
+        {
+            // Ignore if user not found or other errors
+        }
+
+        return null;
+    }
+
+    private async Task<bool> IsProjectStarredByUserAsync(string baseUrl, int projectId, int userId)
+    {
+        try
+        {
+            var starrersUrl = $"{baseUrl}/api/v4/projects/{projectId}/starrers";
+            var starrersResponse = await _httpClient.GetStringAsync(starrersUrl);
+            var starrers = JsonConvert.DeserializeObject<List<GitLabUser>>(starrersResponse);
+
+            return starrers?.Any(s => s.Id == userId) ?? false;
+        }
+        catch
+        {
+            // If we can't fetch starrers, assume not starred
+            return false;
+        }
+    }
+
     // Internal DTOs for GitLab API responses
     private class GitLabGroup
     {
         public int Id { get; set; }
+    }
+
+    private class GitLabUser
+    {
+        public int Id { get; set; }
+        public string Username { get; set; } = string.Empty;
     }
 
     private class GitLabProjectDto
@@ -167,16 +220,16 @@ public class GitLabService : IScopedDependency
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
         public string? Description { get; set; }
-        
+
         [JsonProperty("web_url")]
         public string WebUrl { get; set; } = string.Empty;
-        
+
         [JsonProperty("http_url_to_repo")]
         public string HttpUrlToRepo { get; set; } = string.Empty;
-        
+
         [JsonProperty("ssh_url_to_repo")]
         public string SshUrlToRepo { get; set; } = string.Empty;
-        
+
         public bool Archived { get; set; }
         public List<string>? Topics { get; set; }
 

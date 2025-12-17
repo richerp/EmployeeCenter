@@ -18,4 +18,5 @@ public class GitLabProject
     public bool Archived { get; set; }
     public List<string> Topics { get; set; } = new();
     public List<Badge> Badges { get; set; } = new();
+    public bool IsStarredByRequiredUser { get; set; }
 }
