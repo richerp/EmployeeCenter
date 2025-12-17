@@ -45,11 +45,15 @@
                                     <td class="align-middle text-center">
                                         @if (project.IsStarredByRequiredUser)
                                         {
-                                            <i class="align-middle" data-lucide="star" style="color: #ffc107; fill: #ffc107;"></i>
+                                            <i class="align-middle" data-lucide="star"
+                                               style="color: #ffc107; fill: #ffc107; cursor: help;"
+                                               title="⭐ Starred by @Model.RequiredStarUsername"></i>
                                         }
                                         else
                                         {
-                                            <i class="align-middle" data-lucide="star" style="color: #dee2e6;"></i>
+                                            <i class="align-middle" data-lucide="alert-triangle"
+                                               style="color: #adb5bd; cursor: help;"
+                                               title="☆ Not starred by @Model.RequiredStarUsername"></i>
                                         }
                                     </td>
                                     <td class="align-middle">

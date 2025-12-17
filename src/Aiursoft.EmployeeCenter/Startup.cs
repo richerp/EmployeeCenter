@@ -1,3 +1,4 @@
+using Aiursoft.Canon;
 using Aiursoft.CSTools.Tools;
 using Aiursoft.DbTools.Switchable;
 using Aiursoft.Scanner;
@@ -26,7 +27,7 @@ public class Startup : IWebStartup
         // Relational database
         var (connectionString, dbType, allowCache) = configuration.GetDbSettings();
         services.AddSwitchableRelationalDatabase(
-            dbType: EntryExtends.IsInUnitTests() ? "InMemory": dbType,
+            dbType: EntryExtends.IsInUnitTests() ? "InMemory" : dbType,
             connectionString: connectionString,
             supportedDbs:
             [
@@ -41,6 +42,7 @@ public class Startup : IWebStartup
         // Services
         services.AddMemoryCache();
         services.AddHttpClient();
+        services.AddTaskCanon();
         services.AddAssemblyDependencies(typeof(Startup).Assembly);
         services.AddSingleton<NavigationState<Startup>>();
 

@@ -1,9 +1,11 @@
+using Aiursoft.EmployeeCenter.Configuration;
 using Aiursoft.EmployeeCenter.Models.ProjectsViewModels;
 using Aiursoft.EmployeeCenter.Services;
 using Aiursoft.EmployeeCenter.Services.GitLab;
 using Aiursoft.UiStack.Navigation;
 using Aiursoft.WebTools.Attributes;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 
 namespace Aiursoft.EmployeeCenter.Controllers;
 
@@ -11,10 +13,12 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 public class ProjectsController : Controller
 {
     private readonly GitLabService _gitLabService;
+    private readonly GitLabSettings _gitLabSettings;
 
-    public ProjectsController(GitLabService gitLabService)
+    public ProjectsController(GitLabService gitLabService, IOptions<GitLabSettings> gitLabSettings)
     {
         _gitLabService = gitLabService;
+        _gitLabSettings = gitLabSettings.Value;
     }
 
     [RenderInNavBar(
@@ -32,7 +36,8 @@ public class ProjectsController : Controller
 
         var model = new IndexViewModel
         {
-            ProjectsByTags = projectsByTags
+            ProjectsByTags = projectsByTags,
+            RequiredStarUsername = _gitLabSettings.ProjectMustBeStaredBy
         };
 
         return this.StackView(model);

@@ -1,3 +1,4 @@
+using Aiursoft.Canon;
 using Aiursoft.EmployeeCenter.Configuration;
 using Aiursoft.EmployeeCenter.Models.ProjectsViewModels;
 using Aiursoft.Scanner.Abstractions;
@@ -10,11 +11,13 @@ public class GitLabService : IScopedDependency
 {
     private readonly HttpClient _httpClient;
     private readonly GitLabSettings _gitLabSettings;
+    private readonly CanonPool _canonPool;
 
-    public GitLabService(HttpClient httpClient, IOptions<GitLabSettings> gitLabSettings)
+    public GitLabService(HttpClient httpClient, IOptions<GitLabSettings> gitLabSettings, CanonPool canonPool)
     {
         _httpClient = httpClient;
         _gitLabSettings = gitLabSettings.Value;
+        _canonPool = canonPool;
     }
 
     public async Task<List<GitLabProject>> GetAllProjectsAsync()
@@ -50,45 +53,49 @@ public class GitLabService : IScopedDependency
 
         var resultProjects = new List<GitLabProject>();
 
-        // Fetch READMEs in parallel
-        var tasks = activeProjects.Select(async projectDto =>
+        // Register tasks to the pool instead of creating a list of tasks
+        foreach (var projectDto in activeProjects)
         {
-            var project = new GitLabProject
+            _canonPool.RegisterNewTaskToPool(async () =>
             {
-                Id = projectDto.Id,
-                Name = projectDto.Name,
-                Description = projectDto.Description ?? string.Empty,
-                WebUrl = projectDto.WebUrl,
-                HttpUrlToRepo = projectDto.HttpUrlToRepo,
-                SshUrlToRepo = projectDto.SshUrlToRepo,
-                Archived = projectDto.Archived,
-                Topics = projectDto.Topics ?? new List<string>()
-            };
+                var project = new GitLabProject
+                {
+                    Id = projectDto.Id,
+                    Name = projectDto.Name,
+                    Description = projectDto.Description ?? string.Empty,
+                    WebUrl = projectDto.WebUrl,
+                    HttpUrlToRepo = projectDto.HttpUrlToRepo,
+                    SshUrlToRepo = projectDto.SshUrlToRepo,
+                    Archived = projectDto.Archived,
+                    Topics = projectDto.Topics ?? new List<string>()
+                };
 
-            try
-            {
-                var readmeUrl = $"{baseUrl}/api/v4/projects/{projectDto.Id}/repository/files/README.md/raw?ref={projectDto.DefaultBranch}";
-                var readmeContent = await _httpClient.GetStringAsync(readmeUrl);
-                project.Badges = ExtractBadges(readmeContent);
-            }
-            catch
-            {
-                // Ignore if README not found or other errors
-            }
+                try
+                {
+                    var readmeUrl = $"{baseUrl}/api/v4/projects/{projectDto.Id}/repository/files/README.md/raw?ref={projectDto.DefaultBranch}";
+                    var readmeContent = await _httpClient.GetStringAsync(readmeUrl);
+                    project.Badges = ExtractBadges(readmeContent);
+                }
+                catch
+                {
+                    // Ignore if README not found or other errors
+                }
 
-            // Check if the project is starred by the required user
-            if (userId.HasValue)
-            {
-                project.IsStarredByRequiredUser = await IsProjectStarredByUserAsync(baseUrl, projectDto.Id, userId.Value);
-            }
+                // Check if the project is starred by the required user
+                if (userId.HasValue)
+                {
+                    project.IsStarredByRequiredUser = await IsProjectStarredByUserAsync(baseUrl, projectDto.Id, userId.Value);
+                }
 
-            lock (resultProjects)
-            {
-                resultProjects.Add(project);
-            }
-        });
+                lock (resultProjects)
+                {
+                    resultProjects.Add(project);
+                }
+            });
+        }
 
-        await Task.WhenAll(tasks);
+        // Execute tasks in pool with controlled concurrency (default 8, prevents API overload)
+        await _canonPool.RunAllTasksInPoolAsync();
 
         return resultProjects;
     }
@@ -192,9 +199,9 @@ public class GitLabService : IScopedDependency
         {
             var starrersUrl = $"{baseUrl}/api/v4/projects/{projectId}/starrers";
             var starrersResponse = await _httpClient.GetStringAsync(starrersUrl);
-            var starrers = JsonConvert.DeserializeObject<List<GitLabUser>>(starrersResponse);
+            var starrers = JsonConvert.DeserializeObject<List<GitLabStarrer>>(starrersResponse);
 
-            return starrers?.Any(s => s.Id == userId) ?? false;
+            return starrers?.Any(s => s.User?.Id == userId) ?? false;
         }
         catch
         {
@@ -212,7 +219,11 @@ public class GitLabService : IScopedDependency
     private class GitLabUser
     {
         public int Id { get; set; }
-        public string Username { get; set; } = string.Empty;
+    }
+
+    private class GitLabStarrer
+    {
+        public GitLabUser? User { get; set; }
     }
 
     private class GitLabProjectDto
