@@ -13,102 +13,123 @@
     {
         @foreach (var tagGroup in Model.ProjectsByTags.OrderByDescending(g => g.Projects.Count))
         {
-                    <div class="card mb-4">
-                        <div class="card-header">
-                            <h5 class="card-title mb-0">
-                                <i class="align-middle" data-lucide="tag"></i>
-                                <span class="badge bg-primary">@tagGroup.Tag</span>
-                                <span class="text-muted ms-2">(@tagGroup.Projects.Count @Localizer["projects"])</span>
-                            </h5>
-                        </div>
-                        <div class="table-responsive">
-                            <table class="table table-hover table-striped mb-0">
-                                <thead>
+                                            <div class="card mb-4">
+                                                <div class="card-header">
+                                                    <h5 class="card-title mb-0">
+                                                        <i class="align-middle" data-lucide="tag"></i>
+                                                        <span class="badge bg-primary">@tagGroup.Tag</span>
+                                                        <span class="text-muted ms-2">(@tagGroup.Projects.Count @Localizer["projects"])</span>
+                                                    </h5>
+                                                </div>
+                                                <div class="table-responsive">
+                                                    <table class="table table-hover table-striped mb-0">
+                                                        <thead>
                             @{
                                 var maxBadges = tagGroup.Projects.Any() ? tagGroup.Projects.Max(p => p.Badges.Count) : 0;
                             }
-                                    <tr>
-                                        <th style="width: 50px; text-align: center;">
-                                            <i class="align-middle" data-lucide="star"></i>
-                                        </th>
-                                        <th style="min-width: 250px;">@Localizer["Project"]</th>
+                                                            <tr>
+                                                                <th style="width: 50px; text-align: center;">
+                                                                    <i class="align-middle" data-lucide="star"></i>
+                                                                </th>
+                                                        <th style="width: 50px; text-align: center;">
+                                                            <i class="align-middle" data-lucide="github"></i>
+                                                        </th>
+                                                                <th style="min-width: 250px;">@Localizer["Project"]</th>
                                 @for (var i = 0; i < maxBadges; i++)
                                 {
-                                                <th>@Localizer["Badge"] @(i + 1)</th>
+                                                                                    <th>@Localizer["Badge"] @(i + 1)</th>
                                 }
-                                    </tr>
-                                </thead>
-                                <tbody>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
                             @foreach (var project in tagGroup.Projects.OrderBy(p => p.Name))
                             {
-                                            <tr>
-                                                <td class="align-middle text-center">
+                                                                                <tr>
+                                                                                    <td class="align-middle text-center">
                                         @if (project.IsStarredByRequiredUser)
                                         {
-                                                            <i class="align-middle" data-lucide="star"
-                                                               style="color: #ffc107; fill: #ffc107; cursor: help;"
-                                                               title="⭐ Starred by @Model.RequiredStarUsername"></i>
+                                                                            <span title="⭐ Starred by @Model.RequiredStarUsername">
+                                                                                <i class="align-middle" data-lucide="star"
+                                                                                   style="color: #ffc107; fill: #ffc107;"></i>
+                                                                            </span>
                                         }
                                         else
                                         {
-                                                            <i class="align-middle" data-lucide="alert-triangle"
-                                                               style="color: #adb5bd; cursor: help;"
-                                                               title="☆ Not starred by @Model.RequiredStarUsername"></i>
+                                                                            <span title="☆ Not starred by @Model.RequiredStarUsername">
+                                                                                <i class="align-middle" data-lucide="alert-triangle"
+                                                                                   style="color: #adb5bd;"></i>
+                                                                            </span>
                                         }
-                                                </td>
-                                                <td class="align-middle">
-                                                    <div class="mb-1">
-                                                        <a href="@project.WebUrl" target="_blank" class="fw-bold text-dark text-decoration-none">
+                                                                                    </td>
+                                                                        <td class="align-middle text-center">
+                                        @if (project.IsMirroredOnGitHub)
+                                        {
+                                                                            <span title="✓ Mirrored on github.com/@Model.RequiredGitHubOrgMirrored">
+                                                                                <i class="align-middle" data-lucide="github"
+                                                                                   style="color: #24292e;"></i>
+                                                                            </span>
+                                        }
+                                        else
+                                        {
+                                                                            <span title="✗ Not mirrored on github.com/@Model.RequiredGitHubOrgMirrored">
+                                                                                <i class="align-middle" data-lucide="alert-triangle"
+                                                                                   style="color: #adb5bd;"></i>
+                                                                            </span>
+                                        }
+                                                                        </td>
+                                                                                    <td class="align-middle">
+                                                                                        <div class="mb-1">
+                                                                                            <a href="@project.WebUrl" target="_blank" class="fw-bold text-dark text-decoration-none">
                                                 @project.Name
-                                                        </a>
-                                                    </div>
+                                                                                            </a>
+                                                                                        </div>
                                         @if (!string.IsNullOrWhiteSpace(project.Description))
                                         {
-                                                            <small class="text-muted d-block text-truncate" style="max-width: 400px;">@project.Description</small>
+                                                                                                            <small class="text-muted d-block text-truncate" style="max-width: 400px;">@project.Description</small>
                                         }
-                                                    <div class="mt-1">
-                                                        <small>
-                                                            <a href="@project.HttpUrlToRepo" class="text-muted me-2 text-decoration-none">
-                                                                <i class="align-middle" data-lucide="link" style="width: 14px; height: 14px;"></i> HTTPS
-                                                            </a>
-                                                            <a href="@project.SshUrlToRepo" class="text-muted text-decoration-none">
-                                                                <i class="align-middle" data-lucide="terminal" style="width: 14px; height: 14px;"></i> SSH
-                                                            </a>
-                                                        </small>
-                                                    </div>
-                                                </td>
+                                                                                        <div class="mt-1">
+                                                                                            <small>
+                                                                                                <a href="@project.HttpUrlToRepo" class="text-muted me-2 text-decoration-none">
+                                                                                                    <i class="align-middle" data-lucide="link" style="width: 14px; height: 14px;"></i> HTTPS
+                                                                                                </a>
+                                                                                                <a href="@project.SshUrlToRepo" class="text-muted text-decoration-none">
+                                                                                                    <i class="align-middle" data-lucide="terminal" style="width: 14px; height: 14px;"></i> SSH
+                                                                                                </a>
+                                                                                            </small>
+                                                                                        </div>
+                                                                                    </td>
                                     @for (var i = 0; i < maxBadges; i++)
                                     {
-                                                        <td class="align-middle">
+                                                                                                        <td class="align-middle">
                                             @if (i < project.Badges.Count)
                                             {
                                                 var badge = project.Badges[i];
                                                 if (!string.IsNullOrWhiteSpace(badge.LinkUrl))
                                                 {
-                                                                            <a href="@badge.LinkUrl" target="_blank">
-                                                                                <img src="@badge.ImageUrl" alt="@badge.AltText" style="height: 20px;" />
-                                                                            </a>
+                                                                                                                                                    <a href="@badge.LinkUrl" target="_blank">
+                                                                                                                                                        <img src="@badge.ImageUrl" alt="@badge.AltText" style="height: 20px;" />
+                                                                                                                                                    </a>
                                                 }
                                                 else
                                                 {
-                                                                            <img src="@badge.ImageUrl" alt="@badge.AltText" style="height: 20px;" />
+                                                                                                                                                    <img src="@badge.ImageUrl" alt="@badge.AltText" style="height: 20px;" />
                                                 }
                                             }
-                                                        </td>
+                                                                                                        </td>
                                     }
-                                            </tr>
+                                                                                </tr>
                             }
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
         }
     }
     else
     {
-            <div class="alert alert-info" role="alert">
-                <i class="align-middle" data-lucide="info"></i>
+                        <div class="alert alert-info" role="alert">
+                            <i class="align-middle" data-lucide="info"></i>
             @Localizer["No projects found."]
-            </div>
+                        </div>
     }
-</div>
+

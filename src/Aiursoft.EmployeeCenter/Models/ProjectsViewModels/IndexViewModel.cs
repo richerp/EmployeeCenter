@@ -11,4 +11,5 @@ public class IndexViewModel : UiStackLayoutViewModel
 
     public required List<ProjectsByTag> ProjectsByTags { get; set; }
     public required string RequiredStarUsername { get; set; }
+    public required string RequiredGitHubOrgMirrored { get; set; }
 }

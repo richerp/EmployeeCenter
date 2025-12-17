@@ -37,7 +37,8 @@ public class ProjectsController : Controller
         var model = new IndexViewModel
         {
             ProjectsByTags = projectsByTags,
-            RequiredStarUsername = _gitLabSettings.ProjectMustBeStaredBy
+            RequiredStarUsername = _gitLabSettings.ProjectMustBeStaredBy,
+            RequiredGitHubOrgMirrored = _gitLabSettings.EnsureGitHubOrgMirrored
         };
 
         return this.StackView(model);

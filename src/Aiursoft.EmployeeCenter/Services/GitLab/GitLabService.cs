@@ -12,12 +12,18 @@ public class GitLabService : IScopedDependency
     private readonly HttpClient _httpClient;
     private readonly GitLabSettings _gitLabSettings;
     private readonly CanonPool _canonPool;
+    private readonly CacheService _cache;
 
-    public GitLabService(HttpClient httpClient, IOptions<GitLabSettings> gitLabSettings, CanonPool canonPool)
+    public GitLabService(
+        HttpClient httpClient,
+        IOptions<GitLabSettings> gitLabSettings,
+        CanonPool canonPool,
+        CacheService cache)
     {
         _httpClient = httpClient;
         _gitLabSettings = gitLabSettings.Value;
         _canonPool = canonPool;
+        _cache = cache;
     }
 
     public async Task<List<GitLabProject>> GetAllProjectsAsync()
@@ -85,6 +91,12 @@ public class GitLabService : IScopedDependency
                 if (userId.HasValue)
                 {
                     project.IsStarredByRequiredUser = await IsProjectStarredByUserAsync(baseUrl, projectDto.Id, userId.Value);
+                }
+
+                // Check if the project is mirrored on GitHub
+                if (!string.IsNullOrEmpty(_gitLabSettings.EnsureGitHubOrgMirrored))
+                {
+                    project.IsMirroredOnGitHub = await IsProjectMirroredOnGitHubAsync(_gitLabSettings.EnsureGitHubOrgMirrored, projectDto.Name);
                 }
 
                 lock (resultProjects)
@@ -210,6 +222,56 @@ public class GitLabService : IScopedDependency
         }
     }
 
+    private async Task<bool> IsProjectMirroredOnGitHubAsync(string githubOrg, string projectName)
+    {
+        // Use cache to avoid hitting GitHub API rate limits
+        // Cache key is unique per org and project
+        var cacheKey = $"github-mirror-{githubOrg}-{projectName}";
+
+        return await _cache.RunWithCache(cacheKey, async () =>
+        {
+            try
+            {
+                // Check if a GitHub repository exists with the same name in the specified organization
+                // Convert to lowercase as GitHub repository names are case-sensitive and typically lowercase
+                var repoName = projectName.ToLowerInvariant();
+                var githubApiUrl = $"https://api.github.com/repos/{githubOrg}/{repoName}";
+                var request = new HttpRequestMessage(HttpMethod.Head, githubApiUrl);
+                request.Headers.Add("User-Agent", "EmployeeCenter-GitLab-Checker");
+
+                // Add GitHub token if configured (increases rate limit from 60/hr to 5000/hr)
+                if (!string.IsNullOrEmpty(_gitLabSettings.GitHubToken))
+                {
+                    request.Headers.Add("Authorization", $"Bearer {_gitLabSettings.GitHubToken}");
+                }
+
+                var response = await _httpClient.SendAsync(request);
+
+                // Log when we hit rate limits
+                if (response.StatusCode == System.Net.HttpStatusCode.Forbidden)
+                {
+                    Console.WriteLine($"[GitHub API] Rate limit or forbidden for {githubOrg}/{repoName} (will be cached)");
+                    // If rate limited, we can't determine - return false to avoid false positives
+                    return false;
+                }
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    Console.WriteLine($"[GitHub API] Failed to check {githubOrg}/{repoName}: {response.StatusCode} (will be cached)");
+                }
+
+                return response.IsSuccessStatusCode;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"[GitHub API] Exception checking {githubOrg}/{projectName}: {ex.Message}");
+                // If we can't fetch the GitHub repo, assume not mirrored
+                return false;
+            }
+        },
+        cachedMinutes: _ => TimeSpan.FromHours(1)); // Cache for 1 hour
+    }
+
     // Internal DTOs for GitLab API responses
     private class GitLabGroup
     {
@@ -248,3 +310,4 @@ public class GitLabService : IScopedDependency
         public string DefaultBranch { get; set; } = "master";
     }
 }
+

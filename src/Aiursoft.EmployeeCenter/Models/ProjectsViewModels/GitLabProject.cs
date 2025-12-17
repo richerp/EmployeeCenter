@@ -19,4 +19,5 @@ public class GitLabProject
     public List<string> Topics { get; set; } = new();
     public List<Badge> Badges { get; set; } = new();
     public bool IsStarredByRequiredUser { get; set; }
+    public bool IsMirroredOnGitHub { get; set; }
 }
