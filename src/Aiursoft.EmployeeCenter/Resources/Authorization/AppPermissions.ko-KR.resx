@@ -84,5 +84,11 @@
   <data name="Grants permission to restart the application instance. May cause availability interruptions but all settings and cache will be reloaded." xml:space="preserve">
     <value>애플리케이션 인스턴스를 재시작할 수 있는 권한을 부여합니다. 가용성 중단을 초래할 수 있으나 모든 설정과 캐시가 다시 로드됩니다.</value>
   </data>
+  <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
+    <value>모든 사용자의 급여 명세서 발급 및 관리를 허용합니다.</value>
+  </data>
+  <data name="Manage Payroll" xml:space="preserve">
+    <value>급여 관리</value>
+  </data>
 
 </root>

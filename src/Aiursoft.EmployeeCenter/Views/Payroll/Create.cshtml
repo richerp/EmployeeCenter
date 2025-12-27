@@ -1,0 +1,52 @@
+@model Aiursoft.EmployeeCenter.Models.PayrollViewModels.CreateViewModel
+
+<h1 class="h3 mb-3">@Localizer["Issue New Payroll"]</h1>
+
+<div class="row justify-content-center">
+    <div class="col-lg-10 col-xl-8">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">@Localizer["Payroll Details"]</h5>
+            </div>
+            <div class="card-body">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                    <div class="mb-3">
+                        <label asp-for="UserId" class="form-label">@Localizer["Select User"]</label>
+                        <select asp-for="UserId" class="form-select" asp-items="@(new SelectList(Model.AllUsers, "Id", "DisplayName"))">
+                            <option value="">-- @Localizer["Select User"] --</option>
+                        </select>
+                        <span asp-validation-for="UserId" class="text-danger"></span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="TargetMonth" class="form-label">@Localizer["Target Month"]</label>
+                            <input asp-for="TargetMonth" class="form-control" type="month" value="@Model.TargetMonth.ToString("yyyy-MM")" />
+                            <span asp-validation-for="TargetMonth" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="TotalAmount" class="form-label">@Localizer["Total Amount"]</label>
+                            <input asp-for="TotalAmount" class="form-control" />
+                            <span asp-validation-for="TotalAmount" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Content" class="form-label">@Localizer["Content (Markdown)"]</label>
+                        <textarea asp-for="Content" class="form-control" rows="10" placeholder="@Localizer["Enter payroll details in Markdown format..."]"></textarea>
+                        <span asp-validation-for="Content" class="text-danger"></span>
+                    </div>
+
+                    <div class="mt-4">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="align-middle me-2" data-lucide="check-circle"></i> @Localizer["Issue Payroll"]
+                        </button>
+                        <a asp-action="Manage" class="btn btn-light">@Localizer["Back to List"]</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -57,7 +57,10 @@ public class AppPermissions
                 localizer["Allows viewing system-level information and settings."]),
             new(AppPermissionNames.CanRebootThisApp,
                 localizer["Reboot This App"],
-                localizer["Grants permission to restart the application instance. May cause availability interruptions but all settings and cache will be reloaded."])
+                localizer["Grants permission to restart the application instance. May cause availability interruptions but all settings and cache will be reloaded."]),
+            new(AppPermissionNames.CanManagePayroll,
+                localizer["Manage Payroll"],
+                localizer["Allows issuing and managing payroll slips for all users."])
         ];
         return allPermission;
     }

@@ -84,5 +84,11 @@
   <data name="Grants permission to restart the application instance. May cause availability interruptions but all settings and cache will be reloaded." xml:space="preserve">
     <value>授予重啟應用程式實例嘅權限。可能會導致服務中斷，但所有設定同快取將會重新載入。</value>
   </data>
+  <data name="Manage Payroll" xml:space="preserve">
+    <value>管理薪資</value>
+  </data>
+  <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
+    <value>允許為所有用戶發出及管理薪金單。</value>
+  </data>
 
 </root>
