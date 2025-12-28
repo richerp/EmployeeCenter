@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:schema id="root">
+        <xs:element name="root" ns1:IsDataSet="true">
 
-<root>
-    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <xsd:element name="root" msdata:IsDataSet="true">
-
-        </xsd:element>
-    </xsd:schema>
+        </xs:element>
+    </xs:schema>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
@@ -45,7 +44,7 @@
   <data name="Warning!" xml:space="preserve">
     <value>Advarsel!</value>
   </data>
-  <data name="This user account is synchronized with an OpenID Connect (OIDC) provider. Any modifications made here (e.g., to the display name or email) may be overwritten during the next data sync. For permanent changes, please update the user&apos;s profile directly on your OIDC provider." xml:space="preserve">
+  <data name="This user account is synchronized with an OpenID Connect (OIDC) provider. Any modifications made here (e.g., to the display name or email) may be overwritten during the next data sync. For permanent changes, please update the user's profile directly on your OIDC provider." xml:space="preserve">
     <value>Denne brugerkonto er synkroniseret med en OpenID Connect (OIDC)-udbyder. Ændringer foretaget her (f.eks. til visningsnavn eller e-mail) kan blive overskrevet ved den næste datasync. For permanente ændringer, opdater venligst brugerens profil direkte på din OIDC-udbyder.</value>
   </data>
   <data name="Display Name" xml:space="preserve">
@@ -63,7 +62,7 @@
   <data name="Username" xml:space="preserve">
     <value>Brugernavn</value>
   </data>
-  <data name="Leave blank if you don&apos;t want to change the password." xml:space="preserve">
+  <data name="Leave blank if you don't want to change the password." xml:space="preserve">
     <value>Efterlad blank, hvis du ikke ønsker at ændre adgangskoden.</value>
   </data>
   <data name="Back to List" xml:space="preserve">
@@ -73,4 +72,4 @@
     <value>Ny avatarfil</value>
   </data>
 
-</root>
+<data name="Base Salary" xml:space="preserve"><value>Basic Salary</value></data><data name="Bank Account" xml:space="preserve"><value>Bank Account</value></data><data name="Job Level" xml:space="preserve"><value>Job Level</value></data><data name="Bank Name" xml:space="preserve"><value>Bank Name</value></data></root>

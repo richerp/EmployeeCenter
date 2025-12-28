@@ -2,6 +2,7 @@
 @model Aiursoft.EmployeeCenter.Models.PayrollViewModels.DetailsViewModel
 @inject StorageService StorageService
 
+@* ReSharper disable Razor.ResourceNotResolved *@
 <div class="row mb-2 mb-xl-3 d-print-none">
     <div class="col-auto d-none d-sm-block">
         <h3>@Localizer["Payroll Details"] - @Model.Payroll.TargetMonth.ToString("yyyy-MM")</h3>
@@ -269,4 +270,4 @@
             background: white !important;
         }
     }
-</style>
+</style>@* ReSharper restore Razor.ResourceNotResolved *@

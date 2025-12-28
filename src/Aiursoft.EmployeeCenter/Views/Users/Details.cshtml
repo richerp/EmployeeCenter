@@ -6,7 +6,8 @@
 @inject IStringLocalizer<AppPermissions> PermissionLocalizer
 @inject StorageService StorageService
 
-<div class="row mb-2 mb-xl-3" xmlns="http://www.w3.org/1999/html">
+@* ReSharper disable Razor.ResourceNotResolved *@
+<div class="row mb-2 mb-xl-3">
     <div class="col-auto d-none d-sm-block">
         <h3>@Localizer["User Details:"] <span class="text-muted">@Model.User.UserName</span></h3>
     </div>
@@ -124,3 +125,4 @@
         </div>
     </div>
 </div>
+@* ReSharper restore Razor.ResourceNotResolved *@

@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:schema id="root">
+        <xs:element name="root" ns1:IsDataSet="true">
 
-<root>
-    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <xsd:element name="root" msdata:IsDataSet="true">
-
-        </xsd:element>
-    </xsd:schema>
+        </xs:element>
+    </xs:schema>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
@@ -31,7 +30,7 @@
     <value>Електронна пошта</value>
   </data>
   <data name="User name" xml:space="preserve">
-    <value>Ім&apos;я користувача</value>
+    <value>Ім'я користувача</value>
   </data>
   <data name="Manage Users" xml:space="preserve">
     <value>Керування користувачами</value>
@@ -43,7 +42,7 @@
     <value>Видалити</value>
   </data>
   <data name="Name" xml:space="preserve">
-    <value>Ім&apos;я</value>
+    <value>Ім'я</value>
   </data>
   <data name="All Users" xml:space="preserve">
     <value>Усі користувачі</value>
@@ -58,4 +57,4 @@
     <value>(роль не призначено)</value>
   </data>
 
-</root>
+<data name="Job Level" xml:space="preserve"><value>Job Level</value></data></root>

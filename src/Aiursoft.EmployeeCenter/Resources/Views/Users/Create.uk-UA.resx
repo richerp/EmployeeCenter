@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:schema id="root">
+        <xs:element name="root" ns1:IsDataSet="true">
 
-<root>
-    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <xsd:element name="root" msdata:IsDataSet="true">
-
-        </xsd:element>
-    </xsd:schema>
+        </xs:element>
+    </xs:schema>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
@@ -37,16 +36,16 @@
     <value>Увімкнено OpenID Connect (OIDC). Облікові записи користувачів синхронізуються з зовнішнього провайдера ідентичності. Ми настійно рекомендуємо створювати нових користувачів у вашому провайдері OIDC, щоб забезпечити їх централізоване керування. Ця форма створить обліковий запис, який існує лише локально в межах цього додатку.</value>
   </data>
   <data name="Username" xml:space="preserve">
-    <value>Ім&apos;я користувача</value>
+    <value>Ім'я користувача</value>
   </data>
   <data name="Enter username" xml:space="preserve">
-    <value>Введіть ім&apos;я користувача</value>
+    <value>Введіть ім'я користувача</value>
   </data>
   <data name="Create New User" xml:space="preserve">
     <value>Створити нового користувача</value>
   </data>
   <data name="Display Name" xml:space="preserve">
-    <value>Відображуване ім&apos;я</value>
+    <value>Відображуване ім'я</value>
   </data>
   <data name="Email Address" xml:space="preserve">
     <value>Електронна адреса</value>
@@ -55,7 +54,7 @@
     <value>Деталі облікового запису користувача</value>
   </data>
   <data name="Enter display name" xml:space="preserve">
-    <value>Введіть відображуване ім&apos;я</value>
+    <value>Введіть відображуване ім'я</value>
   </data>
   <data name="Enter email address" xml:space="preserve">
     <value>Введіть адресу електронної пошти</value>
@@ -70,4 +69,4 @@
     <value>Створіть пароль для нового користувача</value>
   </data>
 
-</root>
+<data name="Base Salary" xml:space="preserve"><value>Basic Salary</value></data><data name="Job Level" xml:space="preserve"><value>Job Level</value></data><data name="Bank Name" xml:space="preserve"><value>Bank Name</value></data><data name="Bank Account" xml:space="preserve"><value>Bank Account</value></data><data name="Enter bank name" xml:space="preserve"><value>Enter bank name</value></data><data name="Enter base salary" xml:space="preserve"><value>Enter base salary</value></data><data name="Enter job level" xml:space="preserve"><value>Enter job grade</value></data><data name="Enter bank account" xml:space="preserve"><value>Enter bank account number</value></data></root>

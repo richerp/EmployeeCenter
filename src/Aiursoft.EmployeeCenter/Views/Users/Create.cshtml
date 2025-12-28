@@ -3,6 +3,9 @@
 @model Aiursoft.EmployeeCenter.Models.UsersViewModels.CreateViewModel
 @inject IOptions<AppSettings> AppSettings
 
+@* ReSharper disable Razor.ResourceNotResolved *@
+<div class="row mb-2 mb-xl-3">
+
 @* Standard page title for consistency. *@
 <h1 class="h3 mb-3">@Localizer["Create New User"]</h1>
 
@@ -99,3 +102,4 @@
         </div>
     </div>
 </div>
+@* ReSharper restore Razor.ResourceNotResolved *@

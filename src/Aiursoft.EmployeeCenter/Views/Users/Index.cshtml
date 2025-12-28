@@ -1,14 +1,8 @@
 @using Aiursoft.EmployeeCenter.Services.FileStorage
 @model Aiursoft.EmployeeCenter.Models.UsersViewModels.IndexViewModel
 @inject StorageService StorageService
-@* The page-specific style is preserved. *@
-<style>
-    .clickable-row {
-        cursor: pointer;
-    }
-</style>
 
-@* A standard page header, consistent with the Roles management page. *@
+@* ReSharper disable Razor.ResourceNotResolved *@
 <div class="row mb-2 mb-xl-3">
     <div class="col-auto d-none d-sm-block">
         <h3>@Localizer["Manage Users"]</h3>
@@ -110,3 +104,4 @@
         });
     </script>
 }
+@* ReSharper restore Razor.ResourceNotResolved *@

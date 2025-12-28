@@ -3,7 +3,7 @@
 @model Aiursoft.EmployeeCenter.Models.UsersViewModels.EditViewModel
 @inject IOptions<AppSettings> AppSettings
 
-@* A standard page header that includes the user's name for context and primary navigation actions. *@
+@* ReSharper disable Razor.ResourceNotResolved *@
 <div class="row mb-2 mb-xl-3">
     <div class="col-auto d-none d-sm-block">
         <h3>@Localizer["Edit User:"] <span class="text-muted">@Model.DisplayName</span></h3>
@@ -140,3 +140,4 @@
 @section scripts {
     <script src="~/node_modules/dropify/dist/js/dropify.min.js"></script>
 }
+@* ReSharper restore Razor.ResourceNotResolved *@
