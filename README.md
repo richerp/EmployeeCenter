@@ -5,7 +5,7 @@
 [![Test Coverage](https://gitlab.aiursoft.com/aiursoft/employeeCenter/badges/master/coverage.svg)](https://gitlab.aiursoft.com/aiursoft/employeeCenter/-/pipelines)
 [![Man hours](https://manhours.aiursoft.com/r/gitlab.aiursoft.com/aiursoft/employeeCenter.svg)](https://manhours.aiursoft.com/r/gitlab.aiursoft.com/aiursoft/employeeCenter.html)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2FemployeeCenter.aiursoft.com)](https://employeeCenter.aiursoft.com)
-[![Docker](https://img.shields.io/docker/pulls/aiursoft/employeeCenter.svg)](https://hub.docker.com/r/aiursoft/employeeCenter)
+[![Docker](https://img.shields.io/docker/pulls/aiursoft/employeecenter.svg)](https://hub.docker.com/r/aiursoft/employeecenter)
 
 EmployeeCenter is a sample project.
 
@@ -66,8 +66,8 @@ First, install Docker [here](https://docs.docker.com/get-docker/).
 Then run the following commands in a Linux shell:
 
 ```bash
-image=aiursoft/employeeCenter
-appName=employeeCenter
+image=aiursoft/employeecenter
+appName=employeecenter
 sudo docker pull $image
 sudo docker run -d --name $appName --restart unless-stopped -p 5000:5000 -v /var/www/$appName:/data $image
 ```
@@ -78,7 +78,7 @@ The docker image has the following context:
 
 | Properties  | Value                           |
 |-------------|---------------------------------|
-| Image       | aiursoft/employeeCenter               |
+| Image       | aiursoft/employeecenter         |
 | Ports       | 5000                            |
 | Binary path | /app                            |
 | Data path   | /data                           |
