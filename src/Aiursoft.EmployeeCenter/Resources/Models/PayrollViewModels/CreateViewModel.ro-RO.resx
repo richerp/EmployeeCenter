@@ -30,5 +30,74 @@
   <data name="Total Amount" xml:space="preserve">
     <value>Sumă totală</value>
   </data>
+  <data name="Sick Leave" xml:space="preserve">
+    <value>Concediu medical</value>
+  </data>
+  <data name="Full Attendance" xml:space="preserve">
+    <value>Prezență completă</value>
+  </data>
+  <data name="Job Salary" xml:space="preserve">
+    <value>Salariu de bază</value>
+  </data>
+  <data name="Other Allowances" xml:space="preserve">
+    <value>Alte indemnizații</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Salariu de bază</value>
+  </data>
+  <data name="Performance Bonus" xml:space="preserve">
+    <value>Bonus de performanță</value>
+  </data>
+  <data name="Overtime" xml:space="preserve">
+    <value>Ore suplimentare</value>
+  </data>
+  <data name="Late/Early" xml:space="preserve">
+    <value>Întârzieri/Sosiri devreme</value>
+  </data>
+  <data name="Pension (Personal)" xml:space="preserve">
+    <value>Pensie (Personal)</value>
+  </data>
+  <data name="Unemployment (Personal)" xml:space="preserve">
+    <value>Șomaj (Personal)</value>
+  </data>
+  <data name="Housing Fund (Personal)" xml:space="preserve">
+    <value>Fondul de locuințe (Personal)</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Numele băncii</value>
+  </data>
+  <data name="Administrative Fines" xml:space="preserve">
+    <value>Amenzi administrative</value>
+  </data>
+  <data name="Special Additional Deduction" xml:space="preserve">
+    <value>Deducere Specială Suplimentară</value>
+  </data>
+  <data name="Personal Income Tax" xml:space="preserve">
+    <value>Impozitul pe Venitul Personal</value>
+  </data>
+  <data name="Medical (Personal)" xml:space="preserve">
+    <value>Medical (Personal)</value>
+  </data>
+  <data name="Unemployment (Company)" xml:space="preserve">
+    <value>Șomaj (Angajator)</value>
+  </data>
+  <data name="Work Injury (Company)" xml:space="preserve">
+    <value>Accident de muncă (Angajator)</value>
+  </data>
+  <data name="Pension (Company)" xml:space="preserve">
+    <value>Pensie (Angajator)</value>
+  </data>
+  <data name="Housing Fund (Company)" xml:space="preserve">
+    <value>Fondul de locuințe (Angajator)</value>
+  </data>
+  <data name="Maternity (Company)" xml:space="preserve">
+    <value>Asigurare de maternitate (Companie)</value>
+  </data>
+  <data name="Medical (Company)" xml:space="preserve">
+    <value>Medical (Companie)</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>Cont bancar</value>
+  </data>
 
 </root>

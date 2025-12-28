@@ -39,5 +39,17 @@
   <data name="Name" xml:space="preserve">
     <value>Tên</value>
   </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Lương cơ bản</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Tên ngân hàng</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>Tài khoản ngân hàng</value>
+  </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>Cấp bậc công việc</value>
+  </data>
 
 </root>

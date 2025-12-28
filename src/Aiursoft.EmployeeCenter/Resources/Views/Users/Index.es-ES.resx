@@ -57,5 +57,8 @@
   <data name="Avatar" xml:space="preserve">
     <value>Avatar</value>
   </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>Nivel de trabajo</value>
+  </data>
 
 </root>

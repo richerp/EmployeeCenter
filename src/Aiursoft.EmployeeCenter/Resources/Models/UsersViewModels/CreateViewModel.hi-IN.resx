@@ -39,5 +39,17 @@
   <data name="Name" xml:space="preserve">
     <value>नाम</value>
   </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>कार्य स्तर</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>आधार वेतन</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>बैंक का नाम</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>बैंक खाता</value>
+  </data>
 
 </root>

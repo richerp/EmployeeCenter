@@ -30,5 +30,74 @@
   <data name="Content (Markdown)" xml:space="preserve">
     <value>सामग्री (मार्कडाउन)</value>
   </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>मूल वेतन</value>
+  </data>
+  <data name="Other Allowances" xml:space="preserve">
+    <value>अन्य भत्ते</value>
+  </data>
+  <data name="Job Salary" xml:space="preserve">
+    <value>कार्य वेतन</value>
+  </data>
+  <data name="Full Attendance" xml:space="preserve">
+    <value>पूर्ण उपस्थिति</value>
+  </data>
+  <data name="Overtime" xml:space="preserve">
+    <value>ओवरटाइम</value>
+  </data>
+  <data name="Late/Early" xml:space="preserve">
+    <value>देर से/जल्दी</value>
+  </data>
+  <data name="Performance Bonus" xml:space="preserve">
+    <value>प्रदर्शन बोनस</value>
+  </data>
+  <data name="Sick Leave" xml:space="preserve">
+    <value>बीमारी की छुट्टी</value>
+  </data>
+  <data name="Personal Income Tax" xml:space="preserve">
+    <value>व्यक्तिगत आयकर</value>
+  </data>
+  <data name="Administrative Fines" xml:space="preserve">
+    <value>प्रशासनिक जुर्माना</value>
+  </data>
+  <data name="Special Additional Deduction" xml:space="preserve">
+    <value>विशेष अतिरिक्त कटौती</value>
+  </data>
+  <data name="Pension (Personal)" xml:space="preserve">
+    <value>पेंशन (व्यक्तिगत)</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>बैंक का नाम</value>
+  </data>
+  <data name="Housing Fund (Personal)" xml:space="preserve">
+    <value>आवास निधि (व्यक्तिगत)</value>
+  </data>
+  <data name="Unemployment (Personal)" xml:space="preserve">
+    <value>बेरोजगारी (व्यक्तिगत)</value>
+  </data>
+  <data name="Medical (Personal)" xml:space="preserve">
+    <value>चिकित्सा (व्यक्तिगत)</value>
+  </data>
+  <data name="Medical (Company)" xml:space="preserve">
+    <value>चिकित्सा (कंपनी)</value>
+  </data>
+  <data name="Maternity (Company)" xml:space="preserve">
+    <value>प्रसूति अवकाश (कंपनी)</value>
+  </data>
+  <data name="Work Injury (Company)" xml:space="preserve">
+    <value>कार्य चोट (कंपनी)</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>बैंक खाता</value>
+  </data>
+  <data name="Unemployment (Company)" xml:space="preserve">
+    <value>बेरोजगारी (कंपनी)</value>
+  </data>
+  <data name="Pension (Company)" xml:space="preserve">
+    <value>पेंशन (कंपनी)</value>
+  </data>
+  <data name="Housing Fund (Company)" xml:space="preserve">
+    <value>आवास निधि (कंपनी)</value>
+  </data>
 
 </root>

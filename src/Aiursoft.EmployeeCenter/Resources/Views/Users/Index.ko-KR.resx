@@ -57,5 +57,8 @@
   <data name="(no role assigned)" xml:space="preserve">
     <value>(역할이 할당되지 않음)</value>
   </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>직급</value>
+  </data>
 
 </root>

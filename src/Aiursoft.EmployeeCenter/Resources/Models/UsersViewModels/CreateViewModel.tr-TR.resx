@@ -39,5 +39,17 @@
   <data name="Name" xml:space="preserve">
     <value>Ad</value>
   </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Banka Adı</value>
+  </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>İş Seviyesi</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Temel Maaş</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>Banka Hesabı</value>
+  </data>
 
 </root>

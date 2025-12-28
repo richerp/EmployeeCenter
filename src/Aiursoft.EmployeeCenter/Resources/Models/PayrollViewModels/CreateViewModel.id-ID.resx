@@ -30,5 +30,74 @@
   <data name="User" xml:space="preserve">
     <value>Pengguna</value>
   </data>
+  <data name="Full Attendance" xml:space="preserve">
+    <value>Kehadiran Penuh</value>
+  </data>
+  <data name="Sick Leave" xml:space="preserve">
+    <value>Cuti Sakit</value>
+  </data>
+  <data name="Other Allowances" xml:space="preserve">
+    <value>Tunjangan Lainnya</value>
+  </data>
+  <data name="Job Salary" xml:space="preserve">
+    <value>Gaji Pekerjaan</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Gaji Pokok</value>
+  </data>
+  <data name="Late/Early" xml:space="preserve">
+    <value>Terlambat/Datang Lebih Awal</value>
+  </data>
+  <data name="Overtime" xml:space="preserve">
+    <value>Lembur</value>
+  </data>
+  <data name="Performance Bonus" xml:space="preserve">
+    <value>Bonus Kinerja</value>
+  </data>
+  <data name="Medical (Personal)" xml:space="preserve">
+    <value>Kesehatan (Pribadi)</value>
+  </data>
+  <data name="Unemployment (Personal)" xml:space="preserve">
+    <value>Pengangguran (Pribadi)</value>
+  </data>
+  <data name="Housing Fund (Personal)" xml:space="preserve">
+    <value>Dana Perumahan (Pribadi)</value>
+  </data>
+  <data name="Administrative Fines" xml:space="preserve">
+    <value>Denda Administratif</value>
+  </data>
+  <data name="Special Additional Deduction" xml:space="preserve">
+    <value>Potongan Tambahan Khusus</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Nama Bank</value>
+  </data>
+  <data name="Pension (Personal)" xml:space="preserve">
+    <value>Pensiun (Pribadi)</value>
+  </data>
+  <data name="Personal Income Tax" xml:space="preserve">
+    <value>Pajak Penghasilan Pribadi</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>Rekening Bank</value>
+  </data>
+  <data name="Maternity (Company)" xml:space="preserve">
+    <value>Iuran Bersalin (Perusahaan)</value>
+  </data>
+  <data name="Housing Fund (Company)" xml:space="preserve">
+    <value>Dana Perumahan (Perusahaan)</value>
+  </data>
+  <data name="Unemployment (Company)" xml:space="preserve">
+    <value>Pengangguran (Perusahaan)</value>
+  </data>
+  <data name="Work Injury (Company)" xml:space="preserve">
+    <value>Kecelakaan Kerja (Perusahaan)</value>
+  </data>
+  <data name="Medical (Company)" xml:space="preserve">
+    <value>Kesehatan (Perusahaan)</value>
+  </data>
+  <data name="Pension (Company)" xml:space="preserve">
+    <value>Pensiun (Perusahaan)</value>
+  </data>
 
 </root>

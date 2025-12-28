@@ -30,6 +30,18 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<decimal>("AdministrativeFines")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<string>("BankAccount")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("BankName")
+                        .HasColumnType("longtext");
+
+                    b.Property<decimal>("BaseSalary")
+                        .HasColumnType("decimal(65,30)");
+
                     b.Property<string>("Content")
                         .IsRequired()
                         .HasColumnType("longtext");
@@ -37,14 +49,71 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.Property<DateTime>("CreationTime")
                         .HasColumnType("datetime(6)");
 
+                    b.Property<decimal>("FullAttendance")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<decimal>("HousingFundCompany")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<decimal>("HousingFundPersonal")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<decimal>("JobSalary")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<decimal>("LateEarly")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<decimal>("MaternityCompany")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<decimal>("MedicalCompany")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<decimal>("MedicalPersonal")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<decimal>("OtherAllowances")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<decimal>("Overtime")
+                        .HasColumnType("decimal(65,30)");
+
                     b.Property<string>("OwnerId")
                         .IsRequired()
                         .HasColumnType("varchar(255)");
+
+                    b.Property<decimal>("PensionCompany")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<decimal>("PensionPersonal")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<decimal>("PerformanceBonus")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<decimal>("PersonalIncomeTax")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<decimal>("SickLeave")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<decimal>("SpecialAdditionalDeduction")
+                        .HasColumnType("decimal(65,30)");
 
                     b.Property<DateTime>("TargetMonth")
                         .HasColumnType("datetime(6)");
 
                     b.Property<decimal>("TotalAmount")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<decimal>("UnemploymentCompany")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<decimal>("UnemploymentPersonal")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<decimal>("WorkInjuryCompany")
                         .HasColumnType("decimal(65,30)");
 
                     b.HasKey("Id");
@@ -67,6 +136,17 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasMaxLength(150)
                         .HasColumnType("varchar(150)");
 
+                    b.Property<string>("BankAccount")
+                        .HasMaxLength(30)
+                        .HasColumnType("varchar(30)");
+
+                    b.Property<string>("BankName")
+                        .HasMaxLength(30)
+                        .HasColumnType("varchar(30)");
+
+                    b.Property<decimal>("BaseSalary")
+                        .HasColumnType("decimal(65,30)");
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("longtext");
@@ -85,6 +165,10 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
 
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("JobLevel")
+                        .HasMaxLength(30)
+                        .HasColumnType("varchar(30)");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("tinyint(1)");

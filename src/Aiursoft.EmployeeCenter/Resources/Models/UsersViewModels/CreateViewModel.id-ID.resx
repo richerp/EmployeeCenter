@@ -39,5 +39,17 @@
   <data name="Name" xml:space="preserve">
     <value>Nama</value>
   </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Gaji Pokok</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>Rekening Bank</value>
+  </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>Tingkat Jabatan</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Nama Bank</value>
+  </data>
 
 </root>

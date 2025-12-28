@@ -45,5 +45,17 @@
   <data name="The avatar file is invalid. Please upload it again." xml:space="preserve">
     <value>अवतार फ़ाइल अमान्य है। कृपया इसे फिर से अपलोड करें।</value>
   </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>कार्य स्तर</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>बैंक खाता</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>मूल वेतन</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>बैंक का नाम</value>
+  </data>
 
 </root>

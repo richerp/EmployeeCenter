@@ -69,5 +69,17 @@
   <data name="Profile Details" xml:space="preserve">
     <value>รายละเอียดโปรไฟล์</value>
   </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>ระดับงาน</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>เงินเดือนพื้นฐาน</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>ชื่อธนาคาร</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>บัญชีธนาคาร</value>
+  </data>
 
 </root>

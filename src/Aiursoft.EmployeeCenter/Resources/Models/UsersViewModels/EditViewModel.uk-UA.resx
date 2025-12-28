@@ -45,5 +45,17 @@
   <data name="The avatar file is invalid. Please upload it again." xml:space="preserve">
     <value>Файл аватара недійсний. Будь ласка, завантажте його знову.</value>
   </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Назва банку</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Базова зарплата</value>
+  </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>Рівень посади</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>Банківський рахунок</value>
+  </data>
 
 </root>

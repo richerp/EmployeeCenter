@@ -30,5 +30,74 @@
   <data name="Content (Markdown)" xml:space="preserve">
     <value>Inhoud (Markdown)</value>
   </data>
+  <data name="Other Allowances" xml:space="preserve">
+    <value>Overige Toelagen</value>
+  </data>
+  <data name="Full Attendance" xml:space="preserve">
+    <value>Volle aanwezigheid</value>
+  </data>
+  <data name="Overtime" xml:space="preserve">
+    <value>Overuren</value>
+  </data>
+  <data name="Job Salary" xml:space="preserve">
+    <value>Functiesalaris</value>
+  </data>
+  <data name="Performance Bonus" xml:space="preserve">
+    <value>Prestatiebonus</value>
+  </data>
+  <data name="Late/Early" xml:space="preserve">
+    <value>Te laat/te vroeg</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Basis salaris</value>
+  </data>
+  <data name="Sick Leave" xml:space="preserve">
+    <value>Ziekteverlof</value>
+  </data>
+  <data name="Administrative Fines" xml:space="preserve">
+    <value>Administratieve boetes</value>
+  </data>
+  <data name="Special Additional Deduction" xml:space="preserve">
+    <value>Speciale extra aftrek</value>
+  </data>
+  <data name="Pension (Personal)" xml:space="preserve">
+    <value>Pensioen (Persoonlijk)</value>
+  </data>
+  <data name="Medical (Personal)" xml:space="preserve">
+    <value>Medisch (Persoonlijk)</value>
+  </data>
+  <data name="Housing Fund (Personal)" xml:space="preserve">
+    <value>Woningfonds (Persoonlijk)</value>
+  </data>
+  <data name="Unemployment (Personal)" xml:space="preserve">
+    <value>Werkloosheid (Persoonlijk)</value>
+  </data>
+  <data name="Personal Income Tax" xml:space="preserve">
+    <value>Inkomstenbelasting</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Banknaam</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>Bankrekening</value>
+  </data>
+  <data name="Unemployment (Company)" xml:space="preserve">
+    <value>Werkloosheid (Werkgeversdeel)</value>
+  </data>
+  <data name="Work Injury (Company)" xml:space="preserve">
+    <value>Arbeidsongeval (Bedrijf)</value>
+  </data>
+  <data name="Medical (Company)" xml:space="preserve">
+    <value>Medisch (Werkgeversdeel)</value>
+  </data>
+  <data name="Pension (Company)" xml:space="preserve">
+    <value>Pensioen (Werkgeversdeel)</value>
+  </data>
+  <data name="Maternity (Company)" xml:space="preserve">
+    <value>Moederschapsverlof (Werkgever)</value>
+  </data>
+  <data name="Housing Fund (Company)" xml:space="preserve">
+    <value>Woningfonds (Werkgeversdeel)</value>
+  </data>
 
 </root>

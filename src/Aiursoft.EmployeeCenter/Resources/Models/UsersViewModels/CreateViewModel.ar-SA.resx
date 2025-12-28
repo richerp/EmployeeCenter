@@ -39,5 +39,17 @@
   <data name="Name" xml:space="preserve">
     <value>الاسم</value>
   </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>المستوى الوظيفي</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>الراتب الأساسي</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>رقم الحساب البنكي</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>اسم البنك</value>
+  </data>
 
 </root>

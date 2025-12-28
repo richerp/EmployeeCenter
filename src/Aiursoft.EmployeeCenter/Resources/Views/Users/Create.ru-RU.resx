@@ -69,5 +69,29 @@
   <data name="Create a password for the new user" xml:space="preserve">
     <value>Создайте пароль для нового пользователя</value>
   </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>Уровень должности</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Базовая зарплата</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Название банка</value>
+  </data>
+  <data name="Enter bank name" xml:space="preserve">
+    <value>Введите название банка</value>
+  </data>
+  <data name="Enter job level" xml:space="preserve">
+    <value>Введите уровень должности</value>
+  </data>
+  <data name="Enter base salary" xml:space="preserve">
+    <value>Введите базовый оклад</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>Банковский счет</value>
+  </data>
+  <data name="Enter bank account" xml:space="preserve">
+    <value>Введите номер банковского счёта</value>
+  </data>
 
 </root>

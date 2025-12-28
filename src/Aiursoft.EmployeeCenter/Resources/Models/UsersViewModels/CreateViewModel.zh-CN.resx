@@ -39,5 +39,17 @@
   <data name="Name" xml:space="preserve">
     <value>姓名</value>
   </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>职级</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>银行账户</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>银行名称</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>基本工资</value>
+  </data>
 
 </root>

@@ -72,5 +72,17 @@
   <data name="New avatar file" xml:space="preserve">
     <value>새 아바타 파일</value>
   </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>직급</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>은행명</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>은행 계좌</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>기본 급여</value>
+  </data>
 
 </root>

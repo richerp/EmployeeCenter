@@ -69,5 +69,29 @@
   <data name="Create a password for the new user" xml:space="preserve">
     <value>새 사용자용 비밀번호 생성</value>
   </data>
+  <data name="Enter bank name" xml:space="preserve">
+    <value>은행명 입력</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>은행명</value>
+  </data>
+  <data name="Enter job level" xml:space="preserve">
+    <value>직급을 입력하세요</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>기본 급여</value>
+  </data>
+  <data name="Enter bank account" xml:space="preserve">
+    <value>은행 계좌 입력</value>
+  </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>직급</value>
+  </data>
+  <data name="Enter base salary" xml:space="preserve">
+    <value>기본 급여 입력</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>은행 계좌</value>
+  </data>
 
 </root>

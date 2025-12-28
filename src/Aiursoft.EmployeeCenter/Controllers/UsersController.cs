@@ -103,6 +103,10 @@ public class UsersController(
                 UserName = newUser.UserName,
                 DisplayName = newUser.DisplayName,
                 Email = newUser.Email,
+                JobLevel = newUser.JobLevel,
+                BaseSalary = newUser.BaseSalary,
+                BankAccount = newUser.BankAccount,
+                BankName = newUser.BankName
             };
             var result = await userManager.CreateAsync(user, newUser.Password!);
             if (!result.Succeeded)
@@ -138,6 +142,10 @@ public class UsersController(
             DisplayName = user.DisplayName,
             Password = "you-cant-read-it",
             AvatarUrl = user.AvatarRelativePath,
+            JobLevel = user.JobLevel,
+            BaseSalary = user.BaseSalary,
+            BankAccount = user.BankAccount,
+            BankName = user.BankName,
             AllRoles = allRoles.Select(role => new UserRoleViewModel
             {
                 RoleName = role.Name!,
@@ -166,6 +174,10 @@ public class UsersController(
         userInDb.UserName = model.UserName;
         userInDb.DisplayName = model.DisplayName;
         userInDb.AvatarRelativePath = model.AvatarUrl;
+        userInDb.JobLevel = model.JobLevel;
+        userInDb.BaseSalary = model.BaseSalary;
+        userInDb.BankAccount = model.BankAccount;
+        userInDb.BankName = model.BankName;
         await userManager.UpdateAsync(userInDb);
 
         if (!string.IsNullOrWhiteSpace(model.Password) && model.Password != "you-cant-read-it")

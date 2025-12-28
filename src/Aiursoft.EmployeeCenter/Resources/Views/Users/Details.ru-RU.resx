@@ -69,5 +69,17 @@
   <data name="Account Details" xml:space="preserve">
     <value>Данные учетной записи</value>
   </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>Банковский счёт</value>
+  </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>Уровень должности</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Название банка</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Базовая зарплата</value>
+  </data>
 
 </root>

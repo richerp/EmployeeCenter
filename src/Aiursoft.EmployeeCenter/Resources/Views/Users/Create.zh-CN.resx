@@ -69,5 +69,29 @@
   <data name="Create User" xml:space="preserve">
     <value>创建用户</value>
   </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>银行名称</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>基本工资</value>
+  </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>职级</value>
+  </data>
+  <data name="Enter job level" xml:space="preserve">
+    <value>输入职位级别</value>
+  </data>
+  <data name="Enter base salary" xml:space="preserve">
+    <value>输入基本工资</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>银行账户</value>
+  </data>
+  <data name="Enter bank name" xml:space="preserve">
+    <value>输入银行名称</value>
+  </data>
+  <data name="Enter bank account" xml:space="preserve">
+    <value>输入银行账户</value>
+  </data>
 
 </root>

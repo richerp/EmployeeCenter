@@ -30,5 +30,74 @@
   <data name="Target Month" xml:space="preserve">
     <value>Цільовий місяць</value>
   </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Базова зарплата</value>
+  </data>
+  <data name="Overtime" xml:space="preserve">
+    <value>Понаднормові</value>
+  </data>
+  <data name="Sick Leave" xml:space="preserve">
+    <value>Лікарняний</value>
+  </data>
+  <data name="Job Salary" xml:space="preserve">
+    <value>Посадовий оклад</value>
+  </data>
+  <data name="Other Allowances" xml:space="preserve">
+    <value>Інші надбавки</value>
+  </data>
+  <data name="Late/Early" xml:space="preserve">
+    <value>Запізнення/Ранній прихід</value>
+  </data>
+  <data name="Performance Bonus" xml:space="preserve">
+    <value>Премія за результативність</value>
+  </data>
+  <data name="Full Attendance" xml:space="preserve">
+    <value>Повна відвідуваність</value>
+  </data>
+  <data name="Administrative Fines" xml:space="preserve">
+    <value>Адміністративні штрафи</value>
+  </data>
+  <data name="Medical (Personal)" xml:space="preserve">
+    <value>Медичне (особисте)</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Назва банку</value>
+  </data>
+  <data name="Housing Fund (Personal)" xml:space="preserve">
+    <value>Житловий фонд (особистий)</value>
+  </data>
+  <data name="Pension (Personal)" xml:space="preserve">
+    <value>Пенсійне страхування (особистий внесок)</value>
+  </data>
+  <data name="Unemployment (Personal)" xml:space="preserve">
+    <value>Безробіття (Особисте)</value>
+  </data>
+  <data name="Special Additional Deduction" xml:space="preserve">
+    <value>Спеціальний додатковий відрахування</value>
+  </data>
+  <data name="Personal Income Tax" xml:space="preserve">
+    <value>Податок на доходи фізичних осіб</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>Банківський рахунок</value>
+  </data>
+  <data name="Pension (Company)" xml:space="preserve">
+    <value>Пенсійні внески (роботодавець)</value>
+  </data>
+  <data name="Medical (Company)" xml:space="preserve">
+    <value>Медичне (Компанія)</value>
+  </data>
+  <data name="Unemployment (Company)" xml:space="preserve">
+    <value>Безробіття (Компанія)</value>
+  </data>
+  <data name="Maternity (Company)" xml:space="preserve">
+    <value>Материнство (Компанія)</value>
+  </data>
+  <data name="Housing Fund (Company)" xml:space="preserve">
+    <value>Житловий фонд (Компанія)</value>
+  </data>
+  <data name="Work Injury (Company)" xml:space="preserve">
+    <value>Травма на виробництві (Компанія)</value>
+  </data>
 
 </root>
