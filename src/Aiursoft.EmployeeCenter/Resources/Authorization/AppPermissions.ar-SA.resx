@@ -84,5 +84,11 @@
   <data name="Grants permission to restart the application instance. May cause availability interruptions but all settings and cache will be reloaded." xml:space="preserve">
     <value>يمنح الإذن بإعادة تشغيل نسخة التطبيق. قد يتسبب ذلك في انقطاعات في التوفر ولكن سيتم إعادة تحميل جميع الإعدادات والذاكرة المؤقتة.</value>
   </data>
+  <data name="Manage Payroll" xml:space="preserve">
+    <value>إدارة الرواتب</value>
+  </data>
+  <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
+    <value>يسمح بإصدار وإدارة إيصالات الرواتب لجميع المستخدمين.</value>
+  </data>
 
 </root>

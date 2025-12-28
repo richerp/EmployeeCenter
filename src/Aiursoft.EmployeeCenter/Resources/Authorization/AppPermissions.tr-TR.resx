@@ -84,5 +84,11 @@
   <data name="Grants permission to restart the application instance. May cause availability interruptions but all settings and cache will be reloaded." xml:space="preserve">
     <value>Uygulama örneğini yeniden başlatma iznini verir. Kullanılabilirlik kesintilerine neden olabilir ancak tüm ayarlar ve önbellek yeniden yüklenecektir.</value>
   </data>
+  <data name="Manage Payroll" xml:space="preserve">
+    <value>Maaş Bordrosunu Yönet</value>
+  </data>
+  <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
+    <value>Tüm kullanıcılar için maaş bordrolarını oluşturma ve yönetme izni verir.</value>
+  </data>
 
 </root>

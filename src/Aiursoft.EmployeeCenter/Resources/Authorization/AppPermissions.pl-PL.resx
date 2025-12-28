@@ -84,5 +84,11 @@
   <data name="Grants permission to restart the application instance. May cause availability interruptions but all settings and cache will be reloaded." xml:space="preserve">
     <value>Przyznaje uprawnienie do ponownego uruchomienia instancji aplikacji. Może powodować przerwy w dostępności, ale wszystkie ustawienia i pamięć podręczna zostaną przeładowane.</value>
   </data>
+  <data name="Manage Payroll" xml:space="preserve">
+    <value>Zarządzaj Płacami</value>
+  </data>
+  <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
+    <value>Umożliwia wystawianie i zarządzanie listami płac dla wszystkich użytkowników.</value>
+  </data>
 
 </root>

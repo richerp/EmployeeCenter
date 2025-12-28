@@ -84,5 +84,11 @@
   <data name="Grants permission to restart the application instance. May cause availability interruptions but all settings and cache will be reloaded." xml:space="preserve">
     <value>Cấp quyền khởi động lại phiên bản ứng dụng. Có thể gây ra gián đoạn về tính khả dụng nhưng tất cả cài đặt và bộ nhớ đệm sẽ được tải lại.</value>
   </data>
+  <data name="Manage Payroll" xml:space="preserve">
+    <value>Quản lý Bảng lương</value>
+  </data>
+  <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
+    <value>Cho phép phát hành và quản lý phiếu lương cho tất cả người dùng.</value>
+  </data>
 
 </root>

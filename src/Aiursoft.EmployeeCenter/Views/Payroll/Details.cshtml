@@ -1,0 +1,70 @@
+@using Aiursoft.EmployeeCenter.Services.FileStorage
+@model Aiursoft.EmployeeCenter.Models.PayrollViewModels.DetailsViewModel
+@inject StorageService StorageService
+
+<div class="row mb-2 mb-xl-3">
+    <div class="col-auto d-none d-sm-block">
+        <h3>@Localizer["Payroll Details"]</h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">@Localizer["Information"]</h5>
+            </div>
+            <div class="card-body">
+                <div class="text-center mb-3">
+                    <img src="@StorageService.RelativePathToInternetUrl(Model.Payroll.Owner.AvatarRelativePath)?w=128&square=true" alt="@Model.Payroll.Owner.DisplayName" class="rounded-circle mb-2" width="128" height="128" />
+                    <h4 class="mb-0">@Model.Payroll.Owner.DisplayName</h4>
+                </div>
+                
+                <hr />
+
+                <div class="mb-3">
+                    <label class="form-label text-muted">@Localizer["Target Month"]</label>
+                    <div class="h5">@Model.Payroll.TargetMonth.ToString("yyyy-MM")</div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label text-muted">@Localizer["Total Amount"]</label>
+                    <div class="h4 text-primary">@Model.Payroll.TotalAmount.ToString("C")</div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label text-muted">@Localizer["Issue Date"]</label>
+                    <div>@Model.Payroll.CreationTime.ToString("yyyy-MM-dd HH:mm")</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-8">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">@Localizer["Payroll Content"]</h5>
+            </div>
+            <div class="card-body">
+                <div id="payroll-content" style="white-space: pre-wrap;">@Model.Payroll.Content</div>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-secondary d-print-none" onclick="window.print();">
+                    <i class="align-middle me-2" data-lucide="printer"></i> @Localizer["Print"]
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    @@media print {
+        .d-print-none {
+            display: none !important;
+        }
+        .card {
+            border: none !important;
+            box-shadow: none !important;
+        }
+    }
+</style>

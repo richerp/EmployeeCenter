@@ -84,5 +84,11 @@
   <data name="Grants permission to restart the application instance. May cause availability interruptions but all settings and cache will be reloaded." xml:space="preserve">
     <value>Acordă permisiunea de a reporni instanța aplicației. Poate cauza întreruperi de disponibilitate, dar toate setările și memoria cache vor fi reîncărcate.</value>
   </data>
+  <data name="Manage Payroll" xml:space="preserve">
+    <value>Gestionare Salarii</value>
+  </data>
+  <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
+    <value>Permite emitirea și gestionarea fluturașilor de salariu pentru toți utilizatorii.</value>
+  </data>
 
 </root>

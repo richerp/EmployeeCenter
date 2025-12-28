@@ -21,4 +21,7 @@ public static class AppPermissionNames
     // System Management
     public const string CanViewSystemContext = nameof(CanViewSystemContext);
     public const string CanRebootThisApp = nameof(CanRebootThisApp);
+
+    // Payroll Management
+    public const string CanManagePayroll = nameof(CanManagePayroll);
 }
