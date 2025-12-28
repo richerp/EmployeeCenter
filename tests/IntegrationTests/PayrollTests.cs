@@ -3,10 +3,7 @@ using System.Text.RegularExpressions;
 using Aiursoft.CSTools.Tools;
 using Aiursoft.DbTools;
 using Aiursoft.EmployeeCenter.Entities;
-using Microsoft.Extensions.Hosting;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using static Aiursoft.WebTools.Extends;
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;

@@ -7,12 +7,12 @@ public class Payroll
     [Key]
     public int Id { get; set; }
 
-    public string OwnerId { get; set; }
-    public User Owner { get; set; }
+    public required string OwnerId { get; set; }
+    public User Owner { get; set; } = null!;
 
     public DateTime TargetMonth { get; set; }
 
-    public string Content { get; set; }
+    public required string Content { get; set; }
 
     public decimal TotalAmount { get; set; }
 
