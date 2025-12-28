@@ -30,5 +30,74 @@
   <data name="Target Month" xml:space="preserve">
     <value>Målmånad</value>
   </data>
+  <data name="Full Attendance" xml:space="preserve">
+    <value>Full närvaro</value>
+  </data>
+  <data name="Overtime" xml:space="preserve">
+    <value>Övertid</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Grundlön</value>
+  </data>
+  <data name="Sick Leave" xml:space="preserve">
+    <value>Sjukfrånvaro</value>
+  </data>
+  <data name="Job Salary" xml:space="preserve">
+    <value>Arbetslön</value>
+  </data>
+  <data name="Performance Bonus" xml:space="preserve">
+    <value>Prestandabonus</value>
+  </data>
+  <data name="Other Allowances" xml:space="preserve">
+    <value>Övriga ersättningar</value>
+  </data>
+  <data name="Late/Early" xml:space="preserve">
+    <value>Försenad/Tidig</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Banknamn</value>
+  </data>
+  <data name="Housing Fund (Personal)" xml:space="preserve">
+    <value>Bostadsfond (Personlig)</value>
+  </data>
+  <data name="Special Additional Deduction" xml:space="preserve">
+    <value>Särskild extra avdrag</value>
+  </data>
+  <data name="Medical (Personal)" xml:space="preserve">
+    <value>Sjukförsäkring (Personlig)</value>
+  </data>
+  <data name="Personal Income Tax" xml:space="preserve">
+    <value>Personlig inkomstskatt</value>
+  </data>
+  <data name="Pension (Personal)" xml:space="preserve">
+    <value>Pension (Personlig)</value>
+  </data>
+  <data name="Unemployment (Personal)" xml:space="preserve">
+    <value>Arbetslöshetsförsäkring (Personlig)</value>
+  </data>
+  <data name="Administrative Fines" xml:space="preserve">
+    <value>Administrativa böter</value>
+  </data>
+  <data name="Pension (Company)" xml:space="preserve">
+    <value>Pension (Företag)</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>Bankkonto</value>
+  </data>
+  <data name="Medical (Company)" xml:space="preserve">
+    <value>Medicinsk (Företag)</value>
+  </data>
+  <data name="Unemployment (Company)" xml:space="preserve">
+    <value>Arbetslöshetsförsäkring (Företag)</value>
+  </data>
+  <data name="Work Injury (Company)" xml:space="preserve">
+    <value>Arbetsskada (Företag)</value>
+  </data>
+  <data name="Maternity (Company)" xml:space="preserve">
+    <value>Moderskapsförsäkring (Företag)</value>
+  </data>
+  <data name="Housing Fund (Company)" xml:space="preserve">
+    <value>Bostadsfond (Företag)</value>
+  </data>
 
 </root>

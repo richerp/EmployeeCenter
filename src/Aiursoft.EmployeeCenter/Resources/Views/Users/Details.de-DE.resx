@@ -69,5 +69,17 @@
   <data name="Profile Details" xml:space="preserve">
     <value>Profil-Details</value>
   </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>Job Level</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Bank Name</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Grundgehalt</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>Bankkonto</value>
+  </data>
 
 </root>

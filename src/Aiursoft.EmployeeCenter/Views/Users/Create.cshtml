@@ -3,6 +3,9 @@
 @model Aiursoft.EmployeeCenter.Models.UsersViewModels.CreateViewModel
 @inject IOptions<AppSettings> AppSettings
 
+@* ReSharper disable Razor.ResourceNotResolved *@
+<div class="row mb-2 mb-xl-3">
+
 @* Standard page title for consistency. *@
 <h1 class="h3 mb-3">@Localizer["Create New User"]</h1>
 
@@ -61,6 +64,32 @@
                         <span asp-validation-for="Password" class="text-danger"></span>
                     </div>
 
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="JobLevel" class="form-label">@Localizer["Job Level"]</label>
+                            <input asp-for="JobLevel" class="form-control" placeholder="@Localizer["Enter job level"]" />
+                            <span asp-validation-for="JobLevel" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="BaseSalary" class="form-label">@Localizer["Base Salary"]</label>
+                            <input asp-for="BaseSalary" class="form-control" placeholder="@Localizer["Enter base salary"]" />
+                            <span asp-validation-for="BaseSalary" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="BankName" class="form-label">@Localizer["Bank Name"]</label>
+                            <input asp-for="BankName" class="form-control" placeholder="@Localizer["Enter bank name"]" />
+                            <span asp-validation-for="BankName" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="BankAccount" class="form-label">@Localizer["Bank Account"]</label>
+                            <input asp-for="BankAccount" class="form-control" placeholder="@Localizer["Enter bank account"]" />
+                            <span asp-validation-for="BankAccount" class="text-danger"></span>
+                        </div>
+                    </div>
+
                     <div class="mt-4">
                         <button type="submit" class="btn btn-primary">
                             <i class="align-middle me-2" data-lucide="user-plus"></i> @Localizer["Create User"]
@@ -73,3 +102,4 @@
         </div>
     </div>
 </div>
+@* ReSharper restore Razor.ResourceNotResolved *@

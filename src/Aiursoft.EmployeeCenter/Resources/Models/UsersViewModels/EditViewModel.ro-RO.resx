@@ -45,5 +45,17 @@
   <data name="The avatar file is invalid. Please upload it again." xml:space="preserve">
     <value>Fișierul avatar este invalid. Vă rugăm să îl încărcați din nou.</value>
   </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>Cont bancar</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Salariu de bază</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Numele băncii</value>
+  </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>Nivelul postului</value>
+  </data>
 
 </root>

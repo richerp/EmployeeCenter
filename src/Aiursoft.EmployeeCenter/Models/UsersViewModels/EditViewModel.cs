@@ -47,6 +47,21 @@ public class EditViewModel : UiStackLayoutViewModel
     [MinLength(2)]
     public string? AvatarUrl { get; set; }
 
+    [Display(Name = "Job Level")]
+    [MaxLength(30)]
+    public string? JobLevel { get; set; }
+
+    [Display(Name = "Base Salary")]
+    public decimal BaseSalary { get; set; }
+
+    [Display(Name = "Bank Account")]
+    [MaxLength(30)]
+    public string? BankAccount { get; set; }
+
+    [Display(Name = "Bank Name")]
+    [MaxLength(30)]
+    public string? BankName { get; set; }
+
     [Required(ErrorMessage = "The {0} is required.")]
     [FromRoute]
     public required string Id { get; set; }

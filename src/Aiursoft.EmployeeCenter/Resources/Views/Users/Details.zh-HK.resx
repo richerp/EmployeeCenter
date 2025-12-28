@@ -69,5 +69,17 @@
   <data name="Profile Details" xml:space="preserve">
     <value>個人資料詳情</value>
   </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>職級</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>銀行名稱</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>基本薪金</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>銀行戶口</value>
+  </data>
 
 </root>

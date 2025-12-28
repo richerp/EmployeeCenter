@@ -3,7 +3,7 @@
 @model Aiursoft.EmployeeCenter.Models.UsersViewModels.EditViewModel
 @inject IOptions<AppSettings> AppSettings
 
-@* A standard page header that includes the user's name for context and primary navigation actions. *@
+@* ReSharper disable Razor.ResourceNotResolved *@
 <div class="row mb-2 mb-xl-3">
     <div class="col-auto d-none d-sm-block">
         <h3>@Localizer["Edit User:"] <span class="text-muted">@Model.DisplayName</span></h3>
@@ -61,6 +61,26 @@
                     <input asp-for="Password" class="form-control form-control-lg" />
                     <span asp-validation-for="Password" class="text-danger"></span>
                     <small class="form-text text-muted">@Localizer["Leave blank if you don't want to change the password."]</small>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="JobLevel" class="form-label">@Localizer["Job Level"]</label>
+                    <input asp-for="JobLevel" class="form-control" />
+                    <span asp-validation-for="JobLevel" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="BaseSalary" class="form-label">@Localizer["Base Salary"]</label>
+                    <input asp-for="BaseSalary" class="form-control" />
+                    <span asp-validation-for="BaseSalary" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="BankName" class="form-label">@Localizer["Bank Name"]</label>
+                    <input asp-for="BankName" class="form-control" />
+                    <span asp-validation-for="BankName" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="BankAccount" class="form-label">@Localizer["Bank Account"]</label>
+                    <input asp-for="BankAccount" class="form-control" />
+                    <span asp-validation-for="BankAccount" class="text-danger"></span>
                 </div>
                 <div class="mb-3">
                     <label asp-for="AvatarUrl" class="form-label">@Localizer["New avatar file"]</label>
@@ -120,3 +140,4 @@
 @section scripts {
     <script src="~/node_modules/dropify/dist/js/dropify.min.js"></script>
 }
+@* ReSharper restore Razor.ResourceNotResolved *@

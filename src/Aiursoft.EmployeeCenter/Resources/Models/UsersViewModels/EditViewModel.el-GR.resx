@@ -45,5 +45,17 @@
   <data name="The avatar file is invalid. Please upload it again." xml:space="preserve">
     <value>Το αρχείο avatar δεν είναι έγκυρο. Παρακαλώ ανεβάστε το ξανά.</value>
   </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Βασικός Μισθός</value>
+  </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>Επίπεδο Εργασίας</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Όνομα Τράπεζας</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>Τραπεζικός Λογαριασμός</value>
+  </data>
 
 </root>

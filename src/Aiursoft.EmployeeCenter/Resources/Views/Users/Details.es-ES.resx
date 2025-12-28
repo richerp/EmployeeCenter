@@ -69,5 +69,17 @@
   <data name="Account Details" xml:space="preserve">
     <value>Detalles de la cuenta</value>
   </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Salario Base</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>Cuenta Bancaria</value>
+  </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>Nivel de Trabajo</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Nombre del banco</value>
+  </data>
 
 </root>

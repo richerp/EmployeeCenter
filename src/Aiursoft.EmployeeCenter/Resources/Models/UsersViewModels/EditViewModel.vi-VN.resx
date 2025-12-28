@@ -45,5 +45,17 @@
   <data name="The avatar file is invalid. Please upload it again." xml:space="preserve">
     <value>Tập tin avatar không hợp lệ. Vui lòng tải lên lại.</value>
   </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>Tài khoản ngân hàng</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Lương cơ bản</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Tên ngân hàng</value>
+  </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>Cấp bậc công việc</value>
+  </data>
 
 </root>

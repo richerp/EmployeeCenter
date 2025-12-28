@@ -45,5 +45,17 @@
   <data name="The avatar file is invalid. Please upload it again." xml:space="preserve">
     <value>ملف الصورة الشخصية غير صالح. يرجى رفعه مرة أخرى.</value>
   </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>اسم البنك</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>الراتب الأساسي</value>
+  </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>المستوى الوظيفي</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>رقم الحساب البنكي</value>
+  </data>
 
 </root>

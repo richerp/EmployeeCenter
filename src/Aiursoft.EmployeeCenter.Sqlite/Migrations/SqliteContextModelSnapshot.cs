@@ -23,6 +23,18 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<decimal>("AdministrativeFines")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("BankAccount")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("BankName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("BaseSalary")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Content")
                         .IsRequired()
                         .HasColumnType("TEXT");
@@ -30,14 +42,71 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.Property<DateTime>("CreationTime")
                         .HasColumnType("TEXT");
 
+                    b.Property<decimal>("FullAttendance")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("HousingFundCompany")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("HousingFundPersonal")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("JobSalary")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("LateEarly")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("MaternityCompany")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("MedicalCompany")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("MedicalPersonal")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("OtherAllowances")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("Overtime")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("OwnerId")
                         .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("PensionCompany")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("PensionPersonal")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("PerformanceBonus")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("PersonalIncomeTax")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("SickLeave")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("SpecialAdditionalDeduction")
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("TargetMonth")
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("TotalAmount")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("UnemploymentCompany")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("UnemploymentPersonal")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("WorkInjuryCompany")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
@@ -60,6 +129,17 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .HasMaxLength(150)
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("BankAccount")
+                        .HasMaxLength(30)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("BankName")
+                        .HasMaxLength(30)
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("BaseSalary")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("TEXT");
@@ -78,6 +158,10 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
 
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("JobLevel")
+                        .HasMaxLength(30)
+                        .HasColumnType("TEXT");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("INTEGER");

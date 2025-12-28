@@ -45,5 +45,17 @@
   <data name="The avatar file is invalid. Please upload it again." xml:space="preserve">
     <value>Avatarfilen är ogiltig. Ladda upp den igen.</value>
   </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Grundlön</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Banknamn</value>
+  </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>Jobbnivå</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>Bankkonto</value>
+  </data>
 
 </root>

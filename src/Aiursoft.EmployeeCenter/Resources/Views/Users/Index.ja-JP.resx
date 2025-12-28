@@ -57,5 +57,8 @@
   <data name="(no role assigned)" xml:space="preserve">
     <value>（ロール未割り当て）</value>
   </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>職位レベル</value>
+  </data>
 
 </root>

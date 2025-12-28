@@ -69,5 +69,29 @@
   <data name="Create a password for the new user" xml:space="preserve">
     <value>Tạo mật khẩu cho người dùng mới</value>
   </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Lương cơ bản</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Tên Ngân hàng</value>
+  </data>
+  <data name="Enter base salary" xml:space="preserve">
+    <value>Nhập mức lương cơ bản</value>
+  </data>
+  <data name="Enter bank account" xml:space="preserve">
+    <value>Nhập số tài khoản ngân hàng</value>
+  </data>
+  <data name="Enter job level" xml:space="preserve">
+    <value>Nhập cấp bậc công việc</value>
+  </data>
+  <data name="Enter bank name" xml:space="preserve">
+    <value>Nhập tên ngân hàng</value>
+  </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>Cấp bậc công việc</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>Số tài khoản ngân hàng</value>
+  </data>
 
 </root>

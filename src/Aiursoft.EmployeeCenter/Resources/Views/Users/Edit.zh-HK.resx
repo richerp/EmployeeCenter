@@ -72,5 +72,17 @@
   <data name="New avatar file" xml:space="preserve">
     <value>新頭像檔案</value>
   </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>職級</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>銀行帳戶</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>銀行名稱</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>基本薪金</value>
+  </data>
 
 </root>

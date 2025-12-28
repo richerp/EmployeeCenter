@@ -14,4 +14,15 @@ public class User : IdentityUser
     [MaxLength(150)] [MinLength(2)] public string AvatarRelativePath { get; set; } = DefaultAvatarPath;
 
     public DateTime CreationTime { get; init; } = DateTime.UtcNow;
+
+    [MaxLength(30)]
+    public string? JobLevel { get; set; }
+
+    public decimal BaseSalary { get; set; }
+
+    [MaxLength(30)]
+    public string? BankAccount { get; set; }
+
+    [MaxLength(30)]
+    public string? BankName { get; set; }
 }

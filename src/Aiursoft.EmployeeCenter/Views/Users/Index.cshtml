@@ -1,14 +1,8 @@
 @using Aiursoft.EmployeeCenter.Services.FileStorage
 @model Aiursoft.EmployeeCenter.Models.UsersViewModels.IndexViewModel
 @inject StorageService StorageService
-@* The page-specific style is preserved. *@
-<style>
-    .clickable-row {
-        cursor: pointer;
-    }
-</style>
 
-@* A standard page header, consistent with the Roles management page. *@
+@* ReSharper disable Razor.ResourceNotResolved *@
 <div class="row mb-2 mb-xl-3">
     <div class="col-auto d-none d-sm-block">
         <h3>@Localizer["Manage Users"]</h3>
@@ -36,6 +30,7 @@
                 <th>@Localizer["Avatar"]</th>
                 <th>@Localizer["User name"]</th>
                 <th>@Localizer["Name"]</th>
+                <th>@Localizer["Job Level"]</th>
                 <th>@Localizer["Email"]</th>
                 <th>@Localizer["Roles"]</th>
                 <th class="text-end">@Localizer["Actions"]</th>
@@ -51,6 +46,7 @@
                     </td>
                     <td>@item.User.UserName</td>
                     <td>@item.User.DisplayName</td>
+                    <td>@(item.User.JobLevel ?? "N/A")</td>
                     <td>@item.User.Email</td>
                     <td>
                         @* The complex C# presentation logic for roles is identified and fully preserved. *@
@@ -108,3 +104,4 @@
         });
     </script>
 }
+@* ReSharper restore Razor.ResourceNotResolved *@

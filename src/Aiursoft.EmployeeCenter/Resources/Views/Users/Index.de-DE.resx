@@ -57,5 +57,8 @@
   <data name="(no role assigned)" xml:space="preserve">
     <value>(keine Rolle zugewiesen)</value>
   </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>Job Level</value>
+  </data>
 
 </root>

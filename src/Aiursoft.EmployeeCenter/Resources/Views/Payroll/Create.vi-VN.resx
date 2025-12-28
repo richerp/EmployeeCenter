@@ -45,5 +45,185 @@
   <data name="Back to List" xml:space="preserve">
     <value>Quay lại Danh sách</value>
   </data>
+  <data name="Value" xml:space="preserve">
+    <value>Giá trị</value>
+  </data>
+  <data name="Item" xml:space="preserve">
+    <value>Mục</value>
+  </data>
+  <data name="Compliance Payroll Table" xml:space="preserve">
+    <value>Bảng Lương Tuân Thủ</value>
+  </data>
+  <data name="Description / Formula" xml:space="preserve">
+    <value>Mô tả / Công thức</value>
+  </data>
+  <data name="Remark / Content" xml:space="preserve">
+    <value>Ghi chú / Nội dung</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Danh mục</value>
+  </data>
+  <data name="Payroll Configuration" xml:space="preserve">
+    <value>Cấu hình Bảng Lương</value>
+  </data>
+  <data name="Optional remarks..." xml:space="preserve">
+    <value>Ghi chú tùy chọn...</value>
+  </data>
+  <data name="Earnings" xml:space="preserve">
+    <value>Thu nhập</value>
+  </data>
+  <data name="Position-based salary" xml:space="preserve">
+    <value>Lương theo vị trí</value>
+  </data>
+  <data name="Performance Bonus" xml:space="preserve">
+    <value>Thưởng Hiệu Suất</value>
+  </data>
+  <data name="Job Salary" xml:space="preserve">
+    <value>Lương chức vụ</value>
+  </data>
+  <data name="Monthly performance evaluation" xml:space="preserve">
+    <value>Đánh giá hiệu suất hàng tháng</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Lương cơ bản</value>
+  </data>
+  <data name="Contracted basic salary" xml:space="preserve">
+    <value>Lương cơ bản theo hợp đồng</value>
+  </data>
+  <data name="Overtime Pay" xml:space="preserve">
+    <value>Tiền làm thêm giờ</value>
+  </data>
+  <data name="Other Allowances" xml:space="preserve">
+    <value>Phụ cấp khác</value>
+  </data>
+  <data name="Bonus for no absence" xml:space="preserve">
+    <value>Thưởng chuyên cần</value>
+  </data>
+  <data name="Full Attendance" xml:space="preserve">
+    <value>Chuyên cần đầy đủ</value>
+  </data>
+  <data name="Calculated based on overtime hours" xml:space="preserve">
+    <value>Tính toán dựa trên số giờ làm thêm</value>
+  </data>
+  <data name="Meal, transport, etc." xml:space="preserve">
+    <value>Ăn uống, đi lại, v.v.</value>
+  </data>
+  <data name="Total Earnings" xml:space="preserve">
+    <value>Tổng Thu Nhập</value>
+  </data>
+  <data name="Attendance &amp; Penalties" xml:space="preserve">
+    <value>Chấm công &amp; Phạt</value>
+  </data>
+  <data name="Enter as negative value" xml:space="preserve">
+    <value>Nhập giá trị âm</value>
+  </data>
+  <data name="Late / Early Leave" xml:space="preserve">
+    <value>Đi muộn / Về sớm</value>
+  </data>
+  <data name="usually" xml:space="preserve">
+    <value>thường là</value>
+  </data>
+  <data name="Pension" xml:space="preserve">
+    <value>Lương hưu</value>
+  </data>
+  <data name="Administrative Fines" xml:space="preserve">
+    <value>Phạt hành chính</value>
+  </data>
+  <data name="Medical" xml:space="preserve">
+    <value>Y tế</value>
+  </data>
+  <data name="Insurances (Personal)" xml:space="preserve">
+    <value>Bảo hiểm (Cá nhân)</value>
+  </data>
+  <data name="Sick / Personal Leave" xml:space="preserve">
+    <value>Nghỉ ốm / Nghỉ phép cá nhân</value>
+  </data>
+  <data name="Tax Information" xml:space="preserve">
+    <value>Thông Tin Thuế</value>
+  </data>
+  <data name="Housing Fund" xml:space="preserve">
+    <value>Quỹ nhà ở</value>
+  </data>
+  <data name="Special Additional Deduction" xml:space="preserve">
+    <value>Khấu trừ bổ sung đặc biệt</value>
+  </data>
+  <data name="Total Personal Insurances" xml:space="preserve">
+    <value>Tổng Bảo Hiểm Cá Nhân</value>
+  </data>
+  <data name="Unemployment" xml:space="preserve">
+    <value>Bảo hiểm thất nghiệp</value>
+  </data>
+  <data name="Education, housing, etc." xml:space="preserve">
+    <value>Giáo dục, nhà ở, v.v.</value>
+  </data>
+  <data name="Personal Income Tax" xml:space="preserve">
+    <value>Thuế thu nhập cá nhân</value>
+  </data>
+  <data name="Taxable Income" xml:space="preserve">
+    <value>Thu nhập chịu thuế</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Tên Ngân hàng</value>
+  </data>
+  <data name="Actual Payment" xml:space="preserve">
+    <value>Thanh toán thực tế</value>
+  </data>
+  <data name="Actual Salary (Net)" xml:space="preserve">
+    <value>Lương thực nhận (Ròng)</value>
+  </data>
+  <data name="Calculated pre-paid tax" xml:space="preserve">
+    <value>Thuế tạm tính</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>Số tài khoản ngân hàng</value>
+  </data>
+  <data name="Employee&apos;s account number" xml:space="preserve">
+    <value>Số tài khoản nhân viên</value>
+  </data>
+  <data name="Employee&apos;s bank" xml:space="preserve">
+    <value>Ngân hàng của nhân viên</value>
+  </data>
+  <data name="Medical (Company)" xml:space="preserve">
+    <value>Bảo hiểm Y tế (Công ty)</value>
+  </data>
+  <data name="Company Cost" xml:space="preserve">
+    <value>Chi phí Công ty</value>
+  </data>
+  <data name="Pension (Company)" xml:space="preserve">
+    <value>Bảo hiểm hưu trí (Công ty)</value>
+  </data>
+  <data name="Maternity (Company)" xml:space="preserve">
+    <value>Thai sản (Công ty)</value>
+  </data>
+  <data name="Unemployment (Company)" xml:space="preserve">
+    <value>Bảo hiểm thất nghiệp (Công ty)</value>
+  </data>
+  <data name="Work Injury (Company)" xml:space="preserve">
+    <value>Bảo hiểm Tai nạn Lao động (Công ty)</value>
+  </data>
+  <data name="Housing Fund (Company)" xml:space="preserve">
+    <value>Quỹ Nhà Ở (Công ty)</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Hủy</value>
+  </data>
+  <data name="Total Company Cost" xml:space="preserve">
+    <value>Tổng Chi Phí Công Ty</value>
+  </data>
+  <data name="Company Paid Insurances" xml:space="preserve">
+    <value>Bảo hiểm Công ty Chi trả</value>
+  </data>
+  <data name="Deductions" xml:space="preserve">
+    <value>Các khoản khấu trừ</value>
+  </data>
+  <data name="Calculation Formula Graph" xml:space="preserve">
+    <value>Biểu đồ Công thức Tính toán</value>
+  </data>
+  <data name="Income Tax" xml:space="preserve">
+    <value>Thuế thu nhập</value>
+  </data>
+  <data name="Personal Insurance" xml:space="preserve">
+    <value>Bảo hiểm cá nhân</value>
+  </data>
 
 </root>

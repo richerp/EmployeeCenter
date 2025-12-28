@@ -72,5 +72,17 @@
   <data name="New avatar file" xml:space="preserve">
     <value>Nouveau fichier d&apos;avatar</value>
   </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>Compte bancaire</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Nom de la banque</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Salaire de base</value>
+  </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>Niveau de poste</value>
+  </data>
 
 </root>

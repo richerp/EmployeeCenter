@@ -6,7 +6,8 @@
 @inject IStringLocalizer<AppPermissions> PermissionLocalizer
 @inject StorageService StorageService
 
-<div class="row mb-2 mb-xl-3" xmlns="http://www.w3.org/1999/html">
+@* ReSharper disable Razor.ResourceNotResolved *@
+<div class="row mb-2 mb-xl-3">
     <div class="col-auto d-none d-sm-block">
         <h3>@Localizer["User Details:"] <span class="text-muted">@Model.User.UserName</span></h3>
     </div>
@@ -51,6 +52,30 @@
                         <div class="col-sm-9">
                             <label data-utc-time="@Model.User.CreationTime.ToHtmlDateTime()" class="text-monospace"></label>
                         </div>
+                    </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="row">
+                        <strong class="col-sm-3">@Localizer["Job Level"]</strong>
+                        <div class="col-sm-9">@(Model.User.JobLevel ?? "N/A")</div>
+                    </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="row">
+                        <strong class="col-sm-3">@Localizer["Base Salary"]</strong>
+                        <div class="col-sm-9">@Model.User.BaseSalary.ToString("C")</div>
+                    </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="row">
+                        <strong class="col-sm-3">@Localizer["Bank Name"]</strong>
+                        <div class="col-sm-9">@(Model.User.BankName ?? "N/A")</div>
+                    </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="row">
+                        <strong class="col-sm-3">@Localizer["Bank Account"]</strong>
+                        <div class="col-sm-9">@(Model.User.BankAccount ?? "N/A")</div>
                     </div>
                 </div>
             </div>
@@ -100,3 +125,4 @@
         </div>
     </div>
 </div>
+@* ReSharper restore Razor.ResourceNotResolved *@

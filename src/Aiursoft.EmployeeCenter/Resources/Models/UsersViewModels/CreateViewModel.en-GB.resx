@@ -39,5 +39,17 @@
   <data name="Name" xml:space="preserve">
     <value>Full Name</value>
   </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Bank Name</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Basic Salary</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>Bank Account</value>
+  </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>Job Level</value>
+  </data>
 
 </root>

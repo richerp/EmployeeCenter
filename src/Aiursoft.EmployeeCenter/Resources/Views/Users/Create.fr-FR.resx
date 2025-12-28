@@ -69,5 +69,29 @@
   <data name="Create a password for the new user" xml:space="preserve">
     <value>Créer un mot de passe pour le nouvel utilisateur</value>
   </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Salaire de base</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>Compte bancaire</value>
+  </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>Niveau de poste</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Nom de la banque</value>
+  </data>
+  <data name="Enter base salary" xml:space="preserve">
+    <value>Saisir le salaire de base</value>
+  </data>
+  <data name="Enter job level" xml:space="preserve">
+    <value>Saisir le niveau de poste</value>
+  </data>
+  <data name="Enter bank name" xml:space="preserve">
+    <value>Saisir le nom de la banque</value>
+  </data>
+  <data name="Enter bank account" xml:space="preserve">
+    <value>Saisir le numéro de compte bancaire</value>
+  </data>
 
 </root>
