@@ -81,5 +81,8 @@
   <data name="Bank Name" xml:space="preserve">
     <value>Nom de la banque</value>
   </data>
+  <data name="Manage SSH Keys" xml:space="preserve">
+    <value>Gérer les clés SSH</value>
+  </data>
 
 </root>

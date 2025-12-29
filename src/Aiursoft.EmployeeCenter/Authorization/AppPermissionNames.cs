@@ -28,4 +28,7 @@ public static class AppPermissionNames
     // Password Management
     public const string CanAddGlobalPassword = nameof(CanAddGlobalPassword);
     public const string CanManageAnyPassword = nameof(CanManageAnyPassword);
+
+    // SSH Key Management
+    public const string CanManageSshKeys = nameof(CanManageSshKeys);
 }

@@ -1,0 +1,14 @@
+We are working on escorting the merge request #6: Fix for issue #9: 增加功能：共享密码管理。
+
+There are merge conflicts between the source branch 'fix-issue-9' and the target branch 'master'.
+
+Your task is to:
+1. Merge the target branch 'master' into the current branch.
+2. Resolve any merge conflicts that arise.
+3. Ensure the code still builds and looks correct.
+
+Please run 'git fetch origin master' and then 'git merge origin/master' to start the merge process. 
+
+Please also bump the version of the updated nuget package projects if necessary.
+
+After resolving conflicts, don't forget to run git commit.

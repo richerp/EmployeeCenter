@@ -81,5 +81,8 @@
   <data name="Base Salary" xml:space="preserve">
     <value>기본 급여</value>
   </data>
+  <data name="Manage SSH Keys" xml:space="preserve">
+    <value>SSH 키 관리</value>
+  </data>
 
 </root>

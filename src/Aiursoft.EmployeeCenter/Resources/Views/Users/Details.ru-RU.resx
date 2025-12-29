@@ -81,5 +81,8 @@
   <data name="Base Salary" xml:space="preserve">
     <value>Базовая зарплата</value>
   </data>
+  <data name="Manage SSH Keys" xml:space="preserve">
+    <value>Управление SSH-ключами</value>
+  </data>
 
 </root>

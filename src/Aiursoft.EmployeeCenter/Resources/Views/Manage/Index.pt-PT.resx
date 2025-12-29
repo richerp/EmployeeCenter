@@ -54,5 +54,8 @@
   <data name="You can&apos;t change your password because local authentication is disabled. Please edit your profile from the" xml:space="preserve">
     <value>Não pode alterar a sua palavra-passe porque a autenticação local está desativada. Por favor, edite o seu perfil a partir do</value>
   </data>
+  <data name="SSH Keys" xml:space="preserve">
+    <value>Chaves SSH</value>
+  </data>
 
 </root>

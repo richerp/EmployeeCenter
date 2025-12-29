@@ -193,6 +193,37 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.ToTable("Payrolls");
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.SshKey", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreationTime")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("OwnerId")
+                        .IsRequired()
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<string>("PublicKey")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OwnerId");
+
+                    b.ToTable("SshKeys");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.User", b =>
                 {
                     b.Property<string>("Id")
@@ -446,6 +477,17 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Payroll", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "Owner")
+                        .WithMany()
+                        .HasForeignKey("OwnerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Owner");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.SshKey", b =>
                 {
                     b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "Owner")
                         .WithMany()

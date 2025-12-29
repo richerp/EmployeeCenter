@@ -54,5 +54,8 @@
   <data name="You can&apos;t change your password because local authentication is disabled. Please edit your profile from the" xml:space="preserve">
     <value>คุณไม่สามารถเปลี่ยนรหัสผ่านได้ เนื่องจากการยืนยันตัวตนภายในระบบถูกปิดใช้งาน กรุณาแก้ไขโปรไฟล์ของคุณจาก</value>
   </data>
+  <data name="SSH Keys" xml:space="preserve">
+    <value>คีย์ SSH</value>
+  </data>
 
 </root>

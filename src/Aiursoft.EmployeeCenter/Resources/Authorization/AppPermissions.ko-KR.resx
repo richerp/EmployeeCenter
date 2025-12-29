@@ -90,5 +90,11 @@
   <data name="Manage Payroll" xml:space="preserve">
     <value>급여 관리</value>
   </data>
+  <data name="Manage SSH Keys" xml:space="preserve">
+    <value>SSH 키 관리</value>
+  </data>
+  <data name="Allows viewing, editing, and deleting any user&apos;s SSH keys." xml:space="preserve">
+    <value>모든 사용자의 SSH 키를 조회, 편집 및 삭제할 수 있습니다.</value>
+  </data>
 
 </root>
