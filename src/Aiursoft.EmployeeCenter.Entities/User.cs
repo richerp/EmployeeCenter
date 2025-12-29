@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.AspNetCore.Identity;
 
 namespace Aiursoft.EmployeeCenter.Entities;
@@ -25,4 +26,12 @@ public class User : IdentityUser
 
     [MaxLength(30)]
     public string? BankName { get; set; }
+
+    [Newtonsoft.Json.JsonIgnore]
+    [InverseProperty(nameof(Password.Creator))]
+    public IEnumerable<Password> CreatedPasswords { get; set; } = new List<Password>();
+
+    [Newtonsoft.Json.JsonIgnore]
+    [InverseProperty(nameof(PasswordShare.SharedWithUser))]
+    public IEnumerable<PasswordShare> PasswordsSharedWithMe { get; init; } = new List<PasswordShare>();
 }

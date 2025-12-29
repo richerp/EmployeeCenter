@@ -132,5 +132,23 @@
   <data name="Unauthorized" xml:space="preserve">
     <value>未經授權</value>
   </data>
+  <data name="Shared Info" xml:space="preserve">
+    <value>共用資訊</value>
+  </data>
+  <data name="Passwords" xml:space="preserve">
+    <value>密碼</value>
+  </data>
+  <data name="Edit Password" xml:space="preserve">
+    <value>修改密碼</value>
+  </data>
+  <data name="Manage Shares" xml:space="preserve">
+    <value>管理共享</value>
+  </data>
+  <data name="Password Details" xml:space="preserve">
+    <value>密碼詳情</value>
+  </data>
+  <data name="Create Password" xml:space="preserve">
+    <value>建立密碼</value>
+  </data>
 
 </root>

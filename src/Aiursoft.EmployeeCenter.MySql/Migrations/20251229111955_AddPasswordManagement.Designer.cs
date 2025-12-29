@@ -4,6 +4,7 @@ using Aiursoft.EmployeeCenter.MySql;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Aiursoft.EmployeeCenter.MySql.Migrations
 {
     [DbContext(typeof(MySqlContext))]
-    partial class MySqlContextModelSnapshot : ModelSnapshot
+    [Migration("20251229111955_AddPasswordManagement")]
+    partial class AddPasswordManagement
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -191,37 +194,6 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.HasIndex("OwnerId");
 
                     b.ToTable("Payrolls");
-                });
-
-            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.SshKey", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("CreationTime")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("varchar(100)");
-
-                    b.Property<string>("OwnerId")
-                        .IsRequired()
-                        .HasColumnType("varchar(255)");
-
-                    b.Property<string>("PublicKey")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("OwnerId");
-
-                    b.ToTable("SshKeys");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.User", b =>
@@ -477,17 +449,6 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Payroll", b =>
-                {
-                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "Owner")
-                        .WithMany()
-                        .HasForeignKey("OwnerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Owner");
-                });
-
-            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.SshKey", b =>
                 {
                     b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "Owner")
                         .WithMany()

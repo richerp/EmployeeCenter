@@ -61,6 +61,12 @@ public class AppPermissions
             new(AppPermissionNames.CanManagePayroll,
                 localizer["Manage Payroll"],
                 localizer["Allows issuing and managing payroll slips for all users."]),
+            new(AppPermissionNames.CanAddGlobalPassword,
+                localizer["Add Global Password"],
+                localizer["Allows creating new global passwords that can be shared with others."]),
+            new(AppPermissionNames.CanManageAnyPassword,
+                localizer["Manage Any Password"],
+                localizer["Allows managing and deleting any global password created by any user."]),
             new(AppPermissionNames.CanManageSshKeys,
                 localizer["Manage SSH Keys"],
                 localizer["Allows viewing, editing, and deleting any user's SSH keys."])

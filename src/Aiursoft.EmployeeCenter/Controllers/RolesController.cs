@@ -3,6 +3,7 @@ using Aiursoft.EmployeeCenter.Authorization;
 using Aiursoft.EmployeeCenter.Entities;
 using Aiursoft.EmployeeCenter.Models.RolesViewModels;
 using Aiursoft.EmployeeCenter.Services;
+using Aiursoft.EmployeeCenter.Services.FileStorage;
 using Aiursoft.UiStack.Navigation;
 using Aiursoft.WebTools.Attributes;
 using Microsoft.AspNetCore.Authorization;
@@ -20,9 +21,32 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 public class RolesController(
     UserManager<User> userManager,
     TemplateDbContext context,
+    StorageService storageService,
     RoleManager<IdentityRole> roleManager)
     : Controller
 {
+    [HttpGet]
+    [Route("api/roles/{id}/info")]
+    public async Task<IActionResult> GetRoleInfo(string id)
+    {
+        var role = await roleManager.FindByIdAsync(id);
+        if (role == null) return NotFound();
+
+        var usersInRole = await userManager.GetUsersInRoleAsync(role.Name!);
+        var previewUsers = usersInRole.Take(4).ToList();
+
+        return Ok(new
+        {
+            name = role.Name,
+            totalMembers = usersInRole.Count,
+            previewMembers = previewUsers.Select(u => new
+            {
+                displayName = u.DisplayName,
+                avatarUrl = $"{storageService.RelativePathToInternetUrl(u.AvatarRelativePath)}?w=100&square=true"
+            })
+        });
+    }
+
     // GET: Roles
     [Authorize(Policy = AppPermissionNames.CanReadRoles)]
     [RenderInNavBar(

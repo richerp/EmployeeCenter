@@ -8,6 +8,10 @@ public abstract class TemplateDbContext(DbContextOptions options) : IdentityDbCo
 {
     public DbSet<Payroll> Payrolls { get; set; }
     public DbSet<SshKey> SshKeys { get; set; }
+    
+    public DbSet<Password> Passwords { get; set; }
+
+    public DbSet<PasswordShare> PasswordShares { get; set; }
 
     public virtual  Task MigrateAsync(CancellationToken cancellationToken) =>
         Database.MigrateAsync(cancellationToken);

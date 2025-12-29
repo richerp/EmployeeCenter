@@ -90,6 +90,18 @@
   <data name="Manage Payroll" xml:space="preserve">
     <value>Manage Payroll</value>
   </data>
+  <data name="Add Global Password" xml:space="preserve">
+    <value>Add Global Password</value>
+  </data>
+  <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
+    <value>Allows creating new global passwords that can be shared with others.</value>
+  </data>
+  <data name="Allows managing and deleting any global password created by any user." xml:space="preserve">
+    <value>Allows managing and deleting any global password created by any user.</value>
+  </data>
+  <data name="Manage Any Password" xml:space="preserve">
+    <value>Manage Any Password</value>
+  </data>
   <data name="Allows viewing, editing, and deleting any user&apos;s SSH keys." xml:space="preserve">
     <value>Allows viewing, editing, and deleting any user&apos;s SSH keys.</value>
   </data>
