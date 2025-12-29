@@ -4,28 +4,18 @@
 [![Pipeline stat](https://gitlab.aiursoft.com/aiursoft/employeeCenter/badges/master/pipeline.svg)](https://gitlab.aiursoft.com/aiursoft/employeeCenter/-/pipelines)
 [![Test Coverage](https://gitlab.aiursoft.com/aiursoft/employeeCenter/badges/master/coverage.svg)](https://gitlab.aiursoft.com/aiursoft/employeeCenter/-/pipelines)
 [![Man hours](https://manhours.aiursoft.com/r/gitlab.aiursoft.com/aiursoft/employeeCenter.svg)](https://manhours.aiursoft.com/r/gitlab.aiursoft.com/aiursoft/employeeCenter.html)
-[![Website](https://img.shields.io/website?url=https%3A%2F%2FemployeeCenter.aiursoft.com)](https://employeeCenter.aiursoft.com)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Femployee.aiursoft.com)](https://employee.aiursoft.com)
 [![Docker](https://img.shields.io/docker/pulls/aiursoft/employeecenter.svg)](https://hub.docker.com/r/aiursoft/employeecenter)
 
-EmployeeCenter is a sample project.
+Employee Center is a project for managing employee information, attendance, leaves, and more. It is built with ASP.NET Core and provides a user-friendly interface for both employees and administrators.
 
 ![screenshot](./screenshot.png)
 
 Default user name is `admin@default.com` and default password is `admin123`.
 
-## Projects using Aiursoft EmployeeCenter
-
-* [Stathub](https://gitlab.aiursoft.com/aiursoft/stathub)
-* [MarkToHtml](https://gitlab.aiursoft.com/aiursoft/marktohtml)
-* [MusicTools](https://gitlab.aiursoft.com/aiursoft/musictools)
-* [AnduinOS Home](https://gitlab.aiursoft.com/anduin/AnduinOS-Home)
-* [Manhours](https://gitlab.aiursoft.com/aiursoft/manhours)
-* [Tracer](https://gitlab.aiursoft.com/aiursoft/tracer)
-* [Warp](https://gitlab.aiursoft.com/aiursoft/warp)
-
 ## Try
 
-Try a running EmployeeCenter [here](https://employeeCenter.aiursoft.com).
+Try a running Employee Center [here](https://employee.aiursoft.com).
 
 ## Run in Ubuntu
 
