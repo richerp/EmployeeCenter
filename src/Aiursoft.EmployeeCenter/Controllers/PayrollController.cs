@@ -22,7 +22,7 @@ public class PayrollController(
         NavGroupName = "Personal",
         NavGroupOrder = 1,
         CascadedLinksGroupName = "Payrolls",
-        CascadedLinksIcon = "money-bill",
+        CascadedLinksIcon = "shopping-bag",
         CascadedLinksOrder = 10,
         LinkText = "My Payrolls",
         LinkOrder = 1)]
@@ -47,7 +47,7 @@ public class PayrollController(
         NavGroupName = "Administration",
         NavGroupOrder = 9999,
         CascadedLinksGroupName = "Finance",
-        CascadedLinksIcon = "hand-holding-usd",
+        CascadedLinksIcon = "shopping-cart",
         CascadedLinksOrder = 9997,
         LinkText = "Manage Payrolls",
         LinkOrder = 1)]
@@ -87,37 +87,37 @@ public class PayrollController(
                 OwnerId = model.UserId,
                 TargetMonth = model.TargetMonth,
                 Content = model.Content,
-                
+
                 BaseSalary = model.BaseSalary,
                 JobSalary = model.JobSalary,
                 PerformanceBonus = model.PerformanceBonus,
                 Overtime = model.Overtime,
                 FullAttendance = model.FullAttendance,
                 OtherAllowances = model.OtherAllowances,
-                
+
                 LateEarly = model.LateEarly,
                 SickLeave = model.SickLeave,
                 AdministrativeFines = model.AdministrativeFines,
-                
+
                 PensionPersonal = model.PensionPersonal,
                 MedicalPersonal = model.MedicalPersonal,
                 UnemploymentPersonal = model.UnemploymentPersonal,
                 HousingFundPersonal = model.HousingFundPersonal,
-                
+
                 SpecialAdditionalDeduction = model.SpecialAdditionalDeduction,
                 PersonalIncomeTax = model.PersonalIncomeTax,
-                
+
                 TotalAmount = model.TotalAmount,
                 BankName = model.BankName,
                 BankAccount = model.BankAccount,
-                
+
                 PensionCompany = model.PensionCompany,
                 MedicalCompany = model.MedicalCompany,
                 UnemploymentCompany = model.UnemploymentCompany,
                 WorkInjuryCompany = model.WorkInjuryCompany,
                 MaternityCompany = model.MaternityCompany,
                 HousingFundCompany = model.HousingFundCompany,
-                
+
                 CreationTime = DateTime.UtcNow
             };
             context.Payrolls.Add(payroll);
