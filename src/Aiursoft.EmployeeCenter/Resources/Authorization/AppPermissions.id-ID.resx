@@ -90,5 +90,11 @@
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>Memungkinkan penerbitan dan pengelolaan slip gaji untuk semua pengguna.</value>
   </data>
+  <data name="Manage SSH Keys" xml:space="preserve">
+    <value>Kelola Kunci SSH</value>
+  </data>
+  <data name="Allows viewing, editing, and deleting any user&apos;s SSH keys." xml:space="preserve">
+    <value>Memungkinkan melihat, mengedit, dan menghapus kunci SSH milik pengguna mana pun.</value>
+  </data>
 
 </root>

@@ -81,5 +81,8 @@
   <data name="Job Level" xml:space="preserve">
     <value>Cấp bậc công việc</value>
   </data>
+  <data name="Manage SSH Keys" xml:space="preserve">
+    <value>Quản lý Khóa SSH</value>
+  </data>
 
 </root>

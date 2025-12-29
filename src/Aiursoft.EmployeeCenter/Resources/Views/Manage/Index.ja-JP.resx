@@ -54,5 +54,8 @@
   <data name="You can&apos;t change your password because local authentication is disabled. Please edit your profile from the" xml:space="preserve">
     <value>ローカル認証が無効になっているため、パスワードを変更できません。プロファイルの編集は、</value>
   </data>
+  <data name="SSH Keys" xml:space="preserve">
+    <value>SSHキー</value>
+  </data>
 
 </root>

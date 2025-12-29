@@ -1,10 +1,11 @@
-<?xml version='1.0' encoding='utf-8'?>
-<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:schema id="root">
-        <xs:element name="root" ns1:IsDataSet="true">
+<?xml version="1.0" encoding="utf-8"?>
 
-        </xs:element>
-    </xs:schema>
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
@@ -38,7 +39,7 @@
   <data name="This user has not been assigned any roles." xml:space="preserve">
     <value>इस उपयोगकर्ता को कोई भूमिका नहीं दी गई है।</value>
   </data>
-  <data name="An overview of the user's profile, assigned roles, and effective permissions." xml:space="preserve">
+  <data name="An overview of the user&apos;s profile, assigned roles, and effective permissions." xml:space="preserve">
     <value>उपयोगकर्ता के प्रोफ़ाइल, सौंपी गई भूमिकाओं और प्रभावी अनुमतियों का एक सिंहावलोकन।</value>
   </data>
   <data name="Delete this User" xml:space="preserve">
@@ -68,5 +69,20 @@
   <data name="Profile Details" xml:space="preserve">
     <value>प्रोफ़ाइल विवरण</value>
   </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Basic Salary</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>Bank Account</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Bank Name</value>
+  </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>Job Level</value>
+  </data>
+  <data name="Manage SSH Keys" xml:space="preserve">
+    <value>SSH कुंजियाँ प्रबंधित करें</value>
+  </data>
 
-<data name="Base Salary" xml:space="preserve"><value>Basic Salary</value></data><data name="Bank Account" xml:space="preserve"><value>Bank Account</value></data><data name="Bank Name" xml:space="preserve"><value>Bank Name</value></data><data name="Job Level" xml:space="preserve"><value>Job Level</value></data></root>
+</root>

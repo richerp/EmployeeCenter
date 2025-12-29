@@ -5,9 +5,10 @@
 
 @* ReSharper disable Razor.ResourceNotResolved *@
 <div class="row mb-2 mb-xl-3">
-
-@* Standard page title for consistency. *@
-<h1 class="h3 mb-3">@Localizer["Create New User"]</h1>
+    <div class="col-auto d-none d-sm-block">
+        <h3>@Localizer["Create New User"]</h3>
+    </div>
+</div>
 
 @* The critical OIDC warning is preserved and placed prominently at the top of the page. *@
 @if (AppSettings.Value.OIDCEnabled)

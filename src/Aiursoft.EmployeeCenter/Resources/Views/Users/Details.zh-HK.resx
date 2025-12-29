@@ -81,5 +81,8 @@
   <data name="Bank Account" xml:space="preserve">
     <value>銀行戶口</value>
   </data>
+  <data name="Manage SSH Keys" xml:space="preserve">
+    <value>管理 SSH 金鑰</value>
+  </data>
 
 </root>

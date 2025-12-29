@@ -24,4 +24,7 @@ public static class AppPermissionNames
 
     // Payroll Management
     public const string CanManagePayroll = nameof(CanManagePayroll);
+
+    // SSH Key Management
+    public const string CanManageSshKeys = nameof(CanManageSshKeys);
 }
