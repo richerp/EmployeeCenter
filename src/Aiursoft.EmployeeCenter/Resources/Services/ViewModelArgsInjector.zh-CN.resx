@@ -132,5 +132,23 @@
   <data name="Error" xml:space="preserve">
     <value>错误</value>
   </data>
+  <data name="Shared Info" xml:space="preserve">
+    <value>共享信息</value>
+  </data>
+  <data name="Passwords" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="Create Password" xml:space="preserve">
+    <value>创建密码</value>
+  </data>
+  <data name="Password Details" xml:space="preserve">
+    <value>密码详情</value>
+  </data>
+  <data name="Manage Shares" xml:space="preserve">
+    <value>管理共享</value>
+  </data>
+  <data name="Edit Password" xml:space="preserve">
+    <value>修改密码</value>
+  </data>
 
 </root>

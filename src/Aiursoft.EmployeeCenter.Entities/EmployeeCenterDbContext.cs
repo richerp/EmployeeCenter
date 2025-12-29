@@ -7,6 +7,10 @@ namespace Aiursoft.EmployeeCenter.Entities;
 public abstract class TemplateDbContext(DbContextOptions options) : IdentityDbContext<User>(options), ICanMigrate
 {
     public DbSet<Payroll> Payrolls { get; set; }
+    
+    public DbSet<Password> Passwords { get; set; }
+
+    public DbSet<PasswordShare> PasswordShares { get; set; }
 
     public virtual  Task MigrateAsync(CancellationToken cancellationToken) =>
         Database.MigrateAsync(cancellationToken);

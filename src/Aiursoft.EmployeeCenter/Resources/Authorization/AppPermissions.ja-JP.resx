@@ -90,5 +90,17 @@
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>すべてのユーザーの給与明細の発行と管理を許可します。</value>
   </data>
+  <data name="Add Global Password" xml:space="preserve">
+    <value>グローバルパスワード追加</value>
+  </data>
+  <data name="Manage Any Password" xml:space="preserve">
+    <value>任意のパスワード管理</value>
+  </data>
+  <data name="Allows managing and deleting any global password created by any user." xml:space="preserve">
+    <value>任意のユーザーによって作成されたグローバルパスワードの管理および削除ができます。</value>
+  </data>
+  <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
+    <value>他のユーザーと共有できる新規グローバルパスワードの作成を許可します。</value>
+  </data>
 
 </root>

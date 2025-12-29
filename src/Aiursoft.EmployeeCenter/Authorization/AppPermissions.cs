@@ -60,7 +60,13 @@ public class AppPermissions
                 localizer["Grants permission to restart the application instance. May cause availability interruptions but all settings and cache will be reloaded."]),
             new(AppPermissionNames.CanManagePayroll,
                 localizer["Manage Payroll"],
-                localizer["Allows issuing and managing payroll slips for all users."])
+                localizer["Allows issuing and managing payroll slips for all users."]),
+            new(AppPermissionNames.CanAddGlobalPassword,
+                localizer["Add Global Password"],
+                localizer["Allows creating new global passwords that can be shared with others."]),
+            new(AppPermissionNames.CanManageAnyPassword,
+                localizer["Manage Any Password"],
+                localizer["Allows managing and deleting any global password created by any user."])
         ];
         return allPermission;
     }

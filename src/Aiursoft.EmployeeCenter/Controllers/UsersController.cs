@@ -2,6 +2,7 @@ using Aiursoft.EmployeeCenter.Authorization;
 using Aiursoft.EmployeeCenter.Entities;
 using Aiursoft.EmployeeCenter.Models.UsersViewModels;
 using Aiursoft.EmployeeCenter.Services;
+using Aiursoft.EmployeeCenter.Services.FileStorage;
 using Aiursoft.UiStack.Navigation;
 using Aiursoft.WebTools.Attributes;
 using Microsoft.AspNetCore.Mvc;
@@ -19,9 +20,38 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 public class UsersController(
     RoleManager<IdentityRole> roleManager,
     UserManager<User> userManager,
+    StorageService storageService,
     TemplateDbContext context)
     : Controller
 {
+    [HttpGet]
+    [Route("api/users/search")]
+    public async Task<IActionResult> Search(string query, int page = 1, int pageSize = 10)
+    {
+        var usersQuery = context.Users
+            .Where(u => u.DisplayName.Contains(query) || u.UserName!.Contains(query) || u.Email!.Contains(query));
+
+        var totalCount = await usersQuery.CountAsync();
+        var users = await usersQuery
+            .OrderBy(u => u.DisplayName)
+            .Skip((page - 1) * pageSize)
+            .Take(pageSize)
+            .ToListAsync();
+
+        return Ok(new
+        {
+            users = users.Select(u => new
+            {
+                id = u.Id,
+                displayName = u.DisplayName,
+                userName = u.UserName,
+                avatarUrl = $"{storageService.RelativePathToInternetUrl(u.AvatarRelativePath)}?w=100&square=true"
+            }),
+            totalCount,
+            totalPages = (int)Math.Ceiling((double)totalCount / pageSize)
+        });
+    }
+
     [Authorize(Policy = AppPermissionNames.CanReadUsers)]
     [RenderInNavBar(
         NavGroupName = "Administration",

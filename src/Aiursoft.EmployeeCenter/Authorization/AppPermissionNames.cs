@@ -24,4 +24,8 @@ public static class AppPermissionNames
 
     // Payroll Management
     public const string CanManagePayroll = nameof(CanManagePayroll);
+
+    // Password Management
+    public const string CanAddGlobalPassword = nameof(CanAddGlobalPassword);
+    public const string CanManageAnyPassword = nameof(CanManageAnyPassword);
 }

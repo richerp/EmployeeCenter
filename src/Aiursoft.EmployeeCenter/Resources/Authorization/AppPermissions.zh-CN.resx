@@ -90,5 +90,17 @@
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>允许为所有用户发放和管理工资单。</value>
   </data>
+  <data name="Add Global Password" xml:space="preserve">
+    <value>添加全局密码</value>
+  </data>
+  <data name="Manage Any Password" xml:space="preserve">
+    <value>管理任何密码</value>
+  </data>
+  <data name="Allows managing and deleting any global password created by any user." xml:space="preserve">
+    <value>允许管理并删除由任何用户创建的全局密码。</value>
+  </data>
+  <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
+    <value>允许创建可以与他人共享的新全局密码。</value>
+  </data>
 
 </root>

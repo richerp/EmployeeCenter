@@ -132,5 +132,23 @@
   <data name="Unauthorized" xml:space="preserve">
     <value>Unauthorised</value>
   </data>
+  <data name="Passwords" xml:space="preserve">
+    <value>Passwords</value>
+  </data>
+  <data name="Shared Info" xml:space="preserve">
+    <value>Shared Info</value>
+  </data>
+  <data name="Password Details" xml:space="preserve">
+    <value>Password Details</value>
+  </data>
+  <data name="Manage Shares" xml:space="preserve">
+    <value>Manage Shares</value>
+  </data>
+  <data name="Create Password" xml:space="preserve">
+    <value>Create Password</value>
+  </data>
+  <data name="Edit Password" xml:space="preserve">
+    <value>Edit Password</value>
+  </data>
 
 </root>

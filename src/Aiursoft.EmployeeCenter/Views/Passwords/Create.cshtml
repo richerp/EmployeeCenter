@@ -1,0 +1,43 @@
+@model Aiursoft.EmployeeCenter.Models.PasswordsViewModels.CreateViewModel
+
+<div class="row mb-3">
+    <div class="col-12">
+        <h3>@Localizer["Create New Password"]</h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 col-lg-6">
+        <div class="card">
+            <div class="card-body">
+                <form asp-action="Create" method="post">
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <div class="mb-3">
+                        <label asp-for="Title" class="form-label">@Localizer["Title"]</label>
+                        <input asp-for="Title" class="form-control" placeholder="e.g. GitLab Admin Account" required />
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Account" class="form-label">@Localizer["Account / Username"]</label>
+                        <input asp-for="Account" class="form-control" placeholder="e.g. root" />
+                        <span asp-validation-for="Account" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Secret" class="form-label">@Localizer["Password / Secret"]</label>
+                        <input asp-for="Secret" class="form-control" type="text" required />
+                        <span asp-validation-for="Secret" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Note" class="form-label">@Localizer["Note"]</label>
+                        <textarea asp-for="Note" class="form-control" rows="3"></textarea>
+                        <span asp-validation-for="Note" class="text-danger"></span>
+                    </div>
+                    <div class="mt-4">
+                        <button type="submit" class="btn btn-primary">@Localizer["Create"]</button>
+                        <a asp-action="Index" class="btn btn-outline-secondary">@Localizer["Cancel"]</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

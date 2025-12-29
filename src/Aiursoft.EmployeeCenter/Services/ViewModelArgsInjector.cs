@@ -64,6 +64,12 @@ public class ViewModelArgsInjector(
         _ = localizer["Personal"];
         _ = localizer["Unauthorized"];
         _ = localizer["Error"];
+        _ = localizer["Passwords"];
+        _ = localizer["Shared Info"];
+        _ = localizer["Manage Shares"];
+        _ = localizer["Password Details"];
+        _ = localizer["Create Password"];
+        _ = localizer["Edit Password"];
     }
 
     public void InjectSimple(

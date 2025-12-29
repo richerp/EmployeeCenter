@@ -17,6 +17,76 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "10.0.1");
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Password", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Account")
+                        .HasMaxLength(100)
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CreationTime")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("CreatorId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Note")
+                        .HasMaxLength(1000)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Secret")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CreatorId");
+
+                    b.ToTable("Passwords");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.PasswordShare", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CreationTime")
+                        .HasColumnType("TEXT");
+
+                    b.Property<Guid>("PasswordId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Permission")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("SharedWithRoleId")
+                        .HasMaxLength(450)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("SharedWithUserId")
+                        .HasMaxLength(64)
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PasswordId");
+
+                    b.HasIndex("SharedWithUserId");
+
+                    b.ToTable("PasswordShares");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Payroll", b =>
                 {
                     b.Property<int>("Id")
@@ -336,6 +406,34 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Password", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "Creator")
+                        .WithMany("CreatedPasswords")
+                        .HasForeignKey("CreatorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Creator");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.PasswordShare", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.Password", "Password")
+                        .WithMany("PasswordShares")
+                        .HasForeignKey("PasswordId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "SharedWithUser")
+                        .WithMany("PasswordsSharedWithMe")
+                        .HasForeignKey("SharedWithUserId");
+
+                    b.Navigation("Password");
+
+                    b.Navigation("SharedWithUser");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Payroll", b =>
                 {
                     b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "Owner")
@@ -396,6 +494,18 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Password", b =>
+                {
+                    b.Navigation("PasswordShares");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.User", b =>
+                {
+                    b.Navigation("CreatedPasswords");
+
+                    b.Navigation("PasswordsSharedWithMe");
                 });
 #pragma warning restore 612, 618
         }
