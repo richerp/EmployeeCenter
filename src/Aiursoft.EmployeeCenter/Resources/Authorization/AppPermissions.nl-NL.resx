@@ -90,5 +90,11 @@
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>Staat het uitgeven en beheren van loonstroken voor alle gebruikers toe.</value>
   </data>
+  <data name="Manage SSH Keys" xml:space="preserve">
+    <value>SSH-sleutels beheren</value>
+  </data>
+  <data name="Allows viewing, editing, and deleting any user&apos;s SSH keys." xml:space="preserve">
+    <value>Staat het bekijken, bewerken en verwijderen van SSH-sleutels van elke gebruiker toe.</value>
+  </data>
 
 </root>

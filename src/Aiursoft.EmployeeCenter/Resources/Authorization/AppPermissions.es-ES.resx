@@ -90,5 +90,11 @@
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>Permite emitir y gestionar nóminas para todos los usuarios.</value>
   </data>
+  <data name="Manage SSH Keys" xml:space="preserve">
+    <value>Gestionar claves SSH</value>
+  </data>
+  <data name="Allows viewing, editing, and deleting any user&apos;s SSH keys." xml:space="preserve">
+    <value>Permite ver, editar y eliminar las claves SSH de cualquier usuario.</value>
+  </data>
 
 </root>

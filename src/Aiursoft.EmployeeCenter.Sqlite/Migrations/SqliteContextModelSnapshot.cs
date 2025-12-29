@@ -116,6 +116,35 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.ToTable("Payrolls");
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.SshKey", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("CreationTime")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("OwnerId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PublicKey")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OwnerId");
+
+                    b.ToTable("SshKeys");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.User", b =>
                 {
                     b.Property<string>("Id")
@@ -337,6 +366,17 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Payroll", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "Owner")
+                        .WithMany()
+                        .HasForeignKey("OwnerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Owner");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.SshKey", b =>
                 {
                     b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "Owner")
                         .WithMany()

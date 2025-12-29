@@ -90,5 +90,11 @@
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>允許為所有使用者發放及管理薪資單。</value>
   </data>
+  <data name="Manage SSH Keys" xml:space="preserve">
+    <value>管理 SSH 金鑰</value>
+  </data>
+  <data name="Allows viewing, editing, and deleting any user&apos;s SSH keys." xml:space="preserve">
+    <value>允許檢視、編輯和刪除任何使用者的 SSH 金鑰。</value>
+  </data>
 
 </root>

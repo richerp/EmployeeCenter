@@ -90,5 +90,11 @@
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>सभी उपयोगकर्ताओं के लिए पेरोल स्लिप जारी करने और प्रबंधित करने की अनुमति देता है।</value>
   </data>
+  <data name="Manage SSH Keys" xml:space="preserve">
+    <value>SSH कुंजियाँ प्रबंधित करें</value>
+  </data>
+  <data name="Allows viewing, editing, and deleting any user&apos;s SSH keys." xml:space="preserve">
+    <value>किसी भी उपयोगकर्ता के SSH कुंजियों को देखने, संपादित करने और हटाने की अनुमति देता है।</value>
+  </data>
 
 </root>

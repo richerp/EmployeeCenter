@@ -54,5 +54,8 @@
   <data name="You can&apos;t change your password because local authentication is disabled. Please edit your profile from the" xml:space="preserve">
     <value>Bạn không thể thay đổi mật khẩu vì xác thực cục bộ đã bị vô hiệu hóa. Vui lòng chỉnh sửa hồ sơ của bạn từ</value>
   </data>
+  <data name="SSH Keys" xml:space="preserve">
+    <value>Khóa SSH</value>
+  </data>
 
 </root>

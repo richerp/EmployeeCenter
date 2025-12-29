@@ -54,5 +54,8 @@
   <data name="You can&apos;t change your password because local authentication is disabled. Please edit your profile from the" xml:space="preserve">
     <value>Du kan ikke ændre din adgangskode, fordi lokal godkendelse er deaktiveret. Redigér din profil fra</value>
   </data>
+  <data name="SSH Keys" xml:space="preserve">
+    <value>SSH-nøgler</value>
+  </data>
 
 </root>

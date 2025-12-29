@@ -60,7 +60,10 @@ public class AppPermissions
                 localizer["Grants permission to restart the application instance. May cause availability interruptions but all settings and cache will be reloaded."]),
             new(AppPermissionNames.CanManagePayroll,
                 localizer["Manage Payroll"],
-                localizer["Allows issuing and managing payroll slips for all users."])
+                localizer["Allows issuing and managing payroll slips for all users."]),
+            new(AppPermissionNames.CanManageSshKeys,
+                localizer["Manage SSH Keys"],
+                localizer["Allows viewing, editing, and deleting any user's SSH keys."])
         ];
         return allPermission;
     }
