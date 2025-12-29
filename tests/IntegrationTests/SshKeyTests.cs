@@ -138,6 +138,6 @@ public class SshKeyTests
 
         indexResponse = await _http.GetAsync("/SshKeys/Index");
         indexHtml = await indexResponse.Content.ReadAsStringAsync();
-        Assert.IsFalse(indexHtml.Contains("Updated Admin Key"));
+        Assert.DoesNotContain("Updated Admin Key", indexHtml);
     }
 }
