@@ -150,5 +150,11 @@
   <data name="Edit Password" xml:space="preserve">
     <value>パスワード編集</value>
   </data>
+  <data name="Aiursoft Employee Center" xml:space="preserve">
+    <value>Aiursoft 社員センター</value>
+  </data>
+  <data name="Employee Center" xml:space="preserve">
+    <value>従業員センター</value>
+  </data>
 
 </root>

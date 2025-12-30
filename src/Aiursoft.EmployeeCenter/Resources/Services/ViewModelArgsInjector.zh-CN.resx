@@ -150,5 +150,11 @@
   <data name="Edit Password" xml:space="preserve">
     <value>修改密码</value>
   </data>
+  <data name="Aiursoft Employee Center" xml:space="preserve">
+    <value>Aiursoft 员工中心</value>
+  </data>
+  <data name="Employee Center" xml:space="preserve">
+    <value>员工中心</value>
+  </data>
 
 </root>
