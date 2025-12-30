@@ -1,17 +1,25 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
+using Newtonsoft.Json;
 
 namespace Aiursoft.EmployeeCenter.Entities;
 
 public class Payroll
 {
     [Key]
-    public int Id { get; set; }
+    public int Id { get; init; }
 
     public required string OwnerId { get; set; }
-    public User Owner { get; set; } = null!;
 
-    public DateTime TargetMonth { get; set; }
+    [JsonIgnore]
+    [ForeignKey(nameof(OwnerId))]
+    [NotNull]
+    public User? Owner { get; set; }
 
+    public DateTime TargetMonth { get; init; }
+
+    [MaxLength(2000)]
     public required string Content { get; set; }
 
     // Earnings
@@ -39,7 +47,19 @@ public class Payroll
 
     // Actual
     public decimal TotalAmount { get; set; }
+
+    /// <summary>
+    /// The bank name where this payroll was paid to.
+    /// If null, it means it was not paid to a specific bank or paid in cash.
+    /// </summary>
+    [MaxLength(100)]
     public string? BankName { get; set; }
+
+    /// <summary>
+    /// The bank account where this payroll was paid to.
+    /// If null, it means it was not paid to a specific bank account.
+    /// </summary>
+    [MaxLength(100)]
     public string? BankAccount { get; set; }
 
     // Company Costs
@@ -50,5 +70,5 @@ public class Payroll
     public decimal MaternityCompany { get; set; }
     public decimal HousingFundCompany { get; set; }
 
-    public DateTime CreationTime { get; set; } = DateTime.UtcNow;
+    public DateTime CreationTime { get; init; } = DateTime.UtcNow;
 }

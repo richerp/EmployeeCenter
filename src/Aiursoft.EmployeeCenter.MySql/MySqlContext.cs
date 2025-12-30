@@ -3,4 +3,4 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Aiursoft.EmployeeCenter.MySql;
 
-public class MySqlContext(DbContextOptions<MySqlContext> options) : TemplateDbContext(options);
+public class MySqlContext(DbContextOptions<MySqlContext> options) : EmployeeCenterDbContext(options);

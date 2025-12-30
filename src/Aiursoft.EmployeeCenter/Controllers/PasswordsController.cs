@@ -17,7 +17,7 @@ public class PasswordsController(
     UserManager<User> userManager,
     RoleManager<IdentityRole> roleManager,
     IAuthorizationService authorizationService,
-    TemplateDbContext context)
+    EmployeeCenterDbContext context)
     : Controller
 {
     [RenderInNavBar(

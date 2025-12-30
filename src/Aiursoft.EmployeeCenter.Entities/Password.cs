@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
 using Newtonsoft.Json;
 
 namespace Aiursoft.EmployeeCenter.Entities;
@@ -9,29 +10,36 @@ public class Password
     [Key]
     public Guid Id { get; init; } = Guid.NewGuid();
 
-    [Required]
     [MaxLength(100)]
     public required string Title { get; set; }
 
+    /// <summary>
+    /// The account name for this password.
+    /// If null, it means there is no specific account name.
+    /// </summary>
     [MaxLength(100)]
     public string? Account { get; set; }
 
-    [Required]
     [MaxLength(100)]
     public required string Secret { get; set; }
 
+    /// <summary>
+    /// Note for this password.
+    /// If null, it means no note was provided.
+    /// </summary>
     [MaxLength(1000)]
     public string? Note { get; set; }
 
-    [Required]
     public required string CreatorId { get; set; }
 
     [ForeignKey(nameof(CreatorId))]
     [JsonIgnore]
+    [NotNull]
     public User? Creator { get; set; }
 
     public DateTime CreationTime { get; init; } = DateTime.UtcNow;
 
+    [JsonIgnore]
     [InverseProperty(nameof(PasswordShare.Password))]
-    public List<PasswordShare> PasswordShares { get; set; } = new();
+    public IEnumerable<PasswordShare> PasswordShares { get; init; } = new List<PasswordShare>();
 }

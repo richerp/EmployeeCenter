@@ -37,7 +37,7 @@ public static class AuthenticationExtensions
                     options.Password.RequireUppercase = true;
                 }
             })
-            .AddEntityFrameworkStores<TemplateDbContext>()
+            .AddEntityFrameworkStores<EmployeeCenterDbContext>()
             .AddDefaultTokenProviders();
 
         services.AddScoped<IUserClaimsPrincipalFactory<User>, UserClaimsPrincipalFactory>();
@@ -144,6 +144,7 @@ public static class AuthenticationExtensions
                 UserName = username,
                 DisplayName = displayName,
                 Email = email,
+                AvatarRelativePath = Aiursoft.EmployeeCenter.Entities.User.DefaultAvatarPath
             };
             logger.LogInformation(
                 "The user with name '{Username}' and email '{Email}' doesn't exist in the local database. Create a new one.",

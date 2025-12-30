@@ -1,21 +1,27 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
+using Newtonsoft.Json;
 
 namespace Aiursoft.EmployeeCenter.Entities;
 
 public class SshKey
 {
     [Key]
-    public int Id { get; set; }
+    public int Id { get; init; }
 
     public required string OwnerId { get; set; }
-    public User Owner { get; set; } = null!;
 
-    [Required]
+    [JsonIgnore]
+    [ForeignKey(nameof(OwnerId))]
+    [NotNull]
+    public User? Owner { get; set; }
+
     [MaxLength(100)]
     public required string Name { get; set; }
 
-    [Required]
+    [MaxLength(5000)]
     public required string PublicKey { get; set; }
 
-    public DateTime CreationTime { get; set; } = DateTime.UtcNow;
+    public DateTime CreationTime { get; init; } = DateTime.UtcNow;
 }

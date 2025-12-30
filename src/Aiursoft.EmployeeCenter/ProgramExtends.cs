@@ -9,7 +9,7 @@ namespace Aiursoft.EmployeeCenter;
 
 public static class ProgramExtends
 {
-    private static async Task<bool> ShouldSeedAsync(TemplateDbContext dbContext)
+    private static async Task<bool> ShouldSeedAsync(EmployeeCenterDbContext dbContext)
     {
         var haveUsers = await dbContext.Users.AnyAsync();
         var haveRoles = await dbContext.Roles.AnyAsync();
@@ -51,7 +51,7 @@ public static class ProgramExtends
     {
         using var scope = host.Services.CreateScope();
         var services = scope.ServiceProvider;
-        var db = services.GetRequiredService<TemplateDbContext>();
+        var db = services.GetRequiredService<EmployeeCenterDbContext>();
         var logger = services.GetRequiredService<ILogger<Program>>();
         var shouldSeed = await ShouldSeedAsync(db);
         if (!shouldSeed)
@@ -93,6 +93,7 @@ public static class ProgramExtends
                 UserName = "admin",
                 DisplayName = "Super Administrator",
                 Email = "admin@default.com",
+                AvatarRelativePath = Aiursoft.EmployeeCenter.Entities.User.DefaultAvatarPath
             };
             _ = await userManager.CreateAsync(user, "admin123");
             await userManager.AddToRoleAsync(user, "Administrators");

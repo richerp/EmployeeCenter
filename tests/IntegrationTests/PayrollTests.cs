@@ -34,7 +34,7 @@ public class PayrollTests
     public async Task CreateServer()
     {
         _server = await AppAsync<Startup>([], port: _port);
-        await _server.UpdateDbAsync<TemplateDbContext>();
+        await _server.UpdateDbAsync<EmployeeCenterDbContext>();
         await _server.SeedAsync();
         await _server.StartAsync();
     }
@@ -100,7 +100,7 @@ public class PayrollTests
         string userId;
         using (var scope = _server!.Services.CreateScope())
         {
-            var db = scope.ServiceProvider.GetRequiredService<TemplateDbContext>();
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
             var user = await db.Users.FirstOrDefaultAsync(u => u.UserName == userName);
             Assert.IsNotNull(user);
             userId = user.Id;
@@ -155,7 +155,7 @@ public class PayrollTests
         int payrollId;
         using (var scope = _server!.Services.CreateScope())
         {
-            var db = scope.ServiceProvider.GetRequiredService<TemplateDbContext>();
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
             var payroll = await db.Payrolls.FirstAsync(p => p.OwnerId == userId);
             payrollId = payroll.Id;
         }
