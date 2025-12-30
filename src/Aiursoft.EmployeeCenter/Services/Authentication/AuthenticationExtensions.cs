@@ -144,7 +144,7 @@ public static class AuthenticationExtensions
                 UserName = username,
                 DisplayName = displayName,
                 Email = email,
-                AvatarRelativePath = Aiursoft.EmployeeCenter.Entities.User.DefaultAvatarPath
+                AvatarRelativePath = User.DefaultAvatarPath
             };
             logger.LogInformation(
                 "The user with name '{Username}' and email '{Email}' doesn't exist in the local database. Create a new one.",

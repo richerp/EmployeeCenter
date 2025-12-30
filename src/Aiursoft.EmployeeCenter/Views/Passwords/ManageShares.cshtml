@@ -158,16 +158,8 @@
                                         @if (share.SharedWithUserId != null)
                                         {
                                             <div class="d-flex align-items-center">
-                                                @if (share.SharedWithUser != null)
-                                                {
-                                                    <img src="@(StorageService.RelativePathToInternetUrl(share.SharedWithUser.AvatarRelativePath))?w=128&square=true" alt="Avatar" class="rounded-circle me-2" style="width: 32px; height: 32px; object-fit: cover;">
-                                                    <span>@share.SharedWithUser.DisplayName</span>
-                                                }
-                                                else
-                                                {
-                                                    <i class="align-middle me-2" data-lucide="user"></i>
-                                                    <span class="text-muted">@Localizer["User"] (@share.SharedWithUserId)</span>
-                                                }
+                                                <img src="@(StorageService.RelativePathToInternetUrl(share.SharedWithUser.AvatarRelativePath))?w=128&square=true" alt="Avatar" class="rounded-circle me-2" style="width: 32px; height: 32px; object-fit: cover;">
+                                                <span>@share.SharedWithUser.DisplayName</span>
                                             </div>
                                         }
                                         else if (share.SharedWithRoleId != null)

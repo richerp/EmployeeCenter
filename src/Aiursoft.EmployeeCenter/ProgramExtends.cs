@@ -93,7 +93,7 @@ public static class ProgramExtends
                 UserName = "admin",
                 DisplayName = "Super Administrator",
                 Email = "admin@default.com",
-                AvatarRelativePath = Aiursoft.EmployeeCenter.Entities.User.DefaultAvatarPath
+                AvatarRelativePath = User.DefaultAvatarPath
             };
             _ = await userManager.CreateAsync(user, "admin123");
             await userManager.AddToRoleAsync(user, "Administrators");
