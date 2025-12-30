@@ -21,7 +21,7 @@ public class UsersController(
     RoleManager<IdentityRole> roleManager,
     UserManager<User> userManager,
     StorageService storageService,
-    TemplateDbContext context)
+    EmployeeCenterDbContext context)
     : Controller
 {
     [HttpGet]
@@ -136,7 +136,8 @@ public class UsersController(
                 JobLevel = newUser.JobLevel,
                 BaseSalary = newUser.BaseSalary,
                 BankAccount = newUser.BankAccount,
-                BankName = newUser.BankName
+                BankName = newUser.BankName,
+                AvatarRelativePath = Aiursoft.EmployeeCenter.Entities.User.DefaultAvatarPath
             };
             var result = await userManager.CreateAsync(user, newUser.Password!);
             if (!result.Succeeded)

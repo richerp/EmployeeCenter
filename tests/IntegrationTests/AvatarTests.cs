@@ -36,7 +36,7 @@ public class AvatarTests
     public async Task CreateServer()
     {
         _server = await AppAsync<Startup>([], port: _port);
-        await _server.UpdateDbAsync<TemplateDbContext>();
+        await _server.UpdateDbAsync<EmployeeCenterDbContext>();
         await _server.SeedAsync();
         await _server.StartAsync();
     }

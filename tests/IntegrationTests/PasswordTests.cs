@@ -34,7 +34,7 @@ public class PasswordTests
     public async Task CreateServer()
     {
         _server = await AppAsync<Startup>([], port: _port);
-        await _server.UpdateDbAsync<TemplateDbContext>();
+        await _server.UpdateDbAsync<EmployeeCenterDbContext>();
         await _server.SeedAsync();
         await _server.StartAsync();
     }
@@ -115,7 +115,7 @@ public class PasswordTests
         string userId;
         using (var scope = _server!.Services.CreateScope())
         {
-            var db = scope.ServiceProvider.GetRequiredService<TemplateDbContext>();
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
             var user = await db.Users.FirstAsync(u => u.Email == email); 
             userId = user.Id;
         }
@@ -147,7 +147,7 @@ public class PasswordTests
         Guid passwordId;
         using (var scope = _server!.Services.CreateScope())
         {
-            var db = scope.ServiceProvider.GetRequiredService<TemplateDbContext>();
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
             var p = await db.Passwords.FirstAsync(p => p.Title == passwordTitle);
             passwordId = p.Id;
         }
@@ -198,7 +198,7 @@ public class PasswordTests
 
         using (var scope = _server!.Services.CreateScope())
         {
-            var db = scope.ServiceProvider.GetRequiredService<TemplateDbContext>();
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
             var s = await db.PasswordShares.FirstAsync(s => s.PasswordId == passwordId && s.SharedWithUserId == userId);
             
             // Remove ReadOnly share and add Editable share
@@ -242,7 +242,7 @@ public class PasswordTests
 
         using (var scope = _server!.Services.CreateScope())
         {
-            var db = scope.ServiceProvider.GetRequiredService<TemplateDbContext>();
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
             var p = await db.Passwords.FindAsync(passwordId);
             Assert.AreEqual(newTitle, p!.Title);
         }

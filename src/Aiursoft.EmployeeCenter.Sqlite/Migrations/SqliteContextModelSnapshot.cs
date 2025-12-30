@@ -97,9 +97,11 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("BankAccount")
+                        .HasMaxLength(100)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("BankName")
+                        .HasMaxLength(100)
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("BaseSalary")
@@ -107,6 +109,7 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
 
                     b.Property<string>("Content")
                         .IsRequired()
+                        .HasMaxLength(2000)
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("CreationTime")
@@ -206,6 +209,7 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
 
                     b.Property<string>("PublicKey")
                         .IsRequired()
+                        .HasMaxLength(5000)
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
@@ -466,7 +470,7 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Payroll", b =>
                 {
                     b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "Owner")
-                        .WithMany()
+                        .WithMany("Payrolls")
                         .HasForeignKey("OwnerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -477,7 +481,7 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.SshKey", b =>
                 {
                     b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "Owner")
-                        .WithMany()
+                        .WithMany("SshKeys")
                         .HasForeignKey("OwnerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -546,6 +550,10 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.Navigation("CreatedPasswords");
 
                     b.Navigation("PasswordsSharedWithMe");
+
+                    b.Navigation("Payrolls");
+
+                    b.Navigation("SshKeys");
                 });
 #pragma warning restore 612, 618
         }

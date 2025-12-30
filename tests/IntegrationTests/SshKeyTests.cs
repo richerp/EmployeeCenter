@@ -34,7 +34,7 @@ public class SshKeyTests
     public async Task CreateServer()
     {
         _server = await AppAsync<Startup>([], port: _port);
-        await _server.UpdateDbAsync<TemplateDbContext>();
+        await _server.UpdateDbAsync<EmployeeCenterDbContext>();
         await _server.SeedAsync();
         await _server.StartAsync();
     }
@@ -79,7 +79,7 @@ public class SshKeyTests
         string adminId;
         using (var scope = _server!.Services.CreateScope())
         {
-            var db = scope.ServiceProvider.GetRequiredService<TemplateDbContext>();
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
             var admin = await db.Users.FirstAsync(u => u.UserName == "admin");
             adminId = admin.Id;
         }
@@ -106,7 +106,7 @@ public class SshKeyTests
         int keyId;
         using (var scope = _server!.Services.CreateScope())
         {
-            var db = scope.ServiceProvider.GetRequiredService<TemplateDbContext>();
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
             var key = await db.SshKeys.FirstAsync(k => k.Name == "Admin Key");
             keyId = key.Id;
         }
