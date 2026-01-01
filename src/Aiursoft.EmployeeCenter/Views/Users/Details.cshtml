@@ -7,6 +7,7 @@
 @inject StorageService StorageService
 
 @* ReSharper disable Razor.ResourceNotResolved *@
+@* ReSharper disable NotOverriddenInSpecificCulture *@
 <div class="row mb-2 mb-xl-3">
     <div class="col-auto d-none d-sm-block">
         <h3>@Localizer["User Details:"] <span class="text-muted">@Model.User.UserName</span></h3>
@@ -149,4 +150,5 @@
         </div>
     </div>
 </div>
+@* ReSharper restore NotOverriddenInSpecificCulture *@
 @* ReSharper restore Razor.ResourceNotResolved *@

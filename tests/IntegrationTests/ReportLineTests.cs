@@ -3,7 +3,6 @@ using System.Text.RegularExpressions;
 using Aiursoft.CSTools.Tools;
 using Aiursoft.DbTools;
 using Aiursoft.EmployeeCenter.Entities;
-using Aiursoft.EmployeeCenter.Authorization;
 using Microsoft.AspNetCore.Identity;
 using static Aiursoft.WebTools.Extends;
 
@@ -103,8 +102,7 @@ public class ReportLineTests
         await _http.PostAsync("/Account/Register", registerContent);
         
         // Get User A ID
-        var managePage = await _http.GetAsync("/Manage/Index");
-        var manageHtml = await managePage.Content.ReadAsStringAsync();
+        await _http.GetAsync("/Manage/Index");
         // Since we don't have ID on manage page easily, let's just use admin to find it.
         
         await LogOffAsync();
