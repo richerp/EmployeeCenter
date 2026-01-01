@@ -108,5 +108,11 @@
   <data name="Allows viewing, editing, and deleting any user&apos;s SSH keys." xml:space="preserve">
     <value>任意のユーザーのSSHキーを表示、編集、削除できます。</value>
   </data>
+  <data name="View Report Line" xml:space="preserve">
+    <value>報告ラインを表示</value>
+  </data>
+  <data name="Allows viewing the report line of any user, including their manager, subordinates, and peers." xml:space="preserve">
+    <value>任意のユーザーのレポートライン（マネージャー、部下、同僚を含む）を閲覧できます。</value>
+  </data>
 
 </root>
