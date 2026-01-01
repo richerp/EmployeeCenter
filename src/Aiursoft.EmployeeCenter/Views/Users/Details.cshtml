@@ -79,6 +79,29 @@
                         <div class="col-sm-9">@(Model.User.BankAccount ?? "N/A")</div>
                     </div>
                 </div>
+                <div class="list-group-item">
+                    <div class="row">
+                        <strong class="col-sm-3">@Localizer["Manager"]</strong>
+                        <div class="col-sm-9">
+                            @if (Model.User.Manager != null)
+                            {
+                                <a asp-action="Details" asp-route-id="@Model.User.ManagerId">@Model.User.Manager.DisplayName</a>
+                            }
+                            else
+                            {
+                                <span>N/A</span>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="row">
+                        <strong class="col-sm-3">@Localizer["Report Line"]</strong>
+                        <div class="col-sm-9">
+                            <a asp-controller="ReportLine" asp-action="Index" asp-route-id="@Model.User.Id">@Localizer["View Report Line"]</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="card flex-fill mb-4">

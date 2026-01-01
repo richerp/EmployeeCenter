@@ -31,4 +31,7 @@ public static class AppPermissionNames
 
     // SSH Key Management
     public const string CanManageSshKeys = nameof(CanManageSshKeys);
+
+    // Report Line Management
+    public const string CanViewReportLine = nameof(CanViewReportLine);
 }

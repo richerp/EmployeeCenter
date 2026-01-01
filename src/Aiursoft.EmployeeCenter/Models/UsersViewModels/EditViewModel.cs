@@ -62,6 +62,11 @@ public class EditViewModel : UiStackLayoutViewModel
     [MaxLength(30)]
     public string? BankName { get; set; }
 
+    [Display(Name = "Manager")]
+    public string? ManagerId { get; set; }
+
+    public string? ManagerDisplayName { get; set; }
+
     [Required(ErrorMessage = "The {0} is required.")]
     [FromRoute]
     public required string Id { get; set; }

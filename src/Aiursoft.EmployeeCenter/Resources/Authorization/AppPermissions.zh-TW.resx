@@ -108,5 +108,11 @@
   <data name="Allows viewing, editing, and deleting any user&apos;s SSH keys." xml:space="preserve">
     <value>允許檢視、編輯和刪除任何使用者的 SSH 金鑰。</value>
   </data>
+  <data name="View Report Line" xml:space="preserve">
+    <value>檢視報告線</value>
+  </data>
+  <data name="Allows viewing the report line of any user, including their manager, subordinates, and peers." xml:space="preserve">
+    <value>允許檢視任何使用者的報告路線，包括其主管、下屬及同儕。</value>
+  </data>
 
 </root>
