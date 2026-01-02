@@ -1,0 +1,14 @@
+We are working on escorting the merge request #14: Fix for issue #13: 将管理工资条（管理员功能）与查看自己的工资条拆到两个独立的Controller里。
+
+There are merge conflicts between the source branch 'fix-issue-13' and the target branch 'master'.
+
+Your task is to:
+1. Merge the target branch 'master' into the current branch.
+2. Resolve any merge conflicts that arise.
+3. Ensure the code still builds and looks correct.
+
+Please run 'git fetch origin master' and then 'git merge origin/master' to start the merge process. 
+
+Please also bump the version of the updated nuget package projects if necessary.
+
+After resolving conflicts, don't forget to run git commit.
