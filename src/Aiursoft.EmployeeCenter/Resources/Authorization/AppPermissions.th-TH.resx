@@ -96,5 +96,23 @@
   <data name="Allows viewing, editing, and deleting any user&apos;s SSH keys." xml:space="preserve">
     <value>อนุญาตให้ดู แก้ไข และลบคีย์ SSH ของผู้ใช้ใดก็ได้</value>
   </data>
+  <data name="Add Global Password" xml:space="preserve">
+    <value>เพิ่มรหัสผ่านทั่วโลก</value>
+  </data>
+  <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
+    <value>อนุญาตให้สร้างรหัสผ่านสากลใหม่ที่สามารถแชร์กับผู้อื่นได้</value>
+  </data>
+  <data name="Manage Any Password" xml:space="preserve">
+    <value>จัดการรหัสผ่านใดๆ</value>
+  </data>
+  <data name="Allows managing and deleting any global password created by any user." xml:space="preserve">
+    <value>อนุญาตให้จัดการและลบรหัสผ่านทั่วทั้งระบบใดๆ ที่ผู้ใช้ใดๆ สร้างขึ้น</value>
+  </data>
+  <data name="View Report Line" xml:space="preserve">
+    <value>ดูสายรายงาน</value>
+  </data>
+  <data name="Allows viewing the report line of any user, including their manager, subordinates, and peers." xml:space="preserve">
+    <value>อนุญาตให้ดูสายงานของผู้ใช้ทุกคน รวมถึงผู้บังคับบัญชา ผู้ใต้บังคับบัญชา และเพื่อนร่วมงาน</value>
+  </data>
 
 </root>

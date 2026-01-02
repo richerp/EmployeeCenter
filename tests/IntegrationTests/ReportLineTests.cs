@@ -155,7 +155,7 @@ public class ReportLineTests
         reportLinePage.EnsureSuccessStatusCode();
         var reportLineHtml = await reportLinePage.Content.ReadAsStringAsync();
         Assert.Contains(userB.DisplayName, reportLineHtml);
-        Assert.Contains("Management Chain", reportLineHtml);
+        Assert.Contains("Visual Report Line", reportLineHtml);
 
         // 5. Login as Admin and view B's report line (should see A as subordinate)
         await LogOffAsync();
@@ -164,7 +164,7 @@ public class ReportLineTests
         reportLinePage = await _http.GetAsync($"/ReportLine/Index/{userB.Id}");
         reportLineHtml = await reportLinePage.Content.ReadAsStringAsync();
         Assert.Contains(userA.DisplayName, reportLineHtml);
-        Assert.Contains("Direct Reports", reportLineHtml);
+        Assert.Contains("Visual Report Line", reportLineHtml);
         
         await LogOffAsync();
         

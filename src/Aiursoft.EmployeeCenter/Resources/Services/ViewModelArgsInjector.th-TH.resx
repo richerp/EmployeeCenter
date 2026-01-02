@@ -132,5 +132,29 @@
   <data name="Unauthorized" xml:space="preserve">
     <value>ไม่ได้รับอนุญาต</value>
   </data>
+  <data name="Passwords" xml:space="preserve">
+    <value>รหัสผ่าน</value>
+  </data>
+  <data name="Shared Info" xml:space="preserve">
+    <value>ข้อมูลที่แชร์</value>
+  </data>
+  <data name="Manage Shares" xml:space="preserve">
+    <value>จัดการการแชร์</value>
+  </data>
+  <data name="Password Details" xml:space="preserve">
+    <value>รายละเอียดรหัสผ่าน</value>
+  </data>
+  <data name="Create Password" xml:space="preserve">
+    <value>สร้างรหัสผ่าน</value>
+  </data>
+  <data name="Edit Password" xml:space="preserve">
+    <value>แก้ไขรหัสผ่าน</value>
+  </data>
+  <data name="Employee Center" xml:space="preserve">
+    <value>ศูนย์พนักงาน</value>
+  </data>
+  <data name="Aiursoft Employee Center" xml:space="preserve">
+    <value>Aiursoft ศูนย์พนักงาน</value>
+  </data>
 
 </root>
