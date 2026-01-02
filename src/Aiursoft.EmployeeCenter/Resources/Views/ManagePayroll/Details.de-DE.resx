@@ -60,7 +60,7 @@
   <data name="Employee ID" xml:space="preserve">
     <value>Mitarbeiternummer</value>
   </data>
-  <data name="Back to My Payrolls" xml:space="preserve">
+  <data name="Back to Manage Payrolls" xml:space="preserve">
     <value>Zurück zu meinen Gehaltsabrechnungen</value>
   </data>
   <data name="Payroll period" xml:space="preserve">

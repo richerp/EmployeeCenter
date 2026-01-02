@@ -51,8 +51,8 @@
   <data name="Category" xml:space="preserve">
     <value>类别</value>
   </data>
-  <data name="Back to My Payrolls" xml:space="preserve">
-    <value>返回我的工资单</value>
+  <data name="Back to Manage Payrolls" xml:space="preserve">
+    <value>返回管理工资条</value>
   </data>
   <data name="Employee ID" xml:space="preserve">
     <value>员工编号</value>

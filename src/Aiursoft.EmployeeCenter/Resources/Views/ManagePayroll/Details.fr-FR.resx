@@ -45,7 +45,7 @@
   <data name="Amount" xml:space="preserve">
     <value>Montant</value>
   </data>
-  <data name="Back to My Payrolls" xml:space="preserve">
+  <data name="Back to Manage Payrolls" xml:space="preserve">
     <value>Retour à mes fiches de paie</value>
   </data>
   <data name="Employee ID" xml:space="preserve">
