@@ -82,6 +82,9 @@
                     <input asp-for="BankAccount" class="form-control" />
                     <span asp-validation-for="BankAccount" class="text-danger"></span>
                 </div>
+                <div class="col-12 mb-3">
+                    <partial name="_UserSelector" model='("ManagerId", "ManagerDisplayName", Model.ManagerId, Model.ManagerDisplayName)' />
+                </div>
                 <div class="mb-3">
                     <label asp-for="AvatarUrl" class="form-label">@Localizer["New avatar file"]</label>
                     <vc:file-upload asp-for="@Model.AvatarUrl" upload-endpoint="/upload/avatar" allowed-extensions="png bmp jpg" max-size-in-mb="10"></vc:file-upload>

@@ -272,6 +272,9 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.Property<DateTimeOffset?>("LockoutEnd")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("ManagerId")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256)
                         .HasColumnType("TEXT");
@@ -300,6 +303,8 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ManagerId");
 
                     b.HasIndex("NormalizedEmail")
                         .HasDatabaseName("EmailIndex");
@@ -489,6 +494,15 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.Navigation("Owner");
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.User", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "Manager")
+                        .WithMany("Reports")
+                        .HasForeignKey("ManagerId");
+
+                    b.Navigation("Manager");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -552,6 +566,8 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.Navigation("PasswordsSharedWithMe");
 
                     b.Navigation("Payrolls");
+
+                    b.Navigation("Reports");
 
                     b.Navigation("SshKeys");
                 });

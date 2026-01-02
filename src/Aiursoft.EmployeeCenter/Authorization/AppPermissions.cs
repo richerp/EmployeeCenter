@@ -69,7 +69,10 @@ public class AppPermissions
                 localizer["Allows managing and deleting any global password created by any user."]),
             new(AppPermissionNames.CanManageSshKeys,
                 localizer["Manage SSH Keys"],
-                localizer["Allows viewing, editing, and deleting any user's SSH keys."])
+                localizer["Allows viewing, editing, and deleting any user's SSH keys."]),
+            new(AppPermissionNames.CanViewReportLine,
+                localizer["View Report Line"],
+                localizer["Allows viewing the report line of any user, including their manager, subordinates, and peers."])
         ];
         return allPermission;
     }

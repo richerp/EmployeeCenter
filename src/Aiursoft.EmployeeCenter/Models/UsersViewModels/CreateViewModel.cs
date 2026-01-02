@@ -49,4 +49,9 @@ public class CreateViewModel: UiStackLayoutViewModel
     [Display(Name = "Bank Name")]
     [MaxLength(30)]
     public string? BankName { get; set; }
+
+    [Display(Name = "Manager")]
+    public string? ManagerId { get; set; }
+
+    public string? ManagerDisplayName { get; set; }
 }

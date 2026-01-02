@@ -90,6 +90,10 @@
                         </div>
                     </div>
 
+                    <div class="mb-3">
+                        <partial name="_UserSelector" model='("ManagerId", "ManagerDisplayName", Model.ManagerId, Model.ManagerDisplayName)' />
+                    </div>
+
                     <div class="mt-4">
                         <button type="submit" class="btn btn-primary">
                             <i class="align-middle me-2" data-lucide="user-plus"></i> @Localizer["Create User"]

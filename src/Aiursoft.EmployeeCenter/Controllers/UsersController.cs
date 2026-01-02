@@ -84,7 +84,9 @@ public class UsersController(
     public async Task<IActionResult> Details(string? id)
     {
         if (id == null) return NotFound();
-        var user = await userManager.FindByIdAsync(id);
+        var user = await context.Users
+            .Include(u => u.Manager)
+            .FirstOrDefaultAsync(u => u.Id == id);
         if (user == null) return NotFound();
 
         var roleNames = await userManager.GetRolesAsync(user);
@@ -137,6 +139,7 @@ public class UsersController(
                 BaseSalary = newUser.BaseSalary,
                 BankAccount = newUser.BankAccount,
                 BankName = newUser.BankName,
+                ManagerId = newUser.ManagerId,
                 AvatarRelativePath = Aiursoft.EmployeeCenter.Entities.User.DefaultAvatarPath
             };
             var result = await userManager.CreateAsync(user, newUser.Password!);
@@ -159,7 +162,9 @@ public class UsersController(
     public async Task<IActionResult> Edit(string? id)
     {
         if (id == null) return NotFound();
-        var user = await userManager.FindByIdAsync(id);
+        var user = await context.Users
+            .Include(u => u.Manager)
+            .FirstOrDefaultAsync(u => u.Id == id);
         if (user == null) return NotFound();
 
         var userRoles = await userManager.GetRolesAsync(user);
@@ -177,6 +182,8 @@ public class UsersController(
             BaseSalary = user.BaseSalary,
             BankAccount = user.BankAccount,
             BankName = user.BankName,
+            ManagerId = user.ManagerId,
+            ManagerDisplayName = user.Manager?.DisplayName,
             AllRoles = allRoles.Select(role => new UserRoleViewModel
             {
                 RoleName = role.Name!,
@@ -209,6 +216,7 @@ public class UsersController(
         userInDb.BaseSalary = model.BaseSalary;
         userInDb.BankAccount = model.BankAccount;
         userInDb.BankName = model.BankName;
+        userInDb.ManagerId = model.ManagerId;
         await userManager.UpdateAsync(userInDb);
 
         if (!string.IsNullOrWhiteSpace(model.Password) && model.Password != "you-cant-read-it")
