@@ -116,7 +116,7 @@ public class PayrollTests
             { "__RequestVerificationToken", loginToken }
         }));
 
-        var createPayrollToken = await GetAntiCsrfToken("/Payroll/Create");
+        var createPayrollToken = await GetAntiCsrfToken("/ManagePayroll/Create");
         var payrollContent = new FormUrlEncodedContent(new Dictionary<string, string>
         {
             { "UserId", userId },
@@ -125,11 +125,11 @@ public class PayrollTests
             { "Content", "# December Payroll\nBase: 4000\nBonus: 1000" },
             { "__RequestVerificationToken", createPayrollToken }
         });
-        var createPayrollResponse = await _http.PostAsync("/Payroll/Create", payrollContent);
+        var createPayrollResponse = await _http.PostAsync("/ManagePayroll/Create", payrollContent);
         Assert.AreEqual(HttpStatusCode.Found, createPayrollResponse.StatusCode);
 
         // 5. Verify payroll in Manage page
-        var manageResponse = await _http.GetAsync("/Payroll/Manage");
+        var manageResponse = await _http.GetAsync("/ManagePayroll/Index");
         manageResponse.EnsureSuccessStatusCode();
         var manageHtml = await manageResponse.Content.ReadAsStringAsync();
         Assert.Contains(userName, manageHtml);

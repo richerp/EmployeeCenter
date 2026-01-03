@@ -96,5 +96,23 @@
   <data name="Allows viewing, editing, and deleting any user&apos;s SSH keys." xml:space="preserve">
     <value>Consente di visualizzare, modificare ed eliminare le chiavi SSH di qualsiasi utente.</value>
   </data>
+  <data name="Add Global Password" xml:space="preserve">
+    <value>Aggiungi Password Globale</value>
+  </data>
+  <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
+    <value>Permette di creare nuove password globali che possono essere condivise con altri.</value>
+  </data>
+  <data name="Manage Any Password" xml:space="preserve">
+    <value>Gestisci Qualsiasi Password</value>
+  </data>
+  <data name="Allows managing and deleting any global password created by any user." xml:space="preserve">
+    <value>Permette di gestire e cancellare qualsiasi password globale creata da qualsiasi utente.</value>
+  </data>
+  <data name="View Report Line" xml:space="preserve">
+    <value>Visualizza Riga Report</value>
+  </data>
+  <data name="Allows viewing the report line of any user, including their manager, subordinates, and peers." xml:space="preserve">
+    <value>Permette di visualizzare la linea di rapporto di qualsiasi utente, incluso il loro responsabile, i subordinati e i colleghi.</value>
+  </data>
 
 </root>

@@ -96,5 +96,23 @@
   <data name="Allows viewing, editing, and deleting any user&apos;s SSH keys." xml:space="preserve">
     <value>يسمح بعرض وتعديل وحذف مفاتيح SSH لأي مستخدم.</value>
   </data>
+  <data name="Add Global Password" xml:space="preserve">
+    <value>إضافة كلمة مرور عامة</value>
+  </data>
+  <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
+    <value>يسمح بإنشاء كلمات مرور عامة جديدة يمكن مشاركتها مع الآخرين.</value>
+  </data>
+  <data name="Manage Any Password" xml:space="preserve">
+    <value>إدارة أي كلمة سر</value>
+  </data>
+  <data name="Allows managing and deleting any global password created by any user." xml:space="preserve">
+    <value>يسمح بإدارة وحذف أي كلمة مرور عالمية مُنشأة بواسطة أي مستخدم.</value>
+  </data>
+  <data name="View Report Line" xml:space="preserve">
+    <value>عرض خط التقارير</value>
+  </data>
+  <data name="Allows viewing the report line of any user, including their manager, subordinates, and peers." xml:space="preserve">
+    <value>يتيح عرض خط الإبلاغ لأي مستخدم، بما في ذلك مديرهم، مرؤوسيهم، وأقرانهم.</value>
+  </data>
 
 </root>
