@@ -129,5 +129,29 @@
   <data name="Unauthorized" xml:space="preserve">
     <value>غير مصرح</value>
   </data>
+  <data name="Passwords" xml:space="preserve">
+    <value>كلمات المرور</value>
+  </data>
+  <data name="Shared Info" xml:space="preserve">
+    <value>المعلومات المشتركة</value>
+  </data>
+  <data name="Manage Shares" xml:space="preserve">
+    <value>إدارة المشاركات</value>
+  </data>
+  <data name="Password Details" xml:space="preserve">
+    <value>تفاصيل كلمة المرور</value>
+  </data>
+  <data name="Create Password" xml:space="preserve">
+    <value>إنشاء كلمة المرور</value>
+  </data>
+  <data name="Edit Password" xml:space="preserve">
+    <value>تعديل كلمة المرور</value>
+  </data>
+  <data name="Employee Center" xml:space="preserve">
+    <value>مركز الموظفين</value>
+  </data>
+  <data name="Aiursoft Employee Center" xml:space="preserve">
+    <value>Aiursoft مركز الموظفين</value>
+  </data>
 
 </root>

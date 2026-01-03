@@ -129,5 +129,29 @@
   <data name="Error" xml:space="preserve">
     <value>Erro</value>
   </data>
+  <data name="Passwords" xml:space="preserve">
+    <value>Senhas</value>
+  </data>
+  <data name="Shared Info" xml:space="preserve">
+    <value>Informação Compartilhada</value>
+  </data>
+  <data name="Manage Shares" xml:space="preserve">
+    <value>Gerenciar Compartilhamentos</value>
+  </data>
+  <data name="Password Details" xml:space="preserve">
+    <value>Detalhes da Senha</value>
+  </data>
+  <data name="Create Password" xml:space="preserve">
+    <value>Criar Senha</value>
+  </data>
+  <data name="Edit Password" xml:space="preserve">
+    <value>Editar Senha</value>
+  </data>
+  <data name="Employee Center" xml:space="preserve">
+    <value>Centro de Funcionários</value>
+  </data>
+  <data name="Aiursoft Employee Center" xml:space="preserve">
+    <value>Aiursoft Centro de Colaboradores</value>
+  </data>
 
 </root>
