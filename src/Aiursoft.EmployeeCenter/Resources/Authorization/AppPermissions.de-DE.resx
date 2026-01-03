@@ -112,7 +112,7 @@
     <value>Berichtslinie anzeigen</value>
   </data>
   <data name="Allows viewing the report line of any user, including their manager, subordinates, and peers." xml:space="preserve">
-    <value>Erlaubt das Anzeigen der Berichtslinie eines beliebigen Benutzers, einschließlich ihres Vorgesetzten, ihrer Unterstellten und ihrer Kollegen.</value>
+    <value>Erlaubt das Anzeigen der Berichtslinie eines beliebigen Benutzers, einschließlich seines Managers, seiner Untergeordneten und Kollegen.</value>
   </data>
 
 </root>

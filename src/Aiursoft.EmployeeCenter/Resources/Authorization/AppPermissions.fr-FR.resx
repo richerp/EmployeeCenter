@@ -100,7 +100,7 @@
     <value>Ajouter un mot de passe global</value>
   </data>
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
-    <value>Permet de créer de nouveaux mots de passe globaux qui peuvent être partagés avec d&apos;autres.</value>
+    <value>Permet de créer de nouveaux mots de passe globaux pouvant être partagés avec d&apos;autres.</value>
   </data>
   <data name="Manage Any Password" xml:space="preserve">
     <value>Gérer n&apos;importe quel mot de passe</value>
@@ -109,10 +109,10 @@
     <value>Permet de gérer et de supprimer n&apos;importe quel mot de passe global créé par n&apos;importe quel utilisateur.</value>
   </data>
   <data name="View Report Line" xml:space="preserve">
-    <value>Voir la ligne de reporting</value>
+    <value>Afficher la ligne de reporting</value>
   </data>
   <data name="Allows viewing the report line of any user, including their manager, subordinates, and peers." xml:space="preserve">
-    <value>Permet de visualiser la ligne de reporting de tout utilisateur, y compris leur manager, leurs subordonnés et leurs collègues.</value>
+    <value>Permet d&apos;afficher la ligne de reporting de tout utilisateur, y compris leur manager, leurs subordonnés et leurs collègues.</value>
   </data>
 
 </root>

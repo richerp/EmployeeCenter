@@ -3,7 +3,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net10.0</TargetFramework>
     <AssemblyName>Aiursoft.EmployeeCenter</AssemblyName>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <RootNamespace>Aiursoft.EmployeeCenter</RootNamespace>
     <IsTestProject>false</IsTestProject>
     <IsPackable>false</IsPackable>
