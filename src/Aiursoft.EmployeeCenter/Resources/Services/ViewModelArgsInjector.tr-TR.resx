@@ -129,5 +129,29 @@
   <data name="Unauthorized" xml:space="preserve">
     <value>Yetkisiz</value>
   </data>
+  <data name="Passwords" xml:space="preserve">
+    <value>Şifreler</value>
+  </data>
+  <data name="Shared Info" xml:space="preserve">
+    <value>Paylaşılan Bilgi</value>
+  </data>
+  <data name="Manage Shares" xml:space="preserve">
+    <value>Paylaşımları Yönet</value>
+  </data>
+  <data name="Password Details" xml:space="preserve">
+    <value>Şifre Detayları</value>
+  </data>
+  <data name="Create Password" xml:space="preserve">
+    <value>Şifre Oluştur</value>
+  </data>
+  <data name="Edit Password" xml:space="preserve">
+    <value>Şifreyi Düzenle</value>
+  </data>
+  <data name="Employee Center" xml:space="preserve">
+    <value>Çalışan Merkezi</value>
+  </data>
+  <data name="Aiursoft Employee Center" xml:space="preserve">
+    <value>Aiursoft Çalışan Merkezi</value>
+  </data>
 
 </root>

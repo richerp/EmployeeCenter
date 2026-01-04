@@ -57,6 +57,18 @@ public class User : IdentityUser
     [InverseProperty(nameof(SshKey.Owner))]
     public IEnumerable<SshKey> SshKeys { get; init; } = new List<SshKey>();
 
+    [Newtonsoft.Json.JsonIgnore]
+    [InverseProperty(nameof(Incident.Owner))]
+    public IEnumerable<Incident> OwnedIncidents { get; init; } = new List<Incident>();
+
+    [Newtonsoft.Json.JsonIgnore]
+    [InverseProperty(nameof(Incident.IM))]
+    public IEnumerable<Incident> ManagedIncidents { get; init; } = new List<Incident>();
+
+    [Newtonsoft.Json.JsonIgnore]
+    [InverseProperty(nameof(IncidentComment.Author))]
+    public IEnumerable<IncidentComment> IncidentComments { get; init; } = new List<IncidentComment>();
+
     public string? ManagerId { get; set; }
 
     [ForeignKey(nameof(ManagerId))]
