@@ -22,6 +22,101 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Incident", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("char(36)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(2000)
+                        .HasColumnType("varchar(2000)");
+
+                    b.Property<string>("IMId")
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<DateTime?>("MitigatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("MitigationReason")
+                        .HasMaxLength(2000)
+                        .HasColumnType("varchar(2000)");
+
+                    b.Property<string>("OwnerId")
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<string>("PostMortem")
+                        .HasMaxLength(10000)
+                        .HasColumnType("varchar(10000)");
+
+                    b.Property<string>("ResolutionReason")
+                        .HasMaxLength(2000)
+                        .HasColumnType("varchar(2000)");
+
+                    b.Property<DateTime?>("ResolvedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("Severity")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TargetRole")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IMId");
+
+                    b.HasIndex("OwnerId");
+
+                    b.ToTable("Incidents");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.IncidentComment", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("char(36)");
+
+                    b.Property<string>("AuthorId")
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasMaxLength(2000)
+                        .HasColumnType("varchar(2000)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<Guid>("IncidentId")
+                        .HasColumnType("char(36)");
+
+                    b.Property<bool>("IsSystemComment")
+                        .HasColumnType("tinyint(1)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AuthorId");
+
+                    b.HasIndex("IncidentId");
+
+                    b.ToTable("IncidentComments");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Password", b =>
                 {
                     b.Property<Guid>("Id")
@@ -457,6 +552,38 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Incident", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "IM")
+                        .WithMany("ManagedIncidents")
+                        .HasForeignKey("IMId");
+
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "Owner")
+                        .WithMany("OwnedIncidents")
+                        .HasForeignKey("OwnerId");
+
+                    b.Navigation("IM");
+
+                    b.Navigation("Owner");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.IncidentComment", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "Author")
+                        .WithMany("IncidentComments")
+                        .HasForeignKey("AuthorId");
+
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.Incident", "Incident")
+                        .WithMany("Comments")
+                        .HasForeignKey("IncidentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Author");
+
+                    b.Navigation("Incident");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Password", b =>
                 {
                     b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "Creator")
@@ -567,6 +694,11 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Incident", b =>
+                {
+                    b.Navigation("Comments");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Password", b =>
                 {
                     b.Navigation("PasswordShares");
@@ -575,6 +707,12 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.User", b =>
                 {
                     b.Navigation("CreatedPasswords");
+
+                    b.Navigation("IncidentComments");
+
+                    b.Navigation("ManagedIncidents");
+
+                    b.Navigation("OwnedIncidents");
 
                     b.Navigation("PasswordsSharedWithMe");
 

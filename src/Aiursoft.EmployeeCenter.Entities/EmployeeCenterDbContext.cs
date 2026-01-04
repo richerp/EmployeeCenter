@@ -10,6 +10,8 @@ public abstract class EmployeeCenterDbContext(DbContextOptions options) : Identi
     public DbSet<SshKey> SshKeys => Set<SshKey>();
     public DbSet<Password> Passwords => Set<Password>();
     public DbSet<PasswordShare> PasswordShares => Set<PasswordShare>();
+    public DbSet<Incident> Incidents => Set<Incident>();
+    public DbSet<IncidentComment> IncidentComments => Set<IncidentComment>();
 
     public virtual Task MigrateAsync(CancellationToken cancellationToken) =>
         Database.MigrateAsync(cancellationToken);
