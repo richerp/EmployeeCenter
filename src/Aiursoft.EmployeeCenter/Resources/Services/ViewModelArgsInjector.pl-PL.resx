@@ -129,5 +129,29 @@
   <data name="Unauthorized" xml:space="preserve">
     <value>Nieautoryzowany</value>
   </data>
+  <data name="Passwords" xml:space="preserve">
+    <value>Hasła</value>
+  </data>
+  <data name="Shared Info" xml:space="preserve">
+    <value>Udostępnione informacje</value>
+  </data>
+  <data name="Manage Shares" xml:space="preserve">
+    <value>Zarządzaj udostępnieniami</value>
+  </data>
+  <data name="Password Details" xml:space="preserve">
+    <value>Szczegóły hasła</value>
+  </data>
+  <data name="Create Password" xml:space="preserve">
+    <value>Utwórz hasło</value>
+  </data>
+  <data name="Edit Password" xml:space="preserve">
+    <value>Edytuj hasło</value>
+  </data>
+  <data name="Employee Center" xml:space="preserve">
+    <value>Centrum Pracowników</value>
+  </data>
+  <data name="Aiursoft Employee Center" xml:space="preserve">
+    <value>Aiursoft Centrum Pracownicze</value>
+  </data>
 
 </root>
