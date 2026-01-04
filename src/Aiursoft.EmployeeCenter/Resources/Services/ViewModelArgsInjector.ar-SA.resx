@@ -133,7 +133,11 @@
     <value>كلمات المرور</value>
   </data>
   <data name="Shared Info" xml:space="preserve">
+<<<<<<< HEAD
     <value>المعلومات المشتركة</value>
+=======
+    <value>معلومات مشتركة</value>
+>>>>>>> origin/fix-issue-13
   </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>إدارة المشاركات</value>

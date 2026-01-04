@@ -130,7 +130,11 @@
     <value>Erro</value>
   </data>
   <data name="Passwords" xml:space="preserve">
+<<<<<<< HEAD
     <value>Palavras-passe</value>
+=======
+    <value>palavras-passe</value>
+>>>>>>> origin/fix-issue-13
   </data>
   <data name="Shared Info" xml:space="preserve">
     <value>Informação Partilhada</value>

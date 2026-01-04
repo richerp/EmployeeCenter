@@ -136,19 +136,33 @@
     <value>Contraseñas</value>
   </data>
   <data name="Shared Info" xml:space="preserve">
+<<<<<<< HEAD
     <value>Información Compartida</value>
   </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>Gestionar Comparticiones</value>
+=======
+    <value>Información compartida</value>
+  </data>
+  <data name="Manage Shares" xml:space="preserve">
+    <value>Administrar Compartidos</value>
+>>>>>>> origin/fix-issue-13
   </data>
   <data name="Password Details" xml:space="preserve">
     <value>Detalles de Contraseña</value>
   </data>
   <data name="Create Password" xml:space="preserve">
+<<<<<<< HEAD
     <value>Crear Contraseña</value>
   </data>
   <data name="Edit Password" xml:space="preserve">
     <value>Editar contraseña</value>
+=======
+    <value>Crear contraseña</value>
+  </data>
+  <data name="Edit Password" xml:space="preserve">
+    <value>Editar Contraseña</value>
+>>>>>>> origin/fix-issue-13
   </data>
   <data name="Employee Center" xml:space="preserve">
     <value>Centro de Empleados</value>
