@@ -97,17 +97,10 @@
     <value>Permite ver, editar y eliminar las claves SSH de cualquier usuario.</value>
   </data>
   <data name="Add Global Password" xml:space="preserve">
-<<<<<<< HEAD
-    <value>Agregar Contraseña Global</value>
-  </data>
-  <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
-    <value>Permite crear nuevas contraseñas globales que se pueden compartir con otros.</value>
-=======
     <value>Añadir Contraseña Global</value>
   </data>
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Permite crear nuevas contraseñas globales que pueden ser compartidas con otros.</value>
->>>>>>> origin/fix-issue-13
   </data>
   <data name="Manage Any Password" xml:space="preserve">
     <value>Gestionar cualquier contraseña</value>
@@ -116,17 +109,10 @@
     <value>Permite gestionar y eliminar cualquier contraseña global creada por cualquier usuario.</value>
   </data>
   <data name="View Report Line" xml:space="preserve">
-<<<<<<< HEAD
-    <value>Ver línea de reporte</value>
-  </data>
-  <data name="Allows viewing the report line of any user, including their manager, subordinates, and peers." xml:space="preserve">
-    <value>Permite ver la línea de mando de cualquier usuario, incluyendo a su gerente, sus subordinados y sus pares.</value>
-=======
     <value>Ver Línea de Informe</value>
   </data>
   <data name="Allows viewing the report line of any user, including their manager, subordinates, and peers." xml:space="preserve">
     <value>Permite ver la línea de mando de cualquier usuario, incluyendo a su jefe, subordinados y pares.</value>
->>>>>>> origin/fix-issue-13
   </data>
 
 </root>

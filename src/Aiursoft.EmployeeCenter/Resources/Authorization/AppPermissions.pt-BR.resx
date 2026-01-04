@@ -112,11 +112,7 @@
     <value>Visualizar Linha de Relatório</value>
   </data>
   <data name="Allows viewing the report line of any user, including their manager, subordinates, and peers." xml:space="preserve">
-<<<<<<< HEAD
-    <value>Permite visualizar a linha de relatório de qualquer usuário, incluindo seu gerente, subordinados e pares.</value>
-=======
     <value>Permite visualizar a linha de relatório de qualquer usuário, incluindo seu gerente, seus subordinados e seus colegas.</value>
->>>>>>> origin/fix-issue-13
   </data>
 
 </root>

@@ -133,15 +133,6 @@
     <value>Password</value>
   </data>
   <data name="Shared Info" xml:space="preserve">
-<<<<<<< HEAD
-    <value>Informazioni condivise</value>
-  </data>
-  <data name="Manage Shares" xml:space="preserve">
-    <value>Gestisci Condivisioni</value>
-  </data>
-  <data name="Password Details" xml:space="preserve">
-    <value>Dettagli password</value>
-=======
     <value>Informazioni Condivise</value>
   </data>
   <data name="Manage Shares" xml:space="preserve">
@@ -149,7 +140,6 @@
   </data>
   <data name="Password Details" xml:space="preserve">
     <value>Dettagli Password</value>
->>>>>>> origin/fix-issue-13
   </data>
   <data name="Create Password" xml:space="preserve">
     <value>Crea Password</value>

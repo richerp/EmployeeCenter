@@ -145,11 +145,7 @@
     <value>Создать пароль</value>
   </data>
   <data name="Edit Password" xml:space="preserve">
-<<<<<<< HEAD
-    <value>Изменить пароль</value>
-=======
     <value>Редактировать пароль</value>
->>>>>>> origin/fix-issue-13
   </data>
   <data name="Employee Center" xml:space="preserve">
     <value>Центр сотрудников</value>

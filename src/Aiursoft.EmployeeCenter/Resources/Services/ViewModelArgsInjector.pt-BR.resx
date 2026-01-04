@@ -133,11 +133,7 @@
     <value>Senhas</value>
   </data>
   <data name="Shared Info" xml:space="preserve">
-<<<<<<< HEAD
-    <value>Informação Compartilhada</value>
-=======
     <value>Informações Compartilhadas</value>
->>>>>>> origin/fix-issue-13
   </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>Gerenciar Compartilhamentos</value>
@@ -155,11 +151,7 @@
     <value>Centro de Funcionários</value>
   </data>
   <data name="Aiursoft Employee Center" xml:space="preserve">
-<<<<<<< HEAD
-    <value>Aiursoft Centro de Colaboradores</value>
-=======
     <value>Aiursoft Centro de Funcionários</value>
->>>>>>> origin/fix-issue-13
   </data>
 
 </root>
