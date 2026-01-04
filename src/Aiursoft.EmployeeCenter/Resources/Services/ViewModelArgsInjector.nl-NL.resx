@@ -129,5 +129,29 @@
   <data name="Unauthorized" xml:space="preserve">
     <value>Niet geautoriseerd</value>
   </data>
+  <data name="Passwords" xml:space="preserve">
+    <value>Wachtwoorden</value>
+  </data>
+  <data name="Shared Info" xml:space="preserve">
+    <value>Gedeelde informatie</value>
+  </data>
+  <data name="Manage Shares" xml:space="preserve">
+    <value>Beheer gedeelde items</value>
+  </data>
+  <data name="Password Details" xml:space="preserve">
+    <value>Wachtwoorddetails</value>
+  </data>
+  <data name="Create Password" xml:space="preserve">
+    <value>Wachtwoord aanmaken</value>
+  </data>
+  <data name="Edit Password" xml:space="preserve">
+    <value>Bewerk wachtwoord</value>
+  </data>
+  <data name="Employee Center" xml:space="preserve">
+    <value>Medewerkerscentrum</value>
+  </data>
+  <data name="Aiursoft Employee Center" xml:space="preserve">
+    <value>Aiursoft Medewerkerscentrum</value>
+  </data>
 
 </root>

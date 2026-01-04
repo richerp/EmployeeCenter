@@ -129,5 +129,29 @@
   <data name="Error" xml:space="preserve">
     <value>Fel</value>
   </data>
+  <data name="Passwords" xml:space="preserve">
+    <value>Lösenord</value>
+  </data>
+  <data name="Shared Info" xml:space="preserve">
+    <value>Delad information</value>
+  </data>
+  <data name="Manage Shares" xml:space="preserve">
+    <value>Hantera delningar</value>
+  </data>
+  <data name="Password Details" xml:space="preserve">
+    <value>Lösenordsdetaljer</value>
+  </data>
+  <data name="Create Password" xml:space="preserve">
+    <value>Skapa lösenord</value>
+  </data>
+  <data name="Edit Password" xml:space="preserve">
+    <value>Redigera lösenord</value>
+  </data>
+  <data name="Employee Center" xml:space="preserve">
+    <value>Anställdcentrum</value>
+  </data>
+  <data name="Aiursoft Employee Center" xml:space="preserve">
+    <value>Aiursoft Anställdcentrum</value>
+  </data>
 
 </root>

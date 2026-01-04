@@ -2,6 +2,7 @@
 @using Microsoft.AspNetCore.Authorization
 @using Aiursoft.EmployeeCenter.Services.FileStorage
 @using Aiursoft.EmployeeCenter.Entities
+@using System.Net
 @model Aiursoft.EmployeeCenter.Models.ReportLineViewModels.IndexViewModel
 @inject IAuthorizationService AuthorizationService
 @inject StorageService StorageService
@@ -11,11 +12,11 @@
     
     string GetNodeLabel(User user) 
     {
-        var avatarUrl = StorageService.RelativePathToInternetUrl(user.AvatarRelativePath) + "?w=50&square=true";
-        var label = $"<img src='{avatarUrl}' width='25' height='25' /> {user.DisplayName}";
+        var avatarUrl = StorageService.RelativePathToInternetUrl(user.AvatarRelativePath) + "?w=50&amp;square=true";
+        var label = $"<img src='{avatarUrl}' width='25' height='25' /> {WebUtility.HtmlEncode(user.DisplayName)}";
         if (!string.IsNullOrEmpty(user.JobLevel))
         {
-            label += $"<br/><small>{user.JobLevel}</small>";
+            label += $"<br/>{WebUtility.HtmlEncode(user.JobLevel)}";
         }
         return $"\"{label}\"";
     }
@@ -71,46 +72,50 @@
     <div class="card-body overflow-auto">
         <div class="mermaid text-center">
             graph TD
-            classDef targetUser fill:#f9f,stroke:#333,stroke-width:2px;
-            classDef manager fill:#e1f5fe,stroke:#01579b;
-            classDef peer fill:#fff3e0,stroke:#e65100;
-            classDef subordinate fill:#e8f5e9,stroke:#1b5e20;
+            classDef targetUser fill:#f9f,stroke:#333,stroke-width:2px
+            classDef manager fill:#e1f5fe,stroke:#01579b
+            classDef peer fill:#fff3e0,stroke:#e65100
+            classDef subordinate fill:#e8f5e9,stroke:#1b5e20
 
             @{
                 var chain = Model.ManagerChain.AsEnumerable().Reverse().ToList();
+                foreach (var m in chain)
+                {
+                    <text>@(GetSafeId(m.Id))[@Html.Raw(GetNodeLabel(m))]:::manager</text>
+                    <text>click @GetSafeId(m.Id) href "/ReportLine/Index/@m.Id"</text>
+                }
+
                 for (int i = 0; i < chain.Count; i++)
                 {
-                    var m = chain[i];
-                    <text>@GetSafeId(m.Id) [@Html.Raw(GetNodeLabel(m))]:::manager</text>
-                    <text>click @GetSafeId(m.Id) "/ReportLine/Index/@m.Id"</text>
                     if (i < chain.Count - 1)
                     {
-                        var next = chain[i+1];
-                        <text>@GetSafeId(m.Id) --> @GetSafeId(next.Id)</text>
+                        <text>@GetSafeId(chain[i].Id) --> @GetSafeId(chain[i+1].Id)</text>
                     }
                     else
                     {
-                        <text>@GetSafeId(m.Id) --> @GetSafeId(Model.TargetUser.Id)</text>
+                        <text>@GetSafeId(chain[i].Id) --> @GetSafeId(Model.TargetUser.Id)</text>
                     }
                 }
             }
 
-            @GetSafeId(Model.TargetUser.Id) [@Html.Raw(GetNodeLabel(Model.TargetUser))]:::targetUser
-            click @GetSafeId(Model.TargetUser.Id) "/ReportLine/Index/@Model.TargetUser.Id"
+            @(GetSafeId(Model.TargetUser.Id))[@Html.Raw(GetNodeLabel(Model.TargetUser))]:::targetUser
+            click @GetSafeId(Model.TargetUser.Id) href "/ReportLine/Index/@Model.TargetUser.Id"
 
             @foreach (var peer in Model.Peers)
             {
+                <text>@(GetSafeId(peer.Id))[@Html.Raw(GetNodeLabel(peer))]:::peer</text>
+                <text>click @GetSafeId(peer.Id) href "/ReportLine/Index/@peer.Id"</text>
                 if (Model.TargetUser.ManagerId != null)
                 {
-                    <text>@GetSafeId(Model.TargetUser.ManagerId) --> @GetSafeId(peer.Id) [@Html.Raw(GetNodeLabel(peer))]:::peer</text>
-                    <text>click @GetSafeId(peer.Id) "/ReportLine/Index/@peer.Id"</text>
+                    <text>@GetSafeId(Model.TargetUser.ManagerId) --> @GetSafeId(peer.Id)</text>
                 }
             }
 
             @foreach (var sub in Model.Subordinates)
             {
-                <text>@GetSafeId(Model.TargetUser.Id) --> @GetSafeId(sub.Id) [@Html.Raw(GetNodeLabel(sub))]:::subordinate</text>
-                <text>click @GetSafeId(sub.Id) "/ReportLine/Index/@sub.Id"</text>
+                <text>@(GetSafeId(sub.Id))[@Html.Raw(GetNodeLabel(sub))]:::subordinate</text>
+                <text>click @GetSafeId(sub.Id) href "/ReportLine/Index/@sub.Id"</text>
+                <text>@GetSafeId(Model.TargetUser.Id) --> @GetSafeId(sub.Id)</text>
             }
         </div>
     </div>
