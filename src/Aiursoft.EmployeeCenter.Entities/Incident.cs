@@ -58,7 +58,6 @@ public class Incident
     [MaxLength(2000)]
     public string? ResolutionReason { get; set; }
 
-    [MaxLength(10000)]
     public string? PostMortem { get; set; }
 
     [InverseProperty(nameof(IncidentComment.Incident))]

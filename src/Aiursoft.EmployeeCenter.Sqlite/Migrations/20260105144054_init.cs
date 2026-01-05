@@ -186,7 +186,7 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     ResolvedAt = table.Column<DateTime>(type: "TEXT", nullable: true),
                     MitigationReason = table.Column<string>(type: "TEXT", maxLength: 2000, nullable: true),
                     ResolutionReason = table.Column<string>(type: "TEXT", maxLength: 2000, nullable: true),
-                    PostMortem = table.Column<string>(type: "TEXT", maxLength: 10000, nullable: true)
+                    PostMortem = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {

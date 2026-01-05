@@ -50,8 +50,7 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasColumnType("varchar(255)");
 
                     b.Property<string>("PostMortem")
-                        .HasMaxLength(10000)
-                        .HasColumnType("varchar(10000)");
+                        .HasColumnType("longtext");
 
                     b.Property<string>("ResolutionReason")
                         .HasMaxLength(2000)

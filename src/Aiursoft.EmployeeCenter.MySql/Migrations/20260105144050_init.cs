@@ -239,7 +239,7 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     ResolutionReason = table.Column<string>(type: "varchar(2000)", maxLength: 2000, nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    PostMortem = table.Column<string>(type: "varchar(10000)", maxLength: 10000, nullable: true)
+                    PostMortem = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4")
                 },
                 constraints: table =>

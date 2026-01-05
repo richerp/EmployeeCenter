@@ -45,7 +45,6 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("PostMortem")
-                        .HasMaxLength(10000)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("ResolutionReason")
