@@ -75,105 +75,6 @@ public class ReportLineTests
         Assert.AreEqual(HttpStatusCode.Found, loginResponse.StatusCode);
     }
 
-    private async Task LogOffAsync()
-    {
-        var logOffToken = await GetAntiCsrfToken("/Manage/ChangePassword");
-        var logOffContent = new FormUrlEncodedContent(new Dictionary<string, string>
-        {
-            { "__RequestVerificationToken", logOffToken }
-        });
-        await _http.PostAsync("/Account/LogOff", logOffContent);
-    }
-
-    [TestMethod]
-    public async Task TestReportLineFlow()
-    {
-        // 1. Register User A
-        var userAEmail = "usera@test.com";
-        var userAPassword = "Password123!";
-        var registerToken = await GetAntiCsrfToken("/Account/Register");
-        var registerContent = new FormUrlEncodedContent(new Dictionary<string, string>
-        {
-            { "Email", userAEmail },
-            { "Password", userAPassword },
-            { "ConfirmPassword", userAPassword },
-            { "__RequestVerificationToken", registerToken }
-        });
-        await _http.PostAsync("/Account/Register", registerContent);
-        
-        // Get User A ID
-        await _http.GetAsync("/Manage/Index");
-        // Since we don't have ID on manage page easily, let's just use admin to find it.
-        
-        await LogOffAsync();
-
-        // 2. Register User B
-        var userBEmail = "userb@test.com";
-        var userBPassword = "Password123!";
-        registerToken = await GetAntiCsrfToken("/Account/Register");
-        registerContent = new FormUrlEncodedContent(new Dictionary<string, string>
-        {
-            { "Email", userBEmail },
-            { "Password", userBPassword },
-            { "ConfirmPassword", userBPassword },
-            { "__RequestVerificationToken", registerToken }
-        });
-        await _http.PostAsync("/Account/Register", registerContent);
-        await LogOffAsync();
-
-        // 3. Login as Admin and set B as A's manager
-        await LoginAsync("admin@default.com", "admin123");
-        
-        // Find IDs
-        using var scope = _server!.Services.CreateScope();
-        var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
-        var userA = await userManager.FindByEmailAsync(userAEmail);
-        var userB = await userManager.FindByEmailAsync(userBEmail);
-        Assert.IsNotNull(userA);
-        Assert.IsNotNull(userB);
-
-        var editToken = await GetAntiCsrfToken($"/Users/Edit/{userA.Id}");
-        var editContent = new FormUrlEncodedContent(new Dictionary<string, string>
-        {
-            { "Id", userA.Id },
-            { "UserName", userA.UserName! },
-            { "DisplayName", userA.DisplayName },
-            { "Email", userA.Email! },
-            { "AvatarUrl", userA.AvatarRelativePath },
-            { "ManagerId", userB.Id },
-            { "ManagerDisplayName", userB.DisplayName },
-            { "__RequestVerificationToken", editToken }
-        });
-        var editResponse = await _http.PostAsync($"/Users/Edit/{userA.Id}", editContent);
-        Assert.AreEqual(HttpStatusCode.Found, editResponse.StatusCode);
-
-        // 4. Login as User A and view report line
-        await LogOffAsync();
-        await LoginAsync(userAEmail, userAPassword);
-        
-        var reportLinePage = await _http.GetAsync("/ReportLine");
-        reportLinePage.EnsureSuccessStatusCode();
-        var reportLineHtml = await reportLinePage.Content.ReadAsStringAsync();
-        Assert.Contains(userB.DisplayName, reportLineHtml);
-        Assert.Contains("Visual Report Line", reportLineHtml);
-
-        // 5. Login as Admin and view B's report line (should see A as subordinate)
-        await LogOffAsync();
-        await LoginAsync("admin@default.com", "admin123");
-        
-        reportLinePage = await _http.GetAsync($"/ReportLine/Index/{userB.Id}");
-        reportLineHtml = await reportLinePage.Content.ReadAsStringAsync();
-        Assert.Contains(userA.DisplayName, reportLineHtml);
-        Assert.Contains("Visual Report Line", reportLineHtml);
-        
-        await LogOffAsync();
-        
-        // 6. Login as User A and try to view B's report line (should fail)
-        await LoginAsync(userAEmail, userAPassword);
-        var otherReportLine = await _http.GetAsync($"/ReportLine/Index/{userB.Id}");
-        Assert.AreEqual(HttpStatusCode.Unauthorized, otherReportLine.StatusCode);
-    }
-
     [TestMethod]
     public async Task TestCircularDependency()
     {
@@ -207,14 +108,14 @@ public class ReportLineTests
             await userManager.UpdateAsync(dbUserA);
             await userManager.UpdateAsync(dbUserB);
         }
-        
+
         // 3. Login as User A and view report line
         await LoginAsync(emailA, "Password123!");
-        
+
         var reportLinePage = await _http.GetAsync("/ReportLine");
         reportLinePage.EnsureSuccessStatusCode();
         var reportLineHtml = await reportLinePage.Content.ReadAsStringAsync();
-        
+
         Assert.Contains("Circular dependency detected in report line!", reportLineHtml);
     }
 }

@@ -192,5 +192,17 @@
   <data name="Personal Insurance" xml:space="preserve">
     <value>个人保险</value>
   </data>
+  <data name="Sum(Insurances)" xml:space="preserve">
+    <value>保险合计</value>
+  </data>
+  <data name="Earnings + Sum(Company Insurances)" xml:space="preserve">
+    <value>总收入 + 公司保险合计</value>
+  </data>
+  <data name="Earnings + Penalties - Insurance - Tax" xml:space="preserve">
+    <value>收入 + 罚款 - 保险 - 税</value>
+  </data>
+  <data name="Earnings - Insurance - 5000 - Special" xml:space="preserve">
+    <value>收入 - 个人社保 - 5000 - 专项附加扣除</value>
+  </data>
 
 </root>

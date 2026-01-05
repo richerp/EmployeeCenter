@@ -192,5 +192,17 @@
   <data name="Income Tax" xml:space="preserve">
     <value>所得稅</value>
   </data>
+  <data name="Sum(Insurances)" xml:space="preserve">
+    <value>總計(保險)</value>
+  </data>
+  <data name="Earnings - Insurance - 5000 - Special" xml:space="preserve">
+    <value>收入 - 保險 - 5000 - 專項</value>
+  </data>
+  <data name="Earnings + Penalties - Insurance - Tax" xml:space="preserve">
+    <value>收入 + 罰款 - 保險 - 稅</value>
+  </data>
+  <data name="Earnings + Sum(Company Insurances)" xml:space="preserve">
+    <value>薪資 + 總和(公司保險)</value>
+  </data>
 
 </root>
