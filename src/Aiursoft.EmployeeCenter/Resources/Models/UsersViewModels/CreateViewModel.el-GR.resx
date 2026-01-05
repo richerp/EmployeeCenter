@@ -51,5 +51,8 @@
   <data name="Bank Account" xml:space="preserve">
     <value>Τραπεζικός Λογαριασμός</value>
   </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Διευθυντής</value>
+  </data>
 
 </root>

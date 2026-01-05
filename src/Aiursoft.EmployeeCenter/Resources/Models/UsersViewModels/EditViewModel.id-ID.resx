@@ -57,5 +57,8 @@
   <data name="Job Level" xml:space="preserve">
     <value>Tingkat Jabatan</value>
   </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Manajer</value>
+  </data>
 
 </root>

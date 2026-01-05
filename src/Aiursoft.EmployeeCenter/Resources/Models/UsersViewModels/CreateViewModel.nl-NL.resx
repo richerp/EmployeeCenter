@@ -51,5 +51,8 @@
   <data name="Bank Name" xml:space="preserve">
     <value>Banknaam</value>
   </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
 
 </root>

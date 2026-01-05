@@ -57,5 +57,8 @@
   <data name="Base Salary" xml:space="preserve">
     <value>Salário Base</value>
   </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Gerente</value>
+  </data>
 
 </root>

@@ -12,12 +12,17 @@
 
     string GetNodeLabel(User user)
     {
-        var avatarUrl = StorageService.RelativePathToInternetUrl(user.AvatarRelativePath) + "?w=50&amp;square=true";
-        var label = $"<img src='{avatarUrl}' width='25' height='25' /> {WebUtility.HtmlEncode(user.DisplayName)}";
-        if (!string.IsNullOrEmpty(user.JobLevel))
-        {
-            label += $"<br/>{WebUtility.HtmlEncode(user.JobLevel)}";
-        }
+        var avatarUrl = StorageService.RelativePathToInternetUrl(user.AvatarRelativePath) + "?w=100&square=true";
+        var label = $@"
+<div style='display: flex; align-items: center; justify-content: start; min-width: 150px;'>
+    <div style='width: 40px; height: 40px; min-width: 40px; margin-right: 12px; display: flex; align-items: center; justify-content: center;'>
+        <img src='{avatarUrl}' style='width: 40px !important; height: 40px !important; border-radius: 50% !important; object-fit: cover !important; max-width: none !important;' />
+    </div>
+    <div style='text-align: left; line-height: 1.3;'>
+        <div style='font-weight: 700; font-size: 14px; margin-bottom: 2px;'>{WebUtility.HtmlEncode(user.DisplayName)}</div>
+        {(string.IsNullOrEmpty(user.JobLevel) ? "" : $"<div style='font-size: 11px; background-color: rgba(0,0,0,0.06); padding: 1px 6px; border-radius: 4px; display: inline-block; color: #444; font-weight: 500;'>{WebUtility.HtmlEncode(user.JobLevel)}</div>")}
+    </div>
+</div>";
         return $"\"{label}\"";
     }
 }
@@ -30,131 +35,165 @@
 
 @if (Model.Error != null)
 {
-        <div class="alert alert-danger" role="alert">
+    <div class="alert alert-danger" role="alert">
         @Model.Error
-        </div>
+    </div>
 }
 
 @if ((await AuthorizationService.AuthorizeAsync(User, AppPermissionNames.CanViewReportLine)).Succeeded)
 {
-        <div class="card mb-4">
-            <div class="card-header">
-                <h5 class="card-title mb-0">@Localizer["Search Person"]</h5>
-            </div>
-            <div class="card-body">
-                <div class="row align-items-end">
-                    <div class="col-md-8">
-                        <partial name="_UserSelector" model='("TargetUserId", "TargetUserName", "", "")' />
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">@Localizer["Search Person"]</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row align-items-end">
+                        <div class="col-12 mb-3">
+                            <partial name="_UserSelector" model='("TargetUserId", "TargetUserName", "", "")' />
+                        </div>
+                        <div class="col-12">
+                            <button type="button" class="btn btn-primary w-100" onclick="viewTargetReportLine()">@Localizer["View Report Line"]</button>
+                        </div>
                     </div>
-                    <div class="col-md-4 mb-3">
-                        <button type="button" class="btn btn-primary" onclick="viewTargetReportLine()">@Localizer["View Report Line"]</button>
+                </div>
+            </div>
+
+            <div class="card mb-3 d-none d-md-block">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">@Localizer["Legend"]</h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex flex-column gap-2">
+                        <span><span class="badge shadow" style="background-color: #E3F2FD; color: #1565C0;">&nbsp;</span> @Localizer["Manager"]</span>
+                        <span><span class="badge shadow" style="background-color: #F3E5F5; color: #7B1FA2;">&nbsp;</span> @Localizer["Target"]</span>
+                        <span><span class="badge shadow" style="background-color: #FFF3E0; color: #EF6C00;">&nbsp;</span> @Localizer["Peer"]</span>
+                        <span><span class="badge shadow" style="background-color: #E8F5E9; color: #2E7D32;">&nbsp;</span> @Localizer["Subordinate"]</span>
                     </div>
                 </div>
             </div>
         </div>
 
-        <script>
-            function viewTargetReportLine() {
-                const targetId = document.getElementById('user-id-hidden-TargetUserId').value;
-                if (targetId) {
-                    window.location.href = '/ReportLine/Index/' + targetId;
-                } else {
-                    alert('@Localizer["Please select a user first."]');
-                }
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0"><i class="align-middle me-2" data-lucide="network"></i> @Localizer["Visual Report Line"]</h5>
+                </div>
+                <div class="card-body overflow-auto">
+                    <div class="mermaid">
+                        graph TD
+                        classDef targetUser fill:#F3E5F5,stroke:#7B1FA2,stroke-width:2px,rx:10,ry:10
+                        classDef manager fill:#E3F2FD,stroke:#1565C0,rx:10,ry:10
+                        classDef peer fill:#FFF3E0,stroke:#EF6C00,rx:10,ry:10
+                        classDef subordinate fill:#E8F5E9,stroke:#2E7D32,rx:10,ry:10
+
+                        @{
+                            var chain = Model.ManagerChain.AsEnumerable().Reverse().ToList();
+                            foreach (var m in chain)
+                            {
+                                <text>@(GetSafeId(m.Id))(@Html.Raw(GetNodeLabel(m))):::manager
+                                </text>
+                                <text>click @GetSafeId(m.Id) href "/ReportLine/Index/@m.Id"
+                                </text>
+                            }
+
+                            for (int i = 0; i < chain.Count; i++)
+                            {
+                                if (i < chain.Count - 1)
+                                {
+                                    <text>@GetSafeId(chain[i].Id) --> @GetSafeId(chain[i+1].Id)
+                                    </text>
+                                }
+                                else
+                                {
+                                    <text>@GetSafeId(chain[i].Id) --> @GetSafeId(Model.TargetUser.Id)
+                                    </text>
+                                }
+                            }
+                        }
+
+                        @(GetSafeId(Model.TargetUser.Id))(@Html.Raw(GetNodeLabel(Model.TargetUser))):::targetUser
+                        click @GetSafeId(Model.TargetUser.Id) href "/ReportLine/Index/@Model.TargetUser.Id"
+
+                        @foreach (var peer in Model.Peers)
+                        {
+                            <text>@(GetSafeId(peer.Id))(@Html.Raw(GetNodeLabel(peer))):::peer
+                            </text>
+                            <text>click @GetSafeId(peer.Id) href "/ReportLine/Index/@peer.Id"
+                            </text>
+                            if (Model.TargetUser.ManagerId != null)
+                            {
+                                <text>@GetSafeId(Model.TargetUser.ManagerId) --> @GetSafeId(peer.Id)
+                                </text>
+                            }
+                        }
+
+                        @foreach (var sub in Model.Subordinates)
+                        {
+                            <text>@(GetSafeId(sub.Id))(@Html.Raw(GetNodeLabel(sub))):::subordinate
+                            </text>
+                            <text>click @GetSafeId(sub.Id) href "/ReportLine/Index/@sub.Id"
+                            </text>
+                            <text>@GetSafeId(Model.TargetUser.Id) --> @GetSafeId(sub.Id)
+                            </text>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function viewTargetReportLine() {
+            const targetId = document.getElementById('user-id-hidden-TargetUserId').value;
+            if (targetId) {
+                window.location.href = '/ReportLine/Index/' + targetId;
+            } else {
+                alert('@Localizer["Please select a user first."]');
             }
-        </script>
+        }
+    </script>
 }
-
-<div class="card">
-    <div class="card-header">
-        <h5 class="card-title mb-0"><i class="align-middle me-2" data-lucide="network"></i> @Localizer["Visual Report Line"]</h5>
-    </div>
-    <div class="card-body overflow-auto">
-        <div class="mermaid text-center">
-            graph TD
-            classDef targetUser fill:#f9f,stroke:#333,stroke-width:2px
-            classDef manager fill:#e1f5fe,stroke:#01579b
-            classDef peer fill:#fff3e0,stroke:#e65100
-            classDef subordinate fill:#e8f5e9,stroke:#1b5e20
-
-            @{
-                var chain = Model.ManagerChain.AsEnumerable().Reverse().ToList();
-                foreach (var m in chain)
-                {
-                    <text>@(GetSafeId(m.Id))[@Html.Raw(GetNodeLabel(m))]:::manager
-                    </text>
-                    <text>click @GetSafeId(m.Id) href "/ReportLine/Index/@m.Id"
-                    </text>
-                }
-
-                for (int i = 0; i < chain.Count; i++)
-                {
-                    if (i < chain.Count - 1)
-                    {
-                        <text>@GetSafeId(chain[i].Id) --> @GetSafeId(chain[i+1].Id)
-                        </text>
-                    }
-                    else
-                    {
-                        <text>@GetSafeId(chain[i].Id) --> @GetSafeId(Model.TargetUser.Id)
-                        </text>
-                    }
-                }
-            }
-
-            @(GetSafeId(Model.TargetUser.Id))[@Html.Raw(GetNodeLabel(Model.TargetUser))]:::targetUser
-            click @GetSafeId(Model.TargetUser.Id) href "/ReportLine/Index/@Model.TargetUser.Id"
-
-            @foreach (var peer in Model.Peers)
-            {
-                <text>@(GetSafeId(peer.Id))[@Html.Raw(GetNodeLabel(peer))]:::peer
-                </text>
-                <text>click @GetSafeId(peer.Id) href "/ReportLine/Index/@peer.Id"
-                </text>
-                if (Model.TargetUser.ManagerId != null)
-                {
-                    <text>@GetSafeId(Model.TargetUser.ManagerId) --> @GetSafeId(peer.Id)
-                    </text>
-                }
-            }
-
-            @foreach (var sub in Model.Subordinates)
-            {
-                <text>@(GetSafeId(sub.Id))[@Html.Raw(GetNodeLabel(sub))]:::subordinate
-                </text>
-                <text>click @GetSafeId(sub.Id) href "/ReportLine/Index/@sub.Id"
-                </text>
-                <text>@GetSafeId(Model.TargetUser.Id) --> @GetSafeId(sub.Id)
-                </text>
-            }
+else
+{
+    <div class="card">
+        <div class="card-body">
+            @Localizer["You have to log in to view report line."]
         </div>
     </div>
-    <div class="card-footer text-muted">
-        <div class="d-flex justify-content-center gap-3">
-            <span><span class="badge" style="background-color: #e1f5fe; border: 1px solid #01579b; color: #01579b;">&nbsp;</span> @Localizer["Manager"]</span>
-            <span><span class="badge" style="background-color: #f9f; border: 1px solid #333; color: #333;">&nbsp;</span> @Localizer["Target"]</span>
-            <span><span class="badge" style="background-color: #fff3e0; border: 1px solid #e65100; color: #e65100;">&nbsp;</span> @Localizer["Peer"]</span>
-            <span><span class="badge" style="background-color: #e8f5e9; border: 1px solid #1b5e20; color: #1b5e20;">&nbsp;</span> @Localizer["Subordinate"]</span>
-        </div>
-    </div>
-</div>
+}
 
 <script type="module">
     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
     mermaid.initialize({ 
         startOnLoad: true,
         securityLevel: 'loose',
-        theme: 'default'
+        theme: 'base',
+        themeVariables: {
+            fontFamily: 'Inter, system-ui, sans-serif',
+            fontSize: '14px',
+            lineColor: '#607D8B'
+        },
+        flowchart: {
+            htmlLabels: true,
+            curve: 'basis',
+            useMaxWidth: false
+        }
     });
 </script>
 
 <style>
     .mermaid {
+        display: flex;
+        justify-content: center;
         min-height: 400px;
+        background-color: #fff;
     }
-
+    
     .mermaid svg {
-        max-width: 100% !important;
-        height: auto !important;
+        max-width: 100%;
+        height: auto;
+        width: auto !important;
     }
 </style>

@@ -51,5 +51,8 @@
   <data name="Job Level" xml:space="preserve">
     <value>Työtaso</value>
   </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Johtaja</value>
+  </data>
 
 </root>

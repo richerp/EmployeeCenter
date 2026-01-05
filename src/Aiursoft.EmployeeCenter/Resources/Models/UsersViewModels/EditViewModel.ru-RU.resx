@@ -57,5 +57,8 @@
   <data name="Bank Name" xml:space="preserve">
     <value>Название банка</value>
   </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Менеджер</value>
+  </data>
 
 </root>

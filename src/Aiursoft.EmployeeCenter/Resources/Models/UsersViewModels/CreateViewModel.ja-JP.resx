@@ -51,5 +51,8 @@
   <data name="Bank Account" xml:space="preserve">
     <value>銀行口座</value>
   </data>
+  <data name="Manager" xml:space="preserve">
+    <value>マネージャー</value>
+  </data>
 
 </root>

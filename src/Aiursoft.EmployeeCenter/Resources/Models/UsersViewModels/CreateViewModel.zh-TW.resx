@@ -51,5 +51,8 @@
   <data name="Job Level" xml:space="preserve">
     <value>職等</value>
   </data>
+  <data name="Manager" xml:space="preserve">
+    <value>經理</value>
+  </data>
 
 </root>

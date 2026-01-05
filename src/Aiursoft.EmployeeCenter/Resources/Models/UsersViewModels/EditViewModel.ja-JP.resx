@@ -57,5 +57,8 @@
   <data name="Base Salary" xml:space="preserve">
     <value>基本給</value>
   </data>
+  <data name="Manager" xml:space="preserve">
+    <value>管理者</value>
+  </data>
 
 </root>
