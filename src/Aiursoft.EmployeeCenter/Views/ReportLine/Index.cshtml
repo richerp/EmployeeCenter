@@ -9,8 +9,8 @@
 
 @functions {
     string GetSafeId(string id) => "u_" + id.Replace("-", "_");
-    
-    string GetNodeLabel(User user) 
+
+    string GetNodeLabel(User user)
     {
         var avatarUrl = StorageService.RelativePathToInternetUrl(user.AvatarRelativePath) + "?w=50&amp;square=true";
         var label = $"<img src='{avatarUrl}' width='25' height='25' /> {WebUtility.HtmlEncode(user.DisplayName)}";
@@ -30,39 +30,39 @@
 
 @if (Model.Error != null)
 {
-    <div class="alert alert-danger" role="alert">
+        <div class="alert alert-danger" role="alert">
         @Model.Error
-    </div>
+        </div>
 }
 
 @if ((await AuthorizationService.AuthorizeAsync(User, AppPermissionNames.CanViewReportLine)).Succeeded)
 {
-    <div class="card mb-4">
-        <div class="card-header">
-            <h5 class="card-title mb-0">@Localizer["Search Person"]</h5>
-        </div>
-        <div class="card-body">
-            <div class="row align-items-end">
-                <div class="col-md-8">
-                    <partial name="_UserSelector" model='("TargetUserId", "TargetUserName", "", "")' />
-                </div>
-                <div class="col-md-4 mb-3">
-                    <button type="button" class="btn btn-primary" onclick="viewTargetReportLine()">@Localizer["View Report Line"]</button>
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="card-title mb-0">@Localizer["Search Person"]</h5>
+            </div>
+            <div class="card-body">
+                <div class="row align-items-end">
+                    <div class="col-md-8">
+                        <partial name="_UserSelector" model='("TargetUserId", "TargetUserName", "", "")' />
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <button type="button" class="btn btn-primary" onclick="viewTargetReportLine()">@Localizer["View Report Line"]</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script>
-        function viewTargetReportLine() {
-            const targetId = document.getElementById('user-id-hidden-TargetUserId').value;
-            if (targetId) {
-                window.location.href = '/ReportLine/Index/' + targetId;
-            } else {
-                alert('@Localizer["Please select a user first."]');
+        <script>
+            function viewTargetReportLine() {
+                const targetId = document.getElementById('user-id-hidden-TargetUserId').value;
+                if (targetId) {
+                    window.location.href = '/ReportLine/Index/' + targetId;
+                } else {
+                    alert('@Localizer["Please select a user first."]');
+                }
             }
-        }
-    </script>
+        </script>
 }
 
 <div class="card">
@@ -81,19 +81,23 @@
                 var chain = Model.ManagerChain.AsEnumerable().Reverse().ToList();
                 foreach (var m in chain)
                 {
-                    <text>@(GetSafeId(m.Id))[@Html.Raw(GetNodeLabel(m))]:::manager</text>
-                    <text>click @GetSafeId(m.Id) href "/ReportLine/Index/@m.Id"</text>
+                    <text>@(GetSafeId(m.Id))[@Html.Raw(GetNodeLabel(m))]:::manager
+                    </text>
+                    <text>click @GetSafeId(m.Id) href "/ReportLine/Index/@m.Id"
+                    </text>
                 }
 
                 for (int i = 0; i < chain.Count; i++)
                 {
                     if (i < chain.Count - 1)
                     {
-                        <text>@GetSafeId(chain[i].Id) --> @GetSafeId(chain[i+1].Id)</text>
+                        <text>@GetSafeId(chain[i].Id) --> @GetSafeId(chain[i+1].Id)
+                        </text>
                     }
                     else
                     {
-                        <text>@GetSafeId(chain[i].Id) --> @GetSafeId(Model.TargetUser.Id)</text>
+                        <text>@GetSafeId(chain[i].Id) --> @GetSafeId(Model.TargetUser.Id)
+                        </text>
                     }
                 }
             }
@@ -103,19 +107,25 @@
 
             @foreach (var peer in Model.Peers)
             {
-                <text>@(GetSafeId(peer.Id))[@Html.Raw(GetNodeLabel(peer))]:::peer</text>
-                <text>click @GetSafeId(peer.Id) href "/ReportLine/Index/@peer.Id"</text>
+                <text>@(GetSafeId(peer.Id))[@Html.Raw(GetNodeLabel(peer))]:::peer
+                </text>
+                <text>click @GetSafeId(peer.Id) href "/ReportLine/Index/@peer.Id"
+                </text>
                 if (Model.TargetUser.ManagerId != null)
                 {
-                    <text>@GetSafeId(Model.TargetUser.ManagerId) --> @GetSafeId(peer.Id)</text>
+                    <text>@GetSafeId(Model.TargetUser.ManagerId) --> @GetSafeId(peer.Id)
+                    </text>
                 }
             }
 
             @foreach (var sub in Model.Subordinates)
             {
-                <text>@(GetSafeId(sub.Id))[@Html.Raw(GetNodeLabel(sub))]:::subordinate</text>
-                <text>click @GetSafeId(sub.Id) href "/ReportLine/Index/@sub.Id"</text>
-                <text>@GetSafeId(Model.TargetUser.Id) --> @GetSafeId(sub.Id)</text>
+                <text>@(GetSafeId(sub.Id))[@Html.Raw(GetNodeLabel(sub))]:::subordinate
+                </text>
+                <text>click @GetSafeId(sub.Id) href "/ReportLine/Index/@sub.Id"
+                </text>
+                <text>@GetSafeId(Model.TargetUser.Id) --> @GetSafeId(sub.Id)
+                </text>
             }
         </div>
     </div>
@@ -142,7 +152,7 @@
     .mermaid {
         min-height: 400px;
     }
-    
+
     .mermaid svg {
         max-width: 100% !important;
         height: auto !important;

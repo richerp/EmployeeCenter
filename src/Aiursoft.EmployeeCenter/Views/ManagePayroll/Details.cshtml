@@ -95,7 +95,7 @@
                                 <td></td>
                             </tr>
                             @{
-                                var totalEarnings = Model.Payroll.BaseSalary + Model.Payroll.JobSalary + Model.Payroll.PerformanceBonus + 
+                                var totalEarnings = Model.Payroll.BaseSalary + Model.Payroll.JobSalary + Model.Payroll.PerformanceBonus +
                                                    Model.Payroll.Overtime + Model.Payroll.FullAttendance + Model.Payroll.OtherAllowances;
                             }
                             <tr class="table-primary fw-bold">
@@ -145,13 +145,13 @@
                                 <td>12%</td>
                             </tr>
                             @{
-                                var totalPersonalInsurance = Model.Payroll.PensionPersonal + Model.Payroll.MedicalPersonal + 
+                                var totalPersonalInsurance = Model.Payroll.PensionPersonal + Model.Payroll.MedicalPersonal +
                                                              Model.Payroll.UnemploymentPersonal + Model.Payroll.HousingFundPersonal;
                             }
                             <tr class="table-warning fw-bold">
                                 <td>@Localizer["Total Personal Insurances"]</td>
                                 <td class="text-end text-danger">@totalPersonalInsurance.ToString("N2")</td>
-                                <td><code>Sum(Insurances)</code></td>
+                                <td><code>@Localizer["Sum(Insurances)"]</code></td>
                             </tr>
 
                             <!-- Tax -->
@@ -167,7 +167,7 @@
                                     var taxableIncome = Math.Max(0, totalEarnings - totalPersonalInsurance - 5000 - Model.Payroll.SpecialAdditionalDeduction);
                                 }
                                 <td class="text-end">@taxableIncome.ToString("N2")</td>
-                                <td><code>Earnings - Insurance - 5000 - Special</code></td>
+                                <td><code>@Localizer["Earnings - Insurance - 5000 - Special"]</code></td>
                             </tr>
                             <tr>
                                 <td>@Localizer["Personal Income Tax"]</td>
@@ -180,7 +180,7 @@
                                 <td rowspan="3" class="align-middle fw-bold text-center bg-success text-white">@Localizer["Actual Payment"]</td>
                                 <td>@Localizer["Actual Salary (Net)"]</td>
                                 <td class="text-end text-success fs-4">@Model.Payroll.TotalAmount.ToString("N2")</td>
-                                <td><code>Earnings + Penalties - Insurance - Tax</code></td>
+                                <td><code>@Localizer["Earnings + Penalties - Insurance - Tax"]</code></td>
                             </tr>
                             <tr>
                                 <td>@Localizer["Bank Name"]</td>
@@ -226,15 +226,15 @@
                                 <td>12%</td>
                             </tr>
                             @{
-                                var totalCompanyInsurance = Model.Payroll.PensionCompany + Model.Payroll.MedicalCompany + 
-                                                             Model.Payroll.UnemploymentCompany + Model.Payroll.WorkInjuryCompany + 
+                                var totalCompanyInsurance = Model.Payroll.PensionCompany + Model.Payroll.MedicalCompany +
+                                                             Model.Payroll.UnemploymentCompany + Model.Payroll.WorkInjuryCompany +
                                                              Model.Payroll.MaternityCompany + Model.Payroll.HousingFundCompany;
                                 var totalCompanyCost = totalEarnings + totalCompanyInsurance;
                             }
                             <tr class="table-info fw-bold d-print-none">
                                 <td>@Localizer["Total Company Cost"]</td>
                                 <td class="text-end">@totalCompanyCost.ToString("N2")</td>
-                                <td><code>Earnings + Sum(Company Insurances)</code></td>
+                                <td><code>@Localizer["Earnings + Sum(Company Insurances)"]</code></td>
                             </tr>
                         </tbody>
                     </table>
@@ -245,7 +245,7 @@
                     <h5 class="alert-heading">@Localizer["How is your salary calculated?"]</h5>
                     <p class="mb-0">
                         @Localizer["Your actual salary is calculated as:"]<br/>
-                        <strong>@Localizer["Total Earnings"] (@totalEarnings.ToString("N2"))</strong> 
+                        <strong>@Localizer["Total Earnings"] (@totalEarnings.ToString("N2"))</strong>
                         <span class="text-danger"> + @Localizer["Deductions"] (@((Model.Payroll.LateEarly + Model.Payroll.SickLeave + Model.Payroll.AdministrativeFines).ToString("N2")))</span>
                         <span class="text-warning"> - @Localizer["Personal Insurance"] (@totalPersonalInsurance.ToString("N2"))</span>
                         <span class="text-secondary"> - @Localizer["Income Tax"] (@Model.Payroll.PersonalIncomeTax.ToString("N2"))</span>
