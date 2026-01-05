@@ -156,5 +156,29 @@
   <data name="Employee Center" xml:space="preserve">
     <value>员工中心</value>
   </data>
+  <data name="Payrolls" xml:space="preserve">
+    <value>薪资</value>
+  </data>
+  <data name="Development" xml:space="preserve">
+    <value>开发</value>
+  </data>
+  <data name="My Report Line" xml:space="preserve">
+    <value>我的汇报线</value>
+  </data>
+  <data name="Manage Payrolls" xml:space="preserve">
+    <value>管理薪资</value>
+  </data>
+  <data name="Projects" xml:space="preserve">
+    <value>项目</value>
+  </data>
+  <data name="My Payrolls" xml:space="preserve">
+    <value>我的工资单</value>
+  </data>
+  <data name="Report Line" xml:space="preserve">
+    <value>汇报线</value>
+  </data>
+  <data name="Finance" xml:space="preserve">
+    <value>财务</value>
+  </data>
 
 </root>

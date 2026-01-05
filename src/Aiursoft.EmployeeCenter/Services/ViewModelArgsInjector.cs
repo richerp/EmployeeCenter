@@ -70,6 +70,14 @@ public class ViewModelArgsInjector(
         _ = localizer["Password Details"];
         _ = localizer["Create Password"];
         _ = localizer["Edit Password"];
+        _ = localizer["Manage Payrolls"];
+        _ = localizer["Finance"];
+        _ = localizer["My Payrolls"];
+        _ = localizer["Payrolls"];
+        _ = localizer["My Report Line"];
+        _ = localizer["Report Line"];
+        _ = localizer["Projects"];
+        _ = localizer["Development"];
     }
 
     public void InjectSimple(

@@ -156,5 +156,29 @@
   <data name="Employee Center" xml:space="preserve">
     <value>従業員センター</value>
   </data>
+  <data name="Finance" xml:space="preserve">
+    <value>財務</value>
+  </data>
+  <data name="Manage Payrolls" xml:space="preserve">
+    <value>給与管理</value>
+  </data>
+  <data name="Payrolls" xml:space="preserve">
+    <value>給与</value>
+  </data>
+  <data name="My Payrolls" xml:space="preserve">
+    <value>私の給与</value>
+  </data>
+  <data name="Projects" xml:space="preserve">
+    <value>プロジェクト</value>
+  </data>
+  <data name="Report Line" xml:space="preserve">
+    <value>レポートライン</value>
+  </data>
+  <data name="My Report Line" xml:space="preserve">
+    <value>私のレポートライン</value>
+  </data>
+  <data name="Development" xml:space="preserve">
+    <value>開発</value>
+  </data>
 
 </root>
