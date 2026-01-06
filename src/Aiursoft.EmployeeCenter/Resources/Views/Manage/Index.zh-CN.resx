@@ -55,7 +55,10 @@
     <value>由于本地身份验证已禁用，您无法更改密码。请从</value>
   </data>
   <data name="SSH Keys" xml:space="preserve">
-    <value>SSH 公钥</value>
+    <value>SSH 密钥</value>
+  </data>
+  <data name="Change bank information" xml:space="preserve">
+    <value>修改银行信息</value>
   </data>
 
 </root>

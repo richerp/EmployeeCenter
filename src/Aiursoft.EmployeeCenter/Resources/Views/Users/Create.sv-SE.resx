@@ -69,4 +69,16 @@
     <value>Skapa ett lösenord för den nya användaren</value>
   </data>
 
-<data name="Base Salary" xml:space="preserve"><value>Basic Salary</value></data><data name="Job Level" xml:space="preserve"><value>Job Level</value></data><data name="Bank Name" xml:space="preserve"><value>Bank Name</value></data><data name="Bank Account" xml:space="preserve"><value>Bank Account</value></data><data name="Enter bank name" xml:space="preserve"><value>Enter bank name</value></data><data name="Enter base salary" xml:space="preserve"><value>Enter base salary</value></data><data name="Enter job level" xml:space="preserve"><value>Enter job grade</value></data><data name="Enter bank account" xml:space="preserve"><value>Enter bank account number</value></data></root>
+<data name="Base Salary" xml:space="preserve"><value>Basic Salary</value></data><data name="Job Level" xml:space="preserve"><value>Job Level</value></data><data name="Bank Name" xml:space="preserve"><value>Bank Name</value></data><data name="Bank Account" xml:space="preserve"><value>Bank Account</value></data><data name="Enter bank name" xml:space="preserve"><value>Enter bank name</value></data><data name="Enter base salary" xml:space="preserve"><value>Enter base salary</value></data><data name="Enter job level" xml:space="preserve"><value>Enter job grade</value></data><data name="Enter bank account" xml:space="preserve"><value>Enter bank account number</value></data>  <data name="Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="Enter title" xml:space="preserve">
+    <value>Enter title</value>
+  </data>
+  <data name="Bank Account Name" xml:space="preserve">
+    <value>Bank Account Name</value>
+  </data>
+  <data name="Enter bank account name" xml:space="preserve">
+    <value>Enter bank account name</value>
+  </data>
+</root>

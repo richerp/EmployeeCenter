@@ -12,6 +12,7 @@ public abstract class EmployeeCenterDbContext(DbContextOptions options) : Identi
     public DbSet<PasswordShare> PasswordShares => Set<PasswordShare>();
     public DbSet<Incident> Incidents => Set<Incident>();
     public DbSet<IncidentComment> IncidentComments => Set<IncidentComment>();
+    public DbSet<BankCardChangeLog> BankCardChangeLogs => Set<BankCardChangeLog>();
 
     public virtual Task MigrateAsync(CancellationToken cancellationToken) =>
         Database.MigrateAsync(cancellationToken);

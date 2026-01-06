@@ -34,4 +34,7 @@
     <value>Ваш профіль збережено.</value>
   </data>
 
+  <data name="Your bank information has been saved." xml:space="preserve">
+    <value>Your bank information has been saved.</value>
+  </data>
 </root>

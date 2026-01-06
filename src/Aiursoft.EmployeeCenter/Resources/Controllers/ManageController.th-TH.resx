@@ -33,5 +33,8 @@
   <data name="Your profile has been saved." xml:space="preserve">
     <value>โปรไฟล์ของคุณได้รับการบันทึกแล้ว</value>
   </data>
+  <data name="Your bank information has been saved." xml:space="preserve">
+    <value>ข้อมูลบัญชีธนาคารของคุณได้รับการบันทึกแล้ว</value>
+  </data>
 
 </root>

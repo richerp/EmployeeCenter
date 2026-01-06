@@ -58,4 +58,7 @@
     <value>SSH 金鑰</value>
   </data>
 
+  <data name="Change bank information" xml:space="preserve">
+    <value>Change bank information</value>
+  </data>
 </root>

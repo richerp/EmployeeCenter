@@ -68,19 +68,29 @@
                     <span asp-validation-for="JobLevel" class="text-danger"></span>
                 </div>
                 <div class="col-md-6 mb-3">
+                    <label asp-for="Title" class="form-label">@Localizer["Title"]</label>
+                    <input asp-for="Title" class="form-control" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <div class="col-md-4 mb-3">
                     <label asp-for="BaseSalary" class="form-label">@Localizer["Base Salary"]</label>
                     <input asp-for="BaseSalary" class="form-control" />
                     <span asp-validation-for="BaseSalary" class="text-danger"></span>
                 </div>
-                <div class="col-md-6 mb-3">
+                <div class="col-md-4 mb-3">
                     <label asp-for="BankName" class="form-label">@Localizer["Bank Name"]</label>
                     <input asp-for="BankName" class="form-control" />
                     <span asp-validation-for="BankName" class="text-danger"></span>
                 </div>
-                <div class="col-md-6 mb-3">
+                <div class="col-md-4 mb-3">
                     <label asp-for="BankAccount" class="form-label">@Localizer["Bank Account"]</label>
                     <input asp-for="BankAccount" class="form-control" />
                     <span asp-validation-for="BankAccount" class="text-danger"></span>
+                </div>
+                <div class="col-12 mb-3">
+                    <label asp-for="BankAccountName" class="form-label">@Localizer["Bank Account Name"]</label>
+                    <input asp-for="BankAccountName" class="form-control" />
+                    <span asp-validation-for="BankAccountName" class="text-danger"></span>
                 </div>
                 <div class="col-12 mb-3">
                     <partial name="_UserSelector" model='("ManagerId", "ManagerDisplayName", Model.ManagerId, Model.ManagerDisplayName)' />

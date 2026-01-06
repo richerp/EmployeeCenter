@@ -400,4 +400,39 @@ public class BasicTests
         Assert.Contains(newUserName, html);
         Assert.DoesNotContain(originalUserName, html);
     }
+
+    [TestMethod]
+    public async Task ChangeBankInfoSuccessfullyTest()
+    {
+        // Step 1: Register and log in a new user.
+        await RegisterAndLoginAsync();
+        var newBankCardNumber = "1234567890";
+        var newBankName = "Test Bank";
+        var newBankAccountName = "Test Holder";
+
+        // Step 2: Get the anti-CSRF token from the Change Bank Info page.
+        var changeBankInfoToken = await GetAntiCsrfToken("/Manage/ChangeBankInfo");
+
+        // Step 3: Post the form to change the user's bank info.
+        var changeBankInfoContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "BankCardNumber", newBankCardNumber },
+            { "BankName", newBankName },
+            { "BankAccountName", newBankAccountName },
+            { "__RequestVerificationToken", changeBankInfoToken }
+        });
+        var changeBankInfoResponse = await _http.PostAsync("/Manage/ChangeBankInfo", changeBankInfoContent);
+
+        // Step 4: Assert the bank info change was successful and redirected correctly.
+        Assert.AreEqual(HttpStatusCode.Found, changeBankInfoResponse.StatusCode);
+        Assert.AreEqual("/Manage?Message=ChangeBankInfoSuccess", changeBankInfoResponse.Headers.Location?.OriginalString);
+
+        // Step 5: Verify the change in the database indirectly by checking the form again.
+        var getResponse = await _http.GetAsync("/Manage/ChangeBankInfo");
+        getResponse.EnsureSuccessStatusCode();
+        var html = await getResponse.Content.ReadAsStringAsync();
+        Assert.Contains(newBankCardNumber, html);
+        Assert.Contains(newBankName, html);
+        Assert.Contains(newBankAccountName, html);
+    }
 }

@@ -114,5 +114,11 @@
   <data name="Allows viewing the report line of any user, including their manager, subordinates, and peers." xml:space="preserve">
     <value>Cho phép xem tuyến báo cáo của bất kỳ người dùng nào, bao gồm quản lý, cấp dưới và đồng nghiệp của họ.</value>
   </data>
+  <data name="View User Operation Log" xml:space="preserve">
+    <value>Xem Nhật ký Hoạt động Người dùng</value>
+  </data>
+  <data name="Allows viewing the operation logs of any user, including their bank card change history." xml:space="preserve">
+    <value>Cho phép xem nhật ký hoạt động của bất kỳ người dùng nào, bao gồm lịch sử thay đổi thẻ ngân hàng của họ.</value>
+  </data>
 
 </root>

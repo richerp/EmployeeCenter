@@ -22,6 +22,51 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.BankCardChangeLog", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("ChangeTime")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("ChangedByUserId")
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<string>("NewBankAccountName")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("NewBankCardNumber")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("NewBankName")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("OldBankAccountName")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("OldBankCardNumber")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("OldBankName")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("varchar(255)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ChangedByUserId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("BankCardChangeLogs");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Incident", b =>
                 {
                     b.Property<Guid>("Id")
@@ -339,6 +384,10 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasMaxLength(30)
                         .HasColumnType("varchar(30)");
 
+                    b.Property<string>("BankAccountName")
+                        .HasMaxLength(30)
+                        .HasColumnType("varchar(30)");
+
                     b.Property<string>("BankName")
                         .HasMaxLength(30)
                         .HasColumnType("varchar(30)");
@@ -397,6 +446,10 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
 
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("longtext");
+
+                    b.Property<string>("Title")
+                        .HasMaxLength(30)
+                        .HasColumnType("varchar(30)");
 
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("tinyint(1)");
@@ -549,6 +602,23 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.BankCardChangeLog", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "ChangedByUser")
+                        .WithMany()
+                        .HasForeignKey("ChangedByUserId");
+
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ChangedByUser");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Incident", b =>

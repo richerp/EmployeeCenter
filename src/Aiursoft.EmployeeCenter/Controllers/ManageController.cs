@@ -25,6 +25,7 @@ public class ManageController(
     IOptions<AppSettings> appSettings,
     UserManager<User> userManager,
     SignInManager<User> signInManager,
+    EmployeeCenterDbContext dbContext,
     ILogger<ManageController> logger)
     : Controller
 {
@@ -45,11 +46,70 @@ public class ManageController(
             message == ManageMessageId.ChangeProfileSuccess ? localizer["Your profile has been saved."] :
             message == ManageMessageId.ChangeAvatarSuccess ? localizer["Your avatar has been saved."] :
             message == ManageMessageId.ChangePasswordSuccess ? localizer["Your password has been changed."] :
+            message == ManageMessageId.ChangeBankInfoSuccess ? localizer["Your bank information has been saved."] :
             message == ManageMessageId.Error ? localizer["An error has occurred."]
             : "";
 
         var model = new IndexViewModel();
         return this.StackView(model);
+    }
+
+    //
+    // GET: /Manage/ChangeBankInfo
+    [HttpGet]
+    public async Task<IActionResult> ChangeBankInfo()
+    {
+        var user = await GetCurrentUserAsync();
+        return this.StackView(new ChangeBankInfoViewModel
+        {
+            BankCardNumber = user!.BankAccount,
+            BankName = user.BankName,
+            BankAccountName = user.BankAccountName
+        });
+    }
+
+    //
+    // POST: /Manage/ChangeBankInfo
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> ChangeBankInfo(ChangeBankInfoViewModel model)
+    {
+        if (!ModelState.IsValid)
+        {
+            return this.StackView(model);
+        }
+
+        var user = await GetCurrentUserAsync();
+        if (user != null)
+        {
+            if (user.BankAccount != model.BankCardNumber || 
+                user.BankName != model.BankName || 
+                user.BankAccountName != model.BankAccountName)
+            {
+                var log = new BankCardChangeLog
+                {
+                    UserId = user.Id,
+                    OldBankCardNumber = user.BankAccount,
+                    NewBankCardNumber = model.BankCardNumber,
+                    OldBankName = user.BankName,
+                    NewBankName = model.BankName,
+                    OldBankAccountName = user.BankAccountName,
+                    NewBankAccountName = model.BankAccountName,
+                    ChangedByUserId = user.Id,
+                    ChangeTime = DateTime.UtcNow
+                };
+                dbContext.BankCardChangeLogs.Add(log);
+
+                user.BankAccount = model.BankCardNumber;
+                user.BankName = model.BankName;
+                user.BankAccountName = model.BankAccountName;
+                await userManager.UpdateAsync(user);
+                await dbContext.SaveChangesAsync();
+            }
+
+            return RedirectToAction(nameof(Index), new { Message = ManageMessageId.ChangeBankInfoSuccess });
+        }
+        return RedirectToAction(nameof(Index), new { Message = ManageMessageId.Error });
     }
 
     //
@@ -189,6 +249,7 @@ public class ManageController(
         ChangeAvatarSuccess,
         ChangePasswordSuccess,
         ChangeProfileSuccess,
+        ChangeBankInfoSuccess,
         Error
     }
 

@@ -51,16 +51,24 @@ public class EditViewModel : UiStackLayoutViewModel
     [MaxLength(30)]
     public string? JobLevel { get; set; }
 
+    [Display(Name = "Title")]
+    [MaxLength(30)]
+    public string? Title { get; set; }
+
     [Display(Name = "Base Salary")]
     public decimal BaseSalary { get; set; }
 
-    [Display(Name = "Bank Account")]
+    [Display(Name = "Bank Account (Card Number)")]
     [MaxLength(30)]
     public string? BankAccount { get; set; }
 
-    [Display(Name = "Bank Name")]
+    [Display(Name = "Bank Name (Branch)")]
     [MaxLength(30)]
     public string? BankName { get; set; }
+
+    [Display(Name = "Bank Account Name (Holder)")]
+    [MaxLength(30)]
+    public string? BankAccountName { get; set; }
 
     [Display(Name = "Manager")]
     public string? ManagerId { get; set; }
