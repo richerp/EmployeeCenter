@@ -72,5 +72,11 @@
   <data name="Bank Name (Branch)" xml:space="preserve">
     <value>銀行名（支店）</value>
   </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>法定名</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>電話番号</value>
+  </data>
 
 </root>

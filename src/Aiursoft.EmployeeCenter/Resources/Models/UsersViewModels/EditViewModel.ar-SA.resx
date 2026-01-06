@@ -72,5 +72,11 @@
   <data name="Bank Account Name (Holder)" xml:space="preserve">
     <value>اسم الحساب البنكي (صاحب الحساب)</value>
   </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>الاسم القانوني</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>رقم الهاتف</value>
+  </data>
 
 </root>

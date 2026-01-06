@@ -72,5 +72,11 @@
   <data name="Bank Account (Card Number)" xml:space="preserve">
     <value>बैंक खाता (कार्ड नंबर)</value>
   </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>कानूनी नाम</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>फ़ोन नंबर</value>
+  </data>
 
 </root>

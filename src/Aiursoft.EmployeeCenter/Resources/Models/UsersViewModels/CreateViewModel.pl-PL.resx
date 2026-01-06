@@ -66,5 +66,11 @@
   <data name="Bank Name (Branch)" xml:space="preserve">
     <value>Nazwa Banku (Oddział)</value>
   </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>Imię i nazwisko</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>Numer telefonu</value>
+  </data>
 
 </root>

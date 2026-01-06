@@ -66,5 +66,11 @@
   <data name="Title" xml:space="preserve">
     <value>Cargo</value>
   </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>Nombre legal</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>Número de teléfono</value>
+  </data>
 
 </root>

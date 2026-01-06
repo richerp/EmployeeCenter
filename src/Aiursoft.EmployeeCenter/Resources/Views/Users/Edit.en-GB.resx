@@ -90,5 +90,11 @@
   <data name="Bank Account Name" xml:space="preserve">
     <value>Bank Account Name</value>
   </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>Legal Name</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
 
 </root>

@@ -66,5 +66,11 @@
   <data name="Bank Account (Card Number)" xml:space="preserve">
     <value>銀行帳戶（卡號）</value>
   </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>法定姓名</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>電話號碼</value>
+  </data>
 
 </root>

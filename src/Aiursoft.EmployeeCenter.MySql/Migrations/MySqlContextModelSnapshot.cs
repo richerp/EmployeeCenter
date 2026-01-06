@@ -415,8 +415,12 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasColumnType("tinyint(1)");
 
                     b.Property<string>("JobLevel")
-                        .HasMaxLength(30)
-                        .HasColumnType("varchar(30)");
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("LegalName")
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("tinyint(1)");
@@ -448,8 +452,8 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<string>("Title")
-                        .HasMaxLength(30)
-                        .HasColumnType("varchar(30)");
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
 
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("tinyint(1)");

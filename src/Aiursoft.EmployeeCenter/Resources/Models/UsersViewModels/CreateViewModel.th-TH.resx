@@ -66,5 +66,11 @@
   <data name="Bank Name (Branch)" xml:space="preserve">
     <value>ชื่อธนาคาร (สาขา)</value>
   </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>ชื่อทางกฎหมาย</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>หมายเลขโทรศัพท์</value>
+  </data>
 
 </root>

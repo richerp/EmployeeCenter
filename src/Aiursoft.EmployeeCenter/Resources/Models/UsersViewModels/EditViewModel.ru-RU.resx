@@ -72,5 +72,11 @@
   <data name="Bank Account Name (Holder)" xml:space="preserve">
     <value>Имя владельца счета</value>
   </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>Юридическое имя</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>Номер телефона</value>
+  </data>
 
 </root>

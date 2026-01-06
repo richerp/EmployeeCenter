@@ -72,5 +72,11 @@
   <data name="Bank Account Name (Holder)" xml:space="preserve">
     <value>Nama Pemilik Rekening</value>
   </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>Nama Hukum</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>Nomor Telepon</value>
+  </data>
 
 </root>

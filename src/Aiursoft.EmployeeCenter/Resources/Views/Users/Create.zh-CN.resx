@@ -105,5 +105,17 @@
   <data name="Enter bank account name" xml:space="preserve">
     <value>输入账户持有人姓名</value>
   </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>法定姓名</value>
+  </data>
+  <data name="Enter legal name" xml:space="preserve">
+    <value>请输入法定姓名</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>电话号码</value>
+  </data>
+  <data name="Enter phone number" xml:space="preserve">
+    <value>请输入电话号码</value>
+  </data>
 
 </root>

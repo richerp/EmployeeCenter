@@ -90,5 +90,11 @@
   <data name="Bank Account Name" xml:space="preserve">
     <value>银行账户名称</value>
   </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>法定姓名</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>电话号码</value>
+  </data>
 
 </root>
