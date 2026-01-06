@@ -114,5 +114,11 @@
   <data name="Allows viewing the report line of any user, including their manager, subordinates, and peers." xml:space="preserve">
     <value>Mahdollistaa minkä tahansa käyttäjän raportointilinjan katselun, mukaan lukien heidän esimiehensä, alaisensa ja kollegansa.</value>
   </data>
+  <data name="Allows viewing the operation logs of any user, including their bank card change history." xml:space="preserve">
+    <value>Sallii käyttäjän toimintalokien tarkastelun, mukaan lukien niiden pankkikorttien muutoshistorian.</value>
+  </data>
+  <data name="View User Operation Log" xml:space="preserve">
+    <value>Näytä käyttäjän toimintalogi</value>
+  </data>
 
 </root>

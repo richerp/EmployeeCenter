@@ -93,5 +93,44 @@
   <data name="View Report Line" xml:space="preserve">
     <value>Rapor Hattını Görüntüle</value>
   </data>
+  <data name="Job Level (职级)" xml:space="preserve">
+    <value>Görev Seviyesi (职级)</value>
+  </data>
+  <data name="Title (职务)" xml:space="preserve">
+    <value>Unvan (职务)</value>
+  </data>
+  <data name="Bank Name (Branch)" xml:space="preserve">
+    <value>Banka Adı (Şube)</value>
+  </data>
+  <data name="Bank Account (Card Number)" xml:space="preserve">
+    <value>Bank Account (Card Number)</value>
+  </data>
+  <data name="Bank Account Name (Holder)" xml:space="preserve">
+    <value>Hesap Sahibi (Hesap Adı)</value>
+  </data>
+  <data name="Bank Information Change History" xml:space="preserve">
+    <value>Bank Bilgisi Değişiklik Geçmişi</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Zaman</value>
+  </data>
+  <data name="Changed By" xml:space="preserve">
+    <value>Değiştiren</value>
+  </data>
+  <data name="Bank Name (Old -&gt; New)" xml:space="preserve">
+    <value>Bank Name (Eski -&gt; Yeni)</value>
+  </data>
+  <data name="Card Number (Old -&gt; New)" xml:space="preserve">
+    <value>Kart Numarası (Eski -&gt; Yeni)</value>
+  </data>
+  <data name="Holder (Old -&gt; New)" xml:space="preserve">
+    <value>Hesap Sahibi (Eski -&gt; Yeni)</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>Sistem</value>
+  </data>
+  <data name="No change history found." xml:space="preserve">
+    <value>Değişim geçmişi bulunamadı.</value>
+  </data>
 
 </root>

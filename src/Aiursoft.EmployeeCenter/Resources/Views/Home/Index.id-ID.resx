@@ -216,5 +216,155 @@
   <data name="Start a new project" xml:space="preserve">
     <value>Mulai proyek baru</value>
   </data>
+  <data name="Enterprise Ready" xml:space="preserve">
+    <value>Siap Perusahaan</value>
+  </data>
+  <data name="Offline Capable" xml:space="preserve">
+    <value>Dapat Digunakan Offline</value>
+  </data>
+  <data name="Employee Center" xml:space="preserve">
+    <value>Pusat Karyawan</value>
+  </data>
+  <data name="A fast, offline-deployable enterprise office center designed to streamline your internal operations." xml:space="preserve">
+    <value>Pusat kantor perusahaan yang cepat dan dapat dideploy secara offline, dirancang untuk menyederhanakan operasional internal Anda.</value>
+  </data>
+  <data name="Manage employees, finances, assets, and more with a single, integrated platform." xml:space="preserve">
+    <value>Kelola karyawan, keuangan, aset, dan lainnya dengan satu platform terintegrasi.</value>
+  </data>
+  <data name="Go to Dashboard" xml:space="preserve">
+    <value>Buka Dasbor</value>
+  </data>
+  <data name="View on GitHub" xml:space="preserve">
+    <value>Lihat di GitHub</value>
+  </data>
+  <data name="Capabilities" xml:space="preserve">
+    <value>Kemampuan</value>
+  </data>
+  <data name="Everything you need to run your company" xml:space="preserve">
+    <value>Semua yang Anda butuhkan untuk menjalankan perusahaan Anda</value>
+  </data>
+  <data name="From HR to Finance, IT to Operations, Employee Center has you covered." xml:space="preserve">
+    <value>Dari HR ke Keuangan, IT ke Operasional, Employee Center telah menangani semua kebutuhan Anda.</value>
+  </data>
+  <data name="Multi-Database Support" xml:space="preserve">
+    <value>Dukungan Multi-Database</value>
+  </data>
+  <data name="Flexible storage options ensuring compatibility with your existing infrastructure." xml:space="preserve">
+    <value>Opsi penyimpanan yang fleksibel memastikan kompatibilitas dengan infrastruktur yang sudah Anda miliki.</value>
+  </data>
+  <data name="Advanced RBAC" xml:space="preserve">
+    <value>RBAC Lanjutan</value>
+  </data>
+  <data name="Granular Role-Based Access Control to ensure data security and proper authorization." xml:space="preserve">
+    <value>Kontrol Akses Berbasis Peran yang Terperinci untuk memastikan keamanan data dan otorisasi yang tepat.</value>
+  </data>
+  <data name="Enterprise Login (OIDC)" xml:space="preserve">
+    <value>Masuk Perusahaan (OIDC)</value>
+  </data>
+  <data name="Seamless integration with OpenID Connect providers for secure, single sign-on experience." xml:space="preserve">
+    <value>Integrasi yang mulus dengan penyedia OpenID Connect untuk pengalaman masuk satu kali yang aman.</value>
+  </data>
+  <data name="Docker Offline Deployment" xml:space="preserve">
+    <value>Docker Penyebaran Offline</value>
+  </data>
+  <data name="Deploy anywhere, even in air-gapped environments, with our robust Docker support." xml:space="preserve">
+    <value>Deploy di mana saja, bahkan di lingkungan yang terisolasi, dengan dukungan Docker yang andal dari kami.</value>
+  </data>
+  <data name="Financial Registration" xml:space="preserve">
+    <value>Pendaftaran Keuangan</value>
+  </data>
+  <data name="Streamline financial tracking and record-keeping for better transparency." xml:space="preserve">
+    <value>Sederhanakan pelacakan keuangan dan pencatatan untuk transparansi yang lebih baik.</value>
+  </data>
+  <data name="Report Line View" xml:space="preserve">
+    <value>Tampilan Garis Laporan</value>
+  </data>
+  <data name="Visualize organizational structure and reporting hierarchies with clarity." xml:space="preserve">
+    <value>Visualisasikan struktur organisasi dan hierarki pelaporan dengan jelas.</value>
+  </data>
+  <data name="Employee Management" xml:space="preserve">
+    <value>Manajemen Karyawan</value>
+  </data>
+  <data name="Centralized system for maintaining up-to-date employee records and information." xml:space="preserve">
+    <value>Sistem terpusat untuk menjaga catatan karyawan dan informasi yang selalu diperbarui.</value>
+  </data>
+  <data name="Payslip Distribution" xml:space="preserve">
+    <value>Distribusi Slip Gaji</value>
+  </data>
+  <data name="Secure and efficient electronic distribution of monthly salary slips." xml:space="preserve">
+    <value>Distribusi elektronik gaji bulanan yang aman dan efisien.</value>
+  </data>
+  <data name="Secret Distribution" xml:space="preserve">
+    <value>Distribusi Rahasia</value>
+  </data>
+  <data name="Safely share sensitive credentials and company secrets with authorized personnel." xml:space="preserve">
+    <value>Bagikan kredensial sensitif dan rahasia perusahaan secara aman dengan personel yang berwenang.</value>
+  </data>
+  <data name="Reimbursement Calendar" xml:space="preserve">
+    <value>Kalender Penggantian Biaya</value>
+  </data>
+  <data name="Track and manage expense reimbursements with an integrated calendar view." xml:space="preserve">
+    <value>Lacak dan kelola penggantian biaya dengan tampilan kalender terintegrasi.</value>
+  </data>
+  <data name="Promotion Management" xml:space="preserve">
+    <value>Manajemen Promosi</value>
+  </data>
+  <data name="Systematize the career progression and promotion processes for your team." xml:space="preserve">
+    <value>Sistematisasi proses perkembangan karier dan promosi untuk tim Anda.</value>
+  </data>
+  <data name="Asset Recording" xml:space="preserve">
+    <value>Pencatatan Aset</value>
+  </data>
+  <data name="Keep detailed inventory records of all company hardware and software assets." xml:space="preserve">
+    <value>Simpan catatan inventaris yang rinci untuk semua aset perangkat keras dan perangkat lunak perusahaan.</value>
+  </data>
+  <data name="Leave Tracking" xml:space="preserve">
+    <value>Pencatatan Cuti</value>
+  </data>
+  <data name="Efficiently manage employee leave requests and attendance records." xml:space="preserve">
+    <value>Kelola permintaan cuti karyawan dan catatan kehadiran secara efisien.</value>
+  </data>
+  <data name="Incident Management" xml:space="preserve">
+    <value>Manajemen Insiden</value>
+  </data>
+  <data name="Track, report, and resolve workplace incidents to ensure safety and compliance." xml:space="preserve">
+    <value>Lacak, laporkan, dan selesaikan insiden di tempat kerja untuk memastikan keamanan dan kepatuhan.</value>
+  </data>
+  <data name="Efficiency" xml:space="preserve">
+    <value>Efisiensi</value>
+  </data>
+  <data name="Boost Operational Efficiency" xml:space="preserve">
+    <value>Tingkatkan Efisiensi Operasional</value>
+  </data>
+  <data name="Employee Center integrates disjointed processes into a unified workflow, eliminating manual errors and saving valuable time for your HR and Admin teams." xml:space="preserve">
+    <value>Employee Center mengintegrasikan proses-proses yang terpisah menjadi satu alur kerja terpadu, menghilangkan kesalahan manual dan menghemat waktu berharga bagi tim HR dan Admin Anda.</value>
+  </data>
+  <data name="Save Time" xml:space="preserve">
+    <value>Hemat Waktu</value>
+  </data>
+  <data name="Automated workflows for payroll, leave, and expenses mean less time on paperwork and more time on people." xml:space="preserve">
+    <value>Alur kerja otomatis untuk gaji, cuti, dan pengeluaran berarti waktu yang lebih sedikit untuk dokumen dan lebih banyak waktu untuk orang-orang.</value>
+  </data>
+  <data name="Accuracy" xml:space="preserve">
+    <value>Akurasi</value>
+  </data>
+  <data name="Centralized data drastically reduces discrepancies in employee records and financial reporting." xml:space="preserve">
+    <value>Data terpusat secara drastis mengurangi ketidaksesuaian dalam catatan karyawan dan pelaporan keuangan.</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>Keamanan</value>
+  </data>
+  <data name="Enterprise-grade security features ensure your sensitive company data remains protected." xml:space="preserve">
+    <value>Fitur keamanan kelas perusahaan memastikan data sensitif perusahaan Anda tetap terlindungi.</value>
+  </data>
+  <data name="Ready to modernize your office?" xml:space="preserve">
+    <value>Siap modernisasi kantor Anda?</value>
+  </data>
+  <data name="Join the growing number of companies optimizing their workforce management with Employee Center." xml:space="preserve">
+    <value>Bergabunglah dengan jumlah perusahaan yang terus bertambah dalam mengoptimalkan manajemen tenaga kerja dengan Employee Center.</value>
+  </data>
+  <data name="Get Started Now" xml:space="preserve">
+    <value>Mulai Sekarang</value>
+  </data>
 
 </root>

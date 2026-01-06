@@ -93,5 +93,44 @@
   <data name="Report Line" xml:space="preserve">
     <value>보고 라인</value>
   </data>
+  <data name="Job Level (职级)" xml:space="preserve">
+    <value>직급 (직급)</value>
+  </data>
+  <data name="Title (职务)" xml:space="preserve">
+    <value>직책 (직위)</value>
+  </data>
+  <data name="Bank Name (Branch)" xml:space="preserve">
+    <value>은행 이름 (지점)</value>
+  </data>
+  <data name="Bank Account (Card Number)" xml:space="preserve">
+    <value>은행 계좌 (카드 번호)</value>
+  </data>
+  <data name="Bank Account Name (Holder)" xml:space="preserve">
+    <value>계좌 이름 (예금주)</value>
+  </data>
+  <data name="Bank Information Change History" xml:space="preserve">
+    <value>은행 정보 변경 내역</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>시간</value>
+  </data>
+  <data name="Changed By" xml:space="preserve">
+    <value>변경자</value>
+  </data>
+  <data name="Bank Name (Old -&gt; New)" xml:space="preserve">
+    <value>은행명 (이전 -&gt; 이후)</value>
+  </data>
+  <data name="Card Number (Old -&gt; New)" xml:space="preserve">
+    <value>카드 번호 (이전 -&gt; 새)</value>
+  </data>
+  <data name="Holder (Old -&gt; New)" xml:space="preserve">
+    <value>예금주 (이전 -&gt; 변경됨)</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>시스템</value>
+  </data>
+  <data name="No change history found." xml:space="preserve">
+    <value>변경 내역이 없습니다.</value>
+  </data>
 
 </root>

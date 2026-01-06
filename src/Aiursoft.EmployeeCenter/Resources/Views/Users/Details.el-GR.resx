@@ -93,5 +93,44 @@
   <data name="View Report Line" xml:space="preserve">
     <value>Προβολή Γραμμής Αναφοράς</value>
   </data>
+  <data name="Job Level (职级)" xml:space="preserve">
+    <value>Επίπεδο Θέσης (επίπεδο θέσης)</value>
+  </data>
+  <data name="Title (职务)" xml:space="preserve">
+    <value>Θέση (职务)</value>
+  </data>
+  <data name="Bank Name (Branch)" xml:space="preserve">
+    <value>Όνομα Τράπεζας (Κλάδος)</value>
+  </data>
+  <data name="Bank Account (Card Number)" xml:space="preserve">
+    <value>Τραπεζικός Λογαριασμός (Αριθμός Κάρτας)</value>
+  </data>
+  <data name="Bank Account Name (Holder)" xml:space="preserve">
+    <value>Όνομα λογαριασμού τράπεζας (Κάτοχος)</value>
+  </data>
+  <data name="Bank Information Change History" xml:space="preserve">
+    <value>Ιστορικό Αλλαγών Στοιχείων Τραπέζης</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Χρόνος</value>
+  </data>
+  <data name="Changed By" xml:space="preserve">
+    <value>Αλλαγή από</value>
+  </data>
+  <data name="Bank Name (Old -&gt; New)" xml:space="preserve">
+    <value>Όνομα Τράπεζας (Παλιό -&gt; Νέο)</value>
+  </data>
+  <data name="Card Number (Old -&gt; New)" xml:space="preserve">
+    <value>Αριθμός Κάρτας (Παλιός -&gt; Νέος)</value>
+  </data>
+  <data name="Holder (Old -&gt; New)" xml:space="preserve">
+    <value>Κάτοχος (Παλιό -&gt; Νέο)</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>Σύστημα</value>
+  </data>
+  <data name="No change history found." xml:space="preserve">
+    <value>Δεν βρέθηκε ιστορικό αλλαγών.</value>
+  </data>
 
 </root>

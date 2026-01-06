@@ -216,5 +216,155 @@
   <data name="Start a new project" xml:space="preserve">
     <value>Bắt đầu một dự án mới</value>
   </data>
+  <data name="Enterprise Ready" xml:space="preserve">
+    <value>Sẵn sàng cho doanh nghiệp</value>
+  </data>
+  <data name="Offline Capable" xml:space="preserve">
+    <value>Khả năng hoạt động ngoại tuyến</value>
+  </data>
+  <data name="Employee Center" xml:space="preserve">
+    <value>Trung tâm Nhân viên</value>
+  </data>
+  <data name="A fast, offline-deployable enterprise office center designed to streamline your internal operations." xml:space="preserve">
+    <value>Một trung tâm văn phòng doanh nghiệp nhanh chóng, có thể triển khai ngoại tuyến, được thiết kế để tối ưu hóa các hoạt động nội bộ của bạn.</value>
+  </data>
+  <data name="Manage employees, finances, assets, and more with a single, integrated platform." xml:space="preserve">
+    <value>Quản lý nhân viên, tài chính, tài sản và nhiều hơn thế nữa với một nền tảng tích hợp duy nhất.</value>
+  </data>
+  <data name="Go to Dashboard" xml:space="preserve">
+    <value>Đi tới Bảng điều khiển</value>
+  </data>
+  <data name="View on GitHub" xml:space="preserve">
+    <value>Xem trên GitHub</value>
+  </data>
+  <data name="Capabilities" xml:space="preserve">
+    <value>Khả năng</value>
+  </data>
+  <data name="Everything you need to run your company" xml:space="preserve">
+    <value>Tất cả những gì bạn cần để vận hành công ty của mình</value>
+  </data>
+  <data name="From HR to Finance, IT to Operations, Employee Center has you covered." xml:space="preserve">
+    <value>Từ nhân sự đến tài chính, từ CNTT đến vận hành, Employee Center đều lo hết cho bạn.</value>
+  </data>
+  <data name="Multi-Database Support" xml:space="preserve">
+    <value>Hỗ trợ đa cơ sở dữ liệu</value>
+  </data>
+  <data name="Flexible storage options ensuring compatibility with your existing infrastructure." xml:space="preserve">
+    <value>Các tùy chọn lưu trữ linh hoạt đảm bảo tính tương thích với cơ sở hạ tầng hiện có của bạn.</value>
+  </data>
+  <data name="Advanced RBAC" xml:space="preserve">
+    <value>Quyền truy cập theo vai trò nâng cao</value>
+  </data>
+  <data name="Granular Role-Based Access Control to ensure data security and proper authorization." xml:space="preserve">
+    <value>Kiểm soát truy cập dựa trên vai trò chi tiết để đảm bảo an toàn dữ liệu và phân quyền hợp lệ.</value>
+  </data>
+  <data name="Enterprise Login (OIDC)" xml:space="preserve">
+    <value>Đăng nhập Doanh nghiệp (OIDC)</value>
+  </data>
+  <data name="Seamless integration with OpenID Connect providers for secure, single sign-on experience." xml:space="preserve">
+    <value>Tích hợp liền mạch với các nhà cung cấp OpenID Connect để mang lại trải nghiệm đăng nhập một lần an toàn.</value>
+  </data>
+  <data name="Docker Offline Deployment" xml:space="preserve">
+    <value>Triển khai Docker ngoại tuyến</value>
+  </data>
+  <data name="Deploy anywhere, even in air-gapped environments, with our robust Docker support." xml:space="preserve">
+    <value>Triển khai ở bất kỳ đâu, ngay cả trong môi trường tách biệt mạng, với khả năng hỗ trợ Docker mạnh mẽ của chúng tôi.</value>
+  </data>
+  <data name="Financial Registration" xml:space="preserve">
+    <value>Đăng ký Tài chính</value>
+  </data>
+  <data name="Streamline financial tracking and record-keeping for better transparency." xml:space="preserve">
+    <value>Đơn giản hóa việc theo dõi tài chính và lưu trữ hồ sơ để minh bạch hơn.</value>
+  </data>
+  <data name="Report Line View" xml:space="preserve">
+    <value>Xem sơ đồ báo cáo</value>
+  </data>
+  <data name="Visualize organizational structure and reporting hierarchies with clarity." xml:space="preserve">
+    <value>Trực quan hóa cấu trúc tổ chức và các cấp độ báo cáo một cách rõ ràng.</value>
+  </data>
+  <data name="Employee Management" xml:space="preserve">
+    <value>Quản lý nhân viên</value>
+  </data>
+  <data name="Centralized system for maintaining up-to-date employee records and information." xml:space="preserve">
+    <value>Hệ thống tập trung để duy trì hồ sơ và thông tin nhân viên luôn cập nhật mới nhất.</value>
+  </data>
+  <data name="Payslip Distribution" xml:space="preserve">
+    <value>Phân phối bảng lương</value>
+  </data>
+  <data name="Secure and efficient electronic distribution of monthly salary slips." xml:space="preserve">
+    <value>Phân phối điện tử an toàn và hiệu quả phiếu lương hàng tháng.</value>
+  </data>
+  <data name="Secret Distribution" xml:space="preserve">
+    <value>Phân phối Bí mật</value>
+  </data>
+  <data name="Safely share sensitive credentials and company secrets with authorized personnel." xml:space="preserve">
+    <value>Chia sẻ an toàn các thông tin nhạy cảm và bí mật công ty với nhân viên được ủy quyền.</value>
+  </data>
+  <data name="Reimbursement Calendar" xml:space="preserve">
+    <value>Lịch thanh toán hoàn lại</value>
+  </data>
+  <data name="Track and manage expense reimbursements with an integrated calendar view." xml:space="preserve">
+    <value>Theo dõi và quản lý hoàn trả chi phí với chế độ xem lịch tích hợp.</value>
+  </data>
+  <data name="Promotion Management" xml:space="preserve">
+    <value>Quản lý thăng tiến</value>
+  </data>
+  <data name="Systematize the career progression and promotion processes for your team." xml:space="preserve">
+    <value>Hệ thống hóa quy trình thăng tiến và thăng chức cho đội ngũ của bạn.</value>
+  </data>
+  <data name="Asset Recording" xml:space="preserve">
+    <value>Ghi nhận tài sản</value>
+  </data>
+  <data name="Keep detailed inventory records of all company hardware and software assets." xml:space="preserve">
+    <value>Giữ bản ghi chi tiết về hàng tồn kho của tất cả tài sản phần cứng và phần mềm của công ty.</value>
+  </data>
+  <data name="Leave Tracking" xml:space="preserve">
+    <value>Theo dõi nghỉ phép</value>
+  </data>
+  <data name="Efficiently manage employee leave requests and attendance records." xml:space="preserve">
+    <value>Quản lý hiệu quả các yêu cầu nghỉ phép và hồ sơ chấm công của nhân viên.</value>
+  </data>
+  <data name="Incident Management" xml:space="preserve">
+    <value>Quản lý sự cố</value>
+  </data>
+  <data name="Track, report, and resolve workplace incidents to ensure safety and compliance." xml:space="preserve">
+    <value>Theo dõi, báo cáo và xử lý các sự cố tại nơi làm việc để đảm bảo an toàn và tuân thủ.</value>
+  </data>
+  <data name="Efficiency" xml:space="preserve">
+    <value>Hiệu suất</value>
+  </data>
+  <data name="Boost Operational Efficiency" xml:space="preserve">
+    <value>Nâng cao hiệu quả vận hành</value>
+  </data>
+  <data name="Employee Center integrates disjointed processes into a unified workflow, eliminating manual errors and saving valuable time for your HR and Admin teams." xml:space="preserve">
+    <value>Employee Center tích hợp các quy trình rời rạc thành một luồng công việc thống nhất, loại bỏ các lỗi do thao tác thủ công và tiết kiệm thời gian quý giá cho đội ngũ HR và Quản trị của bạn.</value>
+  </data>
+  <data name="Save Time" xml:space="preserve">
+    <value>Tiết kiệm thời gian</value>
+  </data>
+  <data name="Automated workflows for payroll, leave, and expenses mean less time on paperwork and more time on people." xml:space="preserve">
+    <value>Các quy trình tự động hóa cho lương, nghỉ phép và chi phí giúp giảm thời gian làm thủ tục hành chính và tăng thời gian dành cho con người.</value>
+  </data>
+  <data name="Accuracy" xml:space="preserve">
+    <value>Độ chính xác</value>
+  </data>
+  <data name="Centralized data drastically reduces discrepancies in employee records and financial reporting." xml:space="preserve">
+    <value>Dữ liệu tập trung giảm đáng kể sự sai lệch trong hồ sơ nhân viên và báo cáo tài chính.</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>Bảo mật</value>
+  </data>
+  <data name="Enterprise-grade security features ensure your sensitive company data remains protected." xml:space="preserve">
+    <value>Các tính năng bảo mật cấp doanh nghiệp đảm bảo dữ liệu nhạy cảm của công ty bạn luôn được bảo vệ.</value>
+  </data>
+  <data name="Ready to modernize your office?" xml:space="preserve">
+    <value>Sẵn sàng hiện đại hóa văn phòng của bạn?</value>
+  </data>
+  <data name="Join the growing number of companies optimizing their workforce management with Employee Center." xml:space="preserve">
+    <value>Tham gia số lượng ngày càng lớn các công ty tối ưu hóa quản lý nguồn nhân lực với Employee Center.</value>
+  </data>
+  <data name="Get Started Now" xml:space="preserve">
+    <value>Bắt đầu ngay bây giờ</value>
+  </data>
 
 </root>

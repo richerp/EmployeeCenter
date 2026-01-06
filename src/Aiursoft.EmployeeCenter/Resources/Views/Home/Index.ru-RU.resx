@@ -216,5 +216,155 @@
   <data name="Start a new project" xml:space="preserve">
     <value>Начать новый проект</value>
   </data>
+  <data name="Offline Capable" xml:space="preserve">
+    <value>Офлайн-совместимый</value>
+  </data>
+  <data name="Enterprise Ready" xml:space="preserve">
+    <value>Готово к работе в корпоративной среде</value>
+  </data>
+  <data name="Employee Center" xml:space="preserve">
+    <value>Центр сотрудников</value>
+  </data>
+  <data name="A fast, offline-deployable enterprise office center designed to streamline your internal operations." xml:space="preserve">
+    <value>Быстрый центр корпоративной офисной деятельности, который можно развернуть в автономном режиме и предназначен для оптимизации внутренних операций вашей компании.</value>
+  </data>
+  <data name="Manage employees, finances, assets, and more with a single, integrated platform." xml:space="preserve">
+    <value>Управляйте сотрудниками, финансами, активами и многим другим с помощью единой, интегрированной платформы.</value>
+  </data>
+  <data name="Go to Dashboard" xml:space="preserve">
+    <value>Перейти к панели управления</value>
+  </data>
+  <data name="View on GitHub" xml:space="preserve">
+    <value>Посмотреть на GitHub</value>
+  </data>
+  <data name="Capabilities" xml:space="preserve">
+    <value>Возможности</value>
+  </data>
+  <data name="Everything you need to run your company" xml:space="preserve">
+    <value>Всё, что нужно, чтобы управлять вашей компанией</value>
+  </data>
+  <data name="From HR to Finance, IT to Operations, Employee Center has you covered." xml:space="preserve">
+    <value>От HR до финансы, от ИТ до операций — Employee Center охватывает все ваши потребности.</value>
+  </data>
+  <data name="Multi-Database Support" xml:space="preserve">
+    <value>Поддержка нескольких баз данных</value>
+  </data>
+  <data name="Flexible storage options ensuring compatibility with your existing infrastructure." xml:space="preserve">
+    <value>Гибкие варианты хранения данных, обеспечивающие совместимость с вашей существующей инфраструктурой.</value>
+  </data>
+  <data name="Advanced RBAC" xml:space="preserve">
+    <value>Расширенный RBAC</value>
+  </data>
+  <data name="Granular Role-Based Access Control to ensure data security and proper authorization." xml:space="preserve">
+    <value>Гранулированный контроль доступа на основе ролей для обеспечения безопасности данных и надлежащей авторизации.</value>
+  </data>
+  <data name="Enterprise Login (OIDC)" xml:space="preserve">
+    <value>Вход в корпоративную систему (OIDC)</value>
+  </data>
+  <data name="Seamless integration with OpenID Connect providers for secure, single sign-on experience." xml:space="preserve">
+    <value>Безупречная интеграция с провайдерами OpenID Connect для безопасного опыта единого входа.</value>
+  </data>
+  <data name="Docker Offline Deployment" xml:space="preserve">
+    <value>Развертывание Docker в автономном режиме</value>
+  </data>
+  <data name="Deploy anywhere, even in air-gapped environments, with our robust Docker support." xml:space="preserve">
+    <value>Развертывайте где угодно, даже в изолированных средах, с нашим надежным поддержкой Docker.</value>
+  </data>
+  <data name="Financial Registration" xml:space="preserve">
+    <value>Финансовая регистрация</value>
+  </data>
+  <data name="Streamline financial tracking and record-keeping for better transparency." xml:space="preserve">
+    <value>Упростите ведение финансового учета и ведение записей для большей прозрачности.</value>
+  </data>
+  <data name="Report Line View" xml:space="preserve">
+    <value>Вид организационной структуры</value>
+  </data>
+  <data name="Visualize organizational structure and reporting hierarchies with clarity." xml:space="preserve">
+    <value>Визуализируйте организационную структуру и иерархии отчетности с ясностью.</value>
+  </data>
+  <data name="Employee Management" xml:space="preserve">
+    <value>Управление сотрудниками</value>
+  </data>
+  <data name="Centralized system for maintaining up-to-date employee records and information." xml:space="preserve">
+    <value>Централизованная система для поддержания актуальных сведений о сотрудниках и информации.</value>
+  </data>
+  <data name="Payslip Distribution" xml:space="preserve">
+    <value>Распределение зарплатных ведомостей</value>
+  </data>
+  <data name="Secure and efficient electronic distribution of monthly salary slips." xml:space="preserve">
+    <value>Безопасная и эффективная электронная доставка ежемесячных платежных ведомостей.</value>
+  </data>
+  <data name="Secret Distribution" xml:space="preserve">
+    <value>Секретное распределение</value>
+  </data>
+  <data name="Safely share sensitive credentials and company secrets with authorized personnel." xml:space="preserve">
+    <value>Безопасно передавайте конфиденциальные учетные данные и корпоративные тайны уполномоченному персоналу.</value>
+  </data>
+  <data name="Reimbursement Calendar" xml:space="preserve">
+    <value>Календарь возмещения расходов</value>
+  </data>
+  <data name="Track and manage expense reimbursements with an integrated calendar view." xml:space="preserve">
+    <value>Отслеживайте и управляйте возмещением расходов с помощью интегрированного календарного представления.</value>
+  </data>
+  <data name="Promotion Management" xml:space="preserve">
+    <value>Управление продвижением по службе</value>
+  </data>
+  <data name="Systematize the career progression and promotion processes for your team." xml:space="preserve">
+    <value>Систематизируйте процессы карьерного роста и продвижения по службе для вашей команды.</value>
+  </data>
+  <data name="Asset Recording" xml:space="preserve">
+    <value>Учет активов</value>
+  </data>
+  <data name="Keep detailed inventory records of all company hardware and software assets." xml:space="preserve">
+    <value>Ведите подробные учетные записи инвентаря всех активов компании — аппаратного и программного обеспечения.</value>
+  </data>
+  <data name="Leave Tracking" xml:space="preserve">
+    <value>Контроль отпусков</value>
+  </data>
+  <data name="Efficiently manage employee leave requests and attendance records." xml:space="preserve">
+    <value>Эффективно управляйте заявками на отпуск сотрудников и записями по посещаемости.</value>
+  </data>
+  <data name="Incident Management" xml:space="preserve">
+    <value>Управление инцидентами</value>
+  </data>
+  <data name="Track, report, and resolve workplace incidents to ensure safety and compliance." xml:space="preserve">
+    <value>Отслеживайте, сообщайте и устраняйте производственные инциденты для обеспечения безопасности и соответствия требованиям.</value>
+  </data>
+  <data name="Efficiency" xml:space="preserve">
+    <value>Эффективность</value>
+  </data>
+  <data name="Boost Operational Efficiency" xml:space="preserve">
+    <value>Повысьте операционную эффективность</value>
+  </data>
+  <data name="Employee Center integrates disjointed processes into a unified workflow, eliminating manual errors and saving valuable time for your HR and Admin teams." xml:space="preserve">
+    <value>Employee Center интегрирует разрозненные процессы в единый рабочий процесс, устраняя ручные ошибки и экономя драгоценное время для ваших отделов кадров и административных служб.</value>
+  </data>
+  <data name="Save Time" xml:space="preserve">
+    <value>Сэкономьте время</value>
+  </data>
+  <data name="Automated workflows for payroll, leave, and expenses mean less time on paperwork and more time on people." xml:space="preserve">
+    <value>Автоматизированные рабочие процессы для зарплаты, отпусков и расходов означают меньше времени на документооборот и больше времени для людей.</value>
+  </data>
+  <data name="Accuracy" xml:space="preserve">
+    <value>Точность</value>
+  </data>
+  <data name="Centralized data drastically reduces discrepancies in employee records and financial reporting." xml:space="preserve">
+    <value>Централизованные данные значительно сокращают расхождения в записях сотрудников и финансовой отчетности.</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>Безопасность</value>
+  </data>
+  <data name="Enterprise-grade security features ensure your sensitive company data remains protected." xml:space="preserve">
+    <value>Функции безопасности уровня предприятия обеспечивают защиту вашей конфиденциальной корпоративной информации.</value>
+  </data>
+  <data name="Ready to modernize your office?" xml:space="preserve">
+    <value>Готовы модернизировать свой офис?</value>
+  </data>
+  <data name="Join the growing number of companies optimizing their workforce management with Employee Center." xml:space="preserve">
+    <value>Присоединяйтесь к растущему числу компаний, оптимизирующих управление персоналом с помощью Employee Center.</value>
+  </data>
+  <data name="Get Started Now" xml:space="preserve">
+    <value>Начать сейчас</value>
+  </data>
 
 </root>

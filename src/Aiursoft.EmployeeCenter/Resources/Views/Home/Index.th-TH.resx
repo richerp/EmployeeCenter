@@ -216,5 +216,155 @@
   <data name="Start a new project" xml:space="preserve">
     <value>เริ่มต้นโปรเจกต์ใหม่</value>
   </data>
+  <data name="Offline Capable" xml:space="preserve">
+    <value>รองรับการทำงานแบบออฟไลน์</value>
+  </data>
+  <data name="Enterprise Ready" xml:space="preserve">
+    <value>พร้อมใช้งานในองค์กร</value>
+  </data>
+  <data name="Employee Center" xml:space="preserve">
+    <value>ศูนย์พนักงาน</value>
+  </data>
+  <data name="A fast, offline-deployable enterprise office center designed to streamline your internal operations." xml:space="preserve">
+    <value>ศูนย์สำนักงานองค์กรที่เร็วและติดตั้งแบบออฟไลน์ได้ ออกแบบมาเพื่อจัดการกระบวนการภายในองค์กรของคุณให้ราบรื่นยิ่งขึ้น</value>
+  </data>
+  <data name="Manage employees, finances, assets, and more with a single, integrated platform." xml:space="preserve">
+    <value>จัดการพนักงาน งบประมาณ สินทรัพย์ และอื่น ๆ ทั้งหมดด้วยแพลตฟอร์มเดียวที่รวมระบบเข้าด้วยกันอย่างครบวงจร</value>
+  </data>
+  <data name="Go to Dashboard" xml:space="preserve">
+    <value>ไปยังแดชบอร์ด</value>
+  </data>
+  <data name="View on GitHub" xml:space="preserve">
+    <value>ดูที่ GitHub</value>
+  </data>
+  <data name="Capabilities" xml:space="preserve">
+    <value>ความสามารถ</value>
+  </data>
+  <data name="Everything you need to run your company" xml:space="preserve">
+    <value>ทุกสิ่งที่คุณต้องการเพื่อจัดการธุรกิจของคุณ</value>
+  </data>
+  <data name="From HR to Finance, IT to Operations, Employee Center has you covered." xml:space="preserve">
+    <value>ตั้งแต่แผนกทรัพยากรบุคคล ไปจนถึงการเงิน ไอที ไปจนถึงการดำเนินงาน ศูนย์พนักงานจัดการทุกอย่างให้คุณแล้ว</value>
+  </data>
+  <data name="Multi-Database Support" xml:space="preserve">
+    <value>รองรับฐานข้อมูลหลายฐาน</value>
+  </data>
+  <data name="Flexible storage options ensuring compatibility with your existing infrastructure." xml:space="preserve">
+    <value>ตัวเลือกการจัดเก็บที่ยืดหยุ่น รับรองความเข้ากันได้กับโครงสร้างพื้นฐานเดิมของคุณ</value>
+  </data>
+  <data name="Advanced RBAC" xml:space="preserve">
+    <value>การควบคุมการเข้าถึงตามบทบาทขั้นสูง</value>
+  </data>
+  <data name="Granular Role-Based Access Control to ensure data security and proper authorization." xml:space="preserve">
+    <value>การควบคุมการเข้าถึงตามบทบาทแบบละเอียดเพื่อให้มั่นใจในความปลอดภัยของข้อมูลและการอนุญาตที่เหมาะสม</value>
+  </data>
+  <data name="Enterprise Login (OIDC)" xml:space="preserve">
+    <value>การเข้าสู่ระบบสำหรับองค์กร (OIDC)</value>
+  </data>
+  <data name="Seamless integration with OpenID Connect providers for secure, single sign-on experience." xml:space="preserve">
+    <value>การบูรณาการอย่างราบรื่นกับผู้ให้บริการ OpenID Connect เพื่อประสบการณ์การเข้าสู่ระบบเพียงครั้งเดียวอย่างปลอดภัย</value>
+  </data>
+  <data name="Docker Offline Deployment" xml:space="preserve">
+    <value>การติดตั้งแบบออฟไลน์ด้วย Docker</value>
+  </data>
+  <data name="Deploy anywhere, even in air-gapped environments, with our robust Docker support." xml:space="preserve">
+    <value>ติดตั้งที่ใดก็ได้ แม้แต่ในสภาพแวดล้อมที่แยกจากเครือข่าย ด้วยการสนับสนุน Docker ที่แข็งแกร่งของเรา</value>
+  </data>
+  <data name="Financial Registration" xml:space="preserve">
+    <value>การลงทะเบียนทางการเงิน</value>
+  </data>
+  <data name="Streamline financial tracking and record-keeping for better transparency." xml:space="preserve">
+    <value>ปรับปรุงการติดตามการเงินและบันทึกข้อมูลเพื่อความโปร่งใสที่ดียิ่งขึ้น</value>
+  </data>
+  <data name="Report Line View" xml:space="preserve">
+    <value>มุมมองโครงสร้างการรายงาน</value>
+  </data>
+  <data name="Visualize organizational structure and reporting hierarchies with clarity." xml:space="preserve">
+    <value>แสดงโครงสร้างองค์กรและลำดับชั้นการรายงานอย่างชัดเจน</value>
+  </data>
+  <data name="Employee Management" xml:space="preserve">
+    <value>การจัดการพนักงาน</value>
+  </data>
+  <data name="Centralized system for maintaining up-to-date employee records and information." xml:space="preserve">
+    <value>ระบบศูนย์กลางสำหรับการจัดการบันทึกและข้อมูลพนักงานที่ทันสมัย</value>
+  </data>
+  <data name="Payslip Distribution" xml:space="preserve">
+    <value>การแจกจ่ายสลิปเงินเดือน</value>
+  </data>
+  <data name="Secure and efficient electronic distribution of monthly salary slips." xml:space="preserve">
+    <value>การจัดส่งสลิปเงินเดือนอิเล็กทรอนิกส์อย่างปลอดภัยและมีประสิทธิภาพรายเดือน</value>
+  </data>
+  <data name="Secret Distribution" xml:space="preserve">
+    <value>การแจกจ่ายความลับ</value>
+  </data>
+  <data name="Safely share sensitive credentials and company secrets with authorized personnel." xml:space="preserve">
+    <value>แชร์ข้อมูลประจำตัวที่ละเอียดอ่อนและความลับของบริษัทอย่างปลอดภัยกับบุคคลที่ได้รับอนุญาต</value>
+  </data>
+  <data name="Reimbursement Calendar" xml:space="preserve">
+    <value>ปฏิทินการคืนเงินค่าใช้จ่าย</value>
+  </data>
+  <data name="Track and manage expense reimbursements with an integrated calendar view." xml:space="preserve">
+    <value>ติดตามและจัดการค่าตอบแทนค่าใช้จ่ายได้ด้วยมุมมองปฏิทินที่ผสานรวม</value>
+  </data>
+  <data name="Promotion Management" xml:space="preserve">
+    <value>การจัดการการเลื่อนตำแหน่ง</value>
+  </data>
+  <data name="Systematize the career progression and promotion processes for your team." xml:space="preserve">
+    <value>ระบบการพัฒนาอาชีพและการส่งเสริมตำแหน่งงานสำหรับทีมของคุณ</value>
+  </data>
+  <data name="Asset Recording" xml:space="preserve">
+    <value>การบันทึกสินทรัพย์</value>
+  </data>
+  <data name="Keep detailed inventory records of all company hardware and software assets." xml:space="preserve">
+    <value>จัดเก็บบันทึกสินค้าคงคลังอย่างละเอียดสำหรับสินทรัพย์ฮาร์ดแวร์และซอฟต์แวร์ทั้งหมดของบริษัท</value>
+  </data>
+  <data name="Leave Tracking" xml:space="preserve">
+    <value>การติดตามการลา</value>
+  </data>
+  <data name="Efficiently manage employee leave requests and attendance records." xml:space="preserve">
+    <value>จัดการคำขอลาพักร้อนของพนักงานและบันทึกการเข้าร่วมงานอย่างมีประสิทธิภาพ</value>
+  </data>
+  <data name="Incident Management" xml:space="preserve">
+    <value>การจัดการเหตุการณ์</value>
+  </data>
+  <data name="Track, report, and resolve workplace incidents to ensure safety and compliance." xml:space="preserve">
+    <value>ติดตาม รายงาน และแก้ไขเหตุการณ์ในที่ทำงานเพื่อให้มั่นใจในความปลอดภัยและการปฏิบัติตามข้อกำหนด</value>
+  </data>
+  <data name="Efficiency" xml:space="preserve">
+    <value>ประสิทธิภาพ</value>
+  </data>
+  <data name="Boost Operational Efficiency" xml:space="preserve">
+    <value>เพิ่มประสิทธิภาพการดำเนินงาน</value>
+  </data>
+  <data name="Employee Center integrates disjointed processes into a unified workflow, eliminating manual errors and saving valuable time for your HR and Admin teams." xml:space="preserve">
+    <value>Employee Center รวมกระบวนการที่แยกจากกันเข้าไว้ในกระบวนการเดียว ช่วยลดข้อผิดพลาดจากการดำเนินงานด้วยมือ และช่วยประหยัดเวลาอันมีค่าให้กับทีมงานทรัพยากรบุคคลและผู้จัดการทั่วไปของคุณ</value>
+  </data>
+  <data name="Save Time" xml:space="preserve">
+    <value>ประหยัดเวลา</value>
+  </data>
+  <data name="Automated workflows for payroll, leave, and expenses mean less time on paperwork and more time on people." xml:space="preserve">
+    <value>การจัดการอัตโนมัติสำหรับค่าจ้าง วันลา และค่าใช้จ่าย หมายถึง ใช้เวลาน้อยลงกับเอกสาร และใช้เวลามากขึ้นกับคน</value>
+  </data>
+  <data name="Accuracy" xml:space="preserve">
+    <value>ความถูกต้อง</value>
+  </data>
+  <data name="Centralized data drastically reduces discrepancies in employee records and financial reporting." xml:space="preserve">
+    <value>ข้อมูลที่ถูกจัดเก็บแบบรวมศูนย์ช่วยลดความไม่สอดคล้องในบันทึกพนักงานและการรายงานทางการเงินได้อย่างมาก</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>ความปลอดภัย</value>
+  </data>
+  <data name="Enterprise-grade security features ensure your sensitive company data remains protected." xml:space="preserve">
+    <value>คุณสมบัติความปลอดภัยระดับองค์กรช่วยให้ข้อมูลสำคัญของบริษัทของคุณยังคงได้รับการปกป้อง</value>
+  </data>
+  <data name="Ready to modernize your office?" xml:space="preserve">
+    <value>พร้อมหรือยังที่จะทันสมัยสำนักงานของคุณ?</value>
+  </data>
+  <data name="Join the growing number of companies optimizing their workforce management with Employee Center." xml:space="preserve">
+    <value>ร่วมกับบริษัทจำนวนมากที่กำลังปรับปรุงการจัดการทรัพยากรบุคคลด้วย Employee Center</value>
+  </data>
+  <data name="Get Started Now" xml:space="preserve">
+    <value>เริ่มต้นใช้งานทันที</value>
+  </data>
 
 </root>

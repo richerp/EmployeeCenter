@@ -93,5 +93,44 @@
   <data name="View Report Line" xml:space="preserve">
     <value>عرض خط التقرير</value>
   </data>
+  <data name="Title (职务)" xml:space="preserve">
+    <value>المسمى الوظيفي (المنصب)</value>
+  </data>
+  <data name="Job Level (职级)" xml:space="preserve">
+    <value>المستوى الوظيفي (الرتبة)</value>
+  </data>
+  <data name="Bank Name (Branch)" xml:space="preserve">
+    <value>اسم البنك (الفرع)</value>
+  </data>
+  <data name="Bank Account (Card Number)" xml:space="preserve">
+    <value>الحساب البنكي (رقم البطاقة)</value>
+  </data>
+  <data name="Bank Account Name (Holder)" xml:space="preserve">
+    <value>اسم الحساب البنكي (الصاحب)</value>
+  </data>
+  <data name="Bank Information Change History" xml:space="preserve">
+    <value>سجل تغييرات معلومات البنك</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>الوقت</value>
+  </data>
+  <data name="Changed By" xml:space="preserve">
+    <value>تم التغيير بواسطة</value>
+  </data>
+  <data name="Bank Name (Old -&gt; New)" xml:space="preserve">
+    <value>اسم البنك (قديم -&gt; جديد)</value>
+  </data>
+  <data name="Card Number (Old -&gt; New)" xml:space="preserve">
+    <value>رقم البطاقة (قديم -&gt; جديد)</value>
+  </data>
+  <data name="Holder (Old -&gt; New)" xml:space="preserve">
+    <value>الحساب (قديم -&gt; جديد)</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>نظام</value>
+  </data>
+  <data name="No change history found." xml:space="preserve">
+    <value>لا توجد سجلات للتغييرات</value>
+  </data>
 
 </root>

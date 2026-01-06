@@ -216,5 +216,155 @@
   <data name="Start a new project" xml:space="preserve">
     <value>Avvia un nuovo progetto</value>
   </data>
+  <data name="Enterprise Ready" xml:space="preserve">
+    <value>Pronto per l&apos;Impresa</value>
+  </data>
+  <data name="Offline Capable" xml:space="preserve">
+    <value>Capace di funzionare in modalità offline</value>
+  </data>
+  <data name="Employee Center" xml:space="preserve">
+    <value>Centro Dipendenti</value>
+  </data>
+  <data name="A fast, offline-deployable enterprise office center designed to streamline your internal operations." xml:space="preserve">
+    <value>Un centro ufficio aziendale veloce e deployabile offline, progettato per ottimizzare le vostre operazioni interne.</value>
+  </data>
+  <data name="Manage employees, finances, assets, and more with a single, integrated platform." xml:space="preserve">
+    <value>Gestisci dipendenti, finanze, attivi e molto altro con una singola piattaforma integrata.</value>
+  </data>
+  <data name="Go to Dashboard" xml:space="preserve">
+    <value>Vai al pannello di controllo</value>
+  </data>
+  <data name="View on GitHub" xml:space="preserve">
+    <value>Visualizza su GitHub</value>
+  </data>
+  <data name="Capabilities" xml:space="preserve">
+    <value>Funzionalità</value>
+  </data>
+  <data name="Everything you need to run your company" xml:space="preserve">
+    <value>Tutto ciò di cui hai bisogno per gestire la tua azienda</value>
+  </data>
+  <data name="From HR to Finance, IT to Operations, Employee Center has you covered." xml:space="preserve">
+    <value>Da Risorse Umane a Finanza, da IT a Operazioni, Employee Center ti copre tutto.</value>
+  </data>
+  <data name="Multi-Database Support" xml:space="preserve">
+    <value>Supporto a più database</value>
+  </data>
+  <data name="Flexible storage options ensuring compatibility with your existing infrastructure." xml:space="preserve">
+    <value>Opzioni di archiviazione flessibili che garantiscono la compatibilità con la tua infrastruttura esistente.</value>
+  </data>
+  <data name="Advanced RBAC" xml:space="preserve">
+    <value>Controllo degli accessi basato sui ruoli avanzato</value>
+  </data>
+  <data name="Granular Role-Based Access Control to ensure data security and proper authorization." xml:space="preserve">
+    <value>Controllo degli accessi basato sui ruoli granulare per garantire la sicurezza dei dati e un&apos;autorizzazione corretta.</value>
+  </data>
+  <data name="Enterprise Login (OIDC)" xml:space="preserve">
+    <value>Accesso Aziendale (OIDC)</value>
+  </data>
+  <data name="Seamless integration with OpenID Connect providers for secure, single sign-on experience." xml:space="preserve">
+    <value>Integrazione fluida con i provider OpenID Connect per un&apos;esperienza di accesso unico sicura.</value>
+  </data>
+  <data name="Docker Offline Deployment" xml:space="preserve">
+    <value>Distribuzione Docker in modalità offline</value>
+  </data>
+  <data name="Deploy anywhere, even in air-gapped environments, with our robust Docker support." xml:space="preserve">
+    <value>Distribuisci ovunque, anche in ambienti completamente isolati, grazie al nostro solido supporto Docker.</value>
+  </data>
+  <data name="Financial Registration" xml:space="preserve">
+    <value>Registrazione Finanziaria</value>
+  </data>
+  <data name="Streamline financial tracking and record-keeping for better transparency." xml:space="preserve">
+    <value>Semplifica il tracciamento finanziario e la tenuta dei registri per una maggiore trasparenza.</value>
+  </data>
+  <data name="Report Line View" xml:space="preserve">
+    <value>Visualizzazione gerarchia</value>
+  </data>
+  <data name="Visualize organizational structure and reporting hierarchies with clarity." xml:space="preserve">
+    <value>Visualizza la struttura organizzativa e le gerarchie di rapporto con chiarezza.</value>
+  </data>
+  <data name="Employee Management" xml:space="preserve">
+    <value>Gestione dipendenti</value>
+  </data>
+  <data name="Centralized system for maintaining up-to-date employee records and information." xml:space="preserve">
+    <value>Sistema centralizzato per la gestione aggiornata dei dati e delle informazioni dei dipendenti.</value>
+  </data>
+  <data name="Payslip Distribution" xml:space="preserve">
+    <value>Distribuzione buste paga</value>
+  </data>
+  <data name="Secure and efficient electronic distribution of monthly salary slips." xml:space="preserve">
+    <value>Distribuzione elettronica sicura ed efficiente delle buste paga mensili.</value>
+  </data>
+  <data name="Secret Distribution" xml:space="preserve">
+    <value>Distribuzione Segreta</value>
+  </data>
+  <data name="Safely share sensitive credentials and company secrets with authorized personnel." xml:space="preserve">
+    <value>Condividi in modo sicuro credenziali sensibili e segreti aziendali con il personale autorizzato.</value>
+  </data>
+  <data name="Reimbursement Calendar" xml:space="preserve">
+    <value>Calendario Rimborso</value>
+  </data>
+  <data name="Track and manage expense reimbursements with an integrated calendar view." xml:space="preserve">
+    <value>Traccia e gestisci i rimborso spese con una vista calendario integrata.</value>
+  </data>
+  <data name="Promotion Management" xml:space="preserve">
+    <value>Gestione delle promozioni</value>
+  </data>
+  <data name="Systematize the career progression and promotion processes for your team." xml:space="preserve">
+    <value>Standardizza i processi di crescita professionale e di promozione per il tuo team.</value>
+  </data>
+  <data name="Asset Recording" xml:space="preserve">
+    <value>Registrazione Beni</value>
+  </data>
+  <data name="Keep detailed inventory records of all company hardware and software assets." xml:space="preserve">
+    <value>Mantieni registri dettagliati del inventario di tutti i beni hardware e software dell&apos;azienda.</value>
+  </data>
+  <data name="Leave Tracking" xml:space="preserve">
+    <value>Gestione congedi</value>
+  </data>
+  <data name="Efficiently manage employee leave requests and attendance records." xml:space="preserve">
+    <value>Gestisci in modo efficiente le richieste di congedo dei dipendenti e i registri di presenza.</value>
+  </data>
+  <data name="Incident Management" xml:space="preserve">
+    <value>Gestione degli incidenti</value>
+  </data>
+  <data name="Track, report, and resolve workplace incidents to ensure safety and compliance." xml:space="preserve">
+    <value>Traccia, segnala e risolvi gli incidenti sul posto di lavoro per garantire sicurezza e conformità.</value>
+  </data>
+  <data name="Efficiency" xml:space="preserve">
+    <value>Efficienza</value>
+  </data>
+  <data name="Boost Operational Efficiency" xml:space="preserve">
+    <value>Migliora l&apos;efficienza operativa</value>
+  </data>
+  <data name="Employee Center integrates disjointed processes into a unified workflow, eliminating manual errors and saving valuable time for your HR and Admin teams." xml:space="preserve">
+    <value>Employee Center integra processi disomogenei in un flusso di lavoro unificato, eliminando gli errori manuali e risparmiando tempo prezioso per i tuoi team HR e Amministrazione.</value>
+  </data>
+  <data name="Save Time" xml:space="preserve">
+    <value>Risparmia tempo</value>
+  </data>
+  <data name="Automated workflows for payroll, leave, and expenses mean less time on paperwork and more time on people." xml:space="preserve">
+    <value>Flussi di lavoro automatizzati per stipendi, congedi e spese significano meno tempo dedicato alla carta e più tempo alle persone.</value>
+  </data>
+  <data name="Accuracy" xml:space="preserve">
+    <value>Precisione</value>
+  </data>
+  <data name="Centralized data drastically reduces discrepancies in employee records and financial reporting." xml:space="preserve">
+    <value>I dati centralizzati riducono drasticamente le incongruenze nei registri dei dipendenti e nella reporting finanziario.</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>Sicurezza</value>
+  </data>
+  <data name="Enterprise-grade security features ensure your sensitive company data remains protected." xml:space="preserve">
+    <value>Funzionalità di sicurezza di livello aziendale garantiscono che i tuoi dati aziendali sensibili rimangano protetti.</value>
+  </data>
+  <data name="Ready to modernize your office?" xml:space="preserve">
+    <value>Pronto a modernizzare la tua ufficio?</value>
+  </data>
+  <data name="Join the growing number of companies optimizing their workforce management with Employee Center." xml:space="preserve">
+    <value>Unisciti al numero crescente di aziende che ottimizzano la gestione della forza lavoro con Employee Center.</value>
+  </data>
+  <data name="Get Started Now" xml:space="preserve">
+    <value>Inizia ora</value>
+  </data>
 
 </root>

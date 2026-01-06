@@ -216,5 +216,155 @@
   <data name="Start a new project" xml:space="preserve">
     <value>Yeni bir proje başlat</value>
   </data>
+  <data name="Offline Capable" xml:space="preserve">
+    <value>Çevrimdışı Kullanım Destekli</value>
+  </data>
+  <data name="Enterprise Ready" xml:space="preserve">
+    <value>Kurumsal Hazır</value>
+  </data>
+  <data name="Employee Center" xml:space="preserve">
+    <value>İşçi Merkezi</value>
+  </data>
+  <data name="A fast, offline-deployable enterprise office center designed to streamline your internal operations." xml:space="preserve">
+    <value>Hızlı, çevrimdışı dağıtım yapılabilen, iç iş süreçlerinizi kolaylaştırmak üzere tasarlanmış bir kurumsal ofis merkezi.</value>
+  </data>
+  <data name="Manage employees, finances, assets, and more with a single, integrated platform." xml:space="preserve">
+    <value>Tek bir entegre platform ile çalışanlar, finanslar, varlıklar ve daha fazlasını yönetin.</value>
+  </data>
+  <data name="Go to Dashboard" xml:space="preserve">
+    <value>Gösterge Paneline Git</value>
+  </data>
+  <data name="View on GitHub" xml:space="preserve">
+    <value>GitHub&apos;de Görüntüle</value>
+  </data>
+  <data name="Capabilities" xml:space="preserve">
+    <value>Yetenekler</value>
+  </data>
+  <data name="Everything you need to run your company" xml:space="preserve">
+    <value>Şirketinizi çalıştırmak için ihtiyacınız olan her şey</value>
+  </data>
+  <data name="From HR to Finance, IT to Operations, Employee Center has you covered." xml:space="preserve">
+    <value>HR&apos;den Finanse, IT&apos;den Operasyonlara kadar, Employee Center sizi kapsar.</value>
+  </data>
+  <data name="Multi-Database Support" xml:space="preserve">
+    <value>Çoklu Veritabanı Desteği</value>
+  </data>
+  <data name="Flexible storage options ensuring compatibility with your existing infrastructure." xml:space="preserve">
+    <value>Esnek depolama seçenekleri, mevcut altyapınızla uyumluluğu sağlıyor.</value>
+  </data>
+  <data name="Advanced RBAC" xml:space="preserve">
+    <value>Gelişmiş RBAC</value>
+  </data>
+  <data name="Granular Role-Based Access Control to ensure data security and proper authorization." xml:space="preserve">
+    <value>Veri güvenliğini sağlamak ve uygun yetkilendirme sağlamak için ayrıntılı Rol Temelli Erişim Kontrolü</value>
+  </data>
+  <data name="Enterprise Login (OIDC)" xml:space="preserve">
+    <value>Kurumsal Giriş (OIDC)</value>
+  </data>
+  <data name="Seamless integration with OpenID Connect providers for secure, single sign-on experience." xml:space="preserve">
+    <value>Güvenli, tek oturum açma deneyimi için OpenID Connect sağlayıcılarıyla sorunsuz entegrasyon.</value>
+  </data>
+  <data name="Docker Offline Deployment" xml:space="preserve">
+    <value>Docker Ofline Dağıtımı</value>
+  </data>
+  <data name="Deploy anywhere, even in air-gapped environments, with our robust Docker support." xml:space="preserve">
+    <value>Her yerde, hava kırık ortamlarında bile, güçlü Docker desteğiyle dağıtın.</value>
+  </data>
+  <data name="Financial Registration" xml:space="preserve">
+    <value>Mali Kayıt</value>
+  </data>
+  <data name="Streamline financial tracking and record-keeping for better transparency." xml:space="preserve">
+    <value>Daha iyi şeffaflık için finansal takibi ve kayıt tutmayı kolaylaştırın.</value>
+  </data>
+  <data name="Report Line View" xml:space="preserve">
+    <value>Rapor Satır Görünümü</value>
+  </data>
+  <data name="Visualize organizational structure and reporting hierarchies with clarity." xml:space="preserve">
+    <value>Netişe yapısını ve raporlama hiyerarşilerini netlikle görselleştirin.</value>
+  </data>
+  <data name="Employee Management" xml:space="preserve">
+    <value>Çalışan Yönetimi</value>
+  </data>
+  <data name="Centralized system for maintaining up-to-date employee records and information." xml:space="preserve">
+    <value>Güncel çalışan kayıtları ve bilgilerini tutmak için merkezi bir sistem.</value>
+  </data>
+  <data name="Payslip Distribution" xml:space="preserve">
+    <value>Maaş Belgesi Dağıtımı</value>
+  </data>
+  <data name="Secure and efficient electronic distribution of monthly salary slips." xml:space="preserve">
+    <value>Aylık maaş belgelerinin güvenli ve verimli elektronik dağıtımını</value>
+  </data>
+  <data name="Secret Distribution" xml:space="preserve">
+    <value>Gizli Dağıtım</value>
+  </data>
+  <data name="Safely share sensitive credentials and company secrets with authorized personnel." xml:space="preserve">
+    <value>Yetkili personel ile hassas kimlik bilgilerini ve şirket sırlarını güvenli bir şekilde paylaşın.</value>
+  </data>
+  <data name="Reimbursement Calendar" xml:space="preserve">
+    <value>Talep Takvimi</value>
+  </data>
+  <data name="Track and manage expense reimbursements with an integrated calendar view." xml:space="preserve">
+    <value>Gider iadelerini entegre takvim görünümüyle takip edin ve yönetin.</value>
+  </data>
+  <data name="Promotion Management" xml:space="preserve">
+    <value>Promosyon Yönetimi</value>
+  </data>
+  <data name="Systematize the career progression and promotion processes for your team." xml:space="preserve">
+    <value>Ekibinizin kariyer ilerlemesini ve terfi süreçlerini sistemleştirmeyi unutmayın.</value>
+  </data>
+  <data name="Asset Recording" xml:space="preserve">
+    <value>Varlık Kaydı</value>
+  </data>
+  <data name="Keep detailed inventory records of all company hardware and software assets." xml:space="preserve">
+    <value>Şirketin tüm donanım ve yazılım varlıklarının detaylı envanter kayıtlarını tutun.</value>
+  </data>
+  <data name="Leave Tracking" xml:space="preserve">
+    <value>İzin Takibi</value>
+  </data>
+  <data name="Efficiently manage employee leave requests and attendance records." xml:space="preserve">
+    <value>Çalışan izin taleplerini ve işe gelme kayıtlarını etkili bir şekilde yönetin.</value>
+  </data>
+  <data name="Incident Management" xml:space="preserve">
+    <value>Olay Yönetimi</value>
+  </data>
+  <data name="Track, report, and resolve workplace incidents to ensure safety and compliance." xml:space="preserve">
+    <value>İş yerindeki olayları takip et, rapor et ve çözümle, güvenlik ve uyum sağlayarak.</value>
+  </data>
+  <data name="Efficiency" xml:space="preserve">
+    <value>Verimlilik</value>
+  </data>
+  <data name="Boost Operational Efficiency" xml:space="preserve">
+    <value>Operasyonel Verimliliği Artırın</value>
+  </data>
+  <data name="Employee Center integrates disjointed processes into a unified workflow, eliminating manual errors and saving valuable time for your HR and Admin teams." xml:space="preserve">
+    <value>Employee Center, ayrılmış süreçleri birleştirilmiş bir akışa entegre eder, elle yapılan hataları ortadan kaldırır ve HR ve Yönetici ekibiniz için değerli zaman kazandırır.</value>
+  </data>
+  <data name="Save Time" xml:space="preserve">
+    <value>Zaman Kazanın</value>
+  </data>
+  <data name="Automated workflows for payroll, leave, and expenses mean less time on paperwork and more time on people." xml:space="preserve">
+    <value>Maaş, izin ve harcama süreçlerinde otomatik iş akışları, kağıt işlerine harcanan süreyi azaltır ve insanlara daha fazla zaman ayırmanıza olanak tanır.</value>
+  </data>
+  <data name="Accuracy" xml:space="preserve">
+    <value>Doğruluk</value>
+  </data>
+  <data name="Centralized data drastically reduces discrepancies in employee records and financial reporting." xml:space="preserve">
+    <value>Merkezi veri, çalışan kayıtları ve finansal raporlamadaki tutarsızlıkları büyük ölçüde azaltır.</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>Güvenlik</value>
+  </data>
+  <data name="Enterprise-grade security features ensure your sensitive company data remains protected." xml:space="preserve">
+    <value>Kurumsal düzeyde güvenlik özellikleri, hassas şirket verilerinizin korunmasını sağlar.</value>
+  </data>
+  <data name="Ready to modernize your office?" xml:space="preserve">
+    <value>Ofisinizi modernleştirmeye hazır mısınız?</value>
+  </data>
+  <data name="Join the growing number of companies optimizing their workforce management with Employee Center." xml:space="preserve">
+    <value>Çalışan yönetimi süreçlerini optimize etmek için Employee Center&apos;ı tercih eden artan sayıdaki şirketin arasına katılın.</value>
+  </data>
+  <data name="Get Started Now" xml:space="preserve">
+    <value>Şimdi Başlayın</value>
+  </data>
 
 </root>

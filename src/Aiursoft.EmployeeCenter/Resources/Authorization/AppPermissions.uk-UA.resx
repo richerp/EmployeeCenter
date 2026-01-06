@@ -114,5 +114,11 @@
   <data name="Allows viewing the report line of any user, including their manager, subordinates, and peers." xml:space="preserve">
     <value>Дозволяє переглядати звітну лінію будь-якого користувача, включаючи його керівника, підлеглих та колег.</value>
   </data>
+  <data name="Allows viewing the operation logs of any user, including their bank card change history." xml:space="preserve">
+    <value>Дозволяє переглядати журнал операцій будь-якого користувача, включаючи історію зміни банківських карток.</value>
+  </data>
+  <data name="View User Operation Log" xml:space="preserve">
+    <value>Переглянути журнал операцій користувача</value>
+  </data>
 
 </root>
