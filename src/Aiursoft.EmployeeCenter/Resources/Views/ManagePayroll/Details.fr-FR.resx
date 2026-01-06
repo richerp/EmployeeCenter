@@ -192,5 +192,17 @@
   <data name="Income Tax" xml:space="preserve">
     <value>Impôt sur le revenu</value>
   </data>
+  <data name="Earnings + Sum(Company Insurances)" xml:space="preserve">
+    <value>Gains + Somme(Assurances Entreprise)</value>
+  </data>
+  <data name="Earnings - Insurance - 5000 - Special" xml:space="preserve">
+    <value>Revenus - Assurances - 5000 - Spécial</value>
+  </data>
+  <data name="Sum(Insurances)" xml:space="preserve">
+    <value>Somme(Assurances)</value>
+  </data>
+  <data name="Earnings + Penalties - Insurance - Tax" xml:space="preserve">
+    <value>Gains + Pénalités - Assurances - Impôts</value>
+  </data>
 
 </root>

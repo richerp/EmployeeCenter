@@ -129,5 +129,53 @@
   <data name="Error" xml:space="preserve">
     <value>Fejl</value>
   </data>
+  <data name="Finance" xml:space="preserve">
+    <value>Finans</value>
+  </data>
+  <data name="Passwords" xml:space="preserve">
+    <value>Adgangskoder</value>
+  </data>
+  <data name="Password Details" xml:space="preserve">
+    <value>Passwordoplysninger</value>
+  </data>
+  <data name="Manage Payrolls" xml:space="preserve">
+    <value>Administrer Lønninger</value>
+  </data>
+  <data name="Manage Shares" xml:space="preserve">
+    <value>Administrer Delinger</value>
+  </data>
+  <data name="Edit Password" xml:space="preserve">
+    <value>Rediger adgangskode</value>
+  </data>
+  <data name="Create Password" xml:space="preserve">
+    <value>Opret adgangskode</value>
+  </data>
+  <data name="Shared Info" xml:space="preserve">
+    <value>Delt Info</value>
+  </data>
+  <data name="Payrolls" xml:space="preserve">
+    <value>Lønninger</value>
+  </data>
+  <data name="My Payrolls" xml:space="preserve">
+    <value>Mine Lønninger</value>
+  </data>
+  <data name="My Report Line" xml:space="preserve">
+    <value>Min Rapportlinje</value>
+  </data>
+  <data name="Development" xml:space="preserve">
+    <value>Udvikling</value>
+  </data>
+  <data name="Employee Center" xml:space="preserve">
+    <value>Medarbejdercenter</value>
+  </data>
+  <data name="Projects" xml:space="preserve">
+    <value>Projekter</value>
+  </data>
+  <data name="Report Line" xml:space="preserve">
+    <value>Rapportlinje</value>
+  </data>
+  <data name="Aiursoft Employee Center" xml:space="preserve">
+    <value>Aiursoft Medarbejdercenter</value>
+  </data>
 
 </root>

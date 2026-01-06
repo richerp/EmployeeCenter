@@ -129,5 +129,53 @@
   <data name="Error" xml:space="preserve">
     <value>Kesalahan</value>
   </data>
+  <data name="Finance" xml:space="preserve">
+    <value>Keuangan</value>
+  </data>
+  <data name="Passwords" xml:space="preserve">
+    <value>Kata Sandi</value>
+  </data>
+  <data name="Edit Password" xml:space="preserve">
+    <value>Edit Kata Sandi</value>
+  </data>
+  <data name="Password Details" xml:space="preserve">
+    <value>Detail Kata Sandi</value>
+  </data>
+  <data name="Create Password" xml:space="preserve">
+    <value>Buat Kata Sandi</value>
+  </data>
+  <data name="Shared Info" xml:space="preserve">
+    <value>Info yang Dibagikan</value>
+  </data>
+  <data name="Manage Shares" xml:space="preserve">
+    <value>Kelola Berbagi</value>
+  </data>
+  <data name="Manage Payrolls" xml:space="preserve">
+    <value>Kelola Penggajian</value>
+  </data>
+  <data name="Development" xml:space="preserve">
+    <value>Pengembangan</value>
+  </data>
+  <data name="Projects" xml:space="preserve">
+    <value>Proyek</value>
+  </data>
+  <data name="Payrolls" xml:space="preserve">
+    <value>Penggajian</value>
+  </data>
+  <data name="My Report Line" xml:space="preserve">
+    <value>Laporan Saya</value>
+  </data>
+  <data name="Employee Center" xml:space="preserve">
+    <value>Pusat Karyawan</value>
+  </data>
+  <data name="Report Line" xml:space="preserve">
+    <value>Laporan Baris</value>
+  </data>
+  <data name="My Payrolls" xml:space="preserve">
+    <value>Gaji Saya</value>
+  </data>
+  <data name="Aiursoft Employee Center" xml:space="preserve">
+    <value>Pusat Karyawan Aiursoft</value>
+  </data>
 
 </root>

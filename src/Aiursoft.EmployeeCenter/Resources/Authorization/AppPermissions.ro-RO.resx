@@ -96,5 +96,23 @@
   <data name="Allows viewing, editing, and deleting any user&apos;s SSH keys." xml:space="preserve">
     <value>Permite vizualizarea, editarea și ștergerea cheilor SSH ale oricărui utilizator.</value>
   </data>
+  <data name="Add Global Password" xml:space="preserve">
+    <value>Adaugă Parolă Globală</value>
+  </data>
+  <data name="View Report Line" xml:space="preserve">
+    <value>Vizualizează Linia de Raport</value>
+  </data>
+  <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
+    <value>Permite crearea de parole globale noi care pot fi partajate cu alții.</value>
+  </data>
+  <data name="Allows managing and deleting any global password created by any user." xml:space="preserve">
+    <value>Permite gestionarea și ștergerea oricărei parole globale create de orice utilizator.</value>
+  </data>
+  <data name="Allows viewing the report line of any user, including their manager, subordinates, and peers." xml:space="preserve">
+    <value>Permite vizualizarea liniei de raportare a oricărui utilizator, inclusiv a managerului, subordonaților și colegilor acestuia.</value>
+  </data>
+  <data name="Manage Any Password" xml:space="preserve">
+    <value>Gestionează Orice Parolă</value>
+  </data>
 
 </root>

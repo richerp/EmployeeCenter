@@ -84,5 +84,14 @@
   <data name="Manage SSH Keys" xml:space="preserve">
     <value>SSH-sleutels beheren</value>
   </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="Report Line" xml:space="preserve">
+    <value>Rapportlijn</value>
+  </data>
+  <data name="View Report Line" xml:space="preserve">
+    <value>Rapportlijn bekijken</value>
+  </data>
 
 </root>

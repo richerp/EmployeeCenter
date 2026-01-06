@@ -129,5 +129,53 @@
   <data name="Unauthorized" xml:space="preserve">
     <value>Luvaton</value>
   </data>
+  <data name="Finance" xml:space="preserve">
+    <value>Rahoitus</value>
+  </data>
+  <data name="Manage Shares" xml:space="preserve">
+    <value>Hallitse Jakoja</value>
+  </data>
+  <data name="Edit Password" xml:space="preserve">
+    <value>Muokkaa salasanaa</value>
+  </data>
+  <data name="Password Details" xml:space="preserve">
+    <value>Salasanan tiedot</value>
+  </data>
+  <data name="Create Password" xml:space="preserve">
+    <value>Luo salasana</value>
+  </data>
+  <data name="Manage Payrolls" xml:space="preserve">
+    <value>Hallitse palkkalistoja</value>
+  </data>
+  <data name="Passwords" xml:space="preserve">
+    <value>Salasanat</value>
+  </data>
+  <data name="Shared Info" xml:space="preserve">
+    <value>Jaettu tieto</value>
+  </data>
+  <data name="Report Line" xml:space="preserve">
+    <value>Raporttirivi</value>
+  </data>
+  <data name="My Report Line" xml:space="preserve">
+    <value>Oma raporttirivini</value>
+  </data>
+  <data name="My Payrolls" xml:space="preserve">
+    <value>Minun palkkalaskelmani</value>
+  </data>
+  <data name="Development" xml:space="preserve">
+    <value>Kehitys</value>
+  </data>
+  <data name="Projects" xml:space="preserve">
+    <value>Projektit</value>
+  </data>
+  <data name="Payrolls" xml:space="preserve">
+    <value>Palkkalaskelmat</value>
+  </data>
+  <data name="Employee Center" xml:space="preserve">
+    <value>Työntekijäkeskus</value>
+  </data>
+  <data name="Aiursoft Employee Center" xml:space="preserve">
+    <value>Aiursoftin Työntekijäkeskus</value>
+  </data>
 
 </root>

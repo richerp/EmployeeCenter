@@ -129,5 +129,53 @@
   <data name="Error" xml:space="preserve">
     <value>Помилка</value>
   </data>
+  <data name="Finance" xml:space="preserve">
+    <value>Фінанси</value>
+  </data>
+  <data name="Edit Password" xml:space="preserve">
+    <value>Редагувати пароль</value>
+  </data>
+  <data name="Password Details" xml:space="preserve">
+    <value>Деталі пароля</value>
+  </data>
+  <data name="Shared Info" xml:space="preserve">
+    <value>Спільна інформація</value>
+  </data>
+  <data name="Manage Payrolls" xml:space="preserve">
+    <value>Керування зарплатами</value>
+  </data>
+  <data name="Create Password" xml:space="preserve">
+    <value>Створити пароль</value>
+  </data>
+  <data name="Manage Shares" xml:space="preserve">
+    <value>Керування спільним доступом</value>
+  </data>
+  <data name="Passwords" xml:space="preserve">
+    <value>Паролі</value>
+  </data>
+  <data name="Projects" xml:space="preserve">
+    <value>Проєкти</value>
+  </data>
+  <data name="My Payrolls" xml:space="preserve">
+    <value>Мої зарплатні відомості</value>
+  </data>
+  <data name="Report Line" xml:space="preserve">
+    <value>Лінія звітів</value>
+  </data>
+  <data name="My Report Line" xml:space="preserve">
+    <value>Моя лінія звітів</value>
+  </data>
+  <data name="Payrolls" xml:space="preserve">
+    <value>Відомості про заробітну плату</value>
+  </data>
+  <data name="Employee Center" xml:space="preserve">
+    <value>Центр співробітників</value>
+  </data>
+  <data name="Development" xml:space="preserve">
+    <value>Розробка</value>
+  </data>
+  <data name="Aiursoft Employee Center" xml:space="preserve">
+    <value>Центр співробітників Aiursoft</value>
+  </data>
 
 </root>

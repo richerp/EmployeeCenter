@@ -192,5 +192,17 @@
   <data name="Income Tax" xml:space="preserve">
     <value>Einkommensteuer</value>
   </data>
+  <data name="Earnings + Sum(Company Insurances)" xml:space="preserve">
+    <value>Einnahmen + Summe(Firmenversicherungen)</value>
+  </data>
+  <data name="Earnings - Insurance - 5000 - Special" xml:space="preserve">
+    <value>Einnahmen - Versicherung - 5000 - Sonderabzug</value>
+  </data>
+  <data name="Sum(Insurances)" xml:space="preserve">
+    <value>Summe(Versicherungen)</value>
+  </data>
+  <data name="Earnings + Penalties - Insurance - Tax" xml:space="preserve">
+    <value>Verdienste + Abzüge - Versicherung - Steuer</value>
+  </data>
 
 </root>
