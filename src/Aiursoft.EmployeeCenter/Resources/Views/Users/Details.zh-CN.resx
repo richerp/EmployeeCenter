@@ -93,5 +93,44 @@
   <data name="Report Line" xml:space="preserve">
     <value>汇报线</value>
   </data>
+  <data name="Changed By" xml:space="preserve">
+    <value>修改人</value>
+  </data>
+  <data name="Bank Information Change History" xml:space="preserve">
+    <value>银行信息变更历史</value>
+  </data>
+  <data name="Job Level (职级)" xml:space="preserve">
+    <value>职级</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="Bank Name (Branch)" xml:space="preserve">
+    <value>银行名称（分行）</value>
+  </data>
+  <data name="Title (职务)" xml:space="preserve">
+    <value>职务</value>
+  </data>
+  <data name="Bank Account Name (Holder)" xml:space="preserve">
+    <value>银行账户名（户名）</value>
+  </data>
+  <data name="Bank Account (Card Number)" xml:space="preserve">
+    <value>银行账户（卡号）</value>
+  </data>
+  <data name="Bank Name (Old -&gt; New)" xml:space="preserve">
+    <value>银行名称（原→新）</value>
+  </data>
+  <data name="Card Number (Old -&gt; New)" xml:space="preserve">
+    <value>卡号 (旧 -&gt; 新)</value>
+  </data>
+  <data name="Holder (Old -&gt; New)" xml:space="preserve">
+    <value>户名 (原 -&gt; 新)</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>系统</value>
+  </data>
+  <data name="No change history found." xml:space="preserve">
+    <value>未找到变更记录</value>
+  </data>
 
 </root>

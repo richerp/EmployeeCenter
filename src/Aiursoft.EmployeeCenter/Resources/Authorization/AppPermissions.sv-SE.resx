@@ -114,5 +114,11 @@
   <data name="Allows viewing the report line of any user, including their manager, subordinates, and peers." xml:space="preserve">
     <value>Tillåter visning av rapportlinjen för valfri användare, inklusive deras chef, underordnade och kollegor.</value>
   </data>
+  <data name="View User Operation Log" xml:space="preserve">
+    <value>Visa användaråtgärdslogg</value>
+  </data>
+  <data name="Allows viewing the operation logs of any user, including their bank card change history." xml:space="preserve">
+    <value>Tillåter visning av åtgärdsloggar för valfri användare, inklusive deras bankkortändringshistorik.</value>
+  </data>
 
 </root>

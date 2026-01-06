@@ -114,5 +114,11 @@
   <data name="Allows viewing the report line of any user, including their manager, subordinates, and peers." xml:space="preserve">
     <value>Herhangi bir kullanıcının rapor hattını (yöneticisi, alt çalışanları ve eş seviyeli çalışanları dahil) görüntülemeyi sağlar.</value>
   </data>
+  <data name="View User Operation Log" xml:space="preserve">
+    <value>Kullanıcı İşlem Logunu Görüntüle</value>
+  </data>
+  <data name="Allows viewing the operation logs of any user, including their bank card change history." xml:space="preserve">
+    <value>Herhangi bir kullanıcının işlem kayıtlarını görüntülemeyi sağlar, banka kartı değişiklik geçmişi dahil.</value>
+  </data>
 
 </root>

@@ -54,5 +54,17 @@
   <data name="Manager" xml:space="preserve">
     <value>Responsable</value>
   </data>
+  <data name="Title" xml:space="preserve">
+    <value>Titre</value>
+  </data>
+  <data name="Bank Account (Card Number)" xml:space="preserve">
+    <value>Compte bancaire (Numéro de carte)</value>
+  </data>
+  <data name="Bank Account Name (Holder)" xml:space="preserve">
+    <value>Nom du compte bancaire (Titulaire)</value>
+  </data>
+  <data name="Bank Name (Branch)" xml:space="preserve">
+    <value>Nom de la banque (agence)</value>
+  </data>
 
 </root>

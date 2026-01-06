@@ -60,5 +60,17 @@
   <data name="Manager" xml:space="preserve">
     <value>Leder</value>
   </data>
+  <data name="Title" xml:space="preserve">
+    <value>Titel</value>
+  </data>
+  <data name="Bank Name (Branch)" xml:space="preserve">
+    <value>Banknavn (Filial)</value>
+  </data>
+  <data name="Bank Account (Card Number)" xml:space="preserve">
+    <value>Bankkonto (Kortnummer)</value>
+  </data>
+  <data name="Bank Account Name (Holder)" xml:space="preserve">
+    <value>Kontonavn (Ejer)</value>
+  </data>
 
 </root>

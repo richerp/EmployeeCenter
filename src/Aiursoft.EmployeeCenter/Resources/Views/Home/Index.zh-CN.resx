@@ -216,5 +216,155 @@
   <data name="Start a new project" xml:space="preserve">
     <value>开始新项目</value>
   </data>
+  <data name="Manage employees, finances, assets, and more with a single, integrated platform." xml:space="preserve">
+    <value>通过一体化平台管理员工、财务、资产等更多功能。</value>
+  </data>
+  <data name="View on GitHub" xml:space="preserve">
+    <value>在 GitHub 上查看</value>
+  </data>
+  <data name="Offline Capable" xml:space="preserve">
+    <value>离线可用</value>
+  </data>
+  <data name="A fast, offline-deployable enterprise office center designed to streamline your internal operations." xml:space="preserve">
+    <value>快速、支持离线部署的企业办公中心，专为简化您的内部运营流程而设计。</value>
+  </data>
+  <data name="Enterprise Ready" xml:space="preserve">
+    <value>企业就绪</value>
+  </data>
+  <data name="Capabilities" xml:space="preserve">
+    <value>功能</value>
+  </data>
+  <data name="Employee Center" xml:space="preserve">
+    <value>员工中心</value>
+  </data>
+  <data name="Go to Dashboard" xml:space="preserve">
+    <value>进入仪表盘</value>
+  </data>
+  <data name="Everything you need to run your company" xml:space="preserve">
+    <value>您经营公司所需的一切</value>
+  </data>
+  <data name="From HR to Finance, IT to Operations, Employee Center has you covered." xml:space="preserve">
+    <value>从HR到财务，从IT到运营，Employee Center 为您保驾护航。</value>
+  </data>
+  <data name="Multi-Database Support" xml:space="preserve">
+    <value>多数据库支持</value>
+  </data>
+  <data name="Flexible storage options ensuring compatibility with your existing infrastructure." xml:space="preserve">
+    <value>灵活的存储选项，确保与您现有基础设施的兼容性。</value>
+  </data>
+  <data name="Advanced RBAC" xml:space="preserve">
+    <value>高级RBAC</value>
+  </data>
+  <data name="Granular Role-Based Access Control to ensure data security and proper authorization." xml:space="preserve">
+    <value>细粒度基于角色的访问控制，确保数据安全与适当授权。</value>
+  </data>
+  <data name="Enterprise Login (OIDC)" xml:space="preserve">
+    <value>企业登录 (OIDC)</value>
+  </data>
+  <data name="Seamless integration with OpenID Connect providers for secure, single sign-on experience." xml:space="preserve">
+    <value>与OpenID Connect提供商无缝集成，提供安全的单点登录体验。</value>
+  </data>
+  <data name="Docker Offline Deployment" xml:space="preserve">
+    <value>Docker 离线部署</value>
+  </data>
+  <data name="Deploy anywhere, even in air-gapped environments, with our robust Docker support." xml:space="preserve">
+    <value>随处部署，即使在离线环境中，凭借我们强大的Docker支持。</value>
+  </data>
+  <data name="Financial Registration" xml:space="preserve">
+    <value>财务登记</value>
+  </data>
+  <data name="Streamline financial tracking and record-keeping for better transparency." xml:space="preserve">
+    <value>优化财务追踪与记录管理，提升透明度。</value>
+  </data>
+  <data name="Report Line View" xml:space="preserve">
+    <value>汇报线视图</value>
+  </data>
+  <data name="Visualize organizational structure and reporting hierarchies with clarity." xml:space="preserve">
+    <value>清晰展示组织架构与汇报层级。</value>
+  </data>
+  <data name="Employee Management" xml:space="preserve">
+    <value>员工管理</value>
+  </data>
+  <data name="Centralized system for maintaining up-to-date employee records and information." xml:space="preserve">
+    <value>集中式系统用于维护最新的员工档案</value>
+  </data>
+  <data name="Payslip Distribution" xml:space="preserve">
+    <value>工资单发放</value>
+  </data>
+  <data name="Secure and efficient electronic distribution of monthly salary slips." xml:space="preserve">
+    <value>安全高效的月度工资单电子发放</value>
+  </data>
+  <data name="Secret Distribution" xml:space="preserve">
+    <value>秘密分发</value>
+  </data>
+  <data name="Safely share sensitive credentials and company secrets with authorized personnel." xml:space="preserve">
+    <value>安全与授权人员共享敏感凭证和公司机密。</value>
+  </data>
+  <data name="Reimbursement Calendar" xml:space="preserve">
+    <value>报销日历</value>
+  </data>
+  <data name="Track and manage expense reimbursements with an integrated calendar view." xml:space="preserve">
+    <value>通过集成日历视图跟踪和管理费用报销。</value>
+  </data>
+  <data name="Promotion Management" xml:space="preserve">
+    <value>晋升管理</value>
+  </data>
+  <data name="Systematize the career progression and promotion processes for your team." xml:space="preserve">
+    <value>系统化团队职业发展与晋升流程</value>
+  </data>
+  <data name="Asset Recording" xml:space="preserve">
+    <value>资产记录</value>
+  </data>
+  <data name="Keep detailed inventory records of all company hardware and software assets." xml:space="preserve">
+    <value>详细记录公司所有硬件和软件资产。</value>
+  </data>
+  <data name="Leave Tracking" xml:space="preserve">
+    <value>休假管理</value>
+  </data>
+  <data name="Efficiently manage employee leave requests and attendance records." xml:space="preserve">
+    <value>高效管理员工请假申请和考勤记录。</value>
+  </data>
+  <data name="Incident Management" xml:space="preserve">
+    <value>事件管理</value>
+  </data>
+  <data name="Track, report, and resolve workplace incidents to ensure safety and compliance." xml:space="preserve">
+    <value>跟踪、报告和解决工作场所事件，以确保安全和合规。</value>
+  </data>
+  <data name="Efficiency" xml:space="preserve">
+    <value>效率</value>
+  </data>
+  <data name="Boost Operational Efficiency" xml:space="preserve">
+    <value>提升运营效率</value>
+  </data>
+  <data name="Employee Center integrates disjointed processes into a unified workflow, eliminating manual errors and saving valuable time for your HR and Admin teams." xml:space="preserve">
+    <value>Employee Center 将零散的流程整合为统一的工作流，消除人工错误，并为您的人力资源和行政团队节省宝贵时间。</value>
+  </data>
+  <data name="Save Time" xml:space="preserve">
+    <value>节省时间</value>
+  </data>
+  <data name="Accuracy" xml:space="preserve">
+    <value>准确性</value>
+  </data>
+  <data name="Centralized data drastically reduces discrepancies in employee records and financial reporting." xml:space="preserve">
+    <value>集中式数据大幅减少员工记录和财务报告中的差异。</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>安全</value>
+  </data>
+  <data name="Enterprise-grade security features ensure your sensitive company data remains protected." xml:space="preserve">
+    <value>企业级安全功能确保您的敏感公司数据得到保护</value>
+  </data>
+  <data name="Automated workflows for payroll, leave, and expenses mean less time on paperwork and more time on people." xml:space="preserve">
+    <value>薪资、休假和费用的自动化工作流意味着减少文书工作时间，更多时间关注员工。</value>
+  </data>
+  <data name="Ready to modernize your office?" xml:space="preserve">
+    <value>准备好让您的办公现代化了吗？</value>
+  </data>
+  <data name="Join the growing number of companies optimizing their workforce management with Employee Center." xml:space="preserve">
+    <value>加入越来越多使用Employee Center优化人力资源管理的企业行列。</value>
+  </data>
+  <data name="Get Started Now" xml:space="preserve">
+    <value>立即开始</value>
+  </data>
 
 </root>

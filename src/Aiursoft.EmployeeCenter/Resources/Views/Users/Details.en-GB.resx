@@ -93,5 +93,44 @@
   <data name="View Report Line" xml:space="preserve">
     <value>View Reporting Line</value>
   </data>
+  <data name="Changed By" xml:space="preserve">
+    <value>Changed by</value>
+  </data>
+  <data name="Bank Information Change History" xml:space="preserve">
+    <value>Bank Details Change History</value>
+  </data>
+  <data name="Bank Account (Card Number)" xml:space="preserve">
+    <value>Bank Account (Card Number)</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="Job Level (职级)" xml:space="preserve">
+    <value>Job Grade</value>
+  </data>
+  <data name="Bank Name (Branch)" xml:space="preserve">
+    <value>Bank Name (Branch)</value>
+  </data>
+  <data name="Bank Account Name (Holder)" xml:space="preserve">
+    <value>Account name</value>
+  </data>
+  <data name="Title (职务)" xml:space="preserve">
+    <value>Job title</value>
+  </data>
+  <data name="Bank Name (Old -&gt; New)" xml:space="preserve">
+    <value>Bank Name (Old -&gt; New)</value>
+  </data>
+  <data name="Card Number (Old -&gt; New)" xml:space="preserve">
+    <value>Card Number (Old -&gt; New)</value>
+  </data>
+  <data name="Holder (Old -&gt; New)" xml:space="preserve">
+    <value>Account Holder (Old -&gt; New)</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="No change history found." xml:space="preserve">
+    <value>No change history found.</value>
+  </data>
 
 </root>

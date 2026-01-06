@@ -54,5 +54,17 @@
   <data name="Manager" xml:space="preserve">
     <value>Yönetici</value>
   </data>
+  <data name="Title" xml:space="preserve">
+    <value>Unvan</value>
+  </data>
+  <data name="Bank Account (Card Number)" xml:space="preserve">
+    <value>Banka Hesabı (Kart Numarası)</value>
+  </data>
+  <data name="Bank Name (Branch)" xml:space="preserve">
+    <value>Banka Adı (Şube)</value>
+  </data>
+  <data name="Bank Account Name (Holder)" xml:space="preserve">
+    <value>Banka Hesabı Adı (Sahibi)</value>
+  </data>
 
 </root>

@@ -54,5 +54,17 @@
   <data name="Manager" xml:space="preserve">
     <value>प्रबंधक</value>
   </data>
+  <data name="Bank Account (Card Number)" xml:space="preserve">
+    <value>बैंक खाता (कार्ड नंबर)</value>
+  </data>
+  <data name="Bank Name (Branch)" xml:space="preserve">
+    <value>बैंक नाम (शाखा)</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>पद</value>
+  </data>
+  <data name="Bank Account Name (Holder)" xml:space="preserve">
+    <value>बैंक खाता नाम (धारक)</value>
+  </data>
 
 </root>

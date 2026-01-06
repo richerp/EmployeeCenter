@@ -60,5 +60,17 @@
   <data name="Manager" xml:space="preserve">
     <value>매니저</value>
   </data>
+  <data name="Title" xml:space="preserve">
+    <value>직책</value>
+  </data>
+  <data name="Bank Account (Card Number)" xml:space="preserve">
+    <value>은행 계좌(카드 번호)</value>
+  </data>
+  <data name="Bank Name (Branch)" xml:space="preserve">
+    <value>은행명 (지점)</value>
+  </data>
+  <data name="Bank Account Name (Holder)" xml:space="preserve">
+    <value>은행 계좌 이름 (예금주)</value>
+  </data>
 
 </root>

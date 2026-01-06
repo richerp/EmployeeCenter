@@ -54,5 +54,17 @@
   <data name="Manager" xml:space="preserve">
     <value>Διευθυντής</value>
   </data>
+  <data name="Bank Account (Card Number)" xml:space="preserve">
+    <value>Λογαριασμός Τραπέζης (Αριθμός Κάρτας)</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Τίτλος</value>
+  </data>
+  <data name="Bank Name (Branch)" xml:space="preserve">
+    <value>Όνομα Τράπεζας (Υποκατάστημα)</value>
+  </data>
+  <data name="Bank Account Name (Holder)" xml:space="preserve">
+    <value>Όνομα λογαριασμού (Κάτοχος)</value>
+  </data>
 
 </root>
