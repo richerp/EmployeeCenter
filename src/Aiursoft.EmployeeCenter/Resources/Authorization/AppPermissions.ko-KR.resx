@@ -114,5 +114,11 @@
   <data name="Allows viewing the report line of any user, including their manager, subordinates, and peers." xml:space="preserve">
     <value>모든 사용자의 보고 체계(직속 상사, 부하직원, 동료 포함)를 조회할 수 있습니다.</value>
   </data>
+  <data name="View User Operation Log" xml:space="preserve">
+    <value>사용자 작업 로그 조회</value>
+  </data>
+  <data name="Allows viewing the operation logs of any user, including their bank card change history." xml:space="preserve">
+    <value>모든 사용자의 운영 로그(은행 카드 변경 이력 포함)를 조회할 수 있습니다.</value>
+  </data>
 
 </root>

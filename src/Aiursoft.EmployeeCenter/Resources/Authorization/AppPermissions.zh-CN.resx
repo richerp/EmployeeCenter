@@ -114,5 +114,11 @@
   <data name="Allows viewing the report line of any user, including their manager, subordinates, and peers." xml:space="preserve">
     <value>允许查看任何用户的汇报线，包括其上级、下属及平级。</value>
   </data>
+  <data name="View User Operation Log" xml:space="preserve">
+    <value>查看用户操作日志</value>
+  </data>
+  <data name="Allows viewing the operation logs of any user, including their bank card change history." xml:space="preserve">
+    <value>允许查看任何用户的操作日志，包括其银行卡变更历史。</value>
+  </data>
 
 </root>

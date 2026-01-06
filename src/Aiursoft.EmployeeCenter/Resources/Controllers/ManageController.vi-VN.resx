@@ -33,5 +33,8 @@
   <data name="Your profile has been saved." xml:space="preserve">
     <value>Hồ sơ của bạn đã được lưu.</value>
   </data>
+  <data name="Your bank information has been saved." xml:space="preserve">
+    <value>Thông tin ngân hàng của bạn đã được lưu.</value>
+  </data>
 
 </root>

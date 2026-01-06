@@ -19,27 +19,41 @@ public class User : IdentityUser
     public DateTime CreationTime { get; init; } = DateTime.UtcNow;
 
     /// <summary>
-    /// The job level of this user.
+    /// The job level of this user. (职级)
     /// If null, it means the user has no job level assigned yet.
     /// </summary>
     [MaxLength(30)]
     public string? JobLevel { get; set; }
 
+    /// <summary>
+    /// The title of this user. (职务)
+    /// If null, it means the user has no title assigned yet.
+    /// </summary>
+    [MaxLength(30)]
+    public string? Title { get; set; }
+
     public decimal BaseSalary { get; set; }
 
     /// <summary>
-    /// The bank account of this user.
+    /// The bank account of this user. (银行卡号)
     /// If null, it means the user has not provided a bank account yet.
     /// </summary>
     [MaxLength(30)]
     public string? BankAccount { get; set; }
 
     /// <summary>
-    /// The bank name of this user.
+    /// The bank name of this user. (开户行)
     /// If null, it means the user has not provided a bank name yet.
     /// </summary>
     [MaxLength(30)]
     public string? BankName { get; set; }
+
+    /// <summary>
+    /// The bank account name of this user. (户名)
+    /// If null, it means the user has not provided a bank account name yet.
+    /// </summary>
+    [MaxLength(30)]
+    public string? BankAccountName { get; set; }
 
     [Newtonsoft.Json.JsonIgnore]
     [InverseProperty(nameof(Password.Creator))]

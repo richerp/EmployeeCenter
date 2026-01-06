@@ -17,4 +17,6 @@ public class DetailsViewModel : UiStackLayoutViewModel
     public required IList<IdentityRole> Roles { get; set; }
 
     public required List<PermissionDescriptor> Permissions { get; set; }
+
+    public List<BankCardChangeLog> BankCardChangeLogs { get; set; } = [];
 }

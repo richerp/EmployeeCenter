@@ -17,6 +17,49 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "10.0.1");
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.BankCardChangeLog", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("ChangeTime")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ChangedByUserId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("NewBankAccountName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("NewBankCardNumber")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("NewBankName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("OldBankAccountName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("OldBankCardNumber")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("OldBankName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ChangedByUserId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("BankCardChangeLogs");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Incident", b =>
                 {
                     b.Property<Guid>("Id")
@@ -330,6 +373,10 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .HasMaxLength(30)
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("BankAccountName")
+                        .HasMaxLength(30)
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("BankName")
                         .HasMaxLength(30)
                         .HasColumnType("TEXT");
@@ -387,6 +434,10 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("SecurityStamp")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Title")
+                        .HasMaxLength(30)
                         .HasColumnType("TEXT");
 
                     b.Property<bool>("TwoFactorEnabled")
@@ -536,6 +587,23 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.BankCardChangeLog", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "ChangedByUser")
+                        .WithMany()
+                        .HasForeignKey("ChangedByUserId");
+
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ChangedByUser");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Incident", b =>

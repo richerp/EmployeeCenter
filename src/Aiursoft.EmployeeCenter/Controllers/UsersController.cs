@@ -109,11 +109,18 @@ public class UsersController(
             .OrderBy(p => p.Name)
             .ToList();
 
+        var changeLogs = await context.BankCardChangeLogs
+            .Include(l => l.ChangedByUser)
+            .Where(l => l.UserId == id)
+            .OrderByDescending(l => l.ChangeTime)
+            .ToListAsync();
+
         return this.StackView(new DetailsViewModel
         {
             User = user,
             Roles = roles,
-            Permissions = permissions
+            Permissions = permissions,
+            BankCardChangeLogs = changeLogs
         });
     }
 
@@ -136,9 +143,11 @@ public class UsersController(
                 DisplayName = newUser.DisplayName,
                 Email = newUser.Email,
                 JobLevel = newUser.JobLevel,
+                Title = newUser.Title,
                 BaseSalary = newUser.BaseSalary,
                 BankAccount = newUser.BankAccount,
                 BankName = newUser.BankName,
+                BankAccountName = newUser.BankAccountName,
                 ManagerId = newUser.ManagerId,
                 AvatarRelativePath = Aiursoft.EmployeeCenter.Entities.User.DefaultAvatarPath
             };
@@ -179,9 +188,11 @@ public class UsersController(
             Password = "you-cant-read-it",
             AvatarUrl = user.AvatarRelativePath,
             JobLevel = user.JobLevel,
+            Title = user.Title,
             BaseSalary = user.BaseSalary,
             BankAccount = user.BankAccount,
             BankName = user.BankName,
+            BankAccountName = user.BankAccountName,
             ManagerId = user.ManagerId,
             ManagerDisplayName = user.Manager?.DisplayName,
             AllRoles = allRoles.Select(role => new UserRoleViewModel
@@ -213,11 +224,36 @@ public class UsersController(
         userInDb.DisplayName = model.DisplayName;
         userInDb.AvatarRelativePath = model.AvatarUrl;
         userInDb.JobLevel = model.JobLevel;
+        userInDb.Title = model.Title;
         userInDb.BaseSalary = model.BaseSalary;
-        userInDb.BankAccount = model.BankAccount;
-        userInDb.BankName = model.BankName;
+
+        if (userInDb.BankAccount != model.BankAccount ||
+            userInDb.BankName != model.BankName ||
+            userInDb.BankAccountName != model.BankAccountName)
+        {
+            var currentUser = await userManager.GetUserAsync(User);
+            var log = new BankCardChangeLog
+            {
+                UserId = userInDb.Id,
+                OldBankCardNumber = userInDb.BankAccount,
+                NewBankCardNumber = model.BankAccount,
+                OldBankName = userInDb.BankName,
+                NewBankName = model.BankName,
+                OldBankAccountName = userInDb.BankAccountName,
+                NewBankAccountName = model.BankAccountName,
+                ChangedByUserId = currentUser?.Id,
+                ChangeTime = DateTime.UtcNow
+            };
+            context.BankCardChangeLogs.Add(log);
+
+            userInDb.BankAccount = model.BankAccount;
+            userInDb.BankName = model.BankName;
+            userInDb.BankAccountName = model.BankAccountName;
+        }
+
         userInDb.ManagerId = model.ManagerId;
         await userManager.UpdateAsync(userInDb);
+        await context.SaveChangesAsync();
 
         if (!string.IsNullOrWhiteSpace(model.Password) && model.Password != "you-cant-read-it")
         {
