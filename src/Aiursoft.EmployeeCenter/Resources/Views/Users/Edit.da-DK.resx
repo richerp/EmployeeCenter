@@ -72,4 +72,10 @@
     <value>Ny avatarfil</value>
   </data>
 
-<data name="Base Salary" xml:space="preserve"><value>Basic Salary</value></data><data name="Bank Account" xml:space="preserve"><value>Bank Account</value></data><data name="Job Level" xml:space="preserve"><value>Job Level</value></data><data name="Bank Name" xml:space="preserve"><value>Bank Name</value></data></root>
+<data name="Base Salary" xml:space="preserve"><value>Basic Salary</value></data><data name="Bank Account" xml:space="preserve"><value>Bank Account</value></data><data name="Job Level" xml:space="preserve"><value>Job Level</value></data><data name="Bank Name" xml:space="preserve"><value>Bank Name</value></data>  <data name="Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="Bank Account Name" xml:space="preserve">
+    <value>Bank Account Name</value>
+  </data>
+</root>
