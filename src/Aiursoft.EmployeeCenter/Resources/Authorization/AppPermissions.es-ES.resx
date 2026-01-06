@@ -114,5 +114,11 @@
   <data name="Allows viewing the report line of any user, including their manager, subordinates, and peers." xml:space="preserve">
     <value>Permite ver la línea de mando de cualquier usuario, incluyendo a su jefe, subordinados y pares.</value>
   </data>
+  <data name="View User Operation Log" xml:space="preserve">
+    <value>Ver Registro de Operaciones del Usuario</value>
+  </data>
+  <data name="Allows viewing the operation logs of any user, including their bank card change history." xml:space="preserve">
+    <value>Permite ver los registros de operaciones de cualquier usuario, incluyendo su historial de cambios en la tarjeta bancaria.</value>
+  </data>
 
 </root>
