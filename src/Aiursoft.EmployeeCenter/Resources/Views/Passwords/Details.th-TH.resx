@@ -51,5 +51,8 @@
   <data name="Created by" xml:space="preserve">
     <value>สร้างโดย</value>
   </data>
+  <data name="No notes." xml:space="preserve">
+    <value>ไม่มีบันทึก</value>
+  </data>
 
 </root>

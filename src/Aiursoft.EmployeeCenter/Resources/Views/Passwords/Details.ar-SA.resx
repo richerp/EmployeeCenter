@@ -51,5 +51,8 @@
   <data name="Note" xml:space="preserve">
     <value>ملاحظة</value>
   </data>
+  <data name="No notes." xml:space="preserve">
+    <value>لا توجد ملاحظات.</value>
+  </data>
 
 </root>

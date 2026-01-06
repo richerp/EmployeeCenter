@@ -51,5 +51,8 @@
   <data name="Created by" xml:space="preserve">
     <value>Aangemaakt door</value>
   </data>
+  <data name="No notes." xml:space="preserve">
+    <value>Geen notities.</value>
+  </data>
 
 </root>

@@ -51,5 +51,8 @@
   <data name="Created on" xml:space="preserve">
     <value>建立於</value>
   </data>
+  <data name="No notes." xml:space="preserve">
+    <value>無備註。</value>
+  </data>
 
 </root>

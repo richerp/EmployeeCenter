@@ -51,5 +51,8 @@
   <data name="Note" xml:space="preserve">
     <value>Nota</value>
   </data>
+  <data name="No notes." xml:space="preserve">
+    <value>Sem notas.</value>
+  </data>
 
 </root>

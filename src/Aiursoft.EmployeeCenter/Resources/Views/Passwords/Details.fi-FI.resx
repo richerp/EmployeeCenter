@@ -51,5 +51,8 @@
   <data name="Created by" xml:space="preserve">
     <value>Luonut</value>
   </data>
+  <data name="No notes." xml:space="preserve">
+    <value>Ei muistiinpanoja.</value>
+  </data>
 
 </root>

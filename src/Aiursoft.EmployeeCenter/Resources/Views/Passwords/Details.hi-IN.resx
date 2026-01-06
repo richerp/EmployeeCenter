@@ -51,5 +51,8 @@
   <data name="Created on" xml:space="preserve">
     <value>बनाया गया</value>
   </data>
+  <data name="No notes." xml:space="preserve">
+    <value>कोई नोट नहीं।</value>
+  </data>
 
 </root>

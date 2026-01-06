@@ -51,5 +51,8 @@
   <data name="Created on" xml:space="preserve">
     <value>作成日時：</value>
   </data>
+  <data name="No notes." xml:space="preserve">
+    <value>メモはありません。</value>
+  </data>
 
 </root>
