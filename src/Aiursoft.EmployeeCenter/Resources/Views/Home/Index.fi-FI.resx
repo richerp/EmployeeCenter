@@ -216,5 +216,155 @@
   <data name="Start a new project" xml:space="preserve">
     <value>Aloita uusi projekti</value>
   </data>
+  <data name="Enterprise Ready" xml:space="preserve">
+    <value>Enterprise-valmis</value>
+  </data>
+  <data name="Offline Capable" xml:space="preserve">
+    <value>Offline-kelpoisuus</value>
+  </data>
+  <data name="Employee Center" xml:space="preserve">
+    <value>Työntekijäkeskus</value>
+  </data>
+  <data name="A fast, offline-deployable enterprise office center designed to streamline your internal operations." xml:space="preserve">
+    <value>Nopea, offline-asiakirjoihin soveltuvan yritys toimistokeskuksen suunniteltu helpottamaan sisäisiä toimintojasi.</value>
+  </data>
+  <data name="Manage employees, finances, assets, and more with a single, integrated platform." xml:space="preserve">
+    <value>Hallinnoi työntekijöitä, taloutta, varallisuutta ja muita asioita yhdessä, integroidussa alustassa.</value>
+  </data>
+  <data name="Go to Dashboard" xml:space="preserve">
+    <value>Siirry hallintapaneeliin</value>
+  </data>
+  <data name="View on GitHub" xml:space="preserve">
+    <value>Näytä GitHubissa</value>
+  </data>
+  <data name="Capabilities" xml:space="preserve">
+    <value>Toiminnot</value>
+  </data>
+  <data name="Everything you need to run your company" xml:space="preserve">
+    <value>Kaikki, mitä tarvitset yrityksesi ajamiseen</value>
+  </data>
+  <data name="From HR to Finance, IT to Operations, Employee Center has you covered." xml:space="preserve">
+    <value>HR:stä talouteen, IT:stä toimintaan, Employee Center on sinun puolestasi.</value>
+  </data>
+  <data name="Multi-Database Support" xml:space="preserve">
+    <value>Useita tietokantoja tukeva</value>
+  </data>
+  <data name="Flexible storage options ensuring compatibility with your existing infrastructure." xml:space="preserve">
+    <value>Joustavat tallennusvaihtoehdot, jotka takaa yhteensopivuuden olemassa olevan infrastruktuurin kanssa.</value>
+  </data>
+  <data name="Advanced RBAC" xml:space="preserve">
+    <value>Edistynyt RBAC</value>
+  </data>
+  <data name="Granular Role-Based Access Control to ensure data security and proper authorization." xml:space="preserve">
+    <value>Tarkka roolipohjainen pääsykontrolli tietoturvan ja oikeutusten varmistamiseksi.</value>
+  </data>
+  <data name="Enterprise Login (OIDC)" xml:space="preserve">
+    <value>Enterprise Login (OIDC)</value>
+  </data>
+  <data name="Seamless integration with OpenID Connect providers for secure, single sign-on experience." xml:space="preserve">
+    <value>Ilman katkelmaa avaimen yhdistäminen OpenID Connect -tarjoajien kanssa turvalliseen yksittäiseen kirjautumiseen.</value>
+  </data>
+  <data name="Docker Offline Deployment" xml:space="preserve">
+    <value>Docker-offlinen käyttöönotto</value>
+  </data>
+  <data name="Deploy anywhere, even in air-gapped environments, with our robust Docker support." xml:space="preserve">
+    <value>Käynnistä missä tahansa, myös ilman verkkoyhteyttä olevissa ympäristöissä, vahvan Docker-tuen avulla.</value>
+  </data>
+  <data name="Financial Registration" xml:space="preserve">
+    <value>Rahastoilmoitus</value>
+  </data>
+  <data name="Streamline financial tracking and record-keeping for better transparency." xml:space="preserve">
+    <value>Yksinkertaista rahoitustarkkailua ja kirjanpitoa paremman läpinäkyvyyden vuoksi.</value>
+  </data>
+  <data name="Report Line View" xml:space="preserve">
+    <value>Raporttiviittaus</value>
+  </data>
+  <data name="Visualize organizational structure and reporting hierarchies with clarity." xml:space="preserve">
+    <value>Näytä organisaatiorakenne ja raportointirakenteet selkeästi.</value>
+  </data>
+  <data name="Employee Management" xml:space="preserve">
+    <value>Työntekijöiden hallinta</value>
+  </data>
+  <data name="Centralized system for maintaining up-to-date employee records and information." xml:space="preserve">
+    <value>Keskittynyt järjestelmä työntekijöiden ajantasaisien tietojen ja tietojen ylläpitämiseksi.</value>
+  </data>
+  <data name="Payslip Distribution" xml:space="preserve">
+    <value>Palkanjakelu</value>
+  </data>
+  <data name="Secure and efficient electronic distribution of monthly salary slips." xml:space="preserve">
+    <value>Turvallinen ja tehokas sähköinen kuukausipalkan jakaminen.</value>
+  </data>
+  <data name="Secret Distribution" xml:space="preserve">
+    <value>Salaisuuden jakaminen</value>
+  </data>
+  <data name="Safely share sensitive credentials and company secrets with authorized personnel." xml:space="preserve">
+    <value>Jaettakoon luottamuksellisia tunnuksia ja yrityksen salaisuuksia luotettavasti valtuutetuille henkilöille.</value>
+  </data>
+  <data name="Reimbursement Calendar" xml:space="preserve">
+    <value>Maksutapahtumakalenteri</value>
+  </data>
+  <data name="Track and manage expense reimbursements with an integrated calendar view." xml:space="preserve">
+    <value>Seuraa ja hallinnoi kulukorvauksia integroidun kalenterin näkymän avulla.</value>
+  </data>
+  <data name="Promotion Management" xml:space="preserve">
+    <value>Promotion Management</value>
+  </data>
+  <data name="Systematize the career progression and promotion processes for your team." xml:space="preserve">
+    <value>Järjestä urakehitys- ja edistymisprosessit tiimillesi.</value>
+  </data>
+  <data name="Asset Recording" xml:space="preserve">
+    <value>Laitteen rekisteröinti</value>
+  </data>
+  <data name="Keep detailed inventory records of all company hardware and software assets." xml:space="preserve">
+    <value>Pidä tarkka tietokantarekisteri kaikista yrityksen laitteistojen ja ohjelmistojen varoista.</value>
+  </data>
+  <data name="Leave Tracking" xml:space="preserve">
+    <value>Lomakäytännön seuranta</value>
+  </data>
+  <data name="Efficiently manage employee leave requests and attendance records." xml:space="preserve">
+    <value>Hallinnoi työntekijöiden lomahakemusten ja läsnäolorekordien tehokkaasti.</value>
+  </data>
+  <data name="Incident Management" xml:space="preserve">
+    <value>Incident Management</value>
+  </data>
+  <data name="Track, report, and resolve workplace incidents to ensure safety and compliance." xml:space="preserve">
+    <value>Seuraa, raportoi ja ratkaise työpaikalla tapahtuneet onnettomuudet varmistaaksesi turvallisuuden ja noudattamisen.</value>
+  </data>
+  <data name="Efficiency" xml:space="preserve">
+    <value>Tehostus</value>
+  </data>
+  <data name="Boost Operational Efficiency" xml:space="preserve">
+    <value>Paranna toimintakykyä</value>
+  </data>
+  <data name="Employee Center integrates disjointed processes into a unified workflow, eliminating manual errors and saving valuable time for your HR and Admin teams." xml:space="preserve">
+    <value>Employee Center yhdistää erilliset prosessit yhtenäiseksi työnkulkuksi, poistaa manuaaliset virheet ja säästää arvokasta aikaa HR- ja hallintatiimeillä.</value>
+  </data>
+  <data name="Save Time" xml:space="preserve">
+    <value>Tallenna aikaa</value>
+  </data>
+  <data name="Automated workflows for payroll, leave, and expenses mean less time on paperwork and more time on people." xml:space="preserve">
+    <value>Automaattiset työvirrat palkanmaksulla, lomalla ja kuluilla tarkoittavat vähemmän paperityötä ja enemmän ihmisten hoitoa.</value>
+  </data>
+  <data name="Accuracy" xml:space="preserve">
+    <value>Tarkkuus</value>
+  </data>
+  <data name="Centralized data drastically reduces discrepancies in employee records and financial reporting." xml:space="preserve">
+    <value>Keskittynyt tieto vähentää merkittävästi eroja työntekijätilien ja taloudellisen raportoinnin välillä.</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>Turvallisuus</value>
+  </data>
+  <data name="Enterprise-grade security features ensure your sensitive company data remains protected." xml:space="preserve">
+    <value>Yritystason turvallisuusominaisuudet varmistavat, että arvokkaat yrityksen tiedot pysyvät suojattuina.</value>
+  </data>
+  <data name="Ready to modernize your office?" xml:space="preserve">
+    <value>Valmiina modernisointiin toimistossasi?</value>
+  </data>
+  <data name="Join the growing number of companies optimizing their workforce management with Employee Center." xml:space="preserve">
+    <value>Liity yhä suurempaan määrään yrityksiä, jotka optimoivat työvoiman hallintansa Employee Centerin avulla.</value>
+  </data>
+  <data name="Get Started Now" xml:space="preserve">
+    <value>Aloita nyt</value>
+  </data>
 
 </root>

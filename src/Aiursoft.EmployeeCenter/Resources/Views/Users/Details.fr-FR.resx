@@ -93,5 +93,44 @@
   <data name="View Report Line" xml:space="preserve">
     <value>Voir la ligne hiérarchique</value>
   </data>
+  <data name="Title (职务)" xml:space="preserve">
+    <value>Titre (poste)</value>
+  </data>
+  <data name="Job Level (职级)" xml:space="preserve">
+    <value>Niveau du poste (grade)</value>
+  </data>
+  <data name="Bank Name (Branch)" xml:space="preserve">
+    <value>Nom de la banque (agence)</value>
+  </data>
+  <data name="Bank Account (Card Number)" xml:space="preserve">
+    <value>Numéro de compte bancaire (Numéro de carte)</value>
+  </data>
+  <data name="Bank Account Name (Holder)" xml:space="preserve">
+    <value>Nom du compte bancaire (titulaire)</value>
+  </data>
+  <data name="Bank Information Change History" xml:space="preserve">
+    <value>Historique des modifications des informations bancaires</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Heure</value>
+  </data>
+  <data name="Changed By" xml:space="preserve">
+    <value>Modifié par</value>
+  </data>
+  <data name="Bank Name (Old -&gt; New)" xml:space="preserve">
+    <value>Nom de la banque (Ancien -&gt; Nouveau)</value>
+  </data>
+  <data name="Card Number (Old -&gt; New)" xml:space="preserve">
+    <value>Numéro de carte (Ancien -&gt; Nouveau)</value>
+  </data>
+  <data name="Holder (Old -&gt; New)" xml:space="preserve">
+    <value>Titulaire (Ancien -&gt; Nouveau)</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>Système</value>
+  </data>
+  <data name="No change history found." xml:space="preserve">
+    <value>Aucun historique de modifications trouvé.</value>
+  </data>
 
 </root>

@@ -216,5 +216,155 @@
   <data name="Start a new project" xml:space="preserve">
     <value>새 프로젝트 시작하기</value>
   </data>
+  <data name="Enterprise Ready" xml:space="preserve">
+    <value>기업용 준비 완료</value>
+  </data>
+  <data name="Offline Capable" xml:space="preserve">
+    <value>오프라인 사용 가능</value>
+  </data>
+  <data name="Employee Center" xml:space="preserve">
+    <value>직원 센터</value>
+  </data>
+  <data name="A fast, offline-deployable enterprise office center designed to streamline your internal operations." xml:space="preserve">
+    <value>빠르고 오프라인 배포가 가능한 기업용 사무실 센터로 내부 운영을 간소화하도록 설계되었습니다.</value>
+  </data>
+  <data name="Manage employees, finances, assets, and more with a single, integrated platform." xml:space="preserve">
+    <value>한 번의 통합 플랫폼으로 직원, 재무, 자산 및 기타 항목을 관리하세요.</value>
+  </data>
+  <data name="Go to Dashboard" xml:space="preserve">
+    <value>대시보드로 이동</value>
+  </data>
+  <data name="View on GitHub" xml:space="preserve">
+    <value>GitHub에서 보기</value>
+  </data>
+  <data name="Capabilities" xml:space="preserve">
+    <value>기능</value>
+  </data>
+  <data name="Everything you need to run your company" xml:space="preserve">
+    <value>회사를 운영하는 데 필요한 모든 것</value>
+  </data>
+  <data name="From HR to Finance, IT to Operations, Employee Center has you covered." xml:space="preserve">
+    <value>인사관리에서 재무까지, IT부터 운영까지, Employee Center가 모든 것을 책임져 드립니다.</value>
+  </data>
+  <data name="Multi-Database Support" xml:space="preserve">
+    <value>다중 데이터베이스 지원</value>
+  </data>
+  <data name="Flexible storage options ensuring compatibility with your existing infrastructure." xml:space="preserve">
+    <value>유연한 저장 옵션으로 기존 인프라와의 호환성을 보장합니다.</value>
+  </data>
+  <data name="Advanced RBAC" xml:space="preserve">
+    <value>고급 RBAC</value>
+  </data>
+  <data name="Granular Role-Based Access Control to ensure data security and proper authorization." xml:space="preserve">
+    <value>데이터 보안과 적절한 권한 부여를 보장하기 위한 세부적인 역할 기반 접근 제어</value>
+  </data>
+  <data name="Enterprise Login (OIDC)" xml:space="preserve">
+    <value>기업용 로그인 (OIDC)</value>
+  </data>
+  <data name="Seamless integration with OpenID Connect providers for secure, single sign-on experience." xml:space="preserve">
+    <value>안전한 단일 로그인 경험을 위한 OpenID Connect 공급자와의 원활한 통합</value>
+  </data>
+  <data name="Docker Offline Deployment" xml:space="preserve">
+    <value>Docker 오프라인 배포</value>
+  </data>
+  <data name="Deploy anywhere, even in air-gapped environments, with our robust Docker support." xml:space="preserve">
+    <value>어디서든 배포할 수 있으며, 공기 차단 환경에서도 가능하며, 강력한 Docker 지원을 통해 쉽게 배포할 수 있습니다.</value>
+  </data>
+  <data name="Financial Registration" xml:space="preserve">
+    <value>재무 등록</value>
+  </data>
+  <data name="Streamline financial tracking and record-keeping for better transparency." xml:space="preserve">
+    <value>재무 추적 및 기록 관리를 간소화하여 투명성을 높입니다.</value>
+  </data>
+  <data name="Report Line View" xml:space="preserve">
+    <value>보고 라인 보기</value>
+  </data>
+  <data name="Visualize organizational structure and reporting hierarchies with clarity." xml:space="preserve">
+    <value>명확하게 조직 구조와 보고 체계를 시각화하세요.</value>
+  </data>
+  <data name="Employee Management" xml:space="preserve">
+    <value>직원 관리</value>
+  </data>
+  <data name="Centralized system for maintaining up-to-date employee records and information." xml:space="preserve">
+    <value>업데이트된 직원 기록 및 정보를 유지하기 위한 중앙집중식 시스템</value>
+  </data>
+  <data name="Payslip Distribution" xml:space="preserve">
+    <value>급여 명세서 배포</value>
+  </data>
+  <data name="Secure and efficient electronic distribution of monthly salary slips." xml:space="preserve">
+    <value>월급 명세서를 안전하고 효율적으로 전자적으로 배포합니다.</value>
+  </data>
+  <data name="Secret Distribution" xml:space="preserve">
+    <value>비밀 배포</value>
+  </data>
+  <data name="Safely share sensitive credentials and company secrets with authorized personnel." xml:space="preserve">
+    <value>권한이 있는 직원들과 민감한 인증 정보와 회사 비밀을 안전하게 공유하세요.</value>
+  </data>
+  <data name="Reimbursement Calendar" xml:space="preserve">
+    <value>지출 보상 캘린더</value>
+  </data>
+  <data name="Track and manage expense reimbursements with an integrated calendar view." xml:space="preserve">
+    <value>통합 캘린더 보기로 지출 보상 내역을 추적하고 관리하세요.</value>
+  </data>
+  <data name="Promotion Management" xml:space="preserve">
+    <value>승진 관리</value>
+  </data>
+  <data name="Systematize the career progression and promotion processes for your team." xml:space="preserve">
+    <value>팀의 경력 발전 및 승진 절차를 체계화하세요.</value>
+  </data>
+  <data name="Asset Recording" xml:space="preserve">
+    <value>자산 기록</value>
+  </data>
+  <data name="Keep detailed inventory records of all company hardware and software assets." xml:space="preserve">
+    <value>모든 회사의 하드웨어 및 소프트웨어 자산에 대한 상세한 재고 기록을 유지하십시오.</value>
+  </data>
+  <data name="Leave Tracking" xml:space="preserve">
+    <value>휴가 관리</value>
+  </data>
+  <data name="Efficiently manage employee leave requests and attendance records." xml:space="preserve">
+    <value>직원의 휴가 요청과 출석 기록을 효율적으로 관리하세요.</value>
+  </data>
+  <data name="Incident Management" xml:space="preserve">
+    <value>사고 관리</value>
+  </data>
+  <data name="Track, report, and resolve workplace incidents to ensure safety and compliance." xml:space="preserve">
+    <value>업무 현장 사고를 추적하고 보고하며 해결하여 안전과 규정 준수를 확보합니다.</value>
+  </data>
+  <data name="Efficiency" xml:space="preserve">
+    <value>효율성</value>
+  </data>
+  <data name="Boost Operational Efficiency" xml:space="preserve">
+    <value>운영 효율성 향상</value>
+  </data>
+  <data name="Employee Center integrates disjointed processes into a unified workflow, eliminating manual errors and saving valuable time for your HR and Admin teams." xml:space="preserve">
+    <value>Employee Center는 분리된 프로세스를 통합된 워크플로우로 통합하여 수작업 오류를 제거하고 귀하의 인사 및 행정 팀이 소중한 시간을 절약할 수 있도록 합니다.</value>
+  </data>
+  <data name="Save Time" xml:space="preserve">
+    <value>시간 절약</value>
+  </data>
+  <data name="Automated workflows for payroll, leave, and expenses mean less time on paperwork and more time on people." xml:space="preserve">
+    <value>급여, 휴가, 경비 처리를 위한 자동화된 워크플로우는 서류 작업에 소요되는 시간을 줄이고, 사람 중심의 업무에 더 많은 시간을 할애할 수 있게 해줍니다.</value>
+  </data>
+  <data name="Accuracy" xml:space="preserve">
+    <value>정확성</value>
+  </data>
+  <data name="Centralized data drastically reduces discrepancies in employee records and financial reporting." xml:space="preserve">
+    <value>중앙 집중화된 데이터는 직원 기록과 재무 보고의 오차를 크게 줄입니다.</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>보안</value>
+  </data>
+  <data name="Enterprise-grade security features ensure your sensitive company data remains protected." xml:space="preserve">
+    <value>기업급 보안 기능을 통해 민감한 회사 데이터가 안전하게 보호됩니다.</value>
+  </data>
+  <data name="Ready to modernize your office?" xml:space="preserve">
+    <value>사무실을 최신화할 준비가 되셨나요?</value>
+  </data>
+  <data name="Join the growing number of companies optimizing their workforce management with Employee Center." xml:space="preserve">
+    <value>Employee Center로 인사관리를 최적화하는 기업들의 증가하는 수에 합류하세요.</value>
+  </data>
+  <data name="Get Started Now" xml:space="preserve">
+    <value>지금 시작하기</value>
+  </data>
 
 </root>

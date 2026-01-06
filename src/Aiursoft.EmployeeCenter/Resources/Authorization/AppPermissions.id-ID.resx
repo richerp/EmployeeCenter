@@ -114,5 +114,11 @@
   <data name="Allows viewing the report line of any user, including their manager, subordinates, and peers." xml:space="preserve">
     <value>Memungkinkan melihat laporan garis dari setiap pengguna, termasuk manajer, bawahan, dan rekan sejawat mereka.</value>
   </data>
+  <data name="Allows viewing the operation logs of any user, including their bank card change history." xml:space="preserve">
+    <value>Memungkinkan melihat log operasi dari pengguna mana pun, termasuk riwayat perubahan kartu bank mereka.</value>
+  </data>
+  <data name="View User Operation Log" xml:space="preserve">
+    <value>Lihat Log Operasi Pengguna</value>
+  </data>
 
 </root>

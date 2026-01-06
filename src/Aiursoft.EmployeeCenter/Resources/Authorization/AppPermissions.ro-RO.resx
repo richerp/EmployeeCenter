@@ -114,5 +114,11 @@
   <data name="Manage Any Password" xml:space="preserve">
     <value>Gestionează Orice Parolă</value>
   </data>
+  <data name="Allows viewing the operation logs of any user, including their bank card change history." xml:space="preserve">
+    <value>Permite vizualizarea jurnalului de operațiuni al oricărui utilizator, inclusiv istoricul modificărilor cardurilor bancare.</value>
+  </data>
+  <data name="View User Operation Log" xml:space="preserve">
+    <value>Vizualizează Jurnalul de Operații al Utilizatorului</value>
+  </data>
 
 </root>

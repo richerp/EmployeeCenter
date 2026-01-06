@@ -216,5 +216,155 @@
   <data name="Start a new project" xml:space="preserve">
     <value>एक नया प्रोजेक्ट शुरू करें</value>
   </data>
+  <data name="Enterprise Ready" xml:space="preserve">
+    <value>एंटरप्राइज रेडी</value>
+  </data>
+  <data name="Offline Capable" xml:space="preserve">
+    <value>ऑफलाइन क्षमता वाला</value>
+  </data>
+  <data name="Employee Center" xml:space="preserve">
+    <value>कर्मचारी केंद्र</value>
+  </data>
+  <data name="A fast, offline-deployable enterprise office center designed to streamline your internal operations." xml:space="preserve">
+    <value>एक तेज़, ऑफ़लाइन डिप्लॉय करने योग्य एंटरप्राइज़ ऑफिस सेंटर जो आपके आंतरिक संचालन को सुगम बनाने के लिए डिज़ाइन किया गया है।</value>
+  </data>
+  <data name="Manage employees, finances, assets, and more with a single, integrated platform." xml:space="preserve">
+    <value>एकल, एकीकृत प्लेटफॉर्म के साथ कर्मचारियों, वित्त, संपत्ति और अधिक का प्रबंधन करें।</value>
+  </data>
+  <data name="Go to Dashboard" xml:space="preserve">
+    <value>डैशबोर्ड पर जाएं</value>
+  </data>
+  <data name="View on GitHub" xml:space="preserve">
+    <value>गिटहब पर देखें</value>
+  </data>
+  <data name="Capabilities" xml:space="preserve">
+    <value>क्षमताएँ</value>
+  </data>
+  <data name="Everything you need to run your company" xml:space="preserve">
+    <value>आपके कंपनी को चलाने के लिए आपको जो भी चाहिए</value>
+  </data>
+  <data name="From HR to Finance, IT to Operations, Employee Center has you covered." xml:space="preserve">
+    <value>एचआर से वित्त तक, आईटी से संचालन तक, एम्प्लॉयी सेंटर आपके लिए सब कुछ कवर करता है।</value>
+  </data>
+  <data name="Multi-Database Support" xml:space="preserve">
+    <value>बहु-डेटाबेस समर्थन</value>
+  </data>
+  <data name="Flexible storage options ensuring compatibility with your existing infrastructure." xml:space="preserve">
+    <value>लचीले स्टोरेज विकल्प जो आपके मौजूदा इंफ्रास्ट्रक्चर के साथ सुगमता सुनिश्चित करते हैं।</value>
+  </data>
+  <data name="Advanced RBAC" xml:space="preserve">
+    <value>उन्नत RBAC</value>
+  </data>
+  <data name="Granular Role-Based Access Control to ensure data security and proper authorization." xml:space="preserve">
+    <value>डेटा सुरक्षा और उचित अनुमति सुनिश्चित करने के लिए विस्तृत भूमिका-आधारित पहुँच नियंत्रण।</value>
+  </data>
+  <data name="Enterprise Login (OIDC)" xml:space="preserve">
+    <value>एंटरप्राइज लॉगिन (OIDC)</value>
+  </data>
+  <data name="Seamless integration with OpenID Connect providers for secure, single sign-on experience." xml:space="preserve">
+    <value>सुरक्षित, एकल साइन-ऑन अनुभव के लिए OpenID Connect प्रदाताओं के साथ बिना रुकावट एकीकरण।</value>
+  </data>
+  <data name="Docker Offline Deployment" xml:space="preserve">
+    <value>Docker ऑफलाइन डिप्लॉयमेंट</value>
+  </data>
+  <data name="Deploy anywhere, even in air-gapped environments, with our robust Docker support." xml:space="preserve">
+    <value>कहीं भी डेप्लॉय करें, यहां तक कि एयर-गैप्ड वातावरणों में भी, हमारे विश्वसनीय Docker समर्थन के साथ।</value>
+  </data>
+  <data name="Financial Registration" xml:space="preserve">
+    <value>वित्तीय पंजीकरण</value>
+  </data>
+  <data name="Streamline financial tracking and record-keeping for better transparency." xml:space="preserve">
+    <value>बेहतर पारदर्शिता के लिए वित्तीय ट्रैकिंग और रिकॉर्ड-कीपिंग को सुगम बनाएं।</value>
+  </data>
+  <data name="Report Line View" xml:space="preserve">
+    <value>रिपोर्ट लाइन दृश्य</value>
+  </data>
+  <data name="Visualize organizational structure and reporting hierarchies with clarity." xml:space="preserve">
+    <value>स्पष्टता के साथ संगठनात्मक संरचना और रिपोर्टिंग जरूरतों को देखें।</value>
+  </data>
+  <data name="Employee Management" xml:space="preserve">
+    <value>कर्मचारी प्रबंधन</value>
+  </data>
+  <data name="Centralized system for maintaining up-to-date employee records and information." xml:space="preserve">
+    <value>एक केंद्रीकृत प्रणाली जो अद्यतन कर्मचारी रिकॉर्ड और जानकारी को बनाए रखती है।</value>
+  </data>
+  <data name="Payslip Distribution" xml:space="preserve">
+    <value>वेतन पत्रिका वितरण</value>
+  </data>
+  <data name="Secure and efficient electronic distribution of monthly salary slips." xml:space="preserve">
+    <value>मासिक वेतन पत्रिकाओं का सुरक्षित और कुशल इलेक्ट्रॉनिक वितरण</value>
+  </data>
+  <data name="Secret Distribution" xml:space="preserve">
+    <value>गुप्त वितरण</value>
+  </data>
+  <data name="Safely share sensitive credentials and company secrets with authorized personnel." xml:space="preserve">
+    <value>अधिकृत कर्मचारियों के साथ संवेदनशील प्रमाणपत्रों और कंपनी के रहस्यों को सुरक्षित रूप से साझा करें।</value>
+  </data>
+  <data name="Reimbursement Calendar" xml:space="preserve">
+    <value>रिइम्बर्समेंट कैलेंडर</value>
+  </data>
+  <data name="Track and manage expense reimbursements with an integrated calendar view." xml:space="preserve">
+    <value>एक एकीकृत कैलेंडर दृश्य के साथ व्यय प्रतिपूर्ति का ट्रैक रखें और प्रबंधित करें।</value>
+  </data>
+  <data name="Promotion Management" xml:space="preserve">
+    <value>प्रमोशन प्रबंधन</value>
+  </data>
+  <data name="Systematize the career progression and promotion processes for your team." xml:space="preserve">
+    <value>अपनी टीम के कैरियर विकास और पदोन्नति प्रक्रियाओं को व्यवस्थित करें।</value>
+  </data>
+  <data name="Asset Recording" xml:space="preserve">
+    <value>संपत्ति रिकॉर्डिंग</value>
+  </data>
+  <data name="Keep detailed inventory records of all company hardware and software assets." xml:space="preserve">
+    <value>सभी कंपनी के हार्डवेयर और सॉफ्टवेयर संपत्तियों के विस्तृत इन्वेंटरी रिकॉर्ड बनाए रखें।</value>
+  </data>
+  <data name="Leave Tracking" xml:space="preserve">
+    <value>छुट्टी ट्रैकिंग</value>
+  </data>
+  <data name="Efficiently manage employee leave requests and attendance records." xml:space="preserve">
+    <value>कर्मचारी छुट्टी के अनुरोधों और उपस्थिति रिकॉर्ड को कुशलतापूर्वक प्रबंधित करें।</value>
+  </data>
+  <data name="Incident Management" xml:space="preserve">
+    <value>घटना प्रबंधन</value>
+  </data>
+  <data name="Track, report, and resolve workplace incidents to ensure safety and compliance." xml:space="preserve">
+    <value>कार्यस्थल की घटनाओं को ट्रैक करें, रिपोर्ट करें और सुलझाएं ताकि सुरक्षा और सुसंगतता सुनिश्चित हो।</value>
+  </data>
+  <data name="Efficiency" xml:space="preserve">
+    <value>दक्षता</value>
+  </data>
+  <data name="Boost Operational Efficiency" xml:space="preserve">
+    <value>संचालन की कार्यक्षमता में वृद्धि करें</value>
+  </data>
+  <data name="Employee Center integrates disjointed processes into a unified workflow, eliminating manual errors and saving valuable time for your HR and Admin teams." xml:space="preserve">
+    <value>एम्प्लॉई एंटर अलग-अलग प्रक्रियाओं को एकीकृत कार्य प्रवाह में बदलता है, मैन्युअल त्रुटियों को दूर करता है और आपकी एचआर और एडमिन टीमों के लिए मूल्यवान समय बचाता है।</value>
+  </data>
+  <data name="Save Time" xml:space="preserve">
+    <value>समय बचाएं</value>
+  </data>
+  <data name="Automated workflows for payroll, leave, and expenses mean less time on paperwork and more time on people." xml:space="preserve">
+    <value>वेतन, छुट्टी और खर्च के लिए स्वचालित कार्यप्रवाह कागजात पर कम समय और लोगों पर अधिक समय लगाने का अर्थ है।</value>
+  </data>
+  <data name="Accuracy" xml:space="preserve">
+    <value>शुद्धता</value>
+  </data>
+  <data name="Centralized data drastically reduces discrepancies in employee records and financial reporting." xml:space="preserve">
+    <value>केंद्रीकृत डेटा कर्मचारी रिकॉर्ड और वित्तीय रिपोर्टिंग में अंतरों को नाटकीय रूप से कम करता है।</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>सुरक्षा</value>
+  </data>
+  <data name="Enterprise-grade security features ensure your sensitive company data remains protected." xml:space="preserve">
+    <value>एंटरप्राइज-ग्रेड सुरक्षा सुविधाएँ आपके संवेदनशील कंपनी डेटा को सुरक्षित रखने की गारंटी देती हैं।</value>
+  </data>
+  <data name="Ready to modernize your office?" xml:space="preserve">
+    <value>क्या आप अपने ऑफिस को आधुनिक बनाने के लिए तैयार हैं?</value>
+  </data>
+  <data name="Join the growing number of companies optimizing their workforce management with Employee Center." xml:space="preserve">
+    <value>एम्प्लॉयी सेंटर के साथ अपने कार्यबल प्रबंधन को अनुकूलित करने के लिए बढ़ती संख्या में कंपनियों में शामिल हों।</value>
+  </data>
+  <data name="Get Started Now" xml:space="preserve">
+    <value>अभी शुरू करें</value>
+  </data>
 
 </root>

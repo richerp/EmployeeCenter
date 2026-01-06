@@ -93,5 +93,44 @@
   <data name="Report Line" xml:space="preserve">
     <value>Dòng báo cáo</value>
   </data>
+  <data name="Title (职务)" xml:space="preserve">
+    <value>Chức vụ</value>
+  </data>
+  <data name="Job Level (职级)" xml:space="preserve">
+    <value>Cấp bậc công việc (职级)</value>
+  </data>
+  <data name="Bank Name (Branch)" xml:space="preserve">
+    <value>Tên ngân hàng (Chi nhánh)</value>
+  </data>
+  <data name="Bank Account (Card Number)" xml:space="preserve">
+    <value>Tài khoản ngân hàng (Số thẻ)</value>
+  </data>
+  <data name="Bank Account Name (Holder)" xml:space="preserve">
+    <value>Tên tài khoản ngân hàng (Chủ tài khoản)</value>
+  </data>
+  <data name="Bank Information Change History" xml:space="preserve">
+    <value>Lịch sử thay đổi thông tin ngân hàng</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Thời gian</value>
+  </data>
+  <data name="Changed By" xml:space="preserve">
+    <value>Đã thay đổi bởi</value>
+  </data>
+  <data name="Bank Name (Old -&gt; New)" xml:space="preserve">
+    <value>Tên ngân hàng (Cũ -&gt; Mới)</value>
+  </data>
+  <data name="Card Number (Old -&gt; New)" xml:space="preserve">
+    <value>Số thẻ (Cũ -&gt; Mới)</value>
+  </data>
+  <data name="Holder (Old -&gt; New)" xml:space="preserve">
+    <value>Chủ tài khoản (Cũ -&gt; Mới)</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>Hệ thống</value>
+  </data>
+  <data name="No change history found." xml:space="preserve">
+    <value>Không tìm thấy lịch sử thay đổi.</value>
+  </data>
 
 </root>
