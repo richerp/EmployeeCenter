@@ -11,4 +11,9 @@ public class IndexViewModel : UiStackLayoutViewModel
     }
 
     public List<Payroll> Payrolls { get; set; } = [];
+
+    // Chart data for salary trend visualization
+    public List<string> ChartLabels { get; set; } = [];
+    public List<decimal> ChartTotalAmounts { get; set; } = [];
+    public List<decimal> ChartBaseSalaries { get; set; } = [];
 }

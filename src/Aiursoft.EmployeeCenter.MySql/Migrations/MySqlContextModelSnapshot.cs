@@ -34,29 +34,37 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("ChangedByUserId")
-                        .HasColumnType("varchar(255)");
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
 
                     b.Property<string>("NewBankAccountName")
-                        .HasColumnType("longtext");
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
 
                     b.Property<string>("NewBankCardNumber")
-                        .HasColumnType("longtext");
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
 
                     b.Property<string>("NewBankName")
-                        .HasColumnType("longtext");
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
 
                     b.Property<string>("OldBankAccountName")
-                        .HasColumnType("longtext");
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
 
                     b.Property<string>("OldBankCardNumber")
-                        .HasColumnType("longtext");
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
 
                     b.Property<string>("OldBankName")
-                        .HasColumnType("longtext");
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasColumnType("varchar(255)");
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
 
                     b.HasKey("Id");
 
@@ -82,7 +90,8 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasColumnType("varchar(2000)");
 
                     b.Property<string>("IMId")
-                        .HasColumnType("varchar(255)");
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
 
                     b.Property<DateTime?>("MitigatedAt")
                         .HasColumnType("datetime(6)");
@@ -92,10 +101,12 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasColumnType("varchar(2000)");
 
                     b.Property<string>("OwnerId")
-                        .HasColumnType("varchar(255)");
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
 
                     b.Property<string>("PostMortem")
-                        .HasColumnType("longtext");
+                        .HasMaxLength(8192)
+                        .HasColumnType("varchar(8192)");
 
                     b.Property<string>("ResolutionReason")
                         .HasMaxLength(2000)
@@ -136,7 +147,8 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasColumnType("char(36)");
 
                     b.Property<string>("AuthorId")
-                        .HasColumnType("varchar(255)");
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
 
                     b.Property<string>("Content")
                         .IsRequired()
@@ -178,6 +190,9 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.Property<bool>("IsPending")
                         .HasColumnType("tinyint(1)");
 
+                    b.Property<bool>("IsWithdrawn")
+                        .HasColumnType("tinyint(1)");
+
                     b.Property<int>("LeaveType")
                         .HasColumnType("int");
 
@@ -188,6 +203,9 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
 
                     b.Property<DateTime?>("ReviewedAt")
                         .HasColumnType("datetime(6)");
+
+                    b.Property<string>("ReviewedById")
+                        .HasColumnType("varchar(255)");
 
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime(6)");
@@ -200,9 +218,15 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasColumnType("varchar(255)");
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
+
+                    b.Property<DateTime?>("WithdrawnAt")
+                        .HasColumnType("datetime(6)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ReviewedById");
 
                     b.HasIndex("UserId");
 
@@ -228,7 +252,8 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasColumnType("varchar(255)");
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
 
                     b.Property<int>("Year")
                         .HasColumnType("int");
@@ -255,7 +280,8 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
 
                     b.Property<string>("CreatorId")
                         .IsRequired()
-                        .HasColumnType("varchar(255)");
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
 
                     b.Property<string>("Note")
                         .HasMaxLength(1000)
@@ -372,7 +398,8 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
 
                     b.Property<string>("OwnerId")
                         .IsRequired()
-                        .HasColumnType("varchar(255)");
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
 
                     b.Property<decimal>("PensionCompany")
                         .HasColumnType("decimal(65,30)");
@@ -432,7 +459,8 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
 
                     b.Property<string>("OwnerId")
                         .IsRequired()
-                        .HasColumnType("varchar(255)");
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
 
                     b.Property<string>("PublicKey")
                         .IsRequired()
@@ -508,7 +536,8 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("ManagerId")
-                        .HasColumnType("varchar(255)");
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
 
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256)
@@ -738,11 +767,17 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.LeaveApplication", b =>
                 {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "ReviewedBy")
+                        .WithMany()
+                        .HasForeignKey("ReviewedById");
+
                     b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "User")
                         .WithMany("LeaveApplications")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("ReviewedBy");
 
                     b.Navigation("User");
                 });

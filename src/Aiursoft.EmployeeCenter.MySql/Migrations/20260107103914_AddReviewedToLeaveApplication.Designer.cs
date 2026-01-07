@@ -12,10 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Aiursoft.EmployeeCenter.MySql.Migrations
 {
     [DbContext(typeof(MySqlContext))]
-    [Migration("20260105144050_init")]
-#pragma warning disable CS8981 // The type name only contains lower-cased ascii characters. Such names may become reserved for the language.
-    partial class init
-#pragma warning restore CS8981 // The type name only contains lower-cased ascii characters. Such names may become reserved for the language.
+    [Migration("20260107103914_AddReviewedToLeaveApplication")]
+    partial class AddReviewedToLeaveApplication
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -26,6 +24,59 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.BankCardChangeLog", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("ChangeTime")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("ChangedByUserId")
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
+
+                    b.Property<string>("NewBankAccountName")
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
+
+                    b.Property<string>("NewBankCardNumber")
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
+
+                    b.Property<string>("NewBankName")
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
+
+                    b.Property<string>("OldBankAccountName")
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
+
+                    b.Property<string>("OldBankCardNumber")
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
+
+                    b.Property<string>("OldBankName")
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ChangedByUserId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("BankCardChangeLogs");
+                });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Incident", b =>
                 {
@@ -42,7 +93,8 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasColumnType("varchar(2000)");
 
                     b.Property<string>("IMId")
-                        .HasColumnType("varchar(255)");
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
 
                     b.Property<DateTime?>("MitigatedAt")
                         .HasColumnType("datetime(6)");
@@ -52,10 +104,12 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasColumnType("varchar(2000)");
 
                     b.Property<string>("OwnerId")
-                        .HasColumnType("varchar(255)");
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
 
                     b.Property<string>("PostMortem")
-                        .HasColumnType("longtext");
+                        .HasMaxLength(8192)
+                        .HasColumnType("varchar(8192)");
 
                     b.Property<string>("ResolutionReason")
                         .HasMaxLength(2000)
@@ -96,7 +150,8 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasColumnType("char(36)");
 
                     b.Property<string>("AuthorId")
-                        .HasColumnType("varchar(255)");
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
 
                     b.Property<string>("Content")
                         .IsRequired()
@@ -121,6 +176,98 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.ToTable("IncidentComments");
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.LeaveApplication", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<bool>("IsApproved")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<bool>("IsPending")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<bool>("IsWithdrawn")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<int>("LeaveType")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Reason")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("varchar(500)");
+
+                    b.Property<DateTime?>("ReviewedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("ReviewedById")
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<DateTime>("SubmittedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<decimal>("TotalDays")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
+
+                    b.Property<DateTime?>("WithdrawnAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ReviewedById");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("LeaveApplications");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.LeaveBalance", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<decimal>("AnnualLeaveAllocation")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<DateTime>("CreationTime")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<decimal>("SickLeaveAllocation")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
+
+                    b.Property<int>("Year")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("LeaveBalances");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Password", b =>
                 {
                     b.Property<Guid>("Id")
@@ -136,7 +283,8 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
 
                     b.Property<string>("CreatorId")
                         .IsRequired()
-                        .HasColumnType("varchar(255)");
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
 
                     b.Property<string>("Note")
                         .HasMaxLength(1000)
@@ -253,7 +401,8 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
 
                     b.Property<string>("OwnerId")
                         .IsRequired()
-                        .HasColumnType("varchar(255)");
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
 
                     b.Property<decimal>("PensionCompany")
                         .HasColumnType("decimal(65,30)");
@@ -313,7 +462,8 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
 
                     b.Property<string>("OwnerId")
                         .IsRequired()
-                        .HasColumnType("varchar(255)");
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
 
                     b.Property<string>("PublicKey")
                         .IsRequired()
@@ -344,6 +494,10 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasMaxLength(30)
                         .HasColumnType("varchar(30)");
 
+                    b.Property<string>("BankAccountName")
+                        .HasMaxLength(30)
+                        .HasColumnType("varchar(30)");
+
                     b.Property<string>("BankName")
                         .HasMaxLength(30)
                         .HasColumnType("varchar(30)");
@@ -371,8 +525,12 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasColumnType("tinyint(1)");
 
                     b.Property<string>("JobLevel")
-                        .HasMaxLength(30)
-                        .HasColumnType("varchar(30)");
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("LegalName")
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("tinyint(1)");
@@ -381,7 +539,8 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("ManagerId")
-                        .HasColumnType("varchar(255)");
+                        .HasMaxLength(128)
+                        .HasColumnType("varchar(128)");
 
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256)
@@ -402,6 +561,10 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
 
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("longtext");
+
+                    b.Property<string>("Title")
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
 
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("tinyint(1)");
@@ -556,6 +719,23 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.BankCardChangeLog", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "ChangedByUser")
+                        .WithMany()
+                        .HasForeignKey("ChangedByUserId");
+
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ChangedByUser");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Incident", b =>
                 {
                     b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "IM")
@@ -586,6 +766,34 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.Navigation("Author");
 
                     b.Navigation("Incident");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.LeaveApplication", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "ReviewedBy")
+                        .WithMany()
+                        .HasForeignKey("ReviewedById");
+
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "User")
+                        .WithMany("LeaveApplications")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ReviewedBy");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.LeaveBalance", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "User")
+                        .WithMany("LeaveBalances")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Password", b =>
@@ -713,6 +921,10 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.Navigation("CreatedPasswords");
 
                     b.Navigation("IncidentComments");
+
+                    b.Navigation("LeaveApplications");
+
+                    b.Navigation("LeaveBalances");
 
                     b.Navigation("ManagedIncidents");
 

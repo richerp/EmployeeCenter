@@ -15,6 +15,7 @@ public class LeaveBalance
     [Key]
     public int Id { get; init; }
 
+    [MaxLength(128)]
     public required string UserId { get; set; }
 
     [JsonIgnore]

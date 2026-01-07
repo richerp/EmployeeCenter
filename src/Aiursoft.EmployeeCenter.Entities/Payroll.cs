@@ -10,6 +10,7 @@ public class Payroll
     [Key]
     public int Id { get; init; }
 
+    [MaxLength(128)]
     public required string OwnerId { get; set; }
 
     [JsonIgnore]

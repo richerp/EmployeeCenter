@@ -13,6 +13,7 @@ public class LeaveApplication
     [Key]
     public int Id { get; init; }
 
+    [MaxLength(128)]
     public required string UserId { get; set; }
 
     [JsonIgnore]
@@ -65,6 +66,26 @@ public class LeaveApplication
     /// When the application was reviewed (nullable if not yet reviewed)
     /// </summary>
     public DateTime? ReviewedAt { get; set; }
+
+    /// <summary>
+    /// Whether this application has been withdrawn by the applicant
+    /// </summary>
+    public bool IsWithdrawn { get; set; }
+
+    /// <summary>
+    /// When the application was withdrawn
+    /// </summary>
+    public DateTime? WithdrawnAt { get; set; }
+    /// <summary>
+    /// The ID of the user who reviewed (approved or rejected) this application
+    /// </summary>
+    public string? ReviewedById { get; set; }
+
+    /// <summary>
+    /// The user who reviewed (approved or rejected) this application
+    /// </summary>
+    [ForeignKey(nameof(ReviewedById))]
+    public User? ReviewedBy { get; set; }
 }
 
 /// <summary>

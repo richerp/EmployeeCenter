@@ -86,6 +86,7 @@ public class User : IdentityUser
     [InverseProperty(nameof(IncidentComment.Author))]
     public IEnumerable<IncidentComment> IncidentComments { get; init; } = new List<IncidentComment>();
 
+    [MaxLength(128)]
     public string? ManagerId { get; set; }
 
     [ForeignKey(nameof(ManagerId))]

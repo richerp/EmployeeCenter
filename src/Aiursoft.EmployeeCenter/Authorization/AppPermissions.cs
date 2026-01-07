@@ -78,7 +78,10 @@ public class AppPermissions
                 localizer["Allows viewing the report line of any user, including their manager, subordinates, and peers."]),
             new(AppPermissionNames.CanManageLeave,
                 localizer["Manage Leave"],
-                localizer["Allows managing leave applications and viewing leave records for all employees."])
+                localizer["Default permission for HR."]),
+            new(AppPermissionNames.CanApproveAnyLeave,
+                localizer["Approve Any Leave"],
+                localizer["Allows approving or rejecting any leave application, regardless of the reporting line."])
         ];
         return allPermission;
     }

@@ -35,9 +35,18 @@ public class PayrollController(
             .OrderByDescending(p => p.TargetMonth)
             .ToListAsync();
 
+        // Prepare chart data (ordered chronologically for chart display)
+        var chartData = payrolls
+            .OrderBy(p => p.TargetMonth)
+            .TakeLast(12) // Show last 12 months max for better readability
+            .ToList();
+
         return this.StackView(new IndexViewModel
         {
-            Payrolls = payrolls
+            Payrolls = payrolls,
+            ChartLabels = chartData.Select(p => p.TargetMonth.ToString("yyyy-MM")).ToList(),
+            ChartTotalAmounts = chartData.Select(p => p.TotalAmount).ToList(),
+            ChartBaseSalaries = chartData.Select(p => p.BaseSalary).ToList()
         });
     }
 

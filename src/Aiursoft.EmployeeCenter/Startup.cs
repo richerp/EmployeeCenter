@@ -50,6 +50,9 @@ public class Startup : IWebStartup
         services.AddScoped<Services.HolidayService>();
         services.AddScoped<Services.LeaveBalanceService>();
 
+        // Background Jobs
+        services.AddHostedService<BackgroundJobs.AnnualLeaveAllocationJob>();
+
         // Controllers and localization
         services.AddControllersWithViews()
             .AddNewtonsoftJson(options =>

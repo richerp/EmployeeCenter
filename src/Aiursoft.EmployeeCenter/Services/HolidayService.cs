@@ -1,18 +1,19 @@
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using Microsoft.Extensions.Caching.Memory;
 
 namespace Aiursoft.EmployeeCenter.Services;
 
 /// <summary>
 /// Service for fetching Chinese public holiday information from external API
-/// Uses jiejiariapi.com API with caching to minimize API calls
+/// Uses api.haoshenqi.top API with caching to minimize API calls
 /// </summary>
 public class HolidayService
 {
     private readonly HttpClient _httpClient;
     private readonly IMemoryCache _cache;
     private readonly ILogger<HolidayService> _logger;
-    private const string ApiBaseUrl = "https://timor.tech/api/holiday";
+    private const string ApiBaseUrl = "http://api.haoshenqi.top/holiday";
 
     public HolidayService(
         IHttpClientFactory httpClientFactory,
@@ -41,15 +42,17 @@ public class HolidayService
 
         try
         {
-            // API format: https://timor.tech/api/holiday/year/month-day
-            var url = $"{ApiBaseUrl}/{date.Year}/{date.Month:00}-{date.Day:00}";
+            // API format: http://api.haoshenqi.top/holiday?date=yyyy-MM-dd
+            var url = $"{ApiBaseUrl}?date={dateKey}";
             var response = await _httpClient.GetStringAsync(url);
-            var result = JsonSerializer.Deserialize<HolidayApiResponse>(response);
+            var results = JsonSerializer.Deserialize<List<HolidayApiResponse>>(response);
 
-            var isHoliday = result?.Holiday ?? false;
+            // Status: 0 = working day, 1 = weekend, 2 = statutory holiday, 3 = major statutory holiday
+            var status = results?.FirstOrDefault()?.Status ?? 0;
+            var isHoliday = status == 1 || status == 2 || status == 3;
 
-            // Cache for 24 hours
-            _cache.Set(cacheKey, isHoliday, TimeSpan.FromHours(24));
+            // Cache for 7 days (holidays don't change retroactively)
+            _cache.Set(cacheKey, isHoliday, TimeSpan.FromDays(7));
 
             return isHoliday;
         }
@@ -90,7 +93,24 @@ public class HolidayService
     /// </summary>
     private class HolidayApiResponse
     {
-        public int Code { get; set; }
-        public bool? Holiday { get; set; }
+        // [{"date":"2026-01-01","year":2026,"month":1,"day":1,"status":3}]
+
+        [JsonPropertyName("date")]
+        public string Date { get; set; } = string.Empty;
+
+        [JsonPropertyName("year")]
+        public int Year { get; set; }
+
+        [JsonPropertyName("month")]
+        public int Month { get; set; }
+
+        [JsonPropertyName("day")]
+        public int Day { get; set; }
+
+        /// <summary>
+        /// Status: 0 = working day, 1 = weekend, 2 = statutory holiday, 3 = major statutory holiday
+        /// </summary>
+        [JsonPropertyName("status")]
+        public int Status { get; set; }
     }
 }

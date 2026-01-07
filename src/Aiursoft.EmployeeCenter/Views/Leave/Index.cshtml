@@ -111,13 +111,14 @@
                         <th>@Localizer["Total Days"]</th>
                         <th>@Localizer["Status"]</th>
                         <th>@Localizer["Submitted At"]</th>
+                        <th>@Localizer["Actions"]</th>
                     </tr>
                     </thead>
                     <tbody>
                         @if (Model.LeaveHistory.Count == 0)
                         {
                             <tr>
-                                <td colspan="6" class="text-center text-muted">
+                                <td colspan="7" class="text-center text-muted">
                                     @Localizer["No leave applications yet."]
                                 </td>
                             </tr>
@@ -141,7 +142,11 @@
                                         <td>@item.EndDate.ToString("yyyy-MM-dd")</td>
                                         <td>@item.TotalDays @Localizer["days"]</td>
                                         <td>
-                                        @if (item.IsPending)
+                                        @if (item.IsWithdrawn)
+                                        {
+                                            <span class="badge bg-secondary">@Localizer["Withdrawn"]</span>
+                                        }
+                                        else if (item.IsPending)
                                         {
                                                     <span class="badge bg-warning">@Localizer["Pending Approval"]</span>
                                         }
@@ -155,6 +160,17 @@
                                         }
                                         </td>
                                         <td>@item.SubmittedAt.ToString("yyyy-MM-dd HH:mm")</td>
+                                        <td>
+                                            @if (!item.IsWithdrawn && DateTime.UtcNow.Date < item.StartDate.Date)
+                                            {
+                                                <form asp-action="Withdraw" asp-route-id="@item.Id" method="post" class="d-inline">
+                                                    @Html.AntiForgeryToken()
+                                                    <button type="submit" class="btn btn-sm btn-outline-danger" onclick="return confirm('@Localizer["Are you sure you want to withdraw this leave application?"]');">
+                                                        <i class="align-middle" data-lucide="x-circle"></i> @Localizer["Withdraw"]
+                                                    </button>
+                                                </form>
+                                            }
+                                        </td>
                                     </tr>
                             }
                         }

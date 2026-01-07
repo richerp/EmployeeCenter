@@ -36,11 +36,13 @@ public class Incident
     [MaxLength(100)]
     public required string TargetRole { get; set; }
 
+    [MaxLength(128)]
     public string? OwnerId { get; set; }
 
     [ForeignKey(nameof(OwnerId))]
     public User? Owner { get; set; }
 
+    [MaxLength(128)]
     public string? IMId { get; set; }
 
     [ForeignKey(nameof(IMId))]
@@ -58,6 +60,7 @@ public class Incident
     [MaxLength(2000)]
     public string? ResolutionReason { get; set; }
 
+    [MaxLength(8192)]
     public string? PostMortem { get; set; }
 
     [InverseProperty(nameof(IncidentComment.Incident))]

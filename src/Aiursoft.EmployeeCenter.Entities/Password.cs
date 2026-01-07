@@ -30,6 +30,7 @@ public class Password
     [MaxLength(1000)]
     public string? Note { get; set; }
 
+    [MaxLength(128)]
     public required string CreatorId { get; set; }
 
     [ForeignKey(nameof(CreatorId))]

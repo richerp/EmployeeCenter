@@ -11,6 +11,31 @@
     </div>
 </div>
 
+@if (Model.ChartLabels.Any())
+{
+        <div class="card mb-3">
+            <div class="card-header">
+                <div class="card-actions float-end">
+                    <div class="dropdown position-relative">
+                        <a href="#" data-bs-toggle="dropdown" data-bs-display="static">
+                            <i class="align-middle" data-lucide="more-horizontal"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <a class="dropdown-item" href="#" onclick="resetChartZoom(); return false;">@Localizer["Reset Zoom"]</a>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="card-title mb-0">@Localizer["Salary Trend"]</h5>
+                <h6 class="card-subtitle text-muted mt-1">@Localizer["Track your salary progression and promotions over time"]</h6>
+            </div>
+            <div class="card-body">
+                <div class="chart">
+                    <canvas id="chartjs-salary-trend"></canvas>
+                </div>
+            </div>
+        </div>
+}
+
 <div class="card">
     <div class="card-header">
         <h5 class="card-title">@Localizer["Historical Payrolls"]</h5>
@@ -27,19 +52,19 @@
             </tr>
             </thead>
             <tbody>
-            @foreach (var item in Model.Payrolls)
-            {
-                <tr class="clickable-row" data-href="@Url.Action("Details", new { id = item.Id })">
-                    <td>@item.TargetMonth.ToString("yyyy-MM")</td>
-                    <td>@item.TotalAmount.ToString("C")</td>
-                    <td>@item.CreationTime.ToString("yyyy-MM-dd HH:mm")</td>
-                    <td class="text-end">
-                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary">
-                            <i class="align-middle" data-lucide="eye"></i> @Localizer["Details"]
-                        </a>
-                    </td>
-                </tr>
-            }
+                @foreach (var item in Model.Payrolls)
+                {
+                    <tr class="clickable-row" data-href="@Url.Action("Details", new { id = item.Id })">
+                        <td>@item.TargetMonth.ToString("yyyy-MM")</td>
+                        <td>@item.TotalAmount.ToString("C")</td>
+                        <td>@item.CreationTime.ToString("yyyy-MM-dd HH:mm")</td>
+                        <td class="text-end">
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary">
+                                <i class="align-middle" data-lucide="eye"></i> @Localizer["Details"]
+                            </a>
+                        </td>
+                    </tr>
+                }
             </tbody>
         </table>
     </div>
@@ -47,8 +72,20 @@
 
 @* ReSharper disable once Razor.SectionNotResolved *@
 @section scripts {
+    <!-- Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    
     <script>
+        let salaryChart = null;
+        
+        function resetChartZoom() {
+            if (salaryChart) {
+                salaryChart.resetZoom();
+            }
+        }
+        
         document.addEventListener("DOMContentLoaded", function () {
+            // Clickable row functionality
             const rows = document.querySelectorAll(".clickable-row");
             rows.forEach(row => {
                 row.addEventListener("click", function (event) {
@@ -58,6 +95,88 @@
                     }
                 });
             });
+            
+            // Salary Trend Chart
+            const chartCanvas = document.getElementById("chartjs-salary-trend");
+            if (chartCanvas) {
+                const ctx = chartCanvas.getContext("2d");
+                
+                // Get primary color from CSS variables if available, otherwise use default
+                const primaryColor = getComputedStyle(document.documentElement).getPropertyValue('--bs-primary').trim() || '#3b7ddd';
+                
+                salaryChart = new Chart(ctx, {
+                    type: "bar",
+                    data: {
+                        labels: @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.ChartLabels)),
+                        datasets: [{
+                            label: '@Localizer["Net Salary (Actual)"]',
+                            backgroundColor: primaryColor,
+                            borderColor: primaryColor,
+                            hoverBackgroundColor: primaryColor,
+                            hoverBorderColor: primaryColor,
+                            data: @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.ChartTotalAmounts)),
+                            barPercentage: 0.75,
+                            categoryPercentage: 0.5
+                        }, {
+                            label: '@Localizer["Base Salary"]',
+                            backgroundColor: "#E8EAED",
+                            borderColor: "#E8EAED",
+                            hoverBackgroundColor: "#D1D5DB",
+                            hoverBorderColor: "#D1D5DB",
+                            data: @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.ChartBaseSalaries)),
+                            barPercentage: 0.75,
+                            categoryPercentage: 0.5
+                        }]
+                    },
+                    options: {
+                        maintainAspectRatio: false,
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                display: true,
+                                position: 'top'
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        let label = context.dataset.label || '';
+                                        if (label) {
+                                            label += ': ';
+                                        }
+                                        label += new Intl.NumberFormat('zh-CN', {
+                                            style: 'currency',
+                                            currency: 'CNY'
+                                        }).format(context.parsed.y);
+                                        return label;
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                grid: {
+                                    display: true
+                                },
+                                ticks: {
+                                    callback: function(value) {
+                                        return new Intl.NumberFormat('zh-CN', {
+                                            style: 'currency',
+                                            currency: 'CNY',
+                                            minimumFractionDigits: 0
+                                        }).format(value);
+                                    }
+                                }
+                            },
+                            x: {
+                                grid: {
+                                    display: false
+                                }
+                            }
+                        }
+                    }
+                });
+            }
         });
     </script>
 }

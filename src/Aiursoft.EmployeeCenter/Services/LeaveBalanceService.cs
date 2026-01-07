@@ -69,6 +69,7 @@ public class LeaveBalanceService
             .Where(la => la.UserId == userId
                 && la.LeaveType == LeaveType.AnnualLeave
                 && la.StartDate.Year == previousYear
+                && !la.IsWithdrawn // Exclude withdrawn
                 && !la.IsPending) // Only count approved/rejected that were actually processed
             .Where(la => la.IsApproved) // Only count approved ones
             .SumAsync(la => la.TotalDays);
@@ -95,7 +96,9 @@ public class LeaveBalanceService
         var usedThisYear = await _context.LeaveApplications
             .Where(la => la.UserId == userId
                 && la.LeaveType == LeaveType.AnnualLeave
-                && la.StartDate.Year == year)
+                && la.StartDate.Year == year
+                && !la.IsWithdrawn // Exclude withdrawn
+                && (la.IsPending || la.IsApproved)) // Exclude rejected
             .SumAsync(la => la.TotalDays);
 
         var totalAvailable = allocation.AnnualLeaveAllocation + carriedOver;
@@ -119,7 +122,9 @@ public class LeaveBalanceService
         var usedThisYear = await _context.LeaveApplications
             .Where(la => la.UserId == userId
                 && la.LeaveType == LeaveType.SickLeave
-                && la.StartDate.Year == year)
+                && la.StartDate.Year == year
+                && !la.IsWithdrawn // Exclude withdrawn
+                && (la.IsPending || la.IsApproved)) // Exclude rejected
             .SumAsync(la => la.TotalDays);
 
         var remaining = allocation.SickLeaveAllocation - usedThisYear;
