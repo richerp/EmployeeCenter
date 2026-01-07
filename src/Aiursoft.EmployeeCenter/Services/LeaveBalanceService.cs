@@ -99,7 +99,8 @@ public class LeaveBalanceService
     public async Task<decimal> GetRemainingAnnualLeaveAsync(string userId, int year)
     {
         var (carriedRemaining, currentRemaining) = await GetRemainingByTypeAsync(userId, year);
-        return carriedRemaining + currentRemaining;
+        var total = carriedRemaining + currentRemaining;
+        return Math.Max(0m, total); // Prevent negative balances
     }
 
     /// <summary>
