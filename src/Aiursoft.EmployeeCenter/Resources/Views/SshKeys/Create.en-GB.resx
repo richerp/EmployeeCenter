@@ -34,7 +34,7 @@
     <value>e.g. Work Laptop</value>
   </data>
   <data name="Make sure to paste the entire public key, including the type and any comments." xml:space="preserve">
-    <value>Ensure you paste the entire public key, including the type and any comments.</value>
+    <value>Make sure to paste the entire public key, including the type and any comments.</value>
   </data>
   <data name="New SSH Key" xml:space="preserve">
     <value>New SSH Key</value>

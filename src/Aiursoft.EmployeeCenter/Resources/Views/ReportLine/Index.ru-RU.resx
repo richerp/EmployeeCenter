@@ -18,32 +18,32 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Target" xml:space="preserve">
-    <value>Цель</value>
-  </data>
-  <data name="Legend" xml:space="preserve">
+      <data name="Legend" xml:space="preserve">
     <value>Легенда</value>
-  </data>
-  <data name="Peer" xml:space="preserve">
-    <value>Коллега</value>
-  </data>
-  <data name="Search Person" xml:space="preserve">
-    <value>Поиск сотрудника</value>
-  </data>
-  <data name="Report Line" xml:space="preserve">
-    <value>Линия отчётности</value>
   </data>
   <data name="Manager" xml:space="preserve">
     <value>Руководитель</value>
   </data>
-  <data name="View Report Line" xml:space="preserve">
-    <value>Просмотреть цепочку отчётности</value>
+  <data name="Peer" xml:space="preserve">
+    <value>Коллега</value>
+  </data>
+  <data name="Please select a user first." xml:space="preserve">
+    <value>Сначала выберите пользователя.</value>
+  </data>
+  <data name="Report Line" xml:space="preserve">
+    <value>Линия отчётности</value>
+  </data>
+  <data name="Search Person" xml:space="preserve">
+    <value>Поиск сотрудника</value>
   </data>
   <data name="Subordinate" xml:space="preserve">
     <value>Подчинённый</value>
   </data>
-  <data name="Please select a user first." xml:space="preserve">
-    <value>Сначала выберите пользователя.</value>
+  <data name="Target" xml:space="preserve">
+    <value>Цель</value>
+  </data>
+  <data name="View Report Line" xml:space="preserve">
+    <value>Просмотреть цепочку отчётности</value>
   </data>
   <data name="Visual Report Line" xml:space="preserve">
     <value>Визуальная линия отчётности</value>

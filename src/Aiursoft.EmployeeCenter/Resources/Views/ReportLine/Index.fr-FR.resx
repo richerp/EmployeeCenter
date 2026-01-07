@@ -18,8 +18,8 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Target" xml:space="preserve">
-    <value>Cible</value>
+      <data name="Legend" xml:space="preserve">
+    <value>Légende</value>
   </data>
   <data name="Manager" xml:space="preserve">
     <value>Manager</value>
@@ -27,29 +27,29 @@
   <data name="Peer" xml:space="preserve">
     <value>Collègue</value>
   </data>
-  <data name="Subordinate" xml:space="preserve">
-    <value>Subordonné</value>
-  </data>
-  <data name="Search Person" xml:space="preserve">
-    <value>Rechercher une personne</value>
-  </data>
-  <data name="Legend" xml:space="preserve">
-    <value>Légende</value>
+  <data name="Please select a user first." xml:space="preserve">
+    <value>Veuillez d&apos;abord sélectionner un utilisateur.</value>
   </data>
   <data name="Report Line" xml:space="preserve">
     <value>Ligne hiérarchique</value>
   </data>
+  <data name="Search Person" xml:space="preserve">
+    <value>Rechercher une personne</value>
+  </data>
+  <data name="Subordinate" xml:space="preserve">
+    <value>Subordonné</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>Cible</value>
+  </data>
   <data name="View Report Line" xml:space="preserve">
     <value>Voir la ligne hiérarchique</value>
-  </data>
-  <data name="You have to log in to view report line." xml:space="preserve">
-    <value>Vous devez vous connecter pour voir la ligne de rapport.</value>
   </data>
   <data name="Visual Report Line" xml:space="preserve">
     <value>Organigramme Visuel</value>
   </data>
-  <data name="Please select a user first." xml:space="preserve">
-    <value>Veuillez d&apos;abord sélectionner un utilisateur.</value>
+  <data name="You have to log in to view report line." xml:space="preserve">
+    <value>Vous devez vous connecter pour voir la ligne de rapport.</value>
   </data>
 
 </root>

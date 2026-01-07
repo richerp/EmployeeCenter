@@ -18,14 +18,29 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Bank Account Name" xml:space="preserve">
-    <value>Account Name</value>
+      <data name="Back to Overview" xml:space="preserve">
+    <value>Torna alla panoramica</value>
   </data>
-  <data name="Bank Card Number" xml:space="preserve">
-    <value>Bank Card Number</value>
+  <data name="Change bank information" xml:space="preserve">
+    <value>Modifica le informazioni bancarie</value>
   </data>
-  <data name="Bank Name" xml:space="preserve">
-    <value>Bank name</value>
+  <data name="Change your avatar" xml:space="preserve">
+    <value>Cambia il tuo avatar</value>
+  </data>
+  <data name="Change your password" xml:space="preserve">
+    <value>Cambia la tua password</value>
+  </data>
+  <data name="Change your profile" xml:space="preserve">
+    <value>Modifica il tuo profilo</value>
+  </data>
+  <data name="Maintain Profile" xml:space="preserve">
+    <value>Gestisci il profilo</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Impostazioni</value>
+  </data>
+  <data name="SSH Keys" xml:space="preserve">
+    <value>Chiavi SSH</value>
   </data>
 
 </root>

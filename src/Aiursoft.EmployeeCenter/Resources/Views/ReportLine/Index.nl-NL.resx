@@ -18,32 +18,32 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Subordinate" xml:space="preserve">
-    <value>Ondergeschikte</value>
-  </data>
-  <data name="Target" xml:space="preserve">
-    <value>Doel</value>
-  </data>
-  <data name="Legend" xml:space="preserve">
+      <data name="Legend" xml:space="preserve">
     <value>Legenda</value>
   </data>
   <data name="Manager" xml:space="preserve">
     <value>Manager</value>
-  </data>
-  <data name="Search Person" xml:space="preserve">
-    <value>Zoek Persoon</value>
-  </data>
-  <data name="Report Line" xml:space="preserve">
-    <value>Rapportlijn</value>
-  </data>
-  <data name="View Report Line" xml:space="preserve">
-    <value>Rapportlijn bekijken</value>
   </data>
   <data name="Peer" xml:space="preserve">
     <value>Collega</value>
   </data>
   <data name="Please select a user first." xml:space="preserve">
     <value>Selecteer eerst een gebruiker.</value>
+  </data>
+  <data name="Report Line" xml:space="preserve">
+    <value>Rapportlijn</value>
+  </data>
+  <data name="Search Person" xml:space="preserve">
+    <value>Zoek Persoon</value>
+  </data>
+  <data name="Subordinate" xml:space="preserve">
+    <value>Ondergeschikte</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>Doel</value>
+  </data>
+  <data name="View Report Line" xml:space="preserve">
+    <value>Rapportlijn bekijken</value>
   </data>
   <data name="Visual Report Line" xml:space="preserve">
     <value>Visuele Rapportlijn</value>

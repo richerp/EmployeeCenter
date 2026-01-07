@@ -18,41 +18,41 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Delete" xml:space="preserve">
-    <value>حذف</value>
-  </data>
-  <data name="Back" xml:space="preserve">
-    <value>رجوع</value>
-  </data>
-  <data name="Manage Shares" xml:space="preserve">
-    <value>إدارة المشاركات</value>
-  </data>
-  <data name="Account / Username" xml:space="preserve">
+      <data name="Account / Username" xml:space="preserve">
     <value>الحساب / اسم المستخدم</value>
-  </data>
-  <data name="Password / Secret" xml:space="preserve">
-    <value>كلمة المرور / السر</value>
-  </data>
-  <data name="Edit" xml:space="preserve">
-    <value>تعديل</value>
   </data>
   <data name="Are you sure you want to delete this password?" xml:space="preserve">
     <value>هل أنت متأكد أنك تريد حذف هذه كلمة المرور؟</value>
   </data>
-  <data name="Password Details" xml:space="preserve">
-    <value>تفاصيل كلمة المرور</value>
-  </data>
-  <data name="Created on" xml:space="preserve">
-    <value>تم الإنشاء في</value>
+  <data name="Back" xml:space="preserve">
+    <value>رجوع</value>
   </data>
   <data name="Created by" xml:space="preserve">
     <value>تم إنشاؤه بواسطة</value>
   </data>
-  <data name="Note" xml:space="preserve">
-    <value>ملاحظة</value>
+  <data name="Created on" xml:space="preserve">
+    <value>تم الإنشاء في</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="Manage Shares" xml:space="preserve">
+    <value>إدارة المشاركات</value>
   </data>
   <data name="No notes." xml:space="preserve">
     <value>لا توجد ملاحظات.</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>ملاحظة</value>
+  </data>
+  <data name="Password / Secret" xml:space="preserve">
+    <value>كلمة المرور / السر</value>
+  </data>
+  <data name="Password Details" xml:space="preserve">
+    <value>تفاصيل كلمة المرور</value>
   </data>
 
 </root>

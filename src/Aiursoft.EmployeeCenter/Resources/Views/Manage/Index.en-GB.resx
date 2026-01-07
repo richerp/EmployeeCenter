@@ -21,14 +21,8 @@
       <data name="Account Management" xml:space="preserve">
     <value>Account Management</value>
   </data>
-  <data name="auth provider" xml:space="preserve">
-    <value>authentication provider</value>
-  </data>
-  <data name="Avatar settings" xml:space="preserve">
-    <value>Avatar settings</value>
-  </data>
   <data name="Change bank information" xml:space="preserve">
-    <value>Change bank information</value>
+    <value>Change bank details</value>
   </data>
   <data name="Change your account settings" xml:space="preserve">
     <value>Change your account settings</value>
@@ -43,25 +37,13 @@
     <value>Change your profile</value>
   </data>
   <data name="Maintain Profile" xml:space="preserve">
-    <value>Manage Profile</value>
-  </data>
-  <data name="Password" xml:space="preserve">
-    <value>Password</value>
-  </data>
-  <data name="Profile" xml:space="preserve">
-    <value>Profile</value>
+    <value>Maintain Profile</value>
   </data>
   <data name="SSH Keys" xml:space="preserve">
     <value>SSH Keys</value>
   </data>
   <data name="Success!" xml:space="preserve">
     <value>Success!</value>
-  </data>
-  <data name="You can&apos;t change your password because local authentication is disabled. Please edit your profile from the" xml:space="preserve">
-    <value>You cannot change your password because local authentication is disabled. Please edit your profile from the</value>
-  </data>
-  <data name="You can&apos;t change your password because local authentication is disabled. Please edit your profile from the auth provider." xml:space="preserve">
-    <value>You cannot change your password because local authentication is disabled. Please edit your profile from the auth provider.</value>
   </data>
 
 </root>

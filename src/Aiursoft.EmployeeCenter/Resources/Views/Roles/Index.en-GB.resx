@@ -49,7 +49,7 @@
     <value>Select a role to view its details, or use the actions to edit or delete.</value>
   </data>
   <data name="User Count" xml:space="preserve">
-    <value>Number of Users</value>
+    <value>User Count</value>
   </data>
 
 </root>

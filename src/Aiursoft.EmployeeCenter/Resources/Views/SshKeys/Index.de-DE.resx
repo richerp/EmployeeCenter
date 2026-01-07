@@ -21,44 +21,50 @@
       <data name="Actions" xml:space="preserve">
     <value>Aktionen</value>
   </data>
-  <data name="Name" xml:space="preserve">
-    <value>Name</value>
-  </data>
   <data name="Add New Key" xml:space="preserve">
     <value>Neuen Schlüssel hinzufügen</value>
-  </data>
-  <data name="Created Time" xml:space="preserve">
-    <value>Erstellungszeit</value>
-  </data>
-  <data name="Public Key" xml:space="preserve">
-    <value>Öffentlicher Schlüssel</value>
-  </data>
-  <data name="SSH Keys for" xml:space="preserve">
-    <value>SSH-Schlüssel für</value>
-  </data>
-  <data name="Manage your public SSH keys for server access." xml:space="preserve">
-    <value>Verwalten Sie Ihre öffentlichen SSH-Schlüssel für den Serverzugriff.</value>
-  </data>
-  <data name="Edit" xml:space="preserve">
-    <value>Bearbeiten</value>
-  </data>
-  <data name="Delete" xml:space="preserve">
-    <value>Löschen</value>
-  </data>
-  <data name="Confirm Delete" xml:space="preserve">
-    <value>Löschen bestätigen</value>
-  </data>
-  <data name="Cancel" xml:space="preserve">
-    <value>Abbrechen</value>
-  </data>
-  <data name="No SSH keys found." xml:space="preserve">
-    <value>Keine SSH-Schlüssel gefunden.</value>
   </data>
   <data name="Back to Settings" xml:space="preserve">
     <value>Zurück zu den Einstellungen</value>
   </data>
+  <data name="Back to User Info" xml:space="preserve">
+    <value>Zurück zu Benutzerinformationen</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Abbrechen</value>
+  </data>
+  <data name="Confirm Delete" xml:space="preserve">
+    <value>Löschen bestätigen</value>
+  </data>
+  <data name="Created Time" xml:space="preserve">
+    <value>Erstellungszeit</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Löschen</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Bearbeiten</value>
+  </data>
+  <data name="Manage your public SSH keys for server access." xml:space="preserve">
+    <value>Verwalten Sie Ihre öffentlichen SSH-Schlüssel für den Serverzugriff.</value>
+  </data>
+  <data name="Manage your SSH Key" xml:space="preserve">
+    <value>Ihren SSH-Schlüssel verwalten</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="No SSH keys found." xml:space="preserve">
+    <value>Keine SSH-Schlüssel gefunden.</value>
+  </data>
+  <data name="Public Key" xml:space="preserve">
+    <value>Öffentlicher Schlüssel</value>
+  </data>
   <data name="Public SSH Keys" xml:space="preserve">
     <value>Öffentliche SSH-Schlüssel</value>
+  </data>
+  <data name="SSH Keys for" xml:space="preserve">
+    <value>SSH-Schlüssel für</value>
   </data>
 
 </root>

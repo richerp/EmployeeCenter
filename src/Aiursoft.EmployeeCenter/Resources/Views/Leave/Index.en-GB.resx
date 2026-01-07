@@ -21,56 +21,32 @@
       <data name="12 days paid annual leave per year" xml:space="preserve">
     <value>12 days paid annual leave per year</value>
   </data>
-  <data name="12 days per year, granted on January 1st" xml:space="preserve">
-    <value>12 days per year, granted on January 1st</value>
-  </data>
   <data name="7 days paid sick leave per year" xml:space="preserve">
     <value>7 days paid sick leave per year</value>
   </data>
-  <data name="7 days per year" xml:space="preserve">
-    <value>7 days per year</value>
-  </data>
   <data name="Actions" xml:space="preserve">
     <value>Actions</value>
-  </data>
-  <data name="All your leave applications, including pending and historical records." xml:space="preserve">
-    <value>All your leave applications, including pending and historical records.</value>
-  </data>
-  <data name="Allocation" xml:space="preserve">
-    <value>Allocation</value>
   </data>
   <data name="Annual Leave" xml:space="preserve">
     <value>Annual Leave</value>
   </data>
   <data name="Apply for Leave" xml:space="preserve">
-    <value>Apply for leave</value>
+    <value>Apply for Leave</value>
   </data>
   <data name="Approved" xml:space="preserve">
     <value>Approved</value>
   </data>
-  <data name="Are you sure you want to withdraw this leave application?" xml:space="preserve">
-    <value>Are you sure you want to withdraw this leave application?</value>
-  </data>
   <data name="awaiting approval" xml:space="preserve">
     <value>awaiting approval</value>
   </data>
-  <data name="Cannot carry over to the third year" xml:space="preserve">
-    <value>Cannot carry over to the third year</value>
-  </data>
   <data name="Carried Over" xml:space="preserve">
-    <value>Carried over</value>
+    <value>Carried Over</value>
   </data>
   <data name="days" xml:space="preserve">
     <value>days</value>
   </data>
   <data name="days away" xml:space="preserve">
     <value>days away</value>
-  </data>
-  <data name="Does not carry over to the next year" xml:space="preserve">
-    <value>Does not carry over to the next year</value>
-  </data>
-  <data name="End Date" xml:space="preserve">
-    <value>End Date</value>
   </data>
   <data name="Have a wonderful break!" xml:space="preserve">
     <value>Have a wonderful break!</value>
@@ -90,14 +66,8 @@
   <data name="Leave Policy" xml:space="preserve">
     <value>Leave Policy</value>
   </data>
-  <data name="Leave Type" xml:space="preserve">
-    <value>Leave Type</value>
-  </data>
   <data name="Maximum carryover: 12 days (expires after 1 year)" xml:space="preserve">
     <value>Maximum carryover: 12 days (expires after 1 year)</value>
-  </data>
-  <data name="Mental health: No diagnosis required" xml:space="preserve">
-    <value>Mental health: No diagnosis required</value>
   </data>
   <data name="Mental health: no documents required" xml:space="preserve">
     <value>Mental health: no documents required</value>
@@ -108,14 +78,8 @@
   <data name="Next Leave" xml:space="preserve">
     <value>Next Leave</value>
   </data>
-  <data name="No approval required, but must submit supporting documents after leave" xml:space="preserve">
-    <value>No approval required, but supporting documents must be submitted after the leave period.</value>
-  </data>
   <data name="No approval required, can be used immediately" xml:space="preserve">
     <value>No approval required, can be used immediately</value>
-  </data>
-  <data name="No leave applications yet." xml:space="preserve">
-    <value>No leave applications yet.</value>
   </data>
   <data name="No leave history found." xml:space="preserve">
     <value>No leave history found.</value>
@@ -129,17 +93,11 @@
   <data name="Pending" xml:space="preserve">
     <value>Pending</value>
   </data>
-  <data name="Pending Approval" xml:space="preserve">
-    <value>Pending Approval</value>
-  </data>
   <data name="Pending Requests" xml:space="preserve">
     <value>Pending Requests</value>
   </data>
   <data name="Period" xml:space="preserve">
     <value>Period</value>
-  </data>
-  <data name="Physical illness: Hospital diagnosis required" xml:space="preserve">
-    <value>Physical illness: Hospital diagnosis required</value>
   </data>
   <data name="Physical illness: medical certificate required" xml:space="preserve">
     <value>Physical illness: medical certificate required</value>
@@ -153,17 +111,8 @@
   <data name="Rejected" xml:space="preserve">
     <value>Rejected</value>
   </data>
-  <data name="Remaining Annual Leave Days" xml:space="preserve">
-    <value>Remaining Annual Leave Days</value>
-  </data>
-  <data name="Remaining Sick Leave Days" xml:space="preserve">
-    <value>Remaining Sick Leave Days</value>
-  </data>
   <data name="requests" xml:space="preserve">
     <value>requests</value>
-  </data>
-  <data name="Requires approval before use" xml:space="preserve">
-    <value>Requires approval before use</value>
   </data>
   <data name="Requires manager approval before use" xml:space="preserve">
     <value>Requires manager approval before use</value>
@@ -171,32 +120,20 @@
   <data name="Sick Leave" xml:space="preserve">
     <value>Sick Leave</value>
   </data>
-  <data name="Start Date" xml:space="preserve">
-    <value>Start Date</value>
-  </data>
   <data name="Status" xml:space="preserve">
     <value>Status</value>
   </data>
   <data name="Submitted" xml:space="preserve">
     <value>Submitted</value>
   </data>
-  <data name="Submitted At" xml:space="preserve">
-    <value>Submitted At</value>
-  </data>
   <data name="Supporting documents required after leave ends" xml:space="preserve">
     <value>Supporting documents required after leave ends</value>
-  </data>
-  <data name="Total Days" xml:space="preserve">
-    <value>Total Days</value>
   </data>
   <data name="Type" xml:space="preserve">
     <value>Type</value>
   </data>
   <data name="Unauthorized absences are considered absence without leave and will result in salary deductions and disciplinary action." xml:space="preserve">
     <value>Unauthorized absences are considered absence without leave and will result in salary deductions and disciplinary action.</value>
-  </data>
-  <data name="Unused annual leave can carry over to the next year" xml:space="preserve">
-    <value>Unused annual leave can be carried over to the next year</value>
   </data>
   <data name="Unused days carry over to next year" xml:space="preserve">
     <value>Unused days carry over to the next year</value>
@@ -209,9 +146,6 @@
   </data>
   <data name="Withdrawn" xml:space="preserve">
     <value>Withdrawn</value>
-  </data>
-  <data name="You have no remaining leave days to apply." xml:space="preserve">
-    <value>You have no remaining leave days to apply.</value>
   </data>
   <data name="Your leave applications and their status" xml:space="preserve">
     <value>Your leave applications and their status</value>

@@ -18,26 +18,29 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Confirm Password" xml:space="preserve">
-    <value>Confirm Password</value>
+      <data name="Back to Overview" xml:space="preserve">
+    <value>العودة إلى المعاينة</value>
   </data>
-  <data name="Email Address (For login)" xml:space="preserve">
-    <value>Email Address (For login)</value>
+  <data name="Change bank information" xml:space="preserve">
+    <value>تغيير معلومات الحساب البنكي</value>
   </data>
-  <data name="Password" xml:space="preserve">
-    <value>Password</value>
+  <data name="Change your avatar" xml:space="preserve">
+    <value>غيّر صورتك الرمزية</value>
   </data>
-  <data name="The {0} is not a valid email address." xml:space="preserve">
-    <value>The {0} is not a valid email address.</value>
+  <data name="Change your password" xml:space="preserve">
+    <value>تغيير كلمة المرور الخاصة بك</value>
   </data>
-  <data name="The {0} is required." xml:space="preserve">
-    <value>The {0} is required.</value>
+  <data name="Change your profile" xml:space="preserve">
+    <value>تغيير ملفك الشخصي</value>
   </data>
-  <data name="The {0} must be at least {2} and at max {1} characters long." xml:space="preserve">
-    <value>The {0} must be at least {2} and at most {1} characters long.</value>
+  <data name="Maintain Profile" xml:space="preserve">
+    <value>الحفاظ على الملف الشخصي</value>
   </data>
-  <data name="The password and confirmation password do not match." xml:space="preserve">
-    <value>The password and confirmation password do not match.</value>
+  <data name="Settings" xml:space="preserve">
+    <value>الإعدادات</value>
+  </data>
+  <data name="SSH Keys" xml:space="preserve">
+    <value>مفاتيح SSH</value>
   </data>
 
 </root>

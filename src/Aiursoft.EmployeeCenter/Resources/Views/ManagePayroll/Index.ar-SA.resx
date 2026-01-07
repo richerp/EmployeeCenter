@@ -18,8 +18,23 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="User" xml:space="preserve">
-    <value>المستخدم</value>
+      <data name="A list of all issued payroll records in the system." xml:space="preserve">
+    <value>قائمة بجميع سجلات الرواتب الصادرة في النظام.</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>الإجراءات</value>
+  </data>
+  <data name="All Payrolls" xml:space="preserve">
+    <value>جميع كشوف المرتبات</value>
+  </data>
+  <data name="Created Time" xml:space="preserve">
+    <value>وقت الإنشاء</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>التفاصيل</value>
+  </data>
+  <data name="Issue new payroll" xml:space="preserve">
+    <value>إصدار كشف راتب جديد</value>
   </data>
   <data name="Manage Payrolls" xml:space="preserve">
     <value>إدارة الرواتب</value>
@@ -30,23 +45,8 @@
   <data name="Total Amount" xml:space="preserve">
     <value>المبلغ الإجمالي</value>
   </data>
-  <data name="All Payrolls" xml:space="preserve">
-    <value>جميع كشوف المرتبات</value>
-  </data>
-  <data name="Created Time" xml:space="preserve">
-    <value>وقت الإنشاء</value>
-  </data>
-  <data name="Issue new payroll" xml:space="preserve">
-    <value>إصدار كشف راتب جديد</value>
-  </data>
-  <data name="Actions" xml:space="preserve">
-    <value>الإجراءات</value>
-  </data>
-  <data name="A list of all issued payroll records in the system." xml:space="preserve">
-    <value>قائمة بجميع سجلات الرواتب الصادرة في النظام.</value>
-  </data>
-  <data name="Details" xml:space="preserve">
-    <value>التفاصيل</value>
+  <data name="User" xml:space="preserve">
+    <value>المستخدم</value>
   </data>
 
 </root>

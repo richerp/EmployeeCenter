@@ -22,7 +22,7 @@
     <value>Actual Payment</value>
   </data>
   <data name="Actual Salary (Net)" xml:space="preserve">
-    <value>Net Salary</value>
+    <value>Actual Salary (Net)</value>
   </data>
   <data name="Administrative Fines" xml:space="preserve">
     <value>Administrative Fines</value>
@@ -43,16 +43,16 @@
     <value>Bank Name</value>
   </data>
   <data name="Base Salary" xml:space="preserve">
-    <value>Basic Salary</value>
+    <value>Base Salary</value>
   </data>
   <data name="Basic Info" xml:space="preserve">
-    <value>Basic Information</value>
+    <value>Basic Info</value>
   </data>
   <data name="Category" xml:space="preserve">
     <value>Category</value>
   </data>
   <data name="Company Cost" xml:space="preserve">
-    <value>Employer&apos;s Costs</value>
+    <value>Company Cost</value>
   </data>
   <data name="Deductions" xml:space="preserve">
     <value>Deductions</value>
@@ -67,7 +67,7 @@
     <value>Employee Name</value>
   </data>
   <data name="Full Attendance" xml:space="preserve">
-    <value>Full Attendance Bonus</value>
+    <value>Full Attendance</value>
   </data>
   <data name="Housing Fund" xml:space="preserve">
     <value>Housing Fund</value>
@@ -81,14 +81,8 @@
   <data name="Income Tax" xml:space="preserve">
     <value>Income Tax</value>
   </data>
-  <data name="Information" xml:space="preserve">
-    <value>Information</value>
-  </data>
   <data name="Insurances (Personal)" xml:space="preserve">
-    <value>Insurance (Personal)</value>
-  </data>
-  <data name="Issue Date" xml:space="preserve">
-    <value>Issue Date</value>
+    <value>Personal Insurances</value>
   </data>
   <data name="Item" xml:space="preserve">
     <value>Item</value>
@@ -97,10 +91,10 @@
     <value>Job Level</value>
   </data>
   <data name="Job Salary" xml:space="preserve">
-    <value>Post Salary</value>
+    <value>Job Salary</value>
   </data>
   <data name="Late / Early Leave" xml:space="preserve">
-    <value>Late / Early Departure</value>
+    <value>Late/Early Leave</value>
   </data>
   <data name="Maternity (Company)" xml:space="preserve">
     <value>Maternity (Company)</value>
@@ -120,26 +114,23 @@
   <data name="Overtime Pay" xml:space="preserve">
     <value>Overtime Pay</value>
   </data>
-  <data name="Payroll Content" xml:space="preserve">
-    <value>Payroll Details</value>
-  </data>
   <data name="Payroll Details" xml:space="preserve">
     <value>Payroll Details</value>
   </data>
   <data name="Payroll period" xml:space="preserve">
-    <value>Pay period</value>
+    <value>Payroll period</value>
   </data>
   <data name="Pension" xml:space="preserve">
     <value>Pension</value>
   </data>
   <data name="Pension (Company)" xml:space="preserve">
-    <value>Pension (Employer)</value>
+    <value>Pension (Company)</value>
   </data>
   <data name="Performance Bonus" xml:space="preserve">
     <value>Performance Bonus</value>
   </data>
   <data name="Personal Income Tax" xml:space="preserve">
-    <value>Income Tax</value>
+    <value>Personal Income Tax</value>
   </data>
   <data name="Personal Insurance" xml:space="preserve">
     <value>Personal Insurance</value>
@@ -148,10 +139,10 @@
     <value>Print</value>
   </data>
   <data name="Remark" xml:space="preserve">
-    <value>Remarks</value>
+    <value>Remark</value>
   </data>
   <data name="Sick / Personal Leave" xml:space="preserve">
-    <value>Sick / Personal Leave</value>
+    <value>Sick or Personal Leave</value>
   </data>
   <data name="Special Additional Deduction" xml:space="preserve">
     <value>Special Additional Deduction</value>
@@ -170,9 +161,6 @@
   </data>
   <data name="Title" xml:space="preserve">
     <value>Title</value>
-  </data>
-  <data name="Total Amount" xml:space="preserve">
-    <value>Total Amount</value>
   </data>
   <data name="Total Company Cost" xml:space="preserve">
     <value>Total Company Cost</value>
@@ -193,7 +181,7 @@
     <value>Work Injury (Company)</value>
   </data>
   <data name="Your actual salary is calculated as:" xml:space="preserve">
-    <value>Your actual salary is calculated as follows:</value>
+    <value>Your actual salary is calculated as:</value>
   </data>
 
 </root>

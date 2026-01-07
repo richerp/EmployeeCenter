@@ -18,26 +18,26 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Create" xml:space="preserve">
-    <value>Tạo</value>
-  </data>
-  <data name="Title" xml:space="preserve">
-    <value>Tiêu đề</value>
+      <data name="Account / Username" xml:space="preserve">
+    <value>Tài khoản / Tên đăng nhập</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Hủy</value>
   </data>
-  <data name="Note" xml:space="preserve">
-    <value>Ghi chú</value>
+  <data name="Create" xml:space="preserve">
+    <value>Tạo</value>
   </data>
   <data name="Create New Password" xml:space="preserve">
     <value>Tạo Mật Khẩu Mới</value>
   </data>
+  <data name="Note" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
   <data name="Password / Secret" xml:space="preserve">
     <value>Mật khẩu / Mã bí mật</value>
   </data>
-  <data name="Account / Username" xml:space="preserve">
-    <value>Tài khoản / Tên đăng nhập</value>
+  <data name="Title" xml:space="preserve">
+    <value>Tiêu đề</value>
   </data>
 
 </root>

@@ -54,17 +54,11 @@
   <data name="currently absent" xml:space="preserve">
     <value>currently absent</value>
   </data>
-  <data name="days" xml:space="preserve">
-    <value>days</value>
-  </data>
   <data name="Days" xml:space="preserve">
     <value>Days</value>
   </data>
   <data name="Decision" xml:space="preserve">
     <value>Decision</value>
-  </data>
-  <data name="End Date" xml:space="preserve">
-    <value>End Date</value>
   </data>
   <data name="If rejected by mistake:" xml:space="preserve">
     <value>If rejected by mistake:</value>
@@ -74,15 +68,6 @@
   </data>
   <data name="Important: Approval Decisions Are Final" xml:space="preserve">
     <value>Important: Approval Decisions Are Final</value>
-  </data>
-  <data name="Incoming Leave Applications" xml:space="preserve">
-    <value>Incoming Leave Applications</value>
-  </data>
-  <data name="Leave applications requiring your review." xml:space="preserve">
-    <value>Leave applications requiring your review.</value>
-  </data>
-  <data name="Leave Type" xml:space="preserve">
-    <value>Leave Type</value>
   </data>
   <data name="No approval history." xml:space="preserve">
     <value>No approval history.</value>
@@ -120,14 +105,8 @@
   <data name="Sick Leave" xml:space="preserve">
     <value>Sick Leave</value>
   </data>
-  <data name="Start Date" xml:space="preserve">
-    <value>Start Date</value>
-  </data>
   <data name="Submitted" xml:space="preserve">
     <value>Submitted</value>
-  </data>
-  <data name="Submitted At" xml:space="preserve">
-    <value>Submitted At</value>
   </data>
   <data name="Team on Leave" xml:space="preserve">
     <value>Team on Leave</value>
@@ -140,9 +119,6 @@
   </data>
   <data name="to" xml:space="preserve">
     <value>to</value>
-  </data>
-  <data name="Total Days" xml:space="preserve">
-    <value>Total Days</value>
   </data>
   <data name="Type" xml:space="preserve">
     <value>Type</value>

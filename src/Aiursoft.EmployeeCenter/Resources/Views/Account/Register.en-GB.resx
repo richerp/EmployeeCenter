@@ -27,9 +27,6 @@
   <data name="Confirm your password" xml:space="preserve">
     <value>Confirm your password</value>
   </data>
-  <data name="Create a new account." xml:space="preserve">
-    <value>Create a new account.</value>
-  </data>
   <data name="Create a password" xml:space="preserve">
     <value>Create a password</value>
   </data>
@@ -46,13 +43,10 @@
     <value>Get Started</value>
   </data>
   <data name="Join us now to start your journey." xml:space="preserve">
-    <value>Join us now to begin your journey.</value>
+    <value>Join us now to start your journey.</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Password</value>
-  </data>
-  <data name="Register" xml:space="preserve">
-    <value>Register</value>
   </data>
   <data name="Sign in" xml:space="preserve">
     <value>Sign in</value>

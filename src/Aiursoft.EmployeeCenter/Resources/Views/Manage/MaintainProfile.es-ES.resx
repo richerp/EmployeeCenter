@@ -18,23 +18,11 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Maintain Profile" xml:space="preserve">
-    <value>Mantener Perfil</value>
+      <data name="Back" xml:space="preserve">
+    <value>Volver</value>
   </data>
   <data name="Back to Settings" xml:space="preserve">
     <value>Volver a Configuración</value>
-  </data>
-  <data name="Personal and Bank Information" xml:space="preserve">
-    <value>Información personal y bancaria</value>
-  </data>
-  <data name="Legal Name" xml:space="preserve">
-    <value>Nombre legal</value>
-  </data>
-  <data name="Phone Number" xml:space="preserve">
-    <value>Número de teléfono</value>
-  </data>
-  <data name="Bank Name" xml:space="preserve">
-    <value>Nombre del banco</value>
   </data>
   <data name="Bank Account" xml:space="preserve">
     <value>Cuenta bancaria</value>
@@ -42,11 +30,23 @@
   <data name="Bank Account Name" xml:space="preserve">
     <value>Nombre de cuenta bancaria</value>
   </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Nombre del banco</value>
+  </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>Nombre legal</value>
+  </data>
+  <data name="Maintain Profile" xml:space="preserve">
+    <value>Mantener Perfil</value>
+  </data>
+  <data name="Personal and Bank Information" xml:space="preserve">
+    <value>Información personal y bancaria</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>Número de teléfono</value>
+  </data>
   <data name="Save Profile" xml:space="preserve">
     <value>Guardar perfil</value>
-  </data>
-  <data name="Back" xml:space="preserve">
-    <value>Volver</value>
   </data>
 
 </root>

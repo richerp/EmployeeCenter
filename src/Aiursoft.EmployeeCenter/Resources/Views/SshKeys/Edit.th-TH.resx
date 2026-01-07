@@ -21,17 +21,17 @@
       <data name="Cancel" xml:space="preserve">
     <value>ยกเลิก</value>
   </data>
-  <data name="Save Changes" xml:space="preserve">
-    <value>บันทึกการเปลี่ยนแปลง</value>
-  </data>
   <data name="Edit SSH Key" xml:space="preserve">
     <value>แก้ไขคีย์ SSH</value>
   </data>
-  <data name="Update SSH Key" xml:space="preserve">
-    <value>อัปเดตคีย์ SSH</value>
-  </data>
   <data name="Modify your public SSH key details." xml:space="preserve">
     <value>แก้ไขรายละเอียดคีย์ SSH สาธารณะของคุณ</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>บันทึกการเปลี่ยนแปลง</value>
+  </data>
+  <data name="Update SSH Key" xml:space="preserve">
+    <value>อัปเดตคีย์ SSH</value>
   </data>
 
 </root>

@@ -18,20 +18,35 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Created Time" xml:space="preserve">
-    <value>Erstellungszeit</value>
-  </data>
-  <data name="My Payrolls" xml:space="preserve">
-    <value>Meine Gehaltsabrechnungen</value>
+      <data name="A list of all your historical payroll records." xml:space="preserve">
+    <value>Eine Liste aller Ihrer historischen Gehaltsabrechnungen.</value>
   </data>
   <data name="Actions" xml:space="preserve">
     <value>Aktionen</value>
   </data>
-  <data name="Historical Payrolls" xml:space="preserve">
-    <value>Historische Gehaltsabrechnungen</value>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Grundgehalt</value>
+  </data>
+  <data name="Created Time" xml:space="preserve">
+    <value>Erstellungszeit</value>
   </data>
   <data name="Details" xml:space="preserve">
     <value>Details</value>
+  </data>
+  <data name="Historical Payrolls" xml:space="preserve">
+    <value>Historische Gehaltsabrechnungen</value>
+  </data>
+  <data name="My Payrolls" xml:space="preserve">
+    <value>Meine Gehaltsabrechnungen</value>
+  </data>
+  <data name="Net Salary (Actual)" xml:space="preserve">
+    <value>Netto-Gehalt (Tatsächlich)</value>
+  </data>
+  <data name="Reset Zoom" xml:space="preserve">
+    <value>Zoom zurücksetzen</value>
+  </data>
+  <data name="Salary Trend" xml:space="preserve">
+    <value>Gehaltsentwicklung</value>
   </data>
   <data name="Target Month" xml:space="preserve">
     <value>Zielmonat</value>
@@ -39,8 +54,8 @@
   <data name="Total Amount" xml:space="preserve">
     <value>Gesamtbetrag</value>
   </data>
-  <data name="A list of all your historical payroll records." xml:space="preserve">
-    <value>Eine Liste aller Ihrer historischen Gehaltsabrechnungen.</value>
+  <data name="Track your salary progression and promotions over time" xml:space="preserve">
+    <value>Verfolgen Sie Ihre Gehaltsentwicklung und Beförderungen im Laufe der Zeit</value>
   </data>
 
 </root>

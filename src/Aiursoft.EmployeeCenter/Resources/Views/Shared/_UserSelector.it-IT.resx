@@ -24,11 +24,11 @@
   <data name="No users found" xml:space="preserve">
     <value>Nessun utente trovato</value>
   </data>
-  <data name="Type 3+ characters to search..." xml:space="preserve">
-    <value>Digita almeno 3 caratteri per cercare...</value>
-  </data>
   <data name="Search Manager" xml:space="preserve">
     <value>Cerca Responsabile</value>
+  </data>
+  <data name="Type 3+ characters to search..." xml:space="preserve">
+    <value>Digita almeno 3 caratteri per cercare...</value>
   </data>
 
 </root>

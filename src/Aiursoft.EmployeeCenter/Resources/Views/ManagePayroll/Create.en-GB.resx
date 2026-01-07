@@ -19,19 +19,16 @@
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
       <data name="Actual Payment" xml:space="preserve">
-    <value>Actual Payment</value>
+    <value>Actual Salary (Net)</value>
   </data>
   <data name="Actual Salary (Net)" xml:space="preserve">
-    <value>Net Salary</value>
+    <value>Actual Salary (Net)</value>
   </data>
   <data name="Administrative Fines" xml:space="preserve">
     <value>Administrative Fines</value>
   </data>
   <data name="Attendance &amp; Penalties" xml:space="preserve">
     <value>Attendance &amp; Penalties</value>
-  </data>
-  <data name="Back to List" xml:space="preserve">
-    <value>Back to List</value>
   </data>
   <data name="Bank Account" xml:space="preserve">
     <value>Bank Account</value>
@@ -40,7 +37,7 @@
     <value>Bank Name</value>
   </data>
   <data name="Base Salary" xml:space="preserve">
-    <value>Basic Salary</value>
+    <value>Base Salary</value>
   </data>
   <data name="Bonus for no absence" xml:space="preserve">
     <value>Bonus for no absence</value>
@@ -52,7 +49,7 @@
     <value>Calculated pre-paid tax</value>
   </data>
   <data name="Calculation Formula Graph" xml:space="preserve">
-    <value>Calculation Formula Diagram</value>
+    <value>Calculation Formula Graph</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancel</value>
@@ -61,16 +58,13 @@
     <value>Category</value>
   </data>
   <data name="Company Cost" xml:space="preserve">
-    <value>Employer&apos;s Costs</value>
+    <value>Company Cost</value>
   </data>
   <data name="Company Paid Insurances" xml:space="preserve">
-    <value>Employer&apos;s Insurance Contributions</value>
+    <value>Company Paid Insurances</value>
   </data>
   <data name="Compliance Payroll Table" xml:space="preserve">
-    <value>Statutory Payroll Table</value>
-  </data>
-  <data name="Content (Markdown)" xml:space="preserve">
-    <value>Content (Markdown)</value>
+    <value>Compliance Payroll Table</value>
   </data>
   <data name="Contracted basic salary" xml:space="preserve">
     <value>Contracted basic salary</value>
@@ -96,11 +90,8 @@
   <data name="Enter as negative value" xml:space="preserve">
     <value>Enter as a negative value</value>
   </data>
-  <data name="Enter payroll details in Markdown format..." xml:space="preserve">
-    <value>Enter payroll details in Markdown format...</value>
-  </data>
   <data name="Full Attendance" xml:space="preserve">
-    <value>Full Attendance Bonus</value>
+    <value>Full Attendance</value>
   </data>
   <data name="Housing Fund" xml:space="preserve">
     <value>Housing Fund</value>
@@ -112,10 +103,10 @@
     <value>Income Tax</value>
   </data>
   <data name="Insurances (Personal)" xml:space="preserve">
-    <value>Insurance Contributions (Employee)</value>
+    <value>Personal Insurance</value>
   </data>
   <data name="Issue New Payroll" xml:space="preserve">
-    <value>Create New Payroll</value>
+    <value>Issue New Payroll</value>
   </data>
   <data name="Issue Payroll" xml:space="preserve">
     <value>Issue Payroll</value>
@@ -124,7 +115,7 @@
     <value>Item</value>
   </data>
   <data name="Job Salary" xml:space="preserve">
-    <value>Position Salary</value>
+    <value>Job Salary</value>
   </data>
   <data name="Late / Early Leave" xml:space="preserve">
     <value>Late / Early Leave</value>
@@ -133,7 +124,7 @@
     <value>Maternity (Company)</value>
   </data>
   <data name="Meal, transport, etc." xml:space="preserve">
-    <value>Meal, travel, etc.</value>
+    <value>Meal, transport, etc.</value>
   </data>
   <data name="Medical" xml:space="preserve">
     <value>Medical</value>
@@ -142,7 +133,7 @@
     <value>Medical (Company)</value>
   </data>
   <data name="Monthly performance evaluation" xml:space="preserve">
-    <value>Monthly performance review</value>
+    <value>Monthly performance evaluation</value>
   </data>
   <data name="Optional remarks..." xml:space="preserve">
     <value>Optional remarks...</value>
@@ -156,35 +147,32 @@
   <data name="Payroll Configuration" xml:space="preserve">
     <value>Payroll Configuration</value>
   </data>
-  <data name="Payroll Details" xml:space="preserve">
-    <value>Payroll Details</value>
-  </data>
   <data name="Pension" xml:space="preserve">
     <value>Pension</value>
   </data>
   <data name="Pension (Company)" xml:space="preserve">
-    <value>Pension (Employer)</value>
+    <value>Pension (Company)</value>
   </data>
   <data name="Performance Bonus" xml:space="preserve">
     <value>Performance Bonus</value>
   </data>
   <data name="Personal Income Tax" xml:space="preserve">
-    <value>Income Tax</value>
+    <value>Personal Income Tax</value>
   </data>
   <data name="Personal Insurance" xml:space="preserve">
     <value>Personal Insurance</value>
   </data>
   <data name="Position-based salary" xml:space="preserve">
-    <value>Role-based salary</value>
+    <value>Job-related allowance</value>
   </data>
   <data name="Remark / Content" xml:space="preserve">
-    <value>Remarks / Content</value>
+    <value>Remark / Content</value>
   </data>
   <data name="Select User" xml:space="preserve">
     <value>Select User</value>
   </data>
   <data name="Sick / Personal Leave" xml:space="preserve">
-    <value>Sick Leave / Personal Leave</value>
+    <value>Sick / Personal Leave</value>
   </data>
   <data name="Special Additional Deduction" xml:space="preserve">
     <value>Special Additional Deduction</value>
@@ -198,9 +186,6 @@
   <data name="Taxable Income" xml:space="preserve">
     <value>Taxable Income</value>
   </data>
-  <data name="Total Amount" xml:space="preserve">
-    <value>Total Amount</value>
-  </data>
   <data name="Total Company Cost" xml:space="preserve">
     <value>Total Company Cost</value>
   </data>
@@ -208,7 +193,7 @@
     <value>Total Earnings</value>
   </data>
   <data name="Total Personal Insurances" xml:space="preserve">
-    <value>Total Personal Insurances</value>
+    <value>Total Personal Insurance</value>
   </data>
   <data name="Unemployment" xml:space="preserve">
     <value>Unemployment</value>
@@ -217,7 +202,7 @@
     <value>Unemployment (Company)</value>
   </data>
   <data name="usually" xml:space="preserve">
-    <value>typically</value>
+    <value>usually</value>
   </data>
   <data name="Value" xml:space="preserve">
     <value>Value</value>

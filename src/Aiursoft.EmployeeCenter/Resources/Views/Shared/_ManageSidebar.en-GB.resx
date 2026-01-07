@@ -22,7 +22,7 @@
     <value>Back to Overview</value>
   </data>
   <data name="Change bank information" xml:space="preserve">
-    <value>Change bank details</value>
+    <value>Change bank information</value>
   </data>
   <data name="Change your avatar" xml:space="preserve">
     <value>Change your avatar</value>
@@ -34,7 +34,7 @@
     <value>Change your profile</value>
   </data>
   <data name="Maintain Profile" xml:space="preserve">
-    <value>Maintain Profile</value>
+    <value>Manage Profile</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Settings</value>

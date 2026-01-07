@@ -18,20 +18,29 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Bank Account (Card Number)" xml:space="preserve">
-    <value>Bank Account (Card Number)</value>
+      <data name="Back to Overview" xml:space="preserve">
+    <value>Назад к обзору</value>
   </data>
-  <data name="Bank Account Name (Holder)" xml:space="preserve">
-    <value>Bank Account Name (Holder)</value>
+  <data name="Change bank information" xml:space="preserve">
+    <value>Изменить информацию о банке</value>
   </data>
-  <data name="Bank Name (Branch)" xml:space="preserve">
-    <value>Bank Name (Branch)</value>
+  <data name="Change your avatar" xml:space="preserve">
+    <value>Изменить свой аватар</value>
   </data>
-  <data name="Legal Name" xml:space="preserve">
-    <value>Legal Name</value>
+  <data name="Change your password" xml:space="preserve">
+    <value>Изменить пароль</value>
   </data>
-  <data name="Phone Number" xml:space="preserve">
-    <value>Phone Number</value>
+  <data name="Change your profile" xml:space="preserve">
+    <value>Изменить ваш профиль</value>
+  </data>
+  <data name="Maintain Profile" xml:space="preserve">
+    <value>Поддержание профиля</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="SSH Keys" xml:space="preserve">
+    <value>Ключи SSH</value>
   </data>
 
 </root>

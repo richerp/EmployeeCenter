@@ -25,7 +25,7 @@
     <value>An overview of the application&apos;s server environment, process, and current request context.</value>
   </data>
   <data name="Are you sure you want to restart the application? This action is irreversible and will terminate all active connections." xml:space="preserve">
-    <value>Are you sure you wish to restart the application? This action is irreversible and will terminate all active connections.</value>
+    <value>Are you sure you want to restart the application? This action is irreversible and will terminate all active connections.</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancel</value>
@@ -97,7 +97,7 @@
     <value>Restarting...</value>
   </data>
   <data name="Scheme" xml:space="preserve">
-    <value>Protocol</value>
+    <value>Scheme</value>
   </data>
   <data name="Server &amp; Process Information" xml:space="preserve">
     <value>Server &amp; Process Information</value>

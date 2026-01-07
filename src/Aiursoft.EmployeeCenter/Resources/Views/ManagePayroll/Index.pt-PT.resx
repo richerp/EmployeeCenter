@@ -18,7 +18,28 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Target Month" xml:space="preserve">
+      <data name="A list of all issued payroll records in the system." xml:space="preserve">
+    <value>Uma lista de todos os registos de vencimento emitidos no sistema.</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Ações</value>
+  </data>
+  <data name="All Payrolls" xml:space="preserve">
+    <value>Todos os Recibos de Vencimento</value>
+  </data>
+  <data name="Created Time" xml:space="preserve">
+    <value>Data de Criação</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Detalhes</value>
+  </data>
+  <data name="Issue new payroll" xml:space="preserve">
+    <value>Emitir novo recibo de vencimento</value>
+  </data>
+  <data name="Manage Payrolls" xml:space="preserve">
+    <value>Gerir Folhas de Pagamento</value>
+  </data>
+  <data name="Target Month" xml:space="preserve">
     <value>Mês Alvo</value>
   </data>
   <data name="Total Amount" xml:space="preserve">
@@ -26,27 +47,6 @@
   </data>
   <data name="User" xml:space="preserve">
     <value>Utilizador</value>
-  </data>
-  <data name="Created Time" xml:space="preserve">
-    <value>Data de Criação</value>
-  </data>
-  <data name="Manage Payrolls" xml:space="preserve">
-    <value>Gerir Folhas de Pagamento</value>
-  </data>
-  <data name="A list of all issued payroll records in the system." xml:space="preserve">
-    <value>Uma lista de todos os registos de vencimento emitidos no sistema.</value>
-  </data>
-  <data name="All Payrolls" xml:space="preserve">
-    <value>Todos os Recibos de Vencimento</value>
-  </data>
-  <data name="Issue new payroll" xml:space="preserve">
-    <value>Emitir novo recibo de vencimento</value>
-  </data>
-  <data name="Details" xml:space="preserve">
-    <value>Detalhes</value>
-  </data>
-  <data name="Actions" xml:space="preserve">
-    <value>Ações</value>
   </data>
 
 </root>

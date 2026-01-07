@@ -18,20 +18,29 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Avatar file" xml:space="preserve">
-    <value>Avatar file</value>
+      <data name="Back to Overview" xml:space="preserve">
+    <value>Volver al resumen</value>
   </data>
-  <data name="Name" xml:space="preserve">
-    <value>Name</value>
+  <data name="Change bank information" xml:space="preserve">
+    <value>Cambiar la información bancaria</value>
   </data>
-  <data name="The avatar file is invalid. Please upload it again." xml:space="preserve">
-    <value>The avatar file is invalid. Please upload it again.</value>
+  <data name="Change your avatar" xml:space="preserve">
+    <value>Cambiar tu avatar</value>
   </data>
-  <data name="The avatar file is required." xml:space="preserve">
-    <value>The avatar file is required.</value>
+  <data name="Change your password" xml:space="preserve">
+    <value>Cambiar tu contraseña</value>
   </data>
-  <data name="The name is required." xml:space="preserve">
-    <value>The name is required.</value>
+  <data name="Change your profile" xml:space="preserve">
+    <value>Cambiar tu perfil</value>
+  </data>
+  <data name="Maintain Profile" xml:space="preserve">
+    <value>Mantener perfil</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Ajustes</value>
+  </data>
+  <data name="SSH Keys" xml:space="preserve">
+    <value>Claves SSH</value>
   </data>
 
 </root>

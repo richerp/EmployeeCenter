@@ -21,29 +21,20 @@
       <data name="Account Details" xml:space="preserve">
     <value>Account Details</value>
   </data>
-  <data name="An overview of the user&apos;s profile, assigned roles, and effective permissions." xml:space="preserve">
-    <value>An overview of the user&apos;s profile, assigned roles, and effective permissions.</value>
-  </data>
   <data name="Assigned Roles" xml:space="preserve">
     <value>Assigned Roles</value>
   </data>
   <data name="Back to list" xml:space="preserve">
     <value>Back to list</value>
   </data>
-  <data name="Bank Account" xml:space="preserve">
-    <value>Bank Account</value>
-  </data>
   <data name="Bank Account (Card Number)" xml:space="preserve">
     <value>Bank Account (Card Number)</value>
   </data>
   <data name="Bank Account Name (Holder)" xml:space="preserve">
-    <value>Account name</value>
+    <value>Bank Account Name (Holder)</value>
   </data>
   <data name="Bank Information Change History" xml:space="preserve">
-    <value>Bank Details Change History</value>
-  </data>
-  <data name="Bank Name" xml:space="preserve">
-    <value>Bank Name</value>
+    <value>Bank Information Change History</value>
   </data>
   <data name="Bank Name (Branch)" xml:space="preserve">
     <value>Bank Name (Branch)</value>
@@ -52,10 +43,7 @@
     <value>Bank Name (Old -&gt; New)</value>
   </data>
   <data name="Base Salary" xml:space="preserve">
-    <value>Basic Salary</value>
-  </data>
-  <data name="Basic Information" xml:space="preserve">
-    <value>Basic Information</value>
+    <value>Base Salary</value>
   </data>
   <data name="Card Number (Old -&gt; New)" xml:space="preserve">
     <value>Card Number (Old -&gt; New)</value>
@@ -67,7 +55,7 @@
     <value>Creation Time</value>
   </data>
   <data name="Delete this User" xml:space="preserve">
-    <value>Delete this User</value>
+    <value>Delete this user</value>
   </data>
   <data name="Edit this User" xml:space="preserve">
     <value>Edit this User</value>
@@ -75,20 +63,11 @@
   <data name="Effective Permissions" xml:space="preserve">
     <value>Effective Permissions</value>
   </data>
-  <data name="Effective Permissions (from all roles)" xml:space="preserve">
-    <value>Effective Permissions (from all roles)</value>
-  </data>
-  <data name="Email" xml:space="preserve">
-    <value>Email</value>
-  </data>
   <data name="Holder (Old -&gt; New)" xml:space="preserve">
-    <value>Account Holder (Old -&gt; New)</value>
-  </data>
-  <data name="Job Level" xml:space="preserve">
-    <value>Job Level</value>
+    <value>Holder (Old -&gt; New)</value>
   </data>
   <data name="Job Level (职级)" xml:space="preserve">
-    <value>Job Grade</value>
+    <value>Job Level (职级)</value>
   </data>
   <data name="Legal Name" xml:space="preserve">
     <value>Legal Name</value>
@@ -98,9 +77,6 @@
   </data>
   <data name="Manager" xml:space="preserve">
     <value>Manager</value>
-  </data>
-  <data name="Name" xml:space="preserve">
-    <value>Name</value>
   </data>
   <data name="No change history found." xml:space="preserve">
     <value>No change history found.</value>
@@ -112,7 +88,7 @@
     <value>Profile Details</value>
   </data>
   <data name="Report Line" xml:space="preserve">
-    <value>Reporting Line</value>
+    <value>Report Line</value>
   </data>
   <data name="System" xml:space="preserve">
     <value>System</value>
@@ -127,16 +103,16 @@
     <value>Time</value>
   </data>
   <data name="Title (职务)" xml:space="preserve">
-    <value>Job title</value>
+    <value>Title (Job Role)</value>
   </data>
   <data name="User Details:" xml:space="preserve">
     <value>User Details:</value>
   </data>
   <data name="User name" xml:space="preserve">
-    <value>Username</value>
+    <value>User name</value>
   </data>
   <data name="View Report Line" xml:space="preserve">
-    <value>View Reporting Line</value>
+    <value>View Report Line</value>
   </data>
 
 </root>

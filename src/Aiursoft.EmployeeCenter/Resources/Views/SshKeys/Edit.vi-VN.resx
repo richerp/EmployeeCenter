@@ -21,17 +21,17 @@
       <data name="Cancel" xml:space="preserve">
     <value>Hủy</value>
   </data>
-  <data name="Save Changes" xml:space="preserve">
-    <value>Lưu thay đổi</value>
-  </data>
   <data name="Edit SSH Key" xml:space="preserve">
     <value>Chỉnh sửa SSH Key</value>
   </data>
-  <data name="Update SSH Key" xml:space="preserve">
-    <value>Cập nhật Khóa SSH</value>
-  </data>
   <data name="Modify your public SSH key details." xml:space="preserve">
     <value>Chỉnh sửa thông tin chi tiết khóa SSH công khai của bạn.</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>Lưu thay đổi</value>
+  </data>
+  <data name="Update SSH Key" xml:space="preserve">
+    <value>Cập nhật Khóa SSH</value>
   </data>
 
 </root>

@@ -19,19 +19,16 @@
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
       <data name="Bank Account Name" xml:space="preserve">
-    <value>Account Name</value>
+    <value>Bank Account Name</value>
   </data>
   <data name="Bank Card Number" xml:space="preserve">
     <value>Bank Card Number</value>
   </data>
   <data name="Bank Information" xml:space="preserve">
-    <value>Bank Details</value>
+    <value>Bank Information</value>
   </data>
   <data name="Bank Name (Branch)" xml:space="preserve">
     <value>Bank Name (Branch)</value>
-  </data>
-  <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
   </data>
   <data name="Change Bank Information" xml:space="preserve">
     <value>Change bank details</value>

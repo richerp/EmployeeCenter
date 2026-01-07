@@ -18,29 +18,14 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Actions" xml:space="preserve">
+      <data name="Account" xml:space="preserve">
+    <value>บัญชี</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
     <value>การดำเนินการ</value>
-  </data>
-  <data name="My Passwords" xml:space="preserve">
-    <value>รหัสผ่านของฉัน</value>
-  </data>
-  <data name="Title" xml:space="preserve">
-    <value>หัวข้อ</value>
   </data>
   <data name="Create New" xml:space="preserve">
     <value>สร้างใหม่</value>
-  </data>
-  <data name="Account" xml:space="preserve">
-    <value>บัญชี</value>
-  </data>
-  <data name="Passwords Management" xml:space="preserve">
-    <value>การจัดการรหัสผ่าน</value>
-  </data>
-  <data name="No passwords created yet." xml:space="preserve">
-    <value>ยังไม่มีการสร้างรหัสผ่านใด ๆ</value>
-  </data>
-  <data name="Manage and view shared account passwords." xml:space="preserve">
-    <value>จัดการและดูรหัสผ่านบัญชีที่แชร์</value>
   </data>
   <data name="Details" xml:space="preserve">
     <value>รายละเอียด</value>
@@ -48,26 +33,41 @@
   <data name="Edit" xml:space="preserve">
     <value>แก้ไข</value>
   </data>
-  <data name="Owner" xml:space="preserve">
-    <value>เจ้าของ</value>
+  <data name="Editable" xml:space="preserve">
+    <value>แก้ไขได้</value>
   </data>
-  <data name="Permission" xml:space="preserve">
-    <value>สิทธิ์</value>
-  </data>
-  <data name="Shared with Me" xml:space="preserve">
-    <value>แชร์กับฉัน</value>
+  <data name="Manage and view shared account passwords." xml:space="preserve">
+    <value>จัดการและดูรหัสผ่านบัญชีที่แชร์</value>
   </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>จัดการการแชร์</value>
   </data>
-  <data name="Editable" xml:space="preserve">
-    <value>แก้ไขได้</value>
+  <data name="My Passwords" xml:space="preserve">
+    <value>รหัสผ่านของฉัน</value>
+  </data>
+  <data name="No passwords created yet." xml:space="preserve">
+    <value>ยังไม่มีการสร้างรหัสผ่านใด ๆ</value>
+  </data>
+  <data name="No passwords shared with you." xml:space="preserve">
+    <value>ไม่มีรหัสผ่านที่แชร์กับคุณ</value>
+  </data>
+  <data name="Owner" xml:space="preserve">
+    <value>เจ้าของ</value>
+  </data>
+  <data name="Passwords Management" xml:space="preserve">
+    <value>การจัดการรหัสผ่าน</value>
+  </data>
+  <data name="Permission" xml:space="preserve">
+    <value>สิทธิ์</value>
   </data>
   <data name="Read Only" xml:space="preserve">
     <value>อ่านอย่างเดียว</value>
   </data>
-  <data name="No passwords shared with you." xml:space="preserve">
-    <value>ไม่มีรหัสผ่านที่แชร์กับคุณ</value>
+  <data name="Shared with Me" xml:space="preserve">
+    <value>แชร์กับฉัน</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>หัวข้อ</value>
   </data>
 
 </root>

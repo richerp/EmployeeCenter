@@ -1,10 +1,11 @@
-<?xml version='1.0' encoding='utf-8'?>
-<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:schema id="root">
-        <xs:element name="root" ns1:IsDataSet="true">
+<?xml version="1.0" encoding="utf-8"?>
 
-        </xs:element>
-    </xs:schema>
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
@@ -17,23 +18,23 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="User name" xml:space="preserve">
-    <value>اسم المستخدم</value>
+      <data name="(no role assigned)" xml:space="preserve">
+    <value>(لم يتم تعيين أي دور)</value>
   </data>
-  <data name="Roles" xml:space="preserve">
-    <value>الأدوار</value>
-  </data>
-  <data name="Manage Users" xml:space="preserve">
-    <value>إدارة المستخدمين</value>
-  </data>
-  <data name="Create a new user" xml:space="preserve">
-    <value>إنشاء مستخدم جديد</value>
+  <data name="A list of all user accounts registered in the system." xml:space="preserve">
+    <value>قائمة بكافة حسابات المستخدمين المسجلة في النظام.</value>
   </data>
   <data name="Actions" xml:space="preserve">
     <value>الإجراءات</value>
   </data>
-  <data name="Email" xml:space="preserve">
-    <value>البريد الإلكتروني</value>
+  <data name="All Users" xml:space="preserve">
+    <value>جميع المستخدمين</value>
+  </data>
+  <data name="Avatar" xml:space="preserve">
+    <value>الصورة الشخصية</value>
+  </data>
+  <data name="Create a new user" xml:space="preserve">
+    <value>إنشاء مستخدم جديد</value>
   </data>
   <data name="Delete" xml:space="preserve">
     <value>حذف</value>
@@ -41,20 +42,26 @@
   <data name="Edit" xml:space="preserve">
     <value>تعديل</value>
   </data>
+  <data name="Email" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+  </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>Job Level</value>
+  </data>
+  <data name="Manage Users" xml:space="preserve">
+    <value>إدارة المستخدمين</value>
+  </data>
   <data name="Name" xml:space="preserve">
     <value>الاسم</value>
   </data>
-  <data name="All Users" xml:space="preserve">
-    <value>جميع المستخدمين</value>
+  <data name="Rank / Title" xml:space="preserve">
+    <value>الرتبة / المسمى الوظيفي</value>
   </data>
-  <data name="A list of all user accounts registered in the system." xml:space="preserve">
-    <value>قائمة بكافة حسابات المستخدمين المسجلة في النظام.</value>
+  <data name="Roles" xml:space="preserve">
+    <value>الأدوار</value>
   </data>
-  <data name="Avatar" xml:space="preserve">
-    <value>الصورة الشخصية</value>
-  </data>
-  <data name="(no role assigned)" xml:space="preserve">
-    <value>(لم يتم تعيين أي دور)</value>
+  <data name="User name" xml:space="preserve">
+    <value>اسم المستخدم</value>
   </data>
 
-<data name="Job Level" xml:space="preserve"><value>Job Level</value></data></root>
+</root>

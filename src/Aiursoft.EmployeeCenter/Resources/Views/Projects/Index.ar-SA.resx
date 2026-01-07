@@ -21,17 +21,17 @@
       <data name="Badge" xml:space="preserve">
     <value>شارة</value>
   </data>
-  <data name="projects" xml:space="preserve">
-    <value>المشاريع</value>
-  </data>
-  <data name="Project" xml:space="preserve">
-    <value>المشروع</value>
-  </data>
   <data name="GitLab Projects" xml:space="preserve">
     <value>مشاريع GitLab</value>
   </data>
   <data name="No projects found." xml:space="preserve">
     <value>لم يتم العثور على مشاريع.</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>المشروع</value>
+  </data>
+  <data name="projects" xml:space="preserve">
+    <value>المشاريع</value>
   </data>
 
 </root>

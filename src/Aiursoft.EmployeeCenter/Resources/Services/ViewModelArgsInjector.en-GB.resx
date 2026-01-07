@@ -18,29 +18,17 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Account Settings" xml:space="preserve">
-    <value>Account Settings</value>
-  </data>
-  <data name="Admin" xml:space="preserve">
-    <value>Administrator</value>
-  </data>
-  <data name="Administration" xml:space="preserve">
+      <data name="Administration" xml:space="preserve">
     <value>Administration</value>
   </data>
   <data name="Aiursoft Employee Center" xml:space="preserve">
-    <value>Aiursoft Employee Centre</value>
-  </data>
-  <data name="Aiursoft Template" xml:space="preserve">
-    <value>Aiursoft Template</value>
-  </data>
-  <data name="Anonymous" xml:space="preserve">
-    <value>Anonymous</value>
+    <value>Aiursoft Employee Center</value>
   </data>
   <data name="Approval Center" xml:space="preserve">
     <value>Approval Centre</value>
   </data>
   <data name="Change Avatar" xml:space="preserve">
-    <value>Change Profile Picture</value>
+    <value>Change Avatar</value>
   </data>
   <data name="Change Password" xml:space="preserve">
     <value>Change Password</value>
@@ -49,7 +37,7 @@
     <value>Change Profile</value>
   </data>
   <data name="Click to login" xml:space="preserve">
-    <value>Click to log in</value>
+    <value>Click to login</value>
   </data>
   <data name="Create Password" xml:space="preserve">
     <value>Create Password</value>
@@ -82,7 +70,7 @@
     <value>Edit User</value>
   </data>
   <data name="Employee Center" xml:space="preserve">
-    <value>Employee Center</value>
+    <value>Employee Centre</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Error</value>
@@ -100,16 +88,16 @@
     <value>Index</value>
   </data>
   <data name="Info" xml:space="preserve">
-    <value>Information</value>
+    <value>Info</value>
   </data>
   <data name="Leave Management" xml:space="preserve">
     <value>Leave Management</value>
   </data>
   <data name="Login" xml:space="preserve">
-    <value>Log in</value>
+    <value>Login</value>
   </data>
   <data name="Login to get access to all features." xml:space="preserve">
-    <value>Log in to get access to all features.</value>
+    <value>Login to get access to all features.</value>
   </data>
   <data name="Manage" xml:space="preserve">
     <value>Manage</value>
@@ -127,7 +115,7 @@
     <value>My Payrolls</value>
   </data>
   <data name="My Report Line" xml:space="preserve">
-    <value>My Reporting Line</value>
+    <value>My Report Line</value>
   </data>
   <data name="Password Details" xml:space="preserve">
     <value>Password Details</value>
@@ -136,7 +124,7 @@
     <value>Passwords</value>
   </data>
   <data name="Payrolls" xml:space="preserve">
-    <value>Payroll</value>
+    <value>Payrolls</value>
   </data>
   <data name="Personal" xml:space="preserve">
     <value>Personal</value>
@@ -175,13 +163,10 @@
     <value>System</value>
   </data>
   <data name="System Info" xml:space="preserve">
-    <value>System Information</value>
-  </data>
-  <data name="Template" xml:space="preserve">
-    <value>Template</value>
+    <value>System info</value>
   </data>
   <data name="Unauthorized" xml:space="preserve">
-    <value>Unauthorised</value>
+    <value>Unauthorized</value>
   </data>
   <data name="User Details" xml:space="preserve">
     <value>User Details</value>

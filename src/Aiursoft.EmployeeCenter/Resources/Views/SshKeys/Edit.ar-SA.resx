@@ -18,20 +18,20 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Edit SSH Key" xml:space="preserve">
+      <data name="Cancel" xml:space="preserve">
+    <value>إلغاء</value>
+  </data>
+  <data name="Edit SSH Key" xml:space="preserve">
     <value>تعديل مفتاح SSH</value>
+  </data>
+  <data name="Modify your public SSH key details." xml:space="preserve">
+    <value>عدّل تفاصيل مفتاح SSH العام الخاص بك.</value>
   </data>
   <data name="Save Changes" xml:space="preserve">
     <value>حفظ التغييرات</value>
   </data>
   <data name="Update SSH Key" xml:space="preserve">
     <value>تحديث مفتاح SSH</value>
-  </data>
-  <data name="Modify your public SSH key details." xml:space="preserve">
-    <value>عدّل تفاصيل مفتاح SSH العام الخاص بك.</value>
-  </data>
-  <data name="Cancel" xml:space="preserve">
-    <value>إلغاء</value>
   </data>
 
 </root>

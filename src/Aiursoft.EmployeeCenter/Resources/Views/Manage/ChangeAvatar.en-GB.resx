@@ -21,14 +21,8 @@
       <data name="Avatar Settings" xml:space="preserve">
     <value>Avatar Settings</value>
   </data>
-  <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
-  </data>
-  <data name="Change avatar" xml:space="preserve">
-    <value>Change profile picture</value>
-  </data>
   <data name="Change your avatar" xml:space="preserve">
-    <value>Change your profile picture</value>
+    <value>Change your avatar</value>
   </data>
   <data name="Current Avatar" xml:space="preserve">
     <value>Current Avatar</value>
@@ -37,16 +31,10 @@
     <value>For best results, use a square image in .jpg or .png format.</value>
   </data>
   <data name="New avatar file" xml:space="preserve">
-    <value>New profile picture file</value>
+    <value>New avatar file</value>
   </data>
   <data name="Save New Avatar" xml:space="preserve">
     <value>Save New Avatar</value>
-  </data>
-  <data name="Save the avatar" xml:space="preserve">
-    <value>Save the avatar</value>
-  </data>
-  <data name="Upload the new avatar file." xml:space="preserve">
-    <value>Upload the new profile picture file.</value>
   </data>
 
 </root>

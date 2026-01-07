@@ -18,13 +18,7 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
-  </data>
-  <data name="Change profile" xml:space="preserve">
-    <value>Edit profile</value>
-  </data>
-  <data name="Display Name" xml:space="preserve">
+      <data name="Display Name" xml:space="preserve">
     <value>Display Name</value>
   </data>
   <data name="Edit your profile" xml:space="preserve">
@@ -40,7 +34,7 @@
     <value>Save changes</value>
   </data>
   <data name="This name will be displayed publicly across the application." xml:space="preserve">
-    <value>This name will be displayed publicly throughout the application.</value>
+    <value>This name will be displayed publicly across the application.</value>
   </data>
 
 </root>

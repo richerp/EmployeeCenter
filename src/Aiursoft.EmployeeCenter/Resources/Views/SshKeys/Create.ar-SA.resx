@@ -21,26 +21,26 @@
       <data name="Add Key" xml:space="preserve">
     <value>إضافة مفتاح</value>
   </data>
-  <data name="Cancel" xml:space="preserve">
-    <value>إلغاء</value>
-  </data>
   <data name="Add SSH Key" xml:space="preserve">
     <value>إضافة مفتاح SSH</value>
-  </data>
-  <data name="New SSH Key" xml:space="preserve">
-    <value>مفتاح SSH جديد</value>
-  </data>
-  <data name="e.g. Work Laptop" xml:space="preserve">
-    <value>مثلاً: حاسوب العمل</value>
-  </data>
-  <data name="Paste your public SSH key below." xml:space="preserve">
-    <value>الصق مفتاح SSH العام الخاص بك أدناه.</value>
   </data>
   <data name="Begins with &apos;ssh-rsa&apos;, &apos;ssh-ed25519&apos;, etc." xml:space="preserve">
     <value>يبدأ بـ &apos;ssh-rsa&apos;، &apos;ssh-ed25519&apos;، إلخ.</value>
   </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>إلغاء</value>
+  </data>
+  <data name="e.g. Work Laptop" xml:space="preserve">
+    <value>مثلاً: حاسوب العمل</value>
+  </data>
   <data name="Make sure to paste the entire public key, including the type and any comments." xml:space="preserve">
     <value>تأكد من لصق المفتاح العام بالكامل، بما في ذلك النوع وأي تعليقات.</value>
+  </data>
+  <data name="New SSH Key" xml:space="preserve">
+    <value>مفتاح SSH جديد</value>
+  </data>
+  <data name="Paste your public SSH key below." xml:space="preserve">
+    <value>الصق مفتاح SSH العام الخاص بك أدناه.</value>
   </data>
 
 </root>

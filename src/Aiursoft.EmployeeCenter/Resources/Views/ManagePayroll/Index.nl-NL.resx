@@ -18,35 +18,35 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="User" xml:space="preserve">
-    <value>Gebruiker</value>
-  </data>
-  <data name="Target Month" xml:space="preserve">
-    <value>Doelmaand</value>
-  </data>
-  <data name="Created Time" xml:space="preserve">
-    <value>Aanmaaktijd</value>
-  </data>
-  <data name="Manage Payrolls" xml:space="preserve">
-    <value>Salarisadministratie beheren</value>
-  </data>
-  <data name="Total Amount" xml:space="preserve">
-    <value>Totaalbedrag</value>
-  </data>
-  <data name="All Payrolls" xml:space="preserve">
-    <value>Alle Loonlijsten</value>
-  </data>
-  <data name="Issue new payroll" xml:space="preserve">
-    <value>Nieuwe salarisstrook uitgeven</value>
-  </data>
-  <data name="A list of all issued payroll records in the system." xml:space="preserve">
+      <data name="A list of all issued payroll records in the system." xml:space="preserve">
     <value>Een lijst van alle uitgegeven loonadministratiegegevens in het systeem.</value>
   </data>
   <data name="Actions" xml:space="preserve">
     <value>Acties</value>
   </data>
+  <data name="All Payrolls" xml:space="preserve">
+    <value>Alle Loonlijsten</value>
+  </data>
+  <data name="Created Time" xml:space="preserve">
+    <value>Aanmaaktijd</value>
+  </data>
   <data name="Details" xml:space="preserve">
     <value>Details</value>
+  </data>
+  <data name="Issue new payroll" xml:space="preserve">
+    <value>Nieuwe salarisstrook uitgeven</value>
+  </data>
+  <data name="Manage Payrolls" xml:space="preserve">
+    <value>Salarisadministratie beheren</value>
+  </data>
+  <data name="Target Month" xml:space="preserve">
+    <value>Doelmaand</value>
+  </data>
+  <data name="Total Amount" xml:space="preserve">
+    <value>Totaalbedrag</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Gebruiker</value>
   </data>
 
 </root>

@@ -18,20 +18,20 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Details" xml:space="preserve">
-    <value>Chi tiết</value>
+      <data name="A list of all your historical payroll records." xml:space="preserve">
+    <value>Danh sách tất cả các bản ghi lương lịch sử của bạn.</value>
   </data>
   <data name="Actions" xml:space="preserve">
     <value>Hành động</value>
   </data>
-  <data name="Target Month" xml:space="preserve">
-    <value>Tháng mục tiêu</value>
-  </data>
-  <data name="Total Amount" xml:space="preserve">
-    <value>Tổng số tiền</value>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Lương cơ bản</value>
   </data>
   <data name="Created Time" xml:space="preserve">
     <value>Thời gian tạo</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Chi tiết</value>
   </data>
   <data name="Historical Payrolls" xml:space="preserve">
     <value>Lịch sử bảng lương</value>
@@ -39,8 +39,23 @@
   <data name="My Payrolls" xml:space="preserve">
     <value>Bảng Lương Của Tôi</value>
   </data>
-  <data name="A list of all your historical payroll records." xml:space="preserve">
-    <value>Danh sách tất cả các bản ghi lương lịch sử của bạn.</value>
+  <data name="Net Salary (Actual)" xml:space="preserve">
+    <value>Lương thực lĩnh (thực tế)</value>
+  </data>
+  <data name="Reset Zoom" xml:space="preserve">
+    <value>Đặt lại mức phóng to</value>
+  </data>
+  <data name="Salary Trend" xml:space="preserve">
+    <value>Xu hướng lương</value>
+  </data>
+  <data name="Target Month" xml:space="preserve">
+    <value>Tháng mục tiêu</value>
+  </data>
+  <data name="Total Amount" xml:space="preserve">
+    <value>Tổng số tiền</value>
+  </data>
+  <data name="Track your salary progression and promotions over time" xml:space="preserve">
+    <value>Theo dõi sự thăng tiến và thăng chức của bạn theo thời gian</value>
   </data>
 
 </root>

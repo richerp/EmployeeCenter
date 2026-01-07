@@ -18,20 +18,20 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Project" xml:space="preserve">
-    <value>โครงการ</value>
+      <data name="Badge" xml:space="preserve">
+    <value>ตราสัญลักษณ์</value>
   </data>
   <data name="GitLab Projects" xml:space="preserve">
     <value>โปรเจกต์ GitLab</value>
   </data>
-  <data name="projects" xml:space="preserve">
-    <value>โครงการ</value>
-  </data>
   <data name="No projects found." xml:space="preserve">
     <value>ไม่พบโปรเจกต์</value>
   </data>
-  <data name="Badge" xml:space="preserve">
-    <value>ตราสัญลักษณ์</value>
+  <data name="Project" xml:space="preserve">
+    <value>โครงการ</value>
+  </data>
+  <data name="projects" xml:space="preserve">
+    <value>โครงการ</value>
   </data>
 
 </root>

@@ -21,14 +21,14 @@
       <data name="Cancel" xml:space="preserve">
     <value>Cancelar</value>
   </data>
-  <data name="Save Changes" xml:space="preserve">
-    <value>Salvar Alterações</value>
-  </data>
   <data name="Edit SSH Key" xml:space="preserve">
     <value>Editar Chave SSH</value>
   </data>
   <data name="Modify your public SSH key details." xml:space="preserve">
     <value>Modifique os detalhes da sua chave SSH pública.</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>Salvar Alterações</value>
   </data>
   <data name="Update SSH Key" xml:space="preserve">
     <value>Atualizar Chave SSH</value>

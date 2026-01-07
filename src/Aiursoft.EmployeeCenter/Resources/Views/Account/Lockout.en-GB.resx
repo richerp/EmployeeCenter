@@ -22,7 +22,7 @@
     <value>Locked out.</value>
   </data>
   <data name="This account has been locked out, please try again later." xml:space="preserve">
-    <value>This account has been locked out; please try again later.</value>
+    <value>This account has been locked out, please try again later.</value>
   </data>
 
 </root>

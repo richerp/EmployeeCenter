@@ -18,47 +18,53 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="SSH Keys for" xml:space="preserve">
-    <value>Chaves SSH para</value>
-  </data>
-  <data name="Actions" xml:space="preserve">
+      <data name="Actions" xml:space="preserve">
     <value>Ações</value>
-  </data>
-  <data name="Public SSH Keys" xml:space="preserve">
-    <value>Chaves SSH Públicas</value>
-  </data>
-  <data name="Name" xml:space="preserve">
-    <value>Nome</value>
-  </data>
-  <data name="Public Key" xml:space="preserve">
-    <value>Chave Pública</value>
   </data>
   <data name="Add New Key" xml:space="preserve">
     <value>Adicionar Nova Chave</value>
   </data>
-  <data name="Created Time" xml:space="preserve">
-    <value>Data de Criação</value>
+  <data name="Back to Settings" xml:space="preserve">
+    <value>Voltar para Definições</value>
   </data>
-  <data name="Manage your public SSH keys for server access." xml:space="preserve">
-    <value>Gerencie as suas chaves públicas SSH para acesso ao servidor.</value>
-  </data>
-  <data name="Edit" xml:space="preserve">
-    <value>Editar</value>
+  <data name="Back to User Info" xml:space="preserve">
+    <value>Voltar para Informações do Utilizador</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancelar</value>
   </data>
-  <data name="Delete" xml:space="preserve">
-    <value>Eliminar</value>
-  </data>
   <data name="Confirm Delete" xml:space="preserve">
     <value>Confirmar Eliminação</value>
   </data>
-  <data name="Back to Settings" xml:space="preserve">
-    <value>Voltar para Definições</value>
+  <data name="Created Time" xml:space="preserve">
+    <value>Data de Criação</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="Manage your public SSH keys for server access." xml:space="preserve">
+    <value>Gerencie as suas chaves públicas SSH para acesso ao servidor.</value>
+  </data>
+  <data name="Manage your SSH Key" xml:space="preserve">
+    <value>Gerir a sua Chave SSH</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nome</value>
   </data>
   <data name="No SSH keys found." xml:space="preserve">
     <value>Não foram encontradas chaves SSH.</value>
+  </data>
+  <data name="Public Key" xml:space="preserve">
+    <value>Chave Pública</value>
+  </data>
+  <data name="Public SSH Keys" xml:space="preserve">
+    <value>Chaves SSH Públicas</value>
+  </data>
+  <data name="SSH Keys for" xml:space="preserve">
+    <value>Chaves SSH para</value>
   </data>
 
 </root>

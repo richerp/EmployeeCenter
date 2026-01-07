@@ -18,11 +18,29 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Role Name" xml:space="preserve">
-    <value>Role Name</value>
+      <data name="Back to Overview" xml:space="preserve">
+    <value>Retour à l&apos;aperçu</value>
   </data>
-  <data name="The {0} is required." xml:space="preserve">
-    <value>The {0} is required.</value>
+  <data name="Change bank information" xml:space="preserve">
+    <value>Modifier les informations bancaires</value>
+  </data>
+  <data name="Change your avatar" xml:space="preserve">
+    <value>Modifier votre avatar</value>
+  </data>
+  <data name="Change your password" xml:space="preserve">
+    <value>Modifier votre mot de passe</value>
+  </data>
+  <data name="Change your profile" xml:space="preserve">
+    <value>Modifier votre profil</value>
+  </data>
+  <data name="Maintain Profile" xml:space="preserve">
+    <value>Gérer le profil</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Paramètres</value>
+  </data>
+  <data name="SSH Keys" xml:space="preserve">
+    <value>Clés SSH</value>
   </data>
 
 </root>

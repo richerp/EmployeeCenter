@@ -18,35 +18,35 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="User" xml:space="preserve">
-    <value>ผู้ใช้</value>
-  </data>
-  <data name="Created Time" xml:space="preserve">
-    <value>เวลาที่สร้าง</value>
-  </data>
-  <data name="Target Month" xml:space="preserve">
-    <value>เดือนเป้าหมาย</value>
-  </data>
-  <data name="All Payrolls" xml:space="preserve">
-    <value>เงินเดือนทั้งหมด</value>
-  </data>
-  <data name="Issue new payroll" xml:space="preserve">
-    <value>ออกใบแจ้งเงินเดือนใหม่</value>
-  </data>
-  <data name="Total Amount" xml:space="preserve">
-    <value>ยอดรวม</value>
-  </data>
-  <data name="Manage Payrolls" xml:space="preserve">
-    <value>จัดการเงินเดือน</value>
-  </data>
-  <data name="A list of all issued payroll records in the system." xml:space="preserve">
+      <data name="A list of all issued payroll records in the system." xml:space="preserve">
     <value>รายการบันทึกการจ่ายเงินเดือนทั้งหมดที่ออกในระบบ</value>
   </data>
   <data name="Actions" xml:space="preserve">
     <value>การดำเนินการ</value>
   </data>
+  <data name="All Payrolls" xml:space="preserve">
+    <value>เงินเดือนทั้งหมด</value>
+  </data>
+  <data name="Created Time" xml:space="preserve">
+    <value>เวลาที่สร้าง</value>
+  </data>
   <data name="Details" xml:space="preserve">
     <value>รายละเอียด</value>
+  </data>
+  <data name="Issue new payroll" xml:space="preserve">
+    <value>ออกใบแจ้งเงินเดือนใหม่</value>
+  </data>
+  <data name="Manage Payrolls" xml:space="preserve">
+    <value>จัดการเงินเดือน</value>
+  </data>
+  <data name="Target Month" xml:space="preserve">
+    <value>เดือนเป้าหมาย</value>
+  </data>
+  <data name="Total Amount" xml:space="preserve">
+    <value>ยอดรวม</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>ผู้ใช้</value>
   </data>
 
 </root>

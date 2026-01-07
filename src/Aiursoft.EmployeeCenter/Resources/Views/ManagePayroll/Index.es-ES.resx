@@ -18,20 +18,20 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Created Time" xml:space="preserve">
-    <value>Fecha de Creación</value>
+      <data name="A list of all issued payroll records in the system." xml:space="preserve">
+    <value>Una lista de todos los registros de nómina emitidos en el sistema.</value>
   </data>
-  <data name="Total Amount" xml:space="preserve">
-    <value>Importe total</value>
+  <data name="Actions" xml:space="preserve">
+    <value>Acciones</value>
   </data>
   <data name="All Payrolls" xml:space="preserve">
     <value>Todas las nóminas</value>
   </data>
-  <data name="User" xml:space="preserve">
-    <value>Usuario</value>
+  <data name="Created Time" xml:space="preserve">
+    <value>Fecha de Creación</value>
   </data>
-  <data name="Target Month" xml:space="preserve">
-    <value>Mes Objetivo</value>
+  <data name="Details" xml:space="preserve">
+    <value>Detalles</value>
   </data>
   <data name="Issue new payroll" xml:space="preserve">
     <value>Emitir nueva nómina</value>
@@ -39,14 +39,14 @@
   <data name="Manage Payrolls" xml:space="preserve">
     <value>Gestionar Nóminas</value>
   </data>
-  <data name="A list of all issued payroll records in the system." xml:space="preserve">
-    <value>Una lista de todos los registros de nómina emitidos en el sistema.</value>
+  <data name="Target Month" xml:space="preserve">
+    <value>Mes Objetivo</value>
   </data>
-  <data name="Details" xml:space="preserve">
-    <value>Detalles</value>
+  <data name="Total Amount" xml:space="preserve">
+    <value>Importe total</value>
   </data>
-  <data name="Actions" xml:space="preserve">
-    <value>Acciones</value>
+  <data name="User" xml:space="preserve">
+    <value>Usuario</value>
   </data>
 
 </root>

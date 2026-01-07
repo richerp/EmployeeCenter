@@ -25,7 +25,7 @@
     <value>Actions</value>
   </data>
   <data name="Create New" xml:space="preserve">
-    <value>Create New</value>
+    <value>Create new</value>
   </data>
   <data name="Details" xml:space="preserve">
     <value>Details</value>
@@ -55,13 +55,13 @@
     <value>Owner</value>
   </data>
   <data name="Passwords Management" xml:space="preserve">
-    <value>Password Management</value>
+    <value>Passwords Management</value>
   </data>
   <data name="Permission" xml:space="preserve">
     <value>Permission</value>
   </data>
   <data name="Read Only" xml:space="preserve">
-    <value>Read-only</value>
+    <value>Read Only</value>
   </data>
   <data name="Shared with Me" xml:space="preserve">
     <value>Shared with Me</value>

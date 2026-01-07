@@ -18,11 +18,23 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Manager" xml:space="preserve">
+      <data name="Legend" xml:space="preserve">
+    <value>Leyenda</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
     <value>Gerente</value>
   </data>
   <data name="Peer" xml:space="preserve">
     <value>Colega</value>
+  </data>
+  <data name="Please select a user first." xml:space="preserve">
+    <value>Por favor, seleccione un usuario primero.</value>
+  </data>
+  <data name="Report Line" xml:space="preserve">
+    <value>Línea de Reporte</value>
+  </data>
+  <data name="Search Person" xml:space="preserve">
+    <value>Buscar Persona</value>
   </data>
   <data name="Subordinate" xml:space="preserve">
     <value>Subordinado</value>
@@ -30,23 +42,11 @@
   <data name="Target" xml:space="preserve">
     <value>Objetivo</value>
   </data>
-  <data name="Search Person" xml:space="preserve">
-    <value>Buscar Persona</value>
-  </data>
-  <data name="Legend" xml:space="preserve">
-    <value>Leyenda</value>
-  </data>
-  <data name="Report Line" xml:space="preserve">
-    <value>Línea de Reporte</value>
-  </data>
   <data name="View Report Line" xml:space="preserve">
     <value>Ver Línea de Informes</value>
   </data>
   <data name="Visual Report Line" xml:space="preserve">
     <value>Línea de Reporte Visual</value>
-  </data>
-  <data name="Please select a user first." xml:space="preserve">
-    <value>Por favor, seleccione un usuario primero.</value>
   </data>
   <data name="You have to log in to view report line." xml:space="preserve">
     <value>Debes iniciar sesión para ver la línea de reporte.</value>

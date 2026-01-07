@@ -22,10 +22,10 @@
     <value>A built-in Role-Based Access Control (RBAC) system for fine-grained permission management.</value>
   </data>
   <data name="A complete solution for user authentication and profile management right out of the box." xml:space="preserve">
-    <value>A complete solution for user authentication and profile management, ready to use immediately.</value>
+    <value>A complete solution for user authentication and profile management right out of the box.</value>
   </data>
   <data name="A fully responsive layout that looks great on both desktop and mobile devices." xml:space="preserve">
-    <value>A fully responsive layout that looks fantastic on both desktop and mobile devices.</value>
+    <value>A fully responsive layout that looks great on both desktop and mobile devices.</value>
   </data>
   <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
     <value>A modern, feature-rich, and highly extensible foundation for your next web application.</value>
@@ -34,7 +34,7 @@
     <value>AI-Powered Translations</value>
   </data>
   <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
-    <value>All dependencies are automatically registered and are always available via constructor injection.</value>
+    <value>All dependencies are automatically registered and always available via constructor injection.</value>
   </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>Automatic Dark Mode</value>
@@ -46,31 +46,31 @@
     <value>Automatic, AI-driven translation into 28 languages for global reach.</value>
   </data>
   <data name="Built-in User Management" xml:space="preserve">
-    <value>Integrated User Management</value>
+    <value>Built-in User Management</value>
   </data>
   <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
-    <value>Comes with full Docker support for streamlined, consistent, and reliable deployments.</value>
+    <value>Comes with full Docker support for simplified, consistent, and reliable deployments.</value>
   </data>
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>Comprehensive Documentation</value>
   </data>
   <data name="Dockerized for Deployment" xml:space="preserve">
-    <value>Containerised for Deployment</value>
+    <value>Dockerised for Deployment</value>
   </data>
   <data name="Dynamic Navigation Bar" xml:space="preserve">
     <value>Dynamic Navigation Bar</value>
   </data>
   <data name="Easily switch between providers like SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
-    <value>Easily switch between providers such as SQLite, MySQL, SQL Server, and an in-memory database for testing.</value>
+    <value>Easily switch between providers like SQLite, MySQL, SQL Server, and an in-memory database for testing.</value>
   </data>
   <data name="Features a built-in file management system with automatic avatar compression." xml:space="preserve">
-    <value>Features a built-in file management system with automatic profile picture compression.</value>
+    <value>Features a built-in file management system with automatic avatar compression.</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>Hello World!</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
-    <value>Includes comprehensive documentation and practical examples to get you started quickly.</value>
+    <value>Includes extensive documentation and practical examples to get you started quickly.</value>
   </data>
   <data name="Integrated File Management" xml:space="preserve">
     <value>Integrated File Management</value>
@@ -82,16 +82,16 @@
     <value>OpenID Connect Integration</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
-    <value>RBAC Authorisation</value>
+    <value>RBAC Authorization</value>
   </data>
   <data name="Read the document" xml:space="preserve">
-    <value>Read the documentation</value>
+    <value>Read the document</value>
   </data>
   <data name="Responsive Design" xml:space="preserve">
     <value>Responsive Design</value>
   </data>
   <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
-    <value>Seamlessly integrate with any OpenID Connect provider, with automatic role synchronisation.</value>
+    <value>Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization.</value>
   </data>
   <data name="Smart dark mode that automatically adapts to the user&apos;s system settings." xml:space="preserve">
     <value>Smart dark mode that automatically adapts to the user&apos;s system settings.</value>
@@ -100,10 +100,10 @@
     <value>Start a new project</value>
   </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
-    <value>The navigation bar automatically adjusts according to user roles and permissions.</value>
+    <value>The navigation bar automatically adjusts based on user roles and permissions.</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
-    <value>This is a template project, where we begin the voyage...</value>
+    <value>This is a template project, where we start the voyager...</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Welcome</value>
