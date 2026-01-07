@@ -136,7 +136,7 @@
                                     <div class="text-muted small">@Localizer["Expected duration"]: @TimeSpan.FromSeconds(task.ExpectedDurationSeconds).ToString(@"hh\:mm\:ss")</div>
                                 </div>
                                 <div class="mt-2">
-                                    <form asp-controller="Onboarding" asp-action="StartTask" asp-route-id="@task.Id" method="post">
+                                    <form asp-controller="Onboarding" asp-action="StartTask" asp-route-id="@task.Id" method="post" target="_blank">
                                         <button type="submit" class="btn btn-warning px-4 fw-bold">
                                             <i class="align-middle me-1" data-lucide="play"></i> @Localizer["Start Task"]
                                         </button>
