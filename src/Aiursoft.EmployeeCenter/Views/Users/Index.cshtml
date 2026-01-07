@@ -30,7 +30,7 @@
                 <th>@Localizer["Avatar"]</th>
                 <th>@Localizer["User name"]</th>
                 <th>@Localizer["Name"]</th>
-                <th>@Localizer["Job Level"]</th>
+                <th>@Localizer["Rank / Title"]</th>
                 <th>@Localizer["Email"]</th>
                 <th>@Localizer["Roles"]</th>
                 <th class="text-end">@Localizer["Actions"]</th>
@@ -46,7 +46,7 @@
                     </td>
                     <td>@item.User.UserName</td>
                     <td>@item.User.DisplayName</td>
-                    <td>@(item.User.JobLevel ?? "N/A")</td>
+                    <td>@(item.User.JobLevel ?? "N/A") / @(item.User.Title ?? "N/A")</td>
                     <td>@item.User.Email</td>
                     <td>
                         @* The complex C# presentation logic for roles is identified and fully preserved. *@
