@@ -18,35 +18,35 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Bank Information" xml:space="preserve">
-    <value>Thông tin ngân hàng</value>
-  </data>
-  <data name="Change Bank Information" xml:space="preserve">
-    <value>Thay đổi thông tin ngân hàng</value>
+      <data name="Bank Account Name" xml:space="preserve">
+    <value>Tên tài khoản ngân hàng</value>
   </data>
   <data name="Bank Card Number" xml:space="preserve">
     <value>Số thẻ ngân hàng</value>
   </data>
-  <data name="Enter your bank card number" xml:space="preserve">
-    <value>Nhập số thẻ ngân hàng của bạn</value>
+  <data name="Bank Information" xml:space="preserve">
+    <value>Thông tin ngân hàng</value>
   </data>
   <data name="Bank Name (Branch)" xml:space="preserve">
     <value>Tên ngân hàng (chi nhánh)</value>
   </data>
-  <data name="Enter your bank name and branch" xml:space="preserve">
-    <value>Nhập tên ngân hàng và chi nhánh của bạn</value>
+  <data name="Cancel" xml:space="preserve">
+    <value>Hủy bỏ</value>
   </data>
-  <data name="Bank Account Name" xml:space="preserve">
-    <value>Tên tài khoản ngân hàng</value>
+  <data name="Change Bank Information" xml:space="preserve">
+    <value>Thay đổi thông tin ngân hàng</value>
   </data>
   <data name="Enter your bank account name" xml:space="preserve">
     <value>Nhập tên tài khoản ngân hàng của bạn</value>
   </data>
+  <data name="Enter your bank card number" xml:space="preserve">
+    <value>Nhập số thẻ ngân hàng của bạn</value>
+  </data>
+  <data name="Enter your bank name and branch" xml:space="preserve">
+    <value>Nhập tên ngân hàng và chi nhánh của bạn</value>
+  </data>
   <data name="Save changes" xml:space="preserve">
     <value>Lưu thay đổi</value>
-  </data>
-  <data name="Cancel" xml:space="preserve">
-    <value>Hủy bỏ</value>
   </data>
 
 </root>

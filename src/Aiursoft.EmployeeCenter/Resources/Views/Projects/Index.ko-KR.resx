@@ -21,17 +21,17 @@
       <data name="Badge" xml:space="preserve">
     <value>배지</value>
   </data>
-  <data name="projects" xml:space="preserve">
-    <value>프로젝트</value>
-  </data>
-  <data name="Project" xml:space="preserve">
-    <value>프로젝트</value>
-  </data>
   <data name="GitLab Projects" xml:space="preserve">
     <value>GitLab 프로젝트</value>
   </data>
   <data name="No projects found." xml:space="preserve">
     <value>프로젝트를 찾을 수 없습니다.</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>프로젝트</value>
+  </data>
+  <data name="projects" xml:space="preserve">
+    <value>프로젝트</value>
   </data>
 
 </root>

@@ -18,23 +18,11 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Maintain Profile" xml:space="preserve">
-    <value>프로필 관리</value>
+      <data name="Back" xml:space="preserve">
+    <value>뒤로</value>
   </data>
   <data name="Back to Settings" xml:space="preserve">
     <value>설정으로 돌아가기</value>
-  </data>
-  <data name="Personal and Bank Information" xml:space="preserve">
-    <value>개인 및 은행 정보</value>
-  </data>
-  <data name="Legal Name" xml:space="preserve">
-    <value>법적 이름</value>
-  </data>
-  <data name="Phone Number" xml:space="preserve">
-    <value>전화번호</value>
-  </data>
-  <data name="Bank Name" xml:space="preserve">
-    <value>은행 이름</value>
   </data>
   <data name="Bank Account" xml:space="preserve">
     <value>은행 계좌</value>
@@ -42,11 +30,23 @@
   <data name="Bank Account Name" xml:space="preserve">
     <value>계좌 이름</value>
   </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>은행 이름</value>
+  </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>법적 이름</value>
+  </data>
+  <data name="Maintain Profile" xml:space="preserve">
+    <value>프로필 관리</value>
+  </data>
+  <data name="Personal and Bank Information" xml:space="preserve">
+    <value>개인 및 은행 정보</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>전화번호</value>
+  </data>
   <data name="Save Profile" xml:space="preserve">
     <value>프로필 저장</value>
-  </data>
-  <data name="Back" xml:space="preserve">
-    <value>뒤로</value>
   </data>
 
 </root>

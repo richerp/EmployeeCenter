@@ -21,17 +21,17 @@
       <data name="Cancel" xml:space="preserve">
     <value>キャンセル</value>
   </data>
-  <data name="Save Changes" xml:space="preserve">
-    <value>変更を保存</value>
-  </data>
-  <data name="Update SSH Key" xml:space="preserve">
-    <value>SSHキーを更新</value>
-  </data>
   <data name="Edit SSH Key" xml:space="preserve">
     <value>SSHキーを編集</value>
   </data>
   <data name="Modify your public SSH key details." xml:space="preserve">
     <value>公開SSHキーの詳細を変更します。</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>変更を保存</value>
+  </data>
+  <data name="Update SSH Key" xml:space="preserve">
+    <value>SSHキーを更新</value>
   </data>
 
 </root>

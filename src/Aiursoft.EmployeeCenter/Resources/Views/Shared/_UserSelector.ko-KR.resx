@@ -21,11 +21,11 @@
       <data name="Clear" xml:space="preserve">
     <value>지우기</value>
   </data>
-  <data name="Search Manager" xml:space="preserve">
-    <value>관리자 검색</value>
-  </data>
   <data name="No users found" xml:space="preserve">
     <value>사용자를 찾을 수 없습니다</value>
+  </data>
+  <data name="Search Manager" xml:space="preserve">
+    <value>관리자 검색</value>
   </data>
   <data name="Type 3+ characters to search..." xml:space="preserve">
     <value>검색하려면 3자 이상 입력하세요...</value>

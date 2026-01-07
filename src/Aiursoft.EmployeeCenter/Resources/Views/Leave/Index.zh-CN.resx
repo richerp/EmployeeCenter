@@ -18,8 +18,14 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="12 days per year, granted on January 1st" xml:space="preserve">
+      <data name="12 days paid annual leave per year" xml:space="preserve">
+    <value>12天带薪年假/年</value>
+  </data>
+  <data name="12 days per year, granted on January 1st" xml:space="preserve">
     <value>12天/年，于1月1日发放</value>
+  </data>
+  <data name="7 days paid sick leave per year" xml:space="preserve">
+    <value>7天带薪病假每年</value>
   </data>
   <data name="7 days per year" xml:space="preserve">
     <value>7天/年</value>
@@ -72,6 +78,9 @@
   <data name="in" xml:space="preserve">
     <value>在</value>
   </data>
+  <data name="Key information about our leave policies" xml:space="preserve">
+    <value>关于我们请假政策的关键信息</value>
+  </data>
   <data name="Leave Balance Summary" xml:space="preserve">
     <value>假期余额汇总</value>
   </data>
@@ -84,8 +93,14 @@
   <data name="Leave Type" xml:space="preserve">
     <value>请假类型</value>
   </data>
+  <data name="Maximum carryover: 12 days (expires after 1 year)" xml:space="preserve">
+    <value>最多结转：12天（一年后过期）</value>
+  </data>
   <data name="Mental health: No diagnosis required" xml:space="preserve">
     <value>心理健康：无需诊断证明</value>
+  </data>
+  <data name="Mental health: no documents required" xml:space="preserve">
+    <value>心理健康：无需提供证明材料</value>
   </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>我的休假余额</value>
@@ -95,6 +110,9 @@
   </data>
   <data name="No approval required, but must submit supporting documents after leave" xml:space="preserve">
     <value>无需审批，但需在休假后提交证明文件</value>
+  </data>
+  <data name="No approval required, can be used immediately" xml:space="preserve">
+    <value>无需审批，可立即使用</value>
   </data>
   <data name="No leave applications yet." xml:space="preserve">
     <value>暂无请假申请。</value>
@@ -123,6 +141,9 @@
   <data name="Physical illness: Hospital diagnosis required" xml:space="preserve">
     <value>身体疾病：需提供医院诊断证明</value>
   </data>
+  <data name="Physical illness: medical certificate required" xml:space="preserve">
+    <value>身体疾病：需提供医疗证明</value>
+  </data>
   <data name="Please ensure your leave complies with company policy, all work has been handed over, and you have sent an email to your team." xml:space="preserve">
     <value>请确保您的休假符合公司政策，所有工作均已交接完毕，并已向团队发送邮件。</value>
   </data>
@@ -144,6 +165,9 @@
   <data name="Requires approval before use" xml:space="preserve">
     <value>使用前需经审批</value>
   </data>
+  <data name="Requires manager approval before use" xml:space="preserve">
+    <value>使用前需经理批准</value>
+  </data>
   <data name="Sick Leave" xml:space="preserve">
     <value>病假</value>
   </data>
@@ -159,14 +183,23 @@
   <data name="Submitted At" xml:space="preserve">
     <value>提交时间</value>
   </data>
+  <data name="Supporting documents required after leave ends" xml:space="preserve">
+    <value>请假结束后需提供辅助证明文件</value>
+  </data>
   <data name="Total Days" xml:space="preserve">
     <value>总天数</value>
   </data>
   <data name="Type" xml:space="preserve">
     <value>类型</value>
   </data>
+  <data name="Unauthorized absences are considered absence without leave and will result in salary deductions and disciplinary action." xml:space="preserve">
+    <value>未经批准的缺勤将被视为无故缺勤，并导致工资扣除及纪律处分。</value>
+  </data>
   <data name="Unused annual leave can carry over to the next year" xml:space="preserve">
     <value>未使用的年假可结转至下一年</value>
+  </data>
+  <data name="Unused days carry over to next year" xml:space="preserve">
+    <value>未使用的天数可结转至下一年</value>
   </data>
   <data name="Upcoming Leave" xml:space="preserve">
     <value>即将休假</value>

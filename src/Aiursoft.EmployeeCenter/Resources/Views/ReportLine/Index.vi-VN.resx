@@ -18,35 +18,35 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Report Line" xml:space="preserve">
-    <value>Dòng Báo Cáo</value>
-  </data>
-  <data name="Target" xml:space="preserve">
-    <value>Mục tiêu</value>
+      <data name="Legend" xml:space="preserve">
+    <value>Chú thích</value>
   </data>
   <data name="Manager" xml:space="preserve">
     <value>Quản lý</value>
   </data>
-  <data name="Subordinate" xml:space="preserve">
-    <value>Cấp dưới</value>
-  </data>
   <data name="Peer" xml:space="preserve">
     <value>Đồng nghiệp</value>
+  </data>
+  <data name="Please select a user first." xml:space="preserve">
+    <value>Vui lòng chọn một người dùng trước.</value>
+  </data>
+  <data name="Report Line" xml:space="preserve">
+    <value>Dòng Báo Cáo</value>
   </data>
   <data name="Search Person" xml:space="preserve">
     <value>Tìm kiếm Nhân viên</value>
   </data>
+  <data name="Subordinate" xml:space="preserve">
+    <value>Cấp dưới</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>Mục tiêu</value>
+  </data>
   <data name="View Report Line" xml:space="preserve">
     <value>Xem Sơ Đồ Báo Cáo</value>
   </data>
-  <data name="Legend" xml:space="preserve">
-    <value>Chú thích</value>
-  </data>
   <data name="Visual Report Line" xml:space="preserve">
     <value>Sơ đồ Báo cáo Trực quan</value>
-  </data>
-  <data name="Please select a user first." xml:space="preserve">
-    <value>Vui lòng chọn một người dùng trước.</value>
   </data>
   <data name="You have to log in to view report line." xml:space="preserve">
     <value>Bạn cần đăng nhập để xem đường báo cáo.</value>

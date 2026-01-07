@@ -18,41 +18,38 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Account / Username" xml:space="preserve">
-    <value>アカウント / ユーザー名</value>
+      <data name="Actions" xml:space="preserve">
+    <value>작업</value>
   </data>
-  <data name="Are you sure you want to delete this password?" xml:space="preserve">
-    <value>このパスワードを削除してもよろしいですか？</value>
+  <data name="Cancel" xml:space="preserve">
+    <value>취소</value>
   </data>
-  <data name="Back" xml:space="preserve">
-    <value>戻る</value>
+  <data name="Confirm Delete" xml:space="preserve">
+    <value>삭제 확인</value>
   </data>
-  <data name="Created by" xml:space="preserve">
-    <value>作成者</value>
-  </data>
-  <data name="Created on" xml:space="preserve">
-    <value>作成日時：</value>
+  <data name="Created Time" xml:space="preserve">
+    <value>생성 시간</value>
   </data>
   <data name="Delete" xml:space="preserve">
-    <value>削除</value>
+    <value>삭제</value>
   </data>
   <data name="Edit" xml:space="preserve">
-    <value>編集</value>
+    <value>수정</value>
   </data>
-  <data name="Manage Shares" xml:space="preserve">
-    <value>共有の管理</value>
+  <data name="Manage your public SSH keys for server access." xml:space="preserve">
+    <value>서버 접근을 위한 공개 SSH 키를 관리하세요.</value>
   </data>
-  <data name="No notes." xml:space="preserve">
-    <value>メモはありません。</value>
+  <data name="Name" xml:space="preserve">
+    <value>이름</value>
   </data>
-  <data name="Note" xml:space="preserve">
-    <value>備考</value>
+  <data name="No SSH keys found." xml:space="preserve">
+    <value>SSH 키를 찾을 수 없습니다.</value>
   </data>
-  <data name="Password / Secret" xml:space="preserve">
-    <value>パスワード / シークレット</value>
+  <data name="Public Key" xml:space="preserve">
+    <value>공개 키</value>
   </data>
-  <data name="Password Details" xml:space="preserve">
-    <value>パスワードの詳細</value>
+  <data name="Public SSH Keys" xml:space="preserve">
+    <value>공개 SSH 키</value>
   </data>
 
 </root>

@@ -18,20 +18,29 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Cancel" xml:space="preserve">
-    <value>취소</value>
+      <data name="Back to Overview" xml:space="preserve">
+    <value>Quay lại Tổng quan</value>
   </data>
-  <data name="Edit SSH Key" xml:space="preserve">
-    <value>SSH 키 편집</value>
+  <data name="Change bank information" xml:space="preserve">
+    <value>Thay đổi thông tin ngân hàng</value>
   </data>
-  <data name="Modify your public SSH key details." xml:space="preserve">
-    <value>공개 SSH 키 세부 정보를 수정하세요.</value>
+  <data name="Change your avatar" xml:space="preserve">
+    <value>Thay đổi ảnh đại diện của bạn</value>
   </data>
-  <data name="Save Changes" xml:space="preserve">
-    <value>변경 사항 저장</value>
+  <data name="Change your password" xml:space="preserve">
+    <value>Đổi mật khẩu của bạn</value>
   </data>
-  <data name="Update SSH Key" xml:space="preserve">
-    <value>SSH 키 업데이트</value>
+  <data name="Change your profile" xml:space="preserve">
+    <value>Thay đổi hồ sơ của bạn</value>
+  </data>
+  <data name="Maintain Profile" xml:space="preserve">
+    <value>Duy trì hồ sơ</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Cài đặt</value>
+  </data>
+  <data name="SSH Keys" xml:space="preserve">
+    <value>Khóa SSH</value>
   </data>
 
 </root>

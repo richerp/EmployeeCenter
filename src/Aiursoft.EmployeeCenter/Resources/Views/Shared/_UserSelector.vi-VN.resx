@@ -24,11 +24,11 @@
   <data name="No users found" xml:space="preserve">
     <value>Không tìm thấy người dùng nào</value>
   </data>
-  <data name="Type 3+ characters to search..." xml:space="preserve">
-    <value>Nhập 3+ ký tự để tìm kiếm...</value>
-  </data>
   <data name="Search Manager" xml:space="preserve">
     <value>Quản lý Tìm kiếm</value>
+  </data>
+  <data name="Type 3+ characters to search..." xml:space="preserve">
+    <value>Nhập 3+ ký tự để tìm kiếm...</value>
   </data>
 
 </root>
