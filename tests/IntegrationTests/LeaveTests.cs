@@ -4,8 +4,7 @@ using Aiursoft.CSTools.Tools;
 using Aiursoft.DbTools;
 using Aiursoft.EmployeeCenter.Entities;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+
 using static Aiursoft.WebTools.Extends;
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
@@ -64,23 +63,7 @@ public class LeaveTests
         return match.Groups[1].Value;
     }
 
-    private async Task RegisterAndLoginAsync()
-    {
-        var email = $"test-{Guid.NewGuid()}@aiursoft.com";
-        var password = "Test-Password-123";
 
-        // Register
-        var registerToken = await GetAntiCsrfToken("/Account/Register");
-        var registerContent = new FormUrlEncodedContent(new Dictionary<string, string>
-        {
-            { "Email", email },
-            { "Password", password },
-            { "ConfirmPassword", password },
-            { "__RequestVerificationToken", registerToken }
-        });
-        var registerResponse = await _http.PostAsync("/Account/Register", registerContent);
-        Assert.AreEqual(HttpStatusCode.Found, registerResponse.StatusCode);
-    }
 
     private async Task<int> GetLatestLeaveId(string userId)
     {

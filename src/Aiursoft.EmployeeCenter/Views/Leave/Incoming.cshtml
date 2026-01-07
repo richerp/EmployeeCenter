@@ -31,60 +31,60 @@
             <tbody>
                 @if (Model.IncomingLeaves.Count == 0)
                 {
-                    <tr>
-                        <td colspan="8" class="text-center text-muted">@Localizer["No pending applications."]</td>
-                    </tr>
+                        <tr>
+                            <td colspan="8" class="text-center text-muted">@Localizer["No pending applications."]</td>
+                        </tr>
                 }
                 else
                 {
                     foreach (var item in Model.IncomingLeaves)
                     {
-                        <tr>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <img src="@item.User?.AvatarRelativePath" class="rounded-circle me-2" alt="@item.User?.DisplayName" width="32" height="32">
-                                    <div>
-                                        <div class="fw-bold">@item.User?.DisplayName</div>
-                                        <div class="small text-muted">@item.User?.Email</div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <img src="@item.User.AvatarRelativePath" class="rounded-circle me-2" alt="@item.User.DisplayName" width="32" height="32">
+                                            <div>
+                                                <div class="fw-bold">@item.User.DisplayName</div>
+                                                <div class="small text-muted">@item.User.Email</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
                                 @if (item.LeaveType == Aiursoft.EmployeeCenter.Entities.LeaveType.AnnualLeave)
                                 {
-                                    <span class="badge bg-primary">@Localizer["Annual Leave"]</span>
+                                                <span class="badge bg-primary">@Localizer["Annual Leave"]</span>
                                 }
                                 else
                                 {
-                                    <span class="badge bg-success">@Localizer["Sick Leave"]</span>
+                                                <span class="badge bg-success">@Localizer["Sick Leave"]</span>
                                 }
-                            </td>
-                            <td>@item.StartDate.ToString("yyyy-MM-dd")</td>
-                            <td>@item.EndDate.ToString("yyyy-MM-dd")</td>
-                            <td>@item.TotalDays @Localizer["days"]</td>
-                            <td title="@item.Reason">@item.Reason</td>
-                            <td>@item.SubmittedAt.ToString("yyyy-MM-dd HH:mm")</td>
-                            <td>
-                                <div class="d-flex gap-2">
-                                    <form asp-action="Review" method="post" class="d-inline">
+                                    </td>
+                                    <td>@item.StartDate.ToString("yyyy-MM-dd")</td>
+                                    <td>@item.EndDate.ToString("yyyy-MM-dd")</td>
+                                    <td>@item.TotalDays @Localizer["days"]</td>
+                                    <td title="@item.Reason">@item.Reason</td>
+                                    <td>@item.SubmittedAt.ToString("yyyy-MM-dd HH:mm")</td>
+                                    <td>
+                                        <div class="d-flex gap-2">
+                                            <form asp-action="Review" method="post" class="d-inline">
                                         @Html.AntiForgeryToken()
-                                        <input type="hidden" name="id" value="@item.Id" />
-                                        <input type="hidden" name="approved" value="true" />
-                                        <button type="submit" class="btn btn-sm btn-success">
-                                            <i class="align-middle" data-lucide="check"></i> @Localizer["Approve"]
-                                        </button>
-                                    </form>
-                                    <form asp-action="Review" method="post" class="d-inline">
+                                                <input type="hidden" name="id" value="@item.Id" />
+                                                <input type="hidden" name="approved" value="true" />
+                                                <button type="submit" class="btn btn-sm btn-success">
+                                                    <i class="align-middle" data-lucide="check"></i> @Localizer["Approve"]
+                                                </button>
+                                            </form>
+                                            <form asp-action="Review" method="post" class="d-inline">
                                         @Html.AntiForgeryToken()
-                                        <input type="hidden" name="id" value="@item.Id" />
-                                        <input type="hidden" name="approved" value="false" />
-                                        <button type="submit" class="btn btn-sm btn-danger">
-                                            <i class="align-middle" data-lucide="x"></i> @Localizer["Reject"]
-                                        </button>
-                                    </form>
-                                </div>
-                            </td>
-                        </tr>
+                                                <input type="hidden" name="id" value="@item.Id" />
+                                                <input type="hidden" name="approved" value="false" />
+                                                <button type="submit" class="btn btn-sm btn-danger">
+                                                    <i class="align-middle" data-lucide="x"></i> @Localizer["Reject"]
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
                     }
                 }
             </tbody>

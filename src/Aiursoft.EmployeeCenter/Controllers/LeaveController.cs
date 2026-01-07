@@ -246,7 +246,7 @@ public class LeaveController(
 
         if (!canApproveAny)
         {
-            query = query.Where(l => l.User!.ManagerId == user.Id);
+            query = query.Where(l => l.User.ManagerId == user.Id);
         }
 
         var incomingLeaves = await query
@@ -276,7 +276,7 @@ public class LeaveController(
         // 1. Direct Manager
         // 2. CanApproveAnyLeave
         var canApproveAny = (await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanApproveAnyLeave)).Succeeded;
-        var isManager = leave.User!.ManagerId == user.Id;
+        var isManager = leave.User.ManagerId == user.Id;
 
         if (!canApproveAny && !isManager)
         {

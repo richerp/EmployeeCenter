@@ -95,17 +95,7 @@ public class HolidayService
     {
         // [{"date":"2026-01-01","year":2026,"month":1,"day":1,"status":3}]
 
-        [JsonPropertyName("date")]
-        public string Date { get; set; } = string.Empty;
 
-        [JsonPropertyName("year")]
-        public int Year { get; set; }
-
-        [JsonPropertyName("month")]
-        public int Month { get; set; }
-
-        [JsonPropertyName("day")]
-        public int Day { get; set; }
 
         /// <summary>
         /// Status: 0 = working day, 1 = weekend, 2 = statutory holiday, 3 = major statutory holiday
