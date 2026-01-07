@@ -64,11 +64,15 @@ public class LeaveBalanceService
             return 0m;
         }
 
+        var startOfPreviousYear = new DateTime(previousYear, 1, 1);
+        var endOfPreviousYear = startOfPreviousYear.AddYears(1);
+
         // Calculate used annual leave in previous year
         var usedInPreviousYear = await _context.LeaveApplications
             .Where(la => la.UserId == userId
                 && la.LeaveType == LeaveType.AnnualLeave
-                && la.StartDate.Year == previousYear
+                && la.StartDate >= startOfPreviousYear
+                && la.StartDate < endOfPreviousYear
                 && !la.IsWithdrawn // Exclude withdrawn
                 && !la.IsPending) // Only count approved/rejected that were actually processed
             .Where(la => la.IsApproved) // Only count approved ones
@@ -92,11 +96,15 @@ public class LeaveBalanceService
 
         var carriedOver = await GetCarriedOverAnnualLeaveAsync(userId, year);
 
+        var startOfYear = new DateTime(year, 1, 1);
+        var endOfYear = startOfYear.AddYears(1);
+
         // Calculate used annual leave (including pending applications to prevent duplicate requests)
         var usedThisYear = await _context.LeaveApplications
             .Where(la => la.UserId == userId
                 && la.LeaveType == LeaveType.AnnualLeave
-                && la.StartDate.Year == year
+                && la.StartDate >= startOfYear
+                && la.StartDate < endOfYear
                 && !la.IsWithdrawn // Exclude withdrawn
                 && (la.IsPending || la.IsApproved)) // Exclude rejected
             .SumAsync(la => la.TotalDays);
@@ -118,11 +126,15 @@ public class LeaveBalanceService
         var allocation = await _context.LeaveBalances
             .FirstAsync(lb => lb.UserId == userId && lb.Year == year);
 
+        var startOfYear = new DateTime(year, 1, 1);
+        var endOfYear = startOfYear.AddYears(1);
+
         // Calculate used sick leave (including pending applications)
         var usedThisYear = await _context.LeaveApplications
             .Where(la => la.UserId == userId
                 && la.LeaveType == LeaveType.SickLeave
-                && la.StartDate.Year == year
+                && la.StartDate >= startOfYear
+                && la.StartDate < endOfYear
                 && !la.IsWithdrawn // Exclude withdrawn
                 && (la.IsPending || la.IsApproved)) // Exclude rejected
             .SumAsync(la => la.TotalDays);
