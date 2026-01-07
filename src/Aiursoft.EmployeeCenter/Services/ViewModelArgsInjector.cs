@@ -81,6 +81,8 @@ public class ViewModelArgsInjector(
         _ = localizer["Leave Management"];
         _ = localizer["My Leave Balance"];
         _ = localizer["Approval Center"];
+        _ = localizer["Onboarding"];
+        _ = localizer["Manage Tasks"];
     }
 
     public void InjectSimple(
