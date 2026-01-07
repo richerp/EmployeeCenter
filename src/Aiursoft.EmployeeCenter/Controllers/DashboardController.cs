@@ -3,6 +3,7 @@ using Aiursoft.EmployeeCenter.Models.DashboardViewModels;
 using Aiursoft.EmployeeCenter.Services;
 using Aiursoft.UiStack.Navigation;
 using Aiursoft.WebTools.Attributes;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +11,7 @@ using Microsoft.EntityFrameworkCore;
 namespace Aiursoft.EmployeeCenter.Controllers;
 
 [LimitPerMin]
+[Authorize]
 public class DashboardController(
     EmployeeCenterDbContext context,
     UserManager<User> userManager) : Controller
@@ -25,14 +27,12 @@ public class DashboardController(
     public async Task<IActionResult> Index()
     {
         var user = await userManager.GetUserAsync(User);
-        if (user == null) return Unauthorized();
-
         var tasks = await context.OnboardingTasks
             .OrderBy(t => t.Order)
             .ToListAsync();
 
         var logs = await context.OnboardingTaskLogs
-            .Where(l => l.UserId == user.Id)
+            .Where(l => l.UserId == user!.Id)
             .ToListAsync();
 
         return this.StackView(new IndexViewModel
