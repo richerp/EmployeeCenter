@@ -72,5 +72,11 @@
   <data name="Bank Account (Card Number)" xml:space="preserve">
     <value>Pankkitili (Korttinumero)</value>
   </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>Lakisävyinen nimi</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>Puhelinnumero</value>
+  </data>
 
 </root>

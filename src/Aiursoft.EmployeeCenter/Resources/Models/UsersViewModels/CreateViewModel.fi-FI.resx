@@ -66,5 +66,11 @@
   <data name="Bank Account Name (Holder)" xml:space="preserve">
     <value>Pankkitilin nimi (omistaja)</value>
   </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>Lakisääteinen nimi</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>Puhelinnumero</value>
+  </data>
 
 </root>

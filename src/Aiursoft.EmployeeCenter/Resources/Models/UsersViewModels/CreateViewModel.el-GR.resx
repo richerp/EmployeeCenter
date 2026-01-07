@@ -66,5 +66,11 @@
   <data name="Bank Account Name (Holder)" xml:space="preserve">
     <value>Όνομα λογαριασμού (Κάτοχος)</value>
   </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>Νόμιμο Όνομα</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>Τηλέφωνο</value>
+  </data>
 
 </root>

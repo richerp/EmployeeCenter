@@ -66,5 +66,11 @@
   <data name="Bank Account Name (Holder)" xml:space="preserve">
     <value>बैंक खाता नाम (धारक)</value>
   </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>कानूनी नाम</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>फ़ोन नंबर</value>
+  </data>
 
 </root>

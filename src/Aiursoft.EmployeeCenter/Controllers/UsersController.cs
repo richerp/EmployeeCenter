@@ -144,6 +144,8 @@ public class UsersController(
                 Email = newUser.Email,
                 JobLevel = newUser.JobLevel,
                 Title = newUser.Title,
+                LegalName = newUser.LegalName,
+                PhoneNumber = newUser.PhoneNumber,
                 BaseSalary = newUser.BaseSalary,
                 BankAccount = newUser.BankAccount,
                 BankName = newUser.BankName,
@@ -189,6 +191,8 @@ public class UsersController(
             AvatarUrl = user.AvatarRelativePath,
             JobLevel = user.JobLevel,
             Title = user.Title,
+            LegalName = user.LegalName,
+            PhoneNumber = user.PhoneNumber,
             BaseSalary = user.BaseSalary,
             BankAccount = user.BankAccount,
             BankName = user.BankName,
@@ -225,6 +229,8 @@ public class UsersController(
         userInDb.AvatarRelativePath = model.AvatarUrl;
         userInDb.JobLevel = model.JobLevel;
         userInDb.Title = model.Title;
+        userInDb.LegalName = model.LegalName;
+        userInDb.PhoneNumber = model.PhoneNumber;
         userInDb.BaseSalary = model.BaseSalary;
 
         if (userInDb.BankAccount != model.BankAccount ||

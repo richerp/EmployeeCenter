@@ -72,5 +72,11 @@
   <data name="Bank Name (Branch)" xml:space="preserve">
     <value>Numele băncii (Filială)</value>
   </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>Numele legal</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>Număr de telefon</value>
+  </data>
 
 </root>

@@ -72,5 +72,11 @@
   <data name="Bank Account Name (Holder)" xml:space="preserve">
     <value>Tên tài khoản (Chủ)</value>
   </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>Tên pháp lý</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>Số điện thoại</value>
+  </data>
 
 </root>

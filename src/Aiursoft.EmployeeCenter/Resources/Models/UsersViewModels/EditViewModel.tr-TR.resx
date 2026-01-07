@@ -72,5 +72,11 @@
   <data name="Bank Account Name (Holder)" xml:space="preserve">
     <value>Banka Hesabı İsmi (Sahibi)</value>
   </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>Resmî İsim</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>Telefon Numarası</value>
+  </data>
 
 </root>

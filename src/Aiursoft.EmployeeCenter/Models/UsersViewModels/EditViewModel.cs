@@ -48,12 +48,21 @@ public class EditViewModel : UiStackLayoutViewModel
     public string? AvatarUrl { get; set; }
 
     [Display(Name = "Job Level")]
-    [MaxLength(30)]
+    [MaxLength(100)]
     public string? JobLevel { get; set; }
 
     [Display(Name = "Title")]
-    [MaxLength(30)]
+    [MaxLength(100)]
     public string? Title { get; set; }
+
+    [Display(Name = "Legal Name")]
+    [MaxLength(100)]
+    public string? LegalName { get; set; }
+
+    [Display(Name = "Phone Number")]
+    [Phone]
+    [MaxLength(30)]
+    public string? PhoneNumber { get; set; }
 
     [Display(Name = "Base Salary")]
     public decimal BaseSalary { get; set; }

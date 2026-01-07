@@ -60,5 +60,8 @@
   <data name="Change bank information" xml:space="preserve">
     <value>Change bank information</value>
   </data>
+  <data name="Maintain Profile" xml:space="preserve">
+    <value>Manage Profile</value>
+  </data>
 
 </root>

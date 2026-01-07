@@ -60,5 +60,8 @@
   <data name="Change bank information" xml:space="preserve">
     <value>修改银行信息</value>
   </data>
+  <data name="Maintain Profile" xml:space="preserve">
+    <value>维护个人资料</value>
+  </data>
 
 </root>

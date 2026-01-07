@@ -72,5 +72,11 @@
   <data name="Bank Account Name (Holder)" xml:space="preserve">
     <value>Nome del Conto Corrente (Titolare)</value>
   </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>Nome legale</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>Numero di telefono</value>
+  </data>
 
 </root>

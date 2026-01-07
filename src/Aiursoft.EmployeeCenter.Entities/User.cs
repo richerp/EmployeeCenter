@@ -22,15 +22,18 @@ public class User : IdentityUser
     /// The job level of this user. (职级)
     /// If null, it means the user has no job level assigned yet.
     /// </summary>
-    [MaxLength(30)]
+    [MaxLength(100)]
     public string? JobLevel { get; set; }
 
     /// <summary>
     /// The title of this user. (职务)
     /// If null, it means the user has no title assigned yet.
     /// </summary>
-    [MaxLength(30)]
+    [MaxLength(100)]
     public string? Title { get; set; }
+
+    [MaxLength(100)]
+    public string? LegalName { get; set; }
 
     public decimal BaseSalary { get; set; }
 

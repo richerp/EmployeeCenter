@@ -105,5 +105,17 @@
   <data name="Enter bank account name" xml:space="preserve">
     <value>Enter account holder name</value>
   </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>Legal Name</value>
+  </data>
+  <data name="Enter legal name" xml:space="preserve">
+    <value>Enter legal name</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="Enter phone number" xml:space="preserve">
+    <value>Enter phone number</value>
+  </data>
 
 </root>

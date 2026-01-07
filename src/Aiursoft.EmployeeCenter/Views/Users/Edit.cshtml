@@ -72,6 +72,16 @@
                     <input asp-for="Title" class="form-control" />
                     <span asp-validation-for="Title" class="text-danger"></span>
                 </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="LegalName" class="form-label">@Localizer["Legal Name"]</label>
+                    <input asp-for="LegalName" class="form-control" />
+                    <span asp-validation-for="LegalName" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="PhoneNumber" class="form-label">@Localizer["Phone Number"]</label>
+                    <input asp-for="PhoneNumber" class="form-control" />
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
                 <div class="col-md-4 mb-3">
                     <label asp-for="BaseSalary" class="form-label">@Localizer["Base Salary"]</label>
                     <input asp-for="BaseSalary" class="form-control" />

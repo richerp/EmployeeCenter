@@ -55,6 +55,70 @@ public class ManageController(
     }
 
     //
+    // GET: /Manage/MaintainProfile
+    [HttpGet]
+    public async Task<IActionResult> MaintainProfile()
+    {
+        var user = await GetCurrentUserAsync();
+        return this.StackView(new MaintainProfileViewModel
+        {
+            LegalName = user!.LegalName,
+            PhoneNumber = user.PhoneNumber,
+            BankAccount = user.BankAccount,
+            BankName = user.BankName,
+            BankAccountName = user.BankAccountName
+        });
+    }
+
+    //
+    // POST: /Manage/MaintainProfile
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> MaintainProfile(MaintainProfileViewModel model)
+    {
+        if (!ModelState.IsValid)
+        {
+            return this.StackView(model);
+        }
+
+        var user = await GetCurrentUserAsync();
+        if (user != null)
+        {
+            user.LegalName = model.LegalName;
+            user.PhoneNumber = model.PhoneNumber;
+
+            if (user.BankAccount != model.BankAccount ||
+                user.BankName != model.BankName ||
+                user.BankAccountName != model.BankAccountName)
+            {
+                var log = new BankCardChangeLog
+                {
+                    UserId = user.Id,
+                    OldBankCardNumber = user.BankAccount,
+                    NewBankCardNumber = model.BankAccount,
+                    OldBankName = user.BankName,
+                    NewBankName = model.BankName,
+                    OldBankAccountName = user.BankAccountName,
+                    NewBankAccountName = model.BankAccountName,
+                    ChangedByUserId = user.Id,
+                    ChangeTime = DateTime.UtcNow
+                };
+                dbContext.BankCardChangeLogs.Add(log);
+
+                user.BankAccount = model.BankAccount;
+                user.BankName = model.BankName;
+                user.BankAccountName = model.BankAccountName;
+            }
+
+            await userManager.UpdateAsync(user);
+            await dbContext.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index), new { Message = ManageMessageId.ChangeProfileSuccess });
+        }
+        return RedirectToAction(nameof(Index), new { Message = ManageMessageId.Error });
+    }
+
+    //
     // GET: /Manage/ChangeBankInfo
     [HttpGet]
     public async Task<IActionResult> ChangeBankInfo()

@@ -66,5 +66,11 @@
   <data name="Bank Account Name (Holder)" xml:space="preserve">
     <value>은행 계좌 이름 (예금주)</value>
   </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>법적 이름</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>전화번호</value>
+  </data>
 
 </root>

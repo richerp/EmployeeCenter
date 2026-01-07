@@ -70,6 +70,18 @@
                 </div>
                 <div class="list-group-item">
                     <div class="row">
+                        <strong class="col-sm-3">@Localizer["Legal Name"]</strong>
+                        <div class="col-sm-9">@(Model.User.LegalName ?? "N/A")</div>
+                    </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="row">
+                        <strong class="col-sm-3">@Localizer["Phone Number"]</strong>
+                        <div class="col-sm-9">@(Model.User.PhoneNumber ?? "N/A")</div>
+                    </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="row">
                         <strong class="col-sm-3">@Localizer["Base Salary"]</strong>
                         <div class="col-sm-9">@Model.User.BaseSalary.ToString("C")</div>
                     </div>

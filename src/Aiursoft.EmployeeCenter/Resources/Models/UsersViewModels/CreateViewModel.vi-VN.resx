@@ -66,5 +66,11 @@
   <data name="Bank Account (Card Number)" xml:space="preserve">
     <value>Tài khoản ngân hàng (Số thẻ)</value>
   </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>Tên pháp lý</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>Số điện thoại</value>
+  </data>
 
 </root>
