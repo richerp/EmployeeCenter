@@ -5,7 +5,6 @@ using Aiursoft.DbTools;
 using Aiursoft.EmployeeCenter.Entities;
 using Aiursoft.EmployeeCenter.Authorization;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 using static Aiursoft.WebTools.Extends;
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
@@ -83,7 +82,7 @@ public class LeaveApprovalAuthorizationTests
     public async Task Manager_CanApprove_DirectSubordinate()
     {
         var suffix = Guid.NewGuid().ToString("N")[..6];
-        string employeeId, managerId, employeeEmail, managerEmail;
+        string employeeId, managerId, managerEmail;
 
         // Create users using UserManager
         using (var scope = _server!.Services.CreateScope())
@@ -112,7 +111,6 @@ public class LeaveApprovalAuthorizationTests
 
             employeeId = employee.Id;
             managerId = manager.Id;
-            employeeEmail = employee.Email!;
             managerEmail = manager.Email!;
         }
 
@@ -177,7 +175,7 @@ public class LeaveApprovalAuthorizationTests
     public async Task Manager_CannotApprove_NonSubordinate()
     {
         var suffix = Guid.NewGuid().ToString("N")[..6];
-        string employeeId, otherId, otherEmail;
+        string employeeId, otherEmail;
 
         // Create users
         using (var scope = _server!.Services.CreateScope())
@@ -203,7 +201,6 @@ public class LeaveApprovalAuthorizationTests
             await userManager.CreateAsync(other, "Password123!");
 
             employeeId = employee.Id;
-            otherId = other.Id;
             otherEmail = other.Email!;
         }
 
@@ -351,7 +348,7 @@ public class LeaveApprovalAuthorizationTests
     public async Task UserWithPermission_CanApprove_AnyLeave()
     {
         var suffix = Guid.NewGuid().ToString("N")[..6];
-        string employeeId, hrId, hrEmail;
+        string employeeId, hrEmail;
 
         // Create users
         using (var scope = _server!.Services.CreateScope())
@@ -366,7 +363,6 @@ public class LeaveApprovalAuthorizationTests
             await userManager.CreateAsync(hr, "Password123!");
 
             employeeId = employee.Id;
-            hrId = hr.Id;
             hrEmail = hr.Email!;
 
             // Create role with CanApproveAnyLeave permission

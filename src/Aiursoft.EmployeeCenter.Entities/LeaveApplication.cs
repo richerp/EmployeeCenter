@@ -79,6 +79,7 @@ public class LeaveApplication
     /// <summary>
     /// The ID of the user who reviewed (approved or rejected) this application
     /// </summary>
+    [MaxLength(255)]
     public string? ReviewedById { get; set; }
 
     /// <summary>
