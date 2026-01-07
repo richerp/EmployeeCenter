@@ -61,6 +61,10 @@
                 </span>
                 <i class="align-middle" data-lucide="chevron-right"></i>
             </a>
+
+        }
+        else
+        {
             <a asp-controller="Manage" asp-action="ChangeBankInfo" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
                 <span>
                     <i class="align-middle me-2" data-lucide="credit-card"></i>
@@ -68,19 +72,6 @@
                 </span>
                 <i class="align-middle" data-lucide="chevron-right"></i>
             </a>
-        }
-        else
-        {
-            @* The warning message is now a styled list item, maintaining structural consistency. *@
-            <div class="list-group-item">
-                <div class="d-flex align-items-center text-warning">
-                    <i class="align-middle me-2" data-lucide="alert-triangle"></i>
-                    <span>
-                        @Localizer["You can't change your password because local authentication is disabled. Please edit your profile from the"]
-                        <a href="@AppSettings.Value.OIDC.GetAuthProviderHomePage()">@Localizer["auth provider"]</a>.
-                    </span>
-                </div>
-            </div>
         }
         <a asp-controller="SshKeys" asp-action="Index" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
             <span>
