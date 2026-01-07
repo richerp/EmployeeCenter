@@ -21,14 +21,14 @@
       <data name="Clear" xml:space="preserve">
     <value>Очистити</value>
   </data>
+  <data name="No users found" xml:space="preserve">
+    <value>Користувачів не знайдено</value>
+  </data>
   <data name="Search Manager" xml:space="preserve">
     <value>Пошук менеджера</value>
   </data>
   <data name="Type 3+ characters to search..." xml:space="preserve">
     <value>Введіть 3+ символи для пошуку...</value>
-  </data>
-  <data name="No users found" xml:space="preserve">
-    <value>Користувачів не знайдено</value>
   </data>
 
 </root>

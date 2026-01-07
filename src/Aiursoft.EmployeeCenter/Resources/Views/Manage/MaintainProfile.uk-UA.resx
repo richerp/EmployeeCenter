@@ -18,23 +18,11 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Back to Settings" xml:space="preserve">
+      <data name="Back" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="Back to Settings" xml:space="preserve">
     <value>Назад до налаштувань</value>
-  </data>
-  <data name="Maintain Profile" xml:space="preserve">
-    <value>Підтримка профілю</value>
-  </data>
-  <data name="Personal and Bank Information" xml:space="preserve">
-    <value>Персональні дані та інформація про банківський рахунок</value>
-  </data>
-  <data name="Legal Name" xml:space="preserve">
-    <value>Повне ім&apos;я</value>
-  </data>
-  <data name="Phone Number" xml:space="preserve">
-    <value>Номер телефону</value>
-  </data>
-  <data name="Bank Name" xml:space="preserve">
-    <value>Назва банку</value>
   </data>
   <data name="Bank Account" xml:space="preserve">
     <value>Рахунок у банку</value>
@@ -42,11 +30,23 @@
   <data name="Bank Account Name" xml:space="preserve">
     <value>Назва банківського рахунку</value>
   </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Назва банку</value>
+  </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>Повне ім&apos;я</value>
+  </data>
+  <data name="Maintain Profile" xml:space="preserve">
+    <value>Підтримка профілю</value>
+  </data>
+  <data name="Personal and Bank Information" xml:space="preserve">
+    <value>Персональні дані та інформація про банківський рахунок</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>Номер телефону</value>
+  </data>
   <data name="Save Profile" xml:space="preserve">
     <value>Зберегти профіль</value>
-  </data>
-  <data name="Back" xml:space="preserve">
-    <value>Назад</value>
   </data>
 
 </root>

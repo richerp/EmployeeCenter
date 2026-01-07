@@ -21,17 +21,17 @@
       <data name="Badge" xml:space="preserve">
     <value>Insignă</value>
   </data>
-  <data name="Project" xml:space="preserve">
-    <value>Proiect</value>
-  </data>
-  <data name="projects" xml:space="preserve">
-    <value>proiecte</value>
-  </data>
   <data name="GitLab Projects" xml:space="preserve">
     <value>Proiecte GitLab</value>
   </data>
   <data name="No projects found." xml:space="preserve">
     <value>Nu au fost găsite proiecte.</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Proiect</value>
+  </data>
+  <data name="projects" xml:space="preserve">
+    <value>proiecte</value>
   </data>
 
 </root>

@@ -18,56 +18,56 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Title" xml:space="preserve">
-    <value>Tytuł</value>
-  </data>
-  <data name="My Passwords" xml:space="preserve">
-    <value>Moje hasła</value>
-  </data>
-  <data name="Account" xml:space="preserve">
+      <data name="Account" xml:space="preserve">
     <value>Konto</value>
-  </data>
-  <data name="No passwords created yet." xml:space="preserve">
-    <value>Nie utworzono jeszcze żadnych haseł.</value>
   </data>
   <data name="Actions" xml:space="preserve">
     <value>Akcje</value>
   </data>
-  <data name="Passwords Management" xml:space="preserve">
-    <value>Zarządzanie hasłami</value>
-  </data>
   <data name="Create New" xml:space="preserve">
     <value>Utwórz nowy</value>
-  </data>
-  <data name="Manage and view shared account passwords." xml:space="preserve">
-    <value>Zarządzaj i przeglądaj hasła do udostępnionych kont.</value>
-  </data>
-  <data name="Edit" xml:space="preserve">
-    <value>Edytuj</value>
   </data>
   <data name="Details" xml:space="preserve">
     <value>Szczegóły</value>
   </data>
-  <data name="Permission" xml:space="preserve">
-    <value>Uprawnienie</value>
-  </data>
-  <data name="Owner" xml:space="preserve">
-    <value>Właściciel</value>
+  <data name="Edit" xml:space="preserve">
+    <value>Edytuj</value>
   </data>
   <data name="Editable" xml:space="preserve">
     <value>Edytowalne</value>
   </data>
-  <data name="Shared with Me" xml:space="preserve">
-    <value>Udostępnione mi</value>
-  </data>
-  <data name="No passwords shared with you." xml:space="preserve">
-    <value>Nie udostępniono Ci żadnych haseł.</value>
+  <data name="Manage and view shared account passwords." xml:space="preserve">
+    <value>Zarządzaj i przeglądaj hasła do udostępnionych kont.</value>
   </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>Zarządzaj udostępnieniami</value>
   </data>
+  <data name="My Passwords" xml:space="preserve">
+    <value>Moje hasła</value>
+  </data>
+  <data name="No passwords created yet." xml:space="preserve">
+    <value>Nie utworzono jeszcze żadnych haseł.</value>
+  </data>
+  <data name="No passwords shared with you." xml:space="preserve">
+    <value>Nie udostępniono Ci żadnych haseł.</value>
+  </data>
+  <data name="Owner" xml:space="preserve">
+    <value>Właściciel</value>
+  </data>
+  <data name="Passwords Management" xml:space="preserve">
+    <value>Zarządzanie hasłami</value>
+  </data>
+  <data name="Permission" xml:space="preserve">
+    <value>Uprawnienie</value>
+  </data>
   <data name="Read Only" xml:space="preserve">
     <value>Tylko do odczytu</value>
+  </data>
+  <data name="Shared with Me" xml:space="preserve">
+    <value>Udostępnione mi</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Tytuł</value>
   </data>
 
 </root>

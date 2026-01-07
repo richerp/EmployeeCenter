@@ -18,35 +18,35 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Issue new payroll" xml:space="preserve">
-    <value>Emite o nouă fluturaș de salariu</value>
-  </data>
-  <data name="Target Month" xml:space="preserve">
-    <value>Luna țintă</value>
-  </data>
-  <data name="User" xml:space="preserve">
-    <value>Utilizator</value>
-  </data>
-  <data name="All Payrolls" xml:space="preserve">
-    <value>Toate salariile</value>
-  </data>
-  <data name="Total Amount" xml:space="preserve">
-    <value>Sumă totală</value>
-  </data>
-  <data name="Created Time" xml:space="preserve">
-    <value>Ora creării</value>
-  </data>
-  <data name="Manage Payrolls" xml:space="preserve">
-    <value>Gestionați Salariile</value>
-  </data>
-  <data name="A list of all issued payroll records in the system." xml:space="preserve">
+      <data name="A list of all issued payroll records in the system." xml:space="preserve">
     <value>O listă cu toate înregistrările de salarii emise în sistem.</value>
   </data>
   <data name="Actions" xml:space="preserve">
     <value>Acțiuni</value>
   </data>
+  <data name="All Payrolls" xml:space="preserve">
+    <value>Toate salariile</value>
+  </data>
+  <data name="Created Time" xml:space="preserve">
+    <value>Ora creării</value>
+  </data>
   <data name="Details" xml:space="preserve">
     <value>Detalii</value>
+  </data>
+  <data name="Issue new payroll" xml:space="preserve">
+    <value>Emite o nouă fluturaș de salariu</value>
+  </data>
+  <data name="Manage Payrolls" xml:space="preserve">
+    <value>Gestionați Salariile</value>
+  </data>
+  <data name="Target Month" xml:space="preserve">
+    <value>Luna țintă</value>
+  </data>
+  <data name="Total Amount" xml:space="preserve">
+    <value>Sumă totală</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Utilizator</value>
   </data>
 
 </root>

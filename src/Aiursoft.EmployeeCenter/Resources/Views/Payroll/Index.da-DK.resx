@@ -18,29 +18,44 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Actions" xml:space="preserve">
+      <data name="A list of all your historical payroll records." xml:space="preserve">
+    <value>En liste over alle dine historiske lønsedler.</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
     <value>Handlinger</value>
   </data>
-  <data name="Details" xml:space="preserve">
-    <value>Detaljer</value>
-  </data>
-  <data name="Total Amount" xml:space="preserve">
-    <value>Samlet beløb</value>
-  </data>
-  <data name="My Payrolls" xml:space="preserve">
-    <value>Mine Lønninger</value>
-  </data>
-  <data name="Historical Payrolls" xml:space="preserve">
-    <value>Historiske lønsedler</value>
-  </data>
-  <data name="Target Month" xml:space="preserve">
-    <value>Mål-måned</value>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Grundløn</value>
   </data>
   <data name="Created Time" xml:space="preserve">
     <value>Oprettelsestidspunkt</value>
   </data>
-  <data name="A list of all your historical payroll records." xml:space="preserve">
-    <value>En liste over alle dine historiske lønsedler.</value>
+  <data name="Details" xml:space="preserve">
+    <value>Detaljer</value>
+  </data>
+  <data name="Historical Payrolls" xml:space="preserve">
+    <value>Historiske lønsedler</value>
+  </data>
+  <data name="My Payrolls" xml:space="preserve">
+    <value>Mine Lønninger</value>
+  </data>
+  <data name="Net Salary (Actual)" xml:space="preserve">
+    <value>Nettoløn (faktisk)</value>
+  </data>
+  <data name="Reset Zoom" xml:space="preserve">
+    <value>Nulstil zoom</value>
+  </data>
+  <data name="Salary Trend" xml:space="preserve">
+    <value>Lønudvikling</value>
+  </data>
+  <data name="Target Month" xml:space="preserve">
+    <value>Mål-måned</value>
+  </data>
+  <data name="Total Amount" xml:space="preserve">
+    <value>Samlet beløb</value>
+  </data>
+  <data name="Track your salary progression and promotions over time" xml:space="preserve">
+    <value>Følg din lønudvikling og fremadgang over tid</value>
   </data>
 
 </root>

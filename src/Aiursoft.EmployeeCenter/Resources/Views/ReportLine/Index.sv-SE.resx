@@ -18,35 +18,35 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Target" xml:space="preserve">
-    <value>Mål</value>
+      <data name="Legend" xml:space="preserve">
+    <value>Förklaring</value>
   </data>
   <data name="Manager" xml:space="preserve">
     <value>Chef</value>
   </data>
-  <data name="Subordinate" xml:space="preserve">
-    <value>Underordnad</value>
-  </data>
   <data name="Peer" xml:space="preserve">
     <value>Kollegor</value>
+  </data>
+  <data name="Please select a user first." xml:space="preserve">
+    <value>Vänligen välj en användare först.</value>
   </data>
   <data name="Report Line" xml:space="preserve">
     <value>Rapportlinje</value>
   </data>
-  <data name="View Report Line" xml:space="preserve">
-    <value>Visa rapportlinje</value>
-  </data>
   <data name="Search Person" xml:space="preserve">
     <value>Sök person</value>
   </data>
-  <data name="Legend" xml:space="preserve">
-    <value>Förklaring</value>
+  <data name="Subordinate" xml:space="preserve">
+    <value>Underordnad</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>Mål</value>
+  </data>
+  <data name="View Report Line" xml:space="preserve">
+    <value>Visa rapportlinje</value>
   </data>
   <data name="Visual Report Line" xml:space="preserve">
     <value>Visuell Rapportlinje</value>
-  </data>
-  <data name="Please select a user first." xml:space="preserve">
-    <value>Vänligen välj en användare först.</value>
   </data>
   <data name="You have to log in to view report line." xml:space="preserve">
     <value>Du måste logga in för att se rapportlinjen.</value>

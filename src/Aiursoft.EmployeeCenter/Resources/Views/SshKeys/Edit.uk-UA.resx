@@ -21,17 +21,17 @@
       <data name="Cancel" xml:space="preserve">
     <value>Скасувати</value>
   </data>
-  <data name="Save Changes" xml:space="preserve">
-    <value>Зберегти зміни</value>
-  </data>
-  <data name="Update SSH Key" xml:space="preserve">
-    <value>Оновити SSH-ключ</value>
-  </data>
   <data name="Edit SSH Key" xml:space="preserve">
     <value>Редагувати SSH-ключ</value>
   </data>
   <data name="Modify your public SSH key details." xml:space="preserve">
     <value>Змініть деталі вашого публічного SSH-ключа.</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>Зберегти зміни</value>
+  </data>
+  <data name="Update SSH Key" xml:space="preserve">
+    <value>Оновити SSH-ключ</value>
   </data>
 
 </root>

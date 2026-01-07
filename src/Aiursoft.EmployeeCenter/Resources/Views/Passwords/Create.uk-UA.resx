@@ -18,26 +18,26 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Title" xml:space="preserve">
-    <value>Назва</value>
-  </data>
-  <data name="Note" xml:space="preserve">
-    <value>Примітка</value>
-  </data>
-  <data name="Create" xml:space="preserve">
-    <value>Створити</value>
-  </data>
-  <data name="Password / Secret" xml:space="preserve">
-    <value>Пароль / Секрет</value>
+      <data name="Account / Username" xml:space="preserve">
+    <value>Обліковий запис / Ім&apos;я користувача</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Скасувати</value>
   </data>
+  <data name="Create" xml:space="preserve">
+    <value>Створити</value>
+  </data>
   <data name="Create New Password" xml:space="preserve">
     <value>Створити новий пароль</value>
   </data>
-  <data name="Account / Username" xml:space="preserve">
-    <value>Обліковий запис / Ім&apos;я користувача</value>
+  <data name="Note" xml:space="preserve">
+    <value>Примітка</value>
+  </data>
+  <data name="Password / Secret" xml:space="preserve">
+    <value>Пароль / Секрет</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Назва</value>
   </data>
 
 </root>

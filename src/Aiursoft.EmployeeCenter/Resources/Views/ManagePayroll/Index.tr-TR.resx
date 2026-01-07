@@ -18,35 +18,35 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Total Amount" xml:space="preserve">
-    <value>Toplam Tutar</value>
+      <data name="A list of all issued payroll records in the system." xml:space="preserve">
+    <value>Sistemdeki tüm düzenlenmiş bordro kayıtlarının listesi.</value>
   </data>
-  <data name="User" xml:space="preserve">
-    <value>Kullanıcı</value>
+  <data name="Actions" xml:space="preserve">
+    <value>İşlemler</value>
   </data>
   <data name="All Payrolls" xml:space="preserve">
     <value>Tüm Bordrolar</value>
   </data>
-  <data name="Target Month" xml:space="preserve">
-    <value>Hedef Ay</value>
-  </data>
-  <data name="Issue new payroll" xml:space="preserve">
-    <value>Yeni bordro oluştur</value>
-  </data>
   <data name="Created Time" xml:space="preserve">
     <value>Oluşturulma Zamanı</value>
-  </data>
-  <data name="Manage Payrolls" xml:space="preserve">
-    <value>Maaş Bordrolarını Yönet</value>
-  </data>
-  <data name="A list of all issued payroll records in the system." xml:space="preserve">
-    <value>Sistemdeki tüm düzenlenmiş bordro kayıtlarının listesi.</value>
   </data>
   <data name="Details" xml:space="preserve">
     <value>Detaylar</value>
   </data>
-  <data name="Actions" xml:space="preserve">
-    <value>İşlemler</value>
+  <data name="Issue new payroll" xml:space="preserve">
+    <value>Yeni bordro oluştur</value>
+  </data>
+  <data name="Manage Payrolls" xml:space="preserve">
+    <value>Maaş Bordrolarını Yönet</value>
+  </data>
+  <data name="Target Month" xml:space="preserve">
+    <value>Hedef Ay</value>
+  </data>
+  <data name="Total Amount" xml:space="preserve">
+    <value>Toplam Tutar</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Kullanıcı</value>
   </data>
 
 </root>

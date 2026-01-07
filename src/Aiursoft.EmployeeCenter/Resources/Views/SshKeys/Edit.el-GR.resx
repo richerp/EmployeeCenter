@@ -21,17 +21,17 @@
       <data name="Cancel" xml:space="preserve">
     <value>Ακύρωση</value>
   </data>
-  <data name="Save Changes" xml:space="preserve">
-    <value>Αποθήκευση Αλλαγών</value>
-  </data>
-  <data name="Update SSH Key" xml:space="preserve">
-    <value>Ενημέρωση Κλειδιού SSH</value>
-  </data>
   <data name="Edit SSH Key" xml:space="preserve">
     <value>Επεξεργασία Κλειδιού SSH</value>
   </data>
   <data name="Modify your public SSH key details." xml:space="preserve">
     <value>Τροποποιήστε τα στοιχεία του δημόσιου κλειδιού SSH σας.</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>Αποθήκευση Αλλαγών</value>
+  </data>
+  <data name="Update SSH Key" xml:space="preserve">
+    <value>Ενημέρωση Κλειδιού SSH</value>
   </data>
 
 </root>

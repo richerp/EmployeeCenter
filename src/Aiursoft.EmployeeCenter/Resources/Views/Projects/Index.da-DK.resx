@@ -21,6 +21,9 @@
       <data name="Badge" xml:space="preserve">
     <value>Mærke</value>
   </data>
+  <data name="GitLab Projects" xml:space="preserve">
+    <value>GitLab-projekter</value>
+  </data>
   <data name="No projects found." xml:space="preserve">
     <value>Ingen projekter fundet.</value>
   </data>
@@ -29,9 +32,6 @@
   </data>
   <data name="projects" xml:space="preserve">
     <value>projekter</value>
-  </data>
-  <data name="GitLab Projects" xml:space="preserve">
-    <value>GitLab-projekter</value>
   </data>
 
 </root>

@@ -18,32 +18,14 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Title" xml:space="preserve">
-    <value>Τίτλος</value>
+      <data name="Account" xml:space="preserve">
+    <value>Λογαριασμός</value>
   </data>
   <data name="Actions" xml:space="preserve">
     <value>Ενέργειες</value>
   </data>
-  <data name="Account" xml:space="preserve">
-    <value>Λογαριασμός</value>
-  </data>
-  <data name="My Passwords" xml:space="preserve">
-    <value>Οι Κωδικοί Μου</value>
-  </data>
-  <data name="Passwords Management" xml:space="preserve">
-    <value>Διαχείριση Κωδικών Πρόσβασης</value>
-  </data>
-  <data name="No passwords created yet." xml:space="preserve">
-    <value>Δεν έχουν δημιουργηθεί ακόμη κωδικοί πρόσβασης.</value>
-  </data>
   <data name="Create New" xml:space="preserve">
     <value>Δημιουργία Νέου</value>
-  </data>
-  <data name="Manage and view shared account passwords." xml:space="preserve">
-    <value>Διαχειριστείτε και δείτε κωδικούς πρόσβασης κοινόχρηστων λογαριασμών.</value>
-  </data>
-  <data name="Owner" xml:space="preserve">
-    <value>Κάτοχος</value>
   </data>
   <data name="Details" xml:space="preserve">
     <value>Λεπτομέρειες</value>
@@ -54,20 +36,38 @@
   <data name="Editable" xml:space="preserve">
     <value>Επεξεργάσιμο</value>
   </data>
-  <data name="Shared with Me" xml:space="preserve">
-    <value>Κοινόχρηστα με εμένα</value>
-  </data>
-  <data name="Permission" xml:space="preserve">
-    <value>Άδεια</value>
+  <data name="Manage and view shared account passwords." xml:space="preserve">
+    <value>Διαχειριστείτε και δείτε κωδικούς πρόσβασης κοινόχρηστων λογαριασμών.</value>
   </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>Διαχείριση Κοινόχρηστων</value>
   </data>
+  <data name="My Passwords" xml:space="preserve">
+    <value>Οι Κωδικοί Μου</value>
+  </data>
+  <data name="No passwords created yet." xml:space="preserve">
+    <value>Δεν έχουν δημιουργηθεί ακόμη κωδικοί πρόσβασης.</value>
+  </data>
   <data name="No passwords shared with you." xml:space="preserve">
     <value>Δεν έχουν μοιραστεί κωδικοί πρόσβασης μαζί σας.</value>
   </data>
+  <data name="Owner" xml:space="preserve">
+    <value>Κάτοχος</value>
+  </data>
+  <data name="Passwords Management" xml:space="preserve">
+    <value>Διαχείριση Κωδικών Πρόσβασης</value>
+  </data>
+  <data name="Permission" xml:space="preserve">
+    <value>Άδεια</value>
+  </data>
   <data name="Read Only" xml:space="preserve">
     <value>Μόνο Ανάγνωση</value>
+  </data>
+  <data name="Shared with Me" xml:space="preserve">
+    <value>Κοινόχρηστα με εμένα</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Τίτλος</value>
   </data>
 
 </root>

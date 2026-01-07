@@ -21,17 +21,17 @@
       <data name="Cancel" xml:space="preserve">
     <value>Batal</value>
   </data>
-  <data name="Save Changes" xml:space="preserve">
-    <value>Simpan Perubahan</value>
-  </data>
   <data name="Edit SSH Key" xml:space="preserve">
     <value>Edit Kunci SSH</value>
   </data>
-  <data name="Update SSH Key" xml:space="preserve">
-    <value>Perbarui Kunci SSH</value>
-  </data>
   <data name="Modify your public SSH key details." xml:space="preserve">
     <value>Ubah detail kunci SSH publik Anda.</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>Simpan Perubahan</value>
+  </data>
+  <data name="Update SSH Key" xml:space="preserve">
+    <value>Perbarui Kunci SSH</value>
   </data>
 
 </root>

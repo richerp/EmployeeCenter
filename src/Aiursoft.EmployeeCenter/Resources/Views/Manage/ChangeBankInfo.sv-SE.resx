@@ -18,35 +18,35 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Bank Information" xml:space="preserve">
-    <value>Bankuppgifter</value>
-  </data>
-  <data name="Change Bank Information" xml:space="preserve">
-    <value>Ändra bankuppgifter</value>
+      <data name="Bank Account Name" xml:space="preserve">
+    <value>Kontonamn</value>
   </data>
   <data name="Bank Card Number" xml:space="preserve">
     <value>Bankkortnummer</value>
   </data>
-  <data name="Enter your bank card number" xml:space="preserve">
-    <value>Ange ditt bankkortnummer</value>
+  <data name="Bank Information" xml:space="preserve">
+    <value>Bankuppgifter</value>
   </data>
   <data name="Bank Name (Branch)" xml:space="preserve">
     <value>Banknamn (Filial)</value>
   </data>
-  <data name="Enter your bank name and branch" xml:space="preserve">
-    <value>Ange ditt banks namn och gren</value>
+  <data name="Cancel" xml:space="preserve">
+    <value>Avbryt</value>
   </data>
-  <data name="Bank Account Name" xml:space="preserve">
-    <value>Kontonamn</value>
+  <data name="Change Bank Information" xml:space="preserve">
+    <value>Ändra bankuppgifter</value>
   </data>
   <data name="Enter your bank account name" xml:space="preserve">
     <value>Ange ditt kontonamn</value>
   </data>
+  <data name="Enter your bank card number" xml:space="preserve">
+    <value>Ange ditt bankkortnummer</value>
+  </data>
+  <data name="Enter your bank name and branch" xml:space="preserve">
+    <value>Ange ditt banks namn och gren</value>
+  </data>
   <data name="Save changes" xml:space="preserve">
     <value>Spara ändringar</value>
-  </data>
-  <data name="Cancel" xml:space="preserve">
-    <value>Avbryt</value>
   </data>
 
 </root>

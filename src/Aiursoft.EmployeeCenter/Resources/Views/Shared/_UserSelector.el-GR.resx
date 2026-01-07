@@ -21,11 +21,11 @@
       <data name="Clear" xml:space="preserve">
     <value>Καθαρισμός</value>
   </data>
-  <data name="Search Manager" xml:space="preserve">
-    <value>Αναζήτηση Διαχειριστή</value>
-  </data>
   <data name="No users found" xml:space="preserve">
     <value>Δεν βρέθηκαν χρήστες</value>
+  </data>
+  <data name="Search Manager" xml:space="preserve">
+    <value>Αναζήτηση Διαχειριστή</value>
   </data>
   <data name="Type 3+ characters to search..." xml:space="preserve">
     <value>Πληκτρολογήστε 3+ χαρακτήρες για αναζήτηση...</value>

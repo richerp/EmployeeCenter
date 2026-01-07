@@ -18,32 +18,14 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Back" xml:space="preserve">
-    <value>Wstecz</value>
-  </data>
-  <data name="Edit" xml:space="preserve">
-    <value>Edytuj</value>
-  </data>
-  <data name="Password Details" xml:space="preserve">
-    <value>Szczegóły hasła</value>
-  </data>
-  <data name="Delete" xml:space="preserve">
-    <value>Usuń</value>
-  </data>
-  <data name="Password / Secret" xml:space="preserve">
-    <value>Hasło / Tajny klucz</value>
-  </data>
-  <data name="Manage Shares" xml:space="preserve">
-    <value>Zarządzaj udostępnieniami</value>
-  </data>
-  <data name="Account / Username" xml:space="preserve">
+      <data name="Account / Username" xml:space="preserve">
     <value>Konto / Nazwa użytkownika</value>
   </data>
   <data name="Are you sure you want to delete this password?" xml:space="preserve">
     <value>Czy na pewno chcesz usunąć to hasło?</value>
   </data>
-  <data name="Note" xml:space="preserve">
-    <value>Notatka</value>
+  <data name="Back" xml:space="preserve">
+    <value>Wstecz</value>
   </data>
   <data name="Created by" xml:space="preserve">
     <value>Utworzone przez</value>
@@ -51,8 +33,26 @@
   <data name="Created on" xml:space="preserve">
     <value>Utworzono</value>
   </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Usuń</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edytuj</value>
+  </data>
+  <data name="Manage Shares" xml:space="preserve">
+    <value>Zarządzaj udostępnieniami</value>
+  </data>
   <data name="No notes." xml:space="preserve">
     <value>Brak notatek.</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Notatka</value>
+  </data>
+  <data name="Password / Secret" xml:space="preserve">
+    <value>Hasło / Tajny klucz</value>
+  </data>
+  <data name="Password Details" xml:space="preserve">
+    <value>Szczegóły hasła</value>
   </data>
 
 </root>
