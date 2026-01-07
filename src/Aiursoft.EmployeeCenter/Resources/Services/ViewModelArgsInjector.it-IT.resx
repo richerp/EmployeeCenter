@@ -33,6 +33,9 @@
   <data name="Anonymous" xml:space="preserve">
     <value>Anonimo</value>
   </data>
+  <data name="Approval Center" xml:space="preserve">
+    <value>Centro Approvazioni</value>
+  </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Cambia Avatar</value>
   </data>

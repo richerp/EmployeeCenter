@@ -33,6 +33,9 @@
   <data name="Anonymous" xml:space="preserve">
     <value>Anonyymi</value>
   </data>
+  <data name="Approval Center" xml:space="preserve">
+    <value>Hyväksyntäkeskus</value>
+  </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Vaihda avataria</value>
   </data>

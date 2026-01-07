@@ -36,6 +36,9 @@
   <data name="Anonymous" xml:space="preserve">
     <value>Ẩn danh</value>
   </data>
+  <data name="Approval Center" xml:space="preserve">
+    <value>Trung tâm phê duyệt</value>
+  </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Thay đổi Ảnh đại diện</value>
   </data>

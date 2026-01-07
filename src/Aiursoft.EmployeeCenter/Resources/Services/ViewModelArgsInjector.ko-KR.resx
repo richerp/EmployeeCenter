@@ -36,6 +36,9 @@
   <data name="Anonymous" xml:space="preserve">
     <value>익명</value>
   </data>
+  <data name="Approval Center" xml:space="preserve">
+    <value>승인 센터</value>
+  </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>아바타 변경</value>
   </data>

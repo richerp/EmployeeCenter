@@ -48,6 +48,9 @@
   <data name="Manage your public SSH keys for server access." xml:space="preserve">
     <value>Manage your public SSH keys for server access.</value>
   </data>
+  <data name="Manage your SSH Key" xml:space="preserve">
+    <value>Manage your SSH key</value>
+  </data>
   <data name="Name" xml:space="preserve">
     <value>Name</value>
   </data>

@@ -36,6 +36,9 @@
   <data name="Anonymous" xml:space="preserve">
     <value>ไม่ระบุชื่อ</value>
   </data>
+  <data name="Approval Center" xml:space="preserve">
+    <value>ศูนย์การอนุมัติ</value>
+  </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>เปลี่ยนรูปโปรไฟล์</value>
   </data>

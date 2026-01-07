@@ -45,6 +45,9 @@
   <data name="Are you sure you want to withdraw this leave application?" xml:space="preserve">
     <value>Are you sure you want to withdraw this leave application?</value>
   </data>
+  <data name="awaiting approval" xml:space="preserve">
+    <value>awaiting approval</value>
+  </data>
   <data name="Cannot carry over to the third year" xml:space="preserve">
     <value>Cannot carry over to the third year</value>
   </data>
@@ -54,11 +57,20 @@
   <data name="days" xml:space="preserve">
     <value>days</value>
   </data>
+  <data name="days away" xml:space="preserve">
+    <value>days away</value>
+  </data>
   <data name="Does not carry over to the next year" xml:space="preserve">
     <value>Does not carry over to the next year</value>
   </data>
   <data name="End Date" xml:space="preserve">
     <value>End Date</value>
+  </data>
+  <data name="Have a wonderful break!" xml:space="preserve">
+    <value>Have a wonderful break!</value>
+  </data>
+  <data name="in" xml:space="preserve">
+    <value>in</value>
   </data>
   <data name="Leave Balance Summary" xml:space="preserve">
     <value>Leave Balance Summary</value>
@@ -78,17 +90,44 @@
   <data name="My Leave Balance" xml:space="preserve">
     <value>My Leave Balance</value>
   </data>
+  <data name="Next Leave" xml:space="preserve">
+    <value>Next Leave</value>
+  </data>
   <data name="No approval required, but must submit supporting documents after leave" xml:space="preserve">
     <value>No approval required, but supporting documents must be submitted after the leave period.</value>
   </data>
   <data name="No leave applications yet." xml:space="preserve">
     <value>No leave applications yet.</value>
   </data>
+  <data name="No leave history found." xml:space="preserve">
+    <value>No leave history found.</value>
+  </data>
+  <data name="no upcoming leave" xml:space="preserve">
+    <value>no upcoming leave</value>
+  </data>
+  <data name="of" xml:space="preserve">
+    <value>of</value>
+  </data>
+  <data name="Pending" xml:space="preserve">
+    <value>Pending</value>
+  </data>
   <data name="Pending Approval" xml:space="preserve">
     <value>Pending Approval</value>
   </data>
+  <data name="Pending Requests" xml:space="preserve">
+    <value>Pending Requests</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>Period</value>
+  </data>
   <data name="Physical illness: Hospital diagnosis required" xml:space="preserve">
     <value>Physical illness: Hospital diagnosis required</value>
+  </data>
+  <data name="Please ensure your leave complies with company policy, all work has been handed over, and you have sent an email to your team." xml:space="preserve">
+    <value>Please ensure your leave complies with company policy, all work has been handed over, and you have sent an email to your team.</value>
+  </data>
+  <data name="Quick Actions" xml:space="preserve">
+    <value>Quick Actions</value>
   </data>
   <data name="Rejected" xml:space="preserve">
     <value>Rejected</value>
@@ -98,6 +137,9 @@
   </data>
   <data name="Remaining Sick Leave Days" xml:space="preserve">
     <value>Remaining Sick Leave Days</value>
+  </data>
+  <data name="requests" xml:space="preserve">
+    <value>requests</value>
   </data>
   <data name="Requires approval before use" xml:space="preserve">
     <value>Requires approval before use</value>
@@ -111,14 +153,23 @@
   <data name="Status" xml:space="preserve">
     <value>Status</value>
   </data>
+  <data name="Submitted" xml:space="preserve">
+    <value>Submitted</value>
+  </data>
   <data name="Submitted At" xml:space="preserve">
     <value>Submitted At</value>
   </data>
   <data name="Total Days" xml:space="preserve">
     <value>Total Days</value>
   </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
   <data name="Unused annual leave can carry over to the next year" xml:space="preserve">
     <value>Unused annual leave can be carried over to the next year</value>
+  </data>
+  <data name="Upcoming Leave" xml:space="preserve">
+    <value>Upcoming Leave</value>
   </data>
   <data name="Withdraw" xml:space="preserve">
     <value>Withdraw</value>
@@ -128,6 +179,9 @@
   </data>
   <data name="You have no remaining leave days to apply." xml:space="preserve">
     <value>You have no remaining leave days to apply.</value>
+  </data>
+  <data name="Your leave applications and their status" xml:space="preserve">
+    <value>Your leave applications and their status</value>
   </data>
 
 </root>
