@@ -37,6 +37,5 @@ public static class AppPermissionNames
     public const string CanViewReportLine = nameof(CanViewReportLine);
 
     // Leave Management
-    public const string CanManageLeave = nameof(CanManageLeave);
     public const string CanApproveAnyLeave = nameof(CanApproveAnyLeave);
 }

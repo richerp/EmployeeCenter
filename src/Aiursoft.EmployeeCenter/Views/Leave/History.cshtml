@@ -1,4 +1,5 @@
 @model Aiursoft.EmployeeCenter.Models.LeaveViewModels.HistoryViewModel
+@inject Aiursoft.EmployeeCenter.Services.FileStorage.StorageService StorageService
 @{
     ViewData["Title"] = Localizer["My Approval History"];
 }
@@ -41,7 +42,7 @@
                         <tr>
                             <td>
                                 <div class="d-flex align-items-center">
-                                    <img src="@item.User.AvatarRelativePath" class="rounded-circle me-2"
+                                    <img src="@StorageService.RelativePathToInternetUrl(item.User.AvatarRelativePath)?w=64&square=true" class="rounded-circle me-2"
                                         alt="@item.User.DisplayName" width="32" height="32">
                                     <div>
                                         <div class="fw-bold">@item.User.DisplayName</div>

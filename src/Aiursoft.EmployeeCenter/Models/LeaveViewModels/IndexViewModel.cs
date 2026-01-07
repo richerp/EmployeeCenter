@@ -44,4 +44,14 @@ public class IndexViewModel : UiStackLayoutViewModel
     /// Current year
     /// </summary>
     public int CurrentYear { get; set; }
+
+    /// <summary>
+    /// Next upcoming approved leave starting within 14 days (if any)
+    /// </summary>
+    public LeaveApplication? NextUpcomingLeave { get; set; }
+
+    /// <summary>
+    /// Whether there is an approved leave starting within 14 days
+    /// </summary>
+    public bool HasUpcomingLeaveWithin14Days { get; set; }
 }

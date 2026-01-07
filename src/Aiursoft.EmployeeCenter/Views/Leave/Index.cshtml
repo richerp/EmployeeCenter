@@ -6,6 +6,38 @@
     </div>
 </div>
 
+@if (Model.HasUpcomingLeaveWithin14Days && Model.NextUpcomingLeave != null)
+{
+    <div class="row mb-3">
+        <div class="col-12">
+            <div class="alert alert-info alert-dismissible" role="alert">
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                <div class="alert-message">
+                    <h4 class="alert-heading">
+                        <i class="align-middle" data-lucide="calendar-heart"></i>
+                        @Localizer["Upcoming Leave"]
+                    </h4>
+                    <p>
+                        @Localizer["You have an approved leave starting on"] <strong>@Model.NextUpcomingLeave.StartDate.ToString("yyyy-MM-dd")</strong> 
+                        (@Localizer["in"] @((Model.NextUpcomingLeave.StartDate.Date - DateTime.UtcNow.Date).Days) @Localizer["days"]).
+                    </p>
+                    <hr>
+                    <p class="mb-2"><strong>@Localizer["Have a wonderful break!"]</strong></p>
+                    <p class="mb-1">@Localizer["Please ensure that:"]</p>
+                    <ul class="mb-0">
+                        <li>@Localizer["Your leave complies with company policy"]</li>
+                        <li>@Localizer["All work has been properly handed over"]</li>
+                        <li>@Localizer["You have sent an email to your team"]</li>
+                        <li>@Localizer["Emergency contact information is available"]</li>
+                        <li>@Localizer["You take time to rest and enjoy outdoor activities"]</li>
+                        <li>@Localizer["You avoid handling work matters during your leave"]</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
 <div class="row">
     <div class="col-12 col-xl-6">
         <div class="card">

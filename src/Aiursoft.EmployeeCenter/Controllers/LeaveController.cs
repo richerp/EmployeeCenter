@@ -53,6 +53,19 @@ public class LeaveController(
             .OrderByDescending(la => la.SubmittedAt)
             .ToListAsync();
 
+        // Get next upcoming approved leave within 14 days
+        var today = DateTime.UtcNow.Date;
+        var fourteenDaysFromNow = today.AddDays(14);
+        var nextUpcomingLeave = await context.LeaveApplications
+            .Where(la => la.UserId == user.Id
+                && la.IsApproved
+                && !la.IsPending
+                && !la.IsWithdrawn
+                && la.StartDate >= today
+                && la.StartDate <= fourteenDaysFromNow)
+            .OrderBy(la => la.StartDate)
+            .FirstOrDefaultAsync();
+
         var model = new IndexViewModel
         {
             AnnualLeaveAllocation = allocation.AnnualLeaveAllocation,
@@ -62,7 +75,9 @@ public class LeaveController(
             RemainingSickLeave = remainingSick,
             LeaveHistory = leaveHistory,
             CanApplyLeave = remainingAnnual > 0 || remainingSick > 0,
-            CurrentYear = currentYear
+            CurrentYear = currentYear,
+            NextUpcomingLeave = nextUpcomingLeave,
+            HasUpcomingLeaveWithin14Days = nextUpcomingLeave != null
         };
 
         return this.StackView(model);
@@ -224,6 +239,14 @@ public class LeaveController(
         return RedirectToAction(nameof(Index));
     }
 
+    [RenderInNavBar(
+        NavGroupName = "Features",
+        NavGroupOrder = 2,
+        CascadedLinksGroupName = "Leave Management",
+        CascadedLinksIcon = "calendar-days",
+        CascadedLinksOrder = 20,
+        LinkText = "Approval Center",
+        LinkOrder = 2)]
     [HttpGet]
     public async Task<IActionResult> Incoming()
     {
@@ -236,9 +259,7 @@ public class LeaveController(
         // Condition:
         // 1. Pending (IsPending = true)
         // 2. Not Withdrawn (IsWithdrawn = false)
-        // 3. User is Manager OR User has CanApproveAnyLeave
-        // 4. Exclude own leaves (optional, but usually you don't approve your own leave if you are your own manager? Logic says direct manager approves. If I am my own manager, maybe? But usually safe to exclude self if we want strict control. Requirement didn't say. Let's include all valid ones.)
-        // Actually, for "User is Manager", we need to check if the applicant's ManagerId is the current user.
+        // 3. User is in applicant's management chain (recursive) OR User has CanApproveAnyLeave
 
         var query = context.LeaveApplications
             .Include(l => l.User)
@@ -246,7 +267,9 @@ public class LeaveController(
 
         if (!canApproveAny)
         {
-            query = query.Where(l => l.User.ManagerId == user.Id);
+            // Get all subordinates recursively
+            var subordinateIds = await GetAllSubordinatesRecursivelyAsync(user.Id);
+            query = query.Where(l => subordinateIds.Contains(l.UserId));
         }
 
         var incomingLeaves = await query
@@ -257,6 +280,38 @@ public class LeaveController(
         {
             IncomingLeaves = incomingLeaves
         });
+    }
+
+    /// <summary>
+    /// Recursively get all subordinates in the management tree below the given user
+    /// </summary>
+    private async Task<HashSet<string>> GetAllSubordinatesRecursivelyAsync(string userId)
+    {
+        var result = new HashSet<string>();
+        var toProcess = new Queue<string>();
+        toProcess.Enqueue(userId);
+
+        while (toProcess.Count > 0)
+        {
+            var currentUserId = toProcess.Dequeue();
+
+            // Get direct reports
+            var directReports = await context.Users
+                .Where(u => u.ManagerId == currentUserId)
+                .Select(u => u.Id)
+                .ToListAsync();
+
+            foreach (var reportId in directReports)
+            {
+                if (!result.Contains(reportId))
+                {
+                    result.Add(reportId);
+                    toProcess.Enqueue(reportId);
+                }
+            }
+        }
+
+        return result;
     }
 
     [HttpPost]
@@ -273,12 +328,19 @@ public class LeaveController(
         if (leave == null) return NotFound();
 
         // Check permission
-        // 1. Direct Manager
-        // 2. CanApproveAnyLeave
+        // 1. User is in applicant's management chain (recursive)
+        // 2. User has CanApproveAnyLeave
         var canApproveAny = (await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanApproveAnyLeave)).Succeeded;
-        var isManager = leave.User.ManagerId == user.Id;
 
-        if (!canApproveAny && !isManager)
+        bool isInManagementChain = false;
+        if (!canApproveAny)
+        {
+            // Check if current user is in the applicant's management chain
+            var subordinateIds = await GetAllSubordinatesRecursivelyAsync(user.Id);
+            isInManagementChain = subordinateIds.Contains(leave.UserId);
+        }
+
+        if (!canApproveAny && !isInManagementChain)
         {
             return Unauthorized();
         }
@@ -298,15 +360,34 @@ public class LeaveController(
         return RedirectToAction(nameof(Incoming));
     }
 
+    [RenderInNavBar(
+        NavGroupName = "Features",
+        NavGroupOrder = 2,
+        CascadedLinksGroupName = "Leave Management",
+        CascadedLinksIcon = "calendar-days",
+        CascadedLinksOrder = 20,
+        LinkText = "My Approval History",
+        LinkOrder = 3)]
     [HttpGet]
     public async Task<IActionResult> History()
     {
         var user = await userManager.GetUserAsync(User);
         if (user == null) return NotFound();
 
-        var history = await context.LeaveApplications
+        var canApproveAny = (await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanApproveAnyLeave)).Succeeded;
+
+        // If user has CanApproveAnyLeave, show all approvals across the company
+        // Otherwise, show only approvals made by current user
+        var query = context.LeaveApplications
             .Include(l => l.User)
-            .Where(l => l.ReviewedById == user.Id)
+            .Where(l => l.ReviewedById != null);
+
+        if (!canApproveAny)
+        {
+            query = query.Where(l => l.ReviewedById == user.Id);
+        }
+
+        var history = await query
             .OrderByDescending(l => l.ReviewedAt)
             .ToListAsync();
 

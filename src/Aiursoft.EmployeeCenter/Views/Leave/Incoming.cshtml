@@ -1,4 +1,5 @@
 @model Aiursoft.EmployeeCenter.Models.LeaveViewModels.IncomingViewModel
+@inject Aiursoft.EmployeeCenter.Services.FileStorage.StorageService StorageService
 @{
     ViewData["Title"] = Localizer["Incoming Leave Applications"];
 }
@@ -6,6 +7,25 @@
 <div class="row mb-2 mb-xl-3">
     <div class="col-auto d-none d-sm-block">
         <h3>@Localizer["Incoming Leave Applications"]</h3>
+    </div>
+</div>
+
+<div class="row mb-3">
+    <div class="col-12">
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            <h5 class="alert-heading mb-2">
+                <i class="align-middle" data-lucide="alert-triangle"></i>
+                @Localizer["Important: Approval Decisions Are Final"]
+            </h5>
+            <p class="mb-2">
+                @Localizer["Once you approve or reject a leave application, the decision cannot be undone. Please review carefully before taking action."]
+            </p>
+            <small class="text-muted">
+                <strong>@Localizer["If the employee wishes to cancel:"]</strong> @Localizer["They can withdraw their own application before it starts."]
+                • <strong>@Localizer["If rejected by mistake:"]</strong> @Localizer["The employee must submit a new application."]
+            </small>
+        </div>
     </div>
 </div>
 
