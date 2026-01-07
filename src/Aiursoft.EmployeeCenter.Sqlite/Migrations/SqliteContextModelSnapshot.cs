@@ -196,6 +196,7 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("ReviewedById")
+                        .HasMaxLength(255)
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("StartDate")
@@ -255,6 +256,65 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("LeaveBalances");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.OnboardingTask", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("ExpectedDurationSeconds")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Order")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("StartLink")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("OnboardingTasks");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.OnboardingTaskLog", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime?>("CompletionTime")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("StartTime")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("TaskId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TaskId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("OnboardingTaskLogs");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Password", b =>
@@ -777,6 +837,25 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.OnboardingTaskLog", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.OnboardingTask", "Task")
+                        .WithMany("Logs")
+                        .HasForeignKey("TaskId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "User")
+                        .WithMany("OnboardingTaskLogs")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Task");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Password", b =>
                 {
                     b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "Creator")
@@ -892,6 +971,11 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.Navigation("Comments");
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.OnboardingTask", b =>
+                {
+                    b.Navigation("Logs");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Password", b =>
                 {
                     b.Navigation("PasswordShares");
@@ -908,6 +992,8 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.Navigation("LeaveBalances");
 
                     b.Navigation("ManagedIncidents");
+
+                    b.Navigation("OnboardingTaskLogs");
 
                     b.Navigation("OwnedIncidents");
 

@@ -53,14 +53,7 @@ public static class ProgramExtends
         var services = scope.ServiceProvider;
         var db = services.GetRequiredService<EmployeeCenterDbContext>();
         var logger = services.GetRequiredService<ILogger<Program>>();
-        var shouldSeed = await ShouldSeedAsync(db);
-        if (!shouldSeed)
-        {
-            logger.LogInformation("Do not need to seed the database. There are already users or roles present.");
-            return host;
-        }
-
-        logger.LogInformation("Seeding the database with initial data...");
+        
         var userManager = services.GetRequiredService<UserManager<User>>();
         var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
 
@@ -98,6 +91,15 @@ public static class ProgramExtends
             _ = await userManager.CreateAsync(user, "admin123");
             await userManager.AddToRoleAsync(user, "Administrators");
         }
+
+        var shouldSeed = await ShouldSeedAsync(db);
+        if (!shouldSeed)
+        {
+            logger.LogInformation("Do not need to seed the database. There are already users or roles present.");
+            return host;
+        }
+
+        logger.LogInformation("Seeding the database with initial data...");
 
         return host;
     }

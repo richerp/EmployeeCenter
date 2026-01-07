@@ -38,4 +38,7 @@ public static class AppPermissionNames
 
     // Leave Management
     public const string CanApproveAnyLeave = nameof(CanApproveAnyLeave);
+
+    // Onboarding Task Management
+    public const string CanManageOnboarding = nameof(CanManageOnboarding);
 }

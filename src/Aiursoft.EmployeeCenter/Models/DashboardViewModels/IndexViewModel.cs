@@ -1,3 +1,4 @@
+using Aiursoft.EmployeeCenter.Entities;
 using Aiursoft.UiStack.Layout;
 
 namespace Aiursoft.EmployeeCenter.Models.DashboardViewModels;
@@ -8,4 +9,7 @@ public class IndexViewModel : UiStackLayoutViewModel
     {
         PageTitle = "Dashboard";
     }
+
+    public required List<OnboardingTask> Tasks { get; set; }
+    public required List<OnboardingTaskLog> Logs { get; set; }
 }
