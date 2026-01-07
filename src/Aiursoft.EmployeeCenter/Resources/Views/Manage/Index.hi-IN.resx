@@ -57,8 +57,11 @@
   <data name="SSH Keys" xml:space="preserve">
     <value>SSH कुंजियाँ</value>
   </data>
-
   <data name="Change bank information" xml:space="preserve">
     <value>Change bank information</value>
   </data>
+  <data name="Maintain Profile" xml:space="preserve">
+    <value>प्रोफ़ाइल बनाए रखें</value>
+  </data>
+
 </root>
