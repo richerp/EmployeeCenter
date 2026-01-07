@@ -78,6 +78,8 @@ public class ViewModelArgsInjector(
         _ = localizer["Report Line"];
         _ = localizer["Projects"];
         _ = localizer["Development"];
+        _ = localizer["Leave Management"];
+        _ = localizer["My Leave Balance"];
     }
 
     public void InjectSimple(

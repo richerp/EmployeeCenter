@@ -18,107 +18,119 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Add New Users" xml:space="preserve">
-    <value>新增使用者</value>
-  </data>
-  <data name="Delete Users" xml:space="preserve">
-    <value>刪除使用者</value>
-  </data>
-  <data name="Read Users" xml:space="preserve">
-    <value>讀取使用者</value>
-  </data>
-  <data name="Edit User Information" xml:space="preserve">
-    <value>編輯使用者資訊</value>
-  </data>
-  <data name="Allows viewing the list of all users." xml:space="preserve">
-    <value>允許檢視所有使用者的清單。</value>
-  </data>
-  <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
-    <value>允許永久刪除使用者帳戶。</value>
-  </data>
-  <data name="Grants permission to create new user accounts." xml:space="preserve">
-    <value>授予建立新使用者帳戶的權限。</value>
-  </data>
-  <data name="Allows modification of user details like email and roles, and can also reset user passwords." xml:space="preserve">
-    <value>允許修改使用者詳細資訊，例如電子郵件和角色，並可重設使用者密碼。</value>
-  </data>
-  <data name="Read Roles" xml:space="preserve">
-    <value>讀取角色</value>
-  </data>
-  <data name="Delete Roles" xml:space="preserve">
-    <value>刪除角色</value>
-  </data>
-  <data name="Allows the permanent deletion of roles." xml:space="preserve">
-    <value>允許永久刪除角色。</value>
-  </data>
-  <data name="Allows viewing the list of roles and their assigned permissions." xml:space="preserve">
-    <value>允許檢視角色清單及其分配的權限。</value>
+      <data name="Add Global Password" xml:space="preserve">
+    <value>新增全域密碼</value>
   </data>
   <data name="Add New Roles" xml:space="preserve">
     <value>新增角色</value>
   </data>
-  <data name="Edit Role Information" xml:space="preserve">
-    <value>編輯角色資訊</value>
+  <data name="Add New Users" xml:space="preserve">
+    <value>新增使用者</value>
   </data>
-  <data name="Grants permission to create new roles." xml:space="preserve">
-    <value>授予建立新角色的權限。</value>
-  </data>
-  <data name="Allows modification of role names and their assigned permissions." xml:space="preserve">
-    <value>允許修改角色名稱及其分配的權限。</value>
-  </data>
-  <data name="Assign Roles to Users" xml:space="preserve">
-    <value>指派角色給使用者</value>
-  </data>
-  <data name="View System Context" xml:space="preserve">
-    <value>檢視系統內容</value>
+  <data name="Allows approving or rejecting any leave application, regardless of the reporting line." xml:space="preserve">
+    <value>允許批准或拒絕任何請假申請，不受匯報線限制。</value>
   </data>
   <data name="Allows assigning or removing roles for any user." xml:space="preserve">
     <value>允許對任何使用者指派或移除角色。</value>
   </data>
-  <data name="Allows viewing system-level information and settings." xml:space="preserve">
-    <value>允許檢視系統層級的資訊與設定。</value>
-  </data>
-  <data name="Reboot This App" xml:space="preserve">
-    <value>重新啟動此應用程式</value>
-  </data>
-  <data name="Grants permission to restart the application instance. May cause availability interruptions but all settings and cache will be reloaded." xml:space="preserve">
-    <value>授予重新啟動應用程式實例的權限。可能導致服務中斷，但所有設定和快取都將重新載入。</value>
-  </data>
-  <data name="Manage Payroll" xml:space="preserve">
-    <value>管理薪資</value>
+  <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
+    <value>允許建立新的可與他人共享的全局密碼</value>
   </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>允許為所有使用者發放及管理薪資單。</value>
   </data>
-  <data name="Manage Any Password" xml:space="preserve">
-    <value>管理任何密碼</value>
-  </data>
-  <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
-    <value>允許建立新的可與他人共享的全局密碼</value>
-  </data>
-  <data name="Add Global Password" xml:space="preserve">
-    <value>新增全域密碼</value>
-  </data>
   <data name="Allows managing and deleting any global password created by any user." xml:space="preserve">
     <value>允許管理及刪除由任何用戶建立的全域密碼。</value>
   </data>
-  <data name="Manage SSH Keys" xml:space="preserve">
-    <value>管理 SSH 金鑰</value>
+  <data name="Allows modification of role names and their assigned permissions." xml:space="preserve">
+    <value>允許修改角色名稱及其分配的權限。</value>
   </data>
-  <data name="Allows viewing, editing, and deleting any user&apos;s SSH keys." xml:space="preserve">
-    <value>允許檢視、編輯和刪除任何使用者的 SSH 金鑰。</value>
+  <data name="Allows modification of user details like email and roles, and can also reset user passwords." xml:space="preserve">
+    <value>允許修改使用者詳細資訊，例如電子郵件和角色，並可重設使用者密碼。</value>
   </data>
-  <data name="View Report Line" xml:space="preserve">
-    <value>檢視報告線</value>
+  <data name="Allows the permanent deletion of roles." xml:space="preserve">
+    <value>允許永久刪除角色。</value>
+  </data>
+  <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
+    <value>允許永久刪除使用者帳戶。</value>
+  </data>
+  <data name="Allows viewing system-level information and settings." xml:space="preserve">
+    <value>允許檢視系統層級的資訊與設定。</value>
+  </data>
+  <data name="Allows viewing the list of all users." xml:space="preserve">
+    <value>允許檢視所有使用者的清單。</value>
+  </data>
+  <data name="Allows viewing the list of roles and their assigned permissions." xml:space="preserve">
+    <value>允許檢視角色清單及其分配的權限。</value>
+  </data>
+  <data name="Allows viewing the operation logs of any user, including their bank card change history." xml:space="preserve">
+    <value>允許檢視任何使用者的操作日誌，包括其銀行卡變更歷史。</value>
   </data>
   <data name="Allows viewing the report line of any user, including their manager, subordinates, and peers." xml:space="preserve">
     <value>允許檢視任何使用者的報告路線，包括其主管、下屬及同儕。</value>
   </data>
+  <data name="Allows viewing, editing, and deleting any user&apos;s SSH keys." xml:space="preserve">
+    <value>允許檢視、編輯和刪除任何使用者的 SSH 金鑰。</value>
+  </data>
+  <data name="Approve Any Leave" xml:space="preserve">
+    <value>核准任何假</value>
+  </data>
+  <data name="Assign Roles to Users" xml:space="preserve">
+    <value>指派角色給使用者</value>
+  </data>
+  <data name="Default permission for HR." xml:space="preserve">
+    <value>人事預設權限</value>
+  </data>
+  <data name="Delete Roles" xml:space="preserve">
+    <value>刪除角色</value>
+  </data>
+  <data name="Delete Users" xml:space="preserve">
+    <value>刪除使用者</value>
+  </data>
+  <data name="Edit Role Information" xml:space="preserve">
+    <value>編輯角色資訊</value>
+  </data>
+  <data name="Edit User Information" xml:space="preserve">
+    <value>編輯使用者資訊</value>
+  </data>
+  <data name="Grants permission to create new roles." xml:space="preserve">
+    <value>授予建立新角色的權限。</value>
+  </data>
+  <data name="Grants permission to create new user accounts." xml:space="preserve">
+    <value>授予建立新使用者帳戶的權限。</value>
+  </data>
+  <data name="Grants permission to restart the application instance. May cause availability interruptions but all settings and cache will be reloaded." xml:space="preserve">
+    <value>授予重新啟動應用程式實例的權限。可能導致服務中斷，但所有設定和快取都將重新載入。</value>
+  </data>
+  <data name="Manage Any Password" xml:space="preserve">
+    <value>管理任何密碼</value>
+  </data>
+  <data name="Manage Leave" xml:space="preserve">
+    <value>管理休假</value>
+  </data>
+  <data name="Manage Payroll" xml:space="preserve">
+    <value>管理薪資</value>
+  </data>
+  <data name="Manage SSH Keys" xml:space="preserve">
+    <value>管理 SSH 金鑰</value>
+  </data>
+  <data name="Read Roles" xml:space="preserve">
+    <value>讀取角色</value>
+  </data>
+  <data name="Read Users" xml:space="preserve">
+    <value>讀取使用者</value>
+  </data>
+  <data name="Reboot This App" xml:space="preserve">
+    <value>重新啟動此應用程式</value>
+  </data>
+  <data name="View Report Line" xml:space="preserve">
+    <value>檢視報告線</value>
+  </data>
+  <data name="View System Context" xml:space="preserve">
+    <value>檢視系統內容</value>
+  </data>
   <data name="View User Operation Log" xml:space="preserve">
     <value>檢視使用者操作日誌</value>
-  </data>
-  <data name="Allows viewing the operation logs of any user, including their bank card change history." xml:space="preserve">
-    <value>允許檢視任何使用者的操作日誌，包括其銀行卡變更歷史。</value>
   </data>
 
 </root>

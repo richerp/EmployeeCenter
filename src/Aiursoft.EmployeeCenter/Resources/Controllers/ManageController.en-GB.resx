@@ -18,23 +18,41 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="An error has occurred." xml:space="preserve">
+      <data name="an error has occurred." xml:space="preserve">
     <value>An error has occurred.</value>
   </data>
-  <data name="Your password has been changed." xml:space="preserve">
-    <value>Your password has been changed.</value>
+  <data name="An error has occurred." xml:space="preserve">
+    <value>An error has occurred.</value>
   </data>
-  <data name="Your avatar has been saved." xml:space="preserve">
-    <value>Your avatar has been saved.</value>
+  <data name="the file is not a valid image." xml:space="preserve">
+    <value>The file is not a valid image.</value>
   </data>
   <data name="The file is not a valid image." xml:space="preserve">
     <value>The file is not a valid image.</value>
   </data>
-  <data name="Your profile has been saved." xml:space="preserve">
-    <value>Your profile has been saved.</value>
+  <data name="your avatar has been saved." xml:space="preserve">
+    <value>Your avatar has been saved.</value>
+  </data>
+  <data name="Your avatar has been saved." xml:space="preserve">
+    <value>Your avatar has been saved.</value>
+  </data>
+  <data name="your bank information has been saved." xml:space="preserve">
+    <value>Your bank details have been saved.</value>
   </data>
   <data name="Your bank information has been saved." xml:space="preserve">
     <value>Your bank details have been saved.</value>
+  </data>
+  <data name="your password has been changed." xml:space="preserve">
+    <value>Your password has been changed.</value>
+  </data>
+  <data name="Your password has been changed." xml:space="preserve">
+    <value>Your password has been changed.</value>
+  </data>
+  <data name="your profile has been saved." xml:space="preserve">
+    <value>Your profile has been saved.</value>
+  </data>
+  <data name="Your profile has been saved." xml:space="preserve">
+    <value>Your profile has been saved.</value>
   </data>
 
 </root>
