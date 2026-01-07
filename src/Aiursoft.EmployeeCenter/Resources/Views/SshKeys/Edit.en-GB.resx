@@ -21,8 +21,8 @@
       <data name="Cancel" xml:space="preserve">
     <value>Cancel</value>
   </data>
-  <data name="Update SSH Key" xml:space="preserve">
-    <value>Update SSH Key</value>
+  <data name="Edit SSH Key" xml:space="preserve">
+    <value>Edit SSH Key</value>
   </data>
   <data name="Modify your public SSH key details." xml:space="preserve">
     <value>Modify your public SSH key details.</value>
@@ -30,8 +30,8 @@
   <data name="Save Changes" xml:space="preserve">
     <value>Save Changes</value>
   </data>
-  <data name="Edit SSH Key" xml:space="preserve">
-    <value>Edit SSH Key</value>
+  <data name="Update SSH Key" xml:space="preserve">
+    <value>Update SSH Key</value>
   </data>
 
 </root>

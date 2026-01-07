@@ -18,65 +18,65 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="User name" xml:space="preserve">
-    <value>Nome de usuário</value>
-  </data>
-  <data name="Email Address" xml:space="preserve">
-    <value>Endereço de E-mail</value>
-  </data>
-  <data name="Reset Password (leave empty to keep the same password)" xml:space="preserve">
-    <value>Redefinir Senha (deixe em branco para manter a mesma senha)</value>
-  </data>
-  <data name="The {0} is required." xml:space="preserve">
-    <value>O {0} é obrigatório.</value>
-  </data>
-  <data name="The {0} is not a valid email address." xml:space="preserve">
-    <value>O {0} não é um endereço de e-mail válido.</value>
-  </data>
-  <data name="Name" xml:space="preserve">
-    <value>Nome</value>
-  </data>
-  <data name="Avatar file" xml:space="preserve">
+      <data name="Avatar file" xml:space="preserve">
     <value>Arquivo de avatar</value>
-  </data>
-  <data name="The avatar file is required." xml:space="preserve">
-    <value>O arquivo de avatar é obrigatório.</value>
-  </data>
-  <data name="The avatar file is invalid. Please upload it again." xml:space="preserve">
-    <value>O arquivo de avatar é inválido. Por favor, faça o upload novamente.</value>
-  </data>
-  <data name="Job Level" xml:space="preserve">
-    <value>Nível do Cargo</value>
   </data>
   <data name="Bank Account" xml:space="preserve">
     <value>Conta Bancária</value>
   </data>
-  <data name="Bank Name" xml:space="preserve">
-    <value>Nome do Banco</value>
-  </data>
-  <data name="Base Salary" xml:space="preserve">
-    <value>Salário Base</value>
-  </data>
-  <data name="Manager" xml:space="preserve">
-    <value>Gerente</value>
-  </data>
-  <data name="Title" xml:space="preserve">
-    <value>Cargo</value>
-  </data>
-  <data name="Bank Name (Branch)" xml:space="preserve">
-    <value>Nome do Banco (Agência)</value>
+  <data name="Bank Account (Card Number)" xml:space="preserve">
+    <value>Conta Bancária (Número do Cartão)</value>
   </data>
   <data name="Bank Account Name (Holder)" xml:space="preserve">
     <value>Nome da Conta Bancária (Titular)</value>
   </data>
-  <data name="Bank Account (Card Number)" xml:space="preserve">
-    <value>Conta Bancária (Número do Cartão)</value>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Nome do Banco</value>
+  </data>
+  <data name="Bank Name (Branch)" xml:space="preserve">
+    <value>Nome do Banco (Agência)</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Salário Base</value>
+  </data>
+  <data name="Email Address" xml:space="preserve">
+    <value>Endereço de E-mail</value>
+  </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>Nível do Cargo</value>
   </data>
   <data name="Legal Name" xml:space="preserve">
     <value>Nome Legal</value>
   </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Gerente</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nome</value>
+  </data>
   <data name="Phone Number" xml:space="preserve">
     <value>Número de Telefone</value>
+  </data>
+  <data name="Reset Password (leave empty to keep the same password)" xml:space="preserve">
+    <value>Redefinir Senha (deixe em branco para manter a mesma senha)</value>
+  </data>
+  <data name="The {0} is not a valid email address." xml:space="preserve">
+    <value>O {0} não é um endereço de e-mail válido.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>O {0} é obrigatório.</value>
+  </data>
+  <data name="The avatar file is invalid. Please upload it again." xml:space="preserve">
+    <value>O arquivo de avatar é inválido. Por favor, faça o upload novamente.</value>
+  </data>
+  <data name="The avatar file is required." xml:space="preserve">
+    <value>O arquivo de avatar é obrigatório.</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Cargo</value>
+  </data>
+  <data name="User name" xml:space="preserve">
+    <value>Nome de usuário</value>
   </data>
 
 </root>

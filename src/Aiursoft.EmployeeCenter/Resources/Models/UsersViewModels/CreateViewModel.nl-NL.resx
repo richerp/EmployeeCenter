@@ -18,59 +18,59 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Email Address" xml:space="preserve">
-    <value>E-mailadres</value>
-  </data>
-  <data name="User name" xml:space="preserve">
-    <value>Gebruikersnaam</value>
-  </data>
-  <data name="Password" xml:space="preserve">
-    <value>Wachtwoord</value>
-  </data>
-  <data name="The {0} must be at least {2} and at max {1} characters long." xml:space="preserve">
-    <value>Het {0} moet minimaal {2} en maximaal {1} tekens lang zijn.</value>
-  </data>
-  <data name="The {0} is required." xml:space="preserve">
-    <value>Het {0} is verplicht.</value>
-  </data>
-  <data name="The {0} is not a valid email address." xml:space="preserve">
-    <value>Het {0} is geen geldig e-mailadres.</value>
-  </data>
-  <data name="Name" xml:space="preserve">
-    <value>Naam</value>
-  </data>
-  <data name="Job Level" xml:space="preserve">
-    <value>Functieniveau</value>
-  </data>
-  <data name="Bank Account" xml:space="preserve">
+      <data name="Bank Account" xml:space="preserve">
     <value>Bankrekening</value>
-  </data>
-  <data name="Base Salary" xml:space="preserve">
-    <value>Basis Salaris</value>
-  </data>
-  <data name="Bank Name" xml:space="preserve">
-    <value>Banknaam</value>
-  </data>
-  <data name="Manager" xml:space="preserve">
-    <value>Manager</value>
-  </data>
-  <data name="Bank Account Name (Holder)" xml:space="preserve">
-    <value>Naam rekeninghouder</value>
-  </data>
-  <data name="Bank Name (Branch)" xml:space="preserve">
-    <value>Banknaam (Filiaal)</value>
   </data>
   <data name="Bank Account (Card Number)" xml:space="preserve">
     <value>Bankrekening (Kaartnummer)</value>
   </data>
-  <data name="Title" xml:space="preserve">
-    <value>Titel</value>
+  <data name="Bank Account Name (Holder)" xml:space="preserve">
+    <value>Naam rekeninghouder</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Banknaam</value>
+  </data>
+  <data name="Bank Name (Branch)" xml:space="preserve">
+    <value>Banknaam (Filiaal)</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Basis Salaris</value>
+  </data>
+  <data name="Email Address" xml:space="preserve">
+    <value>E-mailadres</value>
+  </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>Functieniveau</value>
   </data>
   <data name="Legal Name" xml:space="preserve">
     <value>Juridische naam</value>
   </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Wachtwoord</value>
+  </data>
   <data name="Phone Number" xml:space="preserve">
     <value>Telefoonnummer</value>
+  </data>
+  <data name="The {0} is not a valid email address." xml:space="preserve">
+    <value>Het {0} is geen geldig e-mailadres.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>Het {0} is verplicht.</value>
+  </data>
+  <data name="The {0} must be at least {2} and at max {1} characters long." xml:space="preserve">
+    <value>Het {0} moet minimaal {2} en maximaal {1} tekens lang zijn.</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Titel</value>
+  </data>
+  <data name="User name" xml:space="preserve">
+    <value>Gebruikersnaam</value>
   </data>
 
 </root>

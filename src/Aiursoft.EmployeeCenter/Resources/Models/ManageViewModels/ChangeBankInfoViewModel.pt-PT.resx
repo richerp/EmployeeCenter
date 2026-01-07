@@ -21,11 +21,11 @@
       <data name="Bank Account Name" xml:space="preserve">
     <value>Nome da Conta Bancária</value>
   </data>
-  <data name="Bank Name" xml:space="preserve">
-    <value>Nome do Banco</value>
-  </data>
   <data name="Bank Card Number" xml:space="preserve">
     <value>Número do Cartão Bancário</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Nome do Banco</value>
   </data>
 
 </root>

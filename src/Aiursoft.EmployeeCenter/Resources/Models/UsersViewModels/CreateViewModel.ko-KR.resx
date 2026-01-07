@@ -18,59 +18,59 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="User name" xml:space="preserve">
-    <value>사용자 이름</value>
-  </data>
-  <data name="Email Address" xml:space="preserve">
-    <value>이메일 주소</value>
-  </data>
-  <data name="The {0} must be at least {2} and at max {1} characters long." xml:space="preserve">
-    <value>{0}은(는) 최소 {2}자 이상, 최대 {1}자 이하여야 합니다.</value>
-  </data>
-  <data name="Password" xml:space="preserve">
-    <value>비밀번호</value>
-  </data>
-  <data name="The {0} is required." xml:space="preserve">
-    <value>{0}은(는) 필수 항목입니다.</value>
-  </data>
-  <data name="The {0} is not a valid email address." xml:space="preserve">
-    <value>{0}은(는) 유효한 이메일 주소가 아닙니다.</value>
-  </data>
-  <data name="Name" xml:space="preserve">
-    <value>이름</value>
-  </data>
-  <data name="Job Level" xml:space="preserve">
-    <value>직급</value>
-  </data>
-  <data name="Bank Name" xml:space="preserve">
-    <value>은행명</value>
-  </data>
-  <data name="Base Salary" xml:space="preserve">
-    <value>기본 급여</value>
-  </data>
-  <data name="Bank Account" xml:space="preserve">
+      <data name="Bank Account" xml:space="preserve">
     <value>은행 계좌</value>
-  </data>
-  <data name="Manager" xml:space="preserve">
-    <value>매니저</value>
   </data>
   <data name="Bank Account (Card Number)" xml:space="preserve">
     <value>은행 계좌 (카드 번호)</value>
   </data>
+  <data name="Bank Account Name (Holder)" xml:space="preserve">
+    <value>은행 계좌 이름 (예금주)</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>은행명</value>
+  </data>
   <data name="Bank Name (Branch)" xml:space="preserve">
     <value>은행명(지점)</value>
   </data>
-  <data name="Title" xml:space="preserve">
-    <value>직함</value>
+  <data name="Base Salary" xml:space="preserve">
+    <value>기본 급여</value>
   </data>
-  <data name="Bank Account Name (Holder)" xml:space="preserve">
-    <value>은행 계좌 이름 (예금주)</value>
+  <data name="Email Address" xml:space="preserve">
+    <value>이메일 주소</value>
+  </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>직급</value>
   </data>
   <data name="Legal Name" xml:space="preserve">
     <value>법적 이름</value>
   </data>
+  <data name="Manager" xml:space="preserve">
+    <value>매니저</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>이름</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>비밀번호</value>
+  </data>
   <data name="Phone Number" xml:space="preserve">
     <value>전화번호</value>
+  </data>
+  <data name="The {0} is not a valid email address." xml:space="preserve">
+    <value>{0}은(는) 유효한 이메일 주소가 아닙니다.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0}은(는) 필수 항목입니다.</value>
+  </data>
+  <data name="The {0} must be at least {2} and at max {1} characters long." xml:space="preserve">
+    <value>{0}은(는) 최소 {2}자 이상, 최대 {1}자 이하여야 합니다.</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>직함</value>
+  </data>
+  <data name="User name" xml:space="preserve">
+    <value>사용자 이름</value>
   </data>
 
 </root>

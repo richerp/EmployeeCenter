@@ -18,20 +18,86 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Features" xml:space="preserve">
+      <data name="Admin" xml:space="preserve">
+    <value>Administrator</value>
+  </data>
+  <data name="Administration" xml:space="preserve">
+    <value>Administration</value>
+  </data>
+  <data name="Aiursoft Employee Center" xml:space="preserve">
+    <value>Aiursoft Medarbejdercenter</value>
+  </data>
+  <data name="Aiursoft Template" xml:space="preserve">
+    <value>Aiursoft Skabelon</value>
+  </data>
+  <data name="Anonymous" xml:space="preserve">
+    <value>Anonym</value>
+  </data>
+  <data name="Change Avatar" xml:space="preserve">
+    <value>Skift avatar</value>
+  </data>
+  <data name="Change Password" xml:space="preserve">
+    <value>Skift adgangskode</value>
+  </data>
+  <data name="Change Profile" xml:space="preserve">
+    <value>Rediger profil</value>
+  </data>
+  <data name="Click to login" xml:space="preserve">
+    <value>Klik for at logge ind</value>
+  </data>
+  <data name="Create Password" xml:space="preserve">
+    <value>Opret adgangskode</value>
+  </data>
+  <data name="Create Role" xml:space="preserve">
+    <value>Opret rolle</value>
+  </data>
+  <data name="Create User" xml:space="preserve">
+    <value>Opret bruger</value>
+  </data>
+  <data name="Delete Role" xml:space="preserve">
+    <value>Slet rolle</value>
+  </data>
+  <data name="Delete User" xml:space="preserve">
+    <value>Slet bruger</value>
+  </data>
+  <data name="Development" xml:space="preserve">
+    <value>Udvikling</value>
+  </data>
+  <data name="Directory" xml:space="preserve">
+    <value>Mappe</value>
+  </data>
+  <data name="Edit Password" xml:space="preserve">
+    <value>Rediger adgangskode</value>
+  </data>
+  <data name="Edit Role" xml:space="preserve">
+    <value>Rediger Rolle</value>
+  </data>
+  <data name="Edit User" xml:space="preserve">
+    <value>Rediger bruger</value>
+  </data>
+  <data name="Employee Center" xml:space="preserve">
+    <value>Medarbejdercenter</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Fejl</value>
+  </data>
+  <data name="Features" xml:space="preserve">
     <value>Funktioner</value>
   </data>
-  <data name="Index" xml:space="preserve">
-    <value>Indeks</value>
-  </data>
-  <data name="Template" xml:space="preserve">
-    <value>Skabelon</value>
+  <data name="Finance" xml:space="preserve">
+    <value>Finans</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Hjem</value>
   </data>
-  <data name="Aiursoft Template" xml:space="preserve">
-    <value>Aiursoft Skabelon</value>
+  <data name="Index" xml:space="preserve">
+    <value>Indeks</value>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="Leave Management" xml:space="preserve">
+    <value>Feriehåndtering</value>
   </data>
   <data name="Login" xml:space="preserve">
     <value>Log ind</value>
@@ -39,104 +105,8 @@
   <data name="Login to get access to all features." xml:space="preserve">
     <value>Log ind for at få adgang til alle funktioner.</value>
   </data>
-  <data name="Register" xml:space="preserve">
-    <value>Registrer</value>
-  </data>
-  <data name="Directory" xml:space="preserve">
-    <value>Mappe</value>
-  </data>
-  <data name="Users" xml:space="preserve">
-    <value>Brugere</value>
-  </data>
-  <data name="Roles" xml:space="preserve">
-    <value>Roller</value>
-  </data>
-  <data name="Admin" xml:space="preserve">
-    <value>Administrator</value>
-  </data>
-  <data name="System" xml:space="preserve">
-    <value>System</value>
-  </data>
-  <data name="Info" xml:space="preserve">
-    <value>Info</value>
-  </data>
-  <data name="Anonymous" xml:space="preserve">
-    <value>Anonym</value>
-  </data>
-  <data name="Profile" xml:space="preserve">
-    <value>Profil</value>
-  </data>
-  <data name="Sign out" xml:space="preserve">
-    <value>Log ud</value>
-  </data>
-  <data name="Administration" xml:space="preserve">
-    <value>Administration</value>
-  </data>
-  <data name="Click to login" xml:space="preserve">
-    <value>Klik for at logge ind</value>
-  </data>
-  <data name="Create Role" xml:space="preserve">
-    <value>Opret rolle</value>
-  </data>
-  <data name="Delete User" xml:space="preserve">
-    <value>Slet bruger</value>
-  </data>
-  <data name="Role Details" xml:space="preserve">
-    <value>Roledetaljer</value>
-  </data>
-  <data name="Edit User" xml:space="preserve">
-    <value>Rediger bruger</value>
-  </data>
   <data name="Manage" xml:space="preserve">
     <value>Administrer</value>
-  </data>
-  <data name="System Info" xml:space="preserve">
-    <value>Systeminformation</value>
-  </data>
-  <data name="Create User" xml:space="preserve">
-    <value>Opret bruger</value>
-  </data>
-  <data name="User Details" xml:space="preserve">
-    <value>Brugerdetaljer</value>
-  </data>
-  <data name="Change Profile" xml:space="preserve">
-    <value>Rediger profil</value>
-  </data>
-  <data name="Delete Role" xml:space="preserve">
-    <value>Slet rolle</value>
-  </data>
-  <data name="Change Avatar" xml:space="preserve">
-    <value>Skift avatar</value>
-  </data>
-  <data name="Edit Role" xml:space="preserve">
-    <value>Rediger Rolle</value>
-  </data>
-  <data name="Change Password" xml:space="preserve">
-    <value>Skift adgangskode</value>
-  </data>
-  <data name="Settings" xml:space="preserve">
-    <value>Indstillinger</value>
-  </data>
-  <data name="Personal" xml:space="preserve">
-    <value>Personlig</value>
-  </data>
-  <data name="Profile Settings" xml:space="preserve">
-    <value>Profilindstillinger</value>
-  </data>
-  <data name="Unauthorized" xml:space="preserve">
-    <value>Uautoriseret</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>Fejl</value>
-  </data>
-  <data name="Finance" xml:space="preserve">
-    <value>Finans</value>
-  </data>
-  <data name="Passwords" xml:space="preserve">
-    <value>Adgangskoder</value>
-  </data>
-  <data name="Password Details" xml:space="preserve">
-    <value>Passwordoplysninger</value>
   </data>
   <data name="Manage Payrolls" xml:space="preserve">
     <value>Administrer Lønninger</value>
@@ -144,17 +114,8 @@
   <data name="Manage Shares" xml:space="preserve">
     <value>Administrer Delinger</value>
   </data>
-  <data name="Edit Password" xml:space="preserve">
-    <value>Rediger adgangskode</value>
-  </data>
-  <data name="Create Password" xml:space="preserve">
-    <value>Opret adgangskode</value>
-  </data>
-  <data name="Shared Info" xml:space="preserve">
-    <value>Delt Info</value>
-  </data>
-  <data name="Payrolls" xml:space="preserve">
-    <value>Lønninger</value>
+  <data name="My Leave Balance" xml:space="preserve">
+    <value>Min feriebalance</value>
   </data>
   <data name="My Payrolls" xml:space="preserve">
     <value>Mine Lønninger</value>
@@ -162,20 +123,65 @@
   <data name="My Report Line" xml:space="preserve">
     <value>Min Rapportlinje</value>
   </data>
-  <data name="Development" xml:space="preserve">
-    <value>Udvikling</value>
+  <data name="Password Details" xml:space="preserve">
+    <value>Passwordoplysninger</value>
   </data>
-  <data name="Employee Center" xml:space="preserve">
-    <value>Medarbejdercenter</value>
+  <data name="Passwords" xml:space="preserve">
+    <value>Adgangskoder</value>
+  </data>
+  <data name="Payrolls" xml:space="preserve">
+    <value>Lønninger</value>
+  </data>
+  <data name="Personal" xml:space="preserve">
+    <value>Personlig</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="Profile Settings" xml:space="preserve">
+    <value>Profilindstillinger</value>
   </data>
   <data name="Projects" xml:space="preserve">
     <value>Projekter</value>
   </data>
+  <data name="Register" xml:space="preserve">
+    <value>Registrer</value>
+  </data>
   <data name="Report Line" xml:space="preserve">
     <value>Rapportlinje</value>
   </data>
-  <data name="Aiursoft Employee Center" xml:space="preserve">
-    <value>Aiursoft Medarbejdercenter</value>
+  <data name="Role Details" xml:space="preserve">
+    <value>Roledetaljer</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>Roller</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Indstillinger</value>
+  </data>
+  <data name="Shared Info" xml:space="preserve">
+    <value>Delt Info</value>
+  </data>
+  <data name="Sign out" xml:space="preserve">
+    <value>Log ud</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="System Info" xml:space="preserve">
+    <value>Systeminformation</value>
+  </data>
+  <data name="Template" xml:space="preserve">
+    <value>Skabelon</value>
+  </data>
+  <data name="Unauthorized" xml:space="preserve">
+    <value>Uautoriseret</value>
+  </data>
+  <data name="User Details" xml:space="preserve">
+    <value>Brugerdetaljer</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Brugere</value>
   </data>
 
 </root>

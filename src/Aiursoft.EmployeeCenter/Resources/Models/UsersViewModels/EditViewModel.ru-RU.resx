@@ -18,53 +18,11 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="User name" xml:space="preserve">
-    <value>Имя пользователя</value>
-  </data>
-  <data name="Email Address" xml:space="preserve">
-    <value>Адрес электронной почты</value>
-  </data>
-  <data name="Reset Password (leave empty to keep the same password)" xml:space="preserve">
-    <value>Сбросить пароль (оставьте пустым, чтобы сохранить текущий пароль)</value>
-  </data>
-  <data name="The {0} is required." xml:space="preserve">
-    <value>Поле {0} обязательно для заполнения.</value>
-  </data>
-  <data name="The {0} is not a valid email address." xml:space="preserve">
-    <value>Поле {0} содержит недопустимый адрес электронной почты.</value>
-  </data>
-  <data name="Name" xml:space="preserve">
-    <value>Имя</value>
-  </data>
-  <data name="The avatar file is required." xml:space="preserve">
-    <value>Файл аватара обязателен.</value>
-  </data>
-  <data name="Avatar file" xml:space="preserve">
+      <data name="Avatar file" xml:space="preserve">
     <value>Файл аватара</value>
-  </data>
-  <data name="The avatar file is invalid. Please upload it again." xml:space="preserve">
-    <value>Файл аватара недействителен. Пожалуйста, загрузите его снова.</value>
-  </data>
-  <data name="Job Level" xml:space="preserve">
-    <value>Уровень должности</value>
-  </data>
-  <data name="Base Salary" xml:space="preserve">
-    <value>Базовая зарплата</value>
   </data>
   <data name="Bank Account" xml:space="preserve">
     <value>Банковский счет</value>
-  </data>
-  <data name="Bank Name" xml:space="preserve">
-    <value>Название банка</value>
-  </data>
-  <data name="Manager" xml:space="preserve">
-    <value>Менеджер</value>
-  </data>
-  <data name="Title" xml:space="preserve">
-    <value>Должность</value>
-  </data>
-  <data name="Bank Name (Branch)" xml:space="preserve">
-    <value>Название банка (Филиал)</value>
   </data>
   <data name="Bank Account (Card Number)" xml:space="preserve">
     <value>Банковский счет (Номер карты)</value>
@@ -72,11 +30,53 @@
   <data name="Bank Account Name (Holder)" xml:space="preserve">
     <value>Имя владельца счета</value>
   </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Название банка</value>
+  </data>
+  <data name="Bank Name (Branch)" xml:space="preserve">
+    <value>Название банка (Филиал)</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Базовая зарплата</value>
+  </data>
+  <data name="Email Address" xml:space="preserve">
+    <value>Адрес электронной почты</value>
+  </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>Уровень должности</value>
+  </data>
   <data name="Legal Name" xml:space="preserve">
     <value>Юридическое имя</value>
   </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Менеджер</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Имя</value>
+  </data>
   <data name="Phone Number" xml:space="preserve">
     <value>Номер телефона</value>
+  </data>
+  <data name="Reset Password (leave empty to keep the same password)" xml:space="preserve">
+    <value>Сбросить пароль (оставьте пустым, чтобы сохранить текущий пароль)</value>
+  </data>
+  <data name="The {0} is not a valid email address." xml:space="preserve">
+    <value>Поле {0} содержит недопустимый адрес электронной почты.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>Поле {0} обязательно для заполнения.</value>
+  </data>
+  <data name="The avatar file is invalid. Please upload it again." xml:space="preserve">
+    <value>Файл аватара недействителен. Пожалуйста, загрузите его снова.</value>
+  </data>
+  <data name="The avatar file is required." xml:space="preserve">
+    <value>Файл аватара обязателен.</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Должность</value>
+  </data>
+  <data name="User name" xml:space="preserve">
+    <value>Имя пользователя</value>
   </data>
 
 </root>

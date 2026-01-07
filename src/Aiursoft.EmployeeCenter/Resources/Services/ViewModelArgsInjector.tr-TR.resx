@@ -18,20 +18,86 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Features" xml:space="preserve">
+      <data name="Admin" xml:space="preserve">
+    <value>Yönetici</value>
+  </data>
+  <data name="Administration" xml:space="preserve">
+    <value>Yönetim</value>
+  </data>
+  <data name="Aiursoft Employee Center" xml:space="preserve">
+    <value>Aiursoft Çalışan Merkezi</value>
+  </data>
+  <data name="Aiursoft Template" xml:space="preserve">
+    <value>Aiursoft Şablon</value>
+  </data>
+  <data name="Anonymous" xml:space="preserve">
+    <value>Anonim</value>
+  </data>
+  <data name="Change Avatar" xml:space="preserve">
+    <value>Profil Resmini Değiştir</value>
+  </data>
+  <data name="Change Password" xml:space="preserve">
+    <value>Şifre Değiştir</value>
+  </data>
+  <data name="Change Profile" xml:space="preserve">
+    <value>Profil Değiştir</value>
+  </data>
+  <data name="Click to login" xml:space="preserve">
+    <value>Giriş yapmak için tıklayın</value>
+  </data>
+  <data name="Create Password" xml:space="preserve">
+    <value>Şifre Oluştur</value>
+  </data>
+  <data name="Create Role" xml:space="preserve">
+    <value>Rol Oluştur</value>
+  </data>
+  <data name="Create User" xml:space="preserve">
+    <value>Kullanıcı Oluştur</value>
+  </data>
+  <data name="Delete Role" xml:space="preserve">
+    <value>Rolü Sil</value>
+  </data>
+  <data name="Delete User" xml:space="preserve">
+    <value>Kullanıcıyı Sil</value>
+  </data>
+  <data name="Development" xml:space="preserve">
+    <value>Geliştirme</value>
+  </data>
+  <data name="Directory" xml:space="preserve">
+    <value>Dizin</value>
+  </data>
+  <data name="Edit Password" xml:space="preserve">
+    <value>Şifreyi Düzenle</value>
+  </data>
+  <data name="Edit Role" xml:space="preserve">
+    <value>Rolü Düzenle</value>
+  </data>
+  <data name="Edit User" xml:space="preserve">
+    <value>Kullanıcıyı Düzenle</value>
+  </data>
+  <data name="Employee Center" xml:space="preserve">
+    <value>Çalışan Merkezi</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Hata</value>
+  </data>
+  <data name="Features" xml:space="preserve">
     <value>Özellikler</value>
   </data>
-  <data name="Index" xml:space="preserve">
-    <value>Ana Sayfa</value>
-  </data>
-  <data name="Template" xml:space="preserve">
-    <value>Şablon</value>
+  <data name="Finance" xml:space="preserve">
+    <value>Finans</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Ana Sayfa</value>
   </data>
-  <data name="Aiursoft Template" xml:space="preserve">
-    <value>Aiursoft Şablon</value>
+  <data name="Index" xml:space="preserve">
+    <value>Ana Sayfa</value>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value>Bilgi</value>
+  </data>
+  <data name="Leave Management" xml:space="preserve">
+    <value>İzin Yönetimi</value>
   </data>
   <data name="Login" xml:space="preserve">
     <value>Giriş Yap</value>
@@ -39,143 +105,83 @@
   <data name="Login to get access to all features." xml:space="preserve">
     <value>Tüm özelliklere erişmek için giriş yapın.</value>
   </data>
-  <data name="Register" xml:space="preserve">
-    <value>Kayıt Ol</value>
-  </data>
-  <data name="Directory" xml:space="preserve">
-    <value>Dizin</value>
-  </data>
-  <data name="Users" xml:space="preserve">
-    <value>Kullanıcılar</value>
-  </data>
-  <data name="Roles" xml:space="preserve">
-    <value>Roller</value>
-  </data>
-  <data name="Admin" xml:space="preserve">
-    <value>Yönetici</value>
-  </data>
-  <data name="System" xml:space="preserve">
-    <value>Sistem</value>
-  </data>
-  <data name="Info" xml:space="preserve">
-    <value>Bilgi</value>
-  </data>
-  <data name="Anonymous" xml:space="preserve">
-    <value>Anonim</value>
-  </data>
-  <data name="Sign out" xml:space="preserve">
-    <value>Çıkış Yap</value>
-  </data>
-  <data name="Profile" xml:space="preserve">
-    <value>Profil</value>
-  </data>
-  <data name="Administration" xml:space="preserve">
-    <value>Yönetim</value>
-  </data>
-  <data name="Click to login" xml:space="preserve">
-    <value>Giriş yapmak için tıklayın</value>
-  </data>
-  <data name="Delete Role" xml:space="preserve">
-    <value>Rolü Sil</value>
-  </data>
-  <data name="System Info" xml:space="preserve">
-    <value>Sistem Bilgisi</value>
-  </data>
   <data name="Manage" xml:space="preserve">
     <value>Yönet</value>
-  </data>
-  <data name="Create Role" xml:space="preserve">
-    <value>Rol Oluştur</value>
-  </data>
-  <data name="Edit Role" xml:space="preserve">
-    <value>Rolü Düzenle</value>
-  </data>
-  <data name="Delete User" xml:space="preserve">
-    <value>Kullanıcıyı Sil</value>
-  </data>
-  <data name="Create User" xml:space="preserve">
-    <value>Kullanıcı Oluştur</value>
-  </data>
-  <data name="Edit User" xml:space="preserve">
-    <value>Kullanıcıyı Düzenle</value>
-  </data>
-  <data name="Change Profile" xml:space="preserve">
-    <value>Profil Değiştir</value>
-  </data>
-  <data name="Role Details" xml:space="preserve">
-    <value>Rol Detayları</value>
-  </data>
-  <data name="Change Avatar" xml:space="preserve">
-    <value>Profil Resmini Değiştir</value>
-  </data>
-  <data name="User Details" xml:space="preserve">
-    <value>Kullanıcı Detayları</value>
-  </data>
-  <data name="Change Password" xml:space="preserve">
-    <value>Şifre Değiştir</value>
-  </data>
-  <data name="Settings" xml:space="preserve">
-    <value>Ayarlar</value>
-  </data>
-  <data name="Personal" xml:space="preserve">
-    <value>Kişisel</value>
-  </data>
-  <data name="Profile Settings" xml:space="preserve">
-    <value>Profil Ayarları</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>Hata</value>
-  </data>
-  <data name="Unauthorized" xml:space="preserve">
-    <value>Yetkisiz</value>
-  </data>
-  <data name="Passwords" xml:space="preserve">
-    <value>Şifreler</value>
-  </data>
-  <data name="Shared Info" xml:space="preserve">
-    <value>Paylaşılan Bilgi</value>
-  </data>
-  <data name="Manage Shares" xml:space="preserve">
-    <value>Paylaşımları Yönet</value>
-  </data>
-  <data name="Password Details" xml:space="preserve">
-    <value>Şifre Detayları</value>
-  </data>
-  <data name="Create Password" xml:space="preserve">
-    <value>Şifre Oluştur</value>
-  </data>
-  <data name="Edit Password" xml:space="preserve">
-    <value>Şifreyi Düzenle</value>
-  </data>
-  <data name="Employee Center" xml:space="preserve">
-    <value>Çalışan Merkezi</value>
-  </data>
-  <data name="Aiursoft Employee Center" xml:space="preserve">
-    <value>Aiursoft Çalışan Merkezi</value>
   </data>
   <data name="Manage Payrolls" xml:space="preserve">
     <value>Maaşları Yönet</value>
   </data>
-  <data name="Finance" xml:space="preserve">
-    <value>Finans</value>
+  <data name="Manage Shares" xml:space="preserve">
+    <value>Paylaşımları Yönet</value>
   </data>
-  <data name="Payrolls" xml:space="preserve">
-    <value>Maaşlar</value>
-  </data>
-  <data name="My Report Line" xml:space="preserve">
-    <value>Rapor Hattım</value>
+  <data name="My Leave Balance" xml:space="preserve">
+    <value>Birincil İzin Bakiyem</value>
   </data>
   <data name="My Payrolls" xml:space="preserve">
     <value>Maaşlarım</value>
   </data>
-  <data name="Report Line" xml:space="preserve">
-    <value>Rapor Hattı</value>
+  <data name="My Report Line" xml:space="preserve">
+    <value>Rapor Hattım</value>
+  </data>
+  <data name="Password Details" xml:space="preserve">
+    <value>Şifre Detayları</value>
+  </data>
+  <data name="Passwords" xml:space="preserve">
+    <value>Şifreler</value>
+  </data>
+  <data name="Payrolls" xml:space="preserve">
+    <value>Maaşlar</value>
+  </data>
+  <data name="Personal" xml:space="preserve">
+    <value>Kişisel</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="Profile Settings" xml:space="preserve">
+    <value>Profil Ayarları</value>
   </data>
   <data name="Projects" xml:space="preserve">
     <value>Projeler</value>
   </data>
-  <data name="Development" xml:space="preserve">
-    <value>Geliştirme</value>
+  <data name="Register" xml:space="preserve">
+    <value>Kayıt Ol</value>
+  </data>
+  <data name="Report Line" xml:space="preserve">
+    <value>Rapor Hattı</value>
+  </data>
+  <data name="Role Details" xml:space="preserve">
+    <value>Rol Detayları</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>Roller</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Ayarlar</value>
+  </data>
+  <data name="Shared Info" xml:space="preserve">
+    <value>Paylaşılan Bilgi</value>
+  </data>
+  <data name="Sign out" xml:space="preserve">
+    <value>Çıkış Yap</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>Sistem</value>
+  </data>
+  <data name="System Info" xml:space="preserve">
+    <value>Sistem Bilgisi</value>
+  </data>
+  <data name="Template" xml:space="preserve">
+    <value>Şablon</value>
+  </data>
+  <data name="Unauthorized" xml:space="preserve">
+    <value>Yetkisiz</value>
+  </data>
+  <data name="User Details" xml:space="preserve">
+    <value>Kullanıcı Detayları</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Kullanıcılar</value>
   </data>
 
 </root>

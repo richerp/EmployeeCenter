@@ -18,14 +18,14 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Bank Name" xml:space="preserve">
-    <value>Όνομα Τράπεζας</value>
+      <data name="Bank Account Name" xml:space="preserve">
+    <value>Όνομα λογαριασμού</value>
   </data>
   <data name="Bank Card Number" xml:space="preserve">
     <value>Αριθμός τραπεζικής κάρτας</value>
   </data>
-  <data name="Bank Account Name" xml:space="preserve">
-    <value>Όνομα λογαριασμού</value>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Όνομα Τράπεζας</value>
   </data>
 
 </root>

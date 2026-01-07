@@ -18,23 +18,11 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Maintain Profile" xml:space="preserve">
-    <value>維護個人資料</value>
+      <data name="Back" xml:space="preserve">
+    <value>返回</value>
   </data>
   <data name="Back to Settings" xml:space="preserve">
     <value>返回設定</value>
-  </data>
-  <data name="Personal and Bank Information" xml:space="preserve">
-    <value>個人及銀行資料</value>
-  </data>
-  <data name="Legal Name" xml:space="preserve">
-    <value>法定姓名</value>
-  </data>
-  <data name="Phone Number" xml:space="preserve">
-    <value>電話號碼</value>
-  </data>
-  <data name="Bank Name" xml:space="preserve">
-    <value>銀行名稱</value>
   </data>
   <data name="Bank Account" xml:space="preserve">
     <value>銀行賬戶</value>
@@ -42,11 +30,23 @@
   <data name="Bank Account Name" xml:space="preserve">
     <value>戶口戶名</value>
   </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>銀行名稱</value>
+  </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>法定姓名</value>
+  </data>
+  <data name="Maintain Profile" xml:space="preserve">
+    <value>維護個人資料</value>
+  </data>
+  <data name="Personal and Bank Information" xml:space="preserve">
+    <value>個人及銀行資料</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>電話號碼</value>
+  </data>
   <data name="Save Profile" xml:space="preserve">
     <value>儲存個人檔案</value>
-  </data>
-  <data name="Back" xml:space="preserve">
-    <value>返回</value>
   </data>
 
 </root>

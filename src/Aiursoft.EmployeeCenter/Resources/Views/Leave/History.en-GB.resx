@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Annual Leave" xml:space="preserve">
+    <value>Annual Leave</value>
+  </data>
+  <data name="Applicant" xml:space="preserve">
+    <value>Applicant</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="days" xml:space="preserve">
+    <value>days</value>
+  </data>
+  <data name="End Date" xml:space="preserve">
+    <value>End Date</value>
+  </data>
+  <data name="History of leave applications you have reviewed." xml:space="preserve">
+    <value>History of leave applications you have reviewed.</value>
+  </data>
+  <data name="Leave Type" xml:space="preserve">
+    <value>Leave Type</value>
+  </data>
+  <data name="My Approval History" xml:space="preserve">
+    <value>My Approval History</value>
+  </data>
+  <data name="No history available." xml:space="preserve">
+    <value>No history available.</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>Rejected</value>
+  </data>
+  <data name="Reviewed Applications" xml:space="preserve">
+    <value>Reviewed Applications</value>
+  </data>
+  <data name="Reviewed At" xml:space="preserve">
+    <value>Reviewed At</value>
+  </data>
+  <data name="Sick Leave" xml:space="preserve">
+    <value>Sick Leave</value>
+  </data>
+  <data name="Start Date" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Total Days" xml:space="preserve">
+    <value>Total Days</value>
+  </data>
+
+</root>

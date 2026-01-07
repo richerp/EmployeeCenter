@@ -18,47 +18,50 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="SSH Keys for" xml:space="preserve">
-    <value>SSH Keys for</value>
-  </data>
-  <data name="Created Time" xml:space="preserve">
-    <value>Created Time</value>
-  </data>
-  <data name="Name" xml:space="preserve">
-    <value>Name</value>
+      <data name="Actions" xml:space="preserve">
+    <value>Actions</value>
   </data>
   <data name="Add New Key" xml:space="preserve">
     <value>Add New Key</value>
   </data>
-  <data name="Public Key" xml:space="preserve">
-    <value>Public Key</value>
+  <data name="Back to Settings" xml:space="preserve">
+    <value>Back to Settings</value>
   </data>
-  <data name="Actions" xml:space="preserve">
-    <value>Actions</value>
-  </data>
-  <data name="Public SSH Keys" xml:space="preserve">
-    <value>Public SSH Keys</value>
-  </data>
-  <data name="Manage your public SSH keys for server access." xml:space="preserve">
-    <value>Manage your public SSH keys for server access.</value>
-  </data>
-  <data name="Delete" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="No SSH keys found." xml:space="preserve">
-    <value>No SSH keys found.</value>
+  <data name="Back to User Info" xml:space="preserve">
+    <value>Back to User Info</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancel</value>
   </data>
-  <data name="Back to Settings" xml:space="preserve">
-    <value>Back to Settings</value>
-  </data>
   <data name="Confirm Delete" xml:space="preserve">
     <value>Confirm Deletion</value>
   </data>
+  <data name="Created Time" xml:space="preserve">
+    <value>Created Time</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
   <data name="Edit" xml:space="preserve">
     <value>Edit</value>
+  </data>
+  <data name="Manage your public SSH keys for server access." xml:space="preserve">
+    <value>Manage your public SSH keys for server access.</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="No SSH keys found." xml:space="preserve">
+    <value>No SSH keys found.</value>
+  </data>
+  <data name="Public Key" xml:space="preserve">
+    <value>Public Key</value>
+  </data>
+  <data name="Public SSH Keys" xml:space="preserve">
+    <value>Public SSH Keys</value>
+  </data>
+  <data name="SSH Keys for" xml:space="preserve">
+    <value>SSH Keys for</value>
   </data>
 
 </root>

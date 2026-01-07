@@ -18,20 +18,20 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Legal Name" xml:space="preserve">
-    <value>Volledige naam</value>
-  </data>
-  <data name="Phone Number" xml:space="preserve">
-    <value>Telefoonnummer</value>
-  </data>
-  <data name="Bank Account (Card Number)" xml:space="preserve">
+      <data name="Bank Account (Card Number)" xml:space="preserve">
     <value>Bankrekening (Kaartnummer)</value>
+  </data>
+  <data name="Bank Account Name (Holder)" xml:space="preserve">
+    <value>Naam rekening (houder)</value>
   </data>
   <data name="Bank Name (Branch)" xml:space="preserve">
     <value>Naam bank (filiaal)</value>
   </data>
-  <data name="Bank Account Name (Holder)" xml:space="preserve">
-    <value>Naam rekening (houder)</value>
+  <data name="Legal Name" xml:space="preserve">
+    <value>Volledige naam</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>Telefoonnummer</value>
   </data>
 
 </root>

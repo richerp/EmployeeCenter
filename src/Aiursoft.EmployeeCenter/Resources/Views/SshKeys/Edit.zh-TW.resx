@@ -21,17 +21,17 @@
       <data name="Cancel" xml:space="preserve">
     <value>取消</value>
   </data>
-  <data name="Save Changes" xml:space="preserve">
-    <value>儲存變更</value>
-  </data>
   <data name="Edit SSH Key" xml:space="preserve">
     <value>編輯 SSH 金鑰</value>
   </data>
-  <data name="Update SSH Key" xml:space="preserve">
-    <value>更新 SSH 金鑰</value>
-  </data>
   <data name="Modify your public SSH key details." xml:space="preserve">
     <value>修改您的公開 SSH 金鑰詳細資訊。</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>儲存變更</value>
+  </data>
+  <data name="Update SSH Key" xml:space="preserve">
+    <value>更新 SSH 金鑰</value>
   </data>
 
 </root>

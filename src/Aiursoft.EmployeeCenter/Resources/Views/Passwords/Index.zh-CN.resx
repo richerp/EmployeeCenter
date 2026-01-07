@@ -18,29 +18,14 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Passwords Management" xml:space="preserve">
-    <value>密码管理</value>
-  </data>
-  <data name="No passwords created yet." xml:space="preserve">
-    <value>暂无密码。</value>
+      <data name="Account" xml:space="preserve">
+    <value>账户</value>
   </data>
   <data name="Actions" xml:space="preserve">
     <value>操作</value>
   </data>
-  <data name="Account" xml:space="preserve">
-    <value>账户</value>
-  </data>
-  <data name="Manage and view shared account passwords." xml:space="preserve">
-    <value>管理并查看共享账户密码。</value>
-  </data>
-  <data name="My Passwords" xml:space="preserve">
-    <value>我的密码</value>
-  </data>
   <data name="Create New" xml:space="preserve">
     <value>新建</value>
-  </data>
-  <data name="Title" xml:space="preserve">
-    <value>标题</value>
   </data>
   <data name="Details" xml:space="preserve">
     <value>详情</value>
@@ -48,26 +33,41 @@
   <data name="Edit" xml:space="preserve">
     <value>编辑</value>
   </data>
+  <data name="Editable" xml:space="preserve">
+    <value>可编辑</value>
+  </data>
+  <data name="Manage and view shared account passwords." xml:space="preserve">
+    <value>管理并查看共享账户密码。</value>
+  </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>管理共享</value>
   </data>
-  <data name="Shared with Me" xml:space="preserve">
-    <value>与我共享</value>
+  <data name="My Passwords" xml:space="preserve">
+    <value>我的密码</value>
   </data>
-  <data name="Owner" xml:space="preserve">
-    <value>所有者</value>
-  </data>
-  <data name="Permission" xml:space="preserve">
-    <value>权限</value>
+  <data name="No passwords created yet." xml:space="preserve">
+    <value>暂无密码。</value>
   </data>
   <data name="No passwords shared with you." xml:space="preserve">
     <value>暂无与您共享的密码。</value>
   </data>
-  <data name="Editable" xml:space="preserve">
-    <value>可编辑</value>
+  <data name="Owner" xml:space="preserve">
+    <value>所有者</value>
+  </data>
+  <data name="Passwords Management" xml:space="preserve">
+    <value>密码管理</value>
+  </data>
+  <data name="Permission" xml:space="preserve">
+    <value>权限</value>
   </data>
   <data name="Read Only" xml:space="preserve">
     <value>只读</value>
+  </data>
+  <data name="Shared with Me" xml:space="preserve">
+    <value>与我共享</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>标题</value>
   </data>
 
 </root>

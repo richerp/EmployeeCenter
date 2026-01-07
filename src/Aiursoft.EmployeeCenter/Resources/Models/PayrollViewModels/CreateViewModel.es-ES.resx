@@ -18,86 +18,86 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Total Amount" xml:space="preserve">
-    <value>Importe total</value>
-  </data>
-  <data name="Target Month" xml:space="preserve">
-    <value>Mes Objetivo</value>
-  </data>
-  <data name="Content (Markdown)" xml:space="preserve">
-    <value>Contenido (Markdown)</value>
-  </data>
-  <data name="User" xml:space="preserve">
-    <value>Usuario</value>
-  </data>
-  <data name="Base Salary" xml:space="preserve">
-    <value>Salario Base</value>
-  </data>
-  <data name="Other Allowances" xml:space="preserve">
-    <value>Otras Asignaciones</value>
-  </data>
-  <data name="Full Attendance" xml:space="preserve">
-    <value>Asistencia Perfecta</value>
-  </data>
-  <data name="Late/Early" xml:space="preserve">
-    <value>Retrasos/Adelantos</value>
-  </data>
-  <data name="Job Salary" xml:space="preserve">
-    <value>Salario del puesto</value>
-  </data>
-  <data name="Overtime" xml:space="preserve">
-    <value>Horas extra</value>
-  </data>
-  <data name="Sick Leave" xml:space="preserve">
-    <value>Baja por enfermedad</value>
-  </data>
-  <data name="Performance Bonus" xml:space="preserve">
-    <value>Bono por Rendimiento</value>
-  </data>
-  <data name="Pension (Personal)" xml:space="preserve">
-    <value>Pensión (Personal)</value>
-  </data>
-  <data name="Administrative Fines" xml:space="preserve">
+      <data name="Administrative Fines" xml:space="preserve">
     <value>Multas administrativas</value>
-  </data>
-  <data name="Medical (Personal)" xml:space="preserve">
-    <value>Sanidad (Personal)</value>
-  </data>
-  <data name="Unemployment (Personal)" xml:space="preserve">
-    <value>Desempleo (Personal)</value>
-  </data>
-  <data name="Special Additional Deduction" xml:space="preserve">
-    <value>Deducción Adicional Especial</value>
-  </data>
-  <data name="Bank Name" xml:space="preserve">
-    <value>Nombre del banco</value>
-  </data>
-  <data name="Housing Fund (Personal)" xml:space="preserve">
-    <value>Fondo de Vivienda (Personal)</value>
-  </data>
-  <data name="Personal Income Tax" xml:space="preserve">
-    <value>Impuesto sobre la Renta de las Personas Físicas</value>
-  </data>
-  <data name="Pension (Company)" xml:space="preserve">
-    <value>Pensión (Empresa)</value>
-  </data>
-  <data name="Medical (Company)" xml:space="preserve">
-    <value>Médico (Empresa)</value>
   </data>
   <data name="Bank Account" xml:space="preserve">
     <value>Cuenta Bancaria</value>
   </data>
-  <data name="Unemployment (Company)" xml:space="preserve">
-    <value>Desempleo (Empresa)</value>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Nombre del banco</value>
   </data>
-  <data name="Work Injury (Company)" xml:space="preserve">
-    <value>Accidentes de trabajo (Empresa)</value>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Salario Base</value>
+  </data>
+  <data name="Content (Markdown)" xml:space="preserve">
+    <value>Contenido (Markdown)</value>
+  </data>
+  <data name="Full Attendance" xml:space="preserve">
+    <value>Asistencia Perfecta</value>
   </data>
   <data name="Housing Fund (Company)" xml:space="preserve">
     <value>Fondo de Vivienda (Empresa)</value>
   </data>
+  <data name="Housing Fund (Personal)" xml:space="preserve">
+    <value>Fondo de Vivienda (Personal)</value>
+  </data>
+  <data name="Job Salary" xml:space="preserve">
+    <value>Salario del puesto</value>
+  </data>
+  <data name="Late/Early" xml:space="preserve">
+    <value>Retrasos/Adelantos</value>
+  </data>
   <data name="Maternity (Company)" xml:space="preserve">
     <value>Maternidad (Empresa)</value>
+  </data>
+  <data name="Medical (Company)" xml:space="preserve">
+    <value>Médico (Empresa)</value>
+  </data>
+  <data name="Medical (Personal)" xml:space="preserve">
+    <value>Sanidad (Personal)</value>
+  </data>
+  <data name="Other Allowances" xml:space="preserve">
+    <value>Otras Asignaciones</value>
+  </data>
+  <data name="Overtime" xml:space="preserve">
+    <value>Horas extra</value>
+  </data>
+  <data name="Pension (Company)" xml:space="preserve">
+    <value>Pensión (Empresa)</value>
+  </data>
+  <data name="Pension (Personal)" xml:space="preserve">
+    <value>Pensión (Personal)</value>
+  </data>
+  <data name="Performance Bonus" xml:space="preserve">
+    <value>Bono por Rendimiento</value>
+  </data>
+  <data name="Personal Income Tax" xml:space="preserve">
+    <value>Impuesto sobre la Renta de las Personas Físicas</value>
+  </data>
+  <data name="Sick Leave" xml:space="preserve">
+    <value>Baja por enfermedad</value>
+  </data>
+  <data name="Special Additional Deduction" xml:space="preserve">
+    <value>Deducción Adicional Especial</value>
+  </data>
+  <data name="Target Month" xml:space="preserve">
+    <value>Mes Objetivo</value>
+  </data>
+  <data name="Total Amount" xml:space="preserve">
+    <value>Importe total</value>
+  </data>
+  <data name="Unemployment (Company)" xml:space="preserve">
+    <value>Desempleo (Empresa)</value>
+  </data>
+  <data name="Unemployment (Personal)" xml:space="preserve">
+    <value>Desempleo (Personal)</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="Work Injury (Company)" xml:space="preserve">
+    <value>Accidentes de trabajo (Empresa)</value>
   </data>
 
 </root>

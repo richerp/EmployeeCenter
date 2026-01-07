@@ -18,17 +18,17 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="No users found" xml:space="preserve">
-    <value>ユーザーが見つかりません</value>
-  </data>
-  <data name="Clear" xml:space="preserve">
+      <data name="Clear" xml:space="preserve">
     <value>クリア</value>
   </data>
-  <data name="Type 3+ characters to search..." xml:space="preserve">
-    <value>3文字以上入力して検索...</value>
+  <data name="No users found" xml:space="preserve">
+    <value>ユーザーが見つかりません</value>
   </data>
   <data name="Search Manager" xml:space="preserve">
     <value>マネージャーを検索</value>
+  </data>
+  <data name="Type 3+ characters to search..." xml:space="preserve">
+    <value>3文字以上入力して検索...</value>
   </data>
 
 </root>

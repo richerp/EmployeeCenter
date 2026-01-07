@@ -21,14 +21,14 @@
       <data name="Badge" xml:space="preserve">
     <value>徽章</value>
   </data>
-  <data name="Project" xml:space="preserve">
-    <value>專案</value>
+  <data name="GitLab Projects" xml:space="preserve">
+    <value>GitLab 專案</value>
   </data>
   <data name="No projects found." xml:space="preserve">
     <value>找不到任何專案。</value>
   </data>
-  <data name="GitLab Projects" xml:space="preserve">
-    <value>GitLab 專案</value>
+  <data name="Project" xml:space="preserve">
+    <value>專案</value>
   </data>
   <data name="projects" xml:space="preserve">
     <value>專案</value>

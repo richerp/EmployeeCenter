@@ -18,17 +18,17 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="No projects found." xml:space="preserve">
-    <value>プロジェクトが見つかりません。</value>
-  </data>
-  <data name="Project" xml:space="preserve">
-    <value>プロジェクト</value>
+      <data name="Badge" xml:space="preserve">
+    <value>バッジ</value>
   </data>
   <data name="GitLab Projects" xml:space="preserve">
     <value>GitLabプロジェクト</value>
   </data>
-  <data name="Badge" xml:space="preserve">
-    <value>バッジ</value>
+  <data name="No projects found." xml:space="preserve">
+    <value>プロジェクトが見つかりません。</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>プロジェクト</value>
   </data>
   <data name="projects" xml:space="preserve">
     <value>プロジェクト</value>

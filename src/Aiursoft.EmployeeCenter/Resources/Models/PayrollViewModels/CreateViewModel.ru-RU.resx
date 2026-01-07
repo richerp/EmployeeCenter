@@ -18,35 +18,44 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Total Amount" xml:space="preserve">
-    <value>Общая сумма</value>
+      <data name="Administrative Fines" xml:space="preserve">
+    <value>Административные штрафы</value>
   </data>
-  <data name="User" xml:space="preserve">
-    <value>Пользователь</value>
+  <data name="Bank Account" xml:space="preserve">
+    <value>Банковский счет</value>
   </data>
-  <data name="Target Month" xml:space="preserve">
-    <value>Целевой месяц</value>
-  </data>
-  <data name="Content (Markdown)" xml:space="preserve">
-    <value>Содержание (Markdown)</value>
-  </data>
-  <data name="Performance Bonus" xml:space="preserve">
-    <value>Премия за эффективность</value>
-  </data>
-  <data name="Job Salary" xml:space="preserve">
-    <value>Оклад по должности</value>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Название банка</value>
   </data>
   <data name="Base Salary" xml:space="preserve">
     <value>Базовая зарплата</value>
   </data>
+  <data name="Content (Markdown)" xml:space="preserve">
+    <value>Содержание (Markdown)</value>
+  </data>
   <data name="Full Attendance" xml:space="preserve">
     <value>Полная посещаемость</value>
   </data>
-  <data name="Sick Leave" xml:space="preserve">
-    <value>Больничный</value>
+  <data name="Housing Fund (Company)" xml:space="preserve">
+    <value>Жилищный фонд (Компания)</value>
+  </data>
+  <data name="Housing Fund (Personal)" xml:space="preserve">
+    <value>Жилищный фонд (Личный)</value>
+  </data>
+  <data name="Job Salary" xml:space="preserve">
+    <value>Оклад по должности</value>
   </data>
   <data name="Late/Early" xml:space="preserve">
     <value>Опоздания/Ранние уходы</value>
+  </data>
+  <data name="Maternity (Company)" xml:space="preserve">
+    <value>Декретный отпуск (Компания)</value>
+  </data>
+  <data name="Medical (Company)" xml:space="preserve">
+    <value>Медицинское страхование (Компания)</value>
+  </data>
+  <data name="Medical (Personal)" xml:space="preserve">
+    <value>Медицинское (Личное)</value>
   </data>
   <data name="Other Allowances" xml:space="preserve">
     <value>Прочие надбавки</value>
@@ -54,50 +63,41 @@
   <data name="Overtime" xml:space="preserve">
     <value>Сверхурочные</value>
   </data>
-  <data name="Medical (Personal)" xml:space="preserve">
-    <value>Медицинское (Личное)</value>
+  <data name="Pension (Company)" xml:space="preserve">
+    <value>Пенсионные взносы (Компания)</value>
   </data>
   <data name="Pension (Personal)" xml:space="preserve">
     <value>Пенсионные взносы (сотрудник)</value>
   </data>
-  <data name="Unemployment (Personal)" xml:space="preserve">
-    <value>Страхование по безработице (за работника)</value>
-  </data>
-  <data name="Administrative Fines" xml:space="preserve">
-    <value>Административные штрафы</value>
-  </data>
-  <data name="Special Additional Deduction" xml:space="preserve">
-    <value>Специальный дополнительный вычет</value>
-  </data>
-  <data name="Bank Name" xml:space="preserve">
-    <value>Название банка</value>
-  </data>
-  <data name="Housing Fund (Personal)" xml:space="preserve">
-    <value>Жилищный фонд (Личный)</value>
+  <data name="Performance Bonus" xml:space="preserve">
+    <value>Премия за эффективность</value>
   </data>
   <data name="Personal Income Tax" xml:space="preserve">
     <value>Налог на доходы физических лиц</value>
   </data>
-  <data name="Pension (Company)" xml:space="preserve">
-    <value>Пенсионные взносы (Компания)</value>
+  <data name="Sick Leave" xml:space="preserve">
+    <value>Больничный</value>
   </data>
-  <data name="Bank Account" xml:space="preserve">
-    <value>Банковский счет</value>
+  <data name="Special Additional Deduction" xml:space="preserve">
+    <value>Специальный дополнительный вычет</value>
+  </data>
+  <data name="Target Month" xml:space="preserve">
+    <value>Целевой месяц</value>
+  </data>
+  <data name="Total Amount" xml:space="preserve">
+    <value>Общая сумма</value>
   </data>
   <data name="Unemployment (Company)" xml:space="preserve">
     <value>Безработица (Компания)</value>
   </data>
-  <data name="Medical (Company)" xml:space="preserve">
-    <value>Медицинское страхование (Компания)</value>
+  <data name="Unemployment (Personal)" xml:space="preserve">
+    <value>Страхование по безработице (за работника)</value>
   </data>
-  <data name="Maternity (Company)" xml:space="preserve">
-    <value>Декретный отпуск (Компания)</value>
+  <data name="User" xml:space="preserve">
+    <value>Пользователь</value>
   </data>
   <data name="Work Injury (Company)" xml:space="preserve">
     <value>Производственная травма (Компания)</value>
-  </data>
-  <data name="Housing Fund (Company)" xml:space="preserve">
-    <value>Жилищный фонд (Компания)</value>
   </data>
 
 </root>

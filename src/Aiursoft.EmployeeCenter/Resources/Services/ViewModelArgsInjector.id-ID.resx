@@ -18,86 +18,23 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Features" xml:space="preserve">
-    <value>Fitur</value>
-  </data>
-  <data name="Index" xml:space="preserve">
-    <value>Indeks</value>
-  </data>
-  <data name="Template" xml:space="preserve">
-    <value>Template</value>
-  </data>
-  <data name="Home" xml:space="preserve">
-    <value>Beranda</value>
-  </data>
-  <data name="Aiursoft Template" xml:space="preserve">
-    <value>Template Aiursoft</value>
-  </data>
-  <data name="Login" xml:space="preserve">
-    <value>Masuk</value>
-  </data>
-  <data name="Login to get access to all features." xml:space="preserve">
-    <value>Masuk untuk mendapatkan akses ke semua fitur.</value>
-  </data>
-  <data name="Register" xml:space="preserve">
-    <value>Daftar</value>
-  </data>
-  <data name="Directory" xml:space="preserve">
-    <value>Direktori</value>
-  </data>
-  <data name="Users" xml:space="preserve">
-    <value>Pengguna</value>
-  </data>
-  <data name="Roles" xml:space="preserve">
-    <value>Peran</value>
-  </data>
-  <data name="Admin" xml:space="preserve">
+      <data name="Admin" xml:space="preserve">
     <value>Administrator</value>
-  </data>
-  <data name="System" xml:space="preserve">
-    <value>Sistem</value>
-  </data>
-  <data name="Info" xml:space="preserve">
-    <value>Informasi</value>
-  </data>
-  <data name="Anonymous" xml:space="preserve">
-    <value>Anonim</value>
-  </data>
-  <data name="Sign out" xml:space="preserve">
-    <value>Keluar</value>
-  </data>
-  <data name="Profile" xml:space="preserve">
-    <value>Profil</value>
   </data>
   <data name="Administration" xml:space="preserve">
     <value>Administrasi</value>
   </data>
-  <data name="Click to login" xml:space="preserve">
-    <value>Klik untuk masuk</value>
+  <data name="Aiursoft Employee Center" xml:space="preserve">
+    <value>Pusat Karyawan Aiursoft</value>
   </data>
-  <data name="System Info" xml:space="preserve">
-    <value>Informasi Sistem</value>
+  <data name="Aiursoft Template" xml:space="preserve">
+    <value>Template Aiursoft</value>
   </data>
-  <data name="Manage" xml:space="preserve">
-    <value>Kelola</value>
+  <data name="Anonymous" xml:space="preserve">
+    <value>Anonim</value>
   </data>
-  <data name="User Details" xml:space="preserve">
-    <value>Detail Pengguna</value>
-  </data>
-  <data name="Edit User" xml:space="preserve">
-    <value>Edit Pengguna</value>
-  </data>
-  <data name="Create User" xml:space="preserve">
-    <value>Buat Pengguna</value>
-  </data>
-  <data name="Role Details" xml:space="preserve">
-    <value>Detail Peran</value>
-  </data>
-  <data name="Create Role" xml:space="preserve">
-    <value>Buat Peran</value>
-  </data>
-  <data name="Delete User" xml:space="preserve">
-    <value>Hapus Pengguna</value>
+  <data name="Change Avatar" xml:space="preserve">
+    <value>Ubah Avatar</value>
   </data>
   <data name="Change Password" xml:space="preserve">
     <value>Ubah Kata Sandi</value>
@@ -105,77 +42,146 @@
   <data name="Change Profile" xml:space="preserve">
     <value>Ubah Profil</value>
   </data>
-  <data name="Change Avatar" xml:space="preserve">
-    <value>Ubah Avatar</value>
-  </data>
-  <data name="Delete Role" xml:space="preserve">
-    <value>Hapus Peran</value>
-  </data>
-  <data name="Edit Role" xml:space="preserve">
-    <value>Edit Peran</value>
-  </data>
-  <data name="Settings" xml:space="preserve">
-    <value>Pengaturan</value>
-  </data>
-  <data name="Personal" xml:space="preserve">
-    <value>Pribadi</value>
-  </data>
-  <data name="Profile Settings" xml:space="preserve">
-    <value>Pengaturan Profil</value>
-  </data>
-  <data name="Unauthorized" xml:space="preserve">
-    <value>Tidak Diizinkan</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>Kesalahan</value>
-  </data>
-  <data name="Finance" xml:space="preserve">
-    <value>Keuangan</value>
-  </data>
-  <data name="Passwords" xml:space="preserve">
-    <value>Kata Sandi</value>
-  </data>
-  <data name="Edit Password" xml:space="preserve">
-    <value>Edit Kata Sandi</value>
-  </data>
-  <data name="Password Details" xml:space="preserve">
-    <value>Detail Kata Sandi</value>
+  <data name="Click to login" xml:space="preserve">
+    <value>Klik untuk masuk</value>
   </data>
   <data name="Create Password" xml:space="preserve">
     <value>Buat Kata Sandi</value>
   </data>
-  <data name="Shared Info" xml:space="preserve">
-    <value>Info yang Dibagikan</value>
+  <data name="Create Role" xml:space="preserve">
+    <value>Buat Peran</value>
   </data>
-  <data name="Manage Shares" xml:space="preserve">
-    <value>Kelola Berbagi</value>
+  <data name="Create User" xml:space="preserve">
+    <value>Buat Pengguna</value>
   </data>
-  <data name="Manage Payrolls" xml:space="preserve">
-    <value>Kelola Penggajian</value>
+  <data name="Delete Role" xml:space="preserve">
+    <value>Hapus Peran</value>
+  </data>
+  <data name="Delete User" xml:space="preserve">
+    <value>Hapus Pengguna</value>
   </data>
   <data name="Development" xml:space="preserve">
     <value>Pengembangan</value>
   </data>
-  <data name="Projects" xml:space="preserve">
-    <value>Proyek</value>
+  <data name="Directory" xml:space="preserve">
+    <value>Direktori</value>
   </data>
-  <data name="Payrolls" xml:space="preserve">
-    <value>Penggajian</value>
+  <data name="Edit Password" xml:space="preserve">
+    <value>Edit Kata Sandi</value>
   </data>
-  <data name="My Report Line" xml:space="preserve">
-    <value>Laporan Saya</value>
+  <data name="Edit Role" xml:space="preserve">
+    <value>Edit Peran</value>
+  </data>
+  <data name="Edit User" xml:space="preserve">
+    <value>Edit Pengguna</value>
   </data>
   <data name="Employee Center" xml:space="preserve">
     <value>Pusat Karyawan</value>
   </data>
-  <data name="Report Line" xml:space="preserve">
-    <value>Laporan Baris</value>
+  <data name="Error" xml:space="preserve">
+    <value>Kesalahan</value>
+  </data>
+  <data name="Features" xml:space="preserve">
+    <value>Fitur</value>
+  </data>
+  <data name="Finance" xml:space="preserve">
+    <value>Keuangan</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Beranda</value>
+  </data>
+  <data name="Index" xml:space="preserve">
+    <value>Indeks</value>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value>Informasi</value>
+  </data>
+  <data name="Leave Management" xml:space="preserve">
+    <value>Manajemen Cuti</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Masuk</value>
+  </data>
+  <data name="Login to get access to all features." xml:space="preserve">
+    <value>Masuk untuk mendapatkan akses ke semua fitur.</value>
+  </data>
+  <data name="Manage" xml:space="preserve">
+    <value>Kelola</value>
+  </data>
+  <data name="Manage Payrolls" xml:space="preserve">
+    <value>Kelola Penggajian</value>
+  </data>
+  <data name="Manage Shares" xml:space="preserve">
+    <value>Kelola Berbagi</value>
+  </data>
+  <data name="My Leave Balance" xml:space="preserve">
+    <value>Saldo Cuti Saya</value>
   </data>
   <data name="My Payrolls" xml:space="preserve">
     <value>Gaji Saya</value>
   </data>
-  <data name="Aiursoft Employee Center" xml:space="preserve">
-    <value>Pusat Karyawan Aiursoft</value>
+  <data name="My Report Line" xml:space="preserve">
+    <value>Laporan Saya</value>
+  </data>
+  <data name="Password Details" xml:space="preserve">
+    <value>Detail Kata Sandi</value>
+  </data>
+  <data name="Passwords" xml:space="preserve">
+    <value>Kata Sandi</value>
+  </data>
+  <data name="Payrolls" xml:space="preserve">
+    <value>Penggajian</value>
+  </data>
+  <data name="Personal" xml:space="preserve">
+    <value>Pribadi</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="Profile Settings" xml:space="preserve">
+    <value>Pengaturan Profil</value>
+  </data>
+  <data name="Projects" xml:space="preserve">
+    <value>Proyek</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Daftar</value>
+  </data>
+  <data name="Report Line" xml:space="preserve">
+    <value>Laporan Baris</value>
+  </data>
+  <data name="Role Details" xml:space="preserve">
+    <value>Detail Peran</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>Peran</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Pengaturan</value>
+  </data>
+  <data name="Shared Info" xml:space="preserve">
+    <value>Info yang Dibagikan</value>
+  </data>
+  <data name="Sign out" xml:space="preserve">
+    <value>Keluar</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>Sistem</value>
+  </data>
+  <data name="System Info" xml:space="preserve">
+    <value>Informasi Sistem</value>
+  </data>
+  <data name="Template" xml:space="preserve">
+    <value>Template</value>
+  </data>
+  <data name="Unauthorized" xml:space="preserve">
+    <value>Tidak Diizinkan</value>
+  </data>
+  <data name="User Details" xml:space="preserve">
+    <value>Detail Pengguna</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Pengguna</value>
   </data>
 
 </root>

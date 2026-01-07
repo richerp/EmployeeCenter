@@ -99,6 +99,9 @@
   <data name="Info" xml:space="preserve">
     <value>資訊</value>
   </data>
+  <data name="Leave Management" xml:space="preserve">
+    <value>休假管理</value>
+  </data>
   <data name="Login" xml:space="preserve">
     <value>登入</value>
   </data>
@@ -113,6 +116,9 @@
   </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>管理共享</value>
+  </data>
+  <data name="My Leave Balance" xml:space="preserve">
+    <value>我的休假餘額</value>
   </data>
   <data name="My Payrolls" xml:space="preserve">
     <value>我的薪資</value>

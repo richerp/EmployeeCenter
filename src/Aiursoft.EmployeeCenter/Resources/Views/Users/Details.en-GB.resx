@@ -18,125 +18,125 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="User Details:" xml:space="preserve">
-    <value>User Details:</value>
+      <data name="Account Details" xml:space="preserve">
+    <value>Account Details</value>
   </data>
   <data name="An overview of the user&apos;s profile, assigned roles, and effective permissions." xml:space="preserve">
     <value>An overview of the user&apos;s profile, assigned roles, and effective permissions.</value>
   </data>
-  <data name="Basic Information" xml:space="preserve">
-    <value>Basic Information</value>
-  </data>
-  <data name="Name" xml:space="preserve">
-    <value>Name</value>
-  </data>
-  <data name="Email" xml:space="preserve">
-    <value>Email</value>
-  </data>
-  <data name="Creation Time" xml:space="preserve">
-    <value>Creation Time</value>
-  </data>
   <data name="Assigned Roles" xml:space="preserve">
     <value>Assigned Roles</value>
-  </data>
-  <data name="This user has not been assigned any roles." xml:space="preserve">
-    <value>This user has not been assigned any roles.</value>
-  </data>
-  <data name="Effective Permissions (from all roles)" xml:space="preserve">
-    <value>Effective Permissions (from all roles)</value>
-  </data>
-  <data name="This user has no effective permissions." xml:space="preserve">
-    <value>This user has no effective permissions.</value>
-  </data>
-  <data name="Edit this User" xml:space="preserve">
-    <value>Edit this User</value>
-  </data>
-  <data name="Delete this User" xml:space="preserve">
-    <value>Delete this User</value>
   </data>
   <data name="Back to list" xml:space="preserve">
     <value>Back to list</value>
   </data>
-  <data name="User name" xml:space="preserve">
-    <value>Username</value>
-  </data>
-  <data name="Effective Permissions" xml:space="preserve">
-    <value>Effective Permissions</value>
-  </data>
-  <data name="Account Details" xml:space="preserve">
-    <value>Account Details</value>
-  </data>
-  <data name="Profile Details" xml:space="preserve">
-    <value>Profile Details</value>
-  </data>
-  <data name="Base Salary" xml:space="preserve">
-    <value>Basic Salary</value>
-  </data>
   <data name="Bank Account" xml:space="preserve">
     <value>Bank Account</value>
-  </data>
-  <data name="Bank Name" xml:space="preserve">
-    <value>Bank Name</value>
-  </data>
-  <data name="Job Level" xml:space="preserve">
-    <value>Job Level</value>
-  </data>
-  <data name="Manage SSH Keys" xml:space="preserve">
-    <value>Manage SSH Keys</value>
-  </data>
-  <data name="Report Line" xml:space="preserve">
-    <value>Reporting Line</value>
-  </data>
-  <data name="Manager" xml:space="preserve">
-    <value>Manager</value>
-  </data>
-  <data name="View Report Line" xml:space="preserve">
-    <value>View Reporting Line</value>
-  </data>
-  <data name="Changed By" xml:space="preserve">
-    <value>Changed by</value>
-  </data>
-  <data name="Bank Information Change History" xml:space="preserve">
-    <value>Bank Details Change History</value>
   </data>
   <data name="Bank Account (Card Number)" xml:space="preserve">
     <value>Bank Account (Card Number)</value>
   </data>
-  <data name="Time" xml:space="preserve">
-    <value>Time</value>
+  <data name="Bank Account Name (Holder)" xml:space="preserve">
+    <value>Account name</value>
   </data>
-  <data name="Job Level (职级)" xml:space="preserve">
-    <value>Job Grade</value>
+  <data name="Bank Information Change History" xml:space="preserve">
+    <value>Bank Details Change History</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Bank Name</value>
   </data>
   <data name="Bank Name (Branch)" xml:space="preserve">
     <value>Bank Name (Branch)</value>
   </data>
-  <data name="Bank Account Name (Holder)" xml:space="preserve">
-    <value>Account name</value>
-  </data>
-  <data name="Title (职务)" xml:space="preserve">
-    <value>Job title</value>
-  </data>
   <data name="Bank Name (Old -&gt; New)" xml:space="preserve">
     <value>Bank Name (Old -&gt; New)</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Basic Salary</value>
+  </data>
+  <data name="Basic Information" xml:space="preserve">
+    <value>Basic Information</value>
   </data>
   <data name="Card Number (Old -&gt; New)" xml:space="preserve">
     <value>Card Number (Old -&gt; New)</value>
   </data>
+  <data name="Changed By" xml:space="preserve">
+    <value>Changed by</value>
+  </data>
+  <data name="Creation Time" xml:space="preserve">
+    <value>Creation Time</value>
+  </data>
+  <data name="Delete this User" xml:space="preserve">
+    <value>Delete this User</value>
+  </data>
+  <data name="Edit this User" xml:space="preserve">
+    <value>Edit this User</value>
+  </data>
+  <data name="Effective Permissions" xml:space="preserve">
+    <value>Effective Permissions</value>
+  </data>
+  <data name="Effective Permissions (from all roles)" xml:space="preserve">
+    <value>Effective Permissions (from all roles)</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
   <data name="Holder (Old -&gt; New)" xml:space="preserve">
     <value>Account Holder (Old -&gt; New)</value>
   </data>
-  <data name="System" xml:space="preserve">
-    <value>System</value>
+  <data name="Job Level" xml:space="preserve">
+    <value>Job Level</value>
   </data>
-  <data name="No change history found." xml:space="preserve">
-    <value>No change history found.</value>
+  <data name="Job Level (职级)" xml:space="preserve">
+    <value>Job Grade</value>
   </data>
   <data name="Legal Name" xml:space="preserve">
     <value>Legal Name</value>
   </data>
+  <data name="Manage SSH Keys" xml:space="preserve">
+    <value>Manage SSH Keys</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="No change history found." xml:space="preserve">
+    <value>No change history found.</value>
+  </data>
   <data name="Phone Number" xml:space="preserve">
     <value>Phone Number</value>
+  </data>
+  <data name="Profile Details" xml:space="preserve">
+    <value>Profile Details</value>
+  </data>
+  <data name="Report Line" xml:space="preserve">
+    <value>Reporting Line</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="This user has no effective permissions." xml:space="preserve">
+    <value>This user has no effective permissions.</value>
+  </data>
+  <data name="This user has not been assigned any roles." xml:space="preserve">
+    <value>This user has not been assigned any roles.</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="Title (职务)" xml:space="preserve">
+    <value>Job title</value>
+  </data>
+  <data name="User Details:" xml:space="preserve">
+    <value>User Details:</value>
+  </data>
+  <data name="User name" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="View Report Line" xml:space="preserve">
+    <value>View Reporting Line</value>
   </data>
 
 </root>

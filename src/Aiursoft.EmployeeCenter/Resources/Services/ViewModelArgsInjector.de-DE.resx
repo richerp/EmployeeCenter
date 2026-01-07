@@ -18,74 +18,38 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Template" xml:space="preserve">
-    <value>Vorlage</value>
-  </data>
-  <data name="Home" xml:space="preserve">
-    <value>Startseite</value>
-  </data>
-  <data name="Aiursoft Template" xml:space="preserve">
-    <value>Aiursoft Template</value>
-  </data>
-  <data name="Login" xml:space="preserve">
-    <value>Anmelden</value>
-  </data>
-  <data name="Login to get access to all features." xml:space="preserve">
-    <value>Melden Sie sich an, um Zugriff auf alle Funktionen zu erhalten.</value>
-  </data>
-  <data name="Register" xml:space="preserve">
-    <value>Registrieren</value>
-  </data>
-  <data name="Features" xml:space="preserve">
-    <value>Funktionen</value>
-  </data>
-  <data name="Index" xml:space="preserve">
-    <value>Index</value>
-  </data>
-  <data name="Directory" xml:space="preserve">
-    <value>Verzeichnis</value>
-  </data>
-  <data name="Users" xml:space="preserve">
-    <value>Benutzer</value>
-  </data>
-  <data name="Roles" xml:space="preserve">
-    <value>Rollen</value>
-  </data>
-  <data name="System" xml:space="preserve">
-    <value>System</value>
-  </data>
-  <data name="Info" xml:space="preserve">
-    <value>Info</value>
+      <data name="Account Settings" xml:space="preserve">
+    <value>Kontoeinstellungen</value>
   </data>
   <data name="Admin" xml:space="preserve">
     <value>Administrator</value>
   </data>
+  <data name="Administration" xml:space="preserve">
+    <value>Verwaltung</value>
+  </data>
+  <data name="Aiursoft Employee Center" xml:space="preserve">
+    <value>Aiursoft Mitarbeiter-Center</value>
+  </data>
+  <data name="Aiursoft Template" xml:space="preserve">
+    <value>Aiursoft Template</value>
+  </data>
   <data name="Anonymous" xml:space="preserve">
     <value>Anonym</value>
   </data>
-  <data name="Profile" xml:space="preserve">
-    <value>Profil</value>
+  <data name="Change Avatar" xml:space="preserve">
+    <value>Avatar ändern</value>
   </data>
-  <data name="Sign out" xml:space="preserve">
-    <value>Abmelden</value>
+  <data name="Change Password" xml:space="preserve">
+    <value>Passwort ändern</value>
   </data>
-  <data name="Administration" xml:space="preserve">
-    <value>Verwaltung</value>
+  <data name="Change Profile" xml:space="preserve">
+    <value>Profil ändern</value>
   </data>
   <data name="Click to login" xml:space="preserve">
     <value>Zum Anmelden klicken</value>
   </data>
-  <data name="Manage" xml:space="preserve">
-    <value>Verwalten</value>
-  </data>
-  <data name="Role Details" xml:space="preserve">
-    <value>Rollendetails</value>
-  </data>
-  <data name="System Info" xml:space="preserve">
-    <value>Systeminformationen</value>
-  </data>
-  <data name="User Details" xml:space="preserve">
-    <value>Benutzerdetails</value>
+  <data name="Create Password" xml:space="preserve">
+    <value>Passwort erstellen</value>
   </data>
   <data name="Create Role" xml:space="preserve">
     <value>Rolle erstellen</value>
@@ -93,8 +57,20 @@
   <data name="Create User" xml:space="preserve">
     <value>Benutzer erstellen</value>
   </data>
+  <data name="Delete Role" xml:space="preserve">
+    <value>Rolle löschen</value>
+  </data>
   <data name="Delete User" xml:space="preserve">
     <value>Benutzer löschen</value>
+  </data>
+  <data name="Development" xml:space="preserve">
+    <value>Entwicklung</value>
+  </data>
+  <data name="Directory" xml:space="preserve">
+    <value>Verzeichnis</value>
+  </data>
+  <data name="Edit Password" xml:space="preserve">
+    <value>Passwort ändern</value>
   </data>
   <data name="Edit Role" xml:space="preserve">
     <value>Rolle bearbeiten</value>
@@ -102,83 +78,113 @@
   <data name="Edit User" xml:space="preserve">
     <value>Benutzer bearbeiten</value>
   </data>
-  <data name="Delete Role" xml:space="preserve">
-    <value>Rolle löschen</value>
-  </data>
-  <data name="Change Password" xml:space="preserve">
-    <value>Passwort ändern</value>
-  </data>
-  <data name="Change Avatar" xml:space="preserve">
-    <value>Avatar ändern</value>
-  </data>
-  <data name="Change Profile" xml:space="preserve">
-    <value>Profil ändern</value>
-  </data>
-  <data name="Settings" xml:space="preserve">
-    <value>Einstellungen</value>
-  </data>
-  <data name="Personal" xml:space="preserve">
-    <value>Persönlich</value>
-  </data>
-  <data name="Account Settings" xml:space="preserve">
-    <value>Kontoeinstellungen</value>
-  </data>
-  <data name="Profile Settings" xml:space="preserve">
-    <value>Profileinstellungen</value>
+  <data name="Employee Center" xml:space="preserve">
+    <value>Mitarbeiterzentrum</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Fehler</value>
   </data>
-  <data name="Unauthorized" xml:space="preserve">
-    <value>Nicht autorisiert</value>
-  </data>
-  <data name="Passwords" xml:space="preserve">
-    <value>Passwörter</value>
-  </data>
-  <data name="Shared Info" xml:space="preserve">
-    <value>Geteilte Information</value>
-  </data>
-  <data name="Manage Shares" xml:space="preserve">
-    <value>Freigaben verwalten</value>
-  </data>
-  <data name="Password Details" xml:space="preserve">
-    <value>Passwortdetails</value>
-  </data>
-  <data name="Create Password" xml:space="preserve">
-    <value>Passwort erstellen</value>
-  </data>
-  <data name="Edit Password" xml:space="preserve">
-    <value>Passwort ändern</value>
-  </data>
-  <data name="Employee Center" xml:space="preserve">
-    <value>Mitarbeiterzentrum</value>
-  </data>
-  <data name="Aiursoft Employee Center" xml:space="preserve">
-    <value>Aiursoft Mitarbeiter-Center</value>
-  </data>
-  <data name="Payrolls" xml:space="preserve">
-    <value>Lohnabrechnungen</value>
+  <data name="Features" xml:space="preserve">
+    <value>Funktionen</value>
   </data>
   <data name="Finance" xml:space="preserve">
     <value>Finanzen</value>
   </data>
-  <data name="Development" xml:space="preserve">
-    <value>Entwicklung</value>
+  <data name="Home" xml:space="preserve">
+    <value>Startseite</value>
+  </data>
+  <data name="Index" xml:space="preserve">
+    <value>Index</value>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="Leave Management" xml:space="preserve">
+    <value>Urlaubverwaltung</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Anmelden</value>
+  </data>
+  <data name="Login to get access to all features." xml:space="preserve">
+    <value>Melden Sie sich an, um Zugriff auf alle Funktionen zu erhalten.</value>
+  </data>
+  <data name="Manage" xml:space="preserve">
+    <value>Verwalten</value>
   </data>
   <data name="Manage Payrolls" xml:space="preserve">
     <value>Lohnabrechnungen verwalten</value>
   </data>
+  <data name="Manage Shares" xml:space="preserve">
+    <value>Freigaben verwalten</value>
+  </data>
+  <data name="My Leave Balance" xml:space="preserve">
+    <value>Mein Urlaubsguthaben</value>
+  </data>
   <data name="My Payrolls" xml:space="preserve">
     <value>Meine Lohnabrechnungen</value>
-  </data>
-  <data name="Report Line" xml:space="preserve">
-    <value>Berichtslinie</value>
   </data>
   <data name="My Report Line" xml:space="preserve">
     <value>Meine Berichtslinie</value>
   </data>
+  <data name="Password Details" xml:space="preserve">
+    <value>Passwortdetails</value>
+  </data>
+  <data name="Passwords" xml:space="preserve">
+    <value>Passwörter</value>
+  </data>
+  <data name="Payrolls" xml:space="preserve">
+    <value>Lohnabrechnungen</value>
+  </data>
+  <data name="Personal" xml:space="preserve">
+    <value>Persönlich</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="Profile Settings" xml:space="preserve">
+    <value>Profileinstellungen</value>
+  </data>
   <data name="Projects" xml:space="preserve">
     <value>Projekte</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Registrieren</value>
+  </data>
+  <data name="Report Line" xml:space="preserve">
+    <value>Berichtslinie</value>
+  </data>
+  <data name="Role Details" xml:space="preserve">
+    <value>Rollendetails</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>Rollen</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Einstellungen</value>
+  </data>
+  <data name="Shared Info" xml:space="preserve">
+    <value>Geteilte Information</value>
+  </data>
+  <data name="Sign out" xml:space="preserve">
+    <value>Abmelden</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="System Info" xml:space="preserve">
+    <value>Systeminformationen</value>
+  </data>
+  <data name="Template" xml:space="preserve">
+    <value>Vorlage</value>
+  </data>
+  <data name="Unauthorized" xml:space="preserve">
+    <value>Nicht autorisiert</value>
+  </data>
+  <data name="User Details" xml:space="preserve">
+    <value>Benutzerdetails</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Benutzer</value>
   </data>
 
 </root>

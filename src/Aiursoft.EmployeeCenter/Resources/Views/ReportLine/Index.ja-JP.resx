@@ -21,17 +21,17 @@
       <data name="Legend" xml:space="preserve">
     <value>凡例</value>
   </data>
-  <data name="Report Line" xml:space="preserve">
-    <value>レポートライン</value>
+  <data name="Manager" xml:space="preserve">
+    <value>マネージャー</value>
   </data>
   <data name="Peer" xml:space="preserve">
     <value>同僚</value>
   </data>
-  <data name="Target" xml:space="preserve">
-    <value>対象</value>
+  <data name="Please select a user first." xml:space="preserve">
+    <value>まずはユーザーを選択してください。</value>
   </data>
-  <data name="Manager" xml:space="preserve">
-    <value>マネージャー</value>
+  <data name="Report Line" xml:space="preserve">
+    <value>レポートライン</value>
   </data>
   <data name="Search Person" xml:space="preserve">
     <value>人検索</value>
@@ -39,14 +39,14 @@
   <data name="Subordinate" xml:space="preserve">
     <value>部下</value>
   </data>
+  <data name="Target" xml:space="preserve">
+    <value>対象</value>
+  </data>
   <data name="View Report Line" xml:space="preserve">
     <value>レポートライン表示</value>
   </data>
   <data name="Visual Report Line" xml:space="preserve">
     <value>ビジュアルレポートライン</value>
-  </data>
-  <data name="Please select a user first." xml:space="preserve">
-    <value>まずはユーザーを選択してください。</value>
   </data>
   <data name="You have to log in to view report line." xml:space="preserve">
     <value>報告線を表示するにはログインが必要です。</value>

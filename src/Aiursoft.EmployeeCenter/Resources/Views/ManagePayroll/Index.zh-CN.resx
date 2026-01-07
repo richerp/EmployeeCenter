@@ -18,35 +18,35 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Total Amount" xml:space="preserve">
-    <value>总金额</value>
-  </data>
-  <data name="Manage Payrolls" xml:space="preserve">
-    <value>管理工资单</value>
-  </data>
-  <data name="All Payrolls" xml:space="preserve">
-    <value>所有工资单</value>
-  </data>
-  <data name="Issue new payroll" xml:space="preserve">
-    <value>发放新工资单</value>
-  </data>
-  <data name="Target Month" xml:space="preserve">
-    <value>目标月份</value>
-  </data>
-  <data name="Created Time" xml:space="preserve">
-    <value>创建时间</value>
-  </data>
-  <data name="A list of all issued payroll records in the system." xml:space="preserve">
+      <data name="A list of all issued payroll records in the system." xml:space="preserve">
     <value>系统中所有已发放工资单记录的列表。</value>
-  </data>
-  <data name="User" xml:space="preserve">
-    <value>用户</value>
   </data>
   <data name="Actions" xml:space="preserve">
     <value>操作</value>
   </data>
+  <data name="All Payrolls" xml:space="preserve">
+    <value>所有工资单</value>
+  </data>
+  <data name="Created Time" xml:space="preserve">
+    <value>创建时间</value>
+  </data>
   <data name="Details" xml:space="preserve">
     <value>详情</value>
+  </data>
+  <data name="Issue new payroll" xml:space="preserve">
+    <value>发放新工资单</value>
+  </data>
+  <data name="Manage Payrolls" xml:space="preserve">
+    <value>管理工资单</value>
+  </data>
+  <data name="Target Month" xml:space="preserve">
+    <value>目标月份</value>
+  </data>
+  <data name="Total Amount" xml:space="preserve">
+    <value>总金额</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>用户</value>
   </data>
 
 </root>

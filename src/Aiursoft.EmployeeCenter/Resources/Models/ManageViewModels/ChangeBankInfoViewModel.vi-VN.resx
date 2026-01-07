@@ -18,14 +18,14 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Bank Name" xml:space="preserve">
-    <value>Tên ngân hàng</value>
-  </data>
-  <data name="Bank Account Name" xml:space="preserve">
+      <data name="Bank Account Name" xml:space="preserve">
     <value>Tên tài khoản</value>
   </data>
   <data name="Bank Card Number" xml:space="preserve">
     <value>Số thẻ ngân hàng</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Tên ngân hàng</value>
   </data>
 
 </root>

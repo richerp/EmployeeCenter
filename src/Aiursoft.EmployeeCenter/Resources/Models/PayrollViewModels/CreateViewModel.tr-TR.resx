@@ -18,14 +18,17 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="User" xml:space="preserve">
-    <value>Kullanıcı</value>
+      <data name="Administrative Fines" xml:space="preserve">
+    <value>İdari Para Cezaları</value>
   </data>
-  <data name="Total Amount" xml:space="preserve">
-    <value>Toplam Tutar</value>
+  <data name="Bank Account" xml:space="preserve">
+    <value>Banka Hesabı</value>
   </data>
-  <data name="Target Month" xml:space="preserve">
-    <value>Hedef Ay</value>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Banka Adı</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Temel Maaş</value>
   </data>
   <data name="Content (Markdown)" xml:space="preserve">
     <value>İçerik (Markdown)</value>
@@ -33,71 +36,68 @@
   <data name="Full Attendance" xml:space="preserve">
     <value>Tam Devam</value>
   </data>
-  <data name="Performance Bonus" xml:space="preserve">
-    <value>Performans Bonusu</value>
-  </data>
-  <data name="Base Salary" xml:space="preserve">
-    <value>Temel Maaş</value>
-  </data>
-  <data name="Job Salary" xml:space="preserve">
-    <value>Görev Maaşı</value>
-  </data>
-  <data name="Sick Leave" xml:space="preserve">
-    <value>Hastalık İzni</value>
-  </data>
-  <data name="Overtime" xml:space="preserve">
-    <value>Fazla Mesai</value>
-  </data>
-  <data name="Other Allowances" xml:space="preserve">
-    <value>Diğer Ödenekler</value>
-  </data>
-  <data name="Late/Early" xml:space="preserve">
-    <value>Geç Kalma/Erken Ayrılma</value>
-  </data>
-  <data name="Administrative Fines" xml:space="preserve">
-    <value>İdari Para Cezaları</value>
+  <data name="Housing Fund (Company)" xml:space="preserve">
+    <value>Konut Fonu (Şirket)</value>
   </data>
   <data name="Housing Fund (Personal)" xml:space="preserve">
     <value>Konut Fonu (Kişisel)</value>
   </data>
-  <data name="Special Additional Deduction" xml:space="preserve">
-    <value>Özel Ek Kesinti</value>
+  <data name="Job Salary" xml:space="preserve">
+    <value>Görev Maaşı</value>
   </data>
-  <data name="Medical (Personal)" xml:space="preserve">
-    <value>Sağlık (Kişisel)</value>
-  </data>
-  <data name="Unemployment (Personal)" xml:space="preserve">
-    <value>İşsizlik (Kişisel)</value>
-  </data>
-  <data name="Pension (Personal)" xml:space="preserve">
-    <value>Emeklilik (Kişisel)</value>
-  </data>
-  <data name="Bank Name" xml:space="preserve">
-    <value>Banka Adı</value>
-  </data>
-  <data name="Personal Income Tax" xml:space="preserve">
-    <value>Gelir Vergisi</value>
-  </data>
-  <data name="Work Injury (Company)" xml:space="preserve">
-    <value>İş Kazası (Şirket)</value>
+  <data name="Late/Early" xml:space="preserve">
+    <value>Geç Kalma/Erken Ayrılma</value>
   </data>
   <data name="Maternity (Company)" xml:space="preserve">
     <value>Doğum (Şirket)</value>
   </data>
+  <data name="Medical (Company)" xml:space="preserve">
+    <value>Sağlık (Şirket)</value>
+  </data>
+  <data name="Medical (Personal)" xml:space="preserve">
+    <value>Sağlık (Kişisel)</value>
+  </data>
+  <data name="Other Allowances" xml:space="preserve">
+    <value>Diğer Ödenekler</value>
+  </data>
+  <data name="Overtime" xml:space="preserve">
+    <value>Fazla Mesai</value>
+  </data>
   <data name="Pension (Company)" xml:space="preserve">
     <value>Emeklilik (Şirket)</value>
   </data>
-  <data name="Medical (Company)" xml:space="preserve">
-    <value>Sağlık (Şirket)</value>
+  <data name="Pension (Personal)" xml:space="preserve">
+    <value>Emeklilik (Kişisel)</value>
+  </data>
+  <data name="Performance Bonus" xml:space="preserve">
+    <value>Performans Bonusu</value>
+  </data>
+  <data name="Personal Income Tax" xml:space="preserve">
+    <value>Gelir Vergisi</value>
+  </data>
+  <data name="Sick Leave" xml:space="preserve">
+    <value>Hastalık İzni</value>
+  </data>
+  <data name="Special Additional Deduction" xml:space="preserve">
+    <value>Özel Ek Kesinti</value>
+  </data>
+  <data name="Target Month" xml:space="preserve">
+    <value>Hedef Ay</value>
+  </data>
+  <data name="Total Amount" xml:space="preserve">
+    <value>Toplam Tutar</value>
   </data>
   <data name="Unemployment (Company)" xml:space="preserve">
     <value>İşsizlik (Şirket)</value>
   </data>
-  <data name="Bank Account" xml:space="preserve">
-    <value>Banka Hesabı</value>
+  <data name="Unemployment (Personal)" xml:space="preserve">
+    <value>İşsizlik (Kişisel)</value>
   </data>
-  <data name="Housing Fund (Company)" xml:space="preserve">
-    <value>Konut Fonu (Şirket)</value>
+  <data name="User" xml:space="preserve">
+    <value>Kullanıcı</value>
+  </data>
+  <data name="Work Injury (Company)" xml:space="preserve">
+    <value>İş Kazası (Şirket)</value>
   </data>
 
 </root>

@@ -18,14 +18,44 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Email Address" xml:space="preserve">
+      <data name="Avatar file" xml:space="preserve">
+    <value>Avatar-tiedosto</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>Pankkitili</value>
+  </data>
+  <data name="Bank Account (Card Number)" xml:space="preserve">
+    <value>Pankkitili (Korttinumero)</value>
+  </data>
+  <data name="Bank Account Name (Holder)" xml:space="preserve">
+    <value>Pankkitilin nimi (tilinomistaja)</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Pankin nimi</value>
+  </data>
+  <data name="Bank Name (Branch)" xml:space="preserve">
+    <value>Pankin nimi (haara)</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Peruspalkka</value>
+  </data>
+  <data name="Email Address" xml:space="preserve">
     <value>Sähköpostiosoite</value>
   </data>
-  <data name="The {0} is required." xml:space="preserve">
-    <value>{0} on pakollinen.</value>
+  <data name="Job Level" xml:space="preserve">
+    <value>Työtaso</value>
   </data>
-  <data name="User name" xml:space="preserve">
-    <value>Käyttäjätunnus</value>
+  <data name="Legal Name" xml:space="preserve">
+    <value>Lakisävyinen nimi</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Johtaja</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nimi</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>Puhelinnumero</value>
   </data>
   <data name="Reset Password (leave empty to keep the same password)" xml:space="preserve">
     <value>Nollaa salasana (jätä tyhjäksi säilyttääksesi nykyinen salasana)</value>
@@ -33,50 +63,20 @@
   <data name="The {0} is not a valid email address." xml:space="preserve">
     <value>{0} ei ole kelvollinen sähköpostiosoite.</value>
   </data>
-  <data name="Name" xml:space="preserve">
-    <value>Nimi</value>
-  </data>
-  <data name="Avatar file" xml:space="preserve">
-    <value>Avatar-tiedosto</value>
-  </data>
-  <data name="The avatar file is required." xml:space="preserve">
-    <value>Avatar-tiedosto on pakollinen.</value>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0} on pakollinen.</value>
   </data>
   <data name="The avatar file is invalid. Please upload it again." xml:space="preserve">
     <value>Avatar-tiedosto on virheellinen. Lataa se uudelleen.</value>
   </data>
-  <data name="Bank Account" xml:space="preserve">
-    <value>Pankkitili</value>
-  </data>
-  <data name="Bank Name" xml:space="preserve">
-    <value>Pankin nimi</value>
-  </data>
-  <data name="Base Salary" xml:space="preserve">
-    <value>Peruspalkka</value>
-  </data>
-  <data name="Job Level" xml:space="preserve">
-    <value>Työtaso</value>
-  </data>
-  <data name="Manager" xml:space="preserve">
-    <value>Johtaja</value>
-  </data>
-  <data name="Bank Name (Branch)" xml:space="preserve">
-    <value>Pankin nimi (haara)</value>
-  </data>
-  <data name="Bank Account Name (Holder)" xml:space="preserve">
-    <value>Pankkitilin nimi (tilinomistaja)</value>
+  <data name="The avatar file is required." xml:space="preserve">
+    <value>Avatar-tiedosto on pakollinen.</value>
   </data>
   <data name="Title" xml:space="preserve">
     <value>Ammattinimi</value>
   </data>
-  <data name="Bank Account (Card Number)" xml:space="preserve">
-    <value>Pankkitili (Korttinumero)</value>
-  </data>
-  <data name="Legal Name" xml:space="preserve">
-    <value>Lakisävyinen nimi</value>
-  </data>
-  <data name="Phone Number" xml:space="preserve">
-    <value>Puhelinnumero</value>
+  <data name="User name" xml:space="preserve">
+    <value>Käyttäjätunnus</value>
   </data>
 
 </root>

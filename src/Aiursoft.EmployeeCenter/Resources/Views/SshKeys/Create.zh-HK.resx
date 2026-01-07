@@ -21,26 +21,26 @@
       <data name="Add Key" xml:space="preserve">
     <value>新增金鑰</value>
   </data>
-  <data name="e.g. Work Laptop" xml:space="preserve">
-    <value>例如：工作手提電腦</value>
-  </data>
-  <data name="Cancel" xml:space="preserve">
-    <value>取消</value>
-  </data>
-  <data name="New SSH Key" xml:space="preserve">
+  <data name="Add SSH Key" xml:space="preserve">
     <value>新增 SSH 金鑰</value>
   </data>
   <data name="Begins with &apos;ssh-rsa&apos;, &apos;ssh-ed25519&apos;, etc." xml:space="preserve">
     <value>以 &apos;ssh-rsa&apos;、&apos;ssh-ed25519&apos; 等開頭。</value>
   </data>
-  <data name="Add SSH Key" xml:space="preserve">
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="e.g. Work Laptop" xml:space="preserve">
+    <value>例如：工作手提電腦</value>
+  </data>
+  <data name="Make sure to paste the entire public key, including the type and any comments." xml:space="preserve">
+    <value>請確保貼上完整的公鑰，包括類型及任何註釋。</value>
+  </data>
+  <data name="New SSH Key" xml:space="preserve">
     <value>新增 SSH 金鑰</value>
   </data>
   <data name="Paste your public SSH key below." xml:space="preserve">
     <value>請在下方貼上您的公開 SSH 金鑰。</value>
-  </data>
-  <data name="Make sure to paste the entire public key, including the type and any comments." xml:space="preserve">
-    <value>請確保貼上完整的公鑰，包括類型及任何註釋。</value>
   </data>
 
 </root>

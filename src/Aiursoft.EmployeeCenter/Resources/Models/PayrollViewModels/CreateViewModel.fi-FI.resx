@@ -18,20 +18,44 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Total Amount" xml:space="preserve">
-    <value>Kokonaissumma</value>
+      <data name="Administrative Fines" xml:space="preserve">
+    <value>Hallinnolliset sakot</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>Pankkitili</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Pankin nimi</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Peruspalkka</value>
   </data>
   <data name="Content (Markdown)" xml:space="preserve">
     <value>Sisältö (Markdown)</value>
   </data>
-  <data name="User" xml:space="preserve">
-    <value>Käyttäjä</value>
+  <data name="Full Attendance" xml:space="preserve">
+    <value>Täysi läsnäolo</value>
   </data>
-  <data name="Target Month" xml:space="preserve">
-    <value>Kohdekuukausi</value>
+  <data name="Housing Fund (Company)" xml:space="preserve">
+    <value>Asuntoapu (Yritys)</value>
   </data>
-  <data name="Base Salary" xml:space="preserve">
-    <value>Peruspalkka</value>
+  <data name="Housing Fund (Personal)" xml:space="preserve">
+    <value>Asuntorahasto (henkilökohtainen)</value>
+  </data>
+  <data name="Job Salary" xml:space="preserve">
+    <value>Työn palkka</value>
+  </data>
+  <data name="Late/Early" xml:space="preserve">
+    <value>Myöhästyminen/Aikaisin lähtö</value>
+  </data>
+  <data name="Maternity (Company)" xml:space="preserve">
+    <value>Äitiysloma (Yritys)</value>
+  </data>
+  <data name="Medical (Company)" xml:space="preserve">
+    <value>Lääkekulut (Yritys)</value>
+  </data>
+  <data name="Medical (Personal)" xml:space="preserve">
+    <value>Lääkekulut (henkilökohtaiset)</value>
   </data>
   <data name="Other Allowances" xml:space="preserve">
     <value>Muut korvaukset</value>
@@ -39,65 +63,41 @@
   <data name="Overtime" xml:space="preserve">
     <value>Ylityö</value>
   </data>
-  <data name="Sick Leave" xml:space="preserve">
-    <value>Sairausloma</value>
-  </data>
-  <data name="Job Salary" xml:space="preserve">
-    <value>Työn palkka</value>
-  </data>
-  <data name="Full Attendance" xml:space="preserve">
-    <value>Täysi läsnäolo</value>
-  </data>
-  <data name="Performance Bonus" xml:space="preserve">
-    <value>Suoritusbonus</value>
-  </data>
-  <data name="Late/Early" xml:space="preserve">
-    <value>Myöhästyminen/Aikaisin lähtö</value>
-  </data>
-  <data name="Special Additional Deduction" xml:space="preserve">
-    <value>Erityinen lisävähennys</value>
-  </data>
-  <data name="Administrative Fines" xml:space="preserve">
-    <value>Hallinnolliset sakot</value>
-  </data>
-  <data name="Housing Fund (Personal)" xml:space="preserve">
-    <value>Asuntorahasto (henkilökohtainen)</value>
-  </data>
-  <data name="Unemployment (Personal)" xml:space="preserve">
-    <value>Työttömyys (Henkilökohtainen)</value>
+  <data name="Pension (Company)" xml:space="preserve">
+    <value>Eläke (Yritys)</value>
   </data>
   <data name="Pension (Personal)" xml:space="preserve">
     <value>Eläke (Henkilökohtainen)</value>
   </data>
-  <data name="Medical (Personal)" xml:space="preserve">
-    <value>Lääkekulut (henkilökohtaiset)</value>
+  <data name="Performance Bonus" xml:space="preserve">
+    <value>Suoritusbonus</value>
   </data>
   <data name="Personal Income Tax" xml:space="preserve">
     <value>Henkilökohtainen tulovero</value>
   </data>
-  <data name="Bank Name" xml:space="preserve">
-    <value>Pankin nimi</value>
+  <data name="Sick Leave" xml:space="preserve">
+    <value>Sairausloma</value>
   </data>
-  <data name="Bank Account" xml:space="preserve">
-    <value>Pankkitili</value>
+  <data name="Special Additional Deduction" xml:space="preserve">
+    <value>Erityinen lisävähennys</value>
   </data>
-  <data name="Pension (Company)" xml:space="preserve">
-    <value>Eläke (Yritys)</value>
+  <data name="Target Month" xml:space="preserve">
+    <value>Kohdekuukausi</value>
   </data>
-  <data name="Medical (Company)" xml:space="preserve">
-    <value>Lääkekulut (Yritys)</value>
-  </data>
-  <data name="Work Injury (Company)" xml:space="preserve">
-    <value>Työtapaturma (Yritys)</value>
+  <data name="Total Amount" xml:space="preserve">
+    <value>Kokonaissumma</value>
   </data>
   <data name="Unemployment (Company)" xml:space="preserve">
     <value>Työttömyys (Yritys)</value>
   </data>
-  <data name="Maternity (Company)" xml:space="preserve">
-    <value>Äitiysloma (Yritys)</value>
+  <data name="Unemployment (Personal)" xml:space="preserve">
+    <value>Työttömyys (Henkilökohtainen)</value>
   </data>
-  <data name="Housing Fund (Company)" xml:space="preserve">
-    <value>Asuntoapu (Yritys)</value>
+  <data name="User" xml:space="preserve">
+    <value>Käyttäjä</value>
+  </data>
+  <data name="Work Injury (Company)" xml:space="preserve">
+    <value>Työtapaturma (Yritys)</value>
   </data>
 
 </root>

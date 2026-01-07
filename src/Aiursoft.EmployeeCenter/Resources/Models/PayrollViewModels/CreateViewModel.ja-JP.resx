@@ -18,83 +18,83 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="User" xml:space="preserve">
-    <value>ユーザー</value>
-  </data>
-  <data name="Content (Markdown)" xml:space="preserve">
-    <value>内容 (Markdown)</value>
-  </data>
-  <data name="Total Amount" xml:space="preserve">
-    <value>合計金額</value>
-  </data>
-  <data name="Target Month" xml:space="preserve">
-    <value>対象月</value>
-  </data>
-  <data name="Other Allowances" xml:space="preserve">
-    <value>その他の手当</value>
-  </data>
-  <data name="Full Attendance" xml:space="preserve">
-    <value>全勤手当</value>
-  </data>
-  <data name="Base Salary" xml:space="preserve">
-    <value>基本給</value>
-  </data>
-  <data name="Sick Leave" xml:space="preserve">
-    <value>病気休暇</value>
-  </data>
-  <data name="Late/Early" xml:space="preserve">
-    <value>遅刻・早退</value>
-  </data>
-  <data name="Overtime" xml:space="preserve">
-    <value>時間外手当</value>
-  </data>
-  <data name="Performance Bonus" xml:space="preserve">
-    <value>業績ボーナス</value>
-  </data>
-  <data name="Job Salary" xml:space="preserve">
-    <value>職務給</value>
-  </data>
-  <data name="Administrative Fines" xml:space="preserve">
+      <data name="Administrative Fines" xml:space="preserve">
     <value>行政罰金</value>
-  </data>
-  <data name="Pension (Personal)" xml:space="preserve">
-    <value>年金（個人負担分）</value>
-  </data>
-  <data name="Medical (Personal)" xml:space="preserve">
-    <value>医療保険（個人負担）</value>
-  </data>
-  <data name="Personal Income Tax" xml:space="preserve">
-    <value>個人所得税</value>
-  </data>
-  <data name="Bank Name" xml:space="preserve">
-    <value>銀行名</value>
-  </data>
-  <data name="Unemployment (Personal)" xml:space="preserve">
-    <value>失業保険 (個人負担)</value>
-  </data>
-  <data name="Special Additional Deduction" xml:space="preserve">
-    <value>特別加算控除</value>
-  </data>
-  <data name="Housing Fund (Personal)" xml:space="preserve">
-    <value>住宅積立金（個人負担分）</value>
   </data>
   <data name="Bank Account" xml:space="preserve">
     <value>銀行口座</value>
   </data>
-  <data name="Medical (Company)" xml:space="preserve">
-    <value>医療保険（会社負担）</value>
+  <data name="Bank Name" xml:space="preserve">
+    <value>銀行名</value>
   </data>
-  <data name="Pension (Company)" xml:space="preserve">
-    <value>年金（会社負担）</value>
+  <data name="Base Salary" xml:space="preserve">
+    <value>基本給</value>
   </data>
-  <data name="Unemployment (Company)" xml:space="preserve">
-    <value>失業保険（会社負担）</value>
+  <data name="Content (Markdown)" xml:space="preserve">
+    <value>内容 (Markdown)</value>
+  </data>
+  <data name="Full Attendance" xml:space="preserve">
+    <value>全勤手当</value>
   </data>
   <data name="Housing Fund (Company)" xml:space="preserve">
     <value>住宅積立金（会社負担）</value>
   </data>
+  <data name="Housing Fund (Personal)" xml:space="preserve">
+    <value>住宅積立金（個人負担分）</value>
+  </data>
+  <data name="Job Salary" xml:space="preserve">
+    <value>職務給</value>
+  </data>
+  <data name="Late/Early" xml:space="preserve">
+    <value>遅刻・早退</value>
+  </data>
   <data name="Maternity (Company)" xml:space="preserve">
     <value>出産育児（会社負担）</value>
+  </data>
+  <data name="Medical (Company)" xml:space="preserve">
+    <value>医療保険（会社負担）</value>
+  </data>
+  <data name="Medical (Personal)" xml:space="preserve">
+    <value>医療保険（個人負担）</value>
+  </data>
+  <data name="Other Allowances" xml:space="preserve">
+    <value>その他の手当</value>
+  </data>
+  <data name="Overtime" xml:space="preserve">
+    <value>時間外手当</value>
+  </data>
+  <data name="Pension (Company)" xml:space="preserve">
+    <value>年金（会社負担）</value>
+  </data>
+  <data name="Pension (Personal)" xml:space="preserve">
+    <value>年金（個人負担分）</value>
+  </data>
+  <data name="Performance Bonus" xml:space="preserve">
+    <value>業績ボーナス</value>
+  </data>
+  <data name="Personal Income Tax" xml:space="preserve">
+    <value>個人所得税</value>
+  </data>
+  <data name="Sick Leave" xml:space="preserve">
+    <value>病気休暇</value>
+  </data>
+  <data name="Special Additional Deduction" xml:space="preserve">
+    <value>特別加算控除</value>
+  </data>
+  <data name="Target Month" xml:space="preserve">
+    <value>対象月</value>
+  </data>
+  <data name="Total Amount" xml:space="preserve">
+    <value>合計金額</value>
+  </data>
+  <data name="Unemployment (Company)" xml:space="preserve">
+    <value>失業保険（会社負担）</value>
+  </data>
+  <data name="Unemployment (Personal)" xml:space="preserve">
+    <value>失業保険 (個人負担)</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>ユーザー</value>
   </data>
   <data name="Work Injury (Company)" xml:space="preserve">
     <value>労災保険 (会社負担)</value>

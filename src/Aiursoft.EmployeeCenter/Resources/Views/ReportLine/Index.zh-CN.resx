@@ -21,32 +21,32 @@
       <data name="Legend" xml:space="preserve">
     <value>图例</value>
   </data>
-  <data name="Search Person" xml:space="preserve">
-    <value>搜索人员</value>
-  </data>
   <data name="Manager" xml:space="preserve">
     <value>经理</value>
-  </data>
-  <data name="Target" xml:space="preserve">
-    <value>目标</value>
-  </data>
-  <data name="Report Line" xml:space="preserve">
-    <value>汇报线</value>
-  </data>
-  <data name="View Report Line" xml:space="preserve">
-    <value>查看汇报线</value>
   </data>
   <data name="Peer" xml:space="preserve">
     <value>同级</value>
   </data>
+  <data name="Please select a user first." xml:space="preserve">
+    <value>请先选择用户。</value>
+  </data>
+  <data name="Report Line" xml:space="preserve">
+    <value>汇报线</value>
+  </data>
+  <data name="Search Person" xml:space="preserve">
+    <value>搜索人员</value>
+  </data>
   <data name="Subordinate" xml:space="preserve">
     <value>下属</value>
   </data>
+  <data name="Target" xml:space="preserve">
+    <value>目标</value>
+  </data>
+  <data name="View Report Line" xml:space="preserve">
+    <value>查看汇报线</value>
+  </data>
   <data name="Visual Report Line" xml:space="preserve">
     <value>可视化汇报线</value>
-  </data>
-  <data name="Please select a user first." xml:space="preserve">
-    <value>请先选择用户。</value>
   </data>
   <data name="You have to log in to view report line." xml:space="preserve">
     <value>您需要登录才能查看汇报线。</value>

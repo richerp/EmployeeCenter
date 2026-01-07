@@ -18,11 +18,11 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Save Changes" xml:space="preserve">
-    <value>Save Changes</value>
+      <data name="Account / Username" xml:space="preserve">
+    <value>Account / Username</value>
   </data>
-  <data name="Password / Secret" xml:space="preserve">
-    <value>Password / Secret</value>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
   </data>
   <data name="Edit Password" xml:space="preserve">
     <value>Edit Password</value>
@@ -30,14 +30,14 @@
   <data name="Note" xml:space="preserve">
     <value>Note</value>
   </data>
-  <data name="Account / Username" xml:space="preserve">
-    <value>Account / Username</value>
+  <data name="Password / Secret" xml:space="preserve">
+    <value>Password / Secret</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>Save Changes</value>
   </data>
   <data name="Title" xml:space="preserve">
     <value>Title</value>
-  </data>
-  <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
   </data>
 
 </root>

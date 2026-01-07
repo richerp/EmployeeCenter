@@ -18,20 +18,20 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Legal Name" xml:space="preserve">
-    <value>Όνομα Προσώπου</value>
-  </data>
-  <data name="Phone Number" xml:space="preserve">
-    <value>Τηλέφωνο</value>
-  </data>
-  <data name="Bank Account (Card Number)" xml:space="preserve">
+      <data name="Bank Account (Card Number)" xml:space="preserve">
     <value>Τραπεζικός Λογαριασμός (Αριθμός Κάρτας)</value>
+  </data>
+  <data name="Bank Account Name (Holder)" xml:space="preserve">
+    <value>Όνομα λογαριασμού τραπέζης (Κάτοχος)</value>
   </data>
   <data name="Bank Name (Branch)" xml:space="preserve">
     <value>Όνομα Τράπεζας (Κλάδος)</value>
   </data>
-  <data name="Bank Account Name (Holder)" xml:space="preserve">
-    <value>Όνομα λογαριασμού τραπέζης (Κάτοχος)</value>
+  <data name="Legal Name" xml:space="preserve">
+    <value>Όνομα Προσώπου</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>Τηλέφωνο</value>
   </data>
 
 </root>

@@ -18,53 +18,11 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Email Address" xml:space="preserve">
-    <value>E-mail-adresse</value>
-  </data>
-  <data name="User name" xml:space="preserve">
-    <value>Brugernavn</value>
-  </data>
-  <data name="The {0} is required." xml:space="preserve">
-    <value>{0} er påkrævet.</value>
-  </data>
-  <data name="Reset Password (leave empty to keep the same password)" xml:space="preserve">
-    <value>Nulstil adgangskode (lad være tom for at beholde den samme adgangskode)</value>
-  </data>
-  <data name="The {0} is not a valid email address." xml:space="preserve">
-    <value>{0} er ikke en gyldig e-mailadresse.</value>
-  </data>
-  <data name="Name" xml:space="preserve">
-    <value>Navn</value>
-  </data>
-  <data name="Avatar file" xml:space="preserve">
+      <data name="Avatar file" xml:space="preserve">
     <value>Avatarfil</value>
-  </data>
-  <data name="The avatar file is required." xml:space="preserve">
-    <value>Avatarfilen er påkrævet.</value>
-  </data>
-  <data name="The avatar file is invalid. Please upload it again." xml:space="preserve">
-    <value>Avatarfilen er ugyldig. Upload den venligst igen.</value>
-  </data>
-  <data name="Job Level" xml:space="preserve">
-    <value>Jobniveau</value>
-  </data>
-  <data name="Base Salary" xml:space="preserve">
-    <value>Grundløn</value>
-  </data>
-  <data name="Bank Name" xml:space="preserve">
-    <value>Banknavn</value>
   </data>
   <data name="Bank Account" xml:space="preserve">
     <value>Bankkonto</value>
-  </data>
-  <data name="Manager" xml:space="preserve">
-    <value>Leder</value>
-  </data>
-  <data name="Title" xml:space="preserve">
-    <value>Titel</value>
-  </data>
-  <data name="Bank Name (Branch)" xml:space="preserve">
-    <value>Banknavn (Filial)</value>
   </data>
   <data name="Bank Account (Card Number)" xml:space="preserve">
     <value>Bankkonto (Kortnummer)</value>
@@ -72,11 +30,53 @@
   <data name="Bank Account Name (Holder)" xml:space="preserve">
     <value>Kontonavn (Ejer)</value>
   </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Banknavn</value>
+  </data>
+  <data name="Bank Name (Branch)" xml:space="preserve">
+    <value>Banknavn (Filial)</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Grundløn</value>
+  </data>
+  <data name="Email Address" xml:space="preserve">
+    <value>E-mail-adresse</value>
+  </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>Jobniveau</value>
+  </data>
   <data name="Legal Name" xml:space="preserve">
     <value>Retningsnavn</value>
   </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Leder</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Navn</value>
+  </data>
   <data name="Phone Number" xml:space="preserve">
     <value>Telefonnummer</value>
+  </data>
+  <data name="Reset Password (leave empty to keep the same password)" xml:space="preserve">
+    <value>Nulstil adgangskode (lad være tom for at beholde den samme adgangskode)</value>
+  </data>
+  <data name="The {0} is not a valid email address." xml:space="preserve">
+    <value>{0} er ikke en gyldig e-mailadresse.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0} er påkrævet.</value>
+  </data>
+  <data name="The avatar file is invalid. Please upload it again." xml:space="preserve">
+    <value>Avatarfilen er ugyldig. Upload den venligst igen.</value>
+  </data>
+  <data name="The avatar file is required." xml:space="preserve">
+    <value>Avatarfilen er påkrævet.</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Titel</value>
+  </data>
+  <data name="User name" xml:space="preserve">
+    <value>Brugernavn</value>
   </data>
 
 </root>

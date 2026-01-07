@@ -21,17 +21,14 @@
       <data name="Add Key" xml:space="preserve">
     <value>Add Key</value>
   </data>
-  <data name="Paste your public SSH key below." xml:space="preserve">
-    <value>Paste your public SSH key below.</value>
-  </data>
-  <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
-  </data>
   <data name="Add SSH Key" xml:space="preserve">
     <value>Add SSH Key</value>
   </data>
-  <data name="New SSH Key" xml:space="preserve">
-    <value>New SSH Key</value>
+  <data name="Begins with &apos;ssh-rsa&apos;, &apos;ssh-ed25519&apos;, etc." xml:space="preserve">
+    <value>Begins with &apos;ssh-rsa&apos;, &apos;ssh-ed25519&apos;, etc.</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
   </data>
   <data name="e.g. Work Laptop" xml:space="preserve">
     <value>e.g. Work Laptop</value>
@@ -39,8 +36,11 @@
   <data name="Make sure to paste the entire public key, including the type and any comments." xml:space="preserve">
     <value>Ensure you paste the entire public key, including the type and any comments.</value>
   </data>
-  <data name="Begins with &apos;ssh-rsa&apos;, &apos;ssh-ed25519&apos;, etc." xml:space="preserve">
-    <value>Begins with &apos;ssh-rsa&apos;, &apos;ssh-ed25519&apos;, etc.</value>
+  <data name="New SSH Key" xml:space="preserve">
+    <value>New SSH Key</value>
+  </data>
+  <data name="Paste your public SSH key below." xml:space="preserve">
+    <value>Paste your public SSH key below.</value>
   </data>
 
 </root>

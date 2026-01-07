@@ -18,44 +18,8 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="User name" xml:space="preserve">
-    <value>Nom d&apos;utilisateur</value>
-  </data>
-  <data name="Email Address" xml:space="preserve">
-    <value>Adresse e-mail</value>
-  </data>
-  <data name="The {0} must be at least {2} and at max {1} characters long." xml:space="preserve">
-    <value>Le {0} doit contenir au moins {2} et au maximum {1} caractères.</value>
-  </data>
-  <data name="Password" xml:space="preserve">
-    <value>Mot de passe</value>
-  </data>
-  <data name="The {0} is required." xml:space="preserve">
-    <value>Le {0} est requis.</value>
-  </data>
-  <data name="The {0} is not a valid email address." xml:space="preserve">
-    <value>Le {0} n&apos;est pas une adresse e-mail valide.</value>
-  </data>
-  <data name="Name" xml:space="preserve">
-    <value>Nom</value>
-  </data>
-  <data name="Bank Account" xml:space="preserve">
+      <data name="Bank Account" xml:space="preserve">
     <value>Compte bancaire</value>
-  </data>
-  <data name="Bank Name" xml:space="preserve">
-    <value>Nom de la banque</value>
-  </data>
-  <data name="Job Level" xml:space="preserve">
-    <value>Niveau de poste</value>
-  </data>
-  <data name="Base Salary" xml:space="preserve">
-    <value>Salaire de base</value>
-  </data>
-  <data name="Manager" xml:space="preserve">
-    <value>Responsable</value>
-  </data>
-  <data name="Title" xml:space="preserve">
-    <value>Titre</value>
   </data>
   <data name="Bank Account (Card Number)" xml:space="preserve">
     <value>Compte bancaire (Numéro de carte)</value>
@@ -63,14 +27,50 @@
   <data name="Bank Account Name (Holder)" xml:space="preserve">
     <value>Nom du compte bancaire (Titulaire)</value>
   </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Nom de la banque</value>
+  </data>
   <data name="Bank Name (Branch)" xml:space="preserve">
     <value>Nom de la banque (agence)</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Salaire de base</value>
+  </data>
+  <data name="Email Address" xml:space="preserve">
+    <value>Adresse e-mail</value>
+  </data>
+  <data name="Job Level" xml:space="preserve">
+    <value>Niveau de poste</value>
   </data>
   <data name="Legal Name" xml:space="preserve">
     <value>Nom légal</value>
   </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Responsable</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Mot de passe</value>
+  </data>
   <data name="Phone Number" xml:space="preserve">
     <value>Numéro de téléphone</value>
+  </data>
+  <data name="The {0} is not a valid email address." xml:space="preserve">
+    <value>Le {0} n&apos;est pas une adresse e-mail valide.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>Le {0} est requis.</value>
+  </data>
+  <data name="The {0} must be at least {2} and at max {1} characters long." xml:space="preserve">
+    <value>Le {0} doit contenir au moins {2} et au maximum {1} caractères.</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Titre</value>
+  </data>
+  <data name="User name" xml:space="preserve">
+    <value>Nom d&apos;utilisateur</value>
   </data>
 
 </root>
