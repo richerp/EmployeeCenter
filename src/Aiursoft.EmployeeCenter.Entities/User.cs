@@ -103,4 +103,8 @@ public class User : IdentityUser
     [Newtonsoft.Json.JsonIgnore]
     [InverseProperty(nameof(LeaveApplication.User))]
     public IEnumerable<LeaveApplication> LeaveApplications { get; init; } = new List<LeaveApplication>();
+
+    [Newtonsoft.Json.JsonIgnore]
+    [InverseProperty(nameof(OnboardingTaskLog.User))]
+    public IEnumerable<OnboardingTaskLog> OnboardingTaskLogs { get; init; } = new List<OnboardingTaskLog>();
 }

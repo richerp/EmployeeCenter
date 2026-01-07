@@ -1,0 +1,53 @@
+@model Aiursoft.EmployeeCenter.Models.ManageOnboardingViewModels.IndexViewModel
+
+<div class="row mb-2 mb-xl-3">
+    <div class="col-auto d-none d-sm-block">
+        <h3>@Localizer["Manage Onboarding Tasks"]</h3>
+    </div>
+    <div class="col-auto ms-auto text-end mt-n1">
+        <a asp-action="Create" class="btn btn-primary shadow-sm">
+            <i class="align-middle" data-lucide="plus"></i> @Localizer["Create New Task"]
+        </a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="table-responsive">
+                <table class="table table-striped mb-0">
+                    <thead>
+                        <tr>
+                            <th style="width: 100px;">@Localizer["Order"]</th>
+                            <th>@Localizer["Title"]</th>
+                            <th>@Localizer["Expected Duration"]</th>
+                            <th class="text-end">@Localizer["Actions"]</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var task in Model.Tasks)
+                        {
+                            <tr>
+                                <td>@task.Order</td>
+                                <td>@task.Title</td>
+                                <td>@TimeSpan.FromSeconds(task.ExpectedDurationSeconds).ToString(@"hh\:mm\:ss")</td>
+                                <td class="text-end">
+                                    <a asp-action="Edit" asp-route-id="@task.Id" class="btn btn-sm btn-outline-primary me-1">@Localizer["Edit"]</a>
+                                    <form asp-action="Delete" asp-route-id="@task.Id" method="post" class="d-inline" onsubmit="return confirm('@Localizer["Are you sure you want to delete this task?"]');">
+                                        <button type="submit" class="btn btn-sm btn-outline-danger">@Localizer["Delete"]</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                        @if (!Model.Tasks.Any())
+                        {
+                            <tr>
+                                <td colspan="4" class="text-center text-muted py-4">@Localizer["No onboarding tasks created yet."]</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
