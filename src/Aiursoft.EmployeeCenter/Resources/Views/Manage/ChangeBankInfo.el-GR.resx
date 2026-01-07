@@ -18,35 +18,35 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Bank Information" xml:space="preserve">
-    <value>Πληροφορίες Τράπεζας</value>
-  </data>
-  <data name="Change Bank Information" xml:space="preserve">
-    <value>Αλλαγή Πληροφοριών Τράπεζας</value>
+      <data name="Bank Account Name" xml:space="preserve">
+    <value>Όνομα λογαριασμού τράπεζας</value>
   </data>
   <data name="Bank Card Number" xml:space="preserve">
     <value>Αριθμός Κάρτας Τράπεζας</value>
   </data>
-  <data name="Enter your bank card number" xml:space="preserve">
-    <value>Εισαγάγετε τον αριθμό της τραπεζικής σας κάρτας</value>
+  <data name="Bank Information" xml:space="preserve">
+    <value>Πληροφορίες Τράπεζας</value>
   </data>
   <data name="Bank Name (Branch)" xml:space="preserve">
     <value>Όνομα Τράπεζας (Κλάδος)</value>
   </data>
-  <data name="Enter your bank name and branch" xml:space="preserve">
-    <value>Εισαγάγετε το όνομα της τράπεζάς σας και την κλάδο</value>
+  <data name="Cancel" xml:space="preserve">
+    <value>Ακύρωση</value>
   </data>
-  <data name="Bank Account Name" xml:space="preserve">
-    <value>Όνομα λογαριασμού τράπεζας</value>
+  <data name="Change Bank Information" xml:space="preserve">
+    <value>Αλλαγή Πληροφοριών Τράπεζας</value>
   </data>
   <data name="Enter your bank account name" xml:space="preserve">
     <value>Εισαγωγή του ονόματος λογαριασμού σας</value>
   </data>
+  <data name="Enter your bank card number" xml:space="preserve">
+    <value>Εισαγάγετε τον αριθμό της τραπεζικής σας κάρτας</value>
+  </data>
+  <data name="Enter your bank name and branch" xml:space="preserve">
+    <value>Εισαγάγετε το όνομα της τράπεζάς σας και την κλάδο</value>
+  </data>
   <data name="Save changes" xml:space="preserve">
     <value>Αποθήκευση αλλαγών</value>
-  </data>
-  <data name="Cancel" xml:space="preserve">
-    <value>Ακύρωση</value>
   </data>
 
 </root>

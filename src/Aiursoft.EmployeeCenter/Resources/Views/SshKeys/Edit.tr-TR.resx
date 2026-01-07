@@ -21,17 +21,17 @@
       <data name="Cancel" xml:space="preserve">
     <value>İptal</value>
   </data>
-  <data name="Save Changes" xml:space="preserve">
-    <value>Değişiklikleri Kaydet</value>
-  </data>
-  <data name="Update SSH Key" xml:space="preserve">
-    <value>SSH Anahtarını Güncelle</value>
-  </data>
   <data name="Edit SSH Key" xml:space="preserve">
     <value>SSH Anahtarını Düzenle</value>
   </data>
   <data name="Modify your public SSH key details." xml:space="preserve">
     <value>Genel SSH anahtarınızın ayrıntılarını değiştirin.</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>Değişiklikleri Kaydet</value>
+  </data>
+  <data name="Update SSH Key" xml:space="preserve">
+    <value>SSH Anahtarını Güncelle</value>
   </data>
 
 </root>

@@ -18,20 +18,20 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Save Changes" xml:space="preserve">
-    <value>Gem ændringer</value>
+      <data name="Cancel" xml:space="preserve">
+    <value>Annuller</value>
   </data>
   <data name="Edit SSH Key" xml:space="preserve">
     <value>Rediger SSH-nøgle</value>
   </data>
-  <data name="Update SSH Key" xml:space="preserve">
-    <value>Opdater SSH-nøgle</value>
-  </data>
-  <data name="Cancel" xml:space="preserve">
-    <value>Annuller</value>
-  </data>
   <data name="Modify your public SSH key details." xml:space="preserve">
     <value>Rediger dine offentlige SSH-nøgledetaljer.</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>Gem ændringer</value>
+  </data>
+  <data name="Update SSH Key" xml:space="preserve">
+    <value>Opdater SSH-nøgle</value>
   </data>
 
 </root>

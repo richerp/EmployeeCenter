@@ -21,26 +21,26 @@
       <data name="Add Key" xml:space="preserve">
     <value>Anahtar Ekle</value>
   </data>
-  <data name="Cancel" xml:space="preserve">
-    <value>İptal</value>
-  </data>
-  <data name="New SSH Key" xml:space="preserve">
-    <value>Yeni SSH Anahtarı</value>
-  </data>
   <data name="Add SSH Key" xml:space="preserve">
     <value>SSH Anahtarı Ekle</value>
-  </data>
-  <data name="e.g. Work Laptop" xml:space="preserve">
-    <value>örn. İş Laptopu</value>
   </data>
   <data name="Begins with &apos;ssh-rsa&apos;, &apos;ssh-ed25519&apos;, etc." xml:space="preserve">
     <value>&apos;ssh-rsa&apos;, &apos;ssh-ed25519&apos;, vb. ile başlar.</value>
   </data>
-  <data name="Paste your public SSH key below." xml:space="preserve">
-    <value>Aşağıya genel SSH anahtarınızı yapıştırın.</value>
+  <data name="Cancel" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="e.g. Work Laptop" xml:space="preserve">
+    <value>örn. İş Laptopu</value>
   </data>
   <data name="Make sure to paste the entire public key, including the type and any comments." xml:space="preserve">
     <value>Lütfen türü ve tüm yorumları da dahil olmak üzere, tüm genel anahtarı yapıştırdığınızdan emin olun.</value>
+  </data>
+  <data name="New SSH Key" xml:space="preserve">
+    <value>Yeni SSH Anahtarı</value>
+  </data>
+  <data name="Paste your public SSH key below." xml:space="preserve">
+    <value>Aşağıya genel SSH anahtarınızı yapıştırın.</value>
   </data>
 
 </root>

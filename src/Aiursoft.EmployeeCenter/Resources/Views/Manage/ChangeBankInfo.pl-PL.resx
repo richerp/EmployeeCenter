@@ -18,35 +18,35 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Change Bank Information" xml:space="preserve">
-    <value>Zmień dane bankowe</value>
-  </data>
-  <data name="Bank Information" xml:space="preserve">
-    <value>Informacje bankowe</value>
+      <data name="Bank Account Name" xml:space="preserve">
+    <value>Nazwa konta bankowego</value>
   </data>
   <data name="Bank Card Number" xml:space="preserve">
     <value>Numer karty bankowej</value>
   </data>
-  <data name="Enter your bank card number" xml:space="preserve">
-    <value>Wprowadź numer swojej karty bankowej</value>
+  <data name="Bank Information" xml:space="preserve">
+    <value>Informacje bankowe</value>
   </data>
   <data name="Bank Name (Branch)" xml:space="preserve">
     <value>Nazwa banku (oddział)</value>
   </data>
-  <data name="Enter your bank name and branch" xml:space="preserve">
-    <value>Wprowadź nazwę banku i oddział</value>
+  <data name="Cancel" xml:space="preserve">
+    <value>Anuluj</value>
   </data>
-  <data name="Bank Account Name" xml:space="preserve">
-    <value>Nazwa konta bankowego</value>
+  <data name="Change Bank Information" xml:space="preserve">
+    <value>Zmień dane bankowe</value>
   </data>
   <data name="Enter your bank account name" xml:space="preserve">
     <value>Wprowadź nazwę swojego konta bankowego</value>
   </data>
+  <data name="Enter your bank card number" xml:space="preserve">
+    <value>Wprowadź numer swojej karty bankowej</value>
+  </data>
+  <data name="Enter your bank name and branch" xml:space="preserve">
+    <value>Wprowadź nazwę banku i oddział</value>
+  </data>
   <data name="Save changes" xml:space="preserve">
     <value>Zapisz zmiany</value>
-  </data>
-  <data name="Cancel" xml:space="preserve">
-    <value>Anuluj</value>
   </data>
 
 </root>

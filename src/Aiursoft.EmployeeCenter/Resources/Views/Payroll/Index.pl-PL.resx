@@ -18,8 +18,14 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Actions" xml:space="preserve">
+      <data name="A list of all your historical payroll records." xml:space="preserve">
+    <value>Lista wszystkich Twoich historycznych zapisów płacowych.</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
     <value>Akcje</value>
+  </data>
+  <data name="Base Salary" xml:space="preserve">
+    <value>Podstawowa pensja</value>
   </data>
   <data name="Created Time" xml:space="preserve">
     <value>Data utworzenia</value>
@@ -33,14 +39,23 @@
   <data name="My Payrolls" xml:space="preserve">
     <value>Moje Płace</value>
   </data>
-  <data name="Total Amount" xml:space="preserve">
-    <value>Łączna kwota</value>
+  <data name="Net Salary (Actual)" xml:space="preserve">
+    <value>Netto (rzeczywiste)</value>
+  </data>
+  <data name="Reset Zoom" xml:space="preserve">
+    <value>Reset Zoom</value>
+  </data>
+  <data name="Salary Trend" xml:space="preserve">
+    <value>Trend wynagrodzeń</value>
   </data>
   <data name="Target Month" xml:space="preserve">
     <value>Miesiąc docelowy</value>
   </data>
-  <data name="A list of all your historical payroll records." xml:space="preserve">
-    <value>Lista wszystkich Twoich historycznych zapisów płacowych.</value>
+  <data name="Total Amount" xml:space="preserve">
+    <value>Łączna kwota</value>
+  </data>
+  <data name="Track your salary progression and promotions over time" xml:space="preserve">
+    <value>Śledź postępy swojej pensji i awanse w czasie</value>
   </data>
 
 </root>

@@ -18,17 +18,17 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Search Manager" xml:space="preserve">
-    <value>Manager de căutare</value>
-  </data>
-  <data name="Clear" xml:space="preserve">
+      <data name="Clear" xml:space="preserve">
     <value>Șterge</value>
-  </data>
-  <data name="Type 3+ characters to search..." xml:space="preserve">
-    <value>Introduceți cel puțin 3 caractere pentru a căuta...</value>
   </data>
   <data name="No users found" xml:space="preserve">
     <value>Nu s-au găsit utilizatori</value>
+  </data>
+  <data name="Search Manager" xml:space="preserve">
+    <value>Manager de căutare</value>
+  </data>
+  <data name="Type 3+ characters to search..." xml:space="preserve">
+    <value>Introduceți cel puțin 3 caractere pentru a căuta...</value>
   </data>
 
 </root>

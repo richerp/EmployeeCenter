@@ -21,26 +21,26 @@
       <data name="Add Key" xml:space="preserve">
     <value>Adaugă Cheie</value>
   </data>
-  <data name="e.g. Work Laptop" xml:space="preserve">
-    <value>de ex. Laptop de serviciu</value>
-  </data>
-  <data name="Cancel" xml:space="preserve">
-    <value>Anulează</value>
-  </data>
-  <data name="New SSH Key" xml:space="preserve">
-    <value>Cheie SSH Nouă</value>
-  </data>
   <data name="Add SSH Key" xml:space="preserve">
     <value>Adaugă Cheie SSH</value>
-  </data>
-  <data name="Paste your public SSH key below." xml:space="preserve">
-    <value>Lipiți cheia dvs. publică SSH mai jos.</value>
   </data>
   <data name="Begins with &apos;ssh-rsa&apos;, &apos;ssh-ed25519&apos;, etc." xml:space="preserve">
     <value>Începe cu &apos;ssh-rsa&apos;, &apos;ssh-ed25519&apos;, etc.</value>
   </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Anulează</value>
+  </data>
+  <data name="e.g. Work Laptop" xml:space="preserve">
+    <value>de ex. Laptop de serviciu</value>
+  </data>
   <data name="Make sure to paste the entire public key, including the type and any comments." xml:space="preserve">
     <value>Asigurați-vă că lipiți întreaga cheie publică, inclusiv tipul și orice comentarii.</value>
+  </data>
+  <data name="New SSH Key" xml:space="preserve">
+    <value>Cheie SSH Nouă</value>
+  </data>
+  <data name="Paste your public SSH key below." xml:space="preserve">
+    <value>Lipiți cheia dvs. publică SSH mai jos.</value>
   </data>
 
 </root>

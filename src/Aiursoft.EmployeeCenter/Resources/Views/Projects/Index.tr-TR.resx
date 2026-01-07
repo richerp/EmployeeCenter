@@ -21,17 +21,17 @@
       <data name="Badge" xml:space="preserve">
     <value>Rozet</value>
   </data>
+  <data name="GitLab Projects" xml:space="preserve">
+    <value>GitLab Projeleri</value>
+  </data>
+  <data name="No projects found." xml:space="preserve">
+    <value>Proje bulunamadı.</value>
+  </data>
   <data name="Project" xml:space="preserve">
     <value>Proje</value>
   </data>
   <data name="projects" xml:space="preserve">
     <value>projeler</value>
-  </data>
-  <data name="No projects found." xml:space="preserve">
-    <value>Proje bulunamadı.</value>
-  </data>
-  <data name="GitLab Projects" xml:space="preserve">
-    <value>GitLab Projeleri</value>
   </data>
 
 </root>

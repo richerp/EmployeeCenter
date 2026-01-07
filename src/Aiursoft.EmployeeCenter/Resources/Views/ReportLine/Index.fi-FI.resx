@@ -18,14 +18,17 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Subordinate" xml:space="preserve">
-    <value>Alainen</value>
-  </data>
-  <data name="Legend" xml:space="preserve">
+      <data name="Legend" xml:space="preserve">
     <value>Selite</value>
   </data>
   <data name="Manager" xml:space="preserve">
     <value>Esimies</value>
+  </data>
+  <data name="Peer" xml:space="preserve">
+    <value>Kollegat</value>
+  </data>
+  <data name="Please select a user first." xml:space="preserve">
+    <value>Valitse ensin käyttäjä.</value>
   </data>
   <data name="Report Line" xml:space="preserve">
     <value>Raportointilinja</value>
@@ -33,17 +36,14 @@
   <data name="Search Person" xml:space="preserve">
     <value>Etsi henkilö</value>
   </data>
-  <data name="View Report Line" xml:space="preserve">
-    <value>Näytä raporttirivi</value>
-  </data>
-  <data name="Peer" xml:space="preserve">
-    <value>Kollegat</value>
+  <data name="Subordinate" xml:space="preserve">
+    <value>Alainen</value>
   </data>
   <data name="Target" xml:space="preserve">
     <value>Kohde</value>
   </data>
-  <data name="Please select a user first." xml:space="preserve">
-    <value>Valitse ensin käyttäjä.</value>
+  <data name="View Report Line" xml:space="preserve">
+    <value>Näytä raporttirivi</value>
   </data>
   <data name="Visual Report Line" xml:space="preserve">
     <value>Visuaalinen raporttiketju</value>

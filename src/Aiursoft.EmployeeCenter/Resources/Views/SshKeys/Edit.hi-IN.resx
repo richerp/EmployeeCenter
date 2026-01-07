@@ -21,17 +21,17 @@
       <data name="Cancel" xml:space="preserve">
     <value>रद्द करें</value>
   </data>
-  <data name="Save Changes" xml:space="preserve">
-    <value>परिवर्तन सहेजें</value>
-  </data>
-  <data name="Update SSH Key" xml:space="preserve">
-    <value>SSH कुंजी अपडेट करें</value>
-  </data>
   <data name="Edit SSH Key" xml:space="preserve">
     <value>SSH कुंजी संपादित करें</value>
   </data>
   <data name="Modify your public SSH key details." xml:space="preserve">
     <value>अपने सार्वजनिक SSH कुंजी विवरण को संशोधित करें।</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>परिवर्तन सहेजें</value>
+  </data>
+  <data name="Update SSH Key" xml:space="preserve">
+    <value>SSH कुंजी अपडेट करें</value>
   </data>
 
 </root>

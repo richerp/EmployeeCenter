@@ -18,47 +18,53 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Public Key" xml:space="preserve">
-    <value>Δημόσιο Κλειδί</value>
-  </data>
-  <data name="Public SSH Keys" xml:space="preserve">
-    <value>Δημόσια Κλειδιά SSH</value>
-  </data>
-  <data name="Created Time" xml:space="preserve">
-    <value>Χρόνος Δημιουργίας</value>
-  </data>
-  <data name="Actions" xml:space="preserve">
+      <data name="Actions" xml:space="preserve">
     <value>Ενέργειες</value>
   </data>
   <data name="Add New Key" xml:space="preserve">
     <value>Προσθήκη Νέου Κλειδιού</value>
   </data>
-  <data name="Name" xml:space="preserve">
-    <value>Όνομα</value>
+  <data name="Back to Settings" xml:space="preserve">
+    <value>Πίσω στις Ρυθμίσεις</value>
   </data>
-  <data name="SSH Keys for" xml:space="preserve">
-    <value>Κλειδιά SSH για</value>
-  </data>
-  <data name="Manage your public SSH keys for server access." xml:space="preserve">
-    <value>Διαχειριστείτε τα δημόσια κλειδιά SSH σας για πρόσβαση στον διακομιστή.</value>
-  </data>
-  <data name="Delete" xml:space="preserve">
-    <value>Διαγραφή</value>
+  <data name="Back to User Info" xml:space="preserve">
+    <value>Πίσω στις Πληροφορίες Χρήστη</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Ακύρωση</value>
   </data>
-  <data name="Edit" xml:space="preserve">
-    <value>Επεξεργασία</value>
-  </data>
   <data name="Confirm Delete" xml:space="preserve">
     <value>Επιβεβαίωση Διαγραφής</value>
   </data>
-  <data name="Back to Settings" xml:space="preserve">
-    <value>Πίσω στις Ρυθμίσεις</value>
+  <data name="Created Time" xml:space="preserve">
+    <value>Χρόνος Δημιουργίας</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Διαγραφή</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Επεξεργασία</value>
+  </data>
+  <data name="Manage your public SSH keys for server access." xml:space="preserve">
+    <value>Διαχειριστείτε τα δημόσια κλειδιά SSH σας για πρόσβαση στον διακομιστή.</value>
+  </data>
+  <data name="Manage your SSH Key" xml:space="preserve">
+    <value>Διαχείριση του SSH Κλειδιού σας</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Όνομα</value>
   </data>
   <data name="No SSH keys found." xml:space="preserve">
     <value>Δεν βρέθηκαν κλειδιά SSH.</value>
+  </data>
+  <data name="Public Key" xml:space="preserve">
+    <value>Δημόσιο Κλειδί</value>
+  </data>
+  <data name="Public SSH Keys" xml:space="preserve">
+    <value>Δημόσια Κλειδιά SSH</value>
+  </data>
+  <data name="SSH Keys for" xml:space="preserve">
+    <value>Κλειδιά SSH για</value>
   </data>
 
 </root>

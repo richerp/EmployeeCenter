@@ -18,23 +18,11 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Back to Settings" xml:space="preserve">
+      <data name="Back" xml:space="preserve">
+    <value>Înapoi</value>
+  </data>
+  <data name="Back to Settings" xml:space="preserve">
     <value>Înapoi la Setări</value>
-  </data>
-  <data name="Maintain Profile" xml:space="preserve">
-    <value>Menține Profilul</value>
-  </data>
-  <data name="Personal and Bank Information" xml:space="preserve">
-    <value>Informații personale și bancare</value>
-  </data>
-  <data name="Legal Name" xml:space="preserve">
-    <value>Numele legal</value>
-  </data>
-  <data name="Phone Number" xml:space="preserve">
-    <value>Număr de telefon</value>
-  </data>
-  <data name="Bank Name" xml:space="preserve">
-    <value>Numele băncii</value>
   </data>
   <data name="Bank Account" xml:space="preserve">
     <value>Contul bancar</value>
@@ -42,11 +30,23 @@
   <data name="Bank Account Name" xml:space="preserve">
     <value>Nume cont bancar</value>
   </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Numele băncii</value>
+  </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>Numele legal</value>
+  </data>
+  <data name="Maintain Profile" xml:space="preserve">
+    <value>Menține Profilul</value>
+  </data>
+  <data name="Personal and Bank Information" xml:space="preserve">
+    <value>Informații personale și bancare</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>Număr de telefon</value>
+  </data>
   <data name="Save Profile" xml:space="preserve">
     <value>Salvează Profilul</value>
-  </data>
-  <data name="Back" xml:space="preserve">
-    <value>Înapoi</value>
   </data>
 
 </root>

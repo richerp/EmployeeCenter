@@ -21,17 +21,17 @@
       <data name="Cancel" xml:space="preserve">
     <value>Peruuta</value>
   </data>
-  <data name="Update SSH Key" xml:space="preserve">
-    <value>Päivitä SSH-avain</value>
-  </data>
-  <data name="Save Changes" xml:space="preserve">
-    <value>Tallenna muutokset</value>
-  </data>
   <data name="Edit SSH Key" xml:space="preserve">
     <value>Muokkaa SSH-avainta</value>
   </data>
   <data name="Modify your public SSH key details." xml:space="preserve">
     <value>Muokkaa julkisen SSH-avaimen tietoja.</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>Tallenna muutokset</value>
+  </data>
+  <data name="Update SSH Key" xml:space="preserve">
+    <value>Päivitä SSH-avain</value>
   </data>
 
 </root>

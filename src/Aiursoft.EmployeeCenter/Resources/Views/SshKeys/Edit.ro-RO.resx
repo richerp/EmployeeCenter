@@ -24,14 +24,14 @@
   <data name="Edit SSH Key" xml:space="preserve">
     <value>Editează Cheia SSH</value>
   </data>
-  <data name="Update SSH Key" xml:space="preserve">
-    <value>Actualizează cheia SSH</value>
+  <data name="Modify your public SSH key details." xml:space="preserve">
+    <value>Modificați detaliile cheii dvs. publice SSH.</value>
   </data>
   <data name="Save Changes" xml:space="preserve">
     <value>Salvează modificările</value>
   </data>
-  <data name="Modify your public SSH key details." xml:space="preserve">
-    <value>Modificați detaliile cheii dvs. publice SSH.</value>
+  <data name="Update SSH Key" xml:space="preserve">
+    <value>Actualizează cheia SSH</value>
   </data>
 
 </root>

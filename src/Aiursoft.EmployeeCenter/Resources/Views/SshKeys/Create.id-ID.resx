@@ -18,26 +18,26 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="e.g. Work Laptop" xml:space="preserve">
-    <value>mis. Laptop Kantor</value>
+      <data name="Add Key" xml:space="preserve">
+    <value>Tambahkan Kunci</value>
   </data>
   <data name="Add SSH Key" xml:space="preserve">
     <value>Tambahkan Kunci SSH</value>
   </data>
+  <data name="Begins with &apos;ssh-rsa&apos;, &apos;ssh-ed25519&apos;, etc." xml:space="preserve">
+    <value>Dimulai dengan &apos;ssh-rsa&apos;, &apos;ssh-ed25519&apos;, dll.</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Batal</value>
   </data>
-  <data name="Add Key" xml:space="preserve">
-    <value>Tambahkan Kunci</value>
-  </data>
-  <data name="New SSH Key" xml:space="preserve">
-    <value>Kunci SSH Baru</value>
+  <data name="e.g. Work Laptop" xml:space="preserve">
+    <value>mis. Laptop Kantor</value>
   </data>
   <data name="Make sure to paste the entire public key, including the type and any comments." xml:space="preserve">
     <value>Pastikan untuk menempelkan seluruh kunci publik, termasuk tipe dan komentar apa pun.</value>
   </data>
-  <data name="Begins with &apos;ssh-rsa&apos;, &apos;ssh-ed25519&apos;, etc." xml:space="preserve">
-    <value>Dimulai dengan &apos;ssh-rsa&apos;, &apos;ssh-ed25519&apos;, dll.</value>
+  <data name="New SSH Key" xml:space="preserve">
+    <value>Kunci SSH Baru</value>
   </data>
   <data name="Paste your public SSH key below." xml:space="preserve">
     <value>Tempelkan kunci SSH publik Anda di bawah ini.</value>
