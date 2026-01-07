@@ -66,6 +66,12 @@ public class LeaveController(
             .OrderBy(la => la.StartDate)
             .FirstOrDefaultAsync();
 
+        // Calculate statistics
+        var pendingCount = leaveHistory.Count(l => l.IsPending && !l.IsWithdrawn);
+        int? daysUntilNextLeave = nextUpcomingLeave != null
+            ? (int)(nextUpcomingLeave.StartDate.Date - today).TotalDays
+            : null;
+
         var model = new IndexViewModel
         {
             AnnualLeaveAllocation = allocation.AnnualLeaveAllocation,
@@ -77,7 +83,9 @@ public class LeaveController(
             CanApplyLeave = remainingAnnual > 0 || remainingSick > 0,
             CurrentYear = currentYear,
             NextUpcomingLeave = nextUpcomingLeave,
-            HasUpcomingLeaveWithin14Days = nextUpcomingLeave != null
+            HasUpcomingLeaveWithin14Days = nextUpcomingLeave != null,
+            PendingCount = pendingCount,
+            DaysUntilNextLeave = daysUntilNextLeave
         };
 
         return this.StackView(model);
@@ -268,17 +276,56 @@ public class LeaveController(
         if (!canApproveAny)
         {
             // Get all subordinates recursively
-            var subordinateIds = await GetAllSubordinatesRecursivelyAsync(user.Id);
-            query = query.Where(l => subordinateIds.Contains(l.UserId));
+            var approverSubordinates = await GetAllSubordinatesRecursivelyAsync(user.Id);
+            query = query.Where(l => approverSubordinates.Contains(l.UserId));
         }
 
         var incomingLeaves = await query
             .OrderBy(l => l.SubmittedAt)
             .ToListAsync();
 
+        // Get approval history
+        var historyQuery = context.LeaveApplications
+            .Include(l => l.User)
+            .Where(l => l.ReviewedById != null);
+
+        if (!canApproveAny)
+        {
+            historyQuery = historyQuery.Where(l => l.ReviewedById == user.Id);
+        }
+
+        var approvalHistory = await historyQuery
+            .OrderByDescending(l => l.ReviewedAt)
+            .ToListAsync();
+
+        // Calculate statistics
+        var today = DateTime.UtcNow;
+        var startOfMonth = new DateTime(today.Year, today.Month, 1);
+        var approvedThisMonth = approvalHistory.Count(l => l.IsApproved && l.ReviewedAt >= startOfMonth);
+        var rejectedThisMonth = approvalHistory.Count(l => !l.IsApproved && l.ReviewedAt >= startOfMonth);
+
+        // Count team members currently on leave
+        var subordinateIds = canApproveAny
+            ? (await context.Users.Select(u => u.Id).ToListAsync()).ToHashSet()
+            : await GetAllSubordinatesRecursivelyAsync(user.Id);
+
+        var teamOnLeaveCount = await context.LeaveApplications
+            .Where(l => subordinateIds.Contains(l.UserId)
+                && l.IsApproved
+                && !l.IsPending
+                && !l.IsWithdrawn
+                && l.StartDate <= today.Date
+                && l.EndDate >= today.Date)
+            .CountAsync();
+
         return this.StackView(new IncomingViewModel
         {
-            IncomingLeaves = incomingLeaves
+            IncomingLeaves = incomingLeaves,
+            ApprovalHistory = approvalHistory,
+            PendingCount = incomingLeaves.Count,
+            ApprovedThisMonth = approvedThisMonth,
+            RejectedThisMonth = rejectedThisMonth,
+            TeamOnLeaveCount = teamOnLeaveCount
         });
     }
 
@@ -358,42 +405,5 @@ public class LeaveController(
         await context.SaveChangesAsync();
 
         return RedirectToAction(nameof(Incoming));
-    }
-
-    [RenderInNavBar(
-        NavGroupName = "Features",
-        NavGroupOrder = 2,
-        CascadedLinksGroupName = "Leave Management",
-        CascadedLinksIcon = "calendar-days",
-        CascadedLinksOrder = 20,
-        LinkText = "My Approval History",
-        LinkOrder = 3)]
-    [HttpGet]
-    public async Task<IActionResult> History()
-    {
-        var user = await userManager.GetUserAsync(User);
-        if (user == null) return NotFound();
-
-        var canApproveAny = (await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanApproveAnyLeave)).Succeeded;
-
-        // If user has CanApproveAnyLeave, show all approvals across the company
-        // Otherwise, show only approvals made by current user
-        var query = context.LeaveApplications
-            .Include(l => l.User)
-            .Where(l => l.ReviewedById != null);
-
-        if (!canApproveAny)
-        {
-            query = query.Where(l => l.ReviewedById == user.Id);
-        }
-
-        var history = await query
-            .OrderByDescending(l => l.ReviewedAt)
-            .ToListAsync();
-
-        return this.StackView(new HistoryViewModel
-        {
-            ApprovedLeaves = history
-        });
     }
 }

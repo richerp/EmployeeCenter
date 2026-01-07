@@ -54,4 +54,14 @@ public class IndexViewModel : UiStackLayoutViewModel
     /// Whether there is an approved leave starting within 14 days
     /// </summary>
     public bool HasUpcomingLeaveWithin14Days { get; set; }
+
+    /// <summary>
+    /// Number of pending leave applications
+    /// </summary>
+    public int PendingCount { get; set; }
+
+    /// <summary>
+    /// Days until next approved leave starts (null if no upcoming leave)
+    /// </summary>
+    public int? DaysUntilNextLeave { get; set; }
 }

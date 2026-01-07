@@ -4,210 +4,275 @@
     <div class="col-auto d-none d-sm-block">
         <h3>@Localizer["My Leave Balance"]</h3>
     </div>
+    <div class="col-auto ms-auto text-end mt-n1">
+        <a asp-action="Apply" class="btn btn-primary">@Localizer["Apply for Leave"]</a>
+    </div>
 </div>
 
-@if (Model.HasUpcomingLeaveWithin14Days && Model.NextUpcomingLeave != null)
-{
-    <div class="row mb-3">
-        <div class="col-12">
-            <div class="alert alert-info alert-dismissible" role="alert">
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                <div class="alert-message">
-                    <h4 class="alert-heading">
-                        <i class="align-middle" data-lucide="calendar-heart"></i>
-                        @Localizer["Upcoming Leave"]
-                    </h4>
-                    <p>
-                        @Localizer["You have an approved leave starting on"] <strong>@Model.NextUpcomingLeave.StartDate.ToString("yyyy-MM-dd")</strong> 
-                        (@Localizer["in"] @((Model.NextUpcomingLeave.StartDate.Date - DateTime.UtcNow.Date).Days) @Localizer["days"]).
-                    </p>
-                    <hr>
-                    <p class="mb-2"><strong>@Localizer["Have a wonderful break!"]</strong></p>
-                    <p class="mb-1">@Localizer["Please ensure that:"]</p>
-                    <ul class="mb-0">
-                        <li>@Localizer["Your leave complies with company policy"]</li>
-                        <li>@Localizer["All work has been properly handed over"]</li>
-                        <li>@Localizer["You have sent an email to your team"]</li>
-                        <li>@Localizer["Emergency contact information is available"]</li>
-                        <li>@Localizer["You take time to rest and enjoy outdoor activities"]</li>
-                        <li>@Localizer["You avoid handling work matters during your leave"]</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-}
-
+<!-- Statistics Cards -->
 <div class="row">
-    <div class="col-12 col-xl-6">
-        <div class="card">
+    <div class="col-lg-6 col-xl-3 d-flex">
+        <div class="card flex-fill">
             <div class="card-header">
-                <h5 class="card-title mb-0">@Localizer["Leave Balance Summary"]</h5>
+                <h5 class="card-title mb-0 mt-2">@Localizer["Annual Leave"]</h5>
             </div>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-12 col-md-6 mb-3">
-                        <div class="d-flex align-items-center">
-                            <div class="flex-shrink-0">
-                                <i class="align-middle text-primary" data-lucide="calendar" style="width: 48px; height: 48px;"></i>
-                            </div>
-                            <div class="flex-grow-1 ms-3">
-                                <h3 class="mb-0">@Model.RemainingAnnualLeave.ToString("0.##")</h3>
-                                <p class="text-muted mb-0">@Localizer["Remaining Annual Leave Days"]</p>
-                                <small class="text-muted">
-                                    @Localizer["Allocation"]: @Model.AnnualLeaveAllocation.ToString("0.##") @Localizer["days"]
-                                    @if (Model.CarriedOverAnnualLeave > 0)
-                                    {
-                                        <text><br/>@Localizer["Carried Over"]: @Model.CarriedOverAnnualLeave.ToString("0.##") @Localizer["days"]</text>
-                                    }
-                                </small>
-                            </div>
-                        </div>
+            <div class="card-body my-0 pt-0">
+                <div class="row d-flex align-items-center mb-3">
+                    <div class="col-8">
+                        <h3 class="d-flex align-items-center mb-0 fw-light">
+                            @Model.RemainingAnnualLeave.ToString("0.##")
+                        </h3>
+                        <small class="text-muted">@Localizer["of"] @Model.AnnualLeaveAllocation.ToString("0.##") @Localizer["days"]</small>
                     </div>
-                    <div class="col-12 col-md-6 mb-3">
-                        <div class="d-flex align-items-center">
-                            <div class="flex-shrink-0">
-                                <i class="align-middle text-success" data-lucide="heart-pulse" style="width: 48px; height: 48px;"></i>
-                            </div>
-                            <div class="flex-grow-1 ms-3">
-                                <h3 class="mb-0">@Model.RemainingSickLeave.ToString("0.##")</h3>
-                                <p class="text-muted mb-0">@Localizer["Remaining Sick Leave Days"]</p>
-                                <small class="text-muted">
-                                    @Localizer["Allocation"]: @Model.SickLeaveAllocation.ToString("0.##") @Localizer["days"]
-                                </small>
-                            </div>
-                        </div>
+                    <div class="col-4 text-end">
+                        <span class="text-muted">@(Model.AnnualLeaveAllocation > 0 ? ((Model.RemainingAnnualLeave / Model.AnnualLeaveAllocation) * 100).ToString("0") : "0")%</span>
                     </div>
                 </div>
-                @if (Model.CanApplyLeave)
-                {
-                            <div class="mt-3">
-                                <a asp-action="Apply" class="btn btn-primary">
-                                    <i class="align-middle" data-lucide="plus-circle"></i>
-                            @Localizer["Apply for Leave"]
-                                </a>
-                            </div>
-                }
-                else
-                {
-                            <div class="alert alert-warning mt-3" role="alert">
-                                <i class="align-middle" data-lucide="alert-triangle"></i>
-                        @Localizer["You have no remaining leave days to apply."]
-                            </div>
-                }
+                <div class="progress progress-sm shadow-sm mb-1">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: @(Model.AnnualLeaveAllocation > 0 ? ((Model.RemainingAnnualLeave / Model.AnnualLeaveAllocation) * 100).ToString("0") : "0")%"></div>
+                </div>
             </div>
         </div>
     </div>
-
-    <div class="col-12 col-xl-6">
-        <div class="card">
+    <div class="col-lg-6 col-xl-3 d-flex">
+        <div class="card flex-fill">
             <div class="card-header">
-                <h5 class="card-title mb-0">@Localizer["Leave Policy"]</h5>
+                <h5 class="card-title mb-0 mt-2">@Localizer["Sick Leave"]</h5>
             </div>
-            <div class="card-body">
-                <h6>@Localizer["Annual Leave"]</h6>
-                <ul class="mb-3">
-                    <li>@Localizer["12 days per year, granted on January 1st"]</li>
-                    <li>@Localizer["Unused annual leave can carry over to the next year"]</li>
-                    <li>@Localizer["Cannot carry over to the third year"]</li>
-                    <li>@Localizer["Requires approval before use"]</li>
-                </ul>
-
-                <h6>@Localizer["Sick Leave"]</h6>
-                <ul class="mb-0">
-                    <li>@Localizer["7 days per year"]</li>
-                    <li>@Localizer["Does not carry over to the next year"]</li>
-                    <li>@Localizer["No approval required, but must submit supporting documents after leave"]</li>
-                    <li>@Localizer["Physical illness: Hospital diagnosis required"]</li>
-                    <li>@Localizer["Mental health: No diagnosis required"]</li>
-                </ul>
+            <div class="card-body my-0 pt-0">
+                <div class="row d-flex align-items-center mb-3">
+                    <div class="col-8">
+                        <h3 class="d-flex align-items-center mb-0 fw-light">
+                            @Model.RemainingSickLeave.ToString("0.##")
+                        </h3>
+                        <small class="text-muted">@Localizer["of"] @Model.SickLeaveAllocation.ToString("0.##") @Localizer["days"]</small>
+                    </div>
+                    <div class="col-4 text-end">
+                        <span class="text-muted">@(Model.SickLeaveAllocation > 0 ? ((Model.RemainingSickLeave / Model.SickLeaveAllocation) * 100).ToString("0") : "0")%</span>
+                    </div>
+                </div>
+                <div class="progress progress-sm shadow-sm mb-1">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: @(Model.SickLeaveAllocation > 0 ? ((Model.RemainingSickLeave / Model.SickLeaveAllocation) * 100).ToString("0") : "0")%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-xl-3 d-flex">
+        <div class="card flex-fill">
+            <div class="card-header">
+                <h5 class="card-title mb-0 mt-2">@Localizer["Pending Requests"]</h5>
+            </div>
+            <div class="card-body my-0 pt-0">
+                <div class="row d-flex align-items-center mb-3">
+                    <div class="col-12">
+                        <h3 class="d-flex align-items-center mb-0 fw-light">
+                            @Model.PendingCount
+                        </h3>
+                        <small class="text-muted">@Localizer["awaiting approval"]</small>
+                    </div>
+                </div>
+                <div class="progress progress-sm shadow-sm mb-1">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: @(Model.PendingCount > 0 ? "100" : "0")%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-xl-3 d-flex">
+        <div class="card flex-fill">
+            <div class="card-header">
+                <h5 class="card-title mb-0 mt-2">@Localizer["Next Leave"]</h5>
+            </div>
+            <div class="card-body my-0 pt-0">
+                <div class="row d-flex align-items-center mb-3">
+                    <div class="col-12">
+                        @if (Model.DaysUntilNextLeave.HasValue)
+                        {
+                            <h3 class="d-flex align-items-center mb-0 fw-light">
+                                @Model.DaysUntilNextLeave.Value
+                            </h3>
+                            <small class="text-muted">@Localizer["days away"]</small>
+                        }
+                        else
+                        {
+                            <h3 class="d-flex align-items-center mb-0 fw-light text-muted">
+                                -
+                            </h3>
+                            <small class="text-muted">@Localizer["no upcoming leave"]</small>
+                        }
+                    </div>
+                </div>
+                <div class="progress progress-sm shadow-sm mb-1">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: @(Model.DaysUntilNextLeave.HasValue ? "100" : "0")%"></div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="row mt-3">
-    <div class="col-12">
+<!-- Main Content Row -->
+<div class="row">
+    <div class="col-lg-8 col-xxl-8">
+        <!-- Leave History Card -->
         <div class="card">
             <div class="card-header">
-                <h5 class="card-title">@Localizer["Leave History"]</h5>
-                <h6 class="card-subtitle text-muted">@Localizer["All your leave applications, including pending and historical records."]</h6>
+                <h5 class="card-title mb-0">@Localizer["Leave History"]</h5>
+                <h6 class="card-subtitle text-muted">@Localizer["Your leave applications and their status"]</h6>
             </div>
             <div class="table-responsive">
                 <table class="table table-hover mb-0">
                     <thead>
-                    <tr>
-                        <th>@Localizer["Leave Type"]</th>
-                        <th>@Localizer["Start Date"]</th>
-                        <th>@Localizer["End Date"]</th>
-                        <th>@Localizer["Total Days"]</th>
-                        <th>@Localizer["Status"]</th>
-                        <th>@Localizer["Submitted At"]</th>
-                        <th>@Localizer["Actions"]</th>
-                    </tr>
+                        <tr>
+                            <th>@Localizer["Type"]</th>
+                            <th>@Localizer["Period"]</th>
+                            <th>@Localizer["Days"]</th>
+                            <th>@Localizer["Status"]</th>
+                            <th>@Localizer["Actions"]</th>
+                        </tr>
                     </thead>
                     <tbody>
                         @if (Model.LeaveHistory.Count == 0)
                         {
-                                <tr>
-                                    <td colspan="7" class="text-center text-muted">
-                                    @Localizer["No leave applications yet."]
-                                    </td>
-                                </tr>
+                            <tr>
+                                <td colspan="5" class="text-center text-muted">@Localizer["No leave history found."]</td>
+                            </tr>
                         }
                         else
                         {
                             foreach (var item in Model.LeaveHistory)
                             {
-                                            <tr>
-                                                <td>
+                                <tr>
+                                    <td>
                                         @if (item.LeaveType == Aiursoft.EmployeeCenter.Entities.LeaveType.AnnualLeave)
                                         {
-                                                                <span class="badge bg-primary">@Localizer["Annual Leave"]</span>
+                                            <span class="badge bg-primary">@Localizer["Annual Leave"]</span>
                                         }
                                         else
                                         {
-                                                                <span class="badge bg-success">@Localizer["Sick Leave"]</span>
+                                            <span class="badge bg-success">@Localizer["Sick Leave"]</span>
                                         }
-                                                </td>
-                                                <td>@item.StartDate.ToString("yyyy-MM-dd")</td>
-                                                <td>@item.EndDate.ToString("yyyy-MM-dd")</td>
-                                                <td>@item.TotalDays.ToString("0.##") @Localizer["days"]</td>
-                                                <td>
+                                    </td>
+                                    <td>
+                                        <div>@item.StartDate.ToString("yyyy-MM-dd") - @item.EndDate.ToString("yyyy-MM-dd")</div>
+                                        <small class="text-muted">@Localizer["Submitted"] @item.SubmittedAt.ToString("yyyy-MM-dd")</small>
+                                    </td>
+                                    <td>@item.TotalDays.ToString("0.##")</td>
+                                    <td>
                                         @if (item.IsWithdrawn)
                                         {
-                                                        <span class="badge bg-secondary">@Localizer["Withdrawn"]</span>
+                                            <span class="badge bg-secondary">@Localizer["Withdrawn"]</span>
                                         }
                                         else if (item.IsPending)
                                         {
-                                                                <span class="badge bg-warning">@Localizer["Pending Approval"]</span>
+                                            <span class="badge bg-warning">@Localizer["Pending"]</span>
                                         }
                                         else if (item.IsApproved)
                                         {
-                                                                <span class="badge bg-success">@Localizer["Approved"]</span>
+                                            <span class="badge bg-success">@Localizer["Approved"]</span>
                                         }
                                         else
                                         {
-                                                                <span class="badge bg-danger">@Localizer["Rejected"]</span>
+                                            <span class="badge bg-danger">@Localizer["Rejected"]</span>
                                         }
-                                                </td>
-                                                <td>@item.SubmittedAt.ToString("yyyy-MM-dd HH:mm")</td>
-                                                <td>
-                                        @if (!item.IsWithdrawn && DateTime.UtcNow.Date < item.StartDate.Date)
+                                    </td>
+                                    <td>
+                                        @if (item.IsPending && !item.IsWithdrawn)
                                         {
-                                                            <form asp-action="Withdraw" asp-route-id="@item.Id" method="post" class="d-inline">
+                                            <form asp-action="Withdraw" method="post" class="d-inline">
                                                 @Html.AntiForgeryToken()
-                                                                <button type="submit" class="btn btn-sm btn-outline-danger" onclick="return confirm('@Localizer["Are you sure you want to withdraw this leave application?"]');">
-                                                                    <i class="align-middle" data-lucide="x-circle"></i> @Localizer["Withdraw"]
-                                                                </button>
-                                                            </form>
+                                                <input type="hidden" name="id" value="@item.Id" />
+                                                <button type="submit" class="btn btn-sm btn-outline-danger">
+                                                    <i class="align-middle" data-lucide="x"></i> @Localizer["Withdraw"]
+                                                </button>
+                                            </form>
                                         }
-                                                </td>
-                                            </tr>
+                                        else
+                                        {
+                                            <span class="text-muted">-</span>
+                                        }
+                                    </td>
+                                </tr>
                             }
                         }
                     </tbody>
                 </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-xxl-4">
+        <!-- Upcoming Leave Alert -->
+        @if (Model.HasUpcomingLeaveWithin14Days && Model.NextUpcomingLeave != null)
+        {
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">@Localizer["Upcoming Leave"]</h5>
+                </div>
+                <div class="card-body">
+                    <div class="text-center mb-3">
+                        <i class="align-middle text-info" data-lucide="calendar-heart" style="width: 48px; height: 48px;"></i>
+                    </div>
+                    <h6 class="text-center mb-3">
+                        @Model.NextUpcomingLeave.StartDate.ToString("yyyy-MM-dd") - @Model.NextUpcomingLeave.EndDate.ToString("yyyy-MM-dd")
+                    </h6>
+                    <p class="text-center text-muted mb-3">
+                        @Localizer["in"] <strong>@Model.DaysUntilNextLeave</strong> @Localizer["days"]
+                    </p>
+                    <hr>
+                    <p class="mb-2"><strong>@Localizer["Have a wonderful break!"]</strong></p>
+                    <small class="text-muted">
+                        @Localizer["Please ensure your leave complies with company policy, all work has been handed over, and you have sent an email to your team."]
+                    </small>
+                </div>
+            </div>
+        }
+
+        <!-- Quick Actions Card -->
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">@Localizer["Quick Actions"]</h5>
+            </div>
+            <div class="card-body">
+                <div class="d-grid gap-2">
+                    <a asp-action="Apply" class="btn btn-primary">
+                        <i class="align-middle" data-lucide="calendar-plus"></i> @Localizer["Apply for Leave"]
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Leave Balance Summary Card -->
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">@Localizer["Leave Balance Summary"]</h5>
+            </div>
+            <div class="list-group list-group-flush">
+                <div class="list-group-item">
+                    <div class="row">
+                        <strong class="col-6">@Localizer["Annual Leave"]</strong>
+                        <div class="col-6 text-end">@Model.RemainingAnnualLeave.ToString("0.##") @Localizer["days"]</div>
+                    </div>
+                </div>
+                @if (Model.CarriedOverAnnualLeave > 0)
+                {
+                    <div class="list-group-item">
+                        <div class="row">
+                            <strong class="col-6">@Localizer["Carried Over"]</strong>
+                            <div class="col-6 text-end">@Model.CarriedOverAnnualLeave.ToString("0.##") @Localizer["days"]</div>
+                        </div>
+                    </div>
+                }
+                <div class="list-group-item">
+                    <div class="row">
+                        <strong class="col-6">@Localizer["Sick Leave"]</strong>
+                        <div class="col-6 text-end">@Model.RemainingSickLeave.ToString("0.##") @Localizer["days"]</div>
+                    </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="row">
+                        <strong class="col-6">@Localizer["Pending"]</strong>
+                        <div class="col-6 text-end">@Model.PendingCount @Localizer["requests"]</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

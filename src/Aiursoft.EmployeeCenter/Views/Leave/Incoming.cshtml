@@ -1,68 +1,174 @@
 @model Aiursoft.EmployeeCenter.Models.LeaveViewModels.IncomingViewModel
 @inject Aiursoft.EmployeeCenter.Services.FileStorage.StorageService StorageService
-@{
-    ViewData["Title"] = Localizer["Incoming Leave Applications"];
-}
 
 <div class="row mb-2 mb-xl-3">
     <div class="col-auto d-none d-sm-block">
-        <h3>@Localizer["Incoming Leave Applications"]</h3>
+        <h3>@Localizer["Approval Center"]</h3>
     </div>
 </div>
 
-<div class="row mb-3">
-    <div class="col-12">
-        <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            <h5 class="alert-heading mb-2">
-                <i class="align-middle" data-lucide="alert-triangle"></i>
-                @Localizer["Important: Approval Decisions Are Final"]
-            </h5>
-            <p class="mb-2">
-                @Localizer["Once you approve or reject a leave application, the decision cannot be undone. Please review carefully before taking action."]
-            </p>
-            <small class="text-muted">
-                <strong>@Localizer["If the employee wishes to cancel:"]</strong> @Localizer["They can withdraw their own application before it starts."]
-                • <strong>@Localizer["If rejected by mistake:"]</strong> @Localizer["The employee must submit a new application."]
-            </small>
+<!-- Statistics Cards -->
+<div class="row">
+    <div class="col-lg-6 col-xl-3 d-flex">
+        <div class="card flex-fill">
+            <div class="card-header">
+                <h5 class="card-title mb-0 mt-2">@Localizer["Pending Approvals"]</h5>
+            </div>
+            <div class="card-body my-0 pt-0">
+                <div class="row d-flex align-items-center mb-3">
+                    <div class="col-12">
+                        <h3 class="d-flex align-items-center mb-0 fw-light">
+                            @Model.PendingCount
+                        </h3>
+                        <small class="text-muted">@Localizer["awaiting your review"]</small>
+                    </div>
+                </div>
+                <div class="progress progress-sm shadow-sm mb-1">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: @(Model.PendingCount > 0 ? "100" : "0")%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-xl-3 d-flex">
+        <div class="card flex-fill">
+            <div class="card-header">
+                <h5 class="card-title mb-0 mt-2">@Localizer["Approved This Month"]</h5>
+            </div>
+            <div class="card-body my-0 pt-0">
+                <div class="row d-flex align-items-center mb-3">
+                    <div class="col-12">
+                        <h3 class="d-flex align-items-center mb-0 fw-light">
+                            @Model.ApprovedThisMonth
+                        </h3>
+                        <small class="text-muted">@Localizer["applications approved"]</small>
+                    </div>
+                </div>
+                <div class="progress progress-sm shadow-sm mb-1">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: @(Model.ApprovedThisMonth > 0 ? "100" : "0")%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-xl-3 d-flex">
+        <div class="card flex-fill">
+            <div class="card-header">
+                <h5 class="card-title mb-0 mt-2">@Localizer["Rejected This Month"]</h5>
+            </div>
+            <div class="card-body my-0 pt-0">
+                <div class="row d-flex align-items-center mb-3">
+                    <div class="col-12">
+                        <h3 class="d-flex align-items-center mb-0 fw-light">
+                            @Model.RejectedThisMonth
+                        </h3>
+                        <small class="text-muted">@Localizer["applications rejected"]</small>
+                    </div>
+                </div>
+                <div class="progress progress-sm shadow-sm mb-1">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: @(Model.RejectedThisMonth > 0 ? "100" : "0")%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-xl-3 d-flex">
+        <div class="card flex-fill">
+            <div class="card-header">
+                <h5 class="card-title mb-0 mt-2">@Localizer["Team on Leave"]</h5>
+            </div>
+            <div class="card-body my-0 pt-0">
+                <div class="row d-flex align-items-center mb-3">
+                    <div class="col-12">
+                        <h3 class="d-flex align-items-center mb-0 fw-light">
+                            @Model.TeamOnLeaveCount
+                        </h3>
+                        <small class="text-muted">@Localizer["currently absent"]</small>
+                    </div>
+                </div>
+                <div class="progress progress-sm shadow-sm mb-1">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: @(Model.TeamOnLeaveCount > 0 ? "100" : "0")%"></div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
+<!-- Warning Alert -->
+@if (Model.PendingCount > 0)
+{
+    <div class="row mb-3">
+        <div class="col-12">
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                <h5 class="alert-heading mb-2">
+                    <i class="align-middle" data-lucide="alert-triangle"></i>
+                    @Localizer["Important: Approval Decisions Are Final"]
+                </h5>
+                <p class="mb-2">
+                    @Localizer["Once you approve or reject a leave application, the decision cannot be undone. Please review carefully before taking action."]
+                </p>
+                <small class="text-muted">
+                    <strong>@Localizer["If the employee wishes to cancel:"]</strong> @Localizer["They can withdraw their own application before it starts."]
+                    • <strong>@Localizer["If rejected by mistake:"]</strong> @Localizer["The employee must submit a new application."]
+                </small>
+            </div>
+        </div>
+    </div>
+}
+
+<!-- Main Content with Tabs -->
 <div class="card">
     <div class="card-header">
-        <h5 class="card-title">@Localizer["Pending Approval"]</h5>
-        <h6 class="card-subtitle text-muted">@Localizer["Leave applications requiring your review."]</h6>
-    </div>
-    <div class="table-responsive">
-        <table class="table table-hover mb-0">
-            <thead>
-                <tr>
-                    <th>@Localizer["Applicant"]</th>
-                    <th>@Localizer["Leave Type"]</th>
-                    <th>@Localizer["Start Date"]</th>
-                    <th>@Localizer["End Date"]</th>
-                    <th>@Localizer["Total Days"]</th>
-                    <th>@Localizer["Reason"]</th>
-                    <th>@Localizer["Submitted At"]</th>
-                    <th>@Localizer["Actions"]</th>
-                </tr>
-            </thead>
-            <tbody>
-                @if (Model.IncomingLeaves.Count == 0)
-                {
-                        <tr>
-                            <td colspan="8" class="text-center text-muted">@Localizer["No pending applications."]</td>
-                        </tr>
-                }
-                else
-                {
-                    foreach (var item in Model.IncomingLeaves)
+        <ul class="nav nav-tabs card-header-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" data-bs-toggle="tab" href="#pending" role="tab">
+                    @Localizer["Pending Approval"] 
+                    @if (Model.PendingCount > 0)
                     {
+                        <span class="badge bg-warning ms-1">@Model.PendingCount</span>
+                    }
+                </a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" data-bs-toggle="tab" href="#history" role="tab">
+                    @Localizer["Approval History"]
+                    @if (Model.ApprovalHistory.Count > 0)
+                    {
+                        <span class="badge bg-secondary ms-1">@Model.ApprovalHistory.Count</span>
+                    }
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="tab-content">
+        <!-- Pending Tab -->
+        <div class="tab-pane fade show active" id="pending" role="tabpanel">
+            <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                    <thead>
+                        <tr>
+                            <th>@Localizer["Applicant"]</th>
+                            <th>@Localizer["Type"]</th>
+                            <th>@Localizer["Period"]</th>
+                            <th>@Localizer["Days"]</th>
+                            <th>@Localizer["Reason"]</th>
+                            <th>@Localizer["Submitted"]</th>
+                            <th>@Localizer["Actions"]</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.IncomingLeaves.Count == 0)
+                        {
+                            <tr>
+                                <td colspan="7" class="text-center text-muted py-4">@Localizer["No pending applications."]</td>
+                            </tr>
+                        }
+                        else
+                        {
+                            foreach (var item in Model.IncomingLeaves)
+                            {
                                 <tr>
                                     <td>
                                         <div class="d-flex align-items-center">
-                                            <img src="@item.User.AvatarRelativePath" class="rounded-circle me-2" alt="@item.User.DisplayName" width="32" height="32">
+                                            <img src="@StorageService.RelativePathToInternetUrl(item.User.AvatarRelativePath)?w=64&square=true" class="rounded-circle me-2" alt="@item.User.DisplayName" width="32" height="32">
                                             <div>
                                                 <div class="fw-bold">@item.User.DisplayName</div>
                                                 <div class="small text-muted">@item.User.Email</div>
@@ -70,24 +176,35 @@
                                         </div>
                                     </td>
                                     <td>
-                                @if (item.LeaveType == Aiursoft.EmployeeCenter.Entities.LeaveType.AnnualLeave)
-                                {
-                                                <span class="badge bg-primary">@Localizer["Annual Leave"]</span>
-                                }
-                                else
-                                {
-                                                <span class="badge bg-success">@Localizer["Sick Leave"]</span>
-                                }
+                                        @if (item.LeaveType == Aiursoft.EmployeeCenter.Entities.LeaveType.AnnualLeave)
+                                        {
+                                            <span class="badge bg-primary">@Localizer["Annual Leave"]</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-success">@Localizer["Sick Leave"]</span>
+                                        }
                                     </td>
-                                    <td>@item.StartDate.ToString("yyyy-MM-dd")</td>
-                                    <td>@item.EndDate.ToString("yyyy-MM-dd")</td>
-                                    <td>@item.TotalDays.ToString("0.##") @Localizer["days"]</td>
-                                    <td title="@item.Reason">@item.Reason</td>
-                                    <td>@item.SubmittedAt.ToString("yyyy-MM-dd HH:mm")</td>
+                                    <td>
+                                        <div>@item.StartDate.ToString("yyyy-MM-dd")</div>
+                                        <small class="text-muted">@Localizer["to"] @item.EndDate.ToString("yyyy-MM-dd")</small>
+                                    </td>
+                                    <td>@item.TotalDays.ToString("0.##")</td>
+                                    <td title="@item.Reason">
+                                        @if (item.Reason.Length > 50)
+                                        {
+                                            <text>@item.Reason.Substring(0, 50)...</text>
+                                        }
+                                        else
+                                        {
+                                            <text>@item.Reason</text>
+                                        }
+                                    </td>
+                                    <td>@item.SubmittedAt.ToString("yyyy-MM-dd")</td>
                                     <td>
                                         <div class="d-flex gap-2">
                                             <form asp-action="Review" method="post" class="d-inline">
-                                        @Html.AntiForgeryToken()
+                                                @Html.AntiForgeryToken()
                                                 <input type="hidden" name="id" value="@item.Id" />
                                                 <input type="hidden" name="approved" value="true" />
                                                 <button type="submit" class="btn btn-sm btn-success">
@@ -95,7 +212,7 @@
                                                 </button>
                                             </form>
                                             <form asp-action="Review" method="post" class="d-inline">
-                                        @Html.AntiForgeryToken()
+                                                @Html.AntiForgeryToken()
                                                 <input type="hidden" name="id" value="@item.Id" />
                                                 <input type="hidden" name="approved" value="false" />
                                                 <button type="submit" class="btn btn-sm btn-danger">
@@ -105,9 +222,80 @@
                                         </div>
                                     </td>
                                 </tr>
-                    }
-                }
-            </tbody>
-        </table>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- History Tab -->
+        <div class="tab-pane fade" id="history" role="tabpanel">
+            <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                    <thead>
+                        <tr>
+                            <th>@Localizer["Applicant"]</th>
+                            <th>@Localizer["Type"]</th>
+                            <th>@Localizer["Period"]</th>
+                            <th>@Localizer["Days"]</th>
+                            <th>@Localizer["Decision"]</th>
+                            <th>@Localizer["Reviewed"]</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.ApprovalHistory.Count == 0)
+                        {
+                            <tr>
+                                <td colspan="6" class="text-center text-muted py-4">@Localizer["No approval history."]</td>
+                            </tr>
+                        }
+                        else
+                        {
+                            foreach (var item in Model.ApprovalHistory)
+                            {
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <img src="@StorageService.RelativePathToInternetUrl(item.User.AvatarRelativePath)?w=64&square=true" class="rounded-circle me-2" alt="@item.User.DisplayName" width="32" height="32">
+                                            <div>
+                                                <div class="fw-bold">@item.User.DisplayName</div>
+                                                <div class="small text-muted">@item.User.Email</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        @if (item.LeaveType == Aiursoft.EmployeeCenter.Entities.LeaveType.AnnualLeave)
+                                        {
+                                            <span class="badge bg-primary">@Localizer["Annual Leave"]</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-success">@Localizer["Sick Leave"]</span>
+                                        }
+                                    </td>
+                                    <td>
+                                        <div>@item.StartDate.ToString("yyyy-MM-dd")</div>
+                                        <small class="text-muted">@Localizer["to"] @item.EndDate.ToString("yyyy-MM-dd")</small>
+                                    </td>
+                                    <td>@item.TotalDays.ToString("0.##")</td>
+                                    <td>
+                                        @if (item.IsApproved)
+                                        {
+                                            <span class="badge bg-success">@Localizer["Approved"]</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-danger">@Localizer["Rejected"]</span>
+                                        }
+                                    </td>
+                                    <td>@item.ReviewedAt?.ToString("yyyy-MM-dd HH:mm")</td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 </div>
