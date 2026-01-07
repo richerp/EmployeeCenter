@@ -132,9 +132,6 @@
   <data name="Features" xml:space="preserve">
     <value>功能特性</value>
   </data>
-  <data name="Go to dashboard" xml:space="preserve">
-    <value>前往仪表盘</value>
-  </data>
   <data name="Markdown To HTML" xml:space="preserve">
     <value>Markdown 转 HTML</value>
   </data>

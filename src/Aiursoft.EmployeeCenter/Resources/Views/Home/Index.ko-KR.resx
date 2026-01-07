@@ -117,9 +117,6 @@
   <data name="Free" xml:space="preserve">
     <value>무료</value>
   </data>
-  <data name="Go to dashboard" xml:space="preserve">
-    <value>대시보드로 이동</value>
-  </data>
   <data name="Features" xml:space="preserve">
     <value>기능</value>
   </data>

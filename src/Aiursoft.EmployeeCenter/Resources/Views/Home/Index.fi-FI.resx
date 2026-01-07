@@ -117,9 +117,6 @@
   <data name="Usage" xml:space="preserve">
     <value>Käyttö</value>
   </data>
-  <data name="Go to dashboard" xml:space="preserve">
-    <value>Siirry kojelautaan</value>
-  </data>
   <data name="Open Source" xml:space="preserve">
     <value>Avoin lähdekoodi</value>
   </data>

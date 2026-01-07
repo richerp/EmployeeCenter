@@ -123,9 +123,6 @@
   <data name="Open Source" xml:space="preserve">
     <value>Ανοιχτού Κώδικα</value>
   </data>
-  <data name="Go to dashboard" xml:space="preserve">
-    <value>Μετάβαση στον πίνακα ελέγχου</value>
-  </data>
   <data name="MIT Licence" xml:space="preserve">
     <value>Άδεια MIT</value>
   </data>
