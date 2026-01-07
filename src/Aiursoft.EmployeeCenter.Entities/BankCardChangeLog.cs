@@ -7,30 +7,30 @@ public class BankCardChangeLog
 {
     public int Id { get; set; }
 
-    [MaxLength(128)]
+    [MaxLength(255)]
     public required string UserId { get; set; }
 
     [ForeignKey(nameof(UserId))]
     public User? User { get; set; }
 
-    [MaxLength(128)]
+    [MaxLength(255)]
     public string? OldBankCardNumber { get; set; }
-    [MaxLength(128)]
+    [MaxLength(255)]
     public string? NewBankCardNumber { get; set; }
 
-    [MaxLength(128)]
+    [MaxLength(255)]
     public string? OldBankName { get; set; }
-    [MaxLength(128)]
+    [MaxLength(255)]
     public string? NewBankName { get; set; }
 
-    [MaxLength(128)]
+    [MaxLength(255)]
     public string? OldBankAccountName { get; set; }
-    [MaxLength(128)]
+    [MaxLength(255)]
     public string? NewBankAccountName { get; set; }
 
     public DateTime ChangeTime { get; set; } = DateTime.UtcNow;
 
-    [MaxLength(128)]
+    [MaxLength(255)]
     public string? ChangedByUserId { get; set; }
 
     [ForeignKey(nameof(ChangedByUserId))]

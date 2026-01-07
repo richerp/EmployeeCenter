@@ -13,7 +13,7 @@ public class IncidentComment
     [ForeignKey(nameof(IncidentId))]
     public Incident? Incident { get; set; }
 
-    [MaxLength(128)]
+    [MaxLength(255)]
     public string? AuthorId { get; set; }
 
     [ForeignKey(nameof(AuthorId))]

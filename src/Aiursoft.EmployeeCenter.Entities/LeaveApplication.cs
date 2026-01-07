@@ -13,7 +13,7 @@ public class LeaveApplication
     [Key]
     public int Id { get; init; }
 
-    [MaxLength(128)]
+    [MaxLength(255)]
     public required string UserId { get; set; }
 
     [JsonIgnore]

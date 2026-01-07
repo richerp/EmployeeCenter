@@ -36,13 +36,13 @@ public class Incident
     [MaxLength(100)]
     public required string TargetRole { get; set; }
 
-    [MaxLength(128)]
+    [MaxLength(255)]
     public string? OwnerId { get; set; }
 
     [ForeignKey(nameof(OwnerId))]
     public User? Owner { get; set; }
 
-    [MaxLength(128)]
+    [MaxLength(255)]
     public string? IMId { get; set; }
 
     [ForeignKey(nameof(IMId))]

@@ -10,7 +10,7 @@ public class SshKey
     [Key]
     public int Id { get; init; }
 
-    [MaxLength(128)]
+    [MaxLength(255)]
     public required string OwnerId { get; set; }
 
     [JsonIgnore]
