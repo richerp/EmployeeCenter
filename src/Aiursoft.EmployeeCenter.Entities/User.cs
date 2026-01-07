@@ -94,4 +94,12 @@ public class User : IdentityUser
     [Newtonsoft.Json.JsonIgnore]
     [InverseProperty(nameof(Manager))]
     public IEnumerable<User> Reports { get; init; } = new List<User>();
+
+    [Newtonsoft.Json.JsonIgnore]
+    [InverseProperty(nameof(LeaveBalance.User))]
+    public IEnumerable<LeaveBalance> LeaveBalances { get; init; } = new List<LeaveBalance>();
+
+    [Newtonsoft.Json.JsonIgnore]
+    [InverseProperty(nameof(LeaveApplication.User))]
+    public IEnumerable<LeaveApplication> LeaveApplications { get; init; } = new List<LeaveApplication>();
 }

@@ -75,7 +75,10 @@ public class AppPermissions
                 localizer["Allows viewing, editing, and deleting any user's SSH keys."]),
             new(AppPermissionNames.CanViewReportLine,
                 localizer["View Report Line"],
-                localizer["Allows viewing the report line of any user, including their manager, subordinates, and peers."])
+                localizer["Allows viewing the report line of any user, including their manager, subordinates, and peers."]),
+            new(AppPermissionNames.CanManageLeave,
+                localizer["Manage Leave"],
+                localizer["Allows managing leave applications and viewing leave records for all employees."])
         ];
         return allPermission;
     }

@@ -46,6 +46,10 @@ public class Startup : IWebStartup
         services.AddAssemblyDependencies(typeof(Startup).Assembly);
         services.AddSingleton<NavigationState<Startup>>();
 
+        // Leave Management Services
+        services.AddScoped<Services.HolidayService>();
+        services.AddScoped<Services.LeaveBalanceService>();
+
         // Controllers and localization
         services.AddControllersWithViews()
             .AddNewtonsoftJson(options =>
