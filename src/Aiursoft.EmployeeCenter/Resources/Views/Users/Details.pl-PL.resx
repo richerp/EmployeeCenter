@@ -132,5 +132,11 @@
   <data name="No change history found." xml:space="preserve">
     <value>Brak historii zmian.</value>
   </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>Imię i nazwisko</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>Numer telefonu</value>
+  </data>
 
 </root>

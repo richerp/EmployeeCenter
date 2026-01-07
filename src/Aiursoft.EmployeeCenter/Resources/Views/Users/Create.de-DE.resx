@@ -93,7 +93,6 @@
   <data name="Enter bank account" xml:space="preserve">
     <value>Bankkonto eingeben</value>
   </data>
-
   <data name="Title" xml:space="preserve">
     <value>Title</value>
   </data>
@@ -106,4 +105,17 @@
   <data name="Enter bank account name" xml:space="preserve">
     <value>Enter bank account name</value>
   </data>
+  <data name="Enter legal name" xml:space="preserve">
+    <value>Geben Sie den rechtlichen Namen ein</value>
+  </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>Namensdaten</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>Telefonnummer</value>
+  </data>
+  <data name="Enter phone number" xml:space="preserve">
+    <value>Telefonnummer eingeben</value>
+  </data>
+
 </root>
