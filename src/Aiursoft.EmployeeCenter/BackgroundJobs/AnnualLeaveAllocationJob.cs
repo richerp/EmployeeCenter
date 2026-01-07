@@ -1,5 +1,6 @@
 using Aiursoft.CSTools.Tools;
 using Aiursoft.EmployeeCenter.Entities;
+using Aiursoft.EmployeeCenter.Services;
 using Aiursoft.Scanner.Abstractions;
 using Microsoft.EntityFrameworkCore;
 
@@ -79,27 +80,63 @@ public class AnnualLeaveAllocationJob(
 
             foreach (var user in allUsers)
             {
-                // 检查今年是否已经有配额记录
+                // Check if allocation exists for current year
                 var existingAllocation = await context.LeaveBalances
                     .FirstOrDefaultAsync(lb => lb.UserId == user.Id && lb.Year == currentYear);
 
                 if (existingAllocation == null)
                 {
-                    // 只有当今年没有配额记录时才创建，避免重复发放
+                    // Calculate carry-over from previous year's CURRENT allocation only
+                    var previousYear = currentYear - 1;
+                    var carriedOver = 0m;
+
+                    var previousAllocation = await context.LeaveBalances
+                        .FirstOrDefaultAsync(lb => lb.UserId == user.Id && lb.Year == previousYear);
+
+                    if (previousAllocation != null)
+                    {
+                        // Calculate how much of previous year's CURRENT allocation was used
+                        var previousYearStart = new DateTime(previousYear, 1, 1);
+                        var previousYearEnd = previousYearStart.AddYears(1);
+
+                        var usedInPreviousYear = await context.LeaveApplications
+                            .Where(la => la.UserId == user.Id
+                                && la.LeaveType == LeaveType.AnnualLeave
+                                && la.StartDate >= previousYearStart
+                                && la.StartDate < previousYearEnd
+                                && !la.IsWithdrawn
+                                && (la.IsPending || la.IsApproved))
+                            .SumAsync(la => la.TotalDays);
+
+                        // Use carried first (FIFO), so deduct from carried first
+                        var carriedUsedInPrevious = Math.Min(usedInPreviousYear, previousAllocation.CarriedOverAnnualLeave);
+                        var currentUsedInPrevious = usedInPreviousYear - carriedUsedInPrevious;
+
+                        // Unused from previous year's CURRENT allocation can carry over
+                        var unusedFromPreviousCurrent = previousAllocation.AnnualLeaveAllocation - currentUsedInPrevious;
+
+                        // Cap at 12 days max
+                        carriedOver = Math.Max(0m, Math.Min(12m, unusedFromPreviousCurrent));
+
+                        // Note: previousAllocation.CarriedOverAnnualLeave EXPIRES (2-year rule)
+                    }
+
+                    // Create new allocation with carry-over
                     var newAllocation = new LeaveBalance
                     {
                         UserId = user.Id,
                         Year = currentYear,
-                        AnnualLeaveAllocation = 12m,  // 12天年假
-                        SickLeaveAllocation = 7m      // 7天病假
+                        AnnualLeaveAllocation = LeaveBalanceService.AnnualLeavePerYear,
+                        SickLeaveAllocation = LeaveBalanceService.SickLeavePerYear,
+                        CarriedOverAnnualLeave = carriedOver
                     };
 
                     context.LeaveBalances.Add(newAllocation);
                     CreatedAllocationCount++;
 
                     logger.LogInformation(
-                        "Created leave allocation for user {UserId} ({UserName}) for year {Year}",
-                        user.Id, user.UserName, currentYear);
+                        "Created leave allocation for user {UserId} ({UserName}) for year {Year}. Carried over: {CarriedOver} days",
+                        user.Id, user.UserName, currentYear, carriedOver);
                 }
             }
 

@@ -27,36 +27,36 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("ChangedByUserId")
-                        .HasMaxLength(128)
+                        .HasMaxLength(255)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("NewBankAccountName")
-                        .HasMaxLength(128)
+                        .HasMaxLength(255)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("NewBankCardNumber")
-                        .HasMaxLength(128)
+                        .HasMaxLength(255)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("NewBankName")
-                        .HasMaxLength(128)
+                        .HasMaxLength(255)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("OldBankAccountName")
-                        .HasMaxLength(128)
+                        .HasMaxLength(255)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("OldBankCardNumber")
-                        .HasMaxLength(128)
+                        .HasMaxLength(255)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("OldBankName")
-                        .HasMaxLength(128)
+                        .HasMaxLength(255)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasMaxLength(128)
+                        .HasMaxLength(255)
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
@@ -65,7 +65,7 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("BankCardChangeLogs", (string)null);
+                    b.ToTable("BankCardChangeLogs");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Incident", b =>
@@ -83,7 +83,7 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("IMId")
-                        .HasMaxLength(128)
+                        .HasMaxLength(255)
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime?>("MitigatedAt")
@@ -94,7 +94,7 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("OwnerId")
-                        .HasMaxLength(128)
+                        .HasMaxLength(255)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("PostMortem")
@@ -130,7 +130,7 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
 
                     b.HasIndex("OwnerId");
 
-                    b.ToTable("Incidents", (string)null);
+                    b.ToTable("Incidents");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.IncidentComment", b =>
@@ -140,7 +140,7 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("AuthorId")
-                        .HasMaxLength(128)
+                        .HasMaxLength(255)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Content")
@@ -163,7 +163,7 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
 
                     b.HasIndex("IncidentId");
 
-                    b.ToTable("IncidentComments", (string)null);
+                    b.ToTable("IncidentComments");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.LeaveApplication", b =>
@@ -209,7 +209,7 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasMaxLength(128)
+                        .HasMaxLength(255)
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime?>("WithdrawnAt")
@@ -221,7 +221,7 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("LeaveApplications", (string)null);
+                    b.ToTable("LeaveApplications");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.LeaveBalance", b =>
@@ -233,6 +233,9 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.Property<decimal>("AnnualLeaveAllocation")
                         .HasColumnType("TEXT");
 
+                    b.Property<decimal>("CarriedOverAnnualLeave")
+                        .HasColumnType("TEXT");
+
                     b.Property<DateTime>("CreationTime")
                         .HasColumnType("TEXT");
 
@@ -241,7 +244,7 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasMaxLength(128)
+                        .HasMaxLength(255)
                         .HasColumnType("TEXT");
 
                     b.Property<int>("Year")
@@ -251,7 +254,7 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("LeaveBalances", (string)null);
+                    b.ToTable("LeaveBalances");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Password", b =>
@@ -269,7 +272,7 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
 
                     b.Property<string>("CreatorId")
                         .IsRequired()
-                        .HasMaxLength(128)
+                        .HasMaxLength(255)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Note")
@@ -290,7 +293,7 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
 
                     b.HasIndex("CreatorId");
 
-                    b.ToTable("Passwords", (string)null);
+                    b.ToTable("Passwords");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.PasswordShare", b =>
@@ -322,7 +325,7 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
 
                     b.HasIndex("SharedWithUserId");
 
-                    b.ToTable("PasswordShares", (string)null);
+                    b.ToTable("PasswordShares");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Payroll", b =>
@@ -385,7 +388,7 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
 
                     b.Property<string>("OwnerId")
                         .IsRequired()
-                        .HasMaxLength(128)
+                        .HasMaxLength(255)
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("PensionCompany")
@@ -425,7 +428,7 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
 
                     b.HasIndex("OwnerId");
 
-                    b.ToTable("Payrolls", (string)null);
+                    b.ToTable("Payrolls");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.SshKey", b =>
@@ -444,7 +447,7 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
 
                     b.Property<string>("OwnerId")
                         .IsRequired()
-                        .HasMaxLength(128)
+                        .HasMaxLength(255)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("PublicKey")
@@ -456,7 +459,7 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
 
                     b.HasIndex("OwnerId");
 
-                    b.ToTable("SshKeys", (string)null);
+                    b.ToTable("SshKeys");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.User", b =>
@@ -521,7 +524,7 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("ManagerId")
-                        .HasMaxLength(128)
+                        .HasMaxLength(255)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("NormalizedEmail")

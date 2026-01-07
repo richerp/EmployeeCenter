@@ -38,5 +38,12 @@ public class LeaveBalance
     /// </summary>
     public decimal SickLeaveAllocation { get; set; }
 
+    /// <summary>
+    /// Annual leave carried over from previous year (max 12 days, expires after 1 year)
+    /// This represents unused leave from the previous year's AnnualLeaveAllocation only.
+    /// Deducted first when taking leave (FIFO).
+    /// </summary>
+    public decimal CarriedOverAnnualLeave { get; set; }
+
     public DateTime CreationTime { get; init; } = DateTime.UtcNow;
 }

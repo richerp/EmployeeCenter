@@ -11,9 +11,20 @@ public class LeaveBalanceService
     private readonly EmployeeCenterDbContext _context;
     private readonly HolidayService _holidayService;
 
-    // Company policies
-    private const decimal AnnualLeavePerYear = 12m;
-    private const decimal SickLeavePerYear = 7m;
+    // Company Leave Policy - Can be modified to change future allocations
+    // Note: Changing these values only affects NEW allocations created after the change.
+    // Existing LeaveBalance records in the database retain their original allocation values.
+    // This ensures historical data integrity while allowing policy adjustments.
+
+    /// <summary>
+    /// Annual leave days allocated per year for new allocations
+    /// </summary>
+    public const decimal AnnualLeavePerYear = 12m;
+
+    /// <summary>
+    /// Sick leave days allocated per year for new allocations
+    /// </summary>
+    public const decimal SickLeavePerYear = 7m;
 
     public LeaveBalanceService(
         EmployeeCenterDbContext context,
@@ -48,71 +59,47 @@ public class LeaveBalanceService
     }
 
     /// <summary>
-    /// Calculate carried over annual leave from the previous year
-    /// Annual leave can carry over to the next year but not to the third year
+    /// Get remaining annual leave breakdown (carried vs current)
+    /// Returns tuple of (carriedRemaining, currentRemaining) using FIFO deduction
     /// </summary>
-    public async Task<decimal> GetCarriedOverAnnualLeaveAsync(string userId, int currentYear)
-    {
-        var previousYear = currentYear - 1;
-
-        // Get previous year's allocation
-        var previousAllocation = await _context.LeaveBalances
-            .FirstOrDefaultAsync(lb => lb.UserId == userId && lb.Year == previousYear);
-
-        if (previousAllocation == null)
-        {
-            return 0m;
-        }
-
-        var startOfPreviousYear = new DateTime(previousYear, 1, 1);
-        var endOfPreviousYear = startOfPreviousYear.AddYears(1);
-
-        // Calculate used annual leave in previous year
-        var usedInPreviousYear = await _context.LeaveApplications
-            .Where(la => la.UserId == userId
-                && la.LeaveType == LeaveType.AnnualLeave
-                && la.StartDate >= startOfPreviousYear
-                && la.StartDate < endOfPreviousYear
-                && !la.IsWithdrawn // Exclude withdrawn
-                && !la.IsPending) // Only count approved/rejected that were actually processed
-            .Where(la => la.IsApproved) // Only count approved ones
-            .SumAsync(la => la.TotalDays);
-
-        var remainingFromPreviousYear = previousAllocation.AnnualLeaveAllocation - usedInPreviousYear;
-
-        // Only positive balances carry over, max is the full allocation
-        return Math.Max(0, Math.Min(remainingFromPreviousYear, AnnualLeavePerYear));
-    }
-
-    /// <summary>
-    /// Get remaining annual leave for a user in a specific year
-    /// </summary>
-    public async Task<decimal> GetRemainingAnnualLeaveAsync(string userId, int year)
+    public async Task<(decimal carriedRemaining, decimal currentRemaining)> GetRemainingByTypeAsync(string userId, int year)
     {
         await EnsureLeaveAllocationExistsAsync(userId, year);
 
         var allocation = await _context.LeaveBalances
             .FirstAsync(lb => lb.UserId == userId && lb.Year == year);
 
-        var carriedOver = await GetCarriedOverAnnualLeaveAsync(userId, year);
-
         var startOfYear = new DateTime(year, 1, 1);
         var endOfYear = startOfYear.AddYears(1);
 
-        // Calculate used annual leave (including pending applications to prevent duplicate requests)
+        // Calculate used annual leave (including pending to prevent duplicate requests)
         var usedThisYear = await _context.LeaveApplications
             .Where(la => la.UserId == userId
                 && la.LeaveType == LeaveType.AnnualLeave
                 && la.StartDate >= startOfYear
                 && la.StartDate < endOfYear
-                && !la.IsWithdrawn // Exclude withdrawn
-                && (la.IsPending || la.IsApproved)) // Exclude rejected
+                && !la.IsWithdrawn
+                && (la.IsPending || la.IsApproved))
             .SumAsync(la => la.TotalDays);
 
-        var totalAvailable = allocation.AnnualLeaveAllocation + carriedOver;
-        var remaining = totalAvailable - usedThisYear;
+        // Use carried first (FIFO)
+        var carriedUsed = Math.Min(usedThisYear, allocation.CarriedOverAnnualLeave);
+        var currentUsed = usedThisYear - carriedUsed;
 
-        return Math.Max(0, remaining);
+        return (
+            carriedRemaining: allocation.CarriedOverAnnualLeave - carriedUsed,
+            currentRemaining: allocation.AnnualLeaveAllocation - currentUsed
+        );
+    }
+
+    /// <summary>
+    /// Get remaining annual leave for a user in a specific year
+    /// Total = CarriedOver + Current allocation
+    /// </summary>
+    public async Task<decimal> GetRemainingAnnualLeaveAsync(string userId, int year)
+    {
+        var (carriedRemaining, currentRemaining) = await GetRemainingByTypeAsync(userId, year);
+        return carriedRemaining + currentRemaining;
     }
 
     /// <summary>

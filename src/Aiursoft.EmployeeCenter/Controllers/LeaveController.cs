@@ -42,9 +42,8 @@ public class LeaveController(
         // Get leave balances
         var allocation = await context.LeaveBalances
             .FirstAsync(lb => lb.UserId == user.Id && lb.Year == currentYear);
-
-        var carriedOver = await leaveBalanceService.GetCarriedOverAnnualLeaveAsync(user.Id, currentYear);
         var remainingAnnual = await leaveBalanceService.GetRemainingAnnualLeaveAsync(user.Id, currentYear);
+        var (carriedOver, _) = await leaveBalanceService.GetRemainingByTypeAsync(user.Id, currentYear);
         var remainingSick = await leaveBalanceService.GetRemainingSickLeaveAsync(user.Id, currentYear);
 
         // Get leave history
