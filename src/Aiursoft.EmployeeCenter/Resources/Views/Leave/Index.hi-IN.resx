@@ -36,6 +36,9 @@
   <data name="Approved" xml:space="preserve">
     <value>अनुमोदित</value>
   </data>
+  <data name="Approver" xml:space="preserve">
+    <value>अनुमोदक</value>
+  </data>
   <data name="awaiting approval" xml:space="preserve">
     <value>अनुमोदन का इंतजार</value>
   </data>

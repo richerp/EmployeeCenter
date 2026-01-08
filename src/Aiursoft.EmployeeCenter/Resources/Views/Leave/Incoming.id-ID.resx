@@ -48,6 +48,9 @@
   <data name="Approved This Month" xml:space="preserve">
     <value>Disetujui Bulan Ini</value>
   </data>
+  <data name="Approver" xml:space="preserve">
+    <value>Pengesah</value>
+  </data>
   <data name="awaiting your review" xml:space="preserve">
     <value>menunggu tinjauan Anda</value>
   </data>

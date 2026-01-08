@@ -18,17 +18,41 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Legend" xml:space="preserve">
+      <data name="Bank Account (Card Number)" xml:space="preserve">
+    <value>बैंक खाता (कार्ड नंबर)</value>
+  </data>
+  <data name="Bank Account Name" xml:space="preserve">
+    <value>बैंक खाता नाम</value>
+  </data>
+  <data name="Bank Name (Branch)" xml:space="preserve">
+    <value>बैंक का नाम (शाखा)</value>
+  </data>
+  <data name="Creation Time" xml:space="preserve">
+    <value>रचना समय</value>
+  </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>कानूनी नाम</value>
+  </data>
+  <data name="Legend" xml:space="preserve">
     <value>किंवदंती</value>
   </data>
   <data name="Manager" xml:space="preserve">
     <value>प्रबंधक</value>
   </data>
+  <data name="None" xml:space="preserve">
+    <value>कोई नहीं</value>
+  </data>
   <data name="Peer" xml:space="preserve">
     <value>सहकर्मी</value>
   </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>फ़ोन नंबर</value>
+  </data>
   <data name="Please select a user first." xml:space="preserve">
     <value>कृपया पहले एक उपयोगकर्ता चुनें।</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>पद</value>
   </data>
   <data name="Report Line" xml:space="preserve">
     <value>रिपोर्ट लाइन</value>
@@ -41,6 +65,15 @@
   </data>
   <data name="Target" xml:space="preserve">
     <value>लक्ष्य</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>पद</value>
+  </data>
+  <data name="User Details" xml:space="preserve">
+    <value>उपयोगकर्ता विवरण</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>उपयोगकर्ता नाम</value>
   </data>
   <data name="View Report Line" xml:space="preserve">
     <value>रिपोर्ट लाइन देखें</value>

@@ -51,6 +51,9 @@
   <data name="Allows modification of user details like email and roles, and can also reset user passwords." xml:space="preserve">
     <value>Staat aanpassing van gebruikersgegevens zoals e-mailadres en rollen toe, en kan ook gebruikerswachtwoorden opnieuw instellen.</value>
   </data>
+  <data name="Allows printing employment and income certificates for any employee." xml:space="preserve">
+    <value>Staats het afdrukken van arbeids- en inkomstenverklaringen voor elke medewerker toe.</value>
+  </data>
   <data name="Allows the permanent deletion of roles." xml:space="preserve">
     <value>Staat het permanent verwijderen van rollen toe.</value>
   </data>
@@ -119,6 +122,9 @@
   </data>
   <data name="Manage SSH Keys" xml:space="preserve">
     <value>SSH-sleutels beheren</value>
+  </data>
+  <data name="Print Certificates" xml:space="preserve">
+    <value>Certificaten afdrukken</value>
   </data>
   <data name="Read Roles" xml:space="preserve">
     <value>Rollen lezen</value>

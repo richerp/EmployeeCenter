@@ -51,6 +51,9 @@
   <data name="Allows modification of user details like email and roles, and can also reset user passwords." xml:space="preserve">
     <value>Cho phép sửa đổi thông tin chi tiết của người dùng như email và vai trò, đồng thời có thể đặt lại mật khẩu người dùng.</value>
   </data>
+  <data name="Allows printing employment and income certificates for any employee." xml:space="preserve">
+    <value>Cho phép in sao kê việc làm và thu nhập cho bất kỳ nhân viên nào.</value>
+  </data>
   <data name="Allows the permanent deletion of roles." xml:space="preserve">
     <value>Cho phép xóa vĩnh viễn các vai trò.</value>
   </data>
@@ -119,6 +122,9 @@
   </data>
   <data name="Manage SSH Keys" xml:space="preserve">
     <value>Quản lý SSH Keys</value>
+  </data>
+  <data name="Print Certificates" xml:space="preserve">
+    <value>In chứng chỉ</value>
   </data>
   <data name="Read Roles" xml:space="preserve">
     <value>Xem Vai trò</value>

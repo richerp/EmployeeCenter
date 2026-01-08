@@ -36,6 +36,9 @@
   <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
     <value>Όλες οι εξαρτήσεις καταχωρούνται αυτόματα και είναι πάντα διαθέσιμες μέσω της εισαγωγής στον κατασκευαστή.</value>
   </data>
+  <data name="All tasks completed! You are now a fully qualified employee!" xml:space="preserve">
+    <value>Όλες οι εργασίες ολοκληρώθηκαν! Είστε τώρα ένας επίσημος και πλήρως καταρτισμένος υπάλληλος!</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>Αυτόματη Λειτουργία Σκούρου Θέματος</value>
   </data>
@@ -48,8 +51,14 @@
   <data name="Built-in User Management" xml:space="preserve">
     <value>Ενσωματωμένη Διαχείριση Χρηστών</value>
   </data>
+  <data name="Certificate" xml:space="preserve">
+    <value>Πιστοποιητικό</value>
+  </data>
   <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
     <value>Διαθέτει πλήρη υποστήριξη Docker για απλοποιημένες, συνεπείς και αξιόπιστες αναπτύξεις.</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Ολοκληρώθηκε</value>
   </data>
   <data name="Completed at" xml:space="preserve">
     <value>Ολοκληρώθηκε στις</value>
@@ -146,6 +155,9 @@
   </data>
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>Γιατί να χρησιμοποιήσετε το Πρότυπο Aiursoft;</value>
+  </data>
+  <data name="Wish your career takes off at Aiursoft!" xml:space="preserve">
+    <value>Εύχομαι η καριέρα σου να ξεκινήσει στην Aiursoft!</value>
   </data>
   <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
     <value>Έχετε ολοκληρώσει όλα τα καθήκοντα ενσωμάτωσης. Είστε τώρα ένας πλήρως καταρτισμένος επίσημος υπάλληλος!</value>

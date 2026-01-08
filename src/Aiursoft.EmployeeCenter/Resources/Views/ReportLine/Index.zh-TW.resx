@@ -18,17 +18,41 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Legend" xml:space="preserve">
+      <data name="Bank Account (Card Number)" xml:space="preserve">
+    <value>銀行帳戶 (卡號)</value>
+  </data>
+  <data name="Bank Account Name" xml:space="preserve">
+    <value>銀行帳戶名稱</value>
+  </data>
+  <data name="Bank Name (Branch)" xml:space="preserve">
+    <value>銀行名稱 (分行)</value>
+  </data>
+  <data name="Creation Time" xml:space="preserve">
+    <value>建立時間</value>
+  </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>法定姓名</value>
+  </data>
+  <data name="Legend" xml:space="preserve">
     <value>圖例</value>
   </data>
   <data name="Manager" xml:space="preserve">
     <value>經理</value>
   </data>
+  <data name="None" xml:space="preserve">
+    <value>無</value>
+  </data>
   <data name="Peer" xml:space="preserve">
     <value>同事</value>
   </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>電話號碼</value>
+  </data>
   <data name="Please select a user first." xml:space="preserve">
     <value>請先選擇使用者。</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>職等</value>
   </data>
   <data name="Report Line" xml:space="preserve">
     <value>報告路線</value>
@@ -41,6 +65,15 @@
   </data>
   <data name="Target" xml:space="preserve">
     <value>目標</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>職稱</value>
+  </data>
+  <data name="User Details" xml:space="preserve">
+    <value>使用者詳情</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>帳號</value>
   </data>
   <data name="View Report Line" xml:space="preserve">
     <value>檢視報告線</value>

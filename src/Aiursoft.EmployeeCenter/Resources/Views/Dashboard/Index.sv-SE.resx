@@ -36,6 +36,9 @@
   <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
     <value>Alla beroenden registreras automatiskt och är alltid tillgängliga via konstruktorinjektion.</value>
   </data>
+  <data name="All tasks completed! You are now a fully qualified employee!" xml:space="preserve">
+    <value>Alla uppgifter slutförda! Du är nu en helt kvalificerad anställd!</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>Automatiskt mörkt läge</value>
   </data>
@@ -48,8 +51,14 @@
   <data name="Built-in User Management" xml:space="preserve">
     <value>Inbyggd användarhantering</value>
   </data>
+  <data name="Certificate" xml:space="preserve">
+    <value>Certifikat</value>
+  </data>
   <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
     <value>Levereras med fullt Docker-stöd för förenklad, konsekvent och pålitlig distribution.</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Slutförd</value>
   </data>
   <data name="Completed at" xml:space="preserve">
     <value>Slutfört kl.</value>
@@ -146,6 +155,9 @@
   </data>
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>Varför använda Aiursoft Template?</value>
+  </data>
+  <data name="Wish your career takes off at Aiursoft!" xml:space="preserve">
+    <value>Lycka till med din karriär på Aiursoft!</value>
   </data>
   <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
     <value>Du har slutfört alla påbörjningsuppgifter. Du är nu en helt kvalificerad officiell anställd!</value>

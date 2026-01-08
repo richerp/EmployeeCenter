@@ -51,6 +51,9 @@
   <data name="Allows modification of user details like email and roles, and can also reset user passwords." xml:space="preserve">
     <value>Sallii käyttäjätietojen, kuten sähköpostiosoitteen ja roolien, muokkaamisen sekä käyttäjien salasanojen nollaamisen.</value>
   </data>
+  <data name="Allows printing employment and income certificates for any employee." xml:space="preserve">
+    <value>Sallii työntekijän työ- ja tulotodistusten tulostamisen kaikille työntekijöille.</value>
+  </data>
   <data name="Allows the permanent deletion of roles." xml:space="preserve">
     <value>Sallii roolien pysyvän poistamisen.</value>
   </data>
@@ -119,6 +122,9 @@
   </data>
   <data name="Manage SSH Keys" xml:space="preserve">
     <value>Hallitse SSH-avaimia</value>
+  </data>
+  <data name="Print Certificates" xml:space="preserve">
+    <value>Tulosta todistukset</value>
   </data>
   <data name="Read Roles" xml:space="preserve">
     <value>Lue roolit</value>

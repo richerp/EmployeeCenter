@@ -36,6 +36,9 @@
   <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
     <value>所有相依元件都會自動註冊，並始終可透過建構函式注入使用。</value>
   </data>
+  <data name="All tasks completed! You are now a fully qualified employee!" xml:space="preserve">
+    <value>所有任務已全部完成！您已經是一個可以合格合規工作的員工了！</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>自動深色模式</value>
   </data>
@@ -48,8 +51,14 @@
   <data name="Built-in User Management" xml:space="preserve">
     <value>內建使用者管理</value>
   </data>
+  <data name="Certificate" xml:space="preserve">
+    <value>入職證書</value>
+  </data>
   <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
     <value>提供完整的 Docker 支援，實現簡化、一致且可靠的部署流程。</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>已完成</value>
   </data>
   <data name="Completed at" xml:space="preserve">
     <value>完成於</value>
@@ -147,20 +156,11 @@
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>為什麼要使用 Aiursoft 模板？</value>
   </data>
-  <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
-    <value>你已完成所有入職任務。你現已成為一名正式合格的員工！</value>
-  </data>
-  <data name="All tasks completed! You are now a fully qualified employee!" xml:space="preserve">
-    <value>所有任務已全部完成！您已經是一個可以合格合規工作的員工了！</value>
-  </data>
   <data name="Wish your career takes off at Aiursoft!" xml:space="preserve">
     <value>祝您的職業在 Aiursoft 騰飛！</value>
   </data>
-  <data name="Certificate" xml:space="preserve">
-    <value>入職證書</value>
-  </data>
-  <data name="Completed" xml:space="preserve">
-    <value>已完成</value>
+  <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
+    <value>你已完成所有入職任務。你現已成為一名正式合格的員工！</value>
   </data>
 
 </root>

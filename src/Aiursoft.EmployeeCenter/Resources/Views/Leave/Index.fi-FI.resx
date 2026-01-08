@@ -36,6 +36,9 @@
   <data name="Approved" xml:space="preserve">
     <value>Hyväksytty</value>
   </data>
+  <data name="Approver" xml:space="preserve">
+    <value>Hyväksyjä</value>
+  </data>
   <data name="awaiting approval" xml:space="preserve">
     <value>odotetaan hyväksyntää</value>
   </data>

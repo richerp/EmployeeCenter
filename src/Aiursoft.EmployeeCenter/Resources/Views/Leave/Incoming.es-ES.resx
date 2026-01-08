@@ -48,6 +48,9 @@
   <data name="Approved This Month" xml:space="preserve">
     <value>Aprobados este mes</value>
   </data>
+  <data name="Approver" xml:space="preserve">
+    <value>Aprobador</value>
+  </data>
   <data name="awaiting your review" xml:space="preserve">
     <value>pendiente de tu revisión</value>
   </data>

@@ -45,11 +45,11 @@
   <data name="Apply for Leave" xml:space="preserve">
     <value>申请休假</value>
   </data>
-  <data name="Approver" xml:space="preserve">
-    <value>审批人</value>
-  </data>
   <data name="Approved" xml:space="preserve">
     <value>已批准</value>
+  </data>
+  <data name="Approver" xml:space="preserve">
+    <value>审批人</value>
   </data>
   <data name="Are you sure you want to withdraw this leave application?" xml:space="preserve">
     <value>确定要撤回此休假申请吗？</value>

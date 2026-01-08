@@ -51,6 +51,9 @@
   <data name="Allows modification of user details like email and roles, and can also reset user passwords." xml:space="preserve">
     <value>Дозволяє змінювати дані користувача, такі як електронна пошта та ролі, а також скидати паролі користувачів.</value>
   </data>
+  <data name="Allows printing employment and income certificates for any employee." xml:space="preserve">
+    <value>Дозволяє друкувати довідки про зайнятість та доходи для будь-якого працівника.</value>
+  </data>
   <data name="Allows the permanent deletion of roles." xml:space="preserve">
     <value>Дозволяє остаточне видалення ролей.</value>
   </data>
@@ -119,6 +122,9 @@
   </data>
   <data name="Manage SSH Keys" xml:space="preserve">
     <value>Керування SSH-ключами</value>
+  </data>
+  <data name="Print Certificates" xml:space="preserve">
+    <value>Друкувати сертифікати</value>
   </data>
   <data name="Read Roles" xml:space="preserve">
     <value>Перегляд ролей</value>

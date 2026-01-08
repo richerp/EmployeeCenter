@@ -36,6 +36,9 @@
   <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
     <value>Alle afhankelijkheden worden automatisch geregistreerd en zijn altijd beschikbaar via constructorinjectie.</value>
   </data>
+  <data name="All tasks completed! You are now a fully qualified employee!" xml:space="preserve">
+    <value>Alle taken voltooid! Je bent nu een volledig gekwalificeerd medewerker!</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>Automatische Donkere Modus</value>
   </data>
@@ -48,8 +51,14 @@
   <data name="Built-in User Management" xml:space="preserve">
     <value>Ingebouwd gebruikersbeheer</value>
   </data>
+  <data name="Certificate" xml:space="preserve">
+    <value>Certificaat</value>
+  </data>
   <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
     <value>Biedt volledige Docker-ondersteuning voor vereenvoudigde, consistente en betrouwbare implementaties.</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Voltooid</value>
   </data>
   <data name="Completed at" xml:space="preserve">
     <value>Voltooid om</value>
@@ -146,6 +155,9 @@
   </data>
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>Waarom de Aiursoft Template gebruiken?</value>
+  </data>
+  <data name="Wish your career takes off at Aiursoft!" xml:space="preserve">
+    <value>Veel succes met je carrière bij Aiursoft!</value>
   </data>
   <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
     <value>U hebt alle onboardingtaken voltooid. U bent nu een volledig gekwalificeerd officieel medewerker!</value>
