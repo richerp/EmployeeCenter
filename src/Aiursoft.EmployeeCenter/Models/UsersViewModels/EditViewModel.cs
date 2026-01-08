@@ -47,6 +47,9 @@ public class EditViewModel : UiStackLayoutViewModel
     [MinLength(2)]
     public string? AvatarUrl { get; set; }
 
+    [Display(Name = "Creation Time")]
+    public DateTime CreationTime { get; set; }
+
     [Display(Name = "Job Level")]
     [MaxLength(100)]
     public string? JobLevel { get; set; }

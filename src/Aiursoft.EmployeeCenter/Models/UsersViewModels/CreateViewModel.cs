@@ -35,6 +35,9 @@ public class CreateViewModel: UiStackLayoutViewModel
     [Display(Name = "Password")]
     public string? Password { get; set; }
 
+    [Display(Name = "Creation Time")]
+    public DateTime CreationTime { get; set; } = DateTime.UtcNow;
+
     [Display(Name = "Job Level")]
     [MaxLength(100)]
     public string? JobLevel { get; set; }

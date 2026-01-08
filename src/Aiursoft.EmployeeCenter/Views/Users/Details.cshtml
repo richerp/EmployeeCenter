@@ -80,30 +80,33 @@
                         <div class="col-sm-9">@(Model.User.PhoneNumber ?? "N/A")</div>
                     </div>
                 </div>
-                <div class="list-group-item">
-                    <div class="row">
-                        <strong class="col-sm-3">@Localizer["Base Salary"]</strong>
-                        <div class="col-sm-9">@Model.User.BaseSalary.ToString("C")</div>
+                @if (User.HasClaim(AppPermissions.Type, AppPermissionNames.CanEditUsers))
+                {
+                    <div class="list-group-item">
+                        <div class="row">
+                            <strong class="col-sm-3">@Localizer["Base Salary"]</strong>
+                            <div class="col-sm-9">@Model.User.BaseSalary.ToString("C")</div>
+                        </div>
                     </div>
-                </div>
-                <div class="list-group-item">
-                    <div class="row">
-                        <strong class="col-sm-3">@Localizer["Bank Name (Branch)"]</strong>
-                        <div class="col-sm-9">@(Model.User.BankName ?? "N/A")</div>
+                    <div class="list-group-item">
+                        <div class="row">
+                            <strong class="col-sm-3">@Localizer["Bank Name (Branch)"]</strong>
+                            <div class="col-sm-9">@(Model.User.BankName ?? "N/A")</div>
+                        </div>
                     </div>
-                </div>
-                <div class="list-group-item">
-                    <div class="row">
-                        <strong class="col-sm-3">@Localizer["Bank Account (Card Number)"]</strong>
-                        <div class="col-sm-9">@(Model.User.BankAccount ?? "N/A")</div>
+                    <div class="list-group-item">
+                        <div class="row">
+                            <strong class="col-sm-3">@Localizer["Bank Account (Card Number)"]</strong>
+                            <div class="col-sm-9">@(Model.User.BankAccount ?? "N/A")</div>
+                        </div>
                     </div>
-                </div>
-                <div class="list-group-item">
-                    <div class="row">
-                        <strong class="col-sm-3">@Localizer["Bank Account Name (Holder)"]</strong>
-                        <div class="col-sm-9">@(Model.User.BankAccountName ?? "N/A")</div>
+                    <div class="list-group-item">
+                        <div class="row">
+                            <strong class="col-sm-3">@Localizer["Bank Account Name (Holder)"]</strong>
+                            <div class="col-sm-9">@(Model.User.BankAccountName ?? "N/A")</div>
+                        </div>
                     </div>
-                </div>
+                }
                 <div class="list-group-item">
                     <div class="row">
                         <strong class="col-sm-3">@Localizer["Manager"]</strong>
