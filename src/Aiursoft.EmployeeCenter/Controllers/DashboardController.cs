@@ -38,7 +38,8 @@ public class DashboardController(
         return this.StackView(new IndexViewModel
         {
             Tasks = tasks,
-            Logs = logs
+            Logs = logs,
+            User = user!
         });
     }
 }

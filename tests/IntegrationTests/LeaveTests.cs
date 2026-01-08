@@ -107,14 +107,14 @@ public class LeaveTests
         // 2. Initialize Allocation (Visit Index)
         await _http.GetAsync("/Leave/Index");
 
-        // 3. Apply for FUTURE leave (Tomorrow)
-        var tomorrow = DateTime.UtcNow.Date.AddDays(1);
+        // 3. Apply for FUTURE leave (5 days from now)
+        var fiveDaysFromNow = DateTime.UtcNow.Date.AddDays(5);
         var applyToken = await GetAntiCsrfToken("/Leave/Apply");
         var applyContent = new FormUrlEncodedContent(new Dictionary<string, string>
         {
             { "LeaveType", "AnnualLeave" },
-            { "StartDate", tomorrow.ToString("yyyy-MM-dd") },
-            { "EndDate", tomorrow.ToString("yyyy-MM-dd") },
+            { "StartDate", fiveDaysFromNow.ToString("yyyy-MM-dd") },
+            { "EndDate", fiveDaysFromNow.ToString("yyyy-MM-dd") },
             { "Reason", "Vacation" },
             { "__RequestVerificationToken", applyToken }
         });

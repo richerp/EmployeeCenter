@@ -150,5 +150,17 @@
   <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
     <value>您已完成所有入职任务。您现在已是一名正式合格的员工！</value>
   </data>
+  <data name="All tasks completed! You are now a fully qualified employee!" xml:space="preserve">
+    <value>所有任务已全部完成！您已经是一个可以合格合规工作的员工了！</value>
+  </data>
+  <data name="Wish your career takes off at Aiursoft!" xml:space="preserve">
+    <value>祝您的职业在 Aiursoft 腾飞！</value>
+  </data>
+  <data name="Certificate" xml:space="preserve">
+    <value>入职证书</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>已完成</value>
+  </data>
 
 </root>
