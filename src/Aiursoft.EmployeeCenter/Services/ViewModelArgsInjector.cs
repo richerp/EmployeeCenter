@@ -91,6 +91,7 @@ public class ViewModelArgsInjector(
         _ = localizer["Certificate of Income"];
         _ = localizer["Print"];
         _ = localizer["Manage Printing"];
+        _ = localizer["Team Calendar"];
     }
 
     public void InjectSimple(
