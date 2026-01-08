@@ -1,4 +1,6 @@
+@using Aiursoft.EmployeeCenter.Services.FileStorage
 @model Aiursoft.EmployeeCenter.Models.ManageOnboardingViewModels.IndexViewModel
+@inject StorageService StorageService
 
 <div class="row mb-2 mb-xl-3">
     <div class="col-auto d-none d-sm-block">
@@ -14,6 +16,9 @@
 <div class="row">
     <div class="col-12">
         <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">@Localizer["Tasks"]</h5>
+            </div>
             <div class="table-responsive">
                 <table class="table table-striped mb-0">
                     <thead>
@@ -51,3 +56,69 @@
         </div>
     </div>
 </div>
+
+@if (Model.EmployeeProgresses != null)
+{
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">@Localizer["Employee Onboarding Progress"]</h5>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead>
+                            <tr>
+                                <th>@Localizer["Avatar"]</th>
+                                <th>@Localizer["Employee"]</th>
+                                <th>@Localizer["Progress"]</th>
+                                <th class="text-end">@Localizer["Completed"]</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var progress in Model.EmployeeProgresses)
+                            {
+                                <tr class="clickable-row" data-href="@Url.Action("Details", "Users", new { id = progress.User.Id })">
+                                    <td>
+                                        <img src="@StorageService.RelativePathToInternetUrl(progress.User.AvatarRelativePath)?w=72&square=true" alt="@progress.User.DisplayName" class="rounded-circle" width="36" height="36" />
+                                    </td>
+                                    <td>
+                                        <a asp-controller="Users" asp-action="Details" asp-route-id="@progress.User.Id">
+                                            @progress.User.DisplayName
+                                        </a>
+                                    </td>
+                                    <td class="align-middle">
+                                        <div class="progress" style="height: 10px;">
+                                            <div class="progress-bar @(progress.ProgressPercentage >= 100 ? "bg-success" : "")" role="progressbar" style="width: @progress.ProgressPercentage.ToString("F0")%;" aria-valuenow="@progress.ProgressPercentage" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <small class="text-muted">@progress.ProgressPercentage.ToString("F1")%</small>
+                                    </td>
+                                    <td class="text-end">
+                                        @progress.CompletedTasksCount / @progress.TotalTasksCount
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const rows = document.querySelectorAll(".clickable-row");
+            rows.forEach(row => {
+                row.addEventListener("click", function (event) {
+                    const target = event.target;
+                    if (!target.matches('a, a *, button, button *')) {
+                        window.location.href = row.dataset.href;
+                    }
+                });
+            });
+        });
+    </script>
+}
