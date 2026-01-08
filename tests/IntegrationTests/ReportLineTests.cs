@@ -210,9 +210,10 @@ public class ReportLineTests
             viewerEmail = viewer.Email;
 
             var roleName = "Viewers" + suffix;
-            await roleManager.CreateAsync(new IdentityRole(roleName));
-            await roleManager.AddClaimAsync(await roleManager.FindByNameAsync(roleName), new Claim(AppPermissions.Type, AppPermissionNames.CanReadUsers));
-            await roleManager.AddClaimAsync(await roleManager.FindByNameAsync(roleName), new Claim(AppPermissions.Type, AppPermissionNames.CanViewReportLine));
+            var role = new IdentityRole(roleName);
+            await roleManager.CreateAsync(role);
+            await roleManager.AddClaimAsync(role, new Claim(AppPermissions.Type, AppPermissionNames.CanReadUsers));
+            await roleManager.AddClaimAsync(role, new Claim(AppPermissions.Type, AppPermissionNames.CanViewReportLine));
             await userManager.AddToRoleAsync(viewer, roleName);
         }
 
