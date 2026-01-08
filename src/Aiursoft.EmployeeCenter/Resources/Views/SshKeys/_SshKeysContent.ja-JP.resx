@@ -21,6 +21,9 @@
       <data name="Actions" xml:space="preserve">
     <value>操作</value>
   </data>
+  <data name="Add New Key" xml:space="preserve">
+    <value>新しいキーを追加</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>キャンセル</value>
   </data>
@@ -35,6 +38,9 @@
   </data>
   <data name="Edit" xml:space="preserve">
     <value>編集</value>
+  </data>
+  <data name="Manage public SSH keys for server access." xml:space="preserve">
+    <value>サーバーへのアクセス用の公開SSH鍵を管理する。</value>
   </data>
   <data name="Manage your public SSH keys for server access." xml:space="preserve">
     <value>サーバーへのアクセス用に公開SSHキーを管理します。</value>

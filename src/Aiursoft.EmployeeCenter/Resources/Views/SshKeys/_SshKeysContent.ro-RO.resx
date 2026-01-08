@@ -21,6 +21,9 @@
       <data name="Actions" xml:space="preserve">
     <value>Acțiuni</value>
   </data>
+  <data name="Add New Key" xml:space="preserve">
+    <value>Adaugă Cheie Nouă</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Anulează</value>
   </data>
@@ -35,6 +38,9 @@
   </data>
   <data name="Edit" xml:space="preserve">
     <value>Edit</value>
+  </data>
+  <data name="Manage public SSH keys for server access." xml:space="preserve">
+    <value>Gestionați cheile SSH publice pentru acces la server.</value>
   </data>
   <data name="Manage your public SSH keys for server access." xml:space="preserve">
     <value>Gestionați cheile publice SSH pentru accesul la server.</value>

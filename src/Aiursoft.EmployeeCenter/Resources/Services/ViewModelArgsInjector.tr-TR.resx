@@ -39,6 +39,12 @@
   <data name="Career" xml:space="preserve">
     <value>Kariyer</value>
   </data>
+  <data name="Certificate of Employeement" xml:space="preserve">
+    <value>İşe Alım Belgesi</value>
+  </data>
+  <data name="Certificate of Income" xml:space="preserve">
+    <value>Gelir Belgesi</value>
+  </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Profil Resmini Değiştir</value>
   </data>
@@ -114,8 +120,14 @@
   <data name="Manage" xml:space="preserve">
     <value>Yönet</value>
   </data>
+  <data name="Manage Onboarding" xml:space="preserve">
+    <value>Onboarding Yönetimi</value>
+  </data>
   <data name="Manage Payrolls" xml:space="preserve">
     <value>Maaşları Yönet</value>
+  </data>
+  <data name="Manage Printing" xml:space="preserve">
+    <value>Baskı Yönetimi</value>
   </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>Paylaşımları Yönet</value>
@@ -149,6 +161,12 @@
   </data>
   <data name="Personal" xml:space="preserve">
     <value>Kişisel</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Yazdır</value>
+  </data>
+  <data name="Print Certificate" xml:space="preserve">
+    <value>Belgeyi Yazdır</value>
   </data>
   <data name="Profile" xml:space="preserve">
     <value>Profil</value>
@@ -185,6 +203,9 @@
   </data>
   <data name="System Info" xml:space="preserve">
     <value>Sistem Bilgisi</value>
+  </data>
+  <data name="Team Calendar" xml:space="preserve">
+    <value>Takım Takvimi</value>
   </data>
   <data name="Template" xml:space="preserve">
     <value>Şablon</value>

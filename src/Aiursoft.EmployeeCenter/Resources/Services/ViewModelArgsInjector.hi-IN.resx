@@ -39,6 +39,12 @@
   <data name="Career" xml:space="preserve">
     <value>करियर</value>
   </data>
+  <data name="Certificate of Employeement" xml:space="preserve">
+    <value>नियुक्ति प्रमाणपत्र</value>
+  </data>
+  <data name="Certificate of Income" xml:space="preserve">
+    <value>आय का प्रमाणपत्र</value>
+  </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>अवतार बदलें</value>
   </data>
@@ -114,8 +120,14 @@
   <data name="Manage" xml:space="preserve">
     <value>प्रबंधित करें</value>
   </data>
+  <data name="Manage Onboarding" xml:space="preserve">
+    <value>संबंधित आने का प्रबंधन करें</value>
+  </data>
   <data name="Manage Payrolls" xml:space="preserve">
     <value>पेरोल प्रबंधित करें</value>
+  </data>
+  <data name="Manage Printing" xml:space="preserve">
+    <value>प्रिंटिंग प्रबंधित करें</value>
   </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>शेयर प्रबंधित करें</value>
@@ -149,6 +161,12 @@
   </data>
   <data name="Personal" xml:space="preserve">
     <value>व्यक्तिगत</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>प्रिंट</value>
+  </data>
+  <data name="Print Certificate" xml:space="preserve">
+    <value>प्रिंट प्रमाणपत्र</value>
   </data>
   <data name="Profile" xml:space="preserve">
     <value>प्रोफ़ाइल</value>
@@ -185,6 +203,9 @@
   </data>
   <data name="System Info" xml:space="preserve">
     <value>सिस्टम जानकारी</value>
+  </data>
+  <data name="Team Calendar" xml:space="preserve">
+    <value>टीम कैलेंडर</value>
   </data>
   <data name="Template" xml:space="preserve">
     <value>टेम्पलेट</value>

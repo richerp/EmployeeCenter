@@ -21,6 +21,9 @@
       <data name="Actions" xml:space="preserve">
     <value>Actions</value>
   </data>
+  <data name="Add New Key" xml:space="preserve">
+    <value>Add New Key</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancel</value>
   </data>
@@ -35,6 +38,9 @@
   </data>
   <data name="Edit" xml:space="preserve">
     <value>Edit</value>
+  </data>
+  <data name="Manage public SSH keys for server access." xml:space="preserve">
+    <value>Manage public SSH keys for server access.</value>
   </data>
   <data name="Manage your public SSH keys for server access." xml:space="preserve">
     <value>Manage your public SSH keys for server access.</value>

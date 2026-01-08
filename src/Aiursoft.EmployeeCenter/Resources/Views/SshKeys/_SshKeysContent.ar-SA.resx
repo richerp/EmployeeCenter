@@ -21,6 +21,9 @@
       <data name="Actions" xml:space="preserve">
     <value>الإجراءات</value>
   </data>
+  <data name="Add New Key" xml:space="preserve">
+    <value>إضافة مفتاح جديد</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>إلغاء</value>
   </data>
@@ -35,6 +38,9 @@
   </data>
   <data name="Edit" xml:space="preserve">
     <value>تحرير</value>
+  </data>
+  <data name="Manage public SSH keys for server access." xml:space="preserve">
+    <value>إدارة المفاتيح العامة لوصول الخادم</value>
   </data>
   <data name="Manage your public SSH keys for server access." xml:space="preserve">
     <value>إدارة مفاتيح SSH العامة الخاصة بك للوصول إلى الخادم.</value>

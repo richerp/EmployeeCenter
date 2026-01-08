@@ -42,6 +42,12 @@
   <data name="Career" xml:space="preserve">
     <value>職涯</value>
   </data>
+  <data name="Certificate of Employeement" xml:space="preserve">
+    <value>僱用證明</value>
+  </data>
+  <data name="Certificate of Income" xml:space="preserve">
+    <value>所得證明</value>
+  </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>變更大頭貼</value>
   </data>
@@ -117,8 +123,14 @@
   <data name="Manage" xml:space="preserve">
     <value>管理</value>
   </data>
+  <data name="Manage Onboarding" xml:space="preserve">
+    <value>管理入職流程</value>
+  </data>
   <data name="Manage Payrolls" xml:space="preserve">
     <value>薪資管理</value>
+  </data>
+  <data name="Manage Printing" xml:space="preserve">
+    <value>管理列印</value>
   </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>管理共享</value>
@@ -152,6 +164,12 @@
   </data>
   <data name="Personal" xml:space="preserve">
     <value>個人</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>列印</value>
+  </data>
+  <data name="Print Certificate" xml:space="preserve">
+    <value>列印證明文件</value>
   </data>
   <data name="Profile" xml:space="preserve">
     <value>個人檔案</value>
@@ -188,6 +206,9 @@
   </data>
   <data name="System Info" xml:space="preserve">
     <value>系統資訊</value>
+  </data>
+  <data name="Team Calendar" xml:space="preserve">
+    <value>團隊行事曆</value>
   </data>
   <data name="Template" xml:space="preserve">
     <value>範本</value>

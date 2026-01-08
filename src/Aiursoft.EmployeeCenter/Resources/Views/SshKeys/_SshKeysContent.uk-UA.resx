@@ -21,6 +21,9 @@
       <data name="Actions" xml:space="preserve">
     <value>Дії</value>
   </data>
+  <data name="Add New Key" xml:space="preserve">
+    <value>Додати новий ключ</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Скасувати</value>
   </data>
@@ -35,6 +38,9 @@
   </data>
   <data name="Edit" xml:space="preserve">
     <value>Редагувати</value>
+  </data>
+  <data name="Manage public SSH keys for server access." xml:space="preserve">
+    <value>Керування публічними ключами SSH для доступу до сервера.</value>
   </data>
   <data name="Manage your public SSH keys for server access." xml:space="preserve">
     <value>Керуйте своїми публічними ключами SSH для доступу до сервера.</value>

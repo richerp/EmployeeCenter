@@ -21,6 +21,9 @@
       <data name="Actions" xml:space="preserve">
     <value>การกระทำ</value>
   </data>
+  <data name="Add New Key" xml:space="preserve">
+    <value>เพิ่มคีย์ใหม่</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>ยกเลิก</value>
   </data>
@@ -35,6 +38,9 @@
   </data>
   <data name="Edit" xml:space="preserve">
     <value>แก้ไข</value>
+  </data>
+  <data name="Manage public SSH keys for server access." xml:space="preserve">
+    <value>จัดการคีย์ SSH สาธารณะสำหรับการเข้าถึงเซิร์ฟเวอร์</value>
   </data>
   <data name="Manage your public SSH keys for server access." xml:space="preserve">
     <value>จัดการกุญแจ SSH สาธารณะของคุณเพื่อการเข้าถึงเซิร์ฟเวอร์</value>

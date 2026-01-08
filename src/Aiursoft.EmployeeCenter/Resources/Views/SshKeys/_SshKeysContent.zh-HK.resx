@@ -21,6 +21,9 @@
       <data name="Actions" xml:space="preserve">
     <value>操作</value>
   </data>
+  <data name="Add New Key" xml:space="preserve">
+    <value>新增金鑰</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>取消</value>
   </data>
@@ -35,6 +38,9 @@
   </data>
   <data name="Edit" xml:space="preserve">
     <value>編輯</value>
+  </data>
+  <data name="Manage public SSH keys for server access." xml:space="preserve">
+    <value>管理公開 SSH 金鑰以存取伺服器</value>
   </data>
   <data name="Manage your public SSH keys for server access." xml:space="preserve">
     <value>管理您的公開 SSH 金鑰以存取伺服器。</value>

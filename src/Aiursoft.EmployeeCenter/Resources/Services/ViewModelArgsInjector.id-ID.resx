@@ -39,6 +39,12 @@
   <data name="Career" xml:space="preserve">
     <value>Karier</value>
   </data>
+  <data name="Certificate of Employeement" xml:space="preserve">
+    <value>Surat Keterangan Karyawan</value>
+  </data>
+  <data name="Certificate of Income" xml:space="preserve">
+    <value>Surat Keterangan Penghasilan</value>
+  </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Ubah Avatar</value>
   </data>
@@ -114,8 +120,14 @@
   <data name="Manage" xml:space="preserve">
     <value>Kelola</value>
   </data>
+  <data name="Manage Onboarding" xml:space="preserve">
+    <value>Kelola Onboarding</value>
+  </data>
   <data name="Manage Payrolls" xml:space="preserve">
     <value>Kelola Penggajian</value>
+  </data>
+  <data name="Manage Printing" xml:space="preserve">
+    <value>Kelola Pencetakan</value>
   </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>Kelola Berbagi</value>
@@ -149,6 +161,12 @@
   </data>
   <data name="Personal" xml:space="preserve">
     <value>Pribadi</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Cetak</value>
+  </data>
+  <data name="Print Certificate" xml:space="preserve">
+    <value>Cetak Sertifikat</value>
   </data>
   <data name="Profile" xml:space="preserve">
     <value>Profil</value>
@@ -185,6 +203,9 @@
   </data>
   <data name="System Info" xml:space="preserve">
     <value>Informasi Sistem</value>
+  </data>
+  <data name="Team Calendar" xml:space="preserve">
+    <value>Kalender Tim</value>
   </data>
   <data name="Template" xml:space="preserve">
     <value>Template</value>

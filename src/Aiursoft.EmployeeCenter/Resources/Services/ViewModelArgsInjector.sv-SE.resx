@@ -39,6 +39,12 @@
   <data name="Career" xml:space="preserve">
     <value>Karriär</value>
   </data>
+  <data name="Certificate of Employeement" xml:space="preserve">
+    <value>Certifikat över anställning</value>
+  </data>
+  <data name="Certificate of Income" xml:space="preserve">
+    <value>Intäktsbevis</value>
+  </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Byt avatar</value>
   </data>
@@ -114,8 +120,14 @@
   <data name="Manage" xml:space="preserve">
     <value>Hantera</value>
   </data>
+  <data name="Manage Onboarding" xml:space="preserve">
+    <value>Hantera påbörjande</value>
+  </data>
   <data name="Manage Payrolls" xml:space="preserve">
     <value>Hantera löner</value>
+  </data>
+  <data name="Manage Printing" xml:space="preserve">
+    <value>Hantera utskrift</value>
   </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>Hantera delningar</value>
@@ -149,6 +161,12 @@
   </data>
   <data name="Personal" xml:space="preserve">
     <value>Personligt</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Skriv ut</value>
+  </data>
+  <data name="Print Certificate" xml:space="preserve">
+    <value>Skriv ut certifikat</value>
   </data>
   <data name="Profile" xml:space="preserve">
     <value>Profil</value>
@@ -185,6 +203,9 @@
   </data>
   <data name="System Info" xml:space="preserve">
     <value>Systeminformation</value>
+  </data>
+  <data name="Team Calendar" xml:space="preserve">
+    <value>Teamkalender</value>
   </data>
   <data name="Template" xml:space="preserve">
     <value>Mall</value>

@@ -21,6 +21,9 @@
       <data name="Actions" xml:space="preserve">
     <value>Åtgärder</value>
   </data>
+  <data name="Add New Key" xml:space="preserve">
+    <value>Lägg till ny nyckel</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Avbryt</value>
   </data>
@@ -35,6 +38,9 @@
   </data>
   <data name="Edit" xml:space="preserve">
     <value>Redigera</value>
+  </data>
+  <data name="Manage public SSH keys for server access." xml:space="preserve">
+    <value>Hantera offentliga SSH-nycklar för serveråtkomst.</value>
   </data>
   <data name="Manage your public SSH keys for server access." xml:space="preserve">
     <value>Hantera dina offentliga SSH-nycklar för serveråtkomst.</value>

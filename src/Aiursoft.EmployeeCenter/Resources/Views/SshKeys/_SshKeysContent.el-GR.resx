@@ -21,6 +21,9 @@
       <data name="Actions" xml:space="preserve">
     <value>Ενέργειες</value>
   </data>
+  <data name="Add New Key" xml:space="preserve">
+    <value>Προσθήκη Νέου Κλειδιού</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Ακύρωση</value>
   </data>
@@ -35,6 +38,9 @@
   </data>
   <data name="Edit" xml:space="preserve">
     <value>Επεξεργασία</value>
+  </data>
+  <data name="Manage public SSH keys for server access." xml:space="preserve">
+    <value>Διαχείριση δημόσιων κλειδιών SSH για πρόσβαση σε διακομιστή.</value>
   </data>
   <data name="Manage your public SSH keys for server access." xml:space="preserve">
     <value>Διαχειριστείτε τα δημόσια κλειδιά SSH σας για πρόσβαση στον διακομιστή.</value>
