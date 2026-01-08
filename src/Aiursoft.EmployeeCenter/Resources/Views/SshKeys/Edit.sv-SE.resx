@@ -21,17 +21,17 @@
       <data name="Cancel" xml:space="preserve">
     <value>Avbryt</value>
   </data>
-  <data name="Save Changes" xml:space="preserve">
-    <value>Spara ändringar</value>
-  </data>
   <data name="Edit SSH Key" xml:space="preserve">
     <value>Redigera SSH-nyckel</value>
   </data>
-  <data name="Update SSH Key" xml:space="preserve">
-    <value>Uppdatera SSH-nyckel</value>
-  </data>
   <data name="Modify your public SSH key details." xml:space="preserve">
     <value>Ändra dina offentliga SSH-nyckeluppgifter.</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>Spara ändringar</value>
+  </data>
+  <data name="Update SSH Key" xml:space="preserve">
+    <value>Uppdatera SSH-nyckel</value>
   </data>
 
 </root>

@@ -51,8 +51,14 @@
   <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
     <value>提供完整 Docker 支援，實現簡化、一致且可靠的部署流程。</value>
   </data>
+  <data name="Completed at" xml:space="preserve">
+    <value>完成於</value>
+  </data>
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>完整說明文件</value>
+  </data>
+  <data name="Congratulations!" xml:space="preserve">
+    <value>恭喜！</value>
   </data>
   <data name="Dockerized for Deployment" xml:space="preserve">
     <value>已容器化以便部署</value>
@@ -63,11 +69,20 @@
   <data name="Easily switch between providers like SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
     <value>輕鬆切換不同供應商，例如 SQLite、MySQL、SQL Server 同用於測試嘅記憶體數據庫。</value>
   </data>
+  <data name="Employee Onboarding" xml:space="preserve">
+    <value>員工入职</value>
+  </data>
+  <data name="Expected duration" xml:space="preserve">
+    <value>預計時間</value>
+  </data>
   <data name="Features a built-in file management system with automatic avatar compression." xml:space="preserve">
     <value>內置檔案管理系統，具備自動頭像壓縮功能。</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>你好世界！</value>
+  </data>
+  <data name="I have completed" xml:space="preserve">
+    <value>我已完成</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>包含詳盡嘅說明文件同埋實用例子，助你快速上手。</value>
@@ -78,8 +93,17 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>多種數據庫支援</value>
   </data>
+  <data name="Open Task Link" xml:space="preserve">
+    <value>開啟任務連結</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>OpenID Connect 整合</value>
+  </data>
+  <data name="Please wait..." xml:space="preserve">
+    <value>請稍候...</value>
+  </data>
+  <data name="Processing..." xml:space="preserve">
+    <value>處理中...</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>基於角色的存取控制授權</value>
@@ -99,17 +123,32 @@
   <data name="Start a new project" xml:space="preserve">
     <value>開始新項目</value>
   </data>
+  <data name="Start Task" xml:space="preserve">
+    <value>開始任務</value>
+  </data>
+  <data name="Step" xml:space="preserve">
+    <value>步驟</value>
+  </data>
+  <data name="Task in progress..." xml:space="preserve">
+    <value>處理中...</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>導覽列會根據用戶角色和權限自動調整。</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>這是一個模板項目，我們在此展開探索之旅...</value>
   </data>
+  <data name="This task is pending." xml:space="preserve">
+    <value>此任務尚未完成。</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>歡迎</value>
   </data>
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>點解要使用 Aiursoft 模板？</value>
+  </data>
+  <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
+    <value>你已完成所有入职任務。你現已成為一名正式合格的員工！</value>
   </data>
 
 </root>

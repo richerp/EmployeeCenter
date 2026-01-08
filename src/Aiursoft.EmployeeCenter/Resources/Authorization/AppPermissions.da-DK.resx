@@ -33,6 +33,9 @@
   <data name="Allows assigning or removing roles for any user." xml:space="preserve">
     <value>Giver mulighed for at tildele eller fjerne roller for enhver bruger.</value>
   </data>
+  <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
+    <value>Tillader oprettelse og vedligeholdelse af påbegyndelsesopgave-mønstre til nye medarbejdere.</value>
+  </data>
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Giver mulighed for at oprette nye globale adgangskoder, der kan deles med andre.</value>
   </data>
@@ -107,6 +110,9 @@
   </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>Håndtér Ferie</value>
+  </data>
+  <data name="Manage Onboarding Tasks" xml:space="preserve">
+    <value>Håndtér påbegyndelsesopgaver</value>
   </data>
   <data name="Manage Payroll" xml:space="preserve">
     <value>Administrer Løn</value>

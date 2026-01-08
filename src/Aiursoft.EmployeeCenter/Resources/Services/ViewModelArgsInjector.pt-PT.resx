@@ -117,6 +117,9 @@
   <data name="Manage Shares" xml:space="preserve">
     <value>Gerir Partilhas</value>
   </data>
+  <data name="Manage Tasks" xml:space="preserve">
+    <value>Gerir Tarefas</value>
+  </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>Meu Saldo de Férias</value>
   </data>
@@ -125,6 +128,9 @@
   </data>
   <data name="My Report Line" xml:space="preserve">
     <value>Minha Linha de Relatório</value>
+  </data>
+  <data name="Onboarding" xml:space="preserve">
+    <value>Onboarding</value>
   </data>
   <data name="Password Details" xml:space="preserve">
     <value>Detalhes da Senha</value>

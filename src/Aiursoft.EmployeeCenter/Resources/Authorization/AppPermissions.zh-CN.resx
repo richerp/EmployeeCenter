@@ -33,6 +33,9 @@
   <data name="Allows assigning or removing roles for any user." xml:space="preserve">
     <value>允许为任何用户分配或移除角色。</value>
   </data>
+  <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
+    <value>允许创建和管理新员工入职任务模板。</value>
+  </data>
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>允许创建可以与他人共享的新全局密码。</value>
   </data>
@@ -107,6 +110,9 @@
   </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>请假管理</value>
+  </data>
+  <data name="Manage Onboarding Tasks" xml:space="preserve">
+    <value>管理入职任务</value>
   </data>
   <data name="Manage Payroll" xml:space="preserve">
     <value>管理薪资</value>

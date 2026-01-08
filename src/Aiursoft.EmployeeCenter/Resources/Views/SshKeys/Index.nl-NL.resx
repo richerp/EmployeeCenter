@@ -21,44 +21,50 @@
       <data name="Actions" xml:space="preserve">
     <value>Acties</value>
   </data>
-  <data name="Public SSH Keys" xml:space="preserve">
-    <value>Openbare SSH-sleutels</value>
-  </data>
-  <data name="Public Key" xml:space="preserve">
-    <value>Openbare Sleutel</value>
-  </data>
-  <data name="Name" xml:space="preserve">
-    <value>Naam</value>
-  </data>
-  <data name="SSH Keys for" xml:space="preserve">
-    <value>SSH-sleutels voor</value>
-  </data>
-  <data name="Created Time" xml:space="preserve">
-    <value>Aanmaakdatum</value>
-  </data>
   <data name="Add New Key" xml:space="preserve">
     <value>Nieuwe sleutel toevoegen</value>
   </data>
-  <data name="Manage your public SSH keys for server access." xml:space="preserve">
-    <value>Beheer uw openbare SSH-sleutels voor servertoegang.</value>
+  <data name="Back to Settings" xml:space="preserve">
+    <value>Terug naar Instellingen</value>
   </data>
-  <data name="Edit" xml:space="preserve">
-    <value>Bewerken</value>
-  </data>
-  <data name="Delete" xml:space="preserve">
-    <value>Verwijderen</value>
-  </data>
-  <data name="Confirm Delete" xml:space="preserve">
-    <value>Verwijderen bevestigen</value>
+  <data name="Back to User Info" xml:space="preserve">
+    <value>Terug naar Gebruikersinformatie</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Annuleren</value>
   </data>
+  <data name="Confirm Delete" xml:space="preserve">
+    <value>Verwijderen bevestigen</value>
+  </data>
+  <data name="Created Time" xml:space="preserve">
+    <value>Aanmaakdatum</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Verwijderen</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Bewerken</value>
+  </data>
+  <data name="Manage your public SSH keys for server access." xml:space="preserve">
+    <value>Beheer uw openbare SSH-sleutels voor servertoegang.</value>
+  </data>
+  <data name="Manage your SSH Key" xml:space="preserve">
+    <value>Uw SSH-sleutel beheren</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Naam</value>
+  </data>
   <data name="No SSH keys found." xml:space="preserve">
     <value>Geen SSH-sleutels gevonden.</value>
   </data>
-  <data name="Back to Settings" xml:space="preserve">
-    <value>Terug naar Instellingen</value>
+  <data name="Public Key" xml:space="preserve">
+    <value>Openbare Sleutel</value>
+  </data>
+  <data name="Public SSH Keys" xml:space="preserve">
+    <value>Openbare SSH-sleutels</value>
+  </data>
+  <data name="SSH Keys for" xml:space="preserve">
+    <value>SSH-sleutels voor</value>
   </data>
 
 </root>

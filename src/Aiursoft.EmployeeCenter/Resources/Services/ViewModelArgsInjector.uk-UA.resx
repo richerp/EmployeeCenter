@@ -117,6 +117,9 @@
   <data name="Manage Shares" xml:space="preserve">
     <value>Керування спільним доступом</value>
   </data>
+  <data name="Manage Tasks" xml:space="preserve">
+    <value>Керування завданнями</value>
+  </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>Мій залишок відпустки</value>
   </data>
@@ -125,6 +128,9 @@
   </data>
   <data name="My Report Line" xml:space="preserve">
     <value>Моя лінія звітів</value>
+  </data>
+  <data name="Onboarding" xml:space="preserve">
+    <value>Вступ</value>
   </data>
   <data name="Password Details" xml:space="preserve">
     <value>Деталі пароля</value>

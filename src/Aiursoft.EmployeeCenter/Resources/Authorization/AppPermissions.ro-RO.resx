@@ -33,6 +33,9 @@
   <data name="Allows assigning or removing roles for any user." xml:space="preserve">
     <value>Permite atribuirea sau eliminarea rolurilor pentru orice utilizator.</value>
   </data>
+  <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
+    <value>Permite crearea și gestionarea șablonelor de sarcini de integrare pentru noii angajați.</value>
+  </data>
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Permite crearea de parole globale noi care pot fi partajate cu alții.</value>
   </data>
@@ -107,6 +110,9 @@
   </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>Gestionează concediile</value>
+  </data>
+  <data name="Manage Onboarding Tasks" xml:space="preserve">
+    <value>Gestionează sarcinile de integrare</value>
   </data>
   <data name="Manage Payroll" xml:space="preserve">
     <value>Gestionare Salarii</value>

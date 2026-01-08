@@ -51,8 +51,14 @@
   <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
     <value>Повністю підтримує Docker для спрощених, стабільних та надійних розгортань.</value>
   </data>
+  <data name="Completed at" xml:space="preserve">
+    <value>Виконано о</value>
+  </data>
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>Документація</value>
+  </data>
+  <data name="Congratulations!" xml:space="preserve">
+    <value>Вітаємо!</value>
   </data>
   <data name="Dockerized for Deployment" xml:space="preserve">
     <value>Підготовлено для розгортання в Docker</value>
@@ -63,11 +69,20 @@
   <data name="Easily switch between providers like SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
     <value>Легко перемикайтеся між провайдерами, такими як SQLite, MySQL, SQL Server, та оперативною базою даних у пам&apos;яті для тестування.</value>
   </data>
+  <data name="Employee Onboarding" xml:space="preserve">
+    <value>Вступ робітника</value>
+  </data>
+  <data name="Expected duration" xml:space="preserve">
+    <value>Очікуваний час тривалості</value>
+  </data>
   <data name="Features a built-in file management system with automatic avatar compression." xml:space="preserve">
     <value>Містить вбудовану систему керування файлами з автоматичним стисненням аватарів.</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>Привіт, Світе!</value>
+  </data>
+  <data name="I have completed" xml:space="preserve">
+    <value>Я завершив</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>Містить обширну документацію та практичні приклади, щоб ви могли швидко розпочати роботу.</value>
@@ -78,8 +93,17 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>Підтримка кількох баз даних</value>
   </data>
+  <data name="Open Task Link" xml:space="preserve">
+    <value>Відкрити посилання на завдання</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>Інтеграція OpenID Connect</value>
+  </data>
+  <data name="Please wait..." xml:space="preserve">
+    <value>Заочікуйте, будь ласка...</value>
+  </data>
+  <data name="Processing..." xml:space="preserve">
+    <value>Обробка...</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>Авторизація на основі ролей (RBAC)</value>
@@ -99,17 +123,32 @@
   <data name="Start a new project" xml:space="preserve">
     <value>Розпочати новий проєкт</value>
   </data>
+  <data name="Start Task" xml:space="preserve">
+    <value>Почати завдання</value>
+  </data>
+  <data name="Step" xml:space="preserve">
+    <value>Крок</value>
+  </data>
+  <data name="Task in progress..." xml:space="preserve">
+    <value>Завдання в процесі виконання...</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>Панель навігації автоматично адаптується відповідно до ролей та дозволів користувача.</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>Це шаблонний проект, з якого ми розпочинаємо нашу подорож...</value>
   </data>
+  <data name="This task is pending." xml:space="preserve">
+    <value>Це завдання очікує виконання.</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>Ласкаво просимо</value>
   </data>
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>Чому варто використовувати шаблон Aiursoft?</value>
+  </data>
+  <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
+    <value>Ви завершили всі завдання онбордингу. Ви тепер повністю кваліфікований офіційний співробітник!</value>
   </data>
 
 </root>

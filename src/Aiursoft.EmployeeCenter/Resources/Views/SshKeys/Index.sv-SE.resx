@@ -21,29 +21,14 @@
       <data name="Actions" xml:space="preserve">
     <value>Åtgärder</value>
   </data>
-  <data name="Public Key" xml:space="preserve">
-    <value>Offentlig nyckel</value>
-  </data>
-  <data name="Public SSH Keys" xml:space="preserve">
-    <value>Offentliga SSH-nycklar</value>
-  </data>
-  <data name="Created Time" xml:space="preserve">
-    <value>Skapad tid</value>
-  </data>
-  <data name="Name" xml:space="preserve">
-    <value>Namn</value>
-  </data>
   <data name="Add New Key" xml:space="preserve">
     <value>Lägg till ny nyckel</value>
   </data>
-  <data name="Manage your public SSH keys for server access." xml:space="preserve">
-    <value>Hantera dina publika SSH-nycklar för serveråtkomst.</value>
+  <data name="Back to Settings" xml:space="preserve">
+    <value>Tillbaka till inställningar</value>
   </data>
-  <data name="SSH Keys for" xml:space="preserve">
-    <value>SSH-nycklar för</value>
-  </data>
-  <data name="Edit" xml:space="preserve">
-    <value>Redigera</value>
+  <data name="Back to User Info" xml:space="preserve">
+    <value>Tillbaka till användarinformation</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Avbryt</value>
@@ -51,14 +36,35 @@
   <data name="Confirm Delete" xml:space="preserve">
     <value>Bekräfta radering</value>
   </data>
+  <data name="Created Time" xml:space="preserve">
+    <value>Skapad tid</value>
+  </data>
   <data name="Delete" xml:space="preserve">
     <value>Radera</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Redigera</value>
+  </data>
+  <data name="Manage your public SSH keys for server access." xml:space="preserve">
+    <value>Hantera dina publika SSH-nycklar för serveråtkomst.</value>
+  </data>
+  <data name="Manage your SSH Key" xml:space="preserve">
+    <value>Hantera din SSH-nyckel</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Namn</value>
   </data>
   <data name="No SSH keys found." xml:space="preserve">
     <value>Inga SSH-nycklar hittades.</value>
   </data>
-  <data name="Back to Settings" xml:space="preserve">
-    <value>Tillbaka till inställningar</value>
+  <data name="Public Key" xml:space="preserve">
+    <value>Offentlig nyckel</value>
+  </data>
+  <data name="Public SSH Keys" xml:space="preserve">
+    <value>Offentliga SSH-nycklar</value>
+  </data>
+  <data name="SSH Keys for" xml:space="preserve">
+    <value>SSH-nycklar för</value>
   </data>
 
 </root>

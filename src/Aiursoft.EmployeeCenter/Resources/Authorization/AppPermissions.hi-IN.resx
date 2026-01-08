@@ -33,6 +33,9 @@
   <data name="Allows assigning or removing roles for any user." xml:space="preserve">
     <value>किसी भी उपयोगकर्ता को भूमिकाएँ सौंपने या हटाने की अनुमति देता है।</value>
   </data>
+  <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
+    <value>नए कर्मचारियों के लिए ओनबोर्डिंग कार्य टेम्पलेट बनाने और प्रबंधित करने की अनुमति देता है।</value>
+  </data>
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>दूसरों के साथ साझा किए जा सकने वाले नए वैश्विक पासवर्ड बनाने की अनुमति देता है।</value>
   </data>
@@ -107,6 +110,9 @@
   </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>छुट्टी प्रबंधित करें</value>
+  </data>
+  <data name="Manage Onboarding Tasks" xml:space="preserve">
+    <value>नए कर्मचारियों के स्वागत के कार्यों का प्रबंधन करें</value>
   </data>
   <data name="Manage Payroll" xml:space="preserve">
     <value>पेरोल प्रबंधित करें</value>

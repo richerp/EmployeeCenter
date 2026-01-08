@@ -51,8 +51,14 @@
   <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
     <value>Dilengkapi dengan dukungan Docker penuh untuk penyebaran yang disederhanakan, konsisten, dan andal.</value>
   </data>
+  <data name="Completed at" xml:space="preserve">
+    <value>Selesai pada</value>
+  </data>
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>Dokumentasi Komprehensif</value>
+  </data>
+  <data name="Congratulations!" xml:space="preserve">
+    <value>Selamat!</value>
   </data>
   <data name="Dockerized for Deployment" xml:space="preserve">
     <value>Terdockerisasi untuk Deployment</value>
@@ -63,11 +69,20 @@
   <data name="Easily switch between providers like SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
     <value>Dengan mudah beralih di antara penyedia seperti SQLite, MySQL, SQL Server, dan basis data dalam memori untuk pengujian.</value>
   </data>
+  <data name="Employee Onboarding" xml:space="preserve">
+    <value>Onboarding Karyawan</value>
+  </data>
+  <data name="Expected duration" xml:space="preserve">
+    <value>Durasi yang diharapkan</value>
+  </data>
   <data name="Features a built-in file management system with automatic avatar compression." xml:space="preserve">
     <value>Fitur sistem manajemen file bawaan dengan kompresi avatar otomatis.</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>Halo Dunia!</value>
+  </data>
+  <data name="I have completed" xml:space="preserve">
+    <value>Saya telah menyelesaikan</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>Mencakup dokumentasi yang luas dan contoh-contoh praktis untuk memudahkan Anda memulai dengan cepat.</value>
@@ -78,8 +93,17 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>Dukungan Banyak Basis Data</value>
   </data>
+  <data name="Open Task Link" xml:space="preserve">
+    <value>Buka Tautan Tugas</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>Integrasi OpenID Connect</value>
+  </data>
+  <data name="Please wait..." xml:space="preserve">
+    <value>Harap tunggu...</value>
+  </data>
+  <data name="Processing..." xml:space="preserve">
+    <value>Memproses...</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>Otorisasi RBAC</value>
@@ -99,17 +123,32 @@
   <data name="Start a new project" xml:space="preserve">
     <value>Mulai proyek baru</value>
   </data>
+  <data name="Start Task" xml:space="preserve">
+    <value>Mulai Tugas</value>
+  </data>
+  <data name="Step" xml:space="preserve">
+    <value>Langkah</value>
+  </data>
+  <data name="Task in progress..." xml:space="preserve">
+    <value>Tugas sedang berlangsung...</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>Bilah navigasi secara otomatis menyesuaikan berdasarkan peran dan izin pengguna.</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>Ini adalah proyek templat, di mana kita memulai perjalanan...</value>
   </data>
+  <data name="This task is pending." xml:space="preserve">
+    <value>Tugas ini tertunda.</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>Selamat datang</value>
   </data>
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>Menggunakan Template Aiursoft?</value>
+  </data>
+  <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
+    <value>Anda telah menyelesaikan semua tugas onboarding. Anda sekarang adalah karyawan resmi yang sepenuhnya memenuhi syarat!</value>
   </data>
 
 </root>

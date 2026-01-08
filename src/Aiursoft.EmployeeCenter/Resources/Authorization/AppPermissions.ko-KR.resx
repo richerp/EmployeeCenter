@@ -33,6 +33,9 @@
   <data name="Allows assigning or removing roles for any user." xml:space="preserve">
     <value>모든 사용자에게 역할을 할당하거나 제거할 수 있습니다.</value>
   </data>
+  <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
+    <value>신입 직원을 위한 온보딩 작업 템플릿 생성 및 관리를 허용합니다.</value>
+  </data>
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>다른 사용자와 공유할 수 있는 새로운 전역 비밀번호를 생성할 수 있습니다.</value>
   </data>
@@ -107,6 +110,9 @@
   </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>휴가 관리</value>
+  </data>
+  <data name="Manage Onboarding Tasks" xml:space="preserve">
+    <value>온보딩 작업 관리</value>
   </data>
   <data name="Manage Payroll" xml:space="preserve">
     <value>급여 관리</value>

@@ -51,8 +51,14 @@
   <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
     <value>Bénéficie d&apos;une prise en charge complète de Docker pour des déploiements simplifiés, cohérents et fiables.</value>
   </data>
+  <data name="Completed at" xml:space="preserve">
+    <value>Terminé à</value>
+  </data>
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>Documentation complète</value>
+  </data>
+  <data name="Congratulations!" xml:space="preserve">
+    <value>Félicitations !</value>
   </data>
   <data name="Dockerized for Deployment" xml:space="preserve">
     <value>Conteneurisé pour le déploiement</value>
@@ -63,11 +69,20 @@
   <data name="Easily switch between providers like SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
     <value>Basculez facilement entre différents fournisseurs tels que SQLite, MySQL, SQL Server et une base de données en mémoire pour les tests.</value>
   </data>
+  <data name="Employee Onboarding" xml:space="preserve">
+    <value>Intégration des employés</value>
+  </data>
+  <data name="Expected duration" xml:space="preserve">
+    <value>Durée prévue</value>
+  </data>
   <data name="Features a built-in file management system with automatic avatar compression." xml:space="preserve">
     <value>Intègre un système de gestion de fichiers intégré avec compression automatique des avatars.</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>Bonjour le monde !</value>
+  </data>
+  <data name="I have completed" xml:space="preserve">
+    <value>J&apos;ai terminé</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>Comprend une documentation exhaustive et des exemples pratiques pour vous permettre de démarrer rapidement.</value>
@@ -78,8 +93,17 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>Prise en charge de plusieurs bases de données</value>
   </data>
+  <data name="Open Task Link" xml:space="preserve">
+    <value>Ouvrir le lien de la tâche</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>Intégration OpenID Connect</value>
+  </data>
+  <data name="Please wait..." xml:space="preserve">
+    <value>Veuillez patienter...</value>
+  </data>
+  <data name="Processing..." xml:space="preserve">
+    <value>Traitement...</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>Autorisation RBAC</value>
@@ -99,17 +123,32 @@
   <data name="Start a new project" xml:space="preserve">
     <value>Démarrer un nouveau projet</value>
   </data>
+  <data name="Start Task" xml:space="preserve">
+    <value>Démarrer la tâche</value>
+  </data>
+  <data name="Step" xml:space="preserve">
+    <value>Étape</value>
+  </data>
+  <data name="Task in progress..." xml:space="preserve">
+    <value>Tâche en cours...</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>La barre de navigation s&apos;ajuste automatiquement en fonction des rôles et des autorisations de l&apos;utilisateur.</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>Ceci est un projet modèle, où nous commençons le voyage...</value>
   </data>
+  <data name="This task is pending." xml:space="preserve">
+    <value>Cette tâche est en attente.</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>Bienvenue</value>
   </data>
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>Pourquoi utiliser le modèle Aiursoft ?</value>
+  </data>
+  <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
+    <value>Félicitations ! Vous avez terminé toutes les tâches d&apos;inscription. Vous êtes désormais un employé officiel entièrement qualifié !</value>
   </data>
 
 </root>

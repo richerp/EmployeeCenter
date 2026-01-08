@@ -33,6 +33,9 @@
   <data name="Allows assigning or removing roles for any user." xml:space="preserve">
     <value>Permet d&apos;attribuer ou de retirer des rôles à tout utilisateur.</value>
   </data>
+  <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
+    <value>Permet de créer et de gérer les modèles de tâches d&apos;intégration pour les nouveaux employés.</value>
+  </data>
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Permet de créer de nouveaux mots de passe globaux pouvant être partagés avec d&apos;autres.</value>
   </data>
@@ -107,6 +110,9 @@
   </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>Gérer les congés</value>
+  </data>
+  <data name="Manage Onboarding Tasks" xml:space="preserve">
+    <value>Gérer les tâches d&apos;intégration</value>
   </data>
   <data name="Manage Payroll" xml:space="preserve">
     <value>Gérer la paie</value>

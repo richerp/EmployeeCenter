@@ -51,8 +51,14 @@
   <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
     <value>पूर्ण Docker समर्थन के साथ आता है, जो सरल, सुसंगत और विश्वसनीय डेप्लॉयमेंट के लिए है।</value>
   </data>
+  <data name="Completed at" xml:space="preserve">
+    <value>पूरा किया गया</value>
+  </data>
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>विस्तृत दस्तावेज़ीकरण</value>
+  </data>
+  <data name="Congratulations!" xml:space="preserve">
+    <value>बधाई हो!</value>
   </data>
   <data name="Dockerized for Deployment" xml:space="preserve">
     <value>डेप्लॉयमेंट के लिए डॉकरकृत</value>
@@ -63,11 +69,20 @@
   <data name="Easily switch between providers like SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
     <value>SQLite, MySQL, SQL Server और परीक्षण के लिए एक इन-मेमोरी डेटाबेस जैसे प्रदाताओं के बीच आसानी से स्विच करें।</value>
   </data>
+  <data name="Employee Onboarding" xml:space="preserve">
+    <value>कर्मचारी स्वागत</value>
+  </data>
+  <data name="Expected duration" xml:space="preserve">
+    <value>अपेक्षित अवधि</value>
+  </data>
   <data name="Features a built-in file management system with automatic avatar compression." xml:space="preserve">
     <value>स्वचालित अवतार संपीड़न के साथ एक अंतर्निहित फ़ाइल प्रबंधन प्रणाली की सुविधा प्रदान करता है।</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>नमस्ते दुनिया!</value>
+  </data>
+  <data name="I have completed" xml:space="preserve">
+    <value>मैंने पूरा कर दिया है</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>विस्तृत दस्तावेज़ीकरण और व्यावहारिक उदाहरण शामिल हैं ताकि आप जल्दी से शुरुआत कर सकें।</value>
@@ -78,8 +93,17 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>एकाधिक डेटाबेस समर्थन</value>
   </data>
+  <data name="Open Task Link" xml:space="preserve">
+    <value>कार्य लिंक खोलें</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>ओपनआईडी कनेक्ट एकीकरण</value>
+  </data>
+  <data name="Please wait..." xml:space="preserve">
+    <value>कृपया प्रतीक्षा करें...</value>
+  </data>
+  <data name="Processing..." xml:space="preserve">
+    <value>प्रोसेसिंग...</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>आरबीएसी प्राधिकरण</value>
@@ -99,17 +123,32 @@
   <data name="Start a new project" xml:space="preserve">
     <value>नया प्रोजेक्ट शुरू करें</value>
   </data>
+  <data name="Start Task" xml:space="preserve">
+    <value>कार्य शुरू करें</value>
+  </data>
+  <data name="Step" xml:space="preserve">
+    <value>चरण</value>
+  </data>
+  <data name="Task in progress..." xml:space="preserve">
+    <value>कार्य प्रगति में...</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>नेविगेशन बार उपयोगकर्ता भूमिकाओं और अनुमतियों के आधार पर स्वचालित रूप से समायोजित होता है।</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>यह एक टेम्पलेट प्रोजेक्ट है, जहाँ से हम अपनी यात्रा शुरू करते हैं...</value>
   </data>
+  <data name="This task is pending." xml:space="preserve">
+    <value>यह कार्य लंबित है।</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>स्वागत है</value>
   </data>
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>Aiursoft टेम्पलेट क्यों उपयोग करें?</value>
+  </data>
+  <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
+    <value>आपने सभी ओनबोर्डिंग कार्य पूरा कर लिए हैं। अब आप एक पूर्ण योग्य आधिकारिक कर्मचारी हैं!</value>
   </data>
 
 </root>

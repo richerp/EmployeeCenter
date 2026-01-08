@@ -51,8 +51,14 @@
   <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
     <value>完全なDockerサポートにより、簡素化された一貫性のある信頼性の高いデプロイを実現します。</value>
   </data>
+  <data name="Completed at" xml:space="preserve">
+    <value>完了時刻</value>
+  </data>
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>包括的なドキュメント</value>
+  </data>
+  <data name="Congratulations!" xml:space="preserve">
+    <value>おめでとうございます！</value>
   </data>
   <data name="Dockerized for Deployment" xml:space="preserve">
     <value>Docker化によるデプロイ</value>
@@ -63,11 +69,20 @@
   <data name="Easily switch between providers like SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
     <value>SQLite、MySQL、SQL Server、およびテスト用のインメモリデータベースなどのプロバイダーを簡単に切り替えられます。</value>
   </data>
+  <data name="Employee Onboarding" xml:space="preserve">
+    <value>従業員オンボーディング</value>
+  </data>
+  <data name="Expected duration" xml:space="preserve">
+    <value>予想所要時間</value>
+  </data>
   <data name="Features a built-in file management system with automatic avatar compression." xml:space="preserve">
     <value>アバターの自動圧縮機能を備えた組み込みファイル管理システムを搭載しています。</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>こんにちは、世界！</value>
+  </data>
+  <data name="I have completed" xml:space="preserve">
+    <value>完了しました</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>豊富なドキュメントと実用的なサンプルが含まれており、素早く使い始めることができます。</value>
@@ -78,8 +93,17 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>複数データベースサポート</value>
   </data>
+  <data name="Open Task Link" xml:space="preserve">
+    <value>タスクリンクを開く</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>OpenID Connect連携</value>
+  </data>
+  <data name="Please wait..." xml:space="preserve">
+    <value>しばらくお待ちください...</value>
+  </data>
+  <data name="Processing..." xml:space="preserve">
+    <value>処理中...</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>RBAC認可</value>
@@ -99,17 +123,32 @@
   <data name="Start a new project" xml:space="preserve">
     <value>新規プロジェクトを開始</value>
   </data>
+  <data name="Start Task" xml:space="preserve">
+    <value>タスクを開始</value>
+  </data>
+  <data name="Step" xml:space="preserve">
+    <value>ステップ</value>
+  </data>
+  <data name="Task in progress..." xml:space="preserve">
+    <value>作業中...</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>ナビゲーションバーはユーザーの役割と権限に基づいて自動的に調整されます。</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>これはテンプレートプロジェクトです。ここから航海が始まります...</value>
   </data>
+  <data name="This task is pending." xml:space="preserve">
+    <value>このタスクは保留中です。</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>ようこそ</value>
   </data>
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>Aiursoftテンプレートを使用する理由</value>
+  </data>
+  <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
+    <value>すべてのオンボーディングタスクを完了しました。あなたは now、完全に資格を備えた公式従業員です！</value>
   </data>
 
 </root>

@@ -51,8 +51,14 @@
   <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
     <value>Basitleştirilmiş, tutarlı ve güvenilir dağıtımlar için tam Docker desteği ile birlikte gelir.</value>
   </data>
+  <data name="Completed at" xml:space="preserve">
+    <value>Tamamlandı zamanı</value>
+  </data>
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>Kapsamlı Dokümantasyon</value>
+  </data>
+  <data name="Congratulations!" xml:space="preserve">
+    <value>Tebrikler!</value>
   </data>
   <data name="Dockerized for Deployment" xml:space="preserve">
     <value>Dağıtım İçin Dockerize Edildi</value>
@@ -63,11 +69,20 @@
   <data name="Easily switch between providers like SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
     <value>SQLite, MySQL, SQL Server gibi sağlayıcılar ile testler için kullanılan bellek içi veritabanı arasında kolayca geçiş yapın.</value>
   </data>
+  <data name="Employee Onboarding" xml:space="preserve">
+    <value>Çalışan Katılımı</value>
+  </data>
+  <data name="Expected duration" xml:space="preserve">
+    <value>Beklenen süre</value>
+  </data>
   <data name="Features a built-in file management system with automatic avatar compression." xml:space="preserve">
     <value>Otomatik avatar sıkıştırmalı yerleşik bir dosya yönetim sistemi içerir.</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>Merhaba Dünya!</value>
+  </data>
+  <data name="I have completed" xml:space="preserve">
+    <value>Tamamladım</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>Kapsamlı belgeler ve hızlı bir şekilde başlamanızı sağlayacak pratik örnekler içerir.</value>
@@ -78,8 +93,17 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>Çoklu Veritabanı Desteği</value>
   </data>
+  <data name="Open Task Link" xml:space="preserve">
+    <value>Görev Bağlantısını Aç</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>OpenID Connect Entegrasyonu</value>
+  </data>
+  <data name="Please wait..." xml:space="preserve">
+    <value>Lütfen bekleyin...</value>
+  </data>
+  <data name="Processing..." xml:space="preserve">
+    <value>İşleniyor...</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>RBAC Yetkilendirmesi</value>
@@ -99,17 +123,32 @@
   <data name="Start a new project" xml:space="preserve">
     <value>Yeni bir proje başlat</value>
   </data>
+  <data name="Start Task" xml:space="preserve">
+    <value>Görevi Başlat</value>
+  </data>
+  <data name="Step" xml:space="preserve">
+    <value>Adım</value>
+  </data>
+  <data name="Task in progress..." xml:space="preserve">
+    <value>Görev devam ediyor...</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>Gezinme çubuğu, kullanıcı rollerine ve izinlerine göre otomatik olarak ayarlanır.</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>Bu bir şablon projedir, yolculuğa buradan başlıyoruz...</value>
   </data>
+  <data name="This task is pending." xml:space="preserve">
+    <value>Bu görev bekleniyor.</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>Hoş Geldiniz</value>
   </data>
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>Neden Aiursoft Template Kullanmalısınız?</value>
+  </data>
+  <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
+    <value>Tüm onboarding görevlerini tamamladınız. Artık tam yetkili resmi bir çalışanınız!</value>
   </data>
 
 </root>
