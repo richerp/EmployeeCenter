@@ -85,6 +85,7 @@ public class ViewModelArgsInjector(
         _ = localizer["Approval Center"];
         _ = localizer["Onboarding"];
         _ = localizer["Manage Tasks"];
+        _ = localizer["Manage Onboarding"];
     }
 
     public void InjectSimple(
