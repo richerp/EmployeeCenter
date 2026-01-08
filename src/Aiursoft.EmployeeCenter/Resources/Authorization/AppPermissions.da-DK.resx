@@ -93,11 +93,11 @@
   <data name="Delete Users" xml:space="preserve">
     <value>Slet brugere</value>
   </data>
-  <data name="Edit Role Information" xml:space="preserve">
-    <value>Rediger rolleinformation</value>
-  </data>
   <data name="Edit and View Details of Users" xml:space="preserve">
     <value>Rediger brugeroplysninger</value>
+  </data>
+  <data name="Edit Role Information" xml:space="preserve">
+    <value>Rediger rolleinformation</value>
   </data>
   <data name="Grants permission to create new roles." xml:space="preserve">
     <value>Giver tilladelse til at oprette nye roller.</value>

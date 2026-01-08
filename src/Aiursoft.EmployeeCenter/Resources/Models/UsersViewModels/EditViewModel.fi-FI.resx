@@ -39,6 +39,9 @@
   <data name="Base Salary" xml:space="preserve">
     <value>Peruspalkka</value>
   </data>
+  <data name="Creation Time" xml:space="preserve">
+    <value>Luontiaika</value>
+  </data>
   <data name="Email Address" xml:space="preserve">
     <value>Sähköpostiosoite</value>
   </data>

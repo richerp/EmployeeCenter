@@ -36,6 +36,9 @@
   <data name="Approval Center" xml:space="preserve">
     <value>Pusat Persetujuan</value>
   </data>
+  <data name="Career" xml:space="preserve">
+    <value>Karier</value>
+  </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Ubah Avatar</value>
   </data>
@@ -119,6 +122,9 @@
   </data>
   <data name="Manage Tasks" xml:space="preserve">
     <value>Kelola Tugas</value>
+  </data>
+  <data name="Missions" xml:space="preserve">
+    <value>Misi</value>
   </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>Saldo Cuti Saya</value>

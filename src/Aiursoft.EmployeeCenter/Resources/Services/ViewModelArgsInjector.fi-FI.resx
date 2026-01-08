@@ -36,6 +36,9 @@
   <data name="Approval Center" xml:space="preserve">
     <value>Hyväksyntäkeskus</value>
   </data>
+  <data name="Career" xml:space="preserve">
+    <value>Urheilu</value>
+  </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Vaihda avataria</value>
   </data>
@@ -119,6 +122,9 @@
   </data>
   <data name="Manage Tasks" xml:space="preserve">
     <value>Hallinnoi tehtäviä</value>
+  </data>
+  <data name="Missions" xml:space="preserve">
+    <value>Tehtävät</value>
   </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>Oma lomapitoisuuteni</value>

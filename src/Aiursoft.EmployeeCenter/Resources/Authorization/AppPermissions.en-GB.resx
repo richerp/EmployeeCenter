@@ -90,11 +90,11 @@
   <data name="Delete Users" xml:space="preserve">
     <value>Delete Users</value>
   </data>
-  <data name="Edit Role Information" xml:space="preserve">
-    <value>Edit Role Information</value>
-  </data>
   <data name="Edit and View Details of Users" xml:space="preserve">
     <value>Edit and View Details of Users</value>
+  </data>
+  <data name="Edit Role Information" xml:space="preserve">
+    <value>Edit Role Information</value>
   </data>
   <data name="Grants permission to create new roles." xml:space="preserve">
     <value>Grants permission to create new roles.</value>

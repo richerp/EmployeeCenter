@@ -48,6 +48,9 @@
   <data name="Create User" xml:space="preserve">
     <value>ユーザーを作成</value>
   </data>
+  <data name="Creation Time" xml:space="preserve">
+    <value>作成日時</value>
+  </data>
   <data name="Display Name" xml:space="preserve">
     <value>表示名</value>
   </data>

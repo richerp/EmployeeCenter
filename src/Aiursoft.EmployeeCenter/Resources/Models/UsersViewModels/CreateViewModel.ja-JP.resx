@@ -36,6 +36,9 @@
   <data name="Base Salary" xml:space="preserve">
     <value>基本給</value>
   </data>
+  <data name="Creation Time" xml:space="preserve">
+    <value>作成時間</value>
+  </data>
   <data name="Email Address" xml:space="preserve">
     <value>メールアドレス</value>
   </data>

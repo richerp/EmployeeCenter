@@ -93,11 +93,11 @@
   <data name="Delete Users" xml:space="preserve">
     <value>사용자 삭제</value>
   </data>
-  <data name="Edit Role Information" xml:space="preserve">
-    <value>역할 정보 편집</value>
-  </data>
   <data name="Edit and View Details of Users" xml:space="preserve">
     <value>사용자 정보 편집</value>
+  </data>
+  <data name="Edit Role Information" xml:space="preserve">
+    <value>역할 정보 편집</value>
   </data>
   <data name="Grants permission to create new roles." xml:space="preserve">
     <value>새로운 역할을 생성할 수 있는 권한을 부여합니다.</value>

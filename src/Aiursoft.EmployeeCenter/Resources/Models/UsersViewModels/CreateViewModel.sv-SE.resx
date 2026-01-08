@@ -36,6 +36,9 @@
   <data name="Base Salary" xml:space="preserve">
     <value>Grundlön</value>
   </data>
+  <data name="Creation Time" xml:space="preserve">
+    <value>Skapandedatum</value>
+  </data>
   <data name="Email Address" xml:space="preserve">
     <value>E-postadress</value>
   </data>

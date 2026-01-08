@@ -93,11 +93,11 @@
   <data name="Delete Users" xml:space="preserve">
     <value>उपयोगकर्ता हटाएं</value>
   </data>
-  <data name="Edit Role Information" xml:space="preserve">
-    <value>भूमिका की जानकारी संपादित करें</value>
-  </data>
   <data name="Edit and View Details of Users" xml:space="preserve">
     <value>उपयोगकर्ता जानकारी संपादित करें</value>
+  </data>
+  <data name="Edit Role Information" xml:space="preserve">
+    <value>भूमिका की जानकारी संपादित करें</value>
   </data>
   <data name="Grants permission to create new roles." xml:space="preserve">
     <value>नए भूमिकाएँ बनाने की अनुमति प्रदान करता है।</value>

@@ -93,11 +93,11 @@
   <data name="Delete Users" xml:space="preserve">
     <value>ユーザーの削除</value>
   </data>
-  <data name="Edit Role Information" xml:space="preserve">
-    <value>ロール情報の編集</value>
-  </data>
   <data name="Edit and View Details of Users" xml:space="preserve">
     <value>ユーザー情報の編集</value>
+  </data>
+  <data name="Edit Role Information" xml:space="preserve">
+    <value>ロール情報の編集</value>
   </data>
   <data name="Grants permission to create new roles." xml:space="preserve">
     <value>新しいロールを作成する権限を付与します。</value>

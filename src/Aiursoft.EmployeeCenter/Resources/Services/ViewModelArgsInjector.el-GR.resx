@@ -36,6 +36,9 @@
   <data name="Approval Center" xml:space="preserve">
     <value>Κέντρο Εγκρίσεων</value>
   </data>
+  <data name="Career" xml:space="preserve">
+    <value>Καριέρα</value>
+  </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Αλλαγή Avatar</value>
   </data>
@@ -119,6 +122,9 @@
   </data>
   <data name="Manage Tasks" xml:space="preserve">
     <value>Διαχείριση Εργασιών</value>
+  </data>
+  <data name="Missions" xml:space="preserve">
+    <value>Μισιόν</value>
   </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>Το Υπόλοιπο Αδείας Μου</value>

@@ -39,6 +39,9 @@
   <data name="Approval Center" xml:space="preserve">
     <value>審批中心</value>
   </data>
+  <data name="Career" xml:space="preserve">
+    <value>職業</value>
+  </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>更改頭像</value>
   </data>
@@ -122,6 +125,9 @@
   </data>
   <data name="Manage Tasks" xml:space="preserve">
     <value>管理任務</value>
+  </data>
+  <data name="Missions" xml:space="preserve">
+    <value>任務</value>
   </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>我的年假結餘</value>

@@ -93,11 +93,11 @@
   <data name="Delete Users" xml:space="preserve">
     <value>Ștergere utilizatori</value>
   </data>
-  <data name="Edit Role Information" xml:space="preserve">
-    <value>Editează Informațiile Rolului</value>
-  </data>
   <data name="Edit and View Details of Users" xml:space="preserve">
     <value>Editare Informații Utilizator</value>
+  </data>
+  <data name="Edit Role Information" xml:space="preserve">
+    <value>Editează Informațiile Rolului</value>
   </data>
   <data name="Grants permission to create new roles." xml:space="preserve">
     <value>Acordă permisiunea de a crea roluri noi.</value>

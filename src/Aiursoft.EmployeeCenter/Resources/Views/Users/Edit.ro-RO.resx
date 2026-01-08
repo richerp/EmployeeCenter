@@ -45,6 +45,9 @@
   <data name="Basic Information" xml:space="preserve">
     <value>Informații de Bază</value>
   </data>
+  <data name="Creation Time" xml:space="preserve">
+    <value>Timpul creării</value>
+  </data>
   <data name="Display Name" xml:space="preserve">
     <value>Nume afișat</value>
   </data>

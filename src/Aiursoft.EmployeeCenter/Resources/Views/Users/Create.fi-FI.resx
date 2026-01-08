@@ -48,6 +48,9 @@
   <data name="Create User" xml:space="preserve">
     <value>Luo käyttäjä</value>
   </data>
+  <data name="Creation Time" xml:space="preserve">
+    <value>Luontiaika</value>
+  </data>
   <data name="Display Name" xml:space="preserve">
     <value>Näyttönimi</value>
   </data>

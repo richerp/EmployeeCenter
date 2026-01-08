@@ -18,13 +18,7 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-  <data name="Career" xml:space="preserve">
-    <value>Career</value>
-  </data>
-  <data name="Missions" xml:space="preserve">
-    <value>Missions</value>
-  </data>
-  <data name="Administration" xml:space="preserve">
+      <data name="Administration" xml:space="preserve">
     <value>Administration</value>
   </data>
   <data name="Aiursoft Employee Center" xml:space="preserve">
@@ -32,6 +26,9 @@
   </data>
   <data name="Approval Center" xml:space="preserve">
     <value>Approval Centre</value>
+  </data>
+  <data name="Career" xml:space="preserve">
+    <value>Career</value>
   </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Change Avatar</value>
@@ -116,6 +113,9 @@
   </data>
   <data name="Manage Tasks" xml:space="preserve">
     <value>Manage Tasks</value>
+  </data>
+  <data name="Missions" xml:space="preserve">
+    <value>Missions</value>
   </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>My Leave Balance</value>
