@@ -104,20 +104,21 @@
             </div>
         </div>
     </div>
+}
 
-    @section scripts {
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                const rows = document.querySelectorAll(".clickable-row");
-                rows.forEach(row => {
-                    row.addEventListener("click", function (event) {
-                        const target = event.target;
-                        if (!target.matches('a, a *, button, button *')) {
-                            window.location.href = row.dataset.href;
-                        }
-                    });
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const rows = document.querySelectorAll(".clickable-row");
+            rows.forEach(row => {
+                row.addEventListener("click", function (event) {
+                    const target = event.target;
+                    if (!target.matches('a, a *, button, button *')) {
+                        window.location.href = row.dataset.href;
+                    }
                 });
             });
-        </script>
-    }
+        });
+    </script>
 }
