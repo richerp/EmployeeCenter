@@ -419,4 +419,137 @@ public class LeaveApprovalAuthorizationTests
             Assert.IsTrue(leave!.IsApproved, "Leave should be approved");
         }
     }
+
+    /// <summary>
+    /// Test: User cannot approve their own leave application
+    /// </summary>
+    [TestMethod]
+    public async Task User_CannotApprove_OwnLeave()
+    {
+        var suffix = Guid.NewGuid().ToString("N")[..6];
+        string userId, userEmail;
+
+        // Create user
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
+            var user = new User { UserName = "user" + suffix, DisplayName = "User", Email = "user" + suffix + "@test.com", AvatarRelativePath = User.DefaultAvatarPath };
+            await userManager.CreateAsync(user, "Password123!");
+            userId = user.Id;
+            userEmail = user.Email!;
+        }
+
+        // User applies for leave
+        int leaveId;
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var leave = new LeaveApplication
+            {
+                UserId = userId,
+                LeaveType = LeaveType.AnnualLeave,
+                StartDate = DateTime.UtcNow.Date.AddDays(1),
+                EndDate = DateTime.UtcNow.Date.AddDays(2),
+                TotalDays = 2m,
+                Reason = "Self-approval test",
+                SubmittedAt = DateTime.UtcNow,
+                IsPending = true
+            };
+            db.LeaveApplications.Add(leave);
+            await db.SaveChangesAsync();
+            leaveId = leave.Id;
+        }
+
+        // User logs in and tries to approve
+        await LoginAsync(userEmail, "Password123!");
+
+        var token = await GetAntiCsrfToken("/");
+        var reviewContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "id", leaveId.ToString() },
+            { "approved", "true" },
+            { "__RequestVerificationToken", token }
+        });
+
+        var reviewResponse = await _http.PostAsync("/Leave/Review", reviewContent);
+        Assert.AreEqual(HttpStatusCode.BadRequest, reviewResponse.StatusCode, "Should be BadRequest for self-approval");
+
+        // Verify still pending
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var leave = await db.LeaveApplications.FindAsync(leaveId);
+            Assert.IsTrue(leave!.IsPending, "Leave should still be pending");
+        }
+    }
+
+    /// <summary>
+    /// Test: Even user with CanApproveAnyLeave permission cannot approve their own leave
+    /// </summary>
+    [TestMethod]
+    public async Task Admin_CannotApprove_OwnLeave()
+    {
+        var suffix = Guid.NewGuid().ToString("N")[..6];
+        string adminId, adminEmail;
+
+        // Create admin user
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
+            var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+
+            var admin = new User { UserName = "admin" + suffix, DisplayName = "Admin", Email = "admin" + suffix + "@test.com", AvatarRelativePath = User.DefaultAvatarPath };
+            await userManager.CreateAsync(admin, "Password123!");
+            adminId = admin.Id;
+            adminEmail = admin.Email!;
+
+            var adminRole = new IdentityRole("AdminRole_" + suffix);
+            await roleManager.CreateAsync(adminRole);
+            await roleManager.AddClaimAsync(adminRole, new System.Security.Claims.Claim("Permission", AppPermissionNames.CanApproveAnyLeave));
+            await userManager.AddToRoleAsync(admin, adminRole.Name!);
+        }
+
+        // Admin applies for leave
+        int leaveId;
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var leave = new LeaveApplication
+            {
+                UserId = adminId,
+                LeaveType = LeaveType.AnnualLeave,
+                StartDate = DateTime.UtcNow.Date.AddDays(1),
+                EndDate = DateTime.UtcNow.Date.AddDays(2),
+                TotalDays = 2m,
+                Reason = "Admin self-approval test",
+                SubmittedAt = DateTime.UtcNow,
+                IsPending = true
+            };
+            db.LeaveApplications.Add(leave);
+            await db.SaveChangesAsync();
+            leaveId = leave.Id;
+        }
+
+        // Admin logs in and tries to approve
+        await LoginAsync(adminEmail, "Password123!");
+
+        var token = await GetAntiCsrfToken("/");
+        var reviewContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "id", leaveId.ToString() },
+            { "approved", "true" },
+            { "__RequestVerificationToken", token }
+        });
+
+        var reviewResponse = await _http.PostAsync("/Leave/Review", reviewContent);
+        Assert.AreEqual(HttpStatusCode.BadRequest, reviewResponse.StatusCode, "Admin should NOT be able to approve own leave");
+
+        // Verify still pending
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var leave = await db.LeaveApplications.FindAsync(leaveId);
+            Assert.IsTrue(leave!.IsPending, "Leave should still be pending");
+        }
+    }
 }
