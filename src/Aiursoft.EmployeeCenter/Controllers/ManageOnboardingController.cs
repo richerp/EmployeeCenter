@@ -12,7 +12,9 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 
 [Authorize(Policy = AppPermissionNames.CanManageOnboarding)]
 [LimitPerMin]
-public class ManageOnboardingController(EmployeeCenterDbContext context) : Controller
+public class ManageOnboardingController(
+    EmployeeCenterDbContext context,
+    IAuthorizationService authorizationService) : Controller
 {
     [RenderInNavBar(
         NavGroupName = "Administration",
@@ -27,7 +29,31 @@ public class ManageOnboardingController(EmployeeCenterDbContext context) : Contr
         var tasks = await context.OnboardingTasks
             .OrderBy(t => t.Order)
             .ToListAsync();
-        return this.StackView(new IndexViewModel { Tasks = tasks });
+
+        var model = new IndexViewModel { Tasks = tasks };
+        var canReadUsers = await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanReadUsers);
+        if (canReadUsers.Succeeded)
+        {
+            var users = await context.Users
+                .Include(u => u.OnboardingTaskLogs)
+                .ToListAsync();
+
+            model.EmployeeProgresses = users.Select(u => new EmployeeProgress
+            {
+                User = u,
+                TotalTasksCount = tasks.Count,
+                CompletedTasksCount = u.OnboardingTaskLogs
+                    .Where(l => l.CompletionTime != null)
+                    .Select(l => l.TaskId)
+                    .Distinct()
+                    .Count()
+            })
+            .OrderByDescending(p => p.ProgressPercentage)
+            .ThenBy(p => p.User.DisplayName)
+            .ToList();
+        }
+
+        return this.StackView(model);
     }
 
     public IActionResult Create()
