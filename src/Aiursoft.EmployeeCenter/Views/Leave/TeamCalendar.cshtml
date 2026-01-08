@@ -1,0 +1,142 @@
+@model Aiursoft.EmployeeCenter.Models.LeaveViewModels.TeamCalendarViewModel
+@inject Aiursoft.EmployeeCenter.Services.FileStorage.StorageService StorageService
+
+<div class="row mb-2 mb-xl-3">
+    <div class="col-auto d-none d-sm-block">
+        <h3>@Localizer["Team Calendar"]</h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 col-xl-9">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">@Localizer["Team Members' Leave Status"]</h5>
+                <h6 class="card-subtitle text-muted">@Localizer["Overview of leave schedules for your manager, reports, and colleagues."]</h6>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                    <thead>
+                        <tr>
+                            <th>@Localizer["Team Member"]</th>
+                            <th>@Localizer["Relation"]</th>
+                            <th>@Localizer["Leave Schedule"]</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.TeamLeaves.Count == 0)
+                        {
+                            <tr>
+                                <td colspan="3" class="text-center text-muted py-4">@Localizer["No team members found."]</td>
+                            </tr>
+                        }
+                        else
+                        {
+                            foreach (var member in Model.TeamLeaves)
+                            {
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <img src="@StorageService.RelativePathToInternetUrl(member.User.AvatarRelativePath)?w=64&square=true" class="rounded-circle me-2" alt="@member.User.DisplayName" width="32" height="32">
+                                            <div>
+                                                <div class="fw-bold">@member.User.DisplayName</div>
+                                                <div class="small text-muted">@member.User.Email</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="badge bg-light text-dark border">@Localizer[member.Relation]</span>
+                                    </td>
+                                    <td>
+                                        @if (member.Leaves.Count == 0)
+                                        {
+                                            <span class="text-muted small">@Localizer["No upcoming or past leave records."]</span>
+                                        }
+                                        else
+                                        {
+                                            <div class="d-flex flex-wrap gap-2">
+                                                @foreach (var leave in member.Leaves.OrderByDescending(l => l.StartDate))
+                                                {
+                                                    var today = DateTime.UtcNow.Date;
+                                                    string statusClass;
+                                                    string statusText;
+                                                    
+                                                    if (today >= leave.StartDate.Date && today <= leave.EndDate.Date)
+                                                    {
+                                                        statusClass = "bg-warning text-dark"; // Yellow: Currently on leave
+                                                        statusText = Localizer["On Leave"].Value;
+                                                    }
+                                                    else if (today > leave.EndDate.Date)
+                                                    {
+                                                        statusClass = "bg-success"; // Green: Returned
+                                                        statusText = Localizer["Returned"].Value;
+                                                    }
+                                                    else
+                                                    {
+                                                        statusClass = "bg-primary"; // Blue: Not yet started
+                                                        statusText = Localizer["Upcoming"].Value;
+                                                    }
+                                                    
+                                                    <div class="border rounded p-2 @statusClass" style="min-width: 150px;">
+                                                        <div class="fw-bold small">@statusText</div>
+                                                        <div class="small">@leave.StartDate.ToString("yyyy-MM-dd") - @leave.EndDate.ToString("yyyy-MM-dd")</div>
+                                                        <div class="small opacity-75">@(leave.LeaveType == Aiursoft.EmployeeCenter.Entities.LeaveType.AnnualLeave ? Localizer["Annual"] : Localizer["Sick"]) (@leave.TotalDays.ToString("0.##") @Localizer["days"])</div>
+                                                    </div>
+                                                }
+                                            </div>
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-12 col-xl-3">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">@Localizer["Status Legend"]</h5>
+            </div>
+            <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                    <div class="bg-warning rounded me-2" style="width: 20px; height: 20px;"></div>
+                    <div>
+                        <strong>@Localizer["Currently on Leave"]</strong>
+                        <div class="small text-muted">@Localizer["Yellow - Employee is currently away"]</div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                    <div class="bg-success rounded me-2" style="width: 20px; height: 20px;"></div>
+                    <div>
+                        <strong>@Localizer["Returned"]</strong>
+                        <div class="small text-muted">@Localizer["Green - Leave period has finished"]</div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mb-0">
+                    <div class="bg-primary rounded me-2" style="width: 20px; height: 20px;"></div>
+                    <div>
+                        <strong>@Localizer["Not Yet Started"]</strong>
+                        <div class="small text-muted">@Localizer["Blue - Approved future leave"]</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card mt-3">
+            <div class="card-header">
+                <h5 class="card-title mb-0">@Localizer["About Team Calendar"]</h5>
+            </div>
+            <div class="card-body">
+                <p class="small text-muted">
+                    @Localizer["This calendar helps you stay informed about your team's availability to facilitate work handovers and planning."]
+                </p>
+                <p class="small text-muted mb-0">
+                    @Localizer["Only approved leave applications are displayed here."]
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

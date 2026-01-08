@@ -240,6 +240,7 @@
                             <th>@Localizer["Period"]</th>
                             <th>@Localizer["Days"]</th>
                             <th>@Localizer["Decision"]</th>
+                            <th>@Localizer["Approver"]</th>
                             <th>@Localizer["Reviewed"]</th>
                         </tr>
                     </thead>
@@ -247,7 +248,7 @@
                         @if (Model.ApprovalHistory.Count == 0)
                         {
                             <tr>
-                                <td colspan="6" class="text-center text-muted py-4">@Localizer["No approval history."]</td>
+                                <td colspan="7" class="text-center text-muted py-4">@Localizer["No approval history."]</td>
                             </tr>
                         }
                         else
@@ -289,6 +290,7 @@
                                             <span class="badge bg-danger">@Localizer["Rejected"]</span>
                                         }
                                     </td>
+                                    <td>@(item.ReviewedBy?.DisplayName ?? "-")</td>
                                     <td>@item.ReviewedAt?.ToString("yyyy-MM-dd HH:mm")</td>
                                 </tr>
                             }

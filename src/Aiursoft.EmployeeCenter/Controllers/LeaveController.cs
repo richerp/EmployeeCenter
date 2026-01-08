@@ -48,6 +48,7 @@ public class LeaveController(
 
         // Get leave history
         var leaveHistory = await context.LeaveApplications
+            .Include(la => la.ReviewedBy)
             .Where(la => la.UserId == user.Id)
             .OrderByDescending(la => la.SubmittedAt)
             .ToListAsync();
@@ -232,10 +233,10 @@ public class LeaveController(
             return RedirectToAction(nameof(Index));
         }
 
-        // Cannot withdraw if the leave has already started (server time is UTC as per requirement)
-        if (DateTime.UtcNow.Date >= leave.StartDate.Date)
+        // Cannot withdraw if the leave starts within 24 hours (server time is UTC as per requirement)
+        if (DateTime.UtcNow.AddHours(24) > leave.StartDate)
         {
-            return BadRequest("Cannot withdraw leave that has already started.");
+            return BadRequest("Cannot withdraw leave that starts within 24 hours.");
         }
 
         leave.IsWithdrawn = true;
@@ -252,8 +253,88 @@ public class LeaveController(
         CascadedLinksGroupName = "Leave Management",
         CascadedLinksIcon = "calendar-days",
         CascadedLinksOrder = 20,
-        LinkText = "Approval Center",
+        LinkText = "Team Calendar",
         LinkOrder = 2)]
+    public async Task<IActionResult> TeamCalendar()
+    {
+        var user = await userManager.GetUserAsync(User);
+        if (user == null) return NotFound();
+
+        var teamLeaves = new List<TeamMemberLeave>();
+
+        // 1. My Boss
+        if (!string.IsNullOrEmpty(user.ManagerId))
+        {
+            var boss = await context.Users.FindAsync(user.ManagerId);
+            if (boss != null)
+            {
+                var bossLeaves = await GetLeavesForUserAsync(boss.Id);
+                teamLeaves.Add(new TeamMemberLeave
+                {
+                    User = boss,
+                    Leaves = bossLeaves,
+                    Relation = "Boss"
+                });
+            }
+        }
+
+        // 2. My Direct Reports
+        var directReports = await context.Users
+            .Where(u => u.ManagerId == user.Id)
+            .ToListAsync();
+        foreach (var report in directReports)
+        {
+            var reportLeaves = await GetLeavesForUserAsync(report.Id);
+            teamLeaves.Add(new TeamMemberLeave
+            {
+                User = report,
+                Leaves = reportLeaves,
+                Relation = "Direct Report"
+            });
+        }
+
+        // 3. My Peers (colleagues reporting to the same boss)
+        if (!string.IsNullOrEmpty(user.ManagerId))
+        {
+            var peers = await context.Users
+                .Where(u => u.ManagerId == user.ManagerId && u.Id != user.Id)
+                .ToListAsync();
+            foreach (var peer in peers)
+            {
+                var peerLeaves = await GetLeavesForUserAsync(peer.Id);
+                teamLeaves.Add(new TeamMemberLeave
+                {
+                    User = peer,
+                    Leaves = peerLeaves,
+                    Relation = "Colleague"
+                });
+            }
+        }
+
+        var model = new TeamCalendarViewModel
+        {
+            TeamLeaves = teamLeaves
+        };
+
+        return this.StackView(model);
+    }
+
+    private async Task<List<LeaveApplication>> GetLeavesForUserAsync(string userId)
+    {
+        return await context.LeaveApplications
+            .Where(l => l.UserId == userId && l.IsApproved && !l.IsPending && !l.IsWithdrawn)
+            .OrderBy(l => l.StartDate)
+            .ToListAsync();
+    }
+
+    [RenderInNavBar(
+        NavGroupName = "Features",
+        NavGroupOrder = 2,
+        CascadedLinksGroupName = "Leave Management",
+        CascadedLinksIcon = "calendar-days",
+        CascadedLinksOrder = 20,
+        LinkText = "Approval Center",
+        LinkOrder = 3)]
     [HttpGet]
     public async Task<IActionResult> Incoming()
     {
@@ -286,6 +367,7 @@ public class LeaveController(
         // Get approval history
         var historyQuery = context.LeaveApplications
             .Include(l => l.User)
+            .Include(l => l.ReviewedBy)
             .Where(l => l.ReviewedById != null);
 
         if (!canApproveAny)
