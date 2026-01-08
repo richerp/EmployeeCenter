@@ -1,4 +1,5 @@
 using System.Net;
+using Aiursoft.CSTools.Tools;
 using Aiursoft.DbTools;
 using Aiursoft.EmployeeCenter.Entities;
 using static Aiursoft.WebTools.Extends;
@@ -20,7 +21,7 @@ public class CertificateTests
             CookieContainer = cookieContainer,
             AllowAutoRedirect = false
         };
-        _port = Aiursoft.CSTools.Tools.Network.GetAvailablePort();
+        _port = Network.GetAvailablePort();
         _http = new HttpClient(handler)
         {
             BaseAddress = new Uri($"http://localhost:{_port}")
@@ -49,6 +50,6 @@ public class CertificateTests
     {
         var response = await _http.GetAsync("/Certificate/Employment");
         Assert.AreEqual(HttpStatusCode.Found, response.StatusCode);
-        Assert.IsTrue(response.Headers.Location!.ToString().Contains("Account/Login"));
+        Assert.Contains("Account/Login", response.Headers.Location!.ToString());
     }
 }
