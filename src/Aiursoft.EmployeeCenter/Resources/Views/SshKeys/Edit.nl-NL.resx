@@ -24,14 +24,14 @@
   <data name="Edit SSH Key" xml:space="preserve">
     <value>SSH-sleutel bewerken</value>
   </data>
-  <data name="Update SSH Key" xml:space="preserve">
-    <value>SSH-sleutel bijwerken</value>
-  </data>
   <data name="Modify your public SSH key details." xml:space="preserve">
     <value>Wijzig de details van uw openbare SSH-sleutel.</value>
   </data>
   <data name="Save Changes" xml:space="preserve">
     <value>Wijzigingen opslaan</value>
+  </data>
+  <data name="Update SSH Key" xml:space="preserve">
+    <value>SSH-sleutel bijwerken</value>
   </data>
 
 </root>

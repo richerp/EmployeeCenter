@@ -33,6 +33,9 @@
   <data name="Allows assigning or removing roles for any user." xml:space="preserve">
     <value>Επιτρέπει την ανάθεση ή την κατάργηση ρόλων για οποιονδήποτε χρήστη.</value>
   </data>
+  <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
+    <value>Επιτρέπει τη δημιουργία και διαχείριση προτύπων εργασιών εγκατάστασης για νέους υπαλλήλους.</value>
+  </data>
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Επιτρέπει τη δημιουργία νέων καθολικών κωδικών πρόσβασης που μπορούν να κοινοποιηθούν με άλλους.</value>
   </data>
@@ -107,6 +110,9 @@
   </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>Διαχείριση Άδειας</value>
+  </data>
+  <data name="Manage Onboarding Tasks" xml:space="preserve">
+    <value>Διαχείριση Εργασιών Εγγραφής</value>
   </data>
   <data name="Manage Payroll" xml:space="preserve">
     <value>Διαχείριση Μισθοδοσίας</value>

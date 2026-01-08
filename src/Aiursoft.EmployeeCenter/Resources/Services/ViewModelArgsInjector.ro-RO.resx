@@ -117,6 +117,9 @@
   <data name="Manage Shares" xml:space="preserve">
     <value>Gestionează Partajări</value>
   </data>
+  <data name="Manage Tasks" xml:space="preserve">
+    <value>Gestionare sarcini</value>
+  </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>Soldul meu de concediu</value>
   </data>
@@ -125,6 +128,9 @@
   </data>
   <data name="My Report Line" xml:space="preserve">
     <value>Linia mea de raportare</value>
+  </data>
+  <data name="Onboarding" xml:space="preserve">
+    <value>Onboarding</value>
   </data>
   <data name="Password Details" xml:space="preserve">
     <value>Detalii parolă</value>

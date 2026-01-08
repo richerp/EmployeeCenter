@@ -51,8 +51,14 @@
   <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
     <value>Kommer med fuld Docker-understøttelse til forenklede, konsistente og pålidelige installationer.</value>
   </data>
+  <data name="Completed at" xml:space="preserve">
+    <value>Udført kl.</value>
+  </data>
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>Omfattende Dokumentation</value>
+  </data>
+  <data name="Congratulations!" xml:space="preserve">
+    <value>Gratulationer!</value>
   </data>
   <data name="Dockerized for Deployment" xml:space="preserve">
     <value>Dockeriseret til implementering</value>
@@ -63,11 +69,20 @@
   <data name="Easily switch between providers like SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
     <value>Skift nemt mellem udbydere som SQLite, MySQL, SQL Server og en hukommelsesdatabase til test.</value>
   </data>
+  <data name="Employee Onboarding" xml:space="preserve">
+    <value>Ansat onboarding</value>
+  </data>
+  <data name="Expected duration" xml:space="preserve">
+    <value>Forventet varighed</value>
+  </data>
   <data name="Features a built-in file management system with automatic avatar compression." xml:space="preserve">
     <value>Har et indbygget filstyringssystem med automatisk avatar-komprimering.</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>Hej Verden!</value>
+  </data>
+  <data name="I have completed" xml:space="preserve">
+    <value>Jeg har fuldført</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>Inkluderer omfattende dokumentation og praktiske eksempler, så du kan komme i gang hurtigt.</value>
@@ -78,8 +93,17 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>Understøttelse af flere databaser</value>
   </data>
+  <data name="Open Task Link" xml:space="preserve">
+    <value>Åbn opgavens link</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>OpenID Connect-integration</value>
+  </data>
+  <data name="Please wait..." xml:space="preserve">
+    <value>Vent venligst...</value>
+  </data>
+  <data name="Processing..." xml:space="preserve">
+    <value>Behandler...</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>RBAC-godkendelse</value>
@@ -99,17 +123,32 @@
   <data name="Start a new project" xml:space="preserve">
     <value>Start et nyt projekt</value>
   </data>
+  <data name="Start Task" xml:space="preserve">
+    <value>Start opgave</value>
+  </data>
+  <data name="Step" xml:space="preserve">
+    <value>Trin</value>
+  </data>
+  <data name="Task in progress..." xml:space="preserve">
+    <value>Op tage i gang...</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>Navigationslinjen tilpasser sig automatisk baseret på brugerroller og tilladelser.</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>Dette er et skabelonprojekt, hvor vi begynder rejsen...</value>
   </data>
+  <data name="This task is pending." xml:space="preserve">
+    <value>Denne opgave venter.</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>Velkommen</value>
   </data>
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>Hvorfor bruge Aiursoft Template?</value>
+  </data>
+  <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
+    <value>Du har fuldført alle onboarding-opgaver. Du er nu en fuldt kvalificeret officiel medarbejder!</value>
   </data>
 
 </root>

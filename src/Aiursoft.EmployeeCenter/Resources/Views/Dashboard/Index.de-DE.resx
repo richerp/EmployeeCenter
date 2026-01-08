@@ -51,8 +51,14 @@
   <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
     <value>Bietet vollständige Docker-Unterstützung für vereinfachte, konsistente und zuverlässige Bereitstellungen.</value>
   </data>
+  <data name="Completed at" xml:space="preserve">
+    <value>Erledigt am</value>
+  </data>
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>Umfassende Dokumentation</value>
+  </data>
+  <data name="Congratulations!" xml:space="preserve">
+    <value>Glückwunsch!</value>
   </data>
   <data name="Dockerized for Deployment" xml:space="preserve">
     <value>Für Bereitstellung in Docker verpackt</value>
@@ -63,11 +69,20 @@
   <data name="Easily switch between providers like SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
     <value>Wechseln Sie problemlos zwischen Anbietern wie SQLite, MySQL, SQL Server und einer In-Memory-Datenbank für Tests.</value>
   </data>
+  <data name="Employee Onboarding" xml:space="preserve">
+    <value>Mitarbeiter-Onboarding</value>
+  </data>
+  <data name="Expected duration" xml:space="preserve">
+    <value>Erwartete Dauer</value>
+  </data>
   <data name="Features a built-in file management system with automatic avatar compression." xml:space="preserve">
     <value>Verfügt über ein integriertes Dateiverwaltungssystem mit automatischer Avatar-Komprimierung.</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>Hallo Welt!</value>
+  </data>
+  <data name="I have completed" xml:space="preserve">
+    <value>Ich habe abgeschlossen</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>Umfangreiche Dokumentation und praktische Beispiele für einen schnellen Einstieg.</value>
@@ -78,8 +93,17 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>Unterstützung mehrerer Datenbanken</value>
   </data>
+  <data name="Open Task Link" xml:space="preserve">
+    <value>Aufgabe-Link öffnen</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>OpenID Connect-Integration</value>
+  </data>
+  <data name="Please wait..." xml:space="preserve">
+    <value>Bitte warten...</value>
+  </data>
+  <data name="Processing..." xml:space="preserve">
+    <value>Verarbeitung...</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>RBAC-Autorisierung</value>
@@ -99,17 +123,32 @@
   <data name="Start a new project" xml:space="preserve">
     <value>Ein neues Projekt starten</value>
   </data>
+  <data name="Start Task" xml:space="preserve">
+    <value>Aufgabe starten</value>
+  </data>
+  <data name="Step" xml:space="preserve">
+    <value>Schritt</value>
+  </data>
+  <data name="Task in progress..." xml:space="preserve">
+    <value>Aufgabe läuft...</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>Die Navigationsleiste passt sich automatisch basierend auf Benutzerrollen und Berechtigungen an.</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>Dies ist ein Template-Projekt, in dem wir die Reise beginnen...</value>
   </data>
+  <data name="This task is pending." xml:space="preserve">
+    <value>Diese Aufgabe ist ausstehend.</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>Willkommen</value>
   </data>
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>Warum das Aiursoft Template verwenden?</value>
+  </data>
+  <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
+    <value>Sie haben alle Onboarding-Aufgaben abgeschlossen. Sie sind nun ein voll qualifizierter offizieller Mitarbeiter!</value>
   </data>
 
 </root>

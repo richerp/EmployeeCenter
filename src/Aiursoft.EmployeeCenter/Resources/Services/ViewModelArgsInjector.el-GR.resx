@@ -117,6 +117,9 @@
   <data name="Manage Shares" xml:space="preserve">
     <value>Διαχείριση Κοινόχρηστων</value>
   </data>
+  <data name="Manage Tasks" xml:space="preserve">
+    <value>Διαχείριση Εργασιών</value>
+  </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>Το Υπόλοιπο Αδείας Μου</value>
   </data>
@@ -125,6 +128,9 @@
   </data>
   <data name="My Report Line" xml:space="preserve">
     <value>Η Γραμμή Αναφορών Μου</value>
+  </data>
+  <data name="Onboarding" xml:space="preserve">
+    <value>Εγκατάσταση</value>
   </data>
   <data name="Password Details" xml:space="preserve">
     <value>Λεπτομέρειες Κωδικού</value>

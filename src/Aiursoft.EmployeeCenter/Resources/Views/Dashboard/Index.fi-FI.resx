@@ -51,8 +51,14 @@
   <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
     <value>Sisältää täyden Docker-tuen yksinkertaistettuja, yhdenmukaisia ja luotettavia käyttöönottoja varten.</value>
   </data>
+  <data name="Completed at" xml:space="preserve">
+    <value>Valmis klo</value>
+  </data>
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>Laaja dokumentaatio</value>
+  </data>
+  <data name="Congratulations!" xml:space="preserve">
+    <value>Onnittelut!</value>
   </data>
   <data name="Dockerized for Deployment" xml:space="preserve">
     <value>Dockeröity käyttöönottoa varten</value>
@@ -63,11 +69,20 @@
   <data name="Easily switch between providers like SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
     <value>Vaihda helposti tietokantapalveluntarjoajien, kuten SQLite, MySQL, SQL Server ja testausta varten tarkoitettu muistissa oleva tietokanta, välillä.</value>
   </data>
+  <data name="Employee Onboarding" xml:space="preserve">
+    <value>Työntekijän käyttöönotto</value>
+  </data>
+  <data name="Expected duration" xml:space="preserve">
+    <value>Odotettu kesto</value>
+  </data>
   <data name="Features a built-in file management system with automatic avatar compression." xml:space="preserve">
     <value>Sisältää sisäänrakennetun tiedostonhallintajärjestelmän automaattisella avatar-pakkauksella.</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>Hei maailma!</value>
+  </data>
+  <data name="I have completed" xml:space="preserve">
+    <value>Olen suorittanut</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>Sisältää laajan dokumentaation ja käytännön esimerkkejä, joiden avulla pääset nopeasti alkuun.</value>
@@ -78,8 +93,17 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>Usean tietokannan tuki</value>
   </data>
+  <data name="Open Task Link" xml:space="preserve">
+    <value>Avaa tehtävän linkki</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>OpenID Connect -integraatio</value>
+  </data>
+  <data name="Please wait..." xml:space="preserve">
+    <value>Odota hetki...</value>
+  </data>
+  <data name="Processing..." xml:space="preserve">
+    <value>Käsitellään...</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>RBAC-valtuutus</value>
@@ -99,17 +123,32 @@
   <data name="Start a new project" xml:space="preserve">
     <value>Aloita uusi projekti</value>
   </data>
+  <data name="Start Task" xml:space="preserve">
+    <value>Aloita tehtävä</value>
+  </data>
+  <data name="Step" xml:space="preserve">
+    <value>Vaihe</value>
+  </data>
+  <data name="Task in progress..." xml:space="preserve">
+    <value>Tehtävä käynnissä...</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>Navigointipalkki sopeutuu automaattisesti käyttäjän roolien ja käyttöoikeuksien perusteella.</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>Tämä on malliprojekti, josta aloitamme matkamme...</value>
   </data>
+  <data name="This task is pending." xml:space="preserve">
+    <value>Tämä tehtävä on kesken.</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>Tervetuloa</value>
   </data>
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>Miksi käyttää Aiursoft Templatea?</value>
+  </data>
+  <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
+    <value>Olet suorittanut kaikki rekrytoinnin tehtävät. Olet nyt täysin pätevä virallinen työntekijä!</value>
   </data>
 
 </root>

@@ -51,8 +51,14 @@
   <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
     <value>يأتي مع دعم كامل لـ Docker لنشر مبسط، متسق، وموثوق.</value>
   </data>
+  <data name="Completed at" xml:space="preserve">
+    <value>تم الانتهاء في</value>
+  </data>
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>توثيق شامل</value>
+  </data>
+  <data name="Congratulations!" xml:space="preserve">
+    <value>تهانينا!</value>
   </data>
   <data name="Dockerized for Deployment" xml:space="preserve">
     <value>مُحَضَّرٌ باستخدام Docker للنشر</value>
@@ -63,11 +69,20 @@
   <data name="Easily switch between providers like SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
     <value>يمكنك التبديل بسهولة بين مزودي قواعد البيانات مثل SQLite وMySQL وSQL Server وقاعدة البيانات المؤقتة في الذاكرة لأغراض الاختبار.</value>
   </data>
+  <data name="Employee Onboarding" xml:space="preserve">
+    <value>توفير الدعم للموظفين الجدد</value>
+  </data>
+  <data name="Expected duration" xml:space="preserve">
+    <value>المدة المتوقعة</value>
+  </data>
   <data name="Features a built-in file management system with automatic avatar compression." xml:space="preserve">
     <value>يتميز بنظام مدمج لإدارة الملفات مع ضغط تلقائي للصور الشخصية.</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>مرحباً أيها العالم!</value>
+  </data>
+  <data name="I have completed" xml:space="preserve">
+    <value>أنا أكملت</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>يحتوي على وثائق شاملة وأمثلة عملية لمساعدتك على البدء بسرعة.</value>
@@ -78,8 +93,17 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>دعم قواعد بيانات متعددة</value>
   </data>
+  <data name="Open Task Link" xml:space="preserve">
+    <value>فتح رابط المهمة</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>دمج OpenID Connect</value>
+  </data>
+  <data name="Please wait..." xml:space="preserve">
+    <value>يرجى الانتظار...</value>
+  </data>
+  <data name="Processing..." xml:space="preserve">
+    <value>جاري المعالجة...</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>الترخيص القائم على الأدوار (RBAC)</value>
@@ -99,17 +123,32 @@
   <data name="Start a new project" xml:space="preserve">
     <value>بدء مشروع جديد</value>
   </data>
+  <data name="Start Task" xml:space="preserve">
+    <value>시작 المهمة</value>
+  </data>
+  <data name="Step" xml:space="preserve">
+    <value>الخطوة</value>
+  </data>
+  <data name="Task in progress..." xml:space="preserve">
+    <value>مهمة قيد التنفيذ...</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>يتم تعديل شريط التنقل تلقائيًا بناءً على أدوار المستخدمين والأذونات.</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>هذا مشروع قالب، حيث نبدأ رحلة المستكشف...</value>
   </data>
+  <data name="This task is pending." xml:space="preserve">
+    <value>المهمة معلقة.</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>مرحباً</value>
   </data>
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>لماذا نستخدم قالب Aiursoft؟</value>
+  </data>
+  <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
+    <value>لقد أكملت جميع مهام التأهيل. أنت الآن موظف رسمي مؤهل بالكامل!</value>
   </data>
 
 </root>

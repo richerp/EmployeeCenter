@@ -120,6 +120,9 @@
   <data name="Manage Shares" xml:space="preserve">
     <value>공유 관리</value>
   </data>
+  <data name="Manage Tasks" xml:space="preserve">
+    <value>작업 관리</value>
+  </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>내 휴가 잔여 일수</value>
   </data>
@@ -128,6 +131,9 @@
   </data>
   <data name="My Report Line" xml:space="preserve">
     <value>내 보고선</value>
+  </data>
+  <data name="Onboarding" xml:space="preserve">
+    <value>온보딩</value>
   </data>
   <data name="Password Details" xml:space="preserve">
     <value>비밀번호 세부 정보</value>

@@ -120,6 +120,9 @@
   <data name="Manage Shares" xml:space="preserve">
     <value>Quản lý chia sẻ</value>
   </data>
+  <data name="Manage Tasks" xml:space="preserve">
+    <value>Quản lý Nhiệm vụ</value>
+  </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>Số ngày nghỉ phép còn lại của tôi</value>
   </data>
@@ -128,6 +131,9 @@
   </data>
   <data name="My Report Line" xml:space="preserve">
     <value>Dòng báo cáo của tôi</value>
+  </data>
+  <data name="Onboarding" xml:space="preserve">
+    <value>Đào tạo người mới</value>
   </data>
   <data name="Password Details" xml:space="preserve">
     <value>Chi tiết Mật khẩu</value>

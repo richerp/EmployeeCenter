@@ -51,8 +51,14 @@
   <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
     <value>Oferă suport complet pentru Docker pentru implementări simplificate, consistente și fiabile.</value>
   </data>
+  <data name="Completed at" xml:space="preserve">
+    <value>Finalizat la</value>
+  </data>
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>Documentație Cuprinzătoare</value>
+  </data>
+  <data name="Congratulations!" xml:space="preserve">
+    <value>Felicitări!</value>
   </data>
   <data name="Dockerized for Deployment" xml:space="preserve">
     <value>Containerizat pentru Implementare</value>
@@ -63,11 +69,20 @@
   <data name="Easily switch between providers like SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
     <value>Comută cu ușurință între furnizori precum SQLite, MySQL, SQL Server și o bază de date în memorie pentru testare.</value>
   </data>
+  <data name="Employee Onboarding" xml:space="preserve">
+    <value>Onboardingul angajaților</value>
+  </data>
+  <data name="Expected duration" xml:space="preserve">
+    <value>Durată estimată</value>
+  </data>
   <data name="Features a built-in file management system with automatic avatar compression." xml:space="preserve">
     <value>Dispune de un sistem integrat de gestionare a fișierelor cu compresie automată a avatarurilor.</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>Salut Lume!</value>
+  </data>
+  <data name="I have completed" xml:space="preserve">
+    <value>Am terminat</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>Include documentație extinsă și exemple practice pentru a te pune rapid pe drum.</value>
@@ -78,8 +93,17 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>Suport pentru Multiple Baze de Date</value>
   </data>
+  <data name="Open Task Link" xml:space="preserve">
+    <value>Deschide linkul sarcinii</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>Integrare OpenID Connect</value>
+  </data>
+  <data name="Please wait..." xml:space="preserve">
+    <value>Vă rugăm să așteptați...</value>
+  </data>
+  <data name="Processing..." xml:space="preserve">
+    <value>Se procesează...</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>Autorizare RBAC</value>
@@ -99,17 +123,32 @@
   <data name="Start a new project" xml:space="preserve">
     <value>Începeți un proiect nou</value>
   </data>
+  <data name="Start Task" xml:space="preserve">
+    <value>Start Task</value>
+  </data>
+  <data name="Step" xml:space="preserve">
+    <value>Pas</value>
+  </data>
+  <data name="Task in progress..." xml:space="preserve">
+    <value>Sarcină în desfășurare...</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>Bara de navigare se ajustează automat în funcție de rolurile și permisiunile utilizatorului.</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>Acesta este un proiect tip, de unde începem călătoria...</value>
   </data>
+  <data name="This task is pending." xml:space="preserve">
+    <value>Această sarcină este în așteptare.</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>Bun venit</value>
   </data>
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>De ce să folosești Șablonul Aiursoft?</value>
+  </data>
+  <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
+    <value>Ai finalizat toate sarcinile de peboarding. Ești acum un angajat oficial complet calificat!</value>
   </data>
 
 </root>

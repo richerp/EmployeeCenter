@@ -51,8 +51,14 @@
   <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
     <value>มาพร้อมการสนับสนุน Docker เต็มรูปแบบเพื่อให้การปรับใช้เป็นเรื่องง่าย สม่ำเสมอ และเชื่อถือได้</value>
   </data>
+  <data name="Completed at" xml:space="preserve">
+    <value>เสร็จสิ้นเมื่อ</value>
+  </data>
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>เอกสารประกอบที่ครอบคลุม</value>
+  </data>
+  <data name="Congratulations!" xml:space="preserve">
+    <value>ยินดีด้วย!</value>
   </data>
   <data name="Dockerized for Deployment" xml:space="preserve">
     <value>พร้อมใช้งานด้วย Docker</value>
@@ -63,11 +69,20 @@
   <data name="Easily switch between providers like SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
     <value>สลับระหว่างผู้ให้บริการอย่าง SQLite, MySQL, SQL Server และฐานข้อมูลในหน่วยความจำสำหรับการทดสอบได้อย่างง่ายดาย</value>
   </data>
+  <data name="Employee Onboarding" xml:space="preserve">
+    <value>การบนบอร์ดพนักงาน</value>
+  </data>
+  <data name="Expected duration" xml:space="preserve">
+    <value>ระยะเวลาที่คาดไว้</value>
+  </data>
   <data name="Features a built-in file management system with automatic avatar compression." xml:space="preserve">
     <value>มีระบบจัดการไฟล์ในตัวพร้อมการบีบอัดภาพโปรไฟล์อัตโนมัติ</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>สวัสดีชาวโลก!</value>
+  </data>
+  <data name="I have completed" xml:space="preserve">
+    <value>ฉันทำสำเร็จแล้ว</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>ประกอบด้วยเอกสารประกอบที่ครอบคลุมและตัวอย่างเชิงปฏิบัติเพื่อช่วยให้คุณเริ่มต้นได้อย่างรวดเร็ว</value>
@@ -78,8 +93,17 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>รองรับหลายฐานข้อมูล</value>
   </data>
+  <data name="Open Task Link" xml:space="preserve">
+    <value>เปิดลิงก์งาน</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>การผสานรวม OpenID Connect</value>
+  </data>
+  <data name="Please wait..." xml:space="preserve">
+    <value>กรุณารอสักครู่...</value>
+  </data>
+  <data name="Processing..." xml:space="preserve">
+    <value>กำลังดำเนินการ...</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>การอนุญาตตามบทบาท RBAC</value>
@@ -99,17 +123,32 @@
   <data name="Start a new project" xml:space="preserve">
     <value>เริ่มต้นโปรเจกต์ใหม่</value>
   </data>
+  <data name="Start Task" xml:space="preserve">
+    <value>เริ่มงาน</value>
+  </data>
+  <data name="Step" xml:space="preserve">
+    <value>ขั้นตอน</value>
+  </data>
+  <data name="Task in progress..." xml:space="preserve">
+    <value>กำลังดำเนินการงานนี้อยู่...</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>แถบนำทางจะปรับเปลี่ยนโดยอัตโนมัติตามบทบาทและสิทธิ์ของผู้ใช้</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>นี่คือโปรเจกต์เทมเพลต ซึ่งเป็นจุดเริ่มต้นของการเดินทางของเรา...</value>
   </data>
+  <data name="This task is pending." xml:space="preserve">
+    <value>งานนี้ยังไม่ได้ดำเนินการ</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>ยินดีต้อนรับ</value>
   </data>
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>ทำไมต้องใช้ Aiursoft Template?</value>
+  </data>
+  <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
+    <value>คุณได้ดำเนินการตามขั้นตอนการบนบอร์ดทั้งหมดเรียบร้อยแล้ว คุณได้รับการแต่งตั้งเป็นพนักงานอย่างเป็นทางการอย่างสมบูรณ์!</value>
   </data>
 
 </root>

@@ -51,8 +51,14 @@
   <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
     <value>Διαθέτει πλήρη υποστήριξη Docker για απλοποιημένες, συνεπείς και αξιόπιστες αναπτύξεις.</value>
   </data>
+  <data name="Completed at" xml:space="preserve">
+    <value>Ολοκληρώθηκε στις</value>
+  </data>
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>Πληρέστερη Τεκμηρίωση</value>
+  </data>
+  <data name="Congratulations!" xml:space="preserve">
+    <value>Συγχαρητήρια!</value>
   </data>
   <data name="Dockerized for Deployment" xml:space="preserve">
     <value>Σε Docker για Ανάπτυξη</value>
@@ -63,11 +69,20 @@
   <data name="Easily switch between providers like SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
     <value>Εύκολη εναλλαγή μεταξύ παρόχων όπως SQLite, MySQL, SQL Server και μιας βάσης δεδομένων στη μνήμη για δοκιμές.</value>
   </data>
+  <data name="Employee Onboarding" xml:space="preserve">
+    <value>Επαγγελματική Εισαγωγή</value>
+  </data>
+  <data name="Expected duration" xml:space="preserve">
+    <value>Προσδοκώμενη διάρκεια</value>
+  </data>
   <data name="Features a built-in file management system with automatic avatar compression." xml:space="preserve">
     <value>Διαθέτει ένα ενσωματωμένο σύστημα διαχείρισης αρχείων με αυτόματη συμπίεση avatar.</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>Γεια σου Κόσμε!</value>
+  </data>
+  <data name="I have completed" xml:space="preserve">
+    <value>Έχω ολοκληρώσει</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>Περιλαμβάνει εκτενή τεκμηρίωση και πρακτικά παραδείγματα για να ξεκινήσετε γρήγορα.</value>
@@ -78,8 +93,17 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>Υποστήριξη Πολλαπλών Βάσεων Δεδομένων</value>
   </data>
+  <data name="Open Task Link" xml:space="preserve">
+    <value>Άνοιγμα συνδέσμου εργασίας</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>Ενσωμάτωση OpenID Connect</value>
+  </data>
+  <data name="Please wait..." xml:space="preserve">
+    <value>Παρακαλώ περιμένετε...</value>
+  </data>
+  <data name="Processing..." xml:space="preserve">
+    <value>Επεξεργασία...</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>Εξουσιοδότηση RBAC</value>
@@ -99,17 +123,32 @@
   <data name="Start a new project" xml:space="preserve">
     <value>Ξεκινήστε ένα νέο έργο</value>
   </data>
+  <data name="Start Task" xml:space="preserve">
+    <value>Εκκίνηση Εργασίας</value>
+  </data>
+  <data name="Step" xml:space="preserve">
+    <value>Βήμα</value>
+  </data>
+  <data name="Task in progress..." xml:space="preserve">
+    <value>Εργασία σε εξέλιξη...</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>Η γραμμή πλοήγησης προσαρμόζεται αυτόματα με βάση τους ρόλους και τα δικαιώματα των χρηστών.</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>Αυτό είναι ένα πρότυπο έργο, από όπου ξεκινάμε το ταξίδι...</value>
   </data>
+  <data name="This task is pending." xml:space="preserve">
+    <value>Αυτή η εργασία αναμένει επεξεργασία.</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>Καλώς ορίσατε</value>
   </data>
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>Γιατί να χρησιμοποιήσετε το Πρότυπο Aiursoft;</value>
+  </data>
+  <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
+    <value>Έχετε ολοκληρώσει όλα τα καθήκοντα ενσωμάτωσης. Είστε τώρα ένας πλήρως καταρτισμένος επίσημος υπάλληλος!</value>
   </data>
 
 </root>

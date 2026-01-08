@@ -51,8 +51,14 @@
   <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
     <value>Levereras med fullt Docker-stöd för förenklad, konsekvent och pålitlig distribution.</value>
   </data>
+  <data name="Completed at" xml:space="preserve">
+    <value>Slutfört kl.</value>
+  </data>
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>Omfattande dokumentation</value>
+  </data>
+  <data name="Congratulations!" xml:space="preserve">
+    <value>Grattis!</value>
   </data>
   <data name="Dockerized for Deployment" xml:space="preserve">
     <value>Dockeriserad för distribution</value>
@@ -63,11 +69,20 @@
   <data name="Easily switch between providers like SQLite, MySQL, SQL Server, and an in-memory database for testing." xml:space="preserve">
     <value>Enkelt växla mellan leverantörer som SQLite, MySQL, SQL Server och ett minnesbaserat databas för testning.</value>
   </data>
+  <data name="Employee Onboarding" xml:space="preserve">
+    <value>Anställningsprocess</value>
+  </data>
+  <data name="Expected duration" xml:space="preserve">
+    <value>Förväntad varaktighet</value>
+  </data>
   <data name="Features a built-in file management system with automatic avatar compression." xml:space="preserve">
     <value>Har ett inbyggt filhanteringssystem med automatisk komprimering av avatarer.</value>
   </data>
   <data name="Hello World!" xml:space="preserve">
     <value>Hej Världen!</value>
+  </data>
+  <data name="I have completed" xml:space="preserve">
+    <value>Jag har slutfört</value>
   </data>
   <data name="Includes extensive documentation and practical examples to get you started quickly." xml:space="preserve">
     <value>Innehåller omfattande dokumentation och praktiska exempel för att du snabbt ska komma igång.</value>
@@ -78,8 +93,17 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>Stöd för flera databaser</value>
   </data>
+  <data name="Open Task Link" xml:space="preserve">
+    <value>Öppna uppgiftslänk</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>OpenID Connect-integration</value>
+  </data>
+  <data name="Please wait..." xml:space="preserve">
+    <value>Vänligen vänta...</value>
+  </data>
+  <data name="Processing..." xml:space="preserve">
+    <value>Bearbetar...</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>RBAC-auktorisering</value>
@@ -99,17 +123,32 @@
   <data name="Start a new project" xml:space="preserve">
     <value>Starta ett nytt projekt</value>
   </data>
+  <data name="Start Task" xml:space="preserve">
+    <value>Starta uppgift</value>
+  </data>
+  <data name="Step" xml:space="preserve">
+    <value>Steg</value>
+  </data>
+  <data name="Task in progress..." xml:space="preserve">
+    <value>Uppgift pågår...</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>Navigeringsfältet anpassar sig automatiskt baserat på användarroller och behörigheter.</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>Det här är ett mallprojekt, där vi börjar resan...</value>
   </data>
+  <data name="This task is pending." xml:space="preserve">
+    <value>Denna uppgift väntar på att bli genomförd.</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>Välkommen</value>
   </data>
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>Varför använda Aiursoft Template?</value>
+  </data>
+  <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
+    <value>Du har slutfört alla påbörjningsuppgifter. Du är nu en helt kvalificerad officiell anställd!</value>
   </data>
 
 </root>
