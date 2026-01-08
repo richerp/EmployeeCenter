@@ -60,6 +60,16 @@
                             </a>
                         </li>
                     }
+                    @if (tasks.Any())
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" href="#step-completed">
+                                @Localizer["Completed"]
+                                <br />
+                                <small>@Localizer["Step"] @(tasks.Count + 1)</small>
+                            </a>
+                        </li>
+                    }
                 </ul>
 
                 <div class="tab-content">
@@ -145,6 +155,36 @@
                             }
                         </div>
                     }
+                    @if (tasks.Any())
+                    {
+                        <div id="step-completed" class="tab-pane" role="tabpanel">
+                            <div class="text-center py-5">
+                                <div class="mb-4">
+                                    <i class="align-middle text-success" data-lucide="award" style="width: 100px; height: 100px;"></i>
+                                </div>
+                                <h2 class="display-5 fw-bold mb-3">@Localizer["Congratulations!"]</h2>
+                                <p class="lead mb-4">
+                                    @Localizer["All tasks completed! You are now a fully qualified employee!"]
+                                </p>
+                                <div class="card bg-light border-0 shadow-sm mx-auto" style="max-width: 600px;">
+                                    <div class="card-body p-5">
+                                        <div class="mb-4">
+                                            <img src="~/logo.svg" alt="Aiursoft" style="height: 40px;" />
+                                        </div>
+                                        <h3 class="card-title">@Localizer["Certificate"]</h3>
+                                        <hr />
+                                        <p class="fs-4 mb-4">@(Model.User.LegalName ?? Model.User.DisplayName)</p>
+                                        <p class="text-muted">
+                                            @Localizer["Wish your career takes off at Aiursoft!"]
+                                        </p>
+                                        <div class="mt-4">
+                                            <small class="text-muted">@DateTime.Now.ToShortDateString()</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
                 </div>
             </div>
         </div>
@@ -158,7 +198,7 @@
             theme: "arrows",
             showStepURLhash: false,
             // Select the first incomplete step
-            selected: @firstIncompleteIndex,
+            selected: @(allCompleted ? tasks.Count : firstIncompleteIndex),
             toolbarSettings: {
                 showNextButton: false, 
                 showPreviousButton: false

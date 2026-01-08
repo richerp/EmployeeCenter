@@ -12,4 +12,5 @@ public class IndexViewModel : UiStackLayoutViewModel
 
     public required List<OnboardingTask> Tasks { get; set; }
     public required List<OnboardingTaskLog> Logs { get; set; }
+    public required User User { get; set; }
 }

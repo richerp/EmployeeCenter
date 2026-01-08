@@ -178,5 +178,7 @@ public class OnboardingTests
         dashboardHtml = await dashboardResponse.Content.ReadAsStringAsync();
         Assert.Contains("Completed at", dashboardHtml);
         Assert.Contains("You have completed all onboarding tasks", dashboardHtml);
+        Assert.Contains("Certificate", dashboardHtml);
+        Assert.Contains("Wish your career takes off at Aiursoft!", dashboardHtml);
     }
 }

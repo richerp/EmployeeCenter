@@ -148,7 +148,19 @@
     <value>為什麼要使用 Aiursoft 模板？</value>
   </data>
   <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
-    <value>您已完成所有入職任務。您現在已正式成為合格的正式員工！</value>
+    <value>你已完成所有入職任務。你現已成為一名正式合格的員工！</value>
+  </data>
+  <data name="All tasks completed! You are now a fully qualified employee!" xml:space="preserve">
+    <value>所有任務已全部完成！您已經是一個可以合格合規工作的員工了！</value>
+  </data>
+  <data name="Wish your career takes off at Aiursoft!" xml:space="preserve">
+    <value>祝您的職業在 Aiursoft 騰飛！</value>
+  </data>
+  <data name="Certificate" xml:space="preserve">
+    <value>入職證書</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>已完成</value>
   </data>
 
 </root>
