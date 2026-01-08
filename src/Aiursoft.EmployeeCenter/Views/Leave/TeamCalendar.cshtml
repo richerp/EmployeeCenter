@@ -64,17 +64,17 @@
                                                     if (today >= leave.StartDate.Date && today <= leave.EndDate.Date)
                                                     {
                                                         statusClass = "bg-warning text-dark"; // Yellow: Currently on leave
-                                                        statusText = Localizer["On Leave"].ToString();
+                                                        statusText = Localizer["On Leave"].Value;
                                                     }
                                                     else if (today > leave.EndDate.Date)
                                                     {
                                                         statusClass = "bg-success"; // Green: Returned
-                                                        statusText = Localizer["Returned"].ToString();
+                                                        statusText = Localizer["Returned"].Value;
                                                     }
                                                     else
                                                     {
                                                         statusClass = "bg-primary"; // Blue: Not yet started
-                                                        statusText = Localizer["Upcoming"].ToString();
+                                                        statusText = Localizer["Upcoming"].Value;
                                                     }
                                                     
                                                     <div class="border rounded p-2 @statusClass" style="min-width: 150px;">

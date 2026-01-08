@@ -3,9 +3,6 @@ using Aiursoft.CSTools.Tools;
 using Aiursoft.DbTools;
 using Aiursoft.EmployeeCenter.Entities;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.DependencyInjection;
 using System.Text.RegularExpressions;
 
 using static Aiursoft.WebTools.Extends;
@@ -120,8 +117,9 @@ public class TeamCalendarTests
         var html = await response.Content.ReadAsStringAsync();
         
         // Should see "Boss" or "经理"
-        Assert.IsTrue(html.Contains("Boss") || html.Contains("经理") || html.Contains("汇报对象"));
-        Assert.IsTrue(html.Contains(managerEmail));
+        var containsRelation = html.Contains("Boss") || html.Contains("经理") || html.Contains("汇报对象");
+        Assert.IsTrue(containsRelation);
+        Assert.Contains(managerEmail, html);
 
         // 3. Check Manager's Team Calendar
         response = await managerHttp.GetAsync("/Leave/TeamCalendar");
@@ -129,7 +127,8 @@ public class TeamCalendarTests
         html = await response.Content.ReadAsStringAsync();
 
         // Should see "Direct Report" or "直接下属"
-        Assert.IsTrue(html.Contains("Direct Report") || html.Contains("直接下属"));
-        Assert.IsTrue(html.Contains(subordinateEmail));
+        var containsDirectReport = html.Contains("Direct Report") || html.Contains("直接下属");
+        Assert.IsTrue(containsDirectReport);
+        Assert.Contains(subordinateEmail, html);
     }
 }
