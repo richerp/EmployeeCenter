@@ -270,7 +270,7 @@ public class LeaveController(
 
         var query = context.LeaveApplications
             .Include(l => l.User)
-            .Where(l => l.IsPending && !l.IsWithdrawn);
+            .Where(l => l.IsPending && !l.IsWithdrawn && l.UserId != user.Id);
 
         if (!canApproveAny)
         {
@@ -377,6 +377,11 @@ public class LeaveController(
         // 1. User is in applicant's management chain (recursive)
         // 2. User has CanApproveAnyLeave
         var canApproveAny = (await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanApproveAnyLeave)).Succeeded;
+
+        if (leave.UserId == user.Id)
+        {
+            return BadRequest("You cannot approve your own leave application.");
+        }
 
         bool isInManagementChain = false;
         if (!canApproveAny)
