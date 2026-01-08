@@ -17,7 +17,7 @@ public class ManageOnboardingController(EmployeeCenterDbContext context) : Contr
     [RenderInNavBar(
         NavGroupName = "Administration",
         NavGroupOrder = 3,
-        CascadedLinksGroupName = "Onboarding",
+        CascadedLinksGroupName = "Manage Onboarding",
         CascadedLinksIcon = "user-plus",
         CascadedLinksOrder = 1,
         LinkText = "Manage Tasks",
