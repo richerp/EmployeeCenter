@@ -57,9 +57,6 @@
   <data name="currently absent" xml:space="preserve">
     <value>当前缺席</value>
   </data>
-  <data name="days" xml:space="preserve">
-    <value>天</value>
-  </data>
   <data name="Days" xml:space="preserve">
     <value>天数</value>
   </data>

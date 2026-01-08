@@ -1,7 +1,9 @@
 using System.Net;
+using System.Security.Claims;
 using System.Text.RegularExpressions;
 using Aiursoft.CSTools.Tools;
 using Aiursoft.DbTools;
+using Aiursoft.EmployeeCenter.Authorization;
 using Aiursoft.EmployeeCenter.Entities;
 using Microsoft.AspNetCore.Identity;
 using static Aiursoft.WebTools.Extends;
@@ -117,5 +119,115 @@ public class ReportLineTests
         var reportLineHtml = await reportLinePage.Content.ReadAsStringAsync();
 
         Assert.Contains("Circular dependency detected in report line!", reportLineHtml);
+    }
+
+    [TestMethod]
+    public async Task TestUserDetailsDisplay()
+    {
+        // 1. Create a user with full info
+        string email;
+        var suffix = Guid.NewGuid().ToString("N")[..6];
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
+            var user = new User 
+            { 
+                UserName = "user" + suffix, 
+                DisplayName = "Display Name", 
+                Email = "user" + suffix + "@test.com", 
+                AvatarRelativePath = User.DefaultAvatarPath,
+                JobLevel = "L3",
+                Title = "Technical Lead",
+                LegalName = "Legal Name",
+                PhoneNumber = "123456789",
+                BankName = "Test Bank",
+                BankAccount = "111222333",
+                BankAccountName = "Legal Name"
+            };
+            var res = await userManager.CreateAsync(user, "Password123!");
+            if (!res.Succeeded)
+            {
+                throw new Exception("Failed to create user: " + string.Join(", ", res.Errors.Select(e => e.Description)));
+            }
+            email = user.Email;
+        }
+
+        // 2. Login as the user
+        await LoginAsync(email, "Password123!");
+
+        // 3. View report line (Index defaults to self)
+        var reportLinePage = await _http.GetAsync("/ReportLine");
+        reportLinePage.EnsureSuccessStatusCode();
+        var reportLineHtml = await reportLinePage.Content.ReadAsStringAsync();
+
+        // 4. Verify user details are present
+        Assert.Contains("User Details", reportLineHtml);
+        Assert.Contains("L3", reportLineHtml);
+        Assert.Contains("Technical Lead", reportLineHtml);
+        Assert.Contains("Legal Name", reportLineHtml);
+        Assert.Contains("123456789", reportLineHtml);
+        Assert.Contains("Test Bank", reportLineHtml);
+        Assert.Contains("111222333", reportLineHtml);
+    }
+
+    [TestMethod]
+    public async Task TestUserDetailsDisplayWithPermission()
+    {
+        // 1. Create a target user
+        string targetUserId, targetUserName;
+        var suffix = Guid.NewGuid().ToString("N")[..6];
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
+            var user = new User 
+            { 
+                UserName = "target" + suffix, 
+                DisplayName = "Target User", 
+                Email = "target" + suffix + "@test.com", 
+                AvatarRelativePath = User.DefaultAvatarPath,
+                JobLevel = "L5"
+            };
+            await userManager.CreateAsync(user, "Password123!");
+            targetUserId = user.Id;
+            targetUserName = user.UserName;
+        }
+
+        // 2. Create a viewer user with CanReadUsers permission
+        string viewerEmail;
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
+            var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+            
+            var viewer = new User 
+            { 
+                UserName = "viewer" + suffix, 
+                DisplayName = "Viewer User", 
+                Email = "viewer" + suffix + "@test.com", 
+                AvatarRelativePath = User.DefaultAvatarPath 
+            };
+            await userManager.CreateAsync(viewer, "Password123!");
+            viewerEmail = viewer.Email;
+
+            var roleName = "Viewers" + suffix;
+            var role = new IdentityRole(roleName);
+            await roleManager.CreateAsync(role);
+            await roleManager.AddClaimAsync(role, new Claim(AppPermissions.Type, AppPermissionNames.CanReadUsers));
+            await roleManager.AddClaimAsync(role, new Claim(AppPermissions.Type, AppPermissionNames.CanViewReportLine));
+            await userManager.AddToRoleAsync(viewer, roleName);
+        }
+
+        // 3. Login as viewer
+        await LoginAsync(viewerEmail, "Password123!");
+
+        // 4. View target's report line
+        var reportLinePage = await _http.GetAsync("/ReportLine/Index/" + targetUserId);
+        reportLinePage.EnsureSuccessStatusCode();
+        var reportLineHtml = await reportLinePage.Content.ReadAsStringAsync();
+
+        // 5. Verify target details are present
+        Assert.Contains("User Details", reportLineHtml);
+        Assert.Contains("L5", reportLineHtml);
+        Assert.Contains(targetUserName, reportLineHtml);
     }
 }
