@@ -86,6 +86,11 @@ public class ViewModelArgsInjector(
         _ = localizer["Onboarding"];
         _ = localizer["Manage Tasks"];
         _ = localizer["Manage Onboarding"];
+        _ = localizer["Print Certificate"];
+        _ = localizer["Certificate of Employeement"];
+        _ = localizer["Certificate of Income"];
+        _ = localizer["Print"];
+        _ = localizer["Manage Printing"];
     }
 
     public void InjectSimple(
