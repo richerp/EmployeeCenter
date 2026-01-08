@@ -170,7 +170,7 @@ public class UsersController(
     }
 
     // GET: Users/Edit/5
-    [Authorize(Policy = AppPermissionNames.CanEditUsers)]
+    [Authorize(Policy = AppPermissionNames.CanEditAndViewDetailsOfUsers)]
     public async Task<IActionResult> Edit(string? id)
     {
         if (id == null) return NotFound();
@@ -215,7 +215,7 @@ public class UsersController(
     // POST: /Users/Edit/5
     [HttpPost]
     [ValidateAntiForgeryToken]
-    [Authorize(Policy = AppPermissionNames.CanEditUsers)]
+    [Authorize(Policy = AppPermissionNames.CanEditAndViewDetailsOfUsers)]
     public async Task<IActionResult> Edit(EditViewModel model)
     {
         if (!ModelState.IsValid)

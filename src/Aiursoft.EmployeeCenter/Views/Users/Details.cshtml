@@ -80,7 +80,7 @@
                         <div class="col-sm-9">@(Model.User.PhoneNumber ?? "N/A")</div>
                     </div>
                 </div>
-                @if (User.HasClaim(AppPermissions.Type, AppPermissionNames.CanEditUsers))
+                @if (User.HasClaim(AppPermissions.Type, AppPermissionNames.CanEditAndViewDetailsOfUsers))
                 {
                     <div class="list-group-item">
                         <div class="row">

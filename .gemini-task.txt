@@ -1,0 +1,15 @@
+You are working on an EXISTING Merge Request #41: 'Fix for issue #28: 具有查看用户权限的人，也无法查看工资(用户的属性）。只有具有编辑用户权限的人可以编辑。'.
+Source Branch: fix-issue-28
+Target Branch: master
+
+Recent discussions and feedback (marked [NEW] if since last bot commit):
+[NEW] anduin: 很好！干得好！现在将 CanEditUsers 这个权限，重命名为：
+
+`CanEditAndViewDetailsOfUsers`，因为这个权限负责确定可以查看薪水。解释性的文本也要重命名。 (1/8/2026 12:52:39 PM)
+
+
+Status: NEW HUMAN REVIEW/COMMENTS.
+A human has provided feedback on this MR. Please address the comments mentioned in the discussions above, especially those marked as [NEW].
+
+Please analyze the feedback and make the necessary changes.
+Don't forget to bump the version for updated nuget package projects after necessary changes, while do NOT add a version tag for projects doesn't publish nuget packages!

@@ -107,7 +107,7 @@
                                     <th>@Localizer["Phone Number"]</th>
                                     <td>@(Model.TargetUser.PhoneNumber ?? "N/A")</td>
                                 </tr>
-                                @if (Model.IsViewingSelf || (await AuthorizationService.AuthorizeAsync(User, AppPermissionNames.CanEditUsers)).Succeeded)
+                                @if (Model.IsViewingSelf || (await AuthorizationService.AuthorizeAsync(User, AppPermissionNames.CanEditAndViewDetailsOfUsers)).Succeeded)
                                 {
                                     <tr>
                                         <th>@Localizer["Bank Name (Branch)"]</th>

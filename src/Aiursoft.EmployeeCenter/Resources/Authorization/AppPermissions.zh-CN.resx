@@ -48,8 +48,8 @@
   <data name="Allows modification of role names and their assigned permissions." xml:space="preserve">
     <value>允许修改角色名称及其分配的权限。</value>
   </data>
-  <data name="Allows modification of user details like email and roles, and can also reset user passwords." xml:space="preserve">
-    <value>允许修改用户详细信息（如邮箱和角色），并可重置用户密码。</value>
+  <data name="Allows modification of user details like email and roles, resetting user passwords, and viewing sensitive user details like payroll." xml:space="preserve">
+    <value>允许修改用户详细信息（如邮箱和角色），重置用户密码，以及查看包括工资在内的敏感用户详情。</value>
   </data>
   <data name="Allows printing employment and income certificates for any employee." xml:space="preserve">
     <value>允许为任何员工打印雇佣和收入证明。</value>
@@ -96,8 +96,8 @@
   <data name="Edit Role Information" xml:space="preserve">
     <value>编辑角色信息</value>
   </data>
-  <data name="Edit User Information" xml:space="preserve">
-    <value>编辑用户信息</value>
+  <data name="Edit and View Details of Users" xml:space="preserve">
+    <value>编辑并查看用户详情</value>
   </data>
   <data name="Grants permission to create new roles." xml:space="preserve">
     <value>授予创建新角色的权限。</value>
