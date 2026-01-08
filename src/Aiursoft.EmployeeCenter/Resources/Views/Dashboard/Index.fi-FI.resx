@@ -36,6 +36,9 @@
   <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
     <value>Kaikki riippuvuudet rekisteröidään automaattisesti ja ne ovat aina saatavilla konstruktorin kautta tapahtuvan injektoinnin avulla.</value>
   </data>
+  <data name="All tasks completed! You are now a fully qualified employee!" xml:space="preserve">
+    <value>Kaikki tehtävät suoritettu! Olet nyt täysin pätevä työntekijä!</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>Automaattinen tumma tila</value>
   </data>
@@ -48,8 +51,14 @@
   <data name="Built-in User Management" xml:space="preserve">
     <value>Sisäänrakennettu käyttäjienhallinta</value>
   </data>
+  <data name="Certificate" xml:space="preserve">
+    <value>Tunnustus</value>
+  </data>
   <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
     <value>Sisältää täyden Docker-tuen yksinkertaistettuja, yhdenmukaisia ja luotettavia käyttöönottoja varten.</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Valmis</value>
   </data>
   <data name="Completed at" xml:space="preserve">
     <value>Valmis klo</value>
@@ -146,6 +155,9 @@
   </data>
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>Miksi käyttää Aiursoft Templatea?</value>
+  </data>
+  <data name="Wish your career takes off at Aiursoft!" xml:space="preserve">
+    <value>Toivottavasti urasi lähtee kulkemaan Aiursoftissa!</value>
   </data>
   <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
     <value>Olet suorittanut kaikki rekrytoinnin tehtävät. Olet nyt täysin pätevä virallinen työntekijä!</value>

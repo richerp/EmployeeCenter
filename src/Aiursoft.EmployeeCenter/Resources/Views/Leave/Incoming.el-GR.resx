@@ -48,6 +48,9 @@
   <data name="Approved This Month" xml:space="preserve">
     <value>Ε aproved Αυτόν τον Μήνα</value>
   </data>
+  <data name="Approver" xml:space="preserve">
+    <value>Εγκριτής</value>
+  </data>
   <data name="awaiting your review" xml:space="preserve">
     <value>αναμονή κρίσης σας</value>
   </data>

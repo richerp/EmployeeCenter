@@ -51,6 +51,9 @@
   <data name="Allows modification of user details like email and roles, and can also reset user passwords." xml:space="preserve">
     <value>ユーザーのメールアドレスやロールなどの詳細情報の変更を許可し、ユーザーのパスワードをリセットすることもできます。</value>
   </data>
+  <data name="Allows printing employment and income certificates for any employee." xml:space="preserve">
+    <value>すべての従業員に対する雇用および所得証明書の印刷を許可します。</value>
+  </data>
   <data name="Allows the permanent deletion of roles." xml:space="preserve">
     <value>ロールの完全な削除を許可します。</value>
   </data>
@@ -119,6 +122,9 @@
   </data>
   <data name="Manage SSH Keys" xml:space="preserve">
     <value>SSHキーの管理</value>
+  </data>
+  <data name="Print Certificates" xml:space="preserve">
+    <value>証明書を印刷する</value>
   </data>
   <data name="Read Roles" xml:space="preserve">
     <value>ロールの閲覧</value>

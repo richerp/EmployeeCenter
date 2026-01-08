@@ -36,6 +36,9 @@
   <data name="Approved" xml:space="preserve">
     <value>Genehmigt</value>
   </data>
+  <data name="Approver" xml:space="preserve">
+    <value>Genehmiger</value>
+  </data>
   <data name="awaiting approval" xml:space="preserve">
     <value>in Bearbeitung</value>
   </data>

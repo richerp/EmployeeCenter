@@ -36,6 +36,9 @@
   <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
     <value>Усі залежності автоматично реєструються та завжди доступні через ін&apos;єкцію в конструктор.</value>
   </data>
+  <data name="All tasks completed! You are now a fully qualified employee!" xml:space="preserve">
+    <value>Усі завдання виконані! Ви тепер повністю кваліфікований співробітник!</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>Автоматичний темний режим</value>
   </data>
@@ -48,8 +51,14 @@
   <data name="Built-in User Management" xml:space="preserve">
     <value>Вбудоване управління користувачами</value>
   </data>
+  <data name="Certificate" xml:space="preserve">
+    <value>Сертифікат</value>
+  </data>
   <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
     <value>Повністю підтримує Docker для спрощених, стабільних та надійних розгортань.</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Завершено</value>
   </data>
   <data name="Completed at" xml:space="preserve">
     <value>Виконано о</value>
@@ -146,6 +155,9 @@
   </data>
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>Чому варто використовувати шаблон Aiursoft?</value>
+  </data>
+  <data name="Wish your career takes off at Aiursoft!" xml:space="preserve">
+    <value>Бажаємо, щоб ваша кар’єра розпочалася в Aiursoft!</value>
   </data>
   <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
     <value>Ви завершили всі завдання онбордингу. Ви тепер повністю кваліфікований офіційний співробітник!</value>

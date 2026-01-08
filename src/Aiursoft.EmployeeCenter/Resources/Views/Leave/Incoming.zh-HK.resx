@@ -48,6 +48,9 @@
   <data name="Approved This Month" xml:space="preserve">
     <value>本月已批准</value>
   </data>
+  <data name="Approver" xml:space="preserve">
+    <value>審批人</value>
+  </data>
   <data name="awaiting your review" xml:space="preserve">
     <value>待您審核</value>
   </data>

@@ -51,6 +51,9 @@
   <data name="Allows modification of user details like email and roles, and can also reset user passwords." xml:space="preserve">
     <value>允許修改使用者詳細資訊，例如電子郵件和角色，並可重設使用者密碼。</value>
   </data>
+  <data name="Allows printing employment and income certificates for any employee." xml:space="preserve">
+    <value>允許列印任何員工的僱用與收入證明。</value>
+  </data>
   <data name="Allows the permanent deletion of roles." xml:space="preserve">
     <value>允許永久刪除角色。</value>
   </data>
@@ -119,6 +122,9 @@
   </data>
   <data name="Manage SSH Keys" xml:space="preserve">
     <value>管理 SSH 金鑰</value>
+  </data>
+  <data name="Print Certificates" xml:space="preserve">
+    <value>列印證明文件</value>
   </data>
   <data name="Read Roles" xml:space="preserve">
     <value>讀取角色</value>

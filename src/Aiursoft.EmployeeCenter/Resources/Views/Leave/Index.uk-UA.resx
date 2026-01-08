@@ -36,6 +36,9 @@
   <data name="Approved" xml:space="preserve">
     <value>Затверджено</value>
   </data>
+  <data name="Approver" xml:space="preserve">
+    <value>Затверджувач</value>
+  </data>
   <data name="awaiting approval" xml:space="preserve">
     <value>очікує підтвердження</value>
   </data>

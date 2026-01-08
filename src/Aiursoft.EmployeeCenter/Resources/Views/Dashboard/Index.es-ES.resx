@@ -36,6 +36,9 @@
   <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
     <value>Todas las dependencias se registran automáticamente y están siempre disponibles mediante inyección de constructor.</value>
   </data>
+  <data name="All tasks completed! You are now a fully qualified employee!" xml:space="preserve">
+    <value>¡Todas las tareas completadas! ¡Ahora eres un empleado totalmente cualificado!</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>Modo Oscuro Automático</value>
   </data>
@@ -48,8 +51,14 @@
   <data name="Built-in User Management" xml:space="preserve">
     <value>Gestión de Usuarios Integrada</value>
   </data>
+  <data name="Certificate" xml:space="preserve">
+    <value>Certificado</value>
+  </data>
   <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
     <value>Incluye soporte completo para Docker para implementaciones simplificadas, consistentes y fiables.</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Completado</value>
   </data>
   <data name="Completed at" xml:space="preserve">
     <value>Completado a las</value>
@@ -146,6 +155,9 @@
   </data>
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>¿Por qué usar la Plantilla de Aiursoft?</value>
+  </data>
+  <data name="Wish your career takes off at Aiursoft!" xml:space="preserve">
+    <value>¡Que tu carrera despegue en Aiursoft!</value>
   </data>
   <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
     <value>¡Has completado todas las tareas de incorporación! Ahora eres un empleado oficial plenamente cualificado.</value>

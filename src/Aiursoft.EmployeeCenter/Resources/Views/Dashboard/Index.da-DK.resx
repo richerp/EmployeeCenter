@@ -36,6 +36,9 @@
   <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
     <value>Alle afhængigheder registreres automatisk og er altid tilgængelige via konstruktor-injektion.</value>
   </data>
+  <data name="All tasks completed! You are now a fully qualified employee!" xml:space="preserve">
+    <value>Alle opgaver afsluttet! Du er nu en fuldt gyldig ansat!</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>Automatisk Mørk Tilstand</value>
   </data>
@@ -48,8 +51,14 @@
   <data name="Built-in User Management" xml:space="preserve">
     <value>Indbygget brugeradministration</value>
   </data>
+  <data name="Certificate" xml:space="preserve">
+    <value>Certifikat</value>
+  </data>
   <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
     <value>Kommer med fuld Docker-understøttelse til forenklede, konsistente og pålidelige installationer.</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Afsluttet</value>
   </data>
   <data name="Completed at" xml:space="preserve">
     <value>Udført kl.</value>
@@ -146,6 +155,9 @@
   </data>
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>Hvorfor bruge Aiursoft Template?</value>
+  </data>
+  <data name="Wish your career takes off at Aiursoft!" xml:space="preserve">
+    <value>Lyk din karriere med at tage fart hos Aiursoft!</value>
   </data>
   <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
     <value>Du har fuldført alle onboarding-opgaver. Du er nu en fuldt kvalificeret officiel medarbejder!</value>

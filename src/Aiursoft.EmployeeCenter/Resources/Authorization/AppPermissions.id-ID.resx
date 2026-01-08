@@ -51,6 +51,9 @@
   <data name="Allows modification of user details like email and roles, and can also reset user passwords." xml:space="preserve">
     <value>Memungkinkan modifikasi detail pengguna seperti email dan peran, serta dapat mengatur ulang kata sandi pengguna.</value>
   </data>
+  <data name="Allows printing employment and income certificates for any employee." xml:space="preserve">
+    <value>Memungkinkan mencetak sertifikat pekerjaan dan penghasilan untuk karyawan mana pun.</value>
+  </data>
   <data name="Allows the permanent deletion of roles." xml:space="preserve">
     <value>Memungkinkan penghapusan permanen peran.</value>
   </data>
@@ -119,6 +122,9 @@
   </data>
   <data name="Manage SSH Keys" xml:space="preserve">
     <value>Kelola Kunci SSH</value>
+  </data>
+  <data name="Print Certificates" xml:space="preserve">
+    <value>Cetak Sertifikat</value>
   </data>
   <data name="Read Roles" xml:space="preserve">
     <value>Lihat Peran</value>

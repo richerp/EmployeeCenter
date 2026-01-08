@@ -48,6 +48,9 @@
   <data name="Approved This Month" xml:space="preserve">
     <value>Hyväksytty tänä kuuna</value>
   </data>
+  <data name="Approver" xml:space="preserve">
+    <value>Hyväksyjä</value>
+  </data>
   <data name="awaiting your review" xml:space="preserve">
     <value>odotetaan arviointiasi</value>
   </data>

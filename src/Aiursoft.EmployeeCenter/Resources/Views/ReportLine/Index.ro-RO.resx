@@ -18,17 +18,41 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Legend" xml:space="preserve">
+      <data name="Bank Account (Card Number)" xml:space="preserve">
+    <value>Cont bancar (Număr card)</value>
+  </data>
+  <data name="Bank Account Name" xml:space="preserve">
+    <value>Nume cont bancar</value>
+  </data>
+  <data name="Bank Name (Branch)" xml:space="preserve">
+    <value>Numele băncii (filială)</value>
+  </data>
+  <data name="Creation Time" xml:space="preserve">
+    <value>Timpul de creare</value>
+  </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>Numele legal</value>
+  </data>
+  <data name="Legend" xml:space="preserve">
     <value>Legendă</value>
   </data>
   <data name="Manager" xml:space="preserve">
     <value>Manager</value>
   </data>
+  <data name="None" xml:space="preserve">
+    <value>Nimic</value>
+  </data>
   <data name="Peer" xml:space="preserve">
     <value>Coleg</value>
   </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>Număr de telefon</value>
+  </data>
   <data name="Please select a user first." xml:space="preserve">
     <value>Vă rugăm să selectați mai întâi un utilizator.</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>Grad</value>
   </data>
   <data name="Report Line" xml:space="preserve">
     <value>Linie de Raportare</value>
@@ -41,6 +65,15 @@
   </data>
   <data name="Target" xml:space="preserve">
     <value>Țintă</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Funcție</value>
+  </data>
+  <data name="User Details" xml:space="preserve">
+    <value>Detalii utilizator</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Utilizator</value>
   </data>
   <data name="View Report Line" xml:space="preserve">
     <value>Vizualizează Linia de Raportare</value>

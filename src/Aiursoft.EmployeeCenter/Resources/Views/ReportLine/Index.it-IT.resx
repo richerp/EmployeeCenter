@@ -18,17 +18,41 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Legend" xml:space="preserve">
+      <data name="Bank Account (Card Number)" xml:space="preserve">
+    <value>Conto corrente (Numero carta)</value>
+  </data>
+  <data name="Bank Account Name" xml:space="preserve">
+    <value>Nome conto bancario</value>
+  </data>
+  <data name="Bank Name (Branch)" xml:space="preserve">
+    <value>Nome della banca (Filiale)</value>
+  </data>
+  <data name="Creation Time" xml:space="preserve">
+    <value>Ora di creazione</value>
+  </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>Nome legale</value>
+  </data>
+  <data name="Legend" xml:space="preserve">
     <value>Legenda</value>
   </data>
   <data name="Manager" xml:space="preserve">
     <value>Responsabile</value>
   </data>
+  <data name="None" xml:space="preserve">
+    <value>Nessuno</value>
+  </data>
   <data name="Peer" xml:space="preserve">
     <value>Pari</value>
   </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>Numero di telefono</value>
+  </data>
   <data name="Please select a user first." xml:space="preserve">
     <value>Seleziona prima un utente.</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>Grado</value>
   </data>
   <data name="Report Line" xml:space="preserve">
     <value>Linea di Report</value>
@@ -41,6 +65,15 @@
   </data>
   <data name="Target" xml:space="preserve">
     <value>Obiettivo</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Titolo</value>
+  </data>
+  <data name="User Details" xml:space="preserve">
+    <value>Dettagli utente</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Username</value>
   </data>
   <data name="View Report Line" xml:space="preserve">
     <value>Visualizza Linea di Report</value>

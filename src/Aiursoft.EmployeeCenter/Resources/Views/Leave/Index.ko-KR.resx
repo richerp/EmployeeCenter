@@ -36,6 +36,9 @@
   <data name="Approved" xml:space="preserve">
     <value>승인됨</value>
   </data>
+  <data name="Approver" xml:space="preserve">
+    <value>승인자</value>
+  </data>
   <data name="awaiting approval" xml:space="preserve">
     <value>승인 대기 중</value>
   </data>

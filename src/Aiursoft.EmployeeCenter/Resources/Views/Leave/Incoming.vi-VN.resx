@@ -48,6 +48,9 @@
   <data name="Approved This Month" xml:space="preserve">
     <value>Đã phê duyệt trong tháng này</value>
   </data>
+  <data name="Approver" xml:space="preserve">
+    <value>Người duyệt</value>
+  </data>
   <data name="awaiting your review" xml:space="preserve">
     <value>đang chờ bạn xem xét</value>
   </data>

@@ -36,6 +36,9 @@
   <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
     <value>Tüm bağımlılıklar otomatik olarak kaydedilir ve constructor injection yoluyla her zaman kullanılabilir.</value>
   </data>
+  <data name="All tasks completed! You are now a fully qualified employee!" xml:space="preserve">
+    <value>Tüm görevler tamamlandı! Artık tam yetkili bir çalışanınız!</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>Otomatik Karanlık Mod</value>
   </data>
@@ -48,8 +51,14 @@
   <data name="Built-in User Management" xml:space="preserve">
     <value>Dahili Kullanıcı Yönetimi</value>
   </data>
+  <data name="Certificate" xml:space="preserve">
+    <value>Sertifika</value>
+  </data>
   <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
     <value>Basitleştirilmiş, tutarlı ve güvenilir dağıtımlar için tam Docker desteği ile birlikte gelir.</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Tamamlandı</value>
   </data>
   <data name="Completed at" xml:space="preserve">
     <value>Tamamlandı zamanı</value>
@@ -146,6 +155,9 @@
   </data>
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>Neden Aiursoft Template Kullanmalısınız?</value>
+  </data>
+  <data name="Wish your career takes off at Aiursoft!" xml:space="preserve">
+    <value>Aiursoft&apos;ta kariyerinizin hızlı bir şekilde yükseldiğini dileriz!</value>
   </data>
   <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
     <value>Tüm onboarding görevlerini tamamladınız. Artık tam yetkili resmi bir çalışanınız!</value>

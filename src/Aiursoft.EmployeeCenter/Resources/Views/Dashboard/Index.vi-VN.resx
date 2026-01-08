@@ -36,6 +36,9 @@
   <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
     <value>Tất cả các dependency đều được tự động đăng ký và luôn sẵn sàng để sử dụng thông qua constructor injection.</value>
   </data>
+  <data name="All tasks completed! You are now a fully qualified employee!" xml:space="preserve">
+    <value>Tất cả các nhiệm vụ đã hoàn thành! Bạn hiện là một nhân viên chính thức đã được đào tạo đầy đủ!</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>Chế độ Tối Tự động</value>
   </data>
@@ -48,8 +51,14 @@
   <data name="Built-in User Management" xml:space="preserve">
     <value>Quản lý Người dùng Tích hợp sẵn</value>
   </data>
+  <data name="Certificate" xml:space="preserve">
+    <value>Chứng chỉ</value>
+  </data>
   <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
     <value>Đi kèm với hỗ trợ Docker đầy đủ để triển khai đơn giản, nhất quán và đáng tin cậy.</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Hoàn thành</value>
   </data>
   <data name="Completed at" xml:space="preserve">
     <value>Đã hoàn thành lúc</value>
@@ -146,6 +155,9 @@
   </data>
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>Tại sao nên sử dụng Mẫu Aiursoft?</value>
+  </data>
+  <data name="Wish your career takes off at Aiursoft!" xml:space="preserve">
+    <value>Chúc sự nghiệp của bạn thăng hoa tại Aiursoft!</value>
   </data>
   <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
     <value>Bạn đã hoàn thành tất cả các nhiệm vụ trênboarding. Bây giờ bạn là một nhân viên chính thức đã được đào tạo đầy đủ!</value>

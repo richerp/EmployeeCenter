@@ -48,6 +48,9 @@
   <data name="Approved This Month" xml:space="preserve">
     <value>Aprobate în această lună</value>
   </data>
+  <data name="Approver" xml:space="preserve">
+    <value>Aprobat de</value>
+  </data>
   <data name="awaiting your review" xml:space="preserve">
     <value>în așteptarea recenziei dumneavoastră</value>
   </data>

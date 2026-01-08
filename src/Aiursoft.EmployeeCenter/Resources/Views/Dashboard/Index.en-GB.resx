@@ -36,6 +36,9 @@
   <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
     <value>All dependencies are automatically registered and always available via constructor injection.</value>
   </data>
+  <data name="All tasks completed! You are now a fully qualified employee!" xml:space="preserve">
+    <value>All tasks completed! You are now a fully qualified employee!</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>Automatic Dark Mode</value>
   </data>
@@ -48,8 +51,14 @@
   <data name="Built-in User Management" xml:space="preserve">
     <value>Built-in User Management</value>
   </data>
+  <data name="Certificate" xml:space="preserve">
+    <value>Certificate</value>
+  </data>
   <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
     <value>Comes with full Docker support for simplified, consistent, and reliable deployments.</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Completed</value>
   </data>
   <data name="Completed at" xml:space="preserve">
     <value>Completed at</value>
@@ -147,20 +156,11 @@
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>Why use the Aiursoft Template?</value>
   </data>
-  <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
-    <value>You have completed all onboarding tasks. You are now a fully qualified official employee!</value>
-  </data>
-  <data name="All tasks completed! You are now a fully qualified employee!" xml:space="preserve">
-    <value>All tasks completed! You are now a fully qualified employee!</value>
-  </data>
   <data name="Wish your career takes off at Aiursoft!" xml:space="preserve">
     <value>Wish your career takes off at Aiursoft!</value>
   </data>
-  <data name="Certificate" xml:space="preserve">
-    <value>Certificate</value>
-  </data>
-  <data name="Completed" xml:space="preserve">
-    <value>Completed</value>
+  <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
+    <value>You have completed all onboarding tasks. You are now a fully qualified official employee!</value>
   </data>
 
 </root>

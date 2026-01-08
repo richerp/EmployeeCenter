@@ -48,6 +48,9 @@
   <data name="Approved This Month" xml:space="preserve">
     <value>Goedgekeurd deze maand</value>
   </data>
+  <data name="Approver" xml:space="preserve">
+    <value>Goedkeurder</value>
+  </data>
   <data name="awaiting your review" xml:space="preserve">
     <value>in afwachting van uw beoordeling</value>
   </data>

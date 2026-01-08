@@ -36,6 +36,9 @@
   <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
     <value>การอ้างอิงทั้งหมดจะถูกลงทะเบียนโดยอัตโนมัติและพร้อมใช้งานเสมอผ่านการฉีดคอนสตรัคเตอร์</value>
   </data>
+  <data name="All tasks completed! You are now a fully qualified employee!" xml:space="preserve">
+    <value>งานทั้งหมดเสร็จสิ้น! คุณได้รับการแต่งตั้งเป็นพนักงานที่มีคุณสมบัติครบถ้วนแล้ว!</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>โหมดมืดอัตโนมัติ</value>
   </data>
@@ -48,8 +51,14 @@
   <data name="Built-in User Management" xml:space="preserve">
     <value>การจัดการผู้ใช้ในตัว</value>
   </data>
+  <data name="Certificate" xml:space="preserve">
+    <value>ใบรับรอง</value>
+  </data>
   <data name="Comes with full Docker support for simplified, consistent, and reliable deployments." xml:space="preserve">
     <value>มาพร้อมการสนับสนุน Docker เต็มรูปแบบเพื่อให้การปรับใช้เป็นเรื่องง่าย สม่ำเสมอ และเชื่อถือได้</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>สำเร็จแล้ว</value>
   </data>
   <data name="Completed at" xml:space="preserve">
     <value>เสร็จสิ้นเมื่อ</value>
@@ -146,6 +155,9 @@
   </data>
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>ทำไมต้องใช้ Aiursoft Template?</value>
+  </data>
+  <data name="Wish your career takes off at Aiursoft!" xml:space="preserve">
+    <value>ขอให้การงานของคุณรุ่งเรืองที่ Aiursoft!</value>
   </data>
   <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
     <value>คุณได้ดำเนินการตามขั้นตอนการบนบอร์ดทั้งหมดเรียบร้อยแล้ว คุณได้รับการแต่งตั้งเป็นพนักงานอย่างเป็นทางการอย่างสมบูรณ์!</value>

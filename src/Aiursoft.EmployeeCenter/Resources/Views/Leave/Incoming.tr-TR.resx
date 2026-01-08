@@ -48,6 +48,9 @@
   <data name="Approved This Month" xml:space="preserve">
     <value>Bu Ay Onaylandı</value>
   </data>
+  <data name="Approver" xml:space="preserve">
+    <value>Onaylayan</value>
+  </data>
   <data name="awaiting your review" xml:space="preserve">
     <value>görüşünüz bekleniyor</value>
   </data>

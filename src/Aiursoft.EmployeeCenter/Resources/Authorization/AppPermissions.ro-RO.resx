@@ -51,6 +51,9 @@
   <data name="Allows modification of user details like email and roles, and can also reset user passwords." xml:space="preserve">
     <value>Permite modificarea detaliilor utilizatorului, cum ar fi adresa de e-mail și rolurile, și poate, de asemenea, să reseteze parolele utilizatorilor.</value>
   </data>
+  <data name="Allows printing employment and income certificates for any employee." xml:space="preserve">
+    <value>Permite tipărirea certificatelor de angajare și venit pentru orice angajat.</value>
+  </data>
   <data name="Allows the permanent deletion of roles." xml:space="preserve">
     <value>Permite ștergerea permanentă a rolurilor.</value>
   </data>
@@ -119,6 +122,9 @@
   </data>
   <data name="Manage SSH Keys" xml:space="preserve">
     <value>Gestionează chei SSH</value>
+  </data>
+  <data name="Print Certificates" xml:space="preserve">
+    <value>Imprimă Certificatelor</value>
   </data>
   <data name="Read Roles" xml:space="preserve">
     <value>Citește Roluri</value>

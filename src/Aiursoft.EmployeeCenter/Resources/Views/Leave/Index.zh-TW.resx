@@ -48,6 +48,9 @@
   <data name="Approved" xml:space="preserve">
     <value>已核准</value>
   </data>
+  <data name="Approver" xml:space="preserve">
+    <value>審核人</value>
+  </data>
   <data name="Are you sure you want to withdraw this leave application?" xml:space="preserve">
     <value>確定要撤回這項休假申請嗎？</value>
   </data>

@@ -48,6 +48,9 @@
   <data name="Approved This Month" xml:space="preserve">
     <value>Затверджено цього місяця</value>
   </data>
+  <data name="Approver" xml:space="preserve">
+    <value>Відповідальний</value>
+  </data>
   <data name="awaiting your review" xml:space="preserve">
     <value>очікується ваша перевірка</value>
   </data>

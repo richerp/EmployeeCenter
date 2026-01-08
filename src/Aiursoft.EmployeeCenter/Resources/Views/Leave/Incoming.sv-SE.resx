@@ -48,6 +48,9 @@
   <data name="Approved This Month" xml:space="preserve">
     <value>Godkända den här månaden</value>
   </data>
+  <data name="Approver" xml:space="preserve">
+    <value>Godkännare</value>
+  </data>
   <data name="awaiting your review" xml:space="preserve">
     <value>väntar på din granskning</value>
   </data>

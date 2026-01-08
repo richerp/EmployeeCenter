@@ -39,9 +39,6 @@
   <data name="Approval History" xml:space="preserve">
     <value>审批记录</value>
   </data>
-  <data name="Approver" xml:space="preserve">
-    <value>审批人</value>
-  </data>
   <data name="Approve" xml:space="preserve">
     <value>批准</value>
   </data>
@@ -50,6 +47,9 @@
   </data>
   <data name="Approved This Month" xml:space="preserve">
     <value>本月已批准</value>
+  </data>
+  <data name="Approver" xml:space="preserve">
+    <value>审批人</value>
   </data>
   <data name="awaiting your review" xml:space="preserve">
     <value>待您审核</value>
