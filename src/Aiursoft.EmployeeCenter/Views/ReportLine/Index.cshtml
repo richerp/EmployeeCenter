@@ -40,7 +40,7 @@
     </div>
 }
 
-@if ((await AuthorizationService.AuthorizeAsync(User, AppPermissionNames.CanViewReportLine)).Succeeded)
+@if (Model.IsViewingSelf || (await AuthorizationService.AuthorizeAsync(User, AppPermissionNames.CanViewReportLine)).Succeeded)
 {
     <div class="row">
         <div class="col-md-4">
@@ -73,6 +73,72 @@
                     </div>
                 </div>
             </div>
+
+            @if (Model.IsViewingSelf || (await AuthorizationService.AuthorizeAsync(User, AppPermissionNames.CanReadUsers)).Succeeded)
+            {
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">@Localizer["User Details"]</h5>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-sm my-2">
+                            <tbody>
+                                <tr>
+                                    <th>@Localizer["Username"]</th>
+                                    <td>@Model.TargetUser.UserName</td>
+                                </tr>
+                                <tr>
+                                    <th>@Localizer["Creation Time"]</th>
+                                    <td>@Model.TargetUser.CreationTime.ToLocalTime().ToString("G")</td>
+                                </tr>
+                                <tr>
+                                    <th>@Localizer["Rank"]</th>
+                                    <td>@(Model.TargetUser.JobLevel ?? "N/A")</td>
+                                </tr>
+                                <tr>
+                                    <th>@Localizer["Title"]</th>
+                                    <td>@(Model.TargetUser.Title ?? "N/A")</td>
+                                </tr>
+                                <tr>
+                                    <th>@Localizer["Legal Name"]</th>
+                                    <td>@(Model.TargetUser.LegalName ?? "N/A")</td>
+                                </tr>
+                                <tr>
+                                    <th>@Localizer["Phone Number"]</th>
+                                    <td>@(Model.TargetUser.PhoneNumber ?? "N/A")</td>
+                                </tr>
+                                <tr>
+                                    <th>@Localizer["Bank Name (Branch)"]</th>
+                                    <td>@(Model.TargetUser.BankName ?? "N/A")</td>
+                                </tr>
+                                <tr>
+                                    <th>@Localizer["Bank Account (Card Number)"]</th>
+                                    <td>@(Model.TargetUser.BankAccount ?? "N/A")</td>
+                                </tr>
+                                <tr>
+                                    <th>@Localizer["Bank Account Name"]</th>
+                                    <td>@(Model.TargetUser.BankAccountName ?? "N/A")</td>
+                                </tr>
+                                <tr>
+                                    <th>@Localizer["Manager"]</th>
+                                    <td>
+                                        @if (Model.TargetUser.Manager != null)
+                                        {
+                                            <a asp-controller="ReportLine" asp-action="Index" asp-route-id="@Model.TargetUser.ManagerId">
+                                                @Model.TargetUser.Manager.DisplayName
+                                            </a>
+                                        }
+                                        else
+                                        {
+                                            @Localizer["None"]
+                                        }
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            }
         </div>
 
         <div class="col-md-8">

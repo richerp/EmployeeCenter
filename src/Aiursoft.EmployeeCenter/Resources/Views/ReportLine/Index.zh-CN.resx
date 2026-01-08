@@ -51,5 +51,38 @@
   <data name="You have to log in to view report line." xml:space="preserve">
     <value>您需要登录才能查看汇报线。</value>
   </data>
+  <data name="User Details" xml:space="preserve">
+    <value>用户详情</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>用户名</value>
+  </data>
+  <data name="Creation Time" xml:space="preserve">
+    <value>创建时间</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>职级</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>职务</value>
+  </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>法定姓名</value>
+  </data>
+  <data name="Phone Number" xml:space="preserve">
+    <value>电话号码</value>
+  </data>
+  <data name="Bank Name (Branch)" xml:space="preserve">
+    <value>银行名称（分行）</value>
+  </data>
+  <data name="Bank Account (Card Number)" xml:space="preserve">
+    <value>银行账户（卡号）</value>
+  </data>
+  <data name="Bank Account Name" xml:space="preserve">
+    <value>银行账户名（户名）</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>无</value>
+  </data>
 
 </root>
