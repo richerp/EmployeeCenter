@@ -30,12 +30,6 @@ else
         <div class="col-auto d-none d-sm-block">
             <h3>@Localizer["SSH Keys for"] @Model.TargetUser.DisplayName</h3>
         </div>
-
-        <div class="col-auto ms-auto text-end mt-n1">
-            <a asp-action="Create" asp-route-userId="@Model.TargetUser.Id" class="btn btn-primary">
-                <i class="align-middle" data-lucide="plus"></i> @Localizer["Add New Key"]
-            </a>
-        </div>
     </div>
 
     <partial name="_SshKeysContent" model="Model" />

@@ -1,9 +1,16 @@
 @model Aiursoft.EmployeeCenter.Models.SshKeysViewModels.IndexViewModel
 
 <div class="card">
-    <div class="card-header">
-        <h5 class="card-title">@Localizer["Public SSH Keys"]</h5>
-        <h6 class="card-subtitle text-muted">@Localizer["Manage your public SSH keys for server access."]</h6>
+    <div class="card-header d-flex align-items-center">
+        <div>
+            <h5 class="card-title">@Localizer["Public SSH Keys"]</h5>
+            <h6 class="card-subtitle text-muted">@Localizer["Manage public SSH keys for server access."]</h6>
+        </div>
+        <div class="ms-auto">
+            <a asp-action="Create" asp-route-userId="@Model.TargetUser.Id" class="btn btn-primary btn-sm">
+                <i class="align-middle" data-lucide="plus"></i> @Localizer["Add New Key"]
+            </a>
+        </div>
     </div>
     <div class="table-responsive">
         <table class="table table-hover mb-0">
