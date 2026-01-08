@@ -16,10 +16,10 @@ public class ManageOnboardingController(EmployeeCenterDbContext context) : Contr
 {
     [RenderInNavBar(
         NavGroupName = "Administration",
-        NavGroupOrder = 9999,
+        NavGroupOrder = 3,
         CascadedLinksGroupName = "Onboarding",
         CascadedLinksIcon = "user-plus",
-        CascadedLinksOrder = 9996,
+        CascadedLinksOrder = 1,
         LinkText = "Manage Tasks",
         LinkOrder = 1)]
     public async Task<IActionResult> Index()

@@ -20,11 +20,11 @@ public class CertificateController(
 {
     [HttpGet]
     [RenderInNavBar(
-        NavGroupName = "Certificates",
-        NavGroupOrder = 5,
+        NavGroupName = "Personal",
+        NavGroupOrder = 2,
         CascadedLinksGroupName = "Print Certificate",
         CascadedLinksIcon = "printer",
-        CascadedLinksOrder = 1,
+        CascadedLinksOrder = 2,
         LinkText = "Certificate of Employment",
         LinkOrder = 1)]
     public async Task<IActionResult> Employment()
@@ -40,11 +40,11 @@ public class CertificateController(
 
     [HttpGet]
     [RenderInNavBar(
-        NavGroupName = "Certificates",
-        NavGroupOrder = 5,
+        NavGroupName = "Personal",
+        NavGroupOrder = 2,
         CascadedLinksGroupName = "Print Certificate",
         CascadedLinksIcon = "printer",
-        CascadedLinksOrder = 1,
+        CascadedLinksOrder = 2,
         LinkText = "Certificate of Income",
         LinkOrder = 2)]
     public async Task<IActionResult> Income()
@@ -62,7 +62,7 @@ public class CertificateController(
     [Authorize(Policy = AppPermissionNames.CanPrintCertificates)]
     [RenderInNavBar(
         NavGroupName = "Administration",
-        NavGroupOrder = 9999,
+        NavGroupOrder = 3,
         CascadedLinksGroupName = "Print",
         CascadedLinksIcon = "printer",
         CascadedLinksOrder = 100,

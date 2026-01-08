@@ -18,10 +18,10 @@ public class SystemController(ILogger<SystemController> logger) : Controller
     [Authorize(Policy = AppPermissionNames.CanViewSystemContext)]
     [RenderInNavBar(
         NavGroupName = "Administration",
-        NavGroupOrder = 9999,
+        NavGroupOrder = 3,
         CascadedLinksGroupName = "System",
         CascadedLinksIcon = "cog",
-        CascadedLinksOrder = 9999,
+        CascadedLinksOrder = 4,
         LinkText = "Info",
         LinkOrder = 1)]
     public IActionResult Index()

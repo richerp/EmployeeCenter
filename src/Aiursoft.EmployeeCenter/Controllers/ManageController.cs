@@ -32,11 +32,11 @@ public class ManageController(
     //
     // GET: /Manage/Index
     [RenderInNavBar(
-        NavGroupName = "Settings",
-        NavGroupOrder = 9998,
-        CascadedLinksGroupName = "Personal",
+        NavGroupName = "Personal",
+        NavGroupOrder = 2,
+        CascadedLinksGroupName = "Settings",
         CascadedLinksIcon = "user-circle",
-        CascadedLinksOrder = 1,
+        CascadedLinksOrder = 3,
         LinkText = "Profile Settings",
         LinkOrder = 3)]
     [HttpGet]

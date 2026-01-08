@@ -22,7 +22,7 @@ public class ProjectsController : Controller
     }
 
     [RenderInNavBar(
-        NavGroupName = "Features",
+        NavGroupName = "Career",
         NavGroupOrder = 1,
         CascadedLinksGroupName = "Development",
         CascadedLinksIcon = "git-branch",

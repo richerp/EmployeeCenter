@@ -18,7 +18,13 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Account Settings" xml:space="preserve">
+  <data name="Career" xml:space="preserve">
+    <value>职业</value>
+  </data>
+  <data name="Missions" xml:space="preserve">
+    <value>任务</value>
+  </data>
+  <data name="Account Settings" xml:space="preserve">
     <value>账户设置</value>
   </data>
   <data name="Admin" xml:space="preserve">
