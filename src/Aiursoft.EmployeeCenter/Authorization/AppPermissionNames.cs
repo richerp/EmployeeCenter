@@ -9,7 +9,7 @@ public static class AppPermissionNames
     public const string CanReadUsers = nameof(CanReadUsers);
     public const string CanDeleteUsers = nameof(CanDeleteUsers);
     public const string CanAddUsers = nameof(CanAddUsers);
-    public const string CanEditUsers = nameof(CanEditUsers);
+    public const string CanEditAndViewDetailsOfUsers = nameof(CanEditAndViewDetailsOfUsers);
     public const string CanAssignRoleToUser = nameof(CanAssignRoleToUser);
     public const string CanViewUserOperationLog = nameof(CanViewUserOperationLog);
 

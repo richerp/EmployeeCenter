@@ -107,18 +107,21 @@
                                     <th>@Localizer["Phone Number"]</th>
                                     <td>@(Model.TargetUser.PhoneNumber ?? "N/A")</td>
                                 </tr>
-                                <tr>
-                                    <th>@Localizer["Bank Name (Branch)"]</th>
-                                    <td>@(Model.TargetUser.BankName ?? "N/A")</td>
-                                </tr>
-                                <tr>
-                                    <th>@Localizer["Bank Account (Card Number)"]</th>
-                                    <td>@(Model.TargetUser.BankAccount ?? "N/A")</td>
-                                </tr>
-                                <tr>
-                                    <th>@Localizer["Bank Account Name"]</th>
-                                    <td>@(Model.TargetUser.BankAccountName ?? "N/A")</td>
-                                </tr>
+                                @if (Model.IsViewingSelf || (await AuthorizationService.AuthorizeAsync(User, AppPermissionNames.CanEditAndViewDetailsOfUsers)).Succeeded)
+                                {
+                                    <tr>
+                                        <th>@Localizer["Bank Name (Branch)"]</th>
+                                        <td>@(Model.TargetUser.BankName ?? "N/A")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>@Localizer["Bank Account (Card Number)"]</th>
+                                        <td>@(Model.TargetUser.BankAccount ?? "N/A")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>@Localizer["Bank Account Name"]</th>
+                                        <td>@(Model.TargetUser.BankAccountName ?? "N/A")</td>
+                                    </tr>
+                                }
                                 <tr>
                                     <th>@Localizer["Manager"]</th>
                                     <td>

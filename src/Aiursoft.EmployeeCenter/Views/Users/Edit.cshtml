@@ -82,6 +82,11 @@
                     <input asp-for="PhoneNumber" class="form-control" />
                     <span asp-validation-for="PhoneNumber" class="text-danger"></span>
                 </div>
+                <div class="col-md-12 mb-3">
+                    <label asp-for="CreationTime" class="form-label">@Localizer["Creation Time"]</label>
+                    <input asp-for="CreationTime" class="form-control" type="datetime-local" value="@Model.CreationTime.ToString("yyyy-MM-ddTHH:mm")" />
+                    <span asp-validation-for="CreationTime" class="text-danger"></span>
+                </div>
                 <div class="col-md-4 mb-3">
                     <label asp-for="BaseSalary" class="form-label">@Localizer["Base Salary"]</label>
                     <input asp-for="BaseSalary" class="form-control" />

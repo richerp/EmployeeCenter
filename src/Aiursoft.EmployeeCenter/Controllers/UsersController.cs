@@ -151,6 +151,7 @@ public class UsersController(
                 BankName = newUser.BankName,
                 BankAccountName = newUser.BankAccountName,
                 ManagerId = newUser.ManagerId,
+                CreationTime = newUser.CreationTime,
                 AvatarRelativePath = Aiursoft.EmployeeCenter.Entities.User.DefaultAvatarPath
             };
             var result = await userManager.CreateAsync(user, newUser.Password!);
@@ -169,7 +170,7 @@ public class UsersController(
     }
 
     // GET: Users/Edit/5
-    [Authorize(Policy = AppPermissionNames.CanEditUsers)]
+    [Authorize(Policy = AppPermissionNames.CanEditAndViewDetailsOfUsers)]
     public async Task<IActionResult> Edit(string? id)
     {
         if (id == null) return NotFound();
@@ -189,6 +190,7 @@ public class UsersController(
             DisplayName = user.DisplayName,
             Password = "you-cant-read-it",
             AvatarUrl = user.AvatarRelativePath,
+            CreationTime = user.CreationTime,
             JobLevel = user.JobLevel,
             Title = user.Title,
             LegalName = user.LegalName,
@@ -213,7 +215,7 @@ public class UsersController(
     // POST: /Users/Edit/5
     [HttpPost]
     [ValidateAntiForgeryToken]
-    [Authorize(Policy = AppPermissionNames.CanEditUsers)]
+    [Authorize(Policy = AppPermissionNames.CanEditAndViewDetailsOfUsers)]
     public async Task<IActionResult> Edit(EditViewModel model)
     {
         if (!ModelState.IsValid)
@@ -232,6 +234,7 @@ public class UsersController(
         userInDb.LegalName = model.LegalName;
         userInDb.PhoneNumber = model.PhoneNumber;
         userInDb.BaseSalary = model.BaseSalary;
+        userInDb.CreationTime = model.CreationTime;
 
         if (userInDb.BankAccount != model.BankAccount ||
             userInDb.BankName != model.BankName ||
