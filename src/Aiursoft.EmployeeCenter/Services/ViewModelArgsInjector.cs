@@ -36,6 +36,8 @@ public class ViewModelArgsInjector(
     private void _useless_for_localizer()
     {
         // Titles, navbar strings.
+        _ = localizer["Career"];
+        _ = localizer["Missions"];
         _ = localizer["Features"];
         _ = localizer["Index"];
         _ = localizer["Directory"];

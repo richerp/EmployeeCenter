@@ -20,11 +20,11 @@ public class ReportLineController(
     : Controller
 {
     [RenderInNavBar(
-        NavGroupName = "Features",
+        NavGroupName = "Career",
         NavGroupOrder = 1,
         CascadedLinksGroupName = "Report Line",
         CascadedLinksIcon = "network",
-        CascadedLinksOrder = 5,
+        CascadedLinksOrder = 4,
         LinkText = "My Report Line",
         LinkOrder = 1)]
     public async Task<IActionResult> Index(string? id)

@@ -21,8 +21,8 @@ public class PasswordsController(
     : Controller
 {
     [RenderInNavBar(
-        NavGroupName = "Features",
-        NavGroupOrder = 2,
+        NavGroupName = "Career",
+        NavGroupOrder = 1,
         CascadedLinksGroupName = "Shared Info",
         CascadedLinksIcon = "lock",
         CascadedLinksOrder = 3,

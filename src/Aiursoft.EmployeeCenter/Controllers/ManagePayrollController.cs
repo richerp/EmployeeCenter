@@ -18,10 +18,10 @@ public class ManagePayrollController(
 {
     [RenderInNavBar(
         NavGroupName = "Administration",
-        NavGroupOrder = 9999,
+        NavGroupOrder = 3,
         CascadedLinksGroupName = "Finance",
         CascadedLinksIcon = "shopping-cart",
-        CascadedLinksOrder = 9997,
+        CascadedLinksOrder = 2,
         LinkText = "Manage Payrolls",
         LinkOrder = 1)]
     public async Task<IActionResult> Index()

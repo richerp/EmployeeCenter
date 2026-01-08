@@ -22,11 +22,11 @@ public class LeaveController(
     : Controller
 {
     [RenderInNavBar(
-        NavGroupName = "Features",
-        NavGroupOrder = 2,
+        NavGroupName = "Career",
+        NavGroupOrder = 1,
         CascadedLinksGroupName = "Leave Management",
         CascadedLinksIcon = "calendar-days",
-        CascadedLinksOrder = 20,
+        CascadedLinksOrder = 5,
         LinkText = "My Leave Balance",
         LinkOrder = 1)]
     public async Task<IActionResult> Index()
@@ -248,11 +248,11 @@ public class LeaveController(
     }
 
     [RenderInNavBar(
-        NavGroupName = "Features",
-        NavGroupOrder = 2,
+        NavGroupName = "Career",
+        NavGroupOrder = 1,
         CascadedLinksGroupName = "Leave Management",
         CascadedLinksIcon = "calendar-days",
-        CascadedLinksOrder = 20,
+        CascadedLinksOrder = 5,
         LinkText = "Team Calendar",
         LinkOrder = 2)]
     public async Task<IActionResult> TeamCalendar()
@@ -328,11 +328,11 @@ public class LeaveController(
     }
 
     [RenderInNavBar(
-        NavGroupName = "Features",
-        NavGroupOrder = 2,
+        NavGroupName = "Career",
+        NavGroupOrder = 1,
         CascadedLinksGroupName = "Leave Management",
         CascadedLinksIcon = "calendar-days",
-        CascadedLinksOrder = 20,
+        CascadedLinksOrder = 5,
         LinkText = "Approval Center",
         LinkOrder = 3)]
     [HttpGet]

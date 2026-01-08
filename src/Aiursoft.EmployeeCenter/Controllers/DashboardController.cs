@@ -17,12 +17,12 @@ public class DashboardController(
     UserManager<User> userManager) : Controller
 {
     [RenderInNavBar(
-        NavGroupName = "Features",
+        NavGroupName = "Career",
         NavGroupOrder = 1,
-        CascadedLinksGroupName = "Home",
+        CascadedLinksGroupName = "Onboarding",
         CascadedLinksIcon = "home",
         CascadedLinksOrder = 1,
-        LinkText = "Index",
+        LinkText = "Missions",
         LinkOrder = 1)]
     public async Task<IActionResult> Index()
     {

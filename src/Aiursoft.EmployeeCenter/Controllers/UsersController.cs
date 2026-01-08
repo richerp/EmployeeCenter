@@ -55,10 +55,10 @@ public class UsersController(
     [Authorize(Policy = AppPermissionNames.CanReadUsers)]
     [RenderInNavBar(
         NavGroupName = "Administration",
-        NavGroupOrder = 9999,
+        NavGroupOrder = 3,
         CascadedLinksGroupName = "Directory",
         CascadedLinksIcon = "users",
-        CascadedLinksOrder = 9998,
+        CascadedLinksOrder = 3,
         LinkText = "Users",
         LinkOrder = 1)]
     public async Task<IActionResult> Index()
