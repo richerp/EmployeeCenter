@@ -36,6 +36,9 @@
   <data name="Approval Center" xml:space="preserve">
     <value>مركز الموافقة</value>
   </data>
+  <data name="Career" xml:space="preserve">
+    <value>الوظيفة</value>
+  </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>تغيير الصورة الشخصية</value>
   </data>
@@ -119,6 +122,9 @@
   </data>
   <data name="Manage Tasks" xml:space="preserve">
     <value>إدارة المهام</value>
+  </data>
+  <data name="Missions" xml:space="preserve">
+    <value>مهمات</value>
   </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>رصيد إجازتي</value>

@@ -39,6 +39,9 @@
   <data name="Approval Center" xml:space="preserve">
     <value>Trung tâm phê duyệt</value>
   </data>
+  <data name="Career" xml:space="preserve">
+    <value>Công việc</value>
+  </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Thay đổi Ảnh đại diện</value>
   </data>
@@ -122,6 +125,9 @@
   </data>
   <data name="Manage Tasks" xml:space="preserve">
     <value>Quản lý Nhiệm vụ</value>
+  </data>
+  <data name="Missions" xml:space="preserve">
+    <value>Nhiệm vụ</value>
   </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>Số ngày nghỉ phép còn lại của tôi</value>

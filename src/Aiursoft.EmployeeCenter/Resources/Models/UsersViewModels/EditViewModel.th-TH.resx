@@ -39,6 +39,9 @@
   <data name="Base Salary" xml:space="preserve">
     <value>เงินเดือนพื้นฐาน</value>
   </data>
+  <data name="Creation Time" xml:space="preserve">
+    <value>เวลาสร้าง</value>
+  </data>
   <data name="Email Address" xml:space="preserve">
     <value>ที่อยู่อีเมล</value>
   </data>

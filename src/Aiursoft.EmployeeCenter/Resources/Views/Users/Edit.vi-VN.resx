@@ -45,6 +45,9 @@
   <data name="Basic Information" xml:space="preserve">
     <value>Thông Tin Cơ Bản</value>
   </data>
+  <data name="Creation Time" xml:space="preserve">
+    <value>Thời gian tạo</value>
+  </data>
   <data name="Display Name" xml:space="preserve">
     <value>Tên hiển thị</value>
   </data>

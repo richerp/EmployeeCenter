@@ -45,6 +45,9 @@
   <data name="Basic Information" xml:space="preserve">
     <value>基本信息</value>
   </data>
+  <data name="Creation Time" xml:space="preserve">
+    <value>创建时间</value>
+  </data>
   <data name="Display Name" xml:space="preserve">
     <value>显示名称</value>
   </data>

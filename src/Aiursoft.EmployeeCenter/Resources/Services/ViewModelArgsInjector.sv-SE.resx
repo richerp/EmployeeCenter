@@ -36,6 +36,9 @@
   <data name="Approval Center" xml:space="preserve">
     <value>Godkännandecentrum</value>
   </data>
+  <data name="Career" xml:space="preserve">
+    <value>Karriär</value>
+  </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Byt avatar</value>
   </data>
@@ -119,6 +122,9 @@
   </data>
   <data name="Manage Tasks" xml:space="preserve">
     <value>Hantera uppgifter</value>
+  </data>
+  <data name="Missions" xml:space="preserve">
+    <value>Uppgifter</value>
   </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>Mitt återstående ledighet</value>

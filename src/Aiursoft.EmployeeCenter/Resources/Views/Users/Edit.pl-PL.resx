@@ -45,6 +45,9 @@
   <data name="Basic Information" xml:space="preserve">
     <value>Podstawowe informacje</value>
   </data>
+  <data name="Creation Time" xml:space="preserve">
+    <value>Czas utworzenia</value>
+  </data>
   <data name="Display Name" xml:space="preserve">
     <value>Wyświetlana nazwa</value>
   </data>

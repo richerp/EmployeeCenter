@@ -93,11 +93,11 @@
   <data name="Delete Users" xml:space="preserve">
     <value>删除用户</value>
   </data>
-  <data name="Edit Role Information" xml:space="preserve">
-    <value>编辑角色信息</value>
-  </data>
   <data name="Edit and View Details of Users" xml:space="preserve">
     <value>编辑并查看用户详情</value>
+  </data>
+  <data name="Edit Role Information" xml:space="preserve">
+    <value>编辑角色信息</value>
   </data>
   <data name="Grants permission to create new roles." xml:space="preserve">
     <value>授予创建新角色的权限。</value>

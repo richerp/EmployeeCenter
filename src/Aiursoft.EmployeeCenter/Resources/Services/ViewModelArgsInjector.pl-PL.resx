@@ -36,6 +36,9 @@
   <data name="Approval Center" xml:space="preserve">
     <value>Centrum Zatwierdzeń</value>
   </data>
+  <data name="Career" xml:space="preserve">
+    <value>Kariera</value>
+  </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Zmień awatar</value>
   </data>
@@ -119,6 +122,9 @@
   </data>
   <data name="Manage Tasks" xml:space="preserve">
     <value>Zarządzaj zadaniami</value>
+  </data>
+  <data name="Missions" xml:space="preserve">
+    <value>Zadania</value>
   </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>Moje saldo urlopów</value>
