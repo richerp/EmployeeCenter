@@ -10,6 +10,11 @@ public class AppSettings
     public required LocalSettings Local { get; init; }
 
     /// <summary>
+    /// The name of the company. Used in certificates.
+    /// </summary>
+    public string CompanyName { get; init; } = "Aiursoft";
+
+    /// <summary>
     /// Keep the user sign in after the browser is closed.
     /// </summary>
     public bool PersistsSignIn { get; init; }

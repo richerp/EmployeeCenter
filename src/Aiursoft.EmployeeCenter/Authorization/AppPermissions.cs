@@ -81,7 +81,10 @@ public class AppPermissions
                 localizer["Allows approving or rejecting any leave application, regardless of the reporting line."]),
             new(AppPermissionNames.CanManageOnboarding,
                 localizer["Manage Onboarding Tasks"],
-                localizer["Allows creating and managing onboarding task templates for new employees."])
+                localizer["Allows creating and managing onboarding task templates for new employees."]),
+            new(AppPermissionNames.CanPrintCertificates,
+                localizer["Print Certificates"],
+                localizer["Allows printing employment and income certificates for any employee."])
         ];
         return allPermission;
     }

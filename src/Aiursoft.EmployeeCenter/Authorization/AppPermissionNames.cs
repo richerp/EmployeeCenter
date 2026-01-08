@@ -41,4 +41,7 @@ public static class AppPermissionNames
 
     // Onboarding Task Management
     public const string CanManageOnboarding = nameof(CanManageOnboarding);
+
+    // Certificate Printing
+    public const string CanPrintCertificates = nameof(CanPrintCertificates);
 }
