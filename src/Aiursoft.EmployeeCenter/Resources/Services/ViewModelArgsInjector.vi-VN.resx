@@ -42,6 +42,12 @@
   <data name="Career" xml:space="preserve">
     <value>Công việc</value>
   </data>
+  <data name="Certificate of Employeement" xml:space="preserve">
+    <value>Chứng nhận việc làm</value>
+  </data>
+  <data name="Certificate of Income" xml:space="preserve">
+    <value>Chứng chỉ thu nhập</value>
+  </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Thay đổi Ảnh đại diện</value>
   </data>
@@ -117,8 +123,14 @@
   <data name="Manage" xml:space="preserve">
     <value>Quản lý</value>
   </data>
+  <data name="Manage Onboarding" xml:space="preserve">
+    <value>Quản lý quá trình gia nhập</value>
+  </data>
   <data name="Manage Payrolls" xml:space="preserve">
     <value>Quản lý Bảng lương</value>
+  </data>
+  <data name="Manage Printing" xml:space="preserve">
+    <value>Quản lý in ấn</value>
   </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>Quản lý chia sẻ</value>
@@ -152,6 +164,12 @@
   </data>
   <data name="Personal" xml:space="preserve">
     <value>Cá nhân</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>In</value>
+  </data>
+  <data name="Print Certificate" xml:space="preserve">
+    <value>In chứng chỉ</value>
   </data>
   <data name="Profile" xml:space="preserve">
     <value>Hồ sơ</value>
@@ -188,6 +206,9 @@
   </data>
   <data name="System Info" xml:space="preserve">
     <value>Thông tin Hệ thống</value>
+  </data>
+  <data name="Team Calendar" xml:space="preserve">
+    <value>Lịch nhóm</value>
   </data>
   <data name="Template" xml:space="preserve">
     <value>Mẫu</value>

@@ -30,6 +30,12 @@
   <data name="Career" xml:space="preserve">
     <value>Career</value>
   </data>
+  <data name="Certificate of Employeement" xml:space="preserve">
+    <value>Certificate of Employment</value>
+  </data>
+  <data name="Certificate of Income" xml:space="preserve">
+    <value>Certificate of Income</value>
+  </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Change Avatar</value>
   </data>
@@ -105,8 +111,14 @@
   <data name="Manage" xml:space="preserve">
     <value>Manage</value>
   </data>
+  <data name="Manage Onboarding" xml:space="preserve">
+    <value>Manage Onboarding</value>
+  </data>
   <data name="Manage Payrolls" xml:space="preserve">
     <value>Manage Payrolls</value>
+  </data>
+  <data name="Manage Printing" xml:space="preserve">
+    <value>Manage Printing</value>
   </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>Manage Shares</value>
@@ -140,6 +152,12 @@
   </data>
   <data name="Personal" xml:space="preserve">
     <value>Personal</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="Print Certificate" xml:space="preserve">
+    <value>Print Certificate</value>
   </data>
   <data name="Profile" xml:space="preserve">
     <value>Profile</value>
@@ -176,6 +194,9 @@
   </data>
   <data name="System Info" xml:space="preserve">
     <value>System info</value>
+  </data>
+  <data name="Team Calendar" xml:space="preserve">
+    <value>Team Calendar</value>
   </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>Unauthorized</value>

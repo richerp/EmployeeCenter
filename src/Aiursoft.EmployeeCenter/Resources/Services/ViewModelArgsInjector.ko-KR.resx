@@ -42,6 +42,12 @@
   <data name="Career" xml:space="preserve">
     <value>경력</value>
   </data>
+  <data name="Certificate of Employeement" xml:space="preserve">
+    <value>고용 증명서</value>
+  </data>
+  <data name="Certificate of Income" xml:space="preserve">
+    <value>소득 증명서</value>
+  </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>아바타 변경</value>
   </data>
@@ -117,8 +123,14 @@
   <data name="Manage" xml:space="preserve">
     <value>관리</value>
   </data>
+  <data name="Manage Onboarding" xml:space="preserve">
+    <value>온보딩 관리</value>
+  </data>
   <data name="Manage Payrolls" xml:space="preserve">
     <value>급여 관리</value>
+  </data>
+  <data name="Manage Printing" xml:space="preserve">
+    <value>인쇄 관리</value>
   </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>공유 관리</value>
@@ -152,6 +164,12 @@
   </data>
   <data name="Personal" xml:space="preserve">
     <value>개인</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>인쇄</value>
+  </data>
+  <data name="Print Certificate" xml:space="preserve">
+    <value>증명서 출력</value>
   </data>
   <data name="Profile" xml:space="preserve">
     <value>프로필</value>
@@ -188,6 +206,9 @@
   </data>
   <data name="System Info" xml:space="preserve">
     <value>시스템 정보</value>
+  </data>
+  <data name="Team Calendar" xml:space="preserve">
+    <value>팀 캘린더</value>
   </data>
   <data name="Template" xml:space="preserve">
     <value>템플릿</value>

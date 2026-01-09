@@ -39,6 +39,12 @@
   <data name="Career" xml:space="preserve">
     <value>Καριέρα</value>
   </data>
+  <data name="Certificate of Employeement" xml:space="preserve">
+    <value>Πιστοποιητικό Απασχόλησης</value>
+  </data>
+  <data name="Certificate of Income" xml:space="preserve">
+    <value>Πιστοποιητικό Εισοδήματος</value>
+  </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Αλλαγή Avatar</value>
   </data>
@@ -114,8 +120,14 @@
   <data name="Manage" xml:space="preserve">
     <value>Διαχείριση</value>
   </data>
+  <data name="Manage Onboarding" xml:space="preserve">
+    <value>Διαχείριση Εγγραφής</value>
+  </data>
   <data name="Manage Payrolls" xml:space="preserve">
     <value>Διαχείριση Μισθοδοσίας</value>
+  </data>
+  <data name="Manage Printing" xml:space="preserve">
+    <value>Διαχείριση Εκτύπωσης</value>
   </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>Διαχείριση Κοινόχρηστων</value>
@@ -149,6 +161,12 @@
   </data>
   <data name="Personal" xml:space="preserve">
     <value>Προσωπικά</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Εκτύπωση</value>
+  </data>
+  <data name="Print Certificate" xml:space="preserve">
+    <value>Εκτύπωση Πιστοποιητικού</value>
   </data>
   <data name="Profile" xml:space="preserve">
     <value>Προφίλ</value>
@@ -185,6 +203,9 @@
   </data>
   <data name="System Info" xml:space="preserve">
     <value>Πληροφορίες Συστήματος</value>
+  </data>
+  <data name="Team Calendar" xml:space="preserve">
+    <value>Ομαδικός Ημερολόγιο</value>
   </data>
   <data name="Template" xml:space="preserve">
     <value>Πρότυπο</value>

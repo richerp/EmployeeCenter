@@ -39,6 +39,12 @@
   <data name="Career" xml:space="preserve">
     <value>Кар&apos;єра</value>
   </data>
+  <data name="Certificate of Employeement" xml:space="preserve">
+    <value>Свідоцтво про зайнятість</value>
+  </data>
+  <data name="Certificate of Income" xml:space="preserve">
+    <value>Свідоцтво про доход</value>
+  </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Змінити аватар</value>
   </data>
@@ -114,8 +120,14 @@
   <data name="Manage" xml:space="preserve">
     <value>Керування</value>
   </data>
+  <data name="Manage Onboarding" xml:space="preserve">
+    <value>Керування онбордингом</value>
+  </data>
   <data name="Manage Payrolls" xml:space="preserve">
     <value>Керування зарплатами</value>
+  </data>
+  <data name="Manage Printing" xml:space="preserve">
+    <value>Керування друку</value>
   </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>Керування спільним доступом</value>
@@ -149,6 +161,12 @@
   </data>
   <data name="Personal" xml:space="preserve">
     <value>Особисті</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Друкувати</value>
+  </data>
+  <data name="Print Certificate" xml:space="preserve">
+    <value>Друкувати сертифікат</value>
   </data>
   <data name="Profile" xml:space="preserve">
     <value>Профіль</value>
@@ -185,6 +203,9 @@
   </data>
   <data name="System Info" xml:space="preserve">
     <value>Інформація про систему</value>
+  </data>
+  <data name="Team Calendar" xml:space="preserve">
+    <value>Календар команди</value>
   </data>
   <data name="Template" xml:space="preserve">
     <value>Шаблон</value>

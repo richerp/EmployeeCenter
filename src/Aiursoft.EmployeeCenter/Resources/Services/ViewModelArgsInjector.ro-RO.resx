@@ -39,6 +39,12 @@
   <data name="Career" xml:space="preserve">
     <value>Carieră</value>
   </data>
+  <data name="Certificate of Employeement" xml:space="preserve">
+    <value>Certificat de angajare</value>
+  </data>
+  <data name="Certificate of Income" xml:space="preserve">
+    <value>Certificat de venit</value>
+  </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Schimbă Avatarul</value>
   </data>
@@ -114,8 +120,14 @@
   <data name="Manage" xml:space="preserve">
     <value>Gestionează</value>
   </data>
+  <data name="Manage Onboarding" xml:space="preserve">
+    <value>Gestionare înscriere</value>
+  </data>
   <data name="Manage Payrolls" xml:space="preserve">
     <value>Gestionare salarii</value>
+  </data>
+  <data name="Manage Printing" xml:space="preserve">
+    <value>Gestionare imprimare</value>
   </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>Gestionează Partajări</value>
@@ -149,6 +161,12 @@
   </data>
   <data name="Personal" xml:space="preserve">
     <value>Personal</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Imprimă</value>
+  </data>
+  <data name="Print Certificate" xml:space="preserve">
+    <value>Imprimare Certificat</value>
   </data>
   <data name="Profile" xml:space="preserve">
     <value>Profil</value>
@@ -185,6 +203,9 @@
   </data>
   <data name="System Info" xml:space="preserve">
     <value>Informații despre Sistem</value>
+  </data>
+  <data name="Team Calendar" xml:space="preserve">
+    <value>Calendar echipă</value>
   </data>
   <data name="Template" xml:space="preserve">
     <value>Șablon</value>
