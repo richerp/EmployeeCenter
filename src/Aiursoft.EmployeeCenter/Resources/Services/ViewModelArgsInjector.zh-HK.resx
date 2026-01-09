@@ -45,6 +45,9 @@
   <data name="Certificate of Employeement" xml:space="preserve">
     <value>僱用證明</value>
   </data>
+  <data name="Certificate of Employment" xml:space="preserve">
+    <value>僱用證明</value>
+  </data>
   <data name="Certificate of Income" xml:space="preserve">
     <value>收入證明</value>
   </data>

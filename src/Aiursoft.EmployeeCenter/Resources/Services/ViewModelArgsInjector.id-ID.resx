@@ -42,6 +42,9 @@
   <data name="Certificate of Employeement" xml:space="preserve">
     <value>Surat Keterangan Karyawan</value>
   </data>
+  <data name="Certificate of Employment" xml:space="preserve">
+    <value>Surat Keterangan Kerja</value>
+  </data>
   <data name="Certificate of Income" xml:space="preserve">
     <value>Surat Keterangan Penghasilan</value>
   </data>

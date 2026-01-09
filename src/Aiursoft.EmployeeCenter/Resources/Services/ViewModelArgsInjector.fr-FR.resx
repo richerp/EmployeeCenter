@@ -45,6 +45,9 @@
   <data name="Certificate of Employeement" xml:space="preserve">
     <value>Certificat d&apos;emploi</value>
   </data>
+  <data name="Certificate of Employment" xml:space="preserve">
+    <value>Attestation d&apos;emploi</value>
+  </data>
   <data name="Certificate of Income" xml:space="preserve">
     <value>Certificat de revenus</value>
   </data>

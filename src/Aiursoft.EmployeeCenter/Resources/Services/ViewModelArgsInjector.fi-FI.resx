@@ -42,6 +42,9 @@
   <data name="Certificate of Employeement" xml:space="preserve">
     <value>Työsuoritustodistus</value>
   </data>
+  <data name="Certificate of Employment" xml:space="preserve">
+    <value>Työllisyystodistus</value>
+  </data>
   <data name="Certificate of Income" xml:space="preserve">
     <value>Tulotodistus</value>
   </data>

@@ -42,6 +42,9 @@
   <data name="Certificate of Employeement" xml:space="preserve">
     <value>नियुक्ति प्रमाणपत्र</value>
   </data>
+  <data name="Certificate of Employment" xml:space="preserve">
+    <value>नियोक्ता प्रमाणपत्र</value>
+  </data>
   <data name="Certificate of Income" xml:space="preserve">
     <value>आय का प्रमाणपत्र</value>
   </data>
