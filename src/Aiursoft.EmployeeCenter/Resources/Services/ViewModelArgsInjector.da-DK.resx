@@ -42,6 +42,9 @@
   <data name="Certificate of Employeement" xml:space="preserve">
     <value>Certifikat for ansættelse</value>
   </data>
+  <data name="Certificate of Employment" xml:space="preserve">
+    <value>Arbejdsgivereksamen</value>
+  </data>
   <data name="Certificate of Income" xml:space="preserve">
     <value>Certifikat for indkomst</value>
   </data>

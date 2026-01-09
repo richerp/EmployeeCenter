@@ -45,6 +45,9 @@
   <data name="Certificate of Employeement" xml:space="preserve">
     <value>고용 증명서</value>
   </data>
+  <data name="Certificate of Employment" xml:space="preserve">
+    <value>재직증명서</value>
+  </data>
   <data name="Certificate of Income" xml:space="preserve">
     <value>소득 증명서</value>
   </data>

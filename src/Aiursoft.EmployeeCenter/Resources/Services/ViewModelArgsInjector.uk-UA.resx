@@ -42,6 +42,9 @@
   <data name="Certificate of Employeement" xml:space="preserve">
     <value>Свідоцтво про зайнятість</value>
   </data>
+  <data name="Certificate of Employment" xml:space="preserve">
+    <value>Свідоцтво про роботу</value>
+  </data>
   <data name="Certificate of Income" xml:space="preserve">
     <value>Свідоцтво про доход</value>
   </data>

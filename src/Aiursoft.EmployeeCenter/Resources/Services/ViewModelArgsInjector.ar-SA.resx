@@ -42,6 +42,9 @@
   <data name="Certificate of Employeement" xml:space="preserve">
     <value>شهادة التوظيف</value>
   </data>
+  <data name="Certificate of Employment" xml:space="preserve">
+    <value>شهادة العمل</value>
+  </data>
   <data name="Certificate of Income" xml:space="preserve">
     <value>شهادة الدخل</value>
   </data>
