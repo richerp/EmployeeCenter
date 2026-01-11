@@ -92,6 +92,13 @@ public class ViewModelArgsInjector(
         _ = localizer["Print"];
         _ = localizer["Manage Printing"];
         _ = localizer["Team Calendar"];
+        _ = localizer["IT Assets"];
+        _ = localizer["Manage Assets"];
+        _ = localizer["My Assets"];
+        _ = localizer["Asset Categories"];
+        _ = localizer["Asset Models"];
+        _ = localizer["Locations"];
+        _ = localizer["Vendors"];
     }
 
     public void InjectSimple(

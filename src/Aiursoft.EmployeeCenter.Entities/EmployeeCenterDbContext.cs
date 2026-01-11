@@ -17,6 +17,12 @@ public abstract class EmployeeCenterDbContext(DbContextOptions options) : Identi
     public DbSet<LeaveApplication> LeaveApplications => Set<LeaveApplication>();
     public DbSet<OnboardingTask> OnboardingTasks => Set<OnboardingTask>();
     public DbSet<OnboardingTaskLog> OnboardingTaskLogs => Set<OnboardingTaskLog>();
+    public DbSet<AssetCategory> AssetCategories => Set<AssetCategory>();
+    public DbSet<AssetModel> AssetModels => Set<AssetModel>();
+    public DbSet<Location> Locations => Set<Location>();
+    public DbSet<Vendor> Vendors => Set<Vendor>();
+    public DbSet<Asset> Assets => Set<Asset>();
+    public DbSet<AssetHistory> AssetHistories => Set<AssetHistory>();
 
     public virtual Task MigrateAsync(CancellationToken cancellationToken) =>
         Database.MigrateAsync(cancellationToken);
