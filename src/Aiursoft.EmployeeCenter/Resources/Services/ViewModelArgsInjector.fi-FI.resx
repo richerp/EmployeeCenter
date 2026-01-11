@@ -36,6 +36,12 @@
   <data name="Approval Center" xml:space="preserve">
     <value>Hyväksyntäkeskus</value>
   </data>
+  <data name="Asset Categories" xml:space="preserve">
+    <value>Resurssikategoriat</value>
+  </data>
+  <data name="Asset Models" xml:space="preserve">
+    <value>Laitteiden mallit</value>
+  </data>
   <data name="Career" xml:space="preserve">
     <value>Urheilu</value>
   </data>
@@ -111,8 +117,14 @@
   <data name="Info" xml:space="preserve">
     <value>Tiedot</value>
   </data>
+  <data name="IT Assets" xml:space="preserve">
+    <value>IT-Varat</value>
+  </data>
   <data name="Leave Management" xml:space="preserve">
     <value>Lomakäsitely</value>
+  </data>
+  <data name="Locations" xml:space="preserve">
+    <value>Sijainnit</value>
   </data>
   <data name="Login" xml:space="preserve">
     <value>Kirjaudu</value>
@@ -122,6 +134,9 @@
   </data>
   <data name="Manage" xml:space="preserve">
     <value>Hallinnoi</value>
+  </data>
+  <data name="Manage Assets" xml:space="preserve">
+    <value>Hallinnoi varusteita</value>
   </data>
   <data name="Manage Onboarding" xml:space="preserve">
     <value>Hallinnoi rekrytointia</value>
@@ -140,6 +155,9 @@
   </data>
   <data name="Missions" xml:space="preserve">
     <value>Tehtävät</value>
+  </data>
+  <data name="My Assets" xml:space="preserve">
+    <value>Omat varat</value>
   </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>Oma lomapitoisuuteni</value>
@@ -221,6 +239,9 @@
   </data>
   <data name="Users" xml:space="preserve">
     <value>Käyttäjät</value>
+  </data>
+  <data name="Vendors" xml:space="preserve">
+    <value>Toimittajat</value>
   </data>
 
 </root>

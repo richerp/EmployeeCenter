@@ -36,6 +36,12 @@
   <data name="Approval Center" xml:space="preserve">
     <value>Centro de Aprovação</value>
   </data>
+  <data name="Asset Categories" xml:space="preserve">
+    <value>Categorias de Ativos</value>
+  </data>
+  <data name="Asset Models" xml:space="preserve">
+    <value>Modelos de Ativos</value>
+  </data>
   <data name="Career" xml:space="preserve">
     <value>Carreira</value>
   </data>
@@ -111,8 +117,14 @@
   <data name="Info" xml:space="preserve">
     <value>Informação</value>
   </data>
+  <data name="IT Assets" xml:space="preserve">
+    <value>Ativos de TI</value>
+  </data>
   <data name="Leave Management" xml:space="preserve">
     <value>Gestão de Férias</value>
+  </data>
+  <data name="Locations" xml:space="preserve">
+    <value>Localizações</value>
   </data>
   <data name="Login" xml:space="preserve">
     <value>Iniciar sessão</value>
@@ -122,6 +134,9 @@
   </data>
   <data name="Manage" xml:space="preserve">
     <value>Gerir</value>
+  </data>
+  <data name="Manage Assets" xml:space="preserve">
+    <value>Gerir Ativos</value>
   </data>
   <data name="Manage Onboarding" xml:space="preserve">
     <value>Gerir Onboarding</value>
@@ -140,6 +155,9 @@
   </data>
   <data name="Missions" xml:space="preserve">
     <value>Missões</value>
+  </data>
+  <data name="My Assets" xml:space="preserve">
+    <value>Meus Ativos</value>
   </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>Meu Saldo de Férias</value>
@@ -221,6 +239,9 @@
   </data>
   <data name="Users" xml:space="preserve">
     <value>Utilizadores</value>
+  </data>
+  <data name="Vendors" xml:space="preserve">
+    <value>Fornecedores</value>
   </data>
 
 </root>

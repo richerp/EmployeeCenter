@@ -45,6 +45,9 @@
   <data name="Allows managing and deleting any global password created by any user." xml:space="preserve">
     <value>Sallii minkä tahansa käyttäjän luomien globaalien salasanojen hallinnan ja poistamisen.</value>
   </data>
+  <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items." xml:space="preserve">
+    <value>Sallii yrityksen tietoteknisten varojen hallinnoinnin, mukaan lukien luokat, mallit ja yksittäiset tuotteet.</value>
+  </data>
   <data name="Allows modification of role names and their assigned permissions." xml:space="preserve">
     <value>Sallii roolien nimien ja niihin liitettyjen käyttöoikeuksien muokkaamisen.</value>
   </data>
@@ -110,6 +113,9 @@
   </data>
   <data name="Manage Any Password" xml:space="preserve">
     <value>Hallitse mitä tahansa salasanaa</value>
+  </data>
+  <data name="Manage Assets" xml:space="preserve">
+    <value>Hallinnoi varoja</value>
   </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>Hallinnoi lomia</value>
