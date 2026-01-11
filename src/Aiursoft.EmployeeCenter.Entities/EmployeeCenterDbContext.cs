@@ -17,6 +17,8 @@ public abstract class EmployeeCenterDbContext(DbContextOptions options) : Identi
     public DbSet<LeaveApplication> LeaveApplications => Set<LeaveApplication>();
     public DbSet<OnboardingTask> OnboardingTasks => Set<OnboardingTask>();
     public DbSet<OnboardingTaskLog> OnboardingTaskLogs => Set<OnboardingTaskLog>();
+    public DbSet<CompanyEntity> CompanyEntities => Set<CompanyEntity>();
+    public DbSet<CompanyEntityLog> CompanyEntityLogs => Set<CompanyEntityLog>();
 
     public virtual Task MigrateAsync(CancellationToken cancellationToken) =>
         Database.MigrateAsync(cancellationToken);
