@@ -178,14 +178,20 @@ public class LeaveTests
         // 2. Visit Index to init
         await _http.GetAsync("/Leave/Index");
 
-        // 3. Apply for TODAY leave (Already started)
+        // 3. Apply for a recent working day leave (Already started)
         var today = DateTime.UtcNow.Date;
+        var leaveDate = today;
+        while (leaveDate.DayOfWeek == DayOfWeek.Saturday || leaveDate.DayOfWeek == DayOfWeek.Sunday)
+        {
+            leaveDate = leaveDate.AddDays(-1);
+        }
+
         var applyToken = await GetAntiCsrfToken("/Leave/Apply");
         var applyContent = new FormUrlEncodedContent(new Dictionary<string, string>
         {
             { "LeaveType", "AnnualLeave" },
-            { "StartDate", today.ToString("yyyy-MM-dd") },
-            { "EndDate", today.ToString("yyyy-MM-dd") },
+            { "StartDate", leaveDate.ToString("yyyy-MM-dd") },
+            { "EndDate", leaveDate.ToString("yyyy-MM-dd") },
             { "Reason", "Sick" },
             { "__RequestVerificationToken", applyToken }
         });

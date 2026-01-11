@@ -36,7 +36,7 @@ public class CompanyEntityController(
         {
             Entities = entities
         };
-        return StackView(model);
+        return this.StackView(model);
     }
 
     [HttpGet]
@@ -52,14 +52,14 @@ public class CompanyEntityController(
         {
             Entity = entity
         };
-        return StackView(model);
+        return this.StackView(model);
     }
 
     [HttpGet]
     [Authorize(Policy = AppPermissionNames.CanManageCompanyEntities)]
     public IActionResult Create()
     {
-        return StackView(new CreateViewModel
+        return this.StackView(new CreateViewModel
         {
             CompanyName = string.Empty,
             EntityCode = string.Empty
@@ -73,7 +73,7 @@ public class CompanyEntityController(
     {
         if (!ModelState.IsValid)
         {
-            return StackView(model);
+            return this.StackView(model);
         }
 
         var entity = new CompanyEntity
@@ -153,7 +153,7 @@ public class CompanyEntityController(
             CompanySecretary = entity.CompanySecretary
         };
 
-        return StackView(model);
+        return this.StackView(model);
     }
 
     [HttpPost]
@@ -163,7 +163,7 @@ public class CompanyEntityController(
     {
         if (!ModelState.IsValid)
         {
-            return StackView(model);
+            return this.StackView(model);
         }
 
         var entity = await dbContext.CompanyEntities.FindAsync(model.Id);
