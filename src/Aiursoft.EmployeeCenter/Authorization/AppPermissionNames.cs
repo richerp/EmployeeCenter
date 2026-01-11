@@ -44,4 +44,7 @@ public static class AppPermissionNames
 
     // Certificate Printing
     public const string CanPrintCertificates = nameof(CanPrintCertificates);
+
+    // Asset Management
+    public const string CanManageAssets = nameof(CanManageAssets);
 }

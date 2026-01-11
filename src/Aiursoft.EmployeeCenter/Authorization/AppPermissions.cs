@@ -84,7 +84,10 @@ public class AppPermissions
                 localizer["Allows creating and managing onboarding task templates for new employees."]),
             new(AppPermissionNames.CanPrintCertificates,
                 localizer["Print Certificates"],
-                localizer["Allows printing employment and income certificates for any employee."])
+                localizer["Allows printing employment and income certificates for any employee."]),
+            new(AppPermissionNames.CanManageAssets,
+                localizer["Manage Assets"],
+                localizer["Allows managing the company's IT assets, including categories, models, and individual items."])
         ];
         return allPermission;
     }
