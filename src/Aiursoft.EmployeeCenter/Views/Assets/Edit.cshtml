@@ -1,0 +1,111 @@
+@using Aiursoft.EmployeeCenter.Entities
+@model Aiursoft.EmployeeCenter.Models.AssetsViewModels.EditAssetViewModel
+
+<h1 class="h3 mb-3">@Localizer["Edit Asset"]: <code>@Model.AssetTag</code></h1>
+
+<div class="row">
+    <div class="col-md-8">
+        <form asp-action="Edit">
+            <input type="hidden" asp-for="Id" />
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">@Localizer["Basic Information"]</h5>
+                </div>
+                <div class="card-body">
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="AssetTag" class="form-label"></label>
+                            <input asp-for="AssetTag" class="form-control" />
+                            <span asp-validation-for="AssetTag" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="SerialNumber" class="form-label"></label>
+                            <input asp-for="SerialNumber" class="form-control" />
+                            <span asp-validation-for="SerialNumber" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="ModelId" class="form-label"></label>
+                            <select asp-for="ModelId" class="form-select" asp-items="@(new SelectList(Model.AllModels, "Id", "ModelName", null, "Category.Name"))">
+                                <option value="">-- @Localizer["Select Model"] --</option>
+                            </select>
+                            <span asp-validation-for="ModelId" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Status" class="form-label"></label>
+                            <select asp-for="Status" class="form-select" asp-items="Html.GetEnumSelectList<AssetStatus>()"></select>
+                            <span asp-validation-for="Status" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="LocationId" class="form-label"></label>
+                        <select asp-for="LocationId" class="form-select" asp-items="@(new SelectList(Model.AllLocations, "Id", "Name"))">
+                            <option value="">-- @Localizer["Select Location"] --</option>
+                        </select>
+                        <span asp-validation-for="LocationId" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">@Localizer["Financial Information"]</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="PurchaseDate" class="form-label"></label>
+                            <input asp-for="PurchaseDate" class="form-control" type="date" value="@(Model.PurchaseDate?.ToString("yyyy-MM-dd"))" />
+                            <span asp-validation-for="PurchaseDate" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="PurchasePrice" class="form-label"></label>
+                            <div class="input-group">
+                                <span class="input-group-text">$</span>
+                                <input asp-for="PurchasePrice" class="form-control" type="number" step="0.01" />
+                            </div>
+                            <span asp-validation-for="PurchasePrice" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="VendorId" class="form-label"></label>
+                            <select asp-for="VendorId" class="form-select" asp-items="@(new SelectList(Model.AllVendors, "Id", "Name"))">
+                                <option value="">-- @Localizer["Select Vendor"] --</option>
+                            </select>
+                            <span asp-validation-for="VendorId" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="WarrantyExpireDate" class="form-label"></label>
+                            <input asp-for="WarrantyExpireDate" class="form-control" type="date" value="@(Model.WarrantyExpireDate?.ToString("yyyy-MM-dd"))" />
+                            <span asp-validation-for="WarrantyExpireDate" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="InvoiceFileUrl" class="form-label"></label>
+                        <vc:file-upload asp-for="InvoiceFileUrl" upload-endpoint="/upload/assets" allowed-extensions="pdf jpg png" max-size-in-mb="10"></vc:file-upload>
+                        <span asp-validation-for="InvoiceFileUrl" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" asp-for="IsReimbursed">
+                            <label class="form-check-label" asp-for="IsReimbursed">@Localizer["Already Reimbursed"]</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-end">
+                    <button type="submit" class="btn btn-primary">@Localizer["Update Asset"]</button>
+                    <a asp-action="Index" class="btn btn-light">@Localizer["Cancel"]</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

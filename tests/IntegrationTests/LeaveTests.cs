@@ -180,6 +180,11 @@ public class LeaveTests
 
         // 3. Apply for TODAY leave (Already started)
         var today = DateTime.UtcNow.Date;
+        while (today.DayOfWeek == DayOfWeek.Saturday || today.DayOfWeek == DayOfWeek.Sunday)
+        {
+            today = today.AddDays(-1);
+        }
+
         var applyToken = await GetAntiCsrfToken("/Leave/Apply");
         var applyContent = new FormUrlEncodedContent(new Dictionary<string, string>
         {

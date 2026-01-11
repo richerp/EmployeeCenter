@@ -107,4 +107,12 @@ public class User : IdentityUser
     [Newtonsoft.Json.JsonIgnore]
     [InverseProperty(nameof(OnboardingTaskLog.User))]
     public IEnumerable<OnboardingTaskLog> OnboardingTaskLogs { get; init; } = new List<OnboardingTaskLog>();
+
+    [Newtonsoft.Json.JsonIgnore]
+    [InverseProperty(nameof(Asset.Assignee))]
+    public IEnumerable<Asset> AssignedAssets { get; init; } = new List<Asset>();
+
+    [Newtonsoft.Json.JsonIgnore]
+    [InverseProperty(nameof(AssetHistory.Operator))]
+    public IEnumerable<AssetHistory> AssetHistories { get; init; } = new List<AssetHistory>();
 }

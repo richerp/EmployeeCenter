@@ -47,4 +47,7 @@ public static class AppPermissionNames
 
     // Company Entity Management
     public const string CanManageCompanyEntities = nameof(CanManageCompanyEntities);
+
+    // Asset Management
+    public const string CanManageAssets = nameof(CanManageAssets);
 }

@@ -1,0 +1,231 @@
+using System.Net;
+using System.Text.RegularExpressions;
+using Aiursoft.CSTools.Tools;
+using Aiursoft.DbTools;
+using Aiursoft.EmployeeCenter.Entities;
+using Microsoft.EntityFrameworkCore;
+using static Aiursoft.WebTools.Extends;
+
+namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
+
+[TestClass]
+public class AssetTests
+{
+    private readonly int _port;
+    private readonly HttpClient _http;
+    private IHost? _server;
+
+    public AssetTests()
+    {
+        var cookieContainer = new CookieContainer();
+        var handler = new HttpClientHandler
+        {
+            CookieContainer = cookieContainer,
+            AllowAutoRedirect = false
+        };
+        _port = Network.GetAvailablePort();
+        _http = new HttpClient(handler)
+        {
+            BaseAddress = new Uri($"http://localhost:{_port}")
+        };
+    }
+
+    [TestInitialize]
+    public async Task CreateServer()
+    {
+        _server = await AppAsync<Startup>([], port: _port);
+        await _server.UpdateDbAsync<EmployeeCenterDbContext>();
+        await _server.SeedAsync();
+        await _server.StartAsync();
+    }
+
+    [TestCleanup]
+    public async Task CleanServer()
+    {
+        if (_server == null) return;
+        await _server.StopAsync();
+        _server.Dispose();
+    }
+
+    private async Task<string> GetAntiCsrfToken(string url)
+    {
+        var response = await _http.GetAsync(url);
+        response.EnsureSuccessStatusCode();
+        var html = await response.Content.ReadAsStringAsync();
+        var match = Regex.Match(html, @"__RequestVerificationToken"" type=""hidden"" value=""([^""]+)""");
+        if (!match.Success)
+        {
+            throw new InvalidOperationException($"Could not find anti-CSRF token on page: {url}");
+        }
+
+        return match.Groups[1].Value;
+    }
+
+    [TestMethod]
+    public async Task AssetLifecycleTest()
+    {
+        // 1. Login as admin
+        var loginToken = await GetAntiCsrfToken("/Account/Login");
+        var loginContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "EmailOrUserName", "admin" },
+            { "Password", "admin123" },
+            { "__RequestVerificationToken", loginToken }
+        });
+        await _http.PostAsync("/Account/Login", loginContent);
+
+        // 2. Create Category, Model, Location, Vendor
+        await _http.PostAsync("/Assets/CreateCategory", new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "NewName", "Laptop" },
+            { "NewCode", "LAP" },
+            { "__RequestVerificationToken", await GetAntiCsrfToken("/Assets/Categories") }
+        }));
+
+        int categoryId;
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var cat = await db.AssetCategories.FirstAsync(c => c.Name == "Laptop");
+            categoryId = cat.Id;
+        }
+
+        await _http.PostAsync("/Assets/CreateModel", new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "NewCategoryId", categoryId.ToString() },
+            { "NewBrand", "Apple" },
+            { "NewModelName", "MacBook Pro" },
+            { "__RequestVerificationToken", await GetAntiCsrfToken("/Assets/Models") }
+        }));
+
+        int modelId;
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var model = await db.AssetModels.FirstAsync(m => m.ModelName == "MacBook Pro");
+            modelId = model.Id;
+        }
+
+        await _http.PostAsync("/Assets/CreateLocation", new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "NewName", "HQ" },
+            { "__RequestVerificationToken", await GetAntiCsrfToken("/Assets/Locations") }
+        }));
+
+        await _http.PostAsync("/Assets/CreateVendor", new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "NewName", "Apple Store" },
+            { "__RequestVerificationToken", await GetAntiCsrfToken("/Assets/Vendors") }
+        }));
+
+        // 3. Create Asset
+        var createAssetToken = await GetAntiCsrfToken("/Assets/Create");
+        await _http.PostAsync("/Assets/Create", new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "AssetTag", "LAP-001" },
+            { "ModelId", modelId.ToString() },
+            { "Status", ((int)AssetStatus.Idle).ToString() },
+            { "__RequestVerificationToken", createAssetToken }
+        }));
+
+        Guid assetId;
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var asset = await db.Assets.FirstAsync(a => a.AssetTag == "LAP-001");
+            assetId = asset.Id;
+        }
+
+        // 4. Create a user to assign to
+        var uniqueId = Guid.NewGuid().ToString("N").Substring(0, 8);
+        var userName = $"user-{uniqueId}";
+        var email = $"{userName}@aiursoft.com";
+        var password = "Test-Password-123";
+        
+        await _http.GetAsync("/Account/LogOff");
+        var registerToken = await GetAntiCsrfToken("/Account/Register");
+        await _http.PostAsync("/Account/Register", new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Email", email },
+            { "Password", password },
+            { "ConfirmPassword", password },
+            { "__RequestVerificationToken", registerToken }
+        }));
+
+        string userId;
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var user = await db.Users.FirstAsync(u => u.UserName == userName);
+            userId = user.Id;
+        }
+
+        // 5. Assign asset (as admin)
+        await _http.GetAsync("/Account/LogOff");
+        loginToken = await GetAntiCsrfToken("/Account/Login");
+        await _http.PostAsync("/Account/Login", new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "EmailOrUserName", "admin" },
+            { "Password", "admin123" },
+            { "__RequestVerificationToken", loginToken }
+        }));
+
+        var assignToken = await GetAntiCsrfToken("/Assets/Assign/" + assetId);
+        await _http.PostAsync("/Assets/Assign", new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "AssetId", assetId.ToString() },
+            { "AssigneeId", userId },
+            { "Notes", "Testing assignment" },
+            { "__RequestVerificationToken", assignToken }
+        }));
+
+        // 6. User confirms receipt
+        await _http.GetAsync("/Account/LogOff");
+        loginToken = await GetAntiCsrfToken("/Account/Login");
+        await _http.PostAsync("/Account/Login", new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "EmailOrUserName", email },
+            { "Password", password },
+            { "__RequestVerificationToken", loginToken }
+        }));
+
+        var confirmToken = await GetAntiCsrfToken("/MyAssets/Index");
+        await _http.PostAsync("/MyAssets/Confirm/" + assetId, new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "__RequestVerificationToken", confirmToken }
+        }));
+
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var asset = await db.Assets.FirstAsync(a => a.Id == assetId);
+            Assert.AreEqual(AssetStatus.InUse, asset.Status);
+        }
+
+        // 7. Admin returns asset
+        await _http.GetAsync("/Account/LogOff");
+        loginToken = await GetAntiCsrfToken("/Account/Login");
+        await _http.PostAsync("/Account/Login", new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "EmailOrUserName", "admin" },
+            { "Password", "admin123" },
+            { "__RequestVerificationToken", loginToken }
+        }));
+
+        var indexToken = await GetAntiCsrfToken("/Assets/Index");
+        await _http.PostAsync("/Assets/Return", new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "id", assetId.ToString() },
+            { "reason", "End of test" },
+            { "__RequestVerificationToken", indexToken }
+        }));
+
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var asset = await db.Assets.FirstAsync(a => a.Id == assetId);
+            Assert.AreEqual(AssetStatus.Idle, asset.Status);
+            Assert.IsNull(asset.AssigneeId);
+        }
+    }
+}

@@ -22,6 +22,179 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Asset", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("char(36)");
+
+                    b.Property<string>("AssetTag")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<string>("AssigneeId")
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("InvoiceFileUrl")
+                        .HasMaxLength(500)
+                        .HasColumnType("varchar(500)");
+
+                    b.Property<bool>("IsReimbursed")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<int?>("LocationId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ModelId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("PurchaseDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<decimal?>("PurchasePrice")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<DateTime>("RowVersion")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("timestamp(6)");
+
+                    b.Property<string>("SerialNumber")
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int?>("VendorId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("WarrantyExpireDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AssigneeId");
+
+                    b.HasIndex("LocationId");
+
+                    b.HasIndex("ModelId");
+
+                    b.HasIndex("VendorId");
+
+                    b.ToTable("Assets");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.AssetCategory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("varchar(10)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("AssetCategories");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.AssetHistory", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<string>("ActionType")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("varchar(20)");
+
+                    b.Property<Guid>("AssetId")
+                        .HasColumnType("char(36)");
+
+                    b.Property<string>("FieldName")
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<string>("NewValue")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("OldValue")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("OperatorId")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<string>("Reason")
+                        .HasMaxLength(200)
+                        .HasColumnType("varchar(200)");
+
+                    b.Property<DateTime>("Timestamp")
+                        .HasColumnType("datetime(6)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AssetId");
+
+                    b.HasIndex("OperatorId");
+
+                    b.ToTable("AssetHistories");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.AssetModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Brand")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ModelName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("Specs")
+                        .HasMaxLength(1000)
+                        .HasColumnType("varchar(1000)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
+
+                    b.ToTable("AssetModels");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.BankCardChangeLog", b =>
                 {
                     b.Property<int>("Id")
@@ -403,6 +576,24 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("LeaveBalances");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Location", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Locations");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.OnboardingTask", b =>
@@ -787,6 +978,28 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Vendor", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ContactInfo")
+                        .HasMaxLength(200)
+                        .HasColumnType("varchar(200)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Vendors");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -917,6 +1130,65 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Asset", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "Assignee")
+                        .WithMany("AssignedAssets")
+                        .HasForeignKey("AssigneeId");
+
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.Location", "Location")
+                        .WithMany("Assets")
+                        .HasForeignKey("LocationId");
+
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.AssetModel", "Model")
+                        .WithMany("Assets")
+                        .HasForeignKey("ModelId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.Vendor", "Vendor")
+                        .WithMany("Assets")
+                        .HasForeignKey("VendorId");
+
+                    b.Navigation("Assignee");
+
+                    b.Navigation("Location");
+
+                    b.Navigation("Model");
+
+                    b.Navigation("Vendor");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.AssetHistory", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.Asset", "Asset")
+                        .WithMany("Histories")
+                        .HasForeignKey("AssetId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "Operator")
+                        .WithMany("AssetHistories")
+                        .HasForeignKey("OperatorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Asset");
+
+                    b.Navigation("Operator");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.AssetModel", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.AssetCategory", "Category")
+                        .WithMany("Models")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.BankCardChangeLog", b =>
@@ -1142,9 +1414,29 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Asset", b =>
+                {
+                    b.Navigation("Histories");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.AssetCategory", b =>
+                {
+                    b.Navigation("Models");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.AssetModel", b =>
+                {
+                    b.Navigation("Assets");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Incident", b =>
                 {
                     b.Navigation("Comments");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Location", b =>
+                {
+                    b.Navigation("Assets");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.OnboardingTask", b =>
@@ -1159,6 +1451,10 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.User", b =>
                 {
+                    b.Navigation("AssetHistories");
+
+                    b.Navigation("AssignedAssets");
+
                     b.Navigation("CreatedPasswords");
 
                     b.Navigation("IncidentComments");
@@ -1180,6 +1476,11 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.Navigation("Reports");
 
                     b.Navigation("SshKeys");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Vendor", b =>
+                {
+                    b.Navigation("Assets");
                 });
 #pragma warning restore 612, 618
         }
