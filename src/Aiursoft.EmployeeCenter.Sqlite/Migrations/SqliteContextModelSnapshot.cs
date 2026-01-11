@@ -17,6 +17,174 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "10.0.1");
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Asset", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("AssetTag")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("AssigneeId")
+                        .HasMaxLength(255)
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("InvoiceFileUrl")
+                        .HasMaxLength(500)
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsReimbursed")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("LocationId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("ModelId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime?>("PurchaseDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal?>("PurchasePrice")
+                        .HasColumnType("TEXT");
+
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .IsRequired()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("BLOB");
+
+                    b.Property<string>("SerialNumber")
+                        .HasMaxLength(100)
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("VendorId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime?>("WarrantyExpireDate")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AssigneeId");
+
+                    b.HasIndex("LocationId");
+
+                    b.HasIndex("ModelId");
+
+                    b.HasIndex("VendorId");
+
+                    b.ToTable("Assets");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.AssetCategory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("AssetCategories");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.AssetHistory", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("ActionType")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("TEXT");
+
+                    b.Property<Guid>("AssetId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("FieldName")
+                        .HasMaxLength(50)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("NewValue")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("OldValue")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("OperatorId")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Reason")
+                        .HasMaxLength(200)
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("Timestamp")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AssetId");
+
+                    b.HasIndex("OperatorId");
+
+                    b.ToTable("AssetHistories");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.AssetModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Brand")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("ModelName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Specs")
+                        .HasMaxLength(1000)
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
+
+                    b.ToTable("AssetModels");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.BankCardChangeLog", b =>
                 {
                     b.Property<int>("Id")
@@ -256,6 +424,22 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("LeaveBalances");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Location", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Locations");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.OnboardingTask", b =>
@@ -632,6 +816,26 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Vendor", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("ContactInfo")
+                        .HasMaxLength(200)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Vendors");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -758,6 +962,65 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Asset", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "Assignee")
+                        .WithMany("AssignedAssets")
+                        .HasForeignKey("AssigneeId");
+
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.Location", "Location")
+                        .WithMany("Assets")
+                        .HasForeignKey("LocationId");
+
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.AssetModel", "Model")
+                        .WithMany("Assets")
+                        .HasForeignKey("ModelId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.Vendor", "Vendor")
+                        .WithMany("Assets")
+                        .HasForeignKey("VendorId");
+
+                    b.Navigation("Assignee");
+
+                    b.Navigation("Location");
+
+                    b.Navigation("Model");
+
+                    b.Navigation("Vendor");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.AssetHistory", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.Asset", "Asset")
+                        .WithMany("Histories")
+                        .HasForeignKey("AssetId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "Operator")
+                        .WithMany("AssetHistories")
+                        .HasForeignKey("OperatorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Asset");
+
+                    b.Navigation("Operator");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.AssetModel", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.AssetCategory", "Category")
+                        .WithMany("Models")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.BankCardChangeLog", b =>
@@ -966,9 +1229,29 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Asset", b =>
+                {
+                    b.Navigation("Histories");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.AssetCategory", b =>
+                {
+                    b.Navigation("Models");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.AssetModel", b =>
+                {
+                    b.Navigation("Assets");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Incident", b =>
                 {
                     b.Navigation("Comments");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Location", b =>
+                {
+                    b.Navigation("Assets");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.OnboardingTask", b =>
@@ -983,6 +1266,10 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.User", b =>
                 {
+                    b.Navigation("AssetHistories");
+
+                    b.Navigation("AssignedAssets");
+
                     b.Navigation("CreatedPasswords");
 
                     b.Navigation("IncidentComments");
@@ -1004,6 +1291,11 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.Navigation("Reports");
 
                     b.Navigation("SshKeys");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Vendor", b =>
+                {
+                    b.Navigation("Assets");
                 });
 #pragma warning restore 612, 618
         }
