@@ -8,7 +8,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Localization;
 using Newtonsoft.Json;
 
 namespace Aiursoft.EmployeeCenter.Controllers;
@@ -37,7 +36,7 @@ public class CompanyEntityController(
         {
             Entities = entities
         };
-        return this.StackView(model);
+        return StackView(model);
     }
 
     [HttpGet]
@@ -53,14 +52,14 @@ public class CompanyEntityController(
         {
             Entity = entity
         };
-        return this.StackView(model);
+        return StackView(model);
     }
 
     [HttpGet]
     [Authorize(Policy = AppPermissionNames.CanManageCompanyEntities)]
     public IActionResult Create()
     {
-        return this.StackView(new CreateViewModel
+        return StackView(new CreateViewModel
         {
             CompanyName = string.Empty,
             EntityCode = string.Empty
@@ -74,7 +73,7 @@ public class CompanyEntityController(
     {
         if (!ModelState.IsValid)
         {
-            return this.StackView(model);
+            return StackView(model);
         }
 
         var entity = new CompanyEntity
@@ -154,7 +153,7 @@ public class CompanyEntityController(
             CompanySecretary = entity.CompanySecretary
         };
 
-        return this.StackView(model);
+        return StackView(model);
     }
 
     [HttpPost]
@@ -164,7 +163,7 @@ public class CompanyEntityController(
     {
         if (!ModelState.IsValid)
         {
-            return this.StackView(model);
+            return StackView(model);
         }
 
         var entity = await dbContext.CompanyEntities.FindAsync(model.Id);
