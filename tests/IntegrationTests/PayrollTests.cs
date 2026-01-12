@@ -81,7 +81,7 @@ public class PayrollTests
         var userName = $"user-{uniqueId}";
         var email = $"{userName}@aiursoft.com";
         var password = "Test-Password-123";
-        
+
         // Log off admin first to register
         await _http.GetAsync("/Account/LogOff");
 
@@ -95,7 +95,7 @@ public class PayrollTests
         });
         var registerResponse = await _http.PostAsync("/Account/Register", registerContent);
         Assert.AreEqual(HttpStatusCode.Found, registerResponse.StatusCode);
-        
+
         // 3. Get User ID from DB
         string userId;
         using (var scope = _server!.Services.CreateScope())
@@ -150,7 +150,7 @@ public class PayrollTests
         myPayrollsResponse.EnsureSuccessStatusCode();
         var myPayrollsHtml = await myPayrollsResponse.Content.ReadAsStringAsync();
         Assert.Contains("2025-12", myPayrollsHtml);
-        
+
         // 7. View details
         int payrollId;
         using (var scope = _server!.Services.CreateScope())

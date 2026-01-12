@@ -9,7 +9,7 @@ public class CompanyEntityLog
     public int Id { get; set; }
 
     public int? CompanyEntityId { get; set; }
-    
+
     [ForeignKey(nameof(CompanyEntityId))]
     public CompanyEntity? CompanyEntity { get; set; }
 
@@ -24,7 +24,7 @@ public class CompanyEntityLog
     [Required]
     public required string Action { get; set; } // Create, Update, Delete
 
-    public string? Details { get; set; } 
-    
+    public string? Details { get; set; }
+
     public string? Snapshot { get; set; }
 }

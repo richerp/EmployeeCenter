@@ -57,7 +57,7 @@ public class CompanyEntity
 
     [MaxLength(50)]
     public string? BankAccount { get; set; }
-    
+
     [MaxLength(50)]
     public string? BankAccountName { get; set; }
 
@@ -66,14 +66,14 @@ public class CompanyEntity
 
     [MaxLength(500)]
     public string? SealPath { get; set; }
-    
+
     [MaxLength(500)]
     public string? LicensePath { get; set; }
 
     // Mainland Specific
     [MaxLength(50)]
     public string? RegisteredCapital { get; set; }
-    
+
     [MaxLength(50)]
     public string? OperationStatus { get; set; } // Open, Closed
 

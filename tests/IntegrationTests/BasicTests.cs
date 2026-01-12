@@ -5,7 +5,7 @@ using Aiursoft.DbTools;
 using Aiursoft.EmployeeCenter.Entities;
 using static Aiursoft.WebTools.Extends;
 
-[assembly:DoNotParallelize]
+[assembly: DoNotParallelize]
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 

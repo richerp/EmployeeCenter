@@ -141,7 +141,7 @@ public class AssetTests
         var userName = $"user-{uniqueId}";
         var email = $"{userName}@aiursoft.com";
         var password = "Test-Password-123";
-        
+
         await _http.GetAsync("/Account/LogOff");
         var registerToken = await GetAntiCsrfToken("/Account/Register");
         await _http.PostAsync("/Account/Register", new FormUrlEncodedContent(new Dictionary<string, string>

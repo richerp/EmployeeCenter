@@ -21,7 +21,7 @@ public class AssetsController(
     [RenderInNavBar(
         NavGroupName = "Administration",
         NavGroupOrder = 3,
-        CascadedLinksGroupName = "IT Assets",
+        CascadedLinksGroupName = "Manage IT Assets",
         CascadedLinksIcon = "monitor",
         CascadedLinksOrder = 4,
         LinkText = "Manage Assets",

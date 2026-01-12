@@ -69,7 +69,7 @@ public class CreateViewModel : UiStackLayoutViewModel
     [Display(Name = "Total Amount")]
     [DataType(DataType.Currency)]
     public decimal TotalAmount { get; set; }
-    
+
     [Display(Name = "Bank Name")]
     public string? BankName { get; set; }
     [Display(Name = "Bank Account")]

@@ -146,8 +146,8 @@ public class ManageController(
         var user = await GetCurrentUserAsync();
         if (user != null)
         {
-            if (user.BankAccount != model.BankCardNumber || 
-                user.BankName != model.BankName || 
+            if (user.BankAccount != model.BankCardNumber ||
+                user.BankName != model.BankName ||
                 user.BankAccountName != model.BankAccountName)
             {
                 var log = new BankCardChangeLog

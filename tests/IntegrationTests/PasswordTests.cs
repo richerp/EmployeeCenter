@@ -101,7 +101,7 @@ public class PasswordTests
         var userName = $"user-{uniqueId}";
         var email = $"{userName}@aiursoft.com";
         var userPassword = "Test-Password-123";
-        
+
         await _http.GetAsync("/Account/LogOff");
         var registerToken = await GetAntiCsrfToken("/Account/Register");
         await _http.PostAsync("/Account/Register", new FormUrlEncodedContent(new Dictionary<string, string>
@@ -116,7 +116,7 @@ public class PasswordTests
         using (var scope = _server!.Services.CreateScope())
         {
             var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
-            var user = await db.Users.FirstAsync(u => u.Email == email); 
+            var user = await db.Users.FirstAsync(u => u.Email == email);
             userId = user.Id;
         }
 
@@ -200,7 +200,7 @@ public class PasswordTests
         {
             var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
             var s = await db.PasswordShares.FirstAsync(s => s.PasswordId == passwordId && s.SharedWithUserId == userId);
-            
+
             // Remove ReadOnly share and add Editable share
             db.PasswordShares.Remove(s);
             await db.SaveChangesAsync();
@@ -227,7 +227,7 @@ public class PasswordTests
 
         editResponse = await _http.GetAsync("/Passwords/Edit/" + passwordId);
         editResponse.EnsureSuccessStatusCode();
-        
+
         var editToken = await GetAntiCsrfToken("/Passwords/Edit/" + passwordId);
         var newTitle = "Updated Password Title";
         var editPostContent = new FormUrlEncodedContent(new Dictionary<string, string>
