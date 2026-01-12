@@ -5,7 +5,7 @@ using Aiursoft.UiStack.Layout;
 
 namespace Aiursoft.EmployeeCenter.Models.UsersViewModels;
 
-public class CreateViewModel: UiStackLayoutViewModel
+public class CreateViewModel : UiStackLayoutViewModel
 {
     public CreateViewModel()
     {

@@ -20,7 +20,7 @@ public class MyAssetsController(
     [RenderInNavBar(
         NavGroupName = "Personal",
         NavGroupOrder = 2,
-        CascadedLinksGroupName = "IT Assets",
+        CascadedLinksGroupName = "My IT Assets",
         CascadedLinksIcon = "monitor",
         CascadedLinksOrder = 4,
         LinkText = "My Assets",

@@ -129,7 +129,7 @@ public class SshKeyTests
         Assert.Contains("Updated Admin Key", indexHtml);
 
         // 5. Delete the key
-        var deleteToken = await GetAntiCsrfToken("/SshKeys/Index"); 
+        var deleteToken = await GetAntiCsrfToken("/SshKeys/Index");
         var deleteResponse = await _http.PostAsync($"/SshKeys/Delete/{keyId}", new FormUrlEncodedContent(new Dictionary<string, string>
         {
             { "__RequestVerificationToken", deleteToken }

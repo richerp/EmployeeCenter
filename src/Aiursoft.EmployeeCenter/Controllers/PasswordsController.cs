@@ -264,7 +264,7 @@ public class PasswordsController(
     private async Task<SharePermission?> GetUserPermission(Password password, string userId)
     {
         if (password.CreatorId == userId) return SharePermission.Editable;
-        
+
         var canManageAny = (await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanManageAnyPassword)).Succeeded;
         if (canManageAny) return SharePermission.Editable;
 

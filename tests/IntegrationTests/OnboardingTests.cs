@@ -139,7 +139,7 @@ public class OnboardingTests
             taskId = task.Id;
         }
 
-        var startTaskToken = await GetAntiCsrfToken("/Dashboard"); 
+        var startTaskToken = await GetAntiCsrfToken("/Dashboard");
         var startTaskContent = new FormUrlEncodedContent(new Dictionary<string, string>
         {
             { "__RequestVerificationToken", startTaskToken }

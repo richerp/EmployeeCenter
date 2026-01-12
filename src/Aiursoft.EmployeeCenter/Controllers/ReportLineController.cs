@@ -68,7 +68,7 @@ public class ReportLineController(
             var manager = await context.Users
                 .Include(u => u.Manager)
                 .FirstOrDefaultAsync(u => u.Id == current.ManagerId);
-            
+
             if (manager == null) break;
             managerChain.Add(manager);
             current = manager;

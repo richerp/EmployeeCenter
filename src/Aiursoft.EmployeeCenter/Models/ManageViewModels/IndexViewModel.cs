@@ -2,7 +2,7 @@ using Aiursoft.UiStack.Layout;
 
 namespace Aiursoft.EmployeeCenter.Models.ManageViewModels;
 
-public class IndexViewModel: UiStackLayoutViewModel
+public class IndexViewModel : UiStackLayoutViewModel
 {
     public IndexViewModel()
     {

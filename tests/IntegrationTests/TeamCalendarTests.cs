@@ -115,7 +115,7 @@ public class TeamCalendarTests
         response = await subordinateHttp.GetAsync("/Leave/TeamCalendar");
         Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
         var html = await response.Content.ReadAsStringAsync();
-        
+
         // Should see "Boss" or "经理"
         var containsRelation = html.Contains("Boss") || html.Contains("经理") || html.Contains("汇报对象");
         Assert.IsTrue(containsRelation);

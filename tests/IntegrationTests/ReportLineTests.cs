@@ -130,11 +130,11 @@ public class ReportLineTests
         using (var scope = _server!.Services.CreateScope())
         {
             var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
-            var user = new User 
-            { 
-                UserName = "user" + suffix, 
-                DisplayName = "Display Name", 
-                Email = "user" + suffix + "@test.com", 
+            var user = new User
+            {
+                UserName = "user" + suffix,
+                DisplayName = "Display Name",
+                Email = "user" + suffix + "@test.com",
                 AvatarRelativePath = User.DefaultAvatarPath,
                 JobLevel = "L3",
                 Title = "Technical Lead",
@@ -179,11 +179,11 @@ public class ReportLineTests
         using (var scope = _server!.Services.CreateScope())
         {
             var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
-            var user = new User 
-            { 
-                UserName = "target" + suffix, 
-                DisplayName = "Target User", 
-                Email = "target" + suffix + "@test.com", 
+            var user = new User
+            {
+                UserName = "target" + suffix,
+                DisplayName = "Target User",
+                Email = "target" + suffix + "@test.com",
                 AvatarRelativePath = User.DefaultAvatarPath,
                 JobLevel = "L5"
             };
@@ -198,13 +198,13 @@ public class ReportLineTests
         {
             var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
             var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-            
-            var viewer = new User 
-            { 
-                UserName = "viewer" + suffix, 
-                DisplayName = "Viewer User", 
-                Email = "viewer" + suffix + "@test.com", 
-                AvatarRelativePath = User.DefaultAvatarPath 
+
+            var viewer = new User
+            {
+                UserName = "viewer" + suffix,
+                DisplayName = "Viewer User",
+                Email = "viewer" + suffix + "@test.com",
+                AvatarRelativePath = User.DefaultAvatarPath
             };
             await userManager.CreateAsync(viewer, "Password123!");
             viewerEmail = viewer.Email;

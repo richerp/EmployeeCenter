@@ -14,7 +14,7 @@ public class RoleClaimViewModel
     public bool IsSelected { get; set; }
 }
 
-public class EditViewModel: UiStackLayoutViewModel
+public class EditViewModel : UiStackLayoutViewModel
 {
     public EditViewModel()
     {

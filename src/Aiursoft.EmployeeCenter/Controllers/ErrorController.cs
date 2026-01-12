@@ -17,7 +17,7 @@ public class ErrorController : Controller
     }
 
     [Route("Error/Unauthorized")]
-    public IActionResult UnauthorizedPage([FromQuery]string returnUrl = "/")
+    public IActionResult UnauthorizedPage([FromQuery] string returnUrl = "/")
     {
         if (!Url.IsLocalUrl(returnUrl))
         {

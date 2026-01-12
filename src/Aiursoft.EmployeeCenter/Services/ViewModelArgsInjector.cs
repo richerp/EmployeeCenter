@@ -129,6 +129,8 @@ public class ViewModelArgsInjector(
         _ = localizer["Edit Company Entity"];
         _ = localizer["Company Entity Details"];
         _ = localizer["IT Assets"];
+        _ = localizer["Manage IT Assets"];
+        _ = localizer["My IT Assets"];
         _ = localizer["Manage Assets"];
         _ = localizer["My Assets"];
         _ = localizer["Asset Categories"];

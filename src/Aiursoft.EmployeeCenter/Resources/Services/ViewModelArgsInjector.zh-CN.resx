@@ -123,6 +123,12 @@
   <data name="IT Assets" xml:space="preserve">
     <value>IT 资产</value>
   </data>
+  <data name="Manage IT Assets" xml:space="preserve">
+    <value>IT 资产</value>
+  </data>
+  <data name="My IT Assets" xml:space="preserve">
+    <value>IT 资产</value>
+  </data>
   <data name="Leave Management" xml:space="preserve">
     <value>请假管理</value>
   </data>
