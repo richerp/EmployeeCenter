@@ -109,6 +109,11 @@ public class LeaveTests
 
         // 3. Apply for FUTURE leave (5 days from now)
         var fiveDaysFromNow = DateTime.UtcNow.Date.AddDays(5);
+        while (fiveDaysFromNow.DayOfWeek == DayOfWeek.Saturday || fiveDaysFromNow.DayOfWeek == DayOfWeek.Sunday)
+        {
+            fiveDaysFromNow = fiveDaysFromNow.AddDays(1);
+        }
+
         var applyToken = await GetAntiCsrfToken("/Leave/Apply");
         var applyContent = new FormUrlEncodedContent(new Dictionary<string, string>
         {
