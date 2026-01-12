@@ -18,11 +18,23 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Admin" xml:space="preserve">
+      <data name="Actions" xml:space="preserve">
+    <value>Toiminnot</value>
+  </data>
+  <data name="Additional Info (Mainland/HK)" xml:space="preserve">
+    <value>Lisätietoja (Kiina/HK)</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Osoite</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
     <value>Ylläpitäjä</value>
   </data>
   <data name="Administration" xml:space="preserve">
     <value>Hallinto</value>
+  </data>
+  <data name="Administrative Details" xml:space="preserve">
+    <value>Hallinnolliset tiedot</value>
   </data>
   <data name="Aiursoft Employee Center" xml:space="preserve">
     <value>Aiursoftin Työntekijäkeskus</value>
@@ -41,6 +53,15 @@
   </data>
   <data name="Asset Models" xml:space="preserve">
     <value>Laitteiden mallit</value>
+  </data>
+  <data name="Bank Info" xml:space="preserve">
+    <value>Pankkitiedot</value>
+  </data>
+  <data name="Basic Information" xml:space="preserve">
+    <value>Perustiedot</value>
+  </data>
+  <data name="Business License" xml:space="preserve">
+    <value>Yrityslupa</value>
   </data>
   <data name="Career" xml:space="preserve">
     <value>Urheilu</value>
@@ -63,8 +84,35 @@
   <data name="Change Profile" xml:space="preserve">
     <value>Muokkaa profiilia</value>
   </data>
+  <data name="CI Number" xml:space="preserve">
+    <value>Yritystunnus</value>
+  </data>
   <data name="Click to login" xml:space="preserve">
     <value>Klikkaa kirjautuaksesi</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>Koodi</value>
+  </data>
+  <data name="Company Entities" xml:space="preserve">
+    <value>Yrityksen yksiköt</value>
+  </data>
+  <data name="Company Entity Details" xml:space="preserve">
+    <value>Yrityksen yksikön tiedot</value>
+  </data>
+  <data name="Company Name" xml:space="preserve">
+    <value>Yrityksen nimi</value>
+  </data>
+  <data name="Company Type" xml:space="preserve">
+    <value>Yritystyyppi</value>
+  </data>
+  <data name="Confirm Delete" xml:space="preserve">
+    <value>Vahvista poisto</value>
+  </data>
+  <data name="Create Company Entity" xml:space="preserve">
+    <value>Luo yritysorganisaatio</value>
+  </data>
+  <data name="Create New" xml:space="preserve">
+    <value>Luo uusi</value>
   </data>
   <data name="Create Password" xml:space="preserve">
     <value>Luo salasana</value>
@@ -81,11 +129,20 @@
   <data name="Delete User" xml:space="preserve">
     <value>Poista käyttäjä</value>
   </data>
+  <data name="Details" xml:space="preserve">
+    <value>Yksityiskohdat</value>
+  </data>
   <data name="Development" xml:space="preserve">
     <value>Kehitys</value>
   </data>
   <data name="Directory" xml:space="preserve">
     <value>Hakemisto</value>
+  </data>
+  <data name="Download / View" xml:space="preserve">
+    <value>Lataa / Näytä</value>
+  </data>
+  <data name="Edit Company Entity" xml:space="preserve">
+    <value>Muokkaa yrityksen yksikköä</value>
   </data>
   <data name="Edit Password" xml:space="preserve">
     <value>Muokkaa salasanaa</value>
@@ -99,8 +156,26 @@
   <data name="Employee Center" xml:space="preserve">
     <value>Työntekijäkeskus</value>
   </data>
+  <data name="English Name" xml:space="preserve">
+    <value>Englannin nimi</value>
+  </data>
+  <data name="Entities List" xml:space="preserve">
+    <value>Organisaatioiden lista</value>
+  </data>
+  <data name="Entity Code" xml:space="preserve">
+    <value>Yrityskoodi</value>
+  </data>
+  <data name="Entity Details" xml:space="preserve">
+    <value>Yrityksen tiedot</value>
+  </data>
   <data name="Error" xml:space="preserve">
     <value>Virhe</value>
+  </data>
+  <data name="Establishment" xml:space="preserve">
+    <value>Perustaminen</value>
+  </data>
+  <data name="Expiry Date" xml:space="preserve">
+    <value>Eräpäivä</value>
   </data>
   <data name="Features" xml:space="preserve">
     <value>Ominaisuudet</value>
@@ -110,6 +185,9 @@
   </data>
   <data name="Home" xml:space="preserve">
     <value>Koti</value>
+  </data>
+  <data name="Images &amp; Files" xml:space="preserve">
+    <value>Kuvat &amp; Tiedostot</value>
   </data>
   <data name="Index" xml:space="preserve">
     <value>Etusivu</value>
@@ -123,6 +201,12 @@
   <data name="Leave Management" xml:space="preserve">
     <value>Lomakäsitely</value>
   </data>
+  <data name="Legal Rep" xml:space="preserve">
+    <value>Lakisäädännöllinen edustaja</value>
+  </data>
+  <data name="Legal Rep / Director" xml:space="preserve">
+    <value>Lakisäädännöllinen edustaja / hallituksen jäsen</value>
+  </data>
   <data name="Locations" xml:space="preserve">
     <value>Sijainnit</value>
   </data>
@@ -132,11 +216,17 @@
   <data name="Login to get access to all features." xml:space="preserve">
     <value>Kirjaudu sisään saadaksesi pääsyn kaikkiin ominaisuuksiin.</value>
   </data>
+  <data name="Logo" xml:space="preserve">
+    <value>Logo</value>
+  </data>
   <data name="Manage" xml:space="preserve">
     <value>Hallinnoi</value>
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Hallinnoi varusteita</value>
+  </data>
+  <data name="Manage IT Assets" xml:space="preserve">
+    <value>Hallinnoi IT-varastoja</value>
   </data>
   <data name="Manage Onboarding" xml:space="preserve">
     <value>Hallinnoi rekrytointia</value>
@@ -159,6 +249,9 @@
   <data name="My Assets" xml:space="preserve">
     <value>Omat varat</value>
   </data>
+  <data name="My IT Assets" xml:space="preserve">
+    <value>Omistetut tietotekniikka-omaisuudet</value>
+  </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>Oma lomapitoisuuteni</value>
   </data>
@@ -167,6 +260,9 @@
   </data>
   <data name="My Report Line" xml:space="preserve">
     <value>Oma raporttirivini</value>
+  </data>
+  <data name="Official Seal" xml:space="preserve">
+    <value>Virallinen timo</value>
   </data>
   <data name="Onboarding" xml:space="preserve">
     <value>Työskentely alkaa</value>
@@ -198,17 +294,32 @@
   <data name="Projects" xml:space="preserve">
     <value>Projektit</value>
   </data>
+  <data name="Reg Capital" xml:space="preserve">
+    <value>Perustamisvarallisuus</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>Rekisteröidy</value>
   </data>
   <data name="Report Line" xml:space="preserve">
     <value>Raporttirivi</value>
   </data>
+  <data name="Restricted" xml:space="preserve">
+    <value>Rajoitettu</value>
+  </data>
   <data name="Role Details" xml:space="preserve">
     <value>Roolin tiedot</value>
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Roolit</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>Tallenna muutokset</value>
+  </data>
+  <data name="SCR Location" xml:space="preserve">
+    <value>SCR-sijainti</value>
+  </data>
+  <data name="Secretary" xml:space="preserve">
+    <value>Sihteeri</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Asetukset</value>
@@ -218,6 +329,9 @@
   </data>
   <data name="Sign out" xml:space="preserve">
     <value>Kirjaudu ulos</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Tila</value>
   </data>
   <data name="System" xml:space="preserve">
     <value>Järjestelmä</value>

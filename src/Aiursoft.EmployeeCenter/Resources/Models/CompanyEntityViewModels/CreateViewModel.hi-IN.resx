@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Bank Account" xml:space="preserve">
+    <value>बैंक खाता</value>
+  </data>
+  <data name="Bank Account Name" xml:space="preserve">
+    <value>बैंक खाता नाम</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>बैंक का नाम</value>
+  </data>
+  <data name="Business License / BR Scan" xml:space="preserve">
+    <value>व्यापार लाइसेंस / बीआर स्कैन</value>
+  </data>
+  <data name="CI Number (HK)" xml:space="preserve">
+    <value>सीआई नंबर (एचके)</value>
+  </data>
+  <data name="Company Logo" xml:space="preserve">
+    <value>कंपनी लोगो</value>
+  </data>
+  <data name="Company Name (Chinese)" xml:space="preserve">
+    <value>कंपनी का नाम (चीनी)</value>
+  </data>
+  <data name="Company Name (English)" xml:space="preserve">
+    <value>कंपनी नाम (अंग्रेजी)</value>
+  </data>
+  <data name="Company Seal" xml:space="preserve">
+    <value>कंपनी सील</value>
+  </data>
+  <data name="Company Secretary (HK)" xml:space="preserve">
+    <value>कंपनी सचिव (HK)</value>
+  </data>
+  <data name="Company Type" xml:space="preserve">
+    <value>कंपनी प्रकार</value>
+  </data>
+  <data name="Entity Code (Social Credit Code / BR Number)" xml:space="preserve">
+    <value>एंटिटी कोड (सोशल क्रेडिट कोड / बीआर नंबर)</value>
+  </data>
+  <data name="Establishment Date" xml:space="preserve">
+    <value>स्थापना तिथि</value>
+  </data>
+  <data name="Expiry Date (Business License / BR)" xml:space="preserve">
+    <value>समाप्ति तिथि (व्यापार लाइसेंस / बीआर)</value>
+  </data>
+  <data name="Legal Representative / Director" xml:space="preserve">
+    <value>कानूनी प्रतिनिधि / निदेशक</value>
+  </data>
+  <data name="Office Address" xml:space="preserve">
+    <value>कार्यालय पता</value>
+  </data>
+  <data name="Operation Status" xml:space="preserve">
+    <value>संचालन स्थिति</value>
+  </data>
+  <data name="Please upload a valid license file." xml:space="preserve">
+    <value>कृपया एक मान्य लाइसेंस फ़ाइल अपलोड करें।</value>
+  </data>
+  <data name="Please upload a valid logo file." xml:space="preserve">
+    <value>कृपया एक वैध लोगो फ़ाइल अपलोड करें।</value>
+  </data>
+  <data name="Please upload a valid seal file." xml:space="preserve">
+    <value>कृपया एक वैध सील फ़ाइल अपलोड करें।</value>
+  </data>
+  <data name="Registered Address" xml:space="preserve">
+    <value>पंजीकृत पता</value>
+  </data>
+  <data name="Registered Capital (Mainland)" xml:space="preserve">
+    <value>पंजीकृत पूंजी (मुख्यभूमि)</value>
+  </data>
+  <data name="SCR Location (HK)" xml:space="preserve">
+    <value>SCR स्थान (HK)</value>
+  </data>
+
+</root>

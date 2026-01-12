@@ -18,11 +18,23 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Admin" xml:space="preserve">
+      <data name="Actions" xml:space="preserve">
+    <value>Handling</value>
+  </data>
+  <data name="Additional Info (Mainland/HK)" xml:space="preserve">
+    <value>Yderligere oplysninger (fastland/HK)</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Adresse</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
     <value>Administrator</value>
   </data>
   <data name="Administration" xml:space="preserve">
     <value>Administration</value>
+  </data>
+  <data name="Administrative Details" xml:space="preserve">
+    <value>Administrative detaljer</value>
   </data>
   <data name="Aiursoft Employee Center" xml:space="preserve">
     <value>Aiursoft Medarbejdercenter</value>
@@ -41,6 +53,15 @@
   </data>
   <data name="Asset Models" xml:space="preserve">
     <value>Aktivmodeler</value>
+  </data>
+  <data name="Bank Info" xml:space="preserve">
+    <value>Bankoplysninger</value>
+  </data>
+  <data name="Basic Information" xml:space="preserve">
+    <value>Grundlæggende oplysninger</value>
+  </data>
+  <data name="Business License" xml:space="preserve">
+    <value>Erhvervslicens</value>
   </data>
   <data name="Career" xml:space="preserve">
     <value>Karriere</value>
@@ -63,8 +84,35 @@
   <data name="Change Profile" xml:space="preserve">
     <value>Rediger profil</value>
   </data>
+  <data name="CI Number" xml:space="preserve">
+    <value>CI-nummer</value>
+  </data>
   <data name="Click to login" xml:space="preserve">
     <value>Klik for at logge ind</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>Kode</value>
+  </data>
+  <data name="Company Entities" xml:space="preserve">
+    <value>Virksomhedsentiteter</value>
+  </data>
+  <data name="Company Entity Details" xml:space="preserve">
+    <value>Virksomhedsenhedsdetaljer</value>
+  </data>
+  <data name="Company Name" xml:space="preserve">
+    <value>Virksomhedsnavn</value>
+  </data>
+  <data name="Company Type" xml:space="preserve">
+    <value>Virksomhedstype</value>
+  </data>
+  <data name="Confirm Delete" xml:space="preserve">
+    <value>Bekræft sletning</value>
+  </data>
+  <data name="Create Company Entity" xml:space="preserve">
+    <value>Opret virksomhedsenhed</value>
+  </data>
+  <data name="Create New" xml:space="preserve">
+    <value>Opret ny</value>
   </data>
   <data name="Create Password" xml:space="preserve">
     <value>Opret adgangskode</value>
@@ -81,11 +129,20 @@
   <data name="Delete User" xml:space="preserve">
     <value>Slet bruger</value>
   </data>
+  <data name="Details" xml:space="preserve">
+    <value>Detaljer</value>
+  </data>
   <data name="Development" xml:space="preserve">
     <value>Udvikling</value>
   </data>
   <data name="Directory" xml:space="preserve">
     <value>Mappe</value>
+  </data>
+  <data name="Download / View" xml:space="preserve">
+    <value>Hent / Vis</value>
+  </data>
+  <data name="Edit Company Entity" xml:space="preserve">
+    <value>Rediger virksomhedsentitet</value>
   </data>
   <data name="Edit Password" xml:space="preserve">
     <value>Rediger adgangskode</value>
@@ -99,8 +156,26 @@
   <data name="Employee Center" xml:space="preserve">
     <value>Medarbejdercenter</value>
   </data>
+  <data name="English Name" xml:space="preserve">
+    <value>Engelsk navn</value>
+  </data>
+  <data name="Entities List" xml:space="preserve">
+    <value>Enhedsliste</value>
+  </data>
+  <data name="Entity Code" xml:space="preserve">
+    <value>Enhedskode</value>
+  </data>
+  <data name="Entity Details" xml:space="preserve">
+    <value>Enhedsdetaljer</value>
+  </data>
   <data name="Error" xml:space="preserve">
     <value>Fejl</value>
+  </data>
+  <data name="Establishment" xml:space="preserve">
+    <value>Etablering</value>
+  </data>
+  <data name="Expiry Date" xml:space="preserve">
+    <value>Udløbsdato</value>
   </data>
   <data name="Features" xml:space="preserve">
     <value>Funktioner</value>
@@ -110,6 +185,9 @@
   </data>
   <data name="Home" xml:space="preserve">
     <value>Hjem</value>
+  </data>
+  <data name="Images &amp; Files" xml:space="preserve">
+    <value>Billeder &amp; Fil</value>
   </data>
   <data name="Index" xml:space="preserve">
     <value>Indeks</value>
@@ -123,6 +201,12 @@
   <data name="Leave Management" xml:space="preserve">
     <value>Feriehåndtering</value>
   </data>
+  <data name="Legal Rep" xml:space="preserve">
+    <value>Retssag</value>
+  </data>
+  <data name="Legal Rep / Director" xml:space="preserve">
+    <value>Retningslinjer / Direktør</value>
+  </data>
   <data name="Locations" xml:space="preserve">
     <value>Pladser</value>
   </data>
@@ -132,11 +216,17 @@
   <data name="Login to get access to all features." xml:space="preserve">
     <value>Log ind for at få adgang til alle funktioner.</value>
   </data>
+  <data name="Logo" xml:space="preserve">
+    <value>Logo</value>
+  </data>
   <data name="Manage" xml:space="preserve">
     <value>Administrer</value>
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Håndtér aktiver</value>
+  </data>
+  <data name="Manage IT Assets" xml:space="preserve">
+    <value>Administrer IT-aktiver</value>
   </data>
   <data name="Manage Onboarding" xml:space="preserve">
     <value>Håndtér påbegyndelse</value>
@@ -159,6 +249,9 @@
   <data name="My Assets" xml:space="preserve">
     <value>Mine aktiver</value>
   </data>
+  <data name="My IT Assets" xml:space="preserve">
+    <value>Mine IT-aktiver</value>
+  </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>Min feriebalance</value>
   </data>
@@ -167,6 +260,9 @@
   </data>
   <data name="My Report Line" xml:space="preserve">
     <value>Min Rapportlinje</value>
+  </data>
+  <data name="Official Seal" xml:space="preserve">
+    <value>Officiel stempel</value>
   </data>
   <data name="Onboarding" xml:space="preserve">
     <value>Indarbejdelse</value>
@@ -198,17 +294,32 @@
   <data name="Projects" xml:space="preserve">
     <value>Projekter</value>
   </data>
+  <data name="Reg Capital" xml:space="preserve">
+    <value>Ejerkapital</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>Registrer</value>
   </data>
   <data name="Report Line" xml:space="preserve">
     <value>Rapportlinje</value>
   </data>
+  <data name="Restricted" xml:space="preserve">
+    <value>Begrænset</value>
+  </data>
   <data name="Role Details" xml:space="preserve">
     <value>Roledetaljer</value>
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Roller</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>Gem ændringer</value>
+  </data>
+  <data name="SCR Location" xml:space="preserve">
+    <value>SCR-placering</value>
+  </data>
+  <data name="Secretary" xml:space="preserve">
+    <value>Sekretær</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Indstillinger</value>
@@ -218,6 +329,9 @@
   </data>
   <data name="Sign out" xml:space="preserve">
     <value>Log ud</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
   </data>
   <data name="System" xml:space="preserve">
     <value>System</value>

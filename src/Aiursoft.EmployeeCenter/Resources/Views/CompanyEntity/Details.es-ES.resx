@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Address" xml:space="preserve">
+    <value>Dirección</value>
+  </data>
+  <data name="Administrative Details" xml:space="preserve">
+    <value>Datos administrativos</value>
+  </data>
+  <data name="Bank Info" xml:space="preserve">
+    <value>Información del banco</value>
+  </data>
+  <data name="Basic Information" xml:space="preserve">
+    <value>Información básica</value>
+  </data>
+  <data name="Business License" xml:space="preserve">
+    <value>Licencia de negocio</value>
+  </data>
+  <data name="CI Number" xml:space="preserve">
+    <value>Número de CI</value>
+  </data>
+  <data name="Company Name" xml:space="preserve">
+    <value>Nombre de la empresa</value>
+  </data>
+  <data name="Company Type" xml:space="preserve">
+    <value>Tipo de empresa</value>
+  </data>
+  <data name="Download / View" xml:space="preserve">
+    <value>Descargar / Ver</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="English Name" xml:space="preserve">
+    <value>Nombre en inglés</value>
+  </data>
+  <data name="Entity Code" xml:space="preserve">
+    <value>Código de entidad</value>
+  </data>
+  <data name="Entity Details" xml:space="preserve">
+    <value>Detalles de la entidad</value>
+  </data>
+  <data name="Establishment" xml:space="preserve">
+    <value>Fecha de constitución</value>
+  </data>
+  <data name="Expiry Date" xml:space="preserve">
+    <value>Fecha de caducidad</value>
+  </data>
+  <data name="Images &amp; Files" xml:space="preserve">
+    <value>Imágenes y archivos</value>
+  </data>
+  <data name="Legal Rep / Director" xml:space="preserve">
+    <value>Representante legal / Director</value>
+  </data>
+  <data name="Logo" xml:space="preserve">
+    <value>Logotipo</value>
+  </data>
+  <data name="Official Seal" xml:space="preserve">
+    <value>Sello oficial</value>
+  </data>
+  <data name="Reg Capital" xml:space="preserve">
+    <value>Capital registrado</value>
+  </data>
+  <data name="Restricted" xml:space="preserve">
+    <value>Restringido</value>
+  </data>
+  <data name="SCR Location" xml:space="preserve">
+    <value>Ubicación del SCR</value>
+  </data>
+  <data name="Secretary" xml:space="preserve">
+    <value>Secretario</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+
+</root>

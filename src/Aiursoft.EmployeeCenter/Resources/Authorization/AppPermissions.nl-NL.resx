@@ -39,6 +39,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Staat het aanmaken van nieuwe globale wachtwoorden toe die gedeeld kunnen worden met anderen.</value>
   </data>
+  <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
+    <value>Staats het maken, bijwerken en verwijderen van informatie over bedrijfseenheden toe.</value>
+  </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>Staat het uitgeven en beheren van loonstroken voor alle gebruikers toe.</value>
   </data>
@@ -116,6 +119,9 @@
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Assets beheren</value>
+  </data>
+  <data name="Manage Company Entities" xml:space="preserve">
+    <value>Bedrijfseenheden beheren</value>
   </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>Verlof beheren</value>

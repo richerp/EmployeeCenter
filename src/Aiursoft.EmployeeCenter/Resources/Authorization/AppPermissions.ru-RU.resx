@@ -39,6 +39,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Позволяет создавать новые глобальные пароли, которые можно использовать совместно с другими.</value>
   </data>
+  <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
+    <value>Позволяет создавать, обновлять и удалять сведения о компаниях.</value>
+  </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>Разрешает выпуск и управление расчетными листками для всех пользователей.</value>
   </data>
@@ -116,6 +119,9 @@
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Управление активами</value>
+  </data>
+  <data name="Manage Company Entities" xml:space="preserve">
+    <value>Управление корпоративными сущностями</value>
   </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>Управление отпусками</value>

@@ -18,11 +18,23 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Admin" xml:space="preserve">
+      <data name="Actions" xml:space="preserve">
+    <value>Ενέργειες</value>
+  </data>
+  <data name="Additional Info (Mainland/HK)" xml:space="preserve">
+    <value>Πρόσθετε Πληροφορίες (Επίκρατος/ΧΚ)</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Διεύθυνση</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
     <value>Διαχειριστής</value>
   </data>
   <data name="Administration" xml:space="preserve">
     <value>Διαχείριση</value>
+  </data>
+  <data name="Administrative Details" xml:space="preserve">
+    <value>Διοικητικές Πληροφορίες</value>
   </data>
   <data name="Aiursoft Employee Center" xml:space="preserve">
     <value>Κέντρο Εργαζομένων Aiursoft</value>
@@ -41,6 +53,15 @@
   </data>
   <data name="Asset Models" xml:space="preserve">
     <value>Μοντέλα Περιουσίας</value>
+  </data>
+  <data name="Bank Info" xml:space="preserve">
+    <value>Τραπεζικά Στοιχεία</value>
+  </data>
+  <data name="Basic Information" xml:space="preserve">
+    <value>Βασικές Πληροφορίες</value>
+  </data>
+  <data name="Business License" xml:space="preserve">
+    <value>Επιχειρησιακή άδεια</value>
   </data>
   <data name="Career" xml:space="preserve">
     <value>Καριέρα</value>
@@ -63,8 +84,35 @@
   <data name="Change Profile" xml:space="preserve">
     <value>Αλλαγή Προφίλ</value>
   </data>
+  <data name="CI Number" xml:space="preserve">
+    <value>Αριθμός ΕΓ</value>
+  </data>
   <data name="Click to login" xml:space="preserve">
     <value>Κάντε κλικ για σύνδεση</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>Κωδικός</value>
+  </data>
+  <data name="Company Entities" xml:space="preserve">
+    <value>Εταιρικά Οντότητα</value>
+  </data>
+  <data name="Company Entity Details" xml:space="preserve">
+    <value>Λεπτομέρειες Εταιρικής Οντότητας</value>
+  </data>
+  <data name="Company Name" xml:space="preserve">
+    <value>Όνομα Εταιρείας</value>
+  </data>
+  <data name="Company Type" xml:space="preserve">
+    <value>Τύπος Εταιρείας</value>
+  </data>
+  <data name="Confirm Delete" xml:space="preserve">
+    <value>Επιβεβαίωση Διαγραφής</value>
+  </data>
+  <data name="Create Company Entity" xml:space="preserve">
+    <value>Δημιουργία Εταιρικού Οντότητας</value>
+  </data>
+  <data name="Create New" xml:space="preserve">
+    <value>Δημιουργία Νέου</value>
   </data>
   <data name="Create Password" xml:space="preserve">
     <value>Δημιουργία Κωδικού Πρόσβασης</value>
@@ -81,11 +129,20 @@
   <data name="Delete User" xml:space="preserve">
     <value>Διαγραφή Χρήστη</value>
   </data>
+  <data name="Details" xml:space="preserve">
+    <value>Λεπτομέρειες</value>
+  </data>
   <data name="Development" xml:space="preserve">
     <value>Ανάπτυξη</value>
   </data>
   <data name="Directory" xml:space="preserve">
     <value>Κατάλογος</value>
+  </data>
+  <data name="Download / View" xml:space="preserve">
+    <value>Λήψη / Προβολή</value>
+  </data>
+  <data name="Edit Company Entity" xml:space="preserve">
+    <value>Επεξεργασία Εταιρικής Μονάδας</value>
   </data>
   <data name="Edit Password" xml:space="preserve">
     <value>Επεξεργασία Κωδικού</value>
@@ -99,8 +156,26 @@
   <data name="Employee Center" xml:space="preserve">
     <value>Κέντρο Εργαζομένων</value>
   </data>
+  <data name="English Name" xml:space="preserve">
+    <value>Αγγλικό Όνομα</value>
+  </data>
+  <data name="Entities List" xml:space="preserve">
+    <value>Λίστα Εταιρειών</value>
+  </data>
+  <data name="Entity Code" xml:space="preserve">
+    <value>Κωδικός Οντότητας</value>
+  </data>
+  <data name="Entity Details" xml:space="preserve">
+    <value>Λεπτομέρειες Οντότητας</value>
+  </data>
   <data name="Error" xml:space="preserve">
     <value>Σφάλμα</value>
+  </data>
+  <data name="Establishment" xml:space="preserve">
+    <value>Ίδρυση</value>
+  </data>
+  <data name="Expiry Date" xml:space="preserve">
+    <value>Ημερομηνία Λήξης</value>
   </data>
   <data name="Features" xml:space="preserve">
     <value>Λειτουργίες</value>
@@ -110,6 +185,9 @@
   </data>
   <data name="Home" xml:space="preserve">
     <value>Αρχική</value>
+  </data>
+  <data name="Images &amp; Files" xml:space="preserve">
+    <value>Εικόνες &amp; Αρχεία</value>
   </data>
   <data name="Index" xml:space="preserve">
     <value>Κεντρική</value>
@@ -123,6 +201,12 @@
   <data name="Leave Management" xml:space="preserve">
     <value>Διαχείριση Αδειών</value>
   </data>
+  <data name="Legal Rep" xml:space="preserve">
+    <value>Νομικός Εκπρόσωπος</value>
+  </data>
+  <data name="Legal Rep / Director" xml:space="preserve">
+    <value>Νομικός Εκπρόσωπος / Διευθυντής</value>
+  </data>
   <data name="Locations" xml:space="preserve">
     <value>Τοποθεσίες</value>
   </data>
@@ -132,11 +216,17 @@
   <data name="Login to get access to all features." xml:space="preserve">
     <value>Συνδεθείτε για να αποκτήσετε πρόσβαση σε όλες τις λειτουργίες.</value>
   </data>
+  <data name="Logo" xml:space="preserve">
+    <value>Λογότυπο</value>
+  </data>
   <data name="Manage" xml:space="preserve">
     <value>Διαχείριση</value>
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Διαχείριση Περιουσιακών Στοιχείων</value>
+  </data>
+  <data name="Manage IT Assets" xml:space="preserve">
+    <value>Διαχείριση Τεχνολογικών Περιουσιακών Στοιχείων</value>
   </data>
   <data name="Manage Onboarding" xml:space="preserve">
     <value>Διαχείριση Εγγραφής</value>
@@ -159,6 +249,9 @@
   <data name="My Assets" xml:space="preserve">
     <value>Τα Αποθέματά μου</value>
   </data>
+  <data name="My IT Assets" xml:space="preserve">
+    <value>Τα ΙΤ Αγαθά μου</value>
+  </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>Το Υπόλοιπο Αδείας Μου</value>
   </data>
@@ -167,6 +260,9 @@
   </data>
   <data name="My Report Line" xml:space="preserve">
     <value>Η Γραμμή Αναφορών Μου</value>
+  </data>
+  <data name="Official Seal" xml:space="preserve">
+    <value>Επίσημο Σφραγίδα</value>
   </data>
   <data name="Onboarding" xml:space="preserve">
     <value>Εγκατάσταση</value>
@@ -198,17 +294,32 @@
   <data name="Projects" xml:space="preserve">
     <value>Έργα</value>
   </data>
+  <data name="Reg Capital" xml:space="preserve">
+    <value>Καταχώρηση Κεφαλαίου</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>Εγγραφή</value>
   </data>
   <data name="Report Line" xml:space="preserve">
     <value>Γραμμή Αναφοράς</value>
   </data>
+  <data name="Restricted" xml:space="preserve">
+    <value>Περιορισμένος</value>
+  </data>
   <data name="Role Details" xml:space="preserve">
     <value>Λεπτομέρειες Ρόλου</value>
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Ρόλοι</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>Αποθήκευση Αλλαγών</value>
+  </data>
+  <data name="SCR Location" xml:space="preserve">
+    <value>Τοποθεσία SCR</value>
+  </data>
+  <data name="Secretary" xml:space="preserve">
+    <value>Γραμματέας</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Ρυθμίσεις</value>
@@ -218,6 +329,9 @@
   </data>
   <data name="Sign out" xml:space="preserve">
     <value>Αποσύνδεση</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Κατάσταση</value>
   </data>
   <data name="System" xml:space="preserve">
     <value>Σύστημα</value>

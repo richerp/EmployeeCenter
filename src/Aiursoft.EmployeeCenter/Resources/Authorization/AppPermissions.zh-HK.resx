@@ -39,6 +39,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>允許創建可與他人共享的新全局密碼。</value>
   </data>
+  <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
+    <value>允許建立、更新及刪除公司實體資料。</value>
+  </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>允許為所有用戶發出及管理薪金單。</value>
   </data>
@@ -116,6 +119,9 @@
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>管理資產</value>
+  </data>
+  <data name="Manage Company Entities" xml:space="preserve">
+    <value>管理公司實體</value>
   </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>管理假期</value>
