@@ -1,0 +1,159 @@
+@model Aiursoft.EmployeeCenter.Models.CompanyEntityViewModels.DetailsViewModel
+@using Aiursoft.EmployeeCenter.Authorization
+@using Microsoft.AspNetCore.Authorization
+@using Aiursoft.EmployeeCenter.Services.FileStorage
+@inject IAuthorizationService AuthorizationService
+@inject StorageService StorageService
+@{
+    var canManage = (await AuthorizationService.AuthorizeAsync(User, AppPermissionNames.CanManageCompanyEntities)).Succeeded;
+}
+
+<div class="container-fluid">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">@Localizer["Entity Details"]</h1>
+        @if (canManage)
+        {
+            <a asp-controller="CompanyEntity" asp-action="Edit" asp-route-id="@Model.Entity.Id" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                <i class="fas fa-edit fa-sm text-white-50"></i> @Localizer["Edit"]
+            </a>
+        }
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <!-- Basic Info Card -->
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">@Localizer["Basic Information"]</h6>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-4">@Localizer["Company Name"]</dt>
+                        <dd class="col-sm-8">@Model.Entity.CompanyName</dd>
+
+                        @if(!string.IsNullOrEmpty(Model.Entity.CompanyNameEnglish))
+                        {
+                            <dt class="col-sm-4">@Localizer["English Name"]</dt>
+                            <dd class="col-sm-8">@Model.Entity.CompanyNameEnglish</dd>
+                        }
+
+                        <dt class="col-sm-4">@Localizer["Entity Code"]</dt>
+                        <dd class="col-sm-8">@Model.Entity.EntityCode</dd>
+
+                        @if (canManage && !string.IsNullOrEmpty(Model.Entity.CINumber))
+                        {
+                            <dt class="col-sm-4">@Localizer["CI Number"]</dt>
+                            <dd class="col-sm-8">@Model.Entity.CINumber</dd>
+                        }
+
+                        <dt class="col-sm-4">@Localizer["Legal Rep / Director"]</dt>
+                        <dd class="col-sm-8">@Model.Entity.LegalRepresentative</dd>
+
+                        <dt class="col-sm-4">@Localizer["Address"]</dt>
+                        <dd class="col-sm-8">
+                            <p class="mb-0"><strong>Reg:</strong> @Model.Entity.RegisteredAddress</p>
+                            <p class="mb-0"><strong>Office:</strong> @Model.Entity.OfficeAddress</p>
+                        </dd>
+                        
+                        <dt class="col-sm-4">@Localizer["Bank Info"]</dt>
+                        <dd class="col-sm-8">
+                            <p class="mb-0">@Model.Entity.BankName</p>
+                            <p class="mb-0">@Model.Entity.BankAccount</p>
+                            <p class="mb-0">@Model.Entity.BankAccountName</p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <!-- Images & Files Card -->
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">@Localizer["Images & Files"]</h6>
+                </div>
+                <div class="card-body text-center">
+                    @if (!string.IsNullOrEmpty(Model.Entity.LogoPath))
+                    {
+                        <div class="mb-3">
+                            <h6>@Localizer["Logo"]</h6>
+                            <img src="@StorageService.RelativePathToInternetUrl(Model.Entity.LogoPath)" class="img-fluid" style="max-height: 100px;" alt="Logo">
+                        </div>
+                    }
+
+                    @if (!string.IsNullOrEmpty(Model.Entity.SealPath))
+                    {
+                        <div class="mb-3">
+                            <h6>@Localizer["Official Seal"]</h6>
+                            <img src="@StorageService.RelativePathToInternetUrl(Model.Entity.SealPath)" class="img-fluid" style="max-height: 100px;" alt="Seal">
+                        </div>
+                    }
+
+                    @if (canManage && !string.IsNullOrEmpty(Model.Entity.LicensePath))
+                    {
+                        <div class="mb-3">
+                            <h6>@Localizer["Business License"]</h6>
+                             <a href="@StorageService.RelativePathToInternetUrl(Model.Entity.LicensePath)" target="_blank" class="btn btn-secondary btn-sm">
+                                <i class="fas fa-file-download"></i> @Localizer["Download / View"]
+                            </a>
+                        </div>
+                    }
+                    else if (!string.IsNullOrEmpty(Model.Entity.LicensePath))
+                    {
+                         <div class="mb-3">
+                            <h6>@Localizer["Business License"]</h6>
+                            <span class="text-muted"><i class="fas fa-lock"></i> @Localizer["Restricted"]</span>
+                        </div>
+                    }
+                </div>
+            </div>
+
+            @if (canManage)
+            {
+                 <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary">@Localizer["Administrative Details"]</h6>
+                    </div>
+                    <div class="card-body">
+                         <dl class="row">
+                            <dt class="col-sm-4">@Localizer["Company Type"]</dt>
+                            <dd class="col-sm-8">@Model.Entity.CompanyType</dd>
+
+                            <dt class="col-sm-4">@Localizer["Establishment"]</dt>
+                            <dd class="col-sm-8">@Model.Entity.EstablishmentDate?.ToString("yyyy-MM-dd")</dd>
+
+                            <dt class="col-sm-4">@Localizer["Expiry Date"]</dt>
+                            <dd class="col-sm-8 @(Model.Entity.ExpiryDate < DateTime.Now.AddMonths(3) ? "text-danger font-weight-bold" : "")">
+                                @Model.Entity.ExpiryDate?.ToString("yyyy-MM-dd")
+                            </dd>
+
+                            @if (!string.IsNullOrEmpty(Model.Entity.RegisteredCapital))
+                            {
+                                <dt class="col-sm-4">@Localizer["Reg Capital"]</dt>
+                                <dd class="col-sm-8">@Model.Entity.RegisteredCapital</dd>
+                            }
+                            
+                            @if (!string.IsNullOrEmpty(Model.Entity.OperationStatus))
+                            {
+                                <dt class="col-sm-4">@Localizer["Status"]</dt>
+                                <dd class="col-sm-8">@Model.Entity.OperationStatus</dd>
+                            }
+
+                             @if (!string.IsNullOrEmpty(Model.Entity.SCRLocation))
+                            {
+                                <dt class="col-sm-4">@Localizer["SCR Location"]</dt>
+                                <dd class="col-sm-8">@Model.Entity.SCRLocation</dd>
+                            }
+
+                             @if (!string.IsNullOrEmpty(Model.Entity.CompanySecretary))
+                            {
+                                <dt class="col-sm-4">@Localizer["Secretary"]</dt>
+                                <dd class="col-sm-8">@Model.Entity.CompanySecretary</dd>
+                            }
+                         </dl>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
