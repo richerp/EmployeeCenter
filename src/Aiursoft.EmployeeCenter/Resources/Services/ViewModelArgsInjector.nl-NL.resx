@@ -36,6 +36,12 @@
   <data name="Approval Center" xml:space="preserve">
     <value>Goedkeuringscentrum</value>
   </data>
+  <data name="Asset Categories" xml:space="preserve">
+    <value>Assetcategorieën</value>
+  </data>
+  <data name="Asset Models" xml:space="preserve">
+    <value>Assetmodellen</value>
+  </data>
   <data name="Career" xml:space="preserve">
     <value>Carrière</value>
   </data>
@@ -111,8 +117,14 @@
   <data name="Info" xml:space="preserve">
     <value>Informatie</value>
   </data>
+  <data name="IT Assets" xml:space="preserve">
+    <value>IT-assets</value>
+  </data>
   <data name="Leave Management" xml:space="preserve">
     <value>Verlofbeheer</value>
+  </data>
+  <data name="Locations" xml:space="preserve">
+    <value>Locaties</value>
   </data>
   <data name="Login" xml:space="preserve">
     <value>Inloggen</value>
@@ -122,6 +134,9 @@
   </data>
   <data name="Manage" xml:space="preserve">
     <value>Beheren</value>
+  </data>
+  <data name="Manage Assets" xml:space="preserve">
+    <value>Assets beheren</value>
   </data>
   <data name="Manage Onboarding" xml:space="preserve">
     <value>Opdrachten voor opstarten beheren</value>
@@ -140,6 +155,9 @@
   </data>
   <data name="Missions" xml:space="preserve">
     <value>Missies</value>
+  </data>
+  <data name="My Assets" xml:space="preserve">
+    <value>Mijn activa</value>
   </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>Mijn verlofsaldo</value>
@@ -221,6 +239,9 @@
   </data>
   <data name="Users" xml:space="preserve">
     <value>Gebruikers</value>
+  </data>
+  <data name="Vendors" xml:space="preserve">
+    <value>Leveranciers</value>
   </data>
 
 </root>

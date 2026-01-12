@@ -36,6 +36,12 @@
   <data name="Approval Center" xml:space="preserve">
     <value>Центр затвердження</value>
   </data>
+  <data name="Asset Categories" xml:space="preserve">
+    <value>Категорії активів</value>
+  </data>
+  <data name="Asset Models" xml:space="preserve">
+    <value>Моделі активів</value>
+  </data>
   <data name="Career" xml:space="preserve">
     <value>Кар&apos;єра</value>
   </data>
@@ -111,8 +117,14 @@
   <data name="Info" xml:space="preserve">
     <value>Інформація</value>
   </data>
+  <data name="IT Assets" xml:space="preserve">
+    <value>IT-активи</value>
+  </data>
   <data name="Leave Management" xml:space="preserve">
     <value>Керування відпустками</value>
+  </data>
+  <data name="Locations" xml:space="preserve">
+    <value>Локації</value>
   </data>
   <data name="Login" xml:space="preserve">
     <value>Увійти</value>
@@ -122,6 +134,9 @@
   </data>
   <data name="Manage" xml:space="preserve">
     <value>Керування</value>
+  </data>
+  <data name="Manage Assets" xml:space="preserve">
+    <value>Керування активами</value>
   </data>
   <data name="Manage Onboarding" xml:space="preserve">
     <value>Керування онбордингом</value>
@@ -140,6 +155,9 @@
   </data>
   <data name="Missions" xml:space="preserve">
     <value>Місії</value>
+  </data>
+  <data name="My Assets" xml:space="preserve">
+    <value>Мої активи</value>
   </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>Мій залишок відпустки</value>
@@ -221,6 +239,9 @@
   </data>
   <data name="Users" xml:space="preserve">
     <value>Користувачі</value>
+  </data>
+  <data name="Vendors" xml:space="preserve">
+    <value>Постачальники</value>
   </data>
 
 </root>

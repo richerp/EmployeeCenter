@@ -39,6 +39,12 @@
   <data name="Approval Center" xml:space="preserve">
     <value>审批中心</value>
   </data>
+  <data name="Asset Categories" xml:space="preserve">
+    <value>资产类别</value>
+  </data>
+  <data name="Asset Models" xml:space="preserve">
+    <value>资产型号</value>
+  </data>
   <data name="Career" xml:space="preserve">
     <value>职业</value>
   </data>
@@ -114,8 +120,14 @@
   <data name="Info" xml:space="preserve">
     <value>信息</value>
   </data>
+  <data name="IT Assets" xml:space="preserve">
+    <value>IT 资产</value>
+  </data>
   <data name="Leave Management" xml:space="preserve">
     <value>请假管理</value>
+  </data>
+  <data name="Locations" xml:space="preserve">
+    <value>位置</value>
   </data>
   <data name="Login" xml:space="preserve">
     <value>登录</value>
@@ -125,6 +137,9 @@
   </data>
   <data name="Manage" xml:space="preserve">
     <value>管理</value>
+  </data>
+  <data name="Manage Assets" xml:space="preserve">
+    <value>管理资产</value>
   </data>
   <data name="Manage Onboarding" xml:space="preserve">
     <value>管理入职</value>
@@ -143,6 +158,9 @@
   </data>
   <data name="Missions" xml:space="preserve">
     <value>任务</value>
+  </data>
+  <data name="My Assets" xml:space="preserve">
+    <value>我的资产</value>
   </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>我的休假余额</value>
@@ -224,6 +242,9 @@
   </data>
   <data name="Users" xml:space="preserve">
     <value>用户</value>
+  </data>
+  <data name="Vendors" xml:space="preserve">
+    <value>供应商</value>
   </data>
 
 </root>
