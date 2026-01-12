@@ -39,6 +39,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Mahdollistaa uusien globaalien salasanojen luomisen, jotka voidaan jakaa muiden kanssa.</value>
   </data>
+  <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
+    <value>Sallii yritysentiteettitietojen luomisen, päivittämisen ja poiston.</value>
+  </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>Mahdollistaa palkkalaskujen luomisen ja hallinnoinnin kaikille käyttäjille.</value>
   </data>
@@ -116,6 +119,9 @@
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Hallinnoi varoja</value>
+  </data>
+  <data name="Manage Company Entities" xml:space="preserve">
+    <value>Hallinnoi yrityksen yksiköitä</value>
   </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>Hallinnoi lomia</value>

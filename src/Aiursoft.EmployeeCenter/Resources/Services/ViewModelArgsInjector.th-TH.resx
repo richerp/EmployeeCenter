@@ -21,11 +21,23 @@
       <data name="Account Settings" xml:space="preserve">
     <value>การตั้งค่าบัญชี</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>การกระทำ</value>
+  </data>
+  <data name="Additional Info (Mainland/HK)" xml:space="preserve">
+    <value>ข้อมูลเพิ่มเติม (แผ่นดินใหญ่/ฮ่องกง)</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>ที่อยู่</value>
+  </data>
   <data name="Admin" xml:space="preserve">
     <value>ผู้ดูแลระบบ</value>
   </data>
   <data name="Administration" xml:space="preserve">
     <value>การจัดการ</value>
+  </data>
+  <data name="Administrative Details" xml:space="preserve">
+    <value>รายละเอียดด้านการบริหาร</value>
   </data>
   <data name="Aiursoft Employee Center" xml:space="preserve">
     <value>Aiursoft ศูนย์พนักงาน</value>
@@ -44,6 +56,15 @@
   </data>
   <data name="Asset Models" xml:space="preserve">
     <value>แบบจำลองสินทรัพย์</value>
+  </data>
+  <data name="Bank Info" xml:space="preserve">
+    <value>ข้อมูลธนาคาร</value>
+  </data>
+  <data name="Basic Information" xml:space="preserve">
+    <value>ข้อมูลพื้นฐาน</value>
+  </data>
+  <data name="Business License" xml:space="preserve">
+    <value>ใบอนุญาตประกอบธุรกิจ</value>
   </data>
   <data name="Career" xml:space="preserve">
     <value>อาชีพ</value>
@@ -66,8 +87,35 @@
   <data name="Change Profile" xml:space="preserve">
     <value>เปลี่ยนโปรไฟล์</value>
   </data>
+  <data name="CI Number" xml:space="preserve">
+    <value>เลขที่ CI</value>
+  </data>
   <data name="Click to login" xml:space="preserve">
     <value>คลิกเพื่อเข้าสู่ระบบ</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>รหัส</value>
+  </data>
+  <data name="Company Entities" xml:space="preserve">
+    <value>หน่วยงานของบริษัท</value>
+  </data>
+  <data name="Company Entity Details" xml:space="preserve">
+    <value>รายละเอียดหน่วยงานบริษัท</value>
+  </data>
+  <data name="Company Name" xml:space="preserve">
+    <value>ชื่อบริษัท</value>
+  </data>
+  <data name="Company Type" xml:space="preserve">
+    <value>ประเภทบริษัท</value>
+  </data>
+  <data name="Confirm Delete" xml:space="preserve">
+    <value>ยืนยันการลบ</value>
+  </data>
+  <data name="Create Company Entity" xml:space="preserve">
+    <value>สร้างหน่วยงานบริษัท</value>
+  </data>
+  <data name="Create New" xml:space="preserve">
+    <value>สร้างใหม่</value>
   </data>
   <data name="Create Password" xml:space="preserve">
     <value>สร้างรหัสผ่าน</value>
@@ -84,11 +132,20 @@
   <data name="Delete User" xml:space="preserve">
     <value>ลบผู้ใช้</value>
   </data>
+  <data name="Details" xml:space="preserve">
+    <value>รายละเอียด</value>
+  </data>
   <data name="Development" xml:space="preserve">
     <value>การพัฒนา</value>
   </data>
   <data name="Directory" xml:space="preserve">
     <value>ไดเรกทอรี</value>
+  </data>
+  <data name="Download / View" xml:space="preserve">
+    <value>ดาวน์โหลด / ดู</value>
+  </data>
+  <data name="Edit Company Entity" xml:space="preserve">
+    <value>แก้ไขหน่วยงานบริษัท</value>
   </data>
   <data name="Edit Password" xml:space="preserve">
     <value>แก้ไขรหัสผ่าน</value>
@@ -102,8 +159,26 @@
   <data name="Employee Center" xml:space="preserve">
     <value>ศูนย์พนักงาน</value>
   </data>
+  <data name="English Name" xml:space="preserve">
+    <value>ชื่อภาษาอังกฤษ</value>
+  </data>
+  <data name="Entities List" xml:space="preserve">
+    <value>รายการหน่วยงาน</value>
+  </data>
+  <data name="Entity Code" xml:space="preserve">
+    <value>รหัสหน่วยงาน</value>
+  </data>
+  <data name="Entity Details" xml:space="preserve">
+    <value>รายละเอียดหน่วยงาน</value>
+  </data>
   <data name="Error" xml:space="preserve">
     <value>ข้อผิดพลาด</value>
+  </data>
+  <data name="Establishment" xml:space="preserve">
+    <value>การจัดตั้ง</value>
+  </data>
+  <data name="Expiry Date" xml:space="preserve">
+    <value>วันหมดอายุ</value>
   </data>
   <data name="Features" xml:space="preserve">
     <value>คุณสมบัติ</value>
@@ -113,6 +188,9 @@
   </data>
   <data name="Home" xml:space="preserve">
     <value>หน้าแรก</value>
+  </data>
+  <data name="Images &amp; Files" xml:space="preserve">
+    <value>รูปภาพ &amp; ไฟล์</value>
   </data>
   <data name="Index" xml:space="preserve">
     <value>หน้าหลัก</value>
@@ -126,6 +204,12 @@
   <data name="Leave Management" xml:space="preserve">
     <value>การจัดการการลา</value>
   </data>
+  <data name="Legal Rep" xml:space="preserve">
+    <value>ผู้แทนทางกฎหมาย</value>
+  </data>
+  <data name="Legal Rep / Director" xml:space="preserve">
+    <value>ผู้แทนทางกฎหมาย / ผู้จัดการ</value>
+  </data>
   <data name="Locations" xml:space="preserve">
     <value>สถานที่ตั้ง</value>
   </data>
@@ -135,11 +219,17 @@
   <data name="Login to get access to all features." xml:space="preserve">
     <value>เข้าสู่ระบบเพื่อเข้าถึงฟีเจอร์ทั้งหมด</value>
   </data>
+  <data name="Logo" xml:space="preserve">
+    <value>โลโก้</value>
+  </data>
   <data name="Manage" xml:space="preserve">
     <value>จัดการ</value>
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>จัดการสินทรัพย์</value>
+  </data>
+  <data name="Manage IT Assets" xml:space="preserve">
+    <value>จัดการสินทรัพย์ไอที</value>
   </data>
   <data name="Manage Onboarding" xml:space="preserve">
     <value>จัดการการรับเข้าทำงาน</value>
@@ -162,6 +252,9 @@
   <data name="My Assets" xml:space="preserve">
     <value>ทรัพย์สินของฉัน</value>
   </data>
+  <data name="My IT Assets" xml:space="preserve">
+    <value>ทรัพย์สินไอทีของฉัน</value>
+  </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>ยอดเงินลากราชการของฉัน</value>
   </data>
@@ -170,6 +263,9 @@
   </data>
   <data name="My Report Line" xml:space="preserve">
     <value>สายการรายงานของฉัน</value>
+  </data>
+  <data name="Official Seal" xml:space="preserve">
+    <value>ตรายางราชการ</value>
   </data>
   <data name="Onboarding" xml:space="preserve">
     <value>การบนบอร์ด</value>
@@ -201,17 +297,32 @@
   <data name="Projects" xml:space="preserve">
     <value>โครงการ</value>
   </data>
+  <data name="Reg Capital" xml:space="preserve">
+    <value>ทุนจดทะเบียน</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>สมัครสมาชิก</value>
   </data>
   <data name="Report Line" xml:space="preserve">
     <value>สายรายงาน</value>
   </data>
+  <data name="Restricted" xml:space="preserve">
+    <value>จำกัด</value>
+  </data>
   <data name="Role Details" xml:space="preserve">
     <value>รายละเอียดบทบาท</value>
   </data>
   <data name="Roles" xml:space="preserve">
     <value>บทบาท</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>บันทึกการเปลี่ยนแปลง</value>
+  </data>
+  <data name="SCR Location" xml:space="preserve">
+    <value>สถานที่ตั้ง SCR</value>
+  </data>
+  <data name="Secretary" xml:space="preserve">
+    <value>เลขานุการ</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>การตั้งค่า</value>
@@ -221,6 +332,9 @@
   </data>
   <data name="Sign out" xml:space="preserve">
     <value>ออกจากระบบ</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>สถานะ</value>
   </data>
   <data name="System" xml:space="preserve">
     <value>ระบบ</value>

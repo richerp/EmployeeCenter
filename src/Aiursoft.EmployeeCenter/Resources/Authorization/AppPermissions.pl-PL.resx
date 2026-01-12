@@ -39,6 +39,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Zezwala na tworzenie nowych globalnych haseł, które mogą być udostępniane innym.</value>
   </data>
+  <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
+    <value>Zezwala na tworzenie, aktualizowanie i usuwanie informacji o jednostkach firmowych.</value>
+  </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>Umożliwia wystawianie i zarządzanie listami płac dla wszystkich użytkowników.</value>
   </data>
@@ -116,6 +119,9 @@
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Zarządzaj Zasobami</value>
+  </data>
+  <data name="Manage Company Entities" xml:space="preserve">
+    <value>Zarządzaj jednostkami firmowymi</value>
   </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>Zarządzaj urlopami</value>

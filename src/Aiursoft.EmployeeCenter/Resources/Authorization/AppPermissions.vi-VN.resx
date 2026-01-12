@@ -39,6 +39,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Cho phép tạo mật khẩu chung mới có thể được chia sẻ với người khác.</value>
   </data>
+  <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
+    <value>Cho phép tạo, cập nhật và xóa thông tin thực thể công ty.</value>
+  </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>Cho phép phát hành và quản lý phiếu lương cho tất cả người dùng.</value>
   </data>
@@ -116,6 +119,9 @@
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Quản lý Tài sản</value>
+  </data>
+  <data name="Manage Company Entities" xml:space="preserve">
+    <value>Quản lý các thực thể công ty</value>
   </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>Quản lý nghỉ phép</value>

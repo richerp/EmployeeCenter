@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Bank Account" xml:space="preserve">
+    <value>رقم الحساب البنكي</value>
+  </data>
+  <data name="Bank Account Name" xml:space="preserve">
+    <value>اسم الحساب البنكي</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>اسم البنك</value>
+  </data>
+  <data name="Business License / BR Scan" xml:space="preserve">
+    <value>رخصة العمل / مسح BR</value>
+  </data>
+  <data name="CI Number (HK)" xml:space="preserve">
+    <value>رقم CI (هونغ كونغ)</value>
+  </data>
+  <data name="Company Logo" xml:space="preserve">
+    <value>شعار الشركة</value>
+  </data>
+  <data name="Company Name (Chinese)" xml:space="preserve">
+    <value>اسم الشركة (الصينية)</value>
+  </data>
+  <data name="Company Name (English)" xml:space="preserve">
+    <value>اسم الشركة (الإنجليزية)</value>
+  </data>
+  <data name="Company Seal" xml:space="preserve">
+    <value>ختم الشركة</value>
+  </data>
+  <data name="Company Secretary (HK)" xml:space="preserve">
+    <value>سكرتير الشركة (هونغ كونغ)</value>
+  </data>
+  <data name="Company Type" xml:space="preserve">
+    <value>نوع الشركة</value>
+  </data>
+  <data name="Entity Code (Social Credit Code / BR Number)" xml:space="preserve">
+    <value>رمز الكيان (رمز الائتمان الاجتماعي / رقم BR)</value>
+  </data>
+  <data name="Establishment Date" xml:space="preserve">
+    <value>تاريخ التأسيس</value>
+  </data>
+  <data name="Expiry Date (Business License / BR)" xml:space="preserve">
+    <value>تاريخ الانتهاء (رخصة العمل / رقم BR)</value>
+  </data>
+  <data name="Legal Representative / Director" xml:space="preserve">
+    <value>الممثل القانوني / المدير</value>
+  </data>
+  <data name="Office Address" xml:space="preserve">
+    <value>العنوان المكتبي</value>
+  </data>
+  <data name="Operation Status" xml:space="preserve">
+    <value>حالة التشغيل</value>
+  </data>
+  <data name="Please upload a valid license file." xml:space="preserve">
+    <value>يرجى تحميل ملف ترخيص صالح.</value>
+  </data>
+  <data name="Please upload a valid logo file." xml:space="preserve">
+    <value>يرجى تحميل ملف شعار صالح.</value>
+  </data>
+  <data name="Please upload a valid seal file." xml:space="preserve">
+    <value>يرجى تحميل ملف ختم صالح.</value>
+  </data>
+  <data name="Registered Address" xml:space="preserve">
+    <value>العنوان المسجل</value>
+  </data>
+  <data name="Registered Capital (Mainland)" xml:space="preserve">
+    <value>الرأسمال المسجل (البر الرئيسي)</value>
+  </data>
+  <data name="SCR Location (HK)" xml:space="preserve">
+    <value>محل SCR (هونغ كونغ)</value>
+  </data>
+
+</root>

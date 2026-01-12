@@ -39,6 +39,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>다른 사용자와 공유할 수 있는 새로운 전역 비밀번호를 생성할 수 있습니다.</value>
   </data>
+  <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
+    <value>회사 엔티티 정보의 생성, 수정 및 삭제를 허용합니다.</value>
+  </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>모든 사용자의 급여 명세서 발급 및 관리를 허용합니다.</value>
   </data>
@@ -116,6 +119,9 @@
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>자산 관리</value>
+  </data>
+  <data name="Manage Company Entities" xml:space="preserve">
+    <value>회사 엔티티 관리</value>
   </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>휴가 관리</value>

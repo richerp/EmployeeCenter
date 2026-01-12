@@ -18,11 +18,23 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Admin" xml:space="preserve">
+      <data name="Actions" xml:space="preserve">
+    <value>Acțiuni</value>
+  </data>
+  <data name="Additional Info (Mainland/HK)" xml:space="preserve">
+    <value>Informații suplimentare (Continental/HK)</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Adresă</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
     <value>Administrator</value>
   </data>
   <data name="Administration" xml:space="preserve">
     <value>Administrare</value>
+  </data>
+  <data name="Administrative Details" xml:space="preserve">
+    <value>Detalii administrative</value>
   </data>
   <data name="Aiursoft Employee Center" xml:space="preserve">
     <value>Aiursoft Centrul Angajaților</value>
@@ -41,6 +53,15 @@
   </data>
   <data name="Asset Models" xml:space="preserve">
     <value>Modele active</value>
+  </data>
+  <data name="Bank Info" xml:space="preserve">
+    <value>Informații bancare</value>
+  </data>
+  <data name="Basic Information" xml:space="preserve">
+    <value>Informații de bază</value>
+  </data>
+  <data name="Business License" xml:space="preserve">
+    <value>Permisiune de afaceri</value>
   </data>
   <data name="Career" xml:space="preserve">
     <value>Carieră</value>
@@ -63,8 +84,35 @@
   <data name="Change Profile" xml:space="preserve">
     <value>Modifică Profilul</value>
   </data>
+  <data name="CI Number" xml:space="preserve">
+    <value>Numărul CI</value>
+  </data>
   <data name="Click to login" xml:space="preserve">
     <value>Apasă pentru a te autentifica</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>Cod</value>
+  </data>
+  <data name="Company Entities" xml:space="preserve">
+    <value>Entități companii</value>
+  </data>
+  <data name="Company Entity Details" xml:space="preserve">
+    <value>Detalii entitate companie</value>
+  </data>
+  <data name="Company Name" xml:space="preserve">
+    <value>Numele companiei</value>
+  </data>
+  <data name="Company Type" xml:space="preserve">
+    <value>Tip companie</value>
+  </data>
+  <data name="Confirm Delete" xml:space="preserve">
+    <value>Confirma ștergerea</value>
+  </data>
+  <data name="Create Company Entity" xml:space="preserve">
+    <value>Crează entitate companie</value>
+  </data>
+  <data name="Create New" xml:space="preserve">
+    <value>Creează Nou</value>
   </data>
   <data name="Create Password" xml:space="preserve">
     <value>Creează Parolă</value>
@@ -81,11 +129,20 @@
   <data name="Delete User" xml:space="preserve">
     <value>Șterge utilizator</value>
   </data>
+  <data name="Details" xml:space="preserve">
+    <value>Detalii</value>
+  </data>
   <data name="Development" xml:space="preserve">
     <value>Dezvoltare</value>
   </data>
   <data name="Directory" xml:space="preserve">
     <value>Director</value>
+  </data>
+  <data name="Download / View" xml:space="preserve">
+    <value>Descarcă / Vizualizează</value>
+  </data>
+  <data name="Edit Company Entity" xml:space="preserve">
+    <value>Editare Entitate Companie</value>
   </data>
   <data name="Edit Password" xml:space="preserve">
     <value>Editează parola</value>
@@ -99,8 +156,26 @@
   <data name="Employee Center" xml:space="preserve">
     <value>Centrul Angajaților</value>
   </data>
+  <data name="English Name" xml:space="preserve">
+    <value>Numele în engleză</value>
+  </data>
+  <data name="Entities List" xml:space="preserve">
+    <value>Listă entități</value>
+  </data>
+  <data name="Entity Code" xml:space="preserve">
+    <value>Cod entitate</value>
+  </data>
+  <data name="Entity Details" xml:space="preserve">
+    <value>Detalii entitate</value>
+  </data>
   <data name="Error" xml:space="preserve">
     <value>Eroare</value>
+  </data>
+  <data name="Establishment" xml:space="preserve">
+    <value>Înființare</value>
+  </data>
+  <data name="Expiry Date" xml:space="preserve">
+    <value>Dată expirare</value>
   </data>
   <data name="Features" xml:space="preserve">
     <value>Caracteristici</value>
@@ -110,6 +185,9 @@
   </data>
   <data name="Home" xml:space="preserve">
     <value>Acasă</value>
+  </data>
+  <data name="Images &amp; Files" xml:space="preserve">
+    <value>Imagini și Fișiere</value>
   </data>
   <data name="Index" xml:space="preserve">
     <value>Index</value>
@@ -123,6 +201,12 @@
   <data name="Leave Management" xml:space="preserve">
     <value>Gestionarea concediilor</value>
   </data>
+  <data name="Legal Rep" xml:space="preserve">
+    <value>Reprezentant legal</value>
+  </data>
+  <data name="Legal Rep / Director" xml:space="preserve">
+    <value>Reprezentant legal / Director</value>
+  </data>
   <data name="Locations" xml:space="preserve">
     <value>Locații</value>
   </data>
@@ -132,11 +216,17 @@
   <data name="Login to get access to all features." xml:space="preserve">
     <value>Conectează-te pentru a accesa toate funcționalitățile.</value>
   </data>
+  <data name="Logo" xml:space="preserve">
+    <value>Logo</value>
+  </data>
   <data name="Manage" xml:space="preserve">
     <value>Gestionează</value>
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Gestionare active</value>
+  </data>
+  <data name="Manage IT Assets" xml:space="preserve">
+    <value>Gestionare active IT</value>
   </data>
   <data name="Manage Onboarding" xml:space="preserve">
     <value>Gestionare înscriere</value>
@@ -159,6 +249,9 @@
   <data name="My Assets" xml:space="preserve">
     <value>Activele Mele</value>
   </data>
+  <data name="My IT Assets" xml:space="preserve">
+    <value>Activele mele IT</value>
+  </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>Soldul meu de concediu</value>
   </data>
@@ -167,6 +260,9 @@
   </data>
   <data name="My Report Line" xml:space="preserve">
     <value>Linia mea de raportare</value>
+  </data>
+  <data name="Official Seal" xml:space="preserve">
+    <value>Sigil oficial</value>
   </data>
   <data name="Onboarding" xml:space="preserve">
     <value>Onboarding</value>
@@ -198,17 +294,32 @@
   <data name="Projects" xml:space="preserve">
     <value>Proiecte</value>
   </data>
+  <data name="Reg Capital" xml:space="preserve">
+    <value>Capitalul Registrului</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>Înregistrare</value>
   </data>
   <data name="Report Line" xml:space="preserve">
     <value>Linie de raportare</value>
   </data>
+  <data name="Restricted" xml:space="preserve">
+    <value>Restrictat</value>
+  </data>
   <data name="Role Details" xml:space="preserve">
     <value>Detalii Rol</value>
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Roluri</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>Salvează modificările</value>
+  </data>
+  <data name="SCR Location" xml:space="preserve">
+    <value>Locația SCR</value>
+  </data>
+  <data name="Secretary" xml:space="preserve">
+    <value>Secretar</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Setări</value>
@@ -218,6 +329,9 @@
   </data>
   <data name="Sign out" xml:space="preserve">
     <value>Deconectare</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Stare</value>
   </data>
   <data name="System" xml:space="preserve">
     <value>Sistem</value>

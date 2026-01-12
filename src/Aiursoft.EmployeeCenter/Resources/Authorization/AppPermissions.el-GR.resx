@@ -39,6 +39,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Επιτρέπει τη δημιουργία νέων καθολικών κωδικών πρόσβασης που μπορούν να κοινοποιηθούν με άλλους.</value>
   </data>
+  <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
+    <value>Επιτρέπει τη δημιουργία, ενημέρωση και διαγραφή πληροφοριών εταιρικών οντοτήτων.</value>
+  </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>Επιτρέπει την έκδοση και τη διαχείριση μισθοδοτικών αποδείξεων για όλους τους χρήστες.</value>
   </data>
@@ -116,6 +119,9 @@
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Διαχείριση Περιουσιακών Στοιχείων</value>
+  </data>
+  <data name="Manage Company Entities" xml:space="preserve">
+    <value>Διαχείριση Εταιρικών Οντοτήτων</value>
   </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>Διαχείριση Άδειας</value>

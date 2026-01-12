@@ -18,11 +18,23 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Admin" xml:space="preserve">
+      <data name="Actions" xml:space="preserve">
+    <value>Tindakan</value>
+  </data>
+  <data name="Additional Info (Mainland/HK)" xml:space="preserve">
+    <value>Info Tambahan (Daratan/Tiongkok Hong Kong)</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Alamat</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
     <value>Administrator</value>
   </data>
   <data name="Administration" xml:space="preserve">
     <value>Administrasi</value>
+  </data>
+  <data name="Administrative Details" xml:space="preserve">
+    <value>Detail Administratif</value>
   </data>
   <data name="Aiursoft Employee Center" xml:space="preserve">
     <value>Pusat Karyawan Aiursoft</value>
@@ -41,6 +53,15 @@
   </data>
   <data name="Asset Models" xml:space="preserve">
     <value>Model Aset</value>
+  </data>
+  <data name="Bank Info" xml:space="preserve">
+    <value>Informasi Bank</value>
+  </data>
+  <data name="Basic Information" xml:space="preserve">
+    <value>Informasi Dasar</value>
+  </data>
+  <data name="Business License" xml:space="preserve">
+    <value>Izin Usaha</value>
   </data>
   <data name="Career" xml:space="preserve">
     <value>Karier</value>
@@ -63,8 +84,35 @@
   <data name="Change Profile" xml:space="preserve">
     <value>Ubah Profil</value>
   </data>
+  <data name="CI Number" xml:space="preserve">
+    <value>Nomor CI</value>
+  </data>
   <data name="Click to login" xml:space="preserve">
     <value>Klik untuk masuk</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>Kode</value>
+  </data>
+  <data name="Company Entities" xml:space="preserve">
+    <value>Entitas Perusahaan</value>
+  </data>
+  <data name="Company Entity Details" xml:space="preserve">
+    <value>Detail Entitas Perusahaan</value>
+  </data>
+  <data name="Company Name" xml:space="preserve">
+    <value>Nama Perusahaan</value>
+  </data>
+  <data name="Company Type" xml:space="preserve">
+    <value>Jenis Perusahaan</value>
+  </data>
+  <data name="Confirm Delete" xml:space="preserve">
+    <value>Konfirmasi Hapus</value>
+  </data>
+  <data name="Create Company Entity" xml:space="preserve">
+    <value>Buat Entitas Perusahaan</value>
+  </data>
+  <data name="Create New" xml:space="preserve">
+    <value>Buat Baru</value>
   </data>
   <data name="Create Password" xml:space="preserve">
     <value>Buat Kata Sandi</value>
@@ -81,11 +129,20 @@
   <data name="Delete User" xml:space="preserve">
     <value>Hapus Pengguna</value>
   </data>
+  <data name="Details" xml:space="preserve">
+    <value>Detail</value>
+  </data>
   <data name="Development" xml:space="preserve">
     <value>Pengembangan</value>
   </data>
   <data name="Directory" xml:space="preserve">
     <value>Direktori</value>
+  </data>
+  <data name="Download / View" xml:space="preserve">
+    <value>Unduh / Lihat</value>
+  </data>
+  <data name="Edit Company Entity" xml:space="preserve">
+    <value>Edit Entitas Perusahaan</value>
   </data>
   <data name="Edit Password" xml:space="preserve">
     <value>Edit Kata Sandi</value>
@@ -99,8 +156,26 @@
   <data name="Employee Center" xml:space="preserve">
     <value>Pusat Karyawan</value>
   </data>
+  <data name="English Name" xml:space="preserve">
+    <value>Nama Inggris</value>
+  </data>
+  <data name="Entities List" xml:space="preserve">
+    <value>Daftar Entitas</value>
+  </data>
+  <data name="Entity Code" xml:space="preserve">
+    <value>Kode Entitas</value>
+  </data>
+  <data name="Entity Details" xml:space="preserve">
+    <value>Rincian Entitas</value>
+  </data>
   <data name="Error" xml:space="preserve">
     <value>Kesalahan</value>
+  </data>
+  <data name="Establishment" xml:space="preserve">
+    <value>Pendirian</value>
+  </data>
+  <data name="Expiry Date" xml:space="preserve">
+    <value>Tanggal Kedaluwarsa</value>
   </data>
   <data name="Features" xml:space="preserve">
     <value>Fitur</value>
@@ -110,6 +185,9 @@
   </data>
   <data name="Home" xml:space="preserve">
     <value>Beranda</value>
+  </data>
+  <data name="Images &amp; Files" xml:space="preserve">
+    <value>Gambar &amp; Berkas</value>
   </data>
   <data name="Index" xml:space="preserve">
     <value>Indeks</value>
@@ -123,6 +201,12 @@
   <data name="Leave Management" xml:space="preserve">
     <value>Manajemen Cuti</value>
   </data>
+  <data name="Legal Rep" xml:space="preserve">
+    <value>Wakil Hukum</value>
+  </data>
+  <data name="Legal Rep / Director" xml:space="preserve">
+    <value>Wakil Hukum / Direktur</value>
+  </data>
   <data name="Locations" xml:space="preserve">
     <value>Lokasi</value>
   </data>
@@ -132,11 +216,17 @@
   <data name="Login to get access to all features." xml:space="preserve">
     <value>Masuk untuk mendapatkan akses ke semua fitur.</value>
   </data>
+  <data name="Logo" xml:space="preserve">
+    <value>Logo</value>
+  </data>
   <data name="Manage" xml:space="preserve">
     <value>Kelola</value>
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Kelola Aset</value>
+  </data>
+  <data name="Manage IT Assets" xml:space="preserve">
+    <value>Kelola Aset IT</value>
   </data>
   <data name="Manage Onboarding" xml:space="preserve">
     <value>Kelola Onboarding</value>
@@ -159,6 +249,9 @@
   <data name="My Assets" xml:space="preserve">
     <value>Aset Saya</value>
   </data>
+  <data name="My IT Assets" xml:space="preserve">
+    <value>Aset IT Saya</value>
+  </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>Saldo Cuti Saya</value>
   </data>
@@ -167,6 +260,9 @@
   </data>
   <data name="My Report Line" xml:space="preserve">
     <value>Laporan Saya</value>
+  </data>
+  <data name="Official Seal" xml:space="preserve">
+    <value>Cap Resmi</value>
   </data>
   <data name="Onboarding" xml:space="preserve">
     <value>Onboarding</value>
@@ -198,17 +294,32 @@
   <data name="Projects" xml:space="preserve">
     <value>Proyek</value>
   </data>
+  <data name="Reg Capital" xml:space="preserve">
+    <value>Modal Modal</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>Daftar</value>
   </data>
   <data name="Report Line" xml:space="preserve">
     <value>Laporan Baris</value>
   </data>
+  <data name="Restricted" xml:space="preserve">
+    <value>Terbatas</value>
+  </data>
   <data name="Role Details" xml:space="preserve">
     <value>Detail Peran</value>
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Peran</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>Simpan Perubahan</value>
+  </data>
+  <data name="SCR Location" xml:space="preserve">
+    <value>Lokasi SCR</value>
+  </data>
+  <data name="Secretary" xml:space="preserve">
+    <value>Sekretaris</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Pengaturan</value>
@@ -218,6 +329,9 @@
   </data>
   <data name="Sign out" xml:space="preserve">
     <value>Keluar</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
   </data>
   <data name="System" xml:space="preserve">
     <value>Sistem</value>

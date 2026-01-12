@@ -39,6 +39,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Memungkinkan pembuatan kata sandi global baru yang dapat dibagikan dengan orang lain.</value>
   </data>
+  <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
+    <value>Memungkinkan pembuatan, pembaruan, dan penghapusan informasi entitas perusahaan.</value>
+  </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>Memungkinkan penerbitan dan pengelolaan slip gaji untuk semua pengguna.</value>
   </data>
@@ -116,6 +119,9 @@
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Kelola Aset</value>
+  </data>
+  <data name="Manage Company Entities" xml:space="preserve">
+    <value>Kelola Entitas Perusahaan</value>
   </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>Kelola Cuti</value>

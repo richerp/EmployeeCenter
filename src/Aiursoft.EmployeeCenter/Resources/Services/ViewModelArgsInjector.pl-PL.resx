@@ -18,11 +18,23 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Admin" xml:space="preserve">
+      <data name="Actions" xml:space="preserve">
+    <value>Działania</value>
+  </data>
+  <data name="Additional Info (Mainland/HK)" xml:space="preserve">
+    <value>Dodatkowe informacje (Chiny/Hongkong)</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
     <value>Administrator</value>
   </data>
   <data name="Administration" xml:space="preserve">
     <value>Administracja</value>
+  </data>
+  <data name="Administrative Details" xml:space="preserve">
+    <value>Szczegóły administracyjne</value>
   </data>
   <data name="Aiursoft Employee Center" xml:space="preserve">
     <value>Aiursoft Centrum Pracownicze</value>
@@ -41,6 +53,15 @@
   </data>
   <data name="Asset Models" xml:space="preserve">
     <value>Modele zasobów</value>
+  </data>
+  <data name="Bank Info" xml:space="preserve">
+    <value>Informacje bankowe</value>
+  </data>
+  <data name="Basic Information" xml:space="preserve">
+    <value>Informacje podstawowe</value>
+  </data>
+  <data name="Business License" xml:space="preserve">
+    <value>Dowód działalności gospodarczej</value>
   </data>
   <data name="Career" xml:space="preserve">
     <value>Kariera</value>
@@ -63,8 +84,35 @@
   <data name="Change Profile" xml:space="preserve">
     <value>Zmień Profil</value>
   </data>
+  <data name="CI Number" xml:space="preserve">
+    <value>Numer CI</value>
+  </data>
   <data name="Click to login" xml:space="preserve">
     <value>Kliknij, aby się zalogować</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>Kod</value>
+  </data>
+  <data name="Company Entities" xml:space="preserve">
+    <value>Jednostki firmowe</value>
+  </data>
+  <data name="Company Entity Details" xml:space="preserve">
+    <value>Szczegóły jednostki firmy</value>
+  </data>
+  <data name="Company Name" xml:space="preserve">
+    <value>Nazwa firmy</value>
+  </data>
+  <data name="Company Type" xml:space="preserve">
+    <value>Typ firmy</value>
+  </data>
+  <data name="Confirm Delete" xml:space="preserve">
+    <value>Potwierdź usunięcie</value>
+  </data>
+  <data name="Create Company Entity" xml:space="preserve">
+    <value>Utwórz jednostkę firmową</value>
+  </data>
+  <data name="Create New" xml:space="preserve">
+    <value>Utwórz nowy</value>
   </data>
   <data name="Create Password" xml:space="preserve">
     <value>Utwórz hasło</value>
@@ -81,11 +129,20 @@
   <data name="Delete User" xml:space="preserve">
     <value>Usuń użytkownika</value>
   </data>
+  <data name="Details" xml:space="preserve">
+    <value>Szczegóły</value>
+  </data>
   <data name="Development" xml:space="preserve">
     <value>Rozwój</value>
   </data>
   <data name="Directory" xml:space="preserve">
     <value>Katalog</value>
+  </data>
+  <data name="Download / View" xml:space="preserve">
+    <value>Pobierz / Wyświetl</value>
+  </data>
+  <data name="Edit Company Entity" xml:space="preserve">
+    <value>Edytuj jednostkę firmową</value>
   </data>
   <data name="Edit Password" xml:space="preserve">
     <value>Edytuj hasło</value>
@@ -99,8 +156,26 @@
   <data name="Employee Center" xml:space="preserve">
     <value>Centrum Pracowników</value>
   </data>
+  <data name="English Name" xml:space="preserve">
+    <value>Nazwa angielska</value>
+  </data>
+  <data name="Entities List" xml:space="preserve">
+    <value>Lista jednostek</value>
+  </data>
+  <data name="Entity Code" xml:space="preserve">
+    <value>Kod jednostki</value>
+  </data>
+  <data name="Entity Details" xml:space="preserve">
+    <value>Szczegóły jednostki</value>
+  </data>
   <data name="Error" xml:space="preserve">
     <value>Błąd</value>
+  </data>
+  <data name="Establishment" xml:space="preserve">
+    <value>Ustanowienie</value>
+  </data>
+  <data name="Expiry Date" xml:space="preserve">
+    <value>Data ważności</value>
   </data>
   <data name="Features" xml:space="preserve">
     <value>Funkcje</value>
@@ -110,6 +185,9 @@
   </data>
   <data name="Home" xml:space="preserve">
     <value>Strona główna</value>
+  </data>
+  <data name="Images &amp; Files" xml:space="preserve">
+    <value>Obrazy i pliki</value>
   </data>
   <data name="Index" xml:space="preserve">
     <value>Indeks</value>
@@ -123,6 +201,12 @@
   <data name="Leave Management" xml:space="preserve">
     <value>Zarządzanie urlopami</value>
   </data>
+  <data name="Legal Rep" xml:space="preserve">
+    <value>Reprezentant prawny</value>
+  </data>
+  <data name="Legal Rep / Director" xml:space="preserve">
+    <value>Reprezentant prawny / Dyrektor</value>
+  </data>
   <data name="Locations" xml:space="preserve">
     <value>Lokalizacje</value>
   </data>
@@ -132,11 +216,17 @@
   <data name="Login to get access to all features." xml:space="preserve">
     <value>Zaloguj się, aby uzyskać dostęp do wszystkich funkcji.</value>
   </data>
+  <data name="Logo" xml:space="preserve">
+    <value>Logo</value>
+  </data>
   <data name="Manage" xml:space="preserve">
     <value>Zarządzaj</value>
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Zarządzaj zasobami</value>
+  </data>
+  <data name="Manage IT Assets" xml:space="preserve">
+    <value>Zarządzaj zasobami IT</value>
   </data>
   <data name="Manage Onboarding" xml:space="preserve">
     <value>Zarządzaj onboardowaniem</value>
@@ -159,6 +249,9 @@
   <data name="My Assets" xml:space="preserve">
     <value>Moje zasoby</value>
   </data>
+  <data name="My IT Assets" xml:space="preserve">
+    <value>Moje zasoby IT</value>
+  </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>Moje saldo urlopów</value>
   </data>
@@ -167,6 +260,9 @@
   </data>
   <data name="My Report Line" xml:space="preserve">
     <value>Moja linia raportowa</value>
+  </data>
+  <data name="Official Seal" xml:space="preserve">
+    <value>Oficjalny pieczęć</value>
   </data>
   <data name="Onboarding" xml:space="preserve">
     <value>Wprowadzenie</value>
@@ -198,17 +294,32 @@
   <data name="Projects" xml:space="preserve">
     <value>Projekty</value>
   </data>
+  <data name="Reg Capital" xml:space="preserve">
+    <value>Kapitał zakładowy</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>Zarejestruj</value>
   </data>
   <data name="Report Line" xml:space="preserve">
     <value>Linia raportowa</value>
   </data>
+  <data name="Restricted" xml:space="preserve">
+    <value>Ograniczony</value>
+  </data>
   <data name="Role Details" xml:space="preserve">
     <value>Szczegóły roli</value>
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Role</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>Zapisz zmiany</value>
+  </data>
+  <data name="SCR Location" xml:space="preserve">
+    <value>Miejsce rejestru SCR</value>
+  </data>
+  <data name="Secretary" xml:space="preserve">
+    <value>Sekretarz</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Ustawienia</value>
@@ -218,6 +329,9 @@
   </data>
   <data name="Sign out" xml:space="preserve">
     <value>Wyloguj</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
   </data>
   <data name="System" xml:space="preserve">
     <value>System</value>

@@ -18,11 +18,23 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Admin" xml:space="preserve">
+      <data name="Actions" xml:space="preserve">
+    <value>Действия</value>
+  </data>
+  <data name="Additional Info (Mainland/HK)" xml:space="preserve">
+    <value>Дополнительная информация (материк/Гонконг)</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Адрес</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
     <value>Администратор</value>
   </data>
   <data name="Administration" xml:space="preserve">
     <value>Администрирование</value>
+  </data>
+  <data name="Administrative Details" xml:space="preserve">
+    <value>Административные сведения</value>
   </data>
   <data name="Aiursoft Employee Center" xml:space="preserve">
     <value>Aiursoft Центр сотрудников</value>
@@ -41,6 +53,15 @@
   </data>
   <data name="Asset Models" xml:space="preserve">
     <value>Модели активов</value>
+  </data>
+  <data name="Bank Info" xml:space="preserve">
+    <value>Сведения о банке</value>
+  </data>
+  <data name="Basic Information" xml:space="preserve">
+    <value>Основная информация</value>
+  </data>
+  <data name="Business License" xml:space="preserve">
+    <value>Свидетельство о регистрации бизнеса</value>
   </data>
   <data name="Career" xml:space="preserve">
     <value>Карьера</value>
@@ -63,8 +84,35 @@
   <data name="Change Profile" xml:space="preserve">
     <value>Изменить профиль</value>
   </data>
+  <data name="CI Number" xml:space="preserve">
+    <value>Номер CI</value>
+  </data>
   <data name="Click to login" xml:space="preserve">
     <value>Нажмите для входа</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>Код</value>
+  </data>
+  <data name="Company Entities" xml:space="preserve">
+    <value>Компаний сущности</value>
+  </data>
+  <data name="Company Entity Details" xml:space="preserve">
+    <value>Сведения об организации</value>
+  </data>
+  <data name="Company Name" xml:space="preserve">
+    <value>Название компании</value>
+  </data>
+  <data name="Company Type" xml:space="preserve">
+    <value>Тип компании</value>
+  </data>
+  <data name="Confirm Delete" xml:space="preserve">
+    <value>Подтвердить удаление</value>
+  </data>
+  <data name="Create Company Entity" xml:space="preserve">
+    <value>Создать юридическое лицо компании</value>
+  </data>
+  <data name="Create New" xml:space="preserve">
+    <value>Создать новый</value>
   </data>
   <data name="Create Password" xml:space="preserve">
     <value>Создать пароль</value>
@@ -81,11 +129,20 @@
   <data name="Delete User" xml:space="preserve">
     <value>Удалить пользователя</value>
   </data>
+  <data name="Details" xml:space="preserve">
+    <value>Сведения</value>
+  </data>
   <data name="Development" xml:space="preserve">
     <value>Разработка</value>
   </data>
   <data name="Directory" xml:space="preserve">
     <value>Каталог</value>
+  </data>
+  <data name="Download / View" xml:space="preserve">
+    <value>Скачать / Просмотреть</value>
+  </data>
+  <data name="Edit Company Entity" xml:space="preserve">
+    <value>Редактировать юридическое лицо компании</value>
   </data>
   <data name="Edit Password" xml:space="preserve">
     <value>Редактировать пароль</value>
@@ -99,8 +156,26 @@
   <data name="Employee Center" xml:space="preserve">
     <value>Центр сотрудников</value>
   </data>
+  <data name="English Name" xml:space="preserve">
+    <value>Английское имя</value>
+  </data>
+  <data name="Entities List" xml:space="preserve">
+    <value>Список организаций</value>
+  </data>
+  <data name="Entity Code" xml:space="preserve">
+    <value>Код организации</value>
+  </data>
+  <data name="Entity Details" xml:space="preserve">
+    <value>Сведения об организации</value>
+  </data>
   <data name="Error" xml:space="preserve">
     <value>Ошибка</value>
+  </data>
+  <data name="Establishment" xml:space="preserve">
+    <value>Организация</value>
+  </data>
+  <data name="Expiry Date" xml:space="preserve">
+    <value>Срок действия</value>
   </data>
   <data name="Features" xml:space="preserve">
     <value>Возможности</value>
@@ -110,6 +185,9 @@
   </data>
   <data name="Home" xml:space="preserve">
     <value>Главная</value>
+  </data>
+  <data name="Images &amp; Files" xml:space="preserve">
+    <value>Изображения и файлы</value>
   </data>
   <data name="Index" xml:space="preserve">
     <value>Главная</value>
@@ -123,6 +201,12 @@
   <data name="Leave Management" xml:space="preserve">
     <value>Управление отпусками</value>
   </data>
+  <data name="Legal Rep" xml:space="preserve">
+    <value>Юридический представитель</value>
+  </data>
+  <data name="Legal Rep / Director" xml:space="preserve">
+    <value>Юридический представитель / Директор</value>
+  </data>
   <data name="Locations" xml:space="preserve">
     <value>Местоположения</value>
   </data>
@@ -132,11 +216,17 @@
   <data name="Login to get access to all features." xml:space="preserve">
     <value>Войдите, чтобы получить доступ ко всем функциям.</value>
   </data>
+  <data name="Logo" xml:space="preserve">
+    <value>Логотип</value>
+  </data>
   <data name="Manage" xml:space="preserve">
     <value>Управление</value>
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Управление активами</value>
+  </data>
+  <data name="Manage IT Assets" xml:space="preserve">
+    <value>Управление ИТ-активами</value>
   </data>
   <data name="Manage Onboarding" xml:space="preserve">
     <value>Управление onboarding</value>
@@ -159,6 +249,9 @@
   <data name="My Assets" xml:space="preserve">
     <value>Мои активы</value>
   </data>
+  <data name="My IT Assets" xml:space="preserve">
+    <value>Мои ИТ-активы</value>
+  </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>Баланс моего отпуска</value>
   </data>
@@ -167,6 +260,9 @@
   </data>
   <data name="My Report Line" xml:space="preserve">
     <value>Моя линия отчетности</value>
+  </data>
+  <data name="Official Seal" xml:space="preserve">
+    <value>Официальная печать</value>
   </data>
   <data name="Onboarding" xml:space="preserve">
     <value>Ввод в систему</value>
@@ -198,17 +294,32 @@
   <data name="Projects" xml:space="preserve">
     <value>Проекты</value>
   </data>
+  <data name="Reg Capital" xml:space="preserve">
+    <value>Уставный капитал</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>Зарегистрироваться</value>
   </data>
   <data name="Report Line" xml:space="preserve">
     <value>Линия отчетности</value>
   </data>
+  <data name="Restricted" xml:space="preserve">
+    <value>Ограниченный</value>
+  </data>
   <data name="Role Details" xml:space="preserve">
     <value>Детали роли</value>
   </data>
   <data name="Roles" xml:space="preserve">
     <value>Роли</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>Сохранить изменения</value>
+  </data>
+  <data name="SCR Location" xml:space="preserve">
+    <value>Местоположение SCR</value>
+  </data>
+  <data name="Secretary" xml:space="preserve">
+    <value>Секретарь</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Настройки</value>
@@ -218,6 +329,9 @@
   </data>
   <data name="Sign out" xml:space="preserve">
     <value>Выйти</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Статус</value>
   </data>
   <data name="System" xml:space="preserve">
     <value>Система</value>
