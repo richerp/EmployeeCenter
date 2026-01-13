@@ -76,7 +76,41 @@ public class ContractTests
         var loginResponse = await _http.PostAsync("/Account/Login", loginContent);
         Assert.AreEqual(HttpStatusCode.Found, loginResponse.StatusCode);
 
-        // 2. Create a normal user
+        // 2. Create a PUBLIC contract
+        var createPublicContractToken = await GetAntiCsrfToken("/ManageContract/Create");
+        using (var content = new MultipartFormDataContent())
+        {
+            content.Add(new StringContent("Public Company Policy"), "Name");
+            content.Add(new StringContent("1"), "Status"); // Active
+            content.Add(new StringContent("true"), "IsPublic");
+            content.Add(new StringContent(createPublicContractToken), "__RequestVerificationToken");
+            
+            var fileContent = new ByteArrayContent([ 1, 2, 3 ]);
+            fileContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/pdf");
+            content.Add(fileContent, "File", "policy.pdf");
+
+            var createContractResponse = await _http.PostAsync("/ManageContract/Create", content);
+            Assert.AreEqual(HttpStatusCode.Found, createContractResponse.StatusCode);
+        }
+
+        // 3. Create a PRIVATE contract
+        var createPrivateContractToken = await GetAntiCsrfToken("/ManageContract/Create");
+        using (var content = new MultipartFormDataContent())
+        {
+            content.Add(new StringContent("Private Secret Document"), "Name");
+            content.Add(new StringContent("1"), "Status"); // Active
+            content.Add(new StringContent("false"), "IsPublic");
+            content.Add(new StringContent(createPrivateContractToken), "__RequestVerificationToken");
+            
+            var fileContent = new ByteArrayContent([ 1, 2, 3 ]);
+            fileContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/pdf");
+            content.Add(fileContent, "File", "secret.pdf");
+
+            var createContractResponse = await _http.PostAsync("/ManageContract/Create", content);
+            Assert.AreEqual(HttpStatusCode.Found, createContractResponse.StatusCode);
+        }
+
+        // 4. Create a normal user
         var uniqueId = Guid.NewGuid().ToString("N").Substring(0, 8);
         var userName = $"user-{uniqueId}";
         var email = $"{userName}@aiursoft.com";
@@ -96,51 +130,7 @@ public class ContractTests
         var registerResponse = await _http.PostAsync("/Account/Register", registerContent);
         Assert.AreEqual(HttpStatusCode.Found, registerResponse.StatusCode);
 
-        // 3. Get User ID from DB
-        string userId;
-        using (var scope = _server!.Services.CreateScope())
-        {
-            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
-            var user = await db.Users.FirstOrDefaultAsync(u => u.UserName == userName);
-            Assert.IsNotNull(user);
-            userId = user.Id;
-        }
-
-        // 4. Log in as admin again to create contract
-        await _http.GetAsync("/Account/LogOff");
-        loginToken = await GetAntiCsrfToken("/Account/Login");
-        await _http.PostAsync("/Account/Login", new FormUrlEncodedContent(new Dictionary<string, string>
-        {
-            { "EmailOrUserName", "admin" },
-            { "Password", "admin123" },
-            { "__RequestVerificationToken", loginToken }
-        }));
-
-        var createContractToken = await GetAntiCsrfToken("/ManageContract/Create");
-        
-        using (var content = new MultipartFormDataContent())
-        {
-            content.Add(new StringContent(userId), "UserId");
-            content.Add(new StringContent("Test Contract"), "Name");
-            content.Add(new StringContent("1"), "Status"); // Active
-            content.Add(new StringContent(createContractToken), "__RequestVerificationToken");
-            
-            var fileContent = new ByteArrayContent([ 1, 2, 3 ]);
-            fileContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/pdf");
-            content.Add(fileContent, "File", "test.pdf");
-
-            var createContractResponse = await _http.PostAsync("/ManageContract/Create", content);
-            Assert.AreEqual(HttpStatusCode.Found, createContractResponse.StatusCode);
-        }
-
-        // 5. Verify contract in Manage page
-        var manageResponse = await _http.GetAsync("/ManageContract/Index");
-        manageResponse.EnsureSuccessStatusCode();
-        var manageHtml = await manageResponse.Content.ReadAsStringAsync();
-        Assert.Contains("Test Contract", manageHtml);
-        Assert.Contains(userName, manageHtml);
-
-        // 6. Log in as the normal user and verify they can see their contract
+        // 5. Log in as the normal user and verify visibility
         await _http.GetAsync("/Account/LogOff");
 
         loginToken = await GetAntiCsrfToken("/Account/Login");
@@ -155,9 +145,13 @@ public class ContractTests
         var myContractsResponse = await _http.GetAsync("/Contract/Index");
         myContractsResponse.EnsureSuccessStatusCode();
         var myContractsHtml = await myContractsResponse.Content.ReadAsStringAsync();
-        Assert.Contains("Test Contract", myContractsHtml);
+        
+        // Should see public contract
+        Assert.Contains("Public Company Policy", myContractsHtml);
+        // Should NOT see private contract
+        Assert.DoesNotContain("Private Secret Document", myContractsHtml);
 
-        // 7. Log in as admin and create a PUBLIC contract without user
+        // 6. Log in as admin and verify visibility
         await _http.GetAsync("/Account/LogOff");
         loginToken = await GetAntiCsrfToken("/Account/Login");
         await _http.PostAsync("/Account/Login", new FormUrlEncodedContent(new Dictionary<string, string>
@@ -167,77 +161,19 @@ public class ContractTests
             { "__RequestVerificationToken", loginToken }
         }));
 
-        var createPublicContractToken = await GetAntiCsrfToken("/ManageContract/Create");
-        using (var content = new MultipartFormDataContent())
-        {
-            content.Add(new StringContent("Public Company Policy"), "Name");
-            content.Add(new StringContent("1"), "Status"); // Active
-            content.Add(new StringContent("true"), "IsPublic");
-            content.Add(new StringContent(createPublicContractToken), "__RequestVerificationToken");
-            
-            var fileContent = new ByteArrayContent([ 1, 2, 3 ]);
-            fileContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/pdf");
-            content.Add(fileContent, "File", "policy.pdf");
+        var adminContractsResponse = await _http.GetAsync("/Contract/Index");
+        adminContractsResponse.EnsureSuccessStatusCode();
+        var adminContractsHtml = await adminContractsResponse.Content.ReadAsStringAsync();
 
-            var createContractResponse = await _http.PostAsync("/ManageContract/Create", content);
-            Assert.AreEqual(HttpStatusCode.Found, createContractResponse.StatusCode);
-        }
+        // Should see both
+        Assert.Contains("Public Company Policy", adminContractsHtml);
+        Assert.Contains("Private Secret Document", adminContractsHtml);
 
-        // 8. Log in as the normal user and verify they can see the public contract
-        await _http.GetAsync("/Account/LogOff");
-        loginToken = await GetAntiCsrfToken("/Account/Login");
-        await _http.PostAsync("/Account/Login", new FormUrlEncodedContent(new Dictionary<string, string>
-        {
-            { "EmailOrUserName", email },
-            { "Password", password },
-            { "__RequestVerificationToken", loginToken }
-        }));
-
-        var publicCheckResponse = await _http.GetAsync("/Contract/Index");
-        publicCheckResponse.EnsureSuccessStatusCode();
-        var publicCheckHtml = await publicCheckResponse.Content.ReadAsStringAsync();
-        Assert.Contains("Public Company Policy", publicCheckHtml);
-        Assert.Contains("Shared", publicCheckHtml);
-
-        // 9. Create a PRIVATE contract for ANOTHER user as admin
-        await _http.GetAsync("/Account/LogOff");
-        loginToken = await GetAntiCsrfToken("/Account/Login");
-        await _http.PostAsync("/Account/Login", new FormUrlEncodedContent(new Dictionary<string, string>
-        {
-            { "EmailOrUserName", "admin" },
-            { "Password", "admin123" },
-            { "__RequestVerificationToken", loginToken }
-        }));
-
-        var createPrivateContractToken = await GetAntiCsrfToken("/ManageContract/Create");
-        using (var content = new MultipartFormDataContent())
-        {
-            content.Add(new StringContent("Private Admin Contract"), "Name");
-            content.Add(new StringContent("1"), "Status"); // Active
-            content.Add(new StringContent("false"), "IsPublic");
-            content.Add(new StringContent(createPrivateContractToken), "__RequestVerificationToken");
-            
-            var fileContent = new ByteArrayContent([ 1, 2, 3 ]);
-            fileContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/pdf");
-            content.Add(fileContent, "File", "private.pdf");
-
-            var createContractResponse = await _http.PostAsync("/ManageContract/Create", content);
-            Assert.AreEqual(HttpStatusCode.Found, createContractResponse.StatusCode);
-        }
-
-        // 10. Verify normal user CANNOT see the private admin contract
-        await _http.GetAsync("/Account/LogOff");
-        loginToken = await GetAntiCsrfToken("/Account/Login");
-        await _http.PostAsync("/Account/Login", new FormUrlEncodedContent(new Dictionary<string, string>
-        {
-            { "EmailOrUserName", email },
-            { "Password", password },
-            { "__RequestVerificationToken", loginToken }
-        }));
-
-        var privateCheckResponse = await _http.GetAsync("/Contract/Index");
-        privateCheckResponse.EnsureSuccessStatusCode();
-        var privateCheckHtml = await privateCheckResponse.Content.ReadAsStringAsync();
-        Assert.DoesNotContain("Private Admin Contract", privateCheckHtml);
+        // 7. Verify Manage page
+        var manageResponse = await _http.GetAsync("/ManageContract/Index");
+        manageResponse.EnsureSuccessStatusCode();
+        var manageHtml = await manageResponse.Content.ReadAsStringAsync();
+        Assert.Contains("Public Company Policy", manageHtml);
+        Assert.Contains("Private Secret Document", manageHtml);
     }
 }

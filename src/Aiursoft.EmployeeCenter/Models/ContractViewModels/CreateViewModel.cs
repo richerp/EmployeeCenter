@@ -11,11 +11,6 @@ public class CreateViewModel : UiStackLayoutViewModel
         PageTitle = "Create New Contract";
     }
 
-    [Display(Name = "User (Optional)")]
-    public string? UserId { get; set; }
-
-    public IEnumerable<User> AllUsers { get; set; } = new List<User>();
-
     [Required]
     [MaxLength(200)]
     public string Name { get; set; } = string.Empty;

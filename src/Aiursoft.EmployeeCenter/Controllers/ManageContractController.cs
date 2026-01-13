@@ -29,7 +29,6 @@ public class ManageContractController(
     public async Task<IActionResult> Index()
     {
         var contracts = await context.Contracts
-            .Include(c => c.User)
             .OrderByDescending(c => c.CreateTime)
             .ToListAsync();
 
@@ -40,13 +39,9 @@ public class ManageContractController(
     }
 
     [Authorize(Policy = AppPermissionNames.CanCreateContract)]
-    public async Task<IActionResult> Create(string? userId = null)
+    public IActionResult Create()
     {
-        return this.StackView(new CreateViewModel
-        {
-            UserId = userId ?? string.Empty,
-            AllUsers = await context.Users.ToListAsync()
-        });
+        return this.StackView(new CreateViewModel());
     }
 
     [HttpPost]
@@ -58,7 +53,7 @@ public class ManageContractController(
         {
             var storePath = Path.Combine(
                 "Contracts",
-                model.UserId ?? "Shared",
+                "Shared",
                 DateTime.UtcNow.Year.ToString("D4"),
                 DateTime.UtcNow.Month.ToString("D2"),
                 model.File.FileName);
@@ -67,7 +62,6 @@ public class ManageContractController(
 
             var contract = new Contract
             {
-                UserId = model.UserId,
                 Name = model.Name,
                 FilePath = relativePath,
                 Status = model.Status,
@@ -79,7 +73,6 @@ public class ManageContractController(
             return RedirectToAction(nameof(Index));
         }
 
-        model.AllUsers = await context.Users.ToListAsync();
         return this.StackView(model);
     }
 
@@ -87,15 +80,12 @@ public class ManageContractController(
     public async Task<IActionResult> Edit(int id)
     {
         var contract = await context.Contracts
-            .Include(c => c.User)
             .FirstOrDefaultAsync(c => c.Id == id);
         if (contract == null) return NotFound();
 
         return this.StackView(new EditViewModel
         {
             Id = contract.Id,
-            UserId = contract.UserId,
-            UserName = contract.User?.DisplayName,
             Name = contract.Name,
             Status = contract.Status,
             IsPublic = contract.IsPublic
@@ -120,7 +110,7 @@ public class ManageContractController(
             {
                 var storePath = Path.Combine(
                     "Contracts",
-                    contract.UserId ?? "Shared",
+                    "Shared",
                     DateTime.UtcNow.Year.ToString("D4"),
                     DateTime.UtcNow.Month.ToString("D2"),
                     model.File.FileName);

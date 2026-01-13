@@ -13,11 +13,6 @@ public class EditViewModel : UiStackLayoutViewModel
 
     public int Id { get; set; }
 
-    [Display(Name = "User (Optional)")]
-    public string? UserId { get; set; }
-
-    public string? UserName { get; set; }
-
     [Required]
     [MaxLength(200)]
     public string Name { get; set; } = string.Empty;
