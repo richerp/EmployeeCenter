@@ -17,6 +17,7 @@
         <table class="table table-hover mb-0">
             <thead>
             <tr>
+                <th>@Localizer["Owner"]</th>
                 <th>@Localizer["Name"]</th>
                 <th>@Localizer["Status"]</th>
                 <th>@Localizer["Created Time"]</th>
@@ -27,6 +28,18 @@
             @foreach (var item in Model.Contracts)
             {
                 <tr>
+                    <td>
+                        @if (item.User != null)
+                        {
+                            <img src="@StorageService.RelativePathToInternetUrl(item.User?.AvatarRelativePath ?? Aiursoft.EmployeeCenter.Entities.User.DefaultAvatarPath)?w=72&square=true" alt="@item.User?.DisplayName" class="rounded-circle" width="24" height="24" />
+                            <span class="ms-1">@item.User?.DisplayName</span>
+                        }
+                        else
+                        {
+                            <i class="align-middle me-1" data-lucide="globe"></i>
+                            <span class="ms-1">@Localizer["Shared"]</span>
+                        }
+                    </td>
                     <td>@item.Name</td>
                     <td>
                         @switch (item.Status)
