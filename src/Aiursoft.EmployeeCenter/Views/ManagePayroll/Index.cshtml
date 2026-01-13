@@ -19,6 +19,45 @@
     </div>
 </div>
 
+<div class="card mb-3">
+    <div class="card-header">
+        <h5 class="card-title">@Localizer["Export Payrolls"]</h5>
+        <h6 class="card-subtitle text-muted">@Localizer["Export payroll history to Excel (CSV)."]</h6>
+    </div>
+    <div class="card-body">
+        <form asp-action="Export" method="get" class="row row-cols-lg-auto g-3 align-items-center">
+            <div class="col-12">
+                <label class="visually-hidden" for="userId">@Localizer["User"]</label>
+                <select class="form-select" id="userId" name="userId">
+                    <option value="">@Localizer["All Users"]</option>
+                    @foreach (var user in Model.AllUsers)
+                    {
+                        <option value="@user.Id">@user.DisplayName</option>
+                    }
+                </select>
+            </div>
+
+            <div class="col-12">
+                <label class="visually-hidden" for="year">@Localizer["Year"]</label>
+                <select class="form-select" id="year" name="year">
+                    <option value="">@Localizer["All History"]</option>
+                    @for (int i = DateTime.UtcNow.Year; i >= 2020; i--)
+                    {
+                        var year = i;
+                        <option value="@year">@year</option>
+                    }
+                </select>
+            </div>
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-secondary">
+                    <i class="align-middle" data-lucide="download"></i> @Localizer["Export"]
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
 <div class="card">
     <div class="card-header">
         <h5 class="card-title">@Localizer["All Payrolls"]</h5>

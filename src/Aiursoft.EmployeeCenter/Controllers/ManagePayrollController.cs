@@ -7,6 +7,7 @@ using Aiursoft.WebTools.Attributes;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Aiursoft.CSTools.Tools;
 
 namespace Aiursoft.EmployeeCenter.Controllers;
 
@@ -31,10 +32,72 @@ public class ManagePayrollController(
             .OrderByDescending(p => p.TargetMonth)
             .ToListAsync();
 
+        var users = await context.Users
+            .OrderBy(u => u.UserName)
+            .ToListAsync();
+
         return this.StackView(new ManageViewModel
         {
-            Payrolls = payrolls
+            Payrolls = payrolls,
+            AllUsers = users
         });
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> Export(string? userId, int? year)
+    {
+        var query = context.Payrolls.Include(t => t.Owner).AsQueryable();
+
+        if (!string.IsNullOrWhiteSpace(userId))
+        {
+            query = query.Where(t => t.OwnerId == userId);
+        }
+
+        if (year.HasValue)
+        {
+            query = query.Where(t => t.TargetMonth.Year == year.Value);
+        }
+
+        var list = await query
+            .OrderByDescending(p => p.TargetMonth)
+            .ToListAsync();
+
+        var exportList = list.Select(p => new PayrollExportViewModel
+        {
+            Id = p.Id,
+            OwnerId = p.OwnerId,
+            OwnerName = p.Owner.UserName ?? string.Empty,
+            TargetMonth = p.TargetMonth,
+            Content = p.Content,
+            BaseSalary = p.BaseSalary,
+            JobSalary = p.JobSalary,
+            PerformanceBonus = p.PerformanceBonus,
+            Overtime = p.Overtime,
+            FullAttendance = p.FullAttendance,
+            OtherAllowances = p.OtherAllowances,
+            LateEarly = p.LateEarly,
+            SickLeave = p.SickLeave,
+            AdministrativeFines = p.AdministrativeFines,
+            PensionPersonal = p.PensionPersonal,
+            MedicalPersonal = p.MedicalPersonal,
+            UnemploymentPersonal = p.UnemploymentPersonal,
+            HousingFundPersonal = p.HousingFundPersonal,
+            SpecialAdditionalDeduction = p.SpecialAdditionalDeduction,
+            PersonalIncomeTax = p.PersonalIncomeTax,
+            TotalAmount = p.TotalAmount,
+            BankName = p.BankName,
+            BankAccount = p.BankAccount,
+            PensionCompany = p.PensionCompany,
+            MedicalCompany = p.MedicalCompany,
+            UnemploymentCompany = p.UnemploymentCompany,
+            WorkInjuryCompany = p.WorkInjuryCompany,
+            MaternityCompany = p.MaternityCompany,
+            HousingFundCompany = p.HousingFundCompany,
+            CreationTime = p.CreationTime
+        }).ToList();
+
+        var csv = exportList.ToCsv();
+        return File(csv, "text/csv", $"payroll-export-{DateTime.UtcNow:yyyy-MM-dd}.csv");
     }
 
     public async Task<IActionResult> Create(string? userId = null)
