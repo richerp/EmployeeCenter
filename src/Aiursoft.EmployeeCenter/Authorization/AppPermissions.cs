@@ -90,7 +90,13 @@ public class AppPermissions
                 localizer["Allows creating, updating, and deleting company entity information."]),
             new(AppPermissionNames.CanManageAssets,
                 localizer["Manage Assets"],
-                localizer["Allows managing the company's IT assets, including categories, models, and individual items."])
+                localizer["Allows managing the company's IT assets, including categories, models, and individual items."]),
+            new(AppPermissionNames.CanViewContractHistory,
+                localizer["View Contract History"],
+                localizer["Allows viewing the contract history of any user."]),
+            new(AppPermissionNames.CanCreateContract,
+                localizer["Create Contract"],
+                localizer["Allows creating new contracts for any user."])
         ];
         return allPermission;
     }

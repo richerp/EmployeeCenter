@@ -50,4 +50,8 @@ public static class AppPermissionNames
 
     // Asset Management
     public const string CanManageAssets = nameof(CanManageAssets);
+
+    // Contract Management
+    public const string CanViewContractHistory = nameof(CanViewContractHistory);
+    public const string CanCreateContract = nameof(CanCreateContract);
 }

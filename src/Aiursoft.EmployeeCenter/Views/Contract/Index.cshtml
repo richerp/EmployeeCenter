@@ -1,0 +1,56 @@
+@using Aiursoft.EmployeeCenter.Services.FileStorage
+@model Aiursoft.EmployeeCenter.Models.ContractViewModels.IndexViewModel
+@inject StorageService StorageService
+
+<div class="row mb-2 mb-xl-3">
+    <div class="col-auto d-none d-sm-block">
+        <h3>@Localizer["My Contracts"]</h3>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title">@Localizer["Contract History"]</h5>
+        <h6 class="card-subtitle text-muted">@Localizer["A list of all your contracts."]</h6>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-hover mb-0">
+            <thead>
+            <tr>
+                <th>@Localizer["Name"]</th>
+                <th>@Localizer["Status"]</th>
+                <th>@Localizer["Created Time"]</th>
+                <th class="text-end">@Localizer["Actions"]</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model.Contracts)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>
+                        @switch (item.Status)
+                        {
+                            case Aiursoft.EmployeeCenter.Entities.ContractStatus.PendingSignature:
+                                <span class="badge bg-warning">@Localizer["Pending Signature"]</span>
+                                break;
+                            case Aiursoft.EmployeeCenter.Entities.ContractStatus.Active:
+                                <span class="badge bg-success">@Localizer["Active"]</span>
+                                break;
+                            case Aiursoft.EmployeeCenter.Entities.ContractStatus.Invalid:
+                                <span class="badge bg-danger">@Localizer["Invalid"]</span>
+                                break;
+                        }
+                    </td>
+                    <td>@item.CreateTime.ToString("yyyy-MM-dd HH:mm")</td>
+                    <td class="text-end">
+                        <a href="@StorageService.RelativePathToInternetUrl(item.FilePath)" class="btn btn-sm btn-outline-info" target="_blank">
+                            <i class="align-middle" data-lucide="download"></i> @Localizer["Download"]
+                        </a>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>
