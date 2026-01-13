@@ -19,6 +19,7 @@ public class CompanyEntityController(
     UserManager<User> userManager) : Controller
 {
     [HttpGet]
+    [Authorize(Policy = AppPermissionNames.CanManageCompanyEntities)]
     [RenderInNavBar(
         NavGroupName = "Administration",
         NavGroupOrder = 5,
@@ -40,6 +41,7 @@ public class CompanyEntityController(
     }
 
     [HttpGet]
+    [Authorize(Policy = AppPermissionNames.CanManageCompanyEntities)]
     public async Task<IActionResult> Details(int id)
     {
         var entity = await dbContext.CompanyEntities.FindAsync(id);
