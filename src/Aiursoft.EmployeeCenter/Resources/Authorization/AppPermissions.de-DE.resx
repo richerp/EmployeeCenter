@@ -33,6 +33,9 @@
   <data name="Allows assigning or removing roles for any user." xml:space="preserve">
     <value>Ermöglicht das Zuweisen oder Entfernen von Rollen für beliebige Benutzer.</value>
   </data>
+  <data name="Allows creating and managing all contracts for the company." xml:space="preserve">
+    <value>Ermöglicht das Erstellen und Verwalten aller Verträge für das Unternehmen.</value>
+  </data>
   <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
     <value>Ermöglicht die Erstellung und Verwaltung von Onboarding-Aufgaben-Vorlagen für neue Mitarbeiter.</value>
   </data>
@@ -69,6 +72,9 @@
   <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
     <value>Ermöglicht das dauerhafte Löschen von Benutzerkonten.</value>
   </data>
+  <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
+    <value>Ermöglicht das Ansehen aller Unternehmensverträge, einschließlich solcher, die als privat gekennzeichnet sind.</value>
+  </data>
   <data name="Allows viewing system-level information and settings." xml:space="preserve">
     <value>Ermöglicht das Anzeigen von systemweiten Informationen und Einstellungen.</value>
   </data>
@@ -95,6 +101,9 @@
   </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>Rollen Benutzern zuweisen</value>
+  </data>
+  <data name="Create and manage company contracts" xml:space="preserve">
+    <value>Unternehmenverträge erstellen und verwalten</value>
   </data>
   <data name="Create Contract" xml:space="preserve">
     <value>Vertrag erstellen</value>
@@ -155,6 +164,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>Diese App neu starten</value>
+  </data>
+  <data name="View any company contract, including private ones" xml:space="preserve">
+    <value>Jeden Unternehmensvertrag anzeigen, einschließlich privater</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>Vertragsverlauf anzeigen</value>

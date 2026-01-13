@@ -36,6 +36,9 @@
   <data name="Leave empty to keep current file." xml:space="preserve">
     <value>비워두면 현재 파일을 유지합니다.</value>
   </data>
+  <data name="Public Contract (Everyone can see)" xml:space="preserve">
+    <value>공개 계약 (모두가 볼 수 있음)</value>
+  </data>
   <data name="Save Changes" xml:space="preserve">
     <value>변경 사항 저장</value>
   </data>

@@ -33,6 +33,9 @@
   <data name="Allows assigning or removing roles for any user." xml:space="preserve">
     <value>Stelt in staat om rollen toe te wijzen of te verwijderen voor elke gebruiker.</value>
   </data>
+  <data name="Allows creating and managing all contracts for the company." xml:space="preserve">
+    <value>Staats het maken en beheren van alle contracten voor het bedrijf toe.</value>
+  </data>
   <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
     <value>Staats het maken en beheren van opstarttaak sjablonen voor nieuwe medewerkers toe.</value>
   </data>
@@ -69,6 +72,9 @@
   <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
     <value>Staat het permanent verwijderen van gebruikersaccounts toe.</value>
   </data>
+  <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
+    <value>Staats het bekijken van alle bedrijfscontracten, inclusief die die als privé zijn gemarkeerd.</value>
+  </data>
   <data name="Allows viewing system-level information and settings." xml:space="preserve">
     <value>Staat het bekijken van systeeminformatie en -instellingen toe.</value>
   </data>
@@ -95,6 +101,9 @@
   </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>Rollen toewijzen aan gebruikers</value>
+  </data>
+  <data name="Create and manage company contracts" xml:space="preserve">
+    <value>Maak en beheer bedrijfscontracten</value>
   </data>
   <data name="Create Contract" xml:space="preserve">
     <value>Contract aanmaken</value>
@@ -155,6 +164,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>Herstart deze app</value>
+  </data>
+  <data name="View any company contract, including private ones" xml:space="preserve">
+    <value>Bekijk elke bedrijfscontract, inclusief particuliere contracten</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>Contractgeschiedenis weergeven</value>

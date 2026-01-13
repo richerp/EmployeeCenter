@@ -45,8 +45,14 @@
   <data name="Name" xml:space="preserve">
     <value>الاسم</value>
   </data>
+  <data name="Owner" xml:space="preserve">
+    <value>المُالِك</value>
+  </data>
   <data name="Pending Signature" xml:space="preserve">
     <value>معلق التوقيع</value>
+  </data>
+  <data name="Shared" xml:space="preserve">
+    <value>مشترك</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>الحالة</value>

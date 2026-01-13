@@ -33,6 +33,9 @@
   <data name="Allows assigning or removing roles for any user." xml:space="preserve">
     <value>Permet d&apos;attribuer ou de retirer des rôles à tout utilisateur.</value>
   </data>
+  <data name="Allows creating and managing all contracts for the company." xml:space="preserve">
+    <value>Permet de créer et de gérer tous les contrats de l&apos;entreprise.</value>
+  </data>
   <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
     <value>Permet de créer et de gérer les modèles de tâches d&apos;intégration pour les nouveaux employés.</value>
   </data>
@@ -69,6 +72,9 @@
   <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
     <value>Permet la suppression définitive des comptes utilisateurs.</value>
   </data>
+  <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
+    <value>Permet de visualiser tous les contrats de l&apos;entreprise, y compris ceux marqués comme privés.</value>
+  </data>
   <data name="Allows viewing system-level information and settings." xml:space="preserve">
     <value>Permet de visualiser les informations et paramètres au niveau du système.</value>
   </data>
@@ -95,6 +101,9 @@
   </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>Attribuer des rôles aux utilisateurs</value>
+  </data>
+  <data name="Create and manage company contracts" xml:space="preserve">
+    <value>Créer et gérer les contrats de l&apos;entreprise</value>
   </data>
   <data name="Create Contract" xml:space="preserve">
     <value>Créer un contrat</value>
@@ -155,6 +164,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>Redémarrer cette application</value>
+  </data>
+  <data name="View any company contract, including private ones" xml:space="preserve">
+    <value>Visualiser tout contrat de l&apos;entreprise, y compris les contrats privés</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>Visualiser l&apos;historique des contrats</value>

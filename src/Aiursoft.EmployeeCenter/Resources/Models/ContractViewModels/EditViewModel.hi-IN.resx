@@ -18,11 +18,17 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="New Contract File (Optional)" xml:space="preserve">
+      <data name="Is Public" xml:space="preserve">
+    <value>सार्वजनिक है</value>
+  </data>
+  <data name="New Contract File (Optional)" xml:space="preserve">
     <value>नया अनुबंध फ़ाइल (वैकल्पिक)</value>
   </data>
   <data name="User" xml:space="preserve">
     <value>उपयोगकर्ता</value>
+  </data>
+  <data name="User (Optional)" xml:space="preserve">
+    <value>उपयोगकर्ता (वैकल्पिक)</value>
   </data>
 
 </root>

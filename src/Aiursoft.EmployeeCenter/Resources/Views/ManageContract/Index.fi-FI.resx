@@ -60,11 +60,23 @@
   <data name="Pending Signature" xml:space="preserve">
     <value>Odottaa allekirjoitusta</value>
   </data>
+  <data name="Private" xml:space="preserve">
+    <value>Yksityinen</value>
+  </data>
+  <data name="Public" xml:space="preserve">
+    <value>Julkinen</value>
+  </data>
+  <data name="Shared" xml:space="preserve">
+    <value>Jaettu</value>
+  </data>
   <data name="Status" xml:space="preserve">
     <value>Tila</value>
   </data>
   <data name="User" xml:space="preserve">
     <value>Käyttäjä</value>
+  </data>
+  <data name="Visibility" xml:space="preserve">
+    <value>Näkyvyys</value>
   </data>
 
 </root>

@@ -39,6 +39,9 @@
   <data name="e.g. 2024 Labor Contract" xml:space="preserve">
     <value>f.eks. 2024 Arbejdsaftale</value>
   </data>
+  <data name="Public Contract (Everyone can see)" xml:space="preserve">
+    <value>Offentlig aftale (Alle kan se)</value>
+  </data>
   <data name="Select User" xml:space="preserve">
     <value>Vælg bruger</value>
   </data>

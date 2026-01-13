@@ -36,6 +36,9 @@
   <data name="Leave empty to keep current file." xml:space="preserve">
     <value>Leave blank to keep the current file.</value>
   </data>
+  <data name="Public Contract (Everyone can see)" xml:space="preserve">
+    <value>Public Contract (Everyone can see)</value>
+  </data>
   <data name="Save Changes" xml:space="preserve">
     <value>Save Changes</value>
   </data>

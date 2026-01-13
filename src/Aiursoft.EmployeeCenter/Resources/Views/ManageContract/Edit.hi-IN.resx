@@ -36,6 +36,9 @@
   <data name="Leave empty to keep current file." xml:space="preserve">
     <value>वर्तमान फ़ाइल को बनाए रखने के लिए खाली छोड़ दें।</value>
   </data>
+  <data name="Public Contract (Everyone can see)" xml:space="preserve">
+    <value>सार्वजनिक संविदा (सभी देख सकते हैं)</value>
+  </data>
   <data name="Save Changes" xml:space="preserve">
     <value>परिवर्तन सहेजें</value>
   </data>

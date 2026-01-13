@@ -33,6 +33,9 @@
   <data name="Allows assigning or removing roles for any user." xml:space="preserve">
     <value>Consente di assegnare o rimuovere ruoli per qualsiasi utente.</value>
   </data>
+  <data name="Allows creating and managing all contracts for the company." xml:space="preserve">
+    <value>Consente la creazione e la gestione di tutti i contratti aziendali.</value>
+  </data>
   <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
     <value>Consente di creare e gestire modelli di compiti di onboarding per i nuovi dipendenti.</value>
   </data>
@@ -69,6 +72,9 @@
   <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
     <value>Consente l&apos;eliminazione permanente degli account utente.</value>
   </data>
+  <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
+    <value>Consente la visualizzazione di tutti i contratti aziendali, inclusi quelli contrassegnati come privati.</value>
+  </data>
   <data name="Allows viewing system-level information and settings." xml:space="preserve">
     <value>Consente di visualizzare informazioni e impostazioni a livello di sistema.</value>
   </data>
@@ -95,6 +101,9 @@
   </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>Assegna Ruoli agli Utenti</value>
+  </data>
+  <data name="Create and manage company contracts" xml:space="preserve">
+    <value>Crea e gestisci i contratti aziendali</value>
   </data>
   <data name="Create Contract" xml:space="preserve">
     <value>Crea Contratto</value>
@@ -155,6 +164,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>Riavvia Questa App</value>
+  </data>
+  <data name="View any company contract, including private ones" xml:space="preserve">
+    <value>Visualizza qualsiasi contratto aziendale, incluso quelli riservati</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>Visualizza la cronologia dei contratti</value>

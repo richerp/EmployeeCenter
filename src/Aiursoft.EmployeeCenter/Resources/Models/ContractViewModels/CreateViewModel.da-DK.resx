@@ -21,8 +21,14 @@
       <data name="Contract File" xml:space="preserve">
     <value>Kontraktfil</value>
   </data>
+  <data name="Is Public" xml:space="preserve">
+    <value>Er offentlig</value>
+  </data>
   <data name="User" xml:space="preserve">
     <value>Bruger</value>
+  </data>
+  <data name="User (Optional)" xml:space="preserve">
+    <value>Bruger (Valgfrit)</value>
   </data>
 
 </root>

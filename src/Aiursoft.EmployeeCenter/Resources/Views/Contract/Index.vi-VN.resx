@@ -45,8 +45,14 @@
   <data name="Name" xml:space="preserve">
     <value>Tên</value>
   </data>
+  <data name="Owner" xml:space="preserve">
+    <value>Chủ sở hữu</value>
+  </data>
   <data name="Pending Signature" xml:space="preserve">
     <value>Chờ ký tên</value>
+  </data>
+  <data name="Shared" xml:space="preserve">
+    <value>Chia sẻ</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>Trạng thái</value>

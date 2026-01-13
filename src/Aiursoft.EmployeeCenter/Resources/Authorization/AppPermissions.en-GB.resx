@@ -33,6 +33,9 @@
   <data name="Allows assigning or removing roles for any user." xml:space="preserve">
     <value>Allows assigning or removing roles for any user.</value>
   </data>
+  <data name="Allows creating and managing all contracts for the company." xml:space="preserve">
+    <value>Allows creating and managing all contracts for the company.</value>
+  </data>
   <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
     <value>Allows creating and managing onboarding task templates for new employees.</value>
   </data>
@@ -63,17 +66,14 @@
   <data name="Allows the permanent deletion of roles." xml:space="preserve">
     <value>Allows the permanent deletion of roles.</value>
   </data>
+  <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
+    <value>Allows the permanent deletion of user accounts.</value>
+  </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Allows viewing all company contracts, including those marked as private.</value>
   </data>
-  <data name="View any company contract, including private ones" xml:space="preserve">
-    <value>View any company contract, including private ones</value>
-  </data>
-  <data name="Allows creating and managing all contracts for the company." xml:space="preserve">
-    <value>Allows creating and managing all contracts for the company.</value>
-  </data>
-  <data name="Create and manage company contracts" xml:space="preserve">
-    <value>Create and manage company contracts</value>
+  <data name="Allows viewing system-level information and settings." xml:space="preserve">
+    <value>Allows viewing system-level information and settings.</value>
   </data>
   <data name="Allows viewing the list of all users." xml:space="preserve">
     <value>Allows viewing the list of all users.</value>
@@ -95,6 +95,9 @@
   </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>Assign Roles to Users</value>
+  </data>
+  <data name="Create and manage company contracts" xml:space="preserve">
+    <value>Create and manage company contracts</value>
   </data>
   <data name="Delete Roles" xml:space="preserve">
     <value>Delete Roles</value>
@@ -146,6 +149,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>Reboot This App</value>
+  </data>
+  <data name="View any company contract, including private ones" xml:space="preserve">
+    <value>View any company contract, including private ones</value>
   </data>
   <data name="View Report Line" xml:space="preserve">
     <value>View Report Line</value>

@@ -45,8 +45,14 @@
   <data name="Name" xml:space="preserve">
     <value>नाम</value>
   </data>
+  <data name="Owner" xml:space="preserve">
+    <value>मालिक</value>
+  </data>
   <data name="Pending Signature" xml:space="preserve">
     <value>प्रतीक्षा में हस्ताक्षर</value>
+  </data>
+  <data name="Shared" xml:space="preserve">
+    <value>साझा किया गया</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>स्थिति</value>

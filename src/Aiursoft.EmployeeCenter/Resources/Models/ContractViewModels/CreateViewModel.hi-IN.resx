@@ -21,8 +21,14 @@
       <data name="Contract File" xml:space="preserve">
     <value>संविदा फ़ाइल</value>
   </data>
+  <data name="Is Public" xml:space="preserve">
+    <value>सार्वजनिक है</value>
+  </data>
   <data name="User" xml:space="preserve">
     <value>उपयोगकर्ता</value>
+  </data>
+  <data name="User (Optional)" xml:space="preserve">
+    <value>उपयोगकर्ता (वैकल्पिक)</value>
   </data>
 
 </root>

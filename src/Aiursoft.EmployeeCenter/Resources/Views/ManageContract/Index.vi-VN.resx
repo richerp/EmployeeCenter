@@ -60,11 +60,23 @@
   <data name="Pending Signature" xml:space="preserve">
     <value>Chờ ký</value>
   </data>
+  <data name="Private" xml:space="preserve">
+    <value>Riêng tư</value>
+  </data>
+  <data name="Public" xml:space="preserve">
+    <value>Công khai</value>
+  </data>
+  <data name="Shared" xml:space="preserve">
+    <value>Chia sẻ</value>
+  </data>
   <data name="Status" xml:space="preserve">
     <value>Trạng thái</value>
   </data>
   <data name="User" xml:space="preserve">
     <value>Người dùng</value>
+  </data>
+  <data name="Visibility" xml:space="preserve">
+    <value>Tính riêng tư</value>
   </data>
 
 </root>
