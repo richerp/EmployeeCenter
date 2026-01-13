@@ -1,12 +1,8 @@
 using System.Net;
 using System.Security.Claims;
 using System.Text.RegularExpressions;
-using Aiursoft.CSTools.Tools;
-using Aiursoft.DbTools;
 using Aiursoft.EmployeeCenter.Authorization;
-using Aiursoft.EmployeeCenter.Entities;
 using Microsoft.AspNetCore.Identity;
-using static Aiursoft.WebTools.Extends;
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
