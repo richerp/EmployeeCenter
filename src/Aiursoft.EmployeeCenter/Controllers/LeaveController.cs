@@ -262,6 +262,15 @@ public class LeaveController(
 
         var teamLeaves = new List<TeamMemberLeave>();
 
+        // 0. Me
+        var myLeaves = await GetLeavesForUserAsync(user.Id);
+        teamLeaves.Add(new TeamMemberLeave
+        {
+            User = user,
+            Leaves = myLeaves,
+            Relation = "Me"
+        });
+
         // 1. My Boss
         if (!string.IsNullOrEmpty(user.ManagerId))
         {

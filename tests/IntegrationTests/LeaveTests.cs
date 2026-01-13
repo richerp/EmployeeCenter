@@ -227,4 +227,62 @@ public class LeaveTests
             Assert.IsFalse(leave!.IsWithdrawn);
         }
     }
+
+    [TestMethod]
+    public async Task TeamCalendarIncludesSelfTest()
+    {
+        var email = $"test-{Guid.NewGuid()}@aiursoft.com";
+        var password = "Test-Password-123";
+
+        // 1. Register and Login
+        var registerToken = await GetAntiCsrfToken("/Account/Register");
+        var registerContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Email", email },
+            { "Password", password },
+            { "ConfirmPassword", password },
+            { "__RequestVerificationToken", registerToken }
+        });
+        await _http.PostAsync("/Account/Register", registerContent);
+
+        // 2. Initialize Allocation (Visit Index)
+        await _http.GetAsync("/Leave/Index");
+
+        // 3. Create an approved leave directly in DB
+        var userId = await GetUserIdByEmail(email);
+        var today = DateTime.UtcNow.Date;
+        
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var leave = new LeaveApplication
+            {
+                UserId = userId,
+                LeaveType = LeaveType.AnnualLeave,
+                StartDate = today.AddDays(10),
+                EndDate = today.AddDays(12),
+                TotalDays = 3,
+                Reason = "Vacation",
+                IsPending = false, // Approved
+                IsApproved = true,
+                SubmittedAt = DateTime.UtcNow,
+                ReviewedAt = DateTime.UtcNow,
+                ReviewedById = userId // Self approved for test simplicity
+            };
+            db.LeaveApplications.Add(leave);
+            await db.SaveChangesAsync();
+        }
+
+        // 4. Visit Team Calendar
+        var response = await _http.GetAsync("/Leave/TeamCalendar");
+        Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
+        
+        var html = await response.Content.ReadAsStringAsync();
+
+        // 5. Verify "Me" is present
+        StringAssert.Contains(html, "Me", "The Team Calendar page should contain the text 'Me'.");
+        
+        // Also verify the user's email is present
+        StringAssert.Contains(html, email, "The Team Calendar page should contain the user's email.");
+    }
 }
