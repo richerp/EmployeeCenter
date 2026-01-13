@@ -156,5 +156,16 @@
   <data name="View User Operation Log" xml:space="preserve">
     <value>查看用户操作日志</value>
   </data>
-
+  <data name="View Contract History" xml:space="preserve">
+    <value>查看合同历史</value>
+  </data>
+  <data name="Allows viewing the contract history of any user." xml:space="preserve">
+    <value>允许查看任何用户的合同历史。</value>
+  </data>
+  <data name="Create Contract" xml:space="preserve">
+    <value>创建合同</value>
+  </data>
+  <data name="Allows creating new contracts for any user." xml:space="preserve">
+    <value>允许为任何用户创建新合同。</value>
+  </data>
 </root>

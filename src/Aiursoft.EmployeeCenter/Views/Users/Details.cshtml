@@ -13,6 +13,10 @@
         <h3>@Localizer["User Details:"] <span class="text-muted">@Model.User.UserName</span></h3>
     </div>
     <div class="col-auto ms-auto text-end mt-n1">
+        @if (User.HasClaim(AppPermissions.Type, AppPermissionNames.CanViewContractHistory))
+        {
+            <a asp-controller="ManageContract" asp-action="Index" asp-route-userId="@Model.User.Id" class="btn btn-outline-info">@Localizer["Manage Contracts"]</a>
+        }
         <a asp-controller="SshKeys" asp-action="Index" asp-route-userId="@Model.User.Id" class="btn btn-outline-primary">@Localizer["Manage SSH Keys"]</a>
         <a asp-action="Edit" asp-route-id="@Model.User.Id" class="btn btn-primary">@Localizer["Edit this User"]</a>
         <a asp-action="Delete" asp-route-id="@Model.User.Id" class="btn btn-danger">@Localizer["Delete this User"]</a>

@@ -368,6 +368,40 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.ToTable("CompanyEntityLogs");
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Contract", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("CreateTime")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("FilePath")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Contracts");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Incident", b =>
                 {
                     b.Property<Guid>("Id")
@@ -1189,6 +1223,17 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Contract", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "User")
+                        .WithMany("Contracts")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Incident", b =>
                 {
                     b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "IM")
@@ -1418,6 +1463,8 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.Navigation("AssetHistories");
 
                     b.Navigation("AssignedAssets");
+
+                    b.Navigation("Contracts");
 
                     b.Navigation("CreatedPasswords");
 
