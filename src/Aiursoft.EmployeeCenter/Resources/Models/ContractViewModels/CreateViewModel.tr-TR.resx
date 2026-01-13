@@ -21,8 +21,14 @@
       <data name="Contract File" xml:space="preserve">
     <value>Sözleşme Dosyası</value>
   </data>
+  <data name="Is Public" xml:space="preserve">
+    <value>Halka Açık mı</value>
+  </data>
   <data name="User" xml:space="preserve">
     <value>Kullanıcı</value>
+  </data>
+  <data name="User (Optional)" xml:space="preserve">
+    <value>Kullanıcı (İsteğe Bağlı)</value>
   </data>
 
 </root>

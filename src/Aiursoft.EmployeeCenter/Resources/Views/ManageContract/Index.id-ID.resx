@@ -60,11 +60,23 @@
   <data name="Pending Signature" xml:space="preserve">
     <value>Menunggu Tanda Tangan</value>
   </data>
+  <data name="Private" xml:space="preserve">
+    <value>Privat</value>
+  </data>
+  <data name="Public" xml:space="preserve">
+    <value>Umum</value>
+  </data>
+  <data name="Shared" xml:space="preserve">
+    <value>Dibagikan</value>
+  </data>
   <data name="Status" xml:space="preserve">
     <value>Status</value>
   </data>
   <data name="User" xml:space="preserve">
     <value>Pengguna</value>
+  </data>
+  <data name="Visibility" xml:space="preserve">
+    <value>Visibilitas</value>
   </data>
 
 </root>

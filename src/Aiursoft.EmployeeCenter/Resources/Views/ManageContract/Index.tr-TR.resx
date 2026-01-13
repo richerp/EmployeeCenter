@@ -60,11 +60,23 @@
   <data name="Pending Signature" xml:space="preserve">
     <value>İmzalanmayı Bekleyen</value>
   </data>
+  <data name="Private" xml:space="preserve">
+    <value>Gizli</value>
+  </data>
+  <data name="Public" xml:space="preserve">
+    <value>Genel</value>
+  </data>
+  <data name="Shared" xml:space="preserve">
+    <value>Paylaşılan</value>
+  </data>
   <data name="Status" xml:space="preserve">
     <value>Durum</value>
   </data>
   <data name="User" xml:space="preserve">
     <value>Kullanıcı</value>
+  </data>
+  <data name="Visibility" xml:space="preserve">
+    <value>Görünürlük</value>
   </data>
 
 </root>

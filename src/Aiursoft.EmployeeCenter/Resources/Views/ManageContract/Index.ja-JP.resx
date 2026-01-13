@@ -60,11 +60,23 @@
   <data name="Pending Signature" xml:space="preserve">
     <value>署名待ち</value>
   </data>
+  <data name="Private" xml:space="preserve">
+    <value>非公開</value>
+  </data>
+  <data name="Public" xml:space="preserve">
+    <value>公開</value>
+  </data>
+  <data name="Shared" xml:space="preserve">
+    <value>共有</value>
+  </data>
   <data name="Status" xml:space="preserve">
     <value>ステータス</value>
   </data>
   <data name="User" xml:space="preserve">
     <value>ユーザー</value>
+  </data>
+  <data name="Visibility" xml:space="preserve">
+    <value>公開設定</value>
   </data>
 
 </root>

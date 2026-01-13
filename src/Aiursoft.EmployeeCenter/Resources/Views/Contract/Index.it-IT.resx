@@ -45,8 +45,14 @@
   <data name="Name" xml:space="preserve">
     <value>Nome</value>
   </data>
+  <data name="Owner" xml:space="preserve">
+    <value>Proprietario</value>
+  </data>
   <data name="Pending Signature" xml:space="preserve">
     <value>In attesa di firma</value>
+  </data>
+  <data name="Shared" xml:space="preserve">
+    <value>Condiviso</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>Stato</value>

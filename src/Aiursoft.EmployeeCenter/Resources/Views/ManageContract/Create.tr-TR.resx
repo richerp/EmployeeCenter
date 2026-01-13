@@ -39,6 +39,9 @@
   <data name="e.g. 2024 Labor Contract" xml:space="preserve">
     <value>örneğin: 2024 İş Sözleşmesi</value>
   </data>
+  <data name="Public Contract (Everyone can see)" xml:space="preserve">
+    <value>Herkese Açık Sözleşme (Herkes görebilir)</value>
+  </data>
   <data name="Select User" xml:space="preserve">
     <value>Kullanıcı Seç</value>
   </data>

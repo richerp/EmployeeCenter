@@ -39,6 +39,9 @@
   <data name="e.g. 2024 Labor Contract" xml:space="preserve">
     <value>उदाहरण के लिए, 2024 श्रम समझौता</value>
   </data>
+  <data name="Public Contract (Everyone can see)" xml:space="preserve">
+    <value>सार्वजनिक संविदा (सभी देख सकते हैं)</value>
+  </data>
   <data name="Select User" xml:space="preserve">
     <value>उपयोगकर्ता चुनें</value>
   </data>

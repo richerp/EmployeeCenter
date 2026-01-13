@@ -36,6 +36,9 @@
   <data name="Leave empty to keep current file." xml:space="preserve">
     <value>Boş bırakmak mevcut dosyayı korur.</value>
   </data>
+  <data name="Public Contract (Everyone can see)" xml:space="preserve">
+    <value>Halka Açık Sözleşme (Herkes görebilir)</value>
+  </data>
   <data name="Save Changes" xml:space="preserve">
     <value>Değişiklikleri Kaydet</value>
   </data>

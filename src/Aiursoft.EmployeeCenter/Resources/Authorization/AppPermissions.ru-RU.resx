@@ -33,6 +33,9 @@
   <data name="Allows assigning or removing roles for any user." xml:space="preserve">
     <value>Разрешает назначение или снятие ролей для любого пользователя.</value>
   </data>
+  <data name="Allows creating and managing all contracts for the company." xml:space="preserve">
+    <value>Позволяет создавать и управлять всеми контрактами компании.</value>
+  </data>
   <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
     <value>Позволяет создавать и управлять шаблонами задач наboarding для новых сотрудников.</value>
   </data>
@@ -69,6 +72,9 @@
   <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
     <value>Разрешает окончательное удаление учетных записей пользователей.</value>
   </data>
+  <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
+    <value>Позволяет просматривать все корпоративные контракты, включая те, которые помечены как приватные.</value>
+  </data>
   <data name="Allows viewing system-level information and settings." xml:space="preserve">
     <value>Разрешает просмотр системной информации и настроек.</value>
   </data>
@@ -95,6 +101,9 @@
   </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>Назначение ролей пользователям</value>
+  </data>
+  <data name="Create and manage company contracts" xml:space="preserve">
+    <value>Создавать и управлять корпоративными контрактами</value>
   </data>
   <data name="Create Contract" xml:space="preserve">
     <value>Создать договор</value>
@@ -155,6 +164,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>Перезапустить это приложение</value>
+  </data>
+  <data name="View any company contract, including private ones" xml:space="preserve">
+    <value>Просмотр любого корпоративного договора, включая частные</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>Просмотр истории контрактов</value>

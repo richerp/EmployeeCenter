@@ -33,6 +33,9 @@
   <data name="Allows assigning or removing roles for any user." xml:space="preserve">
     <value>Permite atribuirea sau eliminarea rolurilor pentru orice utilizator.</value>
   </data>
+  <data name="Allows creating and managing all contracts for the company." xml:space="preserve">
+    <value>Permite crearea și gestionarea tuturor contractelor companiei.</value>
+  </data>
   <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
     <value>Permite crearea și gestionarea șablonelor de sarcini de integrare pentru noii angajați.</value>
   </data>
@@ -69,6 +72,9 @@
   <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
     <value>Permite ștergerea permanentă a conturilor de utilizator.</value>
   </data>
+  <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
+    <value>Permite vizualizarea tuturor contractelor companiei, inclusiv a celor marcate ca private.</value>
+  </data>
   <data name="Allows viewing system-level information and settings." xml:space="preserve">
     <value>Permite vizualizarea informațiilor și setărilor la nivel de sistem.</value>
   </data>
@@ -95,6 +101,9 @@
   </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>Atribuie Roluri Utilizatorilor</value>
+  </data>
+  <data name="Create and manage company contracts" xml:space="preserve">
+    <value>Creează și gestionează contractele companiei</value>
   </data>
   <data name="Create Contract" xml:space="preserve">
     <value>Crează Contract</value>
@@ -155,6 +164,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>Repornește această aplicație</value>
+  </data>
+  <data name="View any company contract, including private ones" xml:space="preserve">
+    <value>Vizualizează orice contract al companiei, inclusiv cele private</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>Vizualizează istoricul contractelor</value>

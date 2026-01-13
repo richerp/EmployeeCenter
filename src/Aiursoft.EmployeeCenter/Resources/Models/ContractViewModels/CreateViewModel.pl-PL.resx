@@ -21,8 +21,14 @@
       <data name="Contract File" xml:space="preserve">
     <value>Plik umowy</value>
   </data>
+  <data name="Is Public" xml:space="preserve">
+    <value>Czy publiczny</value>
+  </data>
   <data name="User" xml:space="preserve">
     <value>Użytkownik</value>
+  </data>
+  <data name="User (Optional)" xml:space="preserve">
+    <value>Użytkownik (opcjonalnie)</value>
   </data>
 
 </root>

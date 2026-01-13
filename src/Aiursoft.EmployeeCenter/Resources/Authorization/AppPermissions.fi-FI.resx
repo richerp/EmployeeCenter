@@ -33,6 +33,9 @@
   <data name="Allows assigning or removing roles for any user." xml:space="preserve">
     <value>Mahdollistaa roolien määrittämisen tai poistamisen mille tahansa käyttäjälle.</value>
   </data>
+  <data name="Allows creating and managing all contracts for the company." xml:space="preserve">
+    <value>Sallii kaikkien yrityksen sopimusten luomisen ja hallinnan.</value>
+  </data>
   <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
     <value>Sallii uusien työntekijöiden alustustaskujen mallien luomisen ja hallinnan.</value>
   </data>
@@ -69,6 +72,9 @@
   <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
     <value>Sallii käyttäjätilien pysyvän poistamisen.</value>
   </data>
+  <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
+    <value>Sallii kaikkien yrityksen sopimusten tarkastelun, mukaan lukien ne, jotka on merkitty yksityisiksi.</value>
+  </data>
   <data name="Allows viewing system-level information and settings." xml:space="preserve">
     <value>Mahdollistaa järjestelmätason tietojen ja asetusten tarkastelemisen.</value>
   </data>
@@ -95,6 +101,9 @@
   </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>Anna roolit käyttäjille</value>
+  </data>
+  <data name="Create and manage company contracts" xml:space="preserve">
+    <value>Luo ja hallinnoi yrityksen sopimuksia</value>
   </data>
   <data name="Create Contract" xml:space="preserve">
     <value>Luo sopimus</value>
@@ -155,6 +164,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>Käynnistä tämä sovellus uudelleen</value>
+  </data>
+  <data name="View any company contract, including private ones" xml:space="preserve">
+    <value>Näytä mikä tahansa yrityksen sopimus, mukaan lukien yksityiset</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>Näytä sopimushistoria</value>

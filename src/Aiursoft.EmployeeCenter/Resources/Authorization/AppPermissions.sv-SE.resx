@@ -33,6 +33,9 @@
   <data name="Allows assigning or removing roles for any user." xml:space="preserve">
     <value>Tillåter att tilldela eller ta bort roller för alla användare.</value>
   </data>
+  <data name="Allows creating and managing all contracts for the company." xml:space="preserve">
+    <value>Tillåter skapande och hantering av alla avtal för företaget.</value>
+  </data>
   <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
     <value>Tillåter skapande och hantering av påbörjandeuppgiftsmallar för nya anställda.</value>
   </data>
@@ -69,6 +72,9 @@
   <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
     <value>Tillåter permanent borttagning av användarkonton.</value>
   </data>
+  <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
+    <value>Tillåter visning av alla företagsavtal, inklusive de som är markerade som privata.</value>
+  </data>
   <data name="Allows viewing system-level information and settings." xml:space="preserve">
     <value>Ger tillgång att visa systemnivåinformation och inställningar.</value>
   </data>
@@ -95,6 +101,9 @@
   </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>Tilldela roller till användare</value>
+  </data>
+  <data name="Create and manage company contracts" xml:space="preserve">
+    <value>Skapa och hantera företagsavtal</value>
   </data>
   <data name="Create Contract" xml:space="preserve">
     <value>Skapa avtal</value>
@@ -155,6 +164,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>Starta om den här appen</value>
+  </data>
+  <data name="View any company contract, including private ones" xml:space="preserve">
+    <value>Visa vilken som helst företagsavtal, inklusive privata</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>Visa kontraktshistorik</value>

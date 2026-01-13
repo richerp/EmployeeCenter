@@ -33,6 +33,9 @@
   <data name="Allows assigning or removing roles for any user." xml:space="preserve">
     <value>모든 사용자에게 역할을 할당하거나 제거할 수 있습니다.</value>
   </data>
+  <data name="Allows creating and managing all contracts for the company." xml:space="preserve">
+    <value>회사의 모든 계약서를 생성하고 관리할 수 있습니다.</value>
+  </data>
   <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
     <value>신입 직원을 위한 온보딩 작업 템플릿 생성 및 관리를 허용합니다.</value>
   </data>
@@ -69,6 +72,9 @@
   <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
     <value>사용자 계정의 영구 삭제를 허용합니다.</value>
   </data>
+  <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
+    <value>모든 회사 계약서를 포함하여 비공개로 표시된 계약서도 볼 수 있도록 허용합니다.</value>
+  </data>
   <data name="Allows viewing system-level information and settings." xml:space="preserve">
     <value>시스템 수준 정보 및 설정을 볼 수 있습니다.</value>
   </data>
@@ -95,6 +101,9 @@
   </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>사용자에게 역할 할당</value>
+  </data>
+  <data name="Create and manage company contracts" xml:space="preserve">
+    <value>회사 계약 생성 및 관리</value>
   </data>
   <data name="Create Contract" xml:space="preserve">
     <value>계약 생성</value>
@@ -155,6 +164,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>이 앱 재시작</value>
+  </data>
+  <data name="View any company contract, including private ones" xml:space="preserve">
+    <value>모든 회사 계약서(비공개 계약서 포함) 보기</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>계약 이력 보기</value>

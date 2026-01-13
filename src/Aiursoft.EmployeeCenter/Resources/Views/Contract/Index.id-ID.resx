@@ -45,8 +45,14 @@
   <data name="Name" xml:space="preserve">
     <value>Nama</value>
   </data>
+  <data name="Owner" xml:space="preserve">
+    <value>Pemilik</value>
+  </data>
   <data name="Pending Signature" xml:space="preserve">
     <value>Menunggu Tanda Tangan</value>
+  </data>
+  <data name="Shared" xml:space="preserve">
+    <value>Dibagikan</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>Status</value>

@@ -36,6 +36,9 @@
   <data name="Leave empty to keep current file." xml:space="preserve">
     <value>Αφήστε κενό για να διατηρήσετε το τρέχον αρχείο.</value>
   </data>
+  <data name="Public Contract (Everyone can see)" xml:space="preserve">
+    <value>Δημόσιο Σύμβασμα (Όλοι μπορούν να το δουν)</value>
+  </data>
   <data name="Save Changes" xml:space="preserve">
     <value>Αποθήκευση Αλλαγών</value>
   </data>

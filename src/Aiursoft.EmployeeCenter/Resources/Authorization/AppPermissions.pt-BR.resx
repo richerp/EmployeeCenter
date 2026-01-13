@@ -33,6 +33,9 @@
   <data name="Allows assigning or removing roles for any user." xml:space="preserve">
     <value>Permite atribuir ou remover funções para qualquer usuário.</value>
   </data>
+  <data name="Allows creating and managing all contracts for the company." xml:space="preserve">
+    <value>Permite criar e gerenciar todos os contratos da empresa.</value>
+  </data>
   <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
     <value>Permite criar e gerenciar modelos de tarefas de integração para novos funcionários.</value>
   </data>
@@ -69,6 +72,9 @@
   <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
     <value>Permite a exclusão permanente de contas de usuário.</value>
   </data>
+  <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
+    <value>Permite visualizar todos os contratos da empresa, incluindo aqueles marcados como privados.</value>
+  </data>
   <data name="Allows viewing system-level information and settings." xml:space="preserve">
     <value>Permite visualizar informações e configurações em nível de sistema.</value>
   </data>
@@ -95,6 +101,9 @@
   </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>Atribuir Funções a Usuários</value>
+  </data>
+  <data name="Create and manage company contracts" xml:space="preserve">
+    <value>Criar e gerenciar contratos da empresa</value>
   </data>
   <data name="Create Contract" xml:space="preserve">
     <value>Criar Contrato</value>
@@ -155,6 +164,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>Reiniciar Este Aplicativo</value>
+  </data>
+  <data name="View any company contract, including private ones" xml:space="preserve">
+    <value>Visualizar qualquer contrato da empresa, incluindo os privados</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>Visualizar Histórico de Contratos</value>

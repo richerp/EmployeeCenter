@@ -60,11 +60,23 @@
   <data name="Pending Signature" xml:space="preserve">
     <value>En attente de signature</value>
   </data>
+  <data name="Private" xml:space="preserve">
+    <value>Privé</value>
+  </data>
+  <data name="Public" xml:space="preserve">
+    <value>Public</value>
+  </data>
+  <data name="Shared" xml:space="preserve">
+    <value>Partagé</value>
+  </data>
   <data name="Status" xml:space="preserve">
     <value>Statut</value>
   </data>
   <data name="User" xml:space="preserve">
     <value>Utilisateur</value>
+  </data>
+  <data name="Visibility" xml:space="preserve">
+    <value>Visibilité</value>
   </data>
 
 </root>
