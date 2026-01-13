@@ -382,6 +382,9 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("TEXT");
 
+                    b.Property<bool>("IsPublic")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(200)
@@ -391,7 +394,6 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("UserId")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("TEXT");
 
@@ -1227,9 +1229,7 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                 {
                     b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "User")
                         .WithMany("Contracts")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("UserId");
 
                     b.Navigation("User");
                 });

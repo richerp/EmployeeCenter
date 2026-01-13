@@ -58,7 +58,7 @@ public class ManageContractController(
         {
             var storePath = Path.Combine(
                 "Contracts",
-                model.UserId,
+                model.UserId ?? "Shared",
                 DateTime.UtcNow.Year.ToString("D4"),
                 DateTime.UtcNow.Month.ToString("D2"),
                 model.File.FileName);
@@ -71,6 +71,7 @@ public class ManageContractController(
                 Name = model.Name,
                 FilePath = relativePath,
                 Status = model.Status,
+                IsPublic = model.IsPublic,
                 CreateTime = DateTime.UtcNow
             };
             context.Contracts.Add(contract);
@@ -96,7 +97,8 @@ public class ManageContractController(
             UserId = contract.UserId,
             UserName = contract.User?.DisplayName,
             Name = contract.Name,
-            Status = contract.Status
+            Status = contract.Status,
+            IsPublic = contract.IsPublic
         });
     }
 
@@ -112,12 +114,13 @@ public class ManageContractController(
 
             contract.Name = model.Name;
             contract.Status = model.Status;
+            contract.IsPublic = model.IsPublic;
 
             if (model.File != null)
             {
                 var storePath = Path.Combine(
                     "Contracts",
-                    contract.UserId,
+                    contract.UserId ?? "Shared",
                     DateTime.UtcNow.Year.ToString("D4"),
                     DateTime.UtcNow.Month.ToString("D2"),
                     model.File.FileName);

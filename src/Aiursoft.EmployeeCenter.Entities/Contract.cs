@@ -10,7 +10,7 @@ public class Contract
     public int Id { get; set; }
 
     [MaxLength(255)]
-    public required string UserId { get; set; }
+    public string? UserId { get; set; }
 
     [JsonIgnore]
     [ForeignKey(nameof(UserId))]
@@ -23,6 +23,8 @@ public class Contract
     public required string FilePath { get; set; }
 
     public ContractStatus Status { get; set; }
+
+    public bool IsPublic { get; set; }
 
     public DateTime CreateTime { get; set; } = DateTime.UtcNow;
 }

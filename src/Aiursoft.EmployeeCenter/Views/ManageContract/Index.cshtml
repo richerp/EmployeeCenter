@@ -32,6 +32,7 @@
                 <th>@Localizer["User"]</th>
                 <th>@Localizer["Name"]</th>
                 <th>@Localizer["Status"]</th>
+                <th>@Localizer["Visibility"]</th>
                 <th>@Localizer["Created Time"]</th>
                 <th class="text-end">@Localizer["Actions"]</th>
             </tr>
@@ -41,8 +42,16 @@
             {
                 <tr>
                     <td>
-                        <img src="@StorageService.RelativePathToInternetUrl(item.User?.AvatarRelativePath ?? Aiursoft.EmployeeCenter.Entities.User.DefaultAvatarPath)?w=72&square=true" alt="@item.User?.DisplayName" class="rounded-circle" width="36" height="36" />
-                        <span class="ms-2">@item.User?.DisplayName</span>
+                        @if (item.User != null)
+                        {
+                            <img src="@StorageService.RelativePathToInternetUrl(item.User?.AvatarRelativePath ?? Aiursoft.EmployeeCenter.Entities.User.DefaultAvatarPath)?w=72&square=true" alt="@item.User?.DisplayName" class="rounded-circle" width="36" height="36" />
+                            <span class="ms-2">@item.User?.DisplayName</span>
+                        }
+                        else
+                        {
+                            <i class="align-middle me-2" data-lucide="globe"></i>
+                            <span class="ms-2">@Localizer["Shared"]</span>
+                        }
                     </td>
                     <td>@item.Name</td>
                     <td>
@@ -57,6 +66,16 @@
                             case Aiursoft.EmployeeCenter.Entities.ContractStatus.Invalid:
                                 <span class="badge bg-danger">@Localizer["Invalid"]</span>
                                 break;
+                        }
+                    </td>
+                    <td>
+                        @if (item.IsPublic)
+                        {
+                            <span class="badge bg-info">@Localizer["Public"]</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary">@Localizer["Private"]</span>
                         }
                     </td>
                     <td>@item.CreateTime.ToString("yyyy-MM-dd HH:mm")</td>

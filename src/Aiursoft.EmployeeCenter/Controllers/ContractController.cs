@@ -31,7 +31,8 @@ public class ContractController(
         if (user == null) return NotFound();
 
         var contracts = await context.Contracts
-            .Where(c => c.UserId == user.Id)
+            .Include(c => c.User)
+            .Where(c => c.UserId == user.Id || c.IsPublic)
             .OrderByDescending(c => c.CreateTime)
             .ToListAsync();
 

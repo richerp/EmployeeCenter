@@ -13,9 +13,8 @@ public class EditViewModel : UiStackLayoutViewModel
 
     public int Id { get; set; }
 
-    [Required]
-    [Display(Name = "User")]
-    public string UserId { get; set; } = string.Empty;
+    [Display(Name = "User (Optional)")]
+    public string? UserId { get; set; }
 
     public string? UserName { get; set; }
 
@@ -25,6 +24,9 @@ public class EditViewModel : UiStackLayoutViewModel
 
     [Display(Name = "New Contract File (Optional)")]
     public IFormFile? File { get; set; }
+
+    [Display(Name = "Is Public")]
+    public bool IsPublic { get; set; }
 
     [Required]
     public ContractStatus Status { get; set; }

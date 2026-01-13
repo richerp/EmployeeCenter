@@ -39,6 +39,13 @@
                         <select asp-for="Status" class="form-select" asp-items="Html.GetEnumSelectList<ContractStatus>()"></select>
                         <span asp-validation-for="Status" class="text-danger"></span>
                     </div>
+
+                    <div class="mb-3">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" asp-for="IsPublic">
+                            <label class="form-check-label" asp-for="IsPublic">@Localizer["Public Contract (Everyone can see)"]</label>
+                        </div>
+                    </div>
                 </div>
                 <div class="card-footer text-end">
                     <button type="submit" class="btn btn-primary">

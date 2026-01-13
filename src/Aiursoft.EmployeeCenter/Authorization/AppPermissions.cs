@@ -92,11 +92,11 @@ public class AppPermissions
                 localizer["Manage Assets"],
                 localizer["Allows managing the company's IT assets, including categories, models, and individual items."]),
             new(AppPermissionNames.CanViewContractHistory,
-                localizer["View Contract History"],
-                localizer["Allows viewing the contract history of any user."]),
+                localizer["View any company contract, including private ones"],
+                localizer["Allows viewing all company contracts, including those marked as private."]),
             new(AppPermissionNames.CanCreateContract,
-                localizer["Create Contract"],
-                localizer["Allows creating new contracts for any user."])
+                localizer["Create and manage company contracts"],
+                localizer["Allows creating and managing all contracts for the company."])
         ];
         return allPermission;
     }
