@@ -4,11 +4,13 @@ using Aiursoft.EmployeeCenter.Services;
 using Aiursoft.EmployeeCenter.Services.GitLab;
 using Aiursoft.UiStack.Navigation;
 using Aiursoft.WebTools.Attributes;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 
 namespace Aiursoft.EmployeeCenter.Controllers;
 
+[Authorize]
 [LimitPerMin]
 public class ProjectsController : Controller
 {

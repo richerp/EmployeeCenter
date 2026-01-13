@@ -138,7 +138,7 @@
   <data name="Manage Assets" xml:space="preserve">
     <value>Διαχείριση Περιουσιακών Στοιχείων</value>
   </data>
-  <data name="Manage Company Entities" xml:space="preserve">
+  <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Διαχείριση Εταιρικών Οντοτήτων</value>
   </data>
   <data name="Manage Leave" xml:space="preserve">

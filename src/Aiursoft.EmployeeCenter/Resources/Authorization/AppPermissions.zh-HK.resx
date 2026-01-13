@@ -129,8 +129,8 @@
   <data name="Manage Assets" xml:space="preserve">
     <value>管理資產</value>
   </data>
-  <data name="Manage Company Entities" xml:space="preserve">
-    <value>管理公司實體</value>
+  <data name="Manage Company Entity Information" xml:space="preserve">
+    <value>管理公司基本實體資訊</value>
   </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>管理假期</value>

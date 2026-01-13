@@ -86,7 +86,7 @@ public class AppPermissions
                 localizer["Print Certificates"],
                 localizer["Allows printing employment and income certificates for any employee."]),
             new(AppPermissionNames.CanManageCompanyEntities,
-                localizer["Manage Company Entities"],
+                localizer["Manage Company Entity Information"],
                 localizer["Allows creating, updating, and deleting company entity information."]),
             new(AppPermissionNames.CanManageAssets,
                 localizer["Manage Assets"],

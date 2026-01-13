@@ -138,7 +138,7 @@
   <data name="Manage Assets" xml:space="preserve">
     <value>자산 관리</value>
   </data>
-  <data name="Manage Company Entities" xml:space="preserve">
+  <data name="Manage Company Entity Information" xml:space="preserve">
     <value>회사 엔티티 관리</value>
   </data>
   <data name="Manage Leave" xml:space="preserve">

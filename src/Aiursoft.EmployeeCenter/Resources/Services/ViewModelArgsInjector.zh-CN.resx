@@ -318,6 +318,12 @@
   <data name="Report Line" xml:space="preserve">
     <value>汇报线</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>资源</value>
+  </data>
+  <data name="Company Entity Info" xml:space="preserve">
+    <value>公司实体信息</value>
+  </data>
   <data name="Restricted" xml:space="preserve">
     <value>受限</value>
   </data>
