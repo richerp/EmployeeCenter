@@ -120,7 +120,7 @@
   <data name="Manage Assets" xml:space="preserve">
     <value>Gestionar Activos</value>
   </data>
-  <data name="Manage Company Entities" xml:space="preserve">
+  <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Administrar entidades de la empresa</value>
   </data>
   <data name="Manage Leave" xml:space="preserve">

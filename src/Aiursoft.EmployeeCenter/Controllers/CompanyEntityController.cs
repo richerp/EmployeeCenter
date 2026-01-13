@@ -19,14 +19,13 @@ public class CompanyEntityController(
     UserManager<User> userManager) : Controller
 {
     [HttpGet]
-    [Authorize(Policy = AppPermissionNames.CanManageCompanyEntities)]
     [RenderInNavBar(
-        NavGroupName = "Administration",
-        NavGroupOrder = 5,
-        CascadedLinksGroupName = "Info",
+        NavGroupName = "Career",
+        NavGroupOrder = 1,
+        CascadedLinksGroupName = "Resources",
         CascadedLinksIcon = "briefcase",
-        CascadedLinksOrder = 1,
-        LinkText = "Company Entities",
+        CascadedLinksOrder = 6,
+        LinkText = "Company Entity Info",
         LinkOrder = 1)]
     public async Task<IActionResult> Index()
     {
@@ -41,7 +40,6 @@ public class CompanyEntityController(
     }
 
     [HttpGet]
-    [Authorize(Policy = AppPermissionNames.CanManageCompanyEntities)]
     public async Task<IActionResult> Details(int id)
     {
         var entity = await dbContext.CompanyEntities.FindAsync(id);

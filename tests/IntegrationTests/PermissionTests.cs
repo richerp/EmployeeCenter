@@ -126,7 +126,6 @@ public class PermissionTests
             "/Roles/Create",
             "/ManageOnboarding/Index",
             "/System/Index",
-            "/CompanyEntity/Index",
             "/ManageContract/Index",
             "/Assets/Index",
             "/Certificate/Admin"
@@ -155,6 +154,10 @@ public class PermissionTests
                 Assert.Fail($"URL {url} was accessible ({response.StatusCode}) for a normal user.");
             }
         }
+
+        // Test CompanyEntity/Index is accessible
+        var companyEntityResponse = await _http.GetAsync("/CompanyEntity/Index");
+        Assert.AreEqual(HttpStatusCode.OK, companyEntityResponse.StatusCode, "CompanyEntity/Index should be accessible for a normal user.");
 
         // Test SshKeys for another user (Admin)
         // SshKeysController returns Unauthorized() (401) manually.
