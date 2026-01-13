@@ -115,8 +115,4 @@ public class User : IdentityUser
     [Newtonsoft.Json.JsonIgnore]
     [InverseProperty(nameof(AssetHistory.Operator))]
     public IEnumerable<AssetHistory> AssetHistories { get; init; } = new List<AssetHistory>();
-
-    [Newtonsoft.Json.JsonIgnore]
-    [InverseProperty(nameof(Contract.User))]
-    public IEnumerable<Contract> Contracts { get; init; } = new List<Contract>();
 }

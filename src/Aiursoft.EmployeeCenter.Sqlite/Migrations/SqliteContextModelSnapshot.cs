@@ -393,13 +393,7 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.Property<int>("Status")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("UserId")
-                        .HasMaxLength(255)
-                        .HasColumnType("TEXT");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("Contracts");
                 });
@@ -1225,15 +1219,6 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Contract", b =>
-                {
-                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "User")
-                        .WithMany("Contracts")
-                        .HasForeignKey("UserId");
-
-                    b.Navigation("User");
-                });
-
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Incident", b =>
                 {
                     b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "IM")
@@ -1463,8 +1448,6 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.Navigation("AssetHistories");
 
                     b.Navigation("AssignedAssets");
-
-                    b.Navigation("Contracts");
 
                     b.Navigation("CreatedPasswords");
 

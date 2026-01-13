@@ -4,20 +4,19 @@
 
 <div class="row mb-2 mb-xl-3">
     <div class="col-auto d-none d-sm-block">
-        <h3>@Localizer["My Contracts"]</h3>
+        <h3>@Localizer["Contracts"]</h3>
     </div>
 </div>
 
 <div class="card">
     <div class="card-header">
         <h5 class="card-title">@Localizer["Contract History"]</h5>
-        <h6 class="card-subtitle text-muted">@Localizer["A list of all your contracts."]</h6>
+        <h6 class="card-subtitle text-muted">@Localizer["A list of all contract records."]</h6>
     </div>
     <div class="table-responsive">
         <table class="table table-hover mb-0">
             <thead>
             <tr>
-                <th>@Localizer["Owner"]</th>
                 <th>@Localizer["Name"]</th>
                 <th>@Localizer["Status"]</th>
                 <th>@Localizer["Created Time"]</th>
@@ -28,18 +27,6 @@
             @foreach (var item in Model.Contracts)
             {
                 <tr>
-                    <td>
-                        @if (item.User != null)
-                        {
-                            <img src="@StorageService.RelativePathToInternetUrl(item.User?.AvatarRelativePath ?? Aiursoft.EmployeeCenter.Entities.User.DefaultAvatarPath)?w=72&square=true" alt="@item.User?.DisplayName" class="rounded-circle" width="24" height="24" />
-                            <span class="ms-1">@item.User?.DisplayName</span>
-                        }
-                        else
-                        {
-                            <i class="align-middle me-1" data-lucide="globe"></i>
-                            <span class="ms-1">@Localizer["Shared"]</span>
-                        }
-                    </td>
                     <td>@item.Name</td>
                     <td>
                         @switch (item.Status)

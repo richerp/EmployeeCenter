@@ -7,7 +7,7 @@ public class IndexViewModel : UiStackLayoutViewModel
 {
     public IndexViewModel()
     {
-        PageTitle = "My Contracts";
+        PageTitle = "Contracts";
     }
 
     public IEnumerable<Contract> Contracts { get; set; } = new List<Contract>();

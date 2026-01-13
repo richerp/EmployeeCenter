@@ -1,8 +1,4 @@
 using System.Net;
-using Aiursoft.CSTools.Tools;
-using Aiursoft.DbTools;
-using Aiursoft.EmployeeCenter.Entities;
-using static Aiursoft.WebTools.Extends;
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 

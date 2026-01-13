@@ -1,13 +1,9 @@
 using System.Net;
 using System.Security.Claims;
-using Aiursoft.CSTools.Tools;
-using Aiursoft.DbTools;
 using Aiursoft.EmployeeCenter.Authorization;
-using Aiursoft.EmployeeCenter.Entities;
 // ReSharper disable RedundantUsingDirective
 using Microsoft.AspNetCore.Identity;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using static Aiursoft.WebTools.Extends;
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
