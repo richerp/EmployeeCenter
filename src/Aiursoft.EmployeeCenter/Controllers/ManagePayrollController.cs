@@ -66,7 +66,7 @@ public class ManagePayrollController(
         {
             Id = p.Id,
             OwnerId = p.OwnerId,
-            OwnerName = p.Owner?.UserName ?? string.Empty,
+            OwnerName = p.Owner.UserName ?? string.Empty,
             TargetMonth = p.TargetMonth,
             Content = p.Content,
             BaseSalary = p.BaseSalary,

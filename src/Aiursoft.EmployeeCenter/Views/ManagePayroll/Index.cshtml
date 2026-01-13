@@ -43,7 +43,8 @@
                     <option value="">@Localizer["All History"]</option>
                     @for (int i = DateTime.UtcNow.Year; i >= 2020; i--)
                     {
-                        <option value="@i">@i</option>
+                        var year = i;
+                        <option value="@year">@year</option>
                     }
                 </select>
             </div>
