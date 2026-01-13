@@ -238,6 +238,6 @@ public class ContractTests
         var privateCheckResponse = await _http.GetAsync("/Contract/Index");
         privateCheckResponse.EnsureSuccessStatusCode();
         var privateCheckHtml = await privateCheckResponse.Content.ReadAsStringAsync();
-        Assert.IsFalse(privateCheckHtml.Contains("Private Admin Contract"));
+        Assert.DoesNotContain("Private Admin Contract", privateCheckHtml);
     }
 }
