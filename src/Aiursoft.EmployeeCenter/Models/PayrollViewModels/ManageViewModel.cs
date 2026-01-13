@@ -11,4 +11,5 @@ public class ManageViewModel : UiStackLayoutViewModel
     }
 
     public List<Payroll> Payrolls { get; set; } = [];
+    public List<User> AllUsers { get; set; } = [];
 }

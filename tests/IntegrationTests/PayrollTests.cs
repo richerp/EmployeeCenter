@@ -164,5 +164,23 @@ public class PayrollTests
         detailsResponse.EnsureSuccessStatusCode();
         var detailsHtml = await detailsResponse.Content.ReadAsStringAsync();
         Assert.Contains("December Payroll", detailsHtml);
+
+        // 8. Log in as admin again to export payroll
+        await _http.GetAsync("/Account/LogOff");
+        loginToken = await GetAntiCsrfToken("/Account/Login");
+        await _http.PostAsync("/Account/Login", new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "EmailOrUserName", "admin" },
+            { "Password", "admin123" },
+            { "__RequestVerificationToken", loginToken }
+        }));
+
+        var exportResponse = await _http.GetAsync($"/ManagePayroll/Export?userId={userId}&year=2025");
+        exportResponse.EnsureSuccessStatusCode();
+        Assert.AreEqual("text/csv", exportResponse.Content.Headers.ContentType?.MediaType);
+        var csvContent = await exportResponse.Content.ReadAsStringAsync();
+        Assert.Contains(userId, csvContent);
+        Assert.Contains("5000", csvContent);
+        Assert.Contains("December Payroll", csvContent);
     }
 }
