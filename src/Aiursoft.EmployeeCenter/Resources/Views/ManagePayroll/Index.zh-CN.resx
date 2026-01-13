@@ -24,14 +24,29 @@
   <data name="Actions" xml:space="preserve">
     <value>操作</value>
   </data>
+  <data name="All History" xml:space="preserve">
+    <value>全部历史</value>
+  </data>
   <data name="All Payrolls" xml:space="preserve">
     <value>所有工资单</value>
+  </data>
+  <data name="All Users" xml:space="preserve">
+    <value>全部用户</value>
   </data>
   <data name="Created Time" xml:space="preserve">
     <value>创建时间</value>
   </data>
   <data name="Details" xml:space="preserve">
     <value>详情</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>导出</value>
+  </data>
+  <data name="Export payroll history to Excel (CSV)." xml:space="preserve">
+    <value>导出工资历史到 Excel (CSV)。</value>
+  </data>
+  <data name="Export Payrolls" xml:space="preserve">
+    <value>导出薪资单</value>
   </data>
   <data name="Issue new payroll" xml:space="preserve">
     <value>发放新工资单</value>
@@ -47,6 +62,9 @@
   </data>
   <data name="User" xml:space="preserve">
     <value>用户</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>年</value>
   </data>
 
 </root>

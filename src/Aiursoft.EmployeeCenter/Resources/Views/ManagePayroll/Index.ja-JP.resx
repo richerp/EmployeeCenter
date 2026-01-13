@@ -24,14 +24,29 @@
   <data name="Actions" xml:space="preserve">
     <value>操作</value>
   </data>
+  <data name="All History" xml:space="preserve">
+    <value>すべての履歴</value>
+  </data>
   <data name="All Payrolls" xml:space="preserve">
     <value>すべての給与明細</value>
+  </data>
+  <data name="All Users" xml:space="preserve">
+    <value>すべてのユーザー</value>
   </data>
   <data name="Created Time" xml:space="preserve">
     <value>作成日時</value>
   </data>
   <data name="Details" xml:space="preserve">
     <value>詳細</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>エクスポート</value>
+  </data>
+  <data name="Export payroll history to Excel (CSV)." xml:space="preserve">
+    <value>Excel (CSV) に給与履歴をエクスポートする。</value>
+  </data>
+  <data name="Export Payrolls" xml:space="preserve">
+    <value>給与一覧のエクスポート</value>
   </data>
   <data name="Issue new payroll" xml:space="preserve">
     <value>新しい給与明細を発行</value>
@@ -47,6 +62,9 @@
   </data>
   <data name="User" xml:space="preserve">
     <value>ユーザー</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>年</value>
   </data>
 
 </root>

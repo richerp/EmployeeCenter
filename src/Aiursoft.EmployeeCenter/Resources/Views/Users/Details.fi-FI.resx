@@ -93,6 +93,9 @@
   <data name="Legal Name" xml:space="preserve">
     <value>Lakisääteinen nimi</value>
   </data>
+  <data name="Manage Contracts" xml:space="preserve">
+    <value>Hallinnoi sopimuksia</value>
+  </data>
   <data name="Manage SSH Keys" xml:space="preserve">
     <value>Hallinnoi SSH-avaimia</value>
   </data>

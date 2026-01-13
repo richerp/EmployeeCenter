@@ -93,6 +93,9 @@
   <data name="Legal Name" xml:space="preserve">
     <value>Numele legal</value>
   </data>
+  <data name="Manage Contracts" xml:space="preserve">
+    <value>Gestionează contractele</value>
+  </data>
   <data name="Manage SSH Keys" xml:space="preserve">
     <value>Gestionați cheile SSH</value>
   </data>

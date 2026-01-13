@@ -24,14 +24,29 @@
   <data name="Actions" xml:space="preserve">
     <value>Åtgärder</value>
   </data>
+  <data name="All History" xml:space="preserve">
+    <value>All historik</value>
+  </data>
   <data name="All Payrolls" xml:space="preserve">
     <value>Alla löneutbetalningar</value>
+  </data>
+  <data name="All Users" xml:space="preserve">
+    <value>Alla användare</value>
   </data>
   <data name="Created Time" xml:space="preserve">
     <value>Skapad tid</value>
   </data>
   <data name="Details" xml:space="preserve">
     <value>Detaljer</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Exportera</value>
+  </data>
+  <data name="Export payroll history to Excel (CSV)." xml:space="preserve">
+    <value>Exportera lönehistorik till Excel (CSV).</value>
+  </data>
+  <data name="Export Payrolls" xml:space="preserve">
+    <value>Exportera löneutbetalningar</value>
   </data>
   <data name="Issue new payroll" xml:space="preserve">
     <value>Skapa ny löneutbetalning</value>
@@ -47,6 +62,9 @@
   </data>
   <data name="User" xml:space="preserve">
     <value>Användare</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>År</value>
   </data>
 
 </root>

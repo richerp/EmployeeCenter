@@ -24,14 +24,29 @@
   <data name="Actions" xml:space="preserve">
     <value>Tindakan</value>
   </data>
+  <data name="All History" xml:space="preserve">
+    <value>Semua Riwayat</value>
+  </data>
   <data name="All Payrolls" xml:space="preserve">
     <value>Semua Penggajian</value>
+  </data>
+  <data name="All Users" xml:space="preserve">
+    <value>Semua Pengguna</value>
   </data>
   <data name="Created Time" xml:space="preserve">
     <value>Waktu Dibuat</value>
   </data>
   <data name="Details" xml:space="preserve">
     <value>Detail</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Ekspor</value>
+  </data>
+  <data name="Export payroll history to Excel (CSV)." xml:space="preserve">
+    <value>Ekspor riwayat gaji ke Excel (CSV).</value>
+  </data>
+  <data name="Export Payrolls" xml:space="preserve">
+    <value>Ekspor Gaji</value>
   </data>
   <data name="Issue new payroll" xml:space="preserve">
     <value>Terbitkan slip gaji baru</value>
@@ -47,6 +62,9 @@
   </data>
   <data name="User" xml:space="preserve">
     <value>Pengguna</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>Tahun</value>
   </data>
 
 </root>

@@ -36,6 +36,9 @@
   <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
     <value>Tillåter skapande och hantering av påbörjandeuppgiftsmallar för nya anställda.</value>
   </data>
+  <data name="Allows creating new contracts for any user." xml:space="preserve">
+    <value>Tillåter att skapa nya avtal för vilken användare som helst.</value>
+  </data>
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Tillåter att skapa nya globala lösenord som kan delas med andra.</value>
   </data>
@@ -69,6 +72,9 @@
   <data name="Allows viewing system-level information and settings." xml:space="preserve">
     <value>Ger tillgång att visa systemnivåinformation och inställningar.</value>
   </data>
+  <data name="Allows viewing the contract history of any user." xml:space="preserve">
+    <value>Tillåter visning av kontraktshistorik för valfri användare.</value>
+  </data>
   <data name="Allows viewing the list of all users." xml:space="preserve">
     <value>Tillåter att se listan över alla användare.</value>
   </data>
@@ -89,6 +95,9 @@
   </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>Tilldela roller till användare</value>
+  </data>
+  <data name="Create Contract" xml:space="preserve">
+    <value>Skapa avtal</value>
   </data>
   <data name="Default permission for HR." xml:space="preserve">
     <value>Standardbehörighet för HR.</value>
@@ -146,6 +155,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>Starta om den här appen</value>
+  </data>
+  <data name="View Contract History" xml:space="preserve">
+    <value>Visa kontraktshistorik</value>
   </data>
   <data name="View Report Line" xml:space="preserve">
     <value>Visa rapportlinje</value>

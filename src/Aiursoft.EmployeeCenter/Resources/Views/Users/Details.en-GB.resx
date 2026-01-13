@@ -72,6 +72,9 @@
   <data name="Legal Name" xml:space="preserve">
     <value>Legal Name</value>
   </data>
+  <data name="Manage Contracts" xml:space="preserve">
+    <value>Manage Contracts</value>
+  </data>
   <data name="Manage SSH Keys" xml:space="preserve">
     <value>Manage SSH Keys</value>
   </data>

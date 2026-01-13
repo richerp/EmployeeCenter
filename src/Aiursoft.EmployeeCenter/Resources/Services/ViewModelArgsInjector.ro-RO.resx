@@ -108,6 +108,9 @@
   <data name="Confirm Delete" xml:space="preserve">
     <value>Confirma ștergerea</value>
   </data>
+  <data name="Contracts" xml:space="preserve">
+    <value>Contracte</value>
+  </data>
   <data name="Create Company Entity" xml:space="preserve">
     <value>Crează entitate companie</value>
   </data>
@@ -186,6 +189,9 @@
   <data name="Home" xml:space="preserve">
     <value>Acasă</value>
   </data>
+  <data name="HR" xml:space="preserve">
+    <value>RR</value>
+  </data>
   <data name="Images &amp; Files" xml:space="preserve">
     <value>Imagini și Fișiere</value>
   </data>
@@ -225,6 +231,9 @@
   <data name="Manage Assets" xml:space="preserve">
     <value>Gestionare active</value>
   </data>
+  <data name="Manage Contracts" xml:space="preserve">
+    <value>Gestionare contracte</value>
+  </data>
   <data name="Manage IT Assets" xml:space="preserve">
     <value>Gestionare active IT</value>
   </data>
@@ -248,6 +257,9 @@
   </data>
   <data name="My Assets" xml:space="preserve">
     <value>Activele Mele</value>
+  </data>
+  <data name="My Contracts" xml:space="preserve">
+    <value>Contractele Mele</value>
   </data>
   <data name="My IT Assets" xml:space="preserve">
     <value>Activele mele IT</value>

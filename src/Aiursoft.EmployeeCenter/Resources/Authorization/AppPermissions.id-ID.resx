@@ -36,6 +36,9 @@
   <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
     <value>Memungkinkan pembuatan dan pengelolaan templat tugas onboarding untuk karyawan baru.</value>
   </data>
+  <data name="Allows creating new contracts for any user." xml:space="preserve">
+    <value>Memungkinkan pembuatan kontrak baru untuk pengguna mana pun.</value>
+  </data>
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Memungkinkan pembuatan kata sandi global baru yang dapat dibagikan dengan orang lain.</value>
   </data>
@@ -69,6 +72,9 @@
   <data name="Allows viewing system-level information and settings." xml:space="preserve">
     <value>Memungkinkan melihat informasi dan pengaturan tingkat sistem.</value>
   </data>
+  <data name="Allows viewing the contract history of any user." xml:space="preserve">
+    <value>Memungkinkan melihat riwayat kontrak dari pengguna mana pun.</value>
+  </data>
   <data name="Allows viewing the list of all users." xml:space="preserve">
     <value>Memungkinkan melihat daftar semua pengguna.</value>
   </data>
@@ -89,6 +95,9 @@
   </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>Tetapkan Peran ke Pengguna</value>
+  </data>
+  <data name="Create Contract" xml:space="preserve">
+    <value>Buat Kontrak</value>
   </data>
   <data name="Default permission for HR." xml:space="preserve">
     <value>Izin default untuk HR.</value>
@@ -146,6 +155,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>Mulai Ulang Aplikasi Ini</value>
+  </data>
+  <data name="View Contract History" xml:space="preserve">
+    <value>Lihat Riwayat Kontrak</value>
   </data>
   <data name="View Report Line" xml:space="preserve">
     <value>Lihat Laporan Baris</value>

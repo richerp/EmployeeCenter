@@ -108,6 +108,9 @@
   <data name="Confirm Delete" xml:space="preserve">
     <value>Potwierdź usunięcie</value>
   </data>
+  <data name="Contracts" xml:space="preserve">
+    <value>Umowy</value>
+  </data>
   <data name="Create Company Entity" xml:space="preserve">
     <value>Utwórz jednostkę firmową</value>
   </data>
@@ -186,6 +189,9 @@
   <data name="Home" xml:space="preserve">
     <value>Strona główna</value>
   </data>
+  <data name="HR" xml:space="preserve">
+    <value>HR</value>
+  </data>
   <data name="Images &amp; Files" xml:space="preserve">
     <value>Obrazy i pliki</value>
   </data>
@@ -225,6 +231,9 @@
   <data name="Manage Assets" xml:space="preserve">
     <value>Zarządzaj zasobami</value>
   </data>
+  <data name="Manage Contracts" xml:space="preserve">
+    <value>Zarządzaj umowami</value>
+  </data>
   <data name="Manage IT Assets" xml:space="preserve">
     <value>Zarządzaj zasobami IT</value>
   </data>
@@ -248,6 +257,9 @@
   </data>
   <data name="My Assets" xml:space="preserve">
     <value>Moje zasoby</value>
+  </data>
+  <data name="My Contracts" xml:space="preserve">
+    <value>Moje kontrakty</value>
   </data>
   <data name="My IT Assets" xml:space="preserve">
     <value>Moje zasoby IT</value>

@@ -93,6 +93,9 @@
   <data name="Legal Name" xml:space="preserve">
     <value>Retningsnavn</value>
   </data>
+  <data name="Manage Contracts" xml:space="preserve">
+    <value>Håndtér kontrakter</value>
+  </data>
   <data name="Manage SSH Keys" xml:space="preserve">
     <value>Administrer SSH-nøgler</value>
   </data>

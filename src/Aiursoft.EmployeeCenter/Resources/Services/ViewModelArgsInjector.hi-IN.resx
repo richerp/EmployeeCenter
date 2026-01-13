@@ -108,6 +108,9 @@
   <data name="Confirm Delete" xml:space="preserve">
     <value>हटाने की पुष्टि करें</value>
   </data>
+  <data name="Contracts" xml:space="preserve">
+    <value>समझौते</value>
+  </data>
   <data name="Create Company Entity" xml:space="preserve">
     <value>कंपनी एंटिटी बनाएं</value>
   </data>
@@ -186,6 +189,9 @@
   <data name="Home" xml:space="preserve">
     <value>होम</value>
   </data>
+  <data name="HR" xml:space="preserve">
+    <value>एचआर</value>
+  </data>
   <data name="Images &amp; Files" xml:space="preserve">
     <value>चित्र और फाइलें</value>
   </data>
@@ -225,6 +231,9 @@
   <data name="Manage Assets" xml:space="preserve">
     <value>संपत्ति प्रबंधित करें</value>
   </data>
+  <data name="Manage Contracts" xml:space="preserve">
+    <value>संविदाओं का प्रबंधन करें</value>
+  </data>
   <data name="Manage IT Assets" xml:space="preserve">
     <value>प्रबंधित करें आईटी संपत्ति</value>
   </data>
@@ -248,6 +257,9 @@
   </data>
   <data name="My Assets" xml:space="preserve">
     <value>मेरी संपत्तियाँ</value>
+  </data>
+  <data name="My Contracts" xml:space="preserve">
+    <value>मेरे अनुबंध</value>
   </data>
   <data name="My IT Assets" xml:space="preserve">
     <value>मेरी आईटी संपत्ति</value>

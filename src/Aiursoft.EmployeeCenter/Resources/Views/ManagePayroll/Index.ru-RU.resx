@@ -24,14 +24,29 @@
   <data name="Actions" xml:space="preserve">
     <value>Действия</value>
   </data>
+  <data name="All History" xml:space="preserve">
+    <value>Вся история</value>
+  </data>
   <data name="All Payrolls" xml:space="preserve">
     <value>Все расчетные ведомости</value>
+  </data>
+  <data name="All Users" xml:space="preserve">
+    <value>Все пользователи</value>
   </data>
   <data name="Created Time" xml:space="preserve">
     <value>Время создания</value>
   </data>
   <data name="Details" xml:space="preserve">
     <value>Подробности</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Экспорт</value>
+  </data>
+  <data name="Export payroll history to Excel (CSV)." xml:space="preserve">
+    <value>Экспорт истории зарплат в Excel (CSV).</value>
+  </data>
+  <data name="Export Payrolls" xml:space="preserve">
+    <value>Экспорт зарплат</value>
   </data>
   <data name="Issue new payroll" xml:space="preserve">
     <value>Выдать новую ведомость</value>
@@ -47,6 +62,9 @@
   </data>
   <data name="User" xml:space="preserve">
     <value>Пользователь</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>Год</value>
   </data>
 
 </root>

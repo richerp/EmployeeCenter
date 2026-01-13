@@ -111,6 +111,9 @@
   <data name="Confirm Delete" xml:space="preserve">
     <value>確認刪除</value>
   </data>
+  <data name="Contracts" xml:space="preserve">
+    <value>合約</value>
+  </data>
   <data name="Create Company Entity" xml:space="preserve">
     <value>建立公司實體</value>
   </data>
@@ -189,6 +192,9 @@
   <data name="Home" xml:space="preserve">
     <value>首頁</value>
   </data>
+  <data name="HR" xml:space="preserve">
+    <value>人力資源</value>
+  </data>
   <data name="Images &amp; Files" xml:space="preserve">
     <value>圖片與檔案</value>
   </data>
@@ -228,6 +234,9 @@
   <data name="Manage Assets" xml:space="preserve">
     <value>管理資產</value>
   </data>
+  <data name="Manage Contracts" xml:space="preserve">
+    <value>管理合約</value>
+  </data>
   <data name="Manage IT Assets" xml:space="preserve">
     <value>管理IT資產</value>
   </data>
@@ -251,6 +260,9 @@
   </data>
   <data name="My Assets" xml:space="preserve">
     <value>我的資產</value>
+  </data>
+  <data name="My Contracts" xml:space="preserve">
+    <value>我的合約</value>
   </data>
   <data name="My IT Assets" xml:space="preserve">
     <value>我的IT資產</value>
