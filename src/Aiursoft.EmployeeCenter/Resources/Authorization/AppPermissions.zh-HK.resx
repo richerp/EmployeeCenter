@@ -36,9 +36,6 @@
   <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
     <value>容許建立及管理新員工入職任務範本。</value>
   </data>
-  <data name="Allows creating new contracts for any user." xml:space="preserve">
-    <value>容許為任何使用者創建新合約。</value>
-  </data>
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>允許創建可與他人共享的新全局密碼。</value>
   </data>
@@ -69,11 +66,17 @@
   <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
     <value>允許永久刪除用戶帳戶。</value>
   </data>
-  <data name="Allows viewing system-level information and settings." xml:space="preserve">
-    <value>允許查看系統級資訊和設定。</value>
+  <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
+    <value>允許查看公司的所有合約，包括標記為私密的合約。</value>
   </data>
-  <data name="Allows viewing the contract history of any user." xml:space="preserve">
-    <value>允許檢視任何用戶的合約歷史。</value>
+  <data name="View any company contract, including private ones" xml:space="preserve">
+    <value>查看公司的任意合約，包含私密合約</value>
+  </data>
+  <data name="Allows creating and managing all contracts for the company." xml:space="preserve">
+    <value>允許建立和管理公司的所有合約。</value>
+  </data>
+  <data name="Create and manage company contracts" xml:space="preserve">
+    <value>建立和管理公司的合約</value>
   </data>
   <data name="Allows viewing the list of all users." xml:space="preserve">
     <value>允許查看所有用戶列表。</value>
@@ -95,9 +98,6 @@
   </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>為用戶分配角色</value>
-  </data>
-  <data name="Create Contract" xml:space="preserve">
-    <value>建立合約</value>
   </data>
   <data name="Default permission for HR." xml:space="preserve">
     <value>HR的預設權限</value>
@@ -155,9 +155,6 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>重新啟動此應用程式</value>
-  </data>
-  <data name="View Contract History" xml:space="preserve">
-    <value>查看合約歷史</value>
   </data>
   <data name="View Report Line" xml:space="preserve">
     <value>查看匯報線</value>

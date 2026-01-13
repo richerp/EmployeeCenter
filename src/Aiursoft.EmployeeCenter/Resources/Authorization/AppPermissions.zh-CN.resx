@@ -104,6 +104,8 @@
     <value>为用户分配角色</value>
   </data>
   <data name="Delete Roles" xml:space="preserve">
+    <value>删除角色</value>
+  </data>
   <data name="Delete Users" xml:space="preserve">
     <value>删除用户</value>
   </data>
