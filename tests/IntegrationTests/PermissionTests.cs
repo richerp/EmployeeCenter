@@ -4,8 +4,8 @@ using Aiursoft.DbTools;
 using Aiursoft.EmployeeCenter.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Text.RegularExpressions;
-using Microsoft.Extensions.DependencyInjection;
 using Aiursoft.EmployeeCenter.Authorization;
+using static Aiursoft.WebTools.Extends;
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
@@ -34,7 +34,7 @@ public class PermissionTests
     [TestInitialize]
     public async Task CreateServer()
     {
-        _server = await Aiursoft.WebTools.Extends.AppAsync<Startup>([], port: _port);
+        _server = await AppAsync<Startup>([], port: _port);
         await _server.UpdateDbAsync<EmployeeCenterDbContext>();
         await _server.SeedAsync();
         await _server.StartAsync();
@@ -104,13 +104,10 @@ public class PermissionTests
         Assert.AreEqual(HttpStatusCode.Found, registerResponse.StatusCode);
 
         // Get User ID (useful for SshKey test)
-        string userId;
         string adminId;
         using (var scope = _server!.Services.CreateScope())
         {
             var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
-            var user = await db.Users.FirstAsync(u => u.UserName == userName);
-            userId = user.Id;
             var admin = await db.Users.FirstAsync(u => u.UserName == "admin"); // admin is seeded
             adminId = admin.Id;
         }
