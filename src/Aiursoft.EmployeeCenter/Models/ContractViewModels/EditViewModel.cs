@@ -1,7 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using Aiursoft.EmployeeCenter.Entities;
 using Aiursoft.UiStack.Layout;
-using Microsoft.AspNetCore.Http;
 
 namespace Aiursoft.EmployeeCenter.Models.ContractViewModels;
 
