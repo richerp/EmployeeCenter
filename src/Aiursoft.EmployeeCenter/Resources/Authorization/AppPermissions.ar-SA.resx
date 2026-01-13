@@ -36,6 +36,9 @@
   <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
     <value>يسمح بإنشاء وإدارة قوالب مهام بدء العمل للموظفين الجدد.</value>
   </data>
+  <data name="Allows creating new contracts for any user." xml:space="preserve">
+    <value>يُمكّن من إنشاء عقود جديدة لأي مستخدم.</value>
+  </data>
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>يسمح بإنشاء كلمات مرور عامة جديدة يمكن مشاركتها مع الآخرين.</value>
   </data>
@@ -69,6 +72,9 @@
   <data name="Allows viewing system-level information and settings." xml:space="preserve">
     <value>يسمح بعرض معلومات وإعدادات على مستوى النظام.</value>
   </data>
+  <data name="Allows viewing the contract history of any user." xml:space="preserve">
+    <value>يُسمح بعرض سجل العقود لأي مستخدم.</value>
+  </data>
   <data name="Allows viewing the list of all users." xml:space="preserve">
     <value>يسمح بعرض قائمة جميع المستخدمين.</value>
   </data>
@@ -89,6 +95,9 @@
   </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>تعيين الأدوار للمستخدمين</value>
+  </data>
+  <data name="Create Contract" xml:space="preserve">
+    <value>إنشاء عقد</value>
   </data>
   <data name="Default permission for HR." xml:space="preserve">
     <value>الإذن الافتراضي لقسم الموارد البشرية</value>
@@ -146,6 +155,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>إعادة تشغيل هذا التطبيق</value>
+  </data>
+  <data name="View Contract History" xml:space="preserve">
+    <value>عرض سجل العقود</value>
   </data>
   <data name="View Report Line" xml:space="preserve">
     <value>عرض خط التقارير</value>

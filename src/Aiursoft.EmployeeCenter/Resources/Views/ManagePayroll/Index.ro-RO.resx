@@ -24,14 +24,29 @@
   <data name="Actions" xml:space="preserve">
     <value>Acțiuni</value>
   </data>
+  <data name="All History" xml:space="preserve">
+    <value>Toate istoricul</value>
+  </data>
   <data name="All Payrolls" xml:space="preserve">
     <value>Toate salariile</value>
+  </data>
+  <data name="All Users" xml:space="preserve">
+    <value>Toți utilizatorii</value>
   </data>
   <data name="Created Time" xml:space="preserve">
     <value>Ora creării</value>
   </data>
   <data name="Details" xml:space="preserve">
     <value>Detalii</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="Export payroll history to Excel (CSV)." xml:space="preserve">
+    <value>Exportă istoricul salariilor în Excel (CSV).</value>
+  </data>
+  <data name="Export Payrolls" xml:space="preserve">
+    <value>Exportă salarii</value>
   </data>
   <data name="Issue new payroll" xml:space="preserve">
     <value>Emite o nouă fluturaș de salariu</value>
@@ -47,6 +62,9 @@
   </data>
   <data name="User" xml:space="preserve">
     <value>Utilizator</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>An</value>
   </data>
 
 </root>

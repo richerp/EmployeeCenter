@@ -111,6 +111,9 @@
   <data name="Confirm Delete" xml:space="preserve">
     <value>ยืนยันการลบ</value>
   </data>
+  <data name="Contracts" xml:space="preserve">
+    <value>สัญญา</value>
+  </data>
   <data name="Create Company Entity" xml:space="preserve">
     <value>สร้างหน่วยงานบริษัท</value>
   </data>
@@ -189,6 +192,9 @@
   <data name="Home" xml:space="preserve">
     <value>หน้าแรก</value>
   </data>
+  <data name="HR" xml:space="preserve">
+    <value>ทรัพยากรบุคคล</value>
+  </data>
   <data name="Images &amp; Files" xml:space="preserve">
     <value>รูปภาพ &amp; ไฟล์</value>
   </data>
@@ -228,6 +234,9 @@
   <data name="Manage Assets" xml:space="preserve">
     <value>จัดการสินทรัพย์</value>
   </data>
+  <data name="Manage Contracts" xml:space="preserve">
+    <value>จัดการสัญญา</value>
+  </data>
   <data name="Manage IT Assets" xml:space="preserve">
     <value>จัดการสินทรัพย์ไอที</value>
   </data>
@@ -251,6 +260,9 @@
   </data>
   <data name="My Assets" xml:space="preserve">
     <value>ทรัพย์สินของฉัน</value>
+  </data>
+  <data name="My Contracts" xml:space="preserve">
+    <value>สัญญาของฉัน</value>
   </data>
   <data name="My IT Assets" xml:space="preserve">
     <value>ทรัพย์สินไอทีของฉัน</value>

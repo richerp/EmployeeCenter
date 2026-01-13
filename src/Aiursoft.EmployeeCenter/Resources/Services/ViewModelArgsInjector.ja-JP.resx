@@ -111,6 +111,9 @@
   <data name="Confirm Delete" xml:space="preserve">
     <value>削除を確認する</value>
   </data>
+  <data name="Contracts" xml:space="preserve">
+    <value>契約</value>
+  </data>
   <data name="Create Company Entity" xml:space="preserve">
     <value>会社エンティティの作成</value>
   </data>
@@ -189,6 +192,9 @@
   <data name="Home" xml:space="preserve">
     <value>ホーム</value>
   </data>
+  <data name="HR" xml:space="preserve">
+    <value>人事</value>
+  </data>
   <data name="Images &amp; Files" xml:space="preserve">
     <value>画像とファイル</value>
   </data>
@@ -228,6 +234,9 @@
   <data name="Manage Assets" xml:space="preserve">
     <value>資産の管理</value>
   </data>
+  <data name="Manage Contracts" xml:space="preserve">
+    <value>契約を管理する</value>
+  </data>
   <data name="Manage IT Assets" xml:space="preserve">
     <value>IT資産の管理</value>
   </data>
@@ -251,6 +260,9 @@
   </data>
   <data name="My Assets" xml:space="preserve">
     <value>マイアセット</value>
+  </data>
+  <data name="My Contracts" xml:space="preserve">
+    <value>私の契約</value>
   </data>
   <data name="My IT Assets" xml:space="preserve">
     <value>マイ イット アセット</value>

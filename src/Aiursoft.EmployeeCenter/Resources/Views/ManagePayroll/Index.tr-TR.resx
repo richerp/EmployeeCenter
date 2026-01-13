@@ -24,14 +24,29 @@
   <data name="Actions" xml:space="preserve">
     <value>İşlemler</value>
   </data>
+  <data name="All History" xml:space="preserve">
+    <value>Tüm Geçmiş</value>
+  </data>
   <data name="All Payrolls" xml:space="preserve">
     <value>Tüm Bordrolar</value>
+  </data>
+  <data name="All Users" xml:space="preserve">
+    <value>Tüm Kullanıcılar</value>
   </data>
   <data name="Created Time" xml:space="preserve">
     <value>Oluşturulma Zamanı</value>
   </data>
   <data name="Details" xml:space="preserve">
     <value>Detaylar</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Dışa Aktar</value>
+  </data>
+  <data name="Export payroll history to Excel (CSV)." xml:space="preserve">
+    <value>Maaş geçmişini Excel (CSV) dosyasına aktar.</value>
+  </data>
+  <data name="Export Payrolls" xml:space="preserve">
+    <value>Maaşları İhracat Et</value>
   </data>
   <data name="Issue new payroll" xml:space="preserve">
     <value>Yeni bordro oluştur</value>
@@ -47,6 +62,9 @@
   </data>
   <data name="User" xml:space="preserve">
     <value>Kullanıcı</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>Yıl</value>
   </data>
 
 </root>

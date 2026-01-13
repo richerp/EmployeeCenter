@@ -111,6 +111,9 @@
   <data name="Confirm Delete" xml:space="preserve">
     <value>Xác nhận xóa</value>
   </data>
+  <data name="Contracts" xml:space="preserve">
+    <value>Hợp đồng</value>
+  </data>
   <data name="Create Company Entity" xml:space="preserve">
     <value>Tạo thực thể công ty</value>
   </data>
@@ -189,6 +192,9 @@
   <data name="Home" xml:space="preserve">
     <value>Trang Chủ</value>
   </data>
+  <data name="HR" xml:space="preserve">
+    <value>Nhân sự</value>
+  </data>
   <data name="Images &amp; Files" xml:space="preserve">
     <value>Hình ảnh &amp; Tập tin</value>
   </data>
@@ -228,6 +234,9 @@
   <data name="Manage Assets" xml:space="preserve">
     <value>Quản lý Tài sản</value>
   </data>
+  <data name="Manage Contracts" xml:space="preserve">
+    <value>Quản lý Hợp đồng</value>
+  </data>
   <data name="Manage IT Assets" xml:space="preserve">
     <value>Quản lý tài sản CNTT</value>
   </data>
@@ -251,6 +260,9 @@
   </data>
   <data name="My Assets" xml:space="preserve">
     <value>Tài sản của tôi</value>
+  </data>
+  <data name="My Contracts" xml:space="preserve">
+    <value>Hợp đồng của tôi</value>
   </data>
   <data name="My IT Assets" xml:space="preserve">
     <value>Tài sản CNTT của tôi</value>

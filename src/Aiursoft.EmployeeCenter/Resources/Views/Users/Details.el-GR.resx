@@ -93,6 +93,9 @@
   <data name="Legal Name" xml:space="preserve">
     <value>Νόμιμο Όνομα</value>
   </data>
+  <data name="Manage Contracts" xml:space="preserve">
+    <value>Διαχείριση Συμβάσεων</value>
+  </data>
   <data name="Manage SSH Keys" xml:space="preserve">
     <value>Διαχείριση Κλειδιών SSH</value>
   </data>

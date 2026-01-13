@@ -108,6 +108,9 @@
   <data name="Confirm Delete" xml:space="preserve">
     <value>Підтвердити видалення</value>
   </data>
+  <data name="Contracts" xml:space="preserve">
+    <value>Договори</value>
+  </data>
   <data name="Create Company Entity" xml:space="preserve">
     <value>Створити юридичну особу компанії</value>
   </data>
@@ -186,6 +189,9 @@
   <data name="Home" xml:space="preserve">
     <value>Головна</value>
   </data>
+  <data name="HR" xml:space="preserve">
+    <value>HR</value>
+  </data>
   <data name="Images &amp; Files" xml:space="preserve">
     <value>Зображення та файли</value>
   </data>
@@ -225,6 +231,9 @@
   <data name="Manage Assets" xml:space="preserve">
     <value>Керування активами</value>
   </data>
+  <data name="Manage Contracts" xml:space="preserve">
+    <value>Керування контрактами</value>
+  </data>
   <data name="Manage IT Assets" xml:space="preserve">
     <value>Керування IT-активами</value>
   </data>
@@ -248,6 +257,9 @@
   </data>
   <data name="My Assets" xml:space="preserve">
     <value>Мої активи</value>
+  </data>
+  <data name="My Contracts" xml:space="preserve">
+    <value>Мої контракти</value>
   </data>
   <data name="My IT Assets" xml:space="preserve">
     <value>Мої ІТ-активи</value>

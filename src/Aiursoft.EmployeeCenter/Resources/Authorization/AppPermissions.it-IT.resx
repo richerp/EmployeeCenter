@@ -36,6 +36,9 @@
   <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
     <value>Consente di creare e gestire modelli di compiti di onboarding per i nuovi dipendenti.</value>
   </data>
+  <data name="Allows creating new contracts for any user." xml:space="preserve">
+    <value>Permette la creazione di nuovi contratti per qualsiasi utente.</value>
+  </data>
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Permette di creare nuove password globali che possono essere condivise con altri.</value>
   </data>
@@ -69,6 +72,9 @@
   <data name="Allows viewing system-level information and settings." xml:space="preserve">
     <value>Consente di visualizzare informazioni e impostazioni a livello di sistema.</value>
   </data>
+  <data name="Allows viewing the contract history of any user." xml:space="preserve">
+    <value>Consente di visualizzare la cronologia dei contratti di qualsiasi utente.</value>
+  </data>
   <data name="Allows viewing the list of all users." xml:space="preserve">
     <value>Consente di visualizzare l&apos;elenco di tutti gli utenti.</value>
   </data>
@@ -89,6 +95,9 @@
   </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>Assegna Ruoli agli Utenti</value>
+  </data>
+  <data name="Create Contract" xml:space="preserve">
+    <value>Crea Contratto</value>
   </data>
   <data name="Default permission for HR." xml:space="preserve">
     <value>Permessi predefiniti per il personale</value>
@@ -146,6 +155,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>Riavvia Questa App</value>
+  </data>
+  <data name="View Contract History" xml:space="preserve">
+    <value>Visualizza la cronologia dei contratti</value>
   </data>
   <data name="View Report Line" xml:space="preserve">
     <value>Visualizza Riga Report</value>

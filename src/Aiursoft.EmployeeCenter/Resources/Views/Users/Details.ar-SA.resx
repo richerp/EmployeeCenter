@@ -93,6 +93,9 @@
   <data name="Legal Name" xml:space="preserve">
     <value>الاسم القانوني</value>
   </data>
+  <data name="Manage Contracts" xml:space="preserve">
+    <value>إدارة العقود</value>
+  </data>
   <data name="Manage SSH Keys" xml:space="preserve">
     <value>إدارة مفاتيح SSH</value>
   </data>

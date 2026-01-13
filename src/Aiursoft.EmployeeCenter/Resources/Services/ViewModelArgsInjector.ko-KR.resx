@@ -111,6 +111,9 @@
   <data name="Confirm Delete" xml:space="preserve">
     <value>삭제 확인</value>
   </data>
+  <data name="Contracts" xml:space="preserve">
+    <value>계약서</value>
+  </data>
   <data name="Create Company Entity" xml:space="preserve">
     <value>회사 엔티티 생성</value>
   </data>
@@ -189,6 +192,9 @@
   <data name="Home" xml:space="preserve">
     <value>홈</value>
   </data>
+  <data name="HR" xml:space="preserve">
+    <value>인사</value>
+  </data>
   <data name="Images &amp; Files" xml:space="preserve">
     <value>이미지 및 파일</value>
   </data>
@@ -228,6 +234,9 @@
   <data name="Manage Assets" xml:space="preserve">
     <value>자산 관리</value>
   </data>
+  <data name="Manage Contracts" xml:space="preserve">
+    <value>계약 관리</value>
+  </data>
   <data name="Manage IT Assets" xml:space="preserve">
     <value>IT 자산 관리</value>
   </data>
@@ -251,6 +260,9 @@
   </data>
   <data name="My Assets" xml:space="preserve">
     <value>내 자산</value>
+  </data>
+  <data name="My Contracts" xml:space="preserve">
+    <value>내 계약서</value>
   </data>
   <data name="My IT Assets" xml:space="preserve">
     <value>내 IT 자산</value>

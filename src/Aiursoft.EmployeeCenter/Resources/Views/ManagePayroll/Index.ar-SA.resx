@@ -24,14 +24,29 @@
   <data name="Actions" xml:space="preserve">
     <value>الإجراءات</value>
   </data>
+  <data name="All History" xml:space="preserve">
+    <value>الكل تاريخ</value>
+  </data>
   <data name="All Payrolls" xml:space="preserve">
     <value>جميع كشوف المرتبات</value>
+  </data>
+  <data name="All Users" xml:space="preserve">
+    <value>جميع المستخدمين</value>
   </data>
   <data name="Created Time" xml:space="preserve">
     <value>وقت الإنشاء</value>
   </data>
   <data name="Details" xml:space="preserve">
     <value>التفاصيل</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>تصدير</value>
+  </data>
+  <data name="Export payroll history to Excel (CSV)." xml:space="preserve">
+    <value>تصدير سجل الرواتب إلى إكسل (CSV).</value>
+  </data>
+  <data name="Export Payrolls" xml:space="preserve">
+    <value>تصدير الرواتب</value>
   </data>
   <data name="Issue new payroll" xml:space="preserve">
     <value>إصدار كشف راتب جديد</value>
@@ -47,6 +62,9 @@
   </data>
   <data name="User" xml:space="preserve">
     <value>المستخدم</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>السنة</value>
   </data>
 
 </root>

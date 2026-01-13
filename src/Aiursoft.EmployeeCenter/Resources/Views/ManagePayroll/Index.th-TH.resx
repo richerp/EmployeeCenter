@@ -24,14 +24,29 @@
   <data name="Actions" xml:space="preserve">
     <value>การดำเนินการ</value>
   </data>
+  <data name="All History" xml:space="preserve">
+    <value>ทั้งหมดในประวัติ</value>
+  </data>
   <data name="All Payrolls" xml:space="preserve">
     <value>เงินเดือนทั้งหมด</value>
+  </data>
+  <data name="All Users" xml:space="preserve">
+    <value>ทุกผู้ใช้</value>
   </data>
   <data name="Created Time" xml:space="preserve">
     <value>เวลาที่สร้าง</value>
   </data>
   <data name="Details" xml:space="preserve">
     <value>รายละเอียด</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>ส่งออก</value>
+  </data>
+  <data name="Export payroll history to Excel (CSV)." xml:space="preserve">
+    <value>ส่งออกประวัติเงินเดือนไปยัง Excel (CSV)</value>
+  </data>
+  <data name="Export Payrolls" xml:space="preserve">
+    <value>ส่งออกบัญชีเงินเดือน</value>
   </data>
   <data name="Issue new payroll" xml:space="preserve">
     <value>ออกใบแจ้งเงินเดือนใหม่</value>
@@ -47,6 +62,9 @@
   </data>
   <data name="User" xml:space="preserve">
     <value>ผู้ใช้</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>ปี</value>
   </data>
 
 </root>
