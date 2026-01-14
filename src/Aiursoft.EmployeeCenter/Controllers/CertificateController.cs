@@ -63,11 +63,11 @@ public class CertificateController(
     [RenderInNavBar(
         NavGroupName = "Administration",
         NavGroupOrder = 3,
-        CascadedLinksGroupName = "Print",
-        CascadedLinksIcon = "printer",
-        CascadedLinksOrder = 100,
-        LinkText = "Manage Printing",
-        LinkOrder = 1)]
+        CascadedLinksGroupName = "Legal",
+        CascadedLinksIcon = "scale",
+        CascadedLinksOrder = 5,
+        LinkText = "Certificate Print",
+        LinkOrder = 2)]
     public IActionResult Admin()
     {
         return this.StackView(new IndexViewModel());

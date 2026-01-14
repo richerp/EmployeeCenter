@@ -19,11 +19,11 @@ public class ManageOnboardingController(
     [RenderInNavBar(
         NavGroupName = "Administration",
         NavGroupOrder = 3,
-        CascadedLinksGroupName = "Manage Onboarding",
-        CascadedLinksIcon = "user-plus",
-        CascadedLinksOrder = 1,
-        LinkText = "Manage Tasks",
-        LinkOrder = 1)]
+        CascadedLinksGroupName = "Legal",
+        CascadedLinksIcon = "scale",
+        CascadedLinksOrder = 5,
+        LinkText = "Onboarding Process",
+        LinkOrder = 3)]
     public async Task<IActionResult> Index()
     {
         var tasks = await context.OnboardingTasks
