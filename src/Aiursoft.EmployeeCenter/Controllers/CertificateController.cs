@@ -58,21 +58,6 @@ public class CertificateController(
         });
     }
 
-    [HttpGet]
-    [Authorize(Policy = AppPermissionNames.CanPrintCertificates)]
-    [RenderInNavBar(
-        NavGroupName = "Administration",
-        NavGroupOrder = 3,
-        CascadedLinksGroupName = "Legal",
-        CascadedLinksIcon = "scale",
-        CascadedLinksOrder = 5,
-        LinkText = "Certificate Print",
-        LinkOrder = 2)]
-    public IActionResult Admin()
-    {
-        return this.StackView(new IndexViewModel());
-    }
-
     [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Print(CertificateType type, string lang, string? userId)

@@ -14,7 +14,7 @@
                     <h6 class="card-subtitle text-muted">@Localizer["Search for an employee to print their certificates."]</h6>
                 </div>
                 <div class="card-body">
-                    <form asp-action="Print" method="post" target="_blank">
+                    <form asp-controller="Certificate" asp-action="Print" method="post" target="_blank">
                         <div class="mb-3">
                             <label class="form-label">@Localizer["Employee"]</label>
                             <partial name="_UserSelector" model='("userId", "userName", "", "")' />
