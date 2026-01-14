@@ -102,6 +102,9 @@
   <data name="Company Entity Details" xml:space="preserve">
     <value>Détails de l&apos;entité de l&apos;entreprise</value>
   </data>
+  <data name="Company Entity Info" xml:space="preserve">
+    <value>Informations sur l&apos;entité de l&apos;entreprise</value>
+  </data>
   <data name="Company Name" xml:space="preserve">
     <value>Nom de l&apos;entreprise</value>
   </data>
@@ -318,6 +321,9 @@
   <data name="Report Line" xml:space="preserve">
     <value>Ligne de reporting</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Ressources</value>
+  </data>
   <data name="Restricted" xml:space="preserve">
     <value>Restreint</value>
   </data>
@@ -371,6 +377,9 @@
   </data>
   <data name="Vendors" xml:space="preserve">
     <value>Fournisseurs</value>
+  </data>
+  <data name="View Contracts" xml:space="preserve">
+    <value>Visualiser les contrats</value>
   </data>
 
 </root>

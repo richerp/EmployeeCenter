@@ -99,6 +99,9 @@
   <data name="Company Entity Details" xml:space="preserve">
     <value>تفاصيل الكيان المؤسسي</value>
   </data>
+  <data name="Company Entity Info" xml:space="preserve">
+    <value>معلومات الكيان المؤسسي</value>
+  </data>
   <data name="Company Name" xml:space="preserve">
     <value>اسم الشركة</value>
   </data>
@@ -315,6 +318,9 @@
   <data name="Report Line" xml:space="preserve">
     <value>خط الإبلاغ</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>الموارد</value>
+  </data>
   <data name="Restricted" xml:space="preserve">
     <value>مُقيّد</value>
   </data>
@@ -368,6 +374,9 @@
   </data>
   <data name="Vendors" xml:space="preserve">
     <value>الموردون</value>
+  </data>
+  <data name="View Contracts" xml:space="preserve">
+    <value>عرض العقود</value>
   </data>
 
 </root>

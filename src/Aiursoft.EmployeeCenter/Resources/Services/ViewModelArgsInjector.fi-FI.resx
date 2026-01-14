@@ -99,6 +99,9 @@
   <data name="Company Entity Details" xml:space="preserve">
     <value>Yrityksen yksikön tiedot</value>
   </data>
+  <data name="Company Entity Info" xml:space="preserve">
+    <value>Yrityksen yksikön tiedot</value>
+  </data>
   <data name="Company Name" xml:space="preserve">
     <value>Yrityksen nimi</value>
   </data>
@@ -315,6 +318,9 @@
   <data name="Report Line" xml:space="preserve">
     <value>Raporttirivi</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Resurssit</value>
+  </data>
   <data name="Restricted" xml:space="preserve">
     <value>Rajoitettu</value>
   </data>
@@ -368,6 +374,9 @@
   </data>
   <data name="Vendors" xml:space="preserve">
     <value>Toimittajat</value>
+  </data>
+  <data name="View Contracts" xml:space="preserve">
+    <value>Näytä sopimukset</value>
   </data>
 
 </root>

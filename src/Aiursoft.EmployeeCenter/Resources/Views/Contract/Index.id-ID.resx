@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="A list of all your contracts." xml:space="preserve">
+      <data name="A list of all contract records." xml:space="preserve">
+    <value>Daftar semua catatan kontrak.</value>
+  </data>
+  <data name="A list of all your contracts." xml:space="preserve">
     <value>Daftar semua kontrak Anda.</value>
   </data>
   <data name="Actions" xml:space="preserve">
@@ -29,6 +32,9 @@
   </data>
   <data name="Contract History" xml:space="preserve">
     <value>Riwayat Kontrak</value>
+  </data>
+  <data name="Contracts" xml:space="preserve">
+    <value>Kontrak</value>
   </data>
   <data name="Created Time" xml:space="preserve">
     <value>Waktu Dibuat</value>

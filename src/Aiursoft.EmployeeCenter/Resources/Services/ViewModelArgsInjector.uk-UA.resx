@@ -99,6 +99,9 @@
   <data name="Company Entity Details" xml:space="preserve">
     <value>Деталі компанії</value>
   </data>
+  <data name="Company Entity Info" xml:space="preserve">
+    <value>Інформація про компанію</value>
+  </data>
   <data name="Company Name" xml:space="preserve">
     <value>Назва компанії</value>
   </data>
@@ -315,6 +318,9 @@
   <data name="Report Line" xml:space="preserve">
     <value>Лінія звітів</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Ресурси</value>
+  </data>
   <data name="Restricted" xml:space="preserve">
     <value>Обмежений</value>
   </data>
@@ -368,6 +374,9 @@
   </data>
   <data name="Vendors" xml:space="preserve">
     <value>Постачальники</value>
+  </data>
+  <data name="View Contracts" xml:space="preserve">
+    <value>Переглянути контракти</value>
   </data>
 
 </root>

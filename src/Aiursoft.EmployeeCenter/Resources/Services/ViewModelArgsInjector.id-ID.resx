@@ -99,6 +99,9 @@
   <data name="Company Entity Details" xml:space="preserve">
     <value>Detail Entitas Perusahaan</value>
   </data>
+  <data name="Company Entity Info" xml:space="preserve">
+    <value>Info Entitas Perusahaan</value>
+  </data>
   <data name="Company Name" xml:space="preserve">
     <value>Nama Perusahaan</value>
   </data>
@@ -315,6 +318,9 @@
   <data name="Report Line" xml:space="preserve">
     <value>Laporan Baris</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Sumber Daya</value>
+  </data>
   <data name="Restricted" xml:space="preserve">
     <value>Terbatas</value>
   </data>
@@ -368,6 +374,9 @@
   </data>
   <data name="Vendors" xml:space="preserve">
     <value>Vendor</value>
+  </data>
+  <data name="View Contracts" xml:space="preserve">
+    <value>Lihat Kontrak</value>
   </data>
 
 </root>

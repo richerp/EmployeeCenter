@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="A list of all your contracts." xml:space="preserve">
+      <data name="A list of all contract records." xml:space="preserve">
+    <value>すべての契約記録のリスト。</value>
+  </data>
+  <data name="A list of all your contracts." xml:space="preserve">
     <value>すべての契約のリストです。</value>
   </data>
   <data name="Actions" xml:space="preserve">
@@ -29,6 +32,9 @@
   </data>
   <data name="Contract History" xml:space="preserve">
     <value>契約履歴</value>
+  </data>
+  <data name="Contracts" xml:space="preserve">
+    <value>契約</value>
   </data>
   <data name="Created Time" xml:space="preserve">
     <value>作成日時</value>
