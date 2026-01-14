@@ -102,6 +102,9 @@
   <data name="Company Entity Details" xml:space="preserve">
     <value>公司实体详情</value>
   </data>
+  <data name="Company Entity Info" xml:space="preserve">
+    <value>公司实体信息</value>
+  </data>
   <data name="Company Name" xml:space="preserve">
     <value>公司名称</value>
   </data>
@@ -321,9 +324,6 @@
   <data name="Resources" xml:space="preserve">
     <value>资源</value>
   </data>
-  <data name="Company Entity Info" xml:space="preserve">
-    <value>公司实体信息</value>
-  </data>
   <data name="Restricted" xml:space="preserve">
     <value>受限</value>
   </data>
@@ -377,6 +377,9 @@
   </data>
   <data name="Vendors" xml:space="preserve">
     <value>供应商</value>
+  </data>
+  <data name="View Contracts" xml:space="preserve">
+    <value>查看合同</value>
   </data>
 
 </root>

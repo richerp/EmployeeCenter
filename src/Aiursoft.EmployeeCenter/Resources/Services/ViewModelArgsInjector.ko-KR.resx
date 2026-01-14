@@ -102,6 +102,9 @@
   <data name="Company Entity Details" xml:space="preserve">
     <value>회사 엔티티 세부 정보</value>
   </data>
+  <data name="Company Entity Info" xml:space="preserve">
+    <value>회사 엔티티 정보</value>
+  </data>
   <data name="Company Name" xml:space="preserve">
     <value>회사 이름</value>
   </data>
@@ -318,6 +321,9 @@
   <data name="Report Line" xml:space="preserve">
     <value>보고선</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>자원</value>
+  </data>
   <data name="Restricted" xml:space="preserve">
     <value>제한됨</value>
   </data>
@@ -371,6 +377,9 @@
   </data>
   <data name="Vendors" xml:space="preserve">
     <value>공급업체</value>
+  </data>
+  <data name="View Contracts" xml:space="preserve">
+    <value>계약 보기</value>
   </data>
 
 </root>

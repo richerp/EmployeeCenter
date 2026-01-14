@@ -90,6 +90,9 @@
   <data name="Company Entity Details" xml:space="preserve">
     <value>Company Entity Details</value>
   </data>
+  <data name="Company Entity Info" xml:space="preserve">
+    <value>Company Entity Info</value>
+  </data>
   <data name="Company Name" xml:space="preserve">
     <value>Company Name</value>
   </data>
@@ -306,6 +309,9 @@
   <data name="Report Line" xml:space="preserve">
     <value>Report Line</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Resources</value>
+  </data>
   <data name="Restricted" xml:space="preserve">
     <value>Restricted</value>
   </data>
@@ -356,6 +362,9 @@
   </data>
   <data name="Vendors" xml:space="preserve">
     <value>Vendors</value>
+  </data>
+  <data name="View Contracts" xml:space="preserve">
+    <value>View Contracts</value>
   </data>
 
 </root>

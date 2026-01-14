@@ -102,6 +102,9 @@
   <data name="Company Entity Details" xml:space="preserve">
     <value>Chi tiết đơn vị công ty</value>
   </data>
+  <data name="Company Entity Info" xml:space="preserve">
+    <value>Thông tin Đơn vị Công ty</value>
+  </data>
   <data name="Company Name" xml:space="preserve">
     <value>Tên công ty</value>
   </data>
@@ -318,6 +321,9 @@
   <data name="Report Line" xml:space="preserve">
     <value>Dòng báo cáo</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Tài nguyên</value>
+  </data>
   <data name="Restricted" xml:space="preserve">
     <value>Hạn chế</value>
   </data>
@@ -371,6 +377,9 @@
   </data>
   <data name="Vendors" xml:space="preserve">
     <value>Nhà cung cấp</value>
+  </data>
+  <data name="View Contracts" xml:space="preserve">
+    <value>Xem Hợp đồng</value>
   </data>
 
 </root>

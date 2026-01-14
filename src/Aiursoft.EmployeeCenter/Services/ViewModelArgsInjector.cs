@@ -142,6 +142,10 @@ public class ViewModelArgsInjector(
         _ = localizer["HR"];
         _ = localizer["Manage Contracts"];
         _ = localizer["My Contracts"];
+    
+        _ = localizer["Company Entity Info"];
+        _ = localizer["Resources"];
+        _ = localizer["View Contracts"];
     }
 
     public void InjectSimple(

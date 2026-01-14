@@ -99,6 +99,9 @@
   <data name="Company Entity Details" xml:space="preserve">
     <value>Şirket Varlık Detayları</value>
   </data>
+  <data name="Company Entity Info" xml:space="preserve">
+    <value>Şirket Varlık Bilgisi</value>
+  </data>
   <data name="Company Name" xml:space="preserve">
     <value>Şirket Adı</value>
   </data>
@@ -315,6 +318,9 @@
   <data name="Report Line" xml:space="preserve">
     <value>Rapor Hattı</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Kaynaklar</value>
+  </data>
   <data name="Restricted" xml:space="preserve">
     <value>Kısıtlı</value>
   </data>
@@ -368,6 +374,9 @@
   </data>
   <data name="Vendors" xml:space="preserve">
     <value>Tedarikçiler</value>
+  </data>
+  <data name="View Contracts" xml:space="preserve">
+    <value>Sözleşmeleri Görüntüle</value>
   </data>
 
 </root>

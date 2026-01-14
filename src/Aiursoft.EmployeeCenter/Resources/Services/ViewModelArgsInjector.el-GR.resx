@@ -99,6 +99,9 @@
   <data name="Company Entity Details" xml:space="preserve">
     <value>Λεπτομέρειες Εταιρικής Οντότητας</value>
   </data>
+  <data name="Company Entity Info" xml:space="preserve">
+    <value>Πληροφορίες Εταιρικής Οντότητας</value>
+  </data>
   <data name="Company Name" xml:space="preserve">
     <value>Όνομα Εταιρείας</value>
   </data>
@@ -315,6 +318,9 @@
   <data name="Report Line" xml:space="preserve">
     <value>Γραμμή Αναφοράς</value>
   </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Πόροι</value>
+  </data>
   <data name="Restricted" xml:space="preserve">
     <value>Περιορισμένος</value>
   </data>
@@ -368,6 +374,9 @@
   </data>
   <data name="Vendors" xml:space="preserve">
     <value>Προμηθευτές</value>
+  </data>
+  <data name="View Contracts" xml:space="preserve">
+    <value>Προβολή Συμβάσεων</value>
   </data>
 
 </root>
