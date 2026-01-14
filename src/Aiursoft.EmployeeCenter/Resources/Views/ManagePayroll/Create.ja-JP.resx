@@ -27,6 +27,9 @@
   <data name="Administrative Fines" xml:space="preserve">
     <value>行政罰金</value>
   </data>
+  <data name="Are you absolutely sure?" xml:space="preserve">
+    <value>本当に確実ですか？</value>
+  </data>
   <data name="Attendance &amp; Penalties" xml:space="preserve">
     <value>勤怠・罰則</value>
   </data>
@@ -44,6 +47,9 @@
   </data>
   <data name="Bonus for no absence" xml:space="preserve">
     <value>無欠勤手当</value>
+  </data>
+  <data name="By clicking &apos;Confirm and Issue&apos;, you confirm that all values above are correct and compliant with the company policy." xml:space="preserve">
+    <value>「確認して発行」をクリックすることで、上記のすべての値が正しいこと、および会社の方針に準拠していることを確認したことになります。</value>
   </data>
   <data name="Calculated based on overtime hours" xml:space="preserve">
     <value>残業時間に基づいて計算</value>
@@ -75,6 +81,9 @@
   <data name="Contracted basic salary" xml:space="preserve">
     <value>契約基本給</value>
   </data>
+  <data name="CRITICAL CONFIRMATION REQUIRED" xml:space="preserve">
+    <value>重大な確認が必要です</value>
+  </data>
   <data name="Deductions" xml:space="preserve">
     <value>控除</value>
   </data>
@@ -86,6 +95,9 @@
   </data>
   <data name="Education, housing, etc." xml:space="preserve">
     <value>教育、住宅など</value>
+  </data>
+  <data name="Employee:" xml:space="preserve">
+    <value>従業員:</value>
   </data>
   <data name="Employee&apos;s account number" xml:space="preserve">
     <value>従業員の口座番号</value>
@@ -141,8 +153,14 @@
   <data name="Medical (Company)" xml:space="preserve">
     <value>医療保険（会社負担）</value>
   </data>
+  <data name="Month:" xml:space="preserve">
+    <value>月:</value>
+  </data>
   <data name="Monthly performance evaluation" xml:space="preserve">
     <value>月次業績評価</value>
+  </data>
+  <data name="No, let me check again" xml:space="preserve">
+    <value>いいえ、もう一度確認します</value>
   </data>
   <data name="Optional remarks..." xml:space="preserve">
     <value>任意の備考...</value>
@@ -158,6 +176,9 @@
   </data>
   <data name="Payroll Details" xml:space="preserve">
     <value>給与明細</value>
+  </data>
+  <data name="Payroll issuance is irreversible! Once issued, you cannot delete or modify it. Please verify the following information:" xml:space="preserve">
+    <value>給与計算の実行は取り消しできません！実行後は削除または変更ができません。以下の情報を確認してください：</value>
   </data>
   <data name="Pension" xml:space="preserve">
     <value>年金</value>
@@ -224,6 +245,9 @@
   </data>
   <data name="Work Injury (Company)" xml:space="preserve">
     <value>労災保険（会社負担分）</value>
+  </data>
+  <data name="Yes, Confirm and Issue!" xml:space="preserve">
+    <value>はい、確認して発行します！</value>
   </data>
 
 </root>

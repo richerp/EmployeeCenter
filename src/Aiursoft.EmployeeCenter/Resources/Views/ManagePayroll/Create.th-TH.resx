@@ -27,6 +27,9 @@
   <data name="Administrative Fines" xml:space="preserve">
     <value>ค่าปรับทางปกครอง</value>
   </data>
+  <data name="Are you absolutely sure?" xml:space="preserve">
+    <value>คุณแน่ใจหรือไม่ว่าจะทำแบบนี้?</value>
+  </data>
   <data name="Attendance &amp; Penalties" xml:space="preserve">
     <value>การเข้างาน &amp; การลงโทษ</value>
   </data>
@@ -44,6 +47,9 @@
   </data>
   <data name="Bonus for no absence" xml:space="preserve">
     <value>โบนัสการมาทำงานครบ</value>
+  </data>
+  <data name="By clicking &apos;Confirm and Issue&apos;, you confirm that all values above are correct and compliant with the company policy." xml:space="preserve">
+    <value>โดยการคลิกที่ &apos;ยืนยันและออก&apos;, คุณยืนยันว่าค่าทั้งหมดข้างต้นถูกต้องและสอดคล้องกับนโยบายของบริษัท</value>
   </data>
   <data name="Calculated based on overtime hours" xml:space="preserve">
     <value>คำนวณตามชั่วโมงการทำงานล่วงเวลา</value>
@@ -75,6 +81,9 @@
   <data name="Contracted basic salary" xml:space="preserve">
     <value>เงินเดือนพื้นฐานตามสัญญา</value>
   </data>
+  <data name="CRITICAL CONFIRMATION REQUIRED" xml:space="preserve">
+    <value>การยืนยันที่สำคัญจำเป็น</value>
+  </data>
   <data name="Deductions" xml:space="preserve">
     <value>การหัก</value>
   </data>
@@ -86,6 +95,9 @@
   </data>
   <data name="Education, housing, etc." xml:space="preserve">
     <value>การศึกษา, ที่อยู่อาศัย, เป็นต้น</value>
+  </data>
+  <data name="Employee:" xml:space="preserve">
+    <value>พนักงาน:</value>
   </data>
   <data name="Employee&apos;s account number" xml:space="preserve">
     <value>หมายเลขบัญชีของพนักงาน</value>
@@ -141,8 +153,14 @@
   <data name="Medical (Company)" xml:space="preserve">
     <value>ประกันสุขภาพ (บริษัท)</value>
   </data>
+  <data name="Month:" xml:space="preserve">
+    <value>เดือน:</value>
+  </data>
   <data name="Monthly performance evaluation" xml:space="preserve">
     <value>การประเมินผลงานรายเดือน</value>
+  </data>
+  <data name="No, let me check again" xml:space="preserve">
+    <value>ไม่ ฉันขอตรวจสอบอีกครั้ง</value>
   </data>
   <data name="Optional remarks..." xml:space="preserve">
     <value>หมายเหตุเพิ่มเติม (ถ้ามี)...</value>
@@ -158,6 +176,9 @@
   </data>
   <data name="Payroll Details" xml:space="preserve">
     <value>รายละเอียดเงินเดือน</value>
+  </data>
+  <data name="Payroll issuance is irreversible! Once issued, you cannot delete or modify it. Please verify the following information:" xml:space="preserve">
+    <value>การออกใบแจ้งหนี้เงินเดือนไม่สามารถย้อนกลับได้! หลังจากออกแล้ว คุณไม่สามารถลบหรือแก้ไขได้ กรุณาตรวจสอบข้อมูลต่อไปนี้:</value>
   </data>
   <data name="Pension" xml:space="preserve">
     <value>เงินบำนาญ</value>
@@ -224,6 +245,9 @@
   </data>
   <data name="Work Injury (Company)" xml:space="preserve">
     <value>ประกันการประสบอันตรายหรือเจ็บป่วยเนื่องจากการทำงาน (บริษัท)</value>
+  </data>
+  <data name="Yes, Confirm and Issue!" xml:space="preserve">
+    <value>ใช่, ยืนยันและออก!</value>
   </data>
 
 </root>

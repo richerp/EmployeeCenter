@@ -27,6 +27,9 @@
   <data name="Administrative Fines" xml:space="preserve">
     <value>行政罰款</value>
   </data>
+  <data name="Are you absolutely sure?" xml:space="preserve">
+    <value>你確定嗎？</value>
+  </data>
   <data name="Attendance &amp; Penalties" xml:space="preserve">
     <value>出勤與罰款</value>
   </data>
@@ -44,6 +47,9 @@
   </data>
   <data name="Bonus for no absence" xml:space="preserve">
     <value>全勤獎金</value>
+  </data>
+  <data name="By clicking &apos;Confirm and Issue&apos;, you confirm that all values above are correct and compliant with the company policy." xml:space="preserve">
+    <value>按一下「確認並發放」，即表示您確認以上所有數值均正確，並符合公司政策。</value>
   </data>
   <data name="Calculated based on overtime hours" xml:space="preserve">
     <value>根據加班時數計算</value>
@@ -75,6 +81,9 @@
   <data name="Contracted basic salary" xml:space="preserve">
     <value>合約基本薪金</value>
   </data>
+  <data name="CRITICAL CONFIRMATION REQUIRED" xml:space="preserve">
+    <value>緊急確認要求</value>
+  </data>
   <data name="Deductions" xml:space="preserve">
     <value>扣減項目</value>
   </data>
@@ -86,6 +95,9 @@
   </data>
   <data name="Education, housing, etc." xml:space="preserve">
     <value>教育、住房等</value>
+  </data>
+  <data name="Employee:" xml:space="preserve">
+    <value>員工：</value>
   </data>
   <data name="Employee&apos;s account number" xml:space="preserve">
     <value>員工帳戶號碼</value>
@@ -141,8 +153,14 @@
   <data name="Medical (Company)" xml:space="preserve">
     <value>醫療（公司）</value>
   </data>
+  <data name="Month:" xml:space="preserve">
+    <value>月份：</value>
+  </data>
   <data name="Monthly performance evaluation" xml:space="preserve">
     <value>每月表現評估</value>
+  </data>
+  <data name="No, let me check again" xml:space="preserve">
+    <value>唔，讓我再核對一次</value>
   </data>
   <data name="Optional remarks..." xml:space="preserve">
     <value>可選備註...</value>
@@ -158,6 +176,9 @@
   </data>
   <data name="Payroll Details" xml:space="preserve">
     <value>薪酬詳情</value>
+  </data>
+  <data name="Payroll issuance is irreversible! Once issued, you cannot delete or modify it. Please verify the following information:" xml:space="preserve">
+    <value>薪金發放後不可逆！一旦發放，您將無法刪除或修改。請核實以下資料：</value>
   </data>
   <data name="Pension" xml:space="preserve">
     <value>強積金</value>
@@ -224,6 +245,9 @@
   </data>
   <data name="Work Injury (Company)" xml:space="preserve">
     <value>工傷保險 (公司)</value>
+  </data>
+  <data name="Yes, Confirm and Issue!" xml:space="preserve">
+    <value>是，確認並發放！</value>
   </data>
 
 </root>

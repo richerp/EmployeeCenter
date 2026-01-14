@@ -27,6 +27,9 @@
   <data name="Administrative Fines" xml:space="preserve">
     <value>行政罚款</value>
   </data>
+  <data name="Are you absolutely sure?" xml:space="preserve">
+    <value>你确定吗？</value>
+  </data>
   <data name="Attendance &amp; Penalties" xml:space="preserve">
     <value>考勤与扣款</value>
   </data>
@@ -44,6 +47,9 @@
   </data>
   <data name="Bonus for no absence" xml:space="preserve">
     <value>全勤奖</value>
+  </data>
+  <data name="By clicking &apos;Confirm and Issue&apos;, you confirm that all values above are correct and compliant with the company policy." xml:space="preserve">
+    <value>点击“确认并发放”，即表示你确认上述所有数值正确且符合公司政策。</value>
   </data>
   <data name="Calculated based on overtime hours" xml:space="preserve">
     <value>根据加班时长计算</value>
@@ -75,6 +81,9 @@
   <data name="Contracted basic salary" xml:space="preserve">
     <value>合同基本工资</value>
   </data>
+  <data name="CRITICAL CONFIRMATION REQUIRED" xml:space="preserve">
+    <value>关键确认</value>
+  </data>
   <data name="Deductions" xml:space="preserve">
     <value>扣款</value>
   </data>
@@ -86,6 +95,9 @@
   </data>
   <data name="Education, housing, etc." xml:space="preserve">
     <value>教育、住房等</value>
+  </data>
+  <data name="Employee:" xml:space="preserve">
+    <value>员工：</value>
   </data>
   <data name="Employee&apos;s account number" xml:space="preserve">
     <value>员工账号</value>
@@ -141,8 +153,14 @@
   <data name="Medical (Company)" xml:space="preserve">
     <value>医疗保险（公司）</value>
   </data>
+  <data name="Month:" xml:space="preserve">
+    <value>月份：</value>
+  </data>
   <data name="Monthly performance evaluation" xml:space="preserve">
     <value>月度绩效考核</value>
+  </data>
+  <data name="No, let me check again" xml:space="preserve">
+    <value>不，让我再检查一下</value>
   </data>
   <data name="Optional remarks..." xml:space="preserve">
     <value>可选备注...</value>
@@ -158,6 +176,9 @@
   </data>
   <data name="Payroll Details" xml:space="preserve">
     <value>工资单详情</value>
+  </data>
+  <data name="Payroll issuance is irreversible! Once issued, you cannot delete or modify it. Please verify the following information:" xml:space="preserve">
+    <value>工资单发放是不可逆的！一旦发放，你将无法删除或修改。请核实以下信息：</value>
   </data>
   <data name="Pension" xml:space="preserve">
     <value>养老保险</value>
@@ -225,28 +246,8 @@
   <data name="Work Injury (Company)" xml:space="preserve">
     <value>工伤保险（公司）</value>
   </data>
-  <data name="CRITICAL CONFIRMATION REQUIRED" xml:space="preserve">
-    <value>关键确认</value>
-  </data>
-  <data name="Are you absolutely sure?" xml:space="preserve">
-    <value>你确定吗？</value>
-  </data>
-  <data name="Payroll issuance is irreversible! Once issued, you cannot delete or modify it. Please verify the following information:" xml:space="preserve">
-    <value>工资单发放是不可逆的！一旦发放，你将无法删除或修改。请核实以下信息：</value>
-  </data>
-  <data name="Employee:" xml:space="preserve">
-    <value>员工：</value>
-  </data>
-  <data name="Month:" xml:space="preserve">
-    <value>月份：</value>
-  </data>
-  <data name="By clicking &apos;Confirm and Issue&apos;, you confirm that all values above are correct and compliant with the company policy." xml:space="preserve">
-    <value>点击“确认并发放”，即表示你确认上述所有数值正确且符合公司政策。</value>
-  </data>
-  <data name="No, let me check again" xml:space="preserve">
-    <value>不，让我再检查一下</value>
-  </data>
   <data name="Yes, Confirm and Issue!" xml:space="preserve">
     <value>是的，确认并发放！</value>
   </data>
+
 </root>

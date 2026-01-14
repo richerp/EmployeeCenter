@@ -27,6 +27,9 @@
   <data name="Administrative Fines" xml:space="preserve">
     <value>Administrative Fines</value>
   </data>
+  <data name="Are you absolutely sure?" xml:space="preserve">
+    <value>Ви впевнені?</value>
+  </data>
   <data name="Attendance &amp; Penalties" xml:space="preserve">
     <value>Attendance &amp; Penalties</value>
   </data>
@@ -44,6 +47,9 @@
   </data>
   <data name="Bonus for no absence" xml:space="preserve">
     <value>Bonus for no absence</value>
+  </data>
+  <data name="By clicking &apos;Confirm and Issue&apos;, you confirm that all values above are correct and compliant with the company policy." xml:space="preserve">
+    <value>Натискаючи на «Підтвердити та виписати», ви підтверджуєте, що всі вищезазначені значення є правильними та відповідають політиці компанії.</value>
   </data>
   <data name="Calculated based on overtime hours" xml:space="preserve">
     <value>Calculated based on overtime hours</value>
@@ -75,6 +81,9 @@
   <data name="Contracted basic salary" xml:space="preserve">
     <value>Contracted basic salary</value>
   </data>
+  <data name="CRITICAL CONFIRMATION REQUIRED" xml:space="preserve">
+    <value>КРИТИЧНЕ ПІДТВЕРДЖЕННЯ ОБОВ&apos;ЯЗКОВЕ</value>
+  </data>
   <data name="Deductions" xml:space="preserve">
     <value>Deductions</value>
   </data>
@@ -86,6 +95,9 @@
   </data>
   <data name="Education, housing, etc." xml:space="preserve">
     <value>Education, housing, etc.</value>
+  </data>
+  <data name="Employee:" xml:space="preserve">
+    <value>Працівник:</value>
   </data>
   <data name="Employee&apos;s account number" xml:space="preserve">
     <value>Employee&apos;s account number</value>
@@ -141,8 +153,14 @@
   <data name="Medical (Company)" xml:space="preserve">
     <value>Medical (Company)</value>
   </data>
+  <data name="Month:" xml:space="preserve">
+    <value>Місяць:</value>
+  </data>
   <data name="Monthly performance evaluation" xml:space="preserve">
     <value>Monthly performance review</value>
+  </data>
+  <data name="No, let me check again" xml:space="preserve">
+    <value>Ні, дозвольте ще раз перевірити</value>
   </data>
   <data name="Optional remarks..." xml:space="preserve">
     <value>Optional remarks...</value>
@@ -158,6 +176,9 @@
   </data>
   <data name="Payroll Details" xml:space="preserve">
     <value>Деталі розрахунку</value>
+  </data>
+  <data name="Payroll issuance is irreversible! Once issued, you cannot delete or modify it. Please verify the following information:" xml:space="preserve">
+    <value>Видача заробітної плати є незворотною! Після видачі ви не зможете видалити або змінити її. Будь ласка, перевірте наступну інформацію:</value>
   </data>
   <data name="Pension" xml:space="preserve">
     <value>Pension</value>
@@ -224,6 +245,9 @@
   </data>
   <data name="Work Injury (Company)" xml:space="preserve">
     <value>Work Injury (Company)</value>
+  </data>
+  <data name="Yes, Confirm and Issue!" xml:space="preserve">
+    <value>Так, підтвердити і видати!</value>
   </data>
 
 </root>

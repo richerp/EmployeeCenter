@@ -57,6 +57,9 @@
   <data name="Asset Models" xml:space="preserve">
     <value>資產型號</value>
   </data>
+  <data name="Assets" xml:space="preserve">
+    <value>資產</value>
+  </data>
   <data name="Bank Info" xml:space="preserve">
     <value>銀行資訊</value>
   </data>
@@ -77,6 +80,9 @@
   </data>
   <data name="Certificate of Income" xml:space="preserve">
     <value>所得證明</value>
+  </data>
+  <data name="Certificate Print" xml:space="preserve">
+    <value>列印證明</value>
   </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>變更大頭貼</value>
@@ -107,6 +113,9 @@
   </data>
   <data name="Company Name" xml:space="preserve">
     <value>公司名稱</value>
+  </data>
+  <data name="Company Public Contracts" xml:space="preserve">
+    <value>公司公開合約</value>
   </data>
   <data name="Company Type" xml:space="preserve">
     <value>公司類型</value>
@@ -213,6 +222,9 @@
   <data name="Leave Management" xml:space="preserve">
     <value>休假管理</value>
   </data>
+  <data name="Legal" xml:space="preserve">
+    <value>法律</value>
+  </data>
   <data name="Legal Rep" xml:space="preserve">
     <value>法定代理人</value>
   </data>
@@ -285,6 +297,9 @@
   <data name="Onboarding" xml:space="preserve">
     <value>新進人員訓練</value>
   </data>
+  <data name="Onboarding Process" xml:space="preserve">
+    <value>新進人員流程</value>
+  </data>
   <data name="Password Details" xml:space="preserve">
     <value>密碼詳情</value>
   </data>
@@ -347,6 +362,9 @@
   </data>
   <data name="Shared Info" xml:space="preserve">
     <value>共用資訊</value>
+  </data>
+  <data name="Shared Passwords" xml:space="preserve">
+    <value>共用密碼</value>
   </data>
   <data name="Sign out" xml:space="preserve">
     <value>登出</value>

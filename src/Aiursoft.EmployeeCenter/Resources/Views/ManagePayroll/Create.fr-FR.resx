@@ -27,6 +27,9 @@
   <data name="Administrative Fines" xml:space="preserve">
     <value>Amendes administratives</value>
   </data>
+  <data name="Are you absolutely sure?" xml:space="preserve">
+    <value>Êtes-vous absolument sûr ?</value>
+  </data>
   <data name="Attendance &amp; Penalties" xml:space="preserve">
     <value>Présence &amp; Pénalités</value>
   </data>
@@ -44,6 +47,9 @@
   </data>
   <data name="Bonus for no absence" xml:space="preserve">
     <value>Prime pour absence zéro</value>
+  </data>
+  <data name="By clicking &apos;Confirm and Issue&apos;, you confirm that all values above are correct and compliant with the company policy." xml:space="preserve">
+    <value>En cliquant sur « Confirmer et émettre », vous confirmez que toutes les valeurs ci-dessus sont correctes et conformes à la politique de l&apos;entreprise.</value>
   </data>
   <data name="Calculated based on overtime hours" xml:space="preserve">
     <value>Calculé sur la base des heures supplémentaires</value>
@@ -75,6 +81,9 @@
   <data name="Contracted basic salary" xml:space="preserve">
     <value>Salaire de base contractuel</value>
   </data>
+  <data name="CRITICAL CONFIRMATION REQUIRED" xml:space="preserve">
+    <value>CONFIRMATION CRITIQUE REQUISE</value>
+  </data>
   <data name="Deductions" xml:space="preserve">
     <value>Retenues</value>
   </data>
@@ -86,6 +95,9 @@
   </data>
   <data name="Education, housing, etc." xml:space="preserve">
     <value>Éducation, logement, etc.</value>
+  </data>
+  <data name="Employee:" xml:space="preserve">
+    <value>Employé :</value>
   </data>
   <data name="Employee&apos;s account number" xml:space="preserve">
     <value>Numéro de compte de l&apos;employé</value>
@@ -141,8 +153,14 @@
   <data name="Medical (Company)" xml:space="preserve">
     <value>Médical (Entreprise)</value>
   </data>
+  <data name="Month:" xml:space="preserve">
+    <value>Mois:</value>
+  </data>
   <data name="Monthly performance evaluation" xml:space="preserve">
     <value>Évaluation mensuelle des performances</value>
+  </data>
+  <data name="No, let me check again" xml:space="preserve">
+    <value>Non, je veux vérifier à nouveau</value>
   </data>
   <data name="Optional remarks..." xml:space="preserve">
     <value>Remarques facultatives...</value>
@@ -158,6 +176,9 @@
   </data>
   <data name="Payroll Details" xml:space="preserve">
     <value>Détails de la paie</value>
+  </data>
+  <data name="Payroll issuance is irreversible! Once issued, you cannot delete or modify it. Please verify the following information:" xml:space="preserve">
+    <value>La mise en œuvre de la paie est irréversible ! Une fois émise, vous ne pouvez pas la supprimer ni la modifier. Veuillez vérifier les informations suivantes :</value>
   </data>
   <data name="Pension" xml:space="preserve">
     <value>Retraite</value>
@@ -224,6 +245,9 @@
   </data>
   <data name="Work Injury (Company)" xml:space="preserve">
     <value>Accident du travail (Entreprise)</value>
+  </data>
+  <data name="Yes, Confirm and Issue!" xml:space="preserve">
+    <value>Oui, Confirmer et Émettre !</value>
   </data>
 
 </root>
