@@ -211,13 +211,65 @@
                     </div>
                 </div>
                 <div class="card-footer text-end">
-                    <button type="submit" class="btn btn-primary btn-lg">
+                    <button type="button" id="submitButton" class="btn btn-primary btn-lg">
                         <i class="align-middle me-2" data-lucide="check-circle"></i> @Localizer["Issue Payroll"]
                     </button>
                     <a asp-action="Index" class="btn btn-light btn-lg">@Localizer["Cancel"]</a>
                 </div>
             </div>
         </form>
+    </div>
+</div>
+
+<div class="modal fade" id="confirmModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-danger text-white">
+                <h5 class="modal-title"><i class="align-middle me-2" data-lucide="alert-triangle"></i> @Localizer["CRITICAL CONFIRMATION REQUIRED"]</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <div class="mb-4 mt-3">
+                    <i class="text-danger" data-lucide="alert-octagon" style="width: 64px; height: 64px;"></i>
+                </div>
+                <h3 class="text-danger fw-bold mb-3">@Localizer["Are you absolutely sure?"]</h3>
+                <p class="fs-5 mb-4">@Localizer["Payroll issuance is irreversible! Once issued, you cannot delete or modify it. Please verify the following information:"]</p>
+
+                <div class="bg-light p-4 rounded border mb-4">
+                    <div class="row text-start mb-3">
+                        <div class="col-sm-4 fw-bold">@Localizer["Employee:"]</div>
+                        <div class="col-sm-8" id="modalUserName"></div>
+                    </div>
+                    <div class="row text-start mb-3">
+                        <div class="col-sm-4 fw-bold">@Localizer["Month:"]</div>
+                        <div class="col-sm-8" id="modalMonth"></div>
+                    </div>
+                    <hr />
+                    <div class="d-flex align-items-center justify-content-center flex-wrap text-center">
+                        <div class="p-2 border rounded bg-white m-1"><span id="modalTotalEarnings">0.00</span><br /><small>@Localizer["Total Earnings"]</small></div>
+                        <div class="p-2 m-1 fw-bold">+</div>
+                        <div class="p-2 border rounded bg-danger text-white m-1"><span id="modalDeductions">0.00</span><br /><small>@Localizer["Deductions"]</small></div>
+                        <div class="p-2 m-1 fw-bold">-</div>
+                        <div class="p-2 border rounded bg-warning m-1"><span id="modalPersonalInsurance">0.00</span><br /><small>@Localizer["Personal Insurance"]</small></div>
+                        <div class="p-2 m-1 fw-bold">-</div>
+                        <div class="p-2 border rounded bg-secondary text-white m-1"><span id="modalIncomeTax">0.00</span><br /><small>@Localizer["Income Tax"]</small></div>
+                        <div class="p-2 m-1 fw-bold">=</div>
+                        <div class="p-2 border rounded bg-success text-white m-1 fw-bold"><span class="fs-4" id="modalNetSalary">0.00</span><br /><small>@Localizer["Actual Salary (Net)"]</small></div>
+                    </div>
+                </div>
+
+                <div class="alert alert-warning">
+                    <i class="align-middle me-2" data-lucide="info"></i>
+                    @Localizer["By clicking 'Confirm and Issue', you confirm that all values above are correct and compliant with the company policy."]
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light btn-lg" data-bs-dismiss="modal">@Localizer["No, let me check again"]</button>
+                <button type="button" id="finalConfirmButton" class="btn btn-danger btn-lg">
+                    <i class="align-middle me-2" data-lucide="check-circle"></i> @Localizer["Yes, Confirm and Issue!"]
+                </button>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -323,5 +375,53 @@
 
         // Initial calculation
         calculate();
+
+        // Prevent Enter key from submitting the form
+        document.getElementById('payrollForm').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                return false;
+            }
+        });
+
+        document.getElementById('submitButton').addEventListener('click', function() {
+            const form = document.getElementById('payrollForm');
+            
+            // Check validation (Support both jQuery validation and native validation)
+            if (window.jQuery && typeof jQuery.fn.valid === 'function') {
+                if (!jQuery(form).valid()) {
+                    return;
+                }
+            } else if (typeof form.checkValidity === 'function') {
+                if (!form.checkValidity()) {
+                    form.reportValidity();
+                    return;
+                }
+            }
+
+            // Fill modal data
+            const userSelect = document.getElementById('userSelect');
+            document.getElementById('modalUserName').innerText = userSelect.options[userSelect.selectedIndex].text;
+            document.getElementById('modalMonth').innerText = document.getElementById('TargetMonth').value;
+            
+            document.getElementById('modalTotalEarnings').innerText = document.getElementById('totalEarnings').value;
+            
+            const lateEarly = parseFloat(document.getElementById('LateEarly').value) || 0;
+            const sickLeave = parseFloat(document.getElementById('SickLeave').value) || 0;
+            const administrativeFines = parseFloat(document.getElementById('AdministrativeFines').value) || 0;
+            document.getElementById('modalDeductions').innerText = (lateEarly + sickLeave + administrativeFines).toFixed(2);
+            
+            document.getElementById('modalPersonalInsurance').innerText = document.getElementById('totalPersonalInsurance').value;
+            document.getElementById('modalIncomeTax').innerText = document.getElementById('PersonalIncomeTax').value;
+            document.getElementById('modalNetSalary').innerText = document.getElementById('TotalAmount').value;
+
+            // Show modal
+            const confirmModal = new bootstrap.Modal(document.getElementById('confirmModal'));
+            confirmModal.show();
+        });
+
+        document.getElementById('finalConfirmButton').addEventListener('click', function() {
+            document.getElementById('payrollForm').submit();
+        });
     </script>
 }@* ReSharper restore Razor.ResourceNotResolved *@
