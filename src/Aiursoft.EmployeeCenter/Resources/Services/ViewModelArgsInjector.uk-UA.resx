@@ -54,6 +54,9 @@
   <data name="Asset Models" xml:space="preserve">
     <value>Моделі активів</value>
   </data>
+  <data name="Assets" xml:space="preserve">
+    <value>Майно</value>
+  </data>
   <data name="Bank Info" xml:space="preserve">
     <value>Банківська інформація</value>
   </data>
@@ -74,6 +77,9 @@
   </data>
   <data name="Certificate of Income" xml:space="preserve">
     <value>Свідоцтво про доход</value>
+  </data>
+  <data name="Certificate Print" xml:space="preserve">
+    <value>Друк сертифіката</value>
   </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Змінити аватар</value>
@@ -104,6 +110,9 @@
   </data>
   <data name="Company Name" xml:space="preserve">
     <value>Назва компанії</value>
+  </data>
+  <data name="Company Public Contracts" xml:space="preserve">
+    <value>Компанійні публічні контракти</value>
   </data>
   <data name="Company Type" xml:space="preserve">
     <value>Тип компанії</value>
@@ -210,6 +219,9 @@
   <data name="Leave Management" xml:space="preserve">
     <value>Керування відпустками</value>
   </data>
+  <data name="Legal" xml:space="preserve">
+    <value>Юридичні</value>
+  </data>
   <data name="Legal Rep" xml:space="preserve">
     <value>Юридична особа</value>
   </data>
@@ -282,6 +294,9 @@
   <data name="Onboarding" xml:space="preserve">
     <value>Вступ</value>
   </data>
+  <data name="Onboarding Process" xml:space="preserve">
+    <value>Процес онбордингу</value>
+  </data>
   <data name="Password Details" xml:space="preserve">
     <value>Деталі пароля</value>
   </data>
@@ -344,6 +359,9 @@
   </data>
   <data name="Shared Info" xml:space="preserve">
     <value>Спільна інформація</value>
+  </data>
+  <data name="Shared Passwords" xml:space="preserve">
+    <value>Спільні паролі</value>
   </data>
   <data name="Sign out" xml:space="preserve">
     <value>Вийти</value>

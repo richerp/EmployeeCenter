@@ -27,6 +27,9 @@
   <data name="Administrative Fines" xml:space="preserve">
     <value>Phạt hành chính</value>
   </data>
+  <data name="Are you absolutely sure?" xml:space="preserve">
+    <value>Bạn có chắc chắn không?</value>
+  </data>
   <data name="Attendance &amp; Penalties" xml:space="preserve">
     <value>Chấm công &amp; Phạt</value>
   </data>
@@ -44,6 +47,9 @@
   </data>
   <data name="Bonus for no absence" xml:space="preserve">
     <value>Thưởng chuyên cần</value>
+  </data>
+  <data name="By clicking &apos;Confirm and Issue&apos;, you confirm that all values above are correct and compliant with the company policy." xml:space="preserve">
+    <value>Bằng cách nhấp vào &apos;Xác nhận và Phát hành&apos;, bạn xác nhận rằng tất cả các giá trị ở trên là chính xác và tuân thủ chính sách của công ty.</value>
   </data>
   <data name="Calculated based on overtime hours" xml:space="preserve">
     <value>Tính toán dựa trên số giờ làm thêm</value>
@@ -75,6 +81,9 @@
   <data name="Contracted basic salary" xml:space="preserve">
     <value>Lương cơ bản theo hợp đồng</value>
   </data>
+  <data name="CRITICAL CONFIRMATION REQUIRED" xml:space="preserve">
+    <value>XÁC NHẬN QUAN TRỌNG BẮT BUỘC</value>
+  </data>
   <data name="Deductions" xml:space="preserve">
     <value>Các khoản khấu trừ</value>
   </data>
@@ -86,6 +95,9 @@
   </data>
   <data name="Education, housing, etc." xml:space="preserve">
     <value>Giáo dục, nhà ở, v.v.</value>
+  </data>
+  <data name="Employee:" xml:space="preserve">
+    <value>Nhân viên:</value>
   </data>
   <data name="Employee&apos;s account number" xml:space="preserve">
     <value>Số tài khoản nhân viên</value>
@@ -141,8 +153,14 @@
   <data name="Medical (Company)" xml:space="preserve">
     <value>Bảo hiểm Y tế (Công ty)</value>
   </data>
+  <data name="Month:" xml:space="preserve">
+    <value>Tháng:</value>
+  </data>
   <data name="Monthly performance evaluation" xml:space="preserve">
     <value>Đánh giá hiệu suất hàng tháng</value>
+  </data>
+  <data name="No, let me check again" xml:space="preserve">
+    <value>Không, để tôi kiểm tra lại</value>
   </data>
   <data name="Optional remarks..." xml:space="preserve">
     <value>Ghi chú tùy chọn...</value>
@@ -158,6 +176,9 @@
   </data>
   <data name="Payroll Details" xml:space="preserve">
     <value>Chi tiết Bảng lương</value>
+  </data>
+  <data name="Payroll issuance is irreversible! Once issued, you cannot delete or modify it. Please verify the following information:" xml:space="preserve">
+    <value>Việc phát hành bảng lương là không thể đảo ngược! Một khi đã phát hành, bạn không thể xóa hoặc chỉnh sửa nó. Vui lòng xác minh các thông tin sau:</value>
   </data>
   <data name="Pension" xml:space="preserve">
     <value>Lương hưu</value>
@@ -224,6 +245,9 @@
   </data>
   <data name="Work Injury (Company)" xml:space="preserve">
     <value>Bảo hiểm Tai nạn Lao động (Công ty)</value>
+  </data>
+  <data name="Yes, Confirm and Issue!" xml:space="preserve">
+    <value>Có, Xác nhận và Phát hành!</value>
   </data>
 
 </root>

@@ -54,6 +54,9 @@
   <data name="Asset Models" xml:space="preserve">
     <value>Modelos de Ativos</value>
   </data>
+  <data name="Assets" xml:space="preserve">
+    <value>Ativos</value>
+  </data>
   <data name="Bank Info" xml:space="preserve">
     <value>Informações Bancárias</value>
   </data>
@@ -74,6 +77,9 @@
   </data>
   <data name="Certificate of Income" xml:space="preserve">
     <value>Certificado de Renda</value>
+  </data>
+  <data name="Certificate Print" xml:space="preserve">
+    <value>Imprimir Certificado</value>
   </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Alterar Avatar</value>
@@ -104,6 +110,9 @@
   </data>
   <data name="Company Name" xml:space="preserve">
     <value>Nome da Empresa</value>
+  </data>
+  <data name="Company Public Contracts" xml:space="preserve">
+    <value>Contratos Públicos da Empresa</value>
   </data>
   <data name="Company Type" xml:space="preserve">
     <value>Tipo de Empresa</value>
@@ -210,6 +219,9 @@
   <data name="Leave Management" xml:space="preserve">
     <value>Gerenciamento de Férias</value>
   </data>
+  <data name="Legal" xml:space="preserve">
+    <value>Legal</value>
+  </data>
   <data name="Legal Rep" xml:space="preserve">
     <value>Representante Legal</value>
   </data>
@@ -282,6 +294,9 @@
   <data name="Onboarding" xml:space="preserve">
     <value>Onboarding</value>
   </data>
+  <data name="Onboarding Process" xml:space="preserve">
+    <value>Processo de Onboarding</value>
+  </data>
   <data name="Password Details" xml:space="preserve">
     <value>Detalhes da Senha</value>
   </data>
@@ -344,6 +359,9 @@
   </data>
   <data name="Shared Info" xml:space="preserve">
     <value>Informações Compartilhadas</value>
+  </data>
+  <data name="Shared Passwords" xml:space="preserve">
+    <value>Senhas Compartilhadas</value>
   </data>
   <data name="Sign out" xml:space="preserve">
     <value>Sair</value>

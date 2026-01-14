@@ -54,6 +54,9 @@
   <data name="Asset Models" xml:space="preserve">
     <value>Μοντέλα Περιουσίας</value>
   </data>
+  <data name="Assets" xml:space="preserve">
+    <value>Περιουσία</value>
+  </data>
   <data name="Bank Info" xml:space="preserve">
     <value>Τραπεζικά Στοιχεία</value>
   </data>
@@ -74,6 +77,9 @@
   </data>
   <data name="Certificate of Income" xml:space="preserve">
     <value>Πιστοποιητικό Εισοδήματος</value>
+  </data>
+  <data name="Certificate Print" xml:space="preserve">
+    <value>Εκτύπωση Πιστοποιητικού</value>
   </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Αλλαγή Avatar</value>
@@ -104,6 +110,9 @@
   </data>
   <data name="Company Name" xml:space="preserve">
     <value>Όνομα Εταιρείας</value>
+  </data>
+  <data name="Company Public Contracts" xml:space="preserve">
+    <value>Επιχειρηματικά Δημόσια Συμβόλαια</value>
   </data>
   <data name="Company Type" xml:space="preserve">
     <value>Τύπος Εταιρείας</value>
@@ -210,6 +219,9 @@
   <data name="Leave Management" xml:space="preserve">
     <value>Διαχείριση Αδειών</value>
   </data>
+  <data name="Legal" xml:space="preserve">
+    <value>Νομικά</value>
+  </data>
   <data name="Legal Rep" xml:space="preserve">
     <value>Νομικός Εκπρόσωπος</value>
   </data>
@@ -282,6 +294,9 @@
   <data name="Onboarding" xml:space="preserve">
     <value>Εγκατάσταση</value>
   </data>
+  <data name="Onboarding Process" xml:space="preserve">
+    <value>Διαδικασία Εγκατάστασης</value>
+  </data>
   <data name="Password Details" xml:space="preserve">
     <value>Λεπτομέρειες Κωδικού</value>
   </data>
@@ -344,6 +359,9 @@
   </data>
   <data name="Shared Info" xml:space="preserve">
     <value>Κοινόχρηστες Πληροφορίες</value>
+  </data>
+  <data name="Shared Passwords" xml:space="preserve">
+    <value>Κοινοποιημένα Κωδικοί</value>
   </data>
   <data name="Sign out" xml:space="preserve">
     <value>Αποσύνδεση</value>

@@ -45,6 +45,9 @@
   <data name="Asset Models" xml:space="preserve">
     <value>Asset Models</value>
   </data>
+  <data name="Assets" xml:space="preserve">
+    <value>Assets</value>
+  </data>
   <data name="Bank Info" xml:space="preserve">
     <value>Bank Information</value>
   </data>
@@ -65,6 +68,9 @@
   </data>
   <data name="Certificate of Income" xml:space="preserve">
     <value>Certificate of Income</value>
+  </data>
+  <data name="Certificate Print" xml:space="preserve">
+    <value>Certificate Print</value>
   </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Change Avatar</value>
@@ -95,6 +101,9 @@
   </data>
   <data name="Company Name" xml:space="preserve">
     <value>Company Name</value>
+  </data>
+  <data name="Company Public Contracts" xml:space="preserve">
+    <value>Company Public Contracts</value>
   </data>
   <data name="Company Type" xml:space="preserve">
     <value>Company Type</value>
@@ -201,6 +210,9 @@
   <data name="Leave Management" xml:space="preserve">
     <value>Leave Management</value>
   </data>
+  <data name="Legal" xml:space="preserve">
+    <value>Legal</value>
+  </data>
   <data name="Legal Rep" xml:space="preserve">
     <value>Legal Representative</value>
   </data>
@@ -273,6 +285,9 @@
   <data name="Onboarding" xml:space="preserve">
     <value>Onboarding</value>
   </data>
+  <data name="Onboarding Process" xml:space="preserve">
+    <value>Onboarding Process</value>
+  </data>
   <data name="Password Details" xml:space="preserve">
     <value>Password Details</value>
   </data>
@@ -335,6 +350,9 @@
   </data>
   <data name="Shared Info" xml:space="preserve">
     <value>Shared Info</value>
+  </data>
+  <data name="Shared Passwords" xml:space="preserve">
+    <value>Shared Passwords</value>
   </data>
   <data name="Sign out" xml:space="preserve">
     <value>Sign out</value>

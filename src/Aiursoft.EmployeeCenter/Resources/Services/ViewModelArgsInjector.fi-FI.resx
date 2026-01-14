@@ -54,6 +54,9 @@
   <data name="Asset Models" xml:space="preserve">
     <value>Laitteiden mallit</value>
   </data>
+  <data name="Assets" xml:space="preserve">
+    <value>Välineet</value>
+  </data>
   <data name="Bank Info" xml:space="preserve">
     <value>Pankkitiedot</value>
   </data>
@@ -74,6 +77,9 @@
   </data>
   <data name="Certificate of Income" xml:space="preserve">
     <value>Tulotodistus</value>
+  </data>
+  <data name="Certificate Print" xml:space="preserve">
+    <value>Todistuksen tulostus</value>
   </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Vaihda avataria</value>
@@ -104,6 +110,9 @@
   </data>
   <data name="Company Name" xml:space="preserve">
     <value>Yrityksen nimi</value>
+  </data>
+  <data name="Company Public Contracts" xml:space="preserve">
+    <value>Yrityksen julkinen sopimus</value>
   </data>
   <data name="Company Type" xml:space="preserve">
     <value>Yritystyyppi</value>
@@ -210,6 +219,9 @@
   <data name="Leave Management" xml:space="preserve">
     <value>Lomakäsitely</value>
   </data>
+  <data name="Legal" xml:space="preserve">
+    <value>Laki</value>
+  </data>
   <data name="Legal Rep" xml:space="preserve">
     <value>Lakisäädännöllinen edustaja</value>
   </data>
@@ -282,6 +294,9 @@
   <data name="Onboarding" xml:space="preserve">
     <value>Työskentely alkaa</value>
   </data>
+  <data name="Onboarding Process" xml:space="preserve">
+    <value>Työsuunnitelma</value>
+  </data>
   <data name="Password Details" xml:space="preserve">
     <value>Salasanan tiedot</value>
   </data>
@@ -344,6 +359,9 @@
   </data>
   <data name="Shared Info" xml:space="preserve">
     <value>Jaettu tieto</value>
+  </data>
+  <data name="Shared Passwords" xml:space="preserve">
+    <value>Jaetut salasanat</value>
   </data>
   <data name="Sign out" xml:space="preserve">
     <value>Kirjaudu ulos</value>
