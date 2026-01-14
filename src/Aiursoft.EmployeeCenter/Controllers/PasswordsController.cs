@@ -23,10 +23,10 @@ public class PasswordsController(
     [RenderInNavBar(
         NavGroupName = "Career",
         NavGroupOrder = 1,
-        CascadedLinksGroupName = "Shared Info",
-        CascadedLinksIcon = "lock",
-        CascadedLinksOrder = 3,
-        LinkText = "Passwords",
+        CascadedLinksGroupName = "Resources",
+        CascadedLinksIcon = "briefcase",
+        CascadedLinksOrder = 6,
+        LinkText = "Shared Passwords",
         LinkOrder = 1)]
     public async Task<IActionResult> Index()
     {

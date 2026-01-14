@@ -18,12 +18,12 @@ public class ContractController(
     : Controller
 {
     [RenderInNavBar(
-        NavGroupName = "Personal",
-        NavGroupOrder = 2,
-        CascadedLinksGroupName = "Contracts",
-        CascadedLinksIcon = "file-text",
-        CascadedLinksOrder = 2,
-        LinkText = "View Contracts",
+        NavGroupName = "Career",
+        NavGroupOrder = 1,
+        CascadedLinksGroupName = "Resources",
+        CascadedLinksIcon = "briefcase",
+        CascadedLinksOrder = 6,
+        LinkText = "Company Public Contracts",
         LinkOrder = 1)]
     public async Task<IActionResult> Index()
     {

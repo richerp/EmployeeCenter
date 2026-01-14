@@ -21,10 +21,10 @@ public class AssetsController(
     [RenderInNavBar(
         NavGroupName = "Administration",
         NavGroupOrder = 3,
-        CascadedLinksGroupName = "Manage IT Assets",
+        CascadedLinksGroupName = "Assets",
         CascadedLinksIcon = "monitor",
         CascadedLinksOrder = 4,
-        LinkText = "Manage Assets",
+        LinkText = "Manage IT Assets",
         LinkOrder = 1)]
     public async Task<IActionResult> Index()
     {

@@ -21,11 +21,11 @@ public class ManageContractController(
     [RenderInNavBar(
         NavGroupName = "Administration",
         NavGroupOrder = 3,
-        CascadedLinksGroupName = "HR",
-        CascadedLinksIcon = "users",
-        CascadedLinksOrder = 1,
+        CascadedLinksGroupName = "Legal",
+        CascadedLinksIcon = "scale",
+        CascadedLinksOrder = 5,
         LinkText = "Manage Contracts",
-        LinkOrder = 2)]
+        LinkOrder = 1)]
     public async Task<IActionResult> Index()
     {
         var contracts = await context.Contracts
