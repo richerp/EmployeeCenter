@@ -123,7 +123,7 @@ public class PermissionTests
             "/System/Index",
             "/ManageContract/Index",
             "/Assets/Index",
-            "/Certificate/Admin"
+            "/ManageCertificate/Index"
         };
 
         foreach (var url in restrictedUrls)
