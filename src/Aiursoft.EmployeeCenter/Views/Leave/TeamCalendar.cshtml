@@ -77,7 +77,7 @@
                                                         statusText = Localizer["Upcoming"].Value;
                                                     }
                                                     
-                                                    <div class="border rounded p-2 @statusClass" style="min-width: 150px;">
+                                                    <div class="border rounded p-2 text-light @statusClass" style="min-width: 150px;">
                                                         <div class="fw-bold small">@statusText</div>
                                                         <div class="small">@leave.StartDate.ToString("yyyy-MM-dd") - @leave.EndDate.ToString("yyyy-MM-dd")</div>
                                                         <div class="small opacity-75">@(leave.LeaveType == Aiursoft.EmployeeCenter.Entities.LeaveType.AnnualLeave ? Localizer["Annual"] : Localizer["Sick"]) (@leave.TotalDays.ToString("0.##") @Localizer["days"])</div>
