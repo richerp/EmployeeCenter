@@ -1,15 +1,6 @@
 namespace Aiursoft.EmployeeCenter.Authorization;
 
 /// <summary>
-/// A fake localizer that returns the input string as is.
-/// This is used to trick auto scanning tools to detect these strings for localization.
-/// </summary>
-public class FakeLocalizer
-{
-    public string this[string name] => name;
-}
-
-/// <summary>
 /// A static class that provides all application permissions.
 /// It uses a fake localizer to ensure permission names and descriptions are picked up by localization tools.
 /// This class serves as the single source of truth for all permissions in the application.
@@ -17,6 +8,15 @@ public class FakeLocalizer
 public class AppPermissions
 {
     public const string Type = "Permission";
+
+    /// <summary>
+    /// A fake localizer that returns the input string as is.
+    /// This is used to trick auto scanning tools to detect these strings for localization.
+    /// </summary>
+    public class FakeLocalizer
+    {
+        public string this[string name] => name;
+    }
 
     public static List<PermissionDescriptor> GetAllPermissions()
     {
@@ -37,6 +37,9 @@ public class AppPermissions
             new(AppPermissionNames.CanEditAndViewDetailsOfUsers,
                 localizer["Edit and View Details of Users"],
                     localizer["Allows modification of user details like email and roles, resetting user passwords, and viewing sensitive user details like payroll."]),
+            new(AppPermissionNames.CanEditUsers,
+                localizer["Edit User Information"],
+                    localizer["Allows modification of user details like email and roles, and can also reset user passwords."]),
             new(AppPermissionNames.CanReadRoles,
                 localizer["Read Roles"],
                     localizer["Allows viewing the list of roles and their assigned permissions."]),
@@ -55,6 +58,9 @@ public class AppPermissions
             new(AppPermissionNames.CanViewUserOperationLog,
                 localizer["View User Operation Log"],
                 localizer["Allows viewing the operation logs of any user, including their bank card change history."]),
+            new(AppPermissionNames.CanReadPermissions,
+                localizer["Read Permissions"],
+                localizer["Allows viewing the list of all permissions and their assignments to roles and users."]),
             new(AppPermissionNames.CanViewSystemContext,
                 localizer["View System Context"],
                 localizer["Allows viewing system-level information and settings."]),
@@ -96,7 +102,13 @@ public class AppPermissions
                 localizer["Allows viewing all company contracts, including those marked as private."]),
             new(AppPermissionNames.CanCreateContract,
                 localizer["Create and manage company contracts"],
-                localizer["Allows creating and managing all contracts for the company."])
+                localizer["Allows creating and managing all contracts for the company."]),
+            new(AppPermissionNames.CanViewBackgroundJobs,
+                localizer["View Background Jobs"],
+                localizer["Allows viewing the background job dashboard and managing jobs."]),
+            new(AppPermissionNames.CanManageGlobalSettings,
+                localizer["Manage Global Settings"],
+                localizer["Allows viewing and modifying global application settings."])
         ];
         return allPermission;
     }

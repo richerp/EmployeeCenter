@@ -88,12 +88,3 @@ public class LeaveApplication
     [ForeignKey(nameof(ReviewedById))]
     public User? ReviewedBy { get; set; }
 }
-
-/// <summary>
-/// Types of leave available in the system
-/// </summary>
-public enum LeaveType
-{
-    AnnualLeave = 0,
-    SickLeave = 1
-}

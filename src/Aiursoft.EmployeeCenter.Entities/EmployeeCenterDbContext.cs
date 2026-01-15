@@ -1,11 +1,14 @@
+using System.Diagnostics.CodeAnalysis;
 using Aiursoft.DbTools;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Aiursoft.EmployeeCenter.Entities;
 
+[ExcludeFromCodeCoverage]
 public abstract class EmployeeCenterDbContext(DbContextOptions options) : IdentityDbContext<User>(options), ICanMigrate
 {
+    public DbSet<GlobalSetting> GlobalSettings => Set<GlobalSetting>();
     public DbSet<Payroll> Payrolls => Set<Payroll>();
     public DbSet<SshKey> SshKeys => Set<SshKey>();
     public DbSet<Password> Passwords => Set<Password>();

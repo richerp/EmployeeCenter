@@ -3,20 +3,6 @@ using Aiursoft.UiStack.Layout;
 
 namespace Aiursoft.EmployeeCenter.Models.CertificateViewModels;
 
-public enum CertificateType
-{
-    Employment,
-    Income
-}
-
-public class IndexViewModel : UiStackLayoutViewModel
-{
-    public IndexViewModel()
-    {
-        PageTitle = "Manage Printing";
-    }
-}
-
 public class PrintViewModel : UiStackLayoutViewModel
 {
     public User? TargetUser { get; set; }

@@ -43,8 +43,6 @@ public class Startup : IWebStartup
         services.AddMemoryCache();
         services.AddHttpClient();
         services.AddTaskCanon();
-        services.AddAssemblyDependencies(typeof(Startup).Assembly);
-        services.AddSingleton<NavigationState<Startup>>();
 
         // Leave Management Services
         services.AddScoped<Services.HolidayService>();
@@ -52,6 +50,12 @@ public class Startup : IWebStartup
 
         // Background Jobs
         services.AddHostedService<BackgroundJobs.AnnualLeaveAllocationJob>();
+        services.AddAssemblyDependencies(typeof(Startup).Assembly);
+        services.AddSingleton<NavigationState<Startup>>();
+
+        // Background job queue
+        services.AddSingleton<Services.BackgroundJobs.BackgroundJobQueue>();
+        services.AddHostedService<Services.BackgroundJobs.QueueWorkerService>();
 
         // Controllers and localization
         services.AddControllersWithViews()
