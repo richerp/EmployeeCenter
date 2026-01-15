@@ -23,6 +23,9 @@ public class EditAssetViewModel : UiStackLayoutViewModel
     [Required]
     public AssetStatus Status { get; set; }
 
+    [Display(Name = "Assignee")]
+    public string? AssigneeId { get; set; }
+
     [Display(Name = "Location")]
     public int? LocationId { get; set; }
 
@@ -47,4 +50,5 @@ public class EditAssetViewModel : UiStackLayoutViewModel
     public List<AssetModel> AllModels { get; set; } = new();
     public List<Location> AllLocations { get; set; } = new();
     public List<Vendor> AllVendors { get; set; } = new();
+    public List<User> AllUsers { get; set; } = new();
 }

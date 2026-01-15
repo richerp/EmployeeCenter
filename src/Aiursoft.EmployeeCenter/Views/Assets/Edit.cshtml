@@ -43,6 +43,14 @@
                     </div>
 
                     <div class="mb-3">
+                        <label asp-for="AssigneeId" class="form-label"></label>
+                        <select asp-for="AssigneeId" class="form-select" asp-items="@(new SelectList(Model.AllUsers, "Id", "DisplayName"))">
+                            <option value="">-- @Localizer["Not Assigned"] --</option>
+                        </select>
+                        <span asp-validation-for="AssigneeId" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
                         <label asp-for="LocationId" class="form-label"></label>
                         <select asp-for="LocationId" class="form-select" asp-items="@(new SelectList(Model.AllLocations, "Id", "Name"))">
                             <option value="">-- @Localizer["Select Location"] --</option>

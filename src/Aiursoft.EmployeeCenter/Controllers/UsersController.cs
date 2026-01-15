@@ -115,12 +115,20 @@ public class UsersController(
             .OrderByDescending(l => l.ChangeTime)
             .ToListAsync();
 
+        var assignedAssets = await context.Assets
+            .Include(a => a.Model)
+            .ThenInclude(m => m.Category)
+            .Include(a => a.Location)
+            .Where(a => a.AssigneeId == id)
+            .ToListAsync();
+
         return this.StackView(new DetailsViewModel
         {
             User = user,
             Roles = roles,
             Permissions = permissions,
-            BankCardChangeLogs = changeLogs
+            BankCardChangeLogs = changeLogs,
+            AssignedAssets = assignedAssets
         });
     }
 
