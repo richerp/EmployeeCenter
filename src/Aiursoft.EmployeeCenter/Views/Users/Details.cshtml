@@ -1,4 +1,5 @@
 @using Aiursoft.EmployeeCenter.Authorization
+@using Aiursoft.EmployeeCenter.Entities
 @using Aiursoft.EmployeeCenter.Services.FileStorage
 @using Aiursoft.WebTools
 @using Microsoft.Extensions.Localization
@@ -175,6 +176,82 @@
                         <p class="text-muted mb-0">@Localizer["This user has no effective permissions."]</p>
                     </div>
                 }
+            </div>
+        </div>
+
+        <div class="card flex-fill mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="card-title mb-0"><i class="align-middle me-2" data-lucide="monitor"></i> @Localizer["Assigned Assets"]</h5>
+                @if (User.HasClaim(AppPermissions.Type, AppPermissionNames.CanManageAssets))
+                {
+                    <a asp-controller="Assets" asp-action="Index" class="btn btn-sm btn-outline-primary">@Localizer["Manage All Assets"]</a>
+                }
+            </div>
+            <div class="table-responsive">
+                <table class="table table-hover my-0">
+                    <thead>
+                    <tr>
+                        <th>@Localizer["Asset Tag"]</th>
+                        <th>@Localizer["Model"]</th>
+                        <th>@Localizer["Status"]</th>
+                        <th>@Localizer["Location"]</th>
+                        <th class="text-end">@Localizer["Actions"]</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @if (Model.AssignedAssets.Any())
+                    {
+                        @foreach (var asset in Model.AssignedAssets)
+                        {
+                            <tr>
+                                <td><code>@asset.AssetTag</code></td>
+                                <td>@asset.Model.Brand @asset.Model.ModelName</td>
+                                <td>
+                                    @switch (asset.Status)
+                                    {
+                                        case AssetStatus.Idle:
+                                            <span class="badge bg-secondary">@Localizer["Idle"]</span>
+                                            break;
+                                        case AssetStatus.PendingAccept:
+                                            <span class="badge bg-warning">@Localizer["Pending Accept"]</span>
+                                            break;
+                                        case AssetStatus.InUse:
+                                            <span class="badge bg-success">@Localizer["In Use"]</span>
+                                            break;
+                                        case AssetStatus.Maintenance:
+                                            <span class="badge bg-danger">@Localizer["Maintenance"]</span>
+                                            break;
+                                        case AssetStatus.Retired:
+                                            <span class="badge bg-dark">@Localizer["Retired"]</span>
+                                            break;
+                                        case AssetStatus.Lost:
+                                            <span class="badge bg-danger">@Localizer["Lost"]</span>
+                                            break;
+                                    }
+                                </td>
+                                <td>@(asset.Location?.Name ?? Localizer["N/A"].Value)</td>
+                                <td class="text-end">
+                                    <a asp-controller="Assets" asp-action="Details" asp-route-id="@asset.Id" class="btn btn-sm btn-outline-primary" title="@Localizer["Details"]">
+                                        <i class="align-middle" data-lucide="eye"></i>
+                                    </a>
+                                    @if (User.HasClaim(AppPermissions.Type, AppPermissionNames.CanManageAssets))
+                                    {
+                                        <a asp-controller="Assets" asp-action="Edit" asp-route-id="@asset.Id" class="btn btn-sm btn-outline-secondary" title="@Localizer["Edit"]">
+                                            <i class="align-middle" data-lucide="edit"></i>
+                                        </a>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="5" class="text-center text-muted">@Localizer["No assets assigned to this user."]</td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
             </div>
         </div>
 

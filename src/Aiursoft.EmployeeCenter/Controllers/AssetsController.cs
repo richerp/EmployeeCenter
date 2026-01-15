@@ -48,7 +48,8 @@ public class AssetsController(
         {
             AllModels = await context.AssetModels.Include(m => m.Category).ToListAsync(),
             AllLocations = await context.Locations.ToListAsync(),
-            AllVendors = await context.Vendors.ToListAsync()
+            AllVendors = await context.Vendors.ToListAsync(),
+            AllUsers = await context.Users.ToListAsync()
         });
     }
 
@@ -70,6 +71,7 @@ public class AssetsController(
                 SerialNumber = model.SerialNumber,
                 ModelId = model.ModelId,
                 Status = model.Status,
+                AssigneeId = model.AssigneeId,
                 LocationId = model.LocationId,
                 PurchaseDate = model.PurchaseDate,
                 PurchasePrice = model.PurchasePrice,
@@ -84,6 +86,10 @@ public class AssetsController(
 
             var user = await userManager.GetUserAsync(User);
             await LogHistory(asset.Id, "CREATE", null, null, user?.Id ?? "System", "Asset created.");
+            if (!string.IsNullOrEmpty(model.AssigneeId))
+            {
+                await LogHistory(asset.Id, "ASSIGN", "AssigneeId", null, user?.Id ?? "System", "Assigned during creation.");
+            }
 
             await context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
@@ -92,6 +98,7 @@ public class AssetsController(
         model.AllModels = await context.AssetModels.Include(m => m.Category).ToListAsync();
         model.AllLocations = await context.Locations.ToListAsync();
         model.AllVendors = await context.Vendors.ToListAsync();
+        model.AllUsers = await context.Users.ToListAsync();
         return this.StackView(model);
     }
 
@@ -127,6 +134,7 @@ public class AssetsController(
             SerialNumber = asset.SerialNumber,
             ModelId = asset.ModelId,
             Status = asset.Status,
+            AssigneeId = asset.AssigneeId,
             LocationId = asset.LocationId,
             PurchaseDate = asset.PurchaseDate,
             PurchasePrice = asset.PurchasePrice,
@@ -136,7 +144,8 @@ public class AssetsController(
             IsReimbursed = asset.IsReimbursed,
             AllModels = await context.AssetModels.Include(m => m.Category).ToListAsync(),
             AllLocations = await context.Locations.ToListAsync(),
-            AllVendors = await context.Vendors.ToListAsync()
+            AllVendors = await context.Vendors.ToListAsync(),
+            AllUsers = await context.Users.ToListAsync()
         });
     }
 
@@ -169,11 +178,13 @@ public class AssetsController(
             if (asset.WarrantyExpireDate != model.WarrantyExpireDate) await LogHistory(asset.Id, "UPDATE", "WarrantyExpireDate", asset.WarrantyExpireDate?.ToString(), userId, "Updated warranty expire date.");
             if (asset.InvoiceFileUrl != model.InvoiceFileUrl) await LogHistory(asset.Id, "UPDATE", "InvoiceFileUrl", asset.InvoiceFileUrl, userId, "Updated invoice file.");
             if (asset.IsReimbursed != model.IsReimbursed) await LogHistory(asset.Id, "UPDATE", "IsReimbursed", asset.IsReimbursed.ToString(), userId, "Updated reimbursement status.");
+            if (asset.AssigneeId != model.AssigneeId) await LogHistory(asset.Id, "UPDATE", "AssigneeId", asset.AssigneeId, userId, "Updated assignee.");
 
             asset.AssetTag = model.AssetTag;
             asset.SerialNumber = model.SerialNumber;
             asset.ModelId = model.ModelId;
             asset.Status = model.Status;
+            asset.AssigneeId = model.AssigneeId;
             asset.LocationId = model.LocationId;
             asset.PurchaseDate = model.PurchaseDate;
             asset.PurchasePrice = model.PurchasePrice;
@@ -190,6 +201,7 @@ public class AssetsController(
         model.AllModels = await context.AssetModels.Include(m => m.Category).ToListAsync();
         model.AllLocations = await context.Locations.ToListAsync();
         model.AllVendors = await context.Vendors.ToListAsync();
+        model.AllUsers = await context.Users.ToListAsync();
         return this.StackView(model);
     }
 

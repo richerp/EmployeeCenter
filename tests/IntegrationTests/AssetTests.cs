@@ -223,4 +223,58 @@ public class AssetTests
             Assert.IsNull(asset.AssigneeId);
         }
     }
+
+    [TestMethod]
+    public async Task AssignAssetDuringCreationTest()
+    {
+        // 1. Login as admin
+        var loginToken = await GetAntiCsrfToken("/Account/Login");
+        var loginContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "EmailOrUserName", "admin" },
+            { "Password", "admin123" },
+            { "__RequestVerificationToken", loginToken }
+        });
+        await _http.PostAsync("/Account/Login", loginContent);
+
+        // 2. Ensure we have a model and a user
+        int modelId;
+        string userId;
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var cat = new AssetCategory { Name = "Test Cat", Code = "TC" };
+            db.AssetCategories.Add(cat);
+            await db.SaveChangesAsync();
+            
+            var model = new AssetModel { ModelName = "Test Model", Brand = "Test", CategoryId = cat.Id };
+            db.AssetModels.Add(model);
+            await db.SaveChangesAsync();
+            modelId = model.Id;
+
+            var user = await db.Users.FirstAsync(u => u.UserName == "admin");
+            userId = user.Id;
+        }
+
+        // 3. Create Asset with Assignee
+        var createAssetToken = await GetAntiCsrfToken("/Assets/Create");
+        await _http.PostAsync("/Assets/Create", new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "AssetTag", "ASSIGN-ON-CREATE" },
+            { "ModelId", modelId.ToString() },
+            { "Status", ((int)AssetStatus.PendingAccept).ToString() },
+            { "AssigneeId", userId },
+            { "__RequestVerificationToken", createAssetToken }
+        }));
+
+        // 4. Verify
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var asset = await db.Assets.FirstOrDefaultAsync(a => a.AssetTag == "ASSIGN-ON-CREATE");
+            Assert.IsNotNull(asset);
+            Assert.AreEqual(userId, asset.AssigneeId);
+            Assert.AreEqual(AssetStatus.PendingAccept, asset.Status);
+        }
+    }
 }
