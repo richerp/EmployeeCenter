@@ -65,15 +65,15 @@ public class CreateViewModel : UiStackLayoutViewModel
     public string? BankAccountName { get; set; }
 
     [Display(Name = "Company Logo")]
-    [RegularExpression(@"^Workspace/companyfiles.*", ErrorMessage = "Please upload a valid logo file.")]
+    [RegularExpression(@"^companyfiles.*", ErrorMessage = "Please upload a valid logo file.")]
     public string? LogoPath { get; set; }
 
     [Display(Name = "Company Seal")]
-    [RegularExpression(@"^Workspace/companyfiles.*", ErrorMessage = "Please upload a valid seal file.")]
+    [RegularExpression(@"^companyfiles.*", ErrorMessage = "Please upload a valid seal file.")]
     public string? SealPath { get; set; }
 
     [Display(Name = "Business License / BR Scan")]
-    [RegularExpression(@"^Workspace/companyfiles.*", ErrorMessage = "Please upload a valid license file.")]
+    [RegularExpression(@"^companyfiles.*", ErrorMessage = "Please upload a valid license file.")]
     public string? LicensePath { get; set; }
 
     [Display(Name = "Registered Capital (Mainland)")]
