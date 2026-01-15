@@ -4,6 +4,7 @@ using Aiursoft.EmployeeCenter.MySql;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Aiursoft.EmployeeCenter.MySql.Migrations
 {
     [DbContext(typeof(MySqlContext))]
-    partial class MySqlContextModelSnapshot : ModelSnapshot
+    [Migration("20260115201107_AddOrganizationCertificate")]
+    partial class AddOrganizationCertificate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -884,51 +887,6 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.ToTable("Payrolls");
                 });
 
-            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.PromotionHistory", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("ChangeTime")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("NewJobLevel")
-                        .HasMaxLength(100)
-                        .HasColumnType("varchar(100)");
-
-                    b.Property<string>("NewTitle")
-                        .HasMaxLength(100)
-                        .HasColumnType("varchar(100)");
-
-                    b.Property<string>("OldJobLevel")
-                        .HasMaxLength(100)
-                        .HasColumnType("varchar(100)");
-
-                    b.Property<string>("OldTitle")
-                        .HasMaxLength(100)
-                        .HasColumnType("varchar(100)");
-
-                    b.Property<string>("PromoterId")
-                        .HasMaxLength(450)
-                        .HasColumnType("varchar(450)");
-
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasMaxLength(450)
-                        .HasColumnType("varchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PromoterId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("PromotionHistories");
-                });
-
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.SshKey", b =>
                 {
                     b.Property<int>("Id")
@@ -1435,23 +1393,6 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .IsRequired();
 
                     b.Navigation("Owner");
-                });
-
-            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.PromotionHistory", b =>
-                {
-                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "Promoter")
-                        .WithMany()
-                        .HasForeignKey("PromoterId");
-
-                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Promoter");
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.SshKey", b =>
