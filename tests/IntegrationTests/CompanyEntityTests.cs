@@ -1,6 +1,3 @@
-using System.Net;
-using System.Text.RegularExpressions;
-
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
 [TestClass]
@@ -26,7 +23,7 @@ public class CompanyEntityTests : TestBase
         var manageResponse = await Http.GetAsync("/CompanyEntity/Manage");
         manageResponse.EnsureSuccessStatusCode();
         var manageHtml = await manageResponse.Content.ReadAsStringAsync();
-        Assert.IsTrue(manageHtml.Contains("Test Company"));
+        Assert.Contains("Test Company", manageHtml);
 
         // 4. Get the ID of the newly created entity
         var match = Regex.Match(manageHtml, @"/CompanyEntity/Details/(\d+)");
@@ -37,8 +34,8 @@ public class CompanyEntityTests : TestBase
         var detailsResponse = await Http.GetAsync($"/CompanyEntity/Details/{entityId}");
         detailsResponse.EnsureSuccessStatusCode();
         var detailsHtml = await detailsResponse.Content.ReadAsStringAsync();
-        Assert.IsTrue(detailsHtml.Contains("Test Company"));
-        Assert.IsTrue(detailsHtml.Contains("200000"));
+        Assert.Contains("Test Company", detailsHtml);
+        Assert.Contains("200000", detailsHtml);
 
         // 6. Login as normal user
         await Http.GetAsync("/Account/LogOff");
@@ -48,7 +45,7 @@ public class CompanyEntityTests : TestBase
         var userDetailsResponse = await Http.GetAsync($"/CompanyEntity/Details/{entityId}");
         userDetailsResponse.EnsureSuccessStatusCode();
         var userDetailsHtml = await userDetailsResponse.Content.ReadAsStringAsync();
-        Assert.IsTrue(userDetailsHtml.Contains("Test Company"));
-        Assert.IsTrue(userDetailsHtml.Contains("200000"));
+        Assert.Contains("Test Company", userDetailsHtml);
+        Assert.Contains("200000", userDetailsHtml);
     }
 }
