@@ -39,6 +39,9 @@
   <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
     <value>Cho phép tạo và quản lý các mẫu nhiệm vụ đưa vào làm việc cho nhân viên mới.</value>
   </data>
+  <data name="Allows creating contracts for the company. Every user can view public contracts by default" xml:space="preserve">
+    <value>Cho phép tạo hợp đồng cho công ty. Mọi người dùng đều có thể xem hợp đồng công khai theo mặc định.</value>
+  </data>
   <data name="Allows creating new contracts for any user." xml:space="preserve">
     <value>Cho phép tạo hợp đồng mới cho bất kỳ người dùng nào.</value>
   </data>
@@ -47,6 +50,9 @@
   </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Cho phép tạo, cập nhật và xóa thông tin thực thể công ty.</value>
+  </data>
+  <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
+    <value>Cho phép tạo, cập nhật và xóa thông tin thực thể công ty. Mọi người dùng đều có thể xem thông tin thực thể công ty theo mặc định.</value>
   </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>Cho phép phát hành và quản lý phiếu lương cho tất cả người dùng.</value>
@@ -57,8 +63,14 @@
   <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items." xml:space="preserve">
     <value>Cho phép quản lý các tài sản CNTT của công ty, bao gồm các danh mục, mẫu mã và các mục riêng lẻ.</value>
   </data>
+  <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items. Also allows assigning and recovering assets to/from employees." xml:space="preserve">
+    <value>Cho phép quản lý các tài sản CNTT của công ty, bao gồm danh mục, mẫu mã và các đơn vị tài sản riêng lẻ. Cũng cho phép gán và thu hồi tài sản cho/từ nhân viên.</value>
+  </data>
   <data name="Allows modification of role names and their assigned permissions." xml:space="preserve">
     <value>Cho phép sửa đổi tên vai trò và các quyền đã được gán.</value>
+  </data>
+  <data name="Allows modification of user details like email and roles, and can also reset user passwords." xml:space="preserve">
+    <value>Cho phép chỉnh sửa thông tin người dùng như địa chỉ email và vai trò, đồng thời cũng có thể đặt lại mật khẩu người dùng.</value>
   </data>
   <data name="Allows modification of user details like email and roles, resetting user passwords, and viewing sensitive user details like payroll." xml:space="preserve">
     <value>Cho phép sửa đổi thông tin chi tiết của người dùng như email và vai trò, đồng thời có thể đặt lại mật khẩu người dùng.</value>
@@ -75,11 +87,23 @@
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Cho phép xem tất cả hợp đồng công ty, bao gồm cả những hợp đồng được đánh dấu là riêng tư.</value>
   </data>
+  <data name="Allows viewing all company contracts, including those marked as private. Everyone can view public contracts by default" xml:space="preserve">
+    <value>Cho phép xem tất cả hợp đồng công ty, bao gồm cả những hợp đồng được đánh dấu là riêng tư. Mọi người đều có thể xem các hợp đồng công khai theo mặc định.</value>
+  </data>
+  <data name="Allows viewing and modifying global application settings." xml:space="preserve">
+    <value>Cho phép xem và chỉnh sửa cài đặt ứng dụng toàn cục.</value>
+  </data>
   <data name="Allows viewing system-level information and settings." xml:space="preserve">
     <value>Cho phép xem thông tin và cài đặt ở cấp hệ thống.</value>
   </data>
+  <data name="Allows viewing the background job dashboard and managing jobs." xml:space="preserve">
+    <value>Cho phép xem bảng điều khiển công việc nền và quản lý các công việc.</value>
+  </data>
   <data name="Allows viewing the contract history of any user." xml:space="preserve">
     <value>Cho phép xem lịch sử hợp đồng của bất kỳ người dùng nào.</value>
+  </data>
+  <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
+    <value>Cho phép xem danh sách tất cả các quyền và việc gán chúng cho vai trò và người dùng.</value>
   </data>
   <data name="Allows viewing the list of all users." xml:space="preserve">
     <value>Cho phép xem danh sách tất cả người dùng.</value>
@@ -105,6 +129,9 @@
   <data name="Create and manage company contracts" xml:space="preserve">
     <value>Tạo và quản lý hợp đồng công ty</value>
   </data>
+  <data name="Create company contracts" xml:space="preserve">
+    <value>Tạo hợp đồng công ty</value>
+  </data>
   <data name="Create Contract" xml:space="preserve">
     <value>Tạo hợp đồng</value>
   </data>
@@ -122,6 +149,9 @@
   </data>
   <data name="Edit Role Information" xml:space="preserve">
     <value>Chỉnh sửa Thông tin Vai trò</value>
+  </data>
+  <data name="Edit User Information" xml:space="preserve">
+    <value>Chỉnh sửa Thông tin Người dùng</value>
   </data>
   <data name="Grants permission to create new roles." xml:space="preserve">
     <value>Cấp quyền tạo vai trò mới.</value>
@@ -141,6 +171,9 @@
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Quản lý các thực thể công ty</value>
   </data>
+  <data name="Manage Global Settings" xml:space="preserve">
+    <value>Quản lý Cài đặt Toàn cầu</value>
+  </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>Quản lý nghỉ phép</value>
   </data>
@@ -156,6 +189,9 @@
   <data name="Print Certificates" xml:space="preserve">
     <value>In chứng chỉ</value>
   </data>
+  <data name="Read Permissions" xml:space="preserve">
+    <value>Xem Quyền Truy Cập</value>
+  </data>
   <data name="Read Roles" xml:space="preserve">
     <value>Xem Vai trò</value>
   </data>
@@ -167,6 +203,9 @@
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>Xem bất kỳ hợp đồng công ty nào, bao gồm cả những hợp đồng riêng tư</value>
+  </data>
+  <data name="View Background Jobs" xml:space="preserve">
+    <value>Xem các Nhiệm vụ nền</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>Xem lịch sử hợp đồng</value>

@@ -21,8 +21,17 @@
       <data name="Account Details" xml:space="preserve">
     <value>Thông tin Tài khoản</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Hành động</value>
+  </data>
   <data name="An overview of the user&apos;s profile, assigned roles, and effective permissions." xml:space="preserve">
     <value>Tổng quan về hồ sơ người dùng, các vai trò được gán và quyền hạn hiệu lực.</value>
+  </data>
+  <data name="Asset Tag" xml:space="preserve">
+    <value>Mã tài sản</value>
+  </data>
+  <data name="Assigned Assets" xml:space="preserve">
+    <value>Tài sản được phân công</value>
   </data>
   <data name="Assigned Roles" xml:space="preserve">
     <value>Vai trò được giao</value>
@@ -69,6 +78,12 @@
   <data name="Delete this User" xml:space="preserve">
     <value>Xóa người dùng này</value>
   </data>
+  <data name="Details" xml:space="preserve">
+    <value>Chi tiết</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Chỉnh sửa</value>
+  </data>
   <data name="Edit this User" xml:space="preserve">
     <value>Chỉnh sửa Người dùng này</value>
   </data>
@@ -84,6 +99,12 @@
   <data name="Holder (Old -&gt; New)" xml:space="preserve">
     <value>Chủ tài khoản (Cũ -&gt; Mới)</value>
   </data>
+  <data name="Idle" xml:space="preserve">
+    <value>Ngưng hoạt động</value>
+  </data>
+  <data name="In Use" xml:space="preserve">
+    <value>Đang sử dụng</value>
+  </data>
   <data name="Job Level" xml:space="preserve">
     <value>Cấp bậc công việc</value>
   </data>
@@ -92,6 +113,18 @@
   </data>
   <data name="Legal Name" xml:space="preserve">
     <value>Tên pháp lý</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Vị trí</value>
+  </data>
+  <data name="Lost" xml:space="preserve">
+    <value>Mất</value>
+  </data>
+  <data name="Maintenance" xml:space="preserve">
+    <value>Bảo trì</value>
+  </data>
+  <data name="Manage All Assets" xml:space="preserve">
+    <value>Quản lý Tất cả Tài sản</value>
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>Quản lý Hợp đồng</value>
@@ -102,11 +135,20 @@
   <data name="Manager" xml:space="preserve">
     <value>Quản lý</value>
   </data>
+  <data name="Model" xml:space="preserve">
+    <value>Mô hình</value>
+  </data>
   <data name="Name" xml:space="preserve">
     <value>Tên</value>
   </data>
+  <data name="No assets assigned to this user." xml:space="preserve">
+    <value>Không có tài sản nào được gán cho người dùng này.</value>
+  </data>
   <data name="No change history found." xml:space="preserve">
     <value>Không tìm thấy lịch sử thay đổi.</value>
+  </data>
+  <data name="Pending Accept" xml:space="preserve">
+    <value>Chờ chấp nhận</value>
   </data>
   <data name="Phone Number" xml:space="preserve">
     <value>Số điện thoại</value>
@@ -116,6 +158,12 @@
   </data>
   <data name="Report Line" xml:space="preserve">
     <value>Dòng báo cáo</value>
+  </data>
+  <data name="Retired" xml:space="preserve">
+    <value>Đã ngừng sử dụng</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Trạng thái</value>
   </data>
   <data name="System" xml:space="preserve">
     <value>Hệ thống</value>

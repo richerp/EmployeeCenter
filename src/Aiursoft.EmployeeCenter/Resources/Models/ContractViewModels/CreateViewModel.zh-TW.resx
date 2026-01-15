@@ -24,6 +24,9 @@
   <data name="Is Public" xml:space="preserve">
     <value>是否公開</value>
   </data>
+  <data name="Please upload a valid contract file." xml:space="preserve">
+    <value>請上傳有效的合約檔案。</value>
+  </data>
   <data name="User" xml:space="preserve">
     <value>使用者</value>
   </data>

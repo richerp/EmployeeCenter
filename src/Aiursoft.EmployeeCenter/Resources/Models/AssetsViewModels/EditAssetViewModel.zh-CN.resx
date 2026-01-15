@@ -21,6 +21,9 @@
       <data name="Asset Tag" xml:space="preserve">
     <value>资产标签</value>
   </data>
+  <data name="Assignee" xml:space="preserve">
+    <value>负责人</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>发票文件</value>
   </data>

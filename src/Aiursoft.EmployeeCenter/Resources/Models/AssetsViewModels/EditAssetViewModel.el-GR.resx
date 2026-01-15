@@ -21,6 +21,9 @@
       <data name="Asset Tag" xml:space="preserve">
     <value>Ετικέτα Περιουσίας</value>
   </data>
+  <data name="Assignee" xml:space="preserve">
+    <value>Ανάθεση</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>Αρχείο Τιμολογίου</value>
   </data>

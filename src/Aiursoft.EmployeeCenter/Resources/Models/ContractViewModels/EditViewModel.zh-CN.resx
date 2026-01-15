@@ -24,6 +24,9 @@
   <data name="New Contract File (Optional)" xml:space="preserve">
     <value>新合同文件（可选）</value>
   </data>
+  <data name="Please upload a valid contract file." xml:space="preserve">
+    <value>请上传有效的合同文件。</value>
+  </data>
   <data name="User" xml:space="preserve">
     <value>用户</value>
   </data>

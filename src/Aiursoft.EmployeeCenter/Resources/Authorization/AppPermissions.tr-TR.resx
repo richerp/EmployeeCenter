@@ -39,6 +39,9 @@
   <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
     <value>Yeni çalışanlar için onboarding görev şablonlarının oluşturulmasına ve yönetilmesine izin verir.</value>
   </data>
+  <data name="Allows creating contracts for the company. Every user can view public contracts by default" xml:space="preserve">
+    <value>Şirket için sözleşmeler oluşturma izni verir. Her kullanıcı varsayılan olarak kamuya açık sözleşmeleri görüntüleyebilir.</value>
+  </data>
   <data name="Allows creating new contracts for any user." xml:space="preserve">
     <value>Her kullanıcı için yeni sözleşmeler oluşturma izni verir.</value>
   </data>
@@ -47,6 +50,9 @@
   </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Şirket varlık bilgilerinin oluşturulmasına, güncellenmesine ve silinmesine izin verir.</value>
+  </data>
+  <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
+    <value>Şirket varlık bilgilerinin oluşturulmasını, güncellenmesini ve silinmesini sağlar. Her kullanıcı varsayılan olarak şirket varlık bilgilerini görüntüleyebilir.</value>
   </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>Tüm kullanıcılar için maaş bordrolarını oluşturma ve yönetme izni verir.</value>
@@ -57,8 +63,14 @@
   <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items." xml:space="preserve">
     <value>Şirketin IT varlıklarını, kategorileri, modelleri ve bireysel öğeleri yönetmeyi sağlar.</value>
   </data>
+  <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items. Also allows assigning and recovering assets to/from employees." xml:space="preserve">
+    <value>Şirketin BİT varlıklarını yönetmeyi sağlar, kategoriler, modeller ve bireysel öğeler dahil. Ayrıca varlıkları çalışanlara atamayı ve çalışanlardan geri almayı sağlar.</value>
+  </data>
   <data name="Allows modification of role names and their assigned permissions." xml:space="preserve">
     <value>Rol isimlerinin ve atanmış izinlerin değiştirilmesine izin verir.</value>
+  </data>
+  <data name="Allows modification of user details like email and roles, and can also reset user passwords." xml:space="preserve">
+    <value>Kullanıcı detaylarının (e-posta ve roller gibi) değiştirilmesine izin verir ve aynı zamanda kullanıcı şifrelerini sıfırlamayı da sağlar.</value>
   </data>
   <data name="Allows modification of user details like email and roles, resetting user passwords, and viewing sensitive user details like payroll." xml:space="preserve">
     <value>Kullanıcı detaylarını (e-posta ve roller gibi) değiştirmeye izin verir ve ayrıca kullanıcı şifrelerini sıfırlayabilir.</value>
@@ -75,11 +87,23 @@
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Tüm şirket sözleşmelerinin, özel olarak işaretlenmiş olanların da dahil olmak üzere görüntülenmesine izin verir.</value>
   </data>
+  <data name="Allows viewing all company contracts, including those marked as private. Everyone can view public contracts by default" xml:space="preserve">
+    <value>Tüm şirket sözleşmelerini, özel olarak işaretlenmiş olanları da dahil olmak üzere görüntülemeye izin verir. Herkes varsayılan olarak kamuya açık sözleşmeleri görüntüleyebilir.</value>
+  </data>
+  <data name="Allows viewing and modifying global application settings." xml:space="preserve">
+    <value>Genel uygulama ayarlarını görüntüleme ve değiştirme izni verir.</value>
+  </data>
   <data name="Allows viewing system-level information and settings." xml:space="preserve">
     <value>Sistem düzeyindeki bilgileri ve ayarları görüntülemeye izin verir.</value>
   </data>
+  <data name="Allows viewing the background job dashboard and managing jobs." xml:space="preserve">
+    <value>Arka plan görev panosunu görüntülemeye ve görevleri yönetmeye izin verir.</value>
+  </data>
   <data name="Allows viewing the contract history of any user." xml:space="preserve">
     <value>Herhangi bir kullanıcının sözleşmelerinin geçmişini görüntülemeye izin verir.</value>
+  </data>
+  <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
+    <value>Tüm izinlerin listesini ve roller ve kullanıcılar için atamalarını görüntülemeyi sağlar.</value>
   </data>
   <data name="Allows viewing the list of all users." xml:space="preserve">
     <value>Tüm kullanıcıların listesini görüntülemeye izin verir.</value>
@@ -105,6 +129,9 @@
   <data name="Create and manage company contracts" xml:space="preserve">
     <value>Şirket sözleşmelerini oluşturun ve yönetin</value>
   </data>
+  <data name="Create company contracts" xml:space="preserve">
+    <value>Şirket sözleşmeleri oluştur</value>
+  </data>
   <data name="Create Contract" xml:space="preserve">
     <value>Sözleşme Oluştur</value>
   </data>
@@ -122,6 +149,9 @@
   </data>
   <data name="Edit Role Information" xml:space="preserve">
     <value>Rol Bilgilerini Düzenle</value>
+  </data>
+  <data name="Edit User Information" xml:space="preserve">
+    <value>Kullanıcı Bilgilerini Düzenle</value>
   </data>
   <data name="Grants permission to create new roles." xml:space="preserve">
     <value>Yeni roller oluşturma izni verir.</value>
@@ -141,6 +171,9 @@
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Şirket Varlıkları Yönet</value>
   </data>
+  <data name="Manage Global Settings" xml:space="preserve">
+    <value>Genel Ayarları Yönet</value>
+  </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>İzin Yönetimi</value>
   </data>
@@ -156,6 +189,9 @@
   <data name="Print Certificates" xml:space="preserve">
     <value>Belgeleri Yazdır</value>
   </data>
+  <data name="Read Permissions" xml:space="preserve">
+    <value>İzinleri Görüntüle</value>
+  </data>
   <data name="Read Roles" xml:space="preserve">
     <value>Rolleri Oku</value>
   </data>
@@ -167,6 +203,9 @@
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>Her şirket sözleşmesini, özel olanları da dahil olmak üzere görüntüle</value>
+  </data>
+  <data name="View Background Jobs" xml:space="preserve">
+    <value>Arka Plan Görevlerini Görüntüle</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>Sözleşme Geçmişi Görüntüle</value>

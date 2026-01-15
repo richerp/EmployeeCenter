@@ -21,6 +21,9 @@
       <data name="Asset Tag" xml:space="preserve">
     <value>علامة الأصل</value>
   </data>
+  <data name="Assignee" xml:space="preserve">
+    <value>المُسنَد إليه</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>ملف الفاتورة</value>
   </data>

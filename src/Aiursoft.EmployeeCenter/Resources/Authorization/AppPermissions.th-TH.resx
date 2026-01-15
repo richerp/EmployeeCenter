@@ -39,6 +39,9 @@
   <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
     <value>อนุญาตให้สร้างและจัดการเทมเพลตงานบนบอร์ดสำหรับพนักงานใหม่</value>
   </data>
+  <data name="Allows creating contracts for the company. Every user can view public contracts by default" xml:space="preserve">
+    <value>อนุญาตให้สร้างสัญญาสำหรับบริษัท ทุกผู้ใช้งานสามารถดูสัญญาที่เปิดเผยได้โดยค่าเริ่มต้น</value>
+  </data>
   <data name="Allows creating new contracts for any user." xml:space="preserve">
     <value>อนุญาตให้สร้างสัญญาใหม่สำหรับผู้ใช้ทุกคน</value>
   </data>
@@ -47,6 +50,9 @@
   </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>อนุญาตให้สร้าง แก้ไข และลบข้อมูลหน่วยงานของบริษัท</value>
+  </data>
+  <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
+    <value>อนุญาตให้สร้าง แก้ไข และลบข้อมูลหน่วยงานบริษัท ทุกผู้ใช้สามารถดูข้อมูลหน่วยงานบริษัทได้โดยค่าเริ่มต้น</value>
   </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>อนุญาตให้ออกและจัดการสลิปเงินเดือนสำหรับผู้ใช้ทั้งหมด</value>
@@ -57,8 +63,14 @@
   <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items." xml:space="preserve">
     <value>อนุญาตให้จัดการสินทรัพย์ไอทีของบริษัท รวมถึงหมวดหมู่ รุ่น และรายการเฉพาะ</value>
   </data>
+  <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items. Also allows assigning and recovering assets to/from employees." xml:space="preserve">
+    <value>อนุญาตให้จัดการสินทรัพย์ไอทีของบริษัท รวมถึงหมวดหมู่ รุ่น และรายการสินทรัพย์แต่ละรายการ รวมถึงอนุญาตให้จัดสรรและคืนสินทรัพย์ให้กับพนักงาน</value>
+  </data>
   <data name="Allows modification of role names and their assigned permissions." xml:space="preserve">
     <value>อนุญาตให้แก้ไขชื่อบทบาทและสิทธิ์ที่กำหนดให้</value>
+  </data>
+  <data name="Allows modification of user details like email and roles, and can also reset user passwords." xml:space="preserve">
+    <value>อนุญาตให้แก้ไขข้อมูลผู้ใช้ เช่น อีเมลและบทบาท และสามารถรีเซ็ตรหัสผ่านของผู้ใช้ได้</value>
   </data>
   <data name="Allows modification of user details like email and roles, resetting user passwords, and viewing sensitive user details like payroll." xml:space="preserve">
     <value>อนุญาตให้แก้ไขรายละเอียดผู้ใช้ เช่น อีเมลและบทบาท และยังสามารถรีเซ็ตรหัสผ่านของผู้ใช้ได้</value>
@@ -75,11 +87,23 @@
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>อนุญาตให้ดูสัญญาบริษัททั้งหมด รวมถึงสัญญาที่ระบุว่าเป็นส่วนตัว</value>
   </data>
+  <data name="Allows viewing all company contracts, including those marked as private. Everyone can view public contracts by default" xml:space="preserve">
+    <value>อนุญาตให้ดูสัญญาบริษัททั้งหมด รวมถึงสัญญาที่ติดป้ายว่าเป็นส่วนตัว ทุกคนสามารถดูสัญญาสาธารณะได้โดยค่าเริ่มต้น</value>
+  </data>
+  <data name="Allows viewing and modifying global application settings." xml:space="preserve">
+    <value>อนุญาตให้ดูและแก้ไขการตั้งค่าแอปพลิเคชันทั่วไป</value>
+  </data>
   <data name="Allows viewing system-level information and settings." xml:space="preserve">
     <value>อนุญาตให้ดูข้อมูลและการตั้งค่าระดับระบบ</value>
   </data>
+  <data name="Allows viewing the background job dashboard and managing jobs." xml:space="preserve">
+    <value>อนุญาตให้ดูแดชบอร์ดงานพื้นหลังและจัดการงานต่างๆ</value>
+  </data>
   <data name="Allows viewing the contract history of any user." xml:space="preserve">
     <value>อนุญาตให้ดูประวัติสัญญาของผู้ใช้ทุกคน</value>
+  </data>
+  <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
+    <value>อนุญาตให้ดูรายการสิทธิ์ทั้งหมดและสิทธิ์ที่ถูกกำหนดให้กับบทบาทและผู้ใช้</value>
   </data>
   <data name="Allows viewing the list of all users." xml:space="preserve">
     <value>อนุญาตให้ดูรายชื่อผู้ใช้ทั้งหมด</value>
@@ -105,6 +129,9 @@
   <data name="Create and manage company contracts" xml:space="preserve">
     <value>สร้างและจัดการสัญญาของบริษัท</value>
   </data>
+  <data name="Create company contracts" xml:space="preserve">
+    <value>สร้างสัญญาบริษัท</value>
+  </data>
   <data name="Create Contract" xml:space="preserve">
     <value>สร้างสัญญา</value>
   </data>
@@ -122,6 +149,9 @@
   </data>
   <data name="Edit Role Information" xml:space="preserve">
     <value>แก้ไขข้อมูลบทบาท</value>
+  </data>
+  <data name="Edit User Information" xml:space="preserve">
+    <value>แก้ไขข้อมูลผู้ใช้</value>
   </data>
   <data name="Grants permission to create new roles." xml:space="preserve">
     <value>ให้สิทธิ์ในการสร้างบทบาทใหม่</value>
@@ -141,6 +171,9 @@
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>จัดการหน่วยงานของบริษัท</value>
   </data>
+  <data name="Manage Global Settings" xml:space="preserve">
+    <value>จัดการตั้งค่าทั่วไป</value>
+  </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>จัดการการลา</value>
   </data>
@@ -156,6 +189,9 @@
   <data name="Print Certificates" xml:space="preserve">
     <value>พิมพ์ใบรับรอง</value>
   </data>
+  <data name="Read Permissions" xml:space="preserve">
+    <value>ดูสิทธิ์การเข้าถึง</value>
+  </data>
   <data name="Read Roles" xml:space="preserve">
     <value>อ่านบทบาท</value>
   </data>
@@ -167,6 +203,9 @@
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>ดูสัญญาบริษัทใดๆ รวมถึงที่เป็นความลับ</value>
+  </data>
+  <data name="View Background Jobs" xml:space="preserve">
+    <value>ดูงานพื้นหลัง</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>ดูประวัติสัญญา</value>

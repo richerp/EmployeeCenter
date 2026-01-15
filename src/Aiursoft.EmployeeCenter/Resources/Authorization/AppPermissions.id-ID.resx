@@ -39,6 +39,9 @@
   <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
     <value>Memungkinkan pembuatan dan pengelolaan templat tugas onboarding untuk karyawan baru.</value>
   </data>
+  <data name="Allows creating contracts for the company. Every user can view public contracts by default" xml:space="preserve">
+    <value>Memungkinkan pembuatan kontrak untuk perusahaan. Setiap pengguna dapat melihat kontrak publik secara default.</value>
+  </data>
   <data name="Allows creating new contracts for any user." xml:space="preserve">
     <value>Memungkinkan pembuatan kontrak baru untuk pengguna mana pun.</value>
   </data>
@@ -47,6 +50,9 @@
   </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Memungkinkan pembuatan, pembaruan, dan penghapusan informasi entitas perusahaan.</value>
+  </data>
+  <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
+    <value>Memungkinkan pembuatan, pembaruan, dan penghapusan informasi entitas perusahaan. Setiap pengguna dapat melihat informasi entitas perusahaan secara default.</value>
   </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>Memungkinkan penerbitan dan pengelolaan slip gaji untuk semua pengguna.</value>
@@ -57,8 +63,14 @@
   <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items." xml:space="preserve">
     <value>Memungkinkan pengelolaan aset TI perusahaan, termasuk kategori, model, dan item individu.</value>
   </data>
+  <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items. Also allows assigning and recovering assets to/from employees." xml:space="preserve">
+    <value>Memungkinkan pengelolaan aset TI perusahaan, termasuk kategori, model, dan item individu. Juga memungkinkan penugasan dan pemulihan aset ke/dari karyawan.</value>
+  </data>
   <data name="Allows modification of role names and their assigned permissions." xml:space="preserve">
     <value>Memungkinkan modifikasi nama peran dan izin yang ditetapkan padanya.</value>
+  </data>
+  <data name="Allows modification of user details like email and roles, and can also reset user passwords." xml:space="preserve">
+    <value>Memungkinkan modifikasi detail pengguna seperti email dan peran, serta dapat mereset kata sandi pengguna.</value>
   </data>
   <data name="Allows modification of user details like email and roles, resetting user passwords, and viewing sensitive user details like payroll." xml:space="preserve">
     <value>Memungkinkan modifikasi detail pengguna seperti email dan peran, serta dapat mengatur ulang kata sandi pengguna.</value>
@@ -75,11 +87,23 @@
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Memungkinkan melihat semua kontrak perusahaan, termasuk yang ditandai sebagai pribadi.</value>
   </data>
+  <data name="Allows viewing all company contracts, including those marked as private. Everyone can view public contracts by default" xml:space="preserve">
+    <value>Memungkinkan melihat semua kontrak perusahaan, termasuk yang ditandai sebagai pribadi. Semua orang dapat melihat kontrak publik secara default.</value>
+  </data>
+  <data name="Allows viewing and modifying global application settings." xml:space="preserve">
+    <value>Memungkinkan melihat dan mengubah pengaturan aplikasi global.</value>
+  </data>
   <data name="Allows viewing system-level information and settings." xml:space="preserve">
     <value>Memungkinkan melihat informasi dan pengaturan tingkat sistem.</value>
   </data>
+  <data name="Allows viewing the background job dashboard and managing jobs." xml:space="preserve">
+    <value>Memungkinkan melihat dasbor pekerjaan latar belakang dan mengelola pekerjaan.</value>
+  </data>
   <data name="Allows viewing the contract history of any user." xml:space="preserve">
     <value>Memungkinkan melihat riwayat kontrak dari pengguna mana pun.</value>
+  </data>
+  <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
+    <value>Memungkinkan melihat daftar semua izin dan penugasan mereka ke peran serta pengguna.</value>
   </data>
   <data name="Allows viewing the list of all users." xml:space="preserve">
     <value>Memungkinkan melihat daftar semua pengguna.</value>
@@ -105,6 +129,9 @@
   <data name="Create and manage company contracts" xml:space="preserve">
     <value>Buat dan kelola kontrak perusahaan</value>
   </data>
+  <data name="Create company contracts" xml:space="preserve">
+    <value>Buat kontrak perusahaan</value>
+  </data>
   <data name="Create Contract" xml:space="preserve">
     <value>Buat Kontrak</value>
   </data>
@@ -122,6 +149,9 @@
   </data>
   <data name="Edit Role Information" xml:space="preserve">
     <value>Edit Informasi Peran</value>
+  </data>
+  <data name="Edit User Information" xml:space="preserve">
+    <value>Sunting Informasi Pengguna</value>
   </data>
   <data name="Grants permission to create new roles." xml:space="preserve">
     <value>Memberikan izin untuk membuat peran baru.</value>
@@ -141,6 +171,9 @@
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Kelola Entitas Perusahaan</value>
   </data>
+  <data name="Manage Global Settings" xml:space="preserve">
+    <value>Kelola Pengaturan Global</value>
+  </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>Kelola Cuti</value>
   </data>
@@ -156,6 +189,9 @@
   <data name="Print Certificates" xml:space="preserve">
     <value>Cetak Sertifikat</value>
   </data>
+  <data name="Read Permissions" xml:space="preserve">
+    <value>Baca Izin</value>
+  </data>
   <data name="Read Roles" xml:space="preserve">
     <value>Lihat Peran</value>
   </data>
@@ -167,6 +203,9 @@
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>Lihat kontrak perusahaan apa pun, termasuk yang bersifat pribadi</value>
+  </data>
+  <data name="View Background Jobs" xml:space="preserve">
+    <value>Lihat Pekerjaan Latar Belakang</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>Lihat Riwayat Kontrak</value>

@@ -21,6 +21,9 @@
       <data name="Asset Tag" xml:space="preserve">
     <value>Asset Tag</value>
   </data>
+  <data name="Assignee" xml:space="preserve">
+    <value>Toegewezen aan</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>Factuurbestand</value>
   </data>

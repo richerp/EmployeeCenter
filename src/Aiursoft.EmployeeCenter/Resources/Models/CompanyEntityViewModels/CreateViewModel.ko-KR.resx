@@ -30,6 +30,9 @@
   <data name="Business License / BR Scan" xml:space="preserve">
     <value>사업자 등록증 / BR 스캔</value>
   </data>
+  <data name="Business Registration (BR / Business License)" xml:space="preserve">
+    <value>사업자 등록 (BR / 사업자 등록증)</value>
+  </data>
   <data name="CI Number (HK)" xml:space="preserve">
     <value>CI 번호 (HK)</value>
   </data>
@@ -68,6 +71,12 @@
   </data>
   <data name="Operation Status" xml:space="preserve">
     <value>운영 상태</value>
+  </data>
+  <data name="Organization Certificate (CR / Org Code)" xml:space="preserve">
+    <value>기관 인증서 (CR / 기관 코드)</value>
+  </data>
+  <data name="Please upload a valid certificate file." xml:space="preserve">
+    <value>유효한 인증서 파일을 업로드해 주세요.</value>
   </data>
   <data name="Please upload a valid license file." xml:space="preserve">
     <value>유효한 라이선스 파일을 업로드해 주세요.</value>

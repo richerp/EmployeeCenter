@@ -21,8 +21,17 @@
       <data name="Account Details" xml:space="preserve">
     <value>تفاصيل الحساب</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>إجراءات</value>
+  </data>
   <data name="An overview of the user&apos;s profile, assigned roles, and effective permissions." xml:space="preserve">
     <value>نظرة عامة على ملف المستخدم الشخصي، والأدوار المُخصصة، والصلاحيات الفعالة.</value>
+  </data>
+  <data name="Asset Tag" xml:space="preserve">
+    <value>علامة الأصل</value>
+  </data>
+  <data name="Assigned Assets" xml:space="preserve">
+    <value>الأصول المخصصة</value>
   </data>
   <data name="Assigned Roles" xml:space="preserve">
     <value>الأدوار المعينة</value>
@@ -69,6 +78,12 @@
   <data name="Delete this User" xml:space="preserve">
     <value>حذف هذا المستخدم</value>
   </data>
+  <data name="Details" xml:space="preserve">
+    <value>التفاصيل</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
   <data name="Edit this User" xml:space="preserve">
     <value>تعديل هذا المستخدم</value>
   </data>
@@ -84,6 +99,12 @@
   <data name="Holder (Old -&gt; New)" xml:space="preserve">
     <value>الحساب (قديم -&gt; جديد)</value>
   </data>
+  <data name="Idle" xml:space="preserve">
+    <value>متوقف</value>
+  </data>
+  <data name="In Use" xml:space="preserve">
+    <value>قيد الاستخدام</value>
+  </data>
   <data name="Job Level" xml:space="preserve">
     <value>Job Level</value>
   </data>
@@ -92,6 +113,18 @@
   </data>
   <data name="Legal Name" xml:space="preserve">
     <value>الاسم القانوني</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>الموقع</value>
+  </data>
+  <data name="Lost" xml:space="preserve">
+    <value>ضائع</value>
+  </data>
+  <data name="Maintenance" xml:space="preserve">
+    <value>الصيانة</value>
+  </data>
+  <data name="Manage All Assets" xml:space="preserve">
+    <value>إدارة جميع الأصول</value>
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>إدارة العقود</value>
@@ -102,11 +135,20 @@
   <data name="Manager" xml:space="preserve">
     <value>المدير</value>
   </data>
+  <data name="Model" xml:space="preserve">
+    <value>الموديل</value>
+  </data>
   <data name="Name" xml:space="preserve">
     <value>الاسم</value>
   </data>
+  <data name="No assets assigned to this user." xml:space="preserve">
+    <value>لا توجد أصول مخصصة لهذا المستخدم.</value>
+  </data>
   <data name="No change history found." xml:space="preserve">
     <value>لا توجد سجلات للتغييرات</value>
+  </data>
+  <data name="Pending Accept" xml:space="preserve">
+    <value>معلق القبول</value>
   </data>
   <data name="Phone Number" xml:space="preserve">
     <value>رقم الهاتف</value>
@@ -116,6 +158,12 @@
   </data>
   <data name="Report Line" xml:space="preserve">
     <value>سطر التقرير</value>
+  </data>
+  <data name="Retired" xml:space="preserve">
+    <value>متقاعد</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>الحالة</value>
   </data>
   <data name="System" xml:space="preserve">
     <value>نظام</value>

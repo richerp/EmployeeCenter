@@ -60,6 +60,9 @@
   <data name="Assets" xml:space="preserve">
     <value>Actifs</value>
   </data>
+  <data name="Background Jobs" xml:space="preserve">
+    <value>Travaux en arrière-plan</value>
+  </data>
   <data name="Bank Info" xml:space="preserve">
     <value>Informations bancaires</value>
   </data>
@@ -201,6 +204,9 @@
   <data name="Finance" xml:space="preserve">
     <value>Finances</value>
   </data>
+  <data name="Global Settings" xml:space="preserve">
+    <value>Paramètres globaux</value>
+  </data>
   <data name="Home" xml:space="preserve">
     <value>Accueil</value>
   </data>
@@ -248,6 +254,9 @@
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Gérer les actifs</value>
+  </data>
+  <data name="Manage Company Entities" xml:space="preserve">
+    <value>Gérer les entités de l&apos;entreprise</value>
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>Gérer les contrats</value>
@@ -308,6 +317,9 @@
   </data>
   <data name="Payrolls" xml:space="preserve">
     <value>Paies</value>
+  </data>
+  <data name="Permissions" xml:space="preserve">
+    <value>Permissions</value>
   </data>
   <data name="Personal" xml:space="preserve">
     <value>Personnel</value>

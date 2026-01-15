@@ -30,6 +30,9 @@
   <data name="Business License / BR Scan" xml:space="preserve">
     <value>Άδεια Επιχείρησης / Αντίγραφο BR</value>
   </data>
+  <data name="Business Registration (BR / Business License)" xml:space="preserve">
+    <value>Επιχειρησιακή Εγγραφή (BR / Αδειοδότηση Επιχείρησης)</value>
+  </data>
   <data name="CI Number (HK)" xml:space="preserve">
     <value>Αριθμός CI (ΧΚ)</value>
   </data>
@@ -68,6 +71,12 @@
   </data>
   <data name="Operation Status" xml:space="preserve">
     <value>Κατάσταση Λειτουργίας</value>
+  </data>
+  <data name="Organization Certificate (CR / Org Code)" xml:space="preserve">
+    <value>Πιστοποιητικό Οργανισμού (CR / Κωδικός Οργανισμού)</value>
+  </data>
+  <data name="Please upload a valid certificate file." xml:space="preserve">
+    <value>Παρακαλούμε ανεβάστε ένα έγκυρο αρχείο πιστοποιητικού.</value>
   </data>
   <data name="Please upload a valid license file." xml:space="preserve">
     <value>Παρακαλώ ανεβάστε ένα έγκυρο αρχείο άδειας.</value>

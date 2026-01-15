@@ -36,6 +36,9 @@
   <data name="Financial Information" xml:space="preserve">
     <value>Økonomiske oplysninger</value>
   </data>
+  <data name="Not Assigned" xml:space="preserve">
+    <value>Ikke tilknyttet</value>
+  </data>
   <data name="Save Asset" xml:space="preserve">
     <value>Gem aktiver</value>
   </data>

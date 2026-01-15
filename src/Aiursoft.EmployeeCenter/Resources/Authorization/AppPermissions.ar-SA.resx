@@ -39,6 +39,9 @@
   <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
     <value>يسمح بإنشاء وإدارة قوالب مهام بدء العمل للموظفين الجدد.</value>
   </data>
+  <data name="Allows creating contracts for the company. Every user can view public contracts by default" xml:space="preserve">
+    <value>يسمح بإنشاء عقود للشركة. يمكن لكل مستخدم عرض العقود العامة افتراضيًا.</value>
+  </data>
   <data name="Allows creating new contracts for any user." xml:space="preserve">
     <value>يُمكّن من إنشاء عقود جديدة لأي مستخدم.</value>
   </data>
@@ -47,6 +50,9 @@
   </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>يُمكّن من إنشاء معلومات الكيانات الخاصة بالشركة وتحديثها وحذفها.</value>
+  </data>
+  <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
+    <value>يُمكّن من إنشاء معلومات الكيان المؤسسي وتحديثها وحذفها. يمكن لكل مستخدم عرض معلومات الكيان المؤسسي افتراضيًا.</value>
   </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>يسمح بإصدار وإدارة إيصالات الرواتب لجميع المستخدمين.</value>
@@ -57,8 +63,14 @@
   <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items." xml:space="preserve">
     <value>يُمكّن من إدارة أصول الشركة التقنية، بما في ذلك الفئات والنماذج والعناصر الفردية.</value>
   </data>
+  <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items. Also allows assigning and recovering assets to/from employees." xml:space="preserve">
+    <value>يُمكّن من إدارة أصول الشركة التقنية، بما في ذلك الفئات والنماذج والعناصر الفردية. كما يُمكّن من تعيين الأصول وإعادتها من/إلى الموظفين.</value>
+  </data>
   <data name="Allows modification of role names and their assigned permissions." xml:space="preserve">
     <value>يسمح بتعديل أسماء الأدوار والصلاحيات المخصصة لها.</value>
+  </data>
+  <data name="Allows modification of user details like email and roles, and can also reset user passwords." xml:space="preserve">
+    <value>يسمح بتعديل تفاصيل المستخدم مثل البريد الإلكتروني والأدوار، ويمكنه أيضًا إعادة تعيين كلمات المرور الخاصة بالمستخدم.</value>
   </data>
   <data name="Allows modification of user details like email and roles, resetting user passwords, and viewing sensitive user details like payroll." xml:space="preserve">
     <value>يسمح بتعديل تفاصيل المستخدم مثل البريد الإلكتروني والأدوار، ويمكن أيضًا إعادة تعيين كلمات مرور المستخدمين.</value>
@@ -75,11 +87,23 @@
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>يُمكّن من عرض جميع عقود الشركة، بما في ذلك تلك التي تم تحديدها على أنها خاصة.</value>
   </data>
+  <data name="Allows viewing all company contracts, including those marked as private. Everyone can view public contracts by default" xml:space="preserve">
+    <value>يُتيح عرض جميع عقود الشركة، بما في ذلك تلك المُعلَّمة على أنها خاصة. يمكن لكل شخص عرض العقود العامة افتراضيًا.</value>
+  </data>
+  <data name="Allows viewing and modifying global application settings." xml:space="preserve">
+    <value>يسمح بعرض إعدادات التطبيق العالمية وتعديلها.</value>
+  </data>
   <data name="Allows viewing system-level information and settings." xml:space="preserve">
     <value>يسمح بعرض معلومات وإعدادات على مستوى النظام.</value>
   </data>
+  <data name="Allows viewing the background job dashboard and managing jobs." xml:space="preserve">
+    <value>يُمكّن من عرض لوحة مراقبة المهام الخلفية وإدارة المهام.</value>
+  </data>
   <data name="Allows viewing the contract history of any user." xml:space="preserve">
     <value>يُسمح بعرض سجل العقود لأي مستخدم.</value>
+  </data>
+  <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
+    <value>يسمح بعرض قائمة بجميع الصلاحيات وتوزيعها على الأدوار والمستخدمين.</value>
   </data>
   <data name="Allows viewing the list of all users." xml:space="preserve">
     <value>يسمح بعرض قائمة جميع المستخدمين.</value>
@@ -105,6 +129,9 @@
   <data name="Create and manage company contracts" xml:space="preserve">
     <value>إنشاء وإدارة عقود الشركة</value>
   </data>
+  <data name="Create company contracts" xml:space="preserve">
+    <value>إنشاء عقود الشركة</value>
+  </data>
   <data name="Create Contract" xml:space="preserve">
     <value>إنشاء عقد</value>
   </data>
@@ -122,6 +149,9 @@
   </data>
   <data name="Edit Role Information" xml:space="preserve">
     <value>تعديل معلومات الدور</value>
+  </data>
+  <data name="Edit User Information" xml:space="preserve">
+    <value>تحرير معلومات المستخدم</value>
   </data>
   <data name="Grants permission to create new roles." xml:space="preserve">
     <value>يمنح الإذن لإنشاء أدوار جديدة.</value>
@@ -141,6 +171,9 @@
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>إدارة الكيانات المؤسسية</value>
   </data>
+  <data name="Manage Global Settings" xml:space="preserve">
+    <value>إدارة الإعدادات العالمية</value>
+  </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>إدارة الإجازات</value>
   </data>
@@ -156,6 +189,9 @@
   <data name="Print Certificates" xml:space="preserve">
     <value>طباعة الشهادات</value>
   </data>
+  <data name="Read Permissions" xml:space="preserve">
+    <value>عرض الصلاحيات</value>
+  </data>
   <data name="Read Roles" xml:space="preserve">
     <value>قراءة الأدوار</value>
   </data>
@@ -167,6 +203,9 @@
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>عرض أي عقد شركة، بما في ذلك العقود الخاصة</value>
+  </data>
+  <data name="View Background Jobs" xml:space="preserve">
+    <value>عرض مهام الخلفية</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>عرض سجل العقود</value>

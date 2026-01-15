@@ -30,6 +30,9 @@
   <data name="Business License / BR Scan" xml:space="preserve">
     <value>Dowód działalności / Skan BR</value>
   </data>
+  <data name="Business Registration (BR / Business License)" xml:space="preserve">
+    <value>Rejestracja firmowa (BR / Zezwolenie na działalność)</value>
+  </data>
   <data name="CI Number (HK)" xml:space="preserve">
     <value>Numer CI (HK)</value>
   </data>
@@ -68,6 +71,12 @@
   </data>
   <data name="Operation Status" xml:space="preserve">
     <value>Status działalności</value>
+  </data>
+  <data name="Organization Certificate (CR / Org Code)" xml:space="preserve">
+    <value>Certyfikat organizacji (CR / Kod organizacji)</value>
+  </data>
+  <data name="Please upload a valid certificate file." xml:space="preserve">
+    <value>Proszę przesłać ważny plik certyfikatu.</value>
   </data>
   <data name="Please upload a valid license file." xml:space="preserve">
     <value>Proszę przesłać ważny plik licencji.</value>

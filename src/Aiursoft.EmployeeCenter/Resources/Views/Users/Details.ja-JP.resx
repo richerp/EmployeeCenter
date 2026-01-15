@@ -21,8 +21,17 @@
       <data name="Account Details" xml:space="preserve">
     <value>アカウント詳細</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>操作</value>
+  </data>
   <data name="An overview of the user&apos;s profile, assigned roles, and effective permissions." xml:space="preserve">
     <value>ユーザーのプロファイル、割り当てられたロール、および有効な権限の概要。</value>
+  </data>
+  <data name="Asset Tag" xml:space="preserve">
+    <value>資産タグ</value>
+  </data>
+  <data name="Assigned Assets" xml:space="preserve">
+    <value>割り当てられた資産</value>
   </data>
   <data name="Assigned Roles" xml:space="preserve">
     <value>割り当てられたロール</value>
@@ -69,6 +78,12 @@
   <data name="Delete this User" xml:space="preserve">
     <value>このユーザーを削除</value>
   </data>
+  <data name="Details" xml:space="preserve">
+    <value>詳細</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>編集</value>
+  </data>
   <data name="Edit this User" xml:space="preserve">
     <value>このユーザーを編集</value>
   </data>
@@ -84,6 +99,12 @@
   <data name="Holder (Old -&gt; New)" xml:space="preserve">
     <value>口座名義 (旧 -&gt; 新)</value>
   </data>
+  <data name="Idle" xml:space="preserve">
+    <value>未使用</value>
+  </data>
+  <data name="In Use" xml:space="preserve">
+    <value>使用中</value>
+  </data>
   <data name="Job Level" xml:space="preserve">
     <value>職位レベル</value>
   </data>
@@ -92,6 +113,18 @@
   </data>
   <data name="Legal Name" xml:space="preserve">
     <value>法定名</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>場所</value>
+  </data>
+  <data name="Lost" xml:space="preserve">
+    <value>紛失</value>
+  </data>
+  <data name="Maintenance" xml:space="preserve">
+    <value>保守中</value>
+  </data>
+  <data name="Manage All Assets" xml:space="preserve">
+    <value>すべての資産を管理</value>
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>契約の管理</value>
@@ -102,11 +135,20 @@
   <data name="Manager" xml:space="preserve">
     <value>マネージャー</value>
   </data>
+  <data name="Model" xml:space="preserve">
+    <value>モデル</value>
+  </data>
   <data name="Name" xml:space="preserve">
     <value>名前</value>
   </data>
+  <data name="No assets assigned to this user." xml:space="preserve">
+    <value>このユーザーにはアセットが割り当てられていません。</value>
+  </data>
   <data name="No change history found." xml:space="preserve">
     <value>変更履歴が見つかりませんでした。</value>
+  </data>
+  <data name="Pending Accept" xml:space="preserve">
+    <value>承認待ち</value>
   </data>
   <data name="Phone Number" xml:space="preserve">
     <value>電話番号</value>
@@ -116,6 +158,12 @@
   </data>
   <data name="Report Line" xml:space="preserve">
     <value>報告ライン</value>
+  </data>
+  <data name="Retired" xml:space="preserve">
+    <value>リタイア済み</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>状態</value>
   </data>
   <data name="System" xml:space="preserve">
     <value>システム</value>

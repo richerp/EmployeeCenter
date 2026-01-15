@@ -57,6 +57,9 @@
   <data name="Assets" xml:space="preserve">
     <value>Activas</value>
   </data>
+  <data name="Background Jobs" xml:space="preserve">
+    <value>Achtergrondtaken</value>
+  </data>
   <data name="Bank Info" xml:space="preserve">
     <value>Bankgegevens</value>
   </data>
@@ -198,6 +201,9 @@
   <data name="Finance" xml:space="preserve">
     <value>Financiën</value>
   </data>
+  <data name="Global Settings" xml:space="preserve">
+    <value>Algemene instellingen</value>
+  </data>
   <data name="Home" xml:space="preserve">
     <value>Home</value>
   </data>
@@ -245,6 +251,9 @@
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Assets beheren</value>
+  </data>
+  <data name="Manage Company Entities" xml:space="preserve">
+    <value>Bedrijfseenheden beheren</value>
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>Contracten beheren</value>
@@ -305,6 +314,9 @@
   </data>
   <data name="Payrolls" xml:space="preserve">
     <value>Loonlijsten</value>
+  </data>
+  <data name="Permissions" xml:space="preserve">
+    <value>Machtigingen</value>
   </data>
   <data name="Personal" xml:space="preserve">
     <value>Persoonlijk</value>

@@ -24,6 +24,9 @@
   <data name="Is Public" xml:space="preserve">
     <value>Είναι Δημόσιο</value>
   </data>
+  <data name="Please upload a valid contract file." xml:space="preserve">
+    <value>Παρακαλώ ανεβάστε ένα έγκυρο αρχείο σύμβασης.</value>
+  </data>
   <data name="User" xml:space="preserve">
     <value>Χρήστης</value>
   </data>

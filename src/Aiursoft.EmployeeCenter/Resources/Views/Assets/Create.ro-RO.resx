@@ -36,6 +36,9 @@
   <data name="Financial Information" xml:space="preserve">
     <value>Informații financiare</value>
   </data>
+  <data name="Not Assigned" xml:space="preserve">
+    <value>Ne atribuit</value>
+  </data>
   <data name="Save Asset" xml:space="preserve">
     <value>Salvează Active</value>
   </data>

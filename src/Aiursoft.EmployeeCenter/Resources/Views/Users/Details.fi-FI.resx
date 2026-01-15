@@ -21,8 +21,17 @@
       <data name="Account Details" xml:space="preserve">
     <value>Tilin tiedot</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Toiminnot</value>
+  </data>
   <data name="An overview of the user&apos;s profile, assigned roles, and effective permissions." xml:space="preserve">
     <value>Yleiskatsaus käyttäjän profiiliin, määritettyihin rooleihin ja tehoksiin käyttöoikeuksiin.</value>
+  </data>
+  <data name="Asset Tag" xml:space="preserve">
+    <value>Laitetunnus</value>
+  </data>
+  <data name="Assigned Assets" xml:space="preserve">
+    <value>Määrätyt varat</value>
   </data>
   <data name="Assigned Roles" xml:space="preserve">
     <value>Määritetyt roolit</value>
@@ -69,6 +78,12 @@
   <data name="Delete this User" xml:space="preserve">
     <value>Poista tämä käyttäjä</value>
   </data>
+  <data name="Details" xml:space="preserve">
+    <value>Tiedot</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Muokkaa</value>
+  </data>
   <data name="Edit this User" xml:space="preserve">
     <value>Muokkaa tätä käyttäjää</value>
   </data>
@@ -84,6 +99,12 @@
   <data name="Holder (Old -&gt; New)" xml:space="preserve">
     <value>Hallitsija (Vanha -&gt; Uusi)</value>
   </data>
+  <data name="Idle" xml:space="preserve">
+    <value>Ei käytössä</value>
+  </data>
+  <data name="In Use" xml:space="preserve">
+    <value>Käytössä</value>
+  </data>
   <data name="Job Level" xml:space="preserve">
     <value>Job Level</value>
   </data>
@@ -92,6 +113,18 @@
   </data>
   <data name="Legal Name" xml:space="preserve">
     <value>Lakisääteinen nimi</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Sijainti</value>
+  </data>
+  <data name="Lost" xml:space="preserve">
+    <value>Kadonnut</value>
+  </data>
+  <data name="Maintenance" xml:space="preserve">
+    <value>Huolto</value>
+  </data>
+  <data name="Manage All Assets" xml:space="preserve">
+    <value>Hallinnoi kaikkia varoja</value>
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>Hallinnoi sopimuksia</value>
@@ -102,11 +135,20 @@
   <data name="Manager" xml:space="preserve">
     <value>Esimies</value>
   </data>
+  <data name="Model" xml:space="preserve">
+    <value>Malli</value>
+  </data>
   <data name="Name" xml:space="preserve">
     <value>Nimi</value>
   </data>
+  <data name="No assets assigned to this user." xml:space="preserve">
+    <value>Ei laitteita myönnetty tälle käyttäjälle.</value>
+  </data>
   <data name="No change history found." xml:space="preserve">
     <value>Muutoksia ei löytynyt.</value>
+  </data>
+  <data name="Pending Accept" xml:space="preserve">
+    <value>Odottaa hyväksyntää</value>
   </data>
   <data name="Phone Number" xml:space="preserve">
     <value>Puhelinnumero</value>
@@ -116,6 +158,12 @@
   </data>
   <data name="Report Line" xml:space="preserve">
     <value>Raportointilinja</value>
+  </data>
+  <data name="Retired" xml:space="preserve">
+    <value>Vuosittain</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Tila</value>
   </data>
   <data name="System" xml:space="preserve">
     <value>Järjestelmä</value>

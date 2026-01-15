@@ -39,6 +39,9 @@
   <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
     <value>신입 직원을 위한 온보딩 작업 템플릿 생성 및 관리를 허용합니다.</value>
   </data>
+  <data name="Allows creating contracts for the company. Every user can view public contracts by default" xml:space="preserve">
+    <value>회사 계약을 생성할 수 있습니다. 기본적으로 모든 사용자가 공개 계약을 볼 수 있습니다.</value>
+  </data>
   <data name="Allows creating new contracts for any user." xml:space="preserve">
     <value>모든 사용자에 대한 새로운 계약을 생성할 수 있습니다.</value>
   </data>
@@ -47,6 +50,9 @@
   </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>회사 엔티티 정보의 생성, 수정 및 삭제를 허용합니다.</value>
+  </data>
+  <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
+    <value>회사 엔티티 정보의 생성, 수정 및 삭제를 허용합니다. 기본적으로 모든 사용자가 회사 엔티티 정보를 조회할 수 있습니다.</value>
   </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>모든 사용자의 급여 명세서 발급 및 관리를 허용합니다.</value>
@@ -57,8 +63,14 @@
   <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items." xml:space="preserve">
     <value>회사의 IT 자산을 관리할 수 있도록 허용하며, 카테고리, 모델 및 개별 항목을 포함합니다.</value>
   </data>
+  <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items. Also allows assigning and recovering assets to/from employees." xml:space="preserve">
+    <value>회사의 IT 자산을 관리할 수 있으며, 카테고리, 모델 및 개별 항목을 포함합니다. 또한 자산을 직원에게 배정하거나 회수할 수 있습니다.</value>
+  </data>
   <data name="Allows modification of role names and their assigned permissions." xml:space="preserve">
     <value>역할 이름과 할당된 권한을 수정할 수 있습니다.</value>
+  </data>
+  <data name="Allows modification of user details like email and roles, and can also reset user passwords." xml:space="preserve">
+    <value>사용자 이메일 및 역할과 같은 세부 정보를 수정할 수 있으며, 사용자 비밀번호도 재설정할 수 있습니다.</value>
   </data>
   <data name="Allows modification of user details like email and roles, resetting user passwords, and viewing sensitive user details like payroll." xml:space="preserve">
     <value>사용자의 이메일 및 역할과 같은 세부 정보 수정을 허용하며, 사용자 비밀번호 재설정도 가능합니다.</value>
@@ -75,11 +87,23 @@
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>모든 회사 계약서를 포함하여 비공개로 표시된 계약서도 볼 수 있도록 허용합니다.</value>
   </data>
+  <data name="Allows viewing all company contracts, including those marked as private. Everyone can view public contracts by default" xml:space="preserve">
+    <value>모든 회사 계약서를 조회할 수 있도록 허용하며, 비공개로 표시된 계약서도 포함됩니다. 기본적으로 모든 사용자가 공개 계약서를 조회할 수 있습니다.</value>
+  </data>
+  <data name="Allows viewing and modifying global application settings." xml:space="preserve">
+    <value>전역 애플리케이션 설정을 확인하고 수정할 수 있습니다.</value>
+  </data>
   <data name="Allows viewing system-level information and settings." xml:space="preserve">
     <value>시스템 수준 정보 및 설정을 볼 수 있습니다.</value>
   </data>
+  <data name="Allows viewing the background job dashboard and managing jobs." xml:space="preserve">
+    <value>백그라운드 작업 대시보드를 확인하고 작업을 관리할 수 있습니다.</value>
+  </data>
   <data name="Allows viewing the contract history of any user." xml:space="preserve">
     <value>모든 사용자의 계약 내역을 볼 수 있도록 허용합니다.</value>
+  </data>
+  <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
+    <value>모든 권한과 그 권한이 할당된 역할 및 사용자 목록을 볼 수 있도록 허용합니다.</value>
   </data>
   <data name="Allows viewing the list of all users." xml:space="preserve">
     <value>모든 사용자 목록을 볼 수 있습니다.</value>
@@ -105,6 +129,9 @@
   <data name="Create and manage company contracts" xml:space="preserve">
     <value>회사 계약 생성 및 관리</value>
   </data>
+  <data name="Create company contracts" xml:space="preserve">
+    <value>회사 계약 생성</value>
+  </data>
   <data name="Create Contract" xml:space="preserve">
     <value>계약 생성</value>
   </data>
@@ -122,6 +149,9 @@
   </data>
   <data name="Edit Role Information" xml:space="preserve">
     <value>역할 정보 편집</value>
+  </data>
+  <data name="Edit User Information" xml:space="preserve">
+    <value>사용자 정보 편집</value>
   </data>
   <data name="Grants permission to create new roles." xml:space="preserve">
     <value>새로운 역할을 생성할 수 있는 권한을 부여합니다.</value>
@@ -141,6 +171,9 @@
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>회사 엔티티 관리</value>
   </data>
+  <data name="Manage Global Settings" xml:space="preserve">
+    <value>글로벌 설정 관리</value>
+  </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>휴가 관리</value>
   </data>
@@ -156,6 +189,9 @@
   <data name="Print Certificates" xml:space="preserve">
     <value>증명서 인쇄</value>
   </data>
+  <data name="Read Permissions" xml:space="preserve">
+    <value>권한 보기</value>
+  </data>
   <data name="Read Roles" xml:space="preserve">
     <value>역할 읽기</value>
   </data>
@@ -167,6 +203,9 @@
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>모든 회사 계약서(비공개 계약서 포함) 보기</value>
+  </data>
+  <data name="View Background Jobs" xml:space="preserve">
+    <value>백그라운드 작업 보기</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>계약 이력 보기</value>

@@ -21,8 +21,17 @@
       <data name="Account Details" xml:space="preserve">
     <value>Hesap Detayları</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Eylemler</value>
+  </data>
   <data name="An overview of the user&apos;s profile, assigned roles, and effective permissions." xml:space="preserve">
     <value>Kullanıcının profilinin, atanmış rollerin ve etkin izinlerin bir özeti.</value>
+  </data>
+  <data name="Asset Tag" xml:space="preserve">
+    <value>Varlık Etiketi</value>
+  </data>
+  <data name="Assigned Assets" xml:space="preserve">
+    <value>Atanmış Varlıklar</value>
   </data>
   <data name="Assigned Roles" xml:space="preserve">
     <value>Atanmış Roller</value>
@@ -69,6 +78,12 @@
   <data name="Delete this User" xml:space="preserve">
     <value>Bu Kullanıcıyı Sil</value>
   </data>
+  <data name="Details" xml:space="preserve">
+    <value>Ayrıntılar</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Düzenle</value>
+  </data>
   <data name="Edit this User" xml:space="preserve">
     <value>Bu Kullanıcıyı Düzenle</value>
   </data>
@@ -84,6 +99,12 @@
   <data name="Holder (Old -&gt; New)" xml:space="preserve">
     <value>Hesap Sahibi (Eski -&gt; Yeni)</value>
   </data>
+  <data name="Idle" xml:space="preserve">
+    <value>Beklemede</value>
+  </data>
+  <data name="In Use" xml:space="preserve">
+    <value>Kullanımda</value>
+  </data>
   <data name="Job Level" xml:space="preserve">
     <value>Job Level</value>
   </data>
@@ -92,6 +113,18 @@
   </data>
   <data name="Legal Name" xml:space="preserve">
     <value>Resmi İsim</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Konum</value>
+  </data>
+  <data name="Lost" xml:space="preserve">
+    <value>Kayıp</value>
+  </data>
+  <data name="Maintenance" xml:space="preserve">
+    <value>Bakım</value>
+  </data>
+  <data name="Manage All Assets" xml:space="preserve">
+    <value>Tüm Varlıkları Yönet</value>
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>Sözleşmeleri Yönet</value>
@@ -102,11 +135,20 @@
   <data name="Manager" xml:space="preserve">
     <value>Yönetici</value>
   </data>
+  <data name="Model" xml:space="preserve">
+    <value>Model</value>
+  </data>
   <data name="Name" xml:space="preserve">
     <value>Ad</value>
   </data>
+  <data name="No assets assigned to this user." xml:space="preserve">
+    <value>Bu kullanıcıya atanan varlık yok.</value>
+  </data>
   <data name="No change history found." xml:space="preserve">
     <value>Değişim geçmişi bulunamadı.</value>
+  </data>
+  <data name="Pending Accept" xml:space="preserve">
+    <value>Bekleyen Kabul</value>
   </data>
   <data name="Phone Number" xml:space="preserve">
     <value>Telefon Numarası</value>
@@ -116,6 +158,12 @@
   </data>
   <data name="Report Line" xml:space="preserve">
     <value>Rapor Hattı</value>
+  </data>
+  <data name="Retired" xml:space="preserve">
+    <value>Tahliye Edildi</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Durum</value>
   </data>
   <data name="System" xml:space="preserve">
     <value>Sistem</value>

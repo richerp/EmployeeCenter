@@ -21,8 +21,17 @@
       <data name="Account Details" xml:space="preserve">
     <value>Στοιχεία Λογαριασμού</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Ενέργειες</value>
+  </data>
   <data name="An overview of the user&apos;s profile, assigned roles, and effective permissions." xml:space="preserve">
     <value>Μια επισκόπηση του προφίλ του χρήστη, των ανατεθειμένων ρόλων και των ενεργών δικαιωμάτων.</value>
+  </data>
+  <data name="Asset Tag" xml:space="preserve">
+    <value>Αριθμός Περιουσίας</value>
+  </data>
+  <data name="Assigned Assets" xml:space="preserve">
+    <value>Ανατεθέντα Περιουσιακά Στοιχεία</value>
   </data>
   <data name="Assigned Roles" xml:space="preserve">
     <value>Ανατεθειμένοι Ρόλοι</value>
@@ -69,6 +78,12 @@
   <data name="Delete this User" xml:space="preserve">
     <value>Διαγραφή αυτού του χρήστη</value>
   </data>
+  <data name="Details" xml:space="preserve">
+    <value>Λεπτομέρειες</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Επεξεργασία</value>
+  </data>
   <data name="Edit this User" xml:space="preserve">
     <value>Επεξεργασία αυτού του χρήστη</value>
   </data>
@@ -84,6 +99,12 @@
   <data name="Holder (Old -&gt; New)" xml:space="preserve">
     <value>Κάτοχος (Παλιό -&gt; Νέο)</value>
   </data>
+  <data name="Idle" xml:space="preserve">
+    <value>Αδρανής</value>
+  </data>
+  <data name="In Use" xml:space="preserve">
+    <value>Σε Χρήση</value>
+  </data>
   <data name="Job Level" xml:space="preserve">
     <value>Job Level</value>
   </data>
@@ -92,6 +113,18 @@
   </data>
   <data name="Legal Name" xml:space="preserve">
     <value>Νόμιμο Όνομα</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Τοποθεσία</value>
+  </data>
+  <data name="Lost" xml:space="preserve">
+    <value>Απομακρυσμένο</value>
+  </data>
+  <data name="Maintenance" xml:space="preserve">
+    <value>Συντήρηση</value>
+  </data>
+  <data name="Manage All Assets" xml:space="preserve">
+    <value>Διαχείριση Όλων των Περιουσιακών Στοιχείων</value>
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>Διαχείριση Συμβάσεων</value>
@@ -102,11 +135,20 @@
   <data name="Manager" xml:space="preserve">
     <value>Διευθυντής</value>
   </data>
+  <data name="Model" xml:space="preserve">
+    <value>Μοντέλο</value>
+  </data>
   <data name="Name" xml:space="preserve">
     <value>Όνομα</value>
   </data>
+  <data name="No assets assigned to this user." xml:space="preserve">
+    <value>Δεν έχουν ανατεθεί περιουσιακά στον χρήστη αυτόν.</value>
+  </data>
   <data name="No change history found." xml:space="preserve">
     <value>Δεν βρέθηκε ιστορικό αλλαγών.</value>
+  </data>
+  <data name="Pending Accept" xml:space="preserve">
+    <value>Εκκρεμεί Αποδοχή</value>
   </data>
   <data name="Phone Number" xml:space="preserve">
     <value>Τηλέφωνο</value>
@@ -116,6 +158,12 @@
   </data>
   <data name="Report Line" xml:space="preserve">
     <value>Γραμμή Αναφοράς</value>
+  </data>
+  <data name="Retired" xml:space="preserve">
+    <value>Αποσυνδέθηκε</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Κατάσταση</value>
   </data>
   <data name="System" xml:space="preserve">
     <value>Σύστημα</value>

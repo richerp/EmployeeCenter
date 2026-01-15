@@ -21,8 +21,17 @@
       <data name="Account Details" xml:space="preserve">
     <value>Kontodetaljer</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Handling</value>
+  </data>
   <data name="An overview of the user&apos;s profile, assigned roles, and effective permissions." xml:space="preserve">
     <value>Et overblik over brugerens profil, tildelte roller og effektive tilladelser.</value>
+  </data>
+  <data name="Asset Tag" xml:space="preserve">
+    <value>Aktivertag</value>
+  </data>
+  <data name="Assigned Assets" xml:space="preserve">
+    <value>Tildelte aktiver</value>
   </data>
   <data name="Assigned Roles" xml:space="preserve">
     <value>Tildelte roller</value>
@@ -69,6 +78,12 @@
   <data name="Delete this User" xml:space="preserve">
     <value>Slet denne bruger</value>
   </data>
+  <data name="Details" xml:space="preserve">
+    <value>Detaljer</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Rediger</value>
+  </data>
   <data name="Edit this User" xml:space="preserve">
     <value>Rediger denne bruger</value>
   </data>
@@ -84,6 +99,12 @@
   <data name="Holder (Old -&gt; New)" xml:space="preserve">
     <value>Ejer (Gammel -&gt; Ny)</value>
   </data>
+  <data name="Idle" xml:space="preserve">
+    <value>Inaktiv</value>
+  </data>
+  <data name="In Use" xml:space="preserve">
+    <value>I brug</value>
+  </data>
   <data name="Job Level" xml:space="preserve">
     <value>Job Level</value>
   </data>
@@ -92,6 +113,18 @@
   </data>
   <data name="Legal Name" xml:space="preserve">
     <value>Retningsnavn</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Placering</value>
+  </data>
+  <data name="Lost" xml:space="preserve">
+    <value>Tabt</value>
+  </data>
+  <data name="Maintenance" xml:space="preserve">
+    <value>Vedligeholdelse</value>
+  </data>
+  <data name="Manage All Assets" xml:space="preserve">
+    <value>Administrer alle aktiver</value>
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>Håndtér kontrakter</value>
@@ -102,11 +135,20 @@
   <data name="Manager" xml:space="preserve">
     <value>Leder</value>
   </data>
+  <data name="Model" xml:space="preserve">
+    <value>Model</value>
+  </data>
   <data name="Name" xml:space="preserve">
     <value>Navn</value>
   </data>
+  <data name="No assets assigned to this user." xml:space="preserve">
+    <value>Ingen aktiver er tildelt denne bruger.</value>
+  </data>
   <data name="No change history found." xml:space="preserve">
     <value>Ingen ændringshistorik fundet.</value>
+  </data>
+  <data name="Pending Accept" xml:space="preserve">
+    <value>Venter på accept</value>
   </data>
   <data name="Phone Number" xml:space="preserve">
     <value>Telefonnummer</value>
@@ -116,6 +158,12 @@
   </data>
   <data name="Report Line" xml:space="preserve">
     <value>Rapporteringslinje</value>
+  </data>
+  <data name="Retired" xml:space="preserve">
+    <value>Udtrådt</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
   </data>
   <data name="System" xml:space="preserve">
     <value>System</value>

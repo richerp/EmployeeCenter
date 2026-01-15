@@ -30,6 +30,9 @@
   <data name="Business License / BR Scan" xml:space="preserve">
     <value>營業執照 / BR 證照掃描檔</value>
   </data>
+  <data name="Business Registration (BR / Business License)" xml:space="preserve">
+    <value>營業登記 (BR / 營業執照)</value>
+  </data>
   <data name="CI Number (HK)" xml:space="preserve">
     <value>CI編號 (香港)</value>
   </data>
@@ -68,6 +71,12 @@
   </data>
   <data name="Operation Status" xml:space="preserve">
     <value>營運狀態</value>
+  </data>
+  <data name="Organization Certificate (CR / Org Code)" xml:space="preserve">
+    <value>組織證明文件 (CR / 組織代碼)</value>
+  </data>
+  <data name="Please upload a valid certificate file." xml:space="preserve">
+    <value>請上傳有效的證書檔案。</value>
   </data>
   <data name="Please upload a valid license file." xml:space="preserve">
     <value>請上傳有效的營業執照檔案。</value>

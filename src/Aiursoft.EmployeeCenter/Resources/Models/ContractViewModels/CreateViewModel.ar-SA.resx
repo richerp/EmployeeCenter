@@ -24,6 +24,9 @@
   <data name="Is Public" xml:space="preserve">
     <value>عام</value>
   </data>
+  <data name="Please upload a valid contract file." xml:space="preserve">
+    <value>يرجى تحميل ملف عقد صالح.</value>
+  </data>
   <data name="User" xml:space="preserve">
     <value>المستخدم</value>
   </data>

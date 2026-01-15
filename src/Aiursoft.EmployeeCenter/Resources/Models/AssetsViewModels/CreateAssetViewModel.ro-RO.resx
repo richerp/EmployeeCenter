@@ -21,6 +21,9 @@
       <data name="Asset Tag" xml:space="preserve">
     <value>Etichetă activ</value>
   </data>
+  <data name="Assignee" xml:space="preserve">
+    <value>Alocat</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>Factura</value>
   </data>

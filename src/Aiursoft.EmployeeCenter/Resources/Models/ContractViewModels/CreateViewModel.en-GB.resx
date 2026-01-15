@@ -24,6 +24,9 @@
   <data name="Is Public" xml:space="preserve">
     <value>Is Public</value>
   </data>
+  <data name="Please upload a valid contract file." xml:space="preserve">
+    <value>Please upload a valid contract file.</value>
+  </data>
   <data name="User" xml:space="preserve">
     <value>User</value>
   </data>

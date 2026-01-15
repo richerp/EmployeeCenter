@@ -36,6 +36,9 @@
   <data name="Financial Information" xml:space="preserve">
     <value>Finansal Bilgi</value>
   </data>
+  <data name="Not Assigned" xml:space="preserve">
+    <value>Atanmamış</value>
+  </data>
   <data name="Save Asset" xml:space="preserve">
     <value>Varlık Kaydet</value>
   </data>

@@ -24,6 +24,9 @@
   <data name="New Contract File (Optional)" xml:space="preserve">
     <value>Νέος Αρχείο Σύμβασης (Προαιρετικό)</value>
   </data>
+  <data name="Please upload a valid contract file." xml:space="preserve">
+    <value>Παρακαλούμε ανεβάστε ένα έγκυρο αρχείο συμβάσεως.</value>
+  </data>
   <data name="User" xml:space="preserve">
     <value>Χρήστης</value>
   </data>

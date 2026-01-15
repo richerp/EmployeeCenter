@@ -24,6 +24,9 @@
   <data name="Is Public" xml:space="preserve">
     <value>Halka Açık mı</value>
   </data>
+  <data name="Please upload a valid contract file." xml:space="preserve">
+    <value>Lütfen geçerli bir sözleşme dosyası yükleyin.</value>
+  </data>
   <data name="User" xml:space="preserve">
     <value>Kullanıcı</value>
   </data>

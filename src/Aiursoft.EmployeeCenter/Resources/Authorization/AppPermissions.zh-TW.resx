@@ -39,6 +39,9 @@
   <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
     <value>允許建立和管理新員工的入職任務範本。</value>
   </data>
+  <data name="Allows creating contracts for the company. Every user can view public contracts by default" xml:space="preserve">
+    <value>允許為公司建立合約。預設情況下，每位使用者均可檢視公開合約。</value>
+  </data>
   <data name="Allows creating new contracts for any user." xml:space="preserve">
     <value>允許為任何使用者建立新合約。</value>
   </data>
@@ -47,6 +50,9 @@
   </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>允許建立、更新及刪除公司實體資訊。</value>
+  </data>
+  <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
+    <value>允許建立、更新及刪除公司實體資訊。預設情況下，每位使用者皆可檢視公司實體資訊。</value>
   </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>允許為所有使用者發放及管理薪資單。</value>
@@ -57,8 +63,14 @@
   <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items." xml:space="preserve">
     <value>允許管理公司的IT資產，包括類別、型號及單一項目。</value>
   </data>
+  <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items. Also allows assigning and recovering assets to/from employees." xml:space="preserve">
+    <value>允許管理公司的IT資產，包含分類、型號及單一項目。亦可將資產指派給或收回自員工。</value>
+  </data>
   <data name="Allows modification of role names and their assigned permissions." xml:space="preserve">
     <value>允許修改角色名稱及其分配的權限。</value>
+  </data>
+  <data name="Allows modification of user details like email and roles, and can also reset user passwords." xml:space="preserve">
+    <value>允許修改使用者詳細資料，例如電子郵件和角色，並可重設使用者密碼。</value>
   </data>
   <data name="Allows modification of user details like email and roles, resetting user passwords, and viewing sensitive user details like payroll." xml:space="preserve">
     <value>允許修改使用者詳細資訊（如電子郵件及角色）、重設使用者密碼，以及檢視包括薪資在內的敏感使用者詳情。</value>
@@ -75,11 +87,23 @@
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>允許檢視所有公司合約，包含標記為私人之合約。</value>
   </data>
+  <data name="Allows viewing all company contracts, including those marked as private. Everyone can view public contracts by default" xml:space="preserve">
+    <value>允許檢視所有公司合約，包含標記為私人之合約。預設情況下，所有人都可檢視公開合約。</value>
+  </data>
+  <data name="Allows viewing and modifying global application settings." xml:space="preserve">
+    <value>允許檢視和修改全域應用程式設定。</value>
+  </data>
   <data name="Allows viewing system-level information and settings." xml:space="preserve">
     <value>允許檢視系統層級的資訊與設定。</value>
   </data>
+  <data name="Allows viewing the background job dashboard and managing jobs." xml:space="preserve">
+    <value>允許檢視背景工作儀表板並管理工作。</value>
+  </data>
   <data name="Allows viewing the contract history of any user." xml:space="preserve">
     <value>允許檢視任何使用者的合約歷程。</value>
+  </data>
+  <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
+    <value>允許檢視所有權限及其指派給角色和使用者的清單。</value>
   </data>
   <data name="Allows viewing the list of all users." xml:space="preserve">
     <value>允許檢視所有使用者的清單。</value>
@@ -105,6 +129,9 @@
   <data name="Create and manage company contracts" xml:space="preserve">
     <value>建立並管理公司合約</value>
   </data>
+  <data name="Create company contracts" xml:space="preserve">
+    <value>建立公司合約</value>
+  </data>
   <data name="Create Contract" xml:space="preserve">
     <value>建立合約</value>
   </data>
@@ -122,6 +149,9 @@
   </data>
   <data name="Edit Role Information" xml:space="preserve">
     <value>編輯角色資訊</value>
+  </data>
+  <data name="Edit User Information" xml:space="preserve">
+    <value>編輯使用者資訊</value>
   </data>
   <data name="Grants permission to create new roles." xml:space="preserve">
     <value>授予建立新角色的權限。</value>
@@ -141,6 +171,9 @@
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>管理公司基本實體資訊</value>
   </data>
+  <data name="Manage Global Settings" xml:space="preserve">
+    <value>管理全域設定</value>
+  </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>管理休假</value>
   </data>
@@ -156,6 +189,9 @@
   <data name="Print Certificates" xml:space="preserve">
     <value>列印證明文件</value>
   </data>
+  <data name="Read Permissions" xml:space="preserve">
+    <value>讀取權限</value>
+  </data>
   <data name="Read Roles" xml:space="preserve">
     <value>讀取角色</value>
   </data>
@@ -167,6 +203,9 @@
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>檢視任何公司合約，包括私人合約</value>
+  </data>
+  <data name="View Background Jobs" xml:space="preserve">
+    <value>檢視背景工作</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>檢視合約歷史</value>

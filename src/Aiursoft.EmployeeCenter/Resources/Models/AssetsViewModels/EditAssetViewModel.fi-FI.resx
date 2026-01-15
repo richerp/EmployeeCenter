@@ -21,6 +21,9 @@
       <data name="Asset Tag" xml:space="preserve">
     <value>Varaston tunnus</value>
   </data>
+  <data name="Assignee" xml:space="preserve">
+    <value>Vastuullinen</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>Laskutusasiakirja</value>
   </data>

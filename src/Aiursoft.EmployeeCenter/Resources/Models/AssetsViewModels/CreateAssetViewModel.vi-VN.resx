@@ -21,6 +21,9 @@
       <data name="Asset Tag" xml:space="preserve">
     <value>Nhãn tài sản</value>
   </data>
+  <data name="Assignee" xml:space="preserve">
+    <value>Người được giao nhiệm vụ</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>Hóa đơn</value>
   </data>

@@ -21,6 +21,9 @@
       <data name="Asset Tag" xml:space="preserve">
     <value>Código do Ativo</value>
   </data>
+  <data name="Assignee" xml:space="preserve">
+    <value>Responsável</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>Arquivo da Nota Fiscal</value>
   </data>
