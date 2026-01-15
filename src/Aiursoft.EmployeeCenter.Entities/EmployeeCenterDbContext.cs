@@ -29,6 +29,7 @@ public abstract class EmployeeCenterDbContext(DbContextOptions options) : Identi
     public DbSet<Asset> Assets => Set<Asset>();
     public DbSet<AssetHistory> AssetHistories => Set<AssetHistory>();
     public DbSet<Contract> Contracts => Set<Contract>();
+    public DbSet<PromotionHistory> PromotionHistories => Set<PromotionHistory>();
 
     public virtual Task MigrateAsync(CancellationToken cancellationToken) =>
         Database.MigrateAsync(cancellationToken);
