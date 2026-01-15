@@ -1,4 +1,5 @@
 using Aiursoft.Scanner.Abstractions;
+using Microsoft.AspNetCore.DataProtection;
 
 namespace Aiursoft.EmployeeCenter.Services.FileStorage;
 
@@ -7,24 +8,26 @@ namespace Aiursoft.EmployeeCenter.Services.FileStorage;
 /// </summary>
 public class StorageService(
     FeatureFoldersProvider folders,
-    FileLockProvider fileLockProvider) : ITransientDependency
+    FileLockProvider fileLockProvider,
+    IDataProtectionProvider dataProtectionProvider) : ITransientDependency
 {
     /// <summary>
     /// Saves a file to the storage.
     /// </summary>
     /// <param name="logicalPath">The logical path (relative to Workspace) where the file will be saved.</param>
     /// <param name="file">The file to be saved.</param>
+    /// <param name="isVault">Whether to save to the private Vault.</param>
     /// <returns>The actual logical path where the file is saved (may differ if renamed).</returns>
-    public async Task<string> Save(string logicalPath, IFormFile file)
+    public async Task<string> Save(string logicalPath, IFormFile file, bool isVault = false)
     {
         // 1. Get Workspace root
-        var workspaceRoot = folders.GetWorkspaceFolder();
+        var root = isVault ? folders.GetVaultFolder() : folders.GetWorkspaceFolder();
         
         // 2. Resolve physical path
-        var physicalPath = Path.GetFullPath(Path.Combine(workspaceRoot, logicalPath));
+        var physicalPath = Path.GetFullPath(Path.Combine(root, logicalPath));
 
         // 3. Security check: Ensure path is within Workspace
-        if (!physicalPath.StartsWith(workspaceRoot, StringComparison.OrdinalIgnoreCase))
+        if (!physicalPath.StartsWith(root, StringComparison.OrdinalIgnoreCase))
         {
             throw new ArgumentException("Path traversal attempt detected!");
         }
@@ -62,23 +65,57 @@ public class StorageService(
         await file.CopyToAsync(fileStream);
         
         // 7. Return logical path (relative to Workspace)
-        return Path.GetRelativePath(workspaceRoot, physicalPath).Replace("\\", "/");
+        return Path.GetRelativePath(root, physicalPath).Replace("\\", "/");
     }
 
     /// <summary>
     /// Retrieves the physical file path for a given logical path.
     /// Defaults to Workspace.
     /// </summary>
-    public string GetFilePhysicalPath(string logicalPath)
+    public string GetFilePhysicalPath(string logicalPath, bool isVault = false)
     {
-        var workspaceRoot = folders.GetWorkspaceFolder();
-        var physicalPath = Path.GetFullPath(Path.Combine(workspaceRoot, logicalPath));
+        var root = isVault ? folders.GetVaultFolder() : folders.GetWorkspaceFolder();
+        var physicalPath = Path.GetFullPath(Path.Combine(root, logicalPath));
 
-        if (!physicalPath.StartsWith(workspaceRoot, StringComparison.OrdinalIgnoreCase))
+        if (!physicalPath.StartsWith(root, StringComparison.OrdinalIgnoreCase))
         {
             throw new ArgumentException("Restricted path access!");
         }
         return physicalPath;
+    }
+
+    public string GetDownloadToken(string path)
+    {
+        // Create a time-limited data protector with 60-minute expiration
+        var protector = dataProtectionProvider
+            .CreateProtector("FileDownload")
+            .ToTimeLimitedDataProtector();
+        
+        // Protect the path with time-limited encryption
+        var protectedData = protector.Protect(path, TimeSpan.FromMinutes(60));
+        return protectedData;
+    }
+
+    public bool ValidateDownloadToken(string requestPath, string tokenString)
+    {
+        try 
+        {
+            // Create the same protector used for token generation
+            var protector = dataProtectionProvider
+                .CreateProtector("FileDownload")
+                .ToTimeLimitedDataProtector();
+            
+            // Unprotect and validate expiration automatically
+            var authorizedPath = protector.Unprotect(tokenString);
+            
+            // Verify the token authorizes access to the requested path
+            return requestPath.StartsWith(authorizedPath, StringComparison.OrdinalIgnoreCase);
+        }
+        catch
+        {
+            // Token is invalid, expired, or tampered with
+            return false;
+        }
     }
 
     /// <summary>
@@ -95,13 +132,23 @@ public class StorageService(
         return urlPath;
     }
 
-    public string RelativePathToInternetUrl(string relativePath, HttpContext context)
+    public string RelativePathToInternetUrl(string relativePath, HttpContext context, bool isVault = false)
     {
+        if (isVault)
+        {
+            var token = GetDownloadToken(relativePath);
+            return $"{context.Request.Scheme}://{context.Request.Host}/download-private/{RelativePathToUriPath(relativePath)}?token={token}";
+        }
         return $"{context.Request.Scheme}://{context.Request.Host}/download/{RelativePathToUriPath(relativePath)}";
     }
 
-    public string RelativePathToInternetUrl(string relativePath)
+    public string RelativePathToInternetUrl(string relativePath, bool isVault = false)
     {
+        if (isVault)
+        {
+            var token = GetDownloadToken(relativePath);
+            return $"/download-private/{RelativePathToUriPath(relativePath)}?token={token}";
+        }
         return $"/download/{RelativePathToUriPath(relativePath)}";
     }
 }
