@@ -10,12 +10,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 
+using Aiursoft.EmployeeCenter.Services.FileStorage;
+
 namespace Aiursoft.EmployeeCenter.Controllers;
 
 [Authorize]
 [LimitPerMin]
 public class CompanyEntityController(
     EmployeeCenterDbContext dbContext,
+    StorageService storageService,
     UserManager<User> userManager) : Controller
 {
     [HttpGet]
@@ -98,6 +101,43 @@ public class CompanyEntityController(
             return this.StackView(model);
         }
 
+        // Validate Organization Certificate (Strict Vault)
+        if (!string.IsNullOrEmpty(model.OrganizationCertificatePath))
+        {
+            try
+            {
+                var physicalPath = storageService.GetFilePhysicalPath(model.OrganizationCertificatePath, isVault: true);
+                if (!System.IO.File.Exists(physicalPath))
+                {
+                    ModelState.AddModelError(nameof(model.OrganizationCertificatePath), "File not found or lost. Please re-upload.");
+                    return this.StackView(model);
+                }
+            }
+            catch (ArgumentException)
+            {
+                return BadRequest();
+            }
+        }
+
+        // Validate License (Dynamic)
+        if (!string.IsNullOrEmpty(model.LicensePath))
+        {
+            try
+            {
+                bool isVault = model.LicensePath.StartsWith("company-certs");
+                var physicalPath = storageService.GetFilePhysicalPath(model.LicensePath, isVault: isVault);
+                if (!System.IO.File.Exists(physicalPath))
+                {
+                    ModelState.AddModelError(nameof(model.LicensePath), "File not found or lost. Please re-upload.");
+                    return this.StackView(model);
+                }
+            }
+            catch (ArgumentException)
+            {
+                return BadRequest();
+            }
+        }
+
         var entity = new CompanyEntity
         {
             CompanyName = model.CompanyName,
@@ -116,6 +156,7 @@ public class CompanyEntityController(
             LogoPath = model.LogoPath,
             SealPath = model.SealPath,
             LicensePath = model.LicensePath,
+            OrganizationCertificatePath = model.OrganizationCertificatePath,
             RegisteredCapital = model.RegisteredCapital,
             OperationStatus = model.OperationStatus,
             SCRLocation = model.SCRLocation,
@@ -169,6 +210,7 @@ public class CompanyEntityController(
             LogoPath = entity.LogoPath,
             SealPath = entity.SealPath,
             LicensePath = entity.LicensePath,
+            OrganizationCertificatePath = entity.OrganizationCertificatePath,
             RegisteredCapital = entity.RegisteredCapital,
             OperationStatus = entity.OperationStatus,
             SCRLocation = entity.SCRLocation,
@@ -186,6 +228,43 @@ public class CompanyEntityController(
         if (!ModelState.IsValid)
         {
             return this.StackView(model);
+        }
+
+        // Validate Organization Certificate (Strict Vault)
+        if (!string.IsNullOrEmpty(model.OrganizationCertificatePath))
+        {
+            try
+            {
+                var physicalPath = storageService.GetFilePhysicalPath(model.OrganizationCertificatePath, isVault: true);
+                if (!System.IO.File.Exists(physicalPath))
+                {
+                    ModelState.AddModelError(nameof(model.OrganizationCertificatePath), "File not found or lost. Please re-upload.");
+                    return this.StackView(model);
+                }
+            }
+            catch (ArgumentException)
+            {
+                return BadRequest();
+            }
+        }
+
+        // Validate License (Dynamic)
+        if (!string.IsNullOrEmpty(model.LicensePath))
+        {
+            try
+            {
+                bool isVault = model.LicensePath.StartsWith("company-certs");
+                var physicalPath = storageService.GetFilePhysicalPath(model.LicensePath, isVault: isVault);
+                if (!System.IO.File.Exists(physicalPath))
+                {
+                    ModelState.AddModelError(nameof(model.LicensePath), "File not found or lost. Please re-upload.");
+                    return this.StackView(model);
+                }
+            }
+            catch (ArgumentException)
+            {
+                return BadRequest();
+            }
         }
 
         var entity = await dbContext.CompanyEntities.FindAsync(model.Id);
@@ -212,6 +291,7 @@ public class CompanyEntityController(
         entity.LogoPath = model.LogoPath;
         entity.SealPath = model.SealPath;
         entity.LicensePath = model.LicensePath;
+        entity.OrganizationCertificatePath = model.OrganizationCertificatePath;
         entity.RegisteredCapital = model.RegisteredCapital;
         entity.OperationStatus = model.OperationStatus;
         entity.SCRLocation = model.SCRLocation;

@@ -89,20 +89,23 @@
                         </div>
                     }
 
-                    @if (canManage && !string.IsNullOrEmpty(Model.Entity.LicensePath))
+                    @if (!string.IsNullOrEmpty(Model.Entity.LicensePath))
                     {
                         <div class="mb-3">
-                            <h6>@Localizer["Business License"]</h6>
-                             <a href="@StorageService.RelativePathToInternetUrl(Model.Entity.LicensePath)" target="_blank" class="btn btn-secondary btn-sm">
+                            <h6>@Localizer["Business Registration"]</h6>
+                             <a href="@StorageService.RelativePathToInternetUrl(Model.Entity.LicensePath, isVault: Model.Entity.LicensePath.StartsWith("company-certs"))" target="_blank" class="btn btn-secondary btn-sm">
                                 <i class="fas fa-file-download"></i> @Localizer["Download / View"]
                             </a>
                         </div>
                     }
-                    else if (!string.IsNullOrEmpty(Model.Entity.LicensePath))
+
+                    @if (!string.IsNullOrEmpty(Model.Entity.OrganizationCertificatePath))
                     {
-                         <div class="mb-3">
-                            <h6>@Localizer["Business License"]</h6>
-                            <span class="text-muted"><i class="fas fa-lock"></i> @Localizer["Restricted"]</span>
+                        <div class="mb-3">
+                            <h6>@Localizer["Organization Certificate"]</h6>
+                             <a href="@StorageService.RelativePathToInternetUrl(Model.Entity.OrganizationCertificatePath, isVault: true)" target="_blank" class="btn btn-secondary btn-sm">
+                                <i class="fas fa-file-download"></i> @Localizer["Download / View"]
+                            </a>
                         </div>
                     }
                 </div>
