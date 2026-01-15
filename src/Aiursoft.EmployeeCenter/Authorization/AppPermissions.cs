@@ -102,7 +102,7 @@ public class AppPermissions
                 localizer["Allows viewing all company contracts, including those marked as private."]),
             new(AppPermissionNames.CanCreateContract,
                 localizer["Create and manage company contracts"],
-                localizer["Allows creating and managing all contracts for the company."])
+                localizer["Allows creating and managing all contracts for the company."]),
             new(AppPermissionNames.CanViewBackgroundJobs,
                 localizer["View Background Jobs"],
                 localizer["Allows viewing the background job dashboard and managing jobs."]),

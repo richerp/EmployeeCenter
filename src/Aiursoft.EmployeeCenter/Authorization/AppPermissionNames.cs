@@ -10,7 +10,6 @@ public static class AppPermissionNames
     public const string CanDeleteUsers = nameof(CanDeleteUsers);
     public const string CanAddUsers = nameof(CanAddUsers);
     public const string CanEditAndViewDetailsOfUsers = nameof(CanEditAndViewDetailsOfUsers);
-    public const string CanAssignRoleToUser = nameof(CanAssignRoleToUser);
     public const string CanViewUserOperationLog = nameof(CanViewUserOperationLog);
     public const string CanEditUsers = nameof(CanEditUsers);
     public const string CanAssignRoleToUser = nameof(CanAssignRoleToUser);
@@ -22,8 +21,6 @@ public static class AppPermissionNames
     public const string CanEditRoles = nameof(CanEditRoles);
 
     // System Management
-    public const string CanViewSystemContext = nameof(CanViewSystemContext);
-    public const string CanRebootThisApp = nameof(CanRebootThisApp);
 
     // Payroll Management
     public const string CanManagePayroll = nameof(CanManagePayroll);
