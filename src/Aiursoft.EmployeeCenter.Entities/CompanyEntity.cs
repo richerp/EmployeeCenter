@@ -34,6 +34,9 @@ public class CompanyEntity
     [MaxLength(500)]
     public string? OfficeAddress { get; set; }
 
+    [MaxLength(20)]
+    public string? ZipCode { get; set; }
+
     /// <summary>
     /// Mainland: Legal Representative
     /// HK: Director

@@ -106,6 +106,7 @@ public class CompanyEntityController(
             CINumber = model.CINumber,
             RegisteredAddress = model.RegisteredAddress,
             OfficeAddress = model.OfficeAddress,
+            ZipCode = model.ZipCode,
             LegalRepresentative = model.LegalRepresentative,
             CompanyType = model.CompanyType,
             EstablishmentDate = model.EstablishmentDate,
@@ -159,6 +160,7 @@ public class CompanyEntityController(
             CINumber = entity.CINumber,
             RegisteredAddress = entity.RegisteredAddress,
             OfficeAddress = entity.OfficeAddress,
+            ZipCode = entity.ZipCode,
             LegalRepresentative = entity.LegalRepresentative,
             CompanyType = entity.CompanyType,
             EstablishmentDate = entity.EstablishmentDate,
@@ -202,6 +204,7 @@ public class CompanyEntityController(
         entity.CINumber = model.CINumber;
         entity.RegisteredAddress = model.RegisteredAddress;
         entity.OfficeAddress = model.OfficeAddress;
+        entity.ZipCode = model.ZipCode;
         entity.LegalRepresentative = model.LegalRepresentative;
         entity.CompanyType = model.CompanyType;
         entity.EstablishmentDate = model.EstablishmentDate;

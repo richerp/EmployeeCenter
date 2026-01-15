@@ -53,6 +53,10 @@
                         <dd class="col-sm-8">
                             <p class="mb-0"><strong>Reg:</strong> @Model.Entity.RegisteredAddress</p>
                             <p class="mb-0"><strong>Office:</strong> @Model.Entity.OfficeAddress</p>
+                            @if (!string.IsNullOrEmpty(Model.Entity.ZipCode))
+                            {
+                                <p class="mb-0"><strong>Zip:</strong> @Model.Entity.ZipCode</p>
+                            }
                         </dd>
                         
                         <dt class="col-sm-4">@Localizer["Bank Info"]</dt>
