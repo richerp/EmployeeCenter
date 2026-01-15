@@ -123,7 +123,8 @@ public class PermissionTests
             "/System/Index",
             "/ManageContract/Index",
             "/Assets/Index",
-            "/ManageCertificate/Index"
+            "/ManageCertificate/Index",
+            "/CompanyEntity/Manage"
         };
 
         foreach (var url in restrictedUrls)
@@ -335,6 +336,67 @@ public class PermissionTests
 
         // 2. Regular user -> /Projects/Index -> OK
         var response = await _http.GetAsync("/Projects/Index");
+        Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
+    }
+
+    [TestMethod]
+    public async Task CompanyEntityManagePermission_Works()
+    {
+        // 1. Create a user
+        var uniqueId = Guid.NewGuid().ToString("N").Substring(0, 8);
+        var userName = $"user-entity-{uniqueId}";
+        var email = $"{userName}@aiursoft.com";
+        var password = "Test-Password-123";
+
+        // Register
+        await _http.GetAsync("/Account/LogOff");
+        var registerToken = await GetAntiCsrfToken("/Account/Register");
+        await _http.PostAsync("/Account/Register", new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Email", email },
+            { "Password", password },
+            { "ConfirmPassword", password },
+            { "__RequestVerificationToken", registerToken }
+        }));
+
+        string userId;
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var user = await db.Users.FirstAsync(u => u.UserName == userName);
+            userId = user.Id;
+        }
+
+        // Login
+        await LoginAs(email, password);
+
+        // 2. Regular user -> /CompanyEntity/Manage -> Forbidden
+        var response = await _http.GetAsync("/CompanyEntity/Manage");
+        Assert.IsTrue(response.StatusCode == HttpStatusCode.Forbidden || response.StatusCode == HttpStatusCode.Found);
+
+        // 3. Grant CanManageCompanyEntities
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var userManager = scope.ServiceProvider.GetRequiredService<Microsoft.AspNetCore.Identity.UserManager<User>>();
+            var roleManager = scope.ServiceProvider.GetRequiredService<Microsoft.AspNetCore.Identity.RoleManager<Microsoft.AspNetCore.Identity.IdentityRole>>();
+            
+            var roleName = "EntityManager";
+            if (!await roleManager.RoleExistsAsync(roleName))
+            {
+                var role = new Microsoft.AspNetCore.Identity.IdentityRole(roleName);
+                await roleManager.CreateAsync(role);
+                await roleManager.AddClaimAsync(role, new System.Security.Claims.Claim(AppPermissions.Type, AppPermissionNames.CanManageCompanyEntities));
+            }
+
+            var user = await userManager.FindByIdAsync(userId);
+            await userManager.AddToRoleAsync(user!, roleName);
+        }
+
+        // Re-login
+        await LoginAs(email, password);
+
+        // 4. User with CanManageCompanyEntities -> /CompanyEntity/Manage -> OK
+        response = await _http.GetAsync("/CompanyEntity/Manage");
         Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
     }
 }
