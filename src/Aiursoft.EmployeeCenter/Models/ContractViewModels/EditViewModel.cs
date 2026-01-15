@@ -17,8 +17,10 @@ public class EditViewModel : UiStackLayoutViewModel
     [MaxLength(200)]
     public string Name { get; set; } = string.Empty;
 
+    [MaxLength(150)]
     [Display(Name = "New Contract File (Optional)")]
-    public IFormFile? File { get; set; }
+    [RegularExpression(@"^contract.*", ErrorMessage = "Please upload a valid contract file.")]
+    public string? FilePath { get; set; }
 
     [Display(Name = "Is Public")]
     public bool IsPublic { get; set; }

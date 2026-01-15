@@ -72,38 +72,67 @@ public class ContractTests
         Assert.AreEqual(HttpStatusCode.Found, loginResponse.StatusCode);
 
         // 2. Create a PUBLIC contract
+        // First upload the file via vault framework to get the logical path
         var createPublicContractToken = await GetAntiCsrfToken("/ManageContract/Create");
-        using (var content = new MultipartFormDataContent())
+        
+        string publicFilePath;
+        using (var uploadContent = new MultipartFormDataContent())
         {
-            content.Add(new StringContent("Public Company Policy"), "Name");
-            content.Add(new StringContent("1"), "Status"); // Active
-            content.Add(new StringContent("true"), "IsPublic");
-            content.Add(new StringContent(createPublicContractToken), "__RequestVerificationToken");
-            
-            var fileContent = new ByteArrayContent([ 1, 2, 3 ]);
+            var fileContent = new ByteArrayContent([1, 2, 3]);
             fileContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/pdf");
-            content.Add(fileContent, "File", "policy.pdf");
-
-            var createContractResponse = await _http.PostAsync("/ManageContract/Create", content);
-            Assert.AreEqual(HttpStatusCode.Found, createContractResponse.StatusCode);
+            uploadContent.Add(fileContent, "file", "policy.pdf");
+            
+            var uploadResponse = await _http.PostAsync("/upload/contract?useVault=true", uploadContent);
+            uploadResponse.EnsureSuccessStatusCode();
+            var uploadResult = await uploadResponse.Content.ReadAsStringAsync();
+            // Extract the Path from JSON response: {"Path":"contract/2026/01/15/policy.pdf","InternetPath":"..."}
+            var pathMatch = Regex.Match(uploadResult, @"""Path"":""([^""]+)""");
+            Assert.IsTrue(pathMatch.Success, "Failed to extract file path from upload response");
+            publicFilePath = pathMatch.Groups[1].Value;
         }
+        
+        // Now submit the form with the logical path
+        var createPublicContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Name", "Public Company Policy" },
+            { "FilePath", publicFilePath },
+            { "Status", "1" }, // Active
+            { "IsPublic", "true" },
+            { "__RequestVerificationToken", createPublicContractToken }
+        });
+        var createContractResponse = await _http.PostAsync("/ManageContract/Create", createPublicContent);
+        Assert.AreEqual(HttpStatusCode.Found, createContractResponse.StatusCode);
 
         // 3. Create a PRIVATE contract
+        // First upload the file via vault framework to get the logical path
         var createPrivateContractToken = await GetAntiCsrfToken("/ManageContract/Create");
-        using (var content = new MultipartFormDataContent())
+        
+        string privateFilePath;
+        using (var uploadContent = new MultipartFormDataContent())
         {
-            content.Add(new StringContent("Private Secret Document"), "Name");
-            content.Add(new StringContent("1"), "Status"); // Active
-            content.Add(new StringContent("false"), "IsPublic");
-            content.Add(new StringContent(createPrivateContractToken), "__RequestVerificationToken");
-            
-            var fileContent = new ByteArrayContent([ 1, 2, 3 ]);
+            var fileContent = new ByteArrayContent([1, 2, 3]);
             fileContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/pdf");
-            content.Add(fileContent, "File", "secret.pdf");
-
-            var createContractResponse = await _http.PostAsync("/ManageContract/Create", content);
-            Assert.AreEqual(HttpStatusCode.Found, createContractResponse.StatusCode);
+            uploadContent.Add(fileContent, "file", "secret.pdf");
+            
+            var uploadResponse = await _http.PostAsync("/upload/contract?useVault=true", uploadContent);
+            uploadResponse.EnsureSuccessStatusCode();
+            var uploadResult = await uploadResponse.Content.ReadAsStringAsync();
+            var pathMatch = Regex.Match(uploadResult, @"""Path"":""([^""]+)""");
+            Assert.IsTrue(pathMatch.Success, "Failed to extract file path from upload response");
+            privateFilePath = pathMatch.Groups[1].Value;
         }
+        
+        // Now submit the form with the logical path
+        var createPrivateContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Name", "Private Secret Document" },
+            { "FilePath", privateFilePath },
+            { "Status", "1" }, // Active
+            { "IsPublic", "false" },
+            { "__RequestVerificationToken", createPrivateContractToken }
+        });
+        var createPrivateResponse = await _http.PostAsync("/ManageContract/Create", createPrivateContent);
+        Assert.AreEqual(HttpStatusCode.Found, createPrivateResponse.StatusCode);
 
         // 4. Create a normal user
         var uniqueId = Guid.NewGuid().ToString("N").Substring(0, 8);

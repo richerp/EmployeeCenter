@@ -14,8 +14,7 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 [Authorize(Policy = AppPermissionNames.CanViewContractHistory)]
 [LimitPerMin]
 public class ManageContractController(
-    EmployeeCenterDbContext context,
-    StorageService storage)
+    EmployeeCenterDbContext context)
     : Controller
 {
     [RenderInNavBar(
@@ -49,21 +48,12 @@ public class ManageContractController(
     [Authorize(Policy = AppPermissionNames.CanCreateContract)]
     public async Task<IActionResult> Create(CreateViewModel model)
     {
-        if (ModelState.IsValid && model.File != null)
+        if (ModelState.IsValid)
         {
-            var storePath = Path.Combine(
-                "Contracts",
-                "Shared",
-                DateTime.UtcNow.Year.ToString("D4"),
-                DateTime.UtcNow.Month.ToString("D2"),
-                model.File.FileName);
-            
-            var relativePath = await storage.Save(storePath, model.File);
-
             var contract = new Contract
             {
                 Name = model.Name,
-                FilePath = relativePath,
+                FilePath = model.FilePath!,
                 Status = model.Status,
                 IsPublic = model.IsPublic,
                 CreateTime = DateTime.UtcNow
@@ -106,16 +96,9 @@ public class ManageContractController(
             contract.Status = model.Status;
             contract.IsPublic = model.IsPublic;
 
-            if (model.File != null)
+            if (!string.IsNullOrWhiteSpace(model.FilePath))
             {
-                var storePath = Path.Combine(
-                    "Contracts",
-                    "Shared",
-                    DateTime.UtcNow.Year.ToString("D4"),
-                    DateTime.UtcNow.Month.ToString("D2"),
-                    model.File.FileName);
-                var relativePath = await storage.Save(storePath, model.File);
-                contract.FilePath = relativePath;
+                contract.FilePath = model.FilePath;
             }
 
             await context.SaveChangesAsync();

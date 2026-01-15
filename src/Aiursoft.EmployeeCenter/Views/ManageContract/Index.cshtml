@@ -67,7 +67,7 @@
                     </td>
                     <td>@item.CreateTime.ToString("yyyy-MM-dd HH:mm")</td>
                     <td class="text-end">
-                        <a href="@StorageService.RelativePathToInternetUrl(item.FilePath)" class="btn btn-sm btn-outline-info" target="_blank">
+                        <a href="@StorageService.RelativePathToInternetUrl(item.FilePath, isVault: true)" class="btn btn-sm btn-outline-info" target="_blank">
                             <i class="align-middle" data-lucide="download"></i> @Localizer["Download"]
                         </a>
                         @if ((await AuthorizationService.AuthorizeAsync(User, AppPermissionNames.CanCreateContract)).Succeeded)
