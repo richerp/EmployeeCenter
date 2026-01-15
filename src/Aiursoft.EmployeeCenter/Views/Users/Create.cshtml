@@ -3,11 +3,8 @@
 @model Aiursoft.EmployeeCenter.Models.UsersViewModels.CreateViewModel
 @inject IOptions<AppSettings> AppSettings
 
-@* ReSharper disable Razor.ResourceNotResolved *@
-<div class="row mb-2 mb-xl-3">
-    @* Standard page title for consistency. *@
-    <h1 class="h3 mb-3">@Localizer["Create New User"]</h1>
-</div>
+@* Standard page title for consistency. *@
+<h1 class="h3 mb-3">@Localizer["Create New User"]</h1>
 
 @* The critical OIDC warning is preserved and placed prominently at the top of the page. *@
 @if (AppSettings.Value.OIDCEnabled)
@@ -136,4 +133,3 @@
         </div>
     </div>
 </div>
-@* ReSharper restore Razor.ResourceNotResolved *@

@@ -12,6 +12,8 @@ public static class AppPermissionNames
     public const string CanEditAndViewDetailsOfUsers = nameof(CanEditAndViewDetailsOfUsers);
     public const string CanAssignRoleToUser = nameof(CanAssignRoleToUser);
     public const string CanViewUserOperationLog = nameof(CanViewUserOperationLog);
+    public const string CanEditUsers = nameof(CanEditUsers);
+    public const string CanAssignRoleToUser = nameof(CanAssignRoleToUser);
 
     // Role Management
     public const string CanReadRoles = nameof(CanReadRoles);
@@ -54,4 +56,12 @@ public static class AppPermissionNames
     // Contract Management
     public const string CanViewContractHistory = nameof(CanViewContractHistory);
     public const string CanCreateContract = nameof(CanCreateContract);
+    // Permission Management
+    public const string CanReadPermissions = nameof(CanReadPermissions);
+
+    // System Management
+    public const string CanViewSystemContext = nameof(CanViewSystemContext);
+    public const string CanRebootThisApp = nameof(CanRebootThisApp);
+    public const string CanViewBackgroundJobs = nameof(CanViewBackgroundJobs);
+    public const string CanManageGlobalSettings = nameof(CanManageGlobalSettings);
 }

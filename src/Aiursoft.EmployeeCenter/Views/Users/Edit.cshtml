@@ -3,7 +3,7 @@
 @model Aiursoft.EmployeeCenter.Models.UsersViewModels.EditViewModel
 @inject IOptions<AppSettings> AppSettings
 
-@* ReSharper disable Razor.ResourceNotResolved *@
+@* A standard page header that includes the user's name for context and primary navigation actions. *@
 <div class="row mb-2 mb-xl-3">
     <div class="col-auto d-none d-sm-block">
         <h3>@Localizer["Edit User:"] <span class="text-muted">@Model.DisplayName</span></h3>
@@ -160,12 +160,11 @@
 
 @* ReSharper disable once Razor.SectionNotResolved *@
 @section styles {
-    <link rel="stylesheet" href="~/node_modules/dropify/dist/css/dropify.min.css" />
-    <link rel="stylesheet" href="~/styles/uploader.css" />
+    <link rel="stylesheet" href="~/node_modules/dropify/dist/css/dropify.min.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/styles/uploader.css" asp-append-version="true" />
 }
 
 @* ReSharper disable once Razor.SectionNotResolved *@
 @section scripts {
-    <script src="~/node_modules/dropify/dist/js/dropify.min.js"></script>
+    <script src="~/node_modules/dropify/dist/js/dropify.min.js" asp-append-version="true"></script>
 }
-@* ReSharper restore Razor.ResourceNotResolved *@

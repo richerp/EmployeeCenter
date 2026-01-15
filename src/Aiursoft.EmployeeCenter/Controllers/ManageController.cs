@@ -26,6 +26,7 @@ public class ManageController(
     UserManager<User> userManager,
     SignInManager<User> signInManager,
     EmployeeCenterDbContext dbContext,
+    GlobalSettingsService settingsService,
     ILogger<ManageController> logger)
     : Controller
 {
@@ -223,6 +224,11 @@ public class ManageController(
     [HttpGet]
     public async Task<IActionResult> ChangeProfile()
     {
+        if (!await settingsService.GetBoolSettingAsync(SettingsMap.AllowUserAdjustNickname))
+        {
+            return BadRequest("Adjusting nickname is disabled by administrator.");
+        }
+
         var user = await GetCurrentUserAsync();
         return this.StackView(new ChangeProfileViewModel
         {
@@ -236,6 +242,11 @@ public class ManageController(
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> ChangeProfile(ChangeProfileViewModel model)
     {
+        if (!await settingsService.GetBoolSettingAsync(SettingsMap.AllowUserAdjustNickname))
+        {
+            return BadRequest("Adjusting nickname is disabled by administrator.");
+        }
+
         if (!ModelState.IsValid)
         {
             return this.StackView(model);

@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using Aiursoft.EmployeeCenter.Authorization;
 using Aiursoft.EmployeeCenter.Configuration;
 using Aiursoft.EmployeeCenter.Entities;
@@ -9,6 +10,7 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace Aiursoft.EmployeeCenter.Services.Authentication;
 
+[ExcludeFromCodeCoverage]
 public static class AuthenticationExtensions
 {
     public static IServiceCollection AddTemplateAuth(

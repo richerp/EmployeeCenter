@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using Aiursoft.DbTools;
 using Aiursoft.DbTools.Sqlite;
 using Aiursoft.EmployeeCenter.Entities;
@@ -5,7 +6,8 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Aiursoft.EmployeeCenter.Sqlite;
 
-public class SqliteSupportedDb(bool allowCache, bool splitQuery) : SupportedDatabaseType<EmployeeCenterDbContext>
+[ExcludeFromCodeCoverage]
+public class SqliteSupportedDb(bool allowCache, bool splitQuery) : SupportedDatabaseType<TemplateDbContext>
 {
     public override string DbType => "Sqlite";
 
@@ -17,7 +19,7 @@ public class SqliteSupportedDb(bool allowCache, bool splitQuery) : SupportedData
             allowCache: allowCache);
     }
 
-    public override EmployeeCenterDbContext ContextResolver(IServiceProvider serviceProvider)
+    public override TemplateDbContext ContextResolver(IServiceProvider serviceProvider)
     {
         return serviceProvider.GetRequiredService<SqliteContext>();
     }

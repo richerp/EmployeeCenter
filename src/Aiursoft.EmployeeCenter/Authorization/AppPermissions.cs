@@ -37,6 +37,9 @@ public class AppPermissions
             new(AppPermissionNames.CanEditAndViewDetailsOfUsers,
                 localizer["Edit and View Details of Users"],
                     localizer["Allows modification of user details like email and roles, resetting user passwords, and viewing sensitive user details like payroll."]),
+            new(AppPermissionNames.CanEditUsers,
+                localizer["Edit User Information"],
+                    localizer["Allows modification of user details like email and roles, and can also reset user passwords."]),
             new(AppPermissionNames.CanReadRoles,
                 localizer["Read Roles"],
                     localizer["Allows viewing the list of roles and their assigned permissions."]),
@@ -55,6 +58,9 @@ public class AppPermissions
             new(AppPermissionNames.CanViewUserOperationLog,
                 localizer["View User Operation Log"],
                 localizer["Allows viewing the operation logs of any user, including their bank card change history."]),
+            new(AppPermissionNames.CanReadPermissions,
+                localizer["Read Permissions"],
+                localizer["Allows viewing the list of all permissions and their assignments to roles and users."]),
             new(AppPermissionNames.CanViewSystemContext,
                 localizer["View System Context"],
                 localizer["Allows viewing system-level information and settings."]),
@@ -97,6 +103,12 @@ public class AppPermissions
             new(AppPermissionNames.CanCreateContract,
                 localizer["Create and manage company contracts"],
                 localizer["Allows creating and managing all contracts for the company."])
+            new(AppPermissionNames.CanViewBackgroundJobs,
+                localizer["View Background Jobs"],
+                localizer["Allows viewing the background job dashboard and managing jobs."]),
+            new(AppPermissionNames.CanManageGlobalSettings,
+                localizer["Manage Global Settings"],
+                localizer["Allows viewing and modifying global application settings."])
         ];
         return allPermission;
     }
