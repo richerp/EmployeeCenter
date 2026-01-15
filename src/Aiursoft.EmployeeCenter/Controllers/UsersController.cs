@@ -268,6 +268,22 @@ public class UsersController(
             userInDb.BankAccountName = model.BankAccountName;
         }
 
+        if (userInDb.JobLevel != model.JobLevel || userInDb.Title != model.Title)
+        {
+            var currentUser = await userManager.GetUserAsync(User);
+            var history = new PromotionHistory
+            {
+                UserId = userInDb.Id,
+                OldJobLevel = userInDb.JobLevel,
+                NewJobLevel = model.JobLevel,
+                OldTitle = userInDb.Title,
+                NewTitle = model.Title,
+                ChangeTime = DateTime.UtcNow,
+                PromoterId = currentUser?.Id
+            };
+            context.PromotionHistories.Add(history);
+        }
+
         userInDb.ManagerId = model.ManagerId;
         await userManager.UpdateAsync(userInDb);
         await context.SaveChangesAsync();
