@@ -119,7 +119,7 @@
                                         @if (history.Promoter != null)
                                         {
                                             <div class="d-flex align-items-center">
-                                                <img src="@StorageService.RelativePathToInternetUrl(history.Promoter.AvatarRelativePath ?? Aiursoft.EmployeeCenter.Entities.User.DefaultAvatarPath)?w=40&h=40&square=true" class="rounded-circle me-2" width="24" height="24" alt="@history.Promoter.DisplayName">
+                                                <img src="@StorageService.RelativePathToInternetUrl(history.Promoter.AvatarRelativePath)?w=40&h=40&square=true" class="rounded-circle me-2" width="24" height="24" alt="@history.Promoter.DisplayName">
                                                 <span class="small">@history.Promoter.DisplayName</span>
                                             </div>
                                         }

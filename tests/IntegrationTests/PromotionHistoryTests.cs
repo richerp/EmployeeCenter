@@ -1,6 +1,4 @@
-using Aiursoft.EmployeeCenter.Entities;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
