@@ -3,23 +3,6 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Aiursoft.EmployeeCenter.Entities;
 
-public enum IncidentSeverity
-{
-    Sev0,
-    Sev1,
-    Sev2,
-    Sev3,
-    Sev4
-}
-
-public enum IncidentStatus
-{
-    Open,
-    Mitigated,
-    Resolved,
-    Closed
-}
-
 public class Incident
 {
     [Key]
