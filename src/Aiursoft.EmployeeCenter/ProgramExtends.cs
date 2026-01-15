@@ -3,11 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using Aiursoft.EmployeeCenter.Authorization;
 using Aiursoft.EmployeeCenter.Entities;
-using Aiursoft.EmployeeCenter.Authorization;
-using Aiursoft.EmployeeCenter.Entities;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
-using System.Security.Claims;
 using Aiursoft.EmployeeCenter.Services;
 using Aiursoft.EmployeeCenter.Services.FileStorage;
 
@@ -59,7 +54,7 @@ public static class ProgramExtends
         var services = scope.ServiceProvider;
         var db = services.GetRequiredService<EmployeeCenterDbContext>();
         var logger = services.GetRequiredService<ILogger<Program>>();
-        
+
         var settingsService = services.GetRequiredService<GlobalSettingsService>();
         await settingsService.SeedSettingsAsync();
 
