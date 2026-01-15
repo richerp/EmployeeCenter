@@ -323,6 +323,10 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("varchar(50)");
 
+                    b.Property<string>("OrganizationCertificatePath")
+                        .HasMaxLength(500)
+                        .HasColumnType("varchar(500)");
+
                     b.Property<string>("RegisteredAddress")
                         .HasMaxLength(500)
                         .HasColumnType("varchar(500)");
