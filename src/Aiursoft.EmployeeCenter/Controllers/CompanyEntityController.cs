@@ -40,6 +40,28 @@ public class CompanyEntityController(
     }
 
     [HttpGet]
+    [Authorize(Policy = AppPermissionNames.CanManageCompanyEntities)]
+    [RenderInNavBar(
+        NavGroupName = "Administration",
+        NavGroupOrder = 3,
+        CascadedLinksGroupName = "Legal",
+        CascadedLinksIcon = "scale",
+        CascadedLinksOrder = 5,
+        LinkText = "Manage Company Entities",
+        LinkOrder = 3)]
+    public async Task<IActionResult> Manage()
+    {
+        var entities = await dbContext.CompanyEntities
+            .OrderByDescending(t => t.CreationTime)
+            .ToListAsync();
+        var model = new IndexViewModel
+        {
+            Entities = entities
+        };
+        return this.StackView(model, "Index");
+    }
+
+    [HttpGet]
     public async Task<IActionResult> Details(int id)
     {
         var entity = await dbContext.CompanyEntities.FindAsync(id);
@@ -115,7 +137,7 @@ public class CompanyEntityController(
         dbContext.CompanyEntityLogs.Add(log);
         await dbContext.SaveChangesAsync();
 
-        return RedirectToAction(nameof(Index));
+        return RedirectToAction(nameof(Manage));
     }
 
     [HttpGet]
@@ -210,7 +232,7 @@ public class CompanyEntityController(
         dbContext.CompanyEntityLogs.Add(log);
         await dbContext.SaveChangesAsync();
 
-        return RedirectToAction(nameof(Index));
+        return RedirectToAction(nameof(Manage));
     }
 
     [HttpPost]
@@ -238,6 +260,6 @@ public class CompanyEntityController(
         dbContext.CompanyEntities.Remove(entity);
         await dbContext.SaveChangesAsync();
 
-        return RedirectToAction(nameof(Index));
+        return RedirectToAction(nameof(Manage));
     }
 }
