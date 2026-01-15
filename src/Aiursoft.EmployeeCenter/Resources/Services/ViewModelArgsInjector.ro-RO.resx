@@ -57,6 +57,9 @@
   <data name="Assets" xml:space="preserve">
     <value>Active</value>
   </data>
+  <data name="Background Jobs" xml:space="preserve">
+    <value>Sarcini în fundal</value>
+  </data>
   <data name="Bank Info" xml:space="preserve">
     <value>Informații bancare</value>
   </data>
@@ -198,6 +201,9 @@
   <data name="Finance" xml:space="preserve">
     <value>Finanțe</value>
   </data>
+  <data name="Global Settings" xml:space="preserve">
+    <value>Setări globale</value>
+  </data>
   <data name="Home" xml:space="preserve">
     <value>Acasă</value>
   </data>
@@ -245,6 +251,9 @@
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Gestionare active</value>
+  </data>
+  <data name="Manage Company Entities" xml:space="preserve">
+    <value>Gestionare entități companie</value>
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>Gestionare contracte</value>
@@ -305,6 +314,9 @@
   </data>
   <data name="Payrolls" xml:space="preserve">
     <value>Plăți</value>
+  </data>
+  <data name="Permissions" xml:space="preserve">
+    <value>Permisiuni</value>
   </data>
   <data name="Personal" xml:space="preserve">
     <value>Personal</value>

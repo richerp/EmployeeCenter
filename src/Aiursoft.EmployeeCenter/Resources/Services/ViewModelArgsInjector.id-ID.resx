@@ -57,6 +57,9 @@
   <data name="Assets" xml:space="preserve">
     <value>Aset</value>
   </data>
+  <data name="Background Jobs" xml:space="preserve">
+    <value>Pekerjaan Latar Belakang</value>
+  </data>
   <data name="Bank Info" xml:space="preserve">
     <value>Informasi Bank</value>
   </data>
@@ -198,6 +201,9 @@
   <data name="Finance" xml:space="preserve">
     <value>Keuangan</value>
   </data>
+  <data name="Global Settings" xml:space="preserve">
+    <value>Pengaturan Global</value>
+  </data>
   <data name="Home" xml:space="preserve">
     <value>Beranda</value>
   </data>
@@ -245,6 +251,9 @@
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Kelola Aset</value>
+  </data>
+  <data name="Manage Company Entities" xml:space="preserve">
+    <value>Kelola Entitas Perusahaan</value>
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>Kelola Kontrak</value>
@@ -305,6 +314,9 @@
   </data>
   <data name="Payrolls" xml:space="preserve">
     <value>Penggajian</value>
+  </data>
+  <data name="Permissions" xml:space="preserve">
+    <value>Izin</value>
   </data>
   <data name="Personal" xml:space="preserve">
     <value>Pribadi</value>

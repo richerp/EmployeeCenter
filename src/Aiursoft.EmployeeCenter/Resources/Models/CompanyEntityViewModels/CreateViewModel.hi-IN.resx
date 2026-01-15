@@ -30,6 +30,9 @@
   <data name="Business License / BR Scan" xml:space="preserve">
     <value>व्यापार लाइसेंस / बीआर स्कैन</value>
   </data>
+  <data name="Business Registration (BR / Business License)" xml:space="preserve">
+    <value>व्यापार पंजीकरण (BR / व्यापार लाइसेंस)</value>
+  </data>
   <data name="CI Number (HK)" xml:space="preserve">
     <value>सीआई नंबर (एचके)</value>
   </data>
@@ -68,6 +71,12 @@
   </data>
   <data name="Operation Status" xml:space="preserve">
     <value>संचालन स्थिति</value>
+  </data>
+  <data name="Organization Certificate (CR / Org Code)" xml:space="preserve">
+    <value>संगठन प्रमाणपत्र (CR / संगठन कोड)</value>
+  </data>
+  <data name="Please upload a valid certificate file." xml:space="preserve">
+    <value>कृपया एक मान्य प्रमाण पत्र फ़ाइल अपलोड करें।</value>
   </data>
   <data name="Please upload a valid license file." xml:space="preserve">
     <value>कृपया एक मान्य लाइसेंस फ़ाइल अपलोड करें।</value>

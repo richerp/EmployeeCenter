@@ -21,6 +21,9 @@
       <data name="Asset Tag" xml:space="preserve">
     <value>แท็กสินทรัพย์</value>
   </data>
+  <data name="Assignee" xml:space="preserve">
+    <value>ผู้รับมอบหมาย</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>ไฟล์ใบแจ้งหนี้</value>
   </data>

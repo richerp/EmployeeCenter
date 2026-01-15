@@ -24,6 +24,9 @@
   <data name="New Contract File (Optional)" xml:space="preserve">
     <value>Новий файл договору (не обов&apos;язково)</value>
   </data>
+  <data name="Please upload a valid contract file." xml:space="preserve">
+    <value>Будь ласка, завантажте дійсний файл договору.</value>
+  </data>
   <data name="User" xml:space="preserve">
     <value>Користувач</value>
   </data>

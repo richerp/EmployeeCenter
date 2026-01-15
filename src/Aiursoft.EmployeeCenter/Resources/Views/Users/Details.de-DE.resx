@@ -21,8 +21,17 @@
       <data name="Account Details" xml:space="preserve">
     <value>Kontodetails</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Aktionen</value>
+  </data>
   <data name="An overview of the user&apos;s profile, assigned roles, and effective permissions." xml:space="preserve">
     <value>Eine Übersicht über das Benutzerprofil, die zugewiesenen Rollen und die effektiven Berechtigungen.</value>
+  </data>
+  <data name="Asset Tag" xml:space="preserve">
+    <value>Anlagenkennung</value>
+  </data>
+  <data name="Assigned Assets" xml:space="preserve">
+    <value>Zugewiesene Assets</value>
   </data>
   <data name="Assigned Roles" xml:space="preserve">
     <value>Zugewiesene Rollen</value>
@@ -69,6 +78,12 @@
   <data name="Delete this User" xml:space="preserve">
     <value>Diesen Benutzer löschen</value>
   </data>
+  <data name="Details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Bearbeiten</value>
+  </data>
   <data name="Edit this User" xml:space="preserve">
     <value>Diesen Benutzer bearbeiten</value>
   </data>
@@ -84,6 +99,12 @@
   <data name="Holder (Old -&gt; New)" xml:space="preserve">
     <value>Inhaber (Alt -&gt; Neu)</value>
   </data>
+  <data name="Idle" xml:space="preserve">
+    <value>Unbenutzt</value>
+  </data>
+  <data name="In Use" xml:space="preserve">
+    <value>Im Einsatz</value>
+  </data>
   <data name="Job Level" xml:space="preserve">
     <value>Job Level</value>
   </data>
@@ -92,6 +113,18 @@
   </data>
   <data name="Legal Name" xml:space="preserve">
     <value>Name (offiziell)</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Standort</value>
+  </data>
+  <data name="Lost" xml:space="preserve">
+    <value>Verloren</value>
+  </data>
+  <data name="Maintenance" xml:space="preserve">
+    <value>Wartung</value>
+  </data>
+  <data name="Manage All Assets" xml:space="preserve">
+    <value>Alle Assets verwalten</value>
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>Verträge verwalten</value>
@@ -102,11 +135,20 @@
   <data name="Manager" xml:space="preserve">
     <value>Vorgesetzter</value>
   </data>
+  <data name="Model" xml:space="preserve">
+    <value>Modell</value>
+  </data>
   <data name="Name" xml:space="preserve">
     <value>Name</value>
   </data>
+  <data name="No assets assigned to this user." xml:space="preserve">
+    <value>Keine Assets diesem Benutzer zugewiesen.</value>
+  </data>
   <data name="No change history found." xml:space="preserve">
     <value>Keine Änderungshistorie gefunden.</value>
+  </data>
+  <data name="Pending Accept" xml:space="preserve">
+    <value>Ausstehend akzeptieren</value>
   </data>
   <data name="Phone Number" xml:space="preserve">
     <value>Telefonnummer</value>
@@ -116,6 +158,12 @@
   </data>
   <data name="Report Line" xml:space="preserve">
     <value>Berichtslinie</value>
+  </data>
+  <data name="Retired" xml:space="preserve">
+    <value>Ausgemustert</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
   </data>
   <data name="System" xml:space="preserve">
     <value>System</value>

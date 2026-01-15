@@ -21,8 +21,17 @@
       <data name="Account Details" xml:space="preserve">
     <value>账户详情</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>操作</value>
+  </data>
   <data name="An overview of the user&apos;s profile, assigned roles, and effective permissions." xml:space="preserve">
     <value>用户个人资料、分配角色及有效权限的概览。</value>
+  </data>
+  <data name="Asset Tag" xml:space="preserve">
+    <value>资产标签</value>
+  </data>
+  <data name="Assigned Assets" xml:space="preserve">
+    <value>分配的资产</value>
   </data>
   <data name="Assigned Roles" xml:space="preserve">
     <value>已分配角色</value>
@@ -69,6 +78,12 @@
   <data name="Delete this User" xml:space="preserve">
     <value>删除此用户</value>
   </data>
+  <data name="Details" xml:space="preserve">
+    <value>详情</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>编辑</value>
+  </data>
   <data name="Edit this User" xml:space="preserve">
     <value>编辑此用户</value>
   </data>
@@ -84,6 +99,12 @@
   <data name="Holder (Old -&gt; New)" xml:space="preserve">
     <value>户名 (原 -&gt; 新)</value>
   </data>
+  <data name="Idle" xml:space="preserve">
+    <value>空闲</value>
+  </data>
+  <data name="In Use" xml:space="preserve">
+    <value>使用中</value>
+  </data>
   <data name="Job Level" xml:space="preserve">
     <value>职级</value>
   </data>
@@ -92,6 +113,18 @@
   </data>
   <data name="Legal Name" xml:space="preserve">
     <value>法定姓名</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>位置</value>
+  </data>
+  <data name="Lost" xml:space="preserve">
+    <value>丢失</value>
+  </data>
+  <data name="Maintenance" xml:space="preserve">
+    <value>维护中</value>
+  </data>
+  <data name="Manage All Assets" xml:space="preserve">
+    <value>管理所有资产</value>
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>管理合同</value>
@@ -102,11 +135,20 @@
   <data name="Manager" xml:space="preserve">
     <value>经理</value>
   </data>
+  <data name="Model" xml:space="preserve">
+    <value>型号</value>
+  </data>
   <data name="Name" xml:space="preserve">
     <value>名称</value>
   </data>
+  <data name="No assets assigned to this user." xml:space="preserve">
+    <value>暂无分配给此用户的资产。</value>
+  </data>
   <data name="No change history found." xml:space="preserve">
     <value>未找到变更记录</value>
+  </data>
+  <data name="Pending Accept" xml:space="preserve">
+    <value>待接收</value>
   </data>
   <data name="Phone Number" xml:space="preserve">
     <value>电话号码</value>
@@ -116,6 +158,12 @@
   </data>
   <data name="Report Line" xml:space="preserve">
     <value>汇报线</value>
+  </data>
+  <data name="Retired" xml:space="preserve">
+    <value>已退役</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>状态</value>
   </data>
   <data name="System" xml:space="preserve">
     <value>系统</value>

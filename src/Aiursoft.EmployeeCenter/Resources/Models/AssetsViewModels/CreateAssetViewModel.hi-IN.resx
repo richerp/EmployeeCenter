@@ -21,6 +21,9 @@
       <data name="Asset Tag" xml:space="preserve">
     <value>संपत्ति टैग</value>
   </data>
+  <data name="Assignee" xml:space="preserve">
+    <value>असाइनी</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>बिल फ़ाइल</value>
   </data>

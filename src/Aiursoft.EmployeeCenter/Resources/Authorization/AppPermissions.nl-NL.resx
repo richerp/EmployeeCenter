@@ -39,6 +39,9 @@
   <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
     <value>Staats het maken en beheren van opstarttaak sjablonen voor nieuwe medewerkers toe.</value>
   </data>
+  <data name="Allows creating contracts for the company. Every user can view public contracts by default" xml:space="preserve">
+    <value>Staat het maken van contracten voor het bedrijf toe. Elke gebruiker kan standaard openbare contracten bekijken.</value>
+  </data>
   <data name="Allows creating new contracts for any user." xml:space="preserve">
     <value>Staats het maken van nieuwe contracten voor elke gebruiker toe.</value>
   </data>
@@ -47,6 +50,9 @@
   </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Staats het maken, bijwerken en verwijderen van informatie over bedrijfseenheden toe.</value>
+  </data>
+  <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
+    <value>Staat het toe om informatie over bedrijfseenheden te maken, bijwerken en verwijderen. Elke gebruiker kan standaard informatie over bedrijfseenheden bekijken.</value>
   </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>Staat het uitgeven en beheren van loonstroken voor alle gebruikers toe.</value>
@@ -57,8 +63,14 @@
   <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items." xml:space="preserve">
     <value>Staat het beheren van de IT-activa van het bedrijf toe, inclusief categorieën, modellen en individuele items.</value>
   </data>
+  <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items. Also allows assigning and recovering assets to/from employees." xml:space="preserve">
+    <value>Staat het beheren van de IT-assets van het bedrijf toe, inclusief categorieën, modellen en afzonderlijke items. Ook staat het toewijzen en terugvragen van assets aan/ van medewerkers toe.</value>
+  </data>
   <data name="Allows modification of role names and their assigned permissions." xml:space="preserve">
     <value>Staat aanpassing van rolnamen en hun toegewezen machtigingen toe.</value>
+  </data>
+  <data name="Allows modification of user details like email and roles, and can also reset user passwords." xml:space="preserve">
+    <value>Staat bewerking van gebruikersgegevens zoals e-mailadres en rollen toe, en kan ook gebruikerswachtwoorden opnieuw instellen.</value>
   </data>
   <data name="Allows modification of user details like email and roles, resetting user passwords, and viewing sensitive user details like payroll." xml:space="preserve">
     <value>Staat aanpassing van gebruikersgegevens zoals e-mailadres en rollen toe, en kan ook gebruikerswachtwoorden opnieuw instellen.</value>
@@ -75,11 +87,23 @@
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Staats het bekijken van alle bedrijfscontracten, inclusief die die als privé zijn gemarkeerd.</value>
   </data>
+  <data name="Allows viewing all company contracts, including those marked as private. Everyone can view public contracts by default" xml:space="preserve">
+    <value>Staats het bekijken van alle bedrijfscontracten, inclusief die die als privé zijn gemarkeerd. Iedereen kan standaard publieke contracten bekijken.</value>
+  </data>
+  <data name="Allows viewing and modifying global application settings." xml:space="preserve">
+    <value>Staat het bekijken en bewerken van globale toepassingsinstellingen toe.</value>
+  </data>
   <data name="Allows viewing system-level information and settings." xml:space="preserve">
     <value>Staat het bekijken van systeeminformatie en -instellingen toe.</value>
   </data>
+  <data name="Allows viewing the background job dashboard and managing jobs." xml:space="preserve">
+    <value>Staat het bekijken van het dashboard voor achtergrondtaken en het beheren van taken toe.</value>
+  </data>
   <data name="Allows viewing the contract history of any user." xml:space="preserve">
     <value>Staats het bekijken van het contractverleden van elke gebruiker toe.</value>
+  </data>
+  <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
+    <value>Staat het bekijken van de lijst met alle machtigingen en hun toewijzingen aan rollen en gebruikers toe.</value>
   </data>
   <data name="Allows viewing the list of all users." xml:space="preserve">
     <value>Staat het bekijken van de lijst met alle gebruikers toe.</value>
@@ -105,6 +129,9 @@
   <data name="Create and manage company contracts" xml:space="preserve">
     <value>Maak en beheer bedrijfscontracten</value>
   </data>
+  <data name="Create company contracts" xml:space="preserve">
+    <value>Bedrijfscontracten aanmaken</value>
+  </data>
   <data name="Create Contract" xml:space="preserve">
     <value>Contract aanmaken</value>
   </data>
@@ -122,6 +149,9 @@
   </data>
   <data name="Edit Role Information" xml:space="preserve">
     <value>Rolinformatie bewerken</value>
+  </data>
+  <data name="Edit User Information" xml:space="preserve">
+    <value>Gebruikersinformatie bewerken</value>
   </data>
   <data name="Grants permission to create new roles." xml:space="preserve">
     <value>Verleent toestemming om nieuwe rollen aan te maken.</value>
@@ -141,6 +171,9 @@
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Bedrijfseenheden beheren</value>
   </data>
+  <data name="Manage Global Settings" xml:space="preserve">
+    <value>Algemene instellingen beheren</value>
+  </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>Verlof beheren</value>
   </data>
@@ -156,6 +189,9 @@
   <data name="Print Certificates" xml:space="preserve">
     <value>Certificaten afdrukken</value>
   </data>
+  <data name="Read Permissions" xml:space="preserve">
+    <value>Lees machtigingen</value>
+  </data>
   <data name="Read Roles" xml:space="preserve">
     <value>Rollen lezen</value>
   </data>
@@ -167,6 +203,9 @@
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>Bekijk elke bedrijfscontract, inclusief particuliere contracten</value>
+  </data>
+  <data name="View Background Jobs" xml:space="preserve">
+    <value>Achtergrondtaken weergeven</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>Contractgeschiedenis weergeven</value>

@@ -39,6 +39,9 @@
   <data name="Allows creating and managing onboarding task templates for new employees." xml:space="preserve">
     <value>Ermöglicht die Erstellung und Verwaltung von Onboarding-Aufgaben-Vorlagen für neue Mitarbeiter.</value>
   </data>
+  <data name="Allows creating contracts for the company. Every user can view public contracts by default" xml:space="preserve">
+    <value>Ermöglicht das Erstellen von Verträgen für das Unternehmen. Jeder Benutzer kann standardmäßig öffentliche Verträge einsehen.</value>
+  </data>
   <data name="Allows creating new contracts for any user." xml:space="preserve">
     <value>Ermöglicht die Erstellung neuer Verträge für jeden Benutzer.</value>
   </data>
@@ -47,6 +50,9 @@
   </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Ermöglicht das Erstellen, Aktualisieren und Löschen von Unternehmens-Entitätsinformationen.</value>
+  </data>
+  <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
+    <value>Ermöglicht das Erstellen, Aktualisieren und Löschen von Unternehmens-Entitätsinformationen. Standardmäßig kann jeder Benutzer Unternehmens-Entitätsinformationen anzeigen.</value>
   </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>Ermöglicht die Ausstellung und Verwaltung von Gehaltsabrechnungen für alle Benutzer.</value>
@@ -57,8 +63,14 @@
   <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items." xml:space="preserve">
     <value>Ermöglicht die Verwaltung der IT-Ausstattung des Unternehmens, einschließlich Kategorien, Modellen und einzelnen Gegenständen.</value>
   </data>
+  <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items. Also allows assigning and recovering assets to/from employees." xml:space="preserve">
+    <value>Ermöglicht die Verwaltung der IT-Ausstattung des Unternehmens, einschließlich Kategorien, Modellen und einzelnen Gegenständen. Außerdem ermöglicht es die Zuweisung und Rücknahme von Ausstattung an/ von Mitarbeitern.</value>
+  </data>
   <data name="Allows modification of role names and their assigned permissions." xml:space="preserve">
     <value>Ermöglicht die Änderung von Rollennamen und deren zugewiesenen Berechtigungen.</value>
+  </data>
+  <data name="Allows modification of user details like email and roles, and can also reset user passwords." xml:space="preserve">
+    <value>Ermöglicht die Änderung von Benutzerdaten wie E-Mail-Adresse und Rollen sowie das Zurücksetzen von Benutzerpasswörtern.</value>
   </data>
   <data name="Allows modification of user details like email and roles, resetting user passwords, and viewing sensitive user details like payroll." xml:space="preserve">
     <value>Ermöglicht die Änderung von Benutzerdetails wie E-Mail und Rollen und kann auch Benutzerpasswörter zurücksetzen.</value>
@@ -75,11 +87,23 @@
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Ermöglicht das Ansehen aller Unternehmensverträge, einschließlich solcher, die als privat gekennzeichnet sind.</value>
   </data>
+  <data name="Allows viewing all company contracts, including those marked as private. Everyone can view public contracts by default" xml:space="preserve">
+    <value>Erlaubt das Ansehen aller Unternehmensverträge, einschließlich solcher, die als privat markiert sind. Jeder kann standardmäßig öffentliche Verträge einsehen.</value>
+  </data>
+  <data name="Allows viewing and modifying global application settings." xml:space="preserve">
+    <value>Erlaubt das Anzeigen und Ändern von globalen Anwendungseinstellungen.</value>
+  </data>
   <data name="Allows viewing system-level information and settings." xml:space="preserve">
     <value>Ermöglicht das Anzeigen von systemweiten Informationen und Einstellungen.</value>
   </data>
+  <data name="Allows viewing the background job dashboard and managing jobs." xml:space="preserve">
+    <value>Erlaubt das Anzeigen der Hintergrundaufgabenübersicht und die Verwaltung von Aufgaben.</value>
+  </data>
   <data name="Allows viewing the contract history of any user." xml:space="preserve">
     <value>Erlaubt das Ansehen der Vertragsverlauf von beliebigen Benutzern.</value>
+  </data>
+  <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
+    <value>Ermöglicht das Anzeigen der Liste aller Berechtigungen und ihrer Zuweisungen zu Rollen und Benutzern.</value>
   </data>
   <data name="Allows viewing the list of all users." xml:space="preserve">
     <value>Ermöglicht das Anzeigen der Liste aller Benutzer.</value>
@@ -105,6 +129,9 @@
   <data name="Create and manage company contracts" xml:space="preserve">
     <value>Unternehmenverträge erstellen und verwalten</value>
   </data>
+  <data name="Create company contracts" xml:space="preserve">
+    <value>Unternehmensverträge erstellen</value>
+  </data>
   <data name="Create Contract" xml:space="preserve">
     <value>Vertrag erstellen</value>
   </data>
@@ -122,6 +149,9 @@
   </data>
   <data name="Edit Role Information" xml:space="preserve">
     <value>Rolleninformationen bearbeiten</value>
+  </data>
+  <data name="Edit User Information" xml:space="preserve">
+    <value>Benutzerinformationen bearbeiten</value>
   </data>
   <data name="Grants permission to create new roles." xml:space="preserve">
     <value>Erteilt die Berechtigung, neue Rollen zu erstellen.</value>
@@ -141,6 +171,9 @@
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Unternehmenseinheiten verwalten</value>
   </data>
+  <data name="Manage Global Settings" xml:space="preserve">
+    <value>Globale Einstellungen verwalten</value>
+  </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>Urlaub verwalten</value>
   </data>
@@ -156,6 +189,9 @@
   <data name="Print Certificates" xml:space="preserve">
     <value>Zertifikate drucken</value>
   </data>
+  <data name="Read Permissions" xml:space="preserve">
+    <value>Berechtigungen anzeigen</value>
+  </data>
   <data name="Read Roles" xml:space="preserve">
     <value>Rollen lesen</value>
   </data>
@@ -167,6 +203,9 @@
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>Jeden Unternehmensvertrag anzeigen, einschließlich privater</value>
+  </data>
+  <data name="View Background Jobs" xml:space="preserve">
+    <value>Hintergrundjobs anzeigen</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>Vertragsverlauf anzeigen</value>

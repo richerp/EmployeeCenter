@@ -21,8 +21,17 @@
       <data name="Account Details" xml:space="preserve">
     <value>Данные учетной записи</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Действия</value>
+  </data>
   <data name="An overview of the user&apos;s profile, assigned roles, and effective permissions." xml:space="preserve">
     <value>Обзор профиля пользователя, назначенных ролей и действующих разрешений.</value>
+  </data>
+  <data name="Asset Tag" xml:space="preserve">
+    <value>Тег актива</value>
+  </data>
+  <data name="Assigned Assets" xml:space="preserve">
+    <value>Назначенные активы</value>
   </data>
   <data name="Assigned Roles" xml:space="preserve">
     <value>Назначенные роли</value>
@@ -69,6 +78,12 @@
   <data name="Delete this User" xml:space="preserve">
     <value>Удалить этого пользователя</value>
   </data>
+  <data name="Details" xml:space="preserve">
+    <value>Сведения</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Редактировать</value>
+  </data>
   <data name="Edit this User" xml:space="preserve">
     <value>Редактировать пользователя</value>
   </data>
@@ -84,6 +99,12 @@
   <data name="Holder (Old -&gt; New)" xml:space="preserve">
     <value>Фамилия (Старая -&gt; Новая)</value>
   </data>
+  <data name="Idle" xml:space="preserve">
+    <value>Не используется</value>
+  </data>
+  <data name="In Use" xml:space="preserve">
+    <value>В использовании</value>
+  </data>
   <data name="Job Level" xml:space="preserve">
     <value>Уровень должности</value>
   </data>
@@ -92,6 +113,18 @@
   </data>
   <data name="Legal Name" xml:space="preserve">
     <value>Юридическое имя</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Местоположение</value>
+  </data>
+  <data name="Lost" xml:space="preserve">
+    <value>Потеряно</value>
+  </data>
+  <data name="Maintenance" xml:space="preserve">
+    <value>Техническое обслуживание</value>
+  </data>
+  <data name="Manage All Assets" xml:space="preserve">
+    <value>Управление всеми активами</value>
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>Управление договорами</value>
@@ -102,11 +135,20 @@
   <data name="Manager" xml:space="preserve">
     <value>Руководитель</value>
   </data>
+  <data name="Model" xml:space="preserve">
+    <value>Модель</value>
+  </data>
   <data name="Name" xml:space="preserve">
     <value>Имя</value>
   </data>
+  <data name="No assets assigned to this user." xml:space="preserve">
+    <value>У этого пользователя нет назначенных активов.</value>
+  </data>
   <data name="No change history found." xml:space="preserve">
     <value>История изменений не найдена.</value>
+  </data>
+  <data name="Pending Accept" xml:space="preserve">
+    <value>Ожидает подтверждения</value>
   </data>
   <data name="Phone Number" xml:space="preserve">
     <value>Номер телефона</value>
@@ -116,6 +158,12 @@
   </data>
   <data name="Report Line" xml:space="preserve">
     <value>Линия отчётности</value>
+  </data>
+  <data name="Retired" xml:space="preserve">
+    <value>Выведен из эксплуатации</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Статус</value>
   </data>
   <data name="System" xml:space="preserve">
     <value>Система</value>

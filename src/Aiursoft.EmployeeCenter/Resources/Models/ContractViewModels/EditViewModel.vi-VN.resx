@@ -24,6 +24,9 @@
   <data name="New Contract File (Optional)" xml:space="preserve">
     <value>Tập tin Hợp đồng mới (Tùy chọn)</value>
   </data>
+  <data name="Please upload a valid contract file." xml:space="preserve">
+    <value>Vui lòng tải lên một tệp hợp đồng hợp lệ.</value>
+  </data>
   <data name="User" xml:space="preserve">
     <value>Người dùng</value>
   </data>

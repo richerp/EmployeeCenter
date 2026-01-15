@@ -33,6 +33,9 @@
   <data name="Financial Information" xml:space="preserve">
     <value>Información financiera</value>
   </data>
+  <data name="Not Assigned" xml:space="preserve">
+    <value>No asignado</value>
+  </data>
   <data name="Select Location" xml:space="preserve">
     <value>Seleccionar ubicación</value>
   </data>

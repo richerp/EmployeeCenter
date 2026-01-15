@@ -24,6 +24,9 @@
   <data name="Is Public" xml:space="preserve">
     <value>Er offentlig</value>
   </data>
+  <data name="Please upload a valid contract file." xml:space="preserve">
+    <value>Upload venligst en gyldig kontraktfil.</value>
+  </data>
   <data name="User" xml:space="preserve">
     <value>Bruger</value>
   </data>

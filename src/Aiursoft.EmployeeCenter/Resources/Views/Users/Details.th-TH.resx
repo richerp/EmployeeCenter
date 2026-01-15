@@ -21,8 +21,17 @@
       <data name="Account Details" xml:space="preserve">
     <value>รายละเอียดบัญชี</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>การกระทำ</value>
+  </data>
   <data name="An overview of the user&apos;s profile, assigned roles, and effective permissions." xml:space="preserve">
     <value>ภาพรวมของโปรไฟล์ผู้ใช้ บทบาทที่ได้รับมอบหมาย และสิทธิ์การเข้าถึงที่มีผล</value>
+  </data>
+  <data name="Asset Tag" xml:space="preserve">
+    <value>แท็กสินทรัพย์</value>
+  </data>
+  <data name="Assigned Assets" xml:space="preserve">
+    <value>ทรัพย์สินที่จัดสรรให้</value>
   </data>
   <data name="Assigned Roles" xml:space="preserve">
     <value>บทบาทที่ได้รับมอบหมาย</value>
@@ -69,6 +78,12 @@
   <data name="Delete this User" xml:space="preserve">
     <value>ลบผู้ใช้นี้</value>
   </data>
+  <data name="Details" xml:space="preserve">
+    <value>รายละเอียด</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>แก้ไข</value>
+  </data>
   <data name="Edit this User" xml:space="preserve">
     <value>แก้ไขผู้ใช้นี้</value>
   </data>
@@ -84,6 +99,12 @@
   <data name="Holder (Old -&gt; New)" xml:space="preserve">
     <value>ผู้ถือ (เดิม -&gt; ใหม่)</value>
   </data>
+  <data name="Idle" xml:space="preserve">
+    <value>ว่าง</value>
+  </data>
+  <data name="In Use" xml:space="preserve">
+    <value>ใช้งานอยู่</value>
+  </data>
   <data name="Job Level" xml:space="preserve">
     <value>ระดับงาน</value>
   </data>
@@ -92,6 +113,18 @@
   </data>
   <data name="Legal Name" xml:space="preserve">
     <value>ชื่อตามกฎหมาย</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>ตำแหน่งที่ตั้ง</value>
+  </data>
+  <data name="Lost" xml:space="preserve">
+    <value>สูญหาย</value>
+  </data>
+  <data name="Maintenance" xml:space="preserve">
+    <value>ซ่อมบำรุง</value>
+  </data>
+  <data name="Manage All Assets" xml:space="preserve">
+    <value>จัดการสินทรัพย์ทั้งหมด</value>
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>จัดการสัญญา</value>
@@ -102,11 +135,20 @@
   <data name="Manager" xml:space="preserve">
     <value>ผู้จัดการ</value>
   </data>
+  <data name="Model" xml:space="preserve">
+    <value>รุ่น</value>
+  </data>
   <data name="Name" xml:space="preserve">
     <value>ชื่อ</value>
   </data>
+  <data name="No assets assigned to this user." xml:space="preserve">
+    <value>ไม่มีสินทรัพย์ใดที่ถูกจัดสรรให้ผู้ใช้รายนี้</value>
+  </data>
   <data name="No change history found." xml:space="preserve">
     <value>ไม่พบประวัติการเปลี่ยนแปลง</value>
+  </data>
+  <data name="Pending Accept" xml:space="preserve">
+    <value>รอดำเนินการยอมรับ</value>
   </data>
   <data name="Phone Number" xml:space="preserve">
     <value>หมายเลขโทรศัพท์</value>
@@ -116,6 +158,12 @@
   </data>
   <data name="Report Line" xml:space="preserve">
     <value>สายการรายงาน</value>
+  </data>
+  <data name="Retired" xml:space="preserve">
+    <value>หมดอายุการใช้งาน</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>สถานะ</value>
   </data>
   <data name="System" xml:space="preserve">
     <value>ระบบ</value>

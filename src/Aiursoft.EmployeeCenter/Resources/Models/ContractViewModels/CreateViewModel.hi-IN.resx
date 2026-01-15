@@ -24,6 +24,9 @@
   <data name="Is Public" xml:space="preserve">
     <value>सार्वजनिक है</value>
   </data>
+  <data name="Please upload a valid contract file." xml:space="preserve">
+    <value>कृपया एक मान्य कॉन्ट्रैक्ट फ़ाइल अपलोड करें।</value>
+  </data>
   <data name="User" xml:space="preserve">
     <value>उपयोगकर्ता</value>
   </data>

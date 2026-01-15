@@ -30,6 +30,9 @@
   <data name="Business License / BR Scan" xml:space="preserve">
     <value>Giấy phép kinh doanh / Bản scan BR</value>
   </data>
+  <data name="Business Registration (BR / Business License)" xml:space="preserve">
+    <value>Giấy phép đăng ký kinh doanh (BR / Giấy phép kinh doanh)</value>
+  </data>
   <data name="CI Number (HK)" xml:space="preserve">
     <value>Số CI (HK)</value>
   </data>
@@ -68,6 +71,12 @@
   </data>
   <data name="Operation Status" xml:space="preserve">
     <value>Trạng thái hoạt động</value>
+  </data>
+  <data name="Organization Certificate (CR / Org Code)" xml:space="preserve">
+    <value>Giấy chứng nhận tổ chức (CR / Mã tổ chức)</value>
+  </data>
+  <data name="Please upload a valid certificate file." xml:space="preserve">
+    <value>Vui lòng tải lên một tệp chứng chỉ hợp lệ.</value>
   </data>
   <data name="Please upload a valid license file." xml:space="preserve">
     <value>Vui lòng tải lên một tệp giấy phép hợp lệ.</value>

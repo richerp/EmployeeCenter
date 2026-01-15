@@ -24,6 +24,9 @@
   <data name="New Contract File (Optional)" xml:space="preserve">
     <value>Neue Vertragsdatei (Optional)</value>
   </data>
+  <data name="Please upload a valid contract file." xml:space="preserve">
+    <value>Bitte laden Sie eine gültige Vertragsdatei hoch.</value>
+  </data>
   <data name="User" xml:space="preserve">
     <value>Benutzer</value>
   </data>

@@ -24,6 +24,9 @@
   <data name="New Contract File (Optional)" xml:space="preserve">
     <value>Nyt kontraktfil (valgfrit)</value>
   </data>
+  <data name="Please upload a valid contract file." xml:space="preserve">
+    <value>Upload venligst en gyldig kontraktfil.</value>
+  </data>
   <data name="User" xml:space="preserve">
     <value>Bruger</value>
   </data>

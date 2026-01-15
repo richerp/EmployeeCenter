@@ -69,6 +69,36 @@ public class ViewModelArgsInjector(
         _ = localizer["Permissions"];
         _ = localizer["Background Jobs"];
         _ = localizer["Global Settings"];
+    
+        _ = localizer["Approval Center"];
+        _ = localizer["Assets"];
+        _ = localizer["Certificate of Employment"];
+        _ = localizer["Certificate of Income"];
+        _ = localizer["Certificate Print"];
+        _ = localizer["Company Entity Info"];
+        _ = localizer["Company Public Contracts"];
+        _ = localizer["Development"];
+        _ = localizer["Finance"];
+        _ = localizer["Leave Management"];
+        _ = localizer["Legal"];
+        _ = localizer["Manage Company Entities"];
+        _ = localizer["Manage Contracts"];
+        _ = localizer["Manage IT Assets"];
+        _ = localizer["Manage Payrolls"];
+        _ = localizer["My Assets"];
+        _ = localizer["My IT Assets"];
+        _ = localizer["My Leave Balance"];
+        _ = localizer["My Payrolls"];
+        _ = localizer["My Report Line"];
+        _ = localizer["Onboarding"];
+        _ = localizer["Onboarding Process"];
+        _ = localizer["Payrolls"];
+        _ = localizer["Print Certificate"];
+        _ = localizer["Projects"];
+        _ = localizer["Report Line"];
+        _ = localizer["Resources"];
+        _ = localizer["Shared Passwords"];
+        _ = localizer["Team Calendar"];
     }
 
     public void InjectSimple(

@@ -21,8 +21,17 @@
       <data name="Account Details" xml:space="preserve">
     <value>खाता विवरण</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>कार्रवाई</value>
+  </data>
   <data name="An overview of the user&apos;s profile, assigned roles, and effective permissions." xml:space="preserve">
     <value>उपयोगकर्ता के प्रोफ़ाइल, सौंपी गई भूमिकाओं और प्रभावी अनुमतियों का एक सिंहावलोकन।</value>
+  </data>
+  <data name="Asset Tag" xml:space="preserve">
+    <value>संपत्ति टैग</value>
+  </data>
+  <data name="Assigned Assets" xml:space="preserve">
+    <value>आवंटित संपत्ति</value>
   </data>
   <data name="Assigned Roles" xml:space="preserve">
     <value>नियत भूमिकाएँ</value>
@@ -69,6 +78,12 @@
   <data name="Delete this User" xml:space="preserve">
     <value>इस उपयोगकर्ता को हटाएं</value>
   </data>
+  <data name="Details" xml:space="preserve">
+    <value>विवरण</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>संपादित करें</value>
+  </data>
   <data name="Edit this User" xml:space="preserve">
     <value>इस उपयोगकर्ता को संपादित करें</value>
   </data>
@@ -84,6 +99,12 @@
   <data name="Holder (Old -&gt; New)" xml:space="preserve">
     <value>होल्डर (पुराना -&gt; नया)</value>
   </data>
+  <data name="Idle" xml:space="preserve">
+    <value>अनिष्ट</value>
+  </data>
+  <data name="In Use" xml:space="preserve">
+    <value>उपयोग में</value>
+  </data>
   <data name="Job Level" xml:space="preserve">
     <value>Job Level</value>
   </data>
@@ -92,6 +113,18 @@
   </data>
   <data name="Legal Name" xml:space="preserve">
     <value>कानूनी नाम</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>स्थान</value>
+  </data>
+  <data name="Lost" xml:space="preserve">
+    <value>खो गया</value>
+  </data>
+  <data name="Maintenance" xml:space="preserve">
+    <value>रखरखाव</value>
+  </data>
+  <data name="Manage All Assets" xml:space="preserve">
+    <value>सभी संपत्तियों का प्रबंधन करें</value>
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>कॉन्ट्रैक्ट्स प्रबंधित करें</value>
@@ -102,11 +135,20 @@
   <data name="Manager" xml:space="preserve">
     <value>प्रबंधक</value>
   </data>
+  <data name="Model" xml:space="preserve">
+    <value>मॉडल</value>
+  </data>
   <data name="Name" xml:space="preserve">
     <value>नाम</value>
   </data>
+  <data name="No assets assigned to this user." xml:space="preserve">
+    <value>इस उपयोगकर्ता को कोई संपत्ति नियुक्त नहीं की गई है।</value>
+  </data>
   <data name="No change history found." xml:space="preserve">
     <value>कोई परिवर्तन इतिहास नहीं मिला।</value>
+  </data>
+  <data name="Pending Accept" xml:space="preserve">
+    <value>प्रतीक्षा में स्वीकृति</value>
   </data>
   <data name="Phone Number" xml:space="preserve">
     <value>फ़ोन नंबर</value>
@@ -116,6 +158,12 @@
   </data>
   <data name="Report Line" xml:space="preserve">
     <value>रिपोर्ट लाइन</value>
+  </data>
+  <data name="Retired" xml:space="preserve">
+    <value>सेवानिवृत्त</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>स्थिति</value>
   </data>
   <data name="System" xml:space="preserve">
     <value>सिस्टम</value>

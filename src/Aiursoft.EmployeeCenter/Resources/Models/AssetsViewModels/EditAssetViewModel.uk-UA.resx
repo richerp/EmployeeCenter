@@ -21,6 +21,9 @@
       <data name="Asset Tag" xml:space="preserve">
     <value>Позначка активу</value>
   </data>
+  <data name="Assignee" xml:space="preserve">
+    <value>Відповідальна особа</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>Рахунок-фактура</value>
   </data>

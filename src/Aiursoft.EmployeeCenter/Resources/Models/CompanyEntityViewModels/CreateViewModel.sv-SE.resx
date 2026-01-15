@@ -30,6 +30,9 @@
   <data name="Business License / BR Scan" xml:space="preserve">
     <value>Företagslicens / BR-skanning</value>
   </data>
+  <data name="Business Registration (BR / Business License)" xml:space="preserve">
+    <value>Företagsregistrering (BR / företagslicens)</value>
+  </data>
   <data name="CI Number (HK)" xml:space="preserve">
     <value>CI-nummer (HK)</value>
   </data>
@@ -68,6 +71,12 @@
   </data>
   <data name="Operation Status" xml:space="preserve">
     <value>Verksamhetsstatus</value>
+  </data>
+  <data name="Organization Certificate (CR / Org Code)" xml:space="preserve">
+    <value>Organisationscertifikat (CR / Org-kod)</value>
+  </data>
+  <data name="Please upload a valid certificate file." xml:space="preserve">
+    <value>Var god ladda upp en giltig certifikatfil.</value>
   </data>
   <data name="Please upload a valid license file." xml:space="preserve">
     <value>Vänligen ladda upp en giltig licensfil.</value>

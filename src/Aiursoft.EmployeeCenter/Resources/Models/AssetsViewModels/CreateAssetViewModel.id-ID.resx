@@ -21,6 +21,9 @@
       <data name="Asset Tag" xml:space="preserve">
     <value>Tag Aset</value>
   </data>
+  <data name="Assignee" xml:space="preserve">
+    <value>Pemegang Tanggung Jawab</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>File Faktur</value>
   </data>

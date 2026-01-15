@@ -33,6 +33,9 @@
   <data name="Business License" xml:space="preserve">
     <value>رخصة العمل</value>
   </data>
+  <data name="Business Registration" xml:space="preserve">
+    <value>تسجيل الأعمال</value>
+  </data>
   <data name="CI Number" xml:space="preserve">
     <value>رقم الهوية</value>
   </data>
@@ -74,6 +77,9 @@
   </data>
   <data name="Official Seal" xml:space="preserve">
     <value>الختم الرسمي</value>
+  </data>
+  <data name="Organization Certificate" xml:space="preserve">
+    <value>شهادة المنظمة</value>
   </data>
   <data name="Reg Capital" xml:space="preserve">
     <value>رأس المال المسجل</value>

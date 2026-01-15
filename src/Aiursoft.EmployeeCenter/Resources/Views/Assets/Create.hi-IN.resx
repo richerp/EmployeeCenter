@@ -36,6 +36,9 @@
   <data name="Financial Information" xml:space="preserve">
     <value>वित्तीय जानकारी</value>
   </data>
+  <data name="Not Assigned" xml:space="preserve">
+    <value>अनुसूचित नहीं</value>
+  </data>
   <data name="Save Asset" xml:space="preserve">
     <value>सेव एसेट</value>
   </data>

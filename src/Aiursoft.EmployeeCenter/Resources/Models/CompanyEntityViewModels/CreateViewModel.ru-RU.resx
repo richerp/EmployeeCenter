@@ -30,6 +30,9 @@
   <data name="Business License / BR Scan" xml:space="preserve">
     <value>Свидетельство о регистрации предприятия / Скан BR</value>
   </data>
+  <data name="Business Registration (BR / Business License)" xml:space="preserve">
+    <value>Регистрация бизнеса (BR / Лицензия на ведение бизнеса)</value>
+  </data>
   <data name="CI Number (HK)" xml:space="preserve">
     <value>Номер CI (Гонконг)</value>
   </data>
@@ -68,6 +71,12 @@
   </data>
   <data name="Operation Status" xml:space="preserve">
     <value>Статус деятельности</value>
+  </data>
+  <data name="Organization Certificate (CR / Org Code)" xml:space="preserve">
+    <value>Свидетельство о регистрации организации (CR / Орг. код)</value>
+  </data>
+  <data name="Please upload a valid certificate file." xml:space="preserve">
+    <value>Пожалуйста, загрузите действительный файл сертификата.</value>
   </data>
   <data name="Please upload a valid license file." xml:space="preserve">
     <value>Пожалуйста, загрузите действительный файл лицензии.</value>
