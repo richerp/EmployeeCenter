@@ -339,6 +339,9 @@
   <data name="Projects" xml:space="preserve">
     <value>프로젝트</value>
   </data>
+  <data name="Promotion History" xml:space="preserve">
+    <value>승진 이력</value>
+  </data>
   <data name="Reg Capital" xml:space="preserve">
     <value>등록 자본</value>
   </data>

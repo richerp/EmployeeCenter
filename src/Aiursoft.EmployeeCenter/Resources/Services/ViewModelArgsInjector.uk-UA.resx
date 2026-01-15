@@ -336,6 +336,9 @@
   <data name="Projects" xml:space="preserve">
     <value>Проєкти</value>
   </data>
+  <data name="Promotion History" xml:space="preserve">
+    <value>Історія підвищень</value>
+  </data>
   <data name="Reg Capital" xml:space="preserve">
     <value>Реєстраційний капітал</value>
   </data>

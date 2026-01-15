@@ -336,6 +336,9 @@
   <data name="Projects" xml:space="preserve">
     <value>Projektit</value>
   </data>
+  <data name="Promotion History" xml:space="preserve">
+    <value>Edistymisen historia</value>
+  </data>
   <data name="Reg Capital" xml:space="preserve">
     <value>Perustamisvarallisuus</value>
   </data>

@@ -99,6 +99,8 @@ public class ViewModelArgsInjector(
         _ = localizer["Resources"];
         _ = localizer["Shared Passwords"];
         _ = localizer["Team Calendar"];
+    
+        _ = localizer["Promotion History"];
     }
 
     public void InjectSimple(

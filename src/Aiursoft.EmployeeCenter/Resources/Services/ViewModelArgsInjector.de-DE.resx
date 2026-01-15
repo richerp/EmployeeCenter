@@ -339,6 +339,9 @@
   <data name="Projects" xml:space="preserve">
     <value>Projekte</value>
   </data>
+  <data name="Promotion History" xml:space="preserve">
+    <value>Förderungsgeschichte</value>
+  </data>
   <data name="Reg Capital" xml:space="preserve">
     <value>Stammeinlage</value>
   </data>

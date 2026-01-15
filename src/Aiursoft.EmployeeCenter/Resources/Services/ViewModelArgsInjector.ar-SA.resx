@@ -336,6 +336,9 @@
   <data name="Projects" xml:space="preserve">
     <value>المشاريع</value>
   </data>
+  <data name="Promotion History" xml:space="preserve">
+    <value>سجل الترقيات</value>
+  </data>
   <data name="Reg Capital" xml:space="preserve">
     <value>رأس المال المسجل</value>
   </data>
