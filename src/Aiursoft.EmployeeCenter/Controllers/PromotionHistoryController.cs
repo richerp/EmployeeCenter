@@ -1,3 +1,4 @@
+using Aiursoft.EmployeeCenter.Authorization;
 using Aiursoft.EmployeeCenter.Entities;
 using Aiursoft.EmployeeCenter.Models.PromotionHistoryViewModels;
 using Aiursoft.EmployeeCenter.Services;
@@ -71,6 +72,61 @@ public class PromotionHistoryController(
             HasNeverBeenPromoted = hasNeverBeenPromoted,
             Histories = allHistories
         };
+
+        return this.StackView(model);
+    }
+
+    [Authorize(Policy = AppPermissionNames.CanEditAndViewDetailsOfUsers)]
+    public async Task<IActionResult> Create(string? userId)
+    {
+        var model = new CreateViewModel();
+        if (!string.IsNullOrEmpty(userId))
+        {
+            var user = await context.Users.FindAsync(userId);
+            if (user != null)
+            {
+                model.UserId = user.Id;
+                model.UserDisplayName = user.DisplayName;
+                model.OldJobLevel = user.JobLevel;
+                model.OldTitle = user.Title;
+            }
+        }
+        return this.StackView(model);
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    [Authorize(Policy = AppPermissionNames.CanEditAndViewDetailsOfUsers)]
+    public async Task<IActionResult> Create(CreateViewModel model)
+    {
+        if (ModelState.IsValid)
+        {
+            var user = await context.Users.FindAsync(model.UserId);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            var promoter = await userManager.GetUserAsync(User);
+            var history = new PromotionHistory
+            {
+                UserId = user.Id,
+                OldJobLevel = user.JobLevel,
+                NewJobLevel = model.NewJobLevel,
+                OldTitle = user.Title,
+                NewTitle = model.NewTitle,
+                ChangeTime = DateTime.UtcNow,
+                PromoterId = promoter?.Id
+            };
+
+            user.JobLevel = model.NewJobLevel;
+            user.Title = model.NewTitle;
+
+            context.PromotionHistories.Add(history);
+            await context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+        }
 
         return this.StackView(model);
     }

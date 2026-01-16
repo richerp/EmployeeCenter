@@ -64,4 +64,64 @@ public class PromotionHistoryTests : TestBase
         Assert.Contains("Junior", html);
         Assert.Contains("Senior", html);
     }
+
+    [TestMethod]
+    public async Task TestManualPromotionCreation()
+    {
+        // 1. Create a target user
+        string userId;
+        var suffix = Guid.NewGuid().ToString("N")[..6];
+        using (var scope = Server!.Services.CreateScope())
+        {
+            var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
+            var user = new User
+            {
+                UserName = "target" + suffix,
+                DisplayName = "Target User",
+                Email = "target" + suffix + "@test.com",
+                AvatarRelativePath = User.DefaultAvatarPath,
+                JobLevel = "L1",
+                Title = "Junior"
+            };
+            await userManager.CreateAsync(user, "Password123!");
+            userId = user.Id;
+        }
+
+        // 2. Login as admin
+        await LoginAsAdmin();
+
+        // 3. Go to create promotion page
+        var createPageResponse = await Http.GetAsync($"/PromotionHistory/Create?userId={userId}");
+        createPageResponse.EnsureSuccessStatusCode();
+        var createPageHtml = await createPageResponse.Content.ReadAsStringAsync();
+        Assert.Contains("Target User", createPageHtml);
+        Assert.Contains("L1", createPageHtml);
+        Assert.Contains("Junior", createPageHtml);
+
+        // 4. Submit promotion
+        var postResponse = await PostForm("/PromotionHistory/Create", new Dictionary<string, string>
+        {
+            { "UserId", userId },
+            { "NewJobLevel", "L2" },
+            { "NewTitle", "Senior" }
+        });
+        AssertRedirect(postResponse, "/PromotionHistory");
+
+        // 5. Verify user status updated
+        using (var scope = Server!.Services.CreateScope())
+        {
+            var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
+            var user = await userManager.FindByIdAsync(userId);
+            Assert.AreEqual("L2", user!.JobLevel);
+            Assert.AreEqual("Senior", user.Title);
+        }
+
+        // 6. Verify history recorded
+        var indexResponse = await Http.GetAsync("/PromotionHistory");
+        indexResponse.EnsureSuccessStatusCode();
+        var indexHtml = await indexResponse.Content.ReadAsStringAsync();
+        Assert.Contains("Target User", indexHtml);
+        Assert.Contains("L1", indexHtml);
+        Assert.Contains("L2", indexHtml);
+    }
 }
