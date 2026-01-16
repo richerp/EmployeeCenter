@@ -1,5 +1,3 @@
-using System.Net;
-using System.Text.RegularExpressions;
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
@@ -245,7 +243,7 @@ public class LeaveTests
         // 3. Create an approved leave directly in DB
         var userId = await GetUserIdByEmail(email);
         var today = DateTime.UtcNow.Date;
-        
+
         using (var scope = _server!.Services.CreateScope())
         {
             var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
@@ -270,12 +268,12 @@ public class LeaveTests
         // 4. Visit Team Calendar
         var response = await _http.GetAsync("/Leave/TeamCalendar");
         Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
-        
+
         var html = await response.Content.ReadAsStringAsync();
 
         // 5. Verify "Me" is present
         StringAssert.Contains(html, "Me", "The Team Calendar page should contain the text 'Me'.");
-        
+
         // Also verify the user's email is present
         StringAssert.Contains(html, email, "The Team Calendar page should contain the user's email.");
     }

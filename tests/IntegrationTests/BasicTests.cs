@@ -1,5 +1,3 @@
-using System.Net;
-using System.Text.RegularExpressions;
 
 [assembly: DoNotParallelize]
 

@@ -1,0 +1,166 @@
+You are working on an EXISTING Merge Request #76: 'Fix for issue #51: 公司实体管理系统，增加一项：邮编。且允许所有员工查看。'.
+Source Branch: fix-issue-51
+Target Branch: master
+
+Recent discussions and feedback (marked [NEW] if since last bot commit):
+
+
+Status: CI/CD PIPELINE FAILED.
+Pipeline URL: https://gitlab.aiursoft.com/gemini-bot/employeecenter/-/pipelines/42299
+
+Failure Logs:
+
+
+=== Job: lint (Stage: lint) ===
+2026-01-16T00:38:56.786335Z 00O [0KRunning with gitlab-runner 18.7.2 (1c855082)[0;m
+2026-01-16T00:38:56.786346Z 00O [0K  on c4dfd49ffd0b wjuYPY19y, system ID: s_2ac520b8d282[0;m
+2026-01-16T00:38:56.786363Z 00O section_start:1768523936:prepare_executor
+2026-01-16T00:38:56.786364Z 00O+[0K[0K[36;1mPreparing the "shell" executor[0;m[0;m
+2026-01-16T00:38:56.786504Z 00O [0KUsing Shell (bash) executor...[0;m
+2026-01-16T00:38:56.786506Z 00O section_end:1768523936:prepare_executor
+2026-01-16T00:38:56.786506Z 00O+[0Ksection_start:1768523936:prepare_script
+2026-01-16T00:38:56.786575Z 00O+[0K[0K[36;1mPreparing environment[0;m[0;m
+2026-01-16T00:38:56.794828Z 01O Running on c4dfd49ffd0b...
+2026-01-16T00:38:56.796466Z 00O section_end:1768523936:prepare_script
+2026-01-16T00:38:56.796469Z 00O+[0Ksection_start:1768523936:get_sources
+2026-01-16T00:38:56.796833Z 00O+[0K[0K[36;1mGetting source from Git repository[0;m[0;m
+2026-01-16T00:38:56.820519Z 01O [32;1mGitaly correlation ID: 01KF23VCVJ42DAP38W5R0PDSGW[0;m
+2026-01-16T00:38:56.825114Z 01O [32;1mFetching changes with git depth set to 20...[0;m
+2026-01-16T00:38:56.826780Z 01O Reinitialized existing Git repository in /home/gitlab-runner/builds/employeecenter/42299/.git/
+2026-01-16T00:38:56.960256Z 01O [32;1mChecking out a8b9353f as detached HEAD (ref is fix-issue-51)...[0;m
+2026-01-16T00:38:57.033668Z 01O Removing src/Aiursoft.EmployeeCenter.Entities/obj/
+2026-01-16T00:38:57.033675Z 01O Removing src/Aiursoft.EmployeeCenter.InMemory/obj/
+2026-01-16T00:38:57.033676Z 01O Removing src/Aiursoft.EmployeeCenter.MySql/obj/
+2026-01-16T00:38:57.033677Z 01O Removing src/Aiursoft.EmployeeCenter.Sqlite/obj/
+2026-01-16T00:38:57.033677Z 01O Removing src/Aiursoft.EmployeeCenter/obj/
+2026-01-16T00:38:57.033677Z 01O Removing tests/obj/
+2026-01-16T00:38:57.036566Z 01O [32;1mSkipping Git submodules setup[0;m
+2026-01-16T00:38:57.037400Z 00O section_end:1768523937:get_sources
+2026-01-16T00:38:57.037403Z 00O+[0Ksection_start:1768523937:step_script
+2026-01-16T00:38:57.037984Z 00O+[0K[0K[36;1mExecuting "step_script" stage of the job script[0;m[0;m
+2026-01-16T00:38:57.050152Z 01O [32;1m$ export DOTNET_CLI_TELEMETRY_OPTOUT=1[0;m
+2026-01-16T00:38:57.050167Z 01O [32;1m$ export PATH=$PATH:$HOME/.dotnet/tools[0;m
+2026-01-16T00:38:57.050168Z 01O [32;1m$ which jb || dotnet tool install JetBrains.ReSharper.GlobalTools --global --add-source https://nuget.aiursoft.com/v3/index.json --configfile ./nuget.config -v d[0;m
+2026-01-16T00:38:57.050825Z 01O /home/gitlab-runner/.dotnet/tools/jb
+2026-01-16T00:38:57.050886Z 01O [32;1m$ which reportgenerator || dotnet tool install dotnet-reportgenerator-globaltool --global --add-source https://nuget.aiursoft.com/v3/index.json --configfile ./nuget.config -v d[0;m
+2026-01-16T00:38:57.051481Z 01O /home/gitlab-runner/.dotnet/tools/reportgenerator
+2026-01-16T00:38:57.051531Z 01O [32;1m$ echo "Hostname: $(hostname)"[0;m
+2026-01-16T00:38:57.052090Z 01O Hostname: c4dfd49ffd0b
+2026-01-16T00:38:57.052100Z 01O [32;1m$ dotnet --info[0;m
+2026-01-16T00:38:57.122684Z 01O .NET SDK:
+2026-01-16T00:38:57.122692Z 01O  Version:           10.0.100
+2026-01-16T00:38:57.122693Z 01O  Commit:            b0f34d51fc
+2026-01-16T00:38:57.142362Z 01O  Workload version:  10.0.100-manifests.4eab3e0f
+2026-01-16T00:38:57.142803Z 01O  MSBuild version:   18.0.2+b0f34d51f
+2026-01-16T00:38:57.142805Z 01O 
+2026-01-16T00:38:57.142806Z 01O Runtime Environment:
+2026-01-16T00:38:57.143096Z 01O  OS Name:     ubuntu
+2026-01-16T00:38:57.143097Z 01O  OS Version:  25.10
+2026-01-16T00:38:57.144047Z 01O  OS Platform: Linux
+2026-01-16T00:38:57.149175Z 01O  RID:         ubuntu.25.10-x64
+2026-01-16T00:38:57.149182Z 01O  Base Path:   /usr/lib/dotnet/sdk/10.0.100/
+2026-01-16T00:38:57.149183Z 01O 
+2026-01-16T00:38:57.149184Z 01O .NET workloads installed:
+2026-01-16T00:38:57.150695Z 01O There are no installed workloads to display.
+2026-01-16T00:38:57.150702Z 01O Configured to use workload sets when installing new manifests.
+2026-01-16T00:38:57.150703Z 01O No workload sets are installed. Run "dotnet workload restore" to install a workload set.
+2026-01-16T00:38:57.151189Z 01O 
+2026-01-16T00:38:57.151191Z 01O Host:
+2026-01-16T00:38:57.151191Z 01O   Version:      10.0.0
+2026-01-16T00:38:57.151191Z 01O   Architecture: x64
+2026-01-16T00:38:57.151192Z 01O   Commit:       b0f34d51fc
+2026-01-16T00:38:57.151192Z 01O 
+2026-01-16T00:38:57.151192Z 01O .NET SDKs installed:
+2026-01-16T00:38:57.151192Z 01O   10.0.100 [/usr/lib/dotnet/sdk]
+2026-01-16T00:38:57.151193Z 01O 
+2026-01-16T00:38:57.151193Z 01O .NET runtimes installed:
+2026-01-16T00:38:57.151193Z 01O   Microsoft.AspNetCore.App 10.0.0 [/usr/lib/dotnet/shared/Microsoft.AspNetCore.App]
+2026-01-16T00:38:57.151193Z 01O   Microsoft.NETCore.App 10.0.0 [/usr/lib/dotnet/shared/Microsoft.NETCore.App]
+2026-01-16T00:38:57.151194Z 01O 
+2026-01-16T00:38:57.151194Z 01O Other architectures found:
+2026-01-16T00:38:57.151194Z 01O   None
+2026-01-16T00:38:57.151194Z 01O 
+2026-01-16T00:38:57.151194Z 01O Environment variables:
+2026-01-16T00:38:57.151195Z 01O   DOTNET_BUNDLE_EXTRACT_BASE_DIR           [/home/gitlab-runner/.cache/dotnet_bundle_extract]
+2026-01-16T00:38:57.151195Z 01O   DOTNET_CLI_TELEMETRY_OPTOUT              [1]
+2026-01-16T00:38:57.151195Z 01O 
+2026-01-16T00:38:57.151195Z 01O global.json file:
+2026-01-16T00:38:57.151196Z 01O   Not found
+2026-01-16T00:38:57.151196Z 01O 
+2026-01-16T00:38:57.151196Z 01O Learn more:
+2026-01-16T00:38:57.151196Z 01O   https://aka.ms/dotnet/info
+2026-01-16T00:38:57.151196Z 01O 
+2026-01-16T00:38:57.151197Z 01O Download .NET:
+2026-01-16T00:38:57.151197Z 01O   https://aka.ms/dotnet/download
+2026-01-16T00:38:57.153715Z 01O [32;1m$ chmod +x ./lint.sh[0;m
+2026-01-16T00:38:57.154542Z 01O [32;1m$ ./lint.sh[0;m
+2026-01-16T00:38:57.155402Z 01O Checking for JetBrains ReSharper Global Tools...
+2026-01-16T00:38:57.155454Z 01O jb is already installed.
+2026-01-16T00:38:57.155456Z 01O Restoring dependencies...
+2026-01-16T00:38:57.648703Z 01O   Determining projects to restore...
+2026-01-16T00:38:58.065089Z 01O   Restored /home/gitlab-runner/builds/employeecenter/42299/src/Aiursoft.EmployeeCenter.MySql/Aiursoft.EmployeeCenter.MySql.csproj (in 164 ms).
+2026-01-16T00:38:58.065098Z 01O   Restored /home/gitlab-runner/builds/employeecenter/42299/tests/Aiursoft.EmployeeCenter.Tests.csproj (in 164 ms).
+2026-01-16T00:38:58.065099Z 01O   Restored /home/gitlab-runner/builds/employeecenter/42299/src/Aiursoft.EmployeeCenter.Entities/Aiursoft.EmployeeCenter.Entities.csproj (in 164 ms).
+2026-01-16T00:38:58.065099Z 01O   Restored /home/gitlab-runner/builds/employeecenter/42299/src/Aiursoft.EmployeeCenter.Sqlite/Aiursoft.EmployeeCenter.Sqlite.csproj (in 164 ms).
+2026-01-16T00:38:58.065100Z 01O   Restored /home/gitlab-runner/builds/employeecenter/42299/src/Aiursoft.EmployeeCenter/Aiursoft.EmployeeCenter.csproj (in 172 ms).
+2026-01-16T00:38:58.065101Z 01O   Restored /home/gitlab-runner/builds/employeecenter/42299/src/Aiursoft.EmployeeCenter.InMemory/Aiursoft.EmployeeCenter.InMemory.csproj (in 164 ms).
+2026-01-16T00:38:58.086363Z 01O Running ReSharper Code Inspection...
+2026-01-16T00:39:57.154106Z 01O Filtering known false positives...
+2026-01-16T00:39:57.162772Z 01O [0;31mLinting FAILED![0m
+2026-01-16T00:39:57.162778Z 01O Issues found:
+2026-01-16T00:39:57.172033Z 01O File: tests/IntegrationTests/ManageOnboardingProgressTests.cs | Line: 54 | Reason: Qualifier is redundant
+2026-01-16T00:39:57.181218Z 01O File: tests/IntegrationTests/AssetTests.cs | Line: Offset 0-17 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.187170Z 01O File: tests/IntegrationTests/AssetTests.cs | Line: 2 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.194965Z 01O File: tests/IntegrationTests/BackgroundJobsTests.cs | Line: Offset 0-17 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.202794Z 01O File: tests/IntegrationTests/BasicTests.cs | Line: Offset 0-17 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.207905Z 01O File: tests/IntegrationTests/BasicTests.cs | Line: 2 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.216338Z 01O File: tests/IntegrationTests/CertificateTests.cs | Line: Offset 0-17 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.223721Z 01O File: tests/IntegrationTests/CompanyEntityTests.cs | Line: Offset 0-47 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.230545Z 01O File: tests/IntegrationTests/ContractTests.cs | Line: Offset 0-17 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.236114Z 01O File: tests/IntegrationTests/ContractTests.cs | Line: 2 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.243789Z 01O File: tests/IntegrationTests/CultureControllerTests.cs | Line: Offset 0-17 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.251527Z 01O File: tests/IntegrationTests/FilesControllerTests.cs | Line: Offset 0-17 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.258861Z 01O File: tests/IntegrationTests/GlobalSettingsTests.cs | Line: Offset 0-17 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.265956Z 01O File: tests/IntegrationTests/LeaveApprovalAuthorizationTests.cs | Line: Offset 0-17 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.271214Z 01O File: tests/IntegrationTests/LeaveApprovalAuthorizationTests.cs | Line: 2 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.278844Z 01O File: tests/IntegrationTests/LeaveTests.cs | Line: Offset 0-17 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.284362Z 01O File: tests/IntegrationTests/LeaveTests.cs | Line: 2 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.292055Z 01O File: tests/IntegrationTests/ManageOnboardingProgressTests.cs | Line: Offset 0-17 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.299453Z 01O File: tests/IntegrationTests/OnboardingTests.cs | Line: Offset 0-17 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.304814Z 01O File: tests/IntegrationTests/OnboardingTests.cs | Line: 2 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.311992Z 01O File: tests/IntegrationTests/PasswordTests.cs | Line: Offset 0-17 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.317495Z 01O File: tests/IntegrationTests/PasswordTests.cs | Line: 2 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.326804Z 01O File: tests/IntegrationTests/PayrollTests.cs | Line: Offset 0-17 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.332217Z 01O File: tests/IntegrationTests/PayrollTests.cs | Line: 2 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.339569Z 01O File: tests/IntegrationTests/PermissionsControllerTests.cs | Line: Offset 0-17 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.346932Z 01O File: tests/IntegrationTests/PermissionTests.cs | Line: Offset 0-17 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.352899Z 01O File: tests/IntegrationTests/PermissionTests.cs | Line: 2 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.361255Z 01O File: tests/IntegrationTests/ReportLineTests.cs | Line: Offset 0-17 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.366751Z 01O File: tests/IntegrationTests/ReportLineTests.cs | Line: 3 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.373618Z 01O File: tests/IntegrationTests/RolesControllerTests.cs | Line: Offset 0-17 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.380577Z 01O File: tests/IntegrationTests/SshKeyTests.cs | Line: Offset 0-17 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.386228Z 01O File: tests/IntegrationTests/SshKeyTests.cs | Line: 2 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.393695Z 01O File: tests/IntegrationTests/SystemControllerTests.cs | Line: Offset 0-17 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.401797Z 01O File: tests/IntegrationTests/TestBase.cs | Line: Offset 0-17 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.407375Z 01O File: tests/IntegrationTests/TestBase.cs | Line: 2 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.414729Z 01O File: tests/IntegrationTests/UsersControllerTests.cs | Line: Offset 0-17 | Reason: Using directive is not required by the code and can be safely removed
+2026-01-16T00:39:57.416950Z 00O section_end:1768523997:step_script
+2026-01-16T00:39:57.416953Z 00O+[0Ksection_start:1768523997:upload_artifacts_on_failure
+2026-01-16T00:39:57.417413Z 00O+[0K[0K[36;1mUploading artifacts for failed job[0;m[0;m
+2026-01-16T00:39:57.473913Z 01O [32;1mUploading artifacts...[0;m
+2026-01-16T00:39:57.508081Z 01E Runtime platform                                  [0;m  arch[0;m=amd64 os[0;m=linux pid[0;m=99392 revision[0;m=1c855082 version[0;m=18.7.2
+2026-01-16T00:39:57.508120Z 01E ./analyze_output.xml: found 1 matching artifact files and directories[0;m 
+2026-01-16T00:39:57.609991Z 01E Uploading artifacts as "archive" to coordinator... 201 Created[0;m  correlation_id[0;m=01KF23X8A5H18D5XGHKM5D5GST id[0;m=243389 responseStatus[0;m=201 Created token[0;m=64_Wo4zyc
+2026-01-16T00:39:57.615218Z 00O section_end:1768523997:upload_artifacts_on_failure
+2026-01-16T00:39:57.615221Z 00O+[0Ksection_start:1768523997:cleanup_file_variables
+2026-01-16T00:39:57.615283Z 00O+[0K[0K[36;1mCleaning up project directory and file based variables[0;m[0;m
+2026-01-16T00:39:57.631958Z 00O section_end:1768523997:cleanup_file_variables
+2026-01-16T00:39:57.631964Z 00O+[0K
+2026-01-16T00:39:57.632043Z 00O [31;1mERROR: Job failed: exit status 1[0;m
+
+=== End of Job Log ===
+
+
+
+Please analyze the logs and the codebase to fix the failures.
+Don't forget to bump the version for updated nuget package projects after necessary changes, while do NOT add a version tag for projects doesn't publish nuget packages!

@@ -1,5 +1,3 @@
-using System.Net;
-using System.Text.RegularExpressions;
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
@@ -74,14 +72,14 @@ public class ContractTests
         // 2. Create a PUBLIC contract
         // First upload the file via vault framework to get the logical path
         var createPublicContractToken = await GetAntiCsrfToken("/ManageContract/Create");
-        
+
         string publicFilePath;
         using (var uploadContent = new MultipartFormDataContent())
         {
             var fileContent = new ByteArrayContent([1, 2, 3]);
             fileContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/pdf");
             uploadContent.Add(fileContent, "file", "policy.pdf");
-            
+
             var uploadResponse = await _http.PostAsync("/upload/contract?useVault=true", uploadContent);
             uploadResponse.EnsureSuccessStatusCode();
             var uploadResult = await uploadResponse.Content.ReadAsStringAsync();
@@ -90,7 +88,7 @@ public class ContractTests
             Assert.IsTrue(pathMatch.Success, "Failed to extract file path from upload response");
             publicFilePath = pathMatch.Groups[1].Value;
         }
-        
+
         // Now submit the form with the logical path
         var createPublicContent = new FormUrlEncodedContent(new Dictionary<string, string>
         {
@@ -106,14 +104,14 @@ public class ContractTests
         // 3. Create a PRIVATE contract
         // First upload the file via vault framework to get the logical path
         var createPrivateContractToken = await GetAntiCsrfToken("/ManageContract/Create");
-        
+
         string privateFilePath;
         using (var uploadContent = new MultipartFormDataContent())
         {
             var fileContent = new ByteArrayContent([1, 2, 3]);
             fileContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/pdf");
             uploadContent.Add(fileContent, "file", "secret.pdf");
-            
+
             var uploadResponse = await _http.PostAsync("/upload/contract?useVault=true", uploadContent);
             uploadResponse.EnsureSuccessStatusCode();
             var uploadResult = await uploadResponse.Content.ReadAsStringAsync();
@@ -121,7 +119,7 @@ public class ContractTests
             Assert.IsTrue(pathMatch.Success, "Failed to extract file path from upload response");
             privateFilePath = pathMatch.Groups[1].Value;
         }
-        
+
         // Now submit the form with the logical path
         var createPrivateContent = new FormUrlEncodedContent(new Dictionary<string, string>
         {
@@ -169,7 +167,7 @@ public class ContractTests
         var myContractsResponse = await _http.GetAsync("/Contract/Index");
         myContractsResponse.EnsureSuccessStatusCode();
         var myContractsHtml = await myContractsResponse.Content.ReadAsStringAsync();
-        
+
         // Should see public contract
         Assert.Contains("Public Company Policy", myContractsHtml);
         // Should NOT see private contract

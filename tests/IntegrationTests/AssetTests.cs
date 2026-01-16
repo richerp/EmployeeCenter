@@ -1,5 +1,3 @@
-using System.Net;
-using System.Text.RegularExpressions;
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
@@ -246,7 +244,7 @@ public class AssetTests
             var cat = new AssetCategory { Name = "Test Cat", Code = "TC" };
             db.AssetCategories.Add(cat);
             await db.SaveChangesAsync();
-            
+
             var model = new AssetModel { ModelName = "Test Model", Brand = "Test", CategoryId = cat.Id };
             db.AssetModels.Add(model);
             await db.SaveChangesAsync();
