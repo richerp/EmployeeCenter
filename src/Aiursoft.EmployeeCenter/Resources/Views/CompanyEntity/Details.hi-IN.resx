@@ -45,6 +45,12 @@
   <data name="Company Type" xml:space="preserve">
     <value>कंपनी प्रकार</value>
   </data>
+  <data name="Copy Full Info" xml:space="preserve">
+    <value>पूरी जानकारी कॉपी करें</value>
+  </data>
+  <data name="Copy Summary" xml:space="preserve">
+    <value>सारांश कॉपी करें</value>
+  </data>
   <data name="Download / View" xml:space="preserve">
     <value>डाउनलोड / देखें</value>
   </data>

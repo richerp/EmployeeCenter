@@ -45,6 +45,12 @@
   <data name="Company Type" xml:space="preserve">
     <value>회사 유형</value>
   </data>
+  <data name="Copy Full Info" xml:space="preserve">
+    <value>전체 정보 복사</value>
+  </data>
+  <data name="Copy Summary" xml:space="preserve">
+    <value>요약 복사</value>
+  </data>
   <data name="Download / View" xml:space="preserve">
     <value>다운로드 / 보기</value>
   </data>

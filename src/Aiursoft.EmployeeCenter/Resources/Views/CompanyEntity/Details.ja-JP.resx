@@ -45,6 +45,12 @@
   <data name="Company Type" xml:space="preserve">
     <value>会社種別</value>
   </data>
+  <data name="Copy Full Info" xml:space="preserve">
+    <value>フル情報のコピー</value>
+  </data>
+  <data name="Copy Summary" xml:space="preserve">
+    <value>要約をコピー</value>
+  </data>
   <data name="Download / View" xml:space="preserve">
     <value>ダウンロード / 表示</value>
   </data>

@@ -96,5 +96,8 @@
   <data name="SCR Location (HK)" xml:space="preserve">
     <value>Τοποθεσία SCR (ΧΚ)</value>
   </data>
+  <data name="Zip Code" xml:space="preserve">
+    <value>Ταχυδρομικός Κώδικας</value>
+  </data>
 
 </root>

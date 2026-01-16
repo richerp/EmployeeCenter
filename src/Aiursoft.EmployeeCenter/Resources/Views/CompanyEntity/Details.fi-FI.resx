@@ -45,6 +45,12 @@
   <data name="Company Type" xml:space="preserve">
     <value>Yritystyyppi</value>
   </data>
+  <data name="Copy Full Info" xml:space="preserve">
+    <value>Kopioi koko tieto</value>
+  </data>
+  <data name="Copy Summary" xml:space="preserve">
+    <value>Kopioi yhteenveto</value>
+  </data>
   <data name="Download / View" xml:space="preserve">
     <value>Lataa / Näytä</value>
   </data>
