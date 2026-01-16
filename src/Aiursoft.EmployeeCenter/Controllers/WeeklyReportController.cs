@@ -128,7 +128,7 @@ public class WeeklyReportController(
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> UpdateNotepad(string content)
+    public async Task<IActionResult> UpdateNotepad(string? content)
     {
         var user = await userManager.GetUserAsync(User);
         if (user == null) return Unauthorized();
