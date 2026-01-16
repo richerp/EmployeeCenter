@@ -92,4 +92,48 @@ public class CompanyEntityTests : TestBase
         Assert.IsNotNull(entity);
         Assert.AreEqual("Test Company 2", entity.CompanyName);
     }
+
+    [TestMethod]
+    public async Task DetailsPage_Buttons_VisibilityTest()
+    {
+        // 1. Login as admin
+        await LoginAsAdmin();
+
+        // 2. Create a Company Entity
+        var createResponse = await PostForm("/CompanyEntity/Create", new Dictionary<string, string>
+        {
+            { "CompanyName", "Button Test Company" },
+            { "EntityCode", "999888777" },
+            { "RegisteredAddress", "123 Button St" }
+        });
+        Assert.AreEqual(HttpStatusCode.Found, createResponse.StatusCode);
+
+        // 3. Get the ID
+        using (var scope = Server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var entity = await db.CompanyEntities.FirstOrDefaultAsync(e => e.EntityCode == "999888777");
+            Assert.IsNotNull(entity);
+            
+            // 4. Verify Details page (as admin)
+            var detailsResponse = await Http.GetAsync($"/CompanyEntity/Details/{entity.Id}");
+            detailsResponse.EnsureSuccessStatusCode();
+            var detailsHtml = await detailsResponse.Content.ReadAsStringAsync();
+            
+            Assert.Contains("Copy Summary", detailsHtml);
+            Assert.Contains("Copy Full Info", detailsHtml);
+
+            // 5. Login as normal user
+            await Http.GetAsync("/Account/LogOff");
+            await RegisterAndLoginAsync();
+
+            // 6. Verify Details page (as normal user)
+            var userDetailsResponse = await Http.GetAsync($"/CompanyEntity/Details/{entity.Id}");
+            userDetailsResponse.EnsureSuccessStatusCode();
+            var userDetailsHtml = await userDetailsResponse.Content.ReadAsStringAsync();
+
+            Assert.Contains("Copy Summary", userDetailsHtml);
+            Assert.DoesNotContain("Copy Full Info", userDetailsHtml);
+        }
+    }
 }
