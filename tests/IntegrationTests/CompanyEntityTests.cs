@@ -120,8 +120,8 @@ public class CompanyEntityTests : TestBase
             detailsResponse.EnsureSuccessStatusCode();
             var detailsHtml = await detailsResponse.Content.ReadAsStringAsync();
             
-            Assert.IsTrue(detailsHtml.Contains("Copy Summary"), "Admin should see 'Copy Summary' button");
-            Assert.IsTrue(detailsHtml.Contains("Copy Full Info"), "Admin should see 'Copy Full Info' button");
+            Assert.Contains("Copy Summary", detailsHtml);
+            Assert.Contains("Copy Full Info", detailsHtml);
 
             // 5. Login as normal user
             await Http.GetAsync("/Account/LogOff");
@@ -132,8 +132,8 @@ public class CompanyEntityTests : TestBase
             userDetailsResponse.EnsureSuccessStatusCode();
             var userDetailsHtml = await userDetailsResponse.Content.ReadAsStringAsync();
 
-            Assert.IsTrue(userDetailsHtml.Contains("Copy Summary"), "User should see 'Copy Summary' button");
-            Assert.IsFalse(userDetailsHtml.Contains("Copy Full Info"), "User should NOT see 'Copy Full Info' button");
+            Assert.Contains("Copy Summary", userDetailsHtml);
+            Assert.DoesNotContain("Copy Full Info", userDetailsHtml);
         }
     }
 }

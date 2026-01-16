@@ -211,32 +211,30 @@
     </div>
 </div>
 
-@section Scripts {
-    <script>
-        function copyToClipboard(text) {
-            if (navigator.clipboard && window.isSecureContext) {
-                navigator.clipboard.writeText(text).then(function() {
-                     alert('Copied to clipboard!');
-                }, function(err) {
-                     alert('Could not copy text: ', err);
-                });
-            } else {
-                // Fallback for older browsers or non-secure context
-                let textArea = document.createElement("textarea");
-                textArea.value = text;
-                textArea.style.position = "fixed";
-                textArea.style.left = "-9999px";
-                document.body.appendChild(textArea);
-                textArea.focus();
-                textArea.select();
-                try {
-                    document.execCommand('copy');
-                    alert('Copied to clipboard!');
-                } catch (err) {
-                    alert('Unable to copy', err);
-                }
-                document.body.removeChild(textArea);
+<script>
+    function copyToClipboard(text) {
+        if (navigator.clipboard && window.isSecureContext) {
+            navigator.clipboard.writeText(text).then(function() {
+                 alert('Copied to clipboard!');
+            }, function(err) {
+                 alert('Could not copy text: ', err);
+            });
+        } else {
+            // Fallback for older browsers or non-secure context
+            let textArea = document.createElement("textarea");
+            textArea.value = text;
+            textArea.style.position = "fixed";
+            textArea.style.left = "-9999px";
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            try {
+                document.execCommand('copy');
+                alert('Copied to clipboard!');
+            } catch (err) {
+                alert('Unable to copy', err);
             }
+            document.body.removeChild(textArea);
         }
-    </script>
-}
+    }
+</script>
