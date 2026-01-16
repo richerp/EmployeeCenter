@@ -649,6 +649,33 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.ToTable("Locations");
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Notepad", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("UpdateTime")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("varchar(255)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId")
+                        .IsUnique();
+
+                    b.ToTable("Notepads");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.OnboardingTask", b =>
                 {
                     b.Property<int>("Id")
@@ -1098,6 +1125,32 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.ToTable("Vendors");
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.WeeklyReport", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("CreateTime")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("varchar(255)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("WeeklyReports");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -1383,6 +1436,17 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Notepad", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "User")
+                        .WithOne("Notepad")
+                        .HasForeignKey("Aiursoft.EmployeeCenter.Entities.Notepad", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.OnboardingTaskLog", b =>
                 {
                     b.HasOne("Aiursoft.EmployeeCenter.Entities.OnboardingTask", "Task")
@@ -1476,6 +1540,17 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasForeignKey("ManagerId");
 
                     b.Navigation("Manager");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.WeeklyReport", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "User")
+                        .WithMany("WeeklyReports")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -1580,6 +1655,8 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
 
                     b.Navigation("ManagedIncidents");
 
+                    b.Navigation("Notepad");
+
                     b.Navigation("OnboardingTaskLogs");
 
                     b.Navigation("OwnedIncidents");
@@ -1591,6 +1668,8 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.Navigation("Reports");
 
                     b.Navigation("SshKeys");
+
+                    b.Navigation("WeeklyReports");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Vendor", b =>

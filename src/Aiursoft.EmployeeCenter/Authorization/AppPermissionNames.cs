@@ -50,6 +50,10 @@ public static class AppPermissionNames
     // Asset Management
     public const string CanManageAssets = nameof(CanManageAssets);
 
+    // Weekly Report Management
+    public const string CanCreateWeeklyReport = nameof(CanCreateWeeklyReport);
+    public const string CanCreateWeeklyReportForAnyone = nameof(CanCreateWeeklyReportForAnyone);
+
     // Contract Management
     public const string CanViewContractHistory = nameof(CanViewContractHistory);
     public const string CanCreateContract = nameof(CanCreateContract);

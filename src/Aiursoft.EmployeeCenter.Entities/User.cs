@@ -115,4 +115,12 @@ public class User : IdentityUser
     [Newtonsoft.Json.JsonIgnore]
     [InverseProperty(nameof(AssetHistory.Operator))]
     public IEnumerable<AssetHistory> AssetHistories { get; init; } = new List<AssetHistory>();
+
+    [Newtonsoft.Json.JsonIgnore]
+    [InverseProperty(nameof(WeeklyReport.User))]
+    public IEnumerable<WeeklyReport> WeeklyReports { get; init; } = new List<WeeklyReport>();
+
+    [Newtonsoft.Json.JsonIgnore]
+    [InverseProperty(nameof(Notepad.User))]
+    public Notepad? Notepad { get; set; }
 }

@@ -1,0 +1,27 @@
+@using Aiursoft.EmployeeCenter.Services
+@using Aiursoft.EmployeeCenter.Entities
+@model List<WeeklyReport>
+@inject Aiursoft.EmployeeCenter.Services.FileStorage.StorageService StorageService
+
+@foreach (var report in Model)
+{
+    <div class="card mb-4 weekly-report-card" data-create-time="@report.CreateTime.ToString("O")">
+        <div class="card-header d-flex align-items-center">
+            <a asp-controller="WeeklyReport" asp-action="Index" asp-route-userId="@report.UserId" class="d-flex align-items-center text-decoration-none">
+                <img src="@(StorageService.RelativePathToInternetUrl(report.User!.AvatarRelativePath) + "?w=100&square=true")" 
+                     class="rounded-circle me-3" 
+                     alt="@report.User.DisplayName" 
+                     style="width: 48px; height: 48px; object-fit: cover;" />
+                <div>
+                    <h5 class="mb-0 text-dark fw-bold">@report.User.DisplayName</h5>
+                    <small class="text-muted">@report.CreateTime.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</small>
+                </div>
+            </a>
+        </div>
+        <div class="card-body pb-1">
+            <div class="markdown-body">
+                @MarkdownService.RenderMarkdown(report.Content)
+            </div>
+        </div>
+    </div>
+}

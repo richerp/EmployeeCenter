@@ -339,6 +339,9 @@
   <data name="Projects" xml:space="preserve">
     <value>项目</value>
   </data>
+  <data name="Weekly Report" xml:space="preserve">
+    <value>周报</value>
+  </data>
   <data name="Promotion History" xml:space="preserve">
     <value>晋升记录</value>
   </data>
