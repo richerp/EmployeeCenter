@@ -339,6 +339,9 @@
   <data name="Projects" xml:space="preserve">
     <value>Dự án</value>
   </data>
+  <data name="Promotion History" xml:space="preserve">
+    <value>Lịch sử thăng tiến</value>
+  </data>
   <data name="Reg Capital" xml:space="preserve">
     <value>Vốn điều lệ</value>
   </data>

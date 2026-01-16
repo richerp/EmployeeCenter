@@ -339,6 +339,9 @@
   <data name="Projects" xml:space="preserve">
     <value>项目</value>
   </data>
+  <data name="Promotion History" xml:space="preserve">
+    <value>晋升记录</value>
+  </data>
   <data name="Reg Capital" xml:space="preserve">
     <value>注册资金</value>
   </data>

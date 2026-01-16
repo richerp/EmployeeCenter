@@ -336,6 +336,9 @@
   <data name="Projects" xml:space="preserve">
     <value>Έργα</value>
   </data>
+  <data name="Promotion History" xml:space="preserve">
+    <value>Ιστορικό Προαγωγής</value>
+  </data>
   <data name="Reg Capital" xml:space="preserve">
     <value>Καταχώρηση Κεφαλαίου</value>
   </data>
