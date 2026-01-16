@@ -1,5 +1,3 @@
-using System.Net;
-using System.Text.RegularExpressions;
 using Aiursoft.EmployeeCenter.Authorization;
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
@@ -72,8 +70,8 @@ public class PermissionTests
         var loginResponse = await _http.PostAsync("/Account/Login", loginContent);
         if (loginResponse.StatusCode != HttpStatusCode.Found)
         {
-             var content = await loginResponse.Content.ReadAsStringAsync();
-             throw new Exception($"Login failed for {username}. Status: {loginResponse.StatusCode}. Content: {content}");
+            var content = await loginResponse.Content.ReadAsStringAsync();
+            throw new Exception($"Login failed for {username}. Status: {loginResponse.StatusCode}. Content: {content}");
         }
     }
 
@@ -130,10 +128,10 @@ public class PermissionTests
         foreach (var url in restrictedUrls)
         {
             var response = await _http.GetAsync(url);
-            
+
             // Should be redirected to AccessDenied or Forbidden
             // AccessDenied path is /Error/Unauthorized
-            
+
             if (response.StatusCode == HttpStatusCode.Forbidden)
             {
                 // Good
@@ -142,7 +140,7 @@ public class PermissionTests
             {
                 var location = response.Headers.Location?.ToString();
                 Assert.IsNotNull(location, $"Redirect location is null for {url}");
-                Assert.IsTrue(location.Contains("/Error/Unauthorized") || location.Contains("AccessDenied"), 
+                Assert.IsTrue(location.Contains("/Error/Unauthorized") || location.Contains("AccessDenied"),
                     $"URL {url} redirected to {location} instead of AccessDenied.");
             }
             else
@@ -163,27 +161,27 @@ public class PermissionTests
         // But let's see what happens.
         if (sshResponse.StatusCode == HttpStatusCode.Unauthorized)
         {
-             // Acceptable
+            // Acceptable
         }
         else if (sshResponse.StatusCode == HttpStatusCode.Found)
         {
-             // Redirect to Login is also acceptable for 401
-             var location = sshResponse.Headers.Location?.ToString();
-             Assert.IsNotNull(location, "Redirect location is null for SshKeys");
-             StringAssert.Contains(location, "/Account/Login");
+            // Redirect to Login is also acceptable for 401
+            var location = sshResponse.Headers.Location?.ToString();
+            Assert.IsNotNull(location, "Redirect location is null for SshKeys");
+            StringAssert.Contains(location, "/Account/Login");
         }
         else
         {
-             Assert.Fail($"SshKeys for other user was accessible ({sshResponse.StatusCode}).");
+            Assert.Fail($"SshKeys for other user was accessible ({sshResponse.StatusCode}).");
         }
     }
 
     [TestMethod]
     public async Task CanManageSshKeys_Permission_Works()
     {
-         // This test verifies that if we GIVE the permission, they CAN access it.
-         // And if we take it away, they cannot.
-         
+        // This test verifies that if we GIVE the permission, they CAN access it.
+        // And if we take it away, they cannot.
+
         // 1. Create a user
         var uniqueId = Guid.NewGuid().ToString("N").Substring(0, 8);
         var userName = $"user-perm-{uniqueId}";
@@ -222,16 +220,16 @@ public class PermissionTests
         // Grant Permission
         using (var scope = _server!.Services.CreateScope())
         {
-            var userManager = scope.ServiceProvider.GetRequiredService<Microsoft.AspNetCore.Identity.UserManager<User>>();
-            var roleManager = scope.ServiceProvider.GetRequiredService<Microsoft.AspNetCore.Identity.RoleManager<Microsoft.AspNetCore.Identity.IdentityRole>>();
-            
+            var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
+            var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+
             // Create a role with permission
             var roleName = "SshManager";
             if (!await roleManager.RoleExistsAsync(roleName))
             {
-                var role = new Microsoft.AspNetCore.Identity.IdentityRole(roleName);
+                var role = new IdentityRole(roleName);
                 await roleManager.CreateAsync(role);
-                await roleManager.AddClaimAsync(role, new System.Security.Claims.Claim(AppPermissions.Type, AppPermissionNames.CanManageSshKeys));
+                await roleManager.AddClaimAsync(role, new Claim(AppPermissions.Type, AppPermissionNames.CanManageSshKeys));
             }
 
             var user = await userManager.FindByIdAsync(userId);
@@ -284,15 +282,15 @@ public class PermissionTests
         // 3. Grant CanViewContractHistory
         using (var scope = _server!.Services.CreateScope())
         {
-            var userManager = scope.ServiceProvider.GetRequiredService<Microsoft.AspNetCore.Identity.UserManager<User>>();
-            var roleManager = scope.ServiceProvider.GetRequiredService<Microsoft.AspNetCore.Identity.RoleManager<Microsoft.AspNetCore.Identity.IdentityRole>>();
-            
+            var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
+            var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+
             var roleName = "ContractViewer";
             if (!await roleManager.RoleExistsAsync(roleName))
             {
-                var role = new Microsoft.AspNetCore.Identity.IdentityRole(roleName);
+                var role = new IdentityRole(roleName);
                 await roleManager.CreateAsync(role);
-                await roleManager.AddClaimAsync(role, new System.Security.Claims.Claim(AppPermissions.Type, AppPermissionNames.CanViewContractHistory));
+                await roleManager.AddClaimAsync(role, new Claim(AppPermissions.Type, AppPermissionNames.CanViewContractHistory));
             }
 
             var user = await userManager.FindByIdAsync(userId);
@@ -377,15 +375,15 @@ public class PermissionTests
         // 3. Grant CanManageCompanyEntities
         using (var scope = _server!.Services.CreateScope())
         {
-            var userManager = scope.ServiceProvider.GetRequiredService<Microsoft.AspNetCore.Identity.UserManager<User>>();
-            var roleManager = scope.ServiceProvider.GetRequiredService<Microsoft.AspNetCore.Identity.RoleManager<Microsoft.AspNetCore.Identity.IdentityRole>>();
-            
+            var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
+            var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+
             var roleName = "EntityManager";
             if (!await roleManager.RoleExistsAsync(roleName))
             {
-                var role = new Microsoft.AspNetCore.Identity.IdentityRole(roleName);
+                var role = new IdentityRole(roleName);
                 await roleManager.CreateAsync(role);
-                await roleManager.AddClaimAsync(role, new System.Security.Claims.Claim(AppPermissions.Type, AppPermissionNames.CanManageCompanyEntities));
+                await roleManager.AddClaimAsync(role, new Claim(AppPermissions.Type, AppPermissionNames.CanManageCompanyEntities));
             }
 
             var user = await userManager.FindByIdAsync(userId);

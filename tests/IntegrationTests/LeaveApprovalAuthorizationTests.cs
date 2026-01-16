@@ -1,7 +1,4 @@
-using System.Net;
-using System.Text.RegularExpressions;
 using Aiursoft.EmployeeCenter.Authorization;
-using Microsoft.AspNetCore.Identity;
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
@@ -366,7 +363,7 @@ public class LeaveApprovalAuthorizationTests
             await roleManager.CreateAsync(hrRole);
 
             // Add permission claim to role
-            await roleManager.AddClaimAsync(hrRole, new System.Security.Claims.Claim("Permission", AppPermissionNames.CanApproveAnyLeave));
+            await roleManager.AddClaimAsync(hrRole, new Claim("Permission", AppPermissionNames.CanApproveAnyLeave));
 
             // Assign role to HR user
             await userManager.AddToRoleAsync(hr, hrRole.Name!);
@@ -501,7 +498,7 @@ public class LeaveApprovalAuthorizationTests
 
             var adminRole = new IdentityRole("AdminRole_" + suffix);
             await roleManager.CreateAsync(adminRole);
-            await roleManager.AddClaimAsync(adminRole, new System.Security.Claims.Claim("Permission", AppPermissionNames.CanApproveAnyLeave));
+            await roleManager.AddClaimAsync(adminRole, new Claim("Permission", AppPermissionNames.CanApproveAnyLeave));
             await userManager.AddToRoleAsync(admin, adminRole.Name!);
         }
 

@@ -1,9 +1,5 @@
-using System.Net;
-using System.Security.Claims;
 using Aiursoft.EmployeeCenter.Authorization;
 // ReSharper disable RedundantUsingDirective
-using Microsoft.AspNetCore.Identity;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
@@ -51,7 +47,7 @@ public class ManageOnboardingProgressTests
         var response = await _http.GetAsync(url);
         response.EnsureSuccessStatusCode();
         var html = await response.Content.ReadAsStringAsync();
-        var match = System.Text.RegularExpressions.Regex.Match(html, @"__RequestVerificationToken"" type=""hidden"" value=""([^""]+)""");
+        var match = Regex.Match(html, @"__RequestVerificationToken"" type=""hidden"" value=""([^""]+)""");
         if (!match.Success)
         {
             throw new InvalidOperationException($"Could not find anti-CSRF token on page: {url}");

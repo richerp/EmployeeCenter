@@ -346,6 +346,10 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.Property<DateTime>("UpdateTime")
                         .HasColumnType("datetime(6)");
 
+                    b.Property<string>("ZipCode")
+                        .HasMaxLength(20)
+                        .HasColumnType("varchar(20)");
+
                     b.HasKey("Id");
 
                     b.ToTable("CompanyEntities");
