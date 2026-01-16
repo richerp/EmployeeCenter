@@ -1,5 +1,3 @@
-using Microsoft.AspNetCore.Identity;
-
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
 [TestClass]
@@ -14,12 +12,12 @@ public class PromotionHistoryTests : TestBase
         using (var scope = Server!.Services.CreateScope())
         {
             var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
-            var user = new User 
-            { 
-                UserName = "user" + suffix, 
-                DisplayName = "Promotion Test User", 
-                Email = "user" + suffix + "@test.com", 
-                AvatarRelativePath = User.DefaultAvatarPath 
+            var user = new User
+            {
+                UserName = "user" + suffix,
+                DisplayName = "Promotion Test User",
+                Email = "user" + suffix + "@test.com",
+                AvatarRelativePath = User.DefaultAvatarPath
             };
             var res = await userManager.CreateAsync(user, "Password123!");
             if (!res.Succeeded)
