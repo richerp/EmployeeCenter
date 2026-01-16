@@ -136,4 +136,40 @@ public class CompanyEntityTests : TestBase
             Assert.DoesNotContain("Copy Full Info", userDetailsHtml);
         }
     }
+
+    [TestMethod]
+    public async Task InvoiceGuideTest()
+    {
+        // 1. Login as admin
+        await LoginAsAdmin();
+
+        // 2. Create a Company Entity
+        var createResponse = await PostForm("/CompanyEntity/Create", new Dictionary<string, string>
+        {
+            { "CompanyName", "Invoice Guide Company" },
+            { "EntityCode", "INV123456" },
+            { "BankName", "Guide Bank" },
+            { "BankAccount", "GB123456789" }
+        });
+        Assert.AreEqual(HttpStatusCode.Found, createResponse.StatusCode);
+
+        // 3. Get the ID
+        using (var scope = Server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var entity = await db.CompanyEntities.FirstOrDefaultAsync(e => e.EntityCode == "INV123456");
+            Assert.IsNotNull(entity);
+            
+            // 4. Verify Details page
+            var detailsResponse = await Http.GetAsync($"/CompanyEntity/Details/{entity.Id}");
+            detailsResponse.EnsureSuccessStatusCode();
+            var detailsHtml = await detailsResponse.Content.ReadAsStringAsync();
+            
+            Assert.Contains("Invoice Issuance Guide", detailsHtml);
+            Assert.Contains("Instructions for Employees", detailsHtml);
+            Assert.Contains("Guide Bank", detailsHtml);
+            Assert.Contains("GB123456789", detailsHtml);
+            Assert.Contains("Prefer Electronic Invoices", detailsHtml);
+        }
+    }
 }

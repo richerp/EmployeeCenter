@@ -114,6 +114,58 @@
                     </dl>
                 </div>
             </div>
+
+            <!-- Invoice Guide Card -->
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">@Localizer["Invoice Issuance Guide"]</h6>
+                </div>
+                <div class="card-body">
+                    <p>@Localizer["Please show the following information to the merchant when making a payment:"]</p>
+                    
+                    <div class="card bg-light mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary font-weight-bold">@Model.Entity.CompanyName</h5>
+                            <dl class="row mb-0">
+                                <dt class="col-sm-4">@Localizer["Tax ID"]</dt>
+                                <dd class="col-sm-8 text-dark font-weight-bold">@Model.Entity.EntityCode</dd>
+
+                                <dt class="col-sm-4">@Localizer["Address"]</dt>
+                                <dd class="col-sm-8 small">@Model.Entity.RegisteredAddress</dd>
+
+                                <dt class="col-sm-4">@Localizer["Bank"]</dt>
+                                <dd class="col-sm-8 small">@Model.Entity.BankName</dd>
+
+                                <dt class="col-sm-4">@Localizer["Account"]</dt>
+                                <dd class="col-sm-8 text-dark font-weight-bold">@Model.Entity.BankAccount</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <hr />
+                    
+                    <h6 class="font-weight-bold">@Localizer["Instructions for Employees"]</h6>
+                    <ol class="pl-3">
+                        <li class="mb-2">
+                            <strong>@Localizer["Prefer Electronic Invoices (Fully Digitalized)"]</strong>: 
+                            @Localizer["Ask merchants for electronic invoices (PDF/OFD) sent to your email or employees@aiursoft.com."]
+                            @Localizer["Avoid paper invoices to prevent loss."]
+                        </li>
+                        <li class="mb-2">
+                             <strong>@Localizer["Reimbursement Categories"]</strong>:
+                             @Localizer["Meals, Transportation, Communication, Electronics (Computers/Peripherals)."]
+                             @Localizer["Must be real business expenses. No fake invoices."]
+                        </li>
+                        <li class="mb-2">
+                             <strong>@Localizer["Special Cases"]</strong>:
+                             @Localizer["Accommodation: Must issue VAT Special Invoice with full company name. Avoid fixed-amount paper invoices if possible."]
+                        </li>
+                    </ol>
+                    <p class="small text-muted mb-0">
+                        @Localizer["Tip: When incurring business or welfare expenses, please request an invoice. Prefer electronic invoices. Keep the original PDF."]
+                    </p>
+                </div>
+            </div>
         </div>
 
         <div class="col-lg-6">
