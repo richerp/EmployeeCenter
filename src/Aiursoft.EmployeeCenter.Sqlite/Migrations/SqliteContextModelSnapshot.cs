@@ -309,6 +309,10 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("OrganizationCertificatePath")
+                        .HasMaxLength(500)
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("RegisteredAddress")
                         .HasMaxLength(500)
                         .HasColumnType("TEXT");

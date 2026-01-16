@@ -73,6 +73,9 @@ public class CompanyEntity
     [MaxLength(500)]
     public string? LicensePath { get; set; }
 
+    [MaxLength(500)]
+    public string? OrganizationCertificatePath { get; set; }
+
     // Mainland Specific
     [MaxLength(50)]
     public string? RegisteredCapital { get; set; }
