@@ -18,11 +18,26 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Address" xml:space="preserve">
+      <data name="Accommodation: Must issue VAT Special Invoice with full company name. Avoid fixed-amount paper invoices if possible." xml:space="preserve">
+    <value>Στέγαση: Πρέπει να εκδίδεται Πιστοποιητικό ΦΠΑ Ειδικού Τύπου με το πλήρες όνομα της εταιρείας. Αποφύγετε τα έγγραφα περιορισμένης αξίας εάν είναι δυνατόν.</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>Λογαριασμός</value>
+  </data>
+  <data name="Address" xml:space="preserve">
     <value>Διεύθυνση</value>
   </data>
   <data name="Administrative Details" xml:space="preserve">
     <value>Διοικητικές Πληροφορίες</value>
+  </data>
+  <data name="Ask merchants for electronic invoices (PDF/OFD) sent to your email or employees@aiursoft.com." xml:space="preserve">
+    <value>Ζητήστε από τους πωλητές ηλεκτρονικά τιμολόγια (PDF/OFD) που έχουν αποσταλεί στο email σας ή στο employees@aiursoft.com.</value>
+  </data>
+  <data name="Avoid paper invoices to prevent loss." xml:space="preserve">
+    <value>Αποφύγετε τα έγγραφα τιμολόγια για να αποφύγετε την απώλεια.</value>
+  </data>
+  <data name="Bank" xml:space="preserve">
+    <value>Τράπεζα</value>
   </data>
   <data name="Bank Info" xml:space="preserve">
     <value>Τραπεζικά Στοιχεία</value>
@@ -75,11 +90,23 @@
   <data name="Images &amp; Files" xml:space="preserve">
     <value>Εικόνες &amp; Αρχεία</value>
   </data>
+  <data name="Instructions for Employees" xml:space="preserve">
+    <value>Οδηγίες για τους Υπαλλήλους</value>
+  </data>
+  <data name="Invoice Issuance Guide" xml:space="preserve">
+    <value>Οδηγός Έκδοσης Τιμολογίων</value>
+  </data>
   <data name="Legal Rep / Director" xml:space="preserve">
     <value>Νομικός Εκπρόσωπος / Διευθυντής</value>
   </data>
   <data name="Logo" xml:space="preserve">
     <value>Λογότυπο</value>
+  </data>
+  <data name="Meals, Transportation, Communication, Electronics (Computers/Peripherals)." xml:space="preserve">
+    <value>Γεύσιμα, Μεταφορές, Επικοινωνία, Ηλεκτρονικά (Υπολογιστές/Περιφερειακά).</value>
+  </data>
+  <data name="Must be real business expenses. No fake invoices." xml:space="preserve">
+    <value>Πρέπει να είναι πραγματικές επιχειρηματικές δαπάνες. Καμία πλαστή τιμολόγηση.</value>
   </data>
   <data name="Official Seal" xml:space="preserve">
     <value>Επίσημο Σφραγίδα</value>
@@ -87,8 +114,17 @@
   <data name="Organization Certificate" xml:space="preserve">
     <value>Πιστοποιητικό Οργανισμού</value>
   </data>
+  <data name="Please show the following information to the merchant when making a payment:" xml:space="preserve">
+    <value>Παρακαλώ εμφανίστε τις παρακάτω πληροφορίες στον εμπόρο κατά την πληρωμή:</value>
+  </data>
+  <data name="Prefer Electronic Invoices (Fully Digitalized)" xml:space="preserve">
+    <value>Προτιμήστε Ηλεκτρονικά Παραστατικά (Πλήρως Ψηφιακά)</value>
+  </data>
   <data name="Reg Capital" xml:space="preserve">
     <value>Καταχωρημένο Κεφάλαιο</value>
+  </data>
+  <data name="Reimbursement Categories" xml:space="preserve">
+    <value>Κατηγορίες Επιστροφής Εξόδων</value>
   </data>
   <data name="Restricted" xml:space="preserve">
     <value>Περιορισμένο</value>
@@ -99,8 +135,17 @@
   <data name="Secretary" xml:space="preserve">
     <value>Γραμματέας</value>
   </data>
+  <data name="Special Cases" xml:space="preserve">
+    <value>Ειδικές Περιπτώσεις</value>
+  </data>
   <data name="Status" xml:space="preserve">
     <value>Κατάσταση</value>
+  </data>
+  <data name="Tax ID" xml:space="preserve">
+    <value>ΦΠΑ</value>
+  </data>
+  <data name="Tip: When incurring business or welfare expenses, please request an invoice. Prefer electronic invoices. Keep the original PDF." xml:space="preserve">
+    <value>Σημείωση: Όταν πραγματοποιείτε επιχειρηματικές ή επιδόματα δαπάνες, παρακαλώ ζητήστε τιμολόγιο. Προτιμήστε ηλεκτρονικά τιμολόγια. Διατηρήστε το αρχικό PDF.</value>
   </data>
 
 </root>

@@ -18,11 +18,26 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Address" xml:space="preserve">
+      <data name="Accommodation: Must issue VAT Special Invoice with full company name. Avoid fixed-amount paper invoices if possible." xml:space="preserve">
+    <value>Alojamento: deve emitir nota fiscal de ICMS especial com o nome completo da empresa. Evite notas fiscais em papel com valor fixo, se possível.</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>Conta</value>
+  </data>
+  <data name="Address" xml:space="preserve">
     <value>Endereço</value>
   </data>
   <data name="Administrative Details" xml:space="preserve">
     <value>Detalhes Administrativos</value>
+  </data>
+  <data name="Ask merchants for electronic invoices (PDF/OFD) sent to your email or employees@aiursoft.com." xml:space="preserve">
+    <value>Peça aos comerciantes por notas fiscais eletrônicas (PDF/OFD) enviadas para o seu e-mail ou employees@aiursoft.com.</value>
+  </data>
+  <data name="Avoid paper invoices to prevent loss." xml:space="preserve">
+    <value>Evite notas fiscais em papel para evitar perdas.</value>
+  </data>
+  <data name="Bank" xml:space="preserve">
+    <value>Banco</value>
   </data>
   <data name="Bank Info" xml:space="preserve">
     <value>Informações Bancárias</value>
@@ -75,11 +90,23 @@
   <data name="Images &amp; Files" xml:space="preserve">
     <value>Imagens e Arquivos</value>
   </data>
+  <data name="Instructions for Employees" xml:space="preserve">
+    <value>Instruções para Funcionários</value>
+  </data>
+  <data name="Invoice Issuance Guide" xml:space="preserve">
+    <value>Guia de Emissão de Nota Fiscal</value>
+  </data>
   <data name="Legal Rep / Director" xml:space="preserve">
     <value>Representante Legal / Diretor</value>
   </data>
   <data name="Logo" xml:space="preserve">
     <value>Logotipo</value>
+  </data>
+  <data name="Meals, Transportation, Communication, Electronics (Computers/Peripherals)." xml:space="preserve">
+    <value>Refeições, Transporte, Comunicação, Eletrônicos (Computadores/Periféricos).</value>
+  </data>
+  <data name="Must be real business expenses. No fake invoices." xml:space="preserve">
+    <value>Devem ser despesas comerciais reais. Nenhuma fatura falsa.</value>
   </data>
   <data name="Official Seal" xml:space="preserve">
     <value>Carimbo Oficial</value>
@@ -87,8 +114,17 @@
   <data name="Organization Certificate" xml:space="preserve">
     <value>Certificado da Organização</value>
   </data>
+  <data name="Please show the following information to the merchant when making a payment:" xml:space="preserve">
+    <value>Por favor, mostre as seguintes informações ao comerciante ao efetuar um pagamento:</value>
+  </data>
+  <data name="Prefer Electronic Invoices (Fully Digitalized)" xml:space="preserve">
+    <value>Prefira Notas Fiscais Eletrônicas (Totalmente Digitalizadas)</value>
+  </data>
   <data name="Reg Capital" xml:space="preserve">
     <value>Capital Registrado</value>
+  </data>
+  <data name="Reimbursement Categories" xml:space="preserve">
+    <value>Categorias de Reembolso</value>
   </data>
   <data name="Restricted" xml:space="preserve">
     <value>Restrito</value>
@@ -99,8 +135,17 @@
   <data name="Secretary" xml:space="preserve">
     <value>Secretário</value>
   </data>
+  <data name="Special Cases" xml:space="preserve">
+    <value>Casos Especiais</value>
+  </data>
   <data name="Status" xml:space="preserve">
     <value>Status</value>
+  </data>
+  <data name="Tax ID" xml:space="preserve">
+    <value>CNPJ</value>
+  </data>
+  <data name="Tip: When incurring business or welfare expenses, please request an invoice. Prefer electronic invoices. Keep the original PDF." xml:space="preserve">
+    <value>Dica: Ao incorrer em despesas empresariais ou de bem-estar, por favor solicite uma nota fiscal. Prefira notas fiscais eletrônicas. Mantenha o PDF original.</value>
   </data>
 
 </root>

@@ -18,11 +18,26 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Address" xml:space="preserve">
+      <data name="Accommodation: Must issue VAT Special Invoice with full company name. Avoid fixed-amount paper invoices if possible." xml:space="preserve">
+    <value>Zakwaterowanie: należy wydać fakturę VAT specjalną z pełnym nazwiskiem firmy. Unikaj faktur papierowych o ustalonej wysokości, jeśli to możliwe.</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>Konto</value>
+  </data>
+  <data name="Address" xml:space="preserve">
     <value>Adres</value>
   </data>
   <data name="Administrative Details" xml:space="preserve">
     <value>Szczegóły administracyjne</value>
+  </data>
+  <data name="Ask merchants for electronic invoices (PDF/OFD) sent to your email or employees@aiursoft.com." xml:space="preserve">
+    <value>Poproś dostawców o faktury elektroniczne (PDF/OFD) wysyłane na Twój e-mail lub employees@aiursoft.com.</value>
+  </data>
+  <data name="Avoid paper invoices to prevent loss." xml:space="preserve">
+    <value>Unikaj faktur papierowych, aby zapobiec ich utracie.</value>
+  </data>
+  <data name="Bank" xml:space="preserve">
+    <value>Bank</value>
   </data>
   <data name="Bank Info" xml:space="preserve">
     <value>Informacje bankowe</value>
@@ -75,11 +90,23 @@
   <data name="Images &amp; Files" xml:space="preserve">
     <value>Obrazy i pliki</value>
   </data>
+  <data name="Instructions for Employees" xml:space="preserve">
+    <value>Instrukcje dla pracowników</value>
+  </data>
+  <data name="Invoice Issuance Guide" xml:space="preserve">
+    <value>Przewodnik wydawania faktur</value>
+  </data>
   <data name="Legal Rep / Director" xml:space="preserve">
     <value>Reprezentant prawny / Dyrektor</value>
   </data>
   <data name="Logo" xml:space="preserve">
     <value>Logo</value>
+  </data>
+  <data name="Meals, Transportation, Communication, Electronics (Computers/Peripherals)." xml:space="preserve">
+    <value>Posiłki, Transport, Komunikacja, Elektronika (Komputery/Urządzenia peripheralne).</value>
+  </data>
+  <data name="Must be real business expenses. No fake invoices." xml:space="preserve">
+    <value>Musi to być rzeczywiste wydatki firmowe. Bez fałszywych faktur.</value>
   </data>
   <data name="Official Seal" xml:space="preserve">
     <value>Oficjalny pieczęć</value>
@@ -87,8 +114,17 @@
   <data name="Organization Certificate" xml:space="preserve">
     <value>Certyfikat organizacji</value>
   </data>
+  <data name="Please show the following information to the merchant when making a payment:" xml:space="preserve">
+    <value>Proszę pokazać następujące informacje przedsiębiorcy podczas dokonywania płatności:</value>
+  </data>
+  <data name="Prefer Electronic Invoices (Fully Digitalized)" xml:space="preserve">
+    <value>Preferuj faktury elektroniczne (pełna cyfryzacja)</value>
+  </data>
   <data name="Reg Capital" xml:space="preserve">
     <value>Kapitał zakładowy</value>
+  </data>
+  <data name="Reimbursement Categories" xml:space="preserve">
+    <value>Kategorie zwrotów kosztów</value>
   </data>
   <data name="Restricted" xml:space="preserve">
     <value>Ograniczony</value>
@@ -99,8 +135,17 @@
   <data name="Secretary" xml:space="preserve">
     <value>Sekretarz</value>
   </data>
+  <data name="Special Cases" xml:space="preserve">
+    <value>Przypadki specjalne</value>
+  </data>
   <data name="Status" xml:space="preserve">
     <value>Status</value>
+  </data>
+  <data name="Tax ID" xml:space="preserve">
+    <value>NIP</value>
+  </data>
+  <data name="Tip: When incurring business or welfare expenses, please request an invoice. Prefer electronic invoices. Keep the original PDF." xml:space="preserve">
+    <value>Wskazówka: Przy ponoszeniu wydatków biznesowych lub społecznych prosimy o żądanie faktury. Preferuj faktury elektroniczne. Zachowaj oryginalny plik PDF.</value>
   </data>
 
 </root>

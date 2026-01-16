@@ -18,11 +18,26 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Address" xml:space="preserve">
+      <data name="Accommodation: Must issue VAT Special Invoice with full company name. Avoid fixed-amount paper invoices if possible." xml:space="preserve">
+    <value>Ở trọ: Phải phát hành hóa đơn VAT đặc biệt với tên công ty đầy đủ. Tránh dùng hóa đơn giấy có mức cố định nếu có thể.</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>Tài khoản</value>
+  </data>
+  <data name="Address" xml:space="preserve">
     <value>Địa chỉ</value>
   </data>
   <data name="Administrative Details" xml:space="preserve">
     <value>Thông tin hành chính</value>
+  </data>
+  <data name="Ask merchants for electronic invoices (PDF/OFD) sent to your email or employees@aiursoft.com." xml:space="preserve">
+    <value>Yêu cầu nhà cung cấp cung cấp hóa đơn điện tử (PDF/OFD) được gửi đến địa chỉ email của bạn hoặc employees@aiursoft.com.</value>
+  </data>
+  <data name="Avoid paper invoices to prevent loss." xml:space="preserve">
+    <value>Tránh hóa đơn giấy để phòng ngừa mất mát.</value>
+  </data>
+  <data name="Bank" xml:space="preserve">
+    <value>Ngân hàng</value>
   </data>
   <data name="Bank Info" xml:space="preserve">
     <value>Thông tin ngân hàng</value>
@@ -75,11 +90,23 @@
   <data name="Images &amp; Files" xml:space="preserve">
     <value>Hình ảnh &amp; Tập tin</value>
   </data>
+  <data name="Instructions for Employees" xml:space="preserve">
+    <value>Hướng dẫn cho Nhân viên</value>
+  </data>
+  <data name="Invoice Issuance Guide" xml:space="preserve">
+    <value>Hướng dẫn phát hành hóa đơn</value>
+  </data>
   <data name="Legal Rep / Director" xml:space="preserve">
     <value>Đại diện pháp lý / Giám đốc</value>
   </data>
   <data name="Logo" xml:space="preserve">
     <value>Logo</value>
+  </data>
+  <data name="Meals, Transportation, Communication, Electronics (Computers/Peripherals)." xml:space="preserve">
+    <value>Các khoản ăn uống, phương tiện đi lại, thông tin liên lạc, thiết bị điện tử (máy tính/phụ kiện).</value>
+  </data>
+  <data name="Must be real business expenses. No fake invoices." xml:space="preserve">
+    <value>Phải là chi phí kinh doanh thực tế. Không sử dụng hóa đơn giả mạo.</value>
   </data>
   <data name="Official Seal" xml:space="preserve">
     <value>Con dấu chính thức</value>
@@ -87,8 +114,17 @@
   <data name="Organization Certificate" xml:space="preserve">
     <value>Giấy chứng nhận tổ chức</value>
   </data>
+  <data name="Please show the following information to the merchant when making a payment:" xml:space="preserve">
+    <value>Vui lòng hiển thị thông tin sau đây cho thương gia khi thực hiện thanh toán:</value>
+  </data>
+  <data name="Prefer Electronic Invoices (Fully Digitalized)" xml:space="preserve">
+    <value>Ưu tiên hóa đơn điện tử (Toàn bộ số hóa)</value>
+  </data>
   <data name="Reg Capital" xml:space="preserve">
     <value>Vốn đăng ký</value>
+  </data>
+  <data name="Reimbursement Categories" xml:space="preserve">
+    <value>Các hạng mục hoàn trả</value>
   </data>
   <data name="Restricted" xml:space="preserve">
     <value>Bị hạn chế</value>
@@ -99,8 +135,17 @@
   <data name="Secretary" xml:space="preserve">
     <value>Thư ký</value>
   </data>
+  <data name="Special Cases" xml:space="preserve">
+    <value>Trường hợp đặc biệt</value>
+  </data>
   <data name="Status" xml:space="preserve">
     <value>Trạng thái</value>
+  </data>
+  <data name="Tax ID" xml:space="preserve">
+    <value>Mã số thuế</value>
+  </data>
+  <data name="Tip: When incurring business or welfare expenses, please request an invoice. Prefer electronic invoices. Keep the original PDF." xml:space="preserve">
+    <value>Gợi ý: Khi phát sinh chi phí kinh doanh hoặc phúc lợi, vui lòng yêu cầu hóa đơn. Ưu tiên hóa đơn điện tử. Giữ lại bản PDF gốc.</value>
   </data>
 
 </root>
