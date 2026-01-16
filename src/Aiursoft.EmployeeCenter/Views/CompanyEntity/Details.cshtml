@@ -2,21 +2,67 @@
 @using Aiursoft.EmployeeCenter.Authorization
 @using Microsoft.AspNetCore.Authorization
 @using Aiursoft.EmployeeCenter.Services.FileStorage
+@using System.Text
 @inject IAuthorizationService AuthorizationService
 @inject StorageService StorageService
 @{
     var canManage = (await AuthorizationService.AuthorizeAsync(User, AppPermissionNames.CanManageCompanyEntities)).Succeeded;
+
+    var summaryBuilder = new StringBuilder();
+    summaryBuilder.AppendLine($"{Localizer["Company Name"]}: {Model.Entity.CompanyName}");
+    summaryBuilder.AppendLine($"{Localizer["Entity Code"]}: {Model.Entity.EntityCode}");
+    summaryBuilder.AppendLine($"{Localizer["Legal Rep / Director"]}: {Model.Entity.LegalRepresentative}");
+    summaryBuilder.AppendLine($"{Localizer["Address"]}: {Model.Entity.RegisteredAddress}");
+    summaryBuilder.AppendLine($"{Localizer["Bank Info"]}: {Model.Entity.BankName}");
+    summaryBuilder.AppendLine($"{Localizer["Account"]}: {Model.Entity.BankAccount}");
+    summaryBuilder.AppendLine($"{Localizer["Account Name"]}: {Model.Entity.BankAccountName}");
+    var summaryInfo = summaryBuilder.ToString();
+
+    var fullBuilder = new StringBuilder();
+    fullBuilder.AppendLine($"{Localizer["Company Name"]}: {Model.Entity.CompanyName}");
+    fullBuilder.AppendLine($"{Localizer["English Name"]}: {Model.Entity.CompanyNameEnglish}");
+    fullBuilder.AppendLine($"{Localizer["Entity Code"]}: {Model.Entity.EntityCode}");
+    fullBuilder.AppendLine($"{Localizer["CI Number"]}: {Model.Entity.CINumber}");
+    fullBuilder.AppendLine($"{Localizer["Registered Address"]}: {Model.Entity.RegisteredAddress}");
+    fullBuilder.AppendLine($"{Localizer["Office Address"]}: {Model.Entity.OfficeAddress}");
+    fullBuilder.AppendLine($"{Localizer["Zip Code"]}: {Model.Entity.ZipCode}");
+    fullBuilder.AppendLine($"{Localizer["Legal Representative"]}: {Model.Entity.LegalRepresentative}");
+    fullBuilder.AppendLine($"{Localizer["Company Type"]}: {Model.Entity.CompanyType}");
+    if (Model.Entity.EstablishmentDate.HasValue)
+    {
+        fullBuilder.AppendLine($"{Localizer["Establishment"]}: {Model.Entity.EstablishmentDate.Value:yyyy-MM-dd}");
+    }
+    if (Model.Entity.ExpiryDate.HasValue)
+    {
+        fullBuilder.AppendLine($"{Localizer["Expiry Date"]}: {Model.Entity.ExpiryDate.Value:yyyy-MM-dd}");
+    }
+    fullBuilder.AppendLine($"{Localizer["Bank Name"]}: {Model.Entity.BankName}");
+    fullBuilder.AppendLine($"{Localizer["Bank Account"]}: {Model.Entity.BankAccount}");
+    fullBuilder.AppendLine($"{Localizer["Bank Account Name"]}: {Model.Entity.BankAccountName}");
+    fullBuilder.AppendLine($"{Localizer["Registered Capital"]}: {Model.Entity.RegisteredCapital}");
+    fullBuilder.AppendLine($"{Localizer["Status"]}: {Model.Entity.OperationStatus}");
+    fullBuilder.AppendLine($"{Localizer["SCR Location"]}: {Model.Entity.SCRLocation}");
+    fullBuilder.AppendLine($"{Localizer["Secretary"]}: {Model.Entity.CompanySecretary}");
+    var fullInfo = fullBuilder.ToString();
 }
 
 <div class="container-fluid">
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">@Localizer["Entity Details"]</h1>
-        @if (canManage)
-        {
-            <a asp-controller="CompanyEntity" asp-action="Edit" asp-route-id="@Model.Entity.Id" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-                <i class="fas fa-edit fa-sm text-white-50"></i> @Localizer["Edit"]
-            </a>
-        }
+        <div>
+            <button class="d-none d-sm-inline-block btn btn-sm btn-secondary shadow-sm mr-2" onclick="copyToClipboard(@Json.Serialize(summaryInfo))">
+                <i class="fas fa-copy fa-sm text-white-50"></i> @Localizer["Copy Summary"]
+            </button>
+            @if (canManage)
+            {
+                <button class="d-none d-sm-inline-block btn btn-sm btn-secondary shadow-sm mr-2" onclick="copyToClipboard(@Json.Serialize(fullInfo))">
+                    <i class="fas fa-copy fa-sm text-white-50"></i> @Localizer["Copy Full Info"]
+                </button>
+                <a asp-controller="CompanyEntity" asp-action="Edit" asp-route-id="@Model.Entity.Id" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                    <i class="fas fa-edit fa-sm text-white-50"></i> @Localizer["Edit"]
+                </a>
+            }
+        </div>
     </div>
 
     <div class="row">
@@ -164,3 +210,33 @@
         </div>
     </div>
 </div>
+
+@section Scripts {
+    <script>
+        function copyToClipboard(text) {
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(text).then(function() {
+                     alert('Copied to clipboard!');
+                }, function(err) {
+                     alert('Could not copy text: ', err);
+                });
+            } else {
+                // Fallback for older browsers or non-secure context
+                let textArea = document.createElement("textarea");
+                textArea.value = text;
+                textArea.style.position = "fixed";
+                textArea.style.left = "-9999px";
+                document.body.appendChild(textArea);
+                textArea.focus();
+                textArea.select();
+                try {
+                    document.execCommand('copy');
+                    alert('Copied to clipboard!');
+                } catch (err) {
+                    alert('Unable to copy', err);
+                }
+                document.body.removeChild(textArea);
+            }
+        }
+    </script>
+}
