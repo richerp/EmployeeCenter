@@ -48,7 +48,22 @@ public class UsersController(
                 avatarUrl = $"{storageService.RelativePathToInternetUrl(u.AvatarRelativePath)}?w=100&square=true"
             }),
             totalCount,
-            totalPages = (int)Math.Ceiling((double)totalCount / pageSize)
+        });
+    }
+
+    [HttpGet]
+    [Route("api/users/details/{id}")]
+    public async Task<IActionResult> DetailsApi(string id)
+    {
+        var user = await context.Users.FindAsync(id);
+        if (user == null) return NotFound();
+
+        return Ok(new
+        {
+            id = user.Id,
+            displayName = user.DisplayName,
+            jobLevel = user.JobLevel,
+            title = user.Title
         });
     }
 
@@ -237,8 +252,6 @@ public class UsersController(
         userInDb.UserName = model.UserName;
         userInDb.DisplayName = model.DisplayName;
         userInDb.AvatarRelativePath = model.AvatarUrl;
-        userInDb.JobLevel = model.JobLevel;
-        userInDb.Title = model.Title;
         userInDb.LegalName = model.LegalName;
         userInDb.PhoneNumber = model.PhoneNumber;
         userInDb.BaseSalary = model.BaseSalary;
@@ -282,6 +295,9 @@ public class UsersController(
                 PromoterId = currentUser?.Id
             };
             context.PromotionHistories.Add(history);
+
+            userInDb.JobLevel = model.JobLevel;
+            userInDb.Title = model.Title;
         }
 
         userInDb.ManagerId = model.ManagerId;
