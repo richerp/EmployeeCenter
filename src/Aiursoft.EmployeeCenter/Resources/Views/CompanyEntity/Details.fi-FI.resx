@@ -18,11 +18,26 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Address" xml:space="preserve">
+      <data name="Accommodation: Must issue VAT Special Invoice with full company name. Avoid fixed-amount paper invoices if possible." xml:space="preserve">
+    <value>Majoitus: Vastuullinen myöntää ALV:n erityislasku täydellisellä yhtiön nimellä. Vältä kiinteän summan paperilaskuja, jos mahdollista.</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>Tili</value>
+  </data>
+  <data name="Address" xml:space="preserve">
     <value>Osoite</value>
   </data>
   <data name="Administrative Details" xml:space="preserve">
     <value>Hallinnolliset tiedot</value>
+  </data>
+  <data name="Ask merchants for electronic invoices (PDF/OFD) sent to your email or employees@aiursoft.com." xml:space="preserve">
+    <value>Pyydä kauppiaita sähköisistä laskuista (PDF/OFD), jotka on lähetetty sähköpostiisi tai employees@aiursoft.com.</value>
+  </data>
+  <data name="Avoid paper invoices to prevent loss." xml:space="preserve">
+    <value>Vältä paperisia laskuja, jotta menetystä ei tapahdu.</value>
+  </data>
+  <data name="Bank" xml:space="preserve">
+    <value>Pankki</value>
   </data>
   <data name="Bank Info" xml:space="preserve">
     <value>Pankkitiedot</value>
@@ -75,11 +90,23 @@
   <data name="Images &amp; Files" xml:space="preserve">
     <value>Kuvat ja tiedostot</value>
   </data>
+  <data name="Instructions for Employees" xml:space="preserve">
+    <value>Työntekijöiden ohjeet</value>
+  </data>
+  <data name="Invoice Issuance Guide" xml:space="preserve">
+    <value>Laskujen Lähetysopas</value>
+  </data>
   <data name="Legal Rep / Director" xml:space="preserve">
     <value>Lakisäädännöllinen edustaja / johtaja</value>
   </data>
   <data name="Logo" xml:space="preserve">
     <value>Logo</value>
+  </data>
+  <data name="Meals, Transportation, Communication, Electronics (Computers/Peripherals)." xml:space="preserve">
+    <value>Ruokailu, kuljetus, viestintä, elektroniikka (tietokoneet/halut).</value>
+  </data>
+  <data name="Must be real business expenses. No fake invoices." xml:space="preserve">
+    <value>Tilanteessa on oltava todellisia liiketoimintakuluja. Ei valelaskuja.</value>
   </data>
   <data name="Official Seal" xml:space="preserve">
     <value>Virallinen timo</value>
@@ -87,8 +114,17 @@
   <data name="Organization Certificate" xml:space="preserve">
     <value>Järjestön todistus</value>
   </data>
+  <data name="Please show the following information to the merchant when making a payment:" xml:space="preserve">
+    <value>Ole hyvä ja näytä seuraava tieto kauppiaille maksun yhteydessä:</value>
+  </data>
+  <data name="Prefer Electronic Invoices (Fully Digitalized)" xml:space="preserve">
+    <value>Preferoi sähköiset laskut (täysin digitaaliset)</value>
+  </data>
   <data name="Reg Capital" xml:space="preserve">
     <value>Perustamisvastuu</value>
+  </data>
+  <data name="Reimbursement Categories" xml:space="preserve">
+    <value>Maksu- ja korvausluokat</value>
   </data>
   <data name="Restricted" xml:space="preserve">
     <value>Rajoitettu</value>
@@ -99,8 +135,17 @@
   <data name="Secretary" xml:space="preserve">
     <value>Sihteerin</value>
   </data>
+  <data name="Special Cases" xml:space="preserve">
+    <value>Erityistapaukset</value>
+  </data>
   <data name="Status" xml:space="preserve">
     <value>Tila</value>
+  </data>
+  <data name="Tax ID" xml:space="preserve">
+    <value>Verotunnus</value>
+  </data>
+  <data name="Tip: When incurring business or welfare expenses, please request an invoice. Prefer electronic invoices. Keep the original PDF." xml:space="preserve">
+    <value>Vinkki: Kun käytät liiketoimintaa tai hyvinvointia koskevia menoja, pyydä laskua. Suosittelen sähköisiä laskuja. Säilytä alkuperäinen PDF-tiedosto.</value>
   </data>
 
 </root>

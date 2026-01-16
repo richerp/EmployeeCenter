@@ -18,11 +18,26 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Address" xml:space="preserve">
+      <data name="Accommodation: Must issue VAT Special Invoice with full company name. Avoid fixed-amount paper invoices if possible." xml:space="preserve">
+    <value>आवास: पूर्ण कंपनी के नाम के साथ वैट विशेष इनवॉइस जारी करना आवश्यक है। यदि संभव हो तो निश्चित राशि वाले कागजी इनवॉइस से बचें।</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>खाता</value>
+  </data>
+  <data name="Address" xml:space="preserve">
     <value>पता</value>
   </data>
   <data name="Administrative Details" xml:space="preserve">
     <value>प्रशासनिक विवरण</value>
+  </data>
+  <data name="Ask merchants for electronic invoices (PDF/OFD) sent to your email or employees@aiursoft.com." xml:space="preserve">
+    <value>कृपया अपने ईमेल या employees@aiursoft.com पर भेजे गए इलेक्ट्रॉनिक इन्वॉइस (PDF/OFD) के लिए व्यापारियों से मांगें।</value>
+  </data>
+  <data name="Avoid paper invoices to prevent loss." xml:space="preserve">
+    <value>कागजी इन्वॉइस से बचें ताकि नुकसान से बचा जा सके।</value>
+  </data>
+  <data name="Bank" xml:space="preserve">
+    <value>बैंक</value>
   </data>
   <data name="Bank Info" xml:space="preserve">
     <value>बैंक जानकारी</value>
@@ -75,11 +90,23 @@
   <data name="Images &amp; Files" xml:space="preserve">
     <value>चित्र और फ़ाइलें</value>
   </data>
+  <data name="Instructions for Employees" xml:space="preserve">
+    <value>कर्मचारियों के लिए निर्देश</value>
+  </data>
+  <data name="Invoice Issuance Guide" xml:space="preserve">
+    <value>इनवॉइस जारी करने का मार्गदर्शिका</value>
+  </data>
   <data name="Legal Rep / Director" xml:space="preserve">
     <value>कानूनी प्रतिनिधि / निदेशक</value>
   </data>
   <data name="Logo" xml:space="preserve">
     <value>लोगो</value>
+  </data>
+  <data name="Meals, Transportation, Communication, Electronics (Computers/Peripherals)." xml:space="preserve">
+    <value>भोजन, परिवहन, संचार, इलेक्ट्रॉनिक्स (कंप्यूटर/पेरिफेरल्स).</value>
+  </data>
+  <data name="Must be real business expenses. No fake invoices." xml:space="preserve">
+    <value>वास्तविक व्यापारिक व्यय होने चाहिए। कृपया नकली इन्वॉइस न भेजें।</value>
   </data>
   <data name="Official Seal" xml:space="preserve">
     <value>आधिकारिक मुहर</value>
@@ -87,8 +114,17 @@
   <data name="Organization Certificate" xml:space="preserve">
     <value>संगठन प्रमाणपत्र</value>
   </data>
+  <data name="Please show the following information to the merchant when making a payment:" xml:space="preserve">
+    <value>भुगतान करते समय किसी व्यापारी को निम्नलिखित जानकारी दिखाएं:</value>
+  </data>
+  <data name="Prefer Electronic Invoices (Fully Digitalized)" xml:space="preserve">
+    <value>इलेक्ट्रॉनिक इन्वॉइस (पूरी तरह डिजिटलाइज्ड) को प्राथमिकता दें</value>
+  </data>
   <data name="Reg Capital" xml:space="preserve">
     <value>निर्गत पूंजी</value>
+  </data>
+  <data name="Reimbursement Categories" xml:space="preserve">
+    <value>प्रतिपूर्ति श्रेणियाँ</value>
   </data>
   <data name="Restricted" xml:space="preserve">
     <value>सीमित</value>
@@ -99,8 +135,17 @@
   <data name="Secretary" xml:space="preserve">
     <value>सचिव</value>
   </data>
+  <data name="Special Cases" xml:space="preserve">
+    <value>विशेष मामले</value>
+  </data>
   <data name="Status" xml:space="preserve">
     <value>स्थिति</value>
+  </data>
+  <data name="Tax ID" xml:space="preserve">
+    <value>कर पहचान पत्र</value>
+  </data>
+  <data name="Tip: When incurring business or welfare expenses, please request an invoice. Prefer electronic invoices. Keep the original PDF." xml:space="preserve">
+    <value>टिप: व्यापार या कल्याण खर्च में आने पर, कृपया एक इन्वॉइस मांगें। इलेक्ट्रॉनिक इन्वॉइस को प्राथमिकता दें। मूल PDF रखें।</value>
   </data>
 
 </root>

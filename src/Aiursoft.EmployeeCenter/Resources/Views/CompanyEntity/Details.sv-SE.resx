@@ -18,11 +18,26 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Address" xml:space="preserve">
+      <data name="Accommodation: Must issue VAT Special Invoice with full company name. Avoid fixed-amount paper invoices if possible." xml:space="preserve">
+    <value>Värdshus: Måste utfärda moms-specialfaktura med fullt företagsnamn. Undvik pappersfakturor med fast belopp om möjligt.</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>Konto</value>
+  </data>
+  <data name="Address" xml:space="preserve">
     <value>Adress</value>
   </data>
   <data name="Administrative Details" xml:space="preserve">
     <value>Administrativa uppgifter</value>
+  </data>
+  <data name="Ask merchants for electronic invoices (PDF/OFD) sent to your email or employees@aiursoft.com." xml:space="preserve">
+    <value>Be om elektroniska fakturor (PDF/OFD) från leverantörer som skickas till din e-post eller employees@aiursoft.com.</value>
+  </data>
+  <data name="Avoid paper invoices to prevent loss." xml:space="preserve">
+    <value>Undvik pappersfakturor för att undvika förlust.</value>
+  </data>
+  <data name="Bank" xml:space="preserve">
+    <value>Bank</value>
   </data>
   <data name="Bank Info" xml:space="preserve">
     <value>Bankuppgifter</value>
@@ -75,11 +90,23 @@
   <data name="Images &amp; Files" xml:space="preserve">
     <value>Bilder &amp;filer</value>
   </data>
+  <data name="Instructions for Employees" xml:space="preserve">
+    <value>Anvisningar för anställda</value>
+  </data>
+  <data name="Invoice Issuance Guide" xml:space="preserve">
+    <value>Fakturautställningsguide</value>
+  </data>
   <data name="Legal Rep / Director" xml:space="preserve">
     <value>Rättsskyddad Representant / Styrelseledamot</value>
   </data>
   <data name="Logo" xml:space="preserve">
     <value>Logotyp</value>
+  </data>
+  <data name="Meals, Transportation, Communication, Electronics (Computers/Peripherals)." xml:space="preserve">
+    <value>Mat, transporter, kommunikation, elektronik (datorer/periferi).</value>
+  </data>
+  <data name="Must be real business expenses. No fake invoices." xml:space="preserve">
+    <value>Måste vara verkliga affärsutgifter. Inga falska fakturor.</value>
   </data>
   <data name="Official Seal" xml:space="preserve">
     <value>Officiellt segel</value>
@@ -87,8 +114,17 @@
   <data name="Organization Certificate" xml:space="preserve">
     <value>Organisationscertifikat</value>
   </data>
+  <data name="Please show the following information to the merchant when making a payment:" xml:space="preserve">
+    <value>Vänligen visa följande information till återförsäljaren vid betalning:</value>
+  </data>
+  <data name="Prefer Electronic Invoices (Fully Digitalized)" xml:space="preserve">
+    <value>Föredra elektroniska fakturor (fullt digitaliserade)</value>
+  </data>
   <data name="Reg Capital" xml:space="preserve">
     <value>Registrerat kapital</value>
+  </data>
+  <data name="Reimbursement Categories" xml:space="preserve">
+    <value>Återbetalningskategorier</value>
   </data>
   <data name="Restricted" xml:space="preserve">
     <value>Begränsad</value>
@@ -99,8 +135,17 @@
   <data name="Secretary" xml:space="preserve">
     <value>Sekreterare</value>
   </data>
+  <data name="Special Cases" xml:space="preserve">
+    <value>Särskilda fall</value>
+  </data>
   <data name="Status" xml:space="preserve">
     <value>Status</value>
+  </data>
+  <data name="Tax ID" xml:space="preserve">
+    <value>Företagsregistreringsnummer</value>
+  </data>
+  <data name="Tip: When incurring business or welfare expenses, please request an invoice. Prefer electronic invoices. Keep the original PDF." xml:space="preserve">
+    <value>Tips: När du får affärs- eller välfärdsutgifter, vänligen begär en faktura. Föredra elektroniska fakturor. Spara den ursprungliga PDF-filen.</value>
   </data>
 
 </root>

@@ -18,11 +18,26 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Address" xml:space="preserve">
+      <data name="Accommodation: Must issue VAT Special Invoice with full company name. Avoid fixed-amount paper invoices if possible." xml:space="preserve">
+    <value>住宿：必須開具附有公司全名的增值稅專用發票。如有可能，避免使用定額紙質發票。</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>銀行賬戶</value>
+  </data>
+  <data name="Address" xml:space="preserve">
     <value>地址</value>
   </data>
   <data name="Administrative Details" xml:space="preserve">
     <value>行政資料</value>
+  </data>
+  <data name="Ask merchants for electronic invoices (PDF/OFD) sent to your email or employees@aiursoft.com." xml:space="preserve">
+    <value>請向商戶索取電郵或 employees@aiursoft.com 收到的電子發票（PDF/OFD）。</value>
+  </data>
+  <data name="Avoid paper invoices to prevent loss." xml:space="preserve">
+    <value>避免紙質發票以防止遺失。</value>
+  </data>
+  <data name="Bank" xml:space="preserve">
+    <value>銀行</value>
   </data>
   <data name="Bank Info" xml:space="preserve">
     <value>銀行資料</value>
@@ -75,11 +90,23 @@
   <data name="Images &amp; Files" xml:space="preserve">
     <value>圖片與檔案</value>
   </data>
+  <data name="Instructions for Employees" xml:space="preserve">
+    <value>員工使用指南</value>
+  </data>
+  <data name="Invoice Issuance Guide" xml:space="preserve">
+    <value>發票開立指南</value>
+  </data>
   <data name="Legal Rep / Director" xml:space="preserve">
     <value>法定代表人 / 董事</value>
   </data>
   <data name="Logo" xml:space="preserve">
     <value>標誌</value>
+  </data>
+  <data name="Meals, Transportation, Communication, Electronics (Computers/Peripherals)." xml:space="preserve">
+    <value>膳食、交通、通訊、電子產品（電腦/周邊設備）。</value>
+  </data>
+  <data name="Must be real business expenses. No fake invoices." xml:space="preserve">
+    <value>必須為真實的業務開支。不得使用偽造發票。</value>
   </data>
   <data name="Official Seal" xml:space="preserve">
     <value>官方印鑑</value>
@@ -87,8 +114,17 @@
   <data name="Organization Certificate" xml:space="preserve">
     <value>組織證明書</value>
   </data>
+  <data name="Please show the following information to the merchant when making a payment:" xml:space="preserve">
+    <value>請在付款時向商戶出示以下資料：</value>
+  </data>
+  <data name="Prefer Electronic Invoices (Fully Digitalized)" xml:space="preserve">
+    <value>優先電子發票（完全數碼化）</value>
+  </data>
   <data name="Reg Capital" xml:space="preserve">
     <value>註冊資本</value>
+  </data>
+  <data name="Reimbursement Categories" xml:space="preserve">
+    <value>報銷項目</value>
   </data>
   <data name="Restricted" xml:space="preserve">
     <value>受限</value>
@@ -99,8 +135,17 @@
   <data name="Secretary" xml:space="preserve">
     <value>公司秘書</value>
   </data>
+  <data name="Special Cases" xml:space="preserve">
+    <value>特別情況</value>
+  </data>
   <data name="Status" xml:space="preserve">
     <value>狀態</value>
+  </data>
+  <data name="Tax ID" xml:space="preserve">
+    <value>稅務識別編號</value>
+  </data>
+  <data name="Tip: When incurring business or welfare expenses, please request an invoice. Prefer electronic invoices. Keep the original PDF." xml:space="preserve">
+    <value>提示：如產生業務或福利開支，請向商家索取發票。優先使用電子發票。請保留原始PDF檔案。</value>
   </data>
 
 </root>

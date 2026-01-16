@@ -18,11 +18,26 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Address" xml:space="preserve">
+      <data name="Accommodation: Must issue VAT Special Invoice with full company name. Avoid fixed-amount paper invoices if possible." xml:space="preserve">
+    <value>ที่พัก: ต้องออกใบแจ้งหนี้ภาษีมูลค่าเพิ่มพิเศษพร้อมชื่อบริษัทเต็ม หลีกเลี่ยงใบแจ้งหนี้กระดาษที่มีจำนวนคงที่หากเป็นไปได้</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>บัญชี</value>
+  </data>
+  <data name="Address" xml:space="preserve">
     <value>ที่อยู่</value>
   </data>
   <data name="Administrative Details" xml:space="preserve">
     <value>รายละเอียดการบริหาร</value>
+  </data>
+  <data name="Ask merchants for electronic invoices (PDF/OFD) sent to your email or employees@aiursoft.com." xml:space="preserve">
+    <value>ขอให้ผู้ขายจัดส่งใบแจ้งหนี้อิเล็กทรอนิกส์ (PDF/OFD) ไปยังอีเมลของคุณ หรือที่ employees@aiursoft.com</value>
+  </data>
+  <data name="Avoid paper invoices to prevent loss." xml:space="preserve">
+    <value>หลีกเลี่ยงใบแจ้งหนี้กระดาษเพื่อป้องกันการสูญหาย</value>
+  </data>
+  <data name="Bank" xml:space="preserve">
+    <value>ธนาคาร</value>
   </data>
   <data name="Bank Info" xml:space="preserve">
     <value>ข้อมูลธนาคาร</value>
@@ -75,11 +90,23 @@
   <data name="Images &amp; Files" xml:space="preserve">
     <value>รูปภาพและไฟล์</value>
   </data>
+  <data name="Instructions for Employees" xml:space="preserve">
+    <value>คำแนะนำสำหรับพนักงาน</value>
+  </data>
+  <data name="Invoice Issuance Guide" xml:space="preserve">
+    <value>คู่มือการออกใบแจ้งหนี้</value>
+  </data>
   <data name="Legal Rep / Director" xml:space="preserve">
     <value>ผู้แทนทางกฎหมาย / ผู้อำนวยการ</value>
   </data>
   <data name="Logo" xml:space="preserve">
     <value>โลโก้</value>
+  </data>
+  <data name="Meals, Transportation, Communication, Electronics (Computers/Peripherals)." xml:space="preserve">
+    <value>ค่าอาหาร, การเดินทาง, การสื่อสาร, อุปกรณ์อิเล็กทรอนิกส์ (คอมพิวเตอร์/อุปกรณ์เสริม).</value>
+  </data>
+  <data name="Must be real business expenses. No fake invoices." xml:space="preserve">
+    <value>ต้องเป็นค่าใช้จ่ายทางธุรกิจที่แท้จริง ห้ามใช้ใบแจ้งหนี้ปลอม</value>
   </data>
   <data name="Official Seal" xml:space="preserve">
     <value>ตราประทับราชการ</value>
@@ -87,8 +114,17 @@
   <data name="Organization Certificate" xml:space="preserve">
     <value>หนังสือรับรององค์กร</value>
   </data>
+  <data name="Please show the following information to the merchant when making a payment:" xml:space="preserve">
+    <value>กรุณาแสดงข้อมูลต่อไปนี้ให้กับร้านค้าเมื่อทำการชำระเงิน:</value>
+  </data>
+  <data name="Prefer Electronic Invoices (Fully Digitalized)" xml:space="preserve">
+    <value>ต้องการใบแจ้งหนี้อิเล็กทรอนิกส์ (ดิจิทัลทั้งหมด)</value>
+  </data>
   <data name="Reg Capital" xml:space="preserve">
     <value>ทุนจดทะเบียน</value>
+  </data>
+  <data name="Reimbursement Categories" xml:space="preserve">
+    <value>ประเภทการชดเชย</value>
   </data>
   <data name="Restricted" xml:space="preserve">
     <value>จำกัด</value>
@@ -99,8 +135,17 @@
   <data name="Secretary" xml:space="preserve">
     <value>ผู้จัดการบริษัท</value>
   </data>
+  <data name="Special Cases" xml:space="preserve">
+    <value>กรณีพิเศษ</value>
+  </data>
   <data name="Status" xml:space="preserve">
     <value>สถานะ</value>
+  </data>
+  <data name="Tax ID" xml:space="preserve">
+    <value>เลขประจำตัวผู้เสียภาษี</value>
+  </data>
+  <data name="Tip: When incurring business or welfare expenses, please request an invoice. Prefer electronic invoices. Keep the original PDF." xml:space="preserve">
+    <value>คำแนะนำ: เมื่อเกิดค่าใช้จ่ายด้านธุรกิจหรือสวัสดิการ โปรดขอใบแจ้งหนี้ ควรใช้ใบแจ้งหนี้อิเล็กทรอนิกส์ จัดเก็บไฟล์ PDF ต้นฉบับไว้</value>
   </data>
 
 </root>

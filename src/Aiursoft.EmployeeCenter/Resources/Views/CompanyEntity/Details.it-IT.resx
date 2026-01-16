@@ -18,11 +18,26 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Address" xml:space="preserve">
+      <data name="Accommodation: Must issue VAT Special Invoice with full company name. Avoid fixed-amount paper invoices if possible." xml:space="preserve">
+    <value>Alloggio: è obbligatorio emettere una fattura speciale IVA con il nome completo dell&apos;azienda. Evitare le fatture cartacee con importo fisso se possibile.</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>Conto</value>
+  </data>
+  <data name="Address" xml:space="preserve">
     <value>Indirizzo</value>
   </data>
   <data name="Administrative Details" xml:space="preserve">
     <value>Dettagli amministrativi</value>
+  </data>
+  <data name="Ask merchants for electronic invoices (PDF/OFD) sent to your email or employees@aiursoft.com." xml:space="preserve">
+    <value>Chiedi ai commercianti fatture elettroniche (PDF/OFD) inviate al tuo indirizzo email o a employees@aiursoft.com.</value>
+  </data>
+  <data name="Avoid paper invoices to prevent loss." xml:space="preserve">
+    <value>Evita le fatture cartacee per evitare perdite.</value>
+  </data>
+  <data name="Bank" xml:space="preserve">
+    <value>Banca</value>
   </data>
   <data name="Bank Info" xml:space="preserve">
     <value>Informazioni sul conto bancario</value>
@@ -75,11 +90,23 @@
   <data name="Images &amp; Files" xml:space="preserve">
     <value>Immagini e File</value>
   </data>
+  <data name="Instructions for Employees" xml:space="preserve">
+    <value>Istruzioni per i Dipendenti</value>
+  </data>
+  <data name="Invoice Issuance Guide" xml:space="preserve">
+    <value>Guida all&apos;emissione della fattura</value>
+  </data>
   <data name="Legal Rep / Director" xml:space="preserve">
     <value>Rappresentante Legale / Direttore</value>
   </data>
   <data name="Logo" xml:space="preserve">
     <value>Logo</value>
+  </data>
+  <data name="Meals, Transportation, Communication, Electronics (Computers/Peripherals)." xml:space="preserve">
+    <value>Pasti, Trasporti, Comunicazioni, Elettronica (Computer/Periferiche).</value>
+  </data>
+  <data name="Must be real business expenses. No fake invoices." xml:space="preserve">
+    <value>Devono essere spese aziendali reali. Nessuna fattura falsa.</value>
   </data>
   <data name="Official Seal" xml:space="preserve">
     <value>Sigillo Ufficiale</value>
@@ -87,8 +114,17 @@
   <data name="Organization Certificate" xml:space="preserve">
     <value>Certificato dell&apos;Organizzazione</value>
   </data>
+  <data name="Please show the following information to the merchant when making a payment:" xml:space="preserve">
+    <value>Si prega di mostrare le seguenti informazioni al commerciante quando si effettua un pagamento:</value>
+  </data>
+  <data name="Prefer Electronic Invoices (Fully Digitalized)" xml:space="preserve">
+    <value>Preferire le fatture elettroniche (interamente digitalizzate)</value>
+  </data>
   <data name="Reg Capital" xml:space="preserve">
     <value>Capitale Sociale</value>
+  </data>
+  <data name="Reimbursement Categories" xml:space="preserve">
+    <value>Categorie di Rimborso</value>
   </data>
   <data name="Restricted" xml:space="preserve">
     <value>Riservato</value>
@@ -99,8 +135,17 @@
   <data name="Secretary" xml:space="preserve">
     <value>Segretario</value>
   </data>
+  <data name="Special Cases" xml:space="preserve">
+    <value>Casi Speciali</value>
+  </data>
   <data name="Status" xml:space="preserve">
     <value>Stato</value>
+  </data>
+  <data name="Tax ID" xml:space="preserve">
+    <value>Partita IVA</value>
+  </data>
+  <data name="Tip: When incurring business or welfare expenses, please request an invoice. Prefer electronic invoices. Keep the original PDF." xml:space="preserve">
+    <value>Consiglio: quando sostenete spese aziendali o di welfare, chiedete sempre una fattura. Preferite le fatture elettroniche. Conservate il file PDF originale.</value>
   </data>
 
 </root>

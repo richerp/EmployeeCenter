@@ -18,11 +18,26 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Address" xml:space="preserve">
+      <data name="Accommodation: Must issue VAT Special Invoice with full company name. Avoid fixed-amount paper invoices if possible." xml:space="preserve">
+    <value>如果是住宿费（专票），必须在前台开具，且通常需要公司抬头的全称。定额发票（手撕票）金额较小可以使用，但尽量减少。</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>银行账号</value>
+  </data>
+  <data name="Address" xml:space="preserve">
     <value>地址</value>
   </data>
   <data name="Administrative Details" xml:space="preserve">
     <value>行政信息</value>
+  </data>
+  <data name="Ask merchants for electronic invoices (PDF/OFD) sent to your email or employees@aiursoft.com." xml:space="preserve">
+    <value>优先让商家开具电子发票（PDF或OFD格式），直接发送到员工邮箱或公司指定财务邮箱 (employees@aiursoft.com)。</value>
+  </data>
+  <data name="Avoid paper invoices to prevent loss." xml:space="preserve">
+    <value>避免纸质发票，容易丢失且邮寄麻烦。</value>
+  </data>
+  <data name="Bank" xml:space="preserve">
+    <value>开户银行</value>
   </data>
   <data name="Bank Info" xml:space="preserve">
     <value>银行信息</value>
@@ -75,11 +90,23 @@
   <data name="Images &amp; Files" xml:space="preserve">
     <value>图片与文件</value>
   </data>
+  <data name="Instructions for Employees" xml:space="preserve">
+    <value>给员工的操作指引</value>
+  </data>
+  <data name="Invoice Issuance Guide" xml:space="preserve">
+    <value>发票开具指引</value>
+  </data>
   <data name="Legal Rep / Director" xml:space="preserve">
     <value>法定代表人 / 董事</value>
   </data>
   <data name="Logo" xml:space="preserve">
     <value>Logo</value>
+  </data>
+  <data name="Meals, Transportation, Communication, Electronics (Computers/Peripherals)." xml:space="preserve">
+    <value>重点类目：餐饮费、交通费、通讯费、电子设备（电脑/外设）。</value>
+  </data>
+  <data name="Must be real business expenses. No fake invoices." xml:space="preserve">
+    <value>注意：必须是真实发生的费用，严禁虚假虚开（如购买购物卡开成办公用品等），这是红线。</value>
   </data>
   <data name="Official Seal" xml:space="preserve">
     <value>官方印章</value>
@@ -87,8 +114,17 @@
   <data name="Organization Certificate" xml:space="preserve">
     <value>组织证书</value>
   </data>
+  <data name="Please show the following information to the merchant when making a payment:" xml:space="preserve">
+    <value>付款时请向商家出示以下信息：</value>
+  </data>
+  <data name="Prefer Electronic Invoices (Fully Digitalized)" xml:space="preserve">
+    <value>首选全电发票 (数电票)</value>
+  </data>
   <data name="Reg Capital" xml:space="preserve">
     <value>注册资本</value>
+  </data>
+  <data name="Reimbursement Categories" xml:space="preserve">
+    <value>报销类目建议</value>
   </data>
   <data name="Restricted" xml:space="preserve">
     <value>受限</value>
@@ -99,50 +135,14 @@
   <data name="Secretary" xml:space="preserve">
     <value>秘书</value>
   </data>
-  <data name="Status" xml:space="preserve">
-    <value>状态</value>
-  </data>
-  <data name="Invoice Issuance Guide" xml:space="preserve">
-    <value>发票开具指引</value>
-  </data>
-  <data name="Please show the following information to the merchant when making a payment:" xml:space="preserve">
-    <value>付款时请向商家出示以下信息：</value>
-  </data>
-  <data name="Tax ID" xml:space="preserve">
-    <value>税号</value>
-  </data>
-  <data name="Bank" xml:space="preserve">
-    <value>开户银行</value>
-  </data>
-  <data name="Account" xml:space="preserve">
-    <value>银行账号</value>
-  </data>
-  <data name="Instructions for Employees" xml:space="preserve">
-    <value>给员工的操作指引</value>
-  </data>
-  <data name="Prefer Electronic Invoices (Fully Digitalized)" xml:space="preserve">
-    <value>首选全电发票 (数电票)</value>
-  </data>
-  <data name="Ask merchants for electronic invoices (PDF/OFD) sent to your email or employees@aiursoft.com." xml:space="preserve">
-    <value>优先让商家开具电子发票（PDF或OFD格式），直接发送到员工邮箱或公司指定财务邮箱 (employees@aiursoft.com)。</value>
-  </data>
-  <data name="Avoid paper invoices to prevent loss." xml:space="preserve">
-    <value>避免纸质发票，容易丢失且邮寄麻烦。</value>
-  </data>
-  <data name="Reimbursement Categories" xml:space="preserve">
-    <value>报销类目建议</value>
-  </data>
-  <data name="Meals, Transportation, Communication, Electronics (Computers/Peripherals)." xml:space="preserve">
-    <value>重点类目：餐饮费、交通费、通讯费、电子设备（电脑/外设）。</value>
-  </data>
-  <data name="Must be real business expenses. No fake invoices." xml:space="preserve">
-    <value>注意：必须是真实发生的费用，严禁虚假虚开（如购买购物卡开成办公用品等），这是红线。</value>
-  </data>
   <data name="Special Cases" xml:space="preserve">
     <value>特殊情况</value>
   </data>
-  <data name="Accommodation: Must issue VAT Special Invoice with full company name. Avoid fixed-amount paper invoices if possible." xml:space="preserve">
-    <value>如果是住宿费（专票），必须在前台开具，且通常需要公司抬头的全称。定额发票（手撕票）金额较小可以使用，但尽量减少。</value>
+  <data name="Status" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="Tax ID" xml:space="preserve">
+    <value>税号</value>
   </data>
   <data name="Tip: When incurring business or welfare expenses, please request an invoice. Prefer electronic invoices. Keep the original PDF." xml:space="preserve">
     <value>大家外出如果产生业务相关或符合福利政策的费用（餐饮、差旅、采购等），请务必开具发票。优先要电子发票，抬头信息见上文。记得把PDF原件留好，不要只截图。</value>

@@ -18,11 +18,26 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Address" xml:space="preserve">
+      <data name="Accommodation: Must issue VAT Special Invoice with full company name. Avoid fixed-amount paper invoices if possible." xml:space="preserve">
+    <value>Accommodation: Must issue a VAT Special Invoice with the full company name. Avoid fixed-amount paper invoices if possible.</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="Address" xml:space="preserve">
     <value>Address</value>
   </data>
   <data name="Administrative Details" xml:space="preserve">
     <value>Administrative Details</value>
+  </data>
+  <data name="Ask merchants for electronic invoices (PDF/OFD) sent to your email or employees@aiursoft.com." xml:space="preserve">
+    <value>Ask merchants for electronic invoices (PDF/OFD) sent to your email or employees@aiursoft.com.</value>
+  </data>
+  <data name="Avoid paper invoices to prevent loss." xml:space="preserve">
+    <value>Avoid paper invoices to prevent loss.</value>
+  </data>
+  <data name="Bank" xml:space="preserve">
+    <value>Bank</value>
   </data>
   <data name="Bank Info" xml:space="preserve">
     <value>Bank Details</value>
@@ -75,11 +90,23 @@
   <data name="Images &amp; Files" xml:space="preserve">
     <value>Images &amp; Files</value>
   </data>
+  <data name="Instructions for Employees" xml:space="preserve">
+    <value>Instructions for Employees</value>
+  </data>
+  <data name="Invoice Issuance Guide" xml:space="preserve">
+    <value>Invoice Issuance Guide</value>
+  </data>
   <data name="Legal Rep / Director" xml:space="preserve">
     <value>Legal Representative / Director</value>
   </data>
   <data name="Logo" xml:space="preserve">
     <value>Logo</value>
+  </data>
+  <data name="Meals, Transportation, Communication, Electronics (Computers/Peripherals)." xml:space="preserve">
+    <value>Meals, Transportation, Communication, Electronics (Computers/Peripherals).</value>
+  </data>
+  <data name="Must be real business expenses. No fake invoices." xml:space="preserve">
+    <value>Must be genuine business expenses. No fake invoices.</value>
   </data>
   <data name="Official Seal" xml:space="preserve">
     <value>Official Seal</value>
@@ -87,8 +114,17 @@
   <data name="Organization Certificate" xml:space="preserve">
     <value>Organization Certificate</value>
   </data>
+  <data name="Please show the following information to the merchant when making a payment:" xml:space="preserve">
+    <value>Please show the following information to the merchant when making a payment:</value>
+  </data>
+  <data name="Prefer Electronic Invoices (Fully Digitalized)" xml:space="preserve">
+    <value>Prefer Electronic Invoices (Fully Digitalised)</value>
+  </data>
   <data name="Reg Capital" xml:space="preserve">
     <value>Registered Capital</value>
+  </data>
+  <data name="Reimbursement Categories" xml:space="preserve">
+    <value>Reimbursement Categories</value>
   </data>
   <data name="Restricted" xml:space="preserve">
     <value>Restricted</value>
@@ -99,8 +135,17 @@
   <data name="Secretary" xml:space="preserve">
     <value>Secretary</value>
   </data>
+  <data name="Special Cases" xml:space="preserve">
+    <value>Special Cases</value>
+  </data>
   <data name="Status" xml:space="preserve">
     <value>Status</value>
+  </data>
+  <data name="Tax ID" xml:space="preserve">
+    <value>Tax ID</value>
+  </data>
+  <data name="Tip: When incurring business or welfare expenses, please request an invoice. Prefer electronic invoices. Keep the original PDF." xml:space="preserve">
+    <value>Tip: When incurring business or welfare expenses, please request an invoice. Prefer electronic invoices. Keep the original PDF.</value>
   </data>
 
 </root>
