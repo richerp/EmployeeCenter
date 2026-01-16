@@ -96,5 +96,8 @@
   <data name="SCR Location (HK)" xml:space="preserve">
     <value>SCR 現地 (HK)</value>
   </data>
+  <data name="Zip Code" xml:space="preserve">
+    <value>郵便番号</value>
+  </data>
 
 </root>

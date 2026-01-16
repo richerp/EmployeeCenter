@@ -156,6 +156,9 @@
   <data name="Profile Details" xml:space="preserve">
     <value>个人资料详情</value>
   </data>
+  <data name="Promote User" xml:space="preserve">
+    <value>晋升用户</value>
+  </data>
   <data name="Report Line" xml:space="preserve">
     <value>汇报线</value>
   </data>

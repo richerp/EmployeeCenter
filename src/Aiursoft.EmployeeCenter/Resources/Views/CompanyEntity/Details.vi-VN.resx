@@ -45,6 +45,12 @@
   <data name="Company Type" xml:space="preserve">
     <value>Loại hình công ty</value>
   </data>
+  <data name="Copy Full Info" xml:space="preserve">
+    <value>Sao chép toàn bộ thông tin</value>
+  </data>
+  <data name="Copy Summary" xml:space="preserve">
+    <value>Sao chép tóm tắt</value>
+  </data>
   <data name="Download / View" xml:space="preserve">
     <value>Tải xuống / Xem</value>
   </data>

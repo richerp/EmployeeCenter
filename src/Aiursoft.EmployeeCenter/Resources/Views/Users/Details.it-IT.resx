@@ -156,6 +156,9 @@
   <data name="Profile Details" xml:space="preserve">
     <value>Dettagli del Profilo</value>
   </data>
+  <data name="Promote User" xml:space="preserve">
+    <value>Promuovi Utente</value>
+  </data>
   <data name="Report Line" xml:space="preserve">
     <value>Linea di Report</value>
   </data>

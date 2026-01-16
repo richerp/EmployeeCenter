@@ -96,5 +96,8 @@
   <data name="SCR Location (HK)" xml:space="preserve">
     <value>Местоположение SCR (Гонконг)</value>
   </data>
+  <data name="Zip Code" xml:space="preserve">
+    <value>Индекс</value>
+  </data>
 
 </root>

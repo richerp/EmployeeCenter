@@ -45,6 +45,12 @@
   <data name="Company Type" xml:space="preserve">
     <value>Typ firmy</value>
   </data>
+  <data name="Copy Full Info" xml:space="preserve">
+    <value>Kopiuj pełne dane</value>
+  </data>
+  <data name="Copy Summary" xml:space="preserve">
+    <value>Kopiuj podsumowanie</value>
+  </data>
   <data name="Download / View" xml:space="preserve">
     <value>Pobierz / Wyświetl</value>
   </data>

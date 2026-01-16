@@ -45,6 +45,12 @@
   <data name="Company Type" xml:space="preserve">
     <value>Τύπος Εταιρείας</value>
   </data>
+  <data name="Copy Full Info" xml:space="preserve">
+    <value>Αντιγραφή Ολοκληρωμένων Στοιχείων</value>
+  </data>
+  <data name="Copy Summary" xml:space="preserve">
+    <value>Αντιγραφή Περίληψης</value>
+  </data>
   <data name="Download / View" xml:space="preserve">
     <value>Λήψη / Προβολή</value>
   </data>

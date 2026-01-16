@@ -45,6 +45,12 @@
   <data name="Company Type" xml:space="preserve">
     <value>نوع الشركة</value>
   </data>
+  <data name="Copy Full Info" xml:space="preserve">
+    <value>نسخة المعلومات الكاملة</value>
+  </data>
+  <data name="Copy Summary" xml:space="preserve">
+    <value>نسخ ملخص</value>
+  </data>
   <data name="Download / View" xml:space="preserve">
     <value>تحميل / عرض</value>
   </data>

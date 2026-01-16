@@ -45,6 +45,12 @@
   <data name="Company Type" xml:space="preserve">
     <value>公司類型</value>
   </data>
+  <data name="Copy Full Info" xml:space="preserve">
+    <value>複製完整資訊</value>
+  </data>
+  <data name="Copy Summary" xml:space="preserve">
+    <value>複製摘要</value>
+  </data>
   <data name="Download / View" xml:space="preserve">
     <value>下載 / 查看</value>
   </data>

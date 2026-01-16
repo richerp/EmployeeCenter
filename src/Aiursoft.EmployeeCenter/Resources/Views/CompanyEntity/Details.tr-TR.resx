@@ -45,6 +45,12 @@
   <data name="Company Type" xml:space="preserve">
     <value>Şirket Türü</value>
   </data>
+  <data name="Copy Full Info" xml:space="preserve">
+    <value>Tam Bilgiyi Kopyala</value>
+  </data>
+  <data name="Copy Summary" xml:space="preserve">
+    <value>Özet Kopyala</value>
+  </data>
   <data name="Download / View" xml:space="preserve">
     <value>İndir / Görüntüle</value>
   </data>
