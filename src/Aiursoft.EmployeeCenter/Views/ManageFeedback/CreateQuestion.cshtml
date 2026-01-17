@@ -1,0 +1,51 @@
+@using Aiursoft.EmployeeCenter.Entities
+@model Aiursoft.EmployeeCenter.Models.ManageFeedbackViewModels.CreateQuestionViewModel
+
+<div class="row mb-2 mb-xl-3">
+    <div class="col-auto d-none d-sm-block">
+        <h3>@Localizer["Create Question"]</h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <form asp-action="CreateQuestion" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    
+                    <div class="mb-3">
+                        <label asp-for="Title" class="form-label">@Localizer["Title"]</label>
+                        <input asp-for="Title" class="form-label form-control" placeholder="Enter question title..." />
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                        <small class="form-text text-muted">@Localizer["For fill-in-the-blank, use [____] for blanks."]</small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Type" class="form-label">@Localizer["Type"]</label>
+                        <select asp-for="Type" class="form-select" asp-items="Html.GetEnumSelectList<SignalQuestionType>()"></select>
+                        <span asp-validation-for="Type" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Tags" class="form-label">@Localizer["Tags"]</label>
+                        <input asp-for="Tags" class="form-control" placeholder="Security, Health, etc. (comma separated)" />
+                        <span asp-validation-for="Tags" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Meta" class="form-label">@Localizer["Meta (JSON)"]</label>
+                        <textarea asp-for="Meta" class="form-control" rows="3" placeholder='{"Options":["A", "B"]}'></textarea>
+                        <span asp-validation-for="Meta" class="text-danger"></span>
+                        <small class="form-text text-muted">@Localizer["For multiple choice, provide options in JSON format:"] <code>{"Options":["Option 1", "Option 2"]}</code>. @Localizer["For others, leave blank unless needed."]</small>
+                    </div>
+
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary">@Localizer["Create"]</button>
+                        <a asp-action="Questions" class="btn btn-outline-secondary">@Localizer["Cancel"]</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

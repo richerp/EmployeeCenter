@@ -57,6 +57,11 @@ public static class AppPermissionNames
     // Contract Management
     public const string CanViewContractHistory = nameof(CanViewContractHistory);
     public const string CanCreateContract = nameof(CanCreateContract);
+
+    // Feedback Management (Employee Signals)
+    public const string CanSubmitFeedback = nameof(CanSubmitFeedback);
+    public const string CanManageFeedback = nameof(CanManageFeedback);
+
     // Permission Management
     public const string CanReadPermissions = nameof(CanReadPermissions);
 

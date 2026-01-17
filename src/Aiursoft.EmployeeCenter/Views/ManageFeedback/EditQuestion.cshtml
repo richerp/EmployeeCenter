@@ -1,0 +1,50 @@
+@using Aiursoft.EmployeeCenter.Entities
+@model Aiursoft.EmployeeCenter.Models.ManageFeedbackViewModels.EditQuestionViewModel
+
+<div class="row mb-2 mb-xl-3">
+    <div class="col-auto d-none d-sm-block">
+        <h3>@Localizer["Edit Question"]</h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <form asp-action="EditQuestion" method="post">
+                    <input type="hidden" asp-for="Id" />
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    
+                    <div class="mb-3">
+                        <label asp-for="Title" class="form-label">@Localizer["Title"]</label>
+                        <input asp-for="Title" class="form-control" />
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Type" class="form-label">@Localizer["Type"]</label>
+                        <select asp-for="Type" class="form-select" asp-items="Html.GetEnumSelectList<SignalQuestionType>()"></select>
+                        <span asp-validation-for="Type" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Tags" class="form-label">@Localizer["Tags"]</label>
+                        <input asp-for="Tags" class="form-control" />
+                        <span asp-validation-for="Tags" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Meta" class="form-label">@Localizer["Meta (JSON)"]</label>
+                        <textarea asp-for="Meta" class="form-control" rows="3"></textarea>
+                        <span asp-validation-for="Meta" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary">@Localizer["Save Changes"]</button>
+                        <a asp-action="Questions" class="btn btn-outline-secondary">@Localizer["Cancel"]</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
