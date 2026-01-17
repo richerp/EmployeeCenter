@@ -411,5 +411,8 @@
   <data name="View Contracts" xml:space="preserve">
     <value>Vizualizează Contracte</value>
   </data>
+  <data name="Weekly Report" xml:space="preserve">
+    <value>Raport săptămânal</value>
+  </data>
 
 </root>

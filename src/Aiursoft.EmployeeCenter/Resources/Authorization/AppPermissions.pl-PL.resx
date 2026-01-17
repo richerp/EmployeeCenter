@@ -84,6 +84,12 @@
   <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
     <value>Pozwala na trwałe usunięcie kont użytkowników.</value>
   </data>
+  <data name="Allows the user to create their own weekly reports." xml:space="preserve">
+    <value>Umożliwia użytkownikowi tworzenie własnych raportów tygodniowych.</value>
+  </data>
+  <data name="Allows the user to create weekly reports on behalf of any other user." xml:space="preserve">
+    <value>Umożliwia użytkownikowi tworzenie raportów tygodniowych w imieniu dowolnego innego użytkownika.</value>
+  </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Zezwala na przeglądanie wszystkich umów firmowych, w tym tych oznaczonych jako prywatne.</value>
   </data>
@@ -134,6 +140,12 @@
   </data>
   <data name="Create Contract" xml:space="preserve">
     <value>Utwórz Kontrakt</value>
+  </data>
+  <data name="Create Weekly Report" xml:space="preserve">
+    <value>Utwórz raport tygodniowy</value>
+  </data>
+  <data name="Create Weekly Report for Anyone" xml:space="preserve">
+    <value>Utwórz raport tygodniowy dla kogoś innego</value>
   </data>
   <data name="Default permission for HR." xml:space="preserve">
     <value>Domyślny dostęp dla działu HR.</value>

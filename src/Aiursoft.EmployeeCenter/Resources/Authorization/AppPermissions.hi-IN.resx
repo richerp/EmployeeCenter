@@ -84,6 +84,12 @@
   <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
     <value>उपयोगकर्ता खातों को स्थायी रूप से हटाने की अनुमति देता है।</value>
   </data>
+  <data name="Allows the user to create their own weekly reports." xml:space="preserve">
+    <value>उपयोगकर्ता को अपने स्वयं के साप्ताहिक रिपोर्ट बनाने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows the user to create weekly reports on behalf of any other user." xml:space="preserve">
+    <value>किसी भी अन्य उपयोगकर्ता के प्रतिनिधित्व में साप्ताहिक रिपोर्ट बनाने के लिए उपयोगकर्ता को अनुमति देता है।</value>
+  </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>सभी कंपनी के समझौतों को देखने की अनुमति देता है, जिनमें निजी चिह्नित किए गए शामिल हैं।</value>
   </data>
@@ -134,6 +140,12 @@
   </data>
   <data name="Create Contract" xml:space="preserve">
     <value>कॉन्ट्रैक्ट बनाएं</value>
+  </data>
+  <data name="Create Weekly Report" xml:space="preserve">
+    <value>साप्ताहिक रिपोर्ट बनाएं</value>
+  </data>
+  <data name="Create Weekly Report for Anyone" xml:space="preserve">
+    <value>किसी भी के लिए साप्ताहिक रिपोर्ट बनाएं</value>
   </data>
   <data name="Default permission for HR." xml:space="preserve">
     <value>HR के लिए डिफ़ॉल्ट अनुमति।</value>

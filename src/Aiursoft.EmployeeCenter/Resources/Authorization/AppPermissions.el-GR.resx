@@ -84,6 +84,12 @@
   <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
     <value>Επιτρέπει τη μόνιμη διαγραφή των λογαριασμών χρηστών.</value>
   </data>
+  <data name="Allows the user to create their own weekly reports." xml:space="preserve">
+    <value>Επιτρέπει στον χρήστη να δημιουργήσει τα δικά του εβδομαδιαία αναφορά.</value>
+  </data>
+  <data name="Allows the user to create weekly reports on behalf of any other user." xml:space="preserve">
+    <value>Επιτρέπει στον χρήστη να δημιουργεί εβδομαδιαίες αναφορές εκ μέρους οποιουδήποτε άλλου χρήστη.</value>
+  </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Επιτρέπει την προβολή όλων των συμβάσεων της εταιρείας, συμπεριλαμβανομένων εκείνων που έχουν σημειωθεί ως ιδιωτικές.</value>
   </data>
@@ -134,6 +140,12 @@
   </data>
   <data name="Create Contract" xml:space="preserve">
     <value>Δημιουργία Συμβάσεων</value>
+  </data>
+  <data name="Create Weekly Report" xml:space="preserve">
+    <value>Δημιουργία Εβδομαδιαίου Αναφοράς</value>
+  </data>
+  <data name="Create Weekly Report for Anyone" xml:space="preserve">
+    <value>Δημιουργία Εβδομαδιαίου Αναφοράς για Οποιονδήποτε</value>
   </data>
   <data name="Default permission for HR." xml:space="preserve">
     <value>Προεπιλεγμένη άδεια για το Τμήμα Ανθρώπινων Πόρων</value>

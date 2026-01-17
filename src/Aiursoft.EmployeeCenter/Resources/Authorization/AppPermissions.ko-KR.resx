@@ -84,6 +84,12 @@
   <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
     <value>사용자 계정의 영구 삭제를 허용합니다.</value>
   </data>
+  <data name="Allows the user to create their own weekly reports." xml:space="preserve">
+    <value>사용자가 자신의 주간 보고서를 생성할 수 있도록 허용합니다.</value>
+  </data>
+  <data name="Allows the user to create weekly reports on behalf of any other user." xml:space="preserve">
+    <value>사용자가 다른 사용자의 대신 주간 보고서를 작성할 수 있도록 허용합니다.</value>
+  </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>모든 회사 계약서를 포함하여 비공개로 표시된 계약서도 볼 수 있도록 허용합니다.</value>
   </data>
@@ -134,6 +140,12 @@
   </data>
   <data name="Create Contract" xml:space="preserve">
     <value>계약 생성</value>
+  </data>
+  <data name="Create Weekly Report" xml:space="preserve">
+    <value>주간 보고서 작성</value>
+  </data>
+  <data name="Create Weekly Report for Anyone" xml:space="preserve">
+    <value>다른 사람의 주간 보고서 작성</value>
   </data>
   <data name="Default permission for HR." xml:space="preserve">
     <value>인사 기본 권한</value>

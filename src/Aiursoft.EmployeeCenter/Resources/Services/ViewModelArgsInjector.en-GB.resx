@@ -327,9 +327,6 @@
   <data name="Projects" xml:space="preserve">
     <value>Projects</value>
   </data>
-  <data name="Weekly Report" xml:space="preserve">
-    <value>Weekly Report</value>
-  </data>
   <data name="Promotion History" xml:space="preserve">
     <value>Promotion History</value>
   </data>
@@ -401,6 +398,9 @@
   </data>
   <data name="View Contracts" xml:space="preserve">
     <value>View Contracts</value>
+  </data>
+  <data name="Weekly Report" xml:space="preserve">
+    <value>Weekly Report</value>
   </data>
 
 </root>

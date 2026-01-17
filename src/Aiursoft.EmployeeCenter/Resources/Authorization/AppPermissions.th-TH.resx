@@ -84,6 +84,12 @@
   <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
     <value>อนุญาตให้ลบบัญชีผู้ใช้อย่างถาวร</value>
   </data>
+  <data name="Allows the user to create their own weekly reports." xml:space="preserve">
+    <value>อนุญาตให้ผู้ใช้สร้างรายงานรายสัปดาห์ของตนเองได้</value>
+  </data>
+  <data name="Allows the user to create weekly reports on behalf of any other user." xml:space="preserve">
+    <value>อนุญาตให้ผู้ใช้สร้างรายงานรายสัปดาห์แทนผู้ใช้คนอื่นใดก็ได้</value>
+  </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>อนุญาตให้ดูสัญญาบริษัททั้งหมด รวมถึงสัญญาที่ระบุว่าเป็นส่วนตัว</value>
   </data>
@@ -134,6 +140,12 @@
   </data>
   <data name="Create Contract" xml:space="preserve">
     <value>สร้างสัญญา</value>
+  </data>
+  <data name="Create Weekly Report" xml:space="preserve">
+    <value>สร้างรายงานรายสัปดาห์</value>
+  </data>
+  <data name="Create Weekly Report for Anyone" xml:space="preserve">
+    <value>สร้างรายงานรายสัปดาห์ให้ใครก็ได้</value>
   </data>
   <data name="Default permission for HR." xml:space="preserve">
     <value>สิทธิ์เริ่มต้นสำหรับแผนกบุคคล</value>

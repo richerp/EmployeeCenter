@@ -81,6 +81,12 @@
   <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
     <value>Allows the permanent deletion of user accounts.</value>
   </data>
+  <data name="Allows the user to create their own weekly reports." xml:space="preserve">
+    <value>Allows the user to create their own weekly reports.</value>
+  </data>
+  <data name="Allows the user to create weekly reports on behalf of any other user." xml:space="preserve">
+    <value>Allows the user to create weekly reports on behalf of any other user.</value>
+  </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Allows viewing all company contracts, including those marked as private.</value>
   </data>
@@ -125,6 +131,12 @@
   </data>
   <data name="Create company contracts" xml:space="preserve">
     <value>Create company contracts</value>
+  </data>
+  <data name="Create Weekly Report" xml:space="preserve">
+    <value>Create Weekly Report</value>
+  </data>
+  <data name="Create Weekly Report for Anyone" xml:space="preserve">
+    <value>Create Weekly Report for Anyone</value>
   </data>
   <data name="Delete Roles" xml:space="preserve">
     <value>Delete Roles</value>
