@@ -1144,6 +1144,9 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .IsRequired()
                         .HasColumnType("varchar(255)");
 
+                    b.Property<DateTime>("WeekStartDate")
+                        .HasColumnType("datetime(6)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("UserId");
