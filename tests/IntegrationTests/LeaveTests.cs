@@ -277,4 +277,37 @@ public class LeaveTests
         // Also verify the user's email is present
         StringAssert.Contains(html, email, "The Team Calendar page should contain the user's email.");
     }
+
+    [TestMethod]
+    public async Task IncomingViewRendersTest()
+    {
+        var email = $"admin-{Guid.NewGuid()}@aiursoft.com";
+        var password = "Test-Password-123";
+
+        // 1. Register
+        var registerToken = await GetAntiCsrfToken("/Account/Register");
+        var registerContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Email", email },
+            { "Password", password },
+            { "ConfirmPassword", password },
+            { "__RequestVerificationToken", registerToken }
+        });
+        await _http.PostAsync("/Account/Register", registerContent);
+
+        // 2. Visit Incoming (Requires permission, but seeding usually gives admin rights or first user is admin)
+        var response = await _http.GetAsync("/Leave/Incoming");
+        Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
+
+        var html = await response.Content.ReadAsStringAsync();
+
+        // 3. Verify table headers (including the ones we fixed)
+        StringAssert.Contains(html, "Applicant", "Incoming view should have 'Applicant' column.");
+        StringAssert.Contains(html, "Type", "Incoming view should have 'Type' column.");
+        StringAssert.Contains(html, "Period", "Incoming view should have 'Period' column.");
+        StringAssert.Contains(html, "Days", "Incoming view should have 'Days' column.");
+        StringAssert.Contains(html, "Reason", "Incoming view should have 'Reason' column.");
+        StringAssert.Contains(html, "Submitted", "Incoming view should have 'Submitted' column.");
+        StringAssert.Contains(html, "Actions", "Incoming view should have 'Actions' column.");
+    }
 }

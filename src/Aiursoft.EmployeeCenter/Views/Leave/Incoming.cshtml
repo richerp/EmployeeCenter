@@ -193,10 +193,8 @@
                                         <div><label data-utc-time="@item.StartDate.ToHtmlDateTime()"></label></div>
                                         <small class="text-muted">@Localizer["to"] <label data-utc-time="@item.EndDate.ToHtmlDateTime()"></label></small>
                                     </td>
-                                        {
-                                            <text>@item.Reason</text>
-                                        }
-                                    </td>
+                                    <td>@item.TotalDays.ToString("0.##")</td>
+                                    <td>@item.Reason</td>
                                     <td><label class="text-muted" data-utc-time="@item.SubmittedAt.ToHtmlDateTime()"></label></td>
                                     <td>
                                         <div class="d-flex gap-2">
