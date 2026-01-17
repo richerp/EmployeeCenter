@@ -218,6 +218,74 @@ public class WeeklyReportTests
     }
 
     [TestMethod]
+    public async Task TestWeeklyReportMissingStatus()
+    {
+        var email = $"test-status-{Guid.NewGuid()}@aiursoft.com";
+        var password = "Test-Password-123";
+
+        // 1. Register and Grant Permission
+        var registerToken = await GetAntiCsrfToken("/Account/Register");
+        var registerContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Email", email },
+            { "Password", password },
+            { "ConfirmPassword", password },
+            { "__RequestVerificationToken", registerToken }
+        });
+        await _http.PostAsync("/Account/Register", registerContent);
+        var userId = await GetUserIdByEmail(email);
+        await GrantPermission(userId, AppPermissionNames.CanCreateWeeklyReport);
+        await LoginAs(email, password);
+
+        // 2. Initially, should be critical (Red) as last 4 weeks are missing
+        var indexResponse = await _http.GetAsync("/WeeklyReport/Index");
+        var indexHtml = await indexResponse.Content.ReadAsStringAsync();
+        Assert.Contains("Extremely Dangerous!", indexHtml);
+        Assert.Contains("You haven't submitted any reports in the last 4 weeks!", indexHtml);
+
+        // 3. Submit one report (this week)
+        var now = DateTime.UtcNow;
+        var offset = (int)now.DayOfWeek;
+        var thisWeekStart = now.AddDays(-offset).Date;
+        var weekStartStr = thisWeekStart.ToString("yyyy-MM-dd");
+
+        var createToken = await GetAntiCsrfToken("/WeeklyReport/Index");
+        var createContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "content", "Report for this week" },
+            { "weekStartDate", weekStartStr },
+            { "__RequestVerificationToken", createToken }
+        });
+        await _http.PostAsync("/WeeklyReport/Create", createContent);
+
+        // 4. Now should be Warning (Yellow) as 3 weeks are still missing
+        indexResponse = await _http.GetAsync("/WeeklyReport/Index");
+        indexHtml = await indexResponse.Content.ReadAsStringAsync();
+        Assert.Contains("Incomplete Submission", indexHtml);
+        Assert.Contains("You have 3 missing report(s) in the last 4 weeks.", indexHtml);
+
+        // 5. Submit 3 more reports for past weeks
+        for (int i = 1; i <= 3; i++)
+        {
+            var pastWeekStart = thisWeekStart.AddDays(-i * 7);
+            var pastWeekStr = pastWeekStart.ToString("yyyy-MM-dd");
+            createContent = new FormUrlEncodedContent(new Dictionary<string, string>
+            {
+                { "content", $"Report for week -{i}" },
+                { "weekStartDate", pastWeekStr },
+                { "__RequestVerificationToken", createToken }
+            });
+            await _http.PostAsync("/WeeklyReport/Create", createContent);
+        }
+
+        // 6. Now should be Success (Green)
+        indexResponse = await _http.GetAsync("/WeeklyReport/Index");
+        indexHtml = await indexResponse.Content.ReadAsStringAsync();
+        Assert.Contains("Everything is up to date!", indexHtml);
+        Assert.Contains("Your reports for the last 4 weeks are all submitted.", indexHtml);
+    }
+
+    [TestMethod]
     public async Task TestEditWeeklyReport()
     {
         var email = $"test-edit-{Guid.NewGuid()}@aiursoft.com";

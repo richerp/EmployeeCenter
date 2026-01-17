@@ -83,17 +83,14 @@ public class WeeklyReportController(
             }
         }
 
-        // Check for missing reports in the last 4 weeks (excluding current week if desired, or including)
-        // Requirement: "Historically 4 weeks... if exists a week didn't write, warn."
-        // Usually implies past weeks. Let's check previous 4 weeks.
-        var hasRecentMissing = false;
-        for (int i = 1; i <= 4; i++)
+        // Check for missing reports in the last 4 weeks (including current week)
+        var missingWeeksCount = 0;
+        for (int i = 0; i < 4; i++)
         {
-            var pastWeek = thisWeekStart.AddDays(-i * 7);
-            if (!existingWeeks.Contains(pastWeek))
+            var targetWeek = thisWeekStart.AddDays(-i * 7);
+            if (!existingWeeks.Contains(targetWeek))
             {
-                hasRecentMissing = true;
-                break;
+                missingWeeksCount++;
             }
         }
 
@@ -107,7 +104,9 @@ public class WeeklyReportController(
             NotepadContent = notepad?.Content,
             CurrentWeekSubmitted = submittedThisWeek,
             AvailableWeeks = availableWeeks,
-            HasRecentMissingReports = hasRecentMissing,
+            HasRecentMissingReports = missingWeeksCount > 0,
+            CriticalMissingReports = missingWeeksCount >= 4,
+            MissingWeeksCount = missingWeeksCount,
             FilterUserId = userId
         };
 

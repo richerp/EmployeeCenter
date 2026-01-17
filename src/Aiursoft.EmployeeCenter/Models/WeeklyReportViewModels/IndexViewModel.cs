@@ -22,6 +22,8 @@ public class IndexViewModel : UiStackLayoutViewModel
 
     public Dictionary<DateTime, string> AvailableWeeks { get; set; } = new();
     public bool HasRecentMissingReports { get; set; }
+    public bool CriticalMissingReports { get; set; }
+    public int MissingWeeksCount { get; set; }
     
     public string? FilterUserId { get; set; }
     public User? FilterUser { get; set; }
