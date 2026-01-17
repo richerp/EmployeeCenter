@@ -50,14 +50,52 @@ public class WeeklyReportController(
 
         var notepad = await dbContext.Notepads.FirstOrDefaultAsync(n => n.UserId == user.Id);
         
-        // Check if current week report is submitted (assume week starts on Monday)
+        // Logic for Week Selection and Missing Reports
+        // Week starts on Sunday
         var now = DateTime.UtcNow;
-        var offset = (int)now.DayOfWeek - (int)DayOfWeek.Monday;
-        if (offset < 0) offset += 7;
-        var startOfWeek = now.AddDays(-offset).Date;
+        var offset = (int)now.DayOfWeek;
+        var thisWeekStart = now.AddDays(-offset).Date;
         
-        var submittedThisWeek = await dbContext.WeeklyReports
-            .AnyAsync(r => r.UserId == user.Id && r.CreateTime >= startOfWeek);
+        // Analyze last 50 weeks for the current user to find missing reports
+        var cutoffDate = thisWeekStart.AddDays(-49 * 7);
+        var userReports = await dbContext.WeeklyReports
+            .Where(r => r.UserId == user.Id && (r.WeekStartDate >= cutoffDate || r.CreateTime >= cutoffDate))
+            .Select(r => new { r.WeekStartDate, r.CreateTime })
+            .ToListAsync();
+
+        var existingWeeks = userReports
+            .Select(r => r.WeekStartDate != DateTime.MinValue 
+                ? r.WeekStartDate 
+                : r.CreateTime.AddDays(-(int)r.CreateTime.DayOfWeek).Date)
+            .ToHashSet();
+
+        var availableWeeks = new Dictionary<DateTime, string>();
+        for (int i = 0; i < 50; i++)
+        {
+            var weekStart = thisWeekStart.AddDays(-i * 7);
+            if (!existingWeeks.Contains(weekStart))
+            {
+                var label = $"{weekStart:yyyy-MM-dd} ~ {weekStart.AddDays(6):yyyy-MM-dd}";
+                if (weekStart == thisWeekStart) label += " (Current Week)";
+                availableWeeks.Add(weekStart, label);
+            }
+        }
+
+        // Check for missing reports in the last 4 weeks (excluding current week if desired, or including)
+        // Requirement: "Historically 4 weeks... if exists a week didn't write, warn."
+        // Usually implies past weeks. Let's check previous 4 weeks.
+        var hasRecentMissing = false;
+        for (int i = 1; i <= 4; i++)
+        {
+            var pastWeek = thisWeekStart.AddDays(-i * 7);
+            if (!existingWeeks.Contains(pastWeek))
+            {
+                hasRecentMissing = true;
+                break;
+            }
+        }
+
+        var submittedThisWeek = existingWeeks.Contains(thisWeekStart);
 
         var model = new IndexViewModel
         {
@@ -66,6 +104,8 @@ public class WeeklyReportController(
             CanCreateForAnyone = canCreateForAnyone,
             NotepadContent = notepad?.Content,
             CurrentWeekSubmitted = submittedThisWeek,
+            AvailableWeeks = availableWeeks,
+            HasRecentMissingReports = hasRecentMissing,
             FilterUserId = userId
         };
 
@@ -86,7 +126,7 @@ public class WeeklyReportController(
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create(string content, string? onBehalfOf)
+    public async Task<IActionResult> Create(string content, string? onBehalfOf, DateTime? weekStartDate)
     {
         if (string.IsNullOrWhiteSpace(content))
         {
@@ -112,12 +152,46 @@ public class WeeklyReportController(
         {
             return Unauthorized();
         }
+        
+        // Week validation
+        var now = DateTime.UtcNow;
+        var offset = (int)now.DayOfWeek;
+        var thisWeekStart = now.AddDays(-offset).Date;
+        var targetWeek = weekStartDate ?? thisWeekStart;
+
+        // Ensure targetWeek is a Sunday
+        if (targetWeek.DayOfWeek != DayOfWeek.Sunday)
+        {
+             // Fallback or error. Let's align it just in case.
+             targetWeek = targetWeek.AddDays(-(int)targetWeek.DayOfWeek).Date;
+        }
+
+        // Verify it is within allowed range (last 50 weeks)
+        if (targetWeek < thisWeekStart.AddDays(-50 * 7) || targetWeek > thisWeekStart)
+        {
+            // Invalid date
+            return RedirectToAction(nameof(Index));
+        }
+
+        // Check if report already exists for this week
+        var exists = await dbContext.WeeklyReports
+            .AnyAsync(r => r.UserId == targetUserId && 
+                           (r.WeekStartDate == targetWeek || 
+                           (r.WeekStartDate == DateTime.MinValue && r.CreateTime >= targetWeek && r.CreateTime < targetWeek.AddDays(7))));
+
+        if (exists)
+        {
+             // Already submitted
+             // Maybe show error or just redirect
+             return RedirectToAction(nameof(Index));
+        }
 
         var report = new WeeklyReport
         {
             UserId = targetUserId,
             Content = content,
-            CreateTime = DateTime.UtcNow
+            CreateTime = DateTime.UtcNow,
+            WeekStartDate = targetWeek
         };
 
         dbContext.WeeklyReports.Add(report);

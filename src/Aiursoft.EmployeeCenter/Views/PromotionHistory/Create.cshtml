@@ -65,41 +65,39 @@
     </div>
 </div>
 
-@section scripts {
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const userIdHidden = document.getElementById('user-id-hidden-UserId');
-            const oldJobLevelInput = document.getElementById('OldJobLevel');
-            const oldTitleInput = document.getElementById('OldTitle');
-            
-            let lastUserId = userIdHidden.value;
-            
-            // If we have an initial UserId, fetch it
-            if (lastUserId) {
-                fetchUserPromotionInfo(lastUserId);
-            }
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const userIdHidden = document.getElementById('user-id-hidden-UserId');
+        const oldJobLevelInput = document.getElementById('OldJobLevel');
+        const oldTitleInput = document.getElementById('OldTitle');
+        
+        let lastUserId = userIdHidden.value;
+        
+        // If we have an initial UserId, fetch it
+        if (lastUserId) {
+            fetchUserPromotionInfo(lastUserId);
+        }
 
-            setInterval(() => {
-                if (userIdHidden.value !== lastUserId) {
-                    lastUserId = userIdHidden.value;
-                    if (lastUserId) {
-                        fetchUserPromotionInfo(lastUserId);
-                    } else {
-                        oldJobLevelInput.value = '';
-                        oldTitleInput.value = '';
-                    }
+        setInterval(() => {
+            if (userIdHidden.value !== lastUserId) {
+                lastUserId = userIdHidden.value;
+                if (lastUserId) {
+                    fetchUserPromotionInfo(lastUserId);
+                } else {
+                    oldJobLevelInput.value = '';
+                    oldTitleInput.value = '';
                 }
-            }, 300);
-
-            function fetchUserPromotionInfo(userId) {
-                fetch(`/api/users/details/${userId}`)
-                    .then(response => response.json())
-                    .then(data => {
-                        oldJobLevelInput.value = data.jobLevel || '';
-                        oldTitleInput.value = data.title || '';
-                    })
-                    .catch(error => console.error('Error fetching user info:', error));
             }
-        });
-    </script>
-}
+        }, 300);
+
+        function fetchUserPromotionInfo(userId) {
+            fetch(`/api/users/details/${userId}`)
+                .then(response => response.json())
+                .then(data => {
+                    oldJobLevelInput.value = data.jobLevel || '';
+                    oldTitleInput.value = data.title || '';
+                })
+                .catch(error => console.error('Error fetching user info:', error));
+        }
+    });
+</script>

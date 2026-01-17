@@ -17,5 +17,7 @@ public class WeeklyReport
     [Required]
     public string Content { get; set; } = string.Empty;
 
+    public DateTime WeekStartDate { get; set; }
+
     public DateTime CreateTime { get; set; } = DateTime.UtcNow;
 }

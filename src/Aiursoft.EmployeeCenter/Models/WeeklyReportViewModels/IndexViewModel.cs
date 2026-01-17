@@ -19,6 +19,9 @@ public class IndexViewModel : UiStackLayoutViewModel
     
     public bool CurrentWeekSubmitted { get; set; }
     public string? NotepadContent { get; set; }
+
+    public Dictionary<DateTime, string> AvailableWeeks { get; set; } = new();
+    public bool HasRecentMissingReports { get; set; }
     
     public string? FilterUserId { get; set; }
     public User? FilterUser { get; set; }

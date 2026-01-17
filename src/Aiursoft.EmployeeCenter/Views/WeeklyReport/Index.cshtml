@@ -11,10 +11,32 @@
                         <h5 class="card-title mb-0">@Localizer["New Weekly Report"]</h5>
                     </div>
                     <div class="card-body">
+                        @if (Model.HasRecentMissingReports)
+                        {
+                            <div class="alert alert-warning d-flex align-items-center mb-3">
+                                <i class="align-middle me-2" data-lucide="alert-triangle"></i>
+                                <div>
+                                    <strong>@Localizer["Missing Reports"]</strong>
+                                    <span class="d-block small">@Localizer["You have missed submitting weekly reports in the last 4 weeks. Please catch up!"]</span>
+                                </div>
+                            </div>
+                        }
+
                         <form asp-action="Create" method="post">
                             <div class="mb-3">
                                 <textarea name="content" class="form-control" rows="4" placeholder="@Localizer["What have you done this week? (Markdown supported)"]" required></textarea>
                             </div>
+                            
+                            <div class="mb-3">
+                                <label class="form-label small text-muted">@Localizer["Select Week"]</label>
+                                <select name="weekStartDate" class="form-select">
+                                    @foreach (var week in Model.AvailableWeeks.OrderByDescending(w => w.Key))
+                                    {
+                                        <option value="@week.Key.ToString("yyyy-MM-dd")">@week.Value</option>
+                                    }
+                                </select>
+                            </div>
+
                             <div class="d-flex align-items-center justify-content-between">
                                 <div class="flex-grow-1 me-3">
                                     @if (Model.CanCreateForAnyone)
