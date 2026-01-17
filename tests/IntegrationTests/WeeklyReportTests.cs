@@ -1,13 +1,4 @@
 
-using System.Net;
-using System.Text.RegularExpressions;
-using Aiursoft.EmployeeCenter.Entities;
-using Aiursoft.DbTools;
-using Aiursoft.CSTools.Tools;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Aiursoft.EmployeeCenter.Authorization;
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
@@ -137,7 +128,7 @@ public class WeeklyReportTests
 
         // Grant Permission
         var userId = await GetUserIdByEmail(email);
-        await GrantPermission(userId, Authorization.AppPermissionNames.CanCreateWeeklyReport);
+        await GrantPermission(userId, AppPermissionNames.CanCreateWeeklyReport);
 
         // Re-Login to refresh claims
         await LoginAs(email, password);
@@ -148,7 +139,7 @@ public class WeeklyReportTests
         var indexHtml = await indexResponse.Content.ReadAsStringAsync();
         
         // Should show "New Weekly Report"
-        Assert.IsTrue(indexHtml.Contains("New Weekly Report"));
+        Assert.Contains("New Weekly Report", indexHtml);
         // Assert.IsFalse(indexHtml.Contains("New Weekly Report"));
 
         
@@ -198,7 +189,7 @@ public class WeeklyReportTests
         {
             var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
             var reports = await db.WeeklyReports.Where(r => r.UserId == userId).ToListAsync();
-            Assert.AreEqual(1, reports.Count); // Still 1
+            Assert.HasCount(1, reports); // Still 1
             Assert.AreEqual("My first report", reports[0].Content);
         }
 
@@ -219,7 +210,7 @@ public class WeeklyReportTests
         {
             var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
             var reports = await db.WeeklyReports.Where(r => r.UserId == userId).OrderBy(r => r.WeekStartDate).ToListAsync();
-            Assert.AreEqual(2, reports.Count);
+            Assert.HasCount(2, reports);
             Assert.AreEqual(pastWeekStart, reports[0].WeekStartDate);
             Assert.AreEqual("Past report", reports[0].Content);
             Assert.AreEqual(thisWeekStart, reports[1].WeekStartDate);
