@@ -45,7 +45,10 @@
                                             }
                                         }
                                     }
-                                    catch {}
+                                    catch (Exception)
+                                    {
+                                        // Meta is not a valid JSON. Ignore it.
+                                    }
                                 }
 
                                 foreach (var opt in options)
