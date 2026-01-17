@@ -95,7 +95,7 @@
                                         <i class="align-middle" data-lucide="check-circle"></i>
                                     </div>
                                     <div class="alert-message">
-                                        @Localizer["Completed at"] @completedLog!.CompletionTime?.ToLocalTime().ToString("g")
+                                        @Localizer["Completed at"] <label class="text-muted" data-utc-time="@completedLog!.CompletionTime?.ToHtmlDateTime()"></label>
                                     </div>
                                 </div>
                             }
@@ -184,7 +184,7 @@
                                             @Localizer["Wish your career takes off at Aiursoft!"]
                                         </p>
                                         <div class="mt-4">
-                                            <small class="text-muted">@DateTime.Now.ToShortDateString()</small>
+                                            <small class="text-muted" data-utc-time="@DateTime.UtcNow.ToHtmlDateTime()"></small>
                                         </div>
                                     </div>
                                 </div>

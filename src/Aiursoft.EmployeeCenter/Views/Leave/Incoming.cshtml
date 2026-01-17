@@ -190,21 +190,12 @@
                                         }
                                     </td>
                                     <td>
-                                        <div>@item.StartDate.ToString("yyyy-MM-dd")</div>
-                                        <small class="text-muted">@Localizer["to"] @item.EndDate.ToString("yyyy-MM-dd")</small>
+                                        <div><label data-utc-time="@item.StartDate.ToHtmlDateTime()"></label></div>
+                                        <small class="text-muted">@Localizer["to"] <label data-utc-time="@item.EndDate.ToHtmlDateTime()"></label></small>
                                     </td>
                                     <td>@item.TotalDays.ToString("0.##")</td>
-                                    <td title="@item.Reason">
-                                        @if (item.Reason.Length > 50)
-                                        {
-                                            <text>@item.Reason.Substring(0, 50)...</text>
-                                        }
-                                        else
-                                        {
-                                            <text>@item.Reason</text>
-                                        }
-                                    </td>
-                                    <td>@item.SubmittedAt.ToString("yyyy-MM-dd")</td>
+                                    <td>@item.Reason</td>
+                                    <td><label class="text-muted" data-utc-time="@item.SubmittedAt.ToHtmlDateTime()"></label></td>
                                     <td>
                                         <div class="d-flex gap-2">
                                             <form asp-action="Review" method="post" class="d-inline">
@@ -280,8 +271,8 @@
                                         }
                                     </td>
                                     <td>
-                                        <div>@item.StartDate.ToString("yyyy-MM-dd")</div>
-                                        <small class="text-muted">@Localizer["to"] @item.EndDate.ToString("yyyy-MM-dd")</small>
+                                        <div><label data-utc-time="@item.StartDate.ToHtmlDateTime()"></label></div>
+                                        <small class="text-muted">@Localizer["to"] <label data-utc-time="@item.EndDate.ToHtmlDateTime()"></label></small>
                                     </td>
                                     <td>@item.TotalDays.ToString("0.##")</td>
                                     <td>
@@ -295,7 +286,7 @@
                                         }
                                     </td>
                                     <td>@(item.ReviewedBy?.DisplayName ?? "-")</td>
-                                    <td>@item.ReviewedAt?.ToString("yyyy-MM-dd HH:mm")</td>
+                                    <td><label class="text-muted" data-utc-time="@item.ReviewedAt?.ToHtmlDateTime()"></label></td>
                                 </tr>
                             }
                         }

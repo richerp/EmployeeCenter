@@ -30,7 +30,7 @@
                         <td>
                             <code class="text-truncate d-inline-block" style="max-width: 300px;">@item.PublicKey</code>
                         </td>
-                        <td>@item.CreationTime.ToString("yyyy-MM-dd HH:mm")</td>
+                        <td><label class="text-muted" data-utc-time="@item.CreationTime.ToHtmlDateTime()"></label></td>
                         <td class="text-end">
                             <div class="btn-group">
                                 <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary">

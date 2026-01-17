@@ -202,8 +202,8 @@
                                         }
                                     </td>
                                     <td>
-                                        <div>@item.StartDate.ToString("yyyy-MM-dd") - @item.EndDate.ToString("yyyy-MM-dd")</div>
-                                        <small class="text-muted">@Localizer["Submitted"] @item.SubmittedAt.ToString("yyyy-MM-dd")</small>
+                                        <div><label data-utc-time="@item.StartDate.ToHtmlDateTime()"></label> - <label data-utc-time="@item.EndDate.ToHtmlDateTime()"></label></div>
+                                        <small class="text-muted">@Localizer["Submitted"] <label class="text-muted" data-utc-time="@item.SubmittedAt.ToHtmlDateTime()"></label></small>
                                     </td>
                                     <td>@item.TotalDays.ToString("0.##")</td>
                                     <td>
@@ -272,7 +272,7 @@
                         <i class="align-middle text-info" data-lucide="calendar-heart" style="width: 48px; height: 48px;"></i>
                     </div>
                     <h6 class="text-center mb-3">
-                        @Model.NextUpcomingLeave.StartDate.ToString("yyyy-MM-dd") - @Model.NextUpcomingLeave.EndDate.ToString("yyyy-MM-dd")
+                        <label data-utc-time="@Model.NextUpcomingLeave.StartDate.ToHtmlDateTime()"></label> - <label data-utc-time="@Model.NextUpcomingLeave.EndDate.ToHtmlDateTime()"></label>
                     </h6>
                     <p class="text-center text-muted mb-3">
                         @Localizer["in"] <strong>@Model.DaysUntilNextLeave</strong> @Localizer["days"]
