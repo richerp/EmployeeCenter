@@ -1,12 +1,18 @@
 @using Aiursoft.EmployeeCenter.Services
 @using Aiursoft.EmployeeCenter.Entities
+@using Microsoft.AspNetCore.Identity
 @model List<WeeklyReport>
 @inject Aiursoft.EmployeeCenter.Services.FileStorage.StorageService StorageService
+@inject UserManager<User> UserManager
+
+@{
+    var currentUserId = UserManager.GetUserId(User);
+}
 
 @foreach (var report in Model)
 {
     <div class="card mb-4 weekly-report-card" data-create-time="@report.CreateTime.ToString("O")">
-        <div class="card-header d-flex align-items-center">
+        <div class="card-header d-flex align-items-center justify-content-between">
             <a asp-controller="WeeklyReport" asp-action="Index" asp-route-userId="@report.UserId" class="d-flex align-items-center text-decoration-none">
                 <img src="@(StorageService.RelativePathToInternetUrl(report.User!.AvatarRelativePath) + "?w=100&square=true")" 
                      class="rounded-circle me-3" 
@@ -17,6 +23,13 @@
                     <small class="text-muted">@report.CreateTime.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</small>
                 </div>
             </a>
+            
+            @if (report.UserId == currentUserId && report.CreateTime >= DateTime.UtcNow.AddDays(-28))
+            {
+                <a asp-action="Edit" asp-route-id="@report.Id" class="btn btn-sm btn-outline-primary">
+                    <i class="align-middle me-1" data-lucide="edit-3"></i> @Localizer["Edit"]
+                </a>
+            }
         </div>
         <div class="card-body pb-1">
             <div class="markdown-body">

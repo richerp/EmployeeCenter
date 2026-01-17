@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Localization;
 
 namespace Aiursoft.EmployeeCenter.Controllers;
 
@@ -16,7 +17,8 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 public class WeeklyReportController(
     EmployeeCenterDbContext dbContext,
     UserManager<User> userManager,
-    IAuthorizationService authorizationService) : Controller
+    IAuthorizationService authorizationService,
+    IStringLocalizer<WeeklyReportController> localizer) : Controller
 {
     [RenderInNavBar(
         NavGroupName = "Career",
@@ -198,6 +200,65 @@ public class WeeklyReportController(
         await dbContext.SaveChangesAsync();
 
         return RedirectToAction(nameof(Index), new { userId = (string.IsNullOrEmpty(onBehalfOf) || onBehalfOf == user.Id) ? null : onBehalfOf });
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> Edit(int id)
+    {
+        var user = await userManager.GetUserAsync(User);
+        if (user == null) return Unauthorized();
+
+        var report = await dbContext.WeeklyReports
+            .Include(r => r.User)
+            .FirstOrDefaultAsync(r => r.Id == id);
+
+        if (report == null) return NotFound();
+
+        if (report.UserId != user.Id)
+        {
+            return Unauthorized();
+        }
+
+        if (report.CreateTime < DateTime.UtcNow.AddDays(-28))
+        {
+            return BadRequest(localizer["You can only edit reports published within 4 weeks."]);
+        }
+
+        var model = new EditViewModel
+        {
+            Id = report.Id,
+            Content = report.Content,
+            WeekStartDate = report.WeekStartDate,
+            User = report.User
+        };
+
+        return this.StackView(model);
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Edit(EditViewModel model)
+    {
+        var user = await userManager.GetUserAsync(User);
+        if (user == null) return Unauthorized();
+
+        var report = await dbContext.WeeklyReports.FirstOrDefaultAsync(r => r.Id == model.Id);
+        if (report == null) return NotFound();
+
+        if (report.UserId != user.Id)
+        {
+            return Unauthorized();
+        }
+
+        if (report.CreateTime < DateTime.UtcNow.AddDays(-28))
+        {
+            return BadRequest(localizer["You can only edit reports published within 4 weeks."]);
+        }
+
+        report.Content = model.Content;
+        await dbContext.SaveChangesAsync();
+
+        return RedirectToAction(nameof(Index), new { userId = user.Id });
     }
 
     [HttpPost]

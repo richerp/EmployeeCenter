@@ -216,4 +216,119 @@ public class WeeklyReportTests
             Assert.AreEqual(thisWeekStart, reports[1].WeekStartDate);
         }
     }
+
+    [TestMethod]
+    public async Task TestEditWeeklyReport()
+    {
+        var email = $"test-edit-{Guid.NewGuid()}@aiursoft.com";
+        var password = "Test-Password-123";
+
+        // 1. Register and Login
+        var registerToken = await GetAntiCsrfToken("/Account/Register");
+        var registerContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Email", email },
+            { "Password", password },
+            { "ConfirmPassword", password },
+            { "__RequestVerificationToken", registerToken }
+        });
+        await _http.PostAsync("/Account/Register", registerContent);
+        var userId = await GetUserIdByEmail(email);
+        await GrantPermission(userId, AppPermissionNames.CanCreateWeeklyReport);
+        await LoginAs(email, password);
+
+        // 2. Submit a report
+        var createToken = await GetAntiCsrfToken("/WeeklyReport/Index");
+        var createContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "content", "Original Content" },
+            { "weekStartDate", DateTime.UtcNow.AddDays(-(int)DateTime.UtcNow.DayOfWeek).ToString("yyyy-MM-dd") },
+            { "__RequestVerificationToken", createToken }
+        });
+        await _http.PostAsync("/WeeklyReport/Create", createContent);
+
+        int reportId;
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var report = await db.WeeklyReports.FirstAsync(r => r.UserId == userId);
+            reportId = report.Id;
+        }
+
+        // 3. Edit the report
+        var editToken = await GetAntiCsrfToken($"/WeeklyReport/Edit/{reportId}");
+        var editContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Id", reportId.ToString() },
+            { "Content", "Updated Content" },
+            { "__RequestVerificationToken", editToken }
+        });
+        var editResponse = await _http.PostAsync("/WeeklyReport/Edit", editContent);
+        Assert.AreEqual(HttpStatusCode.Found, editResponse.StatusCode);
+
+        // 4. Verify in DB
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var report = await db.WeeklyReports.FirstAsync(r => r.Id == reportId);
+            Assert.AreEqual("Updated Content", report.Content);
+        }
+
+        // 5. Try to edit someone else's report
+        var otherEmail = $"other-{Guid.NewGuid()}@aiursoft.com";
+        var registerTokenOther = await GetAntiCsrfToken("/Account/Register");
+        var registerContentOther = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Email", otherEmail },
+            { "Password", password },
+            { "ConfirmPassword", password },
+            { "__RequestVerificationToken", registerTokenOther }
+        });
+        await _http.PostAsync("/Account/Register", registerContentOther);
+        
+        var otherId = await GetUserIdByEmail(otherEmail);
+        await GrantPermission(otherId, AppPermissionNames.CanCreateWeeklyReport); // Grant permission so we can get token from Index
+        
+        await LoginAs(otherEmail, password);
+
+        var editGetResponseOther = await _http.GetAsync($"/WeeklyReport/Edit/{reportId}");
+        Assert.AreEqual(HttpStatusCode.Unauthorized, editGetResponseOther.StatusCode);
+
+        var tokenForOther = await GetAntiCsrfToken("/WeeklyReport/Index");
+        var editContentOther = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Id", reportId.ToString() },
+            { "Content", "Try Update Other's Content" },
+            { "__RequestVerificationToken", tokenForOther }
+        });
+        var editResponseOther = await _http.PostAsync("/WeeklyReport/Edit", editContentOther);
+        Assert.AreEqual(HttpStatusCode.Unauthorized, editResponseOther.StatusCode);
+
+        // 6. Try to edit a report older than 4 weeks
+        await LoginAs(email, password);
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var oldReport = new WeeklyReport
+            {
+                UserId = userId,
+                Content = "Old Content",
+                CreateTime = DateTime.UtcNow.AddDays(-30),
+                WeekStartDate = DateTime.UtcNow.AddDays(-35)
+            };
+            db.WeeklyReports.Add(oldReport);
+            await db.SaveChangesAsync();
+            reportId = oldReport.Id;
+        }
+
+        var editTokenOld = await GetAntiCsrfToken($"/WeeklyReport/Edit/{reportId}");
+        var oldEditContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Id", reportId.ToString() },
+            { "Content", "Try Update Old Content" },
+            { "__RequestVerificationToken", editTokenOld }
+        });
+        var oldEditResponse = await _http.PostAsync("/WeeklyReport/Edit", oldEditContent);
+        Assert.AreEqual(HttpStatusCode.BadRequest, oldEditResponse.StatusCode);
+    }
 }
