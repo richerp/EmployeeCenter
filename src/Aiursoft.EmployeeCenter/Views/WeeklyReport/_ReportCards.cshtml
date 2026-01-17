@@ -11,7 +11,9 @@
 
 @foreach (var report in Model)
 {
-    <div class="card mb-4 weekly-report-card" data-create-time="@report.CreateTime.ToString("O")">
+    <div class="card mb-4 weekly-report-card" 
+         data-create-time="@report.CreateTime.ToString("O")"
+         data-week-start-date="@report.WeekStartDate.ToString("O")">
         <div class="card-header d-flex align-items-center justify-content-between">
             <a asp-controller="WeeklyReport" asp-action="Index" asp-route-userId="@report.UserId" class="d-flex align-items-center text-decoration-none">
                 <img src="@(StorageService.RelativePathToInternetUrl(report.User!.AvatarRelativePath) + "?w=100&square=true")" 

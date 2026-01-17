@@ -187,9 +187,10 @@
             const lastCard = container.querySelector('.weekly-report-card:last-child');
             if (!lastCard) return;
 
-            const beforeTime = lastCard.getAttribute('data-create-time');
+            const beforeCreate = lastCard.getAttribute('data-create-time');
+            const beforeWeek = lastCard.getAttribute('data-week-start-date');
             try {
-                const response = await fetch(`/WeeklyReport/LoadMore?before=${encodeURIComponent(beforeTime)}&userId=${filterUserId}`);
+                const response = await fetch(`/WeeklyReport/LoadMore?beforeCreate=${encodeURIComponent(beforeCreate)}&beforeWeek=${encodeURIComponent(beforeWeek)}&userId=${filterUserId}`);
                 if (response.ok) {
                     const html = await response.text();
                     if (html.trim() === '') {
