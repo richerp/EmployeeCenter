@@ -91,8 +91,10 @@
                             @if (isCompleted)
                             {
                                 <div class="alert alert-success" role="alert">
+                                    <div class="alert-icon">
+                                        <i class="align-middle" data-lucide="check-circle"></i>
+                                    </div>
                                     <div class="alert-message">
-                                        <i class="align-middle me-2" data-lucide="check-circle"></i>
                                         @Localizer["Completed at"] @completedLog!.CompletionTime?.ToLocalTime().ToString("g")
                                     </div>
                                 </div>
@@ -104,8 +106,10 @@
                                 var remaining = Math.Max(0, 30 - secondsSinceStart);
 
                                 <div class="alert alert-info" role="alert">
+                                    <div class="alert-icon">
+                                        <i class="align-middle" data-lucide="loader"></i>
+                                    </div>
                                     <div class="alert-message">
-                                        <i class="align-middle me-2" data-lucide="loader"></i>
                                         @Localizer["Task in progress..."]
                                     </div>
                                 </div>
@@ -136,8 +140,10 @@
                             else
                             {
                                 <div class="alert alert-warning" role="alert">
+                                    <div class="alert-icon">
+                                        <i class="align-middle" data-lucide="alert-circle"></i>
+                                    </div>
                                     <div class="alert-message">
-                                        <i class="align-middle me-2" data-lucide="alert-circle"></i>
                                         @Localizer["This task is pending."]
                                     </div>
                                 </div>

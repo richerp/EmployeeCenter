@@ -36,7 +36,9 @@
 @if (Model.Error != null)
 {
     <div class="alert alert-danger" role="alert">
-        @Model.Error
+        <div class="alert-message">
+            @Model.Error
+        </div>
     </div>
 }
 
