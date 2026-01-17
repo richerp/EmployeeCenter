@@ -154,7 +154,7 @@ public class WeeklyReportTests
         var createToken = await GetAntiCsrfToken("/WeeklyReport/Index");
         var createContent = new FormUrlEncodedContent(new Dictionary<string, string>
         {
-            { "content", "My first report" },
+            { "content", "UNIQUE_REPORT_THIS_WEEK" },
             { "weekStartDate", weekStartStr },
             { "__RequestVerificationToken", createToken }
         });
@@ -168,7 +168,7 @@ public class WeeklyReportTests
             var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
             var report = await db.WeeklyReports.FirstOrDefaultAsync(r => r.UserId == userId);
             Assert.IsNotNull(report);
-            Assert.AreEqual("My first report", report.Content);
+            Assert.AreEqual("UNIQUE_REPORT_THIS_WEEK", report.Content);
             Assert.AreEqual(thisWeekStart, report.WeekStartDate);
         }
 
@@ -190,7 +190,7 @@ public class WeeklyReportTests
             var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
             var reports = await db.WeeklyReports.Where(r => r.UserId == userId).ToListAsync();
             Assert.HasCount(1, reports); // Still 1
-            Assert.AreEqual("My first report", reports[0].Content);
+            Assert.AreEqual("UNIQUE_REPORT_THIS_WEEK", reports[0].Content);
         }
 
         // 6. Submit for Past Week
@@ -199,7 +199,7 @@ public class WeeklyReportTests
 
         createContent = new FormUrlEncodedContent(new Dictionary<string, string>
         {
-            { "content", "Past report" },
+            { "content", "UNIQUE_REPORT_PAST_WEEK" },
             { "weekStartDate", pastWeekStr },
             { "__RequestVerificationToken", createToken }
         });
@@ -212,9 +212,58 @@ public class WeeklyReportTests
             var reports = await db.WeeklyReports.Where(r => r.UserId == userId).OrderBy(r => r.WeekStartDate).ToListAsync();
             Assert.HasCount(2, reports);
             Assert.AreEqual(pastWeekStart, reports[0].WeekStartDate);
-            Assert.AreEqual("Past report", reports[0].Content);
+            Assert.AreEqual("UNIQUE_REPORT_PAST_WEEK", reports[0].Content);
             Assert.AreEqual(thisWeekStart, reports[1].WeekStartDate);
         }
+
+        // 7. Verify sorting in Index
+        var sortedResponse = await _http.GetAsync("/WeeklyReport/Index");
+        var sortedHtml = await sortedResponse.Content.ReadAsStringAsync();
+        
+        // Find indices of the reports in the HTML
+        var indexFirst = sortedHtml.IndexOf("UNIQUE_REPORT_THIS_WEEK", StringComparison.Ordinal);
+        var indexPast = sortedHtml.IndexOf("UNIQUE_REPORT_PAST_WEEK", StringComparison.Ordinal);
+        
+        Assert.AreNotEqual(-1, indexFirst, "Could not find 'UNIQUE_REPORT_THIS_WEEK' in index");
+        Assert.AreNotEqual(-1, indexPast, "Could not find 'UNIQUE_REPORT_PAST_WEEK' in index");
+        
+        // Since we sort by WeekStartDate DESC, "UNIQUE_REPORT_THIS_WEEK" (this week) should appear BEFORE "UNIQUE_REPORT_PAST_WEEK" (past week)
+        Assert.IsLessThan(indexPast, indexFirst, "Reports are not sorted correctly by WeekStartDate DESC");
+
+        // 8. Verify sorting with same WeekStartDate but different CreateTime
+        var createToken2 = await GetAntiCsrfToken("/WeeklyReport/Index");
+        // Create another user to post in the same week
+        var otherEmail = $"sorting-test-{Guid.NewGuid()}@aiursoft.com";
+        var registerTokenOther = await GetAntiCsrfToken("/Account/Register");
+        var registerContentOther = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Email", otherEmail },
+            { "Password", password },
+            { "ConfirmPassword", password },
+            { "__RequestVerificationToken", registerTokenOther }
+        });
+        await _http.PostAsync("/Account/Register", registerContentOther);
+        var otherUserId = await GetUserIdByEmail(otherEmail);
+        await GrantPermission(otherUserId, AppPermissionNames.CanCreateWeeklyReport);
+        await LoginAs(otherEmail, password);
+
+        var createContent2 = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "content", "UNIQUE_REPORT_OTHER_USER_SAME_WEEK" },
+            { "weekStartDate", weekStartStr },
+            { "__RequestVerificationToken", createToken2 }
+        });
+        await _http.PostAsync("/WeeklyReport/Create", createContent2);
+
+        var finalResponse = await _http.GetAsync("/WeeklyReport/Index");
+        var finalHtml = await finalResponse.Content.ReadAsStringAsync();
+
+        var indexOther = finalHtml.IndexOf("UNIQUE_REPORT_OTHER_USER_SAME_WEEK", StringComparison.Ordinal);
+        indexFirst = finalHtml.IndexOf("UNIQUE_REPORT_THIS_WEEK", StringComparison.Ordinal);
+        
+        // Both are this week. "Other user report same week" was created LATER, so it should be ABOVE "My first report"
+        // Order: WeekStartDate DESC (same), then CreateTime DESC
+        Assert.IsLessThan(indexFirst, indexOther, "Reports are not sorted correctly by CreateTime DESC within same week");
     }
 
     [TestMethod]

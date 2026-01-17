@@ -46,7 +46,8 @@ public class WeeklyReportController(
         }
 
         var reports = await query
-            .OrderByDescending(r => r.CreateTime)
+            .OrderByDescending(r => r.WeekStartDate)
+            .ThenByDescending(r => r.CreateTime)
             .Take(10)
             .ToListAsync();
 
@@ -186,7 +187,7 @@ public class WeeklyReportController(
         dbContext.WeeklyReports.Add(report);
         await dbContext.SaveChangesAsync();
 
-        return RedirectToAction(nameof(Index), new { userId = (string.IsNullOrEmpty(onBehalfOf) || onBehalfOf == user.Id) ? null : onBehalfOf });
+        return RedirectToAction(nameof(Index));
     }
 
     [HttpGet]
@@ -245,7 +246,7 @@ public class WeeklyReportController(
         report.Content = model.Content;
         await dbContext.SaveChangesAsync();
 
-        return RedirectToAction(nameof(Index), new { userId = user.Id });
+        return RedirectToAction(nameof(Index));
     }
 
     [HttpPost]
@@ -277,11 +278,12 @@ public class WeeklyReportController(
     }
 
     [HttpGet]
-    public async Task<IActionResult> LoadMore(DateTime before, string? userId)
+    public async Task<IActionResult> LoadMore(DateTime beforeWeek, DateTime beforeCreate, string? userId)
     {
         var query = dbContext.WeeklyReports
             .Include(r => r.User)
-            .Where(r => r.CreateTime < before.ToUniversalTime())
+            .Where(r => r.WeekStartDate < beforeWeek.ToUniversalTime() || 
+                       (r.WeekStartDate == beforeWeek.ToUniversalTime() && r.CreateTime < beforeCreate.ToUniversalTime()))
             .AsNoTracking();
 
         if (!string.IsNullOrEmpty(userId))
@@ -290,7 +292,8 @@ public class WeeklyReportController(
         }
 
         var reports = await query
-            .OrderByDescending(r => r.CreateTime)
+            .OrderByDescending(r => r.WeekStartDate)
+            .ThenByDescending(r => r.CreateTime)
             .Take(10)
             .ToListAsync();
 
