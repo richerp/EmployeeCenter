@@ -84,6 +84,12 @@
   <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
     <value>Staat het permanent verwijderen van gebruikersaccounts toe.</value>
   </data>
+  <data name="Allows the user to create their own weekly reports." xml:space="preserve">
+    <value>Staat de gebruiker toe om hun eigen wekelijkse rapporten te maken.</value>
+  </data>
+  <data name="Allows the user to create weekly reports on behalf of any other user." xml:space="preserve">
+    <value>Staat de gebruiker toe om wekelijkse rapporten op te stellen namens een willekeurige andere gebruiker.</value>
+  </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Staats het bekijken van alle bedrijfscontracten, inclusief die die als privé zijn gemarkeerd.</value>
   </data>
@@ -134,6 +140,12 @@
   </data>
   <data name="Create Contract" xml:space="preserve">
     <value>Contract aanmaken</value>
+  </data>
+  <data name="Create Weekly Report" xml:space="preserve">
+    <value>Wekelijks verslag aanmaken</value>
+  </data>
+  <data name="Create Weekly Report for Anyone" xml:space="preserve">
+    <value>Wekelijks verslag voor iedereen maken</value>
   </data>
   <data name="Default permission for HR." xml:space="preserve">
     <value>Standaardmachtiging voor HR.</value>

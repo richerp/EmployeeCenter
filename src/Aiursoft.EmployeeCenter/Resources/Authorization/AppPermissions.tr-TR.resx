@@ -84,6 +84,12 @@
   <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
     <value>Kullanıcı hesaplarının kalıcı olarak silinmesine izin verir.</value>
   </data>
+  <data name="Allows the user to create their own weekly reports." xml:space="preserve">
+    <value>Kullanıcının kendi haftalık raporlarını oluşturmasına izin verir.</value>
+  </data>
+  <data name="Allows the user to create weekly reports on behalf of any other user." xml:space="preserve">
+    <value>Kullanıcıya herhangi bir başka kullanıcının adına haftalık raporlar oluşturabilme izni verir.</value>
+  </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Tüm şirket sözleşmelerinin, özel olarak işaretlenmiş olanların da dahil olmak üzere görüntülenmesine izin verir.</value>
   </data>
@@ -134,6 +140,12 @@
   </data>
   <data name="Create Contract" xml:space="preserve">
     <value>Sözleşme Oluştur</value>
+  </data>
+  <data name="Create Weekly Report" xml:space="preserve">
+    <value>Haftalık Rapor Oluştur</value>
+  </data>
+  <data name="Create Weekly Report for Anyone" xml:space="preserve">
+    <value>Herkesin İçin Haftalık Rapor Oluştur</value>
   </data>
   <data name="Default permission for HR." xml:space="preserve">
     <value>HR için varsayılan izin.</value>

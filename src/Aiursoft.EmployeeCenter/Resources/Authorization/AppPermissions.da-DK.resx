@@ -84,6 +84,12 @@
   <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
     <value>Giver mulighed for den permanente sletning af brugerkonti.</value>
   </data>
+  <data name="Allows the user to create their own weekly reports." xml:space="preserve">
+    <value>Giver brugeren mulighed for at oprette deres egne ugentlige rapporter.</value>
+  </data>
+  <data name="Allows the user to create weekly reports on behalf of any other user." xml:space="preserve">
+    <value>Giver brugeren mulighed for at oprette ugentlige rapporter i stedet for enhver anden bruger.</value>
+  </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Tillader visning af alle virksomhedskontrakter, herunder de, der er markeret som private.</value>
   </data>
@@ -134,6 +140,12 @@
   </data>
   <data name="Create Contract" xml:space="preserve">
     <value>Opret kontrakt</value>
+  </data>
+  <data name="Create Weekly Report" xml:space="preserve">
+    <value>Opret Ugentlig Rapport</value>
+  </data>
+  <data name="Create Weekly Report for Anyone" xml:space="preserve">
+    <value>Opret ugentlig rapport for enhver</value>
   </data>
   <data name="Default permission for HR." xml:space="preserve">
     <value>Standard tilladelse for HR.</value>

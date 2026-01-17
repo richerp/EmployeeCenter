@@ -84,6 +84,12 @@
   <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
     <value>Cho phép xóa vĩnh viễn tài khoản người dùng.</value>
   </data>
+  <data name="Allows the user to create their own weekly reports." xml:space="preserve">
+    <value>Cho phép người dùng tạo báo cáo hàng tuần của riêng mình.</value>
+  </data>
+  <data name="Allows the user to create weekly reports on behalf of any other user." xml:space="preserve">
+    <value>Cho phép người dùng tạo báo cáo hàng tuần thay mặt bất kỳ người dùng nào khác.</value>
+  </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Cho phép xem tất cả hợp đồng công ty, bao gồm cả những hợp đồng được đánh dấu là riêng tư.</value>
   </data>
@@ -134,6 +140,12 @@
   </data>
   <data name="Create Contract" xml:space="preserve">
     <value>Tạo hợp đồng</value>
+  </data>
+  <data name="Create Weekly Report" xml:space="preserve">
+    <value>Tạo báo cáo hàng tuần</value>
+  </data>
+  <data name="Create Weekly Report for Anyone" xml:space="preserve">
+    <value>Tạo Báo cáo Hàng tuần cho Bất kỳ Ai</value>
   </data>
   <data name="Default permission for HR." xml:space="preserve">
     <value>Quyền mặc định cho bộ phận nhân sự.</value>

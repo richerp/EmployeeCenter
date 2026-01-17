@@ -81,6 +81,12 @@
   <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
     <value>允許永久刪除用戶帳戶。</value>
   </data>
+  <data name="Allows the user to create their own weekly reports." xml:space="preserve">
+    <value>容許使用者建立自己的週報。</value>
+  </data>
+  <data name="Allows the user to create weekly reports on behalf of any other user." xml:space="preserve">
+    <value>容許使用者為任何其他使用者代為建立週報。</value>
+  </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>允許查看公司的所有合約，包括標記為私密的合約。</value>
   </data>
@@ -125,6 +131,12 @@
   </data>
   <data name="Create company contracts" xml:space="preserve">
     <value>建立公司合約</value>
+  </data>
+  <data name="Create Weekly Report" xml:space="preserve">
+    <value>建立週報</value>
+  </data>
+  <data name="Create Weekly Report for Anyone" xml:space="preserve">
+    <value>為任何人建立週報</value>
   </data>
   <data name="Default permission for HR." xml:space="preserve">
     <value>HR的預設權限</value>

@@ -84,6 +84,12 @@
   <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
     <value>Разрешает окончательное удаление учетных записей пользователей.</value>
   </data>
+  <data name="Allows the user to create their own weekly reports." xml:space="preserve">
+    <value>Позволяет пользователю создавать собственные еженедельные отчеты.</value>
+  </data>
+  <data name="Allows the user to create weekly reports on behalf of any other user." xml:space="preserve">
+    <value>Позволяет пользователю создавать еженедельные отчеты от имени любого другого пользователя.</value>
+  </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Позволяет просматривать все корпоративные контракты, включая те, которые помечены как приватные.</value>
   </data>
@@ -134,6 +140,12 @@
   </data>
   <data name="Create Contract" xml:space="preserve">
     <value>Создать договор</value>
+  </data>
+  <data name="Create Weekly Report" xml:space="preserve">
+    <value>Создать еженедельный отчет</value>
+  </data>
+  <data name="Create Weekly Report for Anyone" xml:space="preserve">
+    <value>Создать недельный отчет для кого угодно</value>
   </data>
   <data name="Default permission for HR." xml:space="preserve">
     <value>Разрешение по умолчанию для HR.</value>
