@@ -4,7 +4,7 @@
     <div class="row">
         <!-- Left 8: Reports List -->
         <div class="col-lg-8">
-            @if (Model.CanCreate || Model.CanCreateForAnyone)
+            @if (Model.CanCreate || Model.CanManageAnyoneWeeklyReport)
             {
                 <div class="card mb-4 shadow-sm">
                     <div class="card-header">
@@ -51,7 +51,7 @@
 
                             <div class="d-flex align-items-center justify-content-between">
                                 <div class="flex-grow-1 me-3">
-                                    @if (Model.CanCreateForAnyone)
+                                    @if (Model.CanManageAnyoneWeeklyReport)
                                     {
                                         <div class="input-group input-group-sm">
                                             <span class="input-group-text"><i data-lucide="user"></i></span>
@@ -238,7 +238,6 @@
 
         window.addEventListener('scroll', checkScroll);
         
-        // Dynamic week selection for "on behalf of" functionality
         const onBehalfOfSelect = document.querySelector('select[name="onBehalfOf"]');
         const weekSelect = document.querySelector('select[name="weekStartDate"]');
         

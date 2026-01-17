@@ -52,7 +52,7 @@ public static class AppPermissionNames
 
     // Weekly Report Management
     public const string CanCreateWeeklyReport = nameof(CanCreateWeeklyReport);
-    public const string CanCreateWeeklyReportForAnyone = nameof(CanCreateWeeklyReportForAnyone);
+    public const string CanManageAnyoneWeeklyReport = nameof(CanManageAnyoneWeeklyReport);
 
     // Contract Management
     public const string CanViewContractHistory = nameof(CanViewContractHistory);

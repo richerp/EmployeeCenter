@@ -34,7 +34,7 @@ public class WeeklyReportController(
         if (user == null) return Unauthorized();
 
         var canCreate = (await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanCreateWeeklyReport)).Succeeded;
-        var canCreateForAnyone = (await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanCreateWeeklyReportForAnyone)).Succeeded;
+        var canManageAnyone = (await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanManageAnyoneWeeklyReport)).Succeeded;
 
         var query = dbContext.WeeklyReports
             .Include(r => r.User)
@@ -54,7 +54,7 @@ public class WeeklyReportController(
         var notepad = await dbContext.Notepads.FirstOrDefaultAsync(n => n.UserId == user.Id);
         
         // Calculate available weeks for the current user (for default display)
-        var availableWeeks = await CalculateAvailableWeeks(user.Id, canCreateForAnyone);
+        var availableWeeks = await CalculateAvailableWeeks(user.Id, canManageAnyone);
         
         // Calculate missing reports for the current user (for status display)
         var now = DateTime.UtcNow;
@@ -89,7 +89,7 @@ public class WeeklyReportController(
         {
             Reports = reports,
             CanCreate = canCreate,
-            CanCreateForAnyone = canCreateForAnyone,
+            CanManageAnyoneWeeklyReport = canManageAnyone,
             NotepadContent = notepad?.Content,
             CurrentWeekSubmitted = submittedThisWeek,
             AvailableWeeks = availableWeeks,
@@ -99,7 +99,7 @@ public class WeeklyReportController(
             FilterUserId = userId
         };
 
-        if (canCreateForAnyone)
+        if (canManageAnyone)
         {
             model.AllUsers = await dbContext.Users
                 .OrderBy(u => u.DisplayName)
@@ -127,10 +127,10 @@ public class WeeklyReportController(
         if (user == null) return Unauthorized();
 
         var canCreate = (await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanCreateWeeklyReport)).Succeeded;
-        var canCreateForAnyone = (await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanCreateWeeklyReportForAnyone)).Succeeded;
+        var canManageAnyone = (await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanManageAnyoneWeeklyReport)).Succeeded;
 
         string targetUserId;
-        if (!string.IsNullOrEmpty(onBehalfOf) && canCreateForAnyone)
+        if (!string.IsNullOrEmpty(onBehalfOf) && canManageAnyone)
         {
             targetUserId = onBehalfOf;
         }
@@ -171,7 +171,7 @@ public class WeeklyReportController(
 
         if (existing != null)
         {
-            if (canCreateForAnyone)
+            if (canManageAnyone)
             {
                 // Allow overwrite
                 existing.Content = content;
@@ -212,12 +212,13 @@ public class WeeklyReportController(
 
         if (report == null) return NotFound();
 
-        if (report.UserId != user.Id)
+        var canManageAnyone = (await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanManageAnyoneWeeklyReport)).Succeeded;
+        if (report.UserId != user.Id && !canManageAnyone)
         {
             return Unauthorized();
         }
 
-        if (report.CreateTime < DateTime.UtcNow.AddDays(-28))
+        if (!canManageAnyone && report.CreateTime < DateTime.UtcNow.AddDays(-28))
         {
             return BadRequest(localizer["You can only edit reports published within 4 weeks."]);
         }
@@ -243,17 +244,40 @@ public class WeeklyReportController(
         var report = await dbContext.WeeklyReports.FirstOrDefaultAsync(r => r.Id == model.Id);
         if (report == null) return NotFound();
 
-        if (report.UserId != user.Id)
+        var canManageAnyone = (await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanManageAnyoneWeeklyReport)).Succeeded;
+        if (report.UserId != user.Id && !canManageAnyone)
         {
             return Unauthorized();
         }
 
-        if (report.CreateTime < DateTime.UtcNow.AddDays(-28))
+        if (!canManageAnyone && report.CreateTime < DateTime.UtcNow.AddDays(-28))
         {
             return BadRequest(localizer["You can only edit reports published within 4 weeks."]);
         }
 
         report.Content = model.Content;
+        await dbContext.SaveChangesAsync();
+
+        return RedirectToAction(nameof(Index));
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Delete(int id)
+    {
+        var user = await userManager.GetUserAsync(User);
+        if (user == null) return Unauthorized();
+
+        var report = await dbContext.WeeklyReports.FirstOrDefaultAsync(r => r.Id == id);
+        if (report == null) return NotFound();
+
+        var canManageAnyone = (await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanManageAnyoneWeeklyReport)).Succeeded;
+        if (report.UserId != user.Id && !canManageAnyone)
+        {
+            return Unauthorized();
+        }
+
+        dbContext.WeeklyReports.Remove(report);
         await dbContext.SaveChangesAsync();
 
         return RedirectToAction(nameof(Index));
@@ -316,11 +340,11 @@ public class WeeklyReportController(
         var user = await userManager.GetUserAsync(User);
         if (user == null) return Unauthorized();
 
-        var canCreateForAnyone = (await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanCreateWeeklyReportForAnyone)).Succeeded;
+        var canManageAnyone = (await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanManageAnyoneWeeklyReport)).Succeeded;
         
         // Determine target user ID
         string targetUserId;
-        if (!string.IsNullOrEmpty(userId) && canCreateForAnyone)
+        if (!string.IsNullOrEmpty(userId) && canManageAnyone)
         {
             targetUserId = userId;
         }
@@ -329,7 +353,7 @@ public class WeeklyReportController(
             targetUserId = user.Id;
         }
 
-        var availableWeeks = await CalculateAvailableWeeks(targetUserId, canCreateForAnyone);
+        var availableWeeks = await CalculateAvailableWeeks(targetUserId, canManageAnyone);
         return Json(availableWeeks);
     }
 
