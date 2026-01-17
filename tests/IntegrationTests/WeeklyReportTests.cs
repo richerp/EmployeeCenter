@@ -448,4 +448,127 @@ public class WeeklyReportTests
         var oldEditResponse = await _http.PostAsync("/WeeklyReport/Edit", oldEditContent);
         Assert.AreEqual(HttpStatusCode.BadRequest, oldEditResponse.StatusCode);
     }
+
+    [TestMethod]
+    public async Task TestManageAnyoneWeeklyReport()
+    {
+        var adminEmail = $"admin-{Guid.NewGuid()}@aiursoft.com";
+        var userEmail = $"user-{Guid.NewGuid()}@aiursoft.com";
+        var password = "Test-Password-123";
+
+        // 1. Register Admin and User
+        var registerToken = await GetAntiCsrfToken("/Account/Register");
+        var registerContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Email", adminEmail },
+            { "Password", password },
+            { "ConfirmPassword", password },
+            { "__RequestVerificationToken", registerToken }
+        });
+        await _http.PostAsync("/Account/Register", registerContent);
+        var adminId = await GetUserIdByEmail(adminEmail);
+
+        registerToken = await GetAntiCsrfToken("/Account/Register");
+        registerContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Email", userEmail },
+            { "Password", password },
+            { "ConfirmPassword", password },
+            { "__RequestVerificationToken", registerToken }
+        });
+        await _http.PostAsync("/Account/Register", registerContent);
+        var userId = await GetUserIdByEmail(userEmail);
+
+        // 2. Grant CanManageAnyoneWeeklyReport to Admin
+        await GrantPermission(adminId, AppPermissionNames.CanManageAnyoneWeeklyReport);
+        await LoginAs(adminEmail, password);
+
+        // 3. Admin creates report on behalf of User
+        var now = DateTime.UtcNow;
+        var offset = (int)now.DayOfWeek;
+        var thisWeekStart = now.AddDays(-offset).Date;
+        var weekStartStr = thisWeekStart.ToString("yyyy-MM-dd");
+
+        var createToken = await GetAntiCsrfToken("/WeeklyReport/Index");
+        var createContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "content", "Admin created for user" },
+            { "onBehalfOf", userId },
+            { "weekStartDate", weekStartStr },
+            { "__RequestVerificationToken", createToken }
+        });
+        var createResponse = await _http.PostAsync("/WeeklyReport/Create", createContent);
+        Assert.AreEqual(HttpStatusCode.Found, createResponse.StatusCode);
+
+        int reportId;
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var report = await db.WeeklyReports.FirstAsync(r => r.UserId == userId);
+            Assert.AreEqual("Admin created for user", report.Content);
+            reportId = report.Id;
+        }
+
+        // 4. Admin edits User's report
+        var editToken = await GetAntiCsrfToken($"/WeeklyReport/Edit/{reportId}");
+        var editContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Id", reportId.ToString() },
+            { "Content", "Admin updated user report" },
+            { "__RequestVerificationToken", editToken }
+        });
+        var editResponse = await _http.PostAsync("/WeeklyReport/Edit", editContent);
+        Assert.AreEqual(HttpStatusCode.Found, editResponse.StatusCode);
+
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var report = await db.WeeklyReports.FirstAsync(r => r.Id == reportId);
+            Assert.AreEqual("Admin updated user report", report.Content);
+        }
+
+        // 5. Admin edits User's report older than 4 weeks (Bypass limit)
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var report = await db.WeeklyReports.FirstAsync(r => r.Id == reportId);
+            report.CreateTime = DateTime.UtcNow.AddDays(-30);
+            await db.SaveChangesAsync();
+        }
+
+        var editTokenOld = await GetAntiCsrfToken($"/WeeklyReport/Edit/{reportId}");
+        var oldEditContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Id", reportId.ToString() },
+            { "Content", "Admin updated OLD user report" },
+            { "__RequestVerificationToken", editTokenOld }
+        });
+        var oldEditResponse = await _http.PostAsync("/WeeklyReport/Edit", oldEditContent);
+        Assert.AreEqual(HttpStatusCode.Found, oldEditResponse.StatusCode);
+
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var report = await db.WeeklyReports.FirstAsync(r => r.Id == reportId);
+            Assert.AreEqual("Admin updated OLD user report", report.Content);
+        }
+
+        // 6. Admin deletes User's report
+        var deleteToken = await GetAntiCsrfToken("/WeeklyReport/Index");
+        var deleteContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "id", reportId.ToString() },
+            { "__RequestVerificationToken", deleteToken }
+        });
+        // We use the Delete action we just created
+        var deleteResponse = await _http.PostAsync($"/WeeklyReport/Delete/{reportId}", deleteContent);
+        Assert.AreEqual(HttpStatusCode.Found, deleteResponse.StatusCode);
+
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var report = await db.WeeklyReports.FirstOrDefaultAsync(r => r.Id == reportId);
+            Assert.IsNull(report);
+        }
+    }
 }

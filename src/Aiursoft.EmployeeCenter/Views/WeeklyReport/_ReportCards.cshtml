@@ -1,12 +1,16 @@
 @using Aiursoft.EmployeeCenter.Services
 @using Aiursoft.EmployeeCenter.Entities
+@using Aiursoft.EmployeeCenter.Authorization
+@using Microsoft.AspNetCore.Authorization
 @using Microsoft.AspNetCore.Identity
 @model List<WeeklyReport>
 @inject Aiursoft.EmployeeCenter.Services.FileStorage.StorageService StorageService
 @inject UserManager<User> UserManager
+@inject IAuthorizationService AuthorizationService
 
 @{
     var currentUserId = UserManager.GetUserId(User);
+    var canManageAnyone = (await AuthorizationService.AuthorizeAsync(User, AppPermissionNames.CanManageAnyoneWeeklyReport)).Succeeded;
 }
 
 @foreach (var report in Model)
@@ -26,12 +30,23 @@
                 </div>
             </a>
             
-            @if (report.UserId == currentUserId && report.CreateTime >= DateTime.UtcNow.AddDays(-28))
-            {
-                <a asp-action="Edit" asp-route-id="@report.Id" class="btn btn-sm btn-outline-primary">
-                    <i class="align-middle me-1" data-lucide="edit-3"></i> @Localizer["Edit"]
-                </a>
-            }
+            <div class="d-flex align-items-center">
+                @if (report.UserId == currentUserId || canManageAnyone)
+                {
+                    if (canManageAnyone || report.CreateTime >= DateTime.UtcNow.AddDays(-28))
+                    {
+                        <a asp-action="Edit" asp-route-id="@report.Id" class="btn btn-sm btn-outline-primary me-2">
+                            <i class="align-middle me-1" data-lucide="edit-3"></i> @Localizer["Edit"]
+                        </a>
+                    }
+                    
+                    <form asp-action="Delete" asp-route-id="@report.Id" method="post" onsubmit="return confirm('@Localizer["Are you sure you want to delete this weekly report?"]');" class="d-inline">
+                        <button type="submit" class="btn btn-sm btn-outline-danger">
+                            <i class="align-middle me-1" data-lucide="trash-2"></i> @Localizer["Delete"]
+                        </button>
+                    </form>
+                }
+            </div>
         </div>
         <div class="card-body pb-1">
             <div class="markdown-body">

@@ -14,7 +14,7 @@ public class IndexViewModel : UiStackLayoutViewModel
     
     public List<User> AllUsers { get; set; } = new();
     
-    public bool CanCreateForAnyone { get; set; }
+    public bool CanManageAnyoneWeeklyReport { get; set; }
     public bool CanCreate { get; set; }
     
     public bool CurrentWeekSubmitted { get; set; }
