@@ -348,8 +348,8 @@ public class AssetTests
         var detailsResponse = await _http.GetAsync($"/MyAssets/Details/{assetId}");
         detailsResponse.EnsureSuccessStatusCode();
         var detailsHtml = await detailsResponse.Content.ReadAsStringAsync();
-        Assert.IsTrue(detailsHtml.Contains("U1-ASSET"));
-        Assert.IsTrue(detailsHtml.Contains("DetailsTest Model"));
+        Assert.Contains("U1-ASSET", detailsHtml);
+        Assert.Contains("DetailsTest Model", detailsHtml);
 
         // 5. Login as user2 and try to view user1's asset details
         await _http.GetAsync("/Account/LogOff");
