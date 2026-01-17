@@ -199,7 +199,7 @@ public class WeeklyReportController(
         dbContext.WeeklyReports.Add(report);
         await dbContext.SaveChangesAsync();
 
-        return RedirectToAction(nameof(Index), new { userId = (string.IsNullOrEmpty(onBehalfOf) || onBehalfOf == user.Id) ? null : onBehalfOf });
+        return RedirectToAction(nameof(Index));
     }
 
     [HttpGet]
@@ -258,7 +258,7 @@ public class WeeklyReportController(
         report.Content = model.Content;
         await dbContext.SaveChangesAsync();
 
-        return RedirectToAction(nameof(Index), new { userId = user.Id });
+        return RedirectToAction(nameof(Index));
     }
 
     [HttpPost]
