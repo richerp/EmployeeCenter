@@ -46,7 +46,8 @@ public class WeeklyReportController(
         }
 
         var reports = await query
-            .OrderByDescending(r => r.CreateTime)
+            .OrderByDescending(r => r.WeekStartDate)
+            .ThenByDescending(r => r.CreateTime)
             .Take(10)
             .ToListAsync();
 
@@ -290,11 +291,12 @@ public class WeeklyReportController(
     }
 
     [HttpGet]
-    public async Task<IActionResult> LoadMore(DateTime before, string? userId)
+    public async Task<IActionResult> LoadMore(DateTime beforeWeek, DateTime beforeCreate, string? userId)
     {
         var query = dbContext.WeeklyReports
             .Include(r => r.User)
-            .Where(r => r.CreateTime < before.ToUniversalTime())
+            .Where(r => r.WeekStartDate < beforeWeek.ToUniversalTime() || 
+                       (r.WeekStartDate == beforeWeek.ToUniversalTime() && r.CreateTime < beforeCreate.ToUniversalTime()))
             .AsNoTracking();
 
         if (!string.IsNullOrEmpty(userId))
@@ -303,7 +305,8 @@ public class WeeklyReportController(
         }
 
         var reports = await query
-            .OrderByDescending(r => r.CreateTime)
+            .OrderByDescending(r => r.WeekStartDate)
+            .ThenByDescending(r => r.CreateTime)
             .Take(10)
             .ToListAsync();
 
