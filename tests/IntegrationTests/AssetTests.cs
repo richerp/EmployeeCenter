@@ -343,7 +343,6 @@ public class AssetTests
         Assert.Contains("Test Entity", indexHtml);
 
         // 6. Verify in Details UI
-        var assetId = (await _http.GetAsync("/Assets/Index")).Headers.Location?.ToString(); // Not useful here
         using (var scope = _server!.Services.CreateScope())
         {
             var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
