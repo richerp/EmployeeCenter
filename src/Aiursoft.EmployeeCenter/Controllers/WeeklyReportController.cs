@@ -52,13 +52,14 @@ public class WeeklyReportController(
 
         var notepad = await dbContext.Notepads.FirstOrDefaultAsync(n => n.UserId == user.Id);
         
-        // Logic for Week Selection and Missing Reports
-        // Week starts on Sunday
+        // Calculate available weeks for the current user (for default display)
+        var availableWeeks = await CalculateAvailableWeeks(user.Id);
+        
+        // Calculate missing reports for the current user (for status display)
         var now = DateTime.UtcNow;
         var offset = (int)now.DayOfWeek;
         var thisWeekStart = now.AddDays(-offset).Date;
         
-        // Analyze last 50 weeks for the current user to find missing reports
         var cutoffDate = thisWeekStart.AddDays(-49 * 7);
         var userReports = await dbContext.WeeklyReports
             .Where(r => r.UserId == user.Id && (r.WeekStartDate >= cutoffDate || r.CreateTime >= cutoffDate))
@@ -71,19 +72,6 @@ public class WeeklyReportController(
                 : r.CreateTime.AddDays(-(int)r.CreateTime.DayOfWeek).Date)
             .ToHashSet();
 
-        var availableWeeks = new Dictionary<DateTime, string>();
-        for (int i = 0; i < 50; i++)
-        {
-            var weekStart = thisWeekStart.AddDays(-i * 7);
-            if (!existingWeeks.Contains(weekStart))
-            {
-                var label = $"{weekStart:yyyy-MM-dd} ~ {weekStart.AddDays(6):yyyy-MM-dd}";
-                if (weekStart == thisWeekStart) label += " (Current Week)";
-                availableWeeks.Add(weekStart, label);
-            }
-        }
-
-        // Check for missing reports in the last 4 weeks (including current week)
         var missingWeeksCount = 0;
         for (int i = 0; i < 4; i++)
         {
@@ -307,5 +295,61 @@ public class WeeklyReportController(
             .ToListAsync();
 
         return PartialView("_ReportCards", reports);
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetAvailableWeeks(string? userId)
+    {
+        var user = await userManager.GetUserAsync(User);
+        if (user == null) return Unauthorized();
+
+        var canCreateForAnyone = (await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanCreateWeeklyReportForAnyone)).Succeeded;
+        
+        // Determine target user ID
+        string targetUserId;
+        if (!string.IsNullOrEmpty(userId) && canCreateForAnyone)
+        {
+            targetUserId = userId;
+        }
+        else
+        {
+            targetUserId = user.Id;
+        }
+
+        var availableWeeks = await CalculateAvailableWeeks(targetUserId);
+        return Json(availableWeeks);
+    }
+
+    private async Task<Dictionary<DateTime, string>> CalculateAvailableWeeks(string userId)
+    {
+        var now = DateTime.UtcNow;
+        var offset = (int)now.DayOfWeek;
+        var thisWeekStart = now.AddDays(-offset).Date;
+        
+        var cutoffDate = thisWeekStart.AddDays(-49 * 7);
+        var userReports = await dbContext.WeeklyReports
+            .Where(r => r.UserId == userId && (r.WeekStartDate >= cutoffDate || r.CreateTime >= cutoffDate))
+            .Select(r => new { r.WeekStartDate, r.CreateTime })
+            .ToListAsync();
+
+        var existingWeeks = userReports
+            .Select(r => r.WeekStartDate != DateTime.MinValue 
+                ? r.WeekStartDate 
+                : r.CreateTime.AddDays(-(int)r.CreateTime.DayOfWeek).Date)
+            .ToHashSet();
+
+        var availableWeeks = new Dictionary<DateTime, string>();
+        for (int i = 0; i < 50; i++)
+        {
+            var weekStart = thisWeekStart.AddDays(-i * 7);
+            if (!existingWeeks.Contains(weekStart))
+            {
+                var label = $"{weekStart:yyyy-MM-dd} ~ {weekStart.AddDays(6):yyyy-MM-dd}";
+                if (weekStart == thisWeekStart) label += " (Current Week)";
+                availableWeeks.Add(weekStart, label);
+            }
+        }
+
+        return availableWeeks;
     }
 }

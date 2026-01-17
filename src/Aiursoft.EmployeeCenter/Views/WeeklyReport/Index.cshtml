@@ -237,6 +237,41 @@
 
         window.addEventListener('scroll', checkScroll);
         
+        // Dynamic week selection for "on behalf of" functionality
+        const onBehalfOfSelect = document.querySelector('select[name="onBehalfOf"]');
+        const weekSelect = document.querySelector('select[name="weekStartDate"]');
+        
+        if (onBehalfOfSelect && weekSelect) {
+            onBehalfOfSelect.addEventListener('change', async function() {
+                const selectedUserId = this.value;
+                
+                try {
+                    const url = selectedUserId 
+                        ? `/WeeklyReport/GetAvailableWeeks?userId=${encodeURIComponent(selectedUserId)}`
+                        : '/WeeklyReport/GetAvailableWeeks';
+                    
+                    const response = await fetch(url);
+                    if (response.ok) {
+                        const weeks = await response.json();
+                        
+                        // Clear existing options
+                        weekSelect.innerHTML = '';
+                        
+                        // Add new options from the response
+                        // The response is a dictionary, need to iterate properly
+                        for (const [dateKey, label] of Object.entries(weeks)) {
+                            const option = document.createElement('option');
+                            option.value = dateKey;
+                            option.textContent = label;
+                            weekSelect.appendChild(option);
+                        }
+                    }
+                } catch (error) {
+                    console.error('Error loading available weeks:', error);
+                }
+            });
+        }
+        
         // Notepad Auto-save logic
         const notepad = document.getElementById('notepad-area');
         const saveStatus = document.getElementById('save-status');
