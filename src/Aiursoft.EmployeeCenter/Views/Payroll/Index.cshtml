@@ -57,7 +57,7 @@
                     <tr class="clickable-row" data-href="@Url.Action("Details", new { id = item.Id })">
                         <td>@item.TargetMonth.ToString("yyyy-MM")</td>
                         <td>@item.TotalAmount.ToString("C")</td>
-                        <td>@item.CreationTime.ToString("yyyy-MM-dd HH:mm")</td>
+                        <td><label class="text-muted" data-utc-time="@item.CreationTime.ToHtmlDateTime()"></label></td>
                         <td class="text-end">
                             <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary">
                                 <i class="align-middle" data-lucide="eye"></i> @Localizer["Details"]

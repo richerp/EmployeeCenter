@@ -225,11 +225,11 @@
                             <dd class="col-sm-8">@Model.Entity.CompanyType</dd>
 
                             <dt class="col-sm-4">@Localizer["Establishment"]</dt>
-                            <dd class="col-sm-8">@Model.Entity.EstablishmentDate?.ToString("yyyy-MM-dd")</dd>
+                            <dd class="col-sm-8">@(Model.Entity.EstablishmentDate.HasValue ? Html.Raw($"<label data-utc-time=\"{Model.Entity.EstablishmentDate.Value.ToHtmlDateTime()}\"></label>") : Localizer["N/A"].Value)</dd>
 
                             <dt class="col-sm-4">@Localizer["Expiry Date"]</dt>
-                            <dd class="col-sm-8 @(Model.Entity.ExpiryDate < DateTime.Now.AddMonths(3) ? "text-danger font-weight-bold" : "")">
-                                @Model.Entity.ExpiryDate?.ToString("yyyy-MM-dd")
+                            <dd class="col-sm-8 @(Model.Entity.ExpiryDate < DateTime.UtcNow.AddMonths(3) ? "text-danger font-weight-bold" : "")">
+                                @(Model.Entity.ExpiryDate.HasValue ? Html.Raw($"<label data-utc-time=\"{Model.Entity.ExpiryDate.Value.ToHtmlDateTime()}\"></label>") : Localizer["N/A"].Value)
                             </dd>
 
                             @if (!string.IsNullOrEmpty(Model.Entity.RegisteredCapital))

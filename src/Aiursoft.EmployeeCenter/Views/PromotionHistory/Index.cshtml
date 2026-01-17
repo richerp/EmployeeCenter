@@ -122,10 +122,7 @@
                                         <div class="small text-muted">@(history.NewTitle ?? "N/A")</div>
                                     </td>
                                     <td>
-                                        <div title="@history.ChangeTime.ToLocalTime().ToString("G")">
-                                            @history.ChangeTime.ToLocalTime().ToString("d")
-                                        </div>
-                                        <div class="small text-muted">@history.ChangeTime.ToLocalTime().ToString("t")</div>
+                                        <label class="text-muted" data-utc-time="@history.ChangeTime.ToHtmlDateTime()"></label>
                                     </td>
                                     <td>
                                         @if (history.Promoter != null)

@@ -54,7 +54,7 @@ public class WeeklyReportController(
         var notepad = await dbContext.Notepads.FirstOrDefaultAsync(n => n.UserId == user.Id);
         
         // Calculate available weeks for the current user (for default display)
-        var availableWeeks = await CalculateAvailableWeeks(user.Id);
+        var availableWeeks = await CalculateAvailableWeeks(user.Id, canManageAnyone);
         
         // Calculate missing reports for the current user (for status display)
         var now = DateTime.UtcNow;
@@ -164,16 +164,26 @@ public class WeeklyReportController(
         }
 
         // Check if report already exists for this week
-        var exists = await dbContext.WeeklyReports
-            .AnyAsync(r => r.UserId == targetUserId && 
+        var existing = await dbContext.WeeklyReports
+            .FirstOrDefaultAsync(r => r.UserId == targetUserId && 
                            (r.WeekStartDate == targetWeek || 
                            (r.WeekStartDate == DateTime.MinValue && r.CreateTime >= targetWeek && r.CreateTime < targetWeek.AddDays(7))));
 
-        if (exists)
+        if (existing != null)
         {
-             // Already submitted
-             // Maybe show error or just redirect
-             return RedirectToAction(nameof(Index));
+            if (canManageAnyone)
+            {
+                // Allow overwrite
+                existing.Content = content;
+                existing.CreateTime = DateTime.UtcNow;
+                existing.WeekStartDate = targetWeek;
+                await dbContext.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            
+            // Already submitted
+            // Maybe show error or just redirect
+            return RedirectToAction(nameof(Index));
         }
 
         var report = new WeeklyReport
@@ -343,33 +353,37 @@ public class WeeklyReportController(
             targetUserId = user.Id;
         }
 
-        var availableWeeks = await CalculateAvailableWeeks(targetUserId);
+        var availableWeeks = await CalculateAvailableWeeks(targetUserId, canManageAnyone);
         return Json(availableWeeks);
     }
 
-    private async Task<Dictionary<DateTime, string>> CalculateAvailableWeeks(string userId)
+    private async Task<Dictionary<DateTime, string>> CalculateAvailableWeeks(string userId, bool showAll = false)
     {
         var now = DateTime.UtcNow;
         var offset = (int)now.DayOfWeek;
         var thisWeekStart = now.AddDays(-offset).Date;
         
-        var cutoffDate = thisWeekStart.AddDays(-49 * 7);
-        var userReports = await dbContext.WeeklyReports
-            .Where(r => r.UserId == userId && (r.WeekStartDate >= cutoffDate || r.CreateTime >= cutoffDate))
-            .Select(r => new { r.WeekStartDate, r.CreateTime })
-            .ToListAsync();
+        var existingWeeks = new HashSet<DateTime>();
+        if (!showAll)
+        {
+            var cutoffDate = thisWeekStart.AddDays(-49 * 7);
+            var userReports = await dbContext.WeeklyReports
+                .Where(r => r.UserId == userId && (r.WeekStartDate >= cutoffDate || r.CreateTime >= cutoffDate))
+                .Select(r => new { r.WeekStartDate, r.CreateTime })
+                .ToListAsync();
 
-        var existingWeeks = userReports
-            .Select(r => r.WeekStartDate != DateTime.MinValue 
-                ? r.WeekStartDate 
-                : r.CreateTime.AddDays(-(int)r.CreateTime.DayOfWeek).Date)
-            .ToHashSet();
+            existingWeeks = userReports
+                .Select(r => r.WeekStartDate != DateTime.MinValue 
+                    ? r.WeekStartDate 
+                    : r.CreateTime.AddDays(-(int)r.CreateTime.DayOfWeek).Date)
+                .ToHashSet();
+        }
 
         var availableWeeks = new Dictionary<DateTime, string>();
         for (int i = 0; i < 50; i++)
         {
             var weekStart = thisWeekStart.AddDays(-i * 7);
-            if (!existingWeeks.Contains(weekStart))
+            if (showAll || !existingWeeks.Contains(weekStart))
             {
                 var label = $"{weekStart:yyyy-MM-dd} ~ {weekStart.AddDays(6):yyyy-MM-dd}";
                 if (weekStart == thisWeekStart) label += " (Current Week)";
