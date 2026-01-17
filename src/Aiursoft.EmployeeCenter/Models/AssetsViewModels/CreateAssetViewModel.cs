@@ -26,6 +26,9 @@ public class CreateAssetViewModel : UiStackLayoutViewModel
     [Display(Name = "Location")]
     public int? LocationId { get; set; }
 
+    [Display(Name = "Belongs to Entity")]
+    public int? CompanyEntityId { get; set; }
+
     [Display(Name = "Purchase Date")]
     public DateTime? PurchaseDate { get; set; }
 
@@ -46,6 +49,7 @@ public class CreateAssetViewModel : UiStackLayoutViewModel
     // Selection lists
     public List<AssetModel> AllModels { get; set; } = new();
     public List<Location> AllLocations { get; set; } = new();
+    public List<CompanyEntity> AllCompanyEntities { get; set; } = new();
     public List<Vendor> AllVendors { get; set; } = new();
     public List<User> AllUsers { get; set; } = new();
 }

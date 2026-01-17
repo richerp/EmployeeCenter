@@ -46,6 +46,10 @@
                         <span>@(Model.Asset.Location?.Name ?? Localizer["N/A"].Value)</span>
                     </li>
                     <li class="list-group-item d-flex justify-content-between align-items-center">
+                        @Localizer["Entity"]
+                        <span>@(Model.Asset.CompanyEntity?.CompanyName ?? Localizer["N/A"].Value)</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
                         @Localizer["Assignee"]
                         @if (Model.Asset.Assignee != null)
                         {
