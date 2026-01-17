@@ -48,6 +48,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>다른 사용자와 공유할 수 있는 새로운 전역 비밀번호를 생성할 수 있습니다.</value>
   </data>
+  <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
+    <value>다른 사용자의 대신 주간 보고서를 생성, 편집 및 삭제할 수 있습니다.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>회사 엔티티 정보의 생성, 수정 및 삭제를 허용합니다.</value>
   </data>
@@ -176,6 +179,9 @@
   </data>
   <data name="Manage Any Password" xml:space="preserve">
     <value>모든 비밀번호 관리</value>
+  </data>
+  <data name="Manage anyone&apos;s weekly report" xml:space="preserve">
+    <value>다른 사람의 주간 보고서 관리</value>
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>자산 관리</value>

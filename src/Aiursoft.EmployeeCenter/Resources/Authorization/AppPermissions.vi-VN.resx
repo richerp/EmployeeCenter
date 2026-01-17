@@ -48,6 +48,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Cho phép tạo mật khẩu chung mới có thể được chia sẻ với người khác.</value>
   </data>
+  <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
+    <value>Cho phép tạo, chỉnh sửa và xóa báo cáo hàng tuần thay mặt bất kỳ người dùng nào khác.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Cho phép tạo, cập nhật và xóa thông tin thực thể công ty.</value>
   </data>
@@ -176,6 +179,9 @@
   </data>
   <data name="Manage Any Password" xml:space="preserve">
     <value>Quản lý Mật khẩu Bất kỳ</value>
+  </data>
+  <data name="Manage anyone&apos;s weekly report" xml:space="preserve">
+    <value>Quản lý báo cáo hàng tuần của bất kỳ ai</value>
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Quản lý Tài sản</value>

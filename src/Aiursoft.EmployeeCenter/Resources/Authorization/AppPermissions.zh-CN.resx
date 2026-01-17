@@ -45,6 +45,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>允许创建可以与他人共享的新全局密码。</value>
   </data>
+  <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
+    <value>允许代表任何其他用户创建、编辑和删除周报。</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>允许创建、更新和删除公司实体信息。</value>
   </data>
@@ -83,9 +86,6 @@
   </data>
   <data name="Allows the user to create their own weekly reports." xml:space="preserve">
     <value>允许用户创建自己的周报。</value>
-  </data>
-  <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
-    <value>允许代表任何其他用户创建、编辑和删除周报。</value>
   </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>允许查看公司的所有合同，包括标记为私密的合同。</value>
@@ -135,9 +135,6 @@
   <data name="Create Weekly Report" xml:space="preserve">
     <value>创建周报</value>
   </data>
-  <data name="Manage anyone's weekly report" xml:space="preserve">
-    <value>管理任何人的周报</value>
-  </data>
   <data name="Delete Roles" xml:space="preserve">
     <value>删除角色</value>
   </data>
@@ -164,6 +161,9 @@
   </data>
   <data name="Manage Any Password" xml:space="preserve">
     <value>管理任何密码</value>
+  </data>
+  <data name="Manage anyone&apos;s weekly report" xml:space="preserve">
+    <value>管理任何人的周报</value>
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>管理资产</value>

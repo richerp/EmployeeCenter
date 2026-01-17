@@ -45,6 +45,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Allows creating new global passwords that can be shared with others.</value>
   </data>
+  <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
+    <value>Allows creating, editing, and deleting weekly reports on behalf of any other user.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Allows creating, updating, and deleting company entity information.</value>
   </data>
@@ -83,9 +86,6 @@
   </data>
   <data name="Allows the user to create their own weekly reports." xml:space="preserve">
     <value>Allows the user to create their own weekly reports.</value>
-  </data>
-  <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
-    <value>Allows creating, editing, and deleting weekly reports on behalf of any other user.</value>
   </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Allows viewing all company contracts, including those marked as private.</value>
@@ -135,9 +135,6 @@
   <data name="Create Weekly Report" xml:space="preserve">
     <value>Create Weekly Report</value>
   </data>
-  <data name="Manage anyone's weekly report" xml:space="preserve">
-    <value>Manage anyone's weekly report</value>
-  </data>
   <data name="Delete Roles" xml:space="preserve">
     <value>Delete Roles</value>
   </data>
@@ -164,6 +161,9 @@
   </data>
   <data name="Manage Any Password" xml:space="preserve">
     <value>Manage Any Password</value>
+  </data>
+  <data name="Manage anyone&apos;s weekly report" xml:space="preserve">
+    <value>Manage anyone&apos;s weekly report</value>
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Manage Assets</value>

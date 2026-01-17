@@ -48,6 +48,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Memungkinkan pembuatan kata sandi global baru yang dapat dibagikan dengan orang lain.</value>
   </data>
+  <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
+    <value>Memungkinkan pembuatan, pengeditan, dan penghapusan laporan mingguan atas nama pengguna lain.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Memungkinkan pembuatan, pembaruan, dan penghapusan informasi entitas perusahaan.</value>
   </data>
@@ -176,6 +179,9 @@
   </data>
   <data name="Manage Any Password" xml:space="preserve">
     <value>Kelola Kata Sandi Apa Saja</value>
+  </data>
+  <data name="Manage anyone&apos;s weekly report" xml:space="preserve">
+    <value>Kelola laporan mingguan siapa pun</value>
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Kelola Aset</value>
