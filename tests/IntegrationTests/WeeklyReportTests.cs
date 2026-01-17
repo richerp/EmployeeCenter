@@ -448,4 +448,117 @@ public class WeeklyReportTests
         var oldEditResponse = await _http.PostAsync("/WeeklyReport/Edit", oldEditContent);
         Assert.AreEqual(HttpStatusCode.BadRequest, oldEditResponse.StatusCode);
     }
+
+    [TestMethod]
+    public async Task TestAdminSeesAllWeeksEvenIfSubmitted()
+    {
+        var adminEmail = "admin-all-" + Guid.NewGuid() + "@aiursoft.com";
+        var password = "Test-Password-123";
+
+        // 1. Register Admin
+        var registerToken = await GetAntiCsrfToken("/Account/Register");
+        var registerContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Email", adminEmail },
+            { "Password", password },
+            { "ConfirmPassword", password },
+            { "__RequestVerificationToken", registerToken }
+        });
+        await _http.PostAsync("/Account/Register", registerContent);
+
+        var adminId = await GetUserIdByEmail(adminEmail);
+        await GrantPermission(adminId, AppPermissionNames.CanCreateWeeklyReport);
+        await GrantPermission(adminId, AppPermissionNames.CanCreateWeeklyReportForAnyone);
+        
+        // 2. Admin submits for themselves for current week
+        await LoginAs(adminEmail, password);
+        var now = DateTime.UtcNow;
+        var offset = (int)now.DayOfWeek;
+        var thisWeekStart = now.AddDays(-offset).Date;
+        var weekStartStr = thisWeekStart.ToString("yyyy-MM-dd");
+
+        var createToken = await GetAntiCsrfToken("/WeeklyReport/Index");
+        var createContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "content", "Admin's own report" },
+            { "weekStartDate", weekStartStr },
+            { "__RequestVerificationToken", createToken }
+        });
+        await _http.PostAsync("/WeeklyReport/Create", createContent);
+
+        // 3. Admin checks their own available weeks (via Index)
+        var indexResponse = await _http.GetAsync("/WeeklyReport/Index");
+        var indexHtml = await indexResponse.Content.ReadAsStringAsync();
+        
+        // Current week SHOULD be available for admin because they have CanCreateWeeklyReportForAnyone permission
+        Assert.Contains("value=\"" + weekStartStr + "\"", indexHtml);
+    }
+
+    [TestMethod]
+    public async Task TestAdminCanOverwriteReport()
+    {
+        var adminEmail = "admin-overwrite-" + Guid.NewGuid() + "@aiursoft.com";
+        var userEmail = "user-to-overwrite-" + Guid.NewGuid() + "@aiursoft.com";
+        var password = "Test-Password-123";
+
+        // 1. Register Admin and User
+        var registerToken = await GetAntiCsrfToken("/Account/Register");
+        foreach (var email in new[] { adminEmail, userEmail })
+        {
+            var registerContent = new FormUrlEncodedContent(new Dictionary<string, string>
+            {
+                { "Email", email },
+                { "Password", password },
+                { "ConfirmPassword", password },
+                { "__RequestVerificationToken", registerToken }
+            });
+            await _http.PostAsync("/Account/Register", registerContent);
+            registerToken = await GetAntiCsrfToken("/Account/Register");
+        }
+
+        var adminId = await GetUserIdByEmail(adminEmail);
+        var userId = await GetUserIdByEmail(userEmail);
+
+        await GrantPermission(adminId, AppPermissionNames.CanCreateWeeklyReport);
+        await GrantPermission(adminId, AppPermissionNames.CanCreateWeeklyReportForAnyone);
+        await GrantPermission(userId, AppPermissionNames.CanCreateWeeklyReport);
+        
+        // 2. User submits their own report
+        await LoginAs(userEmail, password);
+        var now = DateTime.UtcNow;
+        var offset = (int)now.DayOfWeek;
+        var thisWeekStart = now.AddDays(-offset).Date;
+        var weekStartStr = thisWeekStart.ToString("yyyy-MM-dd");
+
+        var userCreateToken = await GetAntiCsrfToken("/WeeklyReport/Index");
+        var userCreateContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "content", "User's original report" },
+            { "weekStartDate", weekStartStr },
+            { "__RequestVerificationToken", userCreateToken }
+        });
+        await _http.PostAsync("/WeeklyReport/Create", userCreateContent);
+
+        // 3. Admin overwrites user's report
+        await LoginAs(adminEmail, password);
+        var adminCreateToken = await GetAntiCsrfToken("/WeeklyReport/Index");
+        var adminCreateContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "content", "Admin's overwritten report" },
+            { "onBehalfOf", userId },
+            { "weekStartDate", weekStartStr },
+            { "__RequestVerificationToken", adminCreateToken }
+        });
+        var response = await _http.PostAsync("/WeeklyReport/Create", adminCreateContent);
+        Assert.AreEqual(HttpStatusCode.Found, response.StatusCode);
+
+        // 4. Verify in DB
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var reports = await db.WeeklyReports.Where(r => r.UserId == userId).ToListAsync();
+            Assert.HasCount(1, reports);
+            Assert.AreEqual("Admin's overwritten report", reports[0].Content);
+        }
+    }
 }
