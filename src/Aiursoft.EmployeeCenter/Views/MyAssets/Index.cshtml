@@ -28,8 +28,8 @@
             @foreach (var item in Model.Assets)
             {
                 <tr>
-                    <td><code>@item.AssetTag</code></td>
-                    <td>@item.Model.Brand @item.Model.ModelName</td>
+                    <td><a asp-action="Details" asp-route-id="@item.Id"><code>@item.AssetTag</code></a></td>
+                    <td><a asp-action="Details" asp-route-id="@item.Id">@item.Model.Brand @item.Model.ModelName</a></td>
                     <td>
                         @switch (item.Status)
                         {

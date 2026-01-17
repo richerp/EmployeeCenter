@@ -44,6 +44,28 @@ public class MyAssetsController(
         });
     }
 
+    public async Task<IActionResult> Details(Guid id)
+    {
+        var user = await userManager.GetUserAsync(User);
+        if (user == null) return NotFound();
+
+        var asset = await context.Assets
+            .Include(a => a.Model)
+            .ThenInclude(m => m.Category)
+            .Include(a => a.Location)
+            .Include(a => a.Vendor)
+            .Include(a => a.Histories)
+            .ThenInclude(h => h.Operator)
+            .FirstOrDefaultAsync(a => a.Id == id && a.AssigneeId == user.Id);
+
+        if (asset == null) return NotFound();
+
+        return this.StackView(new DetailsViewModel
+        {
+            Asset = asset
+        });
+    }
+
     [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Confirm(Guid id)

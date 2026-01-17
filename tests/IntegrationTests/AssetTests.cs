@@ -275,4 +275,94 @@ public class AssetTests
             Assert.AreEqual(AssetStatus.PendingAccept, asset.Status);
         }
     }
+
+    [TestMethod]
+    public async Task MyAssetsDetailsTest()
+    {
+        // 1. Login as admin to setup
+        var loginToken = await GetAntiCsrfToken("/Account/Login");
+        await _http.PostAsync("/Account/Login", new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "EmailOrUserName", "admin" },
+            { "Password", "admin123" },
+            { "__RequestVerificationToken", loginToken }
+        }));
+
+        // 2. Create Category, Model and User
+        int modelId;
+        string user1Id;
+        string user1Email = "user1@aiursoft.com";
+        string user2Email = "user2@aiursoft.com";
+        string password = "Test-Password-123";
+
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
+            
+            var cat = new AssetCategory { Name = "DetailsTest Cat", Code = "DTC" };
+            db.AssetCategories.Add(cat);
+            await db.SaveChangesAsync();
+
+            var model = new AssetModel { ModelName = "DetailsTest Model", Brand = "Test", CategoryId = cat.Id };
+            db.AssetModels.Add(model);
+            await db.SaveChangesAsync();
+            modelId = model.Id;
+
+            var u1 = new User { UserName = "user1", Email = user1Email, DisplayName = "User 1", AvatarRelativePath = User.DefaultAvatarPath };
+            await userManager.CreateAsync(u1, password);
+            user1Id = u1.Id;
+
+            var u2 = new User { UserName = "user2", Email = user2Email, DisplayName = "User 2", AvatarRelativePath = User.DefaultAvatarPath };
+            await userManager.CreateAsync(u2, password);
+        }
+
+        // 3. Create Asset assigned to user1
+        var createAssetToken = await GetAntiCsrfToken("/Assets/Create");
+        await _http.PostAsync("/Assets/Create", new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "AssetTag", "U1-ASSET" },
+            { "ModelId", modelId.ToString() },
+            { "Status", ((int)AssetStatus.InUse).ToString() },
+            { "AssigneeId", user1Id },
+            { "__RequestVerificationToken", createAssetToken }
+        }));
+
+        Guid assetId;
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            assetId = (await db.Assets.FirstAsync(a => a.AssetTag == "U1-ASSET")).Id;
+        }
+
+        // 4. Login as user1 and view details
+        await _http.GetAsync("/Account/LogOff");
+        loginToken = await GetAntiCsrfToken("/Account/Login");
+        await _http.PostAsync("/Account/Login", new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "EmailOrUserName", user1Email },
+            { "Password", password },
+            { "__RequestVerificationToken", loginToken }
+        }));
+
+        var detailsResponse = await _http.GetAsync($"/MyAssets/Details/{assetId}");
+        detailsResponse.EnsureSuccessStatusCode();
+        var detailsHtml = await detailsResponse.Content.ReadAsStringAsync();
+        Assert.IsTrue(detailsHtml.Contains("U1-ASSET"));
+        Assert.IsTrue(detailsHtml.Contains("DetailsTest Model"));
+
+        // 5. Login as user2 and try to view user1's asset details
+        await _http.GetAsync("/Account/LogOff");
+        loginToken = await GetAntiCsrfToken("/Account/Login");
+        await _http.PostAsync("/Account/Login", new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "EmailOrUserName", user2Email },
+            { "Password", password },
+            { "__RequestVerificationToken", loginToken }
+        }));
+
+        var unauthorizedResponse = await _http.GetAsync($"/MyAssets/Details/{assetId}");
+        Assert.AreEqual(HttpStatusCode.NotFound, unauthorizedResponse.StatusCode);
+    }
 }
+
