@@ -91,7 +91,7 @@
                                 </tr>
                                 <tr>
                                     <th>@Localizer["Creation Time"]</th>
-                                    <td>@Model.TargetUser.CreationTime.ToLocalTime().ToString("G")</td>
+                                    <td><label class="text-muted" data-utc-time="@Model.TargetUser.CreationTime.ToHtmlDateTime()"></label></td>
                                 </tr>
                                 <tr>
                                     <th>@Localizer["Rank"]</th>
