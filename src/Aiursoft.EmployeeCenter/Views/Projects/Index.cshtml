@@ -79,14 +79,10 @@
                                 </td>
                                 <td class="align-middle">
                                     <div class="mb-1">
-                                        <a href="@project.WebUrl" target="_blank" class="fw-bold text-dark text-decoration-none">
+                                        <a href="@project.WebUrl" target="_blank" class="fw-bold text-dark text-decoration-none" title="@project.Description">
                                             @project.Name
                                         </a>
                                     </div>
-                                    @if (!string.IsNullOrWhiteSpace(project.Description))
-                                    {
-                                        <small class="text-muted d-block text-truncate" style="max-width: 400px;">@project.Description</small>
-                                    }
                                     <div class="mt-1">
                                         <small>
                                             <a href="@project.HttpUrlToRepo" class="text-muted me-2 text-decoration-none">
