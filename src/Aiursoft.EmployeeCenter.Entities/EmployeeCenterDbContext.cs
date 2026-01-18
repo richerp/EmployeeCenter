@@ -33,6 +33,12 @@ public abstract class EmployeeCenterDbContext(DbContextOptions options) : Identi
     public DbSet<WeeklyReport> WeeklyReports => Set<WeeklyReport>();
     public DbSet<Notepad> Notepads => Set<Notepad>();
 
+    public DbSet<SignalQuestion> SignalQuestions => Set<SignalQuestion>();
+    public DbSet<SignalQuestionnaire> SignalQuestionnaires => Set<SignalQuestionnaire>();
+    public DbSet<SignalQuestionnaireQuestion> SignalQuestionnaireQuestions => Set<SignalQuestionnaireQuestion>();
+    public DbSet<SignalResponse> SignalResponses => Set<SignalResponse>();
+    public DbSet<SignalQuestionResponse> SignalQuestionResponses => Set<SignalQuestionResponse>();
+
     public virtual Task MigrateAsync(CancellationToken cancellationToken) =>
         Database.MigrateAsync(cancellationToken);
 
