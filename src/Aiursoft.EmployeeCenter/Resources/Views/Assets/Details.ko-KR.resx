@@ -39,6 +39,9 @@
   <data name="Edit" xml:space="preserve">
     <value>수정</value>
   </data>
+  <data name="Entity" xml:space="preserve">
+    <value>소속</value>
+  </data>
   <data name="Field" xml:space="preserve">
     <value>필드</value>
   </data>

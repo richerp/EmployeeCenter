@@ -39,6 +39,9 @@
   <data name="Edit" xml:space="preserve">
     <value>Редагувати</value>
   </data>
+  <data name="Entity" xml:space="preserve">
+    <value>Організація</value>
+  </data>
   <data name="Field" xml:space="preserve">
     <value>Поле</value>
   </data>

@@ -42,6 +42,9 @@
   <data name="Save Asset" xml:space="preserve">
     <value>Gem aktiver</value>
   </data>
+  <data name="Select Entity" xml:space="preserve">
+    <value>Vælg enhed</value>
+  </data>
   <data name="Select Location" xml:space="preserve">
     <value>Vælg placering</value>
   </data>

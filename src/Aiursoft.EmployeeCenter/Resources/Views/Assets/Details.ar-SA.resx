@@ -39,6 +39,9 @@
   <data name="Edit" xml:space="preserve">
     <value>تحرير</value>
   </data>
+  <data name="Entity" xml:space="preserve">
+    <value>الكيان</value>
+  </data>
   <data name="Field" xml:space="preserve">
     <value>الحقل</value>
   </data>

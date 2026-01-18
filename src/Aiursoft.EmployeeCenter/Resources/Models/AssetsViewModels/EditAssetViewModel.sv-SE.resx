@@ -24,6 +24,9 @@
   <data name="Assignee" xml:space="preserve">
     <value>Tilldelad</value>
   </data>
+  <data name="Belongs to Entity" xml:space="preserve">
+    <value>Tillhör entitet</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>Fakturafil</value>
   </data>

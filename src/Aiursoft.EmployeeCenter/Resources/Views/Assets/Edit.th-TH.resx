@@ -36,6 +36,9 @@
   <data name="Not Assigned" xml:space="preserve">
     <value>ยังไม่ได้จัดสรร</value>
   </data>
+  <data name="Select Entity" xml:space="preserve">
+    <value>เลือกหน่วยงาน</value>
+  </data>
   <data name="Select Location" xml:space="preserve">
     <value>เลือกตำแหน่ง</value>
   </data>

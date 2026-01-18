@@ -24,6 +24,9 @@
   <data name="Assignee" xml:space="preserve">
     <value>Alocat</value>
   </data>
+  <data name="Belongs to Entity" xml:space="preserve">
+    <value>Apartine entității</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>Factură</value>
   </data>

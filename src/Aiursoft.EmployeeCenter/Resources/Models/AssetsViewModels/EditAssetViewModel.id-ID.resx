@@ -24,6 +24,9 @@
   <data name="Assignee" xml:space="preserve">
     <value>Penerima Tanggung Jawab</value>
   </data>
+  <data name="Belongs to Entity" xml:space="preserve">
+    <value>Milik Entitas</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>File Faktur</value>
   </data>

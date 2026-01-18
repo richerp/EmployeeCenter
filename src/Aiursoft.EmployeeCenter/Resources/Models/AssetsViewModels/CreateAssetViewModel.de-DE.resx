@@ -24,6 +24,9 @@
   <data name="Assignee" xml:space="preserve">
     <value>Zugewiesen an</value>
   </data>
+  <data name="Belongs to Entity" xml:space="preserve">
+    <value>Zugehörigkeit zur Einheit</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>Rechnungsdatei</value>
   </data>

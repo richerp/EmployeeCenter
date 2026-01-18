@@ -42,6 +42,9 @@
   <data name="Save Asset" xml:space="preserve">
     <value>Guardar activo</value>
   </data>
+  <data name="Select Entity" xml:space="preserve">
+    <value>Seleccionar entidad</value>
+  </data>
   <data name="Select Location" xml:space="preserve">
     <value>Seleccionar ubicación</value>
   </data>

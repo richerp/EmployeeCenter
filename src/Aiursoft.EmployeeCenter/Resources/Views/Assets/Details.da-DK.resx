@@ -39,6 +39,9 @@
   <data name="Edit" xml:space="preserve">
     <value>Rediger</value>
   </data>
+  <data name="Entity" xml:space="preserve">
+    <value>Enhed</value>
+  </data>
   <data name="Field" xml:space="preserve">
     <value>Felt</value>
   </data>

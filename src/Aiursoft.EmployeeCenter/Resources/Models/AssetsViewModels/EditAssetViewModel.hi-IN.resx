@@ -24,6 +24,9 @@
   <data name="Assignee" xml:space="preserve">
     <value>असाइनी</value>
   </data>
+  <data name="Belongs to Entity" xml:space="preserve">
+    <value>एंटिटी के संबंध में</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>बिल फ़ाइल</value>
   </data>

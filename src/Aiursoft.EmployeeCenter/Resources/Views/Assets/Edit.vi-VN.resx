@@ -36,6 +36,9 @@
   <data name="Not Assigned" xml:space="preserve">
     <value>Chưa phân công</value>
   </data>
+  <data name="Select Entity" xml:space="preserve">
+    <value>Chọn Tổ chức</value>
+  </data>
   <data name="Select Location" xml:space="preserve">
     <value>Chọn vị trí</value>
   </data>

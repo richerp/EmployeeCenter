@@ -24,6 +24,9 @@
   <data name="Assignee" xml:space="preserve">
     <value>Toegewezen aan</value>
   </data>
+  <data name="Belongs to Entity" xml:space="preserve">
+    <value>Behoort toe aan Entiteit</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>Factuurbestand</value>
   </data>

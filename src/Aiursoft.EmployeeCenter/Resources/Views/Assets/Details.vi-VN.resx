@@ -39,6 +39,9 @@
   <data name="Edit" xml:space="preserve">
     <value>Chỉnh sửa</value>
   </data>
+  <data name="Entity" xml:space="preserve">
+    <value>Đơn vị</value>
+  </data>
   <data name="Field" xml:space="preserve">
     <value>Trường</value>
   </data>

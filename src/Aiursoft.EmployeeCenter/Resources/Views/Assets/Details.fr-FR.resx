@@ -39,6 +39,9 @@
   <data name="Edit" xml:space="preserve">
     <value>Modifier</value>
   </data>
+  <data name="Entity" xml:space="preserve">
+    <value>Entité</value>
+  </data>
   <data name="Field" xml:space="preserve">
     <value>Champ</value>
   </data>

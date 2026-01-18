@@ -24,6 +24,9 @@
   <data name="Assignee" xml:space="preserve">
     <value>المُسنَد إليه</value>
   </data>
+  <data name="Belongs to Entity" xml:space="preserve">
+    <value>يُنتمي إلى الكيان</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>ملف الفاتورة</value>
   </data>

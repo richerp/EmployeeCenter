@@ -24,6 +24,9 @@
   <data name="Assignee" xml:space="preserve">
     <value>담당자</value>
   </data>
+  <data name="Belongs to Entity" xml:space="preserve">
+    <value>소속 기관</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>송장 파일</value>
   </data>

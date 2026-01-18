@@ -39,6 +39,9 @@
   <data name="Edit" xml:space="preserve">
     <value>संपादित करें</value>
   </data>
+  <data name="Entity" xml:space="preserve">
+    <value>संस्था</value>
+  </data>
   <data name="Field" xml:space="preserve">
     <value>क्षेत्र</value>
   </data>

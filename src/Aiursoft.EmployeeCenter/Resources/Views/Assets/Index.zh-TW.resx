@@ -57,6 +57,9 @@
   <data name="Edit" xml:space="preserve">
     <value>編輯</value>
   </data>
+  <data name="Entity" xml:space="preserve">
+    <value>所屬單位</value>
+  </data>
   <data name="Idle" xml:space="preserve">
     <value>閒置</value>
   </data>

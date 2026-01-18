@@ -57,6 +57,9 @@
   <data name="Edit" xml:space="preserve">
     <value>Edytuj</value>
   </data>
+  <data name="Entity" xml:space="preserve">
+    <value>Jednostka</value>
+  </data>
   <data name="Idle" xml:space="preserve">
     <value>Nieaktywny</value>
   </data>
