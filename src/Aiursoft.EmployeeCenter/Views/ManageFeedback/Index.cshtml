@@ -37,10 +37,10 @@
                         {
                             <tr>
                                 <td>@q.Title</td>
-                                <td>@q.Questions.Count</td>
+                                <td>@q.Questions.Count()</td>
                                 <td>
                                     <a asp-action="Responses" asp-route-id="@q.Id">
-                                        @q.Responses.Count
+                                        @q.Responses.Count()
                                     </a>
                                 </td>
                                 <td>

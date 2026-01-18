@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Newtonsoft.Json;
 
 namespace Aiursoft.EmployeeCenter.Entities;
 
@@ -22,12 +23,14 @@ public class Incident
     [MaxLength(255)]
     public string? OwnerId { get; set; }
 
+    [JsonIgnore]
     [ForeignKey(nameof(OwnerId))]
     public User? Owner { get; set; }
 
     [MaxLength(255)]
     public string? IMId { get; set; }
 
+    [JsonIgnore]
     [ForeignKey(nameof(IMId))]
     public User? IM { get; set; }
 

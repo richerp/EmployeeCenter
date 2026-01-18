@@ -1,10 +1,13 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Newtonsoft.Json;
 
 namespace Aiursoft.EmployeeCenter.Entities;
 
 public class SignalQuestion
 {
-    public int Id { get; set; }
+    [Key]
+    public int Id { get; init; }
 
     [MaxLength(500)]
     public required string Title { get; set; }
@@ -16,7 +19,8 @@ public class SignalQuestion
 
     public string? Meta { get; set; }
 
-    public DateTime CreationTime { get; set; } = DateTime.UtcNow;
+    public DateTime CreationTime { get; init; } = DateTime.UtcNow;
 
-    public List<SignalQuestionnaireQuestion> QuestionnaireQuestions { get; init; } = new();
+    [InverseProperty(nameof(SignalQuestionnaireQuestion.Question))]
+    public IEnumerable<SignalQuestionnaireQuestion> QuestionnaireQuestions { get; init; } = new List<SignalQuestionnaireQuestion>();
 }

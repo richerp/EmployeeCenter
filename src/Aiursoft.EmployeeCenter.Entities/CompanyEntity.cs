@@ -1,13 +1,13 @@
 using System.ComponentModel.DataAnnotations;
+using Newtonsoft.Json;
 
 namespace Aiursoft.EmployeeCenter.Entities;
 
 public class CompanyEntity
 {
     [Key]
-    public int Id { get; set; }
+    public int Id { get; init; }
 
-    [Required]
     [MaxLength(200)]
     public required string CompanyName { get; set; }
 
@@ -18,7 +18,6 @@ public class CompanyEntity
     /// Mainland: Unified Social Credit Code
     /// HK: BR Number
     /// </summary>
-    [Required]
     [MaxLength(50)]
     public required string EntityCode { get; set; }
 
@@ -90,7 +89,7 @@ public class CompanyEntity
     [MaxLength(100)]
     public string? CompanySecretary { get; set; }
 
-    public DateTime CreationTime { get; set; } = DateTime.UtcNow;
+    public DateTime CreationTime { get; init; } = DateTime.UtcNow;
 
     public DateTime UpdateTime { get; set; } = DateTime.UtcNow;
 }

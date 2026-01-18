@@ -1,5 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
+using Newtonsoft.Json;
 
 namespace Aiursoft.EmployeeCenter.Entities;
 
@@ -10,12 +12,15 @@ public class IncidentComment
 
     public Guid IncidentId { get; set; }
 
+    [JsonIgnore]
     [ForeignKey(nameof(IncidentId))]
+    [NotNull]
     public Incident? Incident { get; set; }
 
     [MaxLength(255)]
     public string? AuthorId { get; set; }
 
+    [JsonIgnore]
     [ForeignKey(nameof(AuthorId))]
     public User? Author { get; set; }
 

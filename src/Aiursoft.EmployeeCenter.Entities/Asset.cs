@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
 using Newtonsoft.Json;
 
 namespace Aiursoft.EmployeeCenter.Entities;
@@ -7,9 +8,8 @@ namespace Aiursoft.EmployeeCenter.Entities;
 public class Asset
 {
     [Key]
-    public Guid Id { get; set; }
+    public Guid Id { get; init; }
 
-    [Required]
     [MaxLength(50)]
     public required string AssetTag { get; set; }
 
@@ -19,8 +19,10 @@ public class Asset
     [Required]
     public int ModelId { get; set; }
 
+    [JsonIgnore]
     [ForeignKey(nameof(ModelId))]
-    public AssetModel Model { get; set; } = null!;
+    [NotNull]
+    public AssetModel? Model { get; set; }
 
     [Required]
     public AssetStatus Status { get; set; }
@@ -28,16 +30,19 @@ public class Asset
     [MaxLength(255)]
     public string? AssigneeId { get; set; }
 
+    [JsonIgnore]
     [ForeignKey(nameof(AssigneeId))]
     public User? Assignee { get; set; }
 
     public int? LocationId { get; set; }
 
+    [JsonIgnore]
     [ForeignKey(nameof(LocationId))]
     public Location? Location { get; set; }
 
     public int? CompanyEntityId { get; set; }
 
+    [JsonIgnore]
     [ForeignKey(nameof(CompanyEntityId))]
     public CompanyEntity? CompanyEntity { get; set; }
 
@@ -47,6 +52,7 @@ public class Asset
 
     public int? VendorId { get; set; }
 
+    [JsonIgnore]
     [ForeignKey(nameof(VendorId))]
     public Vendor? Vendor { get; set; }
 
@@ -57,13 +63,13 @@ public class Asset
 
     public bool IsReimbursed { get; set; }
 
-    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    public DateTime CreatedAt { get; init; } = DateTime.UtcNow;
 
     public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
     [Timestamp]
     public byte[] RowVersion { get; set; } = Array.Empty<byte>();
 
-    [JsonIgnore]
-    public List<AssetHistory> Histories { get; set; } = new();
+    [InverseProperty(nameof(AssetHistory.Asset))]
+    public IEnumerable<AssetHistory> Histories { get; init; } = new List<AssetHistory>();
 }

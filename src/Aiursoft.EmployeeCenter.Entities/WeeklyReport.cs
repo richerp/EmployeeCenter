@@ -1,23 +1,25 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
+using Newtonsoft.Json;
 
 namespace Aiursoft.EmployeeCenter.Entities;
 
 public class WeeklyReport
 {
     [Key]
-    public int Id { get; set; }
+    public int Id { get; init; }
 
-    [Required]
-    public string UserId { get; set; } = string.Empty;
+    public required string UserId { get; set; }
 
+    [JsonIgnore]
     [ForeignKey(nameof(UserId))]
+    [NotNull]
     public User? User { get; set; }
 
-    [Required]
-    public string Content { get; set; } = string.Empty;
+    public required string Content { get; set; }
 
     public DateTime WeekStartDate { get; set; }
 
-    public DateTime CreateTime { get; set; } = DateTime.UtcNow;
+    public DateTime CreateTime { get; init; } = DateTime.UtcNow;
 }

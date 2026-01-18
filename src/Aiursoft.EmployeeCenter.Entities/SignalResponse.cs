@@ -1,20 +1,31 @@
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
+using Newtonsoft.Json;
 
 namespace Aiursoft.EmployeeCenter.Entities;
 
 public class SignalResponse
 {
-    public int Id { get; set; }
+    [Key]
+    public int Id { get; init; }
 
-    public int QuestionnaireId { get; set; }
+    public required int QuestionnaireId { get; set; }
+
+    [JsonIgnore]
     [ForeignKey(nameof(QuestionnaireId))]
-    public SignalQuestionnaire Questionnaire { get; set; } = null!;
+    [NotNull]
+    public SignalQuestionnaire? Questionnaire { get; set; }
 
     public required string UserId { get; set; }
+
+    [JsonIgnore]
     [ForeignKey(nameof(UserId))]
-    public User User { get; set; } = null!;
+    [NotNull]
+    public User? User { get; set; }
 
-    public DateTime SubmitTime { get; set; } = DateTime.UtcNow;
+    public DateTime SubmitTime { get; init; } = DateTime.UtcNow;
 
-    public List<SignalQuestionResponse> QuestionResponses { get; init; } = new();
+    [InverseProperty(nameof(SignalQuestionResponse.SignalResponse))]
+    public IEnumerable<SignalQuestionResponse> QuestionResponses { get; init; } = new List<SignalQuestionResponse>();
 }

@@ -175,7 +175,6 @@ public class WeeklyReportController(
             {
                 // Allow overwrite
                 existing.Content = content;
-                existing.CreateTime = DateTime.UtcNow;
                 existing.WeekStartDate = targetWeek;
                 await dbContext.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

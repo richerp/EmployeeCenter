@@ -1,18 +1,28 @@
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
+using Newtonsoft.Json;
 
 namespace Aiursoft.EmployeeCenter.Entities;
 
 public class SignalQuestionResponse
 {
-    public int Id { get; set; }
+    [Key]
+    public int Id { get; init; }
 
-    public int SignalResponseId { get; set; }
+    public required int SignalResponseId { get; set; }
+
+    [JsonIgnore]
     [ForeignKey(nameof(SignalResponseId))]
-    public SignalResponse SignalResponse { get; set; } = null!;
+    [NotNull]
+    public SignalResponse? SignalResponse { get; set; }
 
-    public int QuestionId { get; set; }
+    public required int QuestionId { get; set; }
+
+    [JsonIgnore]
     [ForeignKey(nameof(QuestionId))]
-    public SignalQuestion Question { get; set; } = null!;
+    [NotNull]
+    public SignalQuestion? Question { get; set; }
 
     public string? Answer { get; set; }
 }
