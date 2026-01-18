@@ -36,6 +36,9 @@
   <data name="Not Assigned" xml:space="preserve">
     <value>Atanmamış</value>
   </data>
+  <data name="Select Entity" xml:space="preserve">
+    <value>Varlık Seç</value>
+  </data>
   <data name="Select Location" xml:space="preserve">
     <value>Konum Seç</value>
   </data>

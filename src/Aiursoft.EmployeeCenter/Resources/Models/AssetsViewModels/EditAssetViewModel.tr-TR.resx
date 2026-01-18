@@ -24,6 +24,9 @@
   <data name="Assignee" xml:space="preserve">
     <value>Atanan Kişi</value>
   </data>
+  <data name="Belongs to Entity" xml:space="preserve">
+    <value>Varlıkla İlgili</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>Fatura Dosyası</value>
   </data>

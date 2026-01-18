@@ -24,6 +24,9 @@
   <data name="Assignee" xml:space="preserve">
     <value>Ανάθεση</value>
   </data>
+  <data name="Belongs to Entity" xml:space="preserve">
+    <value>Ανήκει στην Οντότητα</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>Αρχείο Τιμολογίου</value>
   </data>

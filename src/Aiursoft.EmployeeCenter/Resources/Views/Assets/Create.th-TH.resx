@@ -42,6 +42,9 @@
   <data name="Save Asset" xml:space="preserve">
     <value>บันทึกสินทรัพย์</value>
   </data>
+  <data name="Select Entity" xml:space="preserve">
+    <value>เลือกหน่วยงาน</value>
+  </data>
   <data name="Select Location" xml:space="preserve">
     <value>เลือกตำแหน่ง</value>
   </data>

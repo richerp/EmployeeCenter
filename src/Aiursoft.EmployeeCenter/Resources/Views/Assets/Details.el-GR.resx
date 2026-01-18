@@ -39,6 +39,9 @@
   <data name="Edit" xml:space="preserve">
     <value>Επεξεργασία</value>
   </data>
+  <data name="Entity" xml:space="preserve">
+    <value>Οργανισμός</value>
+  </data>
   <data name="Field" xml:space="preserve">
     <value>Πεδίο</value>
   </data>

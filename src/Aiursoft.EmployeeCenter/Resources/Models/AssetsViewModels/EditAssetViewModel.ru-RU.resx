@@ -24,6 +24,9 @@
   <data name="Assignee" xml:space="preserve">
     <value>Ответственный</value>
   </data>
+  <data name="Belongs to Entity" xml:space="preserve">
+    <value>Принадлежит организации</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>Счет-фактура</value>
   </data>

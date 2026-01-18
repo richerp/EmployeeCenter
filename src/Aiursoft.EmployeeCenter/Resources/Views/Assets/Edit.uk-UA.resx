@@ -36,6 +36,9 @@
   <data name="Not Assigned" xml:space="preserve">
     <value>Не призначено</value>
   </data>
+  <data name="Select Entity" xml:space="preserve">
+    <value>Вибрати організацію</value>
+  </data>
   <data name="Select Location" xml:space="preserve">
     <value>Вибрати розташування</value>
   </data>

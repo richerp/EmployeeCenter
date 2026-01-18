@@ -39,6 +39,9 @@
   <data name="Edit" xml:space="preserve">
     <value>แก้ไข</value>
   </data>
+  <data name="Entity" xml:space="preserve">
+    <value>หน่วยงาน</value>
+  </data>
   <data name="Field" xml:space="preserve">
     <value>ฟิลด์</value>
   </data>

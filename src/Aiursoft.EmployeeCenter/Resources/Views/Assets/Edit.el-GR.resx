@@ -36,6 +36,9 @@
   <data name="Not Assigned" xml:space="preserve">
     <value>Όχι Ανατεθειμένος</value>
   </data>
+  <data name="Select Entity" xml:space="preserve">
+    <value>Επιλέξτε Οντότητα</value>
+  </data>
   <data name="Select Location" xml:space="preserve">
     <value>Επιλογή Τοποθεσίας</value>
   </data>

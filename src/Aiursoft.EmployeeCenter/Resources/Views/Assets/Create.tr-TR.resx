@@ -42,6 +42,9 @@
   <data name="Save Asset" xml:space="preserve">
     <value>Varlık Kaydet</value>
   </data>
+  <data name="Select Entity" xml:space="preserve">
+    <value>Varlık Seç</value>
+  </data>
   <data name="Select Location" xml:space="preserve">
     <value>Konumu Seç</value>
   </data>

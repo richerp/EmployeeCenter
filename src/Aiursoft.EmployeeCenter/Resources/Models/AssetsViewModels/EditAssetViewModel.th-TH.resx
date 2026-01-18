@@ -24,6 +24,9 @@
   <data name="Assignee" xml:space="preserve">
     <value>ผู้รับมอบหมาย</value>
   </data>
+  <data name="Belongs to Entity" xml:space="preserve">
+    <value>สังกัดองค์กร</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>ไฟล์ใบแจ้งหนี้</value>
   </data>
