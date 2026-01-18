@@ -48,6 +48,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>他のユーザーと共有できる新規グローバルパスワードの作成を許可します。</value>
   </data>
+  <data name="Allows creating questions, questionnaires, and viewing feedback responses." xml:space="preserve">
+    <value>質問やアンケートの作成、フィードバックの応答の閲覧を許可します。</value>
+  </data>
   <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
     <value>他のユーザーの代わりに週次レポートの作成、編集、削除を許可します。</value>
   </data>
@@ -92,6 +95,9 @@
   </data>
   <data name="Allows the user to create weekly reports on behalf of any other user." xml:space="preserve">
     <value>ユーザーは、他の任意のユーザーの代わりに週次レポートを作成できるようにします。</value>
+  </data>
+  <data name="Allows the user to fill out and submit feedback questionnaires." xml:space="preserve">
+    <value>ユーザーがフィードバックアンケートを記入および提出できるようにします。</value>
   </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>すべての会社契約（プライベートとしてマークされたものも含む）を閲覧できるようにします。</value>
@@ -189,6 +195,9 @@
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>会社エンティティの管理</value>
   </data>
+  <data name="Manage Feedback" xml:space="preserve">
+    <value>フィードバックの管理</value>
+  </data>
   <data name="Manage Global Settings" xml:space="preserve">
     <value>グローバル設定の管理</value>
   </data>
@@ -218,6 +227,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>このアプリを再起動</value>
+  </data>
+  <data name="Submit Feedback" xml:space="preserve">
+    <value>フィードバックを送信</value>
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>会社の契約書をすべて閲覧可能（非公開のものも含む）</value>

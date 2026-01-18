@@ -48,6 +48,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>다른 사용자와 공유할 수 있는 새로운 전역 비밀번호를 생성할 수 있습니다.</value>
   </data>
+  <data name="Allows creating questions, questionnaires, and viewing feedback responses." xml:space="preserve">
+    <value>질문과 설문지를 생성하고 피드백 응답을 조회할 수 있습니다.</value>
+  </data>
   <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
     <value>다른 사용자의 대신 주간 보고서를 생성, 편집 및 삭제할 수 있습니다.</value>
   </data>
@@ -92,6 +95,9 @@
   </data>
   <data name="Allows the user to create weekly reports on behalf of any other user." xml:space="preserve">
     <value>사용자가 다른 사용자의 대신 주간 보고서를 작성할 수 있도록 허용합니다.</value>
+  </data>
+  <data name="Allows the user to fill out and submit feedback questionnaires." xml:space="preserve">
+    <value>사용자가 피드백 설문지를 작성하고 제출할 수 있도록 허용합니다.</value>
   </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>모든 회사 계약서를 포함하여 비공개로 표시된 계약서도 볼 수 있도록 허용합니다.</value>
@@ -189,6 +195,9 @@
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>회사 엔티티 관리</value>
   </data>
+  <data name="Manage Feedback" xml:space="preserve">
+    <value>피드백 관리</value>
+  </data>
   <data name="Manage Global Settings" xml:space="preserve">
     <value>글로벌 설정 관리</value>
   </data>
@@ -218,6 +227,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>이 앱 재시작</value>
+  </data>
+  <data name="Submit Feedback" xml:space="preserve">
+    <value>피드백 제출</value>
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>모든 회사 계약서(비공개 계약서 포함) 보기</value>

@@ -48,6 +48,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Giver mulighed for at oprette nye globale adgangskoder, der kan deles med andre.</value>
   </data>
+  <data name="Allows creating questions, questionnaires, and viewing feedback responses." xml:space="preserve">
+    <value>Tillader oprettelse af spørgsmål, spørgeskemaer og visning af feedback-svar.</value>
+  </data>
   <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
     <value>Tillader oprettelse, redigering og sletning af ugentlige rapporter på vegne af enhver anden bruger.</value>
   </data>
@@ -92,6 +95,9 @@
   </data>
   <data name="Allows the user to create weekly reports on behalf of any other user." xml:space="preserve">
     <value>Giver brugeren mulighed for at oprette ugentlige rapporter i stedet for enhver anden bruger.</value>
+  </data>
+  <data name="Allows the user to fill out and submit feedback questionnaires." xml:space="preserve">
+    <value>Giver brugeren mulighed for at udfylde og indsende feedbackspørgeskemaer.</value>
   </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Tillader visning af alle virksomhedskontrakter, herunder de, der er markeret som private.</value>
@@ -189,6 +195,9 @@
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Håndtér virksomhedsenheder</value>
   </data>
+  <data name="Manage Feedback" xml:space="preserve">
+    <value>Håndtér Feedback</value>
+  </data>
   <data name="Manage Global Settings" xml:space="preserve">
     <value>Administrer globale indstillinger</value>
   </data>
@@ -218,6 +227,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>Genstart denne app</value>
+  </data>
+  <data name="Submit Feedback" xml:space="preserve">
+    <value>Indsend Feedback</value>
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>Vis enhver virksomhedskontrakt, herunder private</value>

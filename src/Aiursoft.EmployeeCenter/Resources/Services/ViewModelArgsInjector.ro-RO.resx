@@ -174,6 +174,9 @@
   <data name="Employee Center" xml:space="preserve">
     <value>Centrul Angajaților</value>
   </data>
+  <data name="Employee Signals" xml:space="preserve">
+    <value>Semnale angajați</value>
+  </data>
   <data name="English Name" xml:space="preserve">
     <value>Numele în engleză</value>
   </data>
@@ -257,6 +260,9 @@
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>Gestionare contracte</value>
+  </data>
+  <data name="Manage Feedback" xml:space="preserve">
+    <value>Gestionare feedback</value>
   </data>
   <data name="Manage IT Assets" xml:space="preserve">
     <value>Gestionare active IT</value>

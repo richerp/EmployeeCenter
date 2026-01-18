@@ -48,6 +48,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Staat het aanmaken van nieuwe globale wachtwoorden toe die gedeeld kunnen worden met anderen.</value>
   </data>
+  <data name="Allows creating questions, questionnaires, and viewing feedback responses." xml:space="preserve">
+    <value>Staats het maken van vragen, enquêtes en het bekijken van feedbackreacties toe.</value>
+  </data>
   <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
     <value>Staats het maken, bewerken en verwijderen van wekelijkse rapporten namens een willekeurige andere gebruiker toe.</value>
   </data>
@@ -92,6 +95,9 @@
   </data>
   <data name="Allows the user to create weekly reports on behalf of any other user." xml:space="preserve">
     <value>Staat de gebruiker toe om wekelijkse rapporten op te stellen namens een willekeurige andere gebruiker.</value>
+  </data>
+  <data name="Allows the user to fill out and submit feedback questionnaires." xml:space="preserve">
+    <value>Staat de gebruiker toe om feedbackvragenlijsten in te vullen en te versturen.</value>
   </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Staats het bekijken van alle bedrijfscontracten, inclusief die die als privé zijn gemarkeerd.</value>
@@ -189,6 +195,9 @@
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Bedrijfseenheden beheren</value>
   </data>
+  <data name="Manage Feedback" xml:space="preserve">
+    <value>Feedback beheren</value>
+  </data>
   <data name="Manage Global Settings" xml:space="preserve">
     <value>Algemene instellingen beheren</value>
   </data>
@@ -218,6 +227,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>Herstart deze app</value>
+  </data>
+  <data name="Submit Feedback" xml:space="preserve">
+    <value>Feedback indienen</value>
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>Bekijk elke bedrijfscontract, inclusief particuliere contracten</value>

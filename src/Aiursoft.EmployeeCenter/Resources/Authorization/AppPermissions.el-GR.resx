@@ -48,6 +48,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Επιτρέπει τη δημιουργία νέων καθολικών κωδικών πρόσβασης που μπορούν να κοινοποιηθούν με άλλους.</value>
   </data>
+  <data name="Allows creating questions, questionnaires, and viewing feedback responses." xml:space="preserve">
+    <value>Επιτρέπει τη δημιουργία ερωτήσεων, ερωτηματολογίων και την προβολή απαντήσεων σχολίων.</value>
+  </data>
   <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
     <value>Επιτρέπει τη δημιουργία, επεξεργασία και διαγραφή εβδομαδιαίων αναφορών εκ μέρους οποιουδήποτε άλλου χρήστη.</value>
   </data>
@@ -92,6 +95,9 @@
   </data>
   <data name="Allows the user to create weekly reports on behalf of any other user." xml:space="preserve">
     <value>Επιτρέπει στον χρήστη να δημιουργεί εβδομαδιαίες αναφορές εκ μέρους οποιουδήποτε άλλου χρήστη.</value>
+  </data>
+  <data name="Allows the user to fill out and submit feedback questionnaires." xml:space="preserve">
+    <value>Επιτρέπει στον χρήστη να συμπληρώσει και να υποβάλει ερωτηματολόγια ανταπόκρισης.</value>
   </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Επιτρέπει την προβολή όλων των συμβάσεων της εταιρείας, συμπεριλαμβανομένων εκείνων που έχουν σημειωθεί ως ιδιωτικές.</value>
@@ -189,6 +195,9 @@
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Διαχείριση Εταιρικών Οντοτήτων</value>
   </data>
+  <data name="Manage Feedback" xml:space="preserve">
+    <value>Διαχείριση Σχολίων</value>
+  </data>
   <data name="Manage Global Settings" xml:space="preserve">
     <value>Διαχείριση Γενικών Ρυθμίσεων</value>
   </data>
@@ -218,6 +227,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>Επανεκκίνηση αυτής της εφαρμογής</value>
+  </data>
+  <data name="Submit Feedback" xml:space="preserve">
+    <value>Υποβολή Σχολίων</value>
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>Προβολή οποιουδήποτε συμβολαίου εταιρείας, συμπεριλαμβανομένων των ιδιωτικών</value>

@@ -48,6 +48,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Memungkinkan pembuatan kata sandi global baru yang dapat dibagikan dengan orang lain.</value>
   </data>
+  <data name="Allows creating questions, questionnaires, and viewing feedback responses." xml:space="preserve">
+    <value>Memungkinkan pembuatan pertanyaan, kuesioner, dan melihat respons umpan balik.</value>
+  </data>
   <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
     <value>Memungkinkan pembuatan, pengeditan, dan penghapusan laporan mingguan atas nama pengguna lain.</value>
   </data>
@@ -92,6 +95,9 @@
   </data>
   <data name="Allows the user to create weekly reports on behalf of any other user." xml:space="preserve">
     <value>Memungkinkan pengguna membuat laporan mingguan atas nama pengguna lain.</value>
+  </data>
+  <data name="Allows the user to fill out and submit feedback questionnaires." xml:space="preserve">
+    <value>Memungkinkan pengguna mengisi dan mengirimkan kuesioner umpan balik.</value>
   </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Memungkinkan melihat semua kontrak perusahaan, termasuk yang ditandai sebagai pribadi.</value>
@@ -189,6 +195,9 @@
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Kelola Entitas Perusahaan</value>
   </data>
+  <data name="Manage Feedback" xml:space="preserve">
+    <value>Kelola Umpan Balik</value>
+  </data>
   <data name="Manage Global Settings" xml:space="preserve">
     <value>Kelola Pengaturan Global</value>
   </data>
@@ -218,6 +227,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>Mulai Ulang Aplikasi Ini</value>
+  </data>
+  <data name="Submit Feedback" xml:space="preserve">
+    <value>Kirim Umpan Balik</value>
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>Lihat kontrak perusahaan apa pun, termasuk yang bersifat pribadi</value>

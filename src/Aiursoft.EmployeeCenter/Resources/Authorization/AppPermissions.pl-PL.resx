@@ -48,6 +48,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Zezwala na tworzenie nowych globalnych haseł, które mogą być udostępniane innym.</value>
   </data>
+  <data name="Allows creating questions, questionnaires, and viewing feedback responses." xml:space="preserve">
+    <value>Zezwala na tworzenie pytań, ankiet oraz przeglądanie odpowiedzi na opinie.</value>
+  </data>
   <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
     <value>Zezwala na tworzenie, edytowanie i usuwanie raportów tygodniowych w imieniu dowolnego innego użytkownika.</value>
   </data>
@@ -92,6 +95,9 @@
   </data>
   <data name="Allows the user to create weekly reports on behalf of any other user." xml:space="preserve">
     <value>Umożliwia użytkownikowi tworzenie raportów tygodniowych w imieniu dowolnego innego użytkownika.</value>
+  </data>
+  <data name="Allows the user to fill out and submit feedback questionnaires." xml:space="preserve">
+    <value>Umożliwia użytkownikowi wypełnianie i przesyłanie ankiet z opiniami.</value>
   </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Zezwala na przeglądanie wszystkich umów firmowych, w tym tych oznaczonych jako prywatne.</value>
@@ -189,6 +195,9 @@
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Zarządzaj jednostkami firmowymi</value>
   </data>
+  <data name="Manage Feedback" xml:space="preserve">
+    <value>Zarządzaj opiniami</value>
+  </data>
   <data name="Manage Global Settings" xml:space="preserve">
     <value>Zarządzaj ustawieniami globalnymi</value>
   </data>
@@ -218,6 +227,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>Uruchom ponownie tę aplikację</value>
+  </data>
+  <data name="Submit Feedback" xml:space="preserve">
+    <value>Prześlij Opinie</value>
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>Wyświetl dowolny kontrakt firmy, w tym prywatne</value>

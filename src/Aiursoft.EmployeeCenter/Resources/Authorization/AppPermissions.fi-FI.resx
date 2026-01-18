@@ -48,6 +48,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Mahdollistaa uusien globaalien salasanojen luomisen, jotka voidaan jakaa muiden kanssa.</value>
   </data>
+  <data name="Allows creating questions, questionnaires, and viewing feedback responses." xml:space="preserve">
+    <value>Sallii kysymysten, kyselylomakkeiden luomisen ja palautteen vastausten tarkastelun.</value>
+  </data>
   <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
     <value>Sallii viikonraporttien luomisen, muokkaamisen ja poistamisen muiden käyttäjien puolesta.</value>
   </data>
@@ -92,6 +95,9 @@
   </data>
   <data name="Allows the user to create weekly reports on behalf of any other user." xml:space="preserve">
     <value>Mahdollistaa käyttäjän luoda viikkoraportteja muiden käyttäjien puolesta.</value>
+  </data>
+  <data name="Allows the user to fill out and submit feedback questionnaires." xml:space="preserve">
+    <value>Sallii käyttäjän täyttää ja lähettää palautetta koskevat kyselyt.</value>
   </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Sallii kaikkien yrityksen sopimusten tarkastelun, mukaan lukien ne, jotka on merkitty yksityisiksi.</value>
@@ -189,6 +195,9 @@
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Hallinnoi yrityksen yksiköitä</value>
   </data>
+  <data name="Manage Feedback" xml:space="preserve">
+    <value>Hallinnoi palautetta</value>
+  </data>
   <data name="Manage Global Settings" xml:space="preserve">
     <value>Hallinnoi yleisiä asetuksia</value>
   </data>
@@ -218,6 +227,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>Käynnistä tämä sovellus uudelleen</value>
+  </data>
+  <data name="Submit Feedback" xml:space="preserve">
+    <value>Lähetä palautetta</value>
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>Näytä mikä tahansa yrityksen sopimus, mukaan lukien yksityiset</value>

@@ -48,6 +48,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Permet de créer de nouveaux mots de passe globaux pouvant être partagés avec d&apos;autres.</value>
   </data>
+  <data name="Allows creating questions, questionnaires, and viewing feedback responses." xml:space="preserve">
+    <value>Permet de créer des questions, des questionnaires et de visualiser les réponses aux commentaires.</value>
+  </data>
   <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
     <value>Permet de créer, modifier et supprimer des rapports hebdomadaires au nom de tout autre utilisateur.</value>
   </data>
@@ -92,6 +95,9 @@
   </data>
   <data name="Allows the user to create weekly reports on behalf of any other user." xml:space="preserve">
     <value>Permet à l&apos;utilisateur de créer des rapports hebdomadaires pour le compte de tout autre utilisateur.</value>
+  </data>
+  <data name="Allows the user to fill out and submit feedback questionnaires." xml:space="preserve">
+    <value>Permet à l&apos;utilisateur de remplir et de soumettre des questionnaires de retour.</value>
   </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Permet de visualiser tous les contrats de l&apos;entreprise, y compris ceux marqués comme privés.</value>
@@ -189,6 +195,9 @@
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Gérer les entités de l&apos;entreprise</value>
   </data>
+  <data name="Manage Feedback" xml:space="preserve">
+    <value>Gérer les retours</value>
+  </data>
   <data name="Manage Global Settings" xml:space="preserve">
     <value>Gérer les paramètres globaux</value>
   </data>
@@ -218,6 +227,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>Redémarrer cette application</value>
+  </data>
+  <data name="Submit Feedback" xml:space="preserve">
+    <value>Soumettre des commentaires</value>
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>Visualiser tout contrat de l&apos;entreprise, y compris les contrats privés</value>

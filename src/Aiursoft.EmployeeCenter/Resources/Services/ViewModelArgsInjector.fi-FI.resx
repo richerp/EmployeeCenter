@@ -174,6 +174,9 @@
   <data name="Employee Center" xml:space="preserve">
     <value>Työntekijäkeskus</value>
   </data>
+  <data name="Employee Signals" xml:space="preserve">
+    <value>Työntekijäsignaalit</value>
+  </data>
   <data name="English Name" xml:space="preserve">
     <value>Englannin nimi</value>
   </data>
@@ -257,6 +260,9 @@
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>Hallinnoi sopimuksia</value>
+  </data>
+  <data name="Manage Feedback" xml:space="preserve">
+    <value>Feedbackin hallinta</value>
   </data>
   <data name="Manage IT Assets" xml:space="preserve">
     <value>Hallinnoi IT-varastoja</value>

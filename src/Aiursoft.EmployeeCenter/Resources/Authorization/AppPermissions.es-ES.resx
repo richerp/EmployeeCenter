@@ -48,6 +48,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Permite crear nuevas contraseñas globales que pueden ser compartidas con otros.</value>
   </data>
+  <data name="Allows creating questions, questionnaires, and viewing feedback responses." xml:space="preserve">
+    <value>Permite crear preguntas, cuestionarios y ver las respuestas de los comentarios.</value>
+  </data>
   <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
     <value>Permite crear, editar y eliminar informes semanales en nombre de cualquier otro usuario.</value>
   </data>
@@ -92,6 +95,9 @@
   </data>
   <data name="Allows the user to create weekly reports on behalf of any other user." xml:space="preserve">
     <value>Permite al usuario crear informes semanales en nombre de cualquier otro usuario.</value>
+  </data>
+  <data name="Allows the user to fill out and submit feedback questionnaires." xml:space="preserve">
+    <value>Permite al usuario rellenar y enviar cuestionarios de feedback.</value>
   </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Permite ver todos los contratos de la empresa, incluidos los marcados como privados.</value>
@@ -189,6 +195,9 @@
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Administrar entidades de la empresa</value>
   </data>
+  <data name="Manage Feedback" xml:space="preserve">
+    <value>Gestionar comentarios</value>
+  </data>
   <data name="Manage Global Settings" xml:space="preserve">
     <value>Administrar la configuración global</value>
   </data>
@@ -218,6 +227,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>Reiniciar Esta Aplicación</value>
+  </data>
+  <data name="Submit Feedback" xml:space="preserve">
+    <value>Enviar comentarios</value>
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>Ver cualquier contrato de la empresa, incluidos los privados</value>

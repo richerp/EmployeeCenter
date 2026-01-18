@@ -48,6 +48,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>อนุญาตให้สร้างรหัสผ่านสากลใหม่ที่สามารถแชร์กับผู้อื่นได้</value>
   </data>
+  <data name="Allows creating questions, questionnaires, and viewing feedback responses." xml:space="preserve">
+    <value>อนุญาตให้สร้างคำถาม แบบสอบถาม และดูคำตอบจากแบบสอบถาม</value>
+  </data>
   <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
     <value>อนุญาตให้สร้าง แก้ไข และลบรายงานรายสัปดาห์แทนผู้ใช้คนอื่นใดก็ได้</value>
   </data>
@@ -92,6 +95,9 @@
   </data>
   <data name="Allows the user to create weekly reports on behalf of any other user." xml:space="preserve">
     <value>อนุญาตให้ผู้ใช้สร้างรายงานรายสัปดาห์แทนผู้ใช้คนอื่นใดก็ได้</value>
+  </data>
+  <data name="Allows the user to fill out and submit feedback questionnaires." xml:space="preserve">
+    <value>อนุญาตให้ผู้ใช้กรอกและส่งแบบสอบถามความคิดเห็น</value>
   </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>อนุญาตให้ดูสัญญาบริษัททั้งหมด รวมถึงสัญญาที่ระบุว่าเป็นส่วนตัว</value>
@@ -189,6 +195,9 @@
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>จัดการหน่วยงานของบริษัท</value>
   </data>
+  <data name="Manage Feedback" xml:space="preserve">
+    <value>จัดการความคิดเห็น</value>
+  </data>
   <data name="Manage Global Settings" xml:space="preserve">
     <value>จัดการตั้งค่าทั่วไป</value>
   </data>
@@ -218,6 +227,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>รีบูตแอปนี้</value>
+  </data>
+  <data name="Submit Feedback" xml:space="preserve">
+    <value>ส่งความคิดเห็น</value>
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>ดูสัญญาบริษัทใดๆ รวมถึงที่เป็นความลับ</value>

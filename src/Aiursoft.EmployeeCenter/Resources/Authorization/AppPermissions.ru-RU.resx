@@ -48,6 +48,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Позволяет создавать новые глобальные пароли, которые можно использовать совместно с другими.</value>
   </data>
+  <data name="Allows creating questions, questionnaires, and viewing feedback responses." xml:space="preserve">
+    <value>Позволяет создавать вопросы, анкеты и просматривать ответы на отзывы.</value>
+  </data>
   <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
     <value>Позволяет создавать, редактировать и удалять еженедельные отчеты от имени любого другого пользователя.</value>
   </data>
@@ -92,6 +95,9 @@
   </data>
   <data name="Allows the user to create weekly reports on behalf of any other user." xml:space="preserve">
     <value>Позволяет пользователю создавать еженедельные отчеты от имени любого другого пользователя.</value>
+  </data>
+  <data name="Allows the user to fill out and submit feedback questionnaires." xml:space="preserve">
+    <value>Позволяет пользователю заполнять и отправлять анкеты обратной связи.</value>
   </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Позволяет просматривать все корпоративные контракты, включая те, которые помечены как приватные.</value>
@@ -189,6 +195,9 @@
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Управление корпоративными сущностями</value>
   </data>
+  <data name="Manage Feedback" xml:space="preserve">
+    <value>Управление отзывами</value>
+  </data>
   <data name="Manage Global Settings" xml:space="preserve">
     <value>Управление глобальными настройками</value>
   </data>
@@ -218,6 +227,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>Перезапустить это приложение</value>
+  </data>
+  <data name="Submit Feedback" xml:space="preserve">
+    <value>Отправить отзыв</value>
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>Просмотр любого корпоративного договора, включая частные</value>
