@@ -177,6 +177,9 @@
   <data name="Employee Center" xml:space="preserve">
     <value>従業員センター</value>
   </data>
+  <data name="Employee Signals" xml:space="preserve">
+    <value>従業員シグナル</value>
+  </data>
   <data name="English Name" xml:space="preserve">
     <value>英語名</value>
   </data>
@@ -260,6 +263,9 @@
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>契約を管理する</value>
+  </data>
+  <data name="Manage Feedback" xml:space="preserve">
+    <value>フィードバックの管理</value>
   </data>
   <data name="Manage IT Assets" xml:space="preserve">
     <value>IT資産の管理</value>

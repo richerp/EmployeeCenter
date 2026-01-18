@@ -48,6 +48,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Erlaubt das Erstellen neuer globaler Passwörter, die mit anderen geteilt werden können.</value>
   </data>
+  <data name="Allows creating questions, questionnaires, and viewing feedback responses." xml:space="preserve">
+    <value>Ermöglicht das Erstellen von Fragen, Fragebögen und das Ansehen von Feedback-Antworten.</value>
+  </data>
   <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
     <value>Ermöglicht das Erstellen, Bearbeiten und Löschen von Wochenberichten im Namen beliebiger anderer Benutzer.</value>
   </data>
@@ -92,6 +95,9 @@
   </data>
   <data name="Allows the user to create weekly reports on behalf of any other user." xml:space="preserve">
     <value>Erlaubt dem Benutzer wöchentliche Berichte im Namen beliebiger anderer Benutzer zu erstellen.</value>
+  </data>
+  <data name="Allows the user to fill out and submit feedback questionnaires." xml:space="preserve">
+    <value>Ermöglicht dem Benutzer, Feedback-Befragungen auszufüllen und einzureichen.</value>
   </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Ermöglicht das Ansehen aller Unternehmensverträge, einschließlich solcher, die als privat gekennzeichnet sind.</value>
@@ -189,6 +195,9 @@
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Unternehmenseinheiten verwalten</value>
   </data>
+  <data name="Manage Feedback" xml:space="preserve">
+    <value>Feedback verwalten</value>
+  </data>
   <data name="Manage Global Settings" xml:space="preserve">
     <value>Globale Einstellungen verwalten</value>
   </data>
@@ -218,6 +227,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>Diese App neu starten</value>
+  </data>
+  <data name="Submit Feedback" xml:space="preserve">
+    <value>Feedback einreichen</value>
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>Jeden Unternehmensvertrag anzeigen, einschließlich privater</value>

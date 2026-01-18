@@ -48,6 +48,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Yeni başkalarıyla paylaşılabilen genel şifreler oluşturmayı izin verir.</value>
   </data>
+  <data name="Allows creating questions, questionnaires, and viewing feedback responses." xml:space="preserve">
+    <value>Soru ve anket oluşturma ile geri bildirim yanıtlarını görüntüleme izni verir.</value>
+  </data>
   <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
     <value>Herhangi bir kullanıcı adına haftalık raporların oluşturulmasına, düzenlenmesine ve silinmesine izin verir.</value>
   </data>
@@ -92,6 +95,9 @@
   </data>
   <data name="Allows the user to create weekly reports on behalf of any other user." xml:space="preserve">
     <value>Kullanıcıya herhangi bir başka kullanıcının adına haftalık raporlar oluşturabilme izni verir.</value>
+  </data>
+  <data name="Allows the user to fill out and submit feedback questionnaires." xml:space="preserve">
+    <value>Kullanıcının geri bildirim anketlerini doldurmasına ve göndermesine izin verir.</value>
   </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Tüm şirket sözleşmelerinin, özel olarak işaretlenmiş olanların da dahil olmak üzere görüntülenmesine izin verir.</value>
@@ -189,6 +195,9 @@
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Şirket Varlıkları Yönet</value>
   </data>
+  <data name="Manage Feedback" xml:space="preserve">
+    <value>Geribildirimleri Yönet</value>
+  </data>
   <data name="Manage Global Settings" xml:space="preserve">
     <value>Genel Ayarları Yönet</value>
   </data>
@@ -218,6 +227,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>Bu Uygulamayı Yeniden Başlat</value>
+  </data>
+  <data name="Submit Feedback" xml:space="preserve">
+    <value>Geri Bildirim Gönder</value>
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>Her şirket sözleşmesini, özel olanları da dahil olmak üzere görüntüle</value>

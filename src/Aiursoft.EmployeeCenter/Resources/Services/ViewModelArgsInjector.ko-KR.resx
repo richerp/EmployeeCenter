@@ -177,6 +177,9 @@
   <data name="Employee Center" xml:space="preserve">
     <value>직원 센터</value>
   </data>
+  <data name="Employee Signals" xml:space="preserve">
+    <value>직원 신호</value>
+  </data>
   <data name="English Name" xml:space="preserve">
     <value>영문 이름</value>
   </data>
@@ -260,6 +263,9 @@
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>계약 관리</value>
+  </data>
+  <data name="Manage Feedback" xml:space="preserve">
+    <value>피드백 관리</value>
   </data>
   <data name="Manage IT Assets" xml:space="preserve">
     <value>IT 자산 관리</value>

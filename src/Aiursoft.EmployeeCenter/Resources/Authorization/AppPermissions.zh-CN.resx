@@ -45,6 +45,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>允许创建可以与他人共享的新全局密码。</value>
   </data>
+  <data name="Allows creating questions, questionnaires, and viewing feedback responses." xml:space="preserve">
+    <value>允许创建问题、问卷调查以及查看反馈回复。</value>
+  </data>
   <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
     <value>允许代表任何其他用户创建、编辑和删除周报。</value>
   </data>
@@ -86,6 +89,9 @@
   </data>
   <data name="Allows the user to create their own weekly reports." xml:space="preserve">
     <value>允许用户创建自己的周报。</value>
+  </data>
+  <data name="Allows the user to fill out and submit feedback questionnaires." xml:space="preserve">
+    <value>允许用户填写并提交反馈问卷。</value>
   </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>允许查看公司的所有合同，包括标记为私密的合同。</value>
@@ -171,6 +177,9 @@
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>管理公司基本实体信息</value>
   </data>
+  <data name="Manage Feedback" xml:space="preserve">
+    <value>管理反馈</value>
+  </data>
   <data name="Manage Global Settings" xml:space="preserve">
     <value>管理全局设置</value>
   </data>
@@ -200,6 +209,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>重启此应用</value>
+  </data>
+  <data name="Submit Feedback" xml:space="preserve">
+    <value>提交反馈</value>
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>查看公司的任意合同，包含私密合同</value>

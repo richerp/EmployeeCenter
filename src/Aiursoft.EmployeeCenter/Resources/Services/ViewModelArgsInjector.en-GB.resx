@@ -165,6 +165,9 @@
   <data name="Employee Center" xml:space="preserve">
     <value>Employee Centre</value>
   </data>
+  <data name="Employee Signals" xml:space="preserve">
+    <value>Employee Signals</value>
+  </data>
   <data name="English Name" xml:space="preserve">
     <value>English Name</value>
   </data>
@@ -248,6 +251,9 @@
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>Manage Contracts</value>
+  </data>
+  <data name="Manage Feedback" xml:space="preserve">
+    <value>Manage Feedback</value>
   </data>
   <data name="Manage IT Assets" xml:space="preserve">
     <value>Manage IT Assets</value>

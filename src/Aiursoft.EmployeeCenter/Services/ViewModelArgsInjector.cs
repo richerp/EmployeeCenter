@@ -102,6 +102,9 @@ public class ViewModelArgsInjector(
         _ = localizer["Team Calendar"];
     
         _ = localizer["Promotion History"];
+    
+        _ = localizer["Employee Signals"];
+        _ = localizer["Manage Feedback"];
     }
 
     public void InjectSimple(

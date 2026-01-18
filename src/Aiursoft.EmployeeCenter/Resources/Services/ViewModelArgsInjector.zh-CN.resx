@@ -177,6 +177,9 @@
   <data name="Employee Center" xml:space="preserve">
     <value>员工中心</value>
   </data>
+  <data name="Employee Signals" xml:space="preserve">
+    <value>员工信号</value>
+  </data>
   <data name="English Name" xml:space="preserve">
     <value>英文名称</value>
   </data>
@@ -260,6 +263,9 @@
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>管理合同</value>
+  </data>
+  <data name="Manage Feedback" xml:space="preserve">
+    <value>管理反馈</value>
   </data>
   <data name="Manage IT Assets" xml:space="preserve">
     <value>IT 资产</value>

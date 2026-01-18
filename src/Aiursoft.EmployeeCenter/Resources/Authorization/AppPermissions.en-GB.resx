@@ -45,6 +45,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Allows creating new global passwords that can be shared with others.</value>
   </data>
+  <data name="Allows creating questions, questionnaires, and viewing feedback responses." xml:space="preserve">
+    <value>Allows creating questions, questionnaires, and viewing feedback responses.</value>
+  </data>
   <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
     <value>Allows creating, editing, and deleting weekly reports on behalf of any other user.</value>
   </data>
@@ -86,6 +89,9 @@
   </data>
   <data name="Allows the user to create their own weekly reports." xml:space="preserve">
     <value>Allows the user to create their own weekly reports.</value>
+  </data>
+  <data name="Allows the user to fill out and submit feedback questionnaires." xml:space="preserve">
+    <value>Allows the user to fill out and submit feedback questionnaires.</value>
   </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Allows viewing all company contracts, including those marked as private.</value>
@@ -171,6 +177,9 @@
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Manage Company Entity Information</value>
   </data>
+  <data name="Manage Feedback" xml:space="preserve">
+    <value>Manage Feedback</value>
+  </data>
   <data name="Manage Global Settings" xml:space="preserve">
     <value>Manage Global Settings</value>
   </data>
@@ -197,6 +206,9 @@
   </data>
   <data name="Reboot This App" xml:space="preserve">
     <value>Reboot This App</value>
+  </data>
+  <data name="Submit Feedback" xml:space="preserve">
+    <value>Submit Feedback</value>
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>View any company contract, including private ones</value>
