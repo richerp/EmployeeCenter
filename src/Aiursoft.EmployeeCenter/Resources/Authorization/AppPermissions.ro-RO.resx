@@ -48,6 +48,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Permite crearea de parole globale noi care pot fi partajate cu alții.</value>
   </data>
+  <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
+    <value>Permite crearea, editarea și ștergerea rapoartelor săptămânale în numele oricărui alt utilizator.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Permite crearea, actualizarea și ștergerea informațiilor despre entitățile companiei.</value>
   </data>
@@ -176,6 +179,9 @@
   </data>
   <data name="Manage Any Password" xml:space="preserve">
     <value>Gestionează Orice Parolă</value>
+  </data>
+  <data name="Manage anyone&apos;s weekly report" xml:space="preserve">
+    <value>Gestionează raportul săptămânal al oricărei persoane</value>
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Gestionează Activele</value>

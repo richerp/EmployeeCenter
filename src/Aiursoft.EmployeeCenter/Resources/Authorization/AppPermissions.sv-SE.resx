@@ -48,6 +48,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Tillåter att skapa nya globala lösenord som kan delas med andra.</value>
   </data>
+  <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
+    <value>Tillåter att skapa, redigera och ta bort veckorapporter i egna skick för valfri annan användare.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Tillåter att skapa, uppdatera och ta bort information om företagsentiteter.</value>
   </data>
@@ -176,6 +179,9 @@
   </data>
   <data name="Manage Any Password" xml:space="preserve">
     <value>Hantera valfritt lösenord</value>
+  </data>
+  <data name="Manage anyone&apos;s weekly report" xml:space="preserve">
+    <value>Hantera någons veckorapport</value>
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Hantera tillgångar</value>

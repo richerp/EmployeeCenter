@@ -48,6 +48,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Mahdollistaa uusien globaalien salasanojen luomisen, jotka voidaan jakaa muiden kanssa.</value>
   </data>
+  <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
+    <value>Sallii viikonraporttien luomisen, muokkaamisen ja poistamisen muiden käyttäjien puolesta.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Sallii yritysentiteettitietojen luomisen, päivittämisen ja poiston.</value>
   </data>
@@ -176,6 +179,9 @@
   </data>
   <data name="Manage Any Password" xml:space="preserve">
     <value>Hallitse mitä tahansa salasanaa</value>
+  </data>
+  <data name="Manage anyone&apos;s weekly report" xml:space="preserve">
+    <value>Hallinnoi kenen tahansa viikkoraporttia</value>
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Hallinnoi varoja</value>

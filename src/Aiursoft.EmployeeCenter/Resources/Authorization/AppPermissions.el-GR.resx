@@ -48,6 +48,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Επιτρέπει τη δημιουργία νέων καθολικών κωδικών πρόσβασης που μπορούν να κοινοποιηθούν με άλλους.</value>
   </data>
+  <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
+    <value>Επιτρέπει τη δημιουργία, επεξεργασία και διαγραφή εβδομαδιαίων αναφορών εκ μέρους οποιουδήποτε άλλου χρήστη.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Επιτρέπει τη δημιουργία, ενημέρωση και διαγραφή πληροφοριών εταιρικών οντοτήτων.</value>
   </data>
@@ -176,6 +179,9 @@
   </data>
   <data name="Manage Any Password" xml:space="preserve">
     <value>Διαχείριση Οποιουδήποτε Κωδικού</value>
+  </data>
+  <data name="Manage anyone&apos;s weekly report" xml:space="preserve">
+    <value>Διαχείριση εβδομαδιαίων αναφορών οποιουδήποτε χρήστη</value>
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Διαχείριση Περιουσιακών Στοιχείων</value>

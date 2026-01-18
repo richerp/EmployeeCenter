@@ -48,6 +48,9 @@
   <data name="Allows creating new global passwords that can be shared with others." xml:space="preserve">
     <value>Erlaubt das Erstellen neuer globaler Passwörter, die mit anderen geteilt werden können.</value>
   </data>
+  <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
+    <value>Ermöglicht das Erstellen, Bearbeiten und Löschen von Wochenberichten im Namen beliebiger anderer Benutzer.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Ermöglicht das Erstellen, Aktualisieren und Löschen von Unternehmens-Entitätsinformationen.</value>
   </data>
@@ -176,6 +179,9 @@
   </data>
   <data name="Manage Any Password" xml:space="preserve">
     <value>Beliebiges Passwort verwalten</value>
+  </data>
+  <data name="Manage anyone&apos;s weekly report" xml:space="preserve">
+    <value>Jeden wöchentlichen Bericht verwalten</value>
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Assets verwalten</value>
