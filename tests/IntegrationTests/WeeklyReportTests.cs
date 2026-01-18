@@ -532,7 +532,7 @@ public class WeeklyReportTests
         {
             var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
             var report = await db.WeeklyReports.FirstAsync(r => r.Id == reportId);
-            report.CreateTime = DateTime.UtcNow.AddDays(-30);
+            db.Entry(report).Property(r => r.CreateTime).CurrentValue = DateTime.UtcNow.AddDays(-30);
             await db.SaveChangesAsync();
         }
 
