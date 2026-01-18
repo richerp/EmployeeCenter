@@ -35,6 +35,7 @@
                 <th>@Localizer["Asset Tag"]</th>
                 <th>@Localizer["Model"]</th>
                 <th>@Localizer["Status"]</th>
+                <th>@Localizer["Entity"]</th>
                 <th>@Localizer["Assignee"]</th>
                 <th>@Localizer["Location"]</th>
                 <th class="text-end">@Localizer["Actions"]</th>
@@ -69,6 +70,7 @@
                                 break;
                         }
                     </td>
+                    <td>@(item.CompanyEntity?.CompanyName ?? Localizer["N/A"].Value)</td>
                     <td>@(item.Assignee?.DisplayName ?? Localizer["N/A"].Value)</td>
                     <td>@(item.Location?.Name ?? Localizer["N/A"].Value)</td>
                     <td class="text-end">
