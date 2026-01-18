@@ -33,6 +33,7 @@ public class AssetsController(
             .ThenInclude(m => m.Category)
             .Include(a => a.Assignee)
             .Include(a => a.Location)
+            .Include(a => a.CompanyEntity)
             .OrderByDescending(a => a.CreatedAt)
             .ToListAsync();
 
@@ -48,6 +49,7 @@ public class AssetsController(
         {
             AllModels = await context.AssetModels.Include(m => m.Category).ToListAsync(),
             AllLocations = await context.Locations.ToListAsync(),
+            AllCompanyEntities = await context.CompanyEntities.ToListAsync(),
             AllVendors = await context.Vendors.ToListAsync(),
             AllUsers = await context.Users.ToListAsync()
         });
@@ -73,6 +75,7 @@ public class AssetsController(
                 Status = model.Status,
                 AssigneeId = model.AssigneeId,
                 LocationId = model.LocationId,
+                CompanyEntityId = model.CompanyEntityId,
                 PurchaseDate = model.PurchaseDate,
                 PurchasePrice = model.PurchasePrice,
                 VendorId = model.VendorId,
@@ -97,6 +100,7 @@ public class AssetsController(
 
         model.AllModels = await context.AssetModels.Include(m => m.Category).ToListAsync();
         model.AllLocations = await context.Locations.ToListAsync();
+        model.AllCompanyEntities = await context.CompanyEntities.ToListAsync();
         model.AllVendors = await context.Vendors.ToListAsync();
         model.AllUsers = await context.Users.ToListAsync();
         return this.StackView(model);
@@ -109,6 +113,7 @@ public class AssetsController(
             .ThenInclude(m => m.Category)
             .Include(a => a.Assignee)
             .Include(a => a.Location)
+            .Include(a => a.CompanyEntity)
             .Include(a => a.Vendor)
             .Include(a => a.Histories)
             .ThenInclude(h => h.Operator)
@@ -136,6 +141,7 @@ public class AssetsController(
             Status = asset.Status,
             AssigneeId = asset.AssigneeId,
             LocationId = asset.LocationId,
+            CompanyEntityId = asset.CompanyEntityId,
             PurchaseDate = asset.PurchaseDate,
             PurchasePrice = asset.PurchasePrice,
             VendorId = asset.VendorId,
@@ -144,6 +150,7 @@ public class AssetsController(
             IsReimbursed = asset.IsReimbursed,
             AllModels = await context.AssetModels.Include(m => m.Category).ToListAsync(),
             AllLocations = await context.Locations.ToListAsync(),
+            AllCompanyEntities = await context.CompanyEntities.ToListAsync(),
             AllVendors = await context.Vendors.ToListAsync(),
             AllUsers = await context.Users.ToListAsync()
         });
@@ -172,6 +179,7 @@ public class AssetsController(
             if (asset.ModelId != model.ModelId) await LogHistory(asset.Id, "UPDATE", "ModelId", asset.ModelId.ToString(), userId, "Updated model.");
             if (asset.Status != model.Status) await LogHistory(asset.Id, "UPDATE", "Status", asset.Status.ToString(), userId, "Updated status.");
             if (asset.LocationId != model.LocationId) await LogHistory(asset.Id, "UPDATE", "LocationId", asset.LocationId?.ToString(), userId, "Updated location.");
+            if (asset.CompanyEntityId != model.CompanyEntityId) await LogHistory(asset.Id, "UPDATE", "CompanyEntityId", asset.CompanyEntityId?.ToString(), userId, "Updated company entity.");
             if (asset.PurchaseDate != model.PurchaseDate) await LogHistory(asset.Id, "UPDATE", "PurchaseDate", asset.PurchaseDate?.ToString(), userId, "Updated purchase date.");
             if (asset.PurchasePrice != model.PurchasePrice) await LogHistory(asset.Id, "UPDATE", "PurchasePrice", asset.PurchasePrice?.ToString(), userId, "Updated purchase price.");
             if (asset.VendorId != model.VendorId) await LogHistory(asset.Id, "UPDATE", "VendorId", asset.VendorId?.ToString(), userId, "Updated vendor.");
@@ -186,6 +194,7 @@ public class AssetsController(
             asset.Status = model.Status;
             asset.AssigneeId = model.AssigneeId;
             asset.LocationId = model.LocationId;
+            asset.CompanyEntityId = model.CompanyEntityId;
             asset.PurchaseDate = model.PurchaseDate;
             asset.PurchasePrice = model.PurchasePrice;
             asset.VendorId = model.VendorId;
@@ -200,6 +209,7 @@ public class AssetsController(
 
         model.AllModels = await context.AssetModels.Include(m => m.Category).ToListAsync();
         model.AllLocations = await context.Locations.ToListAsync();
+        model.AllCompanyEntities = await context.CompanyEntities.ToListAsync();
         model.AllVendors = await context.Vendors.ToListAsync();
         model.AllUsers = await context.Users.ToListAsync();
         return this.StackView(model);
@@ -297,6 +307,7 @@ public class AssetsController(
             "Status" => asset?.Status.ToString(),
             "AssigneeId" => asset?.AssigneeId,
             "LocationId" => asset?.LocationId?.ToString(),
+            "CompanyEntityId" => asset?.CompanyEntityId?.ToString(),
             "PurchaseDate" => asset?.PurchaseDate?.ToString(),
             "PurchasePrice" => asset?.PurchasePrice?.ToString(),
             "VendorId" => asset?.VendorId?.ToString(),

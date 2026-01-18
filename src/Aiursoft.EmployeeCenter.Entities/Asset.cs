@@ -36,6 +36,11 @@ public class Asset
     [ForeignKey(nameof(LocationId))]
     public Location? Location { get; set; }
 
+    public int? CompanyEntityId { get; set; }
+
+    [ForeignKey(nameof(CompanyEntityId))]
+    public CompanyEntity? CompanyEntity { get; set; }
+
     public DateTime? PurchaseDate { get; set; }
 
     public decimal? PurchasePrice { get; set; }

@@ -32,6 +32,9 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("TEXT");
 
+                    b.Property<int?>("CompanyEntityId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("TEXT");
 
@@ -79,6 +82,8 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("AssigneeId");
+
+                    b.HasIndex("CompanyEntityId");
 
                     b.HasIndex("LocationId");
 
@@ -1248,6 +1253,10 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .WithMany("AssignedAssets")
                         .HasForeignKey("AssigneeId");
 
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.CompanyEntity", "CompanyEntity")
+                        .WithMany()
+                        .HasForeignKey("CompanyEntityId");
+
                     b.HasOne("Aiursoft.EmployeeCenter.Entities.Location", "Location")
                         .WithMany("Assets")
                         .HasForeignKey("LocationId");
@@ -1263,6 +1272,8 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .HasForeignKey("VendorId");
 
                     b.Navigation("Assignee");
+
+                    b.Navigation("CompanyEntity");
 
                     b.Navigation("Location");
 

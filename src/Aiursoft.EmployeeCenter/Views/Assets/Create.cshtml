@@ -56,6 +56,14 @@
                         </select>
                         <span asp-validation-for="LocationId" class="text-danger"></span>
                     </div>
+
+                    <div class="mb-3">
+                        <label asp-for="CompanyEntityId" class="form-label"></label>
+                        <select asp-for="CompanyEntityId" class="form-select" asp-items="@(new SelectList(Model.AllCompanyEntities, "Id", "CompanyName"))">
+                            <option value="">-- @Localizer["Select Entity"] --</option>
+                        </select>
+                        <span asp-validation-for="CompanyEntityId" class="text-danger"></span>
+                    </div>
                 </div>
             </div>
 

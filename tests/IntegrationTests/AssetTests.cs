@@ -277,6 +277,127 @@ public class AssetTests
     }
 
     [TestMethod]
+    public async Task AssetWithCompanyEntityTest()
+    {
+        // 1. Login as admin
+        var loginToken = await GetAntiCsrfToken("/Account/Login");
+        var loginContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "EmailOrUserName", "admin" },
+            { "Password", "admin123" },
+            { "__RequestVerificationToken", loginToken }
+        });
+        await _http.PostAsync("/Account/Login", loginContent);
+
+        // 2. Create Company Entity
+        await _http.PostAsync("/CompanyEntity/Create", new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "CompanyName", "Test Entity" },
+            { "EntityCode", "TE001" },
+            { "__RequestVerificationToken", await GetAntiCsrfToken("/CompanyEntity/Create") }
+        }));
+
+        int entityId;
+        int modelId;
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var entity = await db.CompanyEntities.FirstAsync(e => e.CompanyName == "Test Entity");
+            entityId = entity.Id;
+
+            var cat = new AssetCategory { Name = "Entity Test Cat", Code = "ETC" };
+            db.AssetCategories.Add(cat);
+            await db.SaveChangesAsync();
+
+            var model = new AssetModel { ModelName = "Entity Test Model", Brand = "Test", CategoryId = cat.Id };
+            db.AssetModels.Add(model);
+            await db.SaveChangesAsync();
+            modelId = model.Id;
+        }
+
+        // 3. Create Asset with Company Entity
+        var createAssetToken = await GetAntiCsrfToken("/Assets/Create");
+        await _http.PostAsync("/Assets/Create", new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "AssetTag", "ENTITY-ASSET" },
+            { "ModelId", modelId.ToString() },
+            { "Status", ((int)AssetStatus.Idle).ToString() },
+            { "CompanyEntityId", entityId.ToString() },
+            { "__RequestVerificationToken", createAssetToken }
+        }));
+
+        // 4. Verify in DB
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var asset = await db.Assets.Include(a => a.CompanyEntity).FirstOrDefaultAsync(a => a.AssetTag == "ENTITY-ASSET");
+            Assert.IsNotNull(asset);
+            Assert.AreEqual(entityId, asset.CompanyEntityId);
+            Assert.AreEqual("Test Entity", asset.CompanyEntity!.CompanyName);
+        }
+
+        // 5. Verify in Index UI
+        var indexResponse = await _http.GetAsync("/Assets/Index");
+        var indexHtml = await indexResponse.Content.ReadAsStringAsync();
+        Assert.Contains("ENTITY-ASSET", indexHtml);
+        Assert.Contains("Test Entity", indexHtml);
+
+        // 6. Verify in Details UI
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var asset = await db.Assets.FirstAsync(a => a.AssetTag == "ENTITY-ASSET");
+            
+            var detailsResponse = await _http.GetAsync($"/Assets/Details/{asset.Id}");
+            var detailsHtml = await detailsResponse.Content.ReadAsStringAsync();
+            Assert.Contains("ENTITY-ASSET", detailsHtml);
+            Assert.Contains("Test Entity", detailsHtml);
+        }
+
+        int anotherEntityId;
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var asset = await db.Assets.FirstAsync(a => a.AssetTag == "ENTITY-ASSET");
+            modelId = asset.ModelId;
+
+            // 7. Update Company Entity
+            await _http.PostAsync("/CompanyEntity/Create", new FormUrlEncodedContent(new Dictionary<string, string>
+            {
+                { "CompanyName", "Another Entity" },
+                { "EntityCode", "AE002" },
+                { "__RequestVerificationToken", await GetAntiCsrfToken("/CompanyEntity/Create") }
+            }));
+
+            using (var scopeInner = _server!.Services.CreateScope())
+            {
+                var dbInner = scopeInner.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+                var anotherEntity = await dbInner.CompanyEntities.FirstAsync(e => e.CompanyName == "Another Entity");
+                anotherEntityId = anotherEntity.Id;
+            }
+
+            var editToken = await GetAntiCsrfToken($"/Assets/Edit/{asset.Id}");
+            await _http.PostAsync("/Assets/Edit", new FormUrlEncodedContent(new Dictionary<string, string>
+            {
+                { "Id", asset.Id.ToString() },
+                { "AssetTag", "ENTITY-ASSET-UPDATED" },
+                { "ModelId", modelId.ToString() },
+                { "Status", ((int)AssetStatus.Idle).ToString() },
+                { "CompanyEntityId", anotherEntityId.ToString() },
+                { "__RequestVerificationToken", editToken }
+            }));
+        }
+
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var updatedAsset = await db.Assets.Include(a => a.CompanyEntity).FirstAsync(a => a.AssetTag == "ENTITY-ASSET-UPDATED");
+            Assert.AreEqual(anotherEntityId, updatedAsset.CompanyEntityId);
+            Assert.AreEqual("Another Entity", updatedAsset.CompanyEntity!.CompanyName);
+        }
+    }
+
+    [TestMethod]
     public async Task MyAssetsDetailsTest()
     {
         // 1. Login as admin to setup
