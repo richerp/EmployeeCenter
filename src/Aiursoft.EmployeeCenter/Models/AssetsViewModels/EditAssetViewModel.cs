@@ -11,9 +11,11 @@ public class EditAssetViewModel : UiStackLayoutViewModel
 
     [Required]
     [Display(Name = "Asset Tag")]
+    [MaxLength(50)]
     public string AssetTag { get; set; } = string.Empty;
 
     [Display(Name = "Serial Number")]
+    [MaxLength(100)]
     public string? SerialNumber { get; set; }
 
     [Required]
@@ -24,6 +26,7 @@ public class EditAssetViewModel : UiStackLayoutViewModel
     public AssetStatus Status { get; set; }
 
     [Display(Name = "Assignee")]
+    [MaxLength(255)]
     public string? AssigneeId { get; set; }
 
     [Display(Name = "Location")]
@@ -45,6 +48,7 @@ public class EditAssetViewModel : UiStackLayoutViewModel
     public DateTime? WarrantyExpireDate { get; set; }
 
     [Display(Name = "Invoice File")]
+    [MaxLength(500)]
     public string? InvoiceFileUrl { get; set; }
 
     public bool IsReimbursed { get; set; }

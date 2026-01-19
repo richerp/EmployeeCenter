@@ -70,18 +70,22 @@ public class CreateViewModel : UiStackLayoutViewModel
 
     [Display(Name = "Company Logo")]
     [RegularExpression(@"^companyfiles.*", ErrorMessage = "Please upload a valid logo file.")]
+    [MaxLength(500)]
     public string? LogoPath { get; set; }
 
     [Display(Name = "Company Seal")]
     [RegularExpression(@"^companyfiles.*", ErrorMessage = "Please upload a valid seal file.")]
+    [MaxLength(500)]
     public string? SealPath { get; set; }
 
     [Display(Name = "Business Registration (BR / Business License)")]
     [RegularExpression(@"^(companyfiles|company-certs)/.*", ErrorMessage = "Please upload a valid license file.")]
+    [MaxLength(500)]
     public string? LicensePath { get; set; }
 
     [Display(Name = "Organization Certificate (CR / Org Code)")]
     [RegularExpression(@"^company-certs/.*", ErrorMessage = "Please upload a valid certificate file.")]
+    [MaxLength(500)]
     public string? OrganizationCertificatePath { get; set; }
 
     [Display(Name = "Registered Capital (Mainland)")]

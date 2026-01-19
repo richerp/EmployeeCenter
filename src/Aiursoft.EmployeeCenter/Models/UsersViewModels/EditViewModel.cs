@@ -23,6 +23,8 @@ public class EditViewModel : UiStackLayoutViewModel
 
     [Required(ErrorMessage = "The {0} is required.")]
     [Display(Name = "Name")]
+    [MaxLength(30)]
+    [MinLength(2)]
     public required string DisplayName { get; set; }
 
     [Required(ErrorMessage = "The {0} is required.")]

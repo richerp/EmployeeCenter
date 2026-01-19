@@ -336,7 +336,9 @@ public class AssetsController(
     {
         return this.StackView(new ManageCategoriesViewModel
         {
-            Categories = await context.AssetCategories.ToListAsync()
+            Categories = await context.AssetCategories
+                .Include(c => c.Models)
+                .ToListAsync()
         });
     }
 
@@ -349,6 +351,30 @@ public class AssetsController(
             context.AssetCategories.Add(new AssetCategory { Name = model.NewName, Code = model.NewCode });
             await context.SaveChangesAsync();
         }
+        return RedirectToAction(nameof(Categories));
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> DeleteCategory(int id)
+    {
+        var category = await context.AssetCategories
+            .Include(c => c.Models)
+            .FirstOrDefaultAsync(c => c.Id == id);
+        
+        if (category == null)
+        {
+            return NotFound();
+        }
+
+        if (category.Models.Any())
+        {
+            return BadRequest("Cannot delete a category that is being used by asset models.");
+        }
+
+        context.AssetCategories.Remove(category);
+        await context.SaveChangesAsync();
+
         return RedirectToAction(nameof(Categories));
     }
 
