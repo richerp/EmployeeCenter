@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 namespace Aiursoft.EmployeeCenter.Entities;
 
 [ExcludeFromCodeCoverage]
-public abstract class EmployeeCenterDbContext(DbContextOptions options) : IdentityDbContext<User>(options), ICanMigrate
+public abstract class TemplateDbContext(DbContextOptions options) : IdentityDbContext<User>(options), ICanMigrate
 {
     public DbSet<GlobalSetting> GlobalSettings => Set<GlobalSetting>();
     public DbSet<Payroll> Payrolls => Set<Payroll>();

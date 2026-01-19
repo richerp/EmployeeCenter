@@ -25,7 +25,6 @@ public class ManageController(
     IOptions<AppSettings> appSettings,
     UserManager<User> userManager,
     SignInManager<User> signInManager,
-    EmployeeCenterDbContext dbContext,
     GlobalSettingsService settingsService,
     ILogger<ManageController> logger)
     : Controller

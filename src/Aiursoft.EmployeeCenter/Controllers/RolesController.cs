@@ -20,7 +20,7 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 [LimitPerMin]
 public class RolesController(
     UserManager<User> userManager,
-    EmployeeCenterDbContext context,
+    TemplateDbContext context,
     StorageService storageService,
     RoleManager<IdentityRole> roleManager)
     : Controller

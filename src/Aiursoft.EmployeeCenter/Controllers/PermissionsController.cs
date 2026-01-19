@@ -19,7 +19,7 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 [LimitPerMin]
 public class PermissionsController(
     RoleManager<IdentityRole> roleManager,
-    EmployeeCenterDbContext context)
+    TemplateDbContext context)
     : Controller
 {
     [Authorize(Policy = AppPermissionNames.CanReadPermissions)]

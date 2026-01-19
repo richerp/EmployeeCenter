@@ -21,7 +21,7 @@ public class UsersController(
     RoleManager<IdentityRole> roleManager,
     UserManager<User> userManager,
     StorageService storageService,
-    EmployeeCenterDbContext context)
+    TemplateDbContext context)
     : Controller
 {
     [HttpGet]

@@ -24,7 +24,7 @@
                         <label asp-for="FilePath" class="form-label">@Localizer["Contract File"]</label>
                         <vc:file-upload 
                             asp-for="FilePath" 
-                            upload-endpoint="/upload/contract?useVault=true" 
+                            subfolder="contract" 
                             allowed-extensions="pdf jpg png docx"
                             is-vault="true">
                         </vc:file-upload>

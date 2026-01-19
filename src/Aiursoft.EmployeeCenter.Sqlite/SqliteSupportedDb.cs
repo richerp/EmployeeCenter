@@ -7,7 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 namespace Aiursoft.EmployeeCenter.Sqlite;
 
 [ExcludeFromCodeCoverage]
-public class SqliteSupportedDb(bool allowCache, bool splitQuery) : SupportedDatabaseType<EmployeeCenterDbContext>
+public class SqliteSupportedDb(bool allowCache, bool splitQuery) : SupportedDatabaseType<TemplateDbContext>
 {
     public override string DbType => "Sqlite";
 
@@ -19,7 +19,7 @@ public class SqliteSupportedDb(bool allowCache, bool splitQuery) : SupportedData
             allowCache: allowCache);
     }
 
-    public override EmployeeCenterDbContext ContextResolver(IServiceProvider serviceProvider)
+    public override TemplateDbContext ContextResolver(IServiceProvider serviceProvider)
     {
         return serviceProvider.GetRequiredService<SqliteContext>();
     }

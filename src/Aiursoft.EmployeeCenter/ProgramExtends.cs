@@ -1,8 +1,8 @@
+using Aiursoft.EmployeeCenter.Authorization;
+using Aiursoft.EmployeeCenter.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
-using Aiursoft.EmployeeCenter.Authorization;
-using Aiursoft.EmployeeCenter.Entities;
 using Aiursoft.EmployeeCenter.Services;
 using Aiursoft.EmployeeCenter.Services.FileStorage;
 
@@ -10,15 +10,11 @@ namespace Aiursoft.EmployeeCenter;
 
 public static class ProgramExtends
 {
-    private static async Task<bool> ShouldSeedAsync(EmployeeCenterDbContext dbContext)
+    private static async Task<bool> ShouldSeedAsync(TemplateDbContext dbContext)
     {
         var haveUsers = await dbContext.Users.AnyAsync();
         var haveRoles = await dbContext.Roles.AnyAsync();
-        return !haveUsers && !haveRoles;
-    }
-
     public static Task<IHost> CopyAvatarFileAsync(this IHost host)
-    {
         using var scope = host.Services.CreateScope();
         var services = scope.ServiceProvider;
         var storageService = services.GetRequiredService<StorageService>();
@@ -52,9 +48,9 @@ public static class ProgramExtends
     {
         using var scope = host.Services.CreateScope();
         var services = scope.ServiceProvider;
-        var db = services.GetRequiredService<EmployeeCenterDbContext>();
+        var db = services.GetRequiredService<TemplateDbContext>();
         var logger = services.GetRequiredService<ILogger<Program>>();
-
+        
         var settingsService = services.GetRequiredService<GlobalSettingsService>();
         await settingsService.SeedSettingsAsync();
 
@@ -98,7 +94,6 @@ public static class ProgramExtends
                 UserName = "admin",
                 DisplayName = "Super Administrator",
                 Email = "admin@default.com",
-                AvatarRelativePath = User.DefaultAvatarPath
             };
             _ = await userManager.CreateAsync(user, "admin123");
             await userManager.AddToRoleAsync(user, "Administrators");

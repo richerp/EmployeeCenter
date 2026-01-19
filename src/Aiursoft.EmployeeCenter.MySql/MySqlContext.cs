@@ -6,4 +6,4 @@ namespace Aiursoft.EmployeeCenter.MySql;
 
 [ExcludeFromCodeCoverage]
 
-public class MySqlContext(DbContextOptions<MySqlContext> options) : EmployeeCenterDbContext(options);
+public class MySqlContext(DbContextOptions<MySqlContext> options) : TemplateDbContext(options);
