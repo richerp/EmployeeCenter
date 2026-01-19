@@ -13,10 +13,13 @@ public class ManageModelsViewModel : UiStackLayoutViewModel
     public int NewCategoryId { get; set; }
 
     [Required]
+    [MaxLength(50)]
     public string NewBrand { get; set; } = string.Empty;
 
     [Required]
+    [MaxLength(100)]
     public string NewModelName { get; set; } = string.Empty;
 
+    [MaxLength(1000)]
     public string? NewSpecs { get; set; }
 }

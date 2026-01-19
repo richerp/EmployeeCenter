@@ -15,17 +15,21 @@ public class CreateViewModel : UiStackLayoutViewModel
     public string? UserId { get; set; }
 
     [Display(Name = "Old Job Level")]
+    [MaxLength(100)]
     public string? OldJobLevel { get; set; }
 
     [Required]
     [Display(Name = "New Job Level")]
+    [MaxLength(100)]
     public string? NewJobLevel { get; set; }
 
     [Display(Name = "Old Title")]
+    [MaxLength(100)]
     public string? OldTitle { get; set; }
 
     [Required]
     [Display(Name = "New Title")]
+    [MaxLength(100)]
     public string? NewTitle { get; set; }
 
     public string? UserDisplayName { get; set; }

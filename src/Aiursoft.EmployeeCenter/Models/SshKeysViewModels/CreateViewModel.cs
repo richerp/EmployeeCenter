@@ -13,11 +13,12 @@ public class CreateViewModel : UiStackLayoutViewModel
     public string? TargetUserId { get; set; }
 
     [Required]
-    [MaxLength(100)]
+    [MaxLength(255)]
     [Display(Name = "Key Name")]
     public string? Name { get; set; }
 
     [Required]
+    [MaxLength(5000)]
     [Display(Name = "Public Key")]
     public string? PublicKey { get; set; }
 }

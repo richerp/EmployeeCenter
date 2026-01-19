@@ -13,6 +13,7 @@ public class CreateViewModel : UiStackLayoutViewModel
 
     [Required]
     [Display(Name = "User")]
+    [MaxLength(255)]
     public required string UserId { get; set; }
 
     public List<User> AllUsers { get; set; } = [];
@@ -24,6 +25,7 @@ public class CreateViewModel : UiStackLayoutViewModel
 
     [Required]
     [Display(Name = "Content (Markdown)")]
+    [MaxLength(2000)]
     public string Content { get; set; } = string.Empty;
 
     // Earnings
@@ -71,8 +73,10 @@ public class CreateViewModel : UiStackLayoutViewModel
     public decimal TotalAmount { get; set; }
 
     [Display(Name = "Bank Name")]
+    [MaxLength(100)]
     public string? BankName { get; set; }
     [Display(Name = "Bank Account")]
+    [MaxLength(100)]
     public string? BankAccount { get; set; }
 
     // Company Costs
