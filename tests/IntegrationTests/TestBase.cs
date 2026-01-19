@@ -1,6 +1,3 @@
-using System.Net;
-
-
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
 public abstract class TestBase

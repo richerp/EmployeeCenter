@@ -1,4 +1,3 @@
-using System.Net;
 using Aiursoft.EmployeeCenter.Models.BackgroundJobs;
 using Aiursoft.EmployeeCenter.Services.BackgroundJobs;
 
