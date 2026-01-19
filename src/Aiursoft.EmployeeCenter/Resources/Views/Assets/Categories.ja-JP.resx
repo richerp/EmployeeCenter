@@ -18,11 +18,17 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Add Category" xml:space="preserve">
+      <data name="Action" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="Add Category" xml:space="preserve">
     <value>カテゴリを追加</value>
   </data>
   <data name="Add New Category" xml:space="preserve">
     <value>新しいカテゴリの追加</value>
+  </data>
+  <data name="Are you sure to delete this category?" xml:space="preserve">
+    <value>このカテゴリを削除してもよろしいですか？</value>
   </data>
   <data name="Asset Categories" xml:space="preserve">
     <value>資産カテゴリ</value>
@@ -39,11 +45,17 @@
   <data name="Code Prefix" xml:space="preserve">
     <value>コード接頭辞</value>
   </data>
+  <data name="Delete" xml:space="preserve">
+    <value>削除</value>
+  </data>
   <data name="Existing Categories" xml:space="preserve">
     <value>既存のカテゴリ</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>名前</value>
+  </data>
+  <data name="References" xml:space="preserve">
+    <value>参照</value>
   </data>
 
 </root>

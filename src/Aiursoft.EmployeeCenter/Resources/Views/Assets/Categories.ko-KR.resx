@@ -18,11 +18,17 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Add Category" xml:space="preserve">
+      <data name="Action" xml:space="preserve">
+    <value>작업</value>
+  </data>
+  <data name="Add Category" xml:space="preserve">
     <value>카테고리 추가</value>
   </data>
   <data name="Add New Category" xml:space="preserve">
     <value>새 카테고리 추가</value>
+  </data>
+  <data name="Are you sure to delete this category?" xml:space="preserve">
+    <value>이 카테고리를 삭제하시겠습니까?</value>
   </data>
   <data name="Asset Categories" xml:space="preserve">
     <value>자산 카테고리</value>
@@ -39,11 +45,17 @@
   <data name="Code Prefix" xml:space="preserve">
     <value>코드 접두사</value>
   </data>
+  <data name="Delete" xml:space="preserve">
+    <value>삭제</value>
+  </data>
   <data name="Existing Categories" xml:space="preserve">
     <value>기존 카테고리</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>이름</value>
+  </data>
+  <data name="References" xml:space="preserve">
+    <value>참조</value>
   </data>
 
 </root>

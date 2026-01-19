@@ -18,11 +18,17 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Add Category" xml:space="preserve">
+      <data name="Action" xml:space="preserve">
+    <value>Ação</value>
+  </data>
+  <data name="Add Category" xml:space="preserve">
     <value>Adicionar Categoria</value>
   </data>
   <data name="Add New Category" xml:space="preserve">
     <value>Adicionar Nova Categoria</value>
+  </data>
+  <data name="Are you sure to delete this category?" xml:space="preserve">
+    <value>Tem a certeza de que deseja eliminar esta categoria?</value>
   </data>
   <data name="Asset Categories" xml:space="preserve">
     <value>Categorias de Ativos</value>
@@ -39,11 +45,17 @@
   <data name="Code Prefix" xml:space="preserve">
     <value>Prefixo de Código</value>
   </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
   <data name="Existing Categories" xml:space="preserve">
     <value>Categorias Existentes</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Nome</value>
+  </data>
+  <data name="References" xml:space="preserve">
+    <value>Referências</value>
   </data>
 
 </root>
