@@ -1,6 +1,3 @@
-using System.Net;
-using Aiursoft.EmployeeCenter.Entities;
-
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
 [TestClass]
