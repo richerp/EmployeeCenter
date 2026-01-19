@@ -30,9 +30,23 @@
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label asp-for="ModelId" class="form-label"></label>
-                            <select asp-for="ModelId" class="form-select" asp-items="@(new SelectList(Model.AllModels, "Id", "ModelName", null, "Category.Name"))">
-                                <option value="">-- @Localizer["Select Model"] --</option>
-                            </select>
+                            <div class="input-group">
+                                <select asp-for="ModelId" class="form-select" asp-items="@(new SelectList(Model.AllModels, "Id", "ModelName", null, "Category.Name"))">
+                                    <option value="">-- @Localizer["Select Model"] --</option>
+                                </select>
+                                <a asp-action="Models" target="_blank" class="btn btn-outline-secondary" title="@Localizer["New"]">
+                                    <i class="align-middle" data-lucide="plus-circle"></i>
+                                </a>
+                                <button type="button" class="btn btn-outline-secondary reload-dropdown" 
+                                        data-url="@Url.Action("GetModels")" 
+                                        data-target="ModelId" 
+                                        data-placeholder="@Localizer["Select Model"]"
+                                        data-group-by="categoryName"
+                                        data-name-key="modelName"
+                                        title="@Localizer["Reload"]">
+                                    <i class="align-middle" data-lucide="rotate-cw"></i>
+                                </button>
+                            </div>
                             <span asp-validation-for="ModelId" class="text-danger"></span>
                         </div>
                         <div class="col-md-6 mb-3">
@@ -44,25 +58,63 @@
 
                     <div class="mb-3">
                         <label asp-for="AssigneeId" class="form-label"></label>
-                        <select asp-for="AssigneeId" class="form-select" asp-items="@(new SelectList(Model.AllUsers, "Id", "DisplayName"))">
-                            <option value="">-- @Localizer["Not Assigned"] --</option>
-                        </select>
+                        <div class="input-group">
+                            <select asp-for="AssigneeId" class="form-select" asp-items="@(new SelectList(Model.AllUsers, "Id", "DisplayName"))">
+                                <option value="">-- @Localizer["Not Assigned"] --</option>
+                            </select>
+                            <a asp-controller="Users" asp-action="Create" target="_blank" class="btn btn-outline-secondary" title="@Localizer["New"]">
+                                <i class="align-middle" data-lucide="plus-circle"></i>
+                            </a>
+                            <button type="button" class="btn btn-outline-secondary reload-dropdown" 
+                                    data-url="@Url.Action("GetUsers")" 
+                                    data-target="AssigneeId" 
+                                    data-placeholder="@Localizer["Not Assigned"]"
+                                    data-name-key="displayName"
+                                    title="@Localizer["Reload"]">
+                                <i class="align-middle" data-lucide="rotate-cw"></i>
+                            </button>
+                        </div>
                         <span asp-validation-for="AssigneeId" class="text-danger"></span>
                     </div>
 
                     <div class="mb-3">
                         <label asp-for="LocationId" class="form-label"></label>
-                        <select asp-for="LocationId" class="form-select" asp-items="@(new SelectList(Model.AllLocations, "Id", "Name"))">
-                            <option value="">-- @Localizer["Select Location"] --</option>
-                        </select>
+                        <div class="input-group">
+                            <select asp-for="LocationId" class="form-select" asp-items="@(new SelectList(Model.AllLocations, "Id", "Name"))">
+                                <option value="">-- @Localizer["Select Location"] --</option>
+                            </select>
+                            <a asp-action="Locations" target="_blank" class="btn btn-outline-secondary" title="@Localizer["New"]">
+                                <i class="align-middle" data-lucide="plus-circle"></i>
+                            </a>
+                            <button type="button" class="btn btn-outline-secondary reload-dropdown" 
+                                    data-url="@Url.Action("GetLocations")" 
+                                    data-target="LocationId" 
+                                    data-placeholder="@Localizer["Select Location"]"
+                                    title="@Localizer["Reload"]">
+                                <i class="align-middle" data-lucide="rotate-cw"></i>
+                            </button>
+                        </div>
                         <span asp-validation-for="LocationId" class="text-danger"></span>
                     </div>
 
                     <div class="mb-3">
                         <label asp-for="CompanyEntityId" class="form-label"></label>
-                        <select asp-for="CompanyEntityId" class="form-select" asp-items="@(new SelectList(Model.AllCompanyEntities, "Id", "CompanyName"))">
-                            <option value="">-- @Localizer["Select Entity"] --</option>
-                        </select>
+                        <div class="input-group">
+                            <select asp-for="CompanyEntityId" class="form-select" asp-items="@(new SelectList(Model.AllCompanyEntities, "Id", "CompanyName"))">
+                                <option value="">-- @Localizer["Select Entity"] --</option>
+                            </select>
+                            <a asp-controller="CompanyEntity" asp-action="Create" target="_blank" class="btn btn-outline-secondary" title="@Localizer["New"]">
+                                <i class="align-middle" data-lucide="plus-circle"></i>
+                            </a>
+                            <button type="button" class="btn btn-outline-secondary reload-dropdown" 
+                                    data-url="@Url.Action("GetCompanyEntities")" 
+                                    data-target="CompanyEntityId" 
+                                    data-placeholder="@Localizer["Select Entity"]"
+                                    data-name-key="companyName"
+                                    title="@Localizer["Reload"]">
+                                <i class="align-middle" data-lucide="rotate-cw"></i>
+                            </button>
+                        </div>
                         <span asp-validation-for="CompanyEntityId" class="text-danger"></span>
                     </div>
                 </div>
@@ -92,9 +144,21 @@
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label asp-for="VendorId" class="form-label"></label>
-                            <select asp-for="VendorId" class="form-select" asp-items="@(new SelectList(Model.AllVendors, "Id", "Name"))">
-                                <option value="">-- @Localizer["Select Vendor"] --</option>
-                            </select>
+                            <div class="input-group">
+                                <select asp-for="VendorId" class="form-select" asp-items="@(new SelectList(Model.AllVendors, "Id", "Name"))">
+                                    <option value="">-- @Localizer["Select Vendor"] --</option>
+                                </select>
+                                <a asp-action="Vendors" target="_blank" class="btn btn-outline-secondary" title="@Localizer["New"]">
+                                    <i class="align-middle" data-lucide="plus-circle"></i>
+                                </a>
+                                <button type="button" class="btn btn-outline-secondary reload-dropdown" 
+                                        data-url="@Url.Action("GetVendors")" 
+                                        data-target="VendorId" 
+                                        data-placeholder="@Localizer["Select Vendor"]"
+                                        title="@Localizer["Reload"]">
+                                    <i class="align-middle" data-lucide="rotate-cw"></i>
+                                </button>
+                            </div>
                             <span asp-validation-for="VendorId" class="text-danger"></span>
                         </div>
                         <div class="col-md-6 mb-3">
@@ -135,4 +199,71 @@
 @* ReSharper disable once Razor.SectionNotResolved *@
 @section scripts {
     <script src="~/node_modules/dropify/dist/js/dropify.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function reloadDropdown(url, targetId, placeholder, groupByKey = null, nameKey = "name", idKey = "id") {
+                const target = document.getElementById(targetId);
+                const originalValue = target.value;
+                const reloadBtn = document.querySelector(`.reload-dropdown[data-target="${targetId}"]`);
+                const icon = reloadBtn.querySelector('i');
+                
+                icon.classList.add('spin');
+
+                fetch(url)
+                    .then(response => response.json())
+                    .then(data => {
+                        target.innerHTML = '';
+                        const defaultOption = document.createElement('option');
+                        defaultOption.value = '';
+                        defaultOption.textContent = '-- ' + placeholder + ' --';
+                        target.appendChild(defaultOption);
+
+                        if (groupByKey) {
+                            const groups = {};
+                            data.forEach(item => {
+                                const groupName = item[groupByKey] || 'Other';
+                                if (!groups[groupName]) {
+                                    groups[groupName] = document.createElement('optgroup');
+                                    groups[groupName].label = groupName;
+                                    target.appendChild(groups[groupName]);
+                                }
+                                const option = document.createElement('option');
+                                option.value = item[idKey];
+                                option.textContent = item[nameKey];
+                                if (item[idKey].toString() === originalValue.toString()) {
+                                    option.selected = true;
+                                }
+                                groups[groupName].appendChild(option);
+                            });
+                        } else {
+                            data.forEach(item => {
+                                const option = document.createElement('option');
+                                option.value = item[idKey];
+                                option.textContent = item[nameKey];
+                                if (item[idKey].toString() === originalValue.toString()) {
+                                    option.selected = true;
+                                }
+                                target.appendChild(option);
+                            });
+                        }
+                    })
+                    .catch(error => console.error('Error reloading dropdown:', error))
+                    .finally(() => {
+                        icon.classList.remove('spin');
+                    });
+            }
+
+            document.querySelectorAll('.reload-dropdown').forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const url = this.dataset.url;
+                    const target = this.dataset.target;
+                    const placeholder = this.dataset.placeholder;
+                    const groupByKey = this.dataset.groupBy;
+                    const nameKey = this.dataset.nameKey || 'name';
+                    const idKey = this.dataset.idKey || 'id';
+                    reloadDropdown(url, target, placeholder, groupByKey, nameKey, idKey);
+                });
+            });
+        });
+    </script>
 }

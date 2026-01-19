@@ -331,6 +331,62 @@ public class AssetsController(
         context.AssetHistories.Add(history);
     }
 
+    [HttpGet]
+    public async Task<IActionResult> GetModels()
+    {
+        var models = await context.AssetModels
+            .Include(m => m.Category)
+            .OrderBy(m => m.Category.Name)
+            .ThenBy(m => m.ModelName)
+            .ToListAsync();
+        return Json(models.Select(m => new { m.Id, m.ModelName, CategoryName = m.Category.Name }));
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetLocations()
+    {
+        var locations = await context.Locations
+            .OrderBy(l => l.Name)
+            .ToListAsync();
+        return Json(locations.Select(l => new { l.Id, l.Name }));
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetCompanyEntities()
+    {
+        var entities = await context.CompanyEntities
+            .OrderBy(e => e.CompanyName)
+            .ToListAsync();
+        return Json(entities.Select(e => new { e.Id, e.CompanyName }));
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetVendors()
+    {
+        var vendors = await context.Vendors
+            .OrderBy(v => v.Name)
+            .ToListAsync();
+        return Json(vendors.Select(v => new { v.Id, v.Name }));
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetUsers()
+    {
+        var users = await context.Users
+            .OrderBy(u => u.DisplayName)
+            .ToListAsync();
+        return Json(users.Select(u => new { u.Id, u.DisplayName }));
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetCategories()
+    {
+        var categories = await context.AssetCategories
+            .OrderBy(c => c.Name)
+            .ToListAsync();
+        return Json(categories.Select(c => new { c.Id, c.Name }));
+    }
+
     // Category Management
     public async Task<IActionResult> Categories()
     {
