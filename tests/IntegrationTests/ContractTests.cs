@@ -80,7 +80,7 @@ public class ContractTests
             fileContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/pdf");
             uploadContent.Add(fileContent, "file", "policy.pdf");
 
-            var uploadResponse = await _http.PostAsync("/upload/contract?useVault=true", uploadContent);
+            var uploadResponse = await _http.PostAsync("/upload/contract", uploadContent);
             uploadResponse.EnsureSuccessStatusCode();
             var uploadResult = await uploadResponse.Content.ReadAsStringAsync();
             // Extract the Path from JSON response: {"Path":"contract/2026/01/15/policy.pdf","InternetPath":"..."}
@@ -112,7 +112,7 @@ public class ContractTests
             fileContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/pdf");
             uploadContent.Add(fileContent, "file", "secret.pdf");
 
-            var uploadResponse = await _http.PostAsync("/upload/contract?useVault=true", uploadContent);
+            var uploadResponse = await _http.PostAsync("/upload/contract", uploadContent);
             uploadResponse.EnsureSuccessStatusCode();
             var uploadResult = await uploadResponse.Content.ReadAsStringAsync();
             var pathMatch = Regex.Match(uploadResult, @"""Path"":""([^""]+)""");

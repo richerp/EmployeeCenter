@@ -43,7 +43,7 @@ public class PromotionHistoryController(
             .ToListAsync();
 
         var myPromotionCount = myHistories.Count;
-        
+
         TimeSpan timeSinceLastPromotion;
         bool hasNeverBeenPromoted = false;
 

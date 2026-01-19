@@ -91,22 +91,22 @@
                          <!-- Files -->
                         <div class="form-group">
                             <label asp-for="LogoPath"></label>
-                             <vc:file-upload asp-for="LogoPath" upload-endpoint="/upload/companyfiles" allowed-extensions="jpg png svg" />
+                             <vc:file-upload asp-for="LogoPath" subfolder="companyfiles" allowed-extensions="jpg png svg" />
                             <span asp-validation-for="LogoPath" class="text-danger"></span>
                         </div>
                          <div class="form-group">
                             <label asp-for="SealPath"></label>
-                             <vc:file-upload asp-for="SealPath" upload-endpoint="/upload/companyfiles" allowed-extensions="jpg png svg" />
+                             <vc:file-upload asp-for="SealPath" subfolder="companyfiles" allowed-extensions="jpg png svg" />
                             <span asp-validation-for="SealPath" class="text-danger"></span>
                         </div>
                          <div class="form-group">
                             <label asp-for="LicensePath"></label>
-                             <vc:file-upload asp-for="LicensePath" upload-endpoint="/upload/company-certs?useVault=true" is-vault="true" allowed-extensions="jpg png pdf" />
+                             <vc:file-upload asp-for="LicensePath" subfolder="company-certs" is-vault="true" allowed-extensions="jpg png pdf" />
                             <span asp-validation-for="LicensePath" class="text-danger"></span>
                         </div>
                          <div class="form-group">
                             <label asp-for="OrganizationCertificatePath"></label>
-                             <vc:file-upload asp-for="OrganizationCertificatePath" upload-endpoint="/upload/company-certs?useVault=true" is-vault="true" allowed-extensions="jpg png pdf" />
+                             <vc:file-upload asp-for="OrganizationCertificatePath" subfolder="company-certs" is-vault="true" allowed-extensions="jpg png pdf" />
                             <span asp-validation-for="OrganizationCertificatePath" class="text-danger"></span>
                         </div>
                     </div>

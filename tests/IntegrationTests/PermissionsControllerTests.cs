@@ -1,3 +1,4 @@
+
 using Aiursoft.EmployeeCenter.Authorization;
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;

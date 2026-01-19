@@ -205,8 +205,7 @@ public class BackgroundJobsTests : TestBase
         var failedJob = recentJobs.FirstOrDefault(j => j.JobName == "Failing Job");
         Assert.IsNotNull(failedJob);
         Assert.AreEqual(JobStatus.Failed, failedJob.Status);
-        Assert.IsNotNull(failedJob.ErrorMessage);
-        Assert.Contains("Intentional test failure", failedJob.ErrorMessage);
+        Assert.IsTrue(failedJob.ErrorMessage?.Contains("Intentional test failure"));
     }
 
     [TestMethod]
@@ -217,8 +216,7 @@ public class BackgroundJobsTests : TestBase
 
         // Step 2: 应该被重定向到登录页面
         Assert.AreEqual(HttpStatusCode.Found, response.StatusCode);
-        Assert.IsNotNull(response.Headers.Location);
-        Assert.Contains("/Account/Login", response.Headers.Location.OriginalString);
+        Assert.IsTrue(response.Headers.Location?.OriginalString.Contains("/Account/Login"));
     }
 
     [TestMethod]

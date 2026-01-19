@@ -1,4 +1,3 @@
-
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
 public abstract class TestBase
@@ -73,7 +72,7 @@ public abstract class TestBase
         Assert.AreEqual(HttpStatusCode.Found, response.StatusCode);
         var actualLocation = response.Headers.Location?.OriginalString ?? string.Empty;
         var baseUri = Http.BaseAddress?.ToString() ?? "____";
-
+        
         if (actualLocation.StartsWith(baseUri))
         {
             actualLocation = actualLocation.Substring(baseUri.Length - 1); // Keep the leading slash
@@ -113,5 +112,11 @@ public abstract class TestBase
         Assert.AreEqual(HttpStatusCode.Found, registerResponse.StatusCode);
 
         return (email, password);
+    }
+
+    protected T GetService<T>() where T : notnull
+    {
+        if (Server == null) throw new InvalidOperationException("Server is not started.");
+        return Server.Services.GetRequiredService<T>();
     }
 }

@@ -28,7 +28,7 @@ public class ContractController(
     public async Task<IActionResult> Index()
     {
         var canViewHistory = (await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanViewContractHistory)).Succeeded;
-        
+
         var contracts = await context.Contracts
             .Where(c => canViewHistory || c.IsPublic)
             .OrderByDescending(c => c.CreateTime)
