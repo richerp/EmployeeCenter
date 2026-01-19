@@ -1,3 +1,5 @@
+using System.Net;
+
 [assembly:DoNotParallelize]
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;

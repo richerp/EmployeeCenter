@@ -1,3 +1,4 @@
+using System.Net;
 using Aiursoft.EmployeeCenter.Services.FileStorage;
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
