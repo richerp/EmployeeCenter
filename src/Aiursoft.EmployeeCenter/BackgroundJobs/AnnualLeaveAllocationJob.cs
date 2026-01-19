@@ -50,7 +50,7 @@ public class AnnualLeaveAllocationJob(
             EstimatedNextRunTime = DateTime.UtcNow.AddHours(IntervalHours);
 
             using var scope = scopeFactory.CreateScope();
-            var context = scope.ServiceProvider.GetRequiredService<TemplateDbContext>();
+            var context = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
             await AllocateAnnualLeave(context);
         }
         catch (Exception ex)
@@ -60,7 +60,7 @@ public class AnnualLeaveAllocationJob(
         }
     }
 
-    private async Task AllocateAnnualLeave(TemplateDbContext context)
+    private async Task AllocateAnnualLeave(EmployeeCenterDbContext context)
     {
         var startTime = DateTime.UtcNow;
         LastRunTime = startTime;

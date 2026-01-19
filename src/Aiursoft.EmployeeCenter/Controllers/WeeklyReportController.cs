@@ -15,7 +15,7 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 [Authorize]
 [LimitPerMin]
 public class WeeklyReportController(
-    TemplateDbContext dbContext,
+    EmployeeCenterDbContext dbContext,
     UserManager<User> userManager,
     IAuthorizationService authorizationService,
     IStringLocalizer<WeeklyReportController> localizer) : Controller

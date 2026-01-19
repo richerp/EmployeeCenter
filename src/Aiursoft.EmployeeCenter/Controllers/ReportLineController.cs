@@ -16,7 +16,7 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 public class ReportLineController(
     UserManager<User> userManager,
     IAuthorizationService authorizationService,
-    TemplateDbContext context)
+    EmployeeCenterDbContext context)
     : Controller
 {
     [RenderInNavBar(

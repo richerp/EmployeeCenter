@@ -14,7 +14,7 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 [LimitPerMin]
 public class ContractController(
     IAuthorizationService authorizationService,
-    TemplateDbContext context)
+    EmployeeCenterDbContext context)
     : Controller
 {
     [RenderInNavBar(

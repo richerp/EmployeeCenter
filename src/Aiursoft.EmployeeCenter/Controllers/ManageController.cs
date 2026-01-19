@@ -26,7 +26,7 @@ public class ManageController(
     UserManager<User> userManager,
     SignInManager<User> signInManager,
     GlobalSettingsService settingsService,
-    TemplateDbContext dbContext,
+    EmployeeCenterDbContext dbContext,
     ILogger<ManageController> logger)
     : Controller
 {

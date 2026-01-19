@@ -13,7 +13,7 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 [Authorize(Policy = AppPermissionNames.CanManageOnboarding)]
 [LimitPerMin]
 public class ManageOnboardingController(
-    TemplateDbContext context,
+    EmployeeCenterDbContext context,
     IAuthorizationService authorizationService) : Controller
 {
     [RenderInNavBar(

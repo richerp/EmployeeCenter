@@ -15,7 +15,7 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 [LimitPerMin]
 public class LeaveController(
     UserManager<User> userManager,
-    TemplateDbContext context,
+    EmployeeCenterDbContext context,
     LeaveBalanceService leaveBalanceService,
     HolidayService holidayService,
     IAuthorizationService authorizationService)

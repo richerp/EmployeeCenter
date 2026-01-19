@@ -10,7 +10,7 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 [Authorize]
 [LimitPerMin]
 public class OnboardingController(
-    TemplateDbContext context,
+    EmployeeCenterDbContext context,
     UserManager<User> userManager) : Controller
 {
     [HttpPost]

@@ -13,7 +13,7 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 [Authorize(Policy = AppPermissionNames.CanViewContractHistory)]
 [LimitPerMin]
 public class ManageContractController(
-    TemplateDbContext context)
+    EmployeeCenterDbContext context)
     : Controller
 {
     [RenderInNavBar(
