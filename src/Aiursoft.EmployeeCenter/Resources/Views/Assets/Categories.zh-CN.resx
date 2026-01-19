@@ -18,11 +18,17 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Add Category" xml:space="preserve">
+      <data name="Action" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="Add Category" xml:space="preserve">
     <value>添加分类</value>
   </data>
   <data name="Add New Category" xml:space="preserve">
     <value>添加新类别</value>
+  </data>
+  <data name="Are you sure to delete this category?" xml:space="preserve">
+    <value>确定要删除此分类吗？</value>
   </data>
   <data name="Asset Categories" xml:space="preserve">
     <value>资产类别</value>
@@ -39,11 +45,17 @@
   <data name="Code Prefix" xml:space="preserve">
     <value>代码前缀</value>
   </data>
+  <data name="Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
   <data name="Existing Categories" xml:space="preserve">
     <value>现有类别</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>名称</value>
+  </data>
+  <data name="References" xml:space="preserve">
+    <value>引用数</value>
   </data>
 
 </root>
