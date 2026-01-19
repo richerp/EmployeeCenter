@@ -140,7 +140,7 @@ public class PermissionTests
             {
                 var location = response.Headers.Location?.ToString();
                 Assert.IsNotNull(location, $"Redirect location is null for {url}");
-                Assert.IsTrue(location.Contains("/Error/Unauthorized") || location.Contains("AccessDenied"),
+                Assert.IsTrue(location.Contains("/Error/Unauthorized") || location.Contains("AccessDenied") || location.Contains("/Error/Code403"),
                     $"URL {url} redirected to {location} instead of AccessDenied.");
             }
             else
