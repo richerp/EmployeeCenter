@@ -15,7 +15,7 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 [LimitPerMin]
 public class PromotionHistoryController(
     UserManager<User> userManager,
-    EmployeeCenterDbContext context)
+    TemplateDbContext context)
     : Controller
 {
     [RenderInNavBar(
@@ -43,7 +43,7 @@ public class PromotionHistoryController(
             .ToListAsync();
 
         var myPromotionCount = myHistories.Count;
-        
+
         TimeSpan timeSinceLastPromotion;
         bool hasNeverBeenPromoted = false;
 

@@ -15,7 +15,7 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 [LimitPerMin]
 public class SshKeysController(
     UserManager<User> userManager,
-    EmployeeCenterDbContext context,
+    TemplateDbContext context,
     IStringLocalizer<SshKeysController> localizer)
     : Controller
 {

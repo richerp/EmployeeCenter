@@ -13,7 +13,7 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 [Authorize(Policy = AppPermissionNames.CanManageFeedback)]
 [LimitPerMin]
 public class ManageFeedbackController(
-    EmployeeCenterDbContext context) : Controller
+    TemplateDbContext context) : Controller
 {
     [RenderInNavBar(
         NavGroupName = "Administration",

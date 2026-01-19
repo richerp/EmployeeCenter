@@ -14,7 +14,7 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 [Authorize(Policy = AppPermissionNames.CanSubmitFeedback)]
 [LimitPerMin]
 public class FeedbackController(
-    EmployeeCenterDbContext context,
+    TemplateDbContext context,
     UserManager<User> userManager) : Controller
 {
     [RenderInNavBar(

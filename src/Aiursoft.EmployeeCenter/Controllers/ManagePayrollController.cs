@@ -14,7 +14,7 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 [Authorize(Policy = AppPermissionNames.CanManagePayroll)]
 [LimitPerMin]
 public class ManagePayrollController(
-    EmployeeCenterDbContext context)
+    TemplateDbContext context)
     : Controller
 {
     [RenderInNavBar(

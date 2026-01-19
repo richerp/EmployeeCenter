@@ -13,7 +13,7 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 [Authorize]
 [LimitPerMin]
 public class MyAssetsController(
-    EmployeeCenterDbContext context,
+    TemplateDbContext context,
     UserManager<User> userManager)
     : Controller
 {

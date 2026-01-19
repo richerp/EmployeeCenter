@@ -8,7 +8,7 @@ namespace Aiursoft.EmployeeCenter.Services;
 /// </summary>
 public class LeaveBalanceService
 {
-    private readonly EmployeeCenterDbContext _context;
+    private readonly TemplateDbContext _context;
     private readonly HolidayService _holidayService;
 
     // Company Leave Policy - Can be modified to change future allocations
@@ -27,7 +27,7 @@ public class LeaveBalanceService
     public const decimal SickLeavePerYear = 7m;
 
     public LeaveBalanceService(
-        EmployeeCenterDbContext context,
+        TemplateDbContext context,
         HolidayService holidayService)
     {
         _context = context;

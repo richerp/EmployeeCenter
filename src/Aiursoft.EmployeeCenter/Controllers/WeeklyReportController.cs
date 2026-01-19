@@ -15,7 +15,7 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 [Authorize]
 [LimitPerMin]
 public class WeeklyReportController(
-    EmployeeCenterDbContext dbContext,
+    TemplateDbContext dbContext,
     UserManager<User> userManager,
     IAuthorizationService authorizationService,
     IStringLocalizer<WeeklyReportController> localizer) : Controller
@@ -52,15 +52,15 @@ public class WeeklyReportController(
             .ToListAsync();
 
         var notepad = await dbContext.Notepads.FirstOrDefaultAsync(n => n.UserId == user.Id);
-        
+
         // Calculate available weeks for the current user (for default display)
         var availableWeeks = await CalculateAvailableWeeks(user.Id, canManageAnyone);
-        
+
         // Calculate missing reports for the current user (for status display)
         var now = DateTime.UtcNow;
         var offset = (int)now.DayOfWeek;
         var thisWeekStart = now.AddDays(-offset).Date;
-        
+
         var cutoffDate = thisWeekStart.AddDays(-49 * 7);
         var userReports = await dbContext.WeeklyReports
             .Where(r => r.UserId == user.Id && (r.WeekStartDate >= cutoffDate || r.CreateTime >= cutoffDate))
@@ -68,8 +68,8 @@ public class WeeklyReportController(
             .ToListAsync();
 
         var existingWeeks = userReports
-            .Select(r => r.WeekStartDate != DateTime.MinValue 
-                ? r.WeekStartDate 
+            .Select(r => r.WeekStartDate != DateTime.MinValue
+                ? r.WeekStartDate
                 : r.CreateTime.AddDays(-(int)r.CreateTime.DayOfWeek).Date)
             .ToHashSet();
 
@@ -142,7 +142,7 @@ public class WeeklyReportController(
         {
             return Unauthorized();
         }
-        
+
         // Week validation
         var now = DateTime.UtcNow;
         var offset = (int)now.DayOfWeek;
@@ -165,8 +165,8 @@ public class WeeklyReportController(
 
         // Check if report already exists for this week
         var existing = await dbContext.WeeklyReports
-            .FirstOrDefaultAsync(r => r.UserId == targetUserId && 
-                           (r.WeekStartDate == targetWeek || 
+            .FirstOrDefaultAsync(r => r.UserId == targetUserId &&
+                           (r.WeekStartDate == targetWeek ||
                            (r.WeekStartDate == DateTime.MinValue && r.CreateTime >= targetWeek && r.CreateTime < targetWeek.AddDays(7))));
 
         if (existing != null)
@@ -179,7 +179,7 @@ public class WeeklyReportController(
                 await dbContext.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            
+
             // Already submitted
             // Maybe show error or just redirect
             return RedirectToAction(nameof(Index));
@@ -315,7 +315,7 @@ public class WeeklyReportController(
     {
         var query = dbContext.WeeklyReports
             .Include(r => r.User)
-            .Where(r => r.WeekStartDate < beforeWeek.ToUniversalTime() || 
+            .Where(r => r.WeekStartDate < beforeWeek.ToUniversalTime() ||
                        (r.WeekStartDate == beforeWeek.ToUniversalTime() && r.CreateTime < beforeCreate.ToUniversalTime()))
             .AsNoTracking();
 
@@ -340,7 +340,7 @@ public class WeeklyReportController(
         if (user == null) return Unauthorized();
 
         var canManageAnyone = (await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanManageAnyoneWeeklyReport)).Succeeded;
-        
+
         // Determine target user ID
         string targetUserId;
         if (!string.IsNullOrEmpty(userId) && canManageAnyone)
@@ -361,7 +361,7 @@ public class WeeklyReportController(
         var now = DateTime.UtcNow;
         var offset = (int)now.DayOfWeek;
         var thisWeekStart = now.AddDays(-offset).Date;
-        
+
         var existingWeeks = new HashSet<DateTime>();
         if (!showAll)
         {
@@ -372,8 +372,8 @@ public class WeeklyReportController(
                 .ToListAsync();
 
             existingWeeks = userReports
-                .Select(r => r.WeekStartDate != DateTime.MinValue 
-                    ? r.WeekStartDate 
+                .Select(r => r.WeekStartDate != DateTime.MinValue
+                    ? r.WeekStartDate
                     : r.CreateTime.AddDays(-(int)r.CreateTime.DayOfWeek).Date)
                 .ToHashSet();
         }

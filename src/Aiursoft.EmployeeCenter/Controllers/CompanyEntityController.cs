@@ -17,7 +17,7 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 [Authorize]
 [LimitPerMin]
 public class CompanyEntityController(
-    EmployeeCenterDbContext dbContext,
+    TemplateDbContext dbContext,
     StorageService storageService,
     UserManager<User> userManager) : Controller
 {

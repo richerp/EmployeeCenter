@@ -14,7 +14,7 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 [LimitPerMin]
 public class PayrollController(
     UserManager<User> userManager,
-    EmployeeCenterDbContext context)
+    TemplateDbContext context)
     : Controller
 {
     [RenderInNavBar(

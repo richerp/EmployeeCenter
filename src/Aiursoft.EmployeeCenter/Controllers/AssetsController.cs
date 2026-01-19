@@ -14,7 +14,7 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 [Authorize(Policy = AppPermissionNames.CanManageAssets)]
 [LimitPerMin]
 public class AssetsController(
-    EmployeeCenterDbContext context,
+    TemplateDbContext context,
     UserManager<User> userManager)
     : Controller
 {

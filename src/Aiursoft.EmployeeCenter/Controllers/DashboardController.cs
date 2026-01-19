@@ -13,7 +13,7 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 [LimitPerMin]
 [Authorize]
 public class DashboardController(
-    EmployeeCenterDbContext context,
+    TemplateDbContext context,
     UserManager<User> userManager) : Controller
 {
     [RenderInNavBar(
