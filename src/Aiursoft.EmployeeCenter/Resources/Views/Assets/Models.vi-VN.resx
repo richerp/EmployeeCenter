@@ -42,6 +42,12 @@
   <data name="Model Name" xml:space="preserve">
     <value>Tên mô hình</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>Mới</value>
+  </data>
+  <data name="Reload" xml:space="preserve">
+    <value>Tải lại</value>
+  </data>
   <data name="Select Category" xml:space="preserve">
     <value>Chọn danh mục</value>
   </data>

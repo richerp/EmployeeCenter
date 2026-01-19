@@ -33,8 +33,14 @@
   <data name="Financial Information" xml:space="preserve">
     <value>Фінансова інформація</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>Новий</value>
+  </data>
   <data name="Not Assigned" xml:space="preserve">
     <value>Не призначено</value>
+  </data>
+  <data name="Reload" xml:space="preserve">
+    <value>Оновити</value>
   </data>
   <data name="Select Entity" xml:space="preserve">
     <value>Вибрати організацію</value>

@@ -36,8 +36,14 @@
   <data name="Financial Information" xml:space="preserve">
     <value>Финансовая информация</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>Новый</value>
+  </data>
   <data name="Not Assigned" xml:space="preserve">
     <value>Не назначено</value>
+  </data>
+  <data name="Reload" xml:space="preserve">
+    <value>Обновить</value>
   </data>
   <data name="Save Asset" xml:space="preserve">
     <value>Сохранить актив</value>

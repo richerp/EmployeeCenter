@@ -30,6 +30,9 @@
   <data name="In Use" xml:space="preserve">
     <value>使用中</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>新規</value>
+  </data>
   <data name="Notice" xml:space="preserve">
     <value>注意</value>
   </data>
@@ -38,6 +41,9 @@
   </data>
   <data name="Pending Accept" xml:space="preserve">
     <value>保留中（承認待ち）</value>
+  </data>
+  <data name="Reload" xml:space="preserve">
+    <value>再読み込み</value>
   </data>
   <data name="Select User" xml:space="preserve">
     <value>ユーザーを選択</value>

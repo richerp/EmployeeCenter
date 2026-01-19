@@ -39,6 +39,9 @@
   <data name="Development &amp; Manual Run" xml:space="preserve">
     <value>Dezvoltare &amp; Executare manuală</value>
   </data>
+  <data name="Employee Center is a free, open-source, and fully self-hostable enterprise office center. It is designed to empower organizations by providing complete control over their HR, finance, and asset management without any hidden costs or privacy concerns." xml:space="preserve">
+    <value>Employee Center este un centru de birou enterprise gratuit, open-source și complet auto-gestionabil. Este conceput pentru a îmbătășa organizațiile prin oferirea unui control complet asupra resurselor umane, finanțelor și gestionării activelor, fără costuri ascunse sau preocupări legate de confidențialitate.</value>
+  </data>
   <data name="Employee Center is a project for managing employee information, attendance, leaves, and more. It is built with ASP.NET Core and provides a user-friendly interface for both employees and administrators." xml:space="preserve">
     <value>Centrul Angajaților este un proiect pentru gestionarea informațiilor despre angajați, prezența, concediile și multe altele. Este construit cu ASP.NET Core și oferă o interfață prietenoasă pentru utilizatori atât pentru angajați, cât și pentru administratori.</value>
   </data>

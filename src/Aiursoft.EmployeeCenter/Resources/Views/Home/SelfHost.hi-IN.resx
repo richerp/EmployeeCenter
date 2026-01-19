@@ -39,6 +39,9 @@
   <data name="Development &amp; Manual Run" xml:space="preserve">
     <value>विकास और हाथ से चलाएँ</value>
   </data>
+  <data name="Employee Center is a free, open-source, and fully self-hostable enterprise office center. It is designed to empower organizations by providing complete control over their HR, finance, and asset management without any hidden costs or privacy concerns." xml:space="preserve">
+    <value>कर्मचारी केंद्र एक मुफ्त, ओपन-सोर्स, और पूरी तरह से स्व-होस्ट करने योग्य एंटरप्राइज ऑफिस केंद्र है। इसे अपने कर्मचारी, वित्त और संपत्ति प्रबंधन के ऊपर पूर्ण नियंत्रण प्रदान करके संगठनों को सशक्त बनाने के लिए डिज़ाइन किया गया है, बिना किसी छिपे हुए लागत या गोपनीयता के संदेह के।</value>
+  </data>
   <data name="Employee Center is a project for managing employee information, attendance, leaves, and more. It is built with ASP.NET Core and provides a user-friendly interface for both employees and administrators." xml:space="preserve">
     <value>कर्मचारी केंद्र कर्मचारी जानकारी, उपस्थिति, छुट्टियाँ और अधिक के प्रबंधन के लिए एक प्रोजेक्ट है। यह ASP.NET Core के साथ बनाया गया है और कर्मचारियों और प्रशासकों दोनों के लिए उपयोगकर्ता-अनुकूल इंटरफेस प्रदान करता है।</value>
   </data>

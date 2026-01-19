@@ -30,6 +30,9 @@
   <data name="In Use" xml:space="preserve">
     <value>Kullanımda</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>Yeni</value>
+  </data>
   <data name="Notice" xml:space="preserve">
     <value>Uyarı</value>
   </data>
@@ -38,6 +41,9 @@
   </data>
   <data name="Pending Accept" xml:space="preserve">
     <value>Bekleyen Kabul</value>
+  </data>
+  <data name="Reload" xml:space="preserve">
+    <value>Yenile</value>
   </data>
   <data name="Select User" xml:space="preserve">
     <value>Kullanıcı Seç</value>

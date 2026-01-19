@@ -42,6 +42,12 @@
   <data name="Model Name" xml:space="preserve">
     <value>اسم الموديل</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>جديد</value>
+  </data>
+  <data name="Reload" xml:space="preserve">
+    <value>إعادة تحميل</value>
+  </data>
   <data name="Select Category" xml:space="preserve">
     <value>اختر الفئة</value>
   </data>

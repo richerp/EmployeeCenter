@@ -42,6 +42,12 @@
   <data name="Model Name" xml:space="preserve">
     <value>ชื่อรุ่น</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>ใหม่</value>
+  </data>
+  <data name="Reload" xml:space="preserve">
+    <value>รีโหลด</value>
+  </data>
   <data name="Select Category" xml:space="preserve">
     <value>เลือกหมวดหมู่</value>
   </data>

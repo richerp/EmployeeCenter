@@ -33,8 +33,14 @@
   <data name="Financial Information" xml:space="preserve">
     <value>Thông tin tài chính</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>Mới</value>
+  </data>
   <data name="Not Assigned" xml:space="preserve">
     <value>Chưa phân công</value>
+  </data>
+  <data name="Reload" xml:space="preserve">
+    <value>Tải lại</value>
   </data>
   <data name="Select Entity" xml:space="preserve">
     <value>Chọn Tổ chức</value>

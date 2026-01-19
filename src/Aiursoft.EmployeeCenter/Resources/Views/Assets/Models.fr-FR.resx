@@ -42,6 +42,12 @@
   <data name="Model Name" xml:space="preserve">
     <value>Nom du modèle</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>Nouveau</value>
+  </data>
+  <data name="Reload" xml:space="preserve">
+    <value>Actualiser</value>
+  </data>
   <data name="Select Category" xml:space="preserve">
     <value>Sélectionner une catégorie</value>
   </data>

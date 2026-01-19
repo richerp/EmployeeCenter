@@ -33,8 +33,14 @@
   <data name="Financial Information" xml:space="preserve">
     <value>財務情報</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>新規</value>
+  </data>
   <data name="Not Assigned" xml:space="preserve">
     <value>未割り当て</value>
+  </data>
+  <data name="Reload" xml:space="preserve">
+    <value>再読み込み</value>
   </data>
   <data name="Select Entity" xml:space="preserve">
     <value>エンティティを選択</value>
