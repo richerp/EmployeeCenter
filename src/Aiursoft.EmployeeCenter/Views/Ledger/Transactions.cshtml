@@ -1,0 +1,70 @@
+@model Aiursoft.EmployeeCenter.Models.LedgerViewModels.TransactionsViewModel
+@inject Aiursoft.EmployeeCenter.Services.FileStorage.StorageService StorageService
+@{
+    ViewData["Title"] = Model.Entity.CompanyName + " - " + Localizer["Transactions"];
+}
+
+<div class="container-fluid">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-action="Index">@Localizer["Ledger"]</a></li>
+            <li class="breadcrumb-item"><a asp-action="Dashboard" asp-route-id="@Model.Entity.Id">@Model.Entity.CompanyName</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@Localizer["Transactions"]</li>
+        </ol>
+    </nav>
+
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">@Localizer["Transactions"]</h1>
+        <a asp-action="CreateTransaction" asp-route-id="@Model.Entity.Id" class="btn btn-sm btn-primary shadow-sm">
+            <i class="fas fa-plus fa-sm text-white-50"></i> @Localizer["New Transaction"]
+        </a>
+    </div>
+
+    <div class="card shadow mb-4">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%">
+                    <thead>
+                        <tr>
+                            <th>@Localizer["Date"]</th>
+                            <th>@Localizer["Description"]</th>
+                            <th>@Localizer["From"]</th>
+                            <th>@Localizer["To"]</th>
+                            <th>@Localizer["Amount"]</th>
+                            <th>@Localizer["Invoice"]</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var t in Model.Transactions)
+                        {
+                            <tr>
+                                <td>@t.TransactionTime.ToString("yyyy-MM-dd HH:mm")</td>
+                                <td>@t.Description</td>
+                                <td>@t.SourceAccount?.AccountName</td>
+                                <td>@t.DestinationAccount?.AccountName</td>
+                                <td>
+                                    @t.Amount.ToString("N2") @t.SourceAccount?.Currency
+                                    @if (t.ExchangeRate != 1)
+                                    {
+                                        <br />
+                                        <small class="text-muted">
+                                            (@((t.Amount * t.ExchangeRate).ToString("N2")) @t.DestinationAccount?.Currency)
+                                        </small>
+                                    }
+                                </td>
+                                <td>
+                                    @if (!string.IsNullOrEmpty(t.InvoicePath))
+                                    {
+                                        <a href="@StorageService.RelativePathToInternetUrl(t.InvoicePath, true)" target="_blank" class="btn btn-sm btn-info">
+                                            <i class="fas fa-file-pdf"></i> @Localizer["View"]
+                                        </a>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

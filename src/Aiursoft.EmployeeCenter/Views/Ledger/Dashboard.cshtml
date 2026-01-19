@@ -1,0 +1,164 @@
+@model Aiursoft.EmployeeCenter.Models.LedgerViewModels.DashboardViewModel
+@using Aiursoft.EmployeeCenter.Entities
+@inject Aiursoft.EmployeeCenter.Services.FileStorage.StorageService StorageService
+@{
+    ViewData["Title"] = Model.Entity.CompanyName + " - " + Localizer["Ledger Dashboard"];
+}
+
+<div class="container-fluid">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">@Model.Entity.CompanyName - @Localizer["Dashboard"]</h1>
+        <div>
+            <a asp-controller="Ledger" asp-action="Accounts" asp-route-id="@Model.Entity.Id" class="btn btn-sm btn-info shadow-sm">
+                <i class="fas fa-list fa-sm text-white-50"></i> @Localizer["Manage Accounts"]
+            </a>
+            <a asp-controller="Ledger" asp-action="CreateTransaction" asp-route-id="@Model.Entity.Id" class="btn btn-sm btn-primary shadow-sm">
+                <i class="fas fa-plus fa-sm text-white-50"></i> @Localizer["New Transaction"]
+            </a>
+        </div>
+    </div>
+
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Asset Snapshots -->
+        @foreach (var ab in Model.Accounts.Where(a => a.Account.AccountType == FinanceAccountType.Asset))
+        {
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-success shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                    @ab.Account.AccountName (@ab.Account.Currency)
+                                </div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                    @ab.Balance.ToString("N2")
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fas fa-wallet fa-2x text-gray-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+        <!-- Liability Snapshots -->
+        @foreach (var ab in Model.Accounts.Where(a => a.Account.AccountType == FinanceAccountType.Liability))
+        {
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-danger shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
+                                    @ab.Account.AccountName (@ab.Account.Currency)
+                                </div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                    @ab.Balance.ToString("N2")
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fas fa-hand-holding-usd fa-2x text-gray-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <div class="row">
+        <!-- Transaction Feed -->
+        <div class="col-xl-8 col-lg-7">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">@Localizer["Recent Transactions"]</h6>
+                    <a asp-action="Transactions" asp-route-id="@Model.Entity.Id" class="btn btn-sm btn-link">@Localizer["View All"]</a>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>@Localizer["Date"]</th>
+                                    <th>@Localizer["Description"]</th>
+                                    <th>@Localizer["From"]</th>
+                                    <th>@Localizer["To"]</th>
+                                    <th>@Localizer["Amount"]</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var t in Model.RecentTransactions)
+                                {
+                                    <tr>
+                                        <td>@t.TransactionTime.ToShortDateString()</td>
+                                        <td>@t.Description</td>
+                                        <td>@t.SourceAccount?.AccountName</td>
+                                        <td>@t.DestinationAccount?.AccountName</td>
+                                        <td>
+                                            @t.Amount.ToString("N2") @t.SourceAccount?.Currency
+                                            @if (t.ExchangeRate != 1)
+                                            {
+                                                <br />
+                                                <small class="text-muted">
+                                                    (@((t.Amount * t.ExchangeRate).ToString("N2")) @t.DestinationAccount?.Currency)
+                                                </small>
+                                            }
+                                        </td>
+                                        <td>
+                                            @if (!string.IsNullOrEmpty(t.InvoicePath))
+                                            {
+                                                <a href="@StorageService.RelativePathToInternetUrl(t.InvoicePath, true)" target="_blank" title="@Localizer["View Invoice"]">
+                                                    <i class="fas fa-paperclip"></i>
+                                                </a>
+                                            }
+                                            else
+                                            {
+                                                <i class="fas fa-paperclip text-gray-300" title="@Localizer["No Invoice"]"></i>
+                                            }
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Health Metrics -->
+        <div class="col-xl-4 col-lg-5">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">@Localizer["Health Metrics"]</h6>
+                </div>
+                <div class="card-body">
+                    <div class="mb-4">
+                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                            @Localizer["Monthly Burn Rate"] (@Model.Entity.BaseCurrency)
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">@Model.MonthlyBurnRate.ToString("N2")</div>
+                    </div>
+                    <div>
+                        <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                            @Localizer["Runway"]
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">
+                            @if (Model.RunwayMonths.HasValue)
+                            {
+                                @Model.RunwayMonths.Value.ToString("N1") @Localizer["Months"]
+                            }
+                            else
+                            {
+                                <span class="text-success">∞</span>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
