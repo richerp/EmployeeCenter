@@ -1,14 +1,4 @@
 
-using System.Net;
-using System.Text.RegularExpressions;
-using Aiursoft.EmployeeCenter.Entities;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Aiursoft.DbTools;
-using Aiursoft.CSTools.Tools;
-
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
 [TestClass]
