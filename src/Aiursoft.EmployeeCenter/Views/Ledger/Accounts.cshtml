@@ -33,6 +33,8 @@
                             <th>@Localizer["Currency"]</th>
                             <th>@Localizer["Balance"]</th>
                             <th>@Localizer["Status"]</th>
+                            <th>@Localizer["Dashboard"]</th>
+                            <th>@Localizer["Actions"]</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -52,6 +54,21 @@
                                     {
                                         <span class="badge badge-success">@Localizer["Active"]</span>
                                     }
+                                </td>
+                                <td>
+                                    @if (ab.Account.ShowInDashboard)
+                                    {
+                                        <span class="badge badge-info">@Localizer["Visible"]</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge badge-light">@Localizer["Hidden"]</span>
+                                    }
+                                </td>
+                                <td>
+                                    <a asp-action="EditAccount" asp-route-id="@ab.Account.Id" class="btn btn-sm btn-info">
+                                        <i class="fas fa-edit"></i> @Localizer["Edit"]
+                                    </a>
                                 </td>
                             </tr>
                         }

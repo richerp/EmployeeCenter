@@ -23,5 +23,7 @@ public class FinanceAccount
 
     public bool IsArchived { get; set; }
 
+    public bool ShowInDashboard { get; set; } = true;
+
     public DateTime CreationTime { get; init; } = DateTime.UtcNow;
 }

@@ -171,6 +171,89 @@ public class LedgerTests : TestBase
         }
     }
 
+    [TestMethod]
+    public async Task TestAccountEditAndDashboardFiltering()
+    {
+        // 1. Setup - Create an entity and an account
+        int entityId;
+        int accountId;
+        using (var scope = Server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var entity = new CompanyEntity
+            {
+                CompanyName = "Filter Test Entity",
+                EntityCode = "FTE01",
+                BaseCurrency = "USD"
+            };
+            db.CompanyEntities.Add(entity);
+            await db.SaveChangesAsync();
+            entityId = entity.Id;
+
+            var account = new FinanceAccount
+            {
+                AccountName = "Initial Name",
+                AccountType = FinanceAccountType.Asset,
+                CompanyEntityId = entityId,
+                Currency = "USD",
+                ShowInDashboard = true
+            };
+            db.FinanceAccounts.Add(account);
+            await db.SaveChangesAsync();
+            accountId = account.Id;
+        }
+
+        // 2. Login
+        await LoginAsAdmin();
+
+        // 3. Edit Account - Rename and Hide from Dashboard
+        var editAccountResponse = await PostForm("/Ledger/EditAccount", new Dictionary<string, string>
+        {
+            { "Id", accountId.ToString() },
+            { "EntityId", entityId.ToString() },
+            { "AccountName", "Updated Name" },
+            { "AccountType", FinanceAccountType.Liability.ToString() },
+            { "Currency", "EUR" },
+            { "ShowInDashboard", "false" },
+            { "IsArchived", "false" }
+        });
+        AssertRedirect(editAccountResponse, "/Ledger/Accounts/" + entityId);
+
+        // 4. Verify in DB
+        using (var scope = Server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var account = await db.FinanceAccounts.FindAsync(accountId);
+            Assert.IsNotNull(account);
+            Assert.AreEqual("Updated Name", account.AccountName);
+            Assert.AreEqual(FinanceAccountType.Liability, account.AccountType);
+            Assert.AreEqual("EUR", account.Currency);
+            Assert.IsFalse(account.ShowInDashboard);
+        }
+
+        // 5. Verify Dashboard does not show the hidden account
+        var dashboardResponse = await Http.GetAsync("/Ledger/Dashboard/" + entityId);
+        var dashboardContent = await dashboardResponse.Content.ReadAsStringAsync();
+        Assert.DoesNotContain("Updated Name", dashboardContent, "Hidden account should not be in dashboard.");
+
+        // 6. Show it again
+        await PostForm("/Ledger/EditAccount", new Dictionary<string, string>
+        {
+            { "Id", accountId.ToString() },
+            { "EntityId", entityId.ToString() },
+            { "AccountName", "Updated Name" },
+            { "AccountType", FinanceAccountType.Liability.ToString() },
+            { "Currency", "EUR" },
+            { "ShowInDashboard", "true" },
+            { "IsArchived", "false" }
+        });
+
+        // 7. Verify Dashboard shows it
+        var dashboardResponse2 = await Http.GetAsync("/Ledger/Dashboard/" + entityId);
+        var dashboardContent2 = await dashboardResponse2.Content.ReadAsStringAsync();
+        Assert.Contains("Updated Name", dashboardContent2, "Visible account should be in dashboard.");
+    }
+
     private async Task<decimal> GetBalance(EmployeeCenterDbContext db, int accountId)
     {
         var account = await db.FinanceAccounts.FindAsync(accountId);
