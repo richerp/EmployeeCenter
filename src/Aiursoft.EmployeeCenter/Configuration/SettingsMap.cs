@@ -5,6 +5,7 @@ namespace Aiursoft.EmployeeCenter.Configuration;
 public class SettingsMap
 {
     public const string AllowUserAdjustNickname = "Allow_User_Adjust_Nickname";
+    public const string AnnualLeavePerYear = "Annual_Leave_Per_Year";
 
     public class FakeLocalizer
     {
@@ -22,6 +23,14 @@ public class SettingsMap
             Description = Localizer["Allow users to adjust their nickname in the profile management page."],
             Type = SettingType.Bool,
             DefaultValue = "True"
+        },
+        new GlobalSettingDefinition
+        {
+            Key = AnnualLeavePerYear,
+            Name = Localizer["Annual Leave Per Year"],
+            Description = Localizer["The number of paid annual leave days allocated to each employee every year."],
+            Type = SettingType.Number,
+            DefaultValue = "12"
         }
     };
 }

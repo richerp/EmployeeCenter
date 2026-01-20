@@ -61,6 +61,11 @@ public class IndexViewModel : UiStackLayoutViewModel
     public int PendingCount { get; set; }
 
     /// <summary>
+    /// Annual leave days allocated per year as per company policy
+    /// </summary>
+    public decimal AnnualLeavePerYearPolicy { get; set; }
+
+    /// <summary>
     /// Days until next approved leave starts (null if no upcoming leave)
     /// </summary>
     public int? DaysUntilNextLeave { get; set; }

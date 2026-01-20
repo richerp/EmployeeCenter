@@ -18,8 +18,8 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="12 days paid annual leave per year" xml:space="preserve">
-    <value>12 днів оплачуваного щорічного відпустки на рік</value>
+      <data name="{0} days paid annual leave per year" xml:space="preserve">
+    <value>{0} днів оплачуваного щорічного відпустки на рік</value>
   </data>
   <data name="7 days paid sick leave per year" xml:space="preserve">
     <value>7 днів оплачуваного відпустки за хворобою на рік</value>
@@ -69,8 +69,8 @@
   <data name="Leave Policy" xml:space="preserve">
     <value>Політика відпусток</value>
   </data>
-  <data name="Maximum carryover: 12 days (expires after 1 year)" xml:space="preserve">
-    <value>Максимальна перенесена кількість: 12 днів (термін дії закінчується через 1 рік)</value>
+  <data name="Maximum carryover: {0} days (expires after 1 year)" xml:space="preserve">
+    <value>Максимальна перенесена кількість: {0} днів (термін дії закінчується через 1 рік)</value>
   </data>
   <data name="Mental health: no documents required" xml:space="preserve">
     <value>Психічне здоров&apos;я: документи не потрібні</value>

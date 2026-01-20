@@ -18,8 +18,8 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="12 days paid annual leave per year" xml:space="preserve">
-    <value>12 giorni di congedo annuale retribuito all&apos;anno</value>
+      <data name="{0} days paid annual leave per year" xml:space="preserve">
+    <value>{0} giorni di congedo annuale retribuito all&apos;anno</value>
   </data>
   <data name="7 days paid sick leave per year" xml:space="preserve">
     <value>7 giorni di congedo malattia retribuito all&apos;anno</value>
@@ -69,8 +69,8 @@
   <data name="Leave Policy" xml:space="preserve">
     <value>Politica sul congedo</value>
   </data>
-  <data name="Maximum carryover: 12 days (expires after 1 year)" xml:space="preserve">
-    <value>Massimo accumulo: 12 giorni (scade dopo 1 anno)</value>
+  <data name="Maximum carryover: {0} days (expires after 1 year)" xml:space="preserve">
+    <value>Massimo accumulo: {0} giorni (scade dopo 1 anno)</value>
   </data>
   <data name="Mental health: no documents required" xml:space="preserve">
     <value>Salute mentale: nessun documento richiesto</value>

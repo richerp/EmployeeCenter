@@ -18,8 +18,8 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="12 days paid annual leave per year" xml:space="preserve">
-    <value>12 дней оплачиваемого ежегодного отпуска в год</value>
+      <data name="{0} days paid annual leave per year" xml:space="preserve">
+    <value>{0} дней оплачиваемого ежегодного отпуска в год</value>
   </data>
   <data name="7 days paid sick leave per year" xml:space="preserve">
     <value>7 дней оплачиваемого больничного листа в год</value>
@@ -69,8 +69,8 @@
   <data name="Leave Policy" xml:space="preserve">
     <value>Политика отпусков</value>
   </data>
-  <data name="Maximum carryover: 12 days (expires after 1 year)" xml:space="preserve">
-    <value>Максимальный перенос: 12 дней (истекает через 1 год)</value>
+  <data name="Maximum carryover: {0} days (expires after 1 year)" xml:space="preserve">
+    <value>Максимальный перенос: {0} дней (истекает через 1 год)</value>
   </data>
   <data name="Mental health: no documents required" xml:space="preserve">
     <value>Психическое здоровье: документы не требуются</value>

@@ -6,10 +6,14 @@ namespace Aiursoft.EmployeeCenter.Services;
 /// <summary>
 /// Service for calculating leave balances and managing leave allocations
 /// </summary>
-public class LeaveBalanceService
+public class LeaveBalanceService(
+    EmployeeCenterDbContext context,
+    HolidayService holidayService,
+    GlobalSettingsService globalSettingsService)
 {
-    private readonly EmployeeCenterDbContext _context;
-    private readonly HolidayService _holidayService;
+    private readonly EmployeeCenterDbContext _context = context;
+    private readonly HolidayService _holidayService = holidayService;
+    private readonly GlobalSettingsService _globalSettingsService = globalSettingsService;
 
     // Company Leave Policy - Can be modified to change future allocations
     // Note: Changing these values only affects NEW allocations created after the change.
@@ -19,19 +23,16 @@ public class LeaveBalanceService
     /// <summary>
     /// Annual leave days allocated per year for new allocations
     /// </summary>
-    public const decimal AnnualLeavePerYear = 12m;
+    public const decimal DefaultAnnualLeavePerYear = 12m;
 
     /// <summary>
     /// Sick leave days allocated per year for new allocations
     /// </summary>
-    public const decimal SickLeavePerYear = 7m;
+    public const decimal DefaultSickLeavePerYear = 7m;
 
-    public LeaveBalanceService(
-        EmployeeCenterDbContext context,
-        HolidayService holidayService)
+    public async Task<decimal> GetAnnualLeavePerYearAsync()
     {
-        _context = context;
-        _holidayService = holidayService;
+        return await _globalSettingsService.GetDecimalSettingAsync(Configuration.SettingsMap.AnnualLeavePerYear);
     }
 
     /// <summary>
@@ -45,12 +46,13 @@ public class LeaveBalanceService
 
         if (existingAllocation == null)
         {
+            var annualLeave = await GetAnnualLeavePerYearAsync();
             var newAllocation = new LeaveBalance
             {
                 UserId = userId,
                 Year = year,
-                AnnualLeaveAllocation = AnnualLeavePerYear,
-                SickLeaveAllocation = SickLeavePerYear
+                AnnualLeaveAllocation = annualLeave,
+                SickLeaveAllocation = DefaultSickLeavePerYear
             };
 
             _context.LeaveBalances.Add(newAllocation);
