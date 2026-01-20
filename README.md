@@ -1,4 +1,4 @@
-# EmployeeCenter - A sample project
+# EmployeeCenter
 
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://gitlab.aiursoft.com/aiursoft/employeeCenter/-/blob/master/LICENSE)
 [![Pipeline stat](https://gitlab.aiursoft.com/aiursoft/employeeCenter/badges/master/pipeline.svg)](https://gitlab.aiursoft.com/aiursoft/employeeCenter/-/pipelines)
