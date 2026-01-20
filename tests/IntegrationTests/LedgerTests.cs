@@ -184,7 +184,7 @@ public class LedgerTests : TestBase
         // 5. Verify Dashboard does not show the hidden account
         var dashboardResponse = await Http.GetAsync("/Ledger/Dashboard/" + entityId);
         var dashboardContent = await dashboardResponse.Content.ReadAsStringAsync();
-        Assert.IsFalse(dashboardContent.Contains("Updated Name"), "Hidden account should not be in dashboard.");
+        Assert.DoesNotContain("Updated Name", dashboardContent, "Hidden account should not be in dashboard.");
 
         // 6. Show it again
         await PostForm("/Ledger/EditAccount", new Dictionary<string, string>
@@ -201,7 +201,7 @@ public class LedgerTests : TestBase
         // 7. Verify Dashboard shows it
         var dashboardResponse2 = await Http.GetAsync("/Ledger/Dashboard/" + entityId);
         var dashboardContent2 = await dashboardResponse2.Content.ReadAsStringAsync();
-        Assert.IsTrue(dashboardContent2.Contains("Updated Name"), "Visible account should be in dashboard.");
+        Assert.Contains("Updated Name", dashboardContent2, "Visible account should be in dashboard.");
     }
 
     private async Task<decimal> GetBalance(EmployeeCenterDbContext db, int accountId)
