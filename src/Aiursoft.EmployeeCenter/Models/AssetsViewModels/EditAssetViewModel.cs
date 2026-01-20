@@ -6,27 +6,29 @@ namespace Aiursoft.EmployeeCenter.Models.AssetsViewModels;
 
 public class EditAssetViewModel : UiStackLayoutViewModel
 {
-    [Required]
+    [Required(ErrorMessage = "The {0} is required.")]
+    [Display(Name = "Id")]
     public Guid Id { get; set; }
 
-    [Required]
+    [Required(ErrorMessage = "The {0} is required.")]
     [Display(Name = "Asset Tag")]
-    [MaxLength(50)]
+    [MaxLength(50, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string AssetTag { get; set; } = string.Empty;
 
     [Display(Name = "Serial Number")]
-    [MaxLength(100)]
+    [MaxLength(100, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string? SerialNumber { get; set; }
 
-    [Required]
+    [Required(ErrorMessage = "The {0} is required.")]
     [Display(Name = "Model")]
     public int ModelId { get; set; }
 
-    [Required]
+    [Required(ErrorMessage = "The {0} is required.")]
+    [Display(Name = "Status")]
     public AssetStatus Status { get; set; }
 
     [Display(Name = "Assignee")]
-    [MaxLength(255)]
+    [MaxLength(255, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string? AssigneeId { get; set; }
 
     [Display(Name = "Location")]
@@ -48,9 +50,10 @@ public class EditAssetViewModel : UiStackLayoutViewModel
     public DateTime? WarrantyExpireDate { get; set; }
 
     [Display(Name = "Invoice File")]
-    [MaxLength(500)]
+    [MaxLength(500, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string? InvoiceFileUrl { get; set; }
 
+    [Display(Name = "Is Reimbursed")]
     public bool IsReimbursed { get; set; }
 
     // Selection lists

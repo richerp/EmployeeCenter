@@ -11,23 +11,23 @@ public class MaintainProfileViewModel : UiStackLayoutViewModel
     }
 
     [Display(Name = "Legal Name")]
-    [MaxLength(100)]
+    [MaxLength(100, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string? LegalName { get; set; }
 
     [Display(Name = "Phone Number")]
-    [Phone]
-    [MaxLength(30)]
+    [Phone(ErrorMessage = "The {0} is not a valid phone number.")]
+    [MaxLength(30, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string? PhoneNumber { get; set; }
 
     [Display(Name = "Bank Account (Card Number)")]
-    [MaxLength(30)]
+    [MaxLength(30, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string? BankAccount { get; set; }
 
     [Display(Name = "Bank Name (Branch)")]
-    [MaxLength(30)]
+    [MaxLength(30, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string? BankName { get; set; }
 
     [Display(Name = "Bank Account Name (Holder)")]
-    [MaxLength(30)]
+    [MaxLength(30, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string? BankAccountName { get; set; }
 }

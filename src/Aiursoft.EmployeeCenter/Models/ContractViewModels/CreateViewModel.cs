@@ -11,13 +11,14 @@ public class CreateViewModel : UiStackLayoutViewModel
         PageTitle = "Create New Contract";
     }
 
-    [Required]
-    [MaxLength(200)]
+    [Required(ErrorMessage = "The {0} is required.")]
+    [MaxLength(200, ErrorMessage = "The {0} cannot exceed {1} characters.")]
+    [Display(Name = "Name")]
     public string Name { get; set; } = string.Empty;
 
-    [Required]
-    [MaxLength(150)]
-    [MinLength(2)]
+    [Required(ErrorMessage = "The {0} is required.")]
+    [MaxLength(150, ErrorMessage = "The {0} cannot exceed {1} characters.")]
+    [MinLength(2, ErrorMessage = "The {0} must be at least {1} characters.")]
     [Display(Name = "Contract File")]
     [RegularExpression(@"^contract.*", ErrorMessage = "Please upload a valid contract file.")]
     public string? FilePath { get; set; }
@@ -25,6 +26,7 @@ public class CreateViewModel : UiStackLayoutViewModel
     [Display(Name = "Is Public")]
     public bool IsPublic { get; set; }
 
-    [Required]
+    [Required(ErrorMessage = "The {0} is required.")]
+    [Display(Name = "Status")]
     public ContractStatus Status { get; set; } = ContractStatus.PendingSignature;
 }

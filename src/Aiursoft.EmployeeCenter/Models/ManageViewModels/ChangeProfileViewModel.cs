@@ -13,8 +13,8 @@ public class ChangeProfileViewModel : UiStackLayoutViewModel
 
     [NotNull]
     [Display(Name = "Name")]
-    [Required(ErrorMessage = "The name is required.")]
-    [MaxLength(30)]
-    [MinLength(2)]
+    [Required(ErrorMessage = "The {0} is required.")]
+    [MaxLength(30, ErrorMessage = "The {0} cannot exceed {1} characters.")]
+    [MinLength(2, ErrorMessage = "The {0} must be at least {1} characters.")]
     public string? Name { get; set; }
 }

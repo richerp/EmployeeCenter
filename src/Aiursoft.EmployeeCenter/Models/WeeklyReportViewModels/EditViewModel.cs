@@ -11,13 +11,15 @@ public class EditViewModel : UiStackLayoutViewModel
         PageTitle = "Edit Weekly Report";
     }
 
-    [Required]
+    [Required(ErrorMessage = "The {0} is required.")]
+    [Display(Name = "Id")]
     public int Id { get; set; }
 
-    [Required]
+    [Required(ErrorMessage = "The {0} is required.")]
     [Display(Name = "Content")]
     public string Content { get; set; } = string.Empty;
 
+    [Display(Name = "Week Start Date")]
     public DateTime WeekStartDate { get; set; }
     
     public User? User { get; set; }

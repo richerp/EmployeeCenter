@@ -11,21 +11,21 @@ public class CreateViewModel : UiStackLayoutViewModel
         PageTitle = "Issue Payroll";
     }
 
-    [Required]
+    [Required(ErrorMessage = "The {0} is required.")]
     [Display(Name = "User")]
-    [MaxLength(255)]
+    [MaxLength(255, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public required string UserId { get; set; }
 
     public List<User> AllUsers { get; set; } = [];
 
-    [Required]
+    [Required(ErrorMessage = "The {0} is required.")]
     [Display(Name = "Target Month")]
     [DataType(DataType.Date)]
     public DateTime TargetMonth { get; set; } = DateTime.UtcNow;
 
-    [Required]
+    [Required(ErrorMessage = "The {0} is required.")]
     [Display(Name = "Content (Markdown)")]
-    [MaxLength(2000)]
+    [MaxLength(2000, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string Content { get; set; } = string.Empty;
 
     // Earnings
@@ -67,16 +67,16 @@ public class CreateViewModel : UiStackLayoutViewModel
     public decimal PersonalIncomeTax { get; set; }
 
     // Actual
-    [Required]
+    [Required(ErrorMessage = "The {0} is required.")]
     [Display(Name = "Total Amount")]
     [DataType(DataType.Currency)]
     public decimal TotalAmount { get; set; }
 
     [Display(Name = "Bank Name")]
-    [MaxLength(100)]
+    [MaxLength(100, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string? BankName { get; set; }
     [Display(Name = "Bank Account")]
-    [MaxLength(100)]
+    [MaxLength(100, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string? BankAccount { get; set; }
 
     // Company Costs

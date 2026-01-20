@@ -5,30 +5,39 @@ namespace Aiursoft.EmployeeCenter.Models.LedgerViewModels;
 
 public class EditTransactionViewModel : UiStackLayoutViewModel
 {
+    [Display(Name = "Entity Id")]
     public int EntityId { get; set; }
     
+    [Display(Name = "Transaction Id")]
     public int TransactionId { get; set; }
 
-    [Required]
-    [MaxLength(500)]
+    [Required(ErrorMessage = "The {0} is required.")]
+    [MaxLength(500, ErrorMessage = "The {0} cannot exceed {1} characters.")]
+    [Display(Name = "Description")]
     public string Description { get; set; } = string.Empty;
 
-    [Required]
+    [Required(ErrorMessage = "The {0} is required.")]
+    [Display(Name = "Source Account")]
     public int SourceAccountId { get; set; }
 
-    [Required]
+    [Required(ErrorMessage = "The {0} is required.")]
+    [Display(Name = "Destination Account")]
     public int DestinationAccountId { get; set; }
 
-    [Required]
-    [Range(0.0001, double.MaxValue)]
+    [Required(ErrorMessage = "The {0} is required.")]
+    [Range(0.0001, double.MaxValue, ErrorMessage = "The {0} must be between {1} and {2}.")]
+    [Display(Name = "Amount")]
     public decimal Amount { get; set; }
 
-    [Required]
-    [Range(0.0000001, double.MaxValue)]
+    [Required(ErrorMessage = "The {0} is required.")]
+    [Range(0.0000001, double.MaxValue, ErrorMessage = "The {0} must be between {1} and {2}.")]
+    [Display(Name = "Exchange Rate")]
     public decimal ExchangeRate { get; set; } = 1;
 
+    [Display(Name = "Invoice Path")]
     public string? InvoicePath { get; set; }
 
-    [Required]
+    [Required(ErrorMessage = "The {0} is required.")]
+    [Display(Name = "Transaction Time")]
     public DateTime TransactionTime { get; set; } = DateTime.UtcNow;
 }

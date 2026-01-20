@@ -23,8 +23,8 @@ public class EditViewModel : UiStackLayoutViewModel
 
     [Required(ErrorMessage = "The {0} is required.")]
     [Display(Name = "Name")]
-    [MaxLength(30)]
-    [MinLength(2)]
+    [MaxLength(30, ErrorMessage = "The {0} cannot exceed {1} characters.")]
+    [MinLength(2, ErrorMessage = "The {0} must be at least {1} characters.")]
     public required string DisplayName { get; set; }
 
     [Required(ErrorMessage = "The {0} is required.")]
@@ -34,49 +34,51 @@ public class EditViewModel : UiStackLayoutViewModel
 
     [DataType(DataType.Password)]
     [Display(Name = "Reset Password (leave empty to keep the same password)")]
+    [MaxLength(100, ErrorMessage = "The {0} cannot exceed {1} characters.")]
+    [MinLength(6, ErrorMessage = "The {0} must be at least {1} characters.")]
     public string? Password { get; set; }
 
     [NotNull]
     [Display(Name = "Avatar file")]
     [Required(ErrorMessage = "The avatar file is required.")]
     [RegularExpression(@"^avatar.*", ErrorMessage = "The avatar file is invalid. Please upload it again.")]
-    [MaxLength(150)]
-    [MinLength(2)]
+    [MaxLength(150, ErrorMessage = "The {0} cannot exceed {1} characters.")]
+    [MinLength(2, ErrorMessage = "The {0} must be at least {1} characters.")]
     public string? AvatarUrl { get; set; }
 
     [Display(Name = "Creation Time")]
     public DateTime CreationTime { get; set; }
 
     [Display(Name = "Job Level")]
-    [MaxLength(100)]
+    [MaxLength(100, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string? JobLevel { get; set; }
 
     [Display(Name = "Title")]
-    [MaxLength(100)]
+    [MaxLength(100, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string? Title { get; set; }
 
     [Display(Name = "Legal Name")]
-    [MaxLength(100)]
+    [MaxLength(100, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string? LegalName { get; set; }
 
     [Display(Name = "Phone Number")]
-    [Phone]
-    [MaxLength(30)]
+    [Phone(ErrorMessage = "The {0} is not a valid phone number.")]
+    [MaxLength(30, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string? PhoneNumber { get; set; }
 
     [Display(Name = "Base Salary")]
     public decimal BaseSalary { get; set; }
 
     [Display(Name = "Bank Account (Card Number)")]
-    [MaxLength(30)]
+    [MaxLength(30, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string? BankAccount { get; set; }
 
     [Display(Name = "Bank Name (Branch)")]
-    [MaxLength(30)]
+    [MaxLength(30, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string? BankName { get; set; }
 
     [Display(Name = "Bank Account Name (Holder)")]
-    [MaxLength(30)]
+    [MaxLength(30, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string? BankAccountName { get; set; }
 
     [Display(Name = "Manager")]
