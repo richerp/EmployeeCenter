@@ -1,7 +1,3 @@
-using System.Net;
-using Aiursoft.EmployeeCenter.Authorization;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
 [TestClass]
