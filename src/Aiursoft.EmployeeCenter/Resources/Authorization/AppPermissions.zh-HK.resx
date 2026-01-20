@@ -63,6 +63,9 @@
   <data name="Allows managing and deleting any global password created by any user." xml:space="preserve">
     <value>允許管理及刪除任何用戶創建的全域密碼。</value>
   </data>
+  <data name="Allows managing the company&apos;s financial accounts and recording transactions." xml:space="preserve">
+    <value>允許管理公司的財務賬戶及記錄交易。</value>
+  </data>
   <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items." xml:space="preserve">
     <value>容許管理公司的IT資產，包括分類、型號及單一項目。</value>
   </data>
@@ -194,6 +197,9 @@
   </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>管理假期</value>
+  </data>
+  <data name="Manage Ledger" xml:space="preserve">
+    <value>管理會計帳目</value>
   </data>
   <data name="Manage Onboarding Tasks" xml:space="preserve">
     <value>管理入職流程任務</value>

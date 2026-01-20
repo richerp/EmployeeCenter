@@ -267,6 +267,9 @@
   <data name="Manage IT Assets" xml:space="preserve">
     <value>IT Varlıklarını Yönet</value>
   </data>
+  <data name="Manage Ledger" xml:space="preserve">
+    <value>Muhasebe Defterini Yönet</value>
+  </data>
   <data name="Manage Onboarding" xml:space="preserve">
     <value>Onboarding Yönetimi</value>
   </data>

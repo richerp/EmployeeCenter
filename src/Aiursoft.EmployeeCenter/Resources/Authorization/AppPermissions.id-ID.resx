@@ -66,6 +66,9 @@
   <data name="Allows managing and deleting any global password created by any user." xml:space="preserve">
     <value>Memungkinkan pengelolaan dan penghapusan kata sandi global apa pun yang dibuat oleh pengguna mana pun.</value>
   </data>
+  <data name="Allows managing the company&apos;s financial accounts and recording transactions." xml:space="preserve">
+    <value>Memungkinkan pengelolaan akun keuangan perusahaan dan pencatatan transaksi.</value>
+  </data>
   <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items." xml:space="preserve">
     <value>Memungkinkan pengelolaan aset TI perusahaan, termasuk kategori, model, dan item individu.</value>
   </data>
@@ -203,6 +206,9 @@
   </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>Kelola Cuti</value>
+  </data>
+  <data name="Manage Ledger" xml:space="preserve">
+    <value>Kelola Buku Besar</value>
   </data>
   <data name="Manage Onboarding Tasks" xml:space="preserve">
     <value>Kelola Tugas Onboarding</value>

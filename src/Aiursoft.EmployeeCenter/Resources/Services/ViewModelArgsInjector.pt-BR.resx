@@ -267,6 +267,9 @@
   <data name="Manage IT Assets" xml:space="preserve">
     <value>Gerenciar Ativos de TI</value>
   </data>
+  <data name="Manage Ledger" xml:space="preserve">
+    <value>Gerenciar Livro</value>
+  </data>
   <data name="Manage Onboarding" xml:space="preserve">
     <value>Gerenciar Onboarding</value>
   </data>

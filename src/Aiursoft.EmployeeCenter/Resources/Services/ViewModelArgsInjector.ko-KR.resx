@@ -270,6 +270,9 @@
   <data name="Manage IT Assets" xml:space="preserve">
     <value>IT 자산 관리</value>
   </data>
+  <data name="Manage Ledger" xml:space="preserve">
+    <value>원장 관리</value>
+  </data>
   <data name="Manage Onboarding" xml:space="preserve">
     <value>온보딩 관리</value>
   </data>

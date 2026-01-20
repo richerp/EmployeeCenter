@@ -66,6 +66,9 @@
   <data name="Allows managing and deleting any global password created by any user." xml:space="preserve">
     <value>Cho phép quản lý và xóa bất kỳ mật khẩu toàn cầu nào được tạo bởi bất kỳ người dùng nào.</value>
   </data>
+  <data name="Allows managing the company&apos;s financial accounts and recording transactions." xml:space="preserve">
+    <value>Cho phép quản lý các tài khoản tài chính của công ty và ghi nhận các giao dịch.</value>
+  </data>
   <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items." xml:space="preserve">
     <value>Cho phép quản lý các tài sản CNTT của công ty, bao gồm các danh mục, mẫu mã và các mục riêng lẻ.</value>
   </data>
@@ -203,6 +206,9 @@
   </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>Quản lý nghỉ phép</value>
+  </data>
+  <data name="Manage Ledger" xml:space="preserve">
+    <value>Quản lý sổ kế toán</value>
   </data>
   <data name="Manage Onboarding Tasks" xml:space="preserve">
     <value>Quản lý Nhiệm vụ Đào tạo Nhân viên Mới</value>

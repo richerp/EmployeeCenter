@@ -66,6 +66,9 @@
   <data name="Allows managing and deleting any global password created by any user." xml:space="preserve">
     <value>อนุญาตให้จัดการและลบรหัสผ่านทั่วทั้งระบบใดๆ ที่ผู้ใช้ใดๆ สร้างขึ้น</value>
   </data>
+  <data name="Allows managing the company&apos;s financial accounts and recording transactions." xml:space="preserve">
+    <value>อนุญาตให้จัดการบัญชีการเงินของบริษัทและบันทึกธุรกรรมต่างๆ</value>
+  </data>
   <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items." xml:space="preserve">
     <value>อนุญาตให้จัดการสินทรัพย์ไอทีของบริษัท รวมถึงหมวดหมู่ รุ่น และรายการเฉพาะ</value>
   </data>
@@ -203,6 +206,9 @@
   </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>จัดการการลา</value>
+  </data>
+  <data name="Manage Ledger" xml:space="preserve">
+    <value>จัดการบัญชี</value>
   </data>
   <data name="Manage Onboarding Tasks" xml:space="preserve">
     <value>จัดการงานนำเข้าพนักงาน</value>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Amount" xml:space="preserve">
+    <value>Valor</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Painel de Controle</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>De</value>
+  </data>
+  <data name="Health Metrics" xml:space="preserve">
+    <value>Métricas de Saúde</value>
+  </data>
+  <data name="Manage Accounts" xml:space="preserve">
+    <value>Gerir Contas</value>
+  </data>
+  <data name="Monthly Burn Rate" xml:space="preserve">
+    <value>Taxa Mensal de Consumo</value>
+  </data>
+  <data name="Months" xml:space="preserve">
+    <value>Meses</value>
+  </data>
+  <data name="New Transaction" xml:space="preserve">
+    <value>Nova Transação</value>
+  </data>
+  <data name="No Invoice" xml:space="preserve">
+    <value>Sem Fatura</value>
+  </data>
+  <data name="Recent Transactions" xml:space="preserve">
+    <value>Transações Recentes</value>
+  </data>
+  <data name="Runway" xml:space="preserve">
+    <value>Tempo de sobrevivência</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>Para</value>
+  </data>
+  <data name="View All" xml:space="preserve">
+    <value>Ver Tudo</value>
+  </data>
+  <data name="View Invoice" xml:space="preserve">
+    <value>Ver Factura</value>
+  </data>
+
+</root>

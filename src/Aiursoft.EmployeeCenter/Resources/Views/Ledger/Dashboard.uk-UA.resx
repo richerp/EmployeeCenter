@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Amount" xml:space="preserve">
+    <value>Сума</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Панель керування</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Опис</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>З</value>
+  </data>
+  <data name="Health Metrics" xml:space="preserve">
+    <value>Метрики здоров&apos;я</value>
+  </data>
+  <data name="Manage Accounts" xml:space="preserve">
+    <value>Керування рахунками</value>
+  </data>
+  <data name="Monthly Burn Rate" xml:space="preserve">
+    <value>Місячний темп витрат</value>
+  </data>
+  <data name="Months" xml:space="preserve">
+    <value>Місяці</value>
+  </data>
+  <data name="New Transaction" xml:space="preserve">
+    <value>Нова транзакція</value>
+  </data>
+  <data name="No Invoice" xml:space="preserve">
+    <value>Без рахунку</value>
+  </data>
+  <data name="Recent Transactions" xml:space="preserve">
+    <value>Останні операції</value>
+  </data>
+  <data name="Runway" xml:space="preserve">
+    <value>Час роботи</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>До</value>
+  </data>
+  <data name="View All" xml:space="preserve">
+    <value>Переглянути всі</value>
+  </data>
+  <data name="View Invoice" xml:space="preserve">
+    <value>Переглянути рахунок</value>
+  </data>
+
+</root>
