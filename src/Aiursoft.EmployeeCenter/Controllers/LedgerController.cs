@@ -253,6 +253,83 @@ public class LedgerController(
         return RedirectToAction(nameof(Dashboard), new { id = model.EntityId });
     }
 
+    [HttpGet]
+    public async Task<IActionResult> EditTransaction(int id, int entityId)
+    {
+        var transaction = await dbContext.Transactions.FindAsync(id);
+        if (transaction == null)
+        {
+            return NotFound();
+        }
+
+        var accounts = await dbContext.FinanceAccounts
+            .Where(a => a.CompanyEntityId == entityId && !a.IsArchived)
+            .ToListAsync();
+
+        ViewBag.Accounts = accounts;
+        var model = new EditTransactionViewModel
+        {
+            EntityId = entityId,
+            TransactionId = transaction.Id,
+            Description = transaction.Description,
+            SourceAccountId = transaction.SourceAccountId,
+            DestinationAccountId = transaction.DestinationAccountId,
+            Amount = transaction.Amount,
+            ExchangeRate = transaction.ExchangeRate,
+            InvoicePath = transaction.InvoicePath,
+            TransactionTime = transaction.TransactionTime
+        };
+
+        return this.StackView(model);
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> EditTransaction(EditTransactionViewModel model)
+    {
+        if (!ModelState.IsValid)
+        {
+            ViewBag.Accounts = await dbContext.FinanceAccounts
+                .Where(a => a.CompanyEntityId == model.EntityId && !a.IsArchived)
+                .ToListAsync();
+            return this.StackView(model);
+        }
+
+        var transaction = await dbContext.Transactions.FindAsync(model.TransactionId);
+        if (transaction == null)
+        {
+            return NotFound();
+        }
+
+        transaction.Description = model.Description;
+        transaction.SourceAccountId = model.SourceAccountId;
+        transaction.DestinationAccountId = model.DestinationAccountId;
+        transaction.Amount = model.Amount;
+        transaction.ExchangeRate = model.ExchangeRate;
+        transaction.InvoicePath = model.InvoicePath;
+        transaction.TransactionTime = model.TransactionTime;
+
+        await dbContext.SaveChangesAsync();
+
+        return RedirectToAction(nameof(Dashboard), new { id = model.EntityId });
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> DeleteTransaction(int id, int entityId)
+    {
+        var transaction = await dbContext.Transactions.FindAsync(id);
+        if (transaction == null)
+        {
+            return NotFound();
+        }
+
+        dbContext.Transactions.Remove(transaction);
+        await dbContext.SaveChangesAsync();
+
+        return RedirectToAction(nameof(Dashboard), new { id = entityId });
+    }
+
     private async Task<decimal> GetBalance(int accountId)
     {
         var account = await dbContext.FinanceAccounts.FindAsync(accountId);

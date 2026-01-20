@@ -53,12 +53,17 @@
                                     }
                                 </td>
                                 <td>
-                                    @if (!string.IsNullOrEmpty(t.InvoicePath))
-                                    {
-                                        <a href="@StorageService.RelativePathToInternetUrl(t.InvoicePath, true)" target="_blank" class="btn btn-sm btn-info">
-                                            <i class="fas fa-file-pdf"></i> @Localizer["View"]
+                                    <div class="d-flex align-items-center">
+                                        @if (!string.IsNullOrEmpty(t.InvoicePath))
+                                        {
+                                            <a href="@StorageService.RelativePathToInternetUrl(t.InvoicePath, true)" target="_blank" class="btn btn-sm btn-info mr-2">
+                                                <i class="fas fa-file-pdf"></i> @Localizer["View"]
+                                            </a>
+                                        }
+                                        <a asp-action="EditTransaction" asp-route-id="@t.Id" asp-route-entityId="@Model.Entity.Id" class="btn btn-sm btn-secondary">
+                                            <i class="fas fa-edit"></i> @Localizer["Edit"]
                                         </a>
-                                    }
+                                    </div>
                                 </td>
                             </tr>
                         }
