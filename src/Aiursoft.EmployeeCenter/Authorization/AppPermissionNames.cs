@@ -43,6 +43,7 @@ public static class AppPermissionNames
 
     // Certificate Printing
     public const string CanPrintCertificates = nameof(CanPrintCertificates);
+    public const string CanPrintSelfCertificates = nameof(CanPrintSelfCertificates);
 
     // Company Entity Management
     public const string CanManageCompanyEntities = nameof(CanManageCompanyEntities);
