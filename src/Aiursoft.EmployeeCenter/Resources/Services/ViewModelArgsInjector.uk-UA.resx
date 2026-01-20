@@ -267,6 +267,9 @@
   <data name="Manage IT Assets" xml:space="preserve">
     <value>Керування IT-активами</value>
   </data>
+  <data name="Manage Ledger" xml:space="preserve">
+    <value>Керування журналом</value>
+  </data>
   <data name="Manage Onboarding" xml:space="preserve">
     <value>Керування онбордингом</value>
   </data>

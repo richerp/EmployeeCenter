@@ -267,6 +267,9 @@
   <data name="Manage IT Assets" xml:space="preserve">
     <value>Hantera IT-aktier</value>
   </data>
+  <data name="Manage Ledger" xml:space="preserve">
+    <value>Hantera konto</value>
+  </data>
   <data name="Manage Onboarding" xml:space="preserve">
     <value>Hantera påbörjande</value>
   </data>

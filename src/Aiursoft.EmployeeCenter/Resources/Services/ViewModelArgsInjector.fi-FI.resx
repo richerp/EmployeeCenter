@@ -267,6 +267,9 @@
   <data name="Manage IT Assets" xml:space="preserve">
     <value>Hallinnoi IT-varastoja</value>
   </data>
+  <data name="Manage Ledger" xml:space="preserve">
+    <value>Hallinnoi kirjanpitoa</value>
+  </data>
   <data name="Manage Onboarding" xml:space="preserve">
     <value>Hallinnoi rekrytointia</value>
   </data>

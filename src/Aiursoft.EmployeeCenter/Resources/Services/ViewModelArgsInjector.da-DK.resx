@@ -267,6 +267,9 @@
   <data name="Manage IT Assets" xml:space="preserve">
     <value>Administrer IT-aktiver</value>
   </data>
+  <data name="Manage Ledger" xml:space="preserve">
+    <value>Håndtér bogføring</value>
+  </data>
   <data name="Manage Onboarding" xml:space="preserve">
     <value>Håndtér påbegyndelse</value>
   </data>

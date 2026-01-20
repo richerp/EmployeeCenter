@@ -105,6 +105,8 @@ public class ViewModelArgsInjector(
     
         _ = localizer["Employee Signals"];
         _ = localizer["Manage Feedback"];
+    
+        _ = localizer["Manage Ledger"];
     }
 
     public void InjectSimple(

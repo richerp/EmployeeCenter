@@ -66,6 +66,9 @@
   <data name="Allows managing and deleting any global password created by any user." xml:space="preserve">
     <value>Позволяет управлять и удалять любой глобальный пароль, созданный любым пользователем.</value>
   </data>
+  <data name="Allows managing the company&apos;s financial accounts and recording transactions." xml:space="preserve">
+    <value>Позволяет управлять финансовым счетом компании и вести учет операций.</value>
+  </data>
   <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items." xml:space="preserve">
     <value>Позволяет управлять ИТ-активами компании, включая категории, модели и отдельные элементы.</value>
   </data>
@@ -203,6 +206,9 @@
   </data>
   <data name="Manage Leave" xml:space="preserve">
     <value>Управление отпусками</value>
+  </data>
+  <data name="Manage Ledger" xml:space="preserve">
+    <value>Управление бухгалтерским учетом</value>
   </data>
   <data name="Manage Onboarding Tasks" xml:space="preserve">
     <value>Управление задачами наboarding</value>

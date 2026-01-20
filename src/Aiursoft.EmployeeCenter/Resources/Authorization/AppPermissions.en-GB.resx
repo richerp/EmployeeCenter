@@ -63,6 +63,9 @@
   <data name="Allows managing and deleting any global password created by any user." xml:space="preserve">
     <value>Allows managing and deleting any global password created by any user.</value>
   </data>
+  <data name="Allows managing the company&apos;s financial accounts and recording transactions." xml:space="preserve">
+    <value>Allows managing the company&apos;s financial accounts and recording transactions.</value>
+  </data>
   <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items." xml:space="preserve">
     <value>Allows managing the company&apos;s IT assets, including categories, models, and individual items.</value>
   </data>
@@ -182,6 +185,9 @@
   </data>
   <data name="Manage Global Settings" xml:space="preserve">
     <value>Manage Global Settings</value>
+  </data>
+  <data name="Manage Ledger" xml:space="preserve">
+    <value>Manage Ledger</value>
   </data>
   <data name="Manage Onboarding Tasks" xml:space="preserve">
     <value>Manage Onboarding Tasks</value>

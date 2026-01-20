@@ -270,6 +270,9 @@
   <data name="Manage IT Assets" xml:space="preserve">
     <value>IT 资产</value>
   </data>
+  <data name="Manage Ledger" xml:space="preserve">
+    <value>管理账本</value>
+  </data>
   <data name="Manage Onboarding" xml:space="preserve">
     <value>管理入职</value>
   </data>

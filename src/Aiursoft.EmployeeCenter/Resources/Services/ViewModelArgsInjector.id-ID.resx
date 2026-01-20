@@ -267,6 +267,9 @@
   <data name="Manage IT Assets" xml:space="preserve">
     <value>Kelola Aset IT</value>
   </data>
+  <data name="Manage Ledger" xml:space="preserve">
+    <value>Kelola Buku Besar</value>
+  </data>
   <data name="Manage Onboarding" xml:space="preserve">
     <value>Kelola Onboarding</value>
   </data>

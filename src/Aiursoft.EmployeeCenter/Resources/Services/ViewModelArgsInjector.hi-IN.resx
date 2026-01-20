@@ -267,6 +267,9 @@
   <data name="Manage IT Assets" xml:space="preserve">
     <value>प्रबंधित करें आईटी संपत्ति</value>
   </data>
+  <data name="Manage Ledger" xml:space="preserve">
+    <value>लेजर व्यवस्थापन करें</value>
+  </data>
   <data name="Manage Onboarding" xml:space="preserve">
     <value>संबंधित आने का प्रबंधन करें</value>
   </data>
