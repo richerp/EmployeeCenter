@@ -119,6 +119,56 @@ public class LedgerTests : TestBase
             // Expense: 3000 - 0 = 3000
             Assert.AreEqual(3000, await GetBalance(db, expenseAccountId));
         }
+
+        // 8. Edit Transaction
+        int transactionId;
+        using (var scope = Server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            transactionId = db.Transactions.First(t => t.Description == "Sleek fee").Id;
+        }
+
+        var editTransactionResponse = await PostForm("/Ledger/EditTransaction", new Dictionary<string, string>
+        {
+            { "EntityId", entityId.ToString() },
+            { "TransactionId", transactionId.ToString() },
+            { "Description", "Sleek fee updated" },
+            { "SourceAccountId", bankId.ToString() },
+            { "DestinationAccountId", expenseAccountId.ToString() },
+            { "Amount", "4000" },
+            { "ExchangeRate", "1" },
+            { "TransactionTime", DateTime.UtcNow.AddDays(-1).ToString("O") }
+        });
+        AssertRedirect(editTransactionResponse, "/Ledger/Dashboard/" + entityId);
+
+        using (var scope = Server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var transaction = await db.Transactions.FindAsync(transactionId);
+            Assert.AreEqual("Sleek fee updated", transaction!.Description);
+            Assert.AreEqual(4000, transaction.Amount);
+            
+            // Bank: 10000 - 4000 = 6000
+            Assert.AreEqual(6000, await GetBalance(db, bankId));
+        }
+
+        // 9. Delete Transaction
+        var deleteTransactionResponse = await PostForm("/Ledger/DeleteTransaction", new Dictionary<string, string>
+        {
+            { "id", transactionId.ToString() },
+            { "entityId", entityId.ToString() }
+        });
+        AssertRedirect(deleteTransactionResponse, "/Ledger/Dashboard/" + entityId);
+
+        using (var scope = Server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var transaction = await db.Transactions.FindAsync(transactionId);
+            Assert.IsNull(transaction);
+            
+            // Bank: 10000 - 0 = 10000 (since only one transaction remains)
+            Assert.AreEqual(10000, await GetBalance(db, bankId));
+        }
     }
 
     private async Task<decimal> GetBalance(EmployeeCenterDbContext db, int accountId)
