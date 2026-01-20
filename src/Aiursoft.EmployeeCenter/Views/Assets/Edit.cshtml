@@ -205,9 +205,11 @@
                 const target = document.getElementById(targetId);
                 const originalValue = target.value;
                 const reloadBtn = document.querySelector(`.reload-dropdown[data-target="${targetId}"]`);
-                const icon = reloadBtn.querySelector('i');
+                const icon = reloadBtn?.querySelector('i, svg');
                 
-                icon.classList.add('spin');
+                if (icon) {
+                    icon.classList.add('spin');
+                }
 
                 fetch(url)
                     .then(response => response.json())
@@ -249,7 +251,9 @@
                     })
                     .catch(error => console.error('Error reloading dropdown:', error))
                     .finally(() => {
-                        icon.classList.remove('spin');
+                        if (icon) {
+                            icon.classList.remove('spin');
+                        }
                     });
             }
 
