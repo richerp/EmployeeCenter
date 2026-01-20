@@ -259,6 +259,11 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("BaseCurrency")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("CINumber")
                         .HasMaxLength(50)
                         .HasColumnType("TEXT");
@@ -409,6 +414,41 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Contracts");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.FinanceAccount", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("AccountName")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("AccountType")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("CompanyEntityId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("CreationTime")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Currency")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsArchived")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CompanyEntityId");
+
+                    b.ToTable("FinanceAccounts");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.GlobalSetting", b =>
@@ -1090,6 +1130,48 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.ToTable("SshKeys");
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Transaction", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<decimal>("Amount")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CreateTime")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("DestinationAccountId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<decimal>("ExchangeRate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("InvoicePath")
+                        .HasMaxLength(500)
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("SourceAccountId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("TransactionTime")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DestinationAccountId");
+
+                    b.HasIndex("SourceAccountId");
+
+                    b.ToTable("Transactions");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.User", b =>
                 {
                     b.Property<string>("Id")
@@ -1474,6 +1556,17 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.FinanceAccount", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.CompanyEntity", "CompanyEntity")
+                        .WithMany()
+                        .HasForeignKey("CompanyEntityId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("CompanyEntity");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Incident", b =>
                 {
                     b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "IM")
@@ -1686,6 +1779,25 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .IsRequired();
 
                     b.Navigation("Owner");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Transaction", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.FinanceAccount", "DestinationAccount")
+                        .WithMany()
+                        .HasForeignKey("DestinationAccountId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.FinanceAccount", "SourceAccount")
+                        .WithMany()
+                        .HasForeignKey("SourceAccountId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("DestinationAccount");
+
+                    b.Navigation("SourceAccount");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.User", b =>

@@ -88,6 +88,9 @@ public class CompanyEntity
     [MaxLength(100)]
     public string? CompanySecretary { get; set; }
 
+    [MaxLength(10)]
+    public string BaseCurrency { get; set; } = "CNY";
+
     public DateTime CreationTime { get; init; } = DateTime.UtcNow;
 
     public DateTime UpdateTime { get; set; } = DateTime.UtcNow;

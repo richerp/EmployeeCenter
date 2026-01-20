@@ -22,6 +22,8 @@ public abstract class EmployeeCenterDbContext(DbContextOptions options) : Identi
     public DbSet<OnboardingTaskLog> OnboardingTaskLogs => Set<OnboardingTaskLog>();
     public DbSet<CompanyEntity> CompanyEntities => Set<CompanyEntity>();
     public DbSet<CompanyEntityLog> CompanyEntityLogs => Set<CompanyEntityLog>();
+    public DbSet<FinanceAccount> FinanceAccounts => Set<FinanceAccount>();
+    public DbSet<Transaction> Transactions => Set<Transaction>();
     public DbSet<AssetCategory> AssetCategories => Set<AssetCategory>();
     public DbSet<AssetModel> AssetModels => Set<AssetModel>();
     public DbSet<Location> Locations => Set<Location>();
