@@ -12,13 +12,13 @@ public class CreateViewModel : UiStackLayoutViewModel
 
     public string? TargetUserId { get; set; }
 
-    [Required]
-    [MaxLength(255)]
+    [Required(ErrorMessage = "The {0} is required.")]
+    [MaxLength(255, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     [Display(Name = "Key Name")]
     public string? Name { get; set; }
 
-    [Required]
-    [MaxLength(5000)]
+    [Required(ErrorMessage = "The {0} is required.")]
+    [MaxLength(5000, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     [Display(Name = "Public Key")]
     public string? PublicKey { get; set; }
 }

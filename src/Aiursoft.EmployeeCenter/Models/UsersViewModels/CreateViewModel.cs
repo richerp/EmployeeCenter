@@ -20,8 +20,8 @@ public class CreateViewModel : UiStackLayoutViewModel
     [Required(ErrorMessage = "The {0} is required.")]
     [Display(Name = "Name")]
     [NotNull]
-    [MaxLength(30)]
-    [MinLength(2)]
+    [MaxLength(30, ErrorMessage = "The {0} cannot exceed {1} characters.")]
+    [MinLength(2, ErrorMessage = "The {0} must be at least {1} characters.")]
     public string? DisplayName { get; set; }
 
     [EmailAddress(ErrorMessage = "The {0} is not a valid email address.")]
@@ -39,35 +39,35 @@ public class CreateViewModel : UiStackLayoutViewModel
     public DateTime CreationTime { get; set; } = DateTime.UtcNow;
 
     [Display(Name = "Job Level")]
-    [MaxLength(100)]
+    [MaxLength(100, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string? JobLevel { get; set; }
 
     [Display(Name = "Title")]
-    [MaxLength(100)]
+    [MaxLength(100, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string? Title { get; set; }
 
     [Display(Name = "Legal Name")]
-    [MaxLength(100)]
+    [MaxLength(100, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string? LegalName { get; set; }
 
     [Display(Name = "Phone Number")]
-    [Phone]
-    [MaxLength(30)]
+    [Phone(ErrorMessage = "The {0} is not a valid phone number.")]
+    [MaxLength(30, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string? PhoneNumber { get; set; }
 
     [Display(Name = "Base Salary")]
     public decimal BaseSalary { get; set; }
 
     [Display(Name = "Bank Account (Card Number)")]
-    [MaxLength(30)]
+    [MaxLength(30, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string? BankAccount { get; set; }
 
     [Display(Name = "Bank Name (Branch)")]
-    [MaxLength(30)]
+    [MaxLength(30, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string? BankName { get; set; }
 
     [Display(Name = "Bank Account Name (Holder)")]
-    [MaxLength(30)]
+    [MaxLength(30, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string? BankAccountName { get; set; }
 
     [Display(Name = "Manager")]
