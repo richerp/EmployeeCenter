@@ -20,7 +20,7 @@ public class LedgerController(
         NavGroupName = "Administration",
         NavGroupOrder = 3,
         CascadedLinksGroupName = "Finance",
-        CascadedLinksIcon = "banknotes",
+        CascadedLinksIcon = "shopping-cart",
         CascadedLinksOrder = 4,
         LinkText = "Manage Ledger",
         LinkOrder = 1)]
