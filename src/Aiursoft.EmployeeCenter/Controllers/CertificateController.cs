@@ -19,6 +19,7 @@ public class CertificateController(
     IOptions<AppSettings> appSettings) : Controller
 {
     [HttpGet]
+    [Authorize(Policy = AppPermissionNames.CanPrintSelfCertificates)]
     [RenderInNavBar(
         NavGroupName = "Personal",
         NavGroupOrder = 2,
@@ -39,6 +40,7 @@ public class CertificateController(
     }
 
     [HttpGet]
+    [Authorize(Policy = AppPermissionNames.CanPrintSelfCertificates)]
     [RenderInNavBar(
         NavGroupName = "Personal",
         NavGroupOrder = 2,
@@ -65,6 +67,10 @@ public class CertificateController(
         User? targetUser;
         if (string.IsNullOrEmpty(userId))
         {
+            if (!User.HasClaim(AppPermissions.Type, AppPermissionNames.CanPrintSelfCertificates))
+            {
+                return Forbid();
+            }
             targetUser = await userManager.GetUserAsync(User);
         }
         else

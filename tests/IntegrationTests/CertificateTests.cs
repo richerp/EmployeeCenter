@@ -1,50 +1,49 @@
+using System.Net;
+using Aiursoft.EmployeeCenter.Authorization;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
 [TestClass]
-public class CertificateTests
+public class CertificateTests : TestBase
 {
-    private readonly int _port;
-    private readonly HttpClient _http;
-    private IHost? _server;
-
-    public CertificateTests()
+    [TestMethod]
+    public async Task GetEmploymentCertificatePageRedirectsAnonymousTest()
     {
-        var cookieContainer = new CookieContainer();
-        var handler = new HttpClientHandler
-        {
-            CookieContainer = cookieContainer,
-            AllowAutoRedirect = false
-        };
-        _port = Network.GetAvailablePort();
-        _http = new HttpClient(handler)
-        {
-            BaseAddress = new Uri($"http://localhost:{_port}")
-        };
-    }
-
-    [TestInitialize]
-    public async Task CreateServer()
-    {
-        _server = await AppAsync<Startup>([], port: _port);
-        await _server.UpdateDbAsync<EmployeeCenterDbContext>();
-        await _server.SeedAsync();
-        await _server.StartAsync();
-    }
-
-    [TestCleanup]
-    public async Task CleanServer()
-    {
-        if (_server == null) return;
-        await _server.StopAsync();
-        _server.Dispose();
+        var response = await Http.GetAsync("/Certificate/Employment");
+        Assert.AreEqual(HttpStatusCode.Found, response.StatusCode);
+        Assert.Contains("Account/Login", response.Headers.Location!.ToString());
     }
 
     [TestMethod]
-    public async Task GetEmploymentCertificatePageTest()
+    public async Task GetEmploymentCertificatePageAdminAccessTest()
     {
-        var response = await _http.GetAsync("/Certificate/Employment");
-        Assert.AreEqual(HttpStatusCode.Found, response.StatusCode);
-        Assert.Contains("Account/Login", response.Headers.Location!.ToString());
+        await LoginAsAdmin();
+        var response = await Http.GetAsync("/Certificate/Employment");
+        Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
+    }
+
+    [TestMethod]
+    public async Task GetEmploymentCertificatePageNormalUserForbiddenTest()
+    {
+        await RegisterAndLoginAsync();
+        var response = await Http.GetAsync("/Certificate/Employment");
+        AssertRedirect(response, "/Error/Code403?ReturnUrl=%2FCertificate%2FEmployment");
+    }
+
+    [TestMethod]
+    public async Task GetIncomeCertificatePageAdminAccessTest()
+    {
+        await LoginAsAdmin();
+        var response = await Http.GetAsync("/Certificate/Income");
+        Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
+    }
+
+    [TestMethod]
+    public async Task GetIncomeCertificatePageNormalUserForbiddenTest()
+    {
+        await RegisterAndLoginAsync();
+        var response = await Http.GetAsync("/Certificate/Income");
+        AssertRedirect(response, "/Error/Code403?ReturnUrl=%2FCertificate%2FIncome");
     }
 }
