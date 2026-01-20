@@ -66,6 +66,9 @@
   <data name="Legal Representative / Director" xml:space="preserve">
     <value>Lakisäädännöllinen edustaja / Direktööri</value>
   </data>
+  <data name="Legal Representative Legal Name" xml:space="preserve">
+    <value>Lakisäädännöllinen edustaja oikea nimi</value>
+  </data>
   <data name="Office Address" xml:space="preserve">
     <value>Toimistosoite</value>
   </data>
@@ -95,6 +98,12 @@
   </data>
   <data name="SCR Location (HK)" xml:space="preserve">
     <value>SCR-sijainti (HK)</value>
+  </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0} ei saa ylittää {1} merkkiä.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0} on pakollinen.</value>
   </data>
   <data name="Zip Code" xml:space="preserve">
     <value>Postinumero</value>

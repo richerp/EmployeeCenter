@@ -24,5 +24,11 @@
   <data name="Allow users to adjust their nickname in the profile management page." xml:space="preserve">
     <value>Consenti agli utenti di modificare il proprio soprannome nella pagina di gestione del profilo.</value>
   </data>
+  <data name="Annual Leave Per Year" xml:space="preserve">
+    <value>Congedo Annuale All&apos;Anno</value>
+  </data>
+  <data name="The number of paid annual leave days allocated to each employee every year." xml:space="preserve">
+    <value>Il numero di giorni di ferie annuali retribuite assegnati a ciascun dipendente ogni anno.</value>
+  </data>
 
 </root>

@@ -27,6 +27,9 @@
   <data name="Accounts List" xml:space="preserve">
     <value>खाता सूची</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>कार्रवाई</value>
+  </data>
   <data name="Active" xml:space="preserve">
     <value>सक्रिय</value>
   </data>
@@ -42,6 +45,15 @@
   <data name="Currency" xml:space="preserve">
     <value>मुद्रा</value>
   </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>डैशबोर्ड</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>संपादित करें</value>
+  </data>
+  <data name="Hidden" xml:space="preserve">
+    <value>छुपा हुआ</value>
+  </data>
   <data name="Ledger" xml:space="preserve">
     <value>लेजर</value>
   </data>
@@ -53,6 +65,9 @@
   </data>
   <data name="Type" xml:space="preserve">
     <value>प्रकार</value>
+  </data>
+  <data name="Visible" xml:space="preserve">
+    <value>दृश्य</value>
   </data>
 
 </root>

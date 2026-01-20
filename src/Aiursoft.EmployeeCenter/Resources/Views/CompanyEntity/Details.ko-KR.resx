@@ -99,6 +99,9 @@
   <data name="Legal Rep / Director" xml:space="preserve">
     <value>법무 대표 / 이사</value>
   </data>
+  <data name="Legal Rep Legal Name" xml:space="preserve">
+    <value>법무대표 법적 이름</value>
+  </data>
   <data name="Logo" xml:space="preserve">
     <value>로고</value>
   </data>

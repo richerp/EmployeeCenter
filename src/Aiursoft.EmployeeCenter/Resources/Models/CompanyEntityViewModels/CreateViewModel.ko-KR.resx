@@ -66,6 +66,9 @@
   <data name="Legal Representative / Director" xml:space="preserve">
     <value>법무 대리인 / 이사</value>
   </data>
+  <data name="Legal Representative Legal Name" xml:space="preserve">
+    <value>법정 대리인 법적 이름</value>
+  </data>
   <data name="Office Address" xml:space="preserve">
     <value>사무실 주소</value>
   </data>
@@ -95,6 +98,12 @@
   </data>
   <data name="SCR Location (HK)" xml:space="preserve">
     <value>SCR 위치 (홍콩)</value>
+  </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0}은 {1}자를 초과할 수 없습니다.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0}이(가) 필요합니다.</value>
   </data>
   <data name="Zip Code" xml:space="preserve">
     <value>우편번호</value>

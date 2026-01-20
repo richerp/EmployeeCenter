@@ -84,6 +84,12 @@
   <data name="Target Month" xml:space="preserve">
     <value>Tháng mục tiêu</value>
   </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0} không được vượt quá {1} ký tự.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0} là bắt buộc.</value>
+  </data>
   <data name="Total Amount" xml:space="preserve">
     <value>Tổng Số Tiền</value>
   </data>

@@ -30,8 +30,17 @@
   <data name="Old Title" xml:space="preserve">
     <value>Ancien titre</value>
   </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>Le {0} ne peut pas dépasser {1} caractères.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>Le {0} est requis.</value>
+  </data>
   <data name="User" xml:space="preserve">
     <value>Utilisateur</value>
+  </data>
+  <data name="User Display Name" xml:space="preserve">
+    <value>Nom d&apos;affichage de l&apos;utilisateur</value>
   </data>
 
 </root>

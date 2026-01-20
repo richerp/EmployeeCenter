@@ -30,6 +30,9 @@
   <data name="Description" xml:space="preserve">
     <value>Опис</value>
   </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Редагувати</value>
+  </data>
   <data name="From" xml:space="preserve">
     <value>З</value>
   </data>

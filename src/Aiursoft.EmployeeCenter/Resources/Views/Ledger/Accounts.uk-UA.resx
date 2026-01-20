@@ -27,6 +27,9 @@
   <data name="Accounts List" xml:space="preserve">
     <value>Список облікових записів</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Дії</value>
+  </data>
   <data name="Active" xml:space="preserve">
     <value>Активний</value>
   </data>
@@ -42,6 +45,15 @@
   <data name="Currency" xml:space="preserve">
     <value>Валюта</value>
   </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Панель керування</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Редагувати</value>
+  </data>
+  <data name="Hidden" xml:space="preserve">
+    <value>Прихований</value>
+  </data>
   <data name="Ledger" xml:space="preserve">
     <value>Лічильник</value>
   </data>
@@ -53,6 +65,9 @@
   </data>
   <data name="Type" xml:space="preserve">
     <value>Тип</value>
+  </data>
+  <data name="Visible" xml:space="preserve">
+    <value>Видимий</value>
   </data>
 
 </root>

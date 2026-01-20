@@ -18,8 +18,23 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Assign To" xml:space="preserve">
+      <data name="Asset Id" xml:space="preserve">
+    <value>자산 ID</value>
+  </data>
+  <data name="Asset Tag" xml:space="preserve">
+    <value>자산 태그</value>
+  </data>
+  <data name="Assign To" xml:space="preserve">
     <value>할당 대상</value>
+  </data>
+  <data name="Model Name" xml:space="preserve">
+    <value>모델 이름</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>메모</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0}은 필수 항목입니다.</value>
   </data>
 
 </root>

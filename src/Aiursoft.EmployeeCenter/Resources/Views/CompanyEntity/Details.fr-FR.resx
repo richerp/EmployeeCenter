@@ -99,6 +99,9 @@
   <data name="Legal Rep / Director" xml:space="preserve">
     <value>Représentant légal / Directeur</value>
   </data>
+  <data name="Legal Rep Legal Name" xml:space="preserve">
+    <value>Nom légal du représentant légal</value>
+  </data>
   <data name="Logo" xml:space="preserve">
     <value>Logo</value>
   </data>

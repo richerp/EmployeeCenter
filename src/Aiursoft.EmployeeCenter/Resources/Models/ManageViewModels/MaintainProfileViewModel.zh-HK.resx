@@ -33,5 +33,11 @@
   <data name="Phone Number" xml:space="preserve">
     <value>電話號碼</value>
   </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0} 不能超過 {1} 個字元。</value>
+  </data>
+  <data name="The {0} is not a valid phone number." xml:space="preserve">
+    <value>{0} 不是有效的電話號碼。</value>
+  </data>
 
 </root>

@@ -21,5 +21,14 @@
       <data name="Content" xml:space="preserve">
     <value>内容</value>
   </data>
+  <data name="Id" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0} 为必填项。</value>
+  </data>
+  <data name="Week Start Date" xml:space="preserve">
+    <value>周开始日期</value>
+  </data>
 
 </root>

@@ -33,5 +33,11 @@
   <data name="Phone Number" xml:space="preserve">
     <value>Puhelinnumero</value>
   </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0} ei saa ylittää {1} merkkiä.</value>
+  </data>
+  <data name="The {0} is not a valid phone number." xml:space="preserve">
+    <value>{0} ei ole kelvollinen puhelinnumero.</value>
+  </data>
 
 </root>

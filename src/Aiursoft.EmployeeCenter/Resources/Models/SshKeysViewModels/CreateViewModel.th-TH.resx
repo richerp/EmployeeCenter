@@ -24,5 +24,11 @@
   <data name="Public Key" xml:space="preserve">
     <value>กุญแจสาธารณะ</value>
   </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0} ไม่สามารถเกินจำนวน {1} ตัวอักษรได้</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0} จำเป็นต้องระบุ</value>
+  </data>
 
 </root>

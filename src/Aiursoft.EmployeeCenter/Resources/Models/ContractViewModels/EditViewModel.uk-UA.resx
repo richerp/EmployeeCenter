@@ -18,14 +18,29 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Is Public" xml:space="preserve">
+      <data name="Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="Is Public" xml:space="preserve">
     <value>Чи публічний</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Назва</value>
   </data>
   <data name="New Contract File (Optional)" xml:space="preserve">
     <value>Новий файл договору (не обов&apos;язково)</value>
   </data>
   <data name="Please upload a valid contract file." xml:space="preserve">
     <value>Будь ласка, завантажте дійсний файл договору.</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0} не може перевищувати {1} символів.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0} обов&apos;язковий.</value>
   </data>
   <data name="User" xml:space="preserve">
     <value>Користувач</value>

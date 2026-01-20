@@ -60,11 +60,20 @@
   <data name="Phone Number" xml:space="preserve">
     <value>หมายเลขโทรศัพท์</value>
   </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0} ไม่สามารถเกินจำนวนตัวอักษร {1} ได้</value>
+  </data>
   <data name="The {0} is not a valid email address." xml:space="preserve">
     <value>{0} ไม่ใช่ที่อยู่อีเมลที่ถูกต้อง</value>
   </data>
+  <data name="The {0} is not a valid phone number." xml:space="preserve">
+    <value>{0} ไม่ใช่หมายเลขโทรศัพท์ที่ถูกต้อง</value>
+  </data>
   <data name="The {0} is required." xml:space="preserve">
     <value>{0} เป็นข้อมูลที่จำเป็น</value>
+  </data>
+  <data name="The {0} must be at least {1} characters." xml:space="preserve">
+    <value>{0} ต้องมีความยาวอย่างน้อย {1} ตัวอักษร</value>
   </data>
   <data name="The {0} must be at least {2} and at max {1} characters long." xml:space="preserve">
     <value>{0} ต้องมีความยาวอย่างน้อย {2} ตัวอักษรและไม่เกิน {1} ตัวอักษร</value>

@@ -36,5 +36,8 @@
   <data name="Currency" xml:space="preserve">
     <value>Νόμισμα</value>
   </data>
+  <data name="Show in Dashboard" xml:space="preserve">
+    <value>Εμφάνιση στον Πίνακα Ελέγχου</value>
+  </data>
 
 </root>

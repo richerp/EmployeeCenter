@@ -27,6 +27,9 @@
   <data name="Accounts List" xml:space="preserve">
     <value>รายการบัญชี</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>การกระทำ</value>
+  </data>
   <data name="Active" xml:space="preserve">
     <value>ใช้งาน</value>
   </data>
@@ -42,6 +45,15 @@
   <data name="Currency" xml:space="preserve">
     <value>สกุลเงิน</value>
   </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>แดชบอร์ด</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>แก้ไข</value>
+  </data>
+  <data name="Hidden" xml:space="preserve">
+    <value>ซ่อน</value>
+  </data>
   <data name="Ledger" xml:space="preserve">
     <value>สมุดบัญชี</value>
   </data>
@@ -53,6 +65,9 @@
   </data>
   <data name="Type" xml:space="preserve">
     <value>ประเภท</value>
+  </data>
+  <data name="Visible" xml:space="preserve">
+    <value>แสดง</value>
   </data>
 
 </root>

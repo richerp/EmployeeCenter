@@ -21,5 +21,14 @@
       <data name="Content" xml:space="preserve">
     <value>Sisältö</value>
   </data>
+  <data name="Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0} on pakollinen.</value>
+  </data>
+  <data name="Week Start Date" xml:space="preserve">
+    <value>Viikon aloituspäivä</value>
+  </data>
 
 </root>

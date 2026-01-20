@@ -66,6 +66,9 @@
   <data name="Legal Representative / Director" xml:space="preserve">
     <value>Representante Legal / Diretor</value>
   </data>
+  <data name="Legal Representative Legal Name" xml:space="preserve">
+    <value>Nome Legal do Representante Legal</value>
+  </data>
   <data name="Office Address" xml:space="preserve">
     <value>Morada da Empresa</value>
   </data>
@@ -95,6 +98,12 @@
   </data>
   <data name="SCR Location (HK)" xml:space="preserve">
     <value>Localização do SCR (HK)</value>
+  </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>O {0} não pode exceder {1} caracteres.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>O {0} é obrigatório.</value>
   </data>
   <data name="Zip Code" xml:space="preserve">
     <value>Código Postal</value>

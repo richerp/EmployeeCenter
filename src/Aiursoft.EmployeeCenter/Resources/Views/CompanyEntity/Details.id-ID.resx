@@ -99,6 +99,9 @@
   <data name="Legal Rep / Director" xml:space="preserve">
     <value>Wakil Hukum / Direktur</value>
   </data>
+  <data name="Legal Rep Legal Name" xml:space="preserve">
+    <value>Nama Hukum Perwakilan Hukum</value>
+  </data>
   <data name="Logo" xml:space="preserve">
     <value>Logo</value>
   </data>

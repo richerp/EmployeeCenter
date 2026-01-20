@@ -27,8 +27,14 @@
   <data name="Belongs to Entity" xml:space="preserve">
     <value>Pertence à Entidade</value>
   </data>
+  <data name="Id" xml:space="preserve">
+    <value>ID</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>Ficheiro da Fatura</value>
+  </data>
+  <data name="Is Reimbursed" xml:space="preserve">
+    <value>Reembolsado</value>
   </data>
   <data name="Location" xml:space="preserve">
     <value>Localização</value>
@@ -44,6 +50,15 @@
   </data>
   <data name="Serial Number" xml:space="preserve">
     <value>Número de série</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>O {0} não pode ultrapassar {1} caracteres.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>O {0} é obrigatório.</value>
   </data>
   <data name="Vendor" xml:space="preserve">
     <value>Fornecedor</value>

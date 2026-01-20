@@ -84,6 +84,12 @@
   <data name="Target Month" xml:space="preserve">
     <value>대상 월</value>
   </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0}은 {1}자를 초과할 수 없습니다.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0}은 필수 입력 항목입니다.</value>
+  </data>
   <data name="Total Amount" xml:space="preserve">
     <value>총액</value>
   </data>

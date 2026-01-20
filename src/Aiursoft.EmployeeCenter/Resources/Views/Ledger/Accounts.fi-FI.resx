@@ -27,6 +27,9 @@
   <data name="Accounts List" xml:space="preserve">
     <value>Tilit lista</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Toiminnot</value>
+  </data>
   <data name="Active" xml:space="preserve">
     <value>Aktiivinen</value>
   </data>
@@ -42,6 +45,15 @@
   <data name="Currency" xml:space="preserve">
     <value>Valuutta</value>
   </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Hallinta-alue</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Muokkaa</value>
+  </data>
+  <data name="Hidden" xml:space="preserve">
+    <value>Piilotettu</value>
+  </data>
   <data name="Ledger" xml:space="preserve">
     <value>Tili</value>
   </data>
@@ -53,6 +65,9 @@
   </data>
   <data name="Type" xml:space="preserve">
     <value>Tyyppi</value>
+  </data>
+  <data name="Visible" xml:space="preserve">
+    <value>Näkyvissä</value>
   </data>
 
 </root>

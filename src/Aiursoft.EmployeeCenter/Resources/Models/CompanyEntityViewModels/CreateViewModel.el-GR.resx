@@ -66,6 +66,9 @@
   <data name="Legal Representative / Director" xml:space="preserve">
     <value>Νομικός Εκπρόσωπος / Διευθυντής</value>
   </data>
+  <data name="Legal Representative Legal Name" xml:space="preserve">
+    <value>Όνομα Νομικού Αντιπροσώπου</value>
+  </data>
   <data name="Office Address" xml:space="preserve">
     <value>Διεύθυνση Γραφείου</value>
   </data>
@@ -95,6 +98,12 @@
   </data>
   <data name="SCR Location (HK)" xml:space="preserve">
     <value>Τοποθεσία SCR (ΧΚ)</value>
+  </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>Το {0} δεν μπορεί να υπερβαίνει τα {1} χαρακτήρες.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>Το {0} είναι απαραίτητο.</value>
   </data>
   <data name="Zip Code" xml:space="preserve">
     <value>Ταχυδρομικός Κώδικας</value>

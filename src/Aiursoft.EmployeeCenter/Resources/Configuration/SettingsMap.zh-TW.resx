@@ -24,5 +24,11 @@
   <data name="Allow users to adjust their nickname in the profile management page." xml:space="preserve">
     <value>允許使用者於個人資料管理頁面調整其暱稱。</value>
   </data>
+  <data name="Annual Leave Per Year" xml:space="preserve">
+    <value>每年年假天數</value>
+  </data>
+  <data name="The number of paid annual leave days allocated to each employee every year." xml:space="preserve">
+    <value>每年分配給每位員工的有薪年假天數。</value>
+  </data>
 
 </root>

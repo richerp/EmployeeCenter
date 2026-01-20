@@ -30,6 +30,9 @@
   <data name="Description" xml:space="preserve">
     <value>説明</value>
   </data>
+  <data name="Edit" xml:space="preserve">
+    <value>編集</value>
+  </data>
   <data name="From" xml:space="preserve">
     <value>送信元</value>
   </data>

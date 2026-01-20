@@ -24,5 +24,11 @@
   <data name="Allow users to adjust their nickname in the profile management page." xml:space="preserve">
     <value>Kullanıcıların profil yönetimi sayfasında takma adlarını ayarlamasına izin verin.</value>
   </data>
+  <data name="Annual Leave Per Year" xml:space="preserve">
+    <value>Yıllık İzin Yılına Göre</value>
+  </data>
+  <data name="The number of paid annual leave days allocated to each employee every year." xml:space="preserve">
+    <value>Her çalışanın her yıl ayrılan ücretli yıllık izin gün sayısını</value>
+  </data>
 
 </root>

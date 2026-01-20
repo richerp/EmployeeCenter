@@ -24,5 +24,11 @@
   <data name="Allow users to adjust their nickname in the profile management page." xml:space="preserve">
     <value>Benutzern erlauben, ihren Spitznamen auf der Seite zur Profilverwaltung anzupassen.</value>
   </data>
+  <data name="Annual Leave Per Year" xml:space="preserve">
+    <value>Jährlicher Urlaub pro Jahr</value>
+  </data>
+  <data name="The number of paid annual leave days allocated to each employee every year." xml:space="preserve">
+    <value>Die Anzahl der bezahlten Urlaubstage, die jedem Mitarbeiter jährlich zugewiesen werden.</value>
+  </data>
 
 </root>

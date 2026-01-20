@@ -24,8 +24,23 @@
   <data name="Is Public" xml:space="preserve">
     <value>Halka Açık mı</value>
   </data>
+  <data name="Name" xml:space="preserve">
+    <value>İsim</value>
+  </data>
   <data name="Please upload a valid contract file." xml:space="preserve">
     <value>Lütfen geçerli bir sözleşme dosyası yükleyin.</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0} alanı {1} karakteri geçemez.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0} gerekli.</value>
+  </data>
+  <data name="The {0} must be at least {1} characters." xml:space="preserve">
+    <value>{0} en az {1} karakter olmalıdır.</value>
   </data>
   <data name="User" xml:space="preserve">
     <value>Kullanıcı</value>

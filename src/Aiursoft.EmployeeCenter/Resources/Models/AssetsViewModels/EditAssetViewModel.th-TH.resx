@@ -27,8 +27,14 @@
   <data name="Belongs to Entity" xml:space="preserve">
     <value>สังกัดองค์กร</value>
   </data>
+  <data name="Id" xml:space="preserve">
+    <value>รหัส</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>ไฟล์ใบแจ้งหนี้</value>
+  </data>
+  <data name="Is Reimbursed" xml:space="preserve">
+    <value>คืนเงินแล้ว</value>
   </data>
   <data name="Location" xml:space="preserve">
     <value>ตำแหน่งที่ตั้ง</value>
@@ -44,6 +50,15 @@
   </data>
   <data name="Serial Number" xml:space="preserve">
     <value>หมายเลขซีเรียล</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>สถานะ</value>
+  </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0} ไม่สามารถเกินจำนวนตัวอักษร {1} ได้</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0} จำเป็นต้องใส่</value>
   </data>
   <data name="Vendor" xml:space="preserve">
     <value>ผู้จัดจำหน่าย</value>

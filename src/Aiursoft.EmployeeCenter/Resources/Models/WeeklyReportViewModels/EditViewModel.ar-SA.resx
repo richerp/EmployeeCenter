@@ -21,5 +21,14 @@
       <data name="Content" xml:space="preserve">
     <value>المحتوى</value>
   </data>
+  <data name="Id" xml:space="preserve">
+    <value>المعرف</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0} مطلوب.</value>
+  </data>
+  <data name="Week Start Date" xml:space="preserve">
+    <value>تاريخ بداية الأسبوع</value>
+  </data>
 
 </root>

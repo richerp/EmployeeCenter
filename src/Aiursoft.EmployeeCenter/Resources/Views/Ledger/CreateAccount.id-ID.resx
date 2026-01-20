@@ -36,5 +36,8 @@
   <data name="Currency" xml:space="preserve">
     <value>Mata Uang</value>
   </data>
+  <data name="Show in Dashboard" xml:space="preserve">
+    <value>Tampilkan di Dasbor</value>
+  </data>
 
 </root>

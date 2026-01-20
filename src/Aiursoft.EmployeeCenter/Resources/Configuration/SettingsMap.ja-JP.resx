@@ -24,5 +24,11 @@
   <data name="Allow users to adjust their nickname in the profile management page." xml:space="preserve">
     <value>プロフィール管理ページでユーザーがニックネームを調整できるように許可します。</value>
   </data>
+  <data name="Annual Leave Per Year" xml:space="preserve">
+    <value>年間有給休暇日数</value>
+  </data>
+  <data name="The number of paid annual leave days allocated to each employee every year." xml:space="preserve">
+    <value>1年に1人あたりに割り当てられる有給年次休暇の日数。</value>
+  </data>
 
 </root>

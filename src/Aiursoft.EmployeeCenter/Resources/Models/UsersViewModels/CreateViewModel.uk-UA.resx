@@ -60,11 +60,20 @@
   <data name="Phone Number" xml:space="preserve">
     <value>Номер телефону</value>
   </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0} не може перевищувати {1} символів.</value>
+  </data>
   <data name="The {0} is not a valid email address." xml:space="preserve">
     <value>Поле {0} не є дійсною email-адресою.</value>
   </data>
+  <data name="The {0} is not a valid phone number." xml:space="preserve">
+    <value>Номер телефону {0} недійсний.</value>
+  </data>
   <data name="The {0} is required." xml:space="preserve">
     <value>Поле {0} є обов&apos;язковим.</value>
+  </data>
+  <data name="The {0} must be at least {1} characters." xml:space="preserve">
+    <value>{0} має містити принаймні {1} символів.</value>
   </data>
   <data name="The {0} must be at least {2} and at max {1} characters long." xml:space="preserve">
     <value>{0} має містити щонайменше {2} та не більше {1} символів.</value>

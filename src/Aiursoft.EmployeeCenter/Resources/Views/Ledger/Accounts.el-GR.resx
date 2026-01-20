@@ -27,6 +27,9 @@
   <data name="Accounts List" xml:space="preserve">
     <value>Λίστα Λογαριασμών</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Ενέργειες</value>
+  </data>
   <data name="Active" xml:space="preserve">
     <value>Ενεργό</value>
   </data>
@@ -42,6 +45,15 @@
   <data name="Currency" xml:space="preserve">
     <value>Νόμισμα</value>
   </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Πίνακας Ελέγχου</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Επεξεργασία</value>
+  </data>
+  <data name="Hidden" xml:space="preserve">
+    <value>Απόκρυφο</value>
+  </data>
   <data name="Ledger" xml:space="preserve">
     <value>Λογαριασμός</value>
   </data>
@@ -53,6 +65,9 @@
   </data>
   <data name="Type" xml:space="preserve">
     <value>Τύπος</value>
+  </data>
+  <data name="Visible" xml:space="preserve">
+    <value>Ορατό</value>
   </data>
 
 </root>

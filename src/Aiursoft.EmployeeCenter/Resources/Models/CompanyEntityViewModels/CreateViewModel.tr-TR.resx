@@ -66,6 +66,9 @@
   <data name="Legal Representative / Director" xml:space="preserve">
     <value>Yasal Temsilci / Müdür</value>
   </data>
+  <data name="Legal Representative Legal Name" xml:space="preserve">
+    <value>Hukuki Temsilci Hukuki İsmi</value>
+  </data>
   <data name="Office Address" xml:space="preserve">
     <value>İş Merkezi Adresi</value>
   </data>
@@ -95,6 +98,12 @@
   </data>
   <data name="SCR Location (HK)" xml:space="preserve">
     <value>SCR Konumu (HK)</value>
+  </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0} alanı {1} karakteri geçemez.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0} gerekli.</value>
   </data>
   <data name="Zip Code" xml:space="preserve">
     <value>Posta Kodu</value>

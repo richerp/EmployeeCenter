@@ -33,5 +33,11 @@
   <data name="Phone Number" xml:space="preserve">
     <value>Номер телефону</value>
   </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0} не може перевищувати {1} символів.</value>
+  </data>
+  <data name="The {0} is not a valid phone number." xml:space="preserve">
+    <value>{0} не є дійсним номером телефону.</value>
+  </data>
 
 </root>

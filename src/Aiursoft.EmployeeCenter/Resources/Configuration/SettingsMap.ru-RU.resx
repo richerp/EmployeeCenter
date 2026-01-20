@@ -24,5 +24,11 @@
   <data name="Allow users to adjust their nickname in the profile management page." xml:space="preserve">
     <value>Позволить пользователям изменять свой ник в странице управления профилем.</value>
   </data>
+  <data name="Annual Leave Per Year" xml:space="preserve">
+    <value>Ежегодный отпуск в год</value>
+  </data>
+  <data name="The number of paid annual leave days allocated to each employee every year." xml:space="preserve">
+    <value>Количество оплачиваемых отпускных дней, выделяемых каждому сотруднику каждый год.</value>
+  </data>
 
 </root>

@@ -36,5 +36,8 @@
   <data name="Currency" xml:space="preserve">
     <value>मुद्रा</value>
   </data>
+  <data name="Show in Dashboard" xml:space="preserve">
+    <value>डैशबोर्ड में दिखाएं</value>
+  </data>
 
 </root>

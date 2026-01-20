@@ -27,6 +27,9 @@
   <data name="Description" xml:space="preserve">
     <value>Beskrivelse</value>
   </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Rediger</value>
+  </data>
   <data name="From" xml:space="preserve">
     <value>Fra</value>
   </data>

@@ -24,8 +24,23 @@
   <data name="Is Public" xml:space="preserve">
     <value>सार्वजनिक है</value>
   </data>
+  <data name="Name" xml:space="preserve">
+    <value>नाम</value>
+  </data>
   <data name="Please upload a valid contract file." xml:space="preserve">
     <value>कृपया एक मान्य कॉन्ट्रैक्ट फ़ाइल अपलोड करें।</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>स्थिति</value>
+  </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0} के {1} अक्षरों से अधिक नहीं हो सकते।</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0} आवश्यक है।</value>
+  </data>
+  <data name="The {0} must be at least {1} characters." xml:space="preserve">
+    <value>{0} कम से कम {1} अक्षरों का होना चाहिए।</value>
   </data>
   <data name="User" xml:space="preserve">
     <value>उपयोगकर्ता</value>

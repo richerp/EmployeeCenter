@@ -27,5 +27,8 @@
   <data name="Bank Name" xml:space="preserve">
     <value>ชื่อธนาคาร</value>
   </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0} ไม่สามารถเกินจำนวนตัวอักษร {1} ได้</value>
+  </data>
 
 </root>

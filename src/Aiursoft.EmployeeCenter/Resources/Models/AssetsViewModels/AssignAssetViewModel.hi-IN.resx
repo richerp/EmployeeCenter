@@ -18,8 +18,23 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Assign To" xml:space="preserve">
+      <data name="Asset Id" xml:space="preserve">
+    <value>संपत्ति पहचान</value>
+  </data>
+  <data name="Asset Tag" xml:space="preserve">
+    <value>संपत्ति टैग</value>
+  </data>
+  <data name="Assign To" xml:space="preserve">
     <value>नियुक्त करें</value>
+  </data>
+  <data name="Model Name" xml:space="preserve">
+    <value>मॉडल नाम</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>टिप्पणियाँ</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0} आवश्यक है।</value>
   </data>
 
 </root>

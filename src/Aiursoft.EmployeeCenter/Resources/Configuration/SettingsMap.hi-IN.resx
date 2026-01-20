@@ -24,5 +24,11 @@
   <data name="Allow users to adjust their nickname in the profile management page." xml:space="preserve">
     <value>प्रोफ़ाइल प्रबंधन पृष्ठ पर उपयोगकर्ताओं को अपना निकनेम समायोजित करने की अनुमति दें।</value>
   </data>
+  <data name="Annual Leave Per Year" xml:space="preserve">
+    <value>वार्षिक छुट्टी प्रति वर्ष</value>
+  </data>
+  <data name="The number of paid annual leave days allocated to each employee every year." xml:space="preserve">
+    <value>प्रत्येक कर्मचारी को प्रति वर्ष आवंटित भुगतान योग्य वार्षिक छुट्टी के दिनों की संख्या।</value>
+  </data>
 
 </root>

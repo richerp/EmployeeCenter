@@ -84,6 +84,12 @@
   <data name="Target Month" xml:space="preserve">
     <value>対象月</value>
   </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0}は{1}文字を超えることはできません。</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0}は必須です。</value>
+  </data>
   <data name="Total Amount" xml:space="preserve">
     <value>合計金額</value>
   </data>
