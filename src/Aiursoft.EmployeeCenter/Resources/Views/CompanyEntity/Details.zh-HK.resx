@@ -99,6 +99,15 @@
   <data name="Legal Rep / Director" xml:space="preserve">
     <value>法定代表人 / 董事</value>
   </data>
+  <data name="Legal Rep Legal Name" xml:space="preserve">
+    <value>法定代表人法律姓名</value>
+  </data>
+  <data name="Legal Representative" xml:space="preserve">
+    <value>法定代表人</value>
+  </data>
+  <data name="Legal Representative Legal Name" xml:space="preserve">
+    <value>法定代表人法律姓名</value>
+  </data>
   <data name="Logo" xml:space="preserve">
     <value>標誌</value>
   </data>

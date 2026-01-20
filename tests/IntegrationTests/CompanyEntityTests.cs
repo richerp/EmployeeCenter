@@ -51,6 +51,59 @@ public class CompanyEntityTests : TestBase
     }
 
     [TestMethod]
+    public async Task CreateAndVerifyLegalRepresentativeLegalNameTest()
+    {
+        // 1. Login as admin
+        await LoginAsAdmin();
+
+        // 2. Create a Company Entity with LegalRepresentativeLegalName
+        var createResponse = await PostForm("/CompanyEntity/Create", new Dictionary<string, string>
+        {
+            { "CompanyName", "Legal Name Test Company" },
+            { "EntityCode", "LN123456789" },
+            { "LegalRepresentative", "John Doe" },
+            { "LegalRepresentativeLegalName", "Johnathan Doe" }
+        });
+        Assert.AreEqual(HttpStatusCode.Found, createResponse.StatusCode);
+
+        // 3. Get the ID
+        using (var scope = Server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var entity = await db.CompanyEntities.FirstOrDefaultAsync(e => e.EntityCode == "LN123456789");
+            Assert.IsNotNull(entity);
+            Assert.AreEqual("Johnathan Doe", entity.LegalRepresentativeLegalName);
+
+            // 4. Verify Details page
+            var detailsResponse = await Http.GetAsync($"/CompanyEntity/Details/{entity.Id}");
+            detailsResponse.EnsureSuccessStatusCode();
+            var detailsHtml = await detailsResponse.Content.ReadAsStringAsync();
+            Assert.Contains("Johnathan Doe", detailsHtml);
+            
+            // 5. Verify Edit page
+            var editResponse = await Http.GetAsync($"/CompanyEntity/Edit/{entity.Id}");
+            editResponse.EnsureSuccessStatusCode();
+            var editHtml = await editResponse.Content.ReadAsStringAsync();
+            Assert.Contains("Johnathan Doe", editHtml);
+
+            // 6. Update LegalRepresentativeLegalName
+            var updateResponse = await PostForm("/CompanyEntity/Edit", new Dictionary<string, string>
+            {
+                { "Id", entity.Id.ToString() },
+                { "CompanyName", "Legal Name Test Company" },
+                { "EntityCode", "LN123456789" },
+                { "LegalRepresentative", "John Doe" },
+                { "LegalRepresentativeLegalName", "Johnathan Doe Updated" }
+            });
+            Assert.AreEqual(HttpStatusCode.Found, updateResponse.StatusCode);
+
+            // 7. Verify in DB
+            await db.Entry(entity).ReloadAsync();
+            Assert.AreEqual("Johnathan Doe Updated", entity.LegalRepresentativeLegalName);
+        }
+    }
+
+    [TestMethod]
     public async Task CreateCompanyEntity_WithInvalidFiles_Fails()
     {
         await LoginAsAdmin();
