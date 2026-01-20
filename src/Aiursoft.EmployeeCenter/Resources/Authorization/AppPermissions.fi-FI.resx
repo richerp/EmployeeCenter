@@ -87,6 +87,9 @@
   <data name="Allows printing employment and income certificates for any employee." xml:space="preserve">
     <value>Sallii työntekijän työ- ja tulotodistusten tulostamisen kaikille työntekijöille.</value>
   </data>
+  <data name="Allows printing employment and income certificates for oneself." xml:space="preserve">
+    <value>Sallii työsuoritustodistusten ja tulotodistusten tulostamisen itselleen.</value>
+  </data>
   <data name="Allows the permanent deletion of roles." xml:space="preserve">
     <value>Sallii roolien pysyvän poistamisen.</value>
   </data>
@@ -221,6 +224,9 @@
   </data>
   <data name="Print Certificates" xml:space="preserve">
     <value>Tulosta todistukset</value>
+  </data>
+  <data name="Print Self Certificates" xml:space="preserve">
+    <value>Tulosta oma todistukset</value>
   </data>
   <data name="Read Permissions" xml:space="preserve">
     <value>Lue oikeudet</value>
