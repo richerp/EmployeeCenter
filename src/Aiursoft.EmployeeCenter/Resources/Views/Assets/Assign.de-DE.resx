@@ -30,6 +30,9 @@
   <data name="In Use" xml:space="preserve">
     <value>Im Einsatz</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>Neu</value>
+  </data>
   <data name="Notice" xml:space="preserve">
     <value>Hinweis</value>
   </data>
@@ -38,6 +41,9 @@
   </data>
   <data name="Pending Accept" xml:space="preserve">
     <value>Ausstehende Bestätigung</value>
+  </data>
+  <data name="Reload" xml:space="preserve">
+    <value>Aktualisieren</value>
   </data>
   <data name="Select User" xml:space="preserve">
     <value>Benutzer auswählen</value>

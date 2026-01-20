@@ -24,6 +24,9 @@
   <data name="A complete solution for user authentication and profile management right out of the box." xml:space="preserve">
     <value>Μια ολοκληρωμένη λύση για την πιστοποίηση χρηστών και τη διαχείριση προφίλ, έτοιμη προς χρήση.</value>
   </data>
+  <data name="A fast, free, open-source and offline-deployable enterprise office center designed to streamline your internal operations." xml:space="preserve">
+    <value>Ένα γρήγορο, δωρεάν, ανοιχτού κώδικα και εφαρμοστέο σε απομονωμένες υποδομές επιχειρησιακό κέντρο γραφείου που σχεδιάστηκε για να εξοικονομήσει τις εσωτερικές επιχειρησιακές διαδικασίες σας.</value>
+  </data>
   <data name="A fast, offline-deployable enterprise office center designed to streamline your internal operations." xml:space="preserve">
     <value>Ένα γρήγορο, εκτός σύνδεσης εγκατεστημένο κέντρο επιχειρήσεων που σχεδιάστηκε για να εντάξει τις εσωτερικές λειτουργίες σας.</value>
   </data>
@@ -123,6 +126,9 @@
   <data name="Employee Center" xml:space="preserve">
     <value>Κέντρο Εργαζομένων</value>
   </data>
+  <data name="Employee Center gives you total control over your data and infrastructure with its easy-to-deploy architecture." xml:space="preserve">
+    <value>Το Employee Center σας δίνει πλήρη έλεγχο επί των δεδομένων και της υποδομής σας με την εύκολη στην εγκατάσταση αρχιτεκτονική της.</value>
+  </data>
   <data name="Employee Center integrates disjointed processes into a unified workflow, eliminating manual errors and saving valuable time for your HR and Admin teams." xml:space="preserve">
     <value>Το Employee Center ενσωματώνει διακεκριμένες διαδικασίες σε μία ενιαία ροή εργασίας, αποφεύγοντας χειροκίνητα λάθη και εξοικονομώντας αξιόλογο χρόνο για τις ομάδες HR και Διοίκησης.</value>
   </data>
@@ -140,6 +146,9 @@
   </data>
   <data name="Everything you need to run your company" xml:space="preserve">
     <value>Ό,τι χρειάζεσαι για να διαχειρίζεσαι την επιχείρησή σου</value>
+  </data>
+  <data name="Experience the freedom of a truly open-source employee management system. Join the growing number of companies optimizing their workforce with Employee Center." xml:space="preserve">
+    <value>Αισθήστε την ελευθερία ενός πραγματικά ανοιχτού-πηγής συστήματος διαχείρισης προσωπικού. Προσχωρήστε στον αυξανόμενο αριθμό εταιρειών που βελτιώνουν την εργασιακή τους δύναμη με το Employee Center.</value>
   </data>
   <data name="FAQ" xml:space="preserve">
     <value>Συχνές Ερωτήσεις</value>
@@ -165,11 +174,17 @@
   <data name="Free" xml:space="preserve">
     <value>Δωρεάν</value>
   </data>
+  <data name="Free &amp; Open Source" xml:space="preserve">
+    <value>Δωρεάν και Ανοιχτού Κώδικα</value>
+  </data>
   <data name="Frequently asked questions" xml:space="preserve">
     <value>Συχνές ερωτήσεις</value>
   </data>
   <data name="From HR to Finance, IT to Operations, Employee Center has you covered." xml:space="preserve">
     <value>Από Ανθρώπινους Πόρους έως Χρηματοοικονομικά, Τεχνολογία Πληροφοριών έως Λειτουργίες, το Employee Center σας καλύπτει όλα.</value>
+  </data>
+  <data name="Fully open-source under MIT license. You can customize, fork, and contribute back to the project." xml:space="preserve">
+    <value>Πλήρως ανοιχτού κώδικα υπό άδεια MIT. Μπορείτε να το προσαρμόσετε, να το forkάρετε και να συνεισφέρετε πίσω στο έργο.</value>
   </data>
   <data name="Get Started Now" xml:space="preserve">
     <value>Ξεκινήστε τώρα</value>
@@ -264,6 +279,9 @@
   <data name="Ready to modernize your office?" xml:space="preserve">
     <value>Έτοιμοι να εξοπλίσετε το γραφείο σας με σύγχρονες λύσεις;</value>
   </data>
+  <data name="Ready to take full control of your office?" xml:space="preserve">
+    <value>Έτοιμοι να έχετε πλήρη έλεγχο του γραφείου σας;</value>
+  </data>
   <data name="Reimbursement Calendar" xml:space="preserve">
     <value>Καλεντάρι Επιστροφής Δαπανών</value>
   </data>
@@ -297,8 +315,14 @@
   <data name="Security" xml:space="preserve">
     <value>Ασφάλεια</value>
   </data>
+  <data name="Self Host" xml:space="preserve">
+    <value>Αυτοδιαχείριση</value>
+  </data>
   <data name="Smart dark mode that automatically adapts to the user&apos;s system settings." xml:space="preserve">
     <value>Έξυπνη λειτουργία σκούρου θέματος που προσαρμόζεται αυτόματα στις ρυθμίσεις συστήματος του χρήστη.</value>
+  </data>
+  <data name="Source Code" xml:space="preserve">
+    <value>Πηγαίος Κώδικας</value>
   </data>
   <data name="Start a new project" xml:space="preserve">
     <value>Ξεκινήστε ένα νέο έργο</value>

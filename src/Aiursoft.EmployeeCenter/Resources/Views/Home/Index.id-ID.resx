@@ -24,6 +24,9 @@
   <data name="A complete solution for user authentication and profile management right out of the box." xml:space="preserve">
     <value>Solusi lengkap untuk autentikasi pengguna dan manajemen profil yang siap pakai.</value>
   </data>
+  <data name="A fast, free, open-source and offline-deployable enterprise office center designed to streamline your internal operations." xml:space="preserve">
+    <value>Pusat kantor perusahaan yang cepat, gratis, sumber terbuka, dan dapat dideploy secara offline, dirancang untuk menyederhanakan operasional internal Anda.</value>
+  </data>
   <data name="A fast, offline-deployable enterprise office center designed to streamline your internal operations." xml:space="preserve">
     <value>Pusat kantor perusahaan yang cepat dan dapat dideploy secara offline, dirancang untuk menyederhanakan operasional internal Anda.</value>
   </data>
@@ -123,6 +126,9 @@
   <data name="Employee Center" xml:space="preserve">
     <value>Pusat Karyawan</value>
   </data>
+  <data name="Employee Center gives you total control over your data and infrastructure with its easy-to-deploy architecture." xml:space="preserve">
+    <value>Employee Center memberi Anda kendali penuh atas data dan infrastruktur Anda dengan arsitektur yang mudah dideploy.</value>
+  </data>
   <data name="Employee Center integrates disjointed processes into a unified workflow, eliminating manual errors and saving valuable time for your HR and Admin teams." xml:space="preserve">
     <value>Employee Center mengintegrasikan proses-proses yang terpisah menjadi satu alur kerja terpadu, menghilangkan kesalahan manual dan menghemat waktu berharga bagi tim HR dan Admin Anda.</value>
   </data>
@@ -140,6 +146,9 @@
   </data>
   <data name="Everything you need to run your company" xml:space="preserve">
     <value>Semua yang Anda butuhkan untuk menjalankan perusahaan Anda</value>
+  </data>
+  <data name="Experience the freedom of a truly open-source employee management system. Join the growing number of companies optimizing their workforce with Employee Center." xml:space="preserve">
+    <value>Nikmati kebebasan dari sistem manajemen karyawan yang benar-benar open-source. Bergabunglah dengan jumlah perusahaan yang terus meningkat dalam mengoptimalkan tenaga kerja mereka dengan Employee Center.</value>
   </data>
   <data name="FAQ" xml:space="preserve">
     <value>FAQ</value>
@@ -165,11 +174,17 @@
   <data name="Free" xml:space="preserve">
     <value>Gratis</value>
   </data>
+  <data name="Free &amp; Open Source" xml:space="preserve">
+    <value>Gratis &amp; Sumber Terbuka</value>
+  </data>
   <data name="Frequently asked questions" xml:space="preserve">
     <value>Pertanyaan yang Sering Diajukan</value>
   </data>
   <data name="From HR to Finance, IT to Operations, Employee Center has you covered." xml:space="preserve">
     <value>Dari HR ke Keuangan, IT ke Operasional, Employee Center telah menangani semua kebutuhan Anda.</value>
+  </data>
+  <data name="Fully open-source under MIT license. You can customize, fork, and contribute back to the project." xml:space="preserve">
+    <value>Sepenuhnya sumber terbuka di bawah lisensi MIT. Anda dapat menyesuaikan, mencabang, dan berkontribusi kembali ke proyek ini.</value>
   </data>
   <data name="Get Started Now" xml:space="preserve">
     <value>Mulai Sekarang</value>
@@ -264,6 +279,9 @@
   <data name="Ready to modernize your office?" xml:space="preserve">
     <value>Siap modernisasi kantor Anda?</value>
   </data>
+  <data name="Ready to take full control of your office?" xml:space="preserve">
+    <value>Siap mengambil kendali penuh atas kantor Anda?</value>
+  </data>
   <data name="Reimbursement Calendar" xml:space="preserve">
     <value>Kalender Penggantian Biaya</value>
   </data>
@@ -297,8 +315,14 @@
   <data name="Security" xml:space="preserve">
     <value>Keamanan</value>
   </data>
+  <data name="Self Host" xml:space="preserve">
+    <value>Sendiri Host</value>
+  </data>
   <data name="Smart dark mode that automatically adapts to the user&apos;s system settings." xml:space="preserve">
     <value>Mode gelap cerdas yang secara otomatis menyesuaikan dengan pengaturan sistem pengguna.</value>
+  </data>
+  <data name="Source Code" xml:space="preserve">
+    <value>Kode Sumber</value>
   </data>
   <data name="Start a new project" xml:space="preserve">
     <value>Mulai proyek baru</value>

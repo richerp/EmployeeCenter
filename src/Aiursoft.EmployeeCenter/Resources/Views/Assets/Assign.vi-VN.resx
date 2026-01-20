@@ -30,6 +30,9 @@
   <data name="In Use" xml:space="preserve">
     <value>Đang sử dụng</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>Mới</value>
+  </data>
   <data name="Notice" xml:space="preserve">
     <value>Lưu ý</value>
   </data>
@@ -38,6 +41,9 @@
   </data>
   <data name="Pending Accept" xml:space="preserve">
     <value>Đang chờ xác nhận</value>
+  </data>
+  <data name="Reload" xml:space="preserve">
+    <value>Tải lại</value>
   </data>
   <data name="Select User" xml:space="preserve">
     <value>Chọn người nhận</value>

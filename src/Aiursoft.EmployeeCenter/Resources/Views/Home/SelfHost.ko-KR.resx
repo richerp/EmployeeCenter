@@ -39,6 +39,9 @@
   <data name="Development &amp; Manual Run" xml:space="preserve">
     <value>개발 및 수동 실행</value>
   </data>
+  <data name="Employee Center is a free, open-source, and fully self-hostable enterprise office center. It is designed to empower organizations by providing complete control over their HR, finance, and asset management without any hidden costs or privacy concerns." xml:space="preserve">
+    <value>Employee Center는 무료로 사용할 수 있으며 오픈소스이며 완전히 자체 호스팅이 가능한 기업용 사무실 센터입니다. 숨겨진 비용이나 개인정보 문제 없이 조직이 인사, 재무, 자산 관리에 대한 완전한 통제력을 갖출 수 있도록 설계되었습니다.</value>
+  </data>
   <data name="Employee Center is a project for managing employee information, attendance, leaves, and more. It is built with ASP.NET Core and provides a user-friendly interface for both employees and administrators." xml:space="preserve">
     <value>직원 센터는 직원 정보, 근무 시간, 휴가 등을 관리하기 위한 프로젝트입니다. ASP.NET Core로 구축되어 직원과 관리자 모두가 사용하기 쉬운 인터페이스를 제공합니다.</value>
   </data>

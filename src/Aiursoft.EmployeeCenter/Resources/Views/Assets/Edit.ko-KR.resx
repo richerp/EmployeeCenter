@@ -33,8 +33,14 @@
   <data name="Financial Information" xml:space="preserve">
     <value>재무 정보</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>신규</value>
+  </data>
   <data name="Not Assigned" xml:space="preserve">
     <value>미할당</value>
+  </data>
+  <data name="Reload" xml:space="preserve">
+    <value>새로 고침</value>
   </data>
   <data name="Select Entity" xml:space="preserve">
     <value>엔티티 선택</value>

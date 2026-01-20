@@ -39,6 +39,9 @@
   <data name="Development &amp; Manual Run" xml:space="preserve">
     <value>Geliştirme &amp; Manuel Çalıştırma</value>
   </data>
+  <data name="Employee Center is a free, open-source, and fully self-hostable enterprise office center. It is designed to empower organizations by providing complete control over their HR, finance, and asset management without any hidden costs or privacy concerns." xml:space="preserve">
+    <value>Çalışan Merkezi, ücretsiz, açık kaynaklı ve tamamen kendi sunucunuzda barındırılabilen bir kurumsal ofis merkezidir. Gizli maliyetler veya gizlilik endişeleri olmadan, organizasyonlara insan kaynakları, maliye ve varlık yönetimi konularında tam kontrol sağlayarak güçlendirmeyi amaçlamaktadır.</value>
+  </data>
   <data name="Employee Center is a project for managing employee information, attendance, leaves, and more. It is built with ASP.NET Core and provides a user-friendly interface for both employees and administrators." xml:space="preserve">
     <value>Çalışan Merkezi, çalışan bilgilerini, devamsızlıkları, izinleri ve daha fazlasını yönetmek için yapılan bir projedir. ASP.NET Core ile geliştirilmiş ve hem çalışanlar hem de yöneticiler için kullanıcı dostu bir arayüz sunar.</value>
   </data>

@@ -42,6 +42,12 @@
   <data name="Model Name" xml:space="preserve">
     <value>Nume model</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>Nou</value>
+  </data>
+  <data name="Reload" xml:space="preserve">
+    <value>Reîncarcă</value>
+  </data>
   <data name="Select Category" xml:space="preserve">
     <value>Selectează categorie</value>
   </data>

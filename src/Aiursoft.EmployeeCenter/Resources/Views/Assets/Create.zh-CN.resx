@@ -36,8 +36,14 @@
   <data name="Financial Information" xml:space="preserve">
     <value>财务信息</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>新建</value>
+  </data>
   <data name="Not Assigned" xml:space="preserve">
     <value>未分配</value>
+  </data>
+  <data name="Reload" xml:space="preserve">
+    <value>刷新</value>
   </data>
   <data name="Save Asset" xml:space="preserve">
     <value>保存资产</value>

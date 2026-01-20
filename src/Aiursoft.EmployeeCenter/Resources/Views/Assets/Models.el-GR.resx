@@ -42,6 +42,12 @@
   <data name="Model Name" xml:space="preserve">
     <value>Όνομα Μοντέλου</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>Νέο</value>
+  </data>
+  <data name="Reload" xml:space="preserve">
+    <value>Επαναφόρτωση</value>
+  </data>
   <data name="Select Category" xml:space="preserve">
     <value>Επιλέξτε Κατηγορία</value>
   </data>

@@ -39,6 +39,9 @@
   <data name="Development &amp; Manual Run" xml:space="preserve">
     <value>Ανάπτυξη &amp; Εκτέλεση χωρίς Αυτοματισμό</value>
   </data>
+  <data name="Employee Center is a free, open-source, and fully self-hostable enterprise office center. It is designed to empower organizations by providing complete control over their HR, finance, and asset management without any hidden costs or privacy concerns." xml:space="preserve">
+    <value>Το Employee Center είναι ένα δωρεάν, ανοιχτού κώδικα και πλήρως αυτό-εγκατεστημένο επιχειρησιακό κέντρο. Σχεδιάστηκε για να ενισχύσει τις οργανώσεις παρέχοντας πλήρη έλεγχο στην ανθρώπινη δυναμική, την οικονομική διοίκηση και τη διαχείριση περιουσιακών στοιχείων, χωρίς κρυφά έξοδα ή ανησυχίες για την ιδιωτικότητα.</value>
+  </data>
   <data name="Employee Center is a project for managing employee information, attendance, leaves, and more. It is built with ASP.NET Core and provides a user-friendly interface for both employees and administrators." xml:space="preserve">
     <value>Το Employee Center είναι ένα έργο για τη διαχείριση πληροφοριών των υπαλλήλων, παρουσίας, άδειας και άλλων. Έχει δημιουργηθεί με το ASP.NET Core και παρέχει φιλική προς τον χρήστη διεπαφή για τους υπαλλήλους και τους διαχειριστές.</value>
   </data>

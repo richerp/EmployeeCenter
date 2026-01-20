@@ -24,6 +24,9 @@
   <data name="A complete solution for user authentication and profile management right out of the box." xml:space="preserve">
     <value>Valmis ratkaisu käyttäjätunnistukseen ja profiilin hallintaan heti käyttöönoton yhteydessä.</value>
   </data>
+  <data name="A fast, free, open-source and offline-deployable enterprise office center designed to streamline your internal operations." xml:space="preserve">
+    <value>Nopea, ilmainen, avoimen lähdekoodin ja offline-asiakirjoihin asennettava yrityksen toimistokeskus, joka on suunniteltu sisäisten toimintojen helpottamiseksi.</value>
+  </data>
   <data name="A fast, offline-deployable enterprise office center designed to streamline your internal operations." xml:space="preserve">
     <value>Nopea, offline-asiakirjoihin soveltuvan yritys toimistokeskuksen suunniteltu helpottamaan sisäisiä toimintojasi.</value>
   </data>
@@ -123,6 +126,9 @@
   <data name="Employee Center" xml:space="preserve">
     <value>Työntekijäkeskus</value>
   </data>
+  <data name="Employee Center gives you total control over your data and infrastructure with its easy-to-deploy architecture." xml:space="preserve">
+    <value>Employee Center antaa sinulle täyden hallinnan tietojasi ja infrastruktuuriasi helposti asennettavalla arkkitehtuurilla.</value>
+  </data>
   <data name="Employee Center integrates disjointed processes into a unified workflow, eliminating manual errors and saving valuable time for your HR and Admin teams." xml:space="preserve">
     <value>Employee Center yhdistää erilliset prosessit yhtenäiseksi työnkulkuksi, poistaa manuaaliset virheet ja säästää arvokasta aikaa HR- ja hallintatiimeillä.</value>
   </data>
@@ -140,6 +146,9 @@
   </data>
   <data name="Everything you need to run your company" xml:space="preserve">
     <value>Kaikki, mitä tarvitset yrityksesi ajamiseen</value>
+  </data>
+  <data name="Experience the freedom of a truly open-source employee management system. Join the growing number of companies optimizing their workforce with Employee Center." xml:space="preserve">
+    <value>Tunne avoimen lähdekoodin työntekijähallintajärjestelmän vapautta. Liity yhä suurempaan määrään yrityksiä, jotka optimoivat työvoimansa käyttäen Employee Centeria.</value>
   </data>
   <data name="FAQ" xml:space="preserve">
     <value>UKK</value>
@@ -165,11 +174,17 @@
   <data name="Free" xml:space="preserve">
     <value>Ilmainen</value>
   </data>
+  <data name="Free &amp; Open Source" xml:space="preserve">
+    <value>Ilmainen ja avoimen lähdekoodin</value>
+  </data>
   <data name="Frequently asked questions" xml:space="preserve">
     <value>Usein kysytyt kysymykset</value>
   </data>
   <data name="From HR to Finance, IT to Operations, Employee Center has you covered." xml:space="preserve">
     <value>HR:stä talouteen, IT:stä toimintaan, Employee Center on sinun puolestasi.</value>
+  </data>
+  <data name="Fully open-source under MIT license. You can customize, fork, and contribute back to the project." xml:space="preserve">
+    <value>Täysin avoimen lähdekoodin MIT-lisenssillä. Voit muokata, forkata ja panostaa takaisin projektiin.</value>
   </data>
   <data name="Get Started Now" xml:space="preserve">
     <value>Aloita nyt</value>
@@ -264,6 +279,9 @@
   <data name="Ready to modernize your office?" xml:space="preserve">
     <value>Valmiina modernisointiin toimistossasi?</value>
   </data>
+  <data name="Ready to take full control of your office?" xml:space="preserve">
+    <value>Valmis ottamaan täyden hallinnan toimistostasi?</value>
+  </data>
   <data name="Reimbursement Calendar" xml:space="preserve">
     <value>Maksutapahtumakalenteri</value>
   </data>
@@ -297,8 +315,14 @@
   <data name="Security" xml:space="preserve">
     <value>Turvallisuus</value>
   </data>
+  <data name="Self Host" xml:space="preserve">
+    <value>Omalla palvelimella</value>
+  </data>
   <data name="Smart dark mode that automatically adapts to the user&apos;s system settings." xml:space="preserve">
     <value>Älykäs tumma tila, joka mukautuu automaattisesti käyttäjän järjestelmäasetuksiin.</value>
+  </data>
+  <data name="Source Code" xml:space="preserve">
+    <value>Lähdekoodi</value>
   </data>
   <data name="Start a new project" xml:space="preserve">
     <value>Aloita uusi projekti</value>
