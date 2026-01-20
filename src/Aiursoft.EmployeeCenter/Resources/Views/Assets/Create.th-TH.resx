@@ -36,8 +36,14 @@
   <data name="Financial Information" xml:space="preserve">
     <value>ข้อมูลทางการเงิน</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>ใหม่</value>
+  </data>
   <data name="Not Assigned" xml:space="preserve">
     <value>ยังไม่ได้กำหนด</value>
+  </data>
+  <data name="Reload" xml:space="preserve">
+    <value>รีโหลด</value>
   </data>
   <data name="Save Asset" xml:space="preserve">
     <value>บันทึกสินทรัพย์</value>

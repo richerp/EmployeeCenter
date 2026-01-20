@@ -33,8 +33,14 @@
   <data name="Financial Information" xml:space="preserve">
     <value>Informations financières</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>Nouveau</value>
+  </data>
   <data name="Not Assigned" xml:space="preserve">
     <value>Non attribué</value>
+  </data>
+  <data name="Reload" xml:space="preserve">
+    <value>Actualiser</value>
   </data>
   <data name="Select Entity" xml:space="preserve">
     <value>Sélectionner une entité</value>

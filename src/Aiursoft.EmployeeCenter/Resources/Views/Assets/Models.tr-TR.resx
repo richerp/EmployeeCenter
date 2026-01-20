@@ -42,6 +42,12 @@
   <data name="Model Name" xml:space="preserve">
     <value>Model Adı</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>Yeni</value>
+  </data>
+  <data name="Reload" xml:space="preserve">
+    <value>Yenile</value>
+  </data>
   <data name="Select Category" xml:space="preserve">
     <value>Kategori Seç</value>
   </data>

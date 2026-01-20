@@ -30,6 +30,9 @@
   <data name="In Use" xml:space="preserve">
     <value>Sedang Digunakan</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>Baru</value>
+  </data>
   <data name="Notice" xml:space="preserve">
     <value>Pemberitahuan</value>
   </data>
@@ -38,6 +41,9 @@
   </data>
   <data name="Pending Accept" xml:space="preserve">
     <value>Menunggu Konfirmasi</value>
+  </data>
+  <data name="Reload" xml:space="preserve">
+    <value>Muat Ulang</value>
   </data>
   <data name="Select User" xml:space="preserve">
     <value>Pilih Pengguna</value>

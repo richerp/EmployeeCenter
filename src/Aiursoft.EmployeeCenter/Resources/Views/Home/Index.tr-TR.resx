@@ -24,6 +24,9 @@
   <data name="A complete solution for user authentication and profile management right out of the box." xml:space="preserve">
     <value>Kutudan çıkar çıkmaz kullanıma hazır, kullanıcı kimlik doğrulama ve profil yönetimi için eksiksiz bir çözüm.</value>
   </data>
+  <data name="A fast, free, open-source and offline-deployable enterprise office center designed to streamline your internal operations." xml:space="preserve">
+    <value>Hızlı, ücretsiz, açık kaynak ve çevrimdışı dağıtım yapılabilecek, iç işleyişinizi kolaylaştırmak için tasarlanmış bir kurumsal ofis merkezi.</value>
+  </data>
   <data name="A fast, offline-deployable enterprise office center designed to streamline your internal operations." xml:space="preserve">
     <value>Hızlı, çevrimdışı dağıtım yapılabilen, iç iş süreçlerinizi kolaylaştırmak üzere tasarlanmış bir kurumsal ofis merkezi.</value>
   </data>
@@ -123,6 +126,9 @@
   <data name="Employee Center" xml:space="preserve">
     <value>İşçi Merkezi</value>
   </data>
+  <data name="Employee Center gives you total control over your data and infrastructure with its easy-to-deploy architecture." xml:space="preserve">
+    <value>Employee Center, kolay dağıtılabilir mimarisine sahip olmakla birlikte, verileriniz ve altyapınız üzerinde tam kontrol sağlar.</value>
+  </data>
   <data name="Employee Center integrates disjointed processes into a unified workflow, eliminating manual errors and saving valuable time for your HR and Admin teams." xml:space="preserve">
     <value>Employee Center, ayrılmış süreçleri birleştirilmiş bir akışa entegre eder, elle yapılan hataları ortadan kaldırır ve HR ve Yönetici ekibiniz için değerli zaman kazandırır.</value>
   </data>
@@ -140,6 +146,9 @@
   </data>
   <data name="Everything you need to run your company" xml:space="preserve">
     <value>Şirketinizi çalıştırmak için ihtiyacınız olan her şey</value>
+  </data>
+  <data name="Experience the freedom of a truly open-source employee management system. Join the growing number of companies optimizing their workforce with Employee Center." xml:space="preserve">
+    <value>Çalışan yönetimi için tamamen açık kaynaklı bir sistemle özgürlüğü deneyin. Employee Center ile iş gücünü optimize etmeye çalışan artan sayıdaki şirketin arasında yer alın.</value>
   </data>
   <data name="FAQ" xml:space="preserve">
     <value>SSS</value>
@@ -165,11 +174,17 @@
   <data name="Free" xml:space="preserve">
     <value>Ücretsiz</value>
   </data>
+  <data name="Free &amp; Open Source" xml:space="preserve">
+    <value>Serbest ve Açık Kaynak</value>
+  </data>
   <data name="Frequently asked questions" xml:space="preserve">
     <value>Sıkça Sorulan Sorular</value>
   </data>
   <data name="From HR to Finance, IT to Operations, Employee Center has you covered." xml:space="preserve">
     <value>HR&apos;den Finanse, IT&apos;den Operasyonlara kadar, Employee Center sizi kapsar.</value>
+  </data>
+  <data name="Fully open-source under MIT license. You can customize, fork, and contribute back to the project." xml:space="preserve">
+    <value>Tamamen açık kaynak, MIT lisansı altında. Projeye özelleştirebilir, dallandırabilir ve geri katkıda bulunabilirsiniz.</value>
   </data>
   <data name="Get Started Now" xml:space="preserve">
     <value>Şimdi Başlayın</value>
@@ -264,6 +279,9 @@
   <data name="Ready to modernize your office?" xml:space="preserve">
     <value>Ofisinizi modernleştirmeye hazır mısınız?</value>
   </data>
+  <data name="Ready to take full control of your office?" xml:space="preserve">
+    <value>Ofisinizin tam kontrolünü ele almak için hazır mısınız?</value>
+  </data>
   <data name="Reimbursement Calendar" xml:space="preserve">
     <value>Talep Takvimi</value>
   </data>
@@ -297,8 +315,14 @@
   <data name="Security" xml:space="preserve">
     <value>Güvenlik</value>
   </data>
+  <data name="Self Host" xml:space="preserve">
+    <value>Kendi Sunucunuzu Kurun</value>
+  </data>
   <data name="Smart dark mode that automatically adapts to the user&apos;s system settings." xml:space="preserve">
     <value>Kullanıcının sistem ayarlarına otomatik olarak uyum sağlayan akıllı karanlık mod.</value>
+  </data>
+  <data name="Source Code" xml:space="preserve">
+    <value>Kaynak Kodu</value>
   </data>
   <data name="Start a new project" xml:space="preserve">
     <value>Yeni bir proje başlat</value>

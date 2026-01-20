@@ -24,6 +24,9 @@
   <data name="A complete solution for user authentication and profile management right out of the box." xml:space="preserve">
     <value>Eine sofort einsatzbereite Komplettlösung für Benutzerauthentifizierung und Profilverwaltung.</value>
   </data>
+  <data name="A fast, free, open-source and offline-deployable enterprise office center designed to streamline your internal operations." xml:space="preserve">
+    <value>Ein schneller, kostenloser, quelloffener und offline-bereitstellbarer Unternehmens-Büro-Center, der entwickelt wurde, um Ihre internen Abläufe zu optimieren.</value>
+  </data>
   <data name="A fast, offline-deployable enterprise office center designed to streamline your internal operations." xml:space="preserve">
     <value>Ein schneller, offline-basierter Unternehmens-Büro-Center, der entwickelt wurde, um Ihre internen Abläufe zu optimieren.</value>
   </data>
@@ -123,6 +126,9 @@
   <data name="Employee Center" xml:space="preserve">
     <value>Mitarbeiterzentrum</value>
   </data>
+  <data name="Employee Center gives you total control over your data and infrastructure with its easy-to-deploy architecture." xml:space="preserve">
+    <value>Employee Center gibt Ihnen die vollständige Kontrolle über Ihre Daten und Infrastruktur mit seiner einfachen Bereitstellungsfähigkeit.</value>
+  </data>
   <data name="Employee Center integrates disjointed processes into a unified workflow, eliminating manual errors and saving valuable time for your HR and Admin teams." xml:space="preserve">
     <value>Employee Center integriert lose verknüpfte Prozesse in einen einheitlichen Arbeitsablauf, beseitigt manuelle Fehler und spart wertvolle Zeit für Ihre HR- und Admin-Teams.</value>
   </data>
@@ -140,6 +146,9 @@
   </data>
   <data name="Everything you need to run your company" xml:space="preserve">
     <value>Alles, was Sie brauchen, um Ihr Unternehmen zu führen</value>
+  </data>
+  <data name="Experience the freedom of a truly open-source employee management system. Join the growing number of companies optimizing their workforce with Employee Center." xml:space="preserve">
+    <value>Erleben Sie die Freiheit eines wirklich quelloffenen Mitarbeiterverwaltungssystems. Treten Sie der wachsenden Zahl von Unternehmen bei, die ihre Belegschaft mit Employee Center optimieren.</value>
   </data>
   <data name="FAQ" xml:space="preserve">
     <value>FAQ</value>
@@ -165,11 +174,17 @@
   <data name="Free" xml:space="preserve">
     <value>Kostenlos</value>
   </data>
+  <data name="Free &amp; Open Source" xml:space="preserve">
+    <value>Kostenlos &amp; Open Source</value>
+  </data>
   <data name="Frequently asked questions" xml:space="preserve">
     <value>Häufig gestellte Fragen</value>
   </data>
   <data name="From HR to Finance, IT to Operations, Employee Center has you covered." xml:space="preserve">
     <value>Von HR über Finanzen, IT bis zu Betrieb – Employee Center hat Sie abgedeckt.</value>
+  </data>
+  <data name="Fully open-source under MIT license. You can customize, fork, and contribute back to the project." xml:space="preserve">
+    <value>Vollständig Open Source unter der MIT-Lizenz. Sie können das Projekt anpassen, forken und Beiträge zurück zur Projektgemeinschaft leisten.</value>
   </data>
   <data name="Get Started Now" xml:space="preserve">
     <value>Jetzt loslegen</value>
@@ -264,6 +279,9 @@
   <data name="Ready to modernize your office?" xml:space="preserve">
     <value>Bereit, Ihr Büro zu modernisieren?</value>
   </data>
+  <data name="Ready to take full control of your office?" xml:space="preserve">
+    <value>Bereit, die volle Kontrolle über Ihr Büro zu übernehmen?</value>
+  </data>
   <data name="Reimbursement Calendar" xml:space="preserve">
     <value>Ausgaben-Verrechnungs-Kalender</value>
   </data>
@@ -297,8 +315,14 @@
   <data name="Security" xml:space="preserve">
     <value>Sicherheit</value>
   </data>
+  <data name="Self Host" xml:space="preserve">
+    <value>Selbst hosten</value>
+  </data>
   <data name="Smart dark mode that automatically adapts to the user&apos;s system settings." xml:space="preserve">
     <value>Intelligenter Dunkelmodus, der sich automatisch an die Systemeinstellungen des Benutzers anpasst.</value>
+  </data>
+  <data name="Source Code" xml:space="preserve">
+    <value>Quellcode</value>
   </data>
   <data name="Start a new project" xml:space="preserve">
     <value>Ein neues Projekt starten</value>
