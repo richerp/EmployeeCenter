@@ -112,7 +112,7 @@
                                 <p class="mb-0"><strong>Zip:</strong> @Model.Entity.ZipCode</p>
                             }
                         </dd>
-                        
+
                         <dt class="col-sm-4">@Localizer["Bank Info"]</dt>
                         <dd class="col-sm-8">
                             <p class="mb-0">@Model.Entity.BankName</p>
@@ -130,7 +130,7 @@
                 </div>
                 <div class="card-body">
                     <p>@Localizer["Please show the following information to the merchant when making a payment:"]</p>
-                    
+
                     <div class="card bg-light mb-3">
                         <div class="card-body">
                             <h5 class="card-title text-primary font-weight-bold">@Model.Entity.CompanyName</h5>
@@ -151,11 +151,11 @@
                     </div>
 
                     <hr />
-                    
+
                     <h6 class="font-weight-bold">@Localizer["Instructions for Employees"]</h6>
                     <ol class="pl-3">
                         <li class="mb-2">
-                            <strong>@Localizer["Prefer Electronic Invoices (Fully Digitalized)"]</strong>: 
+                            <strong>@Localizer["Prefer Electronic Invoices (Fully Digitalized)"]</strong>:
                             @Localizer["Ask merchants for electronic invoices (PDF/OFD) sent to your email or employees@aiursoft.com."]
                             @Localizer["Avoid paper invoices to prevent loss."]
                         </li>
@@ -245,7 +245,7 @@
                                 <dt class="col-sm-4">@Localizer["Reg Capital"]</dt>
                                 <dd class="col-sm-8">@Model.Entity.RegisteredCapital</dd>
                             }
-                            
+
                             @if (!string.IsNullOrEmpty(Model.Entity.OperationStatus))
                             {
                                 <dt class="col-sm-4">@Localizer["Status"]</dt>
@@ -271,6 +271,7 @@
     </div>
 </div>
 
+@* ReSharper disable once Razor.SectionNotResolved *@
 @section scripts {
     <script>
         function copyToClipboard(text) {
