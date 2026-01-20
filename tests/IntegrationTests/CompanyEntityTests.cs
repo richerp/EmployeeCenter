@@ -175,6 +175,7 @@ public class CompanyEntityTests : TestBase
             
             Assert.Contains("Copy Summary", detailsHtml);
             Assert.Contains("Copy Full Info", detailsHtml);
+            StringAssert.DoesNotMatch(detailsHtml, new Regex("Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString"), "Copy text contains type name instead of value!");
 
             // 5. Login as normal user
             await Http.GetAsync("/Account/LogOff");
@@ -187,6 +188,7 @@ public class CompanyEntityTests : TestBase
 
             Assert.Contains("Copy Summary", userDetailsHtml);
             Assert.DoesNotContain("Copy Full Info", userDetailsHtml);
+            StringAssert.DoesNotMatch(userDetailsHtml, new Regex("Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString"), "Copy text contains type name instead of value!");
         }
     }
 
