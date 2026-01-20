@@ -4,8 +4,10 @@ using Aiursoft.UiStack.Layout;
 
 namespace Aiursoft.EmployeeCenter.Models.LedgerViewModels;
 
-public class CreateAccountViewModel : UiStackLayoutViewModel
+public class EditAccountViewModel : UiStackLayoutViewModel
 {
+    public int Id { get; set; }
+
     public int EntityId { get; set; }
 
     [Required]
@@ -19,5 +21,7 @@ public class CreateAccountViewModel : UiStackLayoutViewModel
     [MaxLength(10)]
     public string Currency { get; set; } = "CNY";
 
-    public bool ShowInDashboard { get; set; } = true;
+    public bool ShowInDashboard { get; set; }
+
+    public bool IsArchived { get; set; }
 }

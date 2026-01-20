@@ -46,8 +46,9 @@ public class LedgerController(
         }
 
         var accounts = await dbContext.FinanceAccounts
-            .Where(a => a.CompanyEntityId == id && !a.IsArchived)
+            .Where(a => a.CompanyEntityId == id && !a.IsArchived && a.ShowInDashboard)
             .ToListAsync();
+
 
         var accountsWithBalance = new List<AccountWithBalance>();
         foreach (var account in accounts)
@@ -169,13 +170,63 @@ public class LedgerController(
             AccountName = model.AccountName,
             AccountType = model.AccountType,
             CompanyEntityId = model.EntityId,
-            Currency = model.Currency
+            Currency = model.Currency,
+            ShowInDashboard = model.ShowInDashboard
         };
 
         dbContext.FinanceAccounts.Add(account);
         await dbContext.SaveChangesAsync();
 
         return RedirectToAction(nameof(Accounts), new { id = model.EntityId });
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> EditAccount(int id)
+    {
+        var account = await dbContext.FinanceAccounts.FindAsync(id);
+        if (account == null)
+        {
+            return NotFound();
+        }
+
+        var model = new EditAccountViewModel
+        {
+            Id = account.Id,
+            EntityId = account.CompanyEntityId,
+            AccountName = account.AccountName,
+            AccountType = account.AccountType,
+            Currency = account.Currency,
+            ShowInDashboard = account.ShowInDashboard,
+            IsArchived = account.IsArchived
+        };
+
+        return this.StackView(model);
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> EditAccount(EditAccountViewModel model)
+    {
+        if (!ModelState.IsValid)
+        {
+            return this.StackView(model);
+        }
+
+        var account = await dbContext.FinanceAccounts.FindAsync(model.Id);
+        if (account == null)
+        {
+            return NotFound();
+        }
+
+        account.AccountName = model.AccountName;
+        account.AccountType = model.AccountType;
+        account.Currency = model.Currency;
+        account.ShowInDashboard = model.ShowInDashboard;
+        account.IsArchived = model.IsArchived;
+
+        await dbContext.SaveChangesAsync();
+
+        return RedirectToAction(nameof(Accounts), new { id = account.CompanyEntityId });
     }
 
     [HttpGet]
