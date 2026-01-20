@@ -254,6 +254,64 @@ public class LedgerTests : TestBase
         Assert.Contains("Updated Name", dashboardContent2, "Visible account should be in dashboard.");
     }
 
+    [TestMethod]
+    public async Task TestDashboardFilteredView()
+    {
+        // 1. Setup - Create an entity and two accounts
+        int entityId;
+        int accountAId, accountBId;
+        using (var scope = Server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var entity = new CompanyEntity
+            {
+                CompanyName = "Filtered Dashboard Entity",
+                EntityCode = "FDE01",
+                BaseCurrency = "USD"
+            };
+            db.CompanyEntities.Add(entity);
+            await db.SaveChangesAsync();
+            entityId = entity.Id;
+
+            var accountA = new FinanceAccount { AccountName = "Account A", AccountType = FinanceAccountType.Asset, CompanyEntityId = entityId, Currency = "USD", ShowInDashboard = true };
+            var accountB = new FinanceAccount { AccountName = "Account B", AccountType = FinanceAccountType.Asset, CompanyEntityId = entityId, Currency = "USD", ShowInDashboard = true };
+            db.FinanceAccounts.AddRange(accountA, accountB);
+            await db.SaveChangesAsync();
+            accountAId = accountA.Id;
+            accountBId = accountB.Id;
+
+            // Transaction for Account A
+            db.Transactions.Add(new Transaction { Description = "Transaction A", SourceAccountId = accountBId, DestinationAccountId = accountAId, Amount = 100, ExchangeRate = 1, TransactionTime = DateTime.UtcNow });
+            // Transaction for Account B only (not A)
+            db.Transactions.Add(new Transaction { Description = "Transaction B Only", SourceAccountId = accountBId, DestinationAccountId = accountBId, Amount = 50, ExchangeRate = 1, TransactionTime = DateTime.UtcNow });
+            await db.SaveChangesAsync();
+        }
+
+        // 2. Login
+        await LoginAsAdmin();
+
+        // 3. View Main Dashboard
+        var dashboardResponse = await Http.GetAsync($"/Ledger/Dashboard/{entityId}");
+        var dashboardContent = await dashboardResponse.Content.ReadAsStringAsync();
+        Assert.Contains("Account A", dashboardContent);
+        Assert.Contains("Account B", dashboardContent);
+        Assert.Contains("Transaction A", dashboardContent);
+
+        // 4. View Filtered Dashboard for Account A
+        var filteredResponse = await Http.GetAsync($"/Ledger/Dashboard/{entityId}?accountId={accountAId}");
+        var filteredContent = await filteredResponse.Content.ReadAsStringAsync();
+        
+        // Should contain account name and transaction A
+        Assert.Contains("Account A - Dashboard", filteredContent);
+        Assert.Contains("Transaction A", filteredContent);
+        
+        // Should NOT contain Account B card (since filtered view hides cards)
+        Assert.DoesNotContain("text-success text-uppercase mb-1\">\n                                    Account B", filteredContent);
+        
+        // Should NOT contain Transaction B Only
+        Assert.DoesNotContain("Transaction B Only", filteredContent);
+    }
+
     private async Task<decimal> GetBalance(EmployeeCenterDbContext db, int accountId)
     {
         var account = await db.FinanceAccounts.FindAsync(accountId);

@@ -37,12 +37,22 @@ public class LedgerController(
     }
 
     [HttpGet]
-    public async Task<IActionResult> Dashboard(int id)
+    public async Task<IActionResult> Dashboard(int id, int? accountId)
     {
         var entity = await dbContext.CompanyEntities.FindAsync(id);
         if (entity == null)
         {
             return NotFound();
+        }
+
+        FinanceAccount? filteredAccount = null;
+        if (accountId.HasValue)
+        {
+            filteredAccount = await dbContext.FinanceAccounts.FindAsync(accountId.Value);
+            if (filteredAccount == null || filteredAccount.CompanyEntityId != id)
+            {
+                return NotFound();
+            }
         }
 
         var accounts = await dbContext.FinanceAccounts
@@ -60,22 +70,36 @@ public class LedgerController(
             });
         }
 
-        var recentTransactions = await dbContext.Transactions
+        var recentTransactionsQuery = dbContext.Transactions
             .Include(t => t.SourceAccount)
             .Include(t => t.DestinationAccount)
-            .Where(t => t.SourceAccount!.CompanyEntityId == id || t.DestinationAccount!.CompanyEntityId == id)
+            .Where(t => t.SourceAccount!.CompanyEntityId == id || t.DestinationAccount!.CompanyEntityId == id);
+
+        if (accountId.HasValue)
+        {
+            recentTransactionsQuery = recentTransactionsQuery.Where(t => t.SourceAccountId == accountId || t.DestinationAccountId == accountId);
+        }
+
+        var recentTransactions = await recentTransactionsQuery
             .OrderByDescending(t => t.TransactionTime)
-            .Take(10)
+            .Take(accountId.HasValue ? 1000 : 10)
             .ToListAsync();
 
         // Calculate Burn Rate (Expense in last 30 days)
         var thirtyDaysAgo = DateTime.UtcNow.AddDays(-30);
-        var monthlyExpenses = await dbContext.Transactions
+        var monthlyExpensesQuery = dbContext.Transactions
+            .Include(t => t.SourceAccount)
             .Include(t => t.DestinationAccount)
             .Where(t => t.DestinationAccount!.CompanyEntityId == id && 
                         t.DestinationAccount!.AccountType == FinanceAccountType.Expense &&
-                        t.TransactionTime >= thirtyDaysAgo)
-            .ToListAsync();
+                        t.TransactionTime >= thirtyDaysAgo);
+
+        if (accountId.HasValue)
+        {
+            monthlyExpensesQuery = monthlyExpensesQuery.Where(t => t.SourceAccountId == accountId);
+        }
+
+        var monthlyExpenses = await monthlyExpensesQuery.ToListAsync();
         
         // This is tricky because expenses can be in different currencies. 
         // For now, we just sum them up if they match entity's base currency, 
@@ -97,9 +121,17 @@ public class LedgerController(
         }
 
         // Calculate Runway: Total Assets / Burn Rate
-        var totalAssets = accountsWithBalance
-            .Where(a => a.Account.AccountType == FinanceAccountType.Asset && a.Account.Currency == entity.BaseCurrency)
-            .Sum(a => a.Balance);
+        decimal totalAssets;
+        if (accountId.HasValue)
+        {
+            totalAssets = await GetBalance(accountId.Value);
+        }
+        else
+        {
+            totalAssets = accountsWithBalance
+                .Where(a => a.Account.AccountType == FinanceAccountType.Asset && a.Account.Currency == entity.BaseCurrency)
+                .Sum(a => a.Balance);
+        }
 
         var model = new DashboardViewModel
         {
@@ -107,7 +139,8 @@ public class LedgerController(
             Accounts = accountsWithBalance,
             RecentTransactions = recentTransactions,
             MonthlyBurnRate = totalBurn,
-            RunwayMonths = totalBurn > 0 ? totalAssets / totalBurn : null
+            RunwayMonths = totalBurn > 0 ? totalAssets / totalBurn : null,
+            FilteredAccount = filteredAccount
         };
 
         return this.StackView(model);

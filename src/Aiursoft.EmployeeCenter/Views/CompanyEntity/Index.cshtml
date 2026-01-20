@@ -23,7 +23,7 @@
         </div>
         <div class="card-body">
             <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%">
+                <table class="table table-bordered" id="entitiesTable" width="100%">
                     <thead>
                         <tr>
                             <th>@Localizer["Company Name"]</th>
@@ -101,3 +101,19 @@
         </div>
     </div>
 </div>
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            $('#entitiesTable').DataTable({
+                "destroy": true,
+                "responsive": true,
+                "paging": true,
+                "pageLength": 25,
+                "searching": true,
+                "info": false,
+                "order": [[0, "asc"]]
+            });
+        });
+    </script>
+}
