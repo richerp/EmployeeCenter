@@ -18,8 +18,8 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="12 days paid annual leave per year" xml:space="preserve">
-    <value>연 12일의 유급 연차 휴가</value>
+      <data name="{0} days paid annual leave per year" xml:space="preserve">
+    <value>연 {0}일의 유급 연차 휴가</value>
   </data>
   <data name="7 days paid sick leave per year" xml:space="preserve">
     <value>연간 7일의 유급 병가</value>
@@ -69,8 +69,8 @@
   <data name="Leave Policy" xml:space="preserve">
     <value>휴가 정책</value>
   </data>
-  <data name="Maximum carryover: 12 days (expires after 1 year)" xml:space="preserve">
-    <value>최대 이월: 12일 (1년 후 만료)</value>
+  <data name="Maximum carryover: {0} days (expires after 1 year)" xml:space="preserve">
+    <value>최대 이월: {0}일 (1년 후 만료)</value>
   </data>
   <data name="Mental health: no documents required" xml:space="preserve">
     <value>정신 건강: 서류 제출 없음</value>

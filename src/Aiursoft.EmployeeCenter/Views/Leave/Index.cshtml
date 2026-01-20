@@ -125,10 +125,10 @@
                             @Localizer["Annual Leave"]
                         </h6>
                         <ul class="mb-4">
-                            <li>@Localizer["12 days paid annual leave per year"]</li>
+                            <li>@string.Format(Localizer["{0} days paid annual leave per year"].Value, Model.AnnualLeavePerYearPolicy.ToString("0.##"))</li>
                             <li>@Localizer["Requires manager approval before use"]</li>
                             <li>@Localizer["Unused days carry over to next year"]</li>
-                            <li>@Localizer["Maximum carryover: 12 days (expires after 1 year)"]</li>
+                            <li>@string.Format(Localizer["Maximum carryover: {0} days (expires after 1 year)"].Value, Model.AnnualLeavePerYearPolicy.ToString("0.##"))</li>
                         </ul>
                     </div>
                     <div class="col-md-6">

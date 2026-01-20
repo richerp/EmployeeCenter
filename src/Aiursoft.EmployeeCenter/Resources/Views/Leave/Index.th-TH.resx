@@ -18,8 +18,8 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="12 days paid annual leave per year" xml:space="preserve">
-    <value>12 วัน สำหรับการลาพักร้อนที่ได้รับค่าจ้างต่อปี</value>
+      <data name="{0} days paid annual leave per year" xml:space="preserve">
+    <value>{0} วัน สำหรับการลาพักร้อนที่ได้รับค่าจ้างต่อปี</value>
   </data>
   <data name="7 days paid sick leave per year" xml:space="preserve">
     <value>7 วัน สำหรับการลาป่วยที่ได้รับค่าจ้างต่อปี</value>
@@ -69,8 +69,8 @@
   <data name="Leave Policy" xml:space="preserve">
     <value>นโยบายการลา</value>
   </data>
-  <data name="Maximum carryover: 12 days (expires after 1 year)" xml:space="preserve">
-    <value>จำนวนสูงสุดที่สามารถนำวันลาไปใช้ต่อได้: 12 วัน (หมดอายุหลังจาก 1 ปี)</value>
+  <data name="Maximum carryover: {0} days (expires after 1 year)" xml:space="preserve">
+    <value>จำนวนสูงสุดที่สามารถนำวันลาไปใช้ต่อได้: {0} วัน (หมดอายุหลังจาก 1 ปี)</value>
   </data>
   <data name="Mental health: no documents required" xml:space="preserve">
     <value>สุขภาพจิต: ไม่ต้องใช้เอกสารประกอบ</value>

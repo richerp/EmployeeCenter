@@ -42,6 +42,12 @@ public class GlobalSettingsService(EmployeeCenterDbContext dbContext, IConfigura
         return int.TryParse(value, out var result) ? result : 0;
     }
 
+    public async Task<decimal> GetDecimalSettingAsync(string key)
+    {
+        var value = await GetSettingValueAsync(key);
+        return decimal.TryParse(value, out var result) ? result : 0m;
+    }
+
     public bool IsOverriddenByConfig(string key)
     {
         return !string.IsNullOrWhiteSpace(configuration[$"GlobalSettings:{key}"]) ||

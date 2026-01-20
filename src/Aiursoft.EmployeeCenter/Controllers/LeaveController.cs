@@ -18,7 +18,8 @@ public class LeaveController(
     EmployeeCenterDbContext context,
     LeaveBalanceService leaveBalanceService,
     HolidayService holidayService,
-    IAuthorizationService authorizationService)
+    IAuthorizationService authorizationService,
+    GlobalSettingsService globalSettingsService)
     : Controller
 {
     [RenderInNavBar(
@@ -45,6 +46,7 @@ public class LeaveController(
         var remainingAnnual = await leaveBalanceService.GetRemainingAnnualLeaveAsync(user.Id, currentYear);
         var (carriedOver, _) = await leaveBalanceService.GetRemainingByTypeAsync(user.Id, currentYear);
         var remainingSick = await leaveBalanceService.GetRemainingSickLeaveAsync(user.Id, currentYear);
+        var annualLeavePerYearPolicy = await globalSettingsService.GetDecimalSettingAsync(Configuration.SettingsMap.AnnualLeavePerYear);
 
         // Get leave history
         var leaveHistory = await context.LeaveApplications
@@ -85,7 +87,8 @@ public class LeaveController(
             NextUpcomingLeave = nextUpcomingLeave,
             HasUpcomingLeaveWithin14Days = nextUpcomingLeave != null,
             PendingCount = pendingCount,
-            DaysUntilNextLeave = daysUntilNextLeave
+            DaysUntilNextLeave = daysUntilNextLeave,
+            AnnualLeavePerYearPolicy = annualLeavePerYearPolicy
         };
 
         return this.StackView(model);

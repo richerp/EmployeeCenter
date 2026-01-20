@@ -18,8 +18,8 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="12 days paid annual leave per year" xml:space="preserve">
-    <value>12 jours de congés annuels payés par an</value>
+      <data name="{0} days paid annual leave per year" xml:space="preserve">
+    <value>{0} jours de congés annuels payés par an</value>
   </data>
   <data name="7 days paid sick leave per year" xml:space="preserve">
     <value>7 jours de congés maladie rémunérés par an</value>
@@ -69,8 +69,8 @@
   <data name="Leave Policy" xml:space="preserve">
     <value>Politique de congés</value>
   </data>
-  <data name="Maximum carryover: 12 days (expires after 1 year)" xml:space="preserve">
-    <value>Maximum reportable : 12 jours (expire après 1 an)</value>
+  <data name="Maximum carryover: {0} days (expires after 1 year)" xml:space="preserve">
+    <value>Maximum reportable : {0} jours (expire après 1 an)</value>
   </data>
   <data name="Mental health: no documents required" xml:space="preserve">
     <value>Santé mentale : aucun document requis</value>

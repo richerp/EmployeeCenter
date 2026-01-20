@@ -51,7 +51,8 @@ public class AnnualLeaveAllocationJob(
 
             using var scope = scopeFactory.CreateScope();
             var context = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
-            await AllocateAnnualLeave(context);
+            var settings = scope.ServiceProvider.GetRequiredService<GlobalSettingsService>();
+            await AllocateAnnualLeave(context, settings);
         }
         catch (Exception ex)
         {
@@ -60,7 +61,7 @@ public class AnnualLeaveAllocationJob(
         }
     }
 
-    private async Task AllocateAnnualLeave(EmployeeCenterDbContext context)
+    private async Task AllocateAnnualLeave(EmployeeCenterDbContext context, GlobalSettingsService settings)
     {
         var startTime = DateTime.UtcNow;
         LastRunTime = startTime;
@@ -70,7 +71,8 @@ public class AnnualLeaveAllocationJob(
         try
         {
             var currentYear = DateTime.UtcNow.Year;
-            logger.LogInformation("Checking annual leave allocations for year {Year}", currentYear);
+            var annualLeavePerYear = await settings.GetDecimalSettingAsync(Configuration.SettingsMap.AnnualLeavePerYear);
+            logger.LogInformation("Checking annual leave allocations for year {Year}. Annual leave per year: {AnnualLeave}", currentYear, annualLeavePerYear);
 
             // 获取所有用户
             var allUsers = await context.Users.ToListAsync();
@@ -115,8 +117,8 @@ public class AnnualLeaveAllocationJob(
                         // Unused from previous year's CURRENT allocation can carry over
                         var unusedFromPreviousCurrent = previousAllocation.AnnualLeaveAllocation - currentUsedInPrevious;
 
-                        // Cap at 12 days max
-                        carriedOver = Math.Max(0m, Math.Min(12m, unusedFromPreviousCurrent));
+                        // Cap at annualLeavePerYear days max
+                        carriedOver = Math.Max(0m, Math.Min(annualLeavePerYear, unusedFromPreviousCurrent));
 
                         // Note: previousAllocation.CarriedOverAnnualLeave EXPIRES (2-year rule)
                     }
@@ -126,8 +128,8 @@ public class AnnualLeaveAllocationJob(
                     {
                         UserId = user.Id,
                         Year = currentYear,
-                        AnnualLeaveAllocation = LeaveBalanceService.AnnualLeavePerYear,
-                        SickLeaveAllocation = LeaveBalanceService.SickLeavePerYear,
+                        AnnualLeaveAllocation = annualLeavePerYear,
+                        SickLeaveAllocation = LeaveBalanceService.DefaultSickLeavePerYear,
                         CarriedOverAnnualLeave = carriedOver
                     };
 

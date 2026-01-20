@@ -18,8 +18,8 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="12 days paid annual leave per year" xml:space="preserve">
-    <value>12天带薪年假/年</value>
+      <data name="{0} days paid annual leave per year" xml:space="preserve">
+    <value>{0}天带薪年假/年</value>
   </data>
   <data name="12 days per year, granted on January 1st" xml:space="preserve">
     <value>12天/年，于1月1日发放</value>
@@ -96,8 +96,8 @@
   <data name="Leave Type" xml:space="preserve">
     <value>请假类型</value>
   </data>
-  <data name="Maximum carryover: 12 days (expires after 1 year)" xml:space="preserve">
-    <value>最多结转：12天（一年后过期）</value>
+  <data name="Maximum carryover: {0} days (expires after 1 year)" xml:space="preserve">
+    <value>最多结转：{0}天（一年后过期）</value>
   </data>
   <data name="Mental health: No diagnosis required" xml:space="preserve">
     <value>心理健康：无需诊断证明</value>
