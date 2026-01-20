@@ -36,5 +36,8 @@
   <data name="Currency" xml:space="preserve">
     <value>Devise</value>
   </data>
+  <data name="Show in Dashboard" xml:space="preserve">
+    <value>Afficher sur le tableau de bord</value>
+  </data>
 
 </root>

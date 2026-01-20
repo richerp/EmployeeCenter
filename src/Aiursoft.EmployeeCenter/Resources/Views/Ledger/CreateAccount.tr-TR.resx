@@ -36,5 +36,8 @@
   <data name="Currency" xml:space="preserve">
     <value>Para Birimi</value>
   </data>
+  <data name="Show in Dashboard" xml:space="preserve">
+    <value>Göster Panelde</value>
+  </data>
 
 </root>

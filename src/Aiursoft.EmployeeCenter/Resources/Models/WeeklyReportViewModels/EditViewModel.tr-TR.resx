@@ -21,5 +21,14 @@
       <data name="Content" xml:space="preserve">
     <value>İçerik</value>
   </data>
+  <data name="Id" xml:space="preserve">
+    <value>Kimlik</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0} gerekli.</value>
+  </data>
+  <data name="Week Start Date" xml:space="preserve">
+    <value>Hafta Başlangıç Tarihi</value>
+  </data>
 
 </root>

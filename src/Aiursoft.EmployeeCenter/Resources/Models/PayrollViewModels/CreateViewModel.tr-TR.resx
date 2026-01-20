@@ -84,6 +84,12 @@
   <data name="Target Month" xml:space="preserve">
     <value>Hedef Ay</value>
   </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0} alanı {1} karakteri geçemez.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0} gerekli.</value>
+  </data>
   <data name="Total Amount" xml:space="preserve">
     <value>Toplam Tutar</value>
   </data>

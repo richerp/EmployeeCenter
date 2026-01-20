@@ -36,5 +36,8 @@
   <data name="Currency" xml:space="preserve">
     <value>Tiền tệ</value>
   </data>
+  <data name="Show in Dashboard" xml:space="preserve">
+    <value>Hiện trên Bảng điều khiển</value>
+  </data>
 
 </root>

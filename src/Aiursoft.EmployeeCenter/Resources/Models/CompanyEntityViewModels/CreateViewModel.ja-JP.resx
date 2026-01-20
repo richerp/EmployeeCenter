@@ -66,6 +66,9 @@
   <data name="Legal Representative / Director" xml:space="preserve">
     <value>法務代表者 / 監査役</value>
   </data>
+  <data name="Legal Representative Legal Name" xml:space="preserve">
+    <value>代表者法定名</value>
+  </data>
   <data name="Office Address" xml:space="preserve">
     <value>事務所住所</value>
   </data>
@@ -95,6 +98,12 @@
   </data>
   <data name="SCR Location (HK)" xml:space="preserve">
     <value>SCR 現地 (HK)</value>
+  </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0}は{1}文字を超えることはできません。</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0}は必須です。</value>
   </data>
   <data name="Zip Code" xml:space="preserve">
     <value>郵便番号</value>

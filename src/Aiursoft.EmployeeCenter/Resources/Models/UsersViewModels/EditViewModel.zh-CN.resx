@@ -45,6 +45,9 @@
   <data name="Email Address" xml:space="preserve">
     <value>电子邮件地址</value>
   </data>
+  <data name="Id" xml:space="preserve">
+    <value>标识</value>
+  </data>
   <data name="Job Level" xml:space="preserve">
     <value>职级</value>
   </data>
@@ -63,11 +66,20 @@
   <data name="Reset Password (leave empty to keep the same password)" xml:space="preserve">
     <value>重置密码（留空则保持原密码不变）</value>
   </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0} 不能超过 {1} 个字符。</value>
+  </data>
   <data name="The {0} is not a valid email address." xml:space="preserve">
     <value>{0} 不是有效的电子邮件地址。</value>
   </data>
+  <data name="The {0} is not a valid phone number." xml:space="preserve">
+    <value>{0} 不是一个有效的电话号码。</value>
+  </data>
   <data name="The {0} is required." xml:space="preserve">
     <value>{0}是必填的。</value>
+  </data>
+  <data name="The {0} must be at least {1} characters." xml:space="preserve">
+    <value>{0} 至少需要 {1} 个字符。</value>
   </data>
   <data name="The avatar file is invalid. Please upload it again." xml:space="preserve">
     <value>头像文件无效，请重新上传。</value>
@@ -81,13 +93,5 @@
   <data name="User name" xml:space="preserve">
     <value>用户名</value>
   </data>
-  <data name="Id" xml:space="preserve">
-    <value>标识</value>
-  </data>
-  <data name="The {0} must be at least {1} characters." xml:space="preserve">
-    <value>{0} 至少需要 {1} 个字符。</value>
-  </data>
-  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
-    <value>{0} 不能超过 {1} 个字符。</value>
-  </data>
+
 </root>

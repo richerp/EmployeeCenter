@@ -24,8 +24,23 @@
   <data name="Is Public" xml:space="preserve">
     <value>パブリックかどうか</value>
   </data>
+  <data name="Name" xml:space="preserve">
+    <value>名前</value>
+  </data>
   <data name="Please upload a valid contract file." xml:space="preserve">
     <value>有効な契約ファイルをアップロードしてください。</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>ステータス</value>
+  </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0}は{1}文字を超えることはできません。</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0}は必須です。</value>
+  </data>
+  <data name="The {0} must be at least {1} characters." xml:space="preserve">
+    <value>{0} は少なくとも {1} 文字以上でなければなりません。</value>
   </data>
   <data name="User" xml:space="preserve">
     <value>ユーザー</value>

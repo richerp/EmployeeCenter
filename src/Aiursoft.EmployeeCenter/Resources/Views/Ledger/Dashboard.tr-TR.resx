@@ -30,6 +30,9 @@
   <data name="Description" xml:space="preserve">
     <value>Açıklama</value>
   </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Düzenle</value>
+  </data>
   <data name="From" xml:space="preserve">
     <value>Gönderen</value>
   </data>

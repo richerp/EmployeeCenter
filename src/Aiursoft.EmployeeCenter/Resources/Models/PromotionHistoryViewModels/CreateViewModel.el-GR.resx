@@ -30,8 +30,17 @@
   <data name="Old Title" xml:space="preserve">
     <value>Παλιός Τίτλος</value>
   </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>Το {0} δεν μπορεί να υπερβαίνει τα {1} χαρακτήρες.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>Το {0} είναι απαραίτητο.</value>
+  </data>
   <data name="User" xml:space="preserve">
     <value>Χρήστης</value>
+  </data>
+  <data name="User Display Name" xml:space="preserve">
+    <value>Όνομα εμφάνισης χρήστη</value>
   </data>
 
 </root>

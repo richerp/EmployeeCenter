@@ -36,5 +36,8 @@
   <data name="Currency" xml:space="preserve">
     <value>Валюта</value>
   </data>
+  <data name="Show in Dashboard" xml:space="preserve">
+    <value>Показати на панелі керування</value>
+  </data>
 
 </root>

@@ -36,5 +36,8 @@
   <data name="Currency" xml:space="preserve">
     <value>货币</value>
   </data>
+  <data name="Show in Dashboard" xml:space="preserve">
+    <value>显示在仪表板上</value>
+  </data>
 
 </root>

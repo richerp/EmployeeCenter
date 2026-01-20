@@ -24,8 +24,23 @@
   <data name="Is Public" xml:space="preserve">
     <value>是否公开</value>
   </data>
+  <data name="Name" xml:space="preserve">
+    <value>名称</value>
+  </data>
   <data name="Please upload a valid contract file." xml:space="preserve">
     <value>请上传有效的合同文件。</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0} 不能超过 {1} 个字符。</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0} 是必填项。</value>
+  </data>
+  <data name="The {0} must be at least {1} characters." xml:space="preserve">
+    <value>{0} 至少需要 {1} 个字符。</value>
   </data>
   <data name="User" xml:space="preserve">
     <value>用户</value>
@@ -33,19 +48,5 @@
   <data name="User (Optional)" xml:space="preserve">
     <value>用户（可选）</value>
   </data>
-  <data name="Name" xml:space="preserve">
-    <value>名称</value>
-  </data>
-  <data name="Status" xml:space="preserve">
-    <value>状态</value>
-  </data>
-  <data name="The {0} is required." xml:space="preserve">
-    <value>{0} 是必填项。</value>
-  </data>
-  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
-    <value>{0} 不能超过 {1} 个字符。</value>
-  </data>
-  <data name="The {0} must be at least {1} characters." xml:space="preserve">
-    <value>{0} 至少需要 {1} 个字符。</value>
-  </data>
+
 </root>

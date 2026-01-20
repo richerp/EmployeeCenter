@@ -39,4 +39,5 @@
   <data name="The {0} is not a valid phone number." xml:space="preserve">
     <value>{0} 不是有效的电话号码。</value>
   </data>
+
 </root>

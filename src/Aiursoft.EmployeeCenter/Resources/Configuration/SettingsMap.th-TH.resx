@@ -24,5 +24,11 @@
   <data name="Allow users to adjust their nickname in the profile management page." xml:space="preserve">
     <value>อนุญาตให้ผู้ใช้ปรับชื่อเล่นของตนเองได้ในหน้าจัดการโปรไฟล์</value>
   </data>
+  <data name="Annual Leave Per Year" xml:space="preserve">
+    <value>สิทธิ์ลาปีละ</value>
+  </data>
+  <data name="The number of paid annual leave days allocated to each employee every year." xml:space="preserve">
+    <value>จำนวนวันลาปีที่ได้รับการจัดสรรให้กับพนักงานแต่ละคนทุกปี</value>
+  </data>
 
 </root>

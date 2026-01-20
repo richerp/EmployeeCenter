@@ -27,6 +27,9 @@
   <data name="Accounts List" xml:space="preserve">
     <value>Lista de Contas</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Ações</value>
+  </data>
   <data name="Active" xml:space="preserve">
     <value>Ativo</value>
   </data>
@@ -42,6 +45,15 @@
   <data name="Currency" xml:space="preserve">
     <value>Moeda</value>
   </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Painel</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="Hidden" xml:space="preserve">
+    <value>Oculto</value>
+  </data>
   <data name="Ledger" xml:space="preserve">
     <value>Livro</value>
   </data>
@@ -53,6 +65,9 @@
   </data>
   <data name="Type" xml:space="preserve">
     <value>Tipo</value>
+  </data>
+  <data name="Visible" xml:space="preserve">
+    <value>Visível</value>
   </data>
 
 </root>

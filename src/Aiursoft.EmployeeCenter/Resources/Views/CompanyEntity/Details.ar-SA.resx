@@ -99,6 +99,9 @@
   <data name="Legal Rep / Director" xml:space="preserve">
     <value>الممثل القانوني / المدير</value>
   </data>
+  <data name="Legal Rep Legal Name" xml:space="preserve">
+    <value>الاسم القانوني للوكلاء</value>
+  </data>
   <data name="Logo" xml:space="preserve">
     <value>الشعار</value>
   </data>

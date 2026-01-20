@@ -60,11 +60,20 @@
   <data name="Phone Number" xml:space="preserve">
     <value>Numer telefonu</value>
   </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0} nie może przekraczać {1} znaków.</value>
+  </data>
   <data name="The {0} is not a valid email address." xml:space="preserve">
     <value>Pole {0} nie zawiera prawidłowego adresu e-mail.</value>
   </data>
+  <data name="The {0} is not a valid phone number." xml:space="preserve">
+    <value>Podany numer telefonu nie jest poprawny.</value>
+  </data>
   <data name="The {0} is required." xml:space="preserve">
     <value>Pole {0} jest wymagane.</value>
+  </data>
+  <data name="The {0} must be at least {1} characters." xml:space="preserve">
+    <value>Pole {0} musi mieć co najmniej {1} znaków.</value>
   </data>
   <data name="The {0} must be at least {2} and at max {1} characters long." xml:space="preserve">
     <value>Pole {0} musi mieć co najmniej {2} i co najwyżej {1} znaków.</value>

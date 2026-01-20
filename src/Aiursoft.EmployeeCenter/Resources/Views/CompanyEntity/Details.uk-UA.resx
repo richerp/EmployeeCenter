@@ -99,6 +99,9 @@
   <data name="Legal Rep / Director" xml:space="preserve">
     <value>Юридичний представник / Директор</value>
   </data>
+  <data name="Legal Rep Legal Name" xml:space="preserve">
+    <value>Юридична особа — повне ім&apos;я</value>
+  </data>
   <data name="Logo" xml:space="preserve">
     <value>Логотип</value>
   </data>

@@ -18,8 +18,23 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Assign To" xml:space="preserve">
+      <data name="Asset Id" xml:space="preserve">
+    <value>ID de l&apos;actif</value>
+  </data>
+  <data name="Asset Tag" xml:space="preserve">
+    <value>Étiquette d&apos;actif</value>
+  </data>
+  <data name="Assign To" xml:space="preserve">
     <value>Attribuer à</value>
+  </data>
+  <data name="Model Name" xml:space="preserve">
+    <value>Nom du modèle</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>Le {0} est requis.</value>
   </data>
 
 </root>

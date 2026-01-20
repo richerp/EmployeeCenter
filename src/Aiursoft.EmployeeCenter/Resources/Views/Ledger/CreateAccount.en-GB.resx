@@ -36,5 +36,8 @@
   <data name="Currency" xml:space="preserve">
     <value>Currency</value>
   </data>
+  <data name="Show in Dashboard" xml:space="preserve">
+    <value>Show in Dashboard</value>
+  </data>
 
 </root>

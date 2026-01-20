@@ -66,6 +66,9 @@
   <data name="Legal Representative / Director" xml:space="preserve">
     <value>Юридичний представник / Директор</value>
   </data>
+  <data name="Legal Representative Legal Name" xml:space="preserve">
+    <value>Юридична особа (повне ім&apos;я)</value>
+  </data>
   <data name="Office Address" xml:space="preserve">
     <value>Офісна адреса</value>
   </data>
@@ -95,6 +98,12 @@
   </data>
   <data name="SCR Location (HK)" xml:space="preserve">
     <value>SCR Location (HK)</value>
+  </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0} не може перевищувати {1} символів.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>Поле {0} є обов&apos;язковим.</value>
   </data>
   <data name="Zip Code" xml:space="preserve">
     <value>Поштовий індекс</value>

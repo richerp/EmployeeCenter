@@ -27,6 +27,9 @@
   <data name="Accounts List" xml:space="preserve">
     <value>Daftar Akun</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Tindakan</value>
+  </data>
   <data name="Active" xml:space="preserve">
     <value>Aktif</value>
   </data>
@@ -42,6 +45,15 @@
   <data name="Currency" xml:space="preserve">
     <value>Mata Uang</value>
   </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Dasbor</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Hidden" xml:space="preserve">
+    <value>Tersembunyi</value>
+  </data>
   <data name="Ledger" xml:space="preserve">
     <value>Buku Besar</value>
   </data>
@@ -53,6 +65,9 @@
   </data>
   <data name="Type" xml:space="preserve">
     <value>Jenis</value>
+  </data>
+  <data name="Visible" xml:space="preserve">
+    <value>Tampil</value>
   </data>
 
 </root>

@@ -33,5 +33,11 @@
   <data name="Phone Number" xml:space="preserve">
     <value>Telefonnummer</value>
   </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0} må ikke overstige {1} tegn.</value>
+  </data>
+  <data name="The {0} is not a valid phone number." xml:space="preserve">
+    <value>{0} er ikke et gyldigt telefonnummer.</value>
+  </data>
 
 </root>

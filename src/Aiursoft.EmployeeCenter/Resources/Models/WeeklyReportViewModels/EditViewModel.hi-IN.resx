@@ -21,5 +21,14 @@
       <data name="Content" xml:space="preserve">
     <value>सामग्री</value>
   </data>
+  <data name="Id" xml:space="preserve">
+    <value>आईडी</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0} आवश्यक है।</value>
+  </data>
+  <data name="Week Start Date" xml:space="preserve">
+    <value>सप्ताह की शुरुआत की तारीख</value>
+  </data>
 
 </root>

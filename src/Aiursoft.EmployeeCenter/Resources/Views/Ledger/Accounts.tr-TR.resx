@@ -27,6 +27,9 @@
   <data name="Accounts List" xml:space="preserve">
     <value>Hesap Listesi</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Eylemler</value>
+  </data>
   <data name="Active" xml:space="preserve">
     <value>Etkin</value>
   </data>
@@ -42,6 +45,15 @@
   <data name="Currency" xml:space="preserve">
     <value>Para Birimi</value>
   </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Gösterge Paneli</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Düzenle</value>
+  </data>
+  <data name="Hidden" xml:space="preserve">
+    <value>Gizli</value>
+  </data>
   <data name="Ledger" xml:space="preserve">
     <value>Defter</value>
   </data>
@@ -53,6 +65,9 @@
   </data>
   <data name="Type" xml:space="preserve">
     <value>Tür</value>
+  </data>
+  <data name="Visible" xml:space="preserve">
+    <value>Görünür</value>
   </data>
 
 </root>

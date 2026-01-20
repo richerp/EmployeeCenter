@@ -84,6 +84,12 @@
   <data name="Target Month" xml:space="preserve">
     <value>Target Month</value>
   </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>The {0} cannot exceed {1} characters.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>The {0} is required.</value>
+  </data>
   <data name="Total Amount" xml:space="preserve">
     <value>Total Amount</value>
   </data>

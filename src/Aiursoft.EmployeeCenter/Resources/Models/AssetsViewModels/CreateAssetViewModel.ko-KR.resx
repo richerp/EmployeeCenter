@@ -30,6 +30,9 @@
   <data name="Invoice File" xml:space="preserve">
     <value>송장 파일</value>
   </data>
+  <data name="Is Reimbursed" xml:space="preserve">
+    <value>지급 여부</value>
+  </data>
   <data name="Location" xml:space="preserve">
     <value>위치</value>
   </data>
@@ -44,6 +47,15 @@
   </data>
   <data name="Serial Number" xml:space="preserve">
     <value>시리얼 넘버</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>상태</value>
+  </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0}은 {1}자를 초과할 수 없습니다.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0}이(가) 필요합니다.</value>
   </data>
   <data name="Vendor" xml:space="preserve">
     <value>공급업체</value>

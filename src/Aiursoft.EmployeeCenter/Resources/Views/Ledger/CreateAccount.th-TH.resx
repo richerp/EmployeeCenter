@@ -36,5 +36,8 @@
   <data name="Currency" xml:space="preserve">
     <value>สกุลเงิน</value>
   </data>
+  <data name="Show in Dashboard" xml:space="preserve">
+    <value>แสดงในแดชบอร์ด</value>
+  </data>
 
 </root>

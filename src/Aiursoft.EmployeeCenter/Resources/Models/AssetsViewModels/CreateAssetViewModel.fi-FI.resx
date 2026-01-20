@@ -30,6 +30,9 @@
   <data name="Invoice File" xml:space="preserve">
     <value>Laskutusasiakirja</value>
   </data>
+  <data name="Is Reimbursed" xml:space="preserve">
+    <value>On korvattu</value>
+  </data>
   <data name="Location" xml:space="preserve">
     <value>Sijainti</value>
   </data>
@@ -44,6 +47,15 @@
   </data>
   <data name="Serial Number" xml:space="preserve">
     <value>Sarjanumero</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Tila</value>
+  </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0} ei saa ylittää {1} merkkiä.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0} on pakollinen.</value>
   </data>
   <data name="Vendor" xml:space="preserve">
     <value>Toimittaja</value>

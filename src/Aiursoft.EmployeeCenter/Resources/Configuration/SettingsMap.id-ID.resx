@@ -24,5 +24,11 @@
   <data name="Allow users to adjust their nickname in the profile management page." xml:space="preserve">
     <value>Izinkan pengguna menyesuaikan nama panggilan mereka di halaman manajemen profil.</value>
   </data>
+  <data name="Annual Leave Per Year" xml:space="preserve">
+    <value>Cuti Tahunan Per Tahun</value>
+  </data>
+  <data name="The number of paid annual leave days allocated to each employee every year." xml:space="preserve">
+    <value>Jumlah hari cuti tahunan berbayar yang dialokasikan kepada setiap karyawan setiap tahun.</value>
+  </data>
 
 </root>

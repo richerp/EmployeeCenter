@@ -66,6 +66,9 @@
   <data name="Legal Representative / Director" xml:space="preserve">
     <value>Reprezentant legal / Director</value>
   </data>
+  <data name="Legal Representative Legal Name" xml:space="preserve">
+    <value>Numele legal al reprezentantului legal</value>
+  </data>
   <data name="Office Address" xml:space="preserve">
     <value>Adresa biroului</value>
   </data>
@@ -95,6 +98,12 @@
   </data>
   <data name="SCR Location (HK)" xml:space="preserve">
     <value>Locația SCR (HK)</value>
+  </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0} nu poate depăși {1} caractere.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0} este obligatoriu.</value>
   </data>
   <data name="Zip Code" xml:space="preserve">
     <value>Cod poștal</value>

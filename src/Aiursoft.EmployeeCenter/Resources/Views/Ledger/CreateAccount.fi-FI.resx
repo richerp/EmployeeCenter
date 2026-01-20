@@ -36,5 +36,8 @@
   <data name="Currency" xml:space="preserve">
     <value>Valuutta</value>
   </data>
+  <data name="Show in Dashboard" xml:space="preserve">
+    <value>Näytä työkalupaneelissa</value>
+  </data>
 
 </root>

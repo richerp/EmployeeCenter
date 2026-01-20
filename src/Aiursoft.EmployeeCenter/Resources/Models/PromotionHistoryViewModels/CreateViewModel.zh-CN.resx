@@ -30,16 +30,17 @@
   <data name="Old Title" xml:space="preserve">
     <value>原职位</value>
   </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0} 不能超过 {1} 个字符。</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0} 是必填项。</value>
+  </data>
   <data name="User" xml:space="preserve">
     <value>用户</value>
   </data>
   <data name="User Display Name" xml:space="preserve">
     <value>用户显示名称</value>
   </data>
-  <data name="The {0} is required." xml:space="preserve">
-    <value>{0} 是必填项。</value>
-  </data>
-  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
-    <value>{0} 不能超过 {1} 个字符。</value>
-  </data>
+
 </root>

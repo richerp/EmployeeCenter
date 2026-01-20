@@ -27,6 +27,9 @@
   <data name="Description" xml:space="preserve">
     <value>विवरण</value>
   </data>
+  <data name="Edit" xml:space="preserve">
+    <value>संपादित करें</value>
+  </data>
   <data name="From" xml:space="preserve">
     <value>से</value>
   </data>

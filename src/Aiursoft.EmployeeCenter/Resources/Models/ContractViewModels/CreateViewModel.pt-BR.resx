@@ -24,8 +24,23 @@
   <data name="Is Public" xml:space="preserve">
     <value>É Público</value>
   </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nome</value>
+  </data>
   <data name="Please upload a valid contract file." xml:space="preserve">
     <value>Por favor, faça o upload de um arquivo de contrato válido.</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>O {0} não pode exceder {1} caracteres.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>O {0} é obrigatório.</value>
+  </data>
+  <data name="The {0} must be at least {1} characters." xml:space="preserve">
+    <value>O {0} deve ter pelo menos {1} caracteres.</value>
   </data>
   <data name="User" xml:space="preserve">
     <value>Usuário</value>

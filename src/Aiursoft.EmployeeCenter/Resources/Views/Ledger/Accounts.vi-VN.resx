@@ -27,6 +27,9 @@
   <data name="Accounts List" xml:space="preserve">
     <value>Danh sách tài khoản</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Hành động</value>
+  </data>
   <data name="Active" xml:space="preserve">
     <value>Đang hoạt động</value>
   </data>
@@ -42,6 +45,15 @@
   <data name="Currency" xml:space="preserve">
     <value>Tiền tệ</value>
   </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Bảng điều khiển</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Sửa</value>
+  </data>
+  <data name="Hidden" xml:space="preserve">
+    <value>Ẩn</value>
+  </data>
   <data name="Ledger" xml:space="preserve">
     <value>Sổ sách</value>
   </data>
@@ -53,6 +65,9 @@
   </data>
   <data name="Type" xml:space="preserve">
     <value>Loại</value>
+  </data>
+  <data name="Visible" xml:space="preserve">
+    <value>Hiện</value>
   </data>
 
 </root>

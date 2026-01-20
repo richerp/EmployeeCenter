@@ -36,5 +36,8 @@
   <data name="Currency" xml:space="preserve">
     <value>Valută</value>
   </data>
+  <data name="Show in Dashboard" xml:space="preserve">
+    <value>Afișare în Panou</value>
+  </data>
 
 </root>
