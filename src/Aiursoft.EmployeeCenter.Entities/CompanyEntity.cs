@@ -43,6 +43,9 @@ public class CompanyEntity
     public string? LegalRepresentative { get; set; }
 
     [MaxLength(100)]
+    public string? LegalRepresentativeLegalName { get; set; }
+
+    [MaxLength(100)]
     public string? CompanyType { get; set; }
 
     public DateTime? EstablishmentDate { get; set; }

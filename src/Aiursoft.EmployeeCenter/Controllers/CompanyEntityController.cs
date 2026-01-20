@@ -148,6 +148,7 @@ public class CompanyEntityController(
             OfficeAddress = model.OfficeAddress,
             ZipCode = model.ZipCode,
             LegalRepresentative = model.LegalRepresentative,
+            LegalRepresentativeLegalName = model.LegalRepresentativeLegalName,
             CompanyType = model.CompanyType,
             EstablishmentDate = model.EstablishmentDate,
             ExpiryDate = model.ExpiryDate,
@@ -203,6 +204,7 @@ public class CompanyEntityController(
             OfficeAddress = entity.OfficeAddress,
             ZipCode = entity.ZipCode,
             LegalRepresentative = entity.LegalRepresentative,
+            LegalRepresentativeLegalName = entity.LegalRepresentativeLegalName,
             CompanyType = entity.CompanyType,
             EstablishmentDate = entity.EstablishmentDate,
             ExpiryDate = entity.ExpiryDate,
@@ -285,6 +287,7 @@ public class CompanyEntityController(
         entity.OfficeAddress = model.OfficeAddress;
         entity.ZipCode = model.ZipCode;
         entity.LegalRepresentative = model.LegalRepresentative;
+        entity.LegalRepresentativeLegalName = model.LegalRepresentativeLegalName;
         entity.CompanyType = model.CompanyType;
         entity.EstablishmentDate = model.EstablishmentDate;
         entity.ExpiryDate = model.ExpiryDate;

@@ -44,6 +44,10 @@ public class CreateViewModel : UiStackLayoutViewModel
     [MaxLength(100)]
     public string? LegalRepresentative { get; set; }
 
+    [Display(Name = "Legal Representative Legal Name")]
+    [MaxLength(100)]
+    public string? LegalRepresentativeLegalName { get; set; }
+
     [Display(Name = "Company Type")]
     [MaxLength(100)]
     public string? CompanyType { get; set; }

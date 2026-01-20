@@ -12,6 +12,7 @@
     summaryBuilder.AppendLine($"{Localizer["Company Name"]}: {Model.Entity.CompanyName}");
     summaryBuilder.AppendLine($"{Localizer["Entity Code"]}: {Model.Entity.EntityCode}");
     summaryBuilder.AppendLine($"{Localizer["Legal Rep / Director"]}: {Model.Entity.LegalRepresentative}");
+    summaryBuilder.AppendLine($"{Localizer["Legal Rep Legal Name"]}: {Model.Entity.LegalRepresentativeLegalName}");
     summaryBuilder.AppendLine($"{Localizer["Address"]}: {Model.Entity.RegisteredAddress}");
     summaryBuilder.AppendLine($"{Localizer["Bank Info"]}: {Model.Entity.BankName}");
     summaryBuilder.AppendLine($"{Localizer["Account"]}: {Model.Entity.BankAccount}");
@@ -27,6 +28,7 @@
     fullBuilder.AppendLine($"{Localizer["Office Address"]}: {Model.Entity.OfficeAddress}");
     fullBuilder.AppendLine($"{Localizer["Zip Code"]}: {Model.Entity.ZipCode}");
     fullBuilder.AppendLine($"{Localizer["Legal Representative"]}: {Model.Entity.LegalRepresentative}");
+    fullBuilder.AppendLine($"{Localizer["Legal Representative Legal Name"]}: {Model.Entity.LegalRepresentativeLegalName}");
     fullBuilder.AppendLine($"{Localizer["Company Type"]}: {Model.Entity.CompanyType}");
     if (Model.Entity.EstablishmentDate.HasValue)
     {
@@ -94,6 +96,12 @@
 
                         <dt class="col-sm-4">@Localizer["Legal Rep / Director"]</dt>
                         <dd class="col-sm-8">@Model.Entity.LegalRepresentative</dd>
+
+                        @if (!string.IsNullOrEmpty(Model.Entity.LegalRepresentativeLegalName))
+                        {
+                            <dt class="col-sm-4">@Localizer["Legal Rep Legal Name"]</dt>
+                            <dd class="col-sm-8">@Model.Entity.LegalRepresentativeLegalName</dd>
+                        }
 
                         <dt class="col-sm-4">@Localizer["Address"]</dt>
                         <dd class="col-sm-8">

@@ -64,7 +64,10 @@
     <value>有效日期 (營業執照 / BR)</value>
   </data>
   <data name="Legal Representative / Director" xml:space="preserve">
-    <value>法定代理人 / 董事</value>
+    <value>法定代表人 / 董事</value>
+  </data>
+  <data name="Legal Representative Legal Name" xml:space="preserve">
+    <value>法定代表人法律姓名</value>
   </data>
   <data name="Office Address" xml:space="preserve">
     <value>辦公室地址</value>
