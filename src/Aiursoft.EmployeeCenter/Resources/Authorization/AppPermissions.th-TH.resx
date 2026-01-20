@@ -87,6 +87,9 @@
   <data name="Allows printing employment and income certificates for any employee." xml:space="preserve">
     <value>อนุญาตให้พิมพ์หนังสือรับรองการจ้างงานและรายได้สำหรับพนักงานทุกคน</value>
   </data>
+  <data name="Allows printing employment and income certificates for oneself." xml:space="preserve">
+    <value>อนุญาตให้พิมพ์หนังสือรับรองการจ้างงานและรายได้สำหรับตนเอง</value>
+  </data>
   <data name="Allows the permanent deletion of roles." xml:space="preserve">
     <value>อนุญาตให้ลบบทบาทออกอย่างถาวร</value>
   </data>
@@ -221,6 +224,9 @@
   </data>
   <data name="Print Certificates" xml:space="preserve">
     <value>พิมพ์ใบรับรอง</value>
+  </data>
+  <data name="Print Self Certificates" xml:space="preserve">
+    <value>พิมพ์ใบรับรองตัวเอง</value>
   </data>
   <data name="Read Permissions" xml:space="preserve">
     <value>ดูสิทธิ์การเข้าถึง</value>

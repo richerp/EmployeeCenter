@@ -87,6 +87,9 @@
   <data name="Allows printing employment and income certificates for any employee." xml:space="preserve">
     <value>Her çalışan için iş ve gelir belgelerinin yazdırılmasını sağlar.</value>
   </data>
+  <data name="Allows printing employment and income certificates for oneself." xml:space="preserve">
+    <value>Kendisi için istihdam ve gelir belgelerinin yazdırılmasını sağlar.</value>
+  </data>
   <data name="Allows the permanent deletion of roles." xml:space="preserve">
     <value>Rollerin kalıcı olarak silinmesine izin verir.</value>
   </data>
@@ -221,6 +224,9 @@
   </data>
   <data name="Print Certificates" xml:space="preserve">
     <value>Belgeleri Yazdır</value>
+  </data>
+  <data name="Print Self Certificates" xml:space="preserve">
+    <value>Kendi Belgelerimi Yazdır</value>
   </data>
   <data name="Read Permissions" xml:space="preserve">
     <value>İzinleri Görüntüle</value>
