@@ -16,4 +16,5 @@ public class DashboardViewModel : UiStackLayoutViewModel
     public List<Transaction> RecentTransactions { get; set; } = new();
     public decimal MonthlyBurnRate { get; set; }
     public decimal? RunwayMonths { get; set; }
+    public FinanceAccount? FilteredAccount { get; set; }
 }
