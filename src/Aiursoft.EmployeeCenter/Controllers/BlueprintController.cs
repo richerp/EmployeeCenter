@@ -2,6 +2,7 @@ using Aiursoft.EmployeeCenter.Authorization;
 using Aiursoft.EmployeeCenter.Entities;
 using Aiursoft.EmployeeCenter.Models.BlueprintViewModels;
 using Aiursoft.EmployeeCenter.Services;
+// ReSharper disable once RedundantUsingDirective
 using Aiursoft.UiStack.Navigation;
 using Aiursoft.WebTools.Attributes;
 using Microsoft.AspNetCore.Authorization;
@@ -71,14 +72,18 @@ public class BlueprintController(
         }
 
         var user = await userManager.GetUserAsync(User);
-        var html = MarkdownService.RenderMarkdown(model.InputMarkdown).Value;
+        if (user == null)
+        {
+            return Unauthorized();
+        }
+        var html = MarkdownService.RenderMarkdown(model.InputMarkdown).Value ?? string.Empty;
 
         var blueprint = new Blueprint
         {
             Title = model.Title,
             Content = model.InputMarkdown,
             RenderedHtml = html,
-            AuthorId = user!.Id,
+            AuthorId = user.Id,
             CreationTime = DateTime.UtcNow,
             UpdateTime = DateTime.UtcNow
         };
@@ -122,7 +127,7 @@ public class BlueprintController(
 
         blueprint.Title = model.Title;
         blueprint.Content = model.InputMarkdown;
-        blueprint.RenderedHtml = MarkdownService.RenderMarkdown(model.InputMarkdown).Value;
+        blueprint.RenderedHtml = MarkdownService.RenderMarkdown(model.InputMarkdown).Value ?? string.Empty;
         blueprint.UpdateTime = DateTime.UtcNow;
 
         await dbContext.SaveChangesAsync();
