@@ -107,6 +107,10 @@ public class ViewModelArgsInjector(
         _ = localizer["Manage Feedback"];
     
         _ = localizer["Manage Ledger"];
+    
+        _ = localizer["Blueprints"];
+        _ = localizer["Manage Blueprints"];
+        _ = localizer["View Blueprints"];
     }
 
     public void InjectSimple(

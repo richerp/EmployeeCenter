@@ -69,6 +69,9 @@
   <data name="Basic Information" xml:space="preserve">
     <value>ข้อมูลพื้นฐาน</value>
   </data>
+  <data name="Blueprints" xml:space="preserve">
+    <value>แบบร่าง</value>
+  </data>
   <data name="Business License" xml:space="preserve">
     <value>ใบอนุญาตประกอบธุรกิจ</value>
   </data>
@@ -258,6 +261,9 @@
   <data name="Manage Assets" xml:space="preserve">
     <value>จัดการสินทรัพย์</value>
   </data>
+  <data name="Manage Blueprints" xml:space="preserve">
+    <value>จัดการบลูพรินต์</value>
+  </data>
   <data name="Manage Company Entities" xml:space="preserve">
     <value>จัดการหน่วยงานบริษัท</value>
   </data>
@@ -419,6 +425,9 @@
   </data>
   <data name="Vendors" xml:space="preserve">
     <value>ผู้จัดจำหน่าย</value>
+  </data>
+  <data name="View Blueprints" xml:space="preserve">
+    <value>ดูบลูพรินต์</value>
   </data>
   <data name="View Contracts" xml:space="preserve">
     <value>ดูสัญญา</value>

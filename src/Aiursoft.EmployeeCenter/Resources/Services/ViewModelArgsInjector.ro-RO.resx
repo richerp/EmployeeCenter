@@ -66,6 +66,9 @@
   <data name="Basic Information" xml:space="preserve">
     <value>Informații de bază</value>
   </data>
+  <data name="Blueprints" xml:space="preserve">
+    <value>Planuri</value>
+  </data>
   <data name="Business License" xml:space="preserve">
     <value>Permisiune de afaceri</value>
   </data>
@@ -255,6 +258,9 @@
   <data name="Manage Assets" xml:space="preserve">
     <value>Gestionare active</value>
   </data>
+  <data name="Manage Blueprints" xml:space="preserve">
+    <value>Gestionare planuri</value>
+  </data>
   <data name="Manage Company Entities" xml:space="preserve">
     <value>Gestionare entități companie</value>
   </data>
@@ -416,6 +422,9 @@
   </data>
   <data name="Vendors" xml:space="preserve">
     <value>Furnizori</value>
+  </data>
+  <data name="View Blueprints" xml:space="preserve">
+    <value>Vizualizează planurile</value>
   </data>
   <data name="View Contracts" xml:space="preserve">
     <value>Vizualizează Contracte</value>

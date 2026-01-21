@@ -66,6 +66,9 @@
   <data name="Basic Information" xml:space="preserve">
     <value>Basisinformatie</value>
   </data>
+  <data name="Blueprints" xml:space="preserve">
+    <value>Blauwdrukken</value>
+  </data>
   <data name="Business License" xml:space="preserve">
     <value>Handelsregister</value>
   </data>
@@ -255,6 +258,9 @@
   <data name="Manage Assets" xml:space="preserve">
     <value>Assets beheren</value>
   </data>
+  <data name="Manage Blueprints" xml:space="preserve">
+    <value>Blauwdrukken beheren</value>
+  </data>
   <data name="Manage Company Entities" xml:space="preserve">
     <value>Bedrijfseenheden beheren</value>
   </data>
@@ -416,6 +422,9 @@
   </data>
   <data name="Vendors" xml:space="preserve">
     <value>Leveranciers</value>
+  </data>
+  <data name="View Blueprints" xml:space="preserve">
+    <value>Blueprints bekijken</value>
   </data>
   <data name="View Contracts" xml:space="preserve">
     <value>Contracten weergeven</value>

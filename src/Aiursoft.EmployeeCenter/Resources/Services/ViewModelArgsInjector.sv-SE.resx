@@ -66,6 +66,9 @@
   <data name="Basic Information" xml:space="preserve">
     <value>Grundläggande information</value>
   </data>
+  <data name="Blueprints" xml:space="preserve">
+    <value>Planer</value>
+  </data>
   <data name="Business License" xml:space="preserve">
     <value>Företagslicens</value>
   </data>
@@ -255,6 +258,9 @@
   <data name="Manage Assets" xml:space="preserve">
     <value>Hantera tillgångar</value>
   </data>
+  <data name="Manage Blueprints" xml:space="preserve">
+    <value>Hantera mallar</value>
+  </data>
   <data name="Manage Company Entities" xml:space="preserve">
     <value>Hantera företagsentiteter</value>
   </data>
@@ -416,6 +422,9 @@
   </data>
   <data name="Vendors" xml:space="preserve">
     <value>Leverantörer</value>
+  </data>
+  <data name="View Blueprints" xml:space="preserve">
+    <value>Visa ritningar</value>
   </data>
   <data name="View Contracts" xml:space="preserve">
     <value>Visa avtal</value>

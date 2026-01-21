@@ -69,6 +69,9 @@
   <data name="Basic Information" xml:space="preserve">
     <value>基本情報</value>
   </data>
+  <data name="Blueprints" xml:space="preserve">
+    <value>ブループリント</value>
+  </data>
   <data name="Business License" xml:space="preserve">
     <value>事業許可証</value>
   </data>
@@ -258,6 +261,9 @@
   <data name="Manage Assets" xml:space="preserve">
     <value>資産の管理</value>
   </data>
+  <data name="Manage Blueprints" xml:space="preserve">
+    <value>ブループリントの管理</value>
+  </data>
   <data name="Manage Company Entities" xml:space="preserve">
     <value>会社エンティティの管理</value>
   </data>
@@ -419,6 +425,9 @@
   </data>
   <data name="Vendors" xml:space="preserve">
     <value>ベンダー</value>
+  </data>
+  <data name="View Blueprints" xml:space="preserve">
+    <value>青写真を表示</value>
   </data>
   <data name="View Contracts" xml:space="preserve">
     <value>契約を表示</value>

@@ -66,6 +66,9 @@
   <data name="Basic Information" xml:space="preserve">
     <value>मूल जानकारी</value>
   </data>
+  <data name="Blueprints" xml:space="preserve">
+    <value>ब्लूप्रिंट्स</value>
+  </data>
   <data name="Business License" xml:space="preserve">
     <value>व्यापार लाइसेंस</value>
   </data>
@@ -255,6 +258,9 @@
   <data name="Manage Assets" xml:space="preserve">
     <value>संपत्ति प्रबंधित करें</value>
   </data>
+  <data name="Manage Blueprints" xml:space="preserve">
+    <value>ब्लूप्रिंट्स प्रबंधित करें</value>
+  </data>
   <data name="Manage Company Entities" xml:space="preserve">
     <value>कंपनी एंटिटीज का प्रबंधन करें</value>
   </data>
@@ -416,6 +422,9 @@
   </data>
   <data name="Vendors" xml:space="preserve">
     <value>आपूर्तिकर्ता</value>
+  </data>
+  <data name="View Blueprints" xml:space="preserve">
+    <value>ब्लूप्रिंट्स देखें</value>
   </data>
   <data name="View Contracts" xml:space="preserve">
     <value>कॉन्ट्रैक्ट्स देखें</value>

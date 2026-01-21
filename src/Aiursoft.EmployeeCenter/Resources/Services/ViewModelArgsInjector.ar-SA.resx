@@ -66,6 +66,9 @@
   <data name="Basic Information" xml:space="preserve">
     <value>المعلومات الأساسية</value>
   </data>
+  <data name="Blueprints" xml:space="preserve">
+    <value>مخططات</value>
+  </data>
   <data name="Business License" xml:space="preserve">
     <value>رخصة العمل</value>
   </data>
@@ -255,6 +258,9 @@
   <data name="Manage Assets" xml:space="preserve">
     <value>إدارة الأصول</value>
   </data>
+  <data name="Manage Blueprints" xml:space="preserve">
+    <value>إدارة النماذج</value>
+  </data>
   <data name="Manage Company Entities" xml:space="preserve">
     <value>إدارة الكيانات التابعة للشركة</value>
   </data>
@@ -416,6 +422,9 @@
   </data>
   <data name="Vendors" xml:space="preserve">
     <value>الموردون</value>
+  </data>
+  <data name="View Blueprints" xml:space="preserve">
+    <value>عرض المخططات</value>
   </data>
   <data name="View Contracts" xml:space="preserve">
     <value>عرض العقود</value>

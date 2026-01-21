@@ -54,6 +54,9 @@
   <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
     <value>Herhangi bir kullanıcı adına haftalık raporların oluşturulmasına, düzenlenmesine ve silinmesine izin verir.</value>
   </data>
+  <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
+    <value>Bölümler oluşturma, güncelleme ve silme izni verir. Her kullanıcı varsayılan olarak bölümleri görüntüleyebilir.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Şirket varlık bilgilerinin oluşturulmasına, güncellenmesine ve silinmesine izin verir.</value>
   </data>
@@ -197,6 +200,9 @@
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Varlıkları Yönet</value>
+  </data>
+  <data name="Manage Blueprints" xml:space="preserve">
+    <value>Mimariyi Yönet</value>
   </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Şirket Varlıkları Yönet</value>

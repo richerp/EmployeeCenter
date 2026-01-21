@@ -69,6 +69,9 @@
   <data name="Basic Information" xml:space="preserve">
     <value>기본 정보</value>
   </data>
+  <data name="Blueprints" xml:space="preserve">
+    <value>설계도</value>
+  </data>
   <data name="Business License" xml:space="preserve">
     <value>사업자 등록증</value>
   </data>
@@ -258,6 +261,9 @@
   <data name="Manage Assets" xml:space="preserve">
     <value>자산 관리</value>
   </data>
+  <data name="Manage Blueprints" xml:space="preserve">
+    <value>블루프린트 관리</value>
+  </data>
   <data name="Manage Company Entities" xml:space="preserve">
     <value>회사 엔티티 관리</value>
   </data>
@@ -419,6 +425,9 @@
   </data>
   <data name="Vendors" xml:space="preserve">
     <value>공급업체</value>
+  </data>
+  <data name="View Blueprints" xml:space="preserve">
+    <value>블루프린트 보기</value>
   </data>
   <data name="View Contracts" xml:space="preserve">
     <value>계약 보기</value>

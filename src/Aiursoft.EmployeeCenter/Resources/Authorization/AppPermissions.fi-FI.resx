@@ -54,6 +54,9 @@
   <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
     <value>Sallii viikonraporttien luomisen, muokkaamisen ja poistamisen muiden käyttäjien puolesta.</value>
   </data>
+  <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
+    <value>Sallii luoda, päivittää ja poistaa luonnoksia. Kaikki käyttäjät voivat oletuksena tarkastella luonnoksia.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Sallii yritysentiteettitietojen luomisen, päivittämisen ja poiston.</value>
   </data>
@@ -197,6 +200,9 @@
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Hallinnoi varoja</value>
+  </data>
+  <data name="Manage Blueprints" xml:space="preserve">
+    <value>Hallinnoi luonnoksia</value>
   </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Hallinnoi yrityksen yksiköitä</value>

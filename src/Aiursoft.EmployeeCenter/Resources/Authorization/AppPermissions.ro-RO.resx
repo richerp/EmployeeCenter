@@ -54,6 +54,9 @@
   <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
     <value>Permite crearea, editarea și ștergerea rapoartelor săptămânale în numele oricărui alt utilizator.</value>
   </data>
+  <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
+    <value>Permite crearea, actualizarea și ștergerea de planuri. Toți utilizatorii pot vizualiza planurile implicit.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Permite crearea, actualizarea și ștergerea informațiilor despre entitățile companiei.</value>
   </data>
@@ -197,6 +200,9 @@
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Gestionează Activele</value>
+  </data>
+  <data name="Manage Blueprints" xml:space="preserve">
+    <value>Gestionează modelele</value>
   </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Gestionează entitățile companiei</value>

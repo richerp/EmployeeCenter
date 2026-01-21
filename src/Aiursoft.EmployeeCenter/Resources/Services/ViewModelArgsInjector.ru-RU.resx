@@ -66,6 +66,9 @@
   <data name="Basic Information" xml:space="preserve">
     <value>Основная информация</value>
   </data>
+  <data name="Blueprints" xml:space="preserve">
+    <value>Чертежи</value>
+  </data>
   <data name="Business License" xml:space="preserve">
     <value>Свидетельство о регистрации бизнеса</value>
   </data>
@@ -255,6 +258,9 @@
   <data name="Manage Assets" xml:space="preserve">
     <value>Управление активами</value>
   </data>
+  <data name="Manage Blueprints" xml:space="preserve">
+    <value>Управление чертежами</value>
+  </data>
   <data name="Manage Company Entities" xml:space="preserve">
     <value>Управление корпоративными сущностями</value>
   </data>
@@ -416,6 +422,9 @@
   </data>
   <data name="Vendors" xml:space="preserve">
     <value>Поставщики</value>
+  </data>
+  <data name="View Blueprints" xml:space="preserve">
+    <value>Просмотр чертежей</value>
   </data>
   <data name="View Contracts" xml:space="preserve">
     <value>Просмотреть контракты</value>

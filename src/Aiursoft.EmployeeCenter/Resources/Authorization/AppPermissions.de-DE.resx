@@ -54,6 +54,9 @@
   <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
     <value>Ermöglicht das Erstellen, Bearbeiten und Löschen von Wochenberichten im Namen beliebiger anderer Benutzer.</value>
   </data>
+  <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
+    <value>Erlaubt das Erstellen, Aktualisieren und Löschen von Bauplänen. Jeder Benutzer kann Baupläne standardmäßig anzeigen.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Ermöglicht das Erstellen, Aktualisieren und Löschen von Unternehmens-Entitätsinformationen.</value>
   </data>
@@ -197,6 +200,9 @@
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Assets verwalten</value>
+  </data>
+  <data name="Manage Blueprints" xml:space="preserve">
+    <value>Blueprints verwalten</value>
   </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Unternehmenseinheiten verwalten</value>
