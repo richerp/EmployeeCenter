@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Amount" xml:space="preserve">
+      <data name="Account Transactions" xml:space="preserve">
+    <value>Account Transactions</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
     <value>Amount</value>
   </data>
   <data name="Dashboard" xml:space="preserve">
@@ -38,6 +41,9 @@
   </data>
   <data name="Health Metrics" xml:space="preserve">
     <value>Health Metrics</value>
+  </data>
+  <data name="Ledger Dashboard" xml:space="preserve">
+    <value>Ledger Dashboard</value>
   </data>
   <data name="Manage Accounts" xml:space="preserve">
     <value>Manage Accounts</value>
@@ -62,6 +68,9 @@
   </data>
   <data name="To" xml:space="preserve">
     <value>To</value>
+  </data>
+  <data name="Total Assets" xml:space="preserve">
+    <value>Total Assets</value>
   </data>
   <data name="View All" xml:space="preserve">
     <value>View All</value>

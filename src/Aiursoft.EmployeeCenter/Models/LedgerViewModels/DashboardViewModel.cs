@@ -17,4 +17,5 @@ public class DashboardViewModel : UiStackLayoutViewModel
     public decimal MonthlyBurnRate { get; set; }
     public decimal? RunwayMonths { get; set; }
     public FinanceAccount? FilteredAccount { get; set; }
+    public decimal FilteredAccountBalance { get; set; }
 }
