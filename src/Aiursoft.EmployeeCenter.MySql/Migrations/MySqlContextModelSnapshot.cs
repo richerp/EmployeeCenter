@@ -10,8 +10,6 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Aiursoft.EmployeeCenter.MySql.Migrations
 {
-    // THIS FILE IS AUTO GENERATED AND MAINTAINED BY ENTITY FRAMEWORK!
-    // NEVER EDIT THIS FILE MANUALLY!!!
     [DbContext(typeof(MySqlContext))]
     partial class MySqlContextModelSnapshot : ModelSnapshot
     {
@@ -253,6 +251,44 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("BankCardChangeLogs");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Blueprint", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("AuthorId")
+                        .IsRequired()
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("CreationTime")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("RenderedHtml")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("varchar(200)");
+
+                    b.Property<DateTime>("UpdateTime")
+                        .HasColumnType("datetime(6)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AuthorId");
+
+                    b.ToTable("Blueprints");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.CompanyEntity", b =>
@@ -1604,6 +1640,17 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.Navigation("ChangedByUser");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Blueprint", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "Author")
+                        .WithMany()
+                        .HasForeignKey("AuthorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Author");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.CompanyEntityLog", b =>

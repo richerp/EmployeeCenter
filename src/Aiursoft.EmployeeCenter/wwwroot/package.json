@@ -6,6 +6,10 @@
   "license": "MIT",
   "dependencies": {
     "@aiursoft/uistack": "^1.0.8",
-    "dropify": "^0.2.2"
+    "dropify": "^0.2.2",
+    "monaco-editor": "^0.52.0",
+    "mermaid": "^11.4.1",
+    "highlight.js": "^11.11.1",
+    "mathjax": "^3.2.2"
   }
 }

@@ -1,0 +1,68 @@
+@model Aiursoft.EmployeeCenter.Models.BlueprintViewModels.IndexViewModel
+@inject Aiursoft.EmployeeCenter.Services.FileStorage.StorageService StorageService
+@{
+    ViewData["Title"] = Localizer["View Blueprints"];
+}
+
+<div class="row mb-2 mb-xl-3">
+    <div class="col-auto d-none d-sm-block">
+        <h3>@Localizer["Blueprints"]</h3>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title mb-0">@Localizer["All Blueprints"]</h5>
+    </div>
+    @if (!Model.Blueprints.Any())
+    {
+        <div class="card-body">
+            <div class="alert alert-info mb-0" role="alert">
+                <div class="alert-message">
+                    @Localizer["No blueprints found."]
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-hover mb-0">
+                <thead>
+                <tr>
+                    <th>@Localizer["Title"]</th>
+                    <th>@Localizer["Author"]</th>
+                    <th>@Localizer["Creation Time"]</th>
+                    <th>@Localizer["Last Updated"]</th>
+                    <th class="text-end">@Localizer["Actions"]</th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var doc in Model.Blueprints)
+                {
+                    <tr>
+                        <td>
+                            @doc.Title
+                        </td>
+                        <td>
+                            <img src="@StorageService.RelativePathToInternetUrl(doc.Author?.AvatarRelativePath ?? "images/default-avatar.jpg")?w=30&square=true" class="avatar img-fluid rounded me-1" alt="@doc.Author?.DisplayName" />
+                            @doc.Author?.DisplayName
+                        </td>
+                        <td>
+                            <label class="text-muted" data-utc-time="@doc.CreationTime.ToHtmlDateTime()"></label>
+                        </td>
+                        <td>
+                             <label class="text-muted" data-utc-time="@doc.UpdateTime.ToHtmlDateTime()"></label>
+                        </td>
+                        <td class="text-end">
+                            <a asp-action="View" asp-route-id="@doc.Id" class="btn btn-sm btn-outline-primary">
+                                <i class="align-middle" data-lucide="eye"></i> @Localizer["View"]
+                            </a>
+                        </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>

@@ -126,7 +126,10 @@ public class AppPermissions
                 localizer["Allows viewing the background job dashboard and managing jobs."]),
             new(AppPermissionNames.CanManageGlobalSettings,
                 localizer["Manage Global Settings"],
-                localizer["Allows viewing and modifying global application settings."])
+                localizer["Allows viewing and modifying global application settings."]),
+            new(AppPermissionNames.CanManageBlueprints,
+                localizer["Manage Blueprints"],
+                localizer["Allows creating, updating, and deleting blueprints. Every user can view blueprints by default."])
         ];
         return allPermission;
     }
