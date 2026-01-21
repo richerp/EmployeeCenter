@@ -1,3 +1,4 @@
+using Aiursoft.EmployeeCenter.Services.FileStorage;
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
@@ -55,6 +56,12 @@ public class ContractTests
         return match.Groups[1].Value;
     }
 
+    private T GetService<T>() where T : notnull
+    {
+        if (_server == null) throw new InvalidOperationException("Server is not started.");
+        return _server.Services.GetRequiredService<T>();
+    }
+
     [TestMethod]
     public async Task ManageContractTest()
     {
@@ -80,7 +87,9 @@ public class ContractTests
             fileContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/pdf");
             uploadContent.Add(fileContent, "file", "policy.pdf");
 
-            var uploadResponse = await _http.PostAsync("/upload/contract", uploadContent);
+            var storage = GetService<StorageService>();
+            var uploadUrl = storage.GetUploadUrl("contract", isVault: false);
+            var uploadResponse = await _http.PostAsync(uploadUrl, uploadContent);
             uploadResponse.EnsureSuccessStatusCode();
             var uploadResult = await uploadResponse.Content.ReadAsStringAsync();
             // Extract the Path from JSON response: {"Path":"contract/2026/01/15/policy.pdf","InternetPath":"..."}
@@ -112,7 +121,9 @@ public class ContractTests
             fileContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/pdf");
             uploadContent.Add(fileContent, "file", "secret.pdf");
 
-            var uploadResponse = await _http.PostAsync("/upload/contract", uploadContent);
+            var storage = GetService<StorageService>();
+            var uploadUrl = storage.GetUploadUrl("contract", isVault: false);
+            var uploadResponse = await _http.PostAsync(uploadUrl, uploadContent);
             uploadResponse.EnsureSuccessStatusCode();
             var uploadResult = await uploadResponse.Content.ReadAsStringAsync();
             var pathMatch = Regex.Match(uploadResult, @"""Path"":""([^""]+)""");
