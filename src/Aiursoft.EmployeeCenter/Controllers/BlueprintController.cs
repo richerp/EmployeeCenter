@@ -2,9 +2,7 @@ using Aiursoft.EmployeeCenter.Authorization;
 using Aiursoft.EmployeeCenter.Entities;
 using Aiursoft.EmployeeCenter.Models.BlueprintViewModels;
 using Aiursoft.EmployeeCenter.Services;
-// ReSharper disable once RedundantUsingDirective
 using Aiursoft.UiStack.Navigation;
-using Aiursoft.WebTools.Attributes;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
