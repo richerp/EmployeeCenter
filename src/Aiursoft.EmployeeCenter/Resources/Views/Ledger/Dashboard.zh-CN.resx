@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Amount" xml:space="preserve">
+      <data name="Account Transactions" xml:space="preserve">
+    <value>账户交易</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
     <value>金额</value>
   </data>
   <data name="Dashboard" xml:space="preserve">
@@ -38,6 +41,9 @@
   </data>
   <data name="Health Metrics" xml:space="preserve">
     <value>健康指标</value>
+  </data>
+  <data name="Ledger Dashboard" xml:space="preserve">
+    <value>账本仪表板</value>
   </data>
   <data name="Manage Accounts" xml:space="preserve">
     <value>管理账户</value>
@@ -62,6 +68,9 @@
   </data>
   <data name="To" xml:space="preserve">
     <value>到</value>
+  </data>
+  <data name="Total Assets" xml:space="preserve">
+    <value>总资产</value>
   </data>
   <data name="View All" xml:space="preserve">
     <value>查看全部</value>

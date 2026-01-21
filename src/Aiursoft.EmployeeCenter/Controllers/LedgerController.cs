@@ -140,7 +140,8 @@ public class LedgerController(
             RecentTransactions = recentTransactions,
             MonthlyBurnRate = totalBurn,
             RunwayMonths = totalBurn > 0 ? totalAssets / totalBurn : null,
-            FilteredAccount = filteredAccount
+            FilteredAccount = filteredAccount,
+            FilteredAccountBalance = totalAssets
         };
 
         return this.StackView(model);
