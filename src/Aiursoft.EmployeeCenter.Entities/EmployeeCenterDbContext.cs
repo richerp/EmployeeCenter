@@ -34,6 +34,7 @@ public abstract class EmployeeCenterDbContext(DbContextOptions options) : Identi
     public DbSet<PromotionHistory> PromotionHistories => Set<PromotionHistory>();
     public DbSet<WeeklyReport> WeeklyReports => Set<WeeklyReport>();
     public DbSet<Notepad> Notepads => Set<Notepad>();
+    public DbSet<Blueprint> Blueprints => Set<Blueprint>();
 
     public DbSet<SignalQuestion> SignalQuestions => Set<SignalQuestion>();
     public DbSet<SignalQuestionnaire> SignalQuestionnaires => Set<SignalQuestionnaire>();
