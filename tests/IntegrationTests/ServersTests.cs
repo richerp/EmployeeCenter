@@ -1,5 +1,3 @@
-using System.Net;
-
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
 [TestClass]
@@ -12,7 +10,7 @@ public class ServersTests : TestBase
         var response = await Http.GetAsync("/Servers/Index");
         response.EnsureSuccessStatusCode();
         var content = await response.Content.ReadAsStringAsync();
-        Assert.Contains("Servers", content);
+        StringAssert.Contains(content, "Servers");
     }
 
     [TestMethod]
