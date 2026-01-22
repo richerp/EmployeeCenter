@@ -1,10 +1,3 @@
-using Aiursoft.EmployeeCenter.Authorization;
-using Aiursoft.EmployeeCenter.Entities;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Net;
-
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
 [TestClass]
@@ -17,7 +10,7 @@ public class ServiceTests : TestBase
         var response = await Http.GetAsync("/Services/Index");
         response.EnsureSuccessStatusCode();
         var content = await response.Content.ReadAsStringAsync();
-        Assert.IsTrue(content.Contains("Services"));
+        Assert.Contains("Services", content);
     }
 
     [TestMethod]
