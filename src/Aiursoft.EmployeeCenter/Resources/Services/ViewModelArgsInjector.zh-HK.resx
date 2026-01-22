@@ -69,6 +69,9 @@
   <data name="Basic Information" xml:space="preserve">
     <value>基本資料</value>
   </data>
+  <data name="Blueprints" xml:space="preserve">
+    <value>藍圖</value>
+  </data>
   <data name="Business License" xml:space="preserve">
     <value>商業登記證</value>
   </data>
@@ -258,6 +261,9 @@
   <data name="Manage Assets" xml:space="preserve">
     <value>管理資產</value>
   </data>
+  <data name="Manage Blueprints" xml:space="preserve">
+    <value>管理藍圖</value>
+  </data>
   <data name="Manage Company Entities" xml:space="preserve">
     <value>管理公司實體</value>
   </data>
@@ -419,6 +425,9 @@
   </data>
   <data name="Vendors" xml:space="preserve">
     <value>供應商</value>
+  </data>
+  <data name="View Blueprints" xml:space="preserve">
+    <value>檢視藍圖</value>
   </data>
   <data name="View Contracts" xml:space="preserve">
     <value>檢視合約</value>

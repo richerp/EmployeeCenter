@@ -54,6 +54,9 @@
   <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
     <value>Tillåter att skapa, redigera och ta bort veckorapporter i egna skick för valfri annan användare.</value>
   </data>
+  <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
+    <value>Tillåter skapande, uppdatering och borttagning av ritningar. Alla användare kan se ritningar som standard.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Tillåter att skapa, uppdatera och ta bort information om företagsentiteter.</value>
   </data>
@@ -197,6 +200,9 @@
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Hantera tillgångar</value>
+  </data>
+  <data name="Manage Blueprints" xml:space="preserve">
+    <value>Hantera mallar</value>
   </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Hantera företagsentiteter</value>

@@ -54,6 +54,9 @@
   <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
     <value>يُمكّن من إنشاء التقارير الأسبوعية وتحريرها وحذفها نيابة عن أي مستخدم آخر.</value>
   </data>
+  <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
+    <value>يُمكّن من إنشاء وتحديث وحذف المخططات. يمكن لكل مستخدم عرض المخططات افتراضيًا.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>يُمكّن من إنشاء معلومات الكيانات الخاصة بالشركة وتحديثها وحذفها.</value>
   </data>
@@ -197,6 +200,9 @@
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>إدارة الأصول</value>
+  </data>
+  <data name="Manage Blueprints" xml:space="preserve">
+    <value>إدارة النماذج</value>
   </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>إدارة الكيانات المؤسسية</value>

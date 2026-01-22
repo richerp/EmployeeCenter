@@ -69,6 +69,9 @@
   <data name="Basic Information" xml:space="preserve">
     <value>Información básica</value>
   </data>
+  <data name="Blueprints" xml:space="preserve">
+    <value>Planes</value>
+  </data>
   <data name="Business License" xml:space="preserve">
     <value>Licencia de negocio</value>
   </data>
@@ -258,6 +261,9 @@
   <data name="Manage Assets" xml:space="preserve">
     <value>Gestionar activos</value>
   </data>
+  <data name="Manage Blueprints" xml:space="preserve">
+    <value>Administrar plantillas</value>
+  </data>
   <data name="Manage Company Entities" xml:space="preserve">
     <value>Gestionar entidades de la empresa</value>
   </data>
@@ -419,6 +425,9 @@
   </data>
   <data name="Vendors" xml:space="preserve">
     <value>Proveedores</value>
+  </data>
+  <data name="View Blueprints" xml:space="preserve">
+    <value>Ver plantas</value>
   </data>
   <data name="View Contracts" xml:space="preserve">
     <value>Ver Contratos</value>

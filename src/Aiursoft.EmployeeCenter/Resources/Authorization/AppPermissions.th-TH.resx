@@ -54,6 +54,9 @@
   <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
     <value>อนุญาตให้สร้าง แก้ไข และลบรายงานรายสัปดาห์แทนผู้ใช้คนอื่นใดก็ได้</value>
   </data>
+  <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
+    <value>อนุญาตให้สร้าง แก้ไข และลบแบบร่างได้ ทุกผู้ใช้สามารถดูแบบร่างได้โดยค่าเริ่มต้น</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>อนุญาตให้สร้าง แก้ไข และลบข้อมูลหน่วยงานของบริษัท</value>
   </data>
@@ -197,6 +200,9 @@
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>จัดการสินทรัพย์</value>
+  </data>
+  <data name="Manage Blueprints" xml:space="preserve">
+    <value>จัดการแบบร่าง</value>
   </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>จัดการหน่วยงานของบริษัท</value>

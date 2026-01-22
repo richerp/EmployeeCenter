@@ -54,6 +54,9 @@
   <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
     <value>Cho phép tạo, chỉnh sửa và xóa báo cáo hàng tuần thay mặt bất kỳ người dùng nào khác.</value>
   </data>
+  <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
+    <value>Cho phép tạo, cập nhật và xóa các bản thiết kế. Mọi người dùng đều có thể xem bản thiết kế theo mặc định.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Cho phép tạo, cập nhật và xóa thông tin thực thể công ty.</value>
   </data>
@@ -197,6 +200,9 @@
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>Quản lý Tài sản</value>
+  </data>
+  <data name="Manage Blueprints" xml:space="preserve">
+    <value>Quản lý Bản thiết kế</value>
   </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Quản lý các thực thể công ty</value>

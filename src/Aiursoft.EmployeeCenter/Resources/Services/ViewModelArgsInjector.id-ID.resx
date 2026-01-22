@@ -66,6 +66,9 @@
   <data name="Basic Information" xml:space="preserve">
     <value>Informasi Dasar</value>
   </data>
+  <data name="Blueprints" xml:space="preserve">
+    <value>Rancangan</value>
+  </data>
   <data name="Business License" xml:space="preserve">
     <value>Izin Usaha</value>
   </data>
@@ -255,6 +258,9 @@
   <data name="Manage Assets" xml:space="preserve">
     <value>Kelola Aset</value>
   </data>
+  <data name="Manage Blueprints" xml:space="preserve">
+    <value>Kelola Blueprint</value>
+  </data>
   <data name="Manage Company Entities" xml:space="preserve">
     <value>Kelola Entitas Perusahaan</value>
   </data>
@@ -416,6 +422,9 @@
   </data>
   <data name="Vendors" xml:space="preserve">
     <value>Vendor</value>
+  </data>
+  <data name="View Blueprints" xml:space="preserve">
+    <value>Lihat Blueprint</value>
   </data>
   <data name="View Contracts" xml:space="preserve">
     <value>Lihat Kontrak</value>

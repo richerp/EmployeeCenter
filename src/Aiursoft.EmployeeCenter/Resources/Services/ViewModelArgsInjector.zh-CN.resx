@@ -69,6 +69,9 @@
   <data name="Basic Information" xml:space="preserve">
     <value>基本信息</value>
   </data>
+  <data name="Blueprints" xml:space="preserve">
+    <value>蓝图</value>
+  </data>
   <data name="Business License" xml:space="preserve">
     <value>营业执照</value>
   </data>
@@ -258,6 +261,9 @@
   <data name="Manage Assets" xml:space="preserve">
     <value>管理资产</value>
   </data>
+  <data name="Manage Blueprints" xml:space="preserve">
+    <value>管理蓝图</value>
+  </data>
   <data name="Manage Company Entities" xml:space="preserve">
     <value>管理公司实体</value>
   </data>
@@ -419,6 +425,9 @@
   </data>
   <data name="Vendors" xml:space="preserve">
     <value>供应商</value>
+  </data>
+  <data name="View Blueprints" xml:space="preserve">
+    <value>查看蓝图</value>
   </data>
   <data name="View Contracts" xml:space="preserve">
     <value>查看合同</value>

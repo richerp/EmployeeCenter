@@ -51,6 +51,9 @@
   <data name="Allows creating, editing, and deleting weekly reports on behalf of any other user." xml:space="preserve">
     <value>容許為任何其他用戶代為建立、編輯及刪除週報。</value>
   </data>
+  <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
+    <value>允許建立、更新及刪除藍圖。所有用戶預設可檢視藍圖。</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>允許建立、更新及刪除公司實體資料。</value>
   </data>
@@ -188,6 +191,9 @@
   </data>
   <data name="Manage Assets" xml:space="preserve">
     <value>管理資產</value>
+  </data>
+  <data name="Manage Blueprints" xml:space="preserve">
+    <value>管理藍圖</value>
   </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>管理公司基本實體資訊</value>
