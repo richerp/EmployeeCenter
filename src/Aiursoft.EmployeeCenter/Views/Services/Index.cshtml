@@ -76,7 +76,7 @@
                                 @(s.Location?.Name ?? "-")
                             </td>
                             <td>
-                                @(s.ServerIp ?? "-")
+                                @(s.Server?.ServerIp ?? s.ServerIp ?? "-")
                             </td>
                             <td>
                                 @(s.DnsProvider?.Name ?? "-")

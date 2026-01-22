@@ -35,4 +35,30 @@ public class ServiceTests : TestBase
         Assert.IsNotNull(service);
         Assert.IsTrue(service.IsOnline);
     }
+
+    [TestMethod]
+    public async Task TestProviders()
+    {
+        await LoginAsAdmin();
+        
+        // Create Provider
+        var response = await PostForm("/Services/CreateProvider", new Dictionary<string, string>
+        {
+            { "NewName", "TestProvider" }
+        });
+        Assert.AreEqual(HttpStatusCode.Redirect, response.StatusCode);
+
+        var db = GetService<EmployeeCenterDbContext>();
+        var provider = await db.Providers.FirstOrDefaultAsync(p => p.Name == "TestProvider");
+        Assert.IsNotNull(provider);
+
+        // Delete Provider
+        var deleteResponse = await PostForm($"/Services/DeleteProvider/{provider.Id}", new Dictionary<string, string>());
+        Assert.AreEqual(HttpStatusCode.Redirect, deleteResponse.StatusCode);
+
+        db = GetService<EmployeeCenterDbContext>();
+        db.ChangeTracker.Clear();
+        var deletedProvider = await db.Providers.FindAsync(provider.Id);
+        Assert.IsNull(deletedProvider);
+    }
 }

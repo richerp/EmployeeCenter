@@ -88,14 +88,14 @@
                         <div class="col-md-6 mb-3">
                             <label asp-for="ServerId" class="form-label"></label>
                             <div class="input-group">
-                                <select asp-for="ServerId" class="form-select" asp-items="@(new SelectList(Model.AllAssets, "Id", "AssetTag"))">
-                                    <option value="">-- @Localizer["Select Server (Asset)"] --</option>
+                                <select asp-for="ServerId" class="form-select" asp-items="@(new SelectList(Model.AllServers, "Id", "Hostname"))">
+                                    <option value="">-- @Localizer["Select Server"] --</option>
                                 </select>
                                 <button type="button" class="btn btn-outline-secondary reload-dropdown" 
-                                        data-url="@Url.Action("GetAssets")" 
+                                        data-url="@Url.Action("GetServers")" 
                                         data-target="ServerId" 
-                                        data-placeholder="@Localizer["Select Server (Asset)"]"
-                                        data-name-key="assetTag"
+                                        data-placeholder="@Localizer["Select Server"]"
+                                        data-name-key="hostname"
                                         title="@Localizer["Reload"]">
                                     <i class="align-middle" data-lucide="rotate-cw"></i>
                                 </button>

@@ -36,6 +36,8 @@ public abstract class EmployeeCenterDbContext(DbContextOptions options) : Identi
     public DbSet<Notepad> Notepads => Set<Notepad>();
     public DbSet<Blueprint> Blueprints => Set<Blueprint>();
     public DbSet<DnsProvider> DnsProviders => Set<DnsProvider>();
+    public DbSet<Provider> Providers => Set<Provider>();
+    public DbSet<Server> Servers => Set<Server>();
     public DbSet<Service> Services => Set<Service>();
 
     public DbSet<SignalQuestion> SignalQuestions => Set<SignalQuestion>();
