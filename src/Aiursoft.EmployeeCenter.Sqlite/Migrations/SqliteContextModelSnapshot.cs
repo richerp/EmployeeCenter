@@ -291,6 +291,14 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("BankAddress")
+                        .HasMaxLength(500)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("BankCode")
+                        .HasMaxLength(50)
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("BankName")
                         .HasMaxLength(100)
                         .HasColumnType("TEXT");
@@ -377,6 +385,10 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
 
                     b.Property<string>("SealPath")
                         .HasMaxLength(500)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("SwiftCode")
+                        .HasMaxLength(50)
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("UpdateTime")

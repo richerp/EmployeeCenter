@@ -4,6 +4,7 @@ using Aiursoft.EmployeeCenter.MySql;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Aiursoft.EmployeeCenter.MySql.Migrations
 {
     [DbContext(typeof(MySqlContext))]
-    partial class MySqlContextModelSnapshot : ModelSnapshot
+    [Migration("20260122170214_AddBankDetails")]
+    partial class AddBankDetails
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -486,28 +489,6 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Contracts");
-                });
-
-            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.DnsProvider", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Description")
-                        .HasMaxLength(200)
-                        .HasColumnType("varchar(200)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("varchar(100)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("DnsProviders");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.FinanceAccount", b =>
@@ -1084,79 +1065,6 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("PromotionHistories");
-                });
-
-            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Service", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<int?>("CrossEntityLinkId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("DnsProviderId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Domain")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("varchar(255)");
-
-                    b.Property<bool>("IsCloudflareProxied")
-                        .HasColumnType("tinyint(1)");
-
-                    b.Property<bool>("IsOnline")
-                        .HasColumnType("tinyint(1)");
-
-                    b.Property<bool>("IsSelfDeveloped")
-                        .HasColumnType("tinyint(1)");
-
-                    b.Property<bool>("IsViaFrps")
-                        .HasColumnType("tinyint(1)");
-
-                    b.Property<int?>("LocationId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("OwnerId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Protocols")
-                        .HasMaxLength(100)
-                        .HasColumnType("varchar(100)");
-
-                    b.Property<string>("Remark")
-                        .HasMaxLength(1000)
-                        .HasColumnType("varchar(1000)");
-
-                    b.Property<Guid?>("ServerId")
-                        .HasColumnType("char(36)");
-
-                    b.Property<string>("ServerIp")
-                        .HasMaxLength(100)
-                        .HasColumnType("varchar(100)");
-
-                    b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("datetime(6)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CrossEntityLinkId");
-
-                    b.HasIndex("DnsProviderId");
-
-                    b.HasIndex("LocationId");
-
-                    b.HasIndex("OwnerId");
-
-                    b.HasIndex("ServerId");
-
-                    b.ToTable("Services");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.SignalQuestion", b =>
@@ -1934,39 +1842,6 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Service", b =>
-                {
-                    b.HasOne("Aiursoft.EmployeeCenter.Entities.Service", "CrossEntityLink")
-                        .WithMany()
-                        .HasForeignKey("CrossEntityLinkId");
-
-                    b.HasOne("Aiursoft.EmployeeCenter.Entities.DnsProvider", "DnsProvider")
-                        .WithMany("Services")
-                        .HasForeignKey("DnsProviderId");
-
-                    b.HasOne("Aiursoft.EmployeeCenter.Entities.Location", "Location")
-                        .WithMany()
-                        .HasForeignKey("LocationId");
-
-                    b.HasOne("Aiursoft.EmployeeCenter.Entities.CompanyEntity", "Owner")
-                        .WithMany()
-                        .HasForeignKey("OwnerId");
-
-                    b.HasOne("Aiursoft.EmployeeCenter.Entities.Asset", "Server")
-                        .WithMany()
-                        .HasForeignKey("ServerId");
-
-                    b.Navigation("CrossEntityLink");
-
-                    b.Navigation("DnsProvider");
-
-                    b.Navigation("Location");
-
-                    b.Navigation("Owner");
-
-                    b.Navigation("Server");
-                });
-
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.SignalQuestionResponse", b =>
                 {
                     b.HasOne("Aiursoft.EmployeeCenter.Entities.SignalQuestion", "Question")
@@ -2138,11 +2013,6 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.AssetModel", b =>
                 {
                     b.Navigation("Assets");
-                });
-
-            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.DnsProvider", b =>
-                {
-                    b.Navigation("Services");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Incident", b =>
