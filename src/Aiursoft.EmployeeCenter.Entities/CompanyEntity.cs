@@ -65,6 +65,15 @@ public class CompanyEntity
     [MaxLength(50)]
     public string? BankAccountName { get; set; }
 
+    [MaxLength(50)]
+    public string? SwiftCode { get; set; }
+
+    [MaxLength(50)]
+    public string? BankCode { get; set; }
+
+    [MaxLength(500)]
+    public string? BankAddress { get; set; }
+
     [MaxLength(500)]
     public string? LogoPath { get; set; }
 

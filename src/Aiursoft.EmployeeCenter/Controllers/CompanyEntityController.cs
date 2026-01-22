@@ -155,6 +155,9 @@ public class CompanyEntityController(
             BankName = model.BankName,
             BankAccount = model.BankAccount,
             BankAccountName = model.BankAccountName,
+            SwiftCode = model.SwiftCode,
+            BankCode = model.BankCode,
+            BankAddress = model.BankAddress,
             LogoPath = model.LogoPath,
             SealPath = model.SealPath,
             LicensePath = model.LicensePath,
@@ -211,6 +214,9 @@ public class CompanyEntityController(
             BankName = entity.BankName,
             BankAccount = entity.BankAccount,
             BankAccountName = entity.BankAccountName,
+            SwiftCode = entity.SwiftCode,
+            BankCode = entity.BankCode,
+            BankAddress = entity.BankAddress,
             LogoPath = entity.LogoPath,
             SealPath = entity.SealPath,
             LicensePath = entity.LicensePath,
@@ -294,6 +300,9 @@ public class CompanyEntityController(
         entity.BankName = model.BankName;
         entity.BankAccount = model.BankAccount;
         entity.BankAccountName = model.BankAccountName;
+        entity.SwiftCode = model.SwiftCode;
+        entity.BankCode = model.BankCode;
+        entity.BankAddress = model.BankAddress;
         entity.LogoPath = model.LogoPath;
         entity.SealPath = model.SealPath;
         entity.LicensePath = model.LicensePath;

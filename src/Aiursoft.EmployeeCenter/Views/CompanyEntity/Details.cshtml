@@ -17,6 +17,18 @@
     summaryBuilder.AppendLine($"{Localizer["Bank Info"].Value}: {Model.Entity.BankName}");
     summaryBuilder.AppendLine($"{Localizer["Account"].Value}: {Model.Entity.BankAccount}");
     summaryBuilder.AppendLine($"{Localizer["Account Name"].Value}: {Model.Entity.BankAccountName}");
+    if (!string.IsNullOrEmpty(Model.Entity.SwiftCode))
+    {
+        summaryBuilder.AppendLine($"{Localizer["SWIFT Code"].Value}: {Model.Entity.SwiftCode}");
+    }
+    if (!string.IsNullOrEmpty(Model.Entity.BankCode))
+    {
+        summaryBuilder.AppendLine($"{Localizer["Bank Code"].Value}: {Model.Entity.BankCode}");
+    }
+    if (!string.IsNullOrEmpty(Model.Entity.BankAddress))
+    {
+        summaryBuilder.AppendLine($"{Localizer["Bank Address"].Value}: {Model.Entity.BankAddress}");
+    }
     var summaryInfo = summaryBuilder.ToString();
 
     var fullBuilder = new StringBuilder();
@@ -41,6 +53,9 @@
     fullBuilder.AppendLine($"{Localizer["Bank Name"].Value}: {Model.Entity.BankName}");
     fullBuilder.AppendLine($"{Localizer["Bank Account"].Value}: {Model.Entity.BankAccount}");
     fullBuilder.AppendLine($"{Localizer["Bank Account Name"].Value}: {Model.Entity.BankAccountName}");
+    fullBuilder.AppendLine($"{Localizer["SWIFT Code"].Value}: {Model.Entity.SwiftCode}");
+    fullBuilder.AppendLine($"{Localizer["Bank Code"].Value}: {Model.Entity.BankCode}");
+    fullBuilder.AppendLine($"{Localizer["Bank Address"].Value}: {Model.Entity.BankAddress}");
     fullBuilder.AppendLine($"{Localizer["Registered Capital"].Value}: {Model.Entity.RegisteredCapital}");
     fullBuilder.AppendLine($"{Localizer["Status"].Value}: {Model.Entity.OperationStatus}");
     fullBuilder.AppendLine($"{Localizer["SCR Location"].Value}: {Model.Entity.SCRLocation}");
@@ -115,9 +130,21 @@
 
                         <dt class="col-sm-4">@Localizer["Bank Info"]</dt>
                         <dd class="col-sm-8">
-                            <p class="mb-0">@Model.Entity.BankName</p>
-                            <p class="mb-0">@Model.Entity.BankAccount</p>
-                            <p class="mb-0">@Model.Entity.BankAccountName</p>
+                            <p class="mb-0"><strong>Name:</strong> @Model.Entity.BankName</p>
+                            <p class="mb-0"><strong>Account:</strong> @Model.Entity.BankAccount</p>
+                            <p class="mb-0"><strong>Account Name:</strong> @Model.Entity.BankAccountName</p>
+                            @if (!string.IsNullOrEmpty(Model.Entity.SwiftCode))
+                            {
+                                <p class="mb-0"><strong>SWIFT:</strong> @Model.Entity.SwiftCode</p>
+                            }
+                            @if (!string.IsNullOrEmpty(Model.Entity.BankCode))
+                            {
+                                <p class="mb-0"><strong>Bank Code:</strong> @Model.Entity.BankCode</p>
+                            }
+                            @if (!string.IsNullOrEmpty(Model.Entity.BankAddress))
+                            {
+                                <p class="mb-0"><strong>Address:</strong> @Model.Entity.BankAddress</p>
+                            }
                         </dd>
                     </dl>
                 </div>
@@ -146,6 +173,18 @@
 
                                 <dt class="col-sm-4">@Localizer["Account"]</dt>
                                 <dd class="col-sm-8 text-dark font-weight-bold">@Model.Entity.BankAccount</dd>
+
+                                @if (!string.IsNullOrEmpty(Model.Entity.SwiftCode))
+                                {
+                                    <dt class="col-sm-4">@Localizer["SWIFT Code"]</dt>
+                                    <dd class="col-sm-8 small">@Model.Entity.SwiftCode</dd>
+                                }
+                                
+                                @if (!string.IsNullOrEmpty(Model.Entity.BankCode))
+                                {
+                                    <dt class="col-sm-4">@Localizer["Bank Code"]</dt>
+                                    <dd class="col-sm-8 small">@Model.Entity.BankCode</dd>
+                                }
                             </dl>
                         </div>
                     </div>

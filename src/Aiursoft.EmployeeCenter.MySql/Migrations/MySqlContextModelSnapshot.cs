@@ -307,6 +307,14 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("varchar(50)");
 
+                    b.Property<string>("BankAddress")
+                        .HasMaxLength(500)
+                        .HasColumnType("varchar(500)");
+
+                    b.Property<string>("BankCode")
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
+
                     b.Property<string>("BankName")
                         .HasMaxLength(100)
                         .HasColumnType("varchar(100)");
@@ -394,6 +402,10 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.Property<string>("SealPath")
                         .HasMaxLength(500)
                         .HasColumnType("varchar(500)");
+
+                    b.Property<string>("SwiftCode")
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
 
                     b.Property<DateTime>("UpdateTime")
                         .HasColumnType("datetime(6)");

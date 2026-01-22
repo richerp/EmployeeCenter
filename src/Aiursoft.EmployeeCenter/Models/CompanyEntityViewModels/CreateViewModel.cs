@@ -72,6 +72,18 @@ public class CreateViewModel : UiStackLayoutViewModel
     [MaxLength(50, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string? BankAccountName { get; set; }
 
+    [Display(Name = "SWIFT Code")]
+    [MaxLength(50, ErrorMessage = "The {0} cannot exceed {1} characters.")]
+    public string? SwiftCode { get; set; }
+
+    [Display(Name = "Bank Code")]
+    [MaxLength(50, ErrorMessage = "The {0} cannot exceed {1} characters.")]
+    public string? BankCode { get; set; }
+
+    [Display(Name = "Bank Address")]
+    [MaxLength(500, ErrorMessage = "The {0} cannot exceed {1} characters.")]
+    public string? BankAddress { get; set; }
+
     [Display(Name = "Company Logo")]
     [RegularExpression(@"^companyfiles.*", ErrorMessage = "Please upload a valid logo file.")]
     [MaxLength(500, ErrorMessage = "The {0} cannot exceed {1} characters.")]
