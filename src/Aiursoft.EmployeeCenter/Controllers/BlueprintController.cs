@@ -56,7 +56,7 @@ public class BlueprintController(
     [Authorize(Policy = AppPermissionNames.CanManageBlueprints)]
     public IActionResult Create()
     {
-        return this.StackView(new EditorViewModel());
+        return this.StackView(new EditorViewModel(), "Editor");
     }
 
     [HttpPost]
@@ -66,7 +66,7 @@ public class BlueprintController(
     {
         if (!ModelState.IsValid)
         {
-             return this.StackView(model);
+             return this.StackView(model, "Editor");
         }
 
         var user = await userManager.GetUserAsync(User);
@@ -107,7 +107,7 @@ public class BlueprintController(
             OutputHtml = blueprint.RenderedHtml,
             SavedSuccessfully = saved
         };
-        return this.StackView(model);
+        return this.StackView(model, "Editor");
     }
 
     [HttpPost]
@@ -117,7 +117,7 @@ public class BlueprintController(
     {
         if (!ModelState.IsValid)
         {
-            return this.StackView(model);
+            return this.StackView(model, "Editor");
         }
 
         var blueprint = await dbContext.Blueprints.FindAsync(model.DocumentId);
@@ -133,7 +133,7 @@ public class BlueprintController(
         model.OutputHtml = blueprint.RenderedHtml;
         model.SavedSuccessfully = true;
 
-        return this.StackView(model);
+        return this.StackView(model, "Editor");
     }
 
     [HttpPost]
