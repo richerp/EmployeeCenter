@@ -63,6 +63,9 @@
   <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
     <value>Şirket varlık bilgilerinin oluşturulmasını, güncellenmesini ve silinmesini sağlar. Her kullanıcı varsayılan olarak şirket varlık bilgilerini görüntüleyebilir.</value>
   </data>
+  <data name="Allows creating, updating, and deleting services and DNS providers. Every user can view services by default." xml:space="preserve">
+    <value>Hizmetler ve DNS sağlayıcıları oluşturma, güncelleme ve silme izni verir. Her kullanıcı varsayılan olarak hizmetleri görebilir.</value>
+  </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>Tüm kullanıcılar için maaş bordrolarını oluşturma ve yönetme izni verir.</value>
   </data>
@@ -224,6 +227,9 @@
   </data>
   <data name="Manage Payroll" xml:space="preserve">
     <value>Maaş Bordrosunu Yönet</value>
+  </data>
+  <data name="Manage Services" xml:space="preserve">
+    <value>Hizmetleri Yönet</value>
   </data>
   <data name="Manage SSH Keys" xml:space="preserve">
     <value>SSH Anahtarlarını Yönet</value>

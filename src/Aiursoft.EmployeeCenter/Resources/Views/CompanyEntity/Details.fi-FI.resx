@@ -39,6 +39,9 @@
   <data name="Bank" xml:space="preserve">
     <value>Pankki</value>
   </data>
+  <data name="Bank Code" xml:space="preserve">
+    <value>Pankkikoodi</value>
+  </data>
   <data name="Bank Info" xml:space="preserve">
     <value>Pankkitiedot</value>
   </data>
@@ -143,6 +146,9 @@
   </data>
   <data name="Status" xml:space="preserve">
     <value>Tila</value>
+  </data>
+  <data name="SWIFT Code" xml:space="preserve">
+    <value>SWIFT-koodi</value>
   </data>
   <data name="Tax ID" xml:space="preserve">
     <value>Verotunnus</value>

@@ -24,6 +24,12 @@
   <data name="Bank Account Name" xml:space="preserve">
     <value>口座名義</value>
   </data>
+  <data name="Bank Address" xml:space="preserve">
+    <value>銀行住所</value>
+  </data>
+  <data name="Bank Code" xml:space="preserve">
+    <value>銀行コード</value>
+  </data>
   <data name="Bank Name" xml:space="preserve">
     <value>銀行名</value>
   </data>
@@ -98,6 +104,9 @@
   </data>
   <data name="SCR Location (HK)" xml:space="preserve">
     <value>SCR 現地 (HK)</value>
+  </data>
+  <data name="SWIFT Code" xml:space="preserve">
+    <value>SWIFTコード</value>
   </data>
   <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
     <value>{0}は{1}文字を超えることはできません。</value>

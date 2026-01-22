@@ -39,6 +39,9 @@
   <data name="Bank" xml:space="preserve">
     <value>Ngân hàng</value>
   </data>
+  <data name="Bank Code" xml:space="preserve">
+    <value>Mã ngân hàng</value>
+  </data>
   <data name="Bank Info" xml:space="preserve">
     <value>Thông tin ngân hàng</value>
   </data>
@@ -143,6 +146,9 @@
   </data>
   <data name="Status" xml:space="preserve">
     <value>Trạng thái</value>
+  </data>
+  <data name="SWIFT Code" xml:space="preserve">
+    <value>Mã SWIFT</value>
   </data>
   <data name="Tax ID" xml:space="preserve">
     <value>Mã số thuế</value>

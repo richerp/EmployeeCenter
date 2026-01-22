@@ -60,6 +60,9 @@
   <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
     <value>允许创建、更新和删除公司实体信息。默认情况下，所有用户均可查看公司实体信息。</value>
   </data>
+  <data name="Allows creating, updating, and deleting services and DNS providers. Every user can view services by default." xml:space="preserve">
+    <value>允许创建、更新和删除服务及DNS提供商。默认情况下，每个用户都可以查看服务。</value>
+  </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>允许为所有用户发放和管理工资单。</value>
   </data>
@@ -206,6 +209,9 @@
   </data>
   <data name="Manage Payroll" xml:space="preserve">
     <value>管理薪资</value>
+  </data>
+  <data name="Manage Services" xml:space="preserve">
+    <value>管理服务</value>
   </data>
   <data name="Manage SSH Keys" xml:space="preserve">
     <value>管理 SSH 公钥</value>

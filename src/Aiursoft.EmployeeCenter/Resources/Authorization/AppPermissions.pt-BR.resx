@@ -63,6 +63,9 @@
   <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
     <value>Permite criar, atualizar e excluir informações da entidade da empresa. Por padrão, todos os usuários podem visualizar informações da entidade da empresa.</value>
   </data>
+  <data name="Allows creating, updating, and deleting services and DNS providers. Every user can view services by default." xml:space="preserve">
+    <value>Permite criar, atualizar e excluir serviços e provedores de DNS. Por padrão, todos os usuários podem visualizar os serviços.</value>
+  </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>Permite emitir e gerenciar holerites para todos os usuários.</value>
   </data>
@@ -224,6 +227,9 @@
   </data>
   <data name="Manage Payroll" xml:space="preserve">
     <value>Gerenciar Folha de Pagamento</value>
+  </data>
+  <data name="Manage Services" xml:space="preserve">
+    <value>Gerenciar Serviços</value>
   </data>
   <data name="Manage SSH Keys" xml:space="preserve">
     <value>Gerenciar Chaves SSH</value>

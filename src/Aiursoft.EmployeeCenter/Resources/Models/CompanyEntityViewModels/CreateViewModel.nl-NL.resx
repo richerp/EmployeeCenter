@@ -24,6 +24,12 @@
   <data name="Bank Account Name" xml:space="preserve">
     <value>Naam rekening</value>
   </data>
+  <data name="Bank Address" xml:space="preserve">
+    <value>Bankadres</value>
+  </data>
+  <data name="Bank Code" xml:space="preserve">
+    <value>Bankcode</value>
+  </data>
   <data name="Bank Name" xml:space="preserve">
     <value>Naam bank</value>
   </data>
@@ -98,6 +104,9 @@
   </data>
   <data name="SCR Location (HK)" xml:space="preserve">
     <value>SCR Locatie (HK)</value>
+  </data>
+  <data name="SWIFT Code" xml:space="preserve">
+    <value>SWIFT-code</value>
   </data>
   <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
     <value>Het {0} mag niet meer dan {1} tekens bevatten.</value>

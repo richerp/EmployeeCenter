@@ -24,6 +24,12 @@
   <data name="Bank Account Name" xml:space="preserve">
     <value>Hesap Adı</value>
   </data>
+  <data name="Bank Address" xml:space="preserve">
+    <value>Banka Adresi</value>
+  </data>
+  <data name="Bank Code" xml:space="preserve">
+    <value>Banka Kodu</value>
+  </data>
   <data name="Bank Name" xml:space="preserve">
     <value>Banka Adı</value>
   </data>
@@ -98,6 +104,9 @@
   </data>
   <data name="SCR Location (HK)" xml:space="preserve">
     <value>SCR Konumu (HK)</value>
+  </data>
+  <data name="SWIFT Code" xml:space="preserve">
+    <value>SWIFT Kodu</value>
   </data>
   <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
     <value>{0} alanı {1} karakteri geçemez.</value>

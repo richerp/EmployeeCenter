@@ -39,6 +39,9 @@
   <data name="Bank" xml:space="preserve">
     <value>Банк</value>
   </data>
+  <data name="Bank Code" xml:space="preserve">
+    <value>Код банку</value>
+  </data>
   <data name="Bank Info" xml:space="preserve">
     <value>Банківська інформація</value>
   </data>
@@ -143,6 +146,9 @@
   </data>
   <data name="Status" xml:space="preserve">
     <value>Статус</value>
+  </data>
+  <data name="SWIFT Code" xml:space="preserve">
+    <value>Код SWIFT</value>
   </data>
   <data name="Tax ID" xml:space="preserve">
     <value>ІПН</value>

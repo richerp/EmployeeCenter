@@ -63,6 +63,9 @@
   <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
     <value>Tillader oprettelse, opdatering og sletning af virksomhedsentytetsoplysninger. Alle brugere kan se virksomhedsentytetsoplysninger som standard.</value>
   </data>
+  <data name="Allows creating, updating, and deleting services and DNS providers. Every user can view services by default." xml:space="preserve">
+    <value>Tillader oprettelse, opdatering og sletning af tjenester og DNS-udbydere. Alle brugere kan se tjenester som standard.</value>
+  </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>Giver mulighed for at udstyre og administrere lønsedler for alle brugere.</value>
   </data>
@@ -224,6 +227,9 @@
   </data>
   <data name="Manage Payroll" xml:space="preserve">
     <value>Administrer Løn</value>
+  </data>
+  <data name="Manage Services" xml:space="preserve">
+    <value>Håndtér tjenester</value>
   </data>
   <data name="Manage SSH Keys" xml:space="preserve">
     <value>Administrer SSH-nøgler</value>

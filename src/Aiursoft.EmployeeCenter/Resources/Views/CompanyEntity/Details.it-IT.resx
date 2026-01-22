@@ -39,6 +39,9 @@
   <data name="Bank" xml:space="preserve">
     <value>Banca</value>
   </data>
+  <data name="Bank Code" xml:space="preserve">
+    <value>Codice Banca</value>
+  </data>
   <data name="Bank Info" xml:space="preserve">
     <value>Informazioni sul conto bancario</value>
   </data>
@@ -143,6 +146,9 @@
   </data>
   <data name="Status" xml:space="preserve">
     <value>Stato</value>
+  </data>
+  <data name="SWIFT Code" xml:space="preserve">
+    <value>Codice SWIFT</value>
   </data>
   <data name="Tax ID" xml:space="preserve">
     <value>Partita IVA</value>

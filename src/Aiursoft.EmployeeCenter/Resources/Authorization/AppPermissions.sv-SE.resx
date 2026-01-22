@@ -63,6 +63,9 @@
   <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
     <value>Tillåter att skapa, uppdatera och ta bort företagsentitetsinformation. Alla användare kan se företagsentitetsinformation som standard.</value>
   </data>
+  <data name="Allows creating, updating, and deleting services and DNS providers. Every user can view services by default." xml:space="preserve">
+    <value>Tillåter att skapa, uppdatera och ta bort tjänster och DNS-providers. Alla användare kan se tjänster som standard.</value>
+  </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>Tillåter utfärdande och hantering av lönebesked för alla användare.</value>
   </data>
@@ -224,6 +227,9 @@
   </data>
   <data name="Manage Payroll" xml:space="preserve">
     <value>Hantera löner</value>
+  </data>
+  <data name="Manage Services" xml:space="preserve">
+    <value>Hantera tjänster</value>
   </data>
   <data name="Manage SSH Keys" xml:space="preserve">
     <value>Hantera SSH-nycklar</value>

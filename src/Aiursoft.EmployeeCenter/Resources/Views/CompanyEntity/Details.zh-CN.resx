@@ -39,6 +39,9 @@
   <data name="Bank" xml:space="preserve">
     <value>开户银行</value>
   </data>
+  <data name="Bank Code" xml:space="preserve">
+    <value>银行代码</value>
+  </data>
   <data name="Bank Info" xml:space="preserve">
     <value>银行信息</value>
   </data>
@@ -149,6 +152,9 @@
   </data>
   <data name="Status" xml:space="preserve">
     <value>状态</value>
+  </data>
+  <data name="SWIFT Code" xml:space="preserve">
+    <value>SWIFT代码</value>
   </data>
   <data name="Tax ID" xml:space="preserve">
     <value>税号</value>

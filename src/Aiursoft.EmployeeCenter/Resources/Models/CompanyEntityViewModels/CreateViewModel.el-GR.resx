@@ -24,6 +24,12 @@
   <data name="Bank Account Name" xml:space="preserve">
     <value>Όνομα λογαριασμού τράπεζας</value>
   </data>
+  <data name="Bank Address" xml:space="preserve">
+    <value>Τοποθεσία Τράπεζας</value>
+  </data>
+  <data name="Bank Code" xml:space="preserve">
+    <value>Κωδικός Τράπεζας</value>
+  </data>
   <data name="Bank Name" xml:space="preserve">
     <value>Όνομα Τράπεζας</value>
   </data>
@@ -98,6 +104,9 @@
   </data>
   <data name="SCR Location (HK)" xml:space="preserve">
     <value>Τοποθεσία SCR (ΧΚ)</value>
+  </data>
+  <data name="SWIFT Code" xml:space="preserve">
+    <value>Κωδικός SWIFT</value>
   </data>
   <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
     <value>Το {0} δεν μπορεί να υπερβαίνει τα {1} χαρακτήρες.</value>
