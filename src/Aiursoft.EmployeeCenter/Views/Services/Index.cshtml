@@ -1,0 +1,113 @@
+@using Aiursoft.EmployeeCenter.Authorization
+@model Aiursoft.EmployeeCenter.Models.ServicesViewModels.IndexViewModel
+@{
+    ViewData["Title"] = Localizer["Services"];
+}
+
+<div class="row mb-2 mb-xl-3">
+    <div class="col-auto d-none d-sm-block">
+        <h3>@Localizer["Services"]</h3>
+    </div>
+
+    @if (User.HasClaim(AppPermissions.Type, AppPermissionNames.CanManageServices))
+    {
+        <div class="col-auto ms-auto text-end">
+            <a asp-action="DnsProviders" class="btn btn-outline-primary me-2">
+                <i class="align-middle" data-lucide="globe"></i> @Localizer["Manage DNS Providers"]
+            </a>
+            <a asp-action="Create" class="btn btn-primary">
+                <i class="align-middle" data-lucide="plus"></i> @Localizer["Create New Service"]
+            </a>
+        </div>
+    }
+</div>
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title mb-0">@Localizer["All Services"]</h5>
+    </div>
+    @if (!Model.Services.Any())
+    {
+        <div class="card-body">
+            <div class="alert alert-info mb-0" role="alert">
+                <div class="alert-message">
+                    @Localizer["No services found."]
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-hover mb-0">
+                <thead>
+                    <tr>
+                        <th>@Localizer["Domain"]</th>
+                        <th>@Localizer["Owner"]</th>
+                        <th>@Localizer["Link"]</th>
+                        <th>@Localizer["Protocols"]</th>
+                        <th>@Localizer["Location"]</th>
+                        <th>@Localizer["Server IP"]</th>
+                        <th>@Localizer["DNS"]</th>
+                        <th>@Localizer["Is Online"]</th>
+                        @if (User.HasClaim(AppPermissions.Type, AppPermissionNames.CanManageServices))
+                        {
+                            <th class="text-end">@Localizer["Actions"]</th>
+                        }
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var s in Model.Services)
+                    {
+                        <tr>
+                            <td>
+                                <code>@s.Domain</code>
+                            </td>
+                            <td>
+                                @(s.Owner?.CompanyName ?? "-")
+                            </td>
+                            <td>
+                                @(s.CrossEntityLink?.Domain ?? "-")
+                            </td>
+                            <td>
+                                @(s.Protocols ?? "-")
+                            </td>
+                            <td>
+                                @(s.Location?.Name ?? "-")
+                            </td>
+                            <td>
+                                @(s.ServerIp ?? "-")
+                            </td>
+                            <td>
+                                @(s.DnsProvider?.Name ?? "-")
+                            </td>
+                            <td>
+                                @if (s.IsOnline)
+                                {
+                                    <span class="badge bg-success">@Localizer["Online"]</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-danger">@Localizer["Offline"]</span>
+                                }
+                            </td>
+                            @if (User.HasClaim(AppPermissions.Type, AppPermissionNames.CanManageServices))
+                            {
+                                <td class="text-end">
+                                    <a asp-action="Edit" asp-route-id="@s.Id" class="btn btn-sm btn-outline-primary">
+                                        <i class="align-middle" data-lucide="edit-2"></i> @Localizer["Edit"]
+                                    </a>
+                                    <form asp-action="Delete" asp-route-id="@s.Id" method="post" class="d-inline" onsubmit="return confirm('@Localizer["Are you sure you want to delete this service?"]');">
+                                        <button type="submit" class="btn btn-sm btn-outline-danger">
+                                            <i class="align-middle" data-lucide="trash-2"></i> @Localizer["Delete"]
+                                        </button>
+                                    </form>
+                                </td>
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>

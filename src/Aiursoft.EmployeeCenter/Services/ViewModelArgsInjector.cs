@@ -95,6 +95,7 @@ public class ViewModelArgsInjector(
         _ = localizer["Payrolls"];
         _ = localizer["Print Certificate"];
         _ = localizer["Projects"];
+        _ = localizer["Services"];
         _ = localizer["Weekly Report"];
         _ = localizer["Report Line"];
         _ = localizer["Resources"];

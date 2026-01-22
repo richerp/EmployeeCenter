@@ -1,0 +1,254 @@
+@model Aiursoft.EmployeeCenter.Models.ServicesViewModels.CreateServiceViewModel
+
+<h1 class="h3 mb-3">@Localizer["Add New Service"]</h1>
+
+<div class="row">
+    <div class="col-md-8">
+        <form asp-action="Create">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">@Localizer["Basic Information"]</h5>
+                </div>
+                <div class="card-body">
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                    
+                    <div class="mb-3">
+                        <label asp-for="Domain" class="form-label"></label>
+                        <input asp-for="Domain" class="form-control" placeholder="e.g. example.com" />
+                        <span asp-validation-for="Domain" class="text-danger"></span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="OwnerId" class="form-label"></label>
+                            <div class="input-group">
+                                <select asp-for="OwnerId" class="form-select" asp-items="@(new SelectList(Model.AllOwners, "Id", "CompanyName"))">
+                                    <option value="">-- @Localizer["Select Owner"] --</option>
+                                </select>
+                                <button type="button" class="btn btn-outline-secondary reload-dropdown" 
+                                        data-url="@Url.Action("GetCompanyEntities")" 
+                                        data-target="OwnerId" 
+                                        data-placeholder="@Localizer["Select Owner"]"
+                                        data-name-key="companyName"
+                                        title="@Localizer["Reload"]">
+                                    <i class="align-middle" data-lucide="rotate-cw"></i>
+                                </button>
+                            </div>
+                            <span asp-validation-for="OwnerId" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="CrossEntityLinkId" class="form-label"></label>
+                            <div class="input-group">
+                                <select asp-for="CrossEntityLinkId" class="form-select" asp-items="@(new SelectList(Model.AllServices, "Id", "Domain"))">
+                                    <option value="">-- @Localizer["None"] --</option>
+                                </select>
+                                <button type="button" class="btn btn-outline-secondary reload-dropdown" 
+                                        data-url="@Url.Action("GetServices")" 
+                                        data-target="CrossEntityLinkId" 
+                                        data-placeholder="@Localizer["None"]"
+                                        data-name-key="domain"
+                                        title="@Localizer["Reload"]">
+                                    <i class="align-middle" data-lucide="rotate-cw"></i>
+                                </button>
+                            </div>
+                            <span asp-validation-for="CrossEntityLinkId" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Protocols" class="form-label"></label>
+                            <input asp-for="Protocols" class="form-control" placeholder="e.g. HTTPS, TCP" />
+                            <span asp-validation-for="Protocols" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="LocationId" class="form-label"></label>
+                            <div class="input-group">
+                                <select asp-for="LocationId" class="form-select" asp-items="@(new SelectList(Model.AllLocations, "Id", "Name"))">
+                                    <option value="">-- @Localizer["Select Location"] --</option>
+                                </select>
+                                <button type="button" class="btn btn-outline-secondary reload-dropdown" 
+                                        data-url="@Url.Action("GetLocations")" 
+                                        data-target="LocationId" 
+                                        data-placeholder="@Localizer["Select Location"]"
+                                        title="@Localizer["Reload"]">
+                                    <i class="align-middle" data-lucide="rotate-cw"></i>
+                                </button>
+                            </div>
+                            <span asp-validation-for="LocationId" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="ServerIp" class="form-label"></label>
+                            <input asp-for="ServerIp" class="form-control" placeholder="e.g. 1.2.3.4" />
+                            <span asp-validation-for="ServerIp" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="ServerId" class="form-label"></label>
+                            <div class="input-group">
+                                <select asp-for="ServerId" class="form-select" asp-items="@(new SelectList(Model.AllAssets, "Id", "AssetTag"))">
+                                    <option value="">-- @Localizer["Select Server (Asset)"] --</option>
+                                </select>
+                                <button type="button" class="btn btn-outline-secondary reload-dropdown" 
+                                        data-url="@Url.Action("GetAssets")" 
+                                        data-target="ServerId" 
+                                        data-placeholder="@Localizer["Select Server (Asset)"]"
+                                        data-name-key="assetTag"
+                                        title="@Localizer["Reload"]">
+                                    <i class="align-middle" data-lucide="rotate-cw"></i>
+                                </button>
+                            </div>
+                            <span asp-validation-for="ServerId" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="DnsProviderId" class="form-label"></label>
+                        <div class="input-group">
+                            <select asp-for="DnsProviderId" class="form-select" asp-items="@(new SelectList(Model.AllDnsProviders, "Id", "Name"))">
+                                <option value="">-- @Localizer["Select DNS Provider"] --</option>
+                            </select>
+                            <button type="button" class="btn btn-outline-secondary reload-dropdown" 
+                                    data-url="@Url.Action("GetDnsProviders")" 
+                                    data-target="DnsProviderId" 
+                                    data-placeholder="@Localizer["Select DNS Provider"]"
+                                    title="@Localizer["Reload"]">
+                                <i class="align-middle" data-lucide="rotate-cw"></i>
+                            </button>
+                        </div>
+                        <span asp-validation-for="DnsProviderId" class="text-danger"></span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" asp-for="IsViaFrps">
+                                <label class="form-check-label" asp-for="IsViaFrps"></label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" asp-for="IsCloudflareProxied">
+                                <label class="form-check-label" asp-for="IsCloudflareProxied"></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" asp-for="IsOnline">
+                                <label class="form-check-label" asp-for="IsOnline"></label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" asp-for="IsSelfDeveloped">
+                                <label class="form-check-label" asp-for="IsSelfDeveloped"></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Remark" class="form-label"></label>
+                        <textarea asp-for="Remark" class="form-control" rows="3"></textarea>
+                        <span asp-validation-for="Remark" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="card-footer text-end">
+                    <button type="submit" class="btn btn-primary">@Localizer["Save Service"]</button>
+                    <a asp-action="Index" class="btn btn-light">@Localizer["Cancel"]</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">@Localizer["Tips"]</h5>
+            </div>
+            <div class="card-body">
+                <p class="text-muted">@Localizer["Domain should be the primary entry point for the service."]</p>
+                <p class="text-muted">@Localizer["Cross-Entity Link is used to suggest local/international versions to users."]</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function reloadDropdown(url, targetId, placeholder, groupByKey = null, nameKey = "name", idKey = "id") {
+                const target = document.getElementById(targetId);
+                const originalValue = target.value;
+                const reloadBtn = document.querySelector(`.reload-dropdown[data-target="${targetId}"]`);
+                const icon = reloadBtn?.querySelector('i, svg');
+                
+                if (icon) {
+                    icon.classList.add('spin');
+                }
+
+                fetch(url)
+                    .then(response => response.json())
+                    .then(data => {
+                        target.innerHTML = '';
+                        const defaultOption = document.createElement('option');
+                        defaultOption.value = '';
+                        defaultOption.textContent = '-- ' + placeholder + ' --';
+                        target.appendChild(defaultOption);
+
+                        if (groupByKey) {
+                            const groups = {};
+                            data.forEach(item => {
+                                const groupName = item[groupByKey] || 'Other';
+                                if (!groups[groupName]) {
+                                    groups[groupName] = document.createElement('optgroup');
+                                    groups[groupName].label = groupName;
+                                    target.appendChild(groups[groupName]);
+                                }
+                                const option = document.createElement('option');
+                                option.value = item[idKey];
+                                option.textContent = item[nameKey];
+                                if (item[idKey].toString() === originalValue.toString()) {
+                                    option.selected = true;
+                                }
+                                groups[groupName].appendChild(option);
+                            });
+                        } else {
+                            data.forEach(item => {
+                                const option = document.createElement('option');
+                                option.value = item[idKey];
+                                option.textContent = item[nameKey];
+                                if (item[idKey].toString() === originalValue.toString()) {
+                                    option.selected = true;
+                                }
+                                target.appendChild(option);
+                            });
+                        }
+                    })
+                    .catch(error => console.error('Error reloading dropdown:', error))
+                    .finally(() => {
+                        if (icon) {
+                            icon.classList.remove('spin');
+                        }
+                    });
+            }
+
+            document.querySelectorAll('.reload-dropdown').forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const url = this.dataset.url;
+                    const target = this.dataset.target;
+                    const placeholder = this.dataset.placeholder;
+                    const groupByKey = this.dataset.groupBy;
+                    const nameKey = this.dataset.nameKey || 'name';
+                    const idKey = this.dataset.idKey || 'id';
+                    reloadDropdown(url, target, placeholder, groupByKey, nameKey, idKey);
+                });
+            });
+        });
+    </script>
+}

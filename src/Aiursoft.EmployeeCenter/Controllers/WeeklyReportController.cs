@@ -27,7 +27,7 @@ public class WeeklyReportController(
         CascadedLinksIcon = "git-branch",
         CascadedLinksOrder = 2,
         LinkText = "Weekly Report",
-        LinkOrder = 2)]
+        LinkOrder = 3)]
     public async Task<IActionResult> Index(string? userId)
     {
         var user = await userManager.GetUserAsync(User);
