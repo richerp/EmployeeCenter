@@ -66,6 +66,9 @@ public static class AppPermissionNames
     public const string CanSubmitFeedback = nameof(CanSubmitFeedback);
     public const string CanManageFeedback = nameof(CanManageFeedback);
 
+    // Service Management
+    public const string CanManageServices = nameof(CanManageServices);
+
     // Permission Management
     public const string CanReadPermissions = nameof(CanReadPermissions);
 

@@ -162,6 +162,9 @@
   <data name="Directory" xml:space="preserve">
     <value>目录</value>
   </data>
+  <data name="DNS Providers" xml:space="preserve">
+    <value>DNS 提供商</value>
+  </data>
   <data name="Download / View" xml:space="preserve">
     <value>下载 / 查看</value>
   </data>
@@ -288,6 +291,9 @@
   <data name="Manage Printing" xml:space="preserve">
     <value>管理打印</value>
   </data>
+  <data name="Manage Services" xml:space="preserve">
+    <value>管理服务</value>
+  </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>管理共享</value>
   </data>
@@ -386,6 +392,9 @@
   </data>
   <data name="Secretary" xml:space="preserve">
     <value>秘书</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>服务</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>设置</value>

@@ -3,6 +3,7 @@ using System;
 using Aiursoft.EmployeeCenter.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
 {
     [DbContext(typeof(SqliteContext))]
-    partial class SqliteContextModelSnapshot : ModelSnapshot
+    [Migration("20260122163450_AddServices")]
+    partial class AddServices
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "10.0.2");
@@ -1080,9 +1083,6 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .HasMaxLength(1000)
                         .HasColumnType("TEXT");
 
-                    b.Property<Guid?>("ServerId")
-                        .HasColumnType("TEXT");
-
                     b.Property<string>("ServerIp")
                         .HasMaxLength(100)
                         .HasColumnType("TEXT");
@@ -1099,8 +1099,6 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.HasIndex("LocationId");
 
                     b.HasIndex("OwnerId");
-
-                    b.HasIndex("ServerId");
 
                     b.ToTable("Services");
                 });
@@ -1876,10 +1874,6 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .WithMany()
                         .HasForeignKey("OwnerId");
 
-                    b.HasOne("Aiursoft.EmployeeCenter.Entities.Asset", "Server")
-                        .WithMany()
-                        .HasForeignKey("ServerId");
-
                     b.Navigation("CrossEntityLink");
 
                     b.Navigation("DnsProvider");
@@ -1887,8 +1881,6 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.Navigation("Location");
 
                     b.Navigation("Owner");
-
-                    b.Navigation("Server");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.SignalQuestionResponse", b =>

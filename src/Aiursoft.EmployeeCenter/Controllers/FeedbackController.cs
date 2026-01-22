@@ -24,7 +24,7 @@ public class FeedbackController(
         CascadedLinksIcon = "git-branch",
         CascadedLinksOrder = 2,
         LinkText = "Employee Signals",
-        LinkOrder = 3)]
+        LinkOrder = 4)]
     public async Task<IActionResult> Index()
     {
         var user = await userManager.GetUserAsync(User);
