@@ -281,7 +281,7 @@ public class ServicesController(
     }
 
     [HttpGet]
-    public async Task<IActionResult> GetAssets()
+    public async Task<IActionResult> GetServers()
     {
         var servers = await context.Servers
             .OrderBy(s => s.Hostname)

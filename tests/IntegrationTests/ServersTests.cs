@@ -1,8 +1,4 @@
 using System.Net;
-using Aiursoft.EmployeeCenter.Entities;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
@@ -16,7 +12,7 @@ public class ServersTests : TestBase
         var response = await Http.GetAsync("/Servers/Index");
         response.EnsureSuccessStatusCode();
         var content = await response.Content.ReadAsStringAsync();
-        Assert.IsTrue(content.Contains("Servers"));
+        Assert.Contains("Servers", content);
     }
 
     [TestMethod]
