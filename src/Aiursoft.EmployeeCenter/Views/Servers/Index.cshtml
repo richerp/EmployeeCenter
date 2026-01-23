@@ -1,4 +1,5 @@
 @model Aiursoft.EmployeeCenter.Models.ServersViewModels.IndexServerViewModel
+@inject Aiursoft.EmployeeCenter.Services.FileStorage.StorageService Storage
 @{
     ViewData["Title"] = Localizer["Servers"];
 }
@@ -61,7 +62,7 @@
                                 @if (s.Owner != null)
                                 {
                                     <span class="badge bg-secondary">
-                                        <img src="@s.Owner.AvatarRelativePath" class="avatar img-fluid rounded me-1" alt="@s.Owner.DisplayName" style="width: 20px; height: 20px;" />
+                                        <img src="@Storage.RelativePathToInternetUrl(s.Owner.AvatarRelativePath)" class="avatar img-fluid rounded me-1" alt="@s.Owner.DisplayName" style="width: 20px; height: 20px;" />
                                         @s.Owner.DisplayName
                                     </span>
                                 }
