@@ -28,12 +28,6 @@ public class Service
     [MaxLength(100)]
     public string? Protocols { get; set; } // e.g., HTTPS, TCP, UDP
 
-    public int? LocationId { get; set; }
-
-    [JsonIgnore]
-    [ForeignKey(nameof(LocationId))]
-    public Location? Location { get; set; }
-
     public int? ServerId { get; set; }
 
     [JsonIgnore]

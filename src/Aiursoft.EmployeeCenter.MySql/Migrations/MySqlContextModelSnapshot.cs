@@ -1190,9 +1190,6 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.Property<bool>("IsViaFrps")
                         .HasColumnType("tinyint(1)");
 
-                    b.Property<int?>("LocationId")
-                        .HasColumnType("int");
-
                     b.Property<int?>("OwnerId")
                         .HasColumnType("int");
 
@@ -1221,8 +1218,6 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.HasIndex("CrossEntityLinkId");
 
                     b.HasIndex("DnsProviderId");
-
-                    b.HasIndex("LocationId");
 
                     b.HasIndex("OwnerId");
 
@@ -2037,10 +2032,6 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .WithMany("Services")
                         .HasForeignKey("DnsProviderId");
 
-                    b.HasOne("Aiursoft.EmployeeCenter.Entities.Location", "Location")
-                        .WithMany()
-                        .HasForeignKey("LocationId");
-
                     b.HasOne("Aiursoft.EmployeeCenter.Entities.CompanyEntity", "Owner")
                         .WithMany()
                         .HasForeignKey("OwnerId");
@@ -2052,8 +2043,6 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.Navigation("CrossEntityLink");
 
                     b.Navigation("DnsProvider");
-
-                    b.Navigation("Location");
 
                     b.Navigation("Owner");
 

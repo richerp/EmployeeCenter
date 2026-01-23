@@ -47,7 +47,7 @@
                         <th>@Localizer["Link"]</th>
                         <th>@Localizer["Protocols"]</th>
                         <th>@Localizer["Location"]</th>
-                        <th>@Localizer["Server IP"]</th>
+                        <th>@Localizer["Server"]</th>
                         <th>@Localizer["DNS"]</th>
                         <th>@Localizer["Purpose"]</th>
                         <th>@Localizer["Status"]</th>
@@ -71,10 +71,10 @@
                                 @(s.Protocols ?? "-")
                             </td>
                             <td>
-                                @(s.Location?.Name ?? "-")
+                                @(s.Server?.Location?.Name ?? "-")
                             </td>
                             <td>
-                                @(s.Server?.ServerIp ?? "-")
+                                @(s.Server?.Hostname ?? s.Server?.ServerIp ?? "-")
                             </td>
                             <td>
                                 @(s.DnsProvider?.Name ?? "-")
