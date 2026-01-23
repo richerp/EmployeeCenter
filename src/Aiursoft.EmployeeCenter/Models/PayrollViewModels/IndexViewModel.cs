@@ -16,4 +16,5 @@ public class IndexViewModel : UiStackLayoutViewModel
     public List<string> ChartLabels { get; set; } = [];
     public List<decimal> ChartTotalAmounts { get; set; } = [];
     public List<decimal> ChartBaseSalaries { get; set; } = [];
+    public List<string> ChartCurrencies { get; set; } = [];
 }

@@ -1,4 +1,5 @@
 using Aiursoft.EmployeeCenter.Authorization;
+using Aiursoft.EmployeeCenter.Configuration;
 using Aiursoft.EmployeeCenter.Entities;
 using Aiursoft.EmployeeCenter.Models.PayrollViewModels;
 using Aiursoft.EmployeeCenter.Services;
@@ -14,7 +15,8 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 [Authorize(Policy = AppPermissionNames.CanManagePayroll)]
 [LimitPerMin]
 public class ManagePayrollController(
-    EmployeeCenterDbContext context)
+    EmployeeCenterDbContext context,
+    GlobalSettingsService globalSettingsService)
     : Controller
 {
     [RenderInNavBar(
@@ -84,6 +86,7 @@ public class ManagePayrollController(
             HousingFundPersonal = p.HousingFundPersonal,
             SpecialAdditionalDeduction = p.SpecialAdditionalDeduction,
             PersonalIncomeTax = p.PersonalIncomeTax,
+            Currency = p.Currency,
             TotalAmount = p.TotalAmount,
             BankName = p.BankName,
             BankAccount = p.BankAccount,
@@ -106,6 +109,8 @@ public class ManagePayrollController(
         {
             UserId = userId ?? string.Empty,
             Content = string.Empty,
+            Currency = await globalSettingsService.GetSettingValueAsync(SettingsMap.DefaultPayrollCurrency),
+            CurrencyOptions = SettingsMap.Definitions.First(d => d.Key == SettingsMap.DefaultPayrollCurrency).ChoiceOptions!,
             AllUsers = await context.Users.ToListAsync()
         });
     }
@@ -141,6 +146,7 @@ public class ManagePayrollController(
                 SpecialAdditionalDeduction = model.SpecialAdditionalDeduction,
                 PersonalIncomeTax = model.PersonalIncomeTax,
 
+                Currency = model.Currency,
                 TotalAmount = model.TotalAmount,
                 BankName = model.BankName,
                 BankAccount = model.BankAccount,
@@ -160,6 +166,7 @@ public class ManagePayrollController(
         }
 
         model.AllUsers = await context.Users.ToListAsync();
+        model.CurrencyOptions = SettingsMap.Definitions.First(d => d.Key == SettingsMap.DefaultPayrollCurrency).ChoiceOptions!;
         return this.StackView(model);
     }
 

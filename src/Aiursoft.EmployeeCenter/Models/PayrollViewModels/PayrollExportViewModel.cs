@@ -61,6 +61,8 @@ public class PayrollExportViewModel
     public decimal PersonalIncomeTax { get; set; }
 
     // Actual
+    [CsvProperty("Currency")]
+    public string Currency { get; set; } = string.Empty;
     [CsvProperty("TotalAmount")]
     public decimal TotalAmount { get; set; }
 

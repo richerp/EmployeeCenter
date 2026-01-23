@@ -83,7 +83,19 @@
                         <span class="ms-2">@item.Owner.DisplayName</span>
                     </td>
                     <td>@item.TargetMonth.ToString("yyyy-MM")</td>
-                    <td>@item.TotalAmount.ToString("C")</td>
+                    <td>
+                        @{
+                            var culture = item.Currency switch
+                            {
+                                "CNY" => "zh-CN",
+                                "JPY" => "ja-JP",
+                                "HKD" => "zh-HK",
+                                "USD" => "en-US",
+                                _ => "en-US"
+                            };
+                        }
+                        @item.TotalAmount.ToString("C", System.Globalization.CultureInfo.GetCultureInfo(culture))
+                    </td>
                     <td><label class="text-muted" data-utc-time="@item.CreationTime.ToHtmlDateTime()"></label></td>
                     <td class="text-end">
                         <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary">

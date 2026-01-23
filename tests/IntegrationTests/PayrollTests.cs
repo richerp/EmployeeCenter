@@ -114,6 +114,7 @@ public class PayrollTests
         {
             { "UserId", userId },
             { "TargetMonth", "2025-12" },
+            { "Currency", "USD" },
             { "TotalAmount", "5000" },
             { "Content", "# December Payroll\nBase: 4000\nBonus: 1000" },
             { "__RequestVerificationToken", createPayrollToken }
@@ -143,6 +144,7 @@ public class PayrollTests
         myPayrollsResponse.EnsureSuccessStatusCode();
         var myPayrollsHtml = await myPayrollsResponse.Content.ReadAsStringAsync();
         Assert.Contains("2025-12", myPayrollsHtml);
+        Assert.Contains("$5,000.00", myPayrollsHtml);
 
         // 7. View details
         int payrollId;
@@ -151,12 +153,14 @@ public class PayrollTests
             var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
             var payroll = await db.Payrolls.FirstAsync(p => p.OwnerId == userId);
             payrollId = payroll.Id;
+            Assert.AreEqual("USD", payroll.Currency);
         }
 
         var detailsResponse = await _http.GetAsync("/Payroll/Details/" + payrollId);
         detailsResponse.EnsureSuccessStatusCode();
         var detailsHtml = await detailsResponse.Content.ReadAsStringAsync();
         Assert.Contains("December Payroll", detailsHtml);
+        Assert.Contains("$5,000.00", detailsHtml);
 
         // 8. Log in as admin again to export payroll
         await _http.GetAsync("/Account/LogOff");
@@ -174,6 +178,7 @@ public class PayrollTests
         var csvContent = await exportResponse.Content.ReadAsStringAsync();
         Assert.Contains(userId, csvContent);
         Assert.Contains("5000", csvContent);
+        Assert.Contains("USD", csvContent);
         Assert.Contains("December Payroll", csvContent);
     }
 }

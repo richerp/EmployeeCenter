@@ -56,7 +56,19 @@
                 {
                     <tr class="clickable-row" data-href="@Url.Action("Details", new { id = item.Id })">
                         <td>@item.TargetMonth.ToString("yyyy-MM")</td>
-                        <td>@item.TotalAmount.ToString("C")</td>
+                        <td>
+                            @{
+                                var culture = item.Currency switch
+                                {
+                                    "CNY" => "zh-CN",
+                                    "JPY" => "ja-JP",
+                                    "HKD" => "zh-HK",
+                                    "USD" => "en-US",
+                                    _ => "en-US"
+                                };
+                            }
+                            @item.TotalAmount.ToString("C", System.Globalization.CultureInfo.GetCultureInfo(culture))
+                        </td>
                         <td><label class="text-muted" data-utc-time="@item.CreationTime.ToHtmlDateTime()"></label></td>
                         <td class="text-end">
                             <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary">
@@ -100,6 +112,7 @@
             const chartCanvas = document.getElementById("chartjs-salary-trend");
             if (chartCanvas) {
                 const ctx = chartCanvas.getContext("2d");
+                const currencies = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.ChartCurrencies));
                 
                 // Get primary color from CSS variables if available, otherwise use default
                 const primaryColor = getComputedStyle(document.documentElement).getPropertyValue('--bs-primary').trim() || '#3b7ddd';
@@ -143,9 +156,14 @@
                                         if (label) {
                                             label += ': ';
                                         }
-                                        label += new Intl.NumberFormat('zh-CN', {
+                                        const currency = currencies[context.dataIndex] || 'CNY';
+                                        const locale = currency === 'CNY' ? 'zh-CN' : 
+                                                       currency === 'JPY' ? 'ja-JP' : 
+                                                       currency === 'HKD' ? 'zh-HK' : 
+                                                       currency === 'USD' ? 'en-US' : 'en-US';
+                                        label += new Intl.NumberFormat(locale, {
                                             style: 'currency',
-                                            currency: 'CNY'
+                                            currency: currency
                                         }).format(context.parsed.y);
                                         return label;
                                     }
@@ -160,9 +178,15 @@
                                 },
                                 ticks: {
                                     callback: function(value) {
-                                        return new Intl.NumberFormat('zh-CN', {
+                                        // Use the last currency as a reference for y-axis ticks
+                                        const currency = currencies[currencies.length - 1] || 'CNY';
+                                        const locale = currency === 'CNY' ? 'zh-CN' : 
+                                                       currency === 'JPY' ? 'ja-JP' : 
+                                                       currency === 'HKD' ? 'zh-HK' : 
+                                                       currency === 'USD' ? 'en-US' : 'en-US';
+                                        return new Intl.NumberFormat(locale, {
                                             style: 'currency',
-                                            currency: 'CNY',
+                                            currency: currency,
                                             minimumFractionDigits: 0
                                         }).format(value);
                                     }
