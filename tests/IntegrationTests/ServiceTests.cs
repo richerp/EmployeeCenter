@@ -24,7 +24,8 @@ public class ServiceTests : TestBase
         var postResponse = await PostForm("/Services/Create", new Dictionary<string, string>
         {
             { "Domain", "test-service.com" },
-            { "IsOnline", "true" },
+            { "Status", "1" },
+            { "Purpose", "1" },
             { "IsSelfDeveloped", "false" }
         });
         
@@ -33,7 +34,7 @@ public class ServiceTests : TestBase
         var db = GetService<EmployeeCenterDbContext>();
         var service = await db.Services.FirstOrDefaultAsync(s => s.Domain == "test-service.com");
         Assert.IsNotNull(service);
-        Assert.IsTrue(service.IsOnline);
+        Assert.AreEqual(ServiceStatus.Running, service.Status);
     }
 
     [TestMethod]

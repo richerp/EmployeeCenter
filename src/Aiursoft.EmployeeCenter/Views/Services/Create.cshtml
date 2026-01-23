@@ -133,26 +133,49 @@
 
                     <div class="row">
                         <div class="col-md-6 mb-3">
+                            <label asp-for="Status" class="form-label"></label>
+                            <select asp-for="Status" class="form-select">
+                                @foreach (var item in Html.GetEnumSelectList<ServiceStatus>())
+                                {
+                                    <option value="@item.Value" selected="@item.Selected">@Localizer[item.Text]</option>
+                                }
+                            </select>
+                            <span asp-validation-for="Status" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Purpose" class="form-label"></label>
+                            <select asp-for="Purpose" class="form-select">
+                                @foreach (var item in Html.GetEnumSelectList<ServicePurpose>())
+                                {
+                                    <option value="@item.Value" selected="@item.Selected">@Localizer[item.Text]</option>
+                                }
+                            </select>
+                            <span asp-validation-for="Purpose" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
                             <div class="form-check form-switch">
                                 <input class="form-check-input" type="checkbox" asp-for="IsViaFrps">
                                 <label class="form-check-label" asp-for="IsViaFrps"></label>
                             </div>
                         </div>
-                        <div class="col-md-6 mb-3">
+                        <div class="col-md-4 mb-3">
                             <div class="form-check form-switch">
                                 <input class="form-check-input" type="checkbox" asp-for="IsCloudflareProxied">
                                 <label class="form-check-label" asp-for="IsCloudflareProxied"></label>
                             </div>
                         </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" asp-for="AuthentikIntegrated">
+                                <label class="form-check-label" asp-for="AuthentikIntegrated"></label>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" asp-for="IsOnline">
-                                <label class="form-check-label" asp-for="IsOnline"></label>
-                            </div>
-                        </div>
                         <div class="col-md-6 mb-3">
                             <div class="form-check form-switch">
                                 <input class="form-check-input" type="checkbox" asp-for="IsSelfDeveloped">

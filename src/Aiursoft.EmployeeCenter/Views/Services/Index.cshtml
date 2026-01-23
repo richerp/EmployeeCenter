@@ -49,11 +49,9 @@
                         <th>@Localizer["Location"]</th>
                         <th>@Localizer["Server IP"]</th>
                         <th>@Localizer["DNS"]</th>
-                        <th>@Localizer["Is Online"]</th>
-                        @if (User.HasClaim(AppPermissions.Type, AppPermissionNames.CanManageServices))
-                        {
-                            <th class="text-end">@Localizer["Actions"]</th>
-                        }
+                        <th>@Localizer["Purpose"]</th>
+                        <th>@Localizer["Status"]</th>
+                        <th class="text-end">@Localizer["Actions"]</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -82,18 +80,34 @@
                                 @(s.DnsProvider?.Name ?? "-")
                             </td>
                             <td>
-                                @if (s.IsOnline)
+                                @Localizer[s.Purpose.ToString()]
+                            </td>
+                            <td>
+                                @switch (s.Status)
                                 {
-                                    <span class="badge bg-success">@Localizer["Online"]</span>
-                                }
-                                else
-                                {
-                                    <span class="badge bg-danger">@Localizer["Offline"]</span>
+                                    case ServiceStatus.Running:
+                                        <span class="badge bg-success">@Localizer["Running"]</span>
+                                        break;
+                                    case ServiceStatus.Developing:
+                                        <span class="badge bg-warning">@Localizer["Developing"]</span>
+                                        break;
+                                    case ServiceStatus.Testing:
+                                        <span class="badge bg-info">@Localizer["Testing"]</span>
+                                        break;
+                                    case ServiceStatus.Offline:
+                                        <span class="badge bg-danger">@Localizer["Offline"]</span>
+                                        break;
                                 }
                             </td>
-                            @if (User.HasClaim(AppPermissions.Type, AppPermissionNames.CanManageServices))
-                            {
-                                <td class="text-end">
+                            <td class="text-end">
+                                @if (!string.IsNullOrWhiteSpace(s.Server?.DetailLink))
+                                {
+                                    <a href="@s.Server.DetailLink" target="_blank" class="btn btn-sm btn-outline-info me-1">
+                                        <i class="align-middle" data-lucide="external-link"></i> @Localizer["Server Details"]
+                                    </a>
+                                }
+                                @if (User.HasClaim(AppPermissions.Type, AppPermissionNames.CanManageServices))
+                                {
                                     <a asp-action="Edit" asp-route-id="@s.Id" class="btn btn-sm btn-outline-primary">
                                         <i class="align-middle" data-lucide="edit-2"></i> @Localizer["Edit"]
                                     </a>
@@ -102,8 +116,8 @@
                                             <i class="align-middle" data-lucide="trash-2"></i> @Localizer["Delete"]
                                         </button>
                                     </form>
-                                </td>
-                            }
+                                }
+                            </td>
                         </tr>
                     }
                 </tbody>

@@ -57,5 +57,41 @@
   <data name="Tips" xml:space="preserve">
     <value>提示</value>
   </data>
+  <data name="Status" xml:space="preserve">
+    <value>在线状态</value>
+  </data>
+  <data name="Purpose" xml:space="preserve">
+    <value>用途</value>
+  </data>
+  <data name="Authentik Integrated" xml:space="preserve">
+    <value>已接入 Authentik</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>运营中</value>
+  </data>
+  <data name="Developing" xml:space="preserve">
+    <value>开发中</value>
+  </data>
+  <data name="Testing" xml:space="preserve">
+    <value>测试中</value>
+  </data>
+  <data name="Offline" xml:space="preserve">
+    <value>已下线</value>
+  </data>
+  <data name="Global" xml:space="preserve">
+    <value>对全球服务</value>
+  </data>
+  <data name="Domestic" xml:space="preserve">
+    <value>对国内服务</value>
+  </data>
+  <data name="Both" xml:space="preserve">
+    <value>对国内和全球服务</value>
+  </data>
+  <data name="Internal" xml:space="preserve">
+    <value>内部开发使用</value>
+  </data>
+  <data name="InternalAndPartners" xml:space="preserve">
+    <value>内部开发和合作伙伴使用</value>
+  </data>
 
 </root>

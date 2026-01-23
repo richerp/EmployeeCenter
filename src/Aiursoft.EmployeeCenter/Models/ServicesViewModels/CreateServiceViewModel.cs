@@ -36,8 +36,14 @@ public class CreateServiceViewModel : UiStackLayoutViewModel
     [Display(Name = "Cloudflare Proxied")]
     public bool IsCloudflareProxied { get; set; }
 
-    [Display(Name = "Is Online")]
-    public bool IsOnline { get; set; }
+    [Display(Name = "Status")]
+    public ServiceStatus Status { get; set; }
+
+    [Display(Name = "Purpose")]
+    public ServicePurpose Purpose { get; set; }
+
+    [Display(Name = "Authentik Integrated")]
+    public bool AuthentikIntegrated { get; set; }
 
     [Display(Name = "Is Self Developed")]
     public bool IsSelfDeveloped { get; set; }
