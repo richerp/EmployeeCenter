@@ -89,12 +89,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label asp-for="ServerIp" class="form-label"></label>
-                            <input asp-for="ServerIp" class="form-control" placeholder="e.g. 1.2.3.4" />
-                            <span asp-validation-for="ServerIp" class="text-danger"></span>
-                        </div>
-                        <div class="col-md-6 mb-3">
+                        <div class="col-md-12 mb-3">
                             <label asp-for="ServerId" class="form-label"></label>
                             <div class="input-group">
                                 <select asp-for="ServerId" class="form-select" asp-items="@(new SelectList(Model.AllServers, "Id", "Hostname"))">

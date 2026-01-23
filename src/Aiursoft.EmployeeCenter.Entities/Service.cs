@@ -34,9 +34,6 @@ public class Service
     [ForeignKey(nameof(LocationId))]
     public Location? Location { get; set; }
 
-    [MaxLength(100)]
-    public string? ServerIp { get; set; }
-
     public int? ServerId { get; set; }
 
     [JsonIgnore]

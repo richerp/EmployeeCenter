@@ -1161,10 +1161,6 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.Property<int?>("ServerId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("ServerIp")
-                        .HasMaxLength(100)
-                        .HasColumnType("TEXT");
-
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("TEXT");
 
