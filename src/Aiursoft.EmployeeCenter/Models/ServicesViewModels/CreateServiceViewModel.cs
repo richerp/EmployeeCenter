@@ -21,9 +21,6 @@ public class CreateServiceViewModel : UiStackLayoutViewModel
     [Display(Name = "Protocols")]
     public string? Protocols { get; set; }
 
-    [Display(Name = "Location")]
-    public int? LocationId { get; set; }
-
     [Display(Name = "Server")]
     public int? ServerId { get; set; }
 
@@ -53,7 +50,6 @@ public class CreateServiceViewModel : UiStackLayoutViewModel
     public string? Remark { get; set; }
 
     public List<CompanyEntity> AllOwners { get; set; } = new();
-    public List<Location> AllLocations { get; set; } = new();
     public List<DnsProvider> AllDnsProviders { get; set; } = new();
     public List<Service> AllServices { get; set; } = new();
     public List<Server> AllServers { get; set; } = new();

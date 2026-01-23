@@ -63,29 +63,10 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-6 mb-3">
+                        <div class="col-md-12 mb-3">
                             <label asp-for="Protocols" class="form-label"></label>
                             <input asp-for="Protocols" class="form-control" placeholder="e.g. HTTPS, TCP" />
                             <span asp-validation-for="Protocols" class="text-danger"></span>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label asp-for="LocationId" class="form-label"></label>
-                            <div class="input-group">
-                                <select asp-for="LocationId" class="form-select" asp-items="@(new SelectList(Model.AllLocations, "Id", "Name"))">
-                                    <option value="">-- @Localizer["Select Location"] --</option>
-                                </select>
-                                <a asp-controller="Assets" asp-action="Locations" target="_blank" class="btn btn-outline-secondary" title="@Localizer["New"]">
-                                    <i class="align-middle" data-lucide="plus-circle"></i>
-                                </a>
-                                <button type="button" class="btn btn-outline-secondary reload-dropdown" 
-                                        data-url="@Url.Action("GetLocations")" 
-                                        data-target="LocationId" 
-                                        data-placeholder="@Localizer["Select Location"]"
-                                        title="@Localizer["Reload"]">
-                                    <i class="align-middle" data-lucide="rotate-cw"></i>
-                                </button>
-                            </div>
-                            <span asp-validation-for="LocationId" class="text-danger"></span>
                         </div>
                     </div>
 

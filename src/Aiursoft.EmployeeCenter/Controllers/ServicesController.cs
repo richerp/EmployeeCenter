@@ -29,9 +29,9 @@ public class ServicesController(
         var services = await context.Services
             .Include(s => s.Owner)
             .Include(s => s.CrossEntityLink)
-            .Include(s => s.Location)
             .Include(s => s.DnsProvider)
             .Include(s => s.Server)
+            .ThenInclude(s => s.Location)
             .OrderBy(s => s.Domain)
             .ToListAsync();
 
@@ -47,7 +47,6 @@ public class ServicesController(
         return this.StackView(new CreateServiceViewModel
         {
             AllOwners = await context.CompanyEntities.ToListAsync(),
-            AllLocations = await context.Locations.ToListAsync(),
             AllDnsProviders = await context.DnsProviders.ToListAsync(),
             AllServices = await context.Services.ToListAsync(),
             AllServers = await context.Servers.ToListAsync()
@@ -67,7 +66,6 @@ public class ServicesController(
                 OwnerId = model.OwnerId,
                 CrossEntityLinkId = model.CrossEntityLinkId,
                 Protocols = model.Protocols,
-                LocationId = model.LocationId,
                 ServerId = model.ServerId,
                 DnsProviderId = model.DnsProviderId,
                 IsViaFrps = model.IsViaFrps,
@@ -86,7 +84,6 @@ public class ServicesController(
         }
 
         model.AllOwners = await context.CompanyEntities.ToListAsync();
-        model.AllLocations = await context.Locations.ToListAsync();
         model.AllDnsProviders = await context.DnsProviders.ToListAsync();
         model.AllServices = await context.Services.ToListAsync();
         model.AllServers = await context.Servers.ToListAsync();
@@ -106,7 +103,6 @@ public class ServicesController(
             OwnerId = service.OwnerId,
             CrossEntityLinkId = service.CrossEntityLinkId,
             Protocols = service.Protocols,
-            LocationId = service.LocationId,
             ServerId = service.ServerId,
             DnsProviderId = service.DnsProviderId,
             IsViaFrps = service.IsViaFrps,
@@ -117,7 +113,6 @@ public class ServicesController(
             IsSelfDeveloped = service.IsSelfDeveloped,
             Remark = service.Remark,
             AllOwners = await context.CompanyEntities.ToListAsync(),
-            AllLocations = await context.Locations.ToListAsync(),
             AllDnsProviders = await context.DnsProviders.ToListAsync(),
             AllServices = await context.Services.Where(s => s.Id != id).ToListAsync(),
             AllServers = await context.Servers.ToListAsync()
@@ -138,7 +133,6 @@ public class ServicesController(
             service.OwnerId = model.OwnerId;
             service.CrossEntityLinkId = model.CrossEntityLinkId;
             service.Protocols = model.Protocols;
-            service.LocationId = model.LocationId;
             service.ServerId = model.ServerId;
             service.DnsProviderId = model.DnsProviderId;
             service.IsViaFrps = model.IsViaFrps;
@@ -155,7 +149,6 @@ public class ServicesController(
         }
 
         model.AllOwners = await context.CompanyEntities.ToListAsync();
-        model.AllLocations = await context.Locations.ToListAsync();
         model.AllDnsProviders = await context.DnsProviders.ToListAsync();
         model.AllServices = await context.Services.Where(s => s.Id != model.Id).ToListAsync();
         model.AllServers = await context.Servers.ToListAsync();
