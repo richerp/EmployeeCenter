@@ -27,6 +27,12 @@
   <data name="Annual Leave Per Year" xml:space="preserve">
     <value>Yıllık İzin Yılına Göre</value>
   </data>
+  <data name="Default Payroll Currency" xml:space="preserve">
+    <value>Varsayılan Ödeme Para Birimi</value>
+  </data>
+  <data name="The default currency to use when issuing a new payroll." xml:space="preserve">
+    <value>Yeni bir maaş listesi çıkartılırken kullanılacak varsayılan para birimi.</value>
+  </data>
   <data name="The number of paid annual leave days allocated to each employee every year." xml:space="preserve">
     <value>Her çalışanın her yıl ayrılan ücretli yıllık izin gün sayısını</value>
   </data>

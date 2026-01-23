@@ -84,6 +84,12 @@
   <data name="CRITICAL CONFIRMATION REQUIRED" xml:space="preserve">
     <value>KRYTYCZNE POTWIERDZENIE WYMAGANE</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Waluta</value>
+  </data>
+  <data name="Currency:" xml:space="preserve">
+    <value>Waluta:</value>
+  </data>
   <data name="Deductions" xml:space="preserve">
     <value>Deductions</value>
   </data>

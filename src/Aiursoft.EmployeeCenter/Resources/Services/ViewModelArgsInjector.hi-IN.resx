@@ -384,6 +384,9 @@
   <data name="Secretary" xml:space="preserve">
     <value>सचिव</value>
   </data>
+  <data name="Servers" xml:space="preserve">
+    <value>सर्वर्स</value>
+  </data>
   <data name="Services" xml:space="preserve">
     <value>सेवाएं</value>
   </data>

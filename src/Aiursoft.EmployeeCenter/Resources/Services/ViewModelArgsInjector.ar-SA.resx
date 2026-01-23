@@ -384,6 +384,9 @@
   <data name="Secretary" xml:space="preserve">
     <value>السكرتير</value>
   </data>
+  <data name="Servers" xml:space="preserve">
+    <value>الخوادم</value>
+  </data>
   <data name="Services" xml:space="preserve">
     <value>الخدمات</value>
   </data>

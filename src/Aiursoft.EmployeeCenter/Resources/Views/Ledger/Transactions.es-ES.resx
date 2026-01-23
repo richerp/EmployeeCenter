@@ -30,6 +30,9 @@
   <data name="Edit" xml:space="preserve">
     <value>Editar</value>
   </data>
+  <data name="Fix Error" xml:space="preserve">
+    <value>Corregir error</value>
+  </data>
   <data name="From" xml:space="preserve">
     <value>De</value>
   </data>

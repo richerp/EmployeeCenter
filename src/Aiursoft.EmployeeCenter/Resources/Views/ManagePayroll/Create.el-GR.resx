@@ -84,6 +84,12 @@
   <data name="CRITICAL CONFIRMATION REQUIRED" xml:space="preserve">
     <value>ΚΡΙΣΙΜΗ ΕΠΙΒΕΒΑΙΩΣΗ ΑΠΑΙΤΕΙΤΑΙ</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Νομισματική μονάδα</value>
+  </data>
+  <data name="Currency:" xml:space="preserve">
+    <value>Νομισματική μονάδα:</value>
+  </data>
   <data name="Deductions" xml:space="preserve">
     <value>Deductions</value>
   </data>

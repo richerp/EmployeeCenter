@@ -48,6 +48,9 @@
   <data name="Remark" xml:space="preserve">
     <value>備考</value>
   </data>
+  <data name="Server" xml:space="preserve">
+    <value>サーバー</value>
+  </data>
   <data name="Server (Asset)" xml:space="preserve">
     <value>サーバー (アセット)</value>
   </data>

@@ -27,6 +27,12 @@
   <data name="Annual Leave Per Year" xml:space="preserve">
     <value>Vuosiloma vuodessa</value>
   </data>
+  <data name="Default Payroll Currency" xml:space="preserve">
+    <value>Oletuspalkkalaskentan valuutta</value>
+  </data>
+  <data name="The default currency to use when issuing a new payroll." xml:space="preserve">
+    <value>Oletusvaluutta, jota käytetään uuden palkkailmoituksen myöntämisessä.</value>
+  </data>
   <data name="The number of paid annual leave days allocated to each employee every year." xml:space="preserve">
     <value>Vuoden aikana työntekijälle myönnettävien maksutonta vuosilomapäivien määrä.</value>
   </data>

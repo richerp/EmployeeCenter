@@ -27,6 +27,12 @@
   <data name="Annual Leave Per Year" xml:space="preserve">
     <value>Congruă anuală pe an</value>
   </data>
+  <data name="Default Payroll Currency" xml:space="preserve">
+    <value>Monedă salarială implicită</value>
+  </data>
+  <data name="The default currency to use when issuing a new payroll." xml:space="preserve">
+    <value>Moneda implicită de utilizat la emiterea unei nouă salarii.</value>
+  </data>
   <data name="The number of paid annual leave days allocated to each employee every year." xml:space="preserve">
     <value>Numărul de zile de congediu anual plătit alocate fiecărui angajat în fiecare an.</value>
   </data>

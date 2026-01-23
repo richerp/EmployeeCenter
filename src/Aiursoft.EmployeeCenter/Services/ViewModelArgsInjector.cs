@@ -112,6 +112,8 @@ public class ViewModelArgsInjector(
         _ = localizer["Blueprints"];
         _ = localizer["Manage Blueprints"];
         _ = localizer["View Blueprints"];
+    
+        _ = localizer["Servers"];
     }
 
     public void InjectSimple(

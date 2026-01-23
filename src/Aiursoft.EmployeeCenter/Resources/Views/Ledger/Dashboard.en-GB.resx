@@ -36,17 +36,17 @@
   <data name="Edit" xml:space="preserve">
     <value>Edit</value>
   </data>
-  <data name="From" xml:space="preserve">
-    <value>From</value>
-  </data>
-  <data name="Invoice" xml:space="preserve">
-    <value>Invoice</value>
-  </data>
   <data name="Fix Error" xml:space="preserve">
     <value>Fix Error</value>
   </data>
+  <data name="From" xml:space="preserve">
+    <value>From</value>
+  </data>
   <data name="Health Metrics" xml:space="preserve">
     <value>Health Metrics</value>
+  </data>
+  <data name="Invoice" xml:space="preserve">
+    <value>Invoice</value>
   </data>
   <data name="Ledger Dashboard" xml:space="preserve">
     <value>Ledger Dashboard</value>

@@ -48,6 +48,9 @@
   <data name="Remark" xml:space="preserve">
     <value>Açıklama</value>
   </data>
+  <data name="Server" xml:space="preserve">
+    <value>Sunucu</value>
+  </data>
   <data name="Server (Asset)" xml:space="preserve">
     <value>Sunucu (Varlık)</value>
   </data>

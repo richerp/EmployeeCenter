@@ -387,6 +387,9 @@
   <data name="Secretary" xml:space="preserve">
     <value>Thư ký</value>
   </data>
+  <data name="Servers" xml:space="preserve">
+    <value>Máy chủ</value>
+  </data>
   <data name="Services" xml:space="preserve">
     <value>Dịch vụ</value>
   </data>

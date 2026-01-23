@@ -33,11 +33,17 @@
   <data name="Edit" xml:space="preserve">
     <value>Rediger</value>
   </data>
+  <data name="Fix Error" xml:space="preserve">
+    <value>Ret ret</value>
+  </data>
   <data name="From" xml:space="preserve">
     <value>Fra</value>
   </data>
   <data name="Health Metrics" xml:space="preserve">
     <value>Helseindikatorer</value>
+  </data>
+  <data name="Invoice" xml:space="preserve">
+    <value>Faktura</value>
   </data>
   <data name="Manage Accounts" xml:space="preserve">
     <value>Håndtér konti</value>

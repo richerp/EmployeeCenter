@@ -33,11 +33,17 @@
   <data name="Edit" xml:space="preserve">
     <value>수정</value>
   </data>
+  <data name="Fix Error" xml:space="preserve">
+    <value>오류 수정</value>
+  </data>
   <data name="From" xml:space="preserve">
     <value>출처</value>
   </data>
   <data name="Health Metrics" xml:space="preserve">
     <value>건강 지표</value>
+  </data>
+  <data name="Invoice" xml:space="preserve">
+    <value>송장</value>
   </data>
   <data name="Manage Accounts" xml:space="preserve">
     <value>계정 관리</value>

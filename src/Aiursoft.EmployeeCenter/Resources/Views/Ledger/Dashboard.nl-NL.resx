@@ -33,11 +33,17 @@
   <data name="Edit" xml:space="preserve">
     <value>Bewerken</value>
   </data>
+  <data name="Fix Error" xml:space="preserve">
+    <value>Fout oplossen</value>
+  </data>
   <data name="From" xml:space="preserve">
     <value>Van</value>
   </data>
   <data name="Health Metrics" xml:space="preserve">
     <value>Gezondheidsmetriek</value>
+  </data>
+  <data name="Invoice" xml:space="preserve">
+    <value>Factuur</value>
   </data>
   <data name="Manage Accounts" xml:space="preserve">
     <value>Accounts beheren</value>

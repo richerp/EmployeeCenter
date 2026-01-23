@@ -84,6 +84,12 @@
   <data name="CRITICAL CONFIRMATION REQUIRED" xml:space="preserve">
     <value>CONFIRMATION CRITIQUE REQUISE</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Devise</value>
+  </data>
+  <data name="Currency:" xml:space="preserve">
+    <value>Devise:</value>
+  </data>
   <data name="Deductions" xml:space="preserve">
     <value>Retenues</value>
   </data>

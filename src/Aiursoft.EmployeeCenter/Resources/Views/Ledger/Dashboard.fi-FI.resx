@@ -33,11 +33,17 @@
   <data name="Edit" xml:space="preserve">
     <value>Muokkaa</value>
   </data>
+  <data name="Fix Error" xml:space="preserve">
+    <value>Korjaa virhe</value>
+  </data>
   <data name="From" xml:space="preserve">
     <value>Lähde</value>
   </data>
   <data name="Health Metrics" xml:space="preserve">
     <value>Terveysindikaattorit</value>
+  </data>
+  <data name="Invoice" xml:space="preserve">
+    <value>Lasku</value>
   </data>
   <data name="Manage Accounts" xml:space="preserve">
     <value>Hallinnoi tilejä</value>

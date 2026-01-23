@@ -33,6 +33,9 @@
   <data name="Content (Markdown)" xml:space="preserve">
     <value>Content (Markdown)</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Currency</value>
+  </data>
   <data name="Full Attendance" xml:space="preserve">
     <value>Full Attendance</value>
   </data>

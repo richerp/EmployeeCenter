@@ -84,6 +84,12 @@
   <data name="CRITICAL CONFIRMATION REQUIRED" xml:space="preserve">
     <value>การยืนยันที่สำคัญจำเป็น</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>สกุลเงิน</value>
+  </data>
+  <data name="Currency:" xml:space="preserve">
+    <value>สกุลเงิน:</value>
+  </data>
   <data name="Deductions" xml:space="preserve">
     <value>การหัก</value>
   </data>

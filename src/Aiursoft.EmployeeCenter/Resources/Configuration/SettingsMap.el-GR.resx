@@ -27,6 +27,12 @@
   <data name="Annual Leave Per Year" xml:space="preserve">
     <value>Ετήσια Άδεια Ανά Χρόνο</value>
   </data>
+  <data name="Default Payroll Currency" xml:space="preserve">
+    <value>Προεπιλεγμένο Νόμισμα Μισθοδοσίας</value>
+  </data>
+  <data name="The default currency to use when issuing a new payroll." xml:space="preserve">
+    <value>Η προεπιλεγμένη νομισματική μονάδα που θα χρησιμοποιηθεί κατά την έκδοση μιας νέας αποδοχής.</value>
+  </data>
   <data name="The number of paid annual leave days allocated to each employee every year." xml:space="preserve">
     <value>Ο αριθμός των ημερών πληρωμένου ετήσιου άδειας που ανατίθεται σε κάθε υπάλληλο κάθε χρόνο.</value>
   </data>

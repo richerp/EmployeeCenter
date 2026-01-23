@@ -30,6 +30,9 @@
   <data name="Edit" xml:space="preserve">
     <value>수정</value>
   </data>
+  <data name="Fix Error" xml:space="preserve">
+    <value>오류 수정</value>
+  </data>
   <data name="From" xml:space="preserve">
     <value>발신처</value>
   </data>

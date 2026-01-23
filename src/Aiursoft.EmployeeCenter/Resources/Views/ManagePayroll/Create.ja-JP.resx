@@ -84,6 +84,12 @@
   <data name="CRITICAL CONFIRMATION REQUIRED" xml:space="preserve">
     <value>重大な確認が必要です</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>通貨</value>
+  </data>
+  <data name="Currency:" xml:space="preserve">
+    <value>通貨:</value>
+  </data>
   <data name="Deductions" xml:space="preserve">
     <value>控除</value>
   </data>
