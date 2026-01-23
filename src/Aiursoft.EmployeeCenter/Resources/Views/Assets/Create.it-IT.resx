@@ -66,5 +66,8 @@
   <data name="Upload the invoice to keep financial records traceable." xml:space="preserve">
     <value>Carica la fattura per mantenere traccia dei documenti finanziari.</value>
   </data>
+  <data name="事件记录时间是协调世界时！" xml:space="preserve">
+    <value>La data e l&apos;ora del registro evento sono in tempo universale coordinato!</value>
+  </data>
 
 </root>

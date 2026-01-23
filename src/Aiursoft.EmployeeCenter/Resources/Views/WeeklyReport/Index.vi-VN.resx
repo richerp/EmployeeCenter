@@ -96,5 +96,8 @@
   <data name="Your reports for the last 4 weeks are all submitted." xml:space="preserve">
     <value>Báo cáo của bạn trong 4 tuần qua đã được nộp đầy đủ.</value>
   </data>
+  <data name="事件记录时间是协调世界时！" xml:space="preserve">
+    <value>Thời gian ghi lại sự kiện là giờ UTC!</value>
+  </data>
 
 </root>

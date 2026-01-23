@@ -57,5 +57,8 @@
   <data name="Update Asset" xml:space="preserve">
     <value>Zaktualizuj środek</value>
   </data>
+  <data name="事件记录时间是协调世界时！" xml:space="preserve">
+    <value>Czas zapisu zdarzenia to czas UTC!</value>
+  </data>
 
 </root>

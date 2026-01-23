@@ -186,6 +186,9 @@
   <data name="Payroll issuance is irreversible! Once issued, you cannot delete or modify it. Please verify the following information:" xml:space="preserve">
     <value>給与計算の実行は取り消しできません！実行後は削除または変更ができません。以下の情報を確認してください：</value>
   </data>
+  <data name="Payroll issuance will be sent to the employee. Please verify the following information:" xml:space="preserve">
+    <value>給与の発行は従業員に送信されます。以下の情報を確認してください。</value>
+  </data>
   <data name="Pension" xml:space="preserve">
     <value>年金</value>
   </data>
@@ -254,6 +257,9 @@
   </data>
   <data name="Yes, Confirm and Issue!" xml:space="preserve">
     <value>はい、確認して発行します！</value>
+  </data>
+  <data name="事件记录时间是协调世界时！" xml:space="preserve">
+    <value>イベント記録時間は協定世界時です！</value>
   </data>
 
 </root>

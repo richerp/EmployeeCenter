@@ -57,5 +57,8 @@
   <data name="Update Asset" xml:space="preserve">
     <value>Perbarui Aset</value>
   </data>
+  <data name="事件记录时间是协调世界时！" xml:space="preserve">
+    <value>Waktu pencatatan kejadian adalah waktu koordinasi dunia!</value>
+  </data>
 
 </root>

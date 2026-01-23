@@ -96,5 +96,8 @@
   <data name="Your reports for the last 4 weeks are all submitted." xml:space="preserve">
     <value>최근 4주간의 보고서는 모두 제출되었습니다.</value>
   </data>
+  <data name="事件记录时间是协调世界时！" xml:space="preserve">
+    <value>이벤트 기록 시간은 세계 표준시입니다!</value>
+  </data>
 
 </root>

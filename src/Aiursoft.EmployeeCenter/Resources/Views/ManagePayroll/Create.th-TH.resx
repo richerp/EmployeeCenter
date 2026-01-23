@@ -186,6 +186,9 @@
   <data name="Payroll issuance is irreversible! Once issued, you cannot delete or modify it. Please verify the following information:" xml:space="preserve">
     <value>การออกใบแจ้งหนี้เงินเดือนไม่สามารถย้อนกลับได้! หลังจากออกแล้ว คุณไม่สามารถลบหรือแก้ไขได้ กรุณาตรวจสอบข้อมูลต่อไปนี้:</value>
   </data>
+  <data name="Payroll issuance will be sent to the employee. Please verify the following information:" xml:space="preserve">
+    <value>การจ่ายเงินเดือนจะถูกส่งไปยังพนักงาน โปรดตรวจสอบข้อมูลต่อไปนี้:</value>
+  </data>
   <data name="Pension" xml:space="preserve">
     <value>เงินบำนาญ</value>
   </data>
@@ -254,6 +257,9 @@
   </data>
   <data name="Yes, Confirm and Issue!" xml:space="preserve">
     <value>ใช่, ยืนยันและออก!</value>
+  </data>
+  <data name="事件记录时间是协调世界时！" xml:space="preserve">
+    <value>เวลาบันทึกเหตุการณ์เป็นเวลาจักรวาลประสานงาน!</value>
   </data>
 
 </root>

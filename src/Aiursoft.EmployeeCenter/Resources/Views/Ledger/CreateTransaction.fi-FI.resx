@@ -54,5 +54,8 @@
   <data name="Transaction Time" xml:space="preserve">
     <value>Maksuaika</value>
   </data>
+  <data name="事件记录时间是协调世界时！" xml:space="preserve">
+    <value>Tapahtuman kirjausaika on maailmanlaajuinen aika!</value>
+  </data>
 
 </root>

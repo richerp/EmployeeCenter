@@ -186,6 +186,9 @@
   <data name="Payroll issuance is irreversible! Once issued, you cannot delete or modify it. Please verify the following information:" xml:space="preserve">
     <value>薪資發放一旦完成將無法撤回！發放後您將無法刪除或修改。請確認下列資訊：</value>
   </data>
+  <data name="Payroll issuance will be sent to the employee. Please verify the following information:" xml:space="preserve">
+    <value>薪資發放將傳送給員工。請確認下列資訊：</value>
+  </data>
   <data name="Pension" xml:space="preserve">
     <value>退休金</value>
   </data>
@@ -254,6 +257,9 @@
   </data>
   <data name="Yes, Confirm and Issue!" xml:space="preserve">
     <value>是的，確認並發放！</value>
+  </data>
+  <data name="事件记录时间是协调世界时！" xml:space="preserve">
+    <value>事件記錄時間是協調世界時！</value>
   </data>
 
 </root>

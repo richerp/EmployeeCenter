@@ -186,6 +186,9 @@
   <data name="Payroll issuance is irreversible! Once issued, you cannot delete or modify it. Please verify the following information:" xml:space="preserve">
     <value>A emissão da folha de pagamento é irreversível! Após emitida, você não poderá excluir ou modificar. Por favor, verifique as seguintes informações:</value>
   </data>
+  <data name="Payroll issuance will be sent to the employee. Please verify the following information:" xml:space="preserve">
+    <value>A emissão da folha de pagamento será enviada para o funcionário. Por favor, verifique as seguintes informações:</value>
+  </data>
   <data name="Pension" xml:space="preserve">
     <value>Pension</value>
   </data>
@@ -254,6 +257,9 @@
   </data>
   <data name="Yes, Confirm and Issue!" xml:space="preserve">
     <value>Sim, Confirmar e Emitir!</value>
+  </data>
+  <data name="事件记录时间是协调世界时！" xml:space="preserve">
+    <value>A hora de registro do evento é UTC!</value>
   </data>
 
 </root>

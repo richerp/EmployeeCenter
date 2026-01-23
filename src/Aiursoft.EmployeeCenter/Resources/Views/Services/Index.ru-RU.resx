@@ -33,6 +33,9 @@
   <data name="Delete" xml:space="preserve">
     <value>Удалить</value>
   </data>
+  <data name="Developing" xml:space="preserve">
+    <value>Разработка</value>
+  </data>
   <data name="DNS" xml:space="preserve">
     <value>DNS</value>
   </data>
@@ -69,11 +72,26 @@
   <data name="Protocols" xml:space="preserve">
     <value>Протоколы</value>
   </data>
+  <data name="Purpose" xml:space="preserve">
+    <value>Назначение</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>Работает</value>
+  </data>
+  <data name="Server Details" xml:space="preserve">
+    <value>Сведения о сервере</value>
+  </data>
   <data name="Server IP" xml:space="preserve">
     <value>IP-адрес сервера</value>
   </data>
   <data name="Services" xml:space="preserve">
     <value>Сервисы</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="Testing" xml:space="preserve">
+    <value>Тестирование</value>
   </data>
 
 </root>

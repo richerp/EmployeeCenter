@@ -39,6 +39,9 @@
   <data name="Details" xml:space="preserve">
     <value>详情</value>
   </data>
+  <data name="Edit" xml:space="preserve">
+    <value>编辑</value>
+  </data>
   <data name="Export" xml:space="preserve">
     <value>导出</value>
   </data>

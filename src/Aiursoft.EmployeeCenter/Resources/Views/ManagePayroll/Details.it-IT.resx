@@ -69,6 +69,9 @@
   <data name="Earnings + Sum(Company Insurances)" xml:space="preserve">
     <value>Guadagni + Somma(Assicurazioni Aziendali)</value>
   </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Modifica</value>
+  </data>
   <data name="Employee ID" xml:space="preserve">
     <value>ID Dipendente</value>
   </data>

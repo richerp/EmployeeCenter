@@ -33,5 +33,8 @@
   <data name="Entity Details" xml:space="preserve">
     <value>تفاصيل الكيان</value>
   </data>
+  <data name="事件记录时间是协调世界时！" xml:space="preserve">
+    <value>وقت تسجيل الحدث هو التوقيت العالمي المنسق!</value>
+  </data>
 
 </root>
