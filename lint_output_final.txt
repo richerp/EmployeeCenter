@@ -1,0 +1,18 @@
+Checking for JetBrains ReSharper Global Tools...
+jb is already installed.
+Restoring dependencies...
+  Determining projects to restore...
+  Restored /opt/workspace/379-employeecenter-mr-137/src/Aiursoft.EmployeeCenter.Entities/Aiursoft.EmployeeCenter.Entities.csproj (in 189 ms).
+  Restored /opt/workspace/379-employeecenter-mr-137/src/Aiursoft.EmployeeCenter.Sqlite/Aiursoft.EmployeeCenter.Sqlite.csproj (in 189 ms).
+  Restored /opt/workspace/379-employeecenter-mr-137/src/Aiursoft.EmployeeCenter/Aiursoft.EmployeeCenter.csproj (in 198 ms).
+  Restored /opt/workspace/379-employeecenter-mr-137/src/Aiursoft.EmployeeCenter.InMemory/Aiursoft.EmployeeCenter.InMemory.csproj (in 189 ms).
+  Restored /opt/workspace/379-employeecenter-mr-137/src/Aiursoft.EmployeeCenter.MySql/Aiursoft.EmployeeCenter.MySql.csproj (in 189 ms).
+  Restored /opt/workspace/379-employeecenter-mr-137/tests/Aiursoft.EmployeeCenter.Tests.csproj (in 189 ms).
+Running ReSharper Code Inspection...
+Filtering known false positives...
+[0;31mLinting FAILED![0m
+Issues found:
+File: tests/IntegrationTests/ServersTests.cs | Line: Offset 0-39 | Reason: Using directive is not required by the code and can be safely removed
+File: tests/IntegrationTests/ServersTests.cs | Line: 2 | Reason: Using directive is not required by the code and can be safely removed
+File: tests/IntegrationTests/ServersTests.cs | Line: 3 | Reason: Using directive is not required by the code and can be safely removed
+File: tests/IntegrationTests/ServersTests.cs | Line: 4 | Reason: Using directive is not required by the code and can be safely removed

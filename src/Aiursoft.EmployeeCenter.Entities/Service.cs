@@ -37,11 +37,11 @@ public class Service
     [MaxLength(100)]
     public string? ServerIp { get; set; }
 
-    public Guid? ServerId { get; set; }
+    public int? ServerId { get; set; }
 
     [JsonIgnore]
     [ForeignKey(nameof(ServerId))]
-    public Asset? Server { get; set; }
+    public Server? Server { get; set; }
 
     public int? DnsProviderId { get; set; }
 

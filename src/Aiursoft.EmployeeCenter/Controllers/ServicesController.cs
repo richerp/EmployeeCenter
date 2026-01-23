@@ -31,6 +31,7 @@ public class ServicesController(
             .Include(s => s.CrossEntityLink)
             .Include(s => s.Location)
             .Include(s => s.DnsProvider)
+            .Include(s => s.Server)
             .OrderBy(s => s.Domain)
             .ToListAsync();
 
@@ -49,7 +50,7 @@ public class ServicesController(
             AllLocations = await context.Locations.ToListAsync(),
             AllDnsProviders = await context.DnsProviders.ToListAsync(),
             AllServices = await context.Services.ToListAsync(),
-            AllAssets = await context.Assets.ToListAsync()
+            AllServers = await context.Servers.ToListAsync()
         });
     }
 
@@ -87,7 +88,7 @@ public class ServicesController(
         model.AllLocations = await context.Locations.ToListAsync();
         model.AllDnsProviders = await context.DnsProviders.ToListAsync();
         model.AllServices = await context.Services.ToListAsync();
-        model.AllAssets = await context.Assets.ToListAsync();
+        model.AllServers = await context.Servers.ToListAsync();
         return this.StackView(model);
     }
 
@@ -117,7 +118,7 @@ public class ServicesController(
             AllLocations = await context.Locations.ToListAsync(),
             AllDnsProviders = await context.DnsProviders.ToListAsync(),
             AllServices = await context.Services.Where(s => s.Id != id).ToListAsync(),
-            AllAssets = await context.Assets.ToListAsync()
+            AllServers = await context.Servers.ToListAsync()
         });
     }
 
@@ -154,7 +155,7 @@ public class ServicesController(
         model.AllLocations = await context.Locations.ToListAsync();
         model.AllDnsProviders = await context.DnsProviders.ToListAsync();
         model.AllServices = await context.Services.Where(s => s.Id != model.Id).ToListAsync();
-        model.AllAssets = await context.Assets.ToListAsync();
+        model.AllServers = await context.Servers.ToListAsync();
         return this.StackView(model);
     }
 
@@ -224,13 +225,68 @@ public class ServicesController(
         return RedirectToAction(nameof(DnsProviders));
     }
 
-    [HttpGet]
-    public async Task<IActionResult> GetAssets()
+    [Authorize(Policy = AppPermissionNames.CanManageServices)]
+    public async Task<IActionResult> Providers()
     {
-        var assets = await context.Assets
-            .OrderBy(a => a.AssetTag)
+        return this.StackView(new ManageProvidersViewModel
+        {
+            Providers = await context.Providers.ToListAsync()
+        });
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    [Authorize(Policy = AppPermissionNames.CanManageServices)]
+    public async Task<IActionResult> CreateProvider(ManageProvidersViewModel model)
+    {
+        if (!string.IsNullOrWhiteSpace(model.NewName))
+        {
+            context.Providers.Add(new Provider
+            {
+                Name = model.NewName
+            });
+            await context.SaveChangesAsync();
+        }
+        return RedirectToAction(nameof(Providers));
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    [Authorize(Policy = AppPermissionNames.CanManageServices)]
+    public async Task<IActionResult> DeleteProvider(int id)
+    {
+        var provider = await context.Providers
+            .Include(p => p.Servers)
+            .FirstOrDefaultAsync(p => p.Id == id);
+        
+        if (provider == null) return NotFound();
+
+        if (provider.Servers.Any())
+        {
+            return BadRequest("Cannot delete a provider that is being used by servers.");
+        }
+
+        context.Providers.Remove(provider);
+        await context.SaveChangesAsync();
+        return RedirectToAction(nameof(Providers));
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetProviders()
+    {
+        var providers = await context.Providers
+            .OrderBy(p => p.Name)
             .ToListAsync();
-        return Json(assets.Select(a => new { a.Id, a.AssetTag }));
+        return Json(providers.Select(p => new { p.Id, p.Name }));
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetServers()
+    {
+        var servers = await context.Servers
+            .OrderBy(s => s.Hostname)
+            .ToListAsync();
+        return Json(servers.Select(s => new { s.Id, s.Hostname }));
     }
 
     [HttpGet]

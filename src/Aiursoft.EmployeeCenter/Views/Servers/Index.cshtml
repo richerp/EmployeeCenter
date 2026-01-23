@@ -1,0 +1,102 @@
+@model Aiursoft.EmployeeCenter.Models.ServersViewModels.IndexServerViewModel
+@{
+    ViewData["Title"] = Localizer["Servers"];
+}
+
+<div class="row mb-2 mb-xl-3">
+    <div class="col-auto d-none d-sm-block">
+        <h3>@Localizer["Servers"]</h3>
+    </div>
+
+    <div class="col-auto ms-auto text-end">
+        <a asp-action="Create" class="btn btn-primary">
+            <i class="align-middle" data-lucide="plus"></i> @Localizer["Create New Server"]
+        </a>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title mb-0">@Localizer["All Servers"]</h5>
+    </div>
+    @if (!Model.Servers.Any())
+    {
+        <div class="card-body">
+            <div class="alert alert-info mb-0" role="alert">
+                <div class="alert-message">
+                    @Localizer["No servers found."]
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-hover mb-0">
+                <thead>
+                    <tr>
+                        <th>@Localizer["Hostname"]</th>
+                        <th>@Localizer["IP Address"]</th>
+                        <th>@Localizer["Location"]</th>
+                        <th>@Localizer["Owner"]</th>
+                        <th>@Localizer["Provider"]</th>
+                        <th>@Localizer["Link"]</th>
+                        <th class="text-end">@Localizer["Actions"]</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var s in Model.Servers)
+                    {
+                        <tr>
+                            <td>
+                                <code>@s.Hostname</code>
+                            </td>
+                            <td>
+                                @s.ServerIp
+                            </td>
+                            <td>
+                                @(s.Location?.Name ?? "-")
+                            </td>
+                            <td>
+                                @if (s.Owner != null)
+                                {
+                                    <span class="badge bg-secondary">
+                                        <img src="@s.Owner.AvatarRelativePath" class="avatar img-fluid rounded me-1" alt="@s.Owner.DisplayName" style="width: 20px; height: 20px;" />
+                                        @s.Owner.DisplayName
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span>-</span>
+                                }
+                            </td>
+                            <td>
+                                @(s.Provider?.Name ?? "-")
+                            </td>
+                            <td>
+                                @if (!string.IsNullOrEmpty(s.DetailLink))
+                                {
+                                    <a href="@s.DetailLink" target="_blank">@Localizer["Details"]</a>
+                                }
+                                else
+                                {
+                                    <span>-</span>
+                                }
+                            </td>
+                            <td class="text-end">
+                                <a asp-action="Edit" asp-route-id="@s.Id" class="btn btn-sm btn-outline-primary">
+                                    <i class="align-middle" data-lucide="edit-2"></i> @Localizer["Edit"]
+                                </a>
+                                <form asp-action="Delete" asp-route-id="@s.Id" method="post" class="d-inline" onsubmit="return confirm('@Localizer["Are you sure?"]');">
+                                    <button type="submit" class="btn btn-sm btn-outline-danger">
+                                        <i class="align-middle" data-lucide="trash-2"></i> @Localizer["Delete"]
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>

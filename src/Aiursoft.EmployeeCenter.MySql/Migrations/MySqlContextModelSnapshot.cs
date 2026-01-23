@@ -1086,6 +1086,71 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.ToTable("PromotionHistories");
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Provider", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Providers");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Server", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("DetailLink")
+                        .HasMaxLength(500)
+                        .HasColumnType("varchar(500)");
+
+                    b.Property<string>("Hostname")
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<int?>("LocationId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("OwnerId")
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<int?>("ProviderId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ServerIp")
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("LocationId");
+
+                    b.HasIndex("OwnerId");
+
+                    b.HasIndex("ProviderId");
+
+                    b.ToTable("Servers");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Service", b =>
                 {
                     b.Property<int>("Id")
@@ -1134,8 +1199,8 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasMaxLength(1000)
                         .HasColumnType("varchar(1000)");
 
-                    b.Property<Guid?>("ServerId")
-                        .HasColumnType("char(36)");
+                    b.Property<int?>("ServerId")
+                        .HasColumnType("int");
 
                     b.Property<string>("ServerIp")
                         .HasMaxLength(100)
@@ -1934,6 +1999,27 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Server", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.Location", "Location")
+                        .WithMany()
+                        .HasForeignKey("LocationId");
+
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "Owner")
+                        .WithMany()
+                        .HasForeignKey("OwnerId");
+
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.Provider", "Provider")
+                        .WithMany("Servers")
+                        .HasForeignKey("ProviderId");
+
+                    b.Navigation("Location");
+
+                    b.Navigation("Owner");
+
+                    b.Navigation("Provider");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Service", b =>
                 {
                     b.HasOne("Aiursoft.EmployeeCenter.Entities.Service", "CrossEntityLink")
@@ -1952,8 +2038,8 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .WithMany()
                         .HasForeignKey("OwnerId");
 
-                    b.HasOne("Aiursoft.EmployeeCenter.Entities.Asset", "Server")
-                        .WithMany()
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.Server", "Server")
+                        .WithMany("Services")
                         .HasForeignKey("ServerId");
 
                     b.Navigation("CrossEntityLink");
@@ -2163,6 +2249,16 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Password", b =>
                 {
                     b.Navigation("PasswordShares");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Provider", b =>
+                {
+                    b.Navigation("Servers");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Server", b =>
+                {
+                    b.Navigation("Services");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.SignalQuestion", b =>

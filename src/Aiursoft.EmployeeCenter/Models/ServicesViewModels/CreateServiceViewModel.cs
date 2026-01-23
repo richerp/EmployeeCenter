@@ -28,8 +28,8 @@ public class CreateServiceViewModel : UiStackLayoutViewModel
     [Display(Name = "Server IP")]
     public string? ServerIp { get; set; }
 
-    [Display(Name = "Server (Asset)")]
-    public Guid? ServerId { get; set; }
+    [Display(Name = "Server")]
+    public int? ServerId { get; set; }
 
     [Display(Name = "DNS Provider")]
     public int? DnsProviderId { get; set; }
@@ -54,5 +54,5 @@ public class CreateServiceViewModel : UiStackLayoutViewModel
     public List<Location> AllLocations { get; set; } = new();
     public List<DnsProvider> AllDnsProviders { get; set; } = new();
     public List<Service> AllServices { get; set; } = new();
-    public List<Asset> AllAssets { get; set; } = new();
+    public List<Server> AllServers { get; set; } = new();
 }
