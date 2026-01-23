@@ -68,7 +68,6 @@ public class ServicesController(
                 CrossEntityLinkId = model.CrossEntityLinkId,
                 Protocols = model.Protocols,
                 LocationId = model.LocationId,
-                ServerIp = model.ServerIp,
                 ServerId = model.ServerId,
                 DnsProviderId = model.DnsProviderId,
                 IsViaFrps = model.IsViaFrps,
@@ -106,7 +105,6 @@ public class ServicesController(
             CrossEntityLinkId = service.CrossEntityLinkId,
             Protocols = service.Protocols,
             LocationId = service.LocationId,
-            ServerIp = service.ServerIp,
             ServerId = service.ServerId,
             DnsProviderId = service.DnsProviderId,
             IsViaFrps = service.IsViaFrps,
@@ -137,7 +135,6 @@ public class ServicesController(
             service.CrossEntityLinkId = model.CrossEntityLinkId;
             service.Protocols = model.Protocols;
             service.LocationId = model.LocationId;
-            service.ServerIp = model.ServerIp;
             service.ServerId = model.ServerId;
             service.DnsProviderId = model.DnsProviderId;
             service.IsViaFrps = model.IsViaFrps;

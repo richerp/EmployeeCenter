@@ -24,10 +24,6 @@ public class CreateServiceViewModel : UiStackLayoutViewModel
     [Display(Name = "Location")]
     public int? LocationId { get; set; }
 
-    [MaxLength(100)]
-    [Display(Name = "Server IP")]
-    public string? ServerIp { get; set; }
-
     [Display(Name = "Server")]
     public int? ServerId { get; set; }
 
