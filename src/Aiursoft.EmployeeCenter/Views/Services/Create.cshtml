@@ -25,6 +25,9 @@
                                 <select asp-for="OwnerId" class="form-select" asp-items="@(new SelectList(Model.AllOwners, "Id", "CompanyName"))">
                                     <option value="">-- @Localizer["Select Owner"] --</option>
                                 </select>
+                                <a asp-controller="CompanyEntity" asp-action="Create" target="_blank" class="btn btn-outline-secondary" title="@Localizer["New"]">
+                                    <i class="align-middle" data-lucide="plus-circle"></i>
+                                </a>
                                 <button type="button" class="btn btn-outline-secondary reload-dropdown" 
                                         data-url="@Url.Action("GetCompanyEntities")" 
                                         data-target="OwnerId" 
@@ -42,6 +45,9 @@
                                 <select asp-for="CrossEntityLinkId" class="form-select" asp-items="@(new SelectList(Model.AllServices, "Id", "Domain"))">
                                     <option value="">-- @Localizer["None"] --</option>
                                 </select>
+                                <a asp-controller="Services" asp-action="Create" target="_blank" class="btn btn-outline-secondary" title="@Localizer["New"]">
+                                    <i class="align-middle" data-lucide="plus-circle"></i>
+                                </a>
                                 <button type="button" class="btn btn-outline-secondary reload-dropdown" 
                                         data-url="@Url.Action("GetServices")" 
                                         data-target="CrossEntityLinkId" 
@@ -67,6 +73,9 @@
                                 <select asp-for="LocationId" class="form-select" asp-items="@(new SelectList(Model.AllLocations, "Id", "Name"))">
                                     <option value="">-- @Localizer["Select Location"] --</option>
                                 </select>
+                                <a asp-controller="Assets" asp-action="Locations" target="_blank" class="btn btn-outline-secondary" title="@Localizer["New"]">
+                                    <i class="align-middle" data-lucide="plus-circle"></i>
+                                </a>
                                 <button type="button" class="btn btn-outline-secondary reload-dropdown" 
                                         data-url="@Url.Action("GetLocations")" 
                                         data-target="LocationId" 
@@ -91,6 +100,9 @@
                                 <select asp-for="ServerId" class="form-select" asp-items="@(new SelectList(Model.AllServers, "Id", "Hostname"))">
                                     <option value="">-- @Localizer["Select Server"] --</option>
                                 </select>
+                                <a asp-controller="Servers" asp-action="Create" target="_blank" class="btn btn-outline-secondary" title="@Localizer["New"]">
+                                    <i class="align-middle" data-lucide="plus-circle"></i>
+                                </a>
                                 <button type="button" class="btn btn-outline-secondary reload-dropdown" 
                                         data-url="@Url.Action("GetServers")" 
                                         data-target="ServerId" 
@@ -110,6 +122,9 @@
                             <select asp-for="DnsProviderId" class="form-select" asp-items="@(new SelectList(Model.AllDnsProviders, "Id", "Name"))">
                                 <option value="">-- @Localizer["Select DNS Provider"] --</option>
                             </select>
+                            <a asp-controller="Services" asp-action="DnsProviders" target="_blank" class="btn btn-outline-secondary" title="@Localizer["New"]">
+                                <i class="align-middle" data-lucide="plus-circle"></i>
+                            </a>
                             <button type="button" class="btn btn-outline-secondary reload-dropdown" 
                                     data-url="@Url.Action("GetDnsProviders")" 
                                     data-target="DnsProviderId" 

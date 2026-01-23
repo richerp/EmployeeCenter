@@ -33,6 +33,9 @@
                                 <select asp-for="LocationId" class="form-select" asp-items="@(new SelectList(Model.AllLocations, "Id", "Name"))">
                                     <option value="">-- @Localizer["Select Location"] --</option>
                                 </select>
+                                <a asp-controller="Assets" asp-action="Locations" target="_blank" class="btn btn-outline-secondary" title="@Localizer["New"]">
+                                    <i class="align-middle" data-lucide="plus-circle"></i>
+                                </a>
                                 <button type="button" class="btn btn-outline-secondary reload-dropdown" 
                                         data-url="@Url.Action("GetLocations")" 
                                         data-target="LocationId" 
@@ -49,6 +52,9 @@
                                 <select asp-for="ProviderId" class="form-select" asp-items="@(new SelectList(Model.AllProviders, "Id", "Name"))">
                                     <option value="">-- @Localizer["Select Provider"] --</option>
                                 </select>
+                                <a asp-controller="Services" asp-action="Providers" target="_blank" class="btn btn-outline-secondary" title="@Localizer["New"]">
+                                    <i class="align-middle" data-lucide="plus-circle"></i>
+                                </a>
                                 <button type="button" class="btn btn-outline-secondary reload-dropdown" 
                                         data-url="@Url.Action("GetProviders")" 
                                         data-target="ProviderId" 
@@ -67,6 +73,9 @@
                             <select asp-for="OwnerId" class="form-select" asp-items="@(new SelectList(Model.AllOwners, "Id", "DisplayName"))">
                                 <option value="">-- @Localizer["Select Owner"] --</option>
                             </select>
+                            <a asp-controller="Users" asp-action="Create" target="_blank" class="btn btn-outline-secondary" title="@Localizer["New"]">
+                                <i class="align-middle" data-lucide="plus-circle"></i>
+                            </a>
                             <button type="button" class="btn btn-outline-secondary reload-dropdown" 
                                     data-url="@Url.Action("GetUsers")" 
                                     data-target="OwnerId" 
