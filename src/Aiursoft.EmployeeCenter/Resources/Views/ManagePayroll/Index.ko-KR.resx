@@ -39,6 +39,9 @@
   <data name="Details" xml:space="preserve">
     <value>세부 정보</value>
   </data>
+  <data name="Edit" xml:space="preserve">
+    <value>수정</value>
+  </data>
   <data name="Export" xml:space="preserve">
     <value>내보내기</value>
   </data>

@@ -186,6 +186,9 @@
   <data name="Payroll issuance is irreversible! Once issued, you cannot delete or modify it. Please verify the following information:" xml:space="preserve">
     <value>पेरॉल जारी करना अनुत्क्रमणीय है! एक बार जारी करने के बाद आप इसे हटा या संशोधित नहीं कर सकते। कृपया निम्नलिखित जानकारी की पुष्टि करें:</value>
   </data>
+  <data name="Payroll issuance will be sent to the employee. Please verify the following information:" xml:space="preserve">
+    <value>पेरॉल जारी करने के लिए कर्मचारी को भेज दिया जाएगा। कृपया निम्नलिखित जानकारी की पुष्टि करें:</value>
+  </data>
   <data name="Pension" xml:space="preserve">
     <value>Pension</value>
   </data>
@@ -254,6 +257,9 @@
   </data>
   <data name="Yes, Confirm and Issue!" xml:space="preserve">
     <value>हाँ, पुष्टि करें और जारी करें!</value>
+  </data>
+  <data name="事件记录时间是协调世界时！" xml:space="preserve">
+    <value>घटना रिकॉर्ड समय समन्वित विश्व समय है!</value>
   </data>
 
 </root>

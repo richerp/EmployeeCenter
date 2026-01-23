@@ -96,5 +96,8 @@
   <data name="Your reports for the last 4 weeks are all submitted." xml:space="preserve">
     <value>您過去四周的報告均已上傳。</value>
   </data>
+  <data name="事件记录时间是协调世界时！" xml:space="preserve">
+    <value>事件記錄時間為協調世界時！</value>
+  </data>
 
 </root>

@@ -96,5 +96,8 @@
   <data name="Your reports for the last 4 weeks are all submitted." xml:space="preserve">
     <value>Vos rapports des 4 dernières semaines sont tous soumis.</value>
   </data>
+  <data name="事件记录时间是协调世界时！" xml:space="preserve">
+    <value>L&apos;heure d&apos;enregistrement de l&apos;événement est le temps universel coordonné !</value>
+  </data>
 
 </root>

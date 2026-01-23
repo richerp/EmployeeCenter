@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Cloudflare Proxied" xml:space="preserve">
+      <data name="Authentik Integrated" xml:space="preserve">
+    <value>Authentik Integrated</value>
+  </data>
+  <data name="Cloudflare Proxied" xml:space="preserve">
     <value>Cloudflare Проксируется</value>
   </data>
   <data name="Cross-Entity Link" xml:space="preserve">
@@ -45,6 +48,9 @@
   <data name="Protocols" xml:space="preserve">
     <value>Протоколы</value>
   </data>
+  <data name="Purpose" xml:space="preserve">
+    <value>Назначение</value>
+  </data>
   <data name="Remark" xml:space="preserve">
     <value>Примечание</value>
   </data>
@@ -56,6 +62,9 @@
   </data>
   <data name="Server IP" xml:space="preserve">
     <value>IP-адрес сервера</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Статус</value>
   </data>
   <data name="Via FRPS" xml:space="preserve">
     <value>Через FRPS</value>

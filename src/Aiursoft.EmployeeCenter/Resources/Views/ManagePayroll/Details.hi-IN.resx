@@ -69,6 +69,9 @@
   <data name="Earnings + Sum(Company Insurances)" xml:space="preserve">
     <value>आय + कंपनी बीमा का योग</value>
   </data>
+  <data name="Edit" xml:space="preserve">
+    <value>संपादित करें</value>
+  </data>
   <data name="Employee ID" xml:space="preserve">
     <value>Employee ID</value>
   </data>

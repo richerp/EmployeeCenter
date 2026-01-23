@@ -186,6 +186,9 @@
   <data name="Payroll issuance is irreversible! Once issued, you cannot delete or modify it. Please verify the following information:" xml:space="preserve">
     <value>Penerbitan gaji tidak dapat dibatalkan! Setelah diterbitkan, Anda tidak dapat menghapus atau mengubahnya. Harap verifikasi informasi berikut:</value>
   </data>
+  <data name="Payroll issuance will be sent to the employee. Please verify the following information:" xml:space="preserve">
+    <value>Penerbitan gaji akan dikirim ke karyawan. Silakan verifikasi informasi berikut:</value>
+  </data>
   <data name="Pension" xml:space="preserve">
     <value>Pension</value>
   </data>
@@ -254,6 +257,9 @@
   </data>
   <data name="Yes, Confirm and Issue!" xml:space="preserve">
     <value>Ya, Konfirmasi dan Terbitkan!</value>
+  </data>
+  <data name="事件记录时间是协调世界时！" xml:space="preserve">
+    <value>Waktu pencatatan kejadian adalah waktu koordinat dunia!</value>
   </data>
 
 </root>

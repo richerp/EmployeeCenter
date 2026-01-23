@@ -99,5 +99,8 @@
   <data name="Warning!" xml:space="preserve">
     <value>경고!</value>
   </data>
+  <data name="事件记录时间是协调世界时！" xml:space="preserve">
+    <value>이벤트 기록 시간은 좌표 세계시입니다!</value>
+  </data>
 
 </root>

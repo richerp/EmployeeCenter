@@ -33,5 +33,8 @@
   <data name="Entity Details" xml:space="preserve">
     <value>Detalii entitate</value>
   </data>
+  <data name="事件记录时间是协调世界时！" xml:space="preserve">
+    <value>Data înregistrării evenimentului este în timpul universal coordonat!</value>
+  </data>
 
 </root>

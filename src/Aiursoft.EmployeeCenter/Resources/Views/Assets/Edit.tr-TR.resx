@@ -57,5 +57,8 @@
   <data name="Update Asset" xml:space="preserve">
     <value>Varlık Güncelle</value>
   </data>
+  <data name="事件记录时间是协调世界时！" xml:space="preserve">
+    <value>Olay kaydı saati Koordineli Dünya Saatidir!</value>
+  </data>
 
 </root>

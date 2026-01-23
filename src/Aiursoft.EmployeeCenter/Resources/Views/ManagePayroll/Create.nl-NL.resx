@@ -186,6 +186,9 @@
   <data name="Payroll issuance is irreversible! Once issued, you cannot delete or modify it. Please verify the following information:" xml:space="preserve">
     <value>Uitgifte van de loonadministratie is onomkeerbaar! Na uitgifte kunt u het niet verwijderen of wijzigen. Controleer de volgende informatie:</value>
   </data>
+  <data name="Payroll issuance will be sent to the employee. Please verify the following information:" xml:space="preserve">
+    <value>De uitgifte van de loonstrook zal worden verzonden naar de medewerker. Controleer de volgende informatie:</value>
+  </data>
   <data name="Pension" xml:space="preserve">
     <value>Pension</value>
   </data>
@@ -254,6 +257,9 @@
   </data>
   <data name="Yes, Confirm and Issue!" xml:space="preserve">
     <value>Ja, bevestigen en uitgeven!</value>
+  </data>
+  <data name="事件记录时间是协调世界时！" xml:space="preserve">
+    <value>Het tijdstip van het gebeurtenislogboek is in UTC!</value>
   </data>
 
 </root>

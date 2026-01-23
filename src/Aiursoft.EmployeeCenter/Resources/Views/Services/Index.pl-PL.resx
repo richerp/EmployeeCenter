@@ -33,6 +33,9 @@
   <data name="Delete" xml:space="preserve">
     <value>Usuń</value>
   </data>
+  <data name="Developing" xml:space="preserve">
+    <value>W trakcie tworzenia</value>
+  </data>
   <data name="DNS" xml:space="preserve">
     <value>DNS</value>
   </data>
@@ -69,11 +72,26 @@
   <data name="Protocols" xml:space="preserve">
     <value>Protokoły</value>
   </data>
+  <data name="Purpose" xml:space="preserve">
+    <value>Cel</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>Uruchomione</value>
+  </data>
+  <data name="Server Details" xml:space="preserve">
+    <value>Szczegóły serwera</value>
+  </data>
   <data name="Server IP" xml:space="preserve">
     <value>Adres IP serwera</value>
   </data>
   <data name="Services" xml:space="preserve">
     <value>Usługi</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Testing" xml:space="preserve">
+    <value>Testowanie</value>
   </data>
 
 </root>

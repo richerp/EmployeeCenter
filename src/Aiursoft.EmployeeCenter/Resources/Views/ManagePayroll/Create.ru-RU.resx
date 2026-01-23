@@ -186,6 +186,9 @@
   <data name="Payroll issuance is irreversible! Once issued, you cannot delete or modify it. Please verify the following information:" xml:space="preserve">
     <value>Выдача зарплатного листа необратима! После выдачи вы не сможете удалить или изменить его. Пожалуйста, проверьте следующую информацию:</value>
   </data>
+  <data name="Payroll issuance will be sent to the employee. Please verify the following information:" xml:space="preserve">
+    <value>Выдача зарплаты будет отправлена сотруднику. Пожалуйста, проверьте следующую информацию:</value>
+  </data>
   <data name="Pension" xml:space="preserve">
     <value>Пенсия</value>
   </data>
@@ -254,6 +257,9 @@
   </data>
   <data name="Yes, Confirm and Issue!" xml:space="preserve">
     <value>Да, подтвердить и выдать!</value>
+  </data>
+  <data name="事件记录时间是协调世界时！" xml:space="preserve">
+    <value>Время записи события — это Всемирное координированное время!</value>
   </data>
 
 </root>

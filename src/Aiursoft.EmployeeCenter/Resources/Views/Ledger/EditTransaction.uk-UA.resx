@@ -63,5 +63,8 @@
   <data name="Update Transaction" xml:space="preserve">
     <value>Оновити операцію</value>
   </data>
+  <data name="事件记录时间是协调世界时！" xml:space="preserve">
+    <value>Час реєстрації події — це усвітнений час!</value>
+  </data>
 
 </root>

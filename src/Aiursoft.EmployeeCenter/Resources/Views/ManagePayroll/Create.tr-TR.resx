@@ -186,6 +186,9 @@
   <data name="Payroll issuance is irreversible! Once issued, you cannot delete or modify it. Please verify the following information:" xml:space="preserve">
     <value>Maaş çıkışı geri alınamaz! Yayınlandıktan sonra silinemez veya değiştirilemez. Lütfen aşağıdaki bilgileri kontrol edin:</value>
   </data>
+  <data name="Payroll issuance will be sent to the employee. Please verify the following information:" xml:space="preserve">
+    <value>Maaş çıkışı çalışanına gönderilecektir. Lütfen aşağıdaki bilgileri kontrol edin:</value>
+  </data>
   <data name="Pension" xml:space="preserve">
     <value>Pension</value>
   </data>
@@ -254,6 +257,9 @@
   </data>
   <data name="Yes, Confirm and Issue!" xml:space="preserve">
     <value>Evet, Onayla ve Ver!</value>
+  </data>
+  <data name="事件记录时间是协调世界时！" xml:space="preserve">
+    <value>Olay kaydı zamanı koordineli evrensel saat!</value>
   </data>
 
 </root>

@@ -33,6 +33,9 @@
   <data name="Delete" xml:space="preserve">
     <value>حذف</value>
   </data>
+  <data name="Developing" xml:space="preserve">
+    <value>قيد التطوير</value>
+  </data>
   <data name="DNS" xml:space="preserve">
     <value>DNS</value>
   </data>
@@ -69,11 +72,26 @@
   <data name="Protocols" xml:space="preserve">
     <value>البروتوكولات</value>
   </data>
+  <data name="Purpose" xml:space="preserve">
+    <value>الغرض</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>جاري التشغيل</value>
+  </data>
+  <data name="Server Details" xml:space="preserve">
+    <value>تفاصيل الخادم</value>
+  </data>
   <data name="Server IP" xml:space="preserve">
     <value>IP الخادم</value>
   </data>
   <data name="Services" xml:space="preserve">
     <value>الخدمات</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>الحالة</value>
+  </data>
+  <data name="Testing" xml:space="preserve">
+    <value>جاري الاختبار</value>
   </data>
 
 </root>

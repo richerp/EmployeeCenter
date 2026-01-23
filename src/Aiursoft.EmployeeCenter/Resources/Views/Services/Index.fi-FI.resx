@@ -33,6 +33,9 @@
   <data name="Delete" xml:space="preserve">
     <value>Poista</value>
   </data>
+  <data name="Developing" xml:space="preserve">
+    <value>Kehityksessä</value>
+  </data>
   <data name="DNS" xml:space="preserve">
     <value>DNS</value>
   </data>
@@ -69,11 +72,26 @@
   <data name="Protocols" xml:space="preserve">
     <value>Protokollit</value>
   </data>
+  <data name="Purpose" xml:space="preserve">
+    <value>Tarkoitus</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>Käynnissä</value>
+  </data>
+  <data name="Server Details" xml:space="preserve">
+    <value>Palvelimen tiedot</value>
+  </data>
   <data name="Server IP" xml:space="preserve">
     <value>Palvelimen IP</value>
   </data>
   <data name="Services" xml:space="preserve">
     <value>Palvelut</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Tila</value>
+  </data>
+  <data name="Testing" xml:space="preserve">
+    <value>Testataan</value>
   </data>
 
 </root>

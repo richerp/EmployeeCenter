@@ -96,5 +96,8 @@
   <data name="Your reports for the last 4 weeks are all submitted." xml:space="preserve">
     <value>Τα αναφορά σας για τις τελευταίες 4 εβδομάδες έχουν υποβληθεί όλες.</value>
   </data>
+  <data name="事件记录时间是协调世界时！" xml:space="preserve">
+    <value>Η ώρα καταγραφής του γεγονότος είναι η χρονική ζώνη UTC!</value>
+  </data>
 
 </root>

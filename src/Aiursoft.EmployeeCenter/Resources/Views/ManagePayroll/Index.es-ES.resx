@@ -39,6 +39,9 @@
   <data name="Details" xml:space="preserve">
     <value>Detalles</value>
   </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
   <data name="Export" xml:space="preserve">
     <value>Exportar</value>
   </data>
