@@ -42,9 +42,6 @@
   <data name="Edit" xml:space="preserve">
     <value>Edit</value>
   </data>
-  <data name="Is Online" xml:space="preserve">
-    <value>Is Online</value>
-  </data>
   <data name="Link" xml:space="preserve">
     <value>Link</value>
   </data>
@@ -56,9 +53,6 @@
   </data>
   <data name="No services found." xml:space="preserve">
     <value>No services found.</value>
-  </data>
-  <data name="Offline" xml:space="preserve">
-    <value>Offline</value>
   </data>
   <data name="Online" xml:space="preserve">
     <value>Online</value>
@@ -74,6 +68,42 @@
   </data>
   <data name="Services" xml:space="preserve">
     <value>Services</value>
+  </data>
+  <data name="Purpose" xml:space="preserve">
+    <value>Purpose</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Server Details" xml:space="preserve">
+    <value>Server Details</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>Running</value>
+  </data>
+  <data name="Developing" xml:space="preserve">
+    <value>Developing</value>
+  </data>
+  <data name="Testing" xml:space="preserve">
+    <value>Testing</value>
+  </data>
+  <data name="Offline" xml:space="preserve">
+    <value>Offline</value>
+  </data>
+  <data name="Global" xml:space="preserve">
+    <value>Global</value>
+  </data>
+  <data name="Domestic" xml:space="preserve">
+    <value>Domestic</value>
+  </data>
+  <data name="Both" xml:space="preserve">
+    <value>Both Global and Domestic</value>
+  </data>
+  <data name="Internal" xml:space="preserve">
+    <value>Internal</value>
+  </data>
+  <data name="InternalAndPartners" xml:space="preserve">
+    <value>Internal and Partners</value>
   </data>
 
 </root>

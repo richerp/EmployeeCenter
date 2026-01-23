@@ -14,7 +14,7 @@
                 <a asp-action="Index" class="btn btn-outline-secondary">
                     <i class="align-middle" data-lucide="arrow-left"></i> @Localizer["Back"]
                 </a>
-                @if (Model.Permission == Aiursoft.EmployeeCenter.Entities.SharePermission.Editable)
+                @if (Model.Permission == SharePermission.Editable)
                 {
                     <a asp-action="Edit" asp-route-id="@Model.Password.Id" class="btn btn-outline-primary">
                         <i class="align-middle" data-lucide="edit-2"></i> @Localizer["Edit"]

@@ -1164,6 +1164,9 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<bool>("AuthentikIntegrated")
+                        .HasColumnType("tinyint(1)");
+
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime(6)");
 
@@ -1179,9 +1182,6 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasColumnType("varchar(255)");
 
                     b.Property<bool>("IsCloudflareProxied")
-                        .HasColumnType("tinyint(1)");
-
-                    b.Property<bool>("IsOnline")
                         .HasColumnType("tinyint(1)");
 
                     b.Property<bool>("IsSelfDeveloped")
@@ -1200,11 +1200,17 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("varchar(100)");
 
+                    b.Property<int>("Purpose")
+                        .HasColumnType("int");
+
                     b.Property<string>("Remark")
                         .HasMaxLength(1000)
                         .HasColumnType("varchar(1000)");
 
                     b.Property<int?>("ServerId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Status")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("UpdatedAt")

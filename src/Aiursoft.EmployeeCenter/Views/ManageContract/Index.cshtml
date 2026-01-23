@@ -44,13 +44,13 @@
                     <td>
                         @switch (item.Status)
                         {
-                            case Aiursoft.EmployeeCenter.Entities.ContractStatus.PendingSignature:
+                            case ContractStatus.PendingSignature:
                                 <span class="badge bg-warning">@Localizer["Pending Signature"]</span>
                                 break;
-                            case Aiursoft.EmployeeCenter.Entities.ContractStatus.Active:
+                            case ContractStatus.Active:
                                 <span class="badge bg-success">@Localizer["Active"]</span>
                                 break;
-                            case Aiursoft.EmployeeCenter.Entities.ContractStatus.Invalid:
+                            case ContractStatus.Invalid:
                                 <span class="badge bg-danger">@Localizer["Invalid"]</span>
                                 break;
                         }

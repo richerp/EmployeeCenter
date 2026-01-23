@@ -50,7 +50,11 @@ public class Service
 
     public bool IsCloudflareProxied { get; set; }
 
-    public bool IsOnline { get; set; }
+    public ServiceStatus Status { get; set; } = ServiceStatus.Running;
+
+    public ServicePurpose Purpose { get; set; } = ServicePurpose.Global;
+
+    public bool AuthentikIntegrated { get; set; }
 
     public bool IsSelfDeveloped { get; set; }
 

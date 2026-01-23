@@ -98,7 +98,7 @@
                             <td><strong>@share.Password.Title</strong></td>
                             <td>@share.Password.Creator.DisplayName</td>
                             <td>
-                                @if (share.Permission == Aiursoft.EmployeeCenter.Entities.SharePermission.Editable)
+                                @if (share.Permission == SharePermission.Editable)
                                 {
                                     <span class="badge bg-success">@Localizer["Editable"]</span>
                                 }
@@ -112,7 +112,7 @@
                                     <a asp-action="Details" asp-route-id="@share.PasswordId" class="btn btn-sm btn-outline-primary" title="@Localizer["Details"]">
                                         <i class="align-middle" data-lucide="eye"></i>
                                     </a>
-                                    @if (share.Permission == Aiursoft.EmployeeCenter.Entities.SharePermission.Editable)
+                                    @if (share.Permission == SharePermission.Editable)
                                     {
                                         <a asp-action="Edit" asp-route-id="@share.PasswordId" class="btn btn-sm btn-outline-secondary" title="@Localizer["Edit"]">
                                             <i class="align-middle" data-lucide="edit-2"></i>

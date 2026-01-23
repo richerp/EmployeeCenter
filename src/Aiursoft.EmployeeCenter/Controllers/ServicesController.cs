@@ -72,7 +72,9 @@ public class ServicesController(
                 DnsProviderId = model.DnsProviderId,
                 IsViaFrps = model.IsViaFrps,
                 IsCloudflareProxied = model.IsCloudflareProxied,
-                IsOnline = model.IsOnline,
+                Status = model.Status,
+                Purpose = model.Purpose,
+                AuthentikIntegrated = model.AuthentikIntegrated,
                 IsSelfDeveloped = model.IsSelfDeveloped,
                 Remark = model.Remark,
                 CreatedAt = DateTime.UtcNow,
@@ -109,7 +111,9 @@ public class ServicesController(
             DnsProviderId = service.DnsProviderId,
             IsViaFrps = service.IsViaFrps,
             IsCloudflareProxied = service.IsCloudflareProxied,
-            IsOnline = service.IsOnline,
+            Status = service.Status,
+            Purpose = service.Purpose,
+            AuthentikIntegrated = service.AuthentikIntegrated,
             IsSelfDeveloped = service.IsSelfDeveloped,
             Remark = service.Remark,
             AllOwners = await context.CompanyEntities.ToListAsync(),
@@ -139,7 +143,9 @@ public class ServicesController(
             service.DnsProviderId = model.DnsProviderId;
             service.IsViaFrps = model.IsViaFrps;
             service.IsCloudflareProxied = model.IsCloudflareProxied;
-            service.IsOnline = model.IsOnline;
+            service.Status = model.Status;
+            service.Purpose = model.Purpose;
+            service.AuthentikIntegrated = model.AuthentikIntegrated;
             service.IsSelfDeveloped = model.IsSelfDeveloped;
             service.Remark = model.Remark;
             service.UpdatedAt = DateTime.UtcNow;
