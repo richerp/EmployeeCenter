@@ -87,11 +87,11 @@
                         </div>
                     </div>
 
-                    <div class="mb-3">
-                        <label asp-for="CreationTime" class="form-label">@Localizer["Creation Time"]</label>
-                        <input asp-for="CreationTime" class="form-control" type="datetime-local" value="@Model.CreationTime.ToString("yyyy-MM-ddTHH:mm")" />
-                        <span asp-validation-for="CreationTime" class="text-danger"></span>
-                    </div>
+                <div class="mb-3">
+                    <label asp-for="CreationTime" class="form-label"></label> <span class="badge bg-info">@Localizer["事件记录时间是协调世界时！"]</span>
+                    <input asp-for="CreationTime" class="form-control" type="datetime-local" value="@Model.CreationTime.ToString("yyyy-MM-ddTHH:mm")" />
+                    <span asp-validation-for="CreationTime" class="text-danger"></span>
+                </div>
 
                     <div class="row">
                         <div class="col-md-4 mb-3">

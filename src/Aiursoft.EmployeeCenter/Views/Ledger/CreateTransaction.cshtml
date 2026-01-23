@@ -69,7 +69,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label asp-for="TransactionTime">@Localizer["Transaction Time"]</label>
+                            <label asp-for="TransactionTime">@Localizer["Transaction Time"]</label> <span class="badge badge-info">@Localizer["事件记录时间是协调世界时！"]</span>
                             <input asp-for="TransactionTime" class="form-control" />
                             <span asp-validation-for="TransactionTime" class="text-danger"></span>
                         </div>

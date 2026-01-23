@@ -28,13 +28,12 @@
 
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label asp-for="StartDate" class="form-label">@Localizer["Start Date"]</label>
+                            <label asp-for="StartDate" class="form-label">@Localizer["Start Date"]</label> <span class="badge bg-info">@Localizer["事件记录时间是协调世界时！"]</span>
                             <input asp-for="StartDate" type="date" class="form-control" id="startDate" required />
                             <span asp-validation-for="StartDate" class="text-danger"></span>
-                            <small class="form-text text-muted">@Localizer["Can be up to 7 days in the past or future dates within current year"]</small>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label asp-for="EndDate" class="form-label">@Localizer["End Date"]</label>
+                            <label asp-for="EndDate" class="form-label">@Localizer["End Date"]</label> <span class="badge bg-info">@Localizer["事件记录时间是协调世界时！"]</span>
                             <input asp-for="EndDate" type="date" class="form-control" id="endDate" required />
                             <span asp-validation-for="EndDate" class="text-danger"></span>
                             <small class="form-text text-muted">@Localizer["Last day of your leave (inclusive)"]</small>
