@@ -160,7 +160,8 @@
                                     <th>@Localizer["From"]</th>
                                     <th>@Localizer["To"]</th>
                                     <th>@Localizer["Amount"]</th>
-                                    <th></th>
+                                    <th>@Localizer["Invoice"]</th>
+                                    <th>@Localizer["Fix Error"]</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -182,21 +183,21 @@
                                             }
                                         </td>
                                         <td>
-                                            <div class="d-flex align-items-center">
-                                                @if (!string.IsNullOrEmpty(t.InvoicePath))
-                                                {
-                                                    <a href="@StorageService.RelativePathToInternetUrl(t.InvoicePath, true)" target="_blank" title="@Localizer["View Invoice"]" class="mr-2">
-                                                        <i class="fas fa-paperclip"></i>
-                                                    </a>
-                                                }
-                                                else
-                                                {
-                                                    <i class="fas fa-paperclip text-gray-300 mr-2" title="@Localizer["No Invoice"]"></i>
-                                                }
-                                                <a asp-action="EditTransaction" asp-route-id="@t.Id" asp-route-entityId="@Model.Entity.Id" title="@Localizer["Edit"]">
-                                                    <i class="fas fa-edit"></i>
+                                            @if (!string.IsNullOrEmpty(t.InvoicePath))
+                                            {
+                                                <a href="@StorageService.RelativePathToInternetUrl(t.InvoicePath, true)" target="_blank" title="@Localizer["View Invoice"]">
+                                                    <i class="fas fa-paperclip"></i>
                                                 </a>
-                                            </div>
+                                            }
+                                            else
+                                            {
+                                                <i class="fas fa-paperclip text-gray-300" title="@Localizer["No Invoice"]"></i>
+                                            }
+                                        </td>
+                                        <td>
+                                            <a asp-action="EditTransaction" asp-route-id="@t.Id" asp-route-entityId="@Model.Entity.Id" title="@Localizer["Edit"]">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
                                         </td>
                                     </tr>
                                 }

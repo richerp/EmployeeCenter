@@ -39,6 +39,12 @@
   <data name="From" xml:space="preserve">
     <value>来源</value>
   </data>
+  <data name="Invoice" xml:space="preserve">
+    <value>下载</value>
+  </data>
+  <data name="Fix Error" xml:space="preserve">
+    <value>修正错误</value>
+  </data>
   <data name="Health Metrics" xml:space="preserve">
     <value>健康指标</value>
   </data>

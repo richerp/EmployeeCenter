@@ -34,7 +34,10 @@
     <value>来源</value>
   </data>
   <data name="Invoice" xml:space="preserve">
-    <value>发票</value>
+    <value>下载</value>
+  </data>
+  <data name="Fix Error" xml:space="preserve">
+    <value>修正错误</value>
   </data>
   <data name="Ledger" xml:space="preserve">
     <value>账本</value>
