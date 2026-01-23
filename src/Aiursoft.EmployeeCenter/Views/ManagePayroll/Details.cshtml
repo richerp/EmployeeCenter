@@ -8,6 +8,9 @@
         <h3>@Localizer["Payroll Details"] - @Model.Payroll.TargetMonth.ToString("yyyy-MM")</h3>
     </div>
     <div class="col-auto ms-auto mt-n1">
+        <a asp-action="Edit" asp-route-id="@Model.Payroll.Id" class="btn btn-secondary">
+            <i class="align-middle me-2" data-lucide="edit"></i> @Localizer["Edit"]
+        </a>
         <button class="btn btn-primary" onclick="window.print();">
             <i class="align-middle me-2" data-lucide="printer"></i> @Localizer["Print"]
         </button>

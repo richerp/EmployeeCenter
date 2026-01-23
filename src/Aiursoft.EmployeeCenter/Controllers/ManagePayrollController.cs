@@ -183,4 +183,110 @@ public class ManagePayrollController(
             Payroll = payroll
         });
     }
+
+    [HttpGet]
+    public async Task<IActionResult> Edit(int id)
+    {
+        var payroll = await context.Payrolls
+            .FirstOrDefaultAsync(p => p.Id == id);
+
+        if (payroll == null) return NotFound();
+
+        return this.StackView(new EditViewModel
+        {
+            Id = payroll.Id,
+            UserId = payroll.OwnerId,
+            TargetMonth = payroll.TargetMonth,
+            Content = payroll.Content,
+
+            BaseSalary = payroll.BaseSalary,
+            JobSalary = payroll.JobSalary,
+            PerformanceBonus = payroll.PerformanceBonus,
+            Overtime = payroll.Overtime,
+            FullAttendance = payroll.FullAttendance,
+            OtherAllowances = payroll.OtherAllowances,
+
+            LateEarly = payroll.LateEarly,
+            SickLeave = payroll.SickLeave,
+            AdministrativeFines = payroll.AdministrativeFines,
+
+            PensionPersonal = payroll.PensionPersonal,
+            MedicalPersonal = payroll.MedicalPersonal,
+            UnemploymentPersonal = payroll.UnemploymentPersonal,
+            HousingFundPersonal = payroll.HousingFundPersonal,
+
+            SpecialAdditionalDeduction = payroll.SpecialAdditionalDeduction,
+            PersonalIncomeTax = payroll.PersonalIncomeTax,
+
+            Currency = payroll.Currency,
+            TotalAmount = payroll.TotalAmount,
+            BankName = payroll.BankName,
+            BankAccount = payroll.BankAccount,
+
+            PensionCompany = payroll.PensionCompany,
+            MedicalCompany = payroll.MedicalCompany,
+            UnemploymentCompany = payroll.UnemploymentCompany,
+            WorkInjuryCompany = payroll.WorkInjuryCompany,
+            MaternityCompany = payroll.MaternityCompany,
+            HousingFundCompany = payroll.HousingFundCompany,
+
+            AllUsers = await context.Users.ToListAsync(),
+            CurrencyOptions = SettingsMap.Definitions.First(d => d.Key == SettingsMap.DefaultPayrollCurrency).ChoiceOptions!
+        });
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Edit(EditViewModel model)
+    {
+        if (ModelState.IsValid)
+        {
+            var payroll = await context.Payrolls
+                .FirstOrDefaultAsync(p => p.Id == model.Id);
+
+            if (payroll == null) return NotFound();
+
+            payroll.OwnerId = model.UserId;
+            payroll.TargetMonth = model.TargetMonth;
+            payroll.Content = model.Content;
+
+            payroll.BaseSalary = model.BaseSalary;
+            payroll.JobSalary = model.JobSalary;
+            payroll.PerformanceBonus = model.PerformanceBonus;
+            payroll.Overtime = model.Overtime;
+            payroll.FullAttendance = model.FullAttendance;
+            payroll.OtherAllowances = model.OtherAllowances;
+
+            payroll.LateEarly = model.LateEarly;
+            payroll.SickLeave = model.SickLeave;
+            payroll.AdministrativeFines = model.AdministrativeFines;
+
+            payroll.PensionPersonal = model.PensionPersonal;
+            payroll.MedicalPersonal = model.MedicalPersonal;
+            payroll.UnemploymentPersonal = model.UnemploymentPersonal;
+            payroll.HousingFundPersonal = model.HousingFundPersonal;
+
+            payroll.SpecialAdditionalDeduction = model.SpecialAdditionalDeduction;
+            payroll.PersonalIncomeTax = model.PersonalIncomeTax;
+
+            payroll.Currency = model.Currency;
+            payroll.TotalAmount = model.TotalAmount;
+            payroll.BankName = model.BankName;
+            payroll.BankAccount = model.BankAccount;
+
+            payroll.PensionCompany = model.PensionCompany;
+            payroll.MedicalCompany = model.MedicalCompany;
+            payroll.UnemploymentCompany = model.UnemploymentCompany;
+            payroll.WorkInjuryCompany = model.WorkInjuryCompany;
+            payroll.MaternityCompany = model.MaternityCompany;
+            payroll.HousingFundCompany = model.HousingFundCompany;
+
+            await context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+        model.AllUsers = await context.Users.ToListAsync();
+        model.CurrencyOptions = SettingsMap.Definitions.First(d => d.Key == SettingsMap.DefaultPayrollCurrency).ChoiceOptions!;
+        return this.StackView(model);
+    }
 }

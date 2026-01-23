@@ -97,6 +97,9 @@
                     </td>
                     <td><label class="text-muted" data-utc-time="@item.CreationTime.ToHtmlDateTime()"></label></td>
                     <td class="text-end">
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">
+                            <i class="align-middle" data-lucide="edit"></i> @Localizer["Edit"]
+                        </a>
                         <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary">
                             <i class="align-middle" data-lucide="eye"></i> @Localizer["Details"]
                         </a>

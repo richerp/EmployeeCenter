@@ -1,11 +1,12 @@
-@model Aiursoft.EmployeeCenter.Models.PayrollViewModels.CreateViewModel
+@model Aiursoft.EmployeeCenter.Models.PayrollViewModels.EditViewModel
 
 @* ReSharper disable Razor.ResourceNotResolved *@
-<h1 class="h3 mb-3">@Localizer["Issue New Payroll"]</h1>
+<h1 class="h3 mb-3">@Localizer["Edit Payroll"]</h1>
 
 <div class="row">
     <div class="col-12">
-        <form asp-action="Create" id="payrollForm">
+        <form asp-action="Edit" id="payrollForm">
+            <input type="hidden" asp-for="Id" />
             <div class="card">
                 <div class="card-header">
                     <h5 class="card-title mb-0">@Localizer["Payroll Configuration"]</h5>
@@ -217,7 +218,7 @@
                 </div>
                 <div class="card-footer text-end">
                     <button type="button" id="submitButton" class="btn btn-primary btn-lg">
-                        <i class="align-middle me-2" data-lucide="check-circle"></i> @Localizer["Issue Payroll"]
+                        <i class="align-middle me-2" data-lucide="save"></i> @Localizer["Save Changes"]
                     </button>
                     <a asp-action="Index" class="btn btn-light btn-lg">@Localizer["Cancel"]</a>
                 </div>
@@ -229,16 +230,16 @@
 <div class="modal fade" id="confirmModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <div class="modal-header bg-danger text-white">
-                <h5 class="modal-title"><i class="align-middle me-2" data-lucide="alert-triangle"></i> @Localizer["CRITICAL CONFIRMATION REQUIRED"]</h5>
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title"><i class="align-middle me-2" data-lucide="help-circle"></i> @Localizer["CONFIRM CHANGES"]</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body text-center">
                 <div class="mb-4 mt-3">
-                    <i class="text-danger" data-lucide="alert-octagon" style="width: 64px; height: 64px;"></i>
+                    <i class="text-primary" data-lucide="help-circle" style="width: 64px; height: 64px;"></i>
                 </div>
-                <h3 class="text-danger fw-bold mb-3">@Localizer["Are you absolutely sure?"]</h3>
-                <p class="fs-5 mb-4">@Localizer["Payroll issuance will be sent to the employee. Please verify the following information:"]</p>
+                <h3 class="text-primary fw-bold mb-3">@Localizer["Are you sure to update?"]</h3>
+                <p class="fs-5 mb-4">@Localizer["Please verify the updated information:"]</p>
 
                 <div class="bg-light p-4 rounded border mb-4">
                     <div class="row text-start mb-3">
@@ -266,52 +267,12 @@
                         <div class="p-2 border rounded bg-success text-white m-1 fw-bold"><span class="fs-4" id="modalNetSalary">0.00</span><br /><small>@Localizer["Actual Salary (Net)"]</small></div>
                     </div>
                 </div>
-
-                <div class="alert alert-warning" role="alert">
-                    <div class="alert-icon">
-                        <i class="align-middle" data-lucide="info"></i>
-                    </div>
-                    <div class="alert-message">
-                        @Localizer["By clicking 'Confirm and Issue', you confirm that all values above are correct and compliant with the company policy."]
-                    </div>
-                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-light btn-lg" data-bs-dismiss="modal">@Localizer["No, let me check again"]</button>
-                <button type="button" id="finalConfirmButton" class="btn btn-danger btn-lg">
-                    <i class="align-middle me-2" data-lucide="check-circle"></i> @Localizer["Yes, Confirm and Issue!"]
+                <button type="button" id="finalConfirmButton" class="btn btn-primary btn-lg">
+                    <i class="align-middle me-2" data-lucide="check-circle"></i> @Localizer["Yes, Confirm and Save!"]
                 </button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="card mt-4">
-    <div class="card-header">
-        <h5 class="card-title mb-0">@Localizer["Calculation Formula Graph"]</h5>
-    </div>
-    <div class="card-body">
-        <div class="alert alert-info mb-0" role="alert">
-            <div class="alert-message">
-                <div class="d-flex align-items-center justify-content-center flex-wrap text-center">
-                    <div class="p-2 border rounded bg-white m-1">@Localizer["Total Earnings"]</div>
-                    <div class="p-2 m-1 fw-bold">+</div>
-                    <div class="p-2 border rounded bg-danger text-white m-1">@Localizer["Deductions"]</div>
-                    <div class="p-2 m-1 fw-bold">-</div>
-                    <div class="p-2 border rounded bg-warning m-1">@Localizer["Personal Insurance"]</div>
-                    <div class="p-2 m-1 fw-bold">-</div>
-                    <div class="p-2 border rounded bg-secondary text-white m-1">@Localizer["Income Tax"]</div>
-                    <div class="p-2 m-1 fw-bold">=</div>
-                    <div class="p-2 border rounded bg-success text-white m-1 fw-bold">@Localizer["Actual Salary (Net)"]</div>
-                </div>
-                <hr />
-                <div class="d-flex align-items-center justify-content-center flex-wrap text-center mt-2">
-                    <div class="p-2 border rounded bg-white m-1">@Localizer["Total Earnings"]</div>
-                    <div class="p-2 m-1 fw-bold">+</div>
-                    <div class="p-2 border rounded bg-info m-1">@Localizer["Company Paid Insurances"]</div>
-                    <div class="p-2 m-1 fw-bold">=</div>
-                    <div class="p-2 border rounded bg-dark text-white m-1 fw-bold">@Localizer["Total Company Cost"]</div>
-                </div>
             </div>
         </div>
     </div>

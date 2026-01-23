@@ -18,7 +18,7 @@ public class Payroll
     [NotNull]
     public User? Owner { get; set; }
 
-    public DateTime TargetMonth { get; init; }
+    public DateTime TargetMonth { get; set; }
 
     [MaxLength(2000)]
     public required string Content { get; set; }

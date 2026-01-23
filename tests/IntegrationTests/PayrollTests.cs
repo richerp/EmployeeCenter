@@ -180,5 +180,30 @@ public class PayrollTests
         Assert.Contains("5000", csvContent);
         Assert.Contains("USD", csvContent);
         Assert.Contains("December Payroll", csvContent);
+
+        // 9. Edit payroll
+        var editPayrollToken = await GetAntiCsrfToken("/ManagePayroll/Edit/" + payrollId);
+        var editPayrollContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Id", payrollId.ToString() },
+            { "UserId", userId },
+            { "TargetMonth", "2026-01" },
+            { "Currency", "USD" },
+            { "TotalAmount", "6000" },
+            { "Content", "# January Payroll Updated\nBase: 5000\nBonus: 1000" },
+            { "__RequestVerificationToken", editPayrollToken }
+        });
+        var editPayrollResponse = await _http.PostAsync("/ManagePayroll/Edit", editPayrollContent);
+        Assert.AreEqual(HttpStatusCode.Found, editPayrollResponse.StatusCode);
+
+        // 10. Verify edited payroll
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var payroll = await db.Payrolls.FirstAsync(p => p.Id == payrollId);
+            Assert.AreEqual("2026-01", payroll.TargetMonth.ToString("yyyy-MM"));
+            Assert.AreEqual(6000m, payroll.TotalAmount);
+            Assert.AreEqual("# January Payroll Updated\nBase: 5000\nBonus: 1000", payroll.Content);
+        }
     }
 }
