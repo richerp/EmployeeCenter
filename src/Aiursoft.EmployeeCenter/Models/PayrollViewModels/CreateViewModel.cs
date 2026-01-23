@@ -68,6 +68,13 @@ public class CreateViewModel : UiStackLayoutViewModel
 
     // Actual
     [Required(ErrorMessage = "The {0} is required.")]
+    [Display(Name = "Currency")]
+    [MaxLength(10, ErrorMessage = "The {0} cannot exceed {1} characters.")]
+    public string Currency { get; set; } = "CNY";
+
+    public Dictionary<string, string> CurrencyOptions { get; set; } = new();
+
+    [Required(ErrorMessage = "The {0} is required.")]
     [Display(Name = "Total Amount")]
     [DataType(DataType.Currency)]
     public decimal TotalAmount { get; set; }

@@ -13,19 +13,24 @@
                 <div class="card-body">
                     <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
                     <div class="row">
-                        <div class="col-md-4 mb-3">
+                        <div class="col-md-3 mb-3">
                             <label asp-for="UserId" class="form-label">@Localizer["Select User"]</label>
                             <select asp-for="UserId" class="form-select" id="userSelect" asp-items="@(new SelectList(Model.AllUsers, "Id", "DisplayName"))">
                                 <option value="">-- @Localizer["Select User"] --</option>
                             </select>
                             <span asp-validation-for="UserId" class="text-danger"></span>
                         </div>
-                        <div class="col-md-4 mb-3">
+                        <div class="col-md-3 mb-3">
                             <label asp-for="TargetMonth" class="form-label">@Localizer["Target Month"]</label>
                             <input asp-for="TargetMonth" class="form-control" type="month" value="@Model.TargetMonth.ToString("yyyy-MM")" />
                             <span asp-validation-for="TargetMonth" class="text-danger"></span>
                         </div>
-                        <div class="col-md-4 mb-3">
+                        <div class="col-md-3 mb-3">
+                            <label asp-for="Currency" class="form-label">@Localizer["Currency"]</label>
+                            <select asp-for="Currency" class="form-select" asp-items="@(new SelectList(Model.CurrencyOptions, "Key", "Value"))"></select>
+                            <span asp-validation-for="Currency" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-3 mb-3">
                             <label asp-for="Content" class="form-label">@Localizer["Remark / Content"]</label>
                             <input asp-for="Content" class="form-control" placeholder="@Localizer["Optional remarks..."]" />
                         </div>
@@ -244,6 +249,10 @@
                         <div class="col-sm-4 fw-bold">@Localizer["Month:"]</div>
                         <div class="col-sm-8" id="modalMonth"></div>
                     </div>
+                    <div class="row text-start mb-3">
+                        <div class="col-sm-4 fw-bold">@Localizer["Currency:"]</div>
+                        <div class="col-sm-8" id="modalCurrency"></div>
+                    </div>
                     <hr />
                     <div class="d-flex align-items-center justify-content-center flex-wrap text-center">
                         <div class="p-2 border rounded bg-white m-1"><span id="modalTotalEarnings">0.00</span><br /><small>@Localizer["Total Earnings"]</small></div>
@@ -409,6 +418,9 @@
             const userSelect = document.getElementById('userSelect');
             document.getElementById('modalUserName').innerText = userSelect.options[userSelect.selectedIndex].text;
             document.getElementById('modalMonth').innerText = document.getElementById('TargetMonth').value;
+            
+            const currencySelect = document.getElementById('Currency');
+            document.getElementById('modalCurrency').innerText = currencySelect.options[currencySelect.selectedIndex].text;
             
             document.getElementById('modalTotalEarnings').innerText = document.getElementById('totalEarnings').value;
             

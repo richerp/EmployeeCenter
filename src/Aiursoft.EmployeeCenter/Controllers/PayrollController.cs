@@ -46,7 +46,8 @@ public class PayrollController(
             Payrolls = payrolls,
             ChartLabels = chartData.Select(p => p.TargetMonth.ToString("yyyy-MM")).ToList(),
             ChartTotalAmounts = chartData.Select(p => p.TotalAmount).ToList(),
-            ChartBaseSalaries = chartData.Select(p => p.BaseSalary).ToList()
+            ChartBaseSalaries = chartData.Select(p => p.BaseSalary).ToList(),
+            ChartCurrencies = chartData.Select(p => p.Currency).ToList()
         });
     }
 

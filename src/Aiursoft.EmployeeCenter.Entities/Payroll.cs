@@ -47,6 +47,9 @@ public class Payroll
     public decimal PersonalIncomeTax { get; set; }
 
     // Actual
+    [MaxLength(10)]
+    public string Currency { get; set; } = "CNY";
+
     public decimal TotalAmount { get; set; }
 
     /// <summary>
