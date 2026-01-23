@@ -51,12 +51,12 @@
                             <span asp-validation-for="CompanyType" class="text-danger"></span>
                         </div>
                          <div class="form-group">
-                            <label asp-for="EstablishmentDate"></label>
+                            <label asp-for="EstablishmentDate"></label> <span class="badge bg-info">@Localizer["事件记录时间是协调世界时！"]</span>
                             <input asp-for="EstablishmentDate" class="form-control" />
                             <span asp-validation-for="EstablishmentDate" class="text-danger"></span>
                         </div>
                          <div class="form-group">
-                            <label asp-for="ExpiryDate"></label>
+                            <label asp-for="ExpiryDate"></label> <span class="badge bg-info">@Localizer["事件记录时间是协调世界时！"]</span>
                             <input asp-for="ExpiryDate" class="form-control" />
                             <span asp-validation-for="ExpiryDate" class="text-danger"></span>
                         </div>

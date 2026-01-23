@@ -24,7 +24,8 @@ public class AvatarTests : TestBase
         multipartContent.Add(fileContent, "file", "avatar.gif");
 
         var storage = GetService<StorageService>();
-        var uploadUrl = storage.GetUploadUrl("avatars", isVault: false);
+        var subfolder = "avatars-" + Guid.NewGuid().ToString("N");
+        var uploadUrl = storage.GetUploadUrl(subfolder, isVault: false);
         var uploadResponse = await Http.PostAsync(uploadUrl, multipartContent);
         uploadResponse.EnsureSuccessStatusCode();
 
@@ -57,7 +58,8 @@ public class AvatarTests : TestBase
         multipartContent.Add(fileContent, "file", "avatar.gif");
 
         var storage = GetService<StorageService>();
-        var uploadUrl = storage.GetUploadUrl("avatars", isVault: false);
+        var subfolder = "avatars-" + Guid.NewGuid().ToString("N");
+        var uploadUrl = storage.GetUploadUrl(subfolder, isVault: false);
         var uploadResponse = await Http.PostAsync(uploadUrl, multipartContent);
         uploadResponse.EnsureSuccessStatusCode();
 
@@ -92,7 +94,8 @@ public class AvatarTests : TestBase
         multipartContent.Add(fileContent, "file", "avatar.png");
 
         var storage = GetService<StorageService>();
-        var uploadUrl = storage.GetUploadUrl("avatars", isVault: false);
+        var subfolder = "avatars-" + Guid.NewGuid().ToString("N");
+        var uploadUrl = storage.GetUploadUrl(subfolder, isVault: false);
         var uploadResponse = await Http.PostAsync(uploadUrl, multipartContent);
         uploadResponse.EnsureSuccessStatusCode();
 
@@ -130,7 +133,8 @@ public class AvatarTests : TestBase
         multipartContent.Add(fileContent, "file", "avatar.png");
 
         var storage = GetService<StorageService>();
-        var uploadUrl = storage.GetUploadUrl("avatars", isVault: false);
+        var subfolder = "avatars-" + Guid.NewGuid().ToString("N");
+        var uploadUrl = storage.GetUploadUrl(subfolder, isVault: false);
         var uploadResponse = await Http.PostAsync(uploadUrl, multipartContent);
         uploadResponse.EnsureSuccessStatusCode();
 
@@ -167,7 +171,8 @@ public class AvatarTests : TestBase
         multipartContent.Add(fileContent, "file", "avatar.png");
 
         var storage = GetService<StorageService>();
-        var uploadUrl = storage.GetUploadUrl("avatars", isVault: false);
+        var subfolder = "avatars-" + Guid.NewGuid().ToString("N");
+        var uploadUrl = storage.GetUploadUrl(subfolder, isVault: false);
         var uploadResponse = await Http.PostAsync(uploadUrl, multipartContent);
         uploadResponse.EnsureSuccessStatusCode();
 
