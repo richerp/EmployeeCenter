@@ -39,6 +39,7 @@
                         <th>@Localizer["Hostname"]</th>
                         <th>@Localizer["IP Address"]</th>
                         <th>@Localizer["Location"]</th>
+                        <th>@Localizer["Company"]</th>
                         <th>@Localizer["Owner"]</th>
                         <th>@Localizer["Provider"]</th>
                         <th>@Localizer["Link"]</th>
@@ -57,6 +58,9 @@
                             </td>
                             <td>
                                 @(s.Location?.Name ?? "-")
+                            </td>
+                            <td>
+                                @(s.CompanyEntity?.CompanyName ?? "-")
                             </td>
                             <td>
                                 @if (s.Owner != null)

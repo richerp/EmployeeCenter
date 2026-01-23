@@ -27,7 +27,11 @@ public class CreateServerViewModel : UiStackLayoutViewModel
     [Display(Name = "Provider")]
     public int? ProviderId { get; set; }
 
+    [Display(Name = "Company Entity")]
+    public int? CompanyEntityId { get; set; }
+
     public IEnumerable<Location> AllLocations { get; set; } = new List<Location>();
     public IEnumerable<User> AllOwners { get; set; } = new List<User>();
     public IEnumerable<Provider> AllProviders { get; set; } = new List<Provider>();
+    public IEnumerable<CompanyEntity> AllCompanyEntities { get; set; } = new List<CompanyEntity>();
 }

@@ -28,6 +28,7 @@ public class ServersController(EmployeeCenterDbContext context) : Controller
             .Include(s => s.Location)
             .Include(s => s.Owner)
             .Include(s => s.Provider)
+            .Include(s => s.CompanyEntity)
             .OrderBy(s => s.Hostname)
             .ToListAsync();
 
@@ -43,7 +44,8 @@ public class ServersController(EmployeeCenterDbContext context) : Controller
         {
             AllLocations = await context.Locations.ToListAsync(),
             AllOwners = await context.Users.ToListAsync(),
-            AllProviders = await context.Providers.ToListAsync()
+            AllProviders = await context.Providers.ToListAsync(),
+            AllCompanyEntities = await context.CompanyEntities.ToListAsync()
         });
     }
 
@@ -61,6 +63,7 @@ public class ServersController(EmployeeCenterDbContext context) : Controller
                 Hostname = model.Hostname,
                 OwnerId = model.OwnerId,
                 ProviderId = model.ProviderId,
+                CompanyEntityId = model.CompanyEntityId,
                 CreatedAt = DateTime.UtcNow,
                 UpdatedAt = DateTime.UtcNow
             };
@@ -72,6 +75,7 @@ public class ServersController(EmployeeCenterDbContext context) : Controller
         model.AllLocations = await context.Locations.ToListAsync();
         model.AllOwners = await context.Users.ToListAsync();
         model.AllProviders = await context.Providers.ToListAsync();
+        model.AllCompanyEntities = await context.CompanyEntities.ToListAsync();
         return this.StackView(model);
     }
 
@@ -89,9 +93,11 @@ public class ServersController(EmployeeCenterDbContext context) : Controller
             Hostname = server.Hostname,
             OwnerId = server.OwnerId,
             ProviderId = server.ProviderId,
+            CompanyEntityId = server.CompanyEntityId,
             AllLocations = await context.Locations.ToListAsync(),
             AllOwners = await context.Users.ToListAsync(),
-            AllProviders = await context.Providers.ToListAsync()
+            AllProviders = await context.Providers.ToListAsync(),
+            AllCompanyEntities = await context.CompanyEntities.ToListAsync()
         });
     }
 
@@ -110,6 +116,7 @@ public class ServersController(EmployeeCenterDbContext context) : Controller
             server.Hostname = model.Hostname;
             server.OwnerId = model.OwnerId;
             server.ProviderId = model.ProviderId;
+            server.CompanyEntityId = model.CompanyEntityId;
             server.UpdatedAt = DateTime.UtcNow;
 
             await context.SaveChangesAsync();
@@ -119,6 +126,7 @@ public class ServersController(EmployeeCenterDbContext context) : Controller
         model.AllLocations = await context.Locations.ToListAsync();
         model.AllOwners = await context.Users.ToListAsync();
         model.AllProviders = await context.Providers.ToListAsync();
+        model.AllCompanyEntities = await context.CompanyEntities.ToListAsync();
         return this.StackView(model);
     }
 
@@ -167,5 +175,14 @@ public class ServersController(EmployeeCenterDbContext context) : Controller
             .OrderBy(p => p.Name)
             .ToListAsync();
         return Json(providers.Select(p => new { p.Id, p.Name }));
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetCompanyEntities()
+    {
+        var companyEntities = await context.CompanyEntities
+            .OrderBy(c => c.CompanyName)
+            .ToListAsync();
+        return Json(companyEntities.Select(c => new { c.Id, Name = c.CompanyName }));
     }
 }

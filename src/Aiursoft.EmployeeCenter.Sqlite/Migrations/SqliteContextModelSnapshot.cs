@@ -1073,6 +1073,9 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<int?>("CompanyEntityId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("TEXT");
 
@@ -1102,6 +1105,8 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CompanyEntityId");
 
                     b.HasIndex("LocationId");
 
@@ -1935,6 +1940,10 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Server", b =>
                 {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.CompanyEntity", "CompanyEntity")
+                        .WithMany()
+                        .HasForeignKey("CompanyEntityId");
+
                     b.HasOne("Aiursoft.EmployeeCenter.Entities.Location", "Location")
                         .WithMany()
                         .HasForeignKey("LocationId");
@@ -1946,6 +1955,8 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.HasOne("Aiursoft.EmployeeCenter.Entities.Provider", "Provider")
                         .WithMany("Servers")
                         .HasForeignKey("ProviderId");
+
+                    b.Navigation("CompanyEntity");
 
                     b.Navigation("Location");
 

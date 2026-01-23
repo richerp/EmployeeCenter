@@ -10,4 +10,5 @@ public class DetailsViewModel : UiStackLayoutViewModel
         PageTitle = "Company Entity Details";
     }
     public required CompanyEntity Entity { get; set; }
+    public IEnumerable<Server> Servers { get; set; } = new List<Server>();
 }

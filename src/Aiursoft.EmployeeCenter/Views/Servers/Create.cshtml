@@ -67,6 +67,26 @@
                     </div>
 
                     <div class="mb-3">
+                        <label asp-for="CompanyEntityId" class="form-label"></label>
+                        <div class="input-group">
+                            <select asp-for="CompanyEntityId" class="form-select" asp-items="@(new SelectList(Model.AllCompanyEntities, "Id", "CompanyName"))">
+                                <option value="">-- @Localizer["Select Company Entity"] --</option>
+                            </select>
+                            <a asp-controller="CompanyEntity" asp-action="Create" target="_blank" class="btn btn-outline-secondary" title="@Localizer["New"]">
+                                <i class="align-middle" data-lucide="plus-circle"></i>
+                            </a>
+                            <button type="button" class="btn btn-outline-secondary reload-dropdown" 
+                                    data-url="@Url.Action("GetCompanyEntities")" 
+                                    data-target="CompanyEntityId" 
+                                    data-placeholder="@Localizer["Select Company Entity"]"
+                                    title="@Localizer["Reload"]">
+                                <i class="align-middle" data-lucide="rotate-cw"></i>
+                            </button>
+                        </div>
+                        <span asp-validation-for="CompanyEntityId" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
                         <label asp-for="OwnerId" class="form-label"></label>
                         <div class="input-group">
                             <select asp-for="OwnerId" class="form-select" asp-items="@(new SelectList(Model.AllOwners, "Id", "DisplayName"))">

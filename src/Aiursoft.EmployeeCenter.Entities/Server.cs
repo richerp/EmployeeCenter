@@ -37,6 +37,12 @@ public class Server
     [ForeignKey(nameof(ProviderId))]
     public Provider? Provider { get; set; }
 
+    public int? CompanyEntityId { get; set; }
+
+    [JsonIgnore]
+    [ForeignKey(nameof(CompanyEntityId))]
+    public CompanyEntity? CompanyEntity { get; set; }
+
     [JsonIgnore]
     [InverseProperty(nameof(Service.Server))]
     public IEnumerable<Service> Services { get; init; } = new List<Service>();

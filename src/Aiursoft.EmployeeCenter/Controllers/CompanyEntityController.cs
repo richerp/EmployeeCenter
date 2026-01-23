@@ -73,9 +73,15 @@ public class CompanyEntityController(
             return NotFound();
         }
 
+        var servers = await dbContext.Servers
+            .Where(s => s.CompanyEntityId == id)
+            .OrderBy(s => s.Hostname)
+            .ToListAsync();
+
         var model = new DetailsViewModel
         {
-            Entity = entity
+            Entity = entity,
+            Servers = servers
         };
         return this.StackView(model);
     }
