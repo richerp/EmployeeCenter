@@ -80,7 +80,7 @@
                                                     <div class="border rounded p-2 text-light @statusClass" style="min-width: 150px;">
                                                         <div class="fw-bold small">@statusText</div>
                                                         <div class="small"><label data-utc-time="@leave.StartDate.ToHtmlDateTime()"></label> - <label data-utc-time="@leave.EndDate.ToHtmlDateTime()"></label></div>
-                                                        <div class="small opacity-75">@(leave.LeaveType == Aiursoft.EmployeeCenter.Entities.LeaveType.AnnualLeave ? Localizer["Annual"] : Localizer["Sick"]) (@leave.TotalDays.ToString("0.##") @Localizer["days"])</div>
+                                                        <div class="small opacity-75">@(leave.LeaveType == LeaveType.AnnualLeave ? Localizer["Annual"] : Localizer["Sick"]) (@leave.TotalDays.ToString("0.##") @Localizer["days"])</div>
                                                     </div>
                                                 }
                                             </div>
