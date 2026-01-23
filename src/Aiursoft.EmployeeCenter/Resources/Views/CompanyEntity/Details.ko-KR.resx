@@ -39,6 +39,9 @@
   <data name="Bank" xml:space="preserve">
     <value>은행</value>
   </data>
+  <data name="Bank Code" xml:space="preserve">
+    <value>은행 코드</value>
+  </data>
   <data name="Bank Info" xml:space="preserve">
     <value>은행 정보</value>
   </data>
@@ -143,6 +146,9 @@
   </data>
   <data name="Status" xml:space="preserve">
     <value>상태</value>
+  </data>
+  <data name="SWIFT Code" xml:space="preserve">
+    <value>SWIFT 코드</value>
   </data>
   <data name="Tax ID" xml:space="preserve">
     <value>세금 식별번호</value>

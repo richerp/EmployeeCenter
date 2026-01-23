@@ -63,6 +63,9 @@
   <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
     <value>Επιτρέπει τη δημιουργία, ενημέρωση και διαγραφή πληροφοριών εταιρικών οντοτήτων. Κάθε χρήστης μπορεί από προεπιλογή να δει πληροφορίες εταιρικών οντοτήτων.</value>
   </data>
+  <data name="Allows creating, updating, and deleting services and DNS providers. Every user can view services by default." xml:space="preserve">
+    <value>Επιτρέπει τη δημιουργία, ενημέρωση και διαγραφή υπηρεσιών και προμηθευτών DNS. Κάθε χρήστης μπορεί να δει τις υπηρεσίες προεπιλεγμένα.</value>
+  </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>Επιτρέπει την έκδοση και τη διαχείριση μισθοδοτικών αποδείξεων για όλους τους χρήστες.</value>
   </data>
@@ -224,6 +227,9 @@
   </data>
   <data name="Manage Payroll" xml:space="preserve">
     <value>Διαχείριση Μισθοδοσίας</value>
+  </data>
+  <data name="Manage Services" xml:space="preserve">
+    <value>Διαχείριση Υπηρεσιών</value>
   </data>
   <data name="Manage SSH Keys" xml:space="preserve">
     <value>Διαχείριση Κλειδιών SSH</value>

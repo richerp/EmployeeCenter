@@ -24,6 +24,12 @@
   <data name="Bank Account Name" xml:space="preserve">
     <value>Pankkitilin nimi</value>
   </data>
+  <data name="Bank Address" xml:space="preserve">
+    <value>Pankin osoite</value>
+  </data>
+  <data name="Bank Code" xml:space="preserve">
+    <value>Pankin koodi</value>
+  </data>
   <data name="Bank Name" xml:space="preserve">
     <value>Pankin nimi</value>
   </data>
@@ -98,6 +104,9 @@
   </data>
   <data name="SCR Location (HK)" xml:space="preserve">
     <value>SCR-sijainti (HK)</value>
+  </data>
+  <data name="SWIFT Code" xml:space="preserve">
+    <value>SWIFT-koodi</value>
   </data>
   <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
     <value>{0} ei saa ylittää {1} merkkiä.</value>

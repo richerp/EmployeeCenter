@@ -39,6 +39,9 @@
   <data name="Bank" xml:space="preserve">
     <value>Banka</value>
   </data>
+  <data name="Bank Code" xml:space="preserve">
+    <value>Bank Kodu</value>
+  </data>
   <data name="Bank Info" xml:space="preserve">
     <value>Bank Bilgisi</value>
   </data>
@@ -143,6 +146,9 @@
   </data>
   <data name="Status" xml:space="preserve">
     <value>Durum</value>
+  </data>
+  <data name="SWIFT Code" xml:space="preserve">
+    <value>SWIFT Kodu</value>
   </data>
   <data name="Tax ID" xml:space="preserve">
     <value>Vergi Kimlik Numarası</value>

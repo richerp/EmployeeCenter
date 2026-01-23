@@ -63,6 +63,9 @@
   <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
     <value>Memungkinkan pembuatan, pembaruan, dan penghapusan informasi entitas perusahaan. Setiap pengguna dapat melihat informasi entitas perusahaan secara default.</value>
   </data>
+  <data name="Allows creating, updating, and deleting services and DNS providers. Every user can view services by default." xml:space="preserve">
+    <value>Memungkinkan pembuatan, pembaruan, dan penghapusan layanan serta penyedia DNS. Setiap pengguna dapat melihat layanan secara default.</value>
+  </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>Memungkinkan penerbitan dan pengelolaan slip gaji untuk semua pengguna.</value>
   </data>
@@ -224,6 +227,9 @@
   </data>
   <data name="Manage Payroll" xml:space="preserve">
     <value>Kelola Penggajian</value>
+  </data>
+  <data name="Manage Services" xml:space="preserve">
+    <value>Kelola Layanan</value>
   </data>
   <data name="Manage SSH Keys" xml:space="preserve">
     <value>Kelola Kunci SSH</value>

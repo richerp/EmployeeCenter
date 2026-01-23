@@ -24,6 +24,12 @@
   <data name="Bank Account Name" xml:space="preserve">
     <value>銀行戶口名稱</value>
   </data>
+  <data name="Bank Address" xml:space="preserve">
+    <value>銀行地址</value>
+  </data>
+  <data name="Bank Code" xml:space="preserve">
+    <value>銀行代碼</value>
+  </data>
   <data name="Bank Name" xml:space="preserve">
     <value>銀行名稱</value>
   </data>
@@ -98,6 +104,9 @@
   </data>
   <data name="SCR Location (HK)" xml:space="preserve">
     <value>SCR 地址 (香港)</value>
+  </data>
+  <data name="SWIFT Code" xml:space="preserve">
+    <value>SWIFT代碼</value>
   </data>
   <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
     <value>{0} 不能超過 {1} 個字元。</value>

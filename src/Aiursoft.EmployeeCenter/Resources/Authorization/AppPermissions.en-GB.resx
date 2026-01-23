@@ -60,6 +60,9 @@
   <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
     <value>Allows creating, updating, and deleting company entity information. Every user can view company entity information by default.</value>
   </data>
+  <data name="Allows creating, updating, and deleting services and DNS providers. Every user can view services by default." xml:space="preserve">
+    <value>Allows creating, updating, and deleting services and DNS providers. Every user can view services by default.</value>
+  </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>Allows issuing and managing payroll slips for all users.</value>
   </data>
@@ -203,6 +206,9 @@
   </data>
   <data name="Manage Payroll" xml:space="preserve">
     <value>Manage Payroll</value>
+  </data>
+  <data name="Manage Services" xml:space="preserve">
+    <value>Manage Services</value>
   </data>
   <data name="Manage SSH Keys" xml:space="preserve">
     <value>Manage SSH Keys</value>

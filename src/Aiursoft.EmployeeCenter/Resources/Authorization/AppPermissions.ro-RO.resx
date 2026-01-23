@@ -63,6 +63,9 @@
   <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
     <value>Permite crearea, actualizarea și ștergerea informațiilor entității companiei. Toți utilizatorii pot vizualiza informațiile entității companiei implicit.</value>
   </data>
+  <data name="Allows creating, updating, and deleting services and DNS providers. Every user can view services by default." xml:space="preserve">
+    <value>Permite crearea, actualizarea și ștergerea serviciilor și furnizorilor de DNS. Toți utilizatorii pot vizualiza serviciile implicit.</value>
+  </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>Permite emitirea și gestionarea fluturașilor de salariu pentru toți utilizatorii.</value>
   </data>
@@ -224,6 +227,9 @@
   </data>
   <data name="Manage Payroll" xml:space="preserve">
     <value>Gestionare Salarii</value>
+  </data>
+  <data name="Manage Services" xml:space="preserve">
+    <value>Gestionează Serviciile</value>
   </data>
   <data name="Manage SSH Keys" xml:space="preserve">
     <value>Gestionează chei SSH</value>

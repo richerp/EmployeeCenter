@@ -63,6 +63,9 @@
   <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
     <value>อนุญาตให้สร้าง แก้ไข และลบข้อมูลหน่วยงานบริษัท ทุกผู้ใช้สามารถดูข้อมูลหน่วยงานบริษัทได้โดยค่าเริ่มต้น</value>
   </data>
+  <data name="Allows creating, updating, and deleting services and DNS providers. Every user can view services by default." xml:space="preserve">
+    <value>อนุญาตให้สร้าง แก้ไข และลบบริการและผู้ให้บริการ DNS ทุกผู้ใช้สามารถดูบริการได้โดยค่าเริ่มต้น</value>
+  </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>อนุญาตให้ออกและจัดการสลิปเงินเดือนสำหรับผู้ใช้ทั้งหมด</value>
   </data>
@@ -224,6 +227,9 @@
   </data>
   <data name="Manage Payroll" xml:space="preserve">
     <value>จัดการเงินเดือน</value>
+  </data>
+  <data name="Manage Services" xml:space="preserve">
+    <value>จัดการบริการ</value>
   </data>
   <data name="Manage SSH Keys" xml:space="preserve">
     <value>จัดการคีย์ SSH</value>

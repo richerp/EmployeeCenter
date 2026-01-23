@@ -63,6 +63,9 @@
   <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
     <value>Staat het toe om informatie over bedrijfseenheden te maken, bijwerken en verwijderen. Elke gebruiker kan standaard informatie over bedrijfseenheden bekijken.</value>
   </data>
+  <data name="Allows creating, updating, and deleting services and DNS providers. Every user can view services by default." xml:space="preserve">
+    <value>Staats het aanmaken, bijwerken en verwijderen van services en DNS-leveranciers toe. Elke gebruiker kan services standaard bekijken.</value>
+  </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>Staat het uitgeven en beheren van loonstroken voor alle gebruikers toe.</value>
   </data>
@@ -224,6 +227,9 @@
   </data>
   <data name="Manage Payroll" xml:space="preserve">
     <value>Loonadministratie beheren</value>
+  </data>
+  <data name="Manage Services" xml:space="preserve">
+    <value>Services beheren</value>
   </data>
   <data name="Manage SSH Keys" xml:space="preserve">
     <value>SSH-sleutels beheren</value>

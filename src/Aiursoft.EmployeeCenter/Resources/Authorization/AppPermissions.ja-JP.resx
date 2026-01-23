@@ -63,6 +63,9 @@
   <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
     <value>会社エンティティ情報の作成、更新、削除を許可します。デフォルトでは、すべてのユーザーが会社エンティティ情報の閲覧が可能です。</value>
   </data>
+  <data name="Allows creating, updating, and deleting services and DNS providers. Every user can view services by default." xml:space="preserve">
+    <value>サービスおよびDNSプロバイダーの作成、更新、削除を許可します。デフォルトでは、すべてのユーザーがサービスを閲覧できます。</value>
+  </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>すべてのユーザーの給与明細の発行と管理を許可します。</value>
   </data>
@@ -224,6 +227,9 @@
   </data>
   <data name="Manage Payroll" xml:space="preserve">
     <value>給与管理</value>
+  </data>
+  <data name="Manage Services" xml:space="preserve">
+    <value>サービスの管理</value>
   </data>
   <data name="Manage SSH Keys" xml:space="preserve">
     <value>SSHキーの管理</value>

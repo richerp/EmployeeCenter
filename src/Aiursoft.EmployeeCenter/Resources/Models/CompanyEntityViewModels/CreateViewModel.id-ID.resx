@@ -24,6 +24,12 @@
   <data name="Bank Account Name" xml:space="preserve">
     <value>Nama Pemilik Rekening</value>
   </data>
+  <data name="Bank Address" xml:space="preserve">
+    <value>Alamat Bank</value>
+  </data>
+  <data name="Bank Code" xml:space="preserve">
+    <value>Kode Bank</value>
+  </data>
   <data name="Bank Name" xml:space="preserve">
     <value>Nama Bank</value>
   </data>
@@ -98,6 +104,9 @@
   </data>
   <data name="SCR Location (HK)" xml:space="preserve">
     <value>Lokasi SCR (HK)</value>
+  </data>
+  <data name="SWIFT Code" xml:space="preserve">
+    <value>Kode SWIFT</value>
   </data>
   <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
     <value>{0} tidak boleh melebihi {1} karakter.</value>

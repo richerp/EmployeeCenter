@@ -39,6 +39,9 @@
   <data name="Bank" xml:space="preserve">
     <value>Bank</value>
   </data>
+  <data name="Bank Code" xml:space="preserve">
+    <value>Bankkode</value>
+  </data>
   <data name="Bank Info" xml:space="preserve">
     <value>Bankoplysninger</value>
   </data>
@@ -143,6 +146,9 @@
   </data>
   <data name="Status" xml:space="preserve">
     <value>Status</value>
+  </data>
+  <data name="SWIFT Code" xml:space="preserve">
+    <value>SWIFT-kode</value>
   </data>
   <data name="Tax ID" xml:space="preserve">
     <value>CVR-nummer</value>

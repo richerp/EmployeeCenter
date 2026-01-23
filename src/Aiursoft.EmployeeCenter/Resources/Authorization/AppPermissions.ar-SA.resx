@@ -63,6 +63,9 @@
   <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
     <value>يُمكّن من إنشاء معلومات الكيان المؤسسي وتحديثها وحذفها. يمكن لكل مستخدم عرض معلومات الكيان المؤسسي افتراضيًا.</value>
   </data>
+  <data name="Allows creating, updating, and deleting services and DNS providers. Every user can view services by default." xml:space="preserve">
+    <value>يُمكّن من إنشاء الخدمات وتحديثها وحذفها، وكذلك مزودي خدمة DNS. يمكن لكل مستخدم عرض الخدمات افتراضيًا.</value>
+  </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>يسمح بإصدار وإدارة إيصالات الرواتب لجميع المستخدمين.</value>
   </data>
@@ -224,6 +227,9 @@
   </data>
   <data name="Manage Payroll" xml:space="preserve">
     <value>إدارة الرواتب</value>
+  </data>
+  <data name="Manage Services" xml:space="preserve">
+    <value>إدارة الخدمات</value>
   </data>
   <data name="Manage SSH Keys" xml:space="preserve">
     <value>إدارة مفاتيح SSH</value>

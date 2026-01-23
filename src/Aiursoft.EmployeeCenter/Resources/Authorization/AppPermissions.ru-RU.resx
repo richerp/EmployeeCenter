@@ -63,6 +63,9 @@
   <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
     <value>Позволяет создавать, обновлять и удалять сведения о юридических лицах компании. По умолчанию все пользователи могут просматривать сведения о юридических лицах компании.</value>
   </data>
+  <data name="Allows creating, updating, and deleting services and DNS providers. Every user can view services by default." xml:space="preserve">
+    <value>Позволяет создавать, обновлять и удалять службы и провайдеров DNS. По умолчанию все пользователи могут просматривать службы.</value>
+  </data>
   <data name="Allows issuing and managing payroll slips for all users." xml:space="preserve">
     <value>Разрешает выпуск и управление расчетными листками для всех пользователей.</value>
   </data>
@@ -224,6 +227,9 @@
   </data>
   <data name="Manage Payroll" xml:space="preserve">
     <value>Управление расчётными ведомостями</value>
+  </data>
+  <data name="Manage Services" xml:space="preserve">
+    <value>Управление службами</value>
   </data>
   <data name="Manage SSH Keys" xml:space="preserve">
     <value>Управление SSH-ключами</value>

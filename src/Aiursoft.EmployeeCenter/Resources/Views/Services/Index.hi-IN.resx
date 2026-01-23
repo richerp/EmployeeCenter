@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Actions" xml:space="preserve">
+    <value>कार्रवाई</value>
+  </data>
+  <data name="All Services" xml:space="preserve">
+    <value>सभी सेवाएं</value>
+  </data>
+  <data name="Are you sure you want to delete this service?" xml:space="preserve">
+    <value>क्या आप वाकई इस सेवा को हटाना चाहते हैं?</value>
+  </data>
+  <data name="Create New Service" xml:space="preserve">
+    <value>नया सेवा बनाएं</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>हटाएँ</value>
+  </data>
+  <data name="DNS" xml:space="preserve">
+    <value>DNS</value>
+  </data>
+  <data name="Domain" xml:space="preserve">
+    <value>डोमेन</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>संपादित करें</value>
+  </data>
+  <data name="Is Online" xml:space="preserve">
+    <value>ऑनलाइन है</value>
+  </data>
+  <data name="Link" xml:space="preserve">
+    <value>लिंक</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>स्थान</value>
+  </data>
+  <data name="Manage DNS Providers" xml:space="preserve">
+    <value>DNS प्रदाताओं का प्रबंधन करें</value>
+  </data>
+  <data name="No services found." xml:space="preserve">
+    <value>कोई सेवाएं नहीं मिलीं।</value>
+  </data>
+  <data name="Offline" xml:space="preserve">
+    <value>ऑफलाइन</value>
+  </data>
+  <data name="Online" xml:space="preserve">
+    <value>ऑनलाइन</value>
+  </data>
+  <data name="Owner" xml:space="preserve">
+    <value>मालिक</value>
+  </data>
+  <data name="Protocols" xml:space="preserve">
+    <value>प्रोटोकॉल</value>
+  </data>
+  <data name="Server IP" xml:space="preserve">
+    <value>सर्वर आईपी</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>सेवाएं</value>
+  </data>
+
+</root>
