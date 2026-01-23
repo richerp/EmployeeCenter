@@ -90,6 +90,9 @@
   <data name="Running" xml:space="preserve">
     <value>Running</value>
   </data>
+  <data name="Server" xml:space="preserve">
+    <value>Server</value>
+  </data>
   <data name="Server Details" xml:space="preserve">
     <value>Server Details</value>
   </data>

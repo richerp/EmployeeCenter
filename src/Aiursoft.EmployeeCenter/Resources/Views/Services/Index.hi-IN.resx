@@ -78,6 +78,9 @@
   <data name="Running" xml:space="preserve">
     <value>चल रहा है</value>
   </data>
+  <data name="Server" xml:space="preserve">
+    <value>सर्वर</value>
+  </data>
   <data name="Server Details" xml:space="preserve">
     <value>सर्वर विवरण</value>
   </data>

@@ -78,6 +78,9 @@
   <data name="Running" xml:space="preserve">
     <value>Работает</value>
   </data>
+  <data name="Server" xml:space="preserve">
+    <value>Сервер</value>
+  </data>
   <data name="Server Details" xml:space="preserve">
     <value>Сведения о сервере</value>
   </data>

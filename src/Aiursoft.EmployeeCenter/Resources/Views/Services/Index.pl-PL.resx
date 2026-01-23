@@ -78,6 +78,9 @@
   <data name="Running" xml:space="preserve">
     <value>Uruchomione</value>
   </data>
+  <data name="Server" xml:space="preserve">
+    <value>Serwer</value>
+  </data>
   <data name="Server Details" xml:space="preserve">
     <value>Szczegóły serwera</value>
   </data>
