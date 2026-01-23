@@ -31,7 +31,7 @@ public class ServicesController(
             .Include(s => s.CrossEntityLink)
             .Include(s => s.DnsProvider)
             .Include(s => s.Server)
-            .ThenInclude(s => s.Location)
+            .ThenInclude(s => s!.Location)
             .OrderBy(s => s.Domain)
             .ToListAsync();
 
