@@ -171,17 +171,9 @@ public class WeeklyReportController(
 
         if (existing != null)
         {
-            if (canManageAnyone)
-            {
-                // Allow overwrite
-                existing.Content = content;
-                existing.WeekStartDate = targetWeek;
-                await dbContext.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-
-            // Already submitted
-            // Maybe show error or just redirect
+            existing.Content += "\r\n\r\n" + content;
+            existing.WeekStartDate = targetWeek;
+            await dbContext.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
@@ -382,10 +374,17 @@ public class WeeklyReportController(
         for (int i = 0; i < 50; i++)
         {
             var weekStart = thisWeekStart.AddDays(-i * 7);
-            if (showAll || !existingWeeks.Contains(weekStart))
+            if (showAll || !existingWeeks.Contains(weekStart) || weekStart == thisWeekStart)
             {
                 var label = $"{weekStart:yyyy-MM-dd} ~ {weekStart.AddDays(6):yyyy-MM-dd}";
-                if (weekStart == thisWeekStart) label += " (Current Week)";
+                if (weekStart == thisWeekStart)
+                {
+                    label += $" ({localizer["Current Week"]})";
+                    if (existingWeeks.Contains(weekStart))
+                    {
+                        label += $" - ({localizer["Already submitted, click to supplement"]})";
+                    }
+                }
                 availableWeeks.Add(weekStart, label);
             }
         }

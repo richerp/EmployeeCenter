@@ -182,15 +182,14 @@ public class WeeklyReportTests
         });
         createResponse = await _http.PostAsync("/WeeklyReport/Create", createContent);
         Assert.AreEqual(HttpStatusCode.Found, createResponse.StatusCode); 
-        // Logic says: if exists, return RedirectToAction(nameof(Index));
-        // So we get a redirect. But we should check DB that content didn't change or new report wasn't added.
+        // Logic says: if exists, it should append.
 
         using (var scope = _server!.Services.CreateScope())
         {
             var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
             var reports = await db.WeeklyReports.Where(r => r.UserId == userId).ToListAsync();
             Assert.HasCount(1, reports); // Still 1
-            Assert.AreEqual("UNIQUE_REPORT_THIS_WEEK", reports[0].Content);
+            Assert.AreEqual("UNIQUE_REPORT_THIS_WEEK\r\n\r\nDuplicate report attempt", reports[0].Content);
         }
 
         // 6. Submit for Past Week
@@ -618,10 +617,10 @@ public class WeeklyReportTests
     }
 
     [TestMethod]
-    public async Task TestAdminCanOverwriteReport()
+    public async Task TestAdminCanAppendReport()
     {
-        var adminEmail = "admin-overwrite-" + Guid.NewGuid() + "@aiursoft.com";
-        var userEmail = "user-to-overwrite-" + Guid.NewGuid() + "@aiursoft.com";
+        var adminEmail = "admin-append-" + Guid.NewGuid() + "@aiursoft.com";
+        var userEmail = "user-to-append-" + Guid.NewGuid() + "@aiursoft.com";
         var password = "Test-Password-123";
 
         // 1. Register Admin and User
@@ -662,12 +661,12 @@ public class WeeklyReportTests
         });
         await _http.PostAsync("/WeeklyReport/Create", userCreateContent);
 
-        // 3. Admin overwrites user's report
+        // 3. Admin appends to user's report
         await LoginAs(adminEmail, password);
         var adminCreateToken = await GetAntiCsrfToken("/WeeklyReport/Index");
         var adminCreateContent = new FormUrlEncodedContent(new Dictionary<string, string>
         {
-            { "content", "Admin's overwritten report" },
+            { "content", "Admin's appended report" },
             { "onBehalfOf", userId },
             { "weekStartDate", weekStartStr },
             { "__RequestVerificationToken", adminCreateToken }
@@ -681,7 +680,7 @@ public class WeeklyReportTests
             var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
             var reports = await db.WeeklyReports.Where(r => r.UserId == userId).ToListAsync();
             Assert.HasCount(1, reports);
-            Assert.AreEqual("Admin's overwritten report", reports[0].Content);
+            Assert.AreEqual("User's original report\r\n\r\nAdmin's appended report", reports[0].Content);
         }
     }
 }
