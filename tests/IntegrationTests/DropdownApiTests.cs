@@ -1,10 +1,3 @@
-using System.Net;
-using System.Net.Http.Json;
-using Aiursoft.EmployeeCenter.Entities;
-using Aiursoft.EmployeeCenter.Tests.IntegrationTests;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Newtonsoft.Json.Linq;
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
@@ -42,7 +35,7 @@ public class DropdownApiTests
         // Login as admin
         var response = await _http.GetAsync("/Account/Login");
         var html = await response.Content.ReadAsStringAsync();
-        var match = System.Text.RegularExpressions.Regex.Match(html, @"__RequestVerificationToken"" type=""hidden"" value=""([^""]+)""");
+        var match = Regex.Match(html, @"__RequestVerificationToken"" type=""hidden"" value=""([^""]+)""");
         var loginToken = match.Groups[1].Value;
 
         var loginContent = new FormUrlEncodedContent(new Dictionary<string, string>
