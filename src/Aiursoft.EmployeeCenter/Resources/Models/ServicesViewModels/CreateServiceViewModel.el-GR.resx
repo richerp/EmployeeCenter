@@ -48,6 +48,9 @@
   <data name="Remark" xml:space="preserve">
     <value>Σχόλιο</value>
   </data>
+  <data name="Server" xml:space="preserve">
+    <value>Εξυπηρετητής</value>
+  </data>
   <data name="Server (Asset)" xml:space="preserve">
     <value>Εξυπηρετητής (Αγαθό)</value>
   </data>

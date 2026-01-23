@@ -36,17 +36,17 @@
   <data name="Edit" xml:space="preserve">
     <value>编辑</value>
   </data>
-  <data name="From" xml:space="preserve">
-    <value>来源</value>
-  </data>
-  <data name="Invoice" xml:space="preserve">
-    <value>下载</value>
-  </data>
   <data name="Fix Error" xml:space="preserve">
     <value>修正错误</value>
   </data>
+  <data name="From" xml:space="preserve">
+    <value>来源</value>
+  </data>
   <data name="Health Metrics" xml:space="preserve">
     <value>健康指标</value>
+  </data>
+  <data name="Invoice" xml:space="preserve">
+    <value>下载</value>
   </data>
   <data name="Ledger Dashboard" xml:space="preserve">
     <value>账本仪表板</value>

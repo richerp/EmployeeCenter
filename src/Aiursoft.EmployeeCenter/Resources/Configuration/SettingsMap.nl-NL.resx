@@ -27,6 +27,12 @@
   <data name="Annual Leave Per Year" xml:space="preserve">
     <value>Jaarlijkse verlofdagen per jaar</value>
   </data>
+  <data name="Default Payroll Currency" xml:space="preserve">
+    <value>Standaard loonvaluta</value>
+  </data>
+  <data name="The default currency to use when issuing a new payroll." xml:space="preserve">
+    <value>De standaard valuta die gebruikt moet worden bij het uitgeven van een nieuwe loonstrook.</value>
+  </data>
   <data name="The number of paid annual leave days allocated to each employee every year." xml:space="preserve">
     <value>Het aantal betaalde verlofdagen dat elk medewerker per jaar wordt toegewezen.</value>
   </data>

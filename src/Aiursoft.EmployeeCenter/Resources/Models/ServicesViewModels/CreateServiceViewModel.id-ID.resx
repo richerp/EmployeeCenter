@@ -48,6 +48,9 @@
   <data name="Remark" xml:space="preserve">
     <value>Keterangan</value>
   </data>
+  <data name="Server" xml:space="preserve">
+    <value>Server</value>
+  </data>
   <data name="Server (Asset)" xml:space="preserve">
     <value>Server (Aset)</value>
   </data>

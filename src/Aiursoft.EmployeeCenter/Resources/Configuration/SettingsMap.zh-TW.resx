@@ -27,6 +27,12 @@
   <data name="Annual Leave Per Year" xml:space="preserve">
     <value>每年年假天數</value>
   </data>
+  <data name="Default Payroll Currency" xml:space="preserve">
+    <value>預設薪資貨幣</value>
+  </data>
+  <data name="The default currency to use when issuing a new payroll." xml:space="preserve">
+    <value>發放新薪資時預設使用的貨幣。</value>
+  </data>
   <data name="The number of paid annual leave days allocated to each employee every year." xml:space="preserve">
     <value>每年分配給每位員工的有薪年假天數。</value>
   </data>

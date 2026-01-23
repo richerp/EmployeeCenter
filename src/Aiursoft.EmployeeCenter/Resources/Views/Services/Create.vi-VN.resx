@@ -33,6 +33,9 @@
   <data name="Domain should be the primary entry point for the service." xml:space="preserve">
     <value>Tên miền nên là điểm vào chính cho dịch vụ.</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>Mới</value>
+  </data>
   <data name="None" xml:space="preserve">
     <value>Không có</value>
   </data>
@@ -50,6 +53,9 @@
   </data>
   <data name="Select Owner" xml:space="preserve">
     <value>Chọn chủ sở hữu</value>
+  </data>
+  <data name="Select Server" xml:space="preserve">
+    <value>Chọn máy chủ</value>
   </data>
   <data name="Select Server (Asset)" xml:space="preserve">
     <value>Chọn Máy chủ (Tài sản)</value>

@@ -27,6 +27,12 @@
   <data name="Annual Leave Per Year" xml:space="preserve">
     <value>연간 연차 일수</value>
   </data>
+  <data name="Default Payroll Currency" xml:space="preserve">
+    <value>기본 급여 통화</value>
+  </data>
+  <data name="The default currency to use when issuing a new payroll." xml:space="preserve">
+    <value>새로운 급여를 발행할 때 사용할 기본 통화입니다.</value>
+  </data>
   <data name="The number of paid annual leave days allocated to each employee every year." xml:space="preserve">
     <value>연간 지급되는 연차 유급 휴가 일수 (각 직원당 연 1회 배정)</value>
   </data>

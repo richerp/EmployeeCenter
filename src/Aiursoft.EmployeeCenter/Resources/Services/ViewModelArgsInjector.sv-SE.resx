@@ -384,6 +384,9 @@
   <data name="Secretary" xml:space="preserve">
     <value>Sekreterare</value>
   </data>
+  <data name="Servers" xml:space="preserve">
+    <value>Servrar</value>
+  </data>
   <data name="Services" xml:space="preserve">
     <value>Tjänster</value>
   </data>

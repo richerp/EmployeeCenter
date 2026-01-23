@@ -30,6 +30,9 @@
   <data name="Edit" xml:space="preserve">
     <value>Muokkaa</value>
   </data>
+  <data name="Fix Error" xml:space="preserve">
+    <value>Korjaa virhe</value>
+  </data>
   <data name="From" xml:space="preserve">
     <value>Lähde</value>
   </data>

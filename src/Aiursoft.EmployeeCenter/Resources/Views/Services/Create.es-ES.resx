@@ -33,6 +33,9 @@
   <data name="Domain should be the primary entry point for the service." xml:space="preserve">
     <value>El dominio debe ser el punto de entrada principal del servicio.</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>Nuevo</value>
+  </data>
   <data name="None" xml:space="preserve">
     <value>Ninguno</value>
   </data>
@@ -50,6 +53,9 @@
   </data>
   <data name="Select Owner" xml:space="preserve">
     <value>Seleccionar propietario</value>
+  </data>
+  <data name="Select Server" xml:space="preserve">
+    <value>Seleccionar servidor</value>
   </data>
   <data name="Select Server (Asset)" xml:space="preserve">
     <value>Seleccionar servidor (activo)</value>

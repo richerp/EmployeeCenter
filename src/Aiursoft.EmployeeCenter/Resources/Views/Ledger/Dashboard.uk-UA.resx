@@ -33,11 +33,17 @@
   <data name="Edit" xml:space="preserve">
     <value>Редагувати</value>
   </data>
+  <data name="Fix Error" xml:space="preserve">
+    <value>Виправити помилку</value>
+  </data>
   <data name="From" xml:space="preserve">
     <value>З</value>
   </data>
   <data name="Health Metrics" xml:space="preserve">
     <value>Метрики здоров&apos;я</value>
+  </data>
+  <data name="Invoice" xml:space="preserve">
+    <value>Рахунок</value>
   </data>
   <data name="Manage Accounts" xml:space="preserve">
     <value>Керування рахунками</value>

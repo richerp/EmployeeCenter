@@ -33,6 +33,9 @@
   <data name="Domain should be the primary entry point for the service." xml:space="preserve">
     <value>Домен должен быть основной точкой входа для сервиса.</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>Новый</value>
+  </data>
   <data name="None" xml:space="preserve">
     <value>Нет</value>
   </data>
@@ -50,6 +53,9 @@
   </data>
   <data name="Select Owner" xml:space="preserve">
     <value>Выберите владельца</value>
+  </data>
+  <data name="Select Server" xml:space="preserve">
+    <value>Выберите сервер</value>
   </data>
   <data name="Select Server (Asset)" xml:space="preserve">
     <value>Выберите сервер (актив)</value>

@@ -27,6 +27,12 @@
   <data name="Annual Leave Per Year" xml:space="preserve">
     <value>Férias Anuais Por Ano</value>
   </data>
+  <data name="Default Payroll Currency" xml:space="preserve">
+    <value>Moeda Padrão de Folha de Pagamento</value>
+  </data>
+  <data name="The default currency to use when issuing a new payroll." xml:space="preserve">
+    <value>A moeda padrão a ser usada ao emitir uma nova folha de pagamento.</value>
+  </data>
   <data name="The number of paid annual leave days allocated to each employee every year." xml:space="preserve">
     <value>A quantidade de dias de férias pagas alocados para cada funcionário a cada ano.</value>
   </data>

@@ -84,6 +84,12 @@
   <data name="CRITICAL CONFIRMATION REQUIRED" xml:space="preserve">
     <value>XÁC NHẬN QUAN TRỌNG BẮT BUỘC</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Tiền tệ</value>
+  </data>
+  <data name="Currency:" xml:space="preserve">
+    <value>Tiền tệ:</value>
+  </data>
   <data name="Deductions" xml:space="preserve">
     <value>Các khoản khấu trừ</value>
   </data>

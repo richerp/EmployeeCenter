@@ -48,6 +48,9 @@
   <data name="Remark" xml:space="preserve">
     <value>หมายเหตุ</value>
   </data>
+  <data name="Server" xml:space="preserve">
+    <value>เซิร์ฟเวอร์</value>
+  </data>
   <data name="Server (Asset)" xml:space="preserve">
     <value>เซิร์ฟเวอร์ (สินทรัพย์)</value>
   </data>

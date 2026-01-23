@@ -33,6 +33,9 @@
   <data name="Edit Service" xml:space="preserve">
     <value>서비스 편집</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>새로 만들기</value>
+  </data>
   <data name="None" xml:space="preserve">
     <value>없음</value>
   </data>
@@ -50,6 +53,9 @@
   </data>
   <data name="Select Owner" xml:space="preserve">
     <value>소유자 선택</value>
+  </data>
+  <data name="Select Server" xml:space="preserve">
+    <value>서버 선택</value>
   </data>
   <data name="Select Server (Asset)" xml:space="preserve">
     <value>서버 (자산) 선택</value>

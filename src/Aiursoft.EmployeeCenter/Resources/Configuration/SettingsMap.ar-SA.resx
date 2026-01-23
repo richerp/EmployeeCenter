@@ -27,6 +27,12 @@
   <data name="Annual Leave Per Year" xml:space="preserve">
     <value>الإجازة السنوية سنويًا</value>
   </data>
+  <data name="Default Payroll Currency" xml:space="preserve">
+    <value>العملة الافتراضية للمستحقات</value>
+  </data>
+  <data name="The default currency to use when issuing a new payroll." xml:space="preserve">
+    <value>العملة الافتراضية للاستخدام عند إصدار راتب جديد.</value>
+  </data>
   <data name="The number of paid annual leave days allocated to each employee every year." xml:space="preserve">
     <value>عدد أيام الإجازة السنوية المدفوعة المخصصة لكل موظف كل عام.</value>
   </data>

@@ -27,6 +27,12 @@
   <data name="Annual Leave Per Year" xml:space="preserve">
     <value>Årlig ledighet per år</value>
   </data>
+  <data name="Default Payroll Currency" xml:space="preserve">
+    <value>Standard lönevaluta</value>
+  </data>
+  <data name="The default currency to use when issuing a new payroll." xml:space="preserve">
+    <value>Standardvalutan att använda vid utställning av ny lönepost.</value>
+  </data>
   <data name="The number of paid annual leave days allocated to each employee every year." xml:space="preserve">
     <value>Antalet betalda semesterdagar som tilldelas varje anställd varje år.</value>
   </data>

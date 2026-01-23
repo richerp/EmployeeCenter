@@ -84,6 +84,12 @@
   <data name="CRITICAL CONFIRMATION REQUIRED" xml:space="preserve">
     <value>关键确认</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>币种</value>
+  </data>
+  <data name="Currency:" xml:space="preserve">
+    <value>币种:</value>
+  </data>
   <data name="Deductions" xml:space="preserve">
     <value>扣款</value>
   </data>

@@ -33,11 +33,17 @@
   <data name="Edit" xml:space="preserve">
     <value>Chỉnh sửa</value>
   </data>
+  <data name="Fix Error" xml:space="preserve">
+    <value>Sửa lỗi</value>
+  </data>
   <data name="From" xml:space="preserve">
     <value>Từ</value>
   </data>
   <data name="Health Metrics" xml:space="preserve">
     <value>Chỉ số sức khỏe</value>
+  </data>
+  <data name="Invoice" xml:space="preserve">
+    <value>Hóa đơn</value>
   </data>
   <data name="Manage Accounts" xml:space="preserve">
     <value>Quản lý tài khoản</value>

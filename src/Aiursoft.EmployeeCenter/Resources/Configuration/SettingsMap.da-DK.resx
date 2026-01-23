@@ -27,6 +27,12 @@
   <data name="Annual Leave Per Year" xml:space="preserve">
     <value>Årlig ferie pr. år</value>
   </data>
+  <data name="Default Payroll Currency" xml:space="preserve">
+    <value>Standard lønvaluta</value>
+  </data>
+  <data name="The default currency to use when issuing a new payroll." xml:space="preserve">
+    <value>Den standardvaluta, der skal bruges, når der udstedes en ny løn.</value>
+  </data>
   <data name="The number of paid annual leave days allocated to each employee every year." xml:space="preserve">
     <value>Antallet af betalte feriedage, der tildeles til hver ansat hvert år.</value>
   </data>

@@ -33,11 +33,17 @@
   <data name="Edit" xml:space="preserve">
     <value>تعديل</value>
   </data>
+  <data name="Fix Error" xml:space="preserve">
+    <value>تصحيح الخطأ</value>
+  </data>
   <data name="From" xml:space="preserve">
     <value>من</value>
   </data>
   <data name="Health Metrics" xml:space="preserve">
     <value>مقاييس الصحة</value>
+  </data>
+  <data name="Invoice" xml:space="preserve">
+    <value>فاتورة</value>
   </data>
   <data name="Manage Accounts" xml:space="preserve">
     <value>إدارة الحسابات</value>

@@ -48,6 +48,9 @@
   <data name="Remark" xml:space="preserve">
     <value>Ghi chú</value>
   </data>
+  <data name="Server" xml:space="preserve">
+    <value>Máy chủ</value>
+  </data>
   <data name="Server (Asset)" xml:space="preserve">
     <value>Máy chủ (Tài sản)</value>
   </data>

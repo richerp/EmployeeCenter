@@ -27,6 +27,12 @@
   <data name="Annual Leave Per Year" xml:space="preserve">
     <value>Jährlicher Urlaub pro Jahr</value>
   </data>
+  <data name="Default Payroll Currency" xml:space="preserve">
+    <value>Standard Gehaltswährung</value>
+  </data>
+  <data name="The default currency to use when issuing a new payroll." xml:space="preserve">
+    <value>Die Standardwährung, die beim Ausstellen einer neuen Gehaltsabrechnung verwendet werden soll.</value>
+  </data>
   <data name="The number of paid annual leave days allocated to each employee every year." xml:space="preserve">
     <value>Die Anzahl der bezahlten Urlaubstage, die jedem Mitarbeiter jährlich zugewiesen werden.</value>
   </data>

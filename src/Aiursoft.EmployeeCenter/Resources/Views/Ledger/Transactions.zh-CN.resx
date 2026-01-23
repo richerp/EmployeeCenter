@@ -30,14 +30,14 @@
   <data name="Edit" xml:space="preserve">
     <value>编辑</value>
   </data>
+  <data name="Fix Error" xml:space="preserve">
+    <value>修正错误</value>
+  </data>
   <data name="From" xml:space="preserve">
     <value>来源</value>
   </data>
   <data name="Invoice" xml:space="preserve">
     <value>下载</value>
-  </data>
-  <data name="Fix Error" xml:space="preserve">
-    <value>修正错误</value>
   </data>
   <data name="Ledger" xml:space="preserve">
     <value>账本</value>

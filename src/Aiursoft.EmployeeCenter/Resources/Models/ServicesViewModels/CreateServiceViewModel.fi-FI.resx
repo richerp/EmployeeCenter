@@ -48,6 +48,9 @@
   <data name="Remark" xml:space="preserve">
     <value>Huomio</value>
   </data>
+  <data name="Server" xml:space="preserve">
+    <value>Palvelin</value>
+  </data>
   <data name="Server (Asset)" xml:space="preserve">
     <value>Palvelin (Väline)</value>
   </data>
