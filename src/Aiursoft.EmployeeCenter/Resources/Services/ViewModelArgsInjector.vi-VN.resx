@@ -18,11 +18,17 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Account Settings" xml:space="preserve">
+      <data name="Access Denied" xml:space="preserve">
+    <value>Truy cập bị từ chối</value>
+  </data>
+  <data name="Account Settings" xml:space="preserve">
     <value>Cài đặt Tài khoản</value>
   </data>
   <data name="Actions" xml:space="preserve">
     <value>Hành động</value>
+  </data>
+  <data name="Add SSH Key" xml:space="preserve">
+    <value>Thêm khóa SSH</value>
   </data>
   <data name="Additional Info (Mainland/HK)" xml:space="preserve">
     <value>Thông tin bổ sung (Bắc Trung Quốc/HK)</value>
@@ -63,11 +69,17 @@
   <data name="Background Jobs" xml:space="preserve">
     <value>Công việc nền</value>
   </data>
+  <data name="Bad Request" xml:space="preserve">
+    <value>Yêu cầu sai</value>
+  </data>
   <data name="Bank Info" xml:space="preserve">
     <value>Thông tin ngân hàng</value>
   </data>
   <data name="Basic Information" xml:space="preserve">
     <value>Thông tin cơ bản</value>
+  </data>
+  <data name="Blueprint" xml:space="preserve">
+    <value>Bản thiết kế</value>
   </data>
   <data name="Blueprints" xml:space="preserve">
     <value>Bản vẽ</value>
@@ -92,6 +104,9 @@
   </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Thay đổi Ảnh đại diện</value>
+  </data>
+  <data name="Change Bank Information" xml:space="preserve">
+    <value>Thay đổi thông tin ngân hàng</value>
   </data>
   <data name="Change Password" xml:space="preserve">
     <value>Đổi Mật khẩu</value>
@@ -138,14 +153,32 @@
   <data name="Create New" xml:space="preserve">
     <value>Tạo mới</value>
   </data>
+  <data name="Create New Contract" xml:space="preserve">
+    <value>Tạo hợp đồng mới</value>
+  </data>
+  <data name="Create Onboarding Task" xml:space="preserve">
+    <value>Tạo nhiệm vụ trênboarding</value>
+  </data>
   <data name="Create Password" xml:space="preserve">
     <value>Tạo mật khẩu</value>
+  </data>
+  <data name="Create Promotion" xml:space="preserve">
+    <value>Tạo thăng chức</value>
+  </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Tạo câu hỏi</value>
+  </data>
+  <data name="Create Questionnaire" xml:space="preserve">
+    <value>Tạo bảng câu hỏi</value>
   </data>
   <data name="Create Role" xml:space="preserve">
     <value>Tạo Vai Trò</value>
   </data>
   <data name="Create User" xml:space="preserve">
     <value>Tạo Người Dùng</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Bảng điều khiển</value>
   </data>
   <data name="Delete Role" xml:space="preserve">
     <value>Xóa Vai trò</value>
@@ -165,17 +198,35 @@
   <data name="Download / View" xml:space="preserve">
     <value>Tải xuống / Xem</value>
   </data>
+  <data name="Edit Blueprint" xml:space="preserve">
+    <value>Chỉnh sửa Bản thiết kế</value>
+  </data>
   <data name="Edit Company Entity" xml:space="preserve">
     <value>Chỉnh sửa Tổ chức Công ty</value>
+  </data>
+  <data name="Edit Contract" xml:space="preserve">
+    <value>Chỉnh sửa hợp đồng</value>
+  </data>
+  <data name="Edit Onboarding Task" xml:space="preserve">
+    <value>Chỉnh sửa Nhiệm vụ Đào tạo</value>
   </data>
   <data name="Edit Password" xml:space="preserve">
     <value>Sửa mật khẩu</value>
   </data>
+  <data name="Edit Payroll" xml:space="preserve">
+    <value>Chỉnh sửa bảng lương</value>
+  </data>
   <data name="Edit Role" xml:space="preserve">
     <value>Chỉnh sửa Vai trò</value>
   </data>
+  <data name="Edit SSH Key" xml:space="preserve">
+    <value>Sửa khóa SSH</value>
+  </data>
   <data name="Edit User" xml:space="preserve">
     <value>Chỉnh sửa Người dùng</value>
+  </data>
+  <data name="Edit Weekly Report" xml:space="preserve">
+    <value>Chỉnh sửa Báo cáo hàng tuần</value>
   </data>
   <data name="Employee Center" xml:space="preserve">
     <value>Trung tâm Nhân viên</value>
@@ -207,6 +258,9 @@
   <data name="Features" xml:space="preserve">
     <value>Tính năng</value>
   </data>
+  <data name="Fill Questionnaire" xml:space="preserve">
+    <value>Điền bảng khảo sát</value>
+  </data>
   <data name="Finance" xml:space="preserve">
     <value>Tài chính</value>
   </data>
@@ -228,6 +282,12 @@
   <data name="Info" xml:space="preserve">
     <value>Thông tin</value>
   </data>
+  <data name="Internal Server Error" xml:space="preserve">
+    <value>Lỗi máy chủ nội bộ</value>
+  </data>
+  <data name="Issue Payroll" xml:space="preserve">
+    <value>Cấp phát lương</value>
+  </data>
   <data name="IT Assets" xml:space="preserve">
     <value>Tài sản CNTT</value>
   </data>
@@ -246,6 +306,9 @@
   <data name="Locations" xml:space="preserve">
     <value>Địa điểm</value>
   </data>
+  <data name="Lockout" xml:space="preserve">
+    <value>Khóa tài khoản</value>
+  </data>
   <data name="Login" xml:space="preserve">
     <value>Đăng nhập</value>
   </data>
@@ -254,6 +317,9 @@
   </data>
   <data name="Logo" xml:space="preserve">
     <value>Logo</value>
+  </data>
+  <data name="Maintain Profile" xml:space="preserve">
+    <value>Duy trì hồ sơ</value>
   </data>
   <data name="Manage" xml:space="preserve">
     <value>Quản lý</value>
@@ -282,11 +348,20 @@
   <data name="Manage Onboarding" xml:space="preserve">
     <value>Quản lý quá trình gia nhập</value>
   </data>
+  <data name="Manage Onboarding Tasks" xml:space="preserve">
+    <value>Quản lý nhiệm vụ trênboarding</value>
+  </data>
+  <data name="Manage Password Shares" xml:space="preserve">
+    <value>Quản lý chia sẻ mật khẩu</value>
+  </data>
   <data name="Manage Payrolls" xml:space="preserve">
     <value>Quản lý Bảng lương</value>
   </data>
   <data name="Manage Printing" xml:space="preserve">
     <value>Quản lý in ấn</value>
+  </data>
+  <data name="Manage Questions" xml:space="preserve">
+    <value>Quản lý Câu hỏi</value>
   </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>Quản lý chia sẻ</value>
@@ -315,6 +390,9 @@
   <data name="My Report Line" xml:space="preserve">
     <value>Dòng báo cáo của tôi</value>
   </data>
+  <data name="Not Found" xml:space="preserve">
+    <value>Không tìm thấy</value>
+  </data>
   <data name="Official Seal" xml:space="preserve">
     <value>Con dấu chính thức</value>
   </data>
@@ -330,8 +408,17 @@
   <data name="Passwords" xml:space="preserve">
     <value>Mật khẩu</value>
   </data>
+  <data name="Passwords Management" xml:space="preserve">
+    <value>Quản lý mật khẩu</value>
+  </data>
+  <data name="Payroll Details" xml:space="preserve">
+    <value>Chi tiết bảng lương</value>
+  </data>
   <data name="Payrolls" xml:space="preserve">
     <value>Bảng lương</value>
+  </data>
+  <data name="Permission Details" xml:space="preserve">
+    <value>Chi tiết quyền truy cập</value>
   </data>
   <data name="Permissions" xml:space="preserve">
     <value>Quyền hạn</value>
@@ -357,6 +444,9 @@
   <data name="Promotion History" xml:space="preserve">
     <value>Lịch sử thăng tiến</value>
   </data>
+  <data name="Questionnaire Responses" xml:space="preserve">
+    <value>Phản hồi bảng khảo sát</value>
+  </data>
   <data name="Reg Capital" xml:space="preserve">
     <value>Vốn điều lệ</value>
   </data>
@@ -368,6 +458,9 @@
   </data>
   <data name="Resources" xml:space="preserve">
     <value>Tài nguyên</value>
+  </data>
+  <data name="Response Detail" xml:space="preserve">
+    <value>Chi tiết phản hồi</value>
   </data>
   <data name="Restricted" xml:space="preserve">
     <value>Hạn chế</value>
@@ -404,6 +497,9 @@
   </data>
   <data name="Sign out" xml:space="preserve">
     <value>Đăng xuất</value>
+  </data>
+  <data name="SSH Keys" xml:space="preserve">
+    <value>Khóa SSH</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>Trạng thái</value>

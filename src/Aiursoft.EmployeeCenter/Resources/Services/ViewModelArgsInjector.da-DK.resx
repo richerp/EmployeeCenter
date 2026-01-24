@@ -18,8 +18,14 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Actions" xml:space="preserve">
+      <data name="Access Denied" xml:space="preserve">
+    <value>Adgang nægtet</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
     <value>Handling</value>
+  </data>
+  <data name="Add SSH Key" xml:space="preserve">
+    <value>Tilføj SSH-nøgle</value>
   </data>
   <data name="Additional Info (Mainland/HK)" xml:space="preserve">
     <value>Yderligere oplysninger (fastland/HK)</value>
@@ -60,11 +66,17 @@
   <data name="Background Jobs" xml:space="preserve">
     <value>Baggrundstasks</value>
   </data>
+  <data name="Bad Request" xml:space="preserve">
+    <value>Forkert anmodning</value>
+  </data>
   <data name="Bank Info" xml:space="preserve">
     <value>Bankoplysninger</value>
   </data>
   <data name="Basic Information" xml:space="preserve">
     <value>Grundlæggende oplysninger</value>
+  </data>
+  <data name="Blueprint" xml:space="preserve">
+    <value>Blåkart</value>
   </data>
   <data name="Blueprints" xml:space="preserve">
     <value>Blæktryk</value>
@@ -89,6 +101,9 @@
   </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Skift avatar</value>
+  </data>
+  <data name="Change Bank Information" xml:space="preserve">
+    <value>Ændre bankoplysninger</value>
   </data>
   <data name="Change Password" xml:space="preserve">
     <value>Skift adgangskode</value>
@@ -135,14 +150,32 @@
   <data name="Create New" xml:space="preserve">
     <value>Opret ny</value>
   </data>
+  <data name="Create New Contract" xml:space="preserve">
+    <value>Opret ny kontrakt</value>
+  </data>
+  <data name="Create Onboarding Task" xml:space="preserve">
+    <value>Opret påbegyndelsesopgave</value>
+  </data>
   <data name="Create Password" xml:space="preserve">
     <value>Opret adgangskode</value>
+  </data>
+  <data name="Create Promotion" xml:space="preserve">
+    <value>Opret fremrykning</value>
+  </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Opret spørgsmål</value>
+  </data>
+  <data name="Create Questionnaire" xml:space="preserve">
+    <value>Opret spørgeskema</value>
   </data>
   <data name="Create Role" xml:space="preserve">
     <value>Opret rolle</value>
   </data>
   <data name="Create User" xml:space="preserve">
     <value>Opret bruger</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
   </data>
   <data name="Delete Role" xml:space="preserve">
     <value>Slet rolle</value>
@@ -162,17 +195,35 @@
   <data name="Download / View" xml:space="preserve">
     <value>Hent / Vis</value>
   </data>
+  <data name="Edit Blueprint" xml:space="preserve">
+    <value>Rediger blueprint</value>
+  </data>
   <data name="Edit Company Entity" xml:space="preserve">
     <value>Rediger virksomhedsentitet</value>
+  </data>
+  <data name="Edit Contract" xml:space="preserve">
+    <value>Rediger kontrakt</value>
+  </data>
+  <data name="Edit Onboarding Task" xml:space="preserve">
+    <value>Rediger påbegyndelsesopgave</value>
   </data>
   <data name="Edit Password" xml:space="preserve">
     <value>Rediger adgangskode</value>
   </data>
+  <data name="Edit Payroll" xml:space="preserve">
+    <value>Rediger løn</value>
+  </data>
   <data name="Edit Role" xml:space="preserve">
     <value>Rediger Rolle</value>
   </data>
+  <data name="Edit SSH Key" xml:space="preserve">
+    <value>Rediger SSH-nøgle</value>
+  </data>
   <data name="Edit User" xml:space="preserve">
     <value>Rediger bruger</value>
+  </data>
+  <data name="Edit Weekly Report" xml:space="preserve">
+    <value>Rediger ugentlig rapport</value>
   </data>
   <data name="Employee Center" xml:space="preserve">
     <value>Medarbejdercenter</value>
@@ -204,6 +255,9 @@
   <data name="Features" xml:space="preserve">
     <value>Funktioner</value>
   </data>
+  <data name="Fill Questionnaire" xml:space="preserve">
+    <value>Udfyld spørgeskema</value>
+  </data>
   <data name="Finance" xml:space="preserve">
     <value>Finans</value>
   </data>
@@ -225,6 +279,12 @@
   <data name="Info" xml:space="preserve">
     <value>Info</value>
   </data>
+  <data name="Internal Server Error" xml:space="preserve">
+    <value>Intern serverfejl</value>
+  </data>
+  <data name="Issue Payroll" xml:space="preserve">
+    <value>Udsted løn</value>
+  </data>
   <data name="IT Assets" xml:space="preserve">
     <value>IT-aktiver</value>
   </data>
@@ -243,6 +303,9 @@
   <data name="Locations" xml:space="preserve">
     <value>Pladser</value>
   </data>
+  <data name="Lockout" xml:space="preserve">
+    <value>Låsning</value>
+  </data>
   <data name="Login" xml:space="preserve">
     <value>Log ind</value>
   </data>
@@ -251,6 +314,9 @@
   </data>
   <data name="Logo" xml:space="preserve">
     <value>Logo</value>
+  </data>
+  <data name="Maintain Profile" xml:space="preserve">
+    <value>Opret profil</value>
   </data>
   <data name="Manage" xml:space="preserve">
     <value>Administrer</value>
@@ -279,11 +345,20 @@
   <data name="Manage Onboarding" xml:space="preserve">
     <value>Håndtér påbegyndelse</value>
   </data>
+  <data name="Manage Onboarding Tasks" xml:space="preserve">
+    <value>Håndtér påbegyndelsesopgaver</value>
+  </data>
+  <data name="Manage Password Shares" xml:space="preserve">
+    <value>Administrer adgang til adgangskoder</value>
+  </data>
   <data name="Manage Payrolls" xml:space="preserve">
     <value>Administrer Lønninger</value>
   </data>
   <data name="Manage Printing" xml:space="preserve">
     <value>Håndtér udskrivning</value>
+  </data>
+  <data name="Manage Questions" xml:space="preserve">
+    <value>Håndtér spørgsmål</value>
   </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>Administrer Delinger</value>
@@ -312,6 +387,9 @@
   <data name="My Report Line" xml:space="preserve">
     <value>Min Rapportlinje</value>
   </data>
+  <data name="Not Found" xml:space="preserve">
+    <value>Ikke fundet</value>
+  </data>
   <data name="Official Seal" xml:space="preserve">
     <value>Officiel stempel</value>
   </data>
@@ -327,8 +405,17 @@
   <data name="Passwords" xml:space="preserve">
     <value>Adgangskoder</value>
   </data>
+  <data name="Passwords Management" xml:space="preserve">
+    <value>Adgangskodehåndtering</value>
+  </data>
+  <data name="Payroll Details" xml:space="preserve">
+    <value>Lønopgørelse detaljer</value>
+  </data>
   <data name="Payrolls" xml:space="preserve">
     <value>Lønninger</value>
+  </data>
+  <data name="Permission Details" xml:space="preserve">
+    <value>Tilladelsesdetaljer</value>
   </data>
   <data name="Permissions" xml:space="preserve">
     <value>Tilladelser</value>
@@ -354,6 +441,9 @@
   <data name="Promotion History" xml:space="preserve">
     <value>Udviklingshistorik</value>
   </data>
+  <data name="Questionnaire Responses" xml:space="preserve">
+    <value>Svar på spørgeskemaer</value>
+  </data>
   <data name="Reg Capital" xml:space="preserve">
     <value>Ejerkapital</value>
   </data>
@@ -365,6 +455,9 @@
   </data>
   <data name="Resources" xml:space="preserve">
     <value>Ressourcer</value>
+  </data>
+  <data name="Response Detail" xml:space="preserve">
+    <value>Svardetaljer</value>
   </data>
   <data name="Restricted" xml:space="preserve">
     <value>Begrænset</value>
@@ -401,6 +494,9 @@
   </data>
   <data name="Sign out" xml:space="preserve">
     <value>Log ud</value>
+  </data>
+  <data name="SSH Keys" xml:space="preserve">
+    <value>SSH-nøgler</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>Status</value>

@@ -18,11 +18,17 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Account Settings" xml:space="preserve">
+      <data name="Access Denied" xml:space="preserve">
+    <value>アクセス拒否</value>
+  </data>
+  <data name="Account Settings" xml:space="preserve">
     <value>アカウント設定</value>
   </data>
   <data name="Actions" xml:space="preserve">
     <value>操作</value>
+  </data>
+  <data name="Add SSH Key" xml:space="preserve">
+    <value>SSHキーの追加</value>
   </data>
   <data name="Additional Info (Mainland/HK)" xml:space="preserve">
     <value>追加情報 (本土/香港)</value>
@@ -63,11 +69,17 @@
   <data name="Background Jobs" xml:space="preserve">
     <value>バックグラウンドジョブ</value>
   </data>
+  <data name="Bad Request" xml:space="preserve">
+    <value>Bad Request</value>
+  </data>
   <data name="Bank Info" xml:space="preserve">
     <value>銀行情報</value>
   </data>
   <data name="Basic Information" xml:space="preserve">
     <value>基本情報</value>
+  </data>
+  <data name="Blueprint" xml:space="preserve">
+    <value>ブループリント</value>
   </data>
   <data name="Blueprints" xml:space="preserve">
     <value>ブループリント</value>
@@ -92,6 +104,9 @@
   </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>アバターを変更</value>
+  </data>
+  <data name="Change Bank Information" xml:space="preserve">
+    <value>銀行情報の変更</value>
   </data>
   <data name="Change Password" xml:space="preserve">
     <value>パスワードの変更</value>
@@ -138,14 +153,32 @@
   <data name="Create New" xml:space="preserve">
     <value>新規作成</value>
   </data>
+  <data name="Create New Contract" xml:space="preserve">
+    <value>新規契約の作成</value>
+  </data>
+  <data name="Create Onboarding Task" xml:space="preserve">
+    <value>オンボーディングタスクの作成</value>
+  </data>
   <data name="Create Password" xml:space="preserve">
     <value>パスワードを作成</value>
+  </data>
+  <data name="Create Promotion" xml:space="preserve">
+    <value>プロモーションの作成</value>
+  </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>質問を作成する</value>
+  </data>
+  <data name="Create Questionnaire" xml:space="preserve">
+    <value>アンケート作成</value>
   </data>
   <data name="Create Role" xml:space="preserve">
     <value>ロールの作成</value>
   </data>
   <data name="Create User" xml:space="preserve">
     <value>ユーザーを作成</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>ダッシュボード</value>
   </data>
   <data name="Delete Role" xml:space="preserve">
     <value>ロールを削除</value>
@@ -165,17 +198,35 @@
   <data name="Download / View" xml:space="preserve">
     <value>ダウンロード / 表示</value>
   </data>
+  <data name="Edit Blueprint" xml:space="preserve">
+    <value>ブループリントの編集</value>
+  </data>
   <data name="Edit Company Entity" xml:space="preserve">
     <value>会社エンティティの編集</value>
+  </data>
+  <data name="Edit Contract" xml:space="preserve">
+    <value>契約を編集</value>
+  </data>
+  <data name="Edit Onboarding Task" xml:space="preserve">
+    <value>オンボーディングタスクの編集</value>
   </data>
   <data name="Edit Password" xml:space="preserve">
     <value>パスワード編集</value>
   </data>
+  <data name="Edit Payroll" xml:space="preserve">
+    <value>給与情報編集</value>
+  </data>
   <data name="Edit Role" xml:space="preserve">
     <value>ロールを編集</value>
   </data>
+  <data name="Edit SSH Key" xml:space="preserve">
+    <value>SSHキーの編集</value>
+  </data>
   <data name="Edit User" xml:space="preserve">
     <value>ユーザー編集</value>
+  </data>
+  <data name="Edit Weekly Report" xml:space="preserve">
+    <value>週報の編集</value>
   </data>
   <data name="Employee Center" xml:space="preserve">
     <value>従業員センター</value>
@@ -207,6 +258,9 @@
   <data name="Features" xml:space="preserve">
     <value>機能</value>
   </data>
+  <data name="Fill Questionnaire" xml:space="preserve">
+    <value>アンケートに回答する</value>
+  </data>
   <data name="Finance" xml:space="preserve">
     <value>財務</value>
   </data>
@@ -228,6 +282,12 @@
   <data name="Info" xml:space="preserve">
     <value>情報</value>
   </data>
+  <data name="Internal Server Error" xml:space="preserve">
+    <value>内部サーバーエラー</value>
+  </data>
+  <data name="Issue Payroll" xml:space="preserve">
+    <value>給与発行</value>
+  </data>
   <data name="IT Assets" xml:space="preserve">
     <value>IT資産</value>
   </data>
@@ -246,6 +306,9 @@
   <data name="Locations" xml:space="preserve">
     <value>場所</value>
   </data>
+  <data name="Lockout" xml:space="preserve">
+    <value>ロックアウト</value>
+  </data>
   <data name="Login" xml:space="preserve">
     <value>ログイン</value>
   </data>
@@ -254,6 +317,9 @@
   </data>
   <data name="Logo" xml:space="preserve">
     <value>ロゴ</value>
+  </data>
+  <data name="Maintain Profile" xml:space="preserve">
+    <value>プロフィールの維持</value>
   </data>
   <data name="Manage" xml:space="preserve">
     <value>管理</value>
@@ -282,11 +348,20 @@
   <data name="Manage Onboarding" xml:space="preserve">
     <value>オンボーディングの管理</value>
   </data>
+  <data name="Manage Onboarding Tasks" xml:space="preserve">
+    <value>オンボーディングタスクの管理</value>
+  </data>
+  <data name="Manage Password Shares" xml:space="preserve">
+    <value>パスワード共有の管理</value>
+  </data>
   <data name="Manage Payrolls" xml:space="preserve">
     <value>給与管理</value>
   </data>
   <data name="Manage Printing" xml:space="preserve">
     <value>印刷の管理</value>
+  </data>
+  <data name="Manage Questions" xml:space="preserve">
+    <value>質問の管理</value>
   </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>共有管理</value>
@@ -315,6 +390,9 @@
   <data name="My Report Line" xml:space="preserve">
     <value>私のレポートライン</value>
   </data>
+  <data name="Not Found" xml:space="preserve">
+    <value>見つかりません</value>
+  </data>
   <data name="Official Seal" xml:space="preserve">
     <value>公式印鑑</value>
   </data>
@@ -330,8 +408,17 @@
   <data name="Passwords" xml:space="preserve">
     <value>パスワード</value>
   </data>
+  <data name="Passwords Management" xml:space="preserve">
+    <value>パスワード管理</value>
+  </data>
+  <data name="Payroll Details" xml:space="preserve">
+    <value>給与明細</value>
+  </data>
   <data name="Payrolls" xml:space="preserve">
     <value>給与</value>
+  </data>
+  <data name="Permission Details" xml:space="preserve">
+    <value>権限の詳細</value>
   </data>
   <data name="Permissions" xml:space="preserve">
     <value>権限</value>
@@ -357,6 +444,9 @@
   <data name="Promotion History" xml:space="preserve">
     <value>昇進履歴</value>
   </data>
+  <data name="Questionnaire Responses" xml:space="preserve">
+    <value>アンケート回答</value>
+  </data>
   <data name="Reg Capital" xml:space="preserve">
     <value>登録資本金</value>
   </data>
@@ -368,6 +458,9 @@
   </data>
   <data name="Resources" xml:space="preserve">
     <value>リソース</value>
+  </data>
+  <data name="Response Detail" xml:space="preserve">
+    <value>回答の詳細</value>
   </data>
   <data name="Restricted" xml:space="preserve">
     <value>制限あり</value>
@@ -404,6 +497,9 @@
   </data>
   <data name="Sign out" xml:space="preserve">
     <value>サインアウト</value>
+  </data>
+  <data name="SSH Keys" xml:space="preserve">
+    <value>SSHキー</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>ステータス</value>

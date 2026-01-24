@@ -36,6 +36,9 @@
   <data name="Save Changes" xml:space="preserve">
     <value>変更を保存</value>
   </data>
+  <data name="Select Company Entity" xml:space="preserve">
+    <value>会社エンティティを選択</value>
+  </data>
   <data name="Select Location" xml:space="preserve">
     <value>場所を選択</value>
   </data>

@@ -18,8 +18,14 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Actions" xml:space="preserve">
+      <data name="Access Denied" xml:space="preserve">
+    <value>Πρόσβαση απαγορευμένη</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
     <value>Ενέργειες</value>
+  </data>
+  <data name="Add SSH Key" xml:space="preserve">
+    <value>Προσθήκη SSH Κλειδιού</value>
   </data>
   <data name="Additional Info (Mainland/HK)" xml:space="preserve">
     <value>Πρόσθετε Πληροφορίες (Επίκρατος/ΧΚ)</value>
@@ -60,11 +66,17 @@
   <data name="Background Jobs" xml:space="preserve">
     <value>Hintergrund εργασίες</value>
   </data>
+  <data name="Bad Request" xml:space="preserve">
+    <value>Λανθασμένη Αίτηση</value>
+  </data>
   <data name="Bank Info" xml:space="preserve">
     <value>Τραπεζικά Στοιχεία</value>
   </data>
   <data name="Basic Information" xml:space="preserve">
     <value>Βασικές Πληροφορίες</value>
+  </data>
+  <data name="Blueprint" xml:space="preserve">
+    <value>Σχεδιάγραμμα</value>
   </data>
   <data name="Blueprints" xml:space="preserve">
     <value>Σχεδιασμοί</value>
@@ -89,6 +101,9 @@
   </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Αλλαγή Avatar</value>
+  </data>
+  <data name="Change Bank Information" xml:space="preserve">
+    <value>Αλλαγή Πληροφοριών Τράπεζας</value>
   </data>
   <data name="Change Password" xml:space="preserve">
     <value>Αλλαγή Κωδικού Πρόσβασης</value>
@@ -135,14 +150,32 @@
   <data name="Create New" xml:space="preserve">
     <value>Δημιουργία Νέου</value>
   </data>
+  <data name="Create New Contract" xml:space="preserve">
+    <value>Δημιουργία Νέου Συμβολαίου</value>
+  </data>
+  <data name="Create Onboarding Task" xml:space="preserve">
+    <value>Δημιουργία Εργασίας Ενσωμάτωσης</value>
+  </data>
   <data name="Create Password" xml:space="preserve">
     <value>Δημιουργία Κωδικού Πρόσβασης</value>
+  </data>
+  <data name="Create Promotion" xml:space="preserve">
+    <value>Δημιουργία Προαγωγής</value>
+  </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Δημιουργία Ερώτησης</value>
+  </data>
+  <data name="Create Questionnaire" xml:space="preserve">
+    <value>Δημιουργία Ερωτηματολογίου</value>
   </data>
   <data name="Create Role" xml:space="preserve">
     <value>Δημιουργία Ρόλου</value>
   </data>
   <data name="Create User" xml:space="preserve">
     <value>Δημιουργία Χρήστη</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Πίνακας Ελέγχου</value>
   </data>
   <data name="Delete Role" xml:space="preserve">
     <value>Διαγραφή Ρόλου</value>
@@ -162,17 +195,35 @@
   <data name="Download / View" xml:space="preserve">
     <value>Λήψη / Προβολή</value>
   </data>
+  <data name="Edit Blueprint" xml:space="preserve">
+    <value>Επεξεργασία Μοντέλου</value>
+  </data>
   <data name="Edit Company Entity" xml:space="preserve">
     <value>Επεξεργασία Εταιρικής Μονάδας</value>
+  </data>
+  <data name="Edit Contract" xml:space="preserve">
+    <value>Επεξεργασία Σύμβασης</value>
+  </data>
+  <data name="Edit Onboarding Task" xml:space="preserve">
+    <value>Επεξεργασία Εργασίας Εγγραφής</value>
   </data>
   <data name="Edit Password" xml:space="preserve">
     <value>Επεξεργασία Κωδικού</value>
   </data>
+  <data name="Edit Payroll" xml:space="preserve">
+    <value>Επεξεργασία Μισθοδοσίας</value>
+  </data>
   <data name="Edit Role" xml:space="preserve">
     <value>Επεξεργασία Ρόλου</value>
   </data>
+  <data name="Edit SSH Key" xml:space="preserve">
+    <value>Επεξεργασία SSH Κλειδιού</value>
+  </data>
   <data name="Edit User" xml:space="preserve">
     <value>Επεξεργασία Χρήστη</value>
+  </data>
+  <data name="Edit Weekly Report" xml:space="preserve">
+    <value>Επεξεργασία Εβδομαδιαίου Αναφοράς</value>
   </data>
   <data name="Employee Center" xml:space="preserve">
     <value>Κέντρο Εργαζομένων</value>
@@ -204,6 +255,9 @@
   <data name="Features" xml:space="preserve">
     <value>Λειτουργίες</value>
   </data>
+  <data name="Fill Questionnaire" xml:space="preserve">
+    <value>Συμπλήρωση Ερωτηματολογίου</value>
+  </data>
   <data name="Finance" xml:space="preserve">
     <value>Οικονομικά</value>
   </data>
@@ -225,6 +279,12 @@
   <data name="Info" xml:space="preserve">
     <value>Πληροφορίες</value>
   </data>
+  <data name="Internal Server Error" xml:space="preserve">
+    <value>Εσωτερικό Σφάλμα Διακομιστή</value>
+  </data>
+  <data name="Issue Payroll" xml:space="preserve">
+    <value>Έκδοση Μισθοδοσίας</value>
+  </data>
   <data name="IT Assets" xml:space="preserve">
     <value>Τεχνολογία Πληροφορικής</value>
   </data>
@@ -243,6 +303,9 @@
   <data name="Locations" xml:space="preserve">
     <value>Τοποθεσίες</value>
   </data>
+  <data name="Lockout" xml:space="preserve">
+    <value>Αποκλεισμός</value>
+  </data>
   <data name="Login" xml:space="preserve">
     <value>Σύνδεση</value>
   </data>
@@ -251,6 +314,9 @@
   </data>
   <data name="Logo" xml:space="preserve">
     <value>Λογότυπο</value>
+  </data>
+  <data name="Maintain Profile" xml:space="preserve">
+    <value>Διαχείριση Προφίλ</value>
   </data>
   <data name="Manage" xml:space="preserve">
     <value>Διαχείριση</value>
@@ -279,11 +345,20 @@
   <data name="Manage Onboarding" xml:space="preserve">
     <value>Διαχείριση Εγγραφής</value>
   </data>
+  <data name="Manage Onboarding Tasks" xml:space="preserve">
+    <value>Διαχείριση Εργασιών Εγγραφής</value>
+  </data>
+  <data name="Manage Password Shares" xml:space="preserve">
+    <value>Διαχείριση Κοινοποιημένων Κωδικών</value>
+  </data>
   <data name="Manage Payrolls" xml:space="preserve">
     <value>Διαχείριση Μισθοδοσίας</value>
   </data>
   <data name="Manage Printing" xml:space="preserve">
     <value>Διαχείριση Εκτύπωσης</value>
+  </data>
+  <data name="Manage Questions" xml:space="preserve">
+    <value>Διαχείριση Ερωτήσεων</value>
   </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>Διαχείριση Κοινόχρηστων</value>
@@ -312,6 +387,9 @@
   <data name="My Report Line" xml:space="preserve">
     <value>Η Γραμμή Αναφορών Μου</value>
   </data>
+  <data name="Not Found" xml:space="preserve">
+    <value>Όχι βρέθηκε</value>
+  </data>
   <data name="Official Seal" xml:space="preserve">
     <value>Επίσημο Σφραγίδα</value>
   </data>
@@ -327,8 +405,17 @@
   <data name="Passwords" xml:space="preserve">
     <value>Κωδικοί πρόσβασης</value>
   </data>
+  <data name="Passwords Management" xml:space="preserve">
+    <value>Διαχείριση Κωδικών Πρόσβασης</value>
+  </data>
+  <data name="Payroll Details" xml:space="preserve">
+    <value>Λεπτομέρειες Μισθοδοσίας</value>
+  </data>
   <data name="Payrolls" xml:space="preserve">
     <value>Μισθοδοσίες</value>
+  </data>
+  <data name="Permission Details" xml:space="preserve">
+    <value>Λεπτομέρειες Εξουσιοδότησης</value>
   </data>
   <data name="Permissions" xml:space="preserve">
     <value>Άδειες</value>
@@ -354,6 +441,9 @@
   <data name="Promotion History" xml:space="preserve">
     <value>Ιστορικό Προαγωγής</value>
   </data>
+  <data name="Questionnaire Responses" xml:space="preserve">
+    <value>Απαντήσεις Ερωτηματολογίου</value>
+  </data>
   <data name="Reg Capital" xml:space="preserve">
     <value>Καταχώρηση Κεφαλαίου</value>
   </data>
@@ -365,6 +455,9 @@
   </data>
   <data name="Resources" xml:space="preserve">
     <value>Πόροι</value>
+  </data>
+  <data name="Response Detail" xml:space="preserve">
+    <value>Λεπτομέρειες Απάντησης</value>
   </data>
   <data name="Restricted" xml:space="preserve">
     <value>Περιορισμένος</value>
@@ -401,6 +494,9 @@
   </data>
   <data name="Sign out" xml:space="preserve">
     <value>Αποσύνδεση</value>
+  </data>
+  <data name="SSH Keys" xml:space="preserve">
+    <value>SSH Keys</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>Κατάσταση</value>

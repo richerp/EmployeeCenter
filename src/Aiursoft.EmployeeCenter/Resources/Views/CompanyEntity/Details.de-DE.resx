@@ -33,6 +33,9 @@
   <data name="Ask merchants for electronic invoices (PDF/OFD) sent to your email or employees@aiursoft.com." xml:space="preserve">
     <value>Fordern Sie von Händlern elektronische Rechnungen (PDF/OFD) an, die an Ihre E-Mail-Adresse oder employees@aiursoft.com gesendet werden.</value>
   </data>
+  <data name="Associated Servers" xml:space="preserve">
+    <value>Zugeordnete Server</value>
+  </data>
   <data name="Avoid paper invoices to prevent loss." xml:space="preserve">
     <value>Vermeiden Sie Papierrechnungen, um Verluste zu vermeiden.</value>
   </data>
@@ -113,6 +116,9 @@
   </data>
   <data name="Must be real business expenses. No fake invoices." xml:space="preserve">
     <value>Müssen echte Geschäftsausgaben sein. Keine gefälschten Rechnungen.</value>
+  </data>
+  <data name="No servers associated." xml:space="preserve">
+    <value>Keine Server assoziiert.</value>
   </data>
   <data name="Official Seal" xml:space="preserve">
     <value>Amtszeichen</value>

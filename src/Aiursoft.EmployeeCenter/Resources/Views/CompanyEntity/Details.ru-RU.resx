@@ -33,6 +33,9 @@
   <data name="Ask merchants for electronic invoices (PDF/OFD) sent to your email or employees@aiursoft.com." xml:space="preserve">
     <value>Запрашивайте у продавцов электронные счета-фактуры (PDF/OFD), отправленные на вашу электронную почту или employees@aiursoft.com.</value>
   </data>
+  <data name="Associated Servers" xml:space="preserve">
+    <value>Связанные серверы</value>
+  </data>
   <data name="Avoid paper invoices to prevent loss." xml:space="preserve">
     <value>Избегайте бумажных счетов-фактур, чтобы предотвратить их утрату.</value>
   </data>
@@ -113,6 +116,9 @@
   </data>
   <data name="Must be real business expenses. No fake invoices." xml:space="preserve">
     <value>Должно быть реальное деловое расходование. Нет поддельных счетов-фактур.</value>
+  </data>
+  <data name="No servers associated." xml:space="preserve">
+    <value>Серверы не связаны.</value>
   </data>
   <data name="Official Seal" xml:space="preserve">
     <value>Официальная печать</value>

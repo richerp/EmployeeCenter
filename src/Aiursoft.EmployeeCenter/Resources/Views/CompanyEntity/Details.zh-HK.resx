@@ -33,6 +33,9 @@
   <data name="Ask merchants for electronic invoices (PDF/OFD) sent to your email or employees@aiursoft.com." xml:space="preserve">
     <value>請向商戶索取電郵或 employees@aiursoft.com 收到的電子發票（PDF/OFD）。</value>
   </data>
+  <data name="Associated Servers" xml:space="preserve">
+    <value>關聯伺服器</value>
+  </data>
   <data name="Avoid paper invoices to prevent loss." xml:space="preserve">
     <value>避免紙質發票以防止遺失。</value>
   </data>
@@ -119,6 +122,9 @@
   </data>
   <data name="Must be real business expenses. No fake invoices." xml:space="preserve">
     <value>必須為真實的業務開支。不得使用偽造發票。</value>
+  </data>
+  <data name="No servers associated." xml:space="preserve">
+    <value>沒有關聯的伺服器。</value>
   </data>
   <data name="Official Seal" xml:space="preserve">
     <value>官方印鑑</value>

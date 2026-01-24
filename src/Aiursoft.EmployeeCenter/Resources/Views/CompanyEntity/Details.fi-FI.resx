@@ -33,6 +33,9 @@
   <data name="Ask merchants for electronic invoices (PDF/OFD) sent to your email or employees@aiursoft.com." xml:space="preserve">
     <value>Pyydä kauppiaita sähköisistä laskuista (PDF/OFD), jotka on lähetetty sähköpostiisi tai employees@aiursoft.com.</value>
   </data>
+  <data name="Associated Servers" xml:space="preserve">
+    <value>Liitetyt palvelimet</value>
+  </data>
   <data name="Avoid paper invoices to prevent loss." xml:space="preserve">
     <value>Vältä paperisia laskuja, jotta menetystä ei tapahdu.</value>
   </data>
@@ -113,6 +116,9 @@
   </data>
   <data name="Must be real business expenses. No fake invoices." xml:space="preserve">
     <value>Tilanteessa on oltava todellisia liiketoimintakuluja. Ei valelaskuja.</value>
+  </data>
+  <data name="No servers associated." xml:space="preserve">
+    <value>Ei yhdistettyjä palvelimia.</value>
   </data>
   <data name="Official Seal" xml:space="preserve">
     <value>Virallinen timo</value>

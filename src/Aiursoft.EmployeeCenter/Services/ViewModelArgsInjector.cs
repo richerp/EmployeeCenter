@@ -114,6 +114,49 @@ public class ViewModelArgsInjector(
         _ = localizer["View Blueprints"];
     
         _ = localizer["Servers"];
+    
+        _ = localizer["Access Denied"];
+        _ = localizer["Add SSH Key"];
+        _ = localizer["Bad Request"];
+        _ = localizer["Blueprint"];
+        _ = localizer["Change Bank Information"];
+        _ = localizer["Company Entities"];
+        _ = localizer["Company Entity Details"];
+        _ = localizer["Contracts"];
+        _ = localizer["Create Company Entity"];
+        _ = localizer["Create New Contract"];
+        _ = localizer["Create Onboarding Task"];
+        _ = localizer["Create Password"];
+        _ = localizer["Create Promotion"];
+        _ = localizer["Create Question"];
+        _ = localizer["Create Questionnaire"];
+        _ = localizer["Dashboard"];
+        _ = localizer["Edit Blueprint"];
+        _ = localizer["Edit Company Entity"];
+        _ = localizer["Edit Contract"];
+        _ = localizer["Edit Onboarding Task"];
+        _ = localizer["Edit Password"];
+        _ = localizer["Edit Payroll"];
+        _ = localizer["Edit SSH Key"];
+        _ = localizer["Edit Weekly Report"];
+        _ = localizer["Fill Questionnaire"];
+        _ = localizer["Internal Server Error"];
+        _ = localizer["Issue Payroll"];
+        _ = localizer["Lockout"];
+        _ = localizer["Maintain Profile"];
+        _ = localizer["Manage Onboarding Tasks"];
+        _ = localizer["Manage Password Shares"];
+        _ = localizer["Manage Printing"];
+        _ = localizer["Manage Questions"];
+        _ = localizer["Not Found"];
+        _ = localizer["Password Details"];
+        _ = localizer["Passwords Management"];
+        _ = localizer["Payroll Details"];
+        _ = localizer["Permission Details"];
+        _ = localizer["Questionnaire Responses"];
+        _ = localizer["Register"];
+        _ = localizer["Response Detail"];
+        _ = localizer["SSH Keys"];
     }
 
     public void InjectSimple(

@@ -33,6 +33,9 @@
   <data name="Ask merchants for electronic invoices (PDF/OFD) sent to your email or employees@aiursoft.com." xml:space="preserve">
     <value>कृपया अपने ईमेल या employees@aiursoft.com पर भेजे गए इलेक्ट्रॉनिक इन्वॉइस (PDF/OFD) के लिए व्यापारियों से मांगें।</value>
   </data>
+  <data name="Associated Servers" xml:space="preserve">
+    <value>संबंधित सर्वर</value>
+  </data>
   <data name="Avoid paper invoices to prevent loss." xml:space="preserve">
     <value>कागजी इन्वॉइस से बचें ताकि नुकसान से बचा जा सके।</value>
   </data>
@@ -113,6 +116,9 @@
   </data>
   <data name="Must be real business expenses. No fake invoices." xml:space="preserve">
     <value>वास्तविक व्यापारिक व्यय होने चाहिए। कृपया नकली इन्वॉइस न भेजें।</value>
+  </data>
+  <data name="No servers associated." xml:space="preserve">
+    <value>कोई सर्वर संबंधित नहीं है।</value>
   </data>
   <data name="Official Seal" xml:space="preserve">
     <value>आधिकारिक मुहर</value>

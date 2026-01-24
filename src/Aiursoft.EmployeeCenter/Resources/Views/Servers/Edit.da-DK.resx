@@ -36,6 +36,9 @@
   <data name="Save Changes" xml:space="preserve">
     <value>Gem ændringer</value>
   </data>
+  <data name="Select Company Entity" xml:space="preserve">
+    <value>Vælg virksomhedsenhed</value>
+  </data>
   <data name="Select Location" xml:space="preserve">
     <value>Vælg placering</value>
   </data>

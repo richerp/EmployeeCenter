@@ -18,8 +18,14 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Actions" xml:space="preserve">
+      <data name="Access Denied" xml:space="preserve">
+    <value>الوصول ممنوع</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
     <value>إجراءات</value>
+  </data>
+  <data name="Add SSH Key" xml:space="preserve">
+    <value>إضافة مفتاح SSH</value>
   </data>
   <data name="Additional Info (Mainland/HK)" xml:space="preserve">
     <value>معلومات إضافية (البر الرئيسي/هونغ كونغ)</value>
@@ -60,11 +66,17 @@
   <data name="Background Jobs" xml:space="preserve">
     <value>المهام الخلفية</value>
   </data>
+  <data name="Bad Request" xml:space="preserve">
+    <value>طلب غير صالح</value>
+  </data>
   <data name="Bank Info" xml:space="preserve">
     <value>معلومات البنوك</value>
   </data>
   <data name="Basic Information" xml:space="preserve">
     <value>المعلومات الأساسية</value>
+  </data>
+  <data name="Blueprint" xml:space="preserve">
+    <value>مخطط</value>
   </data>
   <data name="Blueprints" xml:space="preserve">
     <value>مخططات</value>
@@ -89,6 +101,9 @@
   </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>تغيير الصورة الشخصية</value>
+  </data>
+  <data name="Change Bank Information" xml:space="preserve">
+    <value>تغيير معلومات الحساب البنكي</value>
   </data>
   <data name="Change Password" xml:space="preserve">
     <value>تغيير كلمة المرور</value>
@@ -135,14 +150,32 @@
   <data name="Create New" xml:space="preserve">
     <value>إنشاء جديد</value>
   </data>
+  <data name="Create New Contract" xml:space="preserve">
+    <value>إنشاء عقد جديد</value>
+  </data>
+  <data name="Create Onboarding Task" xml:space="preserve">
+    <value>إنشاء مهمة التدريب</value>
+  </data>
   <data name="Create Password" xml:space="preserve">
     <value>إنشاء كلمة المرور</value>
+  </data>
+  <data name="Create Promotion" xml:space="preserve">
+    <value>إنشاء ترقية</value>
+  </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>إنشاء سؤال</value>
+  </data>
+  <data name="Create Questionnaire" xml:space="preserve">
+    <value>إنشاء استبيان</value>
   </data>
   <data name="Create Role" xml:space="preserve">
     <value>إنشاء دور</value>
   </data>
   <data name="Create User" xml:space="preserve">
     <value>إنشاء مستخدم</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>لوحة التحكم</value>
   </data>
   <data name="Delete Role" xml:space="preserve">
     <value>حذف الدور</value>
@@ -162,17 +195,35 @@
   <data name="Download / View" xml:space="preserve">
     <value>تحميل / عرض</value>
   </data>
+  <data name="Edit Blueprint" xml:space="preserve">
+    <value>تحرير المخطط التفصيلي</value>
+  </data>
   <data name="Edit Company Entity" xml:space="preserve">
     <value>تعديل الكيان المؤسسي</value>
+  </data>
+  <data name="Edit Contract" xml:space="preserve">
+    <value>تعديل العقد</value>
+  </data>
+  <data name="Edit Onboarding Task" xml:space="preserve">
+    <value>تحرير مهمة التسجيل</value>
   </data>
   <data name="Edit Password" xml:space="preserve">
     <value>تعديل كلمة المرور</value>
   </data>
+  <data name="Edit Payroll" xml:space="preserve">
+    <value>تعديل راتب</value>
+  </data>
   <data name="Edit Role" xml:space="preserve">
     <value>تعديل الدور</value>
   </data>
+  <data name="Edit SSH Key" xml:space="preserve">
+    <value>تعديل مفتاح SSH</value>
+  </data>
   <data name="Edit User" xml:space="preserve">
     <value>تعديل المستخدم</value>
+  </data>
+  <data name="Edit Weekly Report" xml:space="preserve">
+    <value>تحرير التقرير الأسبوعي</value>
   </data>
   <data name="Employee Center" xml:space="preserve">
     <value>مركز الموظفين</value>
@@ -204,6 +255,9 @@
   <data name="Features" xml:space="preserve">
     <value>الميزات</value>
   </data>
+  <data name="Fill Questionnaire" xml:space="preserve">
+    <value>تعبئة الاستبيان</value>
+  </data>
   <data name="Finance" xml:space="preserve">
     <value>المالية</value>
   </data>
@@ -225,6 +279,12 @@
   <data name="Info" xml:space="preserve">
     <value>المعلومات</value>
   </data>
+  <data name="Internal Server Error" xml:space="preserve">
+    <value>خطأ الخادم الداخلي</value>
+  </data>
+  <data name="Issue Payroll" xml:space="preserve">
+    <value>إصدار الرواتب</value>
+  </data>
   <data name="IT Assets" xml:space="preserve">
     <value>أصول تقنية المعلومات</value>
   </data>
@@ -243,6 +303,9 @@
   <data name="Locations" xml:space="preserve">
     <value>المواقع</value>
   </data>
+  <data name="Lockout" xml:space="preserve">
+    <value>إيقاف الوصول</value>
+  </data>
   <data name="Login" xml:space="preserve">
     <value>تسجيل الدخول</value>
   </data>
@@ -251,6 +314,9 @@
   </data>
   <data name="Logo" xml:space="preserve">
     <value>الشعار</value>
+  </data>
+  <data name="Maintain Profile" xml:space="preserve">
+    <value>الحفاظ على الملف الشخصي</value>
   </data>
   <data name="Manage" xml:space="preserve">
     <value>إدارة</value>
@@ -279,11 +345,20 @@
   <data name="Manage Onboarding" xml:space="preserve">
     <value>إدارة التوجيه</value>
   </data>
+  <data name="Manage Onboarding Tasks" xml:space="preserve">
+    <value>إدارة مهام التسجيل</value>
+  </data>
+  <data name="Manage Password Shares" xml:space="preserve">
+    <value>إدارة مشاركة كلمات المرور</value>
+  </data>
   <data name="Manage Payrolls" xml:space="preserve">
     <value>إدارة الرواتب</value>
   </data>
   <data name="Manage Printing" xml:space="preserve">
     <value>إدارة الطباعة</value>
+  </data>
+  <data name="Manage Questions" xml:space="preserve">
+    <value>إدارة الأسئلة</value>
   </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>إدارة المشاركات</value>
@@ -312,6 +387,9 @@
   <data name="My Report Line" xml:space="preserve">
     <value>خط إبلاغي</value>
   </data>
+  <data name="Not Found" xml:space="preserve">
+    <value>غير موجود</value>
+  </data>
   <data name="Official Seal" xml:space="preserve">
     <value>الختم الرسمي</value>
   </data>
@@ -327,8 +405,17 @@
   <data name="Passwords" xml:space="preserve">
     <value>كلمات المرور</value>
   </data>
+  <data name="Passwords Management" xml:space="preserve">
+    <value>إدارة كلمات المرور</value>
+  </data>
+  <data name="Payroll Details" xml:space="preserve">
+    <value>تفاصيل الراتب</value>
+  </data>
   <data name="Payrolls" xml:space="preserve">
     <value>الرواتب</value>
+  </data>
+  <data name="Permission Details" xml:space="preserve">
+    <value>تفاصيل الصلاحيات</value>
   </data>
   <data name="Permissions" xml:space="preserve">
     <value>الصلاحيات</value>
@@ -354,6 +441,9 @@
   <data name="Promotion History" xml:space="preserve">
     <value>سجل الترقيات</value>
   </data>
+  <data name="Questionnaire Responses" xml:space="preserve">
+    <value>استجابات الاستبيان</value>
+  </data>
   <data name="Reg Capital" xml:space="preserve">
     <value>رأس المال المسجل</value>
   </data>
@@ -365,6 +455,9 @@
   </data>
   <data name="Resources" xml:space="preserve">
     <value>الموارد</value>
+  </data>
+  <data name="Response Detail" xml:space="preserve">
+    <value>تفاصيل الاستجابة</value>
   </data>
   <data name="Restricted" xml:space="preserve">
     <value>مُقيّد</value>
@@ -401,6 +494,9 @@
   </data>
   <data name="Sign out" xml:space="preserve">
     <value>تسجيل الخروج</value>
+  </data>
+  <data name="SSH Keys" xml:space="preserve">
+    <value>مفاتيح SSH</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>الحالة</value>

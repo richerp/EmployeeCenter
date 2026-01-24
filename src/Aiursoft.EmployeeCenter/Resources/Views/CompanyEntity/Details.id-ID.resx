@@ -33,6 +33,9 @@
   <data name="Ask merchants for electronic invoices (PDF/OFD) sent to your email or employees@aiursoft.com." xml:space="preserve">
     <value>Minta kepada pedagang untuk faktur elektronik (PDF/OFD) yang dikirim ke email Anda atau employees@aiursoft.com.</value>
   </data>
+  <data name="Associated Servers" xml:space="preserve">
+    <value>Server yang Terkait</value>
+  </data>
   <data name="Avoid paper invoices to prevent loss." xml:space="preserve">
     <value>Hindari faktur kertas untuk mencegah kehilangan.</value>
   </data>
@@ -113,6 +116,9 @@
   </data>
   <data name="Must be real business expenses. No fake invoices." xml:space="preserve">
     <value>Harus merupakan pengeluaran bisnis yang nyata. Tidak ada faktur palsu.</value>
+  </data>
+  <data name="No servers associated." xml:space="preserve">
+    <value>Tidak ada server yang terkait.</value>
   </data>
   <data name="Official Seal" xml:space="preserve">
     <value>Cap Dinas Resmi</value>

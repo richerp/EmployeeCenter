@@ -36,6 +36,9 @@
   <data name="Save Server" xml:space="preserve">
     <value>Sunucuyu Kaydet</value>
   </data>
+  <data name="Select Company Entity" xml:space="preserve">
+    <value>Şirket Varlığı Seçin</value>
+  </data>
   <data name="Select Location" xml:space="preserve">
     <value>Konumu Seç</value>
   </data>
