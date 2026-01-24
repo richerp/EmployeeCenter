@@ -27,6 +27,9 @@
   <data name="Are you sure?" xml:space="preserve">
     <value>Er du sikker?</value>
   </data>
+  <data name="Company" xml:space="preserve">
+    <value>Virksomhed</value>
+  </data>
   <data name="Create New Server" xml:space="preserve">
     <value>Opret ny server</value>
   </data>

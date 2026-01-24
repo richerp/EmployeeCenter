@@ -27,6 +27,9 @@
   <data name="Are you sure?" xml:space="preserve">
     <value>Είστε βέβαιοι;</value>
   </data>
+  <data name="Company" xml:space="preserve">
+    <value>Εταιρεία</value>
+  </data>
   <data name="Create New Server" xml:space="preserve">
     <value>Δημιουργία Νέου Διακομιστή</value>
   </data>

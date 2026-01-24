@@ -36,6 +36,9 @@
   <data name="Save Server" xml:space="preserve">
     <value>서버 저장</value>
   </data>
+  <data name="Select Company Entity" xml:space="preserve">
+    <value>회사 엔티티 선택</value>
+  </data>
   <data name="Select Location" xml:space="preserve">
     <value>위치 선택</value>
   </data>

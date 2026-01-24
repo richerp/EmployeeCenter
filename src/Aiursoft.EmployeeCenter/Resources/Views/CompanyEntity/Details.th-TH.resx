@@ -33,6 +33,9 @@
   <data name="Ask merchants for electronic invoices (PDF/OFD) sent to your email or employees@aiursoft.com." xml:space="preserve">
     <value>ขอให้ผู้ขายจัดส่งใบแจ้งหนี้อิเล็กทรอนิกส์ (PDF/OFD) ไปยังอีเมลของคุณ หรือที่ employees@aiursoft.com</value>
   </data>
+  <data name="Associated Servers" xml:space="preserve">
+    <value>เซิร์ฟเวอร์ที่เกี่ยวข้อง</value>
+  </data>
   <data name="Avoid paper invoices to prevent loss." xml:space="preserve">
     <value>หลีกเลี่ยงใบแจ้งหนี้กระดาษเพื่อป้องกันการสูญหาย</value>
   </data>
@@ -113,6 +116,9 @@
   </data>
   <data name="Must be real business expenses. No fake invoices." xml:space="preserve">
     <value>ต้องเป็นค่าใช้จ่ายทางธุรกิจที่แท้จริง ห้ามใช้ใบแจ้งหนี้ปลอม</value>
+  </data>
+  <data name="No servers associated." xml:space="preserve">
+    <value>ไม่มีเซิร์ฟเวอร์ที่เกี่ยวข้อง</value>
   </data>
   <data name="Official Seal" xml:space="preserve">
     <value>ตราประทับราชการ</value>

@@ -36,6 +36,9 @@
   <data name="Save Server" xml:space="preserve">
     <value>Salvează Serverul</value>
   </data>
+  <data name="Select Company Entity" xml:space="preserve">
+    <value>Selectați Entitatea Companiei</value>
+  </data>
   <data name="Select Location" xml:space="preserve">
     <value>Selectează Locația</value>
   </data>

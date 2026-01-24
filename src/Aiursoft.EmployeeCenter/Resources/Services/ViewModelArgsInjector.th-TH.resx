@@ -18,11 +18,17 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Account Settings" xml:space="preserve">
+      <data name="Access Denied" xml:space="preserve">
+    <value>การเข้าถึงถูกปฏิเสธ</value>
+  </data>
+  <data name="Account Settings" xml:space="preserve">
     <value>การตั้งค่าบัญชี</value>
   </data>
   <data name="Actions" xml:space="preserve">
     <value>การกระทำ</value>
+  </data>
+  <data name="Add SSH Key" xml:space="preserve">
+    <value>เพิ่มคีย์ SSH</value>
   </data>
   <data name="Additional Info (Mainland/HK)" xml:space="preserve">
     <value>ข้อมูลเพิ่มเติม (แผ่นดินใหญ่/ฮ่องกง)</value>
@@ -63,11 +69,17 @@
   <data name="Background Jobs" xml:space="preserve">
     <value>งานพื้นหลัง</value>
   </data>
+  <data name="Bad Request" xml:space="preserve">
+    <value>คำขอผิดพลาด</value>
+  </data>
   <data name="Bank Info" xml:space="preserve">
     <value>ข้อมูลธนาคาร</value>
   </data>
   <data name="Basic Information" xml:space="preserve">
     <value>ข้อมูลพื้นฐาน</value>
+  </data>
+  <data name="Blueprint" xml:space="preserve">
+    <value>แบบร่าง</value>
   </data>
   <data name="Blueprints" xml:space="preserve">
     <value>แบบร่าง</value>
@@ -92,6 +104,9 @@
   </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>เปลี่ยนรูปโปรไฟล์</value>
+  </data>
+  <data name="Change Bank Information" xml:space="preserve">
+    <value>เปลี่ยนข้อมูลบัญชีธนาคาร</value>
   </data>
   <data name="Change Password" xml:space="preserve">
     <value>เปลี่ยนรหัสผ่าน</value>
@@ -138,14 +153,32 @@
   <data name="Create New" xml:space="preserve">
     <value>สร้างใหม่</value>
   </data>
+  <data name="Create New Contract" xml:space="preserve">
+    <value>สร้างสัญญาใหม่</value>
+  </data>
+  <data name="Create Onboarding Task" xml:space="preserve">
+    <value>สร้างงานการนำเข้า</value>
+  </data>
   <data name="Create Password" xml:space="preserve">
     <value>สร้างรหัสผ่าน</value>
+  </data>
+  <data name="Create Promotion" xml:space="preserve">
+    <value>สร้างการเลื่อนตำแหน่ง</value>
+  </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>สร้างคำถาม</value>
+  </data>
+  <data name="Create Questionnaire" xml:space="preserve">
+    <value>สร้างแบบสอบถาม</value>
   </data>
   <data name="Create Role" xml:space="preserve">
     <value>สร้างบทบาท</value>
   </data>
   <data name="Create User" xml:space="preserve">
     <value>สร้างผู้ใช้</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>แดชบอร์ด</value>
   </data>
   <data name="Delete Role" xml:space="preserve">
     <value>ลบบทบาท</value>
@@ -165,17 +198,35 @@
   <data name="Download / View" xml:space="preserve">
     <value>ดาวน์โหลด / ดู</value>
   </data>
+  <data name="Edit Blueprint" xml:space="preserve">
+    <value>แก้ไขแบบร่าง</value>
+  </data>
   <data name="Edit Company Entity" xml:space="preserve">
     <value>แก้ไขหน่วยงานบริษัท</value>
+  </data>
+  <data name="Edit Contract" xml:space="preserve">
+    <value>แก้ไขสัญญา</value>
+  </data>
+  <data name="Edit Onboarding Task" xml:space="preserve">
+    <value>แก้ไขงานที่ต้องทำในขั้นตอนการเริ่มต้น</value>
   </data>
   <data name="Edit Password" xml:space="preserve">
     <value>แก้ไขรหัสผ่าน</value>
   </data>
+  <data name="Edit Payroll" xml:space="preserve">
+    <value>แก้ไขเงินเดือน</value>
+  </data>
   <data name="Edit Role" xml:space="preserve">
     <value>แก้ไขบทบาท</value>
   </data>
+  <data name="Edit SSH Key" xml:space="preserve">
+    <value>แก้ไขคีย์ SSH</value>
+  </data>
   <data name="Edit User" xml:space="preserve">
     <value>แก้ไขผู้ใช้</value>
+  </data>
+  <data name="Edit Weekly Report" xml:space="preserve">
+    <value>แก้ไขรายงานรายสัปดาห์</value>
   </data>
   <data name="Employee Center" xml:space="preserve">
     <value>ศูนย์พนักงาน</value>
@@ -207,6 +258,9 @@
   <data name="Features" xml:space="preserve">
     <value>คุณสมบัติ</value>
   </data>
+  <data name="Fill Questionnaire" xml:space="preserve">
+    <value>กรอกแบบสอบถาม</value>
+  </data>
   <data name="Finance" xml:space="preserve">
     <value>การเงิน</value>
   </data>
@@ -228,6 +282,12 @@
   <data name="Info" xml:space="preserve">
     <value>ข้อมูล</value>
   </data>
+  <data name="Internal Server Error" xml:space="preserve">
+    <value>ข้อผิดพลาดภายในเซิร์ฟเวอร์</value>
+  </data>
+  <data name="Issue Payroll" xml:space="preserve">
+    <value>ออกสลิปเงินเดือน</value>
+  </data>
   <data name="IT Assets" xml:space="preserve">
     <value>ทรัพย์สินด้านไอที</value>
   </data>
@@ -246,6 +306,9 @@
   <data name="Locations" xml:space="preserve">
     <value>สถานที่ตั้ง</value>
   </data>
+  <data name="Lockout" xml:space="preserve">
+    <value>การล็อกเอาต์</value>
+  </data>
   <data name="Login" xml:space="preserve">
     <value>เข้าสู่ระบบ</value>
   </data>
@@ -254,6 +317,9 @@
   </data>
   <data name="Logo" xml:space="preserve">
     <value>โลโก้</value>
+  </data>
+  <data name="Maintain Profile" xml:space="preserve">
+    <value>จัดการโปรไฟล์</value>
   </data>
   <data name="Manage" xml:space="preserve">
     <value>จัดการ</value>
@@ -282,11 +348,20 @@
   <data name="Manage Onboarding" xml:space="preserve">
     <value>จัดการการรับเข้าทำงาน</value>
   </data>
+  <data name="Manage Onboarding Tasks" xml:space="preserve">
+    <value>จัดการงานที่ต้องทำในขั้นตอนการรับเข้า</value>
+  </data>
+  <data name="Manage Password Shares" xml:space="preserve">
+    <value>จัดการการแชร์รหัสผ่าน</value>
+  </data>
   <data name="Manage Payrolls" xml:space="preserve">
     <value>จัดการค่าจ้าง</value>
   </data>
   <data name="Manage Printing" xml:space="preserve">
     <value>จัดการการพิมพ์</value>
+  </data>
+  <data name="Manage Questions" xml:space="preserve">
+    <value>จัดการคำถาม</value>
   </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>จัดการการแชร์</value>
@@ -315,6 +390,9 @@
   <data name="My Report Line" xml:space="preserve">
     <value>สายการรายงานของฉัน</value>
   </data>
+  <data name="Not Found" xml:space="preserve">
+    <value>ไม่พบ</value>
+  </data>
   <data name="Official Seal" xml:space="preserve">
     <value>ตรายางราชการ</value>
   </data>
@@ -330,8 +408,17 @@
   <data name="Passwords" xml:space="preserve">
     <value>รหัสผ่าน</value>
   </data>
+  <data name="Passwords Management" xml:space="preserve">
+    <value>การจัดการรหัสผ่าน</value>
+  </data>
+  <data name="Payroll Details" xml:space="preserve">
+    <value>รายละเอียดเงินเดือน</value>
+  </data>
   <data name="Payrolls" xml:space="preserve">
     <value>เงินเดือน</value>
+  </data>
+  <data name="Permission Details" xml:space="preserve">
+    <value>รายละเอียดสิทธิ์</value>
   </data>
   <data name="Permissions" xml:space="preserve">
     <value>สิทธิ์การเข้าถึง</value>
@@ -357,6 +444,9 @@
   <data name="Promotion History" xml:space="preserve">
     <value>ประวัติการเลื่อนตำแหน่ง</value>
   </data>
+  <data name="Questionnaire Responses" xml:space="preserve">
+    <value>ผลการตอบแบบสอบถาม</value>
+  </data>
   <data name="Reg Capital" xml:space="preserve">
     <value>ทุนจดทะเบียน</value>
   </data>
@@ -368,6 +458,9 @@
   </data>
   <data name="Resources" xml:space="preserve">
     <value>ทรัพยากร</value>
+  </data>
+  <data name="Response Detail" xml:space="preserve">
+    <value>รายละเอียดคำตอบ</value>
   </data>
   <data name="Restricted" xml:space="preserve">
     <value>จำกัด</value>
@@ -404,6 +497,9 @@
   </data>
   <data name="Sign out" xml:space="preserve">
     <value>ออกจากระบบ</value>
+  </data>
+  <data name="SSH Keys" xml:space="preserve">
+    <value>คีย์ SSH</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>สถานะ</value>

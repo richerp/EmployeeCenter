@@ -36,6 +36,9 @@
   <data name="Save Changes" xml:space="preserve">
     <value>Lưu thay đổi</value>
   </data>
+  <data name="Select Company Entity" xml:space="preserve">
+    <value>Chọn đơn vị công ty</value>
+  </data>
   <data name="Select Location" xml:space="preserve">
     <value>Chọn vị trí</value>
   </data>
