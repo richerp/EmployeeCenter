@@ -78,6 +78,9 @@
   <data name="Running" xml:space="preserve">
     <value>A funcionar</value>
   </data>
+  <data name="Server" xml:space="preserve">
+    <value>Servidor</value>
+  </data>
   <data name="Server Details" xml:space="preserve">
     <value>Detalhes do Servidor</value>
   </data>

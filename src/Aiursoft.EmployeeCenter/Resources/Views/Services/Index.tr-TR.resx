@@ -78,6 +78,9 @@
   <data name="Running" xml:space="preserve">
     <value>Çalışıyor</value>
   </data>
+  <data name="Server" xml:space="preserve">
+    <value>Sunucu</value>
+  </data>
   <data name="Server Details" xml:space="preserve">
     <value>Sunucu Detayları</value>
   </data>

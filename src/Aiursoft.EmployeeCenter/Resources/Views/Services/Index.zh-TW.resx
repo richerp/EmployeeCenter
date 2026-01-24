@@ -78,6 +78,9 @@
   <data name="Running" xml:space="preserve">
     <value>執行中</value>
   </data>
+  <data name="Server" xml:space="preserve">
+    <value>伺服器</value>
+  </data>
   <data name="Server Details" xml:space="preserve">
     <value>伺服器詳細資訊</value>
   </data>

@@ -18,7 +18,13 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="You can only edit reports published within 4 weeks." xml:space="preserve">
+      <data name="Already submitted, click to supplement" xml:space="preserve">
+    <value>Già inviato, clicca per integrare</value>
+  </data>
+  <data name="Current Week" xml:space="preserve">
+    <value>Settimana corrente</value>
+  </data>
+  <data name="You can only edit reports published within 4 weeks." xml:space="preserve">
     <value>Puoi modificare solo i rapporti pubblicati negli ultimi 4 settimane.</value>
   </data>
 

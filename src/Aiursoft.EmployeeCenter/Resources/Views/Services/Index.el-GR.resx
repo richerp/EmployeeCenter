@@ -78,6 +78,9 @@
   <data name="Running" xml:space="preserve">
     <value>Εκτελείται</value>
   </data>
+  <data name="Server" xml:space="preserve">
+    <value>Εξυπηρετητής</value>
+  </data>
   <data name="Server Details" xml:space="preserve">
     <value>Λεπτομέρειες Διακομιστή</value>
   </data>

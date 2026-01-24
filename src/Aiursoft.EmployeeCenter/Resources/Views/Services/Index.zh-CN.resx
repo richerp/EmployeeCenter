@@ -90,6 +90,9 @@
   <data name="Running" xml:space="preserve">
     <value>运营中</value>
   </data>
+  <data name="Server" xml:space="preserve">
+    <value>服务器</value>
+  </data>
   <data name="Server Details" xml:space="preserve">
     <value>服务器详情</value>
   </data>

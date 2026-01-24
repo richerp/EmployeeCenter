@@ -78,6 +78,9 @@
   <data name="Running" xml:space="preserve">
     <value>جاري التشغيل</value>
   </data>
+  <data name="Server" xml:space="preserve">
+    <value>الخادم</value>
+  </data>
   <data name="Server Details" xml:space="preserve">
     <value>تفاصيل الخادم</value>
   </data>

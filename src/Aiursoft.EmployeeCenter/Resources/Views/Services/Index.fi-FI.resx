@@ -78,6 +78,9 @@
   <data name="Running" xml:space="preserve">
     <value>Käynnissä</value>
   </data>
+  <data name="Server" xml:space="preserve">
+    <value>Palvelin</value>
+  </data>
   <data name="Server Details" xml:space="preserve">
     <value>Palvelimen tiedot</value>
   </data>
