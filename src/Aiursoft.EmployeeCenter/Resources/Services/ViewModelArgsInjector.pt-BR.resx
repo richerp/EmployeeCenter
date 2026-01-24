@@ -18,8 +18,14 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Actions" xml:space="preserve">
+      <data name="Access Denied" xml:space="preserve">
+    <value>Acesso Negado</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
     <value>Ações</value>
+  </data>
+  <data name="Add SSH Key" xml:space="preserve">
+    <value>Adicionar Chave SSH</value>
   </data>
   <data name="Additional Info (Mainland/HK)" xml:space="preserve">
     <value>Informações Adicionais (Continente/HK)</value>
@@ -60,11 +66,17 @@
   <data name="Background Jobs" xml:space="preserve">
     <value>Tarefas em Segundo Plano</value>
   </data>
+  <data name="Bad Request" xml:space="preserve">
+    <value>Requisição Inválida</value>
+  </data>
   <data name="Bank Info" xml:space="preserve">
     <value>Informações Bancárias</value>
   </data>
   <data name="Basic Information" xml:space="preserve">
     <value>Informações Básicas</value>
+  </data>
+  <data name="Blueprint" xml:space="preserve">
+    <value>Plano</value>
   </data>
   <data name="Blueprints" xml:space="preserve">
     <value>Plantas</value>
@@ -89,6 +101,9 @@
   </data>
   <data name="Change Avatar" xml:space="preserve">
     <value>Alterar Avatar</value>
+  </data>
+  <data name="Change Bank Information" xml:space="preserve">
+    <value>Alterar Informações Bancárias</value>
   </data>
   <data name="Change Password" xml:space="preserve">
     <value>Alterar Senha</value>
@@ -135,14 +150,32 @@
   <data name="Create New" xml:space="preserve">
     <value>Criar Novo</value>
   </data>
+  <data name="Create New Contract" xml:space="preserve">
+    <value>Criar Novo Contrato</value>
+  </data>
+  <data name="Create Onboarding Task" xml:space="preserve">
+    <value>Criar Tarefa de Onboarding</value>
+  </data>
   <data name="Create Password" xml:space="preserve">
     <value>Criar Senha</value>
+  </data>
+  <data name="Create Promotion" xml:space="preserve">
+    <value>Criar Promoção</value>
+  </data>
+  <data name="Create Question" xml:space="preserve">
+    <value>Criar Pergunta</value>
+  </data>
+  <data name="Create Questionnaire" xml:space="preserve">
+    <value>Criar Questionário</value>
   </data>
   <data name="Create Role" xml:space="preserve">
     <value>Criar Função</value>
   </data>
   <data name="Create User" xml:space="preserve">
     <value>Criar Usuário</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Painel</value>
   </data>
   <data name="Delete Role" xml:space="preserve">
     <value>Excluir Função</value>
@@ -162,17 +195,35 @@
   <data name="Download / View" xml:space="preserve">
     <value>Baixar / Visualizar</value>
   </data>
+  <data name="Edit Blueprint" xml:space="preserve">
+    <value>Editar Plantilla</value>
+  </data>
   <data name="Edit Company Entity" xml:space="preserve">
     <value>Editar Entidade da Empresa</value>
+  </data>
+  <data name="Edit Contract" xml:space="preserve">
+    <value>Editar Contrato</value>
+  </data>
+  <data name="Edit Onboarding Task" xml:space="preserve">
+    <value>Editar Tarefa de Onboarding</value>
   </data>
   <data name="Edit Password" xml:space="preserve">
     <value>Editar Senha</value>
   </data>
+  <data name="Edit Payroll" xml:space="preserve">
+    <value>Editar Folha de Pagamento</value>
+  </data>
   <data name="Edit Role" xml:space="preserve">
     <value>Editar Função</value>
   </data>
+  <data name="Edit SSH Key" xml:space="preserve">
+    <value>Editar Chave SSH</value>
+  </data>
   <data name="Edit User" xml:space="preserve">
     <value>Editar Usuário</value>
+  </data>
+  <data name="Edit Weekly Report" xml:space="preserve">
+    <value>Editar Relatório Semanal</value>
   </data>
   <data name="Employee Center" xml:space="preserve">
     <value>Centro de Funcionários</value>
@@ -204,6 +255,9 @@
   <data name="Features" xml:space="preserve">
     <value>Recursos</value>
   </data>
+  <data name="Fill Questionnaire" xml:space="preserve">
+    <value>Preencher Questionário</value>
+  </data>
   <data name="Finance" xml:space="preserve">
     <value>Finanças</value>
   </data>
@@ -225,6 +279,12 @@
   <data name="Info" xml:space="preserve">
     <value>Informações</value>
   </data>
+  <data name="Internal Server Error" xml:space="preserve">
+    <value>Erro Interno do Servidor</value>
+  </data>
+  <data name="Issue Payroll" xml:space="preserve">
+    <value>Emitir Folha de Pagamento</value>
+  </data>
   <data name="IT Assets" xml:space="preserve">
     <value>Ativos de TI</value>
   </data>
@@ -243,6 +303,9 @@
   <data name="Locations" xml:space="preserve">
     <value>Locais</value>
   </data>
+  <data name="Lockout" xml:space="preserve">
+    <value>Bloqueio</value>
+  </data>
   <data name="Login" xml:space="preserve">
     <value>Entrar</value>
   </data>
@@ -251,6 +314,9 @@
   </data>
   <data name="Logo" xml:space="preserve">
     <value>Logo</value>
+  </data>
+  <data name="Maintain Profile" xml:space="preserve">
+    <value>Manter Perfil</value>
   </data>
   <data name="Manage" xml:space="preserve">
     <value>Gerenciar</value>
@@ -279,11 +345,20 @@
   <data name="Manage Onboarding" xml:space="preserve">
     <value>Gerenciar Onboarding</value>
   </data>
+  <data name="Manage Onboarding Tasks" xml:space="preserve">
+    <value>Gerenciar Tarefas de Onboarding</value>
+  </data>
+  <data name="Manage Password Shares" xml:space="preserve">
+    <value>Gerenciar Compartilhamentos de Senhas</value>
+  </data>
   <data name="Manage Payrolls" xml:space="preserve">
     <value>Gerenciar Folhas de Pagamento</value>
   </data>
   <data name="Manage Printing" xml:space="preserve">
     <value>Gerenciar Impressão</value>
+  </data>
+  <data name="Manage Questions" xml:space="preserve">
+    <value>Gerenciar Perguntas</value>
   </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>Gerenciar Compartilhamentos</value>
@@ -312,6 +387,9 @@
   <data name="My Report Line" xml:space="preserve">
     <value>Minha Linha de Relatório</value>
   </data>
+  <data name="Not Found" xml:space="preserve">
+    <value>Não Encontrado</value>
+  </data>
   <data name="Official Seal" xml:space="preserve">
     <value>Carimbo Oficial</value>
   </data>
@@ -327,8 +405,17 @@
   <data name="Passwords" xml:space="preserve">
     <value>Senhas</value>
   </data>
+  <data name="Passwords Management" xml:space="preserve">
+    <value>Gerenciamento de Senhas</value>
+  </data>
+  <data name="Payroll Details" xml:space="preserve">
+    <value>Detalhes da Folha de Pagamento</value>
+  </data>
   <data name="Payrolls" xml:space="preserve">
     <value>Folhas de Pagamento</value>
+  </data>
+  <data name="Permission Details" xml:space="preserve">
+    <value>Detalhes da Permissão</value>
   </data>
   <data name="Permissions" xml:space="preserve">
     <value>Permissões</value>
@@ -354,6 +441,9 @@
   <data name="Promotion History" xml:space="preserve">
     <value>Histórico de Promoções</value>
   </data>
+  <data name="Questionnaire Responses" xml:space="preserve">
+    <value>Respostas do Questionário</value>
+  </data>
   <data name="Reg Capital" xml:space="preserve">
     <value>Capital Registrado</value>
   </data>
@@ -365,6 +455,9 @@
   </data>
   <data name="Resources" xml:space="preserve">
     <value>Recursos</value>
+  </data>
+  <data name="Response Detail" xml:space="preserve">
+    <value>Detalhes da Resposta</value>
   </data>
   <data name="Restricted" xml:space="preserve">
     <value>Restrito</value>
@@ -401,6 +494,9 @@
   </data>
   <data name="Sign out" xml:space="preserve">
     <value>Sair</value>
+  </data>
+  <data name="SSH Keys" xml:space="preserve">
+    <value>Chaves SSH</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>Status</value>
