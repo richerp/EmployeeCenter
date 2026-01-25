@@ -45,6 +45,9 @@
   <data name="Email Address" xml:space="preserve">
     <value>Адрес электронной почты</value>
   </data>
+  <data name="Id" xml:space="preserve">
+    <value>Идентификатор</value>
+  </data>
   <data name="Job Level" xml:space="preserve">
     <value>Уровень должности</value>
   </data>
@@ -53,6 +56,9 @@
   </data>
   <data name="Manager" xml:space="preserve">
     <value>Менеджер</value>
+  </data>
+  <data name="Manager Display Name" xml:space="preserve">
+    <value>Имя руководителя</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Имя</value>

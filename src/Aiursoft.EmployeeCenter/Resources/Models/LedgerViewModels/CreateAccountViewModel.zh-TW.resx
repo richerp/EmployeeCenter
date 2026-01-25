@@ -30,6 +30,9 @@
   <data name="Entity Id" xml:space="preserve">
     <value>實體編號</value>
   </data>
+  <data name="Show In Dashboard" xml:space="preserve">
+    <value>顯示於儀表板</value>
+  </data>
   <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
     <value>{0} 不得超過 {1} 個字元。</value>
   </data>

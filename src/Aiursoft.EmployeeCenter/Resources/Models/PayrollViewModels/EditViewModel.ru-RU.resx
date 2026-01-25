@@ -45,6 +45,9 @@
   <data name="Housing Fund (Personal)" xml:space="preserve">
     <value>Накопительный фонд жилья (личный)</value>
   </data>
+  <data name="Id" xml:space="preserve">
+    <value>Идентификатор</value>
+  </data>
   <data name="Job Salary" xml:space="preserve">
     <value>Сдельная оплата труда</value>
   </data>

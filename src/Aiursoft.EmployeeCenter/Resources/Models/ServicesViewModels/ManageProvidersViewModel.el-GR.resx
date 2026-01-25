@@ -21,5 +21,11 @@
       <data name="New Provider Name" xml:space="preserve">
     <value>Όνομα νέου προμηθευτή</value>
   </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>Το {0} δεν μπορεί να υπερβαίνει τα {1} χαρακτήρες.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>Το {0} είναι απαραίτητο.</value>
+  </data>
 
 </root>

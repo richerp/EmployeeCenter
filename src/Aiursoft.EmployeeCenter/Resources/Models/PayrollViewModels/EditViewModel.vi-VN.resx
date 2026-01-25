@@ -45,6 +45,9 @@
   <data name="Housing Fund (Personal)" xml:space="preserve">
     <value>Quỹ nhà (cá nhân)</value>
   </data>
+  <data name="Id" xml:space="preserve">
+    <value>ID</value>
+  </data>
   <data name="Job Salary" xml:space="preserve">
     <value>Lương công việc</value>
   </data>

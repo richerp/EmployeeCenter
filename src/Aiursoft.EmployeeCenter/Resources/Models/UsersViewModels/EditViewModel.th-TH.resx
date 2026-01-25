@@ -45,6 +45,9 @@
   <data name="Email Address" xml:space="preserve">
     <value>ที่อยู่อีเมล</value>
   </data>
+  <data name="Id" xml:space="preserve">
+    <value>รหัส</value>
+  </data>
   <data name="Job Level" xml:space="preserve">
     <value>ระดับงาน</value>
   </data>
@@ -53,6 +56,9 @@
   </data>
   <data name="Manager" xml:space="preserve">
     <value>ผู้จัดการ</value>
+  </data>
+  <data name="Manager Display Name" xml:space="preserve">
+    <value>ชื่อแสดงผู้จัดการ</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>ชื่อ</value>

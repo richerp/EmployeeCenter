@@ -30,6 +30,9 @@
   <data name="Entity Id" xml:space="preserve">
     <value>Id сутності</value>
   </data>
+  <data name="Show In Dashboard" xml:space="preserve">
+    <value>Показати на панелі керування</value>
+  </data>
   <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
     <value>{0} не може перевищувати {1} символів.</value>
   </data>

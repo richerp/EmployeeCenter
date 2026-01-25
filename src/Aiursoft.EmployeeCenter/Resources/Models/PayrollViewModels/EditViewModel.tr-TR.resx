@@ -45,6 +45,9 @@
   <data name="Housing Fund (Personal)" xml:space="preserve">
     <value>Konut Fonu (Kişisel)</value>
   </data>
+  <data name="Id" xml:space="preserve">
+    <value>Kimlik</value>
+  </data>
   <data name="Job Salary" xml:space="preserve">
     <value>İş Ücreti</value>
   </data>

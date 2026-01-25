@@ -45,6 +45,9 @@
   <data name="Housing Fund (Personal)" xml:space="preserve">
     <value>आवास कोष (व्यक्तिगत)</value>
   </data>
+  <data name="Id" xml:space="preserve">
+    <value>आईडी</value>
+  </data>
   <data name="Job Salary" xml:space="preserve">
     <value>कार्य वेतन</value>
   </data>

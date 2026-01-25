@@ -30,6 +30,9 @@
   <data name="Entity Id" xml:space="preserve">
     <value>Ταυτότητα Οντότητας</value>
   </data>
+  <data name="Show In Dashboard" xml:space="preserve">
+    <value>Εμφάνιση στο Πίνακα Ελέγχου</value>
+  </data>
   <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
     <value>Το {0} δεν μπορεί να υπερβαίνει τα {1} χαρακτήρες.</value>
   </data>

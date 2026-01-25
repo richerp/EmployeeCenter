@@ -30,6 +30,9 @@
   <data name="Entity Id" xml:space="preserve">
     <value>ID Entitas</value>
   </data>
+  <data name="Show In Dashboard" xml:space="preserve">
+    <value>Tampilkan di Dasbor</value>
+  </data>
   <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
     <value>{0} tidak boleh melebihi {1} karakter.</value>
   </data>

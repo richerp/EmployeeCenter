@@ -45,6 +45,9 @@
   <data name="Housing Fund (Personal)" xml:space="preserve">
     <value>Ταμείο Κατοικίας (Προσωπικό)</value>
   </data>
+  <data name="Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
   <data name="Job Salary" xml:space="preserve">
     <value>Μισθός Θέσης</value>
   </data>

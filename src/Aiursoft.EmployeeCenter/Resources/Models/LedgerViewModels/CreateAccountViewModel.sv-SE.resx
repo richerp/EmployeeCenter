@@ -30,6 +30,9 @@
   <data name="Entity Id" xml:space="preserve">
     <value>Entitetssystem</value>
   </data>
+  <data name="Show In Dashboard" xml:space="preserve">
+    <value>Visa på instrumentbräda</value>
+  </data>
   <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
     <value>{0} får inte vara längre än {1} tecken.</value>
   </data>

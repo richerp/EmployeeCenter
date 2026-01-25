@@ -45,6 +45,9 @@
   <data name="Email Address" xml:space="preserve">
     <value>電郵地址</value>
   </data>
+  <data name="Id" xml:space="preserve">
+    <value>身分編號</value>
+  </data>
   <data name="Job Level" xml:space="preserve">
     <value>職級</value>
   </data>
@@ -53,6 +56,9 @@
   </data>
   <data name="Manager" xml:space="preserve">
     <value>經理</value>
+  </data>
+  <data name="Manager Display Name" xml:space="preserve">
+    <value>主管顯示名稱</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>名稱</value>

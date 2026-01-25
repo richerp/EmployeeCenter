@@ -30,6 +30,9 @@
   <data name="Entity Id" xml:space="preserve">
     <value>엔티티 ID</value>
   </data>
+  <data name="Show In Dashboard" xml:space="preserve">
+    <value>대시보드에 표시</value>
+  </data>
   <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
     <value>{0}은 {1}자를 초과할 수 없습니다.</value>
   </data>
