@@ -11,7 +11,8 @@ public class EditViewModel : UiStackLayoutViewModel
         PageTitle = "Edit Payroll";
     }
 
-    [Required]
+    [Required(ErrorMessage = "The {0} is required.")]
+    [Display(Name = "Id")]
     public int Id { get; set; }
 
     [Required(ErrorMessage = "The {0} is required.")]

@@ -84,9 +84,11 @@ public class EditViewModel : UiStackLayoutViewModel
     [Display(Name = "Manager")]
     public string? ManagerId { get; set; }
 
+    [Display(Name = "Manager Display Name")]
     public string? ManagerDisplayName { get; set; }
 
     [Required(ErrorMessage = "The {0} is required.")]
+    [Display(Name = "Id")]
     [FromRoute]
     public required string Id { get; set; }
 

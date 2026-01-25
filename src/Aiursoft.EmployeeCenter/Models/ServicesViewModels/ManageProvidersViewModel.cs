@@ -8,8 +8,8 @@ public class ManageProvidersViewModel : UiStackLayoutViewModel
 {
     public IEnumerable<Provider> Providers { get; set; } = new List<Provider>();
 
-    [Required]
-    [MaxLength(100)]
+    [Required(ErrorMessage = "The {0} is required.")]
+    [MaxLength(100, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     [Display(Name = "New Provider Name")]
     public string NewName { get; set; } = string.Empty;
 }

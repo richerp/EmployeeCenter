@@ -8,12 +8,12 @@ public class ManageDnsProvidersViewModel : UiStackLayoutViewModel
 {
     public List<DnsProvider> DnsProviders { get; set; } = new();
 
-    [Required]
-    [MaxLength(100)]
+    [Required(ErrorMessage = "The {0} is required.")]
+    [MaxLength(100, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     [Display(Name = "DNS Provider Name")]
     public string? NewName { get; set; }
 
-    [MaxLength(200)]
+    [MaxLength(200, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     [Display(Name = "Description")]
     public string? NewDescription { get; set; }
 }

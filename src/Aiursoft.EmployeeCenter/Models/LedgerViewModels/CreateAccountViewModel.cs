@@ -23,5 +23,6 @@ public class CreateAccountViewModel : UiStackLayoutViewModel
     [Display(Name = "Currency")]
     public string Currency { get; set; } = "CNY";
 
+    [Display(Name = "Show In Dashboard")]
     public bool ShowInDashboard { get; set; } = true;
 }

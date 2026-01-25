@@ -6,8 +6,8 @@ namespace Aiursoft.EmployeeCenter.Models.ServicesViewModels;
 
 public class CreateServiceViewModel : UiStackLayoutViewModel
 {
-    [Required]
-    [MaxLength(255)]
+    [Required(ErrorMessage = "The {0} is required.")]
+    [MaxLength(255, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     [Display(Name = "Domain")]
     public string Domain { get; set; } = string.Empty;
 
@@ -17,7 +17,7 @@ public class CreateServiceViewModel : UiStackLayoutViewModel
     [Display(Name = "Cross-Entity Link")]
     public int? CrossEntityLinkId { get; set; }
 
-    [MaxLength(100)]
+    [MaxLength(100, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     [Display(Name = "Protocols")]
     public string? Protocols { get; set; }
 
@@ -45,7 +45,7 @@ public class CreateServiceViewModel : UiStackLayoutViewModel
     [Display(Name = "Is Self Developed")]
     public bool IsSelfDeveloped { get; set; }
 
-    [MaxLength(1000)]
+    [MaxLength(1000, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     [Display(Name = "Remark")]
     public string? Remark { get; set; }
 
