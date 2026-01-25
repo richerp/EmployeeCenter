@@ -45,6 +45,9 @@
   <data name="Email Address" xml:space="preserve">
     <value>Adresă de email</value>
   </data>
+  <data name="Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
   <data name="Job Level" xml:space="preserve">
     <value>Nivelul postului</value>
   </data>
@@ -53,6 +56,9 @@
   </data>
   <data name="Manager" xml:space="preserve">
     <value>Manager</value>
+  </data>
+  <data name="Manager Display Name" xml:space="preserve">
+    <value>Nume afișat manager</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Nume</value>

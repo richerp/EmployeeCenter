@@ -66,6 +66,12 @@
   <data name="Status" xml:space="preserve">
     <value>Stare</value>
   </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0} nu poate depăși {1} caractere.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0} este obligatoriu.</value>
+  </data>
   <data name="Via FRPS" xml:space="preserve">
     <value>Prin FRPS</value>
   </data>

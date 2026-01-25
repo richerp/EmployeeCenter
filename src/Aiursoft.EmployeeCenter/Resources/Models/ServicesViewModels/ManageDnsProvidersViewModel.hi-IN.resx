@@ -24,5 +24,11 @@
   <data name="DNS Provider Name" xml:space="preserve">
     <value>DNS प्रदाता नाम</value>
   </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0} के वर्णों की संख्या {1} से अधिक नहीं हो सकती।</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0} आवश्यक है।</value>
+  </data>
 
 </root>

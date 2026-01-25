@@ -66,6 +66,12 @@
   <data name="Status" xml:space="preserve">
     <value>状態</value>
   </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0} は {1} 文字を超えることはできません。</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0} は必須です。</value>
+  </data>
   <data name="Via FRPS" xml:space="preserve">
     <value>FRPS経由</value>
   </data>

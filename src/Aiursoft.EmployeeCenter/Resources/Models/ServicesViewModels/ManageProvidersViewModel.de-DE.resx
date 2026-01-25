@@ -21,5 +21,11 @@
       <data name="New Provider Name" xml:space="preserve">
     <value>Neuer Anbietername</value>
   </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>Der {0} darf {1} Zeichen nicht überschreiten.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>Das {0} ist erforderlich.</value>
+  </data>
 
 </root>

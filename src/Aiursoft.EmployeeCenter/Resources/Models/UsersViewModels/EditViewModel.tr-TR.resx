@@ -45,6 +45,9 @@
   <data name="Email Address" xml:space="preserve">
     <value>E-posta Adresi</value>
   </data>
+  <data name="Id" xml:space="preserve">
+    <value>Kimlik</value>
+  </data>
   <data name="Job Level" xml:space="preserve">
     <value>İş Seviyesi</value>
   </data>
@@ -53,6 +56,9 @@
   </data>
   <data name="Manager" xml:space="preserve">
     <value>Yönetici</value>
+  </data>
+  <data name="Manager Display Name" xml:space="preserve">
+    <value>Yönetici Görüntü Adı</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Ad</value>

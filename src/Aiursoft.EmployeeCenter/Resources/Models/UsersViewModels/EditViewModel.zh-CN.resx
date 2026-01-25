@@ -57,6 +57,9 @@
   <data name="Manager" xml:space="preserve">
     <value>经理</value>
   </data>
+  <data name="Manager Display Name" xml:space="preserve">
+    <value>上级显示名称</value>
+  </data>
   <data name="Name" xml:space="preserve">
     <value>姓名</value>
   </data>

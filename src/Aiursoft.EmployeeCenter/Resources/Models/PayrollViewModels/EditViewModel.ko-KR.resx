@@ -45,6 +45,9 @@
   <data name="Housing Fund (Personal)" xml:space="preserve">
     <value>주택기금 (개인)</value>
   </data>
+  <data name="Id" xml:space="preserve">
+    <value>아이디</value>
+  </data>
   <data name="Job Salary" xml:space="preserve">
     <value>직무 수당</value>
   </data>
