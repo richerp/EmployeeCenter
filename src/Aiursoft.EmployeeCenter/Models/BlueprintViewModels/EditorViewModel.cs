@@ -9,20 +9,26 @@ public class EditorViewModel : UiStackLayoutViewModel
     {
         PageTitle = "Edit Blueprint";
     }
+    [Display(Name = "Document Id")]
     public int? DocumentId { get; set; }
 
-    [Required]
-    [MaxLength(200)]
+    [Required(ErrorMessage = "The {0} is required.")]
+    [MaxLength(200, ErrorMessage = "The {0} cannot exceed {1} characters.")]
+    [Display(Name = "Title")]
     public string Title { get; set; } = string.Empty;
 
-    [Required]
+    [Required(ErrorMessage = "The {0} is required.")]
+    [Display(Name = "Content (Markdown)")]
     public string InputMarkdown { get; set; } = string.Empty;
 
+    [Display(Name = "Output Html")]
     public string OutputHtml { get; set; } = string.Empty;
 
+    [Display(Name = "Saved Successfully")]
     public bool SavedSuccessfully { get; set; }
 
     public bool IsEditing => DocumentId.HasValue;
 
+    [Display(Name = "Public Link")]
     public string? PublicLink { get; set; }
 }
