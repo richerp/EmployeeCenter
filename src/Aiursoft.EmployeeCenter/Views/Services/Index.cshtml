@@ -39,10 +39,11 @@
     else
     {
         <div class="table-responsive">
-            <table class="table table-hover mb-0">
+            <table class="table table-hover mb-0" id="servicesTable">
                 <thead>
                     <tr>
                         <th>@Localizer["Domain"]</th>
+                        <th>@Localizer["Availability"]</th>
                         <th>@Localizer["Owner"]</th>
                         <th>@Localizer["Link"]</th>
                         <th>@Localizer["Protocols"]</th>
@@ -50,6 +51,10 @@
                         <th>@Localizer["Server"]</th>
                         <th>@Localizer["DNS"]</th>
                         <th>@Localizer["Purpose"]</th>
+                        <th>@Localizer["Self"]</th>
+                        <th>@Localizer["FRP"]</th>
+                        <th>@Localizer["Authentik"]</th>
+                        <th>@Localizer["Cloudflare"]</th>
                         <th>@Localizer["Status"]</th>
                         <th class="text-end">@Localizer["Actions"]</th>
                     </tr>
@@ -60,6 +65,17 @@
                         <tr>
                             <td>
                                 <code>@s.Domain</code>
+                            </td>
+                            <td>
+                                @if (s.Protocols?.Trim().StartsWith("HTTP", StringComparison.OrdinalIgnoreCase) == true)
+                                {
+                                    var protocol = s.Protocols.Contains("HTTPS", StringComparison.OrdinalIgnoreCase) ? "https" : "http";
+                                    var url = $"{protocol}://{s.Domain}";
+                                    var encodedUrl = Uri.EscapeDataString(url);
+                                    <a href="@url" target="_blank">
+                                        <img src="https://img.shields.io/website?url=@encodedUrl" alt="Status" />
+                                    </a>
+                                }
                             </td>
                             <td>
                                 @(s.Owner?.CompanyName ?? "-")
@@ -81,6 +97,46 @@
                             </td>
                             <td>
                                 @Localizer[s.Purpose.ToString()]
+                            </td>
+                            <td>
+                                @if (s.IsSelfDeveloped)
+                                {
+                                    <i class="text-success align-middle" data-lucide="check-circle"></i>
+                                }
+                                else
+                                {
+                                    <i class="text-warning align-middle" data-lucide="x-circle"></i>
+                                }
+                            </td>
+                            <td>
+                                @if (s.IsViaFrps)
+                                {
+                                    <i class="text-success align-middle" data-lucide="check-circle"></i>
+                                }
+                                else
+                                {
+                                    <i class="text-warning align-middle" data-lucide="x-circle"></i>
+                                }
+                            </td>
+                            <td>
+                                @if (s.AuthentikIntegrated)
+                                {
+                                    <i class="text-success align-middle" data-lucide="check-circle"></i>
+                                }
+                                else
+                                {
+                                    <i class="text-warning align-middle" data-lucide="x-circle"></i>
+                                }
+                            </td>
+                            <td>
+                                @if (s.IsCloudflareProxied)
+                                {
+                                    <i class="text-success align-middle" data-lucide="check-circle"></i>
+                                }
+                                else
+                                {
+                                    <i class="text-warning align-middle" data-lucide="x-circle"></i>
+                                }
                             </td>
                             <td>
                                 @switch (s.Status)
@@ -125,3 +181,20 @@
         </div>
     }
 </div>
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            $('#servicesTable').DataTable({
+                "destroy": true,
+                "responsive": true,
+                "paging": true,
+                "pageLength": 25,
+                "searching": true,
+                "info": false,
+                "order": [[0, "asc"]]
+            });
+        });
+    </script>
+}
