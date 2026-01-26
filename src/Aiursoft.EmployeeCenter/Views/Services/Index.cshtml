@@ -45,14 +45,12 @@
                         <th>@Localizer["Domain"]</th>
                         <th>@Localizer["Availability"]</th>
                         <th>@Localizer["Owner"]</th>
-                        <th>@Localizer["Link"]</th>
                         <th>@Localizer["Protocols"]</th>
                         <th>@Localizer["Location"]</th>
                         <th>@Localizer["Server"]</th>
                         <th>@Localizer["DNS"]</th>
                         <th>@Localizer["Purpose"]</th>
                         <th>@Localizer["Self"]</th>
-                        <th>@Localizer["FRP"]</th>
                         <th>@Localizer["Authentik"]</th>
                         <th>@Localizer["Cloudflare"]</th>
                         <th>@Localizer["Status"]</th>
@@ -81,9 +79,6 @@
                                 @(s.Owner?.CompanyName ?? "-")
                             </td>
                             <td>
-                                @(s.CrossEntityLink?.Domain ?? "-")
-                            </td>
-                            <td>
                                 @(s.Protocols ?? "-")
                             </td>
                             <td>
@@ -98,7 +93,7 @@
                             <td>
                                 @Localizer[s.Purpose.ToString()]
                             </td>
-                            <td>
+                            <td data-order="@(s.IsSelfDeveloped ? 1 : 0)">
                                 @if (s.IsSelfDeveloped)
                                 {
                                     <i class="text-success align-middle" data-lucide="check-circle"></i>
@@ -108,17 +103,7 @@
                                     <i class="text-warning align-middle" data-lucide="x-circle"></i>
                                 }
                             </td>
-                            <td>
-                                @if (s.IsViaFrps)
-                                {
-                                    <i class="text-success align-middle" data-lucide="check-circle"></i>
-                                }
-                                else
-                                {
-                                    <i class="text-warning align-middle" data-lucide="x-circle"></i>
-                                }
-                            </td>
-                            <td>
+                            <td data-order="@(s.AuthentikIntegrated ? 1 : 0)">
                                 @if (s.AuthentikIntegrated)
                                 {
                                     <i class="text-success align-middle" data-lucide="check-circle"></i>
@@ -128,7 +113,7 @@
                                     <i class="text-warning align-middle" data-lucide="x-circle"></i>
                                 }
                             </td>
-                            <td>
+                            <td data-order="@(s.IsCloudflareProxied ? 1 : 0)">
                                 @if (s.IsCloudflareProxied)
                                 {
                                     <i class="text-success align-middle" data-lucide="check-circle"></i>
@@ -138,7 +123,7 @@
                                     <i class="text-warning align-middle" data-lucide="x-circle"></i>
                                 }
                             </td>
-                            <td>
+                            <td data-order="@((int)s.Status)">
                                 @switch (s.Status)
                                 {
                                     case ServiceStatus.Running:
