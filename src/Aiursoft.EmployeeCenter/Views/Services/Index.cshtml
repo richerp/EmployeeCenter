@@ -85,7 +85,17 @@
                                 @(s.Server?.Location?.Name ?? "-")
                             </td>
                             <td>
-                                @(s.Server?.Hostname ?? s.Server?.ServerIp ?? "-")
+                                @if (!string.IsNullOrWhiteSpace(s.Server?.DetailLink))
+                                {
+                                    <a href="@s.Server.DetailLink" target="_blank" class="btn btn-sm btn-light border shadow-sm">
+                                         <i class="align-middle text-muted" data-lucide="server"></i> 
+                                         @(s.Server?.Hostname ?? s.Server?.ServerIp ?? "-")
+                                    </a>
+                                }
+                                else
+                                {
+                                    <span>@(s.Server?.Hostname ?? s.Server?.ServerIp ?? "-")</span>
+                                }
                             </td>
                             <td>
                                 @(s.DnsProvider?.Name ?? "-")
@@ -141,12 +151,7 @@
                                 }
                             </td>
                             <td class="text-end">
-                                @if (!string.IsNullOrWhiteSpace(s.Server?.DetailLink))
-                                {
-                                    <a href="@s.Server.DetailLink" target="_blank" class="btn btn-sm btn-outline-info me-1">
-                                        <i class="align-middle" data-lucide="external-link"></i> @Localizer["Server Details"]
-                                    </a>
-                                }
+
                                 @if (User.HasClaim(AppPermissions.Type, AppPermissionNames.CanManageServices))
                                 {
                                     <a asp-action="Edit" asp-route-id="@s.Id" class="btn btn-sm btn-outline-primary">
