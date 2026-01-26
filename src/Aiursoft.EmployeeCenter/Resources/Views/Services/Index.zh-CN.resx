@@ -27,8 +27,17 @@
   <data name="Are you sure you want to delete this service?" xml:space="preserve">
     <value>确定要删除此服务吗？</value>
   </data>
+  <data name="Authentik" xml:space="preserve">
+    <value>Authentik</value>
+  </data>
+  <data name="Availability" xml:space="preserve">
+    <value>可用性</value>
+  </data>
   <data name="Both" xml:space="preserve">
     <value>对国内和全球服务</value>
+  </data>
+  <data name="Cloudflare" xml:space="preserve">
+    <value>Cloudflare</value>
   </data>
   <data name="Create New Service" xml:space="preserve">
     <value>创建新服务</value>
@@ -89,6 +98,9 @@
   </data>
   <data name="Running" xml:space="preserve">
     <value>运营中</value>
+  </data>
+  <data name="Self" xml:space="preserve">
+    <value>自研</value>
   </data>
   <data name="Server" xml:space="preserve">
     <value>服务器</value>
