@@ -46,22 +46,16 @@
     <value>健康指标</value>
   </data>
   <data name="Invoice" xml:space="preserve">
-    <value>下载</value>
+    <value>发票</value>
   </data>
-  <data name="Ledger Dashboard" xml:space="preserve">
-    <value>账本仪表板</value>
+  <data name="Voucher" xml:space="preserve">
+    <value>凭据</value>
   </data>
-  <data name="Manage Accounts" xml:space="preserve">
-    <value>管理账户</value>
+  <data name="No Material" xml:space="preserve">
+    <value>无材料</value>
   </data>
-  <data name="Monthly Burn Rate" xml:space="preserve">
-    <value>月度烧钱率</value>
-  </data>
-  <data name="Months" xml:space="preserve">
-    <value>月</value>
-  </data>
-  <data name="New Transaction" xml:space="preserve">
-    <value>新建交易</value>
+  <data name="View Material" xml:space="preserve">
+    <value>查看材料</value>
   </data>
   <data name="No Invoice" xml:space="preserve">
     <value>无发票</value>
@@ -71,6 +65,9 @@
   </data>
   <data name="Runway" xml:space="preserve">
     <value>运行时间</value>
+  </data>
+  <data name="Supporting Materials" xml:space="preserve">
+    <value>支持材料</value>
   </data>
   <data name="To" xml:space="preserve">
     <value>到</value>

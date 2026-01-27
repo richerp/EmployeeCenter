@@ -45,14 +45,19 @@
   <data name="New Transaction" xml:space="preserve">
     <value>New Transaction</value>
   </data>
+  <data name="Supporting Materials" xml:space="preserve">
+    <value>Supporting Materials</value>
+  </data>
   <data name="To" xml:space="preserve">
     <value>To</value>
   </data>
   <data name="Transactions" xml:space="preserve">
     <value>Transactions</value>
   </data>
-  <data name="View" xml:space="preserve">
-    <value>View</value>
-  </data>
-
-</root>
+    <data name="View" xml:space="preserve">
+      <value>View</value>
+    </data>
+    <data name="Voucher" xml:space="preserve">
+      <value>Voucher</value>
+    </data>
+  </root>
