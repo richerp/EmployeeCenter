@@ -159,7 +159,7 @@
                                     <th>@Localizer["From"]</th>
                                     <th>@Localizer["To"]</th>
                                     <th>@Localizer["Amount"]</th>
-                                    <th>@Localizer["Invoice"]</th>
+                                    <th>@Localizer["Supporting Materials"]</th>
                                     <th>@Localizer["Fix Error"]</th>
                                 </tr>
                             </thead>
@@ -184,13 +184,26 @@
                                         <td>
                                             @if (!string.IsNullOrEmpty(t.InvoicePath))
                                             {
-                                                <a href="@StorageService.RelativePathToInternetUrl(t.InvoicePath, true)" target="_blank" title="@Localizer["View Invoice"]">
-                                                    <i class="fas fa-paperclip"></i>
+                                                <a href="@StorageService.RelativePathToInternetUrl(t.InvoicePath, true)" target="_blank" title="@Localizer["Invoice"]">
+                                                    <i class="fas fa-file-invoice"></i>
                                                 </a>
                                             }
-                                            else
+                                            @if (!string.IsNullOrEmpty(t.MT103Path))
                                             {
-                                                <i class="fas fa-paperclip text-gray-300" title="@Localizer["No Invoice"]"></i>
+                                                <a href="@StorageService.RelativePathToInternetUrl(t.MT103Path, true)" target="_blank" title="MT103">
+                                                    <i class="fas fa-file-contract"></i>
+                                                </a>
+                                            }
+                                            @if (!string.IsNullOrEmpty(t.PaymentVoucherPath))
+                                            {
+                                                <a href="@StorageService.RelativePathToInternetUrl(t.PaymentVoucherPath, true)" target="_blank" title="@Localizer["Voucher"]">
+                                                    <i class="fas fa-receipt"></i>
+                                                </a>
+                                            }
+
+                                            @if (string.IsNullOrEmpty(t.InvoicePath) && string.IsNullOrEmpty(t.MT103Path) && string.IsNullOrEmpty(t.PaymentVoucherPath))
+                                            {
+                                                <i class="fas fa-paperclip text-gray-300" title="@Localizer["No Material"]"></i>
                                             }
                                         </td>
                                         <td>

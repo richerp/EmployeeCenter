@@ -31,7 +31,7 @@
                             <th>@Localizer["From"]</th>
                             <th>@Localizer["To"]</th>
                             <th>@Localizer["Amount"]</th>
-                            <th>@Localizer["Invoice"]</th>
+                            <th>@Localizer["Supporting Materials"]</th>
                             <th>@Localizer["Fix Error"]</th>
                         </tr>
                     </thead>
@@ -56,8 +56,20 @@
                                 <td>
                                     @if (!string.IsNullOrEmpty(t.InvoicePath))
                                     {
-                                        <a href="@StorageService.RelativePathToInternetUrl(t.InvoicePath, true)" target="_blank" class="btn btn-sm btn-info">
-                                            <i class="fas fa-file-pdf"></i> @Localizer["View"]
+                                        <a href="@StorageService.RelativePathToInternetUrl(t.InvoicePath, true)" target="_blank" class="btn btn-sm btn-info mb-1">
+                                            <i class="fas fa-file-invoice"></i> @Localizer["Invoice"]
+                                        </a>
+                                    }
+                                    @if (!string.IsNullOrEmpty(t.MT103Path))
+                                    {
+                                        <a href="@StorageService.RelativePathToInternetUrl(t.MT103Path, true)" target="_blank" class="btn btn-sm btn-primary mb-1">
+                                            <i class="fas fa-file-contract"></i> MT103
+                                        </a>
+                                    }
+                                    @if (!string.IsNullOrEmpty(t.PaymentVoucherPath))
+                                    {
+                                        <a href="@StorageService.RelativePathToInternetUrl(t.PaymentVoucherPath, true)" target="_blank" class="btn btn-sm btn-success mb-1">
+                                            <i class="fas fa-receipt"></i> @Localizer["Voucher"]
                                         </a>
                                     }
                                 </td>

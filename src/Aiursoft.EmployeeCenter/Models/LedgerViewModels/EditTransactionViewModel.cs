@@ -37,6 +37,12 @@ public class EditTransactionViewModel : UiStackLayoutViewModel
     [Display(Name = "Invoice Path")]
     public string? InvoicePath { get; set; }
 
+    [Display(Name = "MT103 Path")]
+    public string? MT103Path { get; set; }
+
+    [Display(Name = "Payment Voucher Path")]
+    public string? PaymentVoucherPath { get; set; }
+
     [Required(ErrorMessage = "The {0} is required.")]
     [Display(Name = "Transaction Time")]
     public DateTime TransactionTime { get; set; } = DateTime.UtcNow;

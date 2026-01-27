@@ -37,13 +37,19 @@
     <value>来源</value>
   </data>
   <data name="Invoice" xml:space="preserve">
-    <value>下载</value>
+    <value>发票</value>
+  </data>
+  <data name="Voucher" xml:space="preserve">
+    <value>凭据</value>
   </data>
   <data name="Ledger" xml:space="preserve">
     <value>账本</value>
   </data>
   <data name="New Transaction" xml:space="preserve">
     <value>新建交易</value>
+  </data>
+  <data name="Supporting Materials" xml:space="preserve">
+    <value>支持材料</value>
   </data>
   <data name="To" xml:space="preserve">
     <value>到</value>

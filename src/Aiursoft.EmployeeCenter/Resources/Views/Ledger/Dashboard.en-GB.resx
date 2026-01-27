@@ -66,11 +66,23 @@
   <data name="No Invoice" xml:space="preserve">
     <value>No Invoice</value>
   </data>
+  <data name="No Material" xml:space="preserve">
+    <value>No Material</value>
+  </data>
+  <data name="View Material" xml:space="preserve">
+    <value>View Material</value>
+  </data>
+  <data name="Voucher" xml:space="preserve">
+    <value>Voucher</value>
+  </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Recent Transactions</value>
   </data>
   <data name="Runway" xml:space="preserve">
     <value>Runway</value>
+  </data>
+  <data name="Supporting Materials" xml:space="preserve">
+    <value>Supporting Materials</value>
   </data>
   <data name="To" xml:space="preserve">
     <value>To</value>

@@ -172,6 +172,78 @@ public class LedgerTests : TestBase
     }
 
     [TestMethod]
+    public async Task TestTransactionMaterials()
+    {
+        // 1. Setup - Create an entity and accounts
+        int entityId;
+        int bankId, capitalId;
+        using (var scope = Server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var entity = new CompanyEntity
+            {
+                CompanyName = "Materials Test Entity",
+                EntityCode = "MTE01",
+                BaseCurrency = "USD"
+            };
+            db.CompanyEntities.Add(entity);
+            await db.SaveChangesAsync();
+            entityId = entity.Id;
+
+            var bank = new FinanceAccount { AccountName = "Bank", AccountType = FinanceAccountType.Asset, CompanyEntityId = entityId, Currency = "USD", ShowInDashboard = true };
+            var capital = new FinanceAccount { AccountName = "Capital", AccountType = FinanceAccountType.Equity, CompanyEntityId = entityId, Currency = "USD", ShowInDashboard = true };
+            db.FinanceAccounts.AddRange(bank, capital);
+            await db.SaveChangesAsync();
+            bankId = bank.Id;
+            capitalId = capital.Id;
+        }
+
+        // 2. Login
+        await LoginAsAdmin();
+
+        // 3. Create Transaction with Materials
+        var createTransactionResponse = await PostForm("/Ledger/CreateTransaction", new Dictionary<string, string>
+        {
+            { "EntityId", entityId.ToString() },
+            { "Description", "Transaction with materials" },
+            { "SourceAccountId", capitalId.ToString() },
+            { "DestinationAccountId", bankId.ToString() },
+            { "Amount", "100" },
+            { "ExchangeRate", "1" },
+            { "InvoicePath", "vault/invoices/test.pdf" },
+            { "MT103Path", "vault/mt103/test.pdf" },
+            { "PaymentVoucherPath", "vault/vouchers/test.pdf" },
+            { "TransactionTime", DateTime.UtcNow.ToString("O") }
+        });
+        AssertRedirect(createTransactionResponse, "/Ledger/Dashboard/" + entityId);
+
+        // 4. Verify in DB
+        using (var scope = Server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var transaction = await db.Transactions.FirstOrDefaultAsync(t => t.Description == "Transaction with materials");
+            Assert.IsNotNull(transaction);
+            Assert.AreEqual("vault/invoices/test.pdf", transaction.InvoicePath);
+            Assert.AreEqual("vault/mt103/test.pdf", transaction.MT103Path);
+            Assert.AreEqual("vault/vouchers/test.pdf", transaction.PaymentVoucherPath);
+        }
+
+        // 5. Verify in Dashboard View
+        var dashboardResponse = await Http.GetAsync($"/Ledger/Dashboard/{entityId}");
+        var dashboardContent = await dashboardResponse.Content.ReadAsStringAsync();
+        Assert.Contains("fa-file-invoice", dashboardContent);
+        Assert.Contains("fa-file-contract", dashboardContent);
+        Assert.Contains("fa-receipt", dashboardContent);
+
+        // 6. Verify in Transactions View
+        var transactionsResponse = await Http.GetAsync($"/Ledger/Transactions/{entityId}");
+        var transactionsContent = await transactionsResponse.Content.ReadAsStringAsync();
+        Assert.Contains("fa-file-invoice", transactionsContent);
+        Assert.Contains("fa-file-contract", transactionsContent);
+        Assert.Contains("fa-receipt", transactionsContent);
+    }
+
+    [TestMethod]
     public async Task TestAccountEditAndDashboardFiltering()
     {
         // 1. Setup - Create an entity and an account

@@ -35,6 +35,12 @@ public class Transaction
     [MaxLength(500)]
     public string? InvoicePath { get; set; }
 
+    [MaxLength(500)]
+    public string? MT103Path { get; set; }
+
+    [MaxLength(500)]
+    public string? PaymentVoucherPath { get; set; }
+
     public DateTime TransactionTime { get; set; } = DateTime.UtcNow;
 
     public DateTime CreateTime { get; init; } = DateTime.UtcNow;
