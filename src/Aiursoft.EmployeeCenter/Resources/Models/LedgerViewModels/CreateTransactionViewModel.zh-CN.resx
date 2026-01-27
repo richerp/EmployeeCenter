@@ -36,6 +36,12 @@
   <data name="Invoice Path" xml:space="preserve">
     <value>发票路径</value>
   </data>
+  <data name="MT103 Path" xml:space="preserve">
+    <value>MT103 路径</value>
+  </data>
+  <data name="Payment Voucher Path" xml:space="preserve">
+    <value>支付凭据路径</value>
+  </data>
   <data name="Source Account" xml:space="preserve">
     <value>来源账户</value>
   </data>

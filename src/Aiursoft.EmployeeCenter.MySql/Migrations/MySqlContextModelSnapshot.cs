@@ -1431,6 +1431,14 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("varchar(500)");
 
+                    b.Property<string>("MT103Path")
+                        .HasMaxLength(500)
+                        .HasColumnType("varchar(500)");
+
+                    b.Property<string>("PaymentVoucherPath")
+                        .HasMaxLength(500)
+                        .HasColumnType("varchar(500)");
+
                     b.Property<int>("SourceAccountId")
                         .HasColumnType("int");
 

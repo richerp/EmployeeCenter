@@ -329,6 +329,8 @@ public class LedgerController(
             Amount = model.Amount,
             ExchangeRate = model.ExchangeRate,
             InvoicePath = model.InvoicePath,
+            MT103Path = model.MT103Path,
+            PaymentVoucherPath = model.PaymentVoucherPath,
             TransactionTime = model.TransactionTime
         };
 
@@ -362,6 +364,8 @@ public class LedgerController(
             Amount = transaction.Amount,
             ExchangeRate = transaction.ExchangeRate,
             InvoicePath = transaction.InvoicePath,
+            MT103Path = transaction.MT103Path,
+            PaymentVoucherPath = transaction.PaymentVoucherPath,
             TransactionTime = transaction.TransactionTime
         };
 
@@ -392,6 +396,8 @@ public class LedgerController(
         transaction.Amount = model.Amount;
         transaction.ExchangeRate = model.ExchangeRate;
         transaction.InvoicePath = model.InvoicePath;
+        transaction.MT103Path = model.MT103Path;
+        transaction.PaymentVoucherPath = model.PaymentVoucherPath;
         transaction.TransactionTime = model.TransactionTime;
 
         await dbContext.SaveChangesAsync();

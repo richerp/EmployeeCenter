@@ -81,6 +81,23 @@
                     <span asp-validation-for="InvoicePath" class="text-danger"></span>
                 </div>
 
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="MT103Path">@Localizer["MT103 Attachment"] (@Localizer["Optional"])</label>
+                            <vc:file-upload asp-for="MT103Path" subfolder="ledger-mt103" is-vault="true" allowed-extensions="jpg png pdf" />
+                            <span asp-validation-for="MT103Path" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="PaymentVoucherPath">@Localizer["Payment Voucher Attachment"] (@Localizer["Optional"])</label>
+                            <vc:file-upload asp-for="PaymentVoucherPath" subfolder="ledger-vouchers" is-vault="true" allowed-extensions="jpg png pdf" />
+                            <span asp-validation-for="PaymentVoucherPath" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
                 <button type="submit" class="btn btn-primary">@Localizer["Record Transaction"]</button>
                 <a asp-action="Dashboard" asp-route-id="@Model.EntityId" class="btn btn-secondary">@Localizer["Cancel"]</a>
             </form>

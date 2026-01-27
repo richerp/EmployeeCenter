@@ -39,6 +39,15 @@
   <data name="Invoice Attachment" xml:space="preserve">
     <value>发票附件</value>
   </data>
+  <data name="MT103 Attachment" xml:space="preserve">
+    <value>MT103 材料</value>
+  </data>
+  <data name="Payment Voucher Attachment" xml:space="preserve">
+    <value>支付凭据材料</value>
+  </data>
+  <data name="Optional" xml:space="preserve">
+    <value>可选</value>
+  </data>
   <data name="New Transaction" xml:space="preserve">
     <value>新建交易</value>
   </data>
