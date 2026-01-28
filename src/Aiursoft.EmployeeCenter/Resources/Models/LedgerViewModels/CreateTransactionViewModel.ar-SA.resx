@@ -36,6 +36,12 @@
   <data name="Invoice Path" xml:space="preserve">
     <value>مسار الفاتورة</value>
   </data>
+  <data name="MT103 Path" xml:space="preserve">
+    <value>مسار MT103</value>
+  </data>
+  <data name="Payment Voucher Path" xml:space="preserve">
+    <value>مسار إيصال الدفع</value>
+  </data>
   <data name="Source Account" xml:space="preserve">
     <value>الحساب المصدر</value>
   </data>

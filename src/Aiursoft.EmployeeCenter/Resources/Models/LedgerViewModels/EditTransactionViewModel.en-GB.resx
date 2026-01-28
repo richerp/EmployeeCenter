@@ -36,6 +36,12 @@
   <data name="Invoice Path" xml:space="preserve">
     <value>Invoice Path</value>
   </data>
+  <data name="MT103 Path" xml:space="preserve">
+    <value>MT103 Path</value>
+  </data>
+  <data name="Payment Voucher Path" xml:space="preserve">
+    <value>Payment Voucher Path</value>
+  </data>
   <data name="Source Account" xml:space="preserve">
     <value>Source Account</value>
   </data>

@@ -39,8 +39,17 @@
   <data name="Invoice Attachment" xml:space="preserve">
     <value>เอกสารแนบใบแจ้งหนี้</value>
   </data>
+  <data name="MT103 Attachment" xml:space="preserve">
+    <value>ไฟล์แนบ MT103</value>
+  </data>
   <data name="New Transaction" xml:space="preserve">
     <value>รายการธุรกรรมใหม่</value>
+  </data>
+  <data name="Optional" xml:space="preserve">
+    <value>ไม่จำเป็น</value>
+  </data>
+  <data name="Payment Voucher Attachment" xml:space="preserve">
+    <value>ไฟล์แนบใบสำคัญการชำระเงิน</value>
   </data>
   <data name="Record Transaction" xml:space="preserve">
     <value>บันทึกธุรกรรม</value>

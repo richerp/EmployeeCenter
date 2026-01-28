@@ -45,6 +45,9 @@
   <data name="New Transaction" xml:space="preserve">
     <value>Νέα Συναλλαγή</value>
   </data>
+  <data name="Supporting Materials" xml:space="preserve">
+    <value>Υποστηρικτικά Έγγραφα</value>
+  </data>
   <data name="To" xml:space="preserve">
     <value>Προς</value>
   </data>
@@ -53,6 +56,9 @@
   </data>
   <data name="View" xml:space="preserve">
     <value>Προβολή</value>
+  </data>
+  <data name="Voucher" xml:space="preserve">
+    <value>Απόδειξη</value>
   </data>
 
 </root>

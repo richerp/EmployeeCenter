@@ -36,6 +36,12 @@
   <data name="Invoice Path" xml:space="preserve">
     <value>Fatura Yolu</value>
   </data>
+  <data name="MT103 Path" xml:space="preserve">
+    <value>MT103 Yolu</value>
+  </data>
+  <data name="Payment Voucher Path" xml:space="preserve">
+    <value>Ödeme Fişi Yolu</value>
+  </data>
   <data name="Source Account" xml:space="preserve">
     <value>Kaynak Hesap</value>
   </data>

@@ -60,11 +60,17 @@
   <data name="No Invoice" xml:space="preserve">
     <value>Ei laskua</value>
   </data>
+  <data name="No Material" xml:space="preserve">
+    <value>Ei materiaalia</value>
+  </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Viimeisimmät siirrot</value>
   </data>
   <data name="Runway" xml:space="preserve">
     <value>Lentokenttä</value>
+  </data>
+  <data name="Supporting Materials" xml:space="preserve">
+    <value>Tukiaineistot</value>
   </data>
   <data name="To" xml:space="preserve">
     <value>To</value>
@@ -74,6 +80,9 @@
   </data>
   <data name="View Invoice" xml:space="preserve">
     <value>Näytä lasku</value>
+  </data>
+  <data name="Voucher" xml:space="preserve">
+    <value>Lasku</value>
   </data>
 
 </root>

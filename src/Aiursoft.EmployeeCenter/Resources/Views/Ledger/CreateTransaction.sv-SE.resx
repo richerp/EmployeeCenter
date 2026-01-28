@@ -39,8 +39,17 @@
   <data name="Invoice Attachment" xml:space="preserve">
     <value>Fakturabilaga</value>
   </data>
+  <data name="MT103 Attachment" xml:space="preserve">
+    <value>MT103-bilaga</value>
+  </data>
   <data name="New Transaction" xml:space="preserve">
     <value>Ny transaktion</value>
+  </data>
+  <data name="Optional" xml:space="preserve">
+    <value>Valfritt</value>
+  </data>
+  <data name="Payment Voucher Attachment" xml:space="preserve">
+    <value>Betalningsvouchervägning</value>
   </data>
   <data name="Record Transaction" xml:space="preserve">
     <value>Registrera transaktion</value>

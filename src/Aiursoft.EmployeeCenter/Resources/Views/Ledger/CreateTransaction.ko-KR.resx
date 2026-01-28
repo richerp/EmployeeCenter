@@ -39,8 +39,17 @@
   <data name="Invoice Attachment" xml:space="preserve">
     <value>청구서 첨부</value>
   </data>
+  <data name="MT103 Attachment" xml:space="preserve">
+    <value>MT103 첨부 파일</value>
+  </data>
   <data name="New Transaction" xml:space="preserve">
     <value>새 거래</value>
+  </data>
+  <data name="Optional" xml:space="preserve">
+    <value>선택 사항</value>
+  </data>
+  <data name="Payment Voucher Attachment" xml:space="preserve">
+    <value>지급 증빙 첨부</value>
   </data>
   <data name="Record Transaction" xml:space="preserve">
     <value>거래 기록</value>

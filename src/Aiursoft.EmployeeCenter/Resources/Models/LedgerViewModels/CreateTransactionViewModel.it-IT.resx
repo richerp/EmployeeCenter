@@ -36,6 +36,12 @@
   <data name="Invoice Path" xml:space="preserve">
     <value>Percorso fattura</value>
   </data>
+  <data name="MT103 Path" xml:space="preserve">
+    <value>Percorso MT103</value>
+  </data>
+  <data name="Payment Voucher Path" xml:space="preserve">
+    <value>Percorso buono di pagamento</value>
+  </data>
   <data name="Source Account" xml:space="preserve">
     <value>Conto di origine</value>
   </data>

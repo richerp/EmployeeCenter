@@ -51,6 +51,15 @@
   <data name="Invoice Attachment" xml:space="preserve">
     <value>請求書添付ファイル</value>
   </data>
+  <data name="MT103 Attachment" xml:space="preserve">
+    <value>MT103添付ファイル</value>
+  </data>
+  <data name="Optional" xml:space="preserve">
+    <value>オプション</value>
+  </data>
+  <data name="Payment Voucher Attachment" xml:space="preserve">
+    <value>支払い証憑添付</value>
+  </data>
   <data name="Select Account" xml:space="preserve">
     <value>アカウントを選択</value>
   </data>

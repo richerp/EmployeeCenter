@@ -54,10 +54,11 @@
   <data name="Transactions" xml:space="preserve">
     <value>Transactions</value>
   </data>
-    <data name="View" xml:space="preserve">
-      <value>View</value>
-    </data>
-    <data name="Voucher" xml:space="preserve">
-      <value>Voucher</value>
-    </data>
-  </root>
+  <data name="View" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="Voucher" xml:space="preserve">
+    <value>Voucher</value>
+  </data>
+
+</root>

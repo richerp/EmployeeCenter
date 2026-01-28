@@ -45,6 +45,9 @@
   <data name="New Transaction" xml:space="preserve">
     <value>Uusi tapahtuma</value>
   </data>
+  <data name="Supporting Materials" xml:space="preserve">
+    <value>Tukevat asiakirjat</value>
+  </data>
   <data name="To" xml:space="preserve">
     <value>Kohde</value>
   </data>
@@ -53,6 +56,9 @@
   </data>
   <data name="View" xml:space="preserve">
     <value>Näytä</value>
+  </data>
+  <data name="Voucher" xml:space="preserve">
+    <value>Voucher</value>
   </data>
 
 </root>

@@ -51,6 +51,15 @@
   <data name="Invoice Attachment" xml:space="preserve">
     <value>Вложение счета-фактуры</value>
   </data>
+  <data name="MT103 Attachment" xml:space="preserve">
+    <value>Вложение MT103</value>
+  </data>
+  <data name="Optional" xml:space="preserve">
+    <value>Необязательно</value>
+  </data>
+  <data name="Payment Voucher Attachment" xml:space="preserve">
+    <value>Вложение платежного поручения</value>
+  </data>
   <data name="Select Account" xml:space="preserve">
     <value>Выберите счет</value>
   </data>

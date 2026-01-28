@@ -39,8 +39,17 @@
   <data name="Invoice Attachment" xml:space="preserve">
     <value>Załącznik faktury</value>
   </data>
+  <data name="MT103 Attachment" xml:space="preserve">
+    <value>Załącznik MT103</value>
+  </data>
   <data name="New Transaction" xml:space="preserve">
     <value>Nowa transakcja</value>
+  </data>
+  <data name="Optional" xml:space="preserve">
+    <value>Opcjonalne</value>
+  </data>
+  <data name="Payment Voucher Attachment" xml:space="preserve">
+    <value>Załącznik wyciągu płatności</value>
   </data>
   <data name="Record Transaction" xml:space="preserve">
     <value>Zarejestruj Transakcję</value>

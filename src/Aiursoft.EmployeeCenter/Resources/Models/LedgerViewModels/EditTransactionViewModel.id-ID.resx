@@ -36,6 +36,12 @@
   <data name="Invoice Path" xml:space="preserve">
     <value>Jalur Faktur</value>
   </data>
+  <data name="MT103 Path" xml:space="preserve">
+    <value>Jalur MT103</value>
+  </data>
+  <data name="Payment Voucher Path" xml:space="preserve">
+    <value>Path Bukti Pembayaran</value>
+  </data>
   <data name="Source Account" xml:space="preserve">
     <value>Akun Sumber</value>
   </data>

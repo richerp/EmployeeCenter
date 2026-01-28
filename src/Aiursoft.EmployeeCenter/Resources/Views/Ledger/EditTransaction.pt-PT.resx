@@ -51,6 +51,15 @@
   <data name="Invoice Attachment" xml:space="preserve">
     <value>Anexo da Fatura</value>
   </data>
+  <data name="MT103 Attachment" xml:space="preserve">
+    <value>Anexo MT103</value>
+  </data>
+  <data name="Optional" xml:space="preserve">
+    <value>Opcional</value>
+  </data>
+  <data name="Payment Voucher Attachment" xml:space="preserve">
+    <value>Anexo de Comprovativo de Pagamento</value>
+  </data>
   <data name="Select Account" xml:space="preserve">
     <value>Selecione Conta</value>
   </data>

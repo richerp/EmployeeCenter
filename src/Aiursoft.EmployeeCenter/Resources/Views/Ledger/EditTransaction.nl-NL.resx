@@ -51,6 +51,15 @@
   <data name="Invoice Attachment" xml:space="preserve">
     <value>Factuur bijlage</value>
   </data>
+  <data name="MT103 Attachment" xml:space="preserve">
+    <value>MT103 bijlage</value>
+  </data>
+  <data name="Optional" xml:space="preserve">
+    <value>Optioneel</value>
+  </data>
+  <data name="Payment Voucher Attachment" xml:space="preserve">
+    <value>Betalingsvoucher bijlage</value>
+  </data>
   <data name="Select Account" xml:space="preserve">
     <value>Selecteer rekening</value>
   </data>

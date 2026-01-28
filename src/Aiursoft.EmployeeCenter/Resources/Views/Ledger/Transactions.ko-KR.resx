@@ -45,6 +45,9 @@
   <data name="New Transaction" xml:space="preserve">
     <value>새 거래</value>
   </data>
+  <data name="Supporting Materials" xml:space="preserve">
+    <value>서포팅 매트리얼스</value>
+  </data>
   <data name="To" xml:space="preserve">
     <value>To</value>
   </data>
@@ -53,6 +56,9 @@
   </data>
   <data name="View" xml:space="preserve">
     <value>보기</value>
+  </data>
+  <data name="Voucher" xml:space="preserve">
+    <value>영수증</value>
   </data>
 
 </root>

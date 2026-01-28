@@ -51,6 +51,15 @@
   <data name="Invoice Attachment" xml:space="preserve">
     <value>Lampiran Faktur</value>
   </data>
+  <data name="MT103 Attachment" xml:space="preserve">
+    <value>Lampiran MT103</value>
+  </data>
+  <data name="Optional" xml:space="preserve">
+    <value>Opsional</value>
+  </data>
+  <data name="Payment Voucher Attachment" xml:space="preserve">
+    <value>Lampiran Voucher Pembayaran</value>
+  </data>
   <data name="Select Account" xml:space="preserve">
     <value>Pilih Akun</value>
   </data>

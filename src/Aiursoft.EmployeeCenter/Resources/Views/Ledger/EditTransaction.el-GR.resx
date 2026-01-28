@@ -51,6 +51,15 @@
   <data name="Invoice Attachment" xml:space="preserve">
     <value>Προσάρτημα Τιμολογίου</value>
   </data>
+  <data name="MT103 Attachment" xml:space="preserve">
+    <value>Προσάρτημα MT103</value>
+  </data>
+  <data name="Optional" xml:space="preserve">
+    <value>Προαιρετικό</value>
+  </data>
+  <data name="Payment Voucher Attachment" xml:space="preserve">
+    <value>Προσκόμιση Πληρωμής Πιστωτικού Πιστοποιητικού</value>
+  </data>
   <data name="Select Account" xml:space="preserve">
     <value>Επιλέξτε Λογαριασμό</value>
   </data>

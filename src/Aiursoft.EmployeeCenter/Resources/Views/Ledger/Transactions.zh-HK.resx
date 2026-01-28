@@ -45,6 +45,9 @@
   <data name="New Transaction" xml:space="preserve">
     <value>新增交易</value>
   </data>
+  <data name="Supporting Materials" xml:space="preserve">
+    <value>支援文件</value>
+  </data>
   <data name="To" xml:space="preserve">
     <value>到</value>
   </data>
@@ -53,6 +56,9 @@
   </data>
   <data name="View" xml:space="preserve">
     <value>檢視</value>
+  </data>
+  <data name="Voucher" xml:space="preserve">
+    <value>憑證</value>
   </data>
 
 </root>
