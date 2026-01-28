@@ -60,11 +60,17 @@
   <data name="No Invoice" xml:space="preserve">
     <value>Ingen faktura</value>
   </data>
+  <data name="No Material" xml:space="preserve">
+    <value>Ingen materiale</value>
+  </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Seneste transaktioner</value>
   </data>
   <data name="Runway" xml:space="preserve">
     <value>Flyvebane</value>
+  </data>
+  <data name="Supporting Materials" xml:space="preserve">
+    <value>Understøttende dokumenter</value>
   </data>
   <data name="To" xml:space="preserve">
     <value>Til</value>
@@ -74,6 +80,9 @@
   </data>
   <data name="View Invoice" xml:space="preserve">
     <value>Vis faktura</value>
+  </data>
+  <data name="Voucher" xml:space="preserve">
+    <value>Voucher</value>
   </data>
 
 </root>

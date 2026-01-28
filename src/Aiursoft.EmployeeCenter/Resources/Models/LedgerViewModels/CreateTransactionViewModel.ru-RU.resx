@@ -36,6 +36,12 @@
   <data name="Invoice Path" xml:space="preserve">
     <value>Путь к счету-фактуре</value>
   </data>
+  <data name="MT103 Path" xml:space="preserve">
+    <value>Путь MT103</value>
+  </data>
+  <data name="Payment Voucher Path" xml:space="preserve">
+    <value>Путь к платежному поручению</value>
+  </data>
   <data name="Source Account" xml:space="preserve">
     <value>Исходный счёт</value>
   </data>

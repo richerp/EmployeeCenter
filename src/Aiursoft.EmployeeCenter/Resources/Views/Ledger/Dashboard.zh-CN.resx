@@ -48,17 +48,23 @@
   <data name="Invoice" xml:space="preserve">
     <value>发票</value>
   </data>
-  <data name="Voucher" xml:space="preserve">
-    <value>凭据</value>
+  <data name="Manage Accounts" xml:space="preserve">
+    <value>管理账户</value>
   </data>
-  <data name="No Material" xml:space="preserve">
-    <value>无材料</value>
+  <data name="Monthly Burn Rate" xml:space="preserve">
+    <value>月度烧钱率</value>
   </data>
-  <data name="View Material" xml:space="preserve">
-    <value>查看材料</value>
+  <data name="Months" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="New Transaction" xml:space="preserve">
+    <value>新建交易</value>
   </data>
   <data name="No Invoice" xml:space="preserve">
     <value>无发票</value>
+  </data>
+  <data name="No Material" xml:space="preserve">
+    <value>无材料</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>最近交易</value>
@@ -80,6 +86,12 @@
   </data>
   <data name="View Invoice" xml:space="preserve">
     <value>查看发票</value>
+  </data>
+  <data name="View Material" xml:space="preserve">
+    <value>查看材料</value>
+  </data>
+  <data name="Voucher" xml:space="preserve">
+    <value>凭据</value>
   </data>
 
 </root>

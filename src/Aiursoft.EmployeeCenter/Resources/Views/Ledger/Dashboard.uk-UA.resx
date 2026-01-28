@@ -60,11 +60,17 @@
   <data name="No Invoice" xml:space="preserve">
     <value>Без рахунку</value>
   </data>
+  <data name="No Material" xml:space="preserve">
+    <value>Без матеріалів</value>
+  </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Останні операції</value>
   </data>
   <data name="Runway" xml:space="preserve">
     <value>Час роботи</value>
+  </data>
+  <data name="Supporting Materials" xml:space="preserve">
+    <value>Додаткові матеріали</value>
   </data>
   <data name="To" xml:space="preserve">
     <value>До</value>
@@ -74,6 +80,9 @@
   </data>
   <data name="View Invoice" xml:space="preserve">
     <value>Переглянути рахунок</value>
+  </data>
+  <data name="Voucher" xml:space="preserve">
+    <value>Свідоцтво</value>
   </data>
 
 </root>

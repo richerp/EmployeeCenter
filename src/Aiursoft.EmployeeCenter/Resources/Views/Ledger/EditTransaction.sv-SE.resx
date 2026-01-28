@@ -51,6 +51,15 @@
   <data name="Invoice Attachment" xml:space="preserve">
     <value>Fakturabifogning</value>
   </data>
+  <data name="MT103 Attachment" xml:space="preserve">
+    <value>MT103-bilaga</value>
+  </data>
+  <data name="Optional" xml:space="preserve">
+    <value>Valfritt</value>
+  </data>
+  <data name="Payment Voucher Attachment" xml:space="preserve">
+    <value>Betalningskvitto bilaga</value>
+  </data>
   <data name="Select Account" xml:space="preserve">
     <value>Välj konto</value>
   </data>

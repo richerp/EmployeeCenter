@@ -36,6 +36,12 @@
   <data name="Invoice Path" xml:space="preserve">
     <value>Laskutuspolku</value>
   </data>
+  <data name="MT103 Path" xml:space="preserve">
+    <value>MT103 -polku</value>
+  </data>
+  <data name="Payment Voucher Path" xml:space="preserve">
+    <value>Maksuviitepolku</value>
+  </data>
   <data name="Source Account" xml:space="preserve">
     <value>Lähdetili</value>
   </data>

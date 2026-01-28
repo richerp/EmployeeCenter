@@ -51,6 +51,15 @@
   <data name="Invoice Attachment" xml:space="preserve">
     <value>Faktura vedhæftning</value>
   </data>
+  <data name="MT103 Attachment" xml:space="preserve">
+    <value>MT103-vedhæftning</value>
+  </data>
+  <data name="Optional" xml:space="preserve">
+    <value>Valgfrit</value>
+  </data>
+  <data name="Payment Voucher Attachment" xml:space="preserve">
+    <value>Betalingsvoucher vedhæftning</value>
+  </data>
   <data name="Select Account" xml:space="preserve">
     <value>Vælg konto</value>
   </data>

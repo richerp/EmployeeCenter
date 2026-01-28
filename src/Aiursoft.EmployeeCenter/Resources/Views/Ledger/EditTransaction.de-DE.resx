@@ -51,6 +51,15 @@
   <data name="Invoice Attachment" xml:space="preserve">
     <value>Rechnungsanhang</value>
   </data>
+  <data name="MT103 Attachment" xml:space="preserve">
+    <value>MT103-Anhang</value>
+  </data>
+  <data name="Optional" xml:space="preserve">
+    <value>Optional</value>
+  </data>
+  <data name="Payment Voucher Attachment" xml:space="preserve">
+    <value>Zahlungsvoucher-Anhang</value>
+  </data>
   <data name="Select Account" xml:space="preserve">
     <value>Konto auswählen</value>
   </data>

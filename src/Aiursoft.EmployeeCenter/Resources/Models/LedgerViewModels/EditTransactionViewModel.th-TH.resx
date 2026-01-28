@@ -36,6 +36,12 @@
   <data name="Invoice Path" xml:space="preserve">
     <value>เส้นทางใบแจ้งหนี้</value>
   </data>
+  <data name="MT103 Path" xml:space="preserve">
+    <value>MT103 Path</value>
+  </data>
+  <data name="Payment Voucher Path" xml:space="preserve">
+    <value>เส้นทางใบรับรองการชำระเงิน</value>
+  </data>
   <data name="Source Account" xml:space="preserve">
     <value>บัญชีต้นทาง</value>
   </data>

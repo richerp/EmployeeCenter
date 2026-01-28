@@ -36,6 +36,12 @@
   <data name="Invoice Path" xml:space="preserve">
     <value>Ścieżka faktury</value>
   </data>
+  <data name="MT103 Path" xml:space="preserve">
+    <value>Ścieżka MT103</value>
+  </data>
+  <data name="Payment Voucher Path" xml:space="preserve">
+    <value>Ścieżka wyciągu płatności</value>
+  </data>
   <data name="Source Account" xml:space="preserve">
     <value>Konto źródłowe</value>
   </data>

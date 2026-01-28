@@ -36,6 +36,12 @@
   <data name="Invoice Path" xml:space="preserve">
     <value>इन्वॉइस पथ</value>
   </data>
+  <data name="MT103 Path" xml:space="preserve">
+    <value>MT103 पथ</value>
+  </data>
+  <data name="Payment Voucher Path" xml:space="preserve">
+    <value>भुगतान वाउचर पथ</value>
+  </data>
   <data name="Source Account" xml:space="preserve">
     <value>स्रोत खाता</value>
   </data>

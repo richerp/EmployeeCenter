@@ -36,6 +36,12 @@
   <data name="Invoice Path" xml:space="preserve">
     <value>Fakturabana</value>
   </data>
+  <data name="MT103 Path" xml:space="preserve">
+    <value>MT103-sökväg</value>
+  </data>
+  <data name="Payment Voucher Path" xml:space="preserve">
+    <value>Betalningskvitto Sökväg</value>
+  </data>
   <data name="Source Account" xml:space="preserve">
     <value>Källkonto</value>
   </data>

@@ -45,6 +45,9 @@
   <data name="New Transaction" xml:space="preserve">
     <value>عملية جديدة</value>
   </data>
+  <data name="Supporting Materials" xml:space="preserve">
+    <value>المواد الداعمة</value>
+  </data>
   <data name="To" xml:space="preserve">
     <value>إلى</value>
   </data>
@@ -53,6 +56,9 @@
   </data>
   <data name="View" xml:space="preserve">
     <value>عرض</value>
+  </data>
+  <data name="Voucher" xml:space="preserve">
+    <value>قسيمة</value>
   </data>
 
 </root>

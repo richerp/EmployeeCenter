@@ -39,8 +39,17 @@
   <data name="Invoice Attachment" xml:space="preserve">
     <value>請求書添付ファイル</value>
   </data>
+  <data name="MT103 Attachment" xml:space="preserve">
+    <value>MT103添付ファイル</value>
+  </data>
   <data name="New Transaction" xml:space="preserve">
     <value>新規取引</value>
+  </data>
+  <data name="Optional" xml:space="preserve">
+    <value>オプション</value>
+  </data>
+  <data name="Payment Voucher Attachment" xml:space="preserve">
+    <value>支払い伝票添付</value>
   </data>
   <data name="Record Transaction" xml:space="preserve">
     <value>取引を記録する</value>

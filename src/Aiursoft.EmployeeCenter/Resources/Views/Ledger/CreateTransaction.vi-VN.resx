@@ -39,8 +39,17 @@
   <data name="Invoice Attachment" xml:space="preserve">
     <value>Tập tin đính kèm hóa đơn</value>
   </data>
+  <data name="MT103 Attachment" xml:space="preserve">
+    <value>Tệp đính kèm MT103</value>
+  </data>
   <data name="New Transaction" xml:space="preserve">
     <value>Giao dịch mới</value>
+  </data>
+  <data name="Optional" xml:space="preserve">
+    <value>Tùy chọn</value>
+  </data>
+  <data name="Payment Voucher Attachment" xml:space="preserve">
+    <value>Tập tin đính kèm phiếu chi</value>
   </data>
   <data name="Record Transaction" xml:space="preserve">
     <value>Ghi nhận giao dịch</value>

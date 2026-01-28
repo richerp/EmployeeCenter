@@ -39,8 +39,17 @@
   <data name="Invoice Attachment" xml:space="preserve">
     <value>مرفق الفاتورة</value>
   </data>
+  <data name="MT103 Attachment" xml:space="preserve">
+    <value>مرفق MT103</value>
+  </data>
   <data name="New Transaction" xml:space="preserve">
     <value>معاملة جديدة</value>
+  </data>
+  <data name="Optional" xml:space="preserve">
+    <value>اختياري</value>
+  </data>
+  <data name="Payment Voucher Attachment" xml:space="preserve">
+    <value>إرفاق إيصال الدفع</value>
   </data>
   <data name="Record Transaction" xml:space="preserve">
     <value>تسجيل المعاملة</value>

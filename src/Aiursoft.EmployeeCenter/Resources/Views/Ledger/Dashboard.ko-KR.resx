@@ -60,11 +60,17 @@
   <data name="No Invoice" xml:space="preserve">
     <value>송장 없음</value>
   </data>
+  <data name="No Material" xml:space="preserve">
+    <value>자료 없음</value>
+  </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>최근 거래</value>
   </data>
   <data name="Runway" xml:space="preserve">
     <value>운영 자금 지속 기간</value>
+  </data>
+  <data name="Supporting Materials" xml:space="preserve">
+    <value>서포팅 매터리얼스</value>
   </data>
   <data name="To" xml:space="preserve">
     <value>To</value>
@@ -74,6 +80,9 @@
   </data>
   <data name="View Invoice" xml:space="preserve">
     <value>송장 보기</value>
+  </data>
+  <data name="Voucher" xml:space="preserve">
+    <value>증빙서류</value>
   </data>
 
 </root>

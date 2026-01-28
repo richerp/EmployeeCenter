@@ -36,6 +36,12 @@
   <data name="Invoice Path" xml:space="preserve">
     <value>Rechnungs Pfad</value>
   </data>
+  <data name="MT103 Path" xml:space="preserve">
+    <value>MT103-Pfad</value>
+  </data>
+  <data name="Payment Voucher Path" xml:space="preserve">
+    <value>Zahlungsbelegpfad</value>
+  </data>
   <data name="Source Account" xml:space="preserve">
     <value>Quellkonto</value>
   </data>

@@ -51,6 +51,15 @@
   <data name="Invoice Attachment" xml:space="preserve">
     <value>बिल का संलग्नक</value>
   </data>
+  <data name="MT103 Attachment" xml:space="preserve">
+    <value>एमटी103 संलग्नता</value>
+  </data>
+  <data name="Optional" xml:space="preserve">
+    <value>वैकल्पिक</value>
+  </data>
+  <data name="Payment Voucher Attachment" xml:space="preserve">
+    <value>भुगतान विवरण अटैचमेंट</value>
+  </data>
   <data name="Select Account" xml:space="preserve">
     <value>खाता चुनें</value>
   </data>

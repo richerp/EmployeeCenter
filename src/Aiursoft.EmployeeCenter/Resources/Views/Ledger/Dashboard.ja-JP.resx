@@ -60,11 +60,17 @@
   <data name="No Invoice" xml:space="preserve">
     <value>領収書なし</value>
   </data>
+  <data name="No Material" xml:space="preserve">
+    <value>資料なし</value>
+  </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>最近の取引</value>
   </data>
   <data name="Runway" xml:space="preserve">
     <value>運用期間</value>
+  </data>
+  <data name="Supporting Materials" xml:space="preserve">
+    <value>補足資料</value>
   </data>
   <data name="To" xml:space="preserve">
     <value>宛先</value>
@@ -74,6 +80,9 @@
   </data>
   <data name="View Invoice" xml:space="preserve">
     <value>請求書を表示</value>
+  </data>
+  <data name="Voucher" xml:space="preserve">
+    <value>領収書</value>
   </data>
 
 </root>

@@ -39,8 +39,17 @@
   <data name="Invoice Attachment" xml:space="preserve">
     <value>Invoice Attachment</value>
   </data>
+  <data name="MT103 Attachment" xml:space="preserve">
+    <value>MT103 Attachment</value>
+  </data>
   <data name="New Transaction" xml:space="preserve">
     <value>New Transaction</value>
+  </data>
+  <data name="Optional" xml:space="preserve">
+    <value>Optional</value>
+  </data>
+  <data name="Payment Voucher Attachment" xml:space="preserve">
+    <value>Payment Voucher Attachment</value>
   </data>
   <data name="Record Transaction" xml:space="preserve">
     <value>Record Transaction</value>

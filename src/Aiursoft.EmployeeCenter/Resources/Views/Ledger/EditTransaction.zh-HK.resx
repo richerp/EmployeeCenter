@@ -51,6 +51,15 @@
   <data name="Invoice Attachment" xml:space="preserve">
     <value>發票附件</value>
   </data>
+  <data name="MT103 Attachment" xml:space="preserve">
+    <value>MT103 附件</value>
+  </data>
+  <data name="Optional" xml:space="preserve">
+    <value>可選</value>
+  </data>
+  <data name="Payment Voucher Attachment" xml:space="preserve">
+    <value>付款憑證附件</value>
+  </data>
   <data name="Select Account" xml:space="preserve">
     <value>選擇帳戶</value>
   </data>

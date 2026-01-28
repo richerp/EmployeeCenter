@@ -36,6 +36,12 @@
   <data name="Invoice Path" xml:space="preserve">
     <value>Factuurpad</value>
   </data>
+  <data name="MT103 Path" xml:space="preserve">
+    <value>MT103 Pad</value>
+  </data>
+  <data name="Payment Voucher Path" xml:space="preserve">
+    <value>Betaalbevestiging pad</value>
+  </data>
   <data name="Source Account" xml:space="preserve">
     <value>Bronrekening</value>
   </data>

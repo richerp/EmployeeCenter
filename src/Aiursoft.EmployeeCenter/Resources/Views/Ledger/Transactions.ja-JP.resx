@@ -45,6 +45,9 @@
   <data name="New Transaction" xml:space="preserve">
     <value>新規取引</value>
   </data>
+  <data name="Supporting Materials" xml:space="preserve">
+    <value>補足資料</value>
+  </data>
   <data name="To" xml:space="preserve">
     <value>宛先</value>
   </data>
@@ -53,6 +56,9 @@
   </data>
   <data name="View" xml:space="preserve">
     <value>表示</value>
+  </data>
+  <data name="Voucher" xml:space="preserve">
+    <value>領収書</value>
   </data>
 
 </root>

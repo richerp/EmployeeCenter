@@ -60,11 +60,17 @@
   <data name="No Invoice" xml:space="preserve">
     <value>Нет счета-фактуры</value>
   </data>
+  <data name="No Material" xml:space="preserve">
+    <value>Нет материалов</value>
+  </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Последние операции</value>
   </data>
   <data name="Runway" xml:space="preserve">
     <value>Запасы</value>
+  </data>
+  <data name="Supporting Materials" xml:space="preserve">
+    <value>Дополнительные материалы</value>
   </data>
   <data name="To" xml:space="preserve">
     <value>На</value>
@@ -74,6 +80,9 @@
   </data>
   <data name="View Invoice" xml:space="preserve">
     <value>Просмотр счета-фактуры</value>
+  </data>
+  <data name="Voucher" xml:space="preserve">
+    <value>Счет</value>
   </data>
 
 </root>

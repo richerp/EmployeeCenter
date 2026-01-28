@@ -36,6 +36,12 @@
   <data name="Invoice Path" xml:space="preserve">
     <value>請求書のパス</value>
   </data>
+  <data name="MT103 Path" xml:space="preserve">
+    <value>MT103 パス</value>
+  </data>
+  <data name="Payment Voucher Path" xml:space="preserve">
+    <value>支払証憑パス</value>
+  </data>
   <data name="Source Account" xml:space="preserve">
     <value>送金元口座</value>
   </data>

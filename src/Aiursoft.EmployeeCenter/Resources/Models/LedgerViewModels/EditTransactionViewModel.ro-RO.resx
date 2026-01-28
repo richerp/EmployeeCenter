@@ -36,6 +36,12 @@
   <data name="Invoice Path" xml:space="preserve">
     <value>Calea facturii</value>
   </data>
+  <data name="MT103 Path" xml:space="preserve">
+    <value>Cale MT103</value>
+  </data>
+  <data name="Payment Voucher Path" xml:space="preserve">
+    <value>Calea voucherului de plată</value>
+  </data>
   <data name="Source Account" xml:space="preserve">
     <value>Contul sursă</value>
   </data>

@@ -69,12 +69,6 @@
   <data name="No Material" xml:space="preserve">
     <value>No Material</value>
   </data>
-  <data name="View Material" xml:space="preserve">
-    <value>View Material</value>
-  </data>
-  <data name="Voucher" xml:space="preserve">
-    <value>Voucher</value>
-  </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Recent Transactions</value>
   </data>
@@ -95,6 +89,12 @@
   </data>
   <data name="View Invoice" xml:space="preserve">
     <value>View Invoice</value>
+  </data>
+  <data name="View Material" xml:space="preserve">
+    <value>View Material</value>
+  </data>
+  <data name="Voucher" xml:space="preserve">
+    <value>Voucher</value>
   </data>
 
 </root>

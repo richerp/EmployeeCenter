@@ -60,11 +60,17 @@
   <data name="No Invoice" xml:space="preserve">
     <value>ไม่มีใบแจ้งหนี้</value>
   </data>
+  <data name="No Material" xml:space="preserve">
+    <value>ไม่มีเอกสารประกอบ</value>
+  </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>รายการธุรกรรมล่าสุด</value>
   </data>
   <data name="Runway" xml:space="preserve">
     <value>ระยะเวลาการดำรงอยู่</value>
+  </data>
+  <data name="Supporting Materials" xml:space="preserve">
+    <value>เอกสารประกอบ</value>
   </data>
   <data name="To" xml:space="preserve">
     <value>ถึง</value>
@@ -74,6 +80,9 @@
   </data>
   <data name="View Invoice" xml:space="preserve">
     <value>ดูใบแจ้งหนี้</value>
+  </data>
+  <data name="Voucher" xml:space="preserve">
+    <value>ใบเสร็จ</value>
   </data>
 
 </root>

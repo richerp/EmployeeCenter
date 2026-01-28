@@ -51,6 +51,15 @@
   <data name="Invoice Attachment" xml:space="preserve">
     <value>Додаток рахунку</value>
   </data>
+  <data name="MT103 Attachment" xml:space="preserve">
+    <value>Прикріплення MT103</value>
+  </data>
+  <data name="Optional" xml:space="preserve">
+    <value>Необов’язково</value>
+  </data>
+  <data name="Payment Voucher Attachment" xml:space="preserve">
+    <value>Прикріплення платіжного чека</value>
+  </data>
   <data name="Select Account" xml:space="preserve">
     <value>Вибрати рахунок</value>
   </data>
