@@ -285,6 +285,9 @@
   <data name="Internal Server Error" xml:space="preserve">
     <value>Lỗi máy chủ nội bộ</value>
   </data>
+  <data name="Issue Invoice" xml:space="preserve">
+    <value>Cấp hóa đơn</value>
+  </data>
   <data name="Issue Payroll" xml:space="preserve">
     <value>Cấp phát lương</value>
   </data>

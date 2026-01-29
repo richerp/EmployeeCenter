@@ -282,6 +282,9 @@
   <data name="Internal Server Error" xml:space="preserve">
     <value>Eroare internă a serverului</value>
   </data>
+  <data name="Issue Invoice" xml:space="preserve">
+    <value>Emitere Factură</value>
+  </data>
   <data name="Issue Payroll" xml:space="preserve">
     <value>Emitere salarii</value>
   </data>

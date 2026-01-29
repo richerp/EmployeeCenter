@@ -282,6 +282,9 @@
   <data name="Internal Server Error" xml:space="preserve">
     <value>Εσωτερικό Σφάλμα Διακομιστή</value>
   </data>
+  <data name="Issue Invoice" xml:space="preserve">
+    <value>Εκδόση Τιμολογίου</value>
+  </data>
   <data name="Issue Payroll" xml:space="preserve">
     <value>Έκδοση Μισθοδοσίας</value>
   </data>
