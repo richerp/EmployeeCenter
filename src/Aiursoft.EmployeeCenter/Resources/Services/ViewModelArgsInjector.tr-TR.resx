@@ -282,6 +282,9 @@
   <data name="Internal Server Error" xml:space="preserve">
     <value>İç Sunucu Hatası</value>
   </data>
+  <data name="Issue Invoice" xml:space="preserve">
+    <value>Fatura Ver</value>
+  </data>
   <data name="Issue Payroll" xml:space="preserve">
     <value>Maaş Ver</value>
   </data>

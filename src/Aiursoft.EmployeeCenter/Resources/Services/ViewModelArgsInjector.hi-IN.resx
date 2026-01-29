@@ -282,6 +282,9 @@
   <data name="Internal Server Error" xml:space="preserve">
     <value>आ interनल सर्वर त्रुटि</value>
   </data>
+  <data name="Issue Invoice" xml:space="preserve">
+    <value>इनवॉइस जारी करें</value>
+  </data>
   <data name="Issue Payroll" xml:space="preserve">
     <value>पेरॉल जारी करें</value>
   </data>

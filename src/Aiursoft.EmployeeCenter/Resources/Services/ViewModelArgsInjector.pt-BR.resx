@@ -282,6 +282,9 @@
   <data name="Internal Server Error" xml:space="preserve">
     <value>Erro Interno do Servidor</value>
   </data>
+  <data name="Issue Invoice" xml:space="preserve">
+    <value>Emitir Nota Fiscal</value>
+  </data>
   <data name="Issue Payroll" xml:space="preserve">
     <value>Emitir Folha de Pagamento</value>
   </data>

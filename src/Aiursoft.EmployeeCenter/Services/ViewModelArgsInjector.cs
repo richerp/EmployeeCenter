@@ -157,6 +157,8 @@ public class ViewModelArgsInjector(
         _ = localizer["Register"];
         _ = localizer["Response Detail"];
         _ = localizer["SSH Keys"];
+    
+        _ = localizer["Issue Invoice"];
     }
 
     public void InjectSimple(

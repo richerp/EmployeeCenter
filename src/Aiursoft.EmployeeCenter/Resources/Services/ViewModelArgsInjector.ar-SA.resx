@@ -282,6 +282,9 @@
   <data name="Internal Server Error" xml:space="preserve">
     <value>خطأ الخادم الداخلي</value>
   </data>
+  <data name="Issue Invoice" xml:space="preserve">
+    <value>إصدار الفاتورة</value>
+  </data>
   <data name="Issue Payroll" xml:space="preserve">
     <value>إصدار الرواتب</value>
   </data>

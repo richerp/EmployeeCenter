@@ -273,6 +273,9 @@
   <data name="Internal Server Error" xml:space="preserve">
     <value>Internal Server Error</value>
   </data>
+  <data name="Issue Invoice" xml:space="preserve">
+    <value>Issue Invoice</value>
+  </data>
   <data name="Issue Payroll" xml:space="preserve">
     <value>Issue Payroll</value>
   </data>

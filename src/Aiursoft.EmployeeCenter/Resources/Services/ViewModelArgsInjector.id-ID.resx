@@ -282,6 +282,9 @@
   <data name="Internal Server Error" xml:space="preserve">
     <value>Kesalahan Server Internal</value>
   </data>
+  <data name="Issue Invoice" xml:space="preserve">
+    <value>Terbitkan Faktur</value>
+  </data>
   <data name="Issue Payroll" xml:space="preserve">
     <value>Terbitkan Gaji</value>
   </data>

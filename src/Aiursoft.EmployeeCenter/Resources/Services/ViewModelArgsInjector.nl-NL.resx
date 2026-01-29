@@ -282,6 +282,9 @@
   <data name="Internal Server Error" xml:space="preserve">
     <value>Interne serverfout</value>
   </data>
+  <data name="Issue Invoice" xml:space="preserve">
+    <value>Factuur uitgeven</value>
+  </data>
   <data name="Issue Payroll" xml:space="preserve">
     <value>Uitgeven loon</value>
   </data>

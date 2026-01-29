@@ -285,6 +285,9 @@
   <data name="Internal Server Error" xml:space="preserve">
     <value>内部サーバーエラー</value>
   </data>
+  <data name="Issue Invoice" xml:space="preserve">
+    <value>請求書発行</value>
+  </data>
   <data name="Issue Payroll" xml:space="preserve">
     <value>給与発行</value>
   </data>

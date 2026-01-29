@@ -285,6 +285,9 @@
   <data name="Internal Server Error" xml:space="preserve">
     <value>ข้อผิดพลาดภายในเซิร์ฟเวอร์</value>
   </data>
+  <data name="Issue Invoice" xml:space="preserve">
+    <value>ออกใบแจ้งหนี้</value>
+  </data>
   <data name="Issue Payroll" xml:space="preserve">
     <value>ออกสลิปเงินเดือน</value>
   </data>
