@@ -56,6 +56,6 @@ public class CreateViewModel : UiStackLayoutViewModel
     public string? BankAddress { get; set; }
     
     public decimal Subtotal => Items.Sum(i => i.Quantity * i.UnitPrice);
-    public decimal Tax { get; set; } = 0;
+    public decimal Tax { get; set; }
     public decimal TotalDue => Subtotal + Tax;
 }
