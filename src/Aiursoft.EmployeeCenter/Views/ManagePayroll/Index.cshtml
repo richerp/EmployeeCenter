@@ -64,26 +64,26 @@
         <h6 class="card-subtitle text-muted">@Localizer["A list of all issued payroll records in the system."]</h6>
     </div>
     <div class="table-responsive">
-        <table class="table table-hover mb-0">
+        <table class="table table-hover mb-0" id="payrollTable">
             <thead>
             <tr>
                 <th>@Localizer["User"]</th>
                 <th>@Localizer["Target Month"]</th>
                 <th>@Localizer["Total Amount"]</th>
                 <th>@Localizer["Created Time"]</th>
-                <th class="text-end">@Localizer["Actions"]</th>
+                <th class="text-end" data-orderable="false">@Localizer["Actions"]</th>
             </tr>
             </thead>
             <tbody>
             @foreach (var item in Model.Payrolls)
             {
                 <tr class="clickable-row" data-href="@Url.Action("Details", new { id = item.Id })">
-                    <td>
+                    <td data-order="@item.Owner.DisplayName">
                         <img src="@StorageService.RelativePathToInternetUrl(item.Owner.AvatarRelativePath)?w=72&square=true" alt="@item.Owner.DisplayName" class="rounded-circle" width="36" height="36" />
                         <span class="ms-2">@item.Owner.DisplayName</span>
                     </td>
                     <td>@item.TargetMonth.ToString("yyyy-MM")</td>
-                    <td>
+                    <td data-order="@item.TotalAmount">
                         @{
                             var culture = item.Currency switch
                             {
@@ -95,7 +95,9 @@
                         }
                         @item.TotalAmount.ToString("C", System.Globalization.CultureInfo.GetCultureInfo(culture))
                     </td>
-                    <td><label class="text-muted" data-utc-time="@item.CreationTime.ToHtmlDateTime()"></label></td>
+                    <td data-order="@item.CreationTime.Ticks">
+                        <label class="text-muted" data-utc-time="@item.CreationTime.ToHtmlDateTime()"></label>
+                    </td>
                     <td class="text-end">
                         <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary">
                             <i class="align-middle" data-lucide="edit"></i> @Localizer["Edit"]
@@ -114,15 +116,22 @@
 @* ReSharper disable once Razor.SectionNotResolved *@
 @section scripts {
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const rows = document.querySelectorAll(".clickable-row");
-            rows.forEach(row => {
-                row.addEventListener("click", function (event) {
-                    const target = event.target;
-                    if (!target.matches('a, a *, button, button *')) {
-                        window.location.href = row.dataset.href;
-                    }
-                });
+        $(document).ready(function () {
+            $('#payrollTable').DataTable({
+                "destroy": true,
+                "responsive": true,
+                "paging": true,
+                "pageLength": 25,
+                "searching": true,
+                "info": false,
+                "order": [[3, "desc"]]
+            });
+
+            $('#payrollTable tbody').on('click', 'tr.clickable-row', function (event) {
+                const target = $(event.target);
+                if (!target.closest('a, button').length) {
+                    window.location.href = $(this).data('href');
+                }
             });
         });
     </script>
