@@ -96,5 +96,26 @@
   <data name="Voucher" xml:space="preserve">
     <value>Voucher</value>
   </data>
+  <data name="All Year" xml:space="preserve">
+    <value>All Year</value>
+  </data>
+  <data name="Total Inflow" xml:space="preserve">
+    <value>Total Inflow</value>
+  </data>
+  <data name="Total Outflow" xml:space="preserve">
+    <value>Total Outflow</value>
+  </data>
+  <data name="Income &amp; Expense Chart" xml:space="preserve">
+    <value>Income &amp; Expense Chart</value>
+  </data>
+  <data name="Inflow" xml:space="preserve">
+    <value>Inflow</value>
+  </data>
+  <data name="Outflow" xml:space="preserve">
+    <value>Outflow</value>
+  </data>
+  <data name="Current Balance" xml:space="preserve">
+    <value>Current Balance</value>
+  </data>
 
 </root>

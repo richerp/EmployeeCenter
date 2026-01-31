@@ -66,9 +66,14 @@
                                     }
                                 </td>
                                 <td>
-                                    <a asp-action="EditAccount" asp-route-id="@ab.Account.Id" class="btn btn-sm btn-info">
-                                        <i class="fas fa-edit"></i> @Localizer["Edit"]
-                                    </a>
+                                    <div class="btn-group">
+                                        <a asp-action="Dashboard" asp-route-id="@Model.EntityId" asp-route-accountId="@ab.Account.Id" class="btn btn-sm btn-primary">
+                                            <i class="fas fa-list"></i> @Localizer["Transactions"]
+                                        </a>
+                                        <a asp-action="EditAccount" asp-route-id="@ab.Account.Id" class="btn btn-sm btn-info">
+                                            <i class="fas fa-edit"></i> @Localizer["Edit"]
+                                        </a>
+                                    </div>
                                 </td>
                             </tr>
                         }

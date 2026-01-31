@@ -93,5 +93,26 @@
   <data name="Voucher" xml:space="preserve">
     <value>凭据</value>
   </data>
+  <data name="All Year" xml:space="preserve">
+    <value>全年</value>
+  </data>
+  <data name="Total Inflow" xml:space="preserve">
+    <value>总流入</value>
+  </data>
+  <data name="Total Outflow" xml:space="preserve">
+    <value>总流出</value>
+  </data>
+  <data name="Income &amp; Expense Chart" xml:space="preserve">
+    <value>收入与支出图表</value>
+  </data>
+  <data name="Inflow" xml:space="preserve">
+    <value>流入</value>
+  </data>
+  <data name="Outflow" xml:space="preserve">
+    <value>流出</value>
+  </data>
+  <data name="Current Balance" xml:space="preserve">
+    <value>当前余额</value>
+  </data>
 
 </root>

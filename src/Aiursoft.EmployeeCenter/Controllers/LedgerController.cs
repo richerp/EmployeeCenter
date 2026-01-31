@@ -37,13 +37,15 @@ public class LedgerController(
     }
 
     [HttpGet]
-    public async Task<IActionResult> Dashboard(int id, int? accountId)
+    public async Task<IActionResult> Dashboard(int id, int? accountId, int? year, int? month)
     {
         var entity = await dbContext.CompanyEntities.FindAsync(id);
         if (entity == null)
         {
             return NotFound();
         }
+
+        year ??= DateTime.UtcNow.Year;
 
         FinanceAccount? filteredAccount = null;
         if (accountId.HasValue)
@@ -80,12 +82,78 @@ public class LedgerController(
             recentTransactionsQuery = recentTransactionsQuery.Where(t => t.SourceAccountId == accountId || t.DestinationAccountId == accountId);
         }
 
+        DateTime startTime;
+        DateTime endTime;
+        if (month.HasValue)
+        {
+            startTime = new DateTime(year.Value, month.Value, 1, 0, 0, 0, DateTimeKind.Utc);
+            endTime = startTime.AddMonths(1);
+        }
+        else
+        {
+            startTime = new DateTime(year.Value, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+            endTime = startTime.AddYears(1);
+        }
+
+        recentTransactionsQuery = recentTransactionsQuery.Where(t => t.TransactionTime >= startTime && t.TransactionTime < endTime);
+
         var recentTransactions = await recentTransactionsQuery
             .OrderByDescending(t => t.TransactionTime)
-            .Take(accountId.HasValue ? 1000 : 10)
             .ToListAsync();
 
-        // Calculate Burn Rate (Expense in last 30 days)
+        decimal totalInflow = 0;
+        decimal totalOutflow = 0;
+
+        if (accountId.HasValue)
+        {
+            totalInflow = recentTransactions
+                .Where(t => t.DestinationAccountId == accountId)
+                .Sum(t => t.Amount * t.ExchangeRate);
+            totalOutflow = recentTransactions
+                .Where(t => t.SourceAccountId == accountId)
+                .Sum(t => t.Amount);
+        }
+
+        // Chart Data (Always for the whole year)
+        var chartInflow = new decimal[12];
+        var chartOutflow = new decimal[12];
+        var yearStart = new DateTime(year.Value, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+        var yearEnd = yearStart.AddYears(1);
+
+        var yearTransactionsQuery = dbContext.Transactions
+            .Where(t => (t.SourceAccount!.CompanyEntityId == id || t.DestinationAccount!.CompanyEntityId == id) &&
+                        t.TransactionTime >= yearStart && t.TransactionTime < yearEnd);
+
+        if (accountId.HasValue)
+        {
+            yearTransactionsQuery = yearTransactionsQuery.Where(t => t.SourceAccountId == accountId || t.DestinationAccountId == accountId);
+        }
+
+        var yearTransactions = await yearTransactionsQuery.ToListAsync();
+        foreach (var t in yearTransactions)
+        {
+            var m = t.TransactionTime.Month - 1;
+            if (accountId.HasValue)
+            {
+                if (t.DestinationAccountId == accountId) chartInflow[m] += t.Amount * t.ExchangeRate;
+                if (t.SourceAccountId == accountId) chartOutflow[m] += t.Amount;
+            }
+            else
+            {
+                // If no account filtered, what to show in chart? 
+                // Maybe total income vs total expense for the entity?
+                if (t.DestinationAccount?.AccountType == FinanceAccountType.Expense && t.DestinationAccount.CompanyEntityId == id)
+                {
+                    chartOutflow[m] += t.Amount * t.ExchangeRate;
+                }
+                if (t.SourceAccount?.AccountType == FinanceAccountType.Income && t.SourceAccount.CompanyEntityId == id)
+                {
+                    chartInflow[m] += t.Amount;
+                }
+            }
+        }
+
+        // Calculate Burn Rate (Expense in last 30 days) - Keep existing logic for now
         var thirtyDaysAgo = DateTime.UtcNow.AddDays(-30);
         var monthlyExpensesQuery = dbContext.Transactions
             .Include(t => t.SourceAccount)
@@ -101,23 +169,13 @@ public class LedgerController(
 
         var monthlyExpenses = await monthlyExpensesQuery.ToListAsync();
         
-        // This is tricky because expenses can be in different currencies. 
-        // For now, we just sum them up if they match entity's base currency, 
-        // or provide a simple sum in base currency if we had more exchange rate info.
-        // Let's assume for MVP we sum expenses that ended up in an Expense account of this entity.
-        // Since the DestinationAccount belongs to this entity, the amount is Amount * ExchangeRate in Destination Currency.
-        // We should ideally convert everything to Entity.BaseCurrency.
-        
         decimal totalBurn = 0;
         foreach(var exp in monthlyExpenses)
         {
-            // If expense account currency matches entity base currency, just add.
             if (exp.DestinationAccount!.Currency == entity.BaseCurrency)
             {
                 totalBurn += exp.Amount * exp.ExchangeRate;
             }
-            // Else, we might need another exchange rate to base currency... 
-            // For MVP, let's just sum what we can.
         }
 
         // Calculate Runway: Total Assets / Burn Rate
@@ -141,7 +199,14 @@ public class LedgerController(
             MonthlyBurnRate = totalBurn,
             RunwayMonths = totalBurn > 0 ? totalAssets / totalBurn : null,
             FilteredAccount = filteredAccount,
-            FilteredAccountBalance = totalAssets
+            FilteredAccountBalance = totalAssets,
+            Year = year.Value,
+            Month = month,
+            TotalInflow = totalInflow,
+            TotalOutflow = totalOutflow,
+            ChartLabels = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+            ChartInflowData = chartInflow,
+            ChartOutflowData = chartOutflow
         };
 
         return this.StackView(model);

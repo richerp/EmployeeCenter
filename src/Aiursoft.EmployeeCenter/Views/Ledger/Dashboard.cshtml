@@ -19,8 +19,28 @@
         {
             <h1 class="h3 mb-0 text-gray-800">@Model.Entity.CompanyName - @Localizer["Dashboard"]</h1>
         }
-        <div>
-            <a asp-controller="Ledger" asp-action="Accounts" asp-route-id="@Model.Entity.Id" class="btn btn-sm btn-info shadow-sm">
+        <div class="d-flex align-items-center">
+            <form method="get" class="form-inline mr-3">
+                <input type="hidden" name="id" value="@Model.Entity.Id" />
+                @if (Model.FilteredAccount != null)
+                {
+                    <input type="hidden" name="accountId" value="@Model.FilteredAccount.Id" />
+                }
+                <select name="year" class="form-control form-control-sm mr-2" onchange="this.form.submit()">
+                    @for (int y = DateTime.UtcNow.Year; y >= 2020; y--)
+                    {
+                        <!option value="@y" @(Model.Year == y ? "selected" : "")>@y</!option>
+                    }
+                </select>
+                <select name="month" class="form-control form-control-sm" onchange="this.form.submit()">
+                    <!option value="">@Localizer["All Year"]</!option>
+                    @for (int m = 1; m <= 12; m++)
+                    {
+                        <!option value="@m" @(Model.Month == m ? "selected" : "")>@System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(m)</!option>
+                    }
+                </select>
+            </form>
+            <a asp-controller="Ledger" asp-action="Accounts" asp-route-id="@Model.Entity.Id" class="btn btn-sm btn-info shadow-sm mr-2">
                 <i class="fas fa-list fa-sm text-white-50"></i> @Localizer["Manage Accounts"]
             </a>
             <a asp-controller="Ledger" asp-action="CreateTransaction" asp-route-id="@Model.Entity.Id" class="btn btn-sm btn-primary shadow-sm">
@@ -62,7 +82,7 @@
                         <div class="row no-gutters align-items-center">
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-@colorClass text-uppercase mb-1">
-                                    @Model.FilteredAccount.AccountName (@Model.FilteredAccount.Currency)
+                                    @Model.FilteredAccount.AccountName (@Model.FilteredAccount.Currency) - @Localizer["Current Balance"]
                                 </div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">
                                     @Model.FilteredAccountBalance.ToString("N2")
@@ -70,6 +90,46 @@
                             </div>
                             <div class="col-auto">
                                 <i class="fas @iconClass fa-2x text-gray-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-success shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                    @Localizer["Total Inflow"]
+                                </div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                    @Model.TotalInflow.ToString("N2")
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fas fa-arrow-down fa-2x text-gray-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-danger shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
+                                    @Localizer["Total Outflow"]
+                                </div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                    @Model.TotalOutflow.ToString("N2")
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fas fa-arrow-up fa-2x text-gray-300"></i>
                             </div>
                         </div>
                     </div>
@@ -135,6 +195,24 @@
             }
         </div>
     }
+
+    <div class="row">
+        <!-- Area Chart -->
+        <div class="col-xl-12 col-lg-12">
+            <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">@Localizer["Income & Expense Chart"] (@Model.Year)</h6>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                    <div class="chart-area">
+                        <canvas id="myAreaChart" style="height: 300px;"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="row">
         <!-- Transaction Feed -->
@@ -256,6 +334,7 @@
 
 @* ReSharper disable once Razor.SectionNotResolved *@
 @section scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
     <script>
         $(document).ready(function () {
             $('#transactionTable').DataTable({
@@ -266,6 +345,104 @@
                 "searching": true,
                 "info": false,
                 "order": [[0, "desc"]]
+            });
+
+            var ctx = document.getElementById("myAreaChart");
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: @Json.Serialize(Model.ChartLabels),
+                    datasets: [{
+                        label: "@Localizer["Inflow"]",
+                        lineTension: 0.3,
+                        backgroundColor: "rgba(78, 115, 223, 0.05)",
+                        borderColor: "rgba(78, 115, 223, 1)",
+                        pointRadius: 3,
+                        pointBackgroundColor: "rgba(78, 115, 223, 1)",
+                        pointBorderColor: "rgba(78, 115, 223, 1)",
+                        pointHoverRadius: 3,
+                        pointHoverBackgroundColor: "rgba(78, 115, 223, 1)",
+                        pointHoverBorderColor: "rgba(78, 115, 223, 1)",
+                        pointHitRadius: 10,
+                        pointBorderWidth: 2,
+                        data: @Json.Serialize(Model.ChartInflowData),
+                    }, {
+                        label: "@Localizer["Outflow"]",
+                        lineTension: 0.3,
+                        backgroundColor: "rgba(231, 74, 59, 0.05)",
+                        borderColor: "rgba(231, 74, 59, 1)",
+                        pointRadius: 3,
+                        pointBackgroundColor: "rgba(231, 74, 59, 1)",
+                        pointBorderColor: "rgba(231, 74, 59, 1)",
+                        pointHoverRadius: 3,
+                        pointHoverBackgroundColor: "rgba(231, 74, 59, 1)",
+                        pointHoverBorderColor: "rgba(231, 74, 59, 1)",
+                        pointHitRadius: 10,
+                        pointBorderWidth: 2,
+                        data: @Json.Serialize(Model.ChartOutflowData),
+                    }],
+                },
+                options: {
+                    maintainAspectRatio: false,
+                    layout: {
+                        padding: {
+                            left: 10,
+                            right: 25,
+                            top: 25,
+                            bottom: 0
+                        }
+                    },
+                    scales: {
+                        x: {
+                            grid: {
+                                display: false,
+                                drawBorder: false
+                            }
+                        },
+                        y: {
+                            ticks: {
+                                maxTicksLimit: 5,
+                                padding: 10,
+                                callback: function(value) {
+                                    return value.toLocaleString();
+                                }
+                            },
+                            grid: {
+                                color: "rgb(234, 236, 244)",
+                                zeroLineColor: "rgb(234, 236, 244)",
+                                drawBorder: false,
+                                borderDash: [2],
+                                zeroLineBorderDash: [2]
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: true
+                        },
+                        tooltip: {
+                            backgroundColor: "rgb(255,255,255)",
+                            bodyColor: "#858796",
+                            titleMarginBottom: 10,
+                            titleColor: '#6e707e',
+                            titleFont: {
+                                size: 14
+                            },
+                            borderColor: '#dddfeb',
+                            borderWidth: 1,
+                            padding: 15,
+                            displayColors: false,
+                            intersect: false,
+                            mode: 'index',
+                            caretPadding: 10,
+                            callbacks: {
+                                label: function(tooltipItem) {
+                                    return tooltipItem.dataset.label + ': ' + tooltipItem.raw.toLocaleString();
+                                }
+                            }
+                        }
+                    }
+                }
             });
         });
     </script>
