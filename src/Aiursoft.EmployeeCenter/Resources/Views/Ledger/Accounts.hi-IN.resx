@@ -63,6 +63,9 @@
   <data name="Status" xml:space="preserve">
     <value>स्थिति</value>
   </data>
+  <data name="Transactions" xml:space="preserve">
+    <value>लेनदेन</value>
+  </data>
   <data name="Type" xml:space="preserve">
     <value>प्रकार</value>
   </data>

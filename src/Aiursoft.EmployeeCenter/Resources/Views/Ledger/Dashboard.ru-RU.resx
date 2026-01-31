@@ -18,8 +18,14 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Amount" xml:space="preserve">
+      <data name="All Year" xml:space="preserve">
+    <value>Весь год</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
     <value>Сумма</value>
+  </data>
+  <data name="Current Balance" xml:space="preserve">
+    <value>Текущий остаток</value>
   </data>
   <data name="Dashboard" xml:space="preserve">
     <value>Панель управления</value>
@@ -42,6 +48,12 @@
   <data name="Health Metrics" xml:space="preserve">
     <value>Показатели финансового состояния</value>
   </data>
+  <data name="Income &amp; Expense Chart" xml:space="preserve">
+    <value>График доходов и расходов</value>
+  </data>
+  <data name="Inflow" xml:space="preserve">
+    <value>Поступления</value>
+  </data>
   <data name="Invoice" xml:space="preserve">
     <value>Счет</value>
   </data>
@@ -63,6 +75,9 @@
   <data name="No Material" xml:space="preserve">
     <value>Нет материалов</value>
   </data>
+  <data name="Outflow" xml:space="preserve">
+    <value>Расход</value>
+  </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Последние операции</value>
   </data>
@@ -74,6 +89,12 @@
   </data>
   <data name="To" xml:space="preserve">
     <value>На</value>
+  </data>
+  <data name="Total Inflow" xml:space="preserve">
+    <value>Общий доход</value>
+  </data>
+  <data name="Total Outflow" xml:space="preserve">
+    <value>Общий расход</value>
   </data>
   <data name="View All" xml:space="preserve">
     <value>Просмотреть все</value>

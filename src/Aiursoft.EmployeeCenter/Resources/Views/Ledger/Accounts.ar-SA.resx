@@ -63,6 +63,9 @@
   <data name="Status" xml:space="preserve">
     <value>الحالة</value>
   </data>
+  <data name="Transactions" xml:space="preserve">
+    <value>المعاملات</value>
+  </data>
   <data name="Type" xml:space="preserve">
     <value>النوع</value>
   </data>

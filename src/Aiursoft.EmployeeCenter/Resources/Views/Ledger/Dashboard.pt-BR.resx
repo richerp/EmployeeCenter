@@ -18,8 +18,14 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Amount" xml:space="preserve">
+      <data name="All Year" xml:space="preserve">
+    <value>Todo o Ano</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
     <value>Valor</value>
+  </data>
+  <data name="Current Balance" xml:space="preserve">
+    <value>Saldo Atual</value>
   </data>
   <data name="Dashboard" xml:space="preserve">
     <value>Painel</value>
@@ -42,6 +48,12 @@
   <data name="Health Metrics" xml:space="preserve">
     <value>Métricas de Saúde</value>
   </data>
+  <data name="Income &amp; Expense Chart" xml:space="preserve">
+    <value>Gráfico de Receitas e Despesas</value>
+  </data>
+  <data name="Inflow" xml:space="preserve">
+    <value>Entrada</value>
+  </data>
   <data name="Invoice" xml:space="preserve">
     <value>Nota Fiscal</value>
   </data>
@@ -63,6 +75,9 @@
   <data name="No Material" xml:space="preserve">
     <value>Nenhum Material</value>
   </data>
+  <data name="Outflow" xml:space="preserve">
+    <value>Saída</value>
+  </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Transações Recentes</value>
   </data>
@@ -74,6 +89,12 @@
   </data>
   <data name="To" xml:space="preserve">
     <value>Para</value>
+  </data>
+  <data name="Total Inflow" xml:space="preserve">
+    <value>Total de Entradas</value>
+  </data>
+  <data name="Total Outflow" xml:space="preserve">
+    <value>Total Saída</value>
   </data>
   <data name="View All" xml:space="preserve">
     <value>Ver Todos</value>

@@ -18,8 +18,14 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Amount" xml:space="preserve">
+      <data name="All Year" xml:space="preserve">
+    <value>Toată anul</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
     <value>Sumă</value>
+  </data>
+  <data name="Current Balance" xml:space="preserve">
+    <value>Sold curent</value>
   </data>
   <data name="Dashboard" xml:space="preserve">
     <value>Panou de control</value>
@@ -42,6 +48,12 @@
   <data name="Health Metrics" xml:space="preserve">
     <value>Metrice de sănătate</value>
   </data>
+  <data name="Income &amp; Expense Chart" xml:space="preserve">
+    <value>Grafic venituri și cheltuieli</value>
+  </data>
+  <data name="Inflow" xml:space="preserve">
+    <value>Intrare</value>
+  </data>
   <data name="Invoice" xml:space="preserve">
     <value>Factură</value>
   </data>
@@ -63,6 +75,9 @@
   <data name="No Material" xml:space="preserve">
     <value>Fără materiale</value>
   </data>
+  <data name="Outflow" xml:space="preserve">
+    <value>Outflow</value>
+  </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Tranzacții recente</value>
   </data>
@@ -74,6 +89,12 @@
   </data>
   <data name="To" xml:space="preserve">
     <value>La</value>
+  </data>
+  <data name="Total Inflow" xml:space="preserve">
+    <value>Intrare totală</value>
+  </data>
+  <data name="Total Outflow" xml:space="preserve">
+    <value>Total Outflow</value>
   </data>
   <data name="View All" xml:space="preserve">
     <value>Afișare totală</value>

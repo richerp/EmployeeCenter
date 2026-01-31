@@ -63,6 +63,9 @@
   <data name="Status" xml:space="preserve">
     <value>Trạng thái</value>
   </data>
+  <data name="Transactions" xml:space="preserve">
+    <value>Giao dịch</value>
+  </data>
   <data name="Type" xml:space="preserve">
     <value>Loại</value>
   </data>

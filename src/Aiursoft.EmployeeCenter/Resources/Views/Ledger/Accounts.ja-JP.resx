@@ -63,6 +63,9 @@
   <data name="Status" xml:space="preserve">
     <value>状態</value>
   </data>
+  <data name="Transactions" xml:space="preserve">
+    <value>取引</value>
+  </data>
   <data name="Type" xml:space="preserve">
     <value>種類</value>
   </data>

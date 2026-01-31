@@ -21,8 +21,14 @@
       <data name="Account Transactions" xml:space="preserve">
     <value>账户交易</value>
   </data>
+  <data name="All Year" xml:space="preserve">
+    <value>全年</value>
+  </data>
   <data name="Amount" xml:space="preserve">
     <value>金额</value>
+  </data>
+  <data name="Current Balance" xml:space="preserve">
+    <value>当前余额</value>
   </data>
   <data name="Dashboard" xml:space="preserve">
     <value>仪表板</value>
@@ -45,6 +51,12 @@
   <data name="Health Metrics" xml:space="preserve">
     <value>健康指标</value>
   </data>
+  <data name="Income &amp; Expense Chart" xml:space="preserve">
+    <value>收入与支出图表</value>
+  </data>
+  <data name="Inflow" xml:space="preserve">
+    <value>流入</value>
+  </data>
   <data name="Invoice" xml:space="preserve">
     <value>发票</value>
   </data>
@@ -66,6 +78,9 @@
   <data name="No Material" xml:space="preserve">
     <value>无材料</value>
   </data>
+  <data name="Outflow" xml:space="preserve">
+    <value>流出</value>
+  </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>最近交易</value>
   </data>
@@ -81,6 +96,12 @@
   <data name="Total Assets" xml:space="preserve">
     <value>总资产</value>
   </data>
+  <data name="Total Inflow" xml:space="preserve">
+    <value>总流入</value>
+  </data>
+  <data name="Total Outflow" xml:space="preserve">
+    <value>总流出</value>
+  </data>
   <data name="View All" xml:space="preserve">
     <value>查看全部</value>
   </data>
@@ -92,27 +113,6 @@
   </data>
   <data name="Voucher" xml:space="preserve">
     <value>凭据</value>
-  </data>
-  <data name="All Year" xml:space="preserve">
-    <value>全年</value>
-  </data>
-  <data name="Total Inflow" xml:space="preserve">
-    <value>总流入</value>
-  </data>
-  <data name="Total Outflow" xml:space="preserve">
-    <value>总流出</value>
-  </data>
-  <data name="Income &amp; Expense Chart" xml:space="preserve">
-    <value>收入与支出图表</value>
-  </data>
-  <data name="Inflow" xml:space="preserve">
-    <value>流入</value>
-  </data>
-  <data name="Outflow" xml:space="preserve">
-    <value>流出</value>
-  </data>
-  <data name="Current Balance" xml:space="preserve">
-    <value>当前余额</value>
   </data>
 
 </root>

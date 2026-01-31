@@ -63,6 +63,9 @@
   <data name="Status" xml:space="preserve">
     <value>状态</value>
   </data>
+  <data name="Transactions" xml:space="preserve">
+    <value>交易记录</value>
+  </data>
   <data name="Type" xml:space="preserve">
     <value>类型</value>
   </data>

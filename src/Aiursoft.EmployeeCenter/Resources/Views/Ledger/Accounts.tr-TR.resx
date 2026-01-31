@@ -63,6 +63,9 @@
   <data name="Status" xml:space="preserve">
     <value>Durum</value>
   </data>
+  <data name="Transactions" xml:space="preserve">
+    <value>İşlemler</value>
+  </data>
   <data name="Type" xml:space="preserve">
     <value>Tür</value>
   </data>

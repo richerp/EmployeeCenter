@@ -18,8 +18,14 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Amount" xml:space="preserve">
+      <data name="All Year" xml:space="preserve">
+    <value>Koko vuosi</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
     <value>Määrä</value>
+  </data>
+  <data name="Current Balance" xml:space="preserve">
+    <value>Nykyinen saldo</value>
   </data>
   <data name="Dashboard" xml:space="preserve">
     <value>Hallinta-alue</value>
@@ -42,6 +48,12 @@
   <data name="Health Metrics" xml:space="preserve">
     <value>Terveysindikaattorit</value>
   </data>
+  <data name="Income &amp; Expense Chart" xml:space="preserve">
+    <value>Tulot ja menot -kaavio</value>
+  </data>
+  <data name="Inflow" xml:space="preserve">
+    <value>Tulo</value>
+  </data>
   <data name="Invoice" xml:space="preserve">
     <value>Lasku</value>
   </data>
@@ -63,6 +75,9 @@
   <data name="No Material" xml:space="preserve">
     <value>Ei materiaalia</value>
   </data>
+  <data name="Outflow" xml:space="preserve">
+    <value>Poisto</value>
+  </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Viimeisimmät siirrot</value>
   </data>
@@ -74,6 +89,12 @@
   </data>
   <data name="To" xml:space="preserve">
     <value>To</value>
+  </data>
+  <data name="Total Inflow" xml:space="preserve">
+    <value>Yhteensä saapuvat</value>
+  </data>
+  <data name="Total Outflow" xml:space="preserve">
+    <value>Yhteensä ulosvirtaus</value>
   </data>
   <data name="View All" xml:space="preserve">
     <value>Näytä kaikki</value>
