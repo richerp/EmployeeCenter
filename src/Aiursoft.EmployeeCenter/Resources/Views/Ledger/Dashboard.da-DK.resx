@@ -18,8 +18,14 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Amount" xml:space="preserve">
+      <data name="All Year" xml:space="preserve">
+    <value>Hele året</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
     <value>Beløb</value>
+  </data>
+  <data name="Current Balance" xml:space="preserve">
+    <value>Aktuel saldo</value>
   </data>
   <data name="Dashboard" xml:space="preserve">
     <value>Dashboard</value>
@@ -42,6 +48,12 @@
   <data name="Health Metrics" xml:space="preserve">
     <value>Helseindikatorer</value>
   </data>
+  <data name="Income &amp; Expense Chart" xml:space="preserve">
+    <value>Indtægt og Udgift Chart</value>
+  </data>
+  <data name="Inflow" xml:space="preserve">
+    <value>Indflyd</value>
+  </data>
   <data name="Invoice" xml:space="preserve">
     <value>Faktura</value>
   </data>
@@ -63,6 +75,9 @@
   <data name="No Material" xml:space="preserve">
     <value>Ingen materiale</value>
   </data>
+  <data name="Outflow" xml:space="preserve">
+    <value>Udstrømning</value>
+  </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Seneste transaktioner</value>
   </data>
@@ -74,6 +89,12 @@
   </data>
   <data name="To" xml:space="preserve">
     <value>Til</value>
+  </data>
+  <data name="Total Inflow" xml:space="preserve">
+    <value>Samlet indflydelse</value>
+  </data>
+  <data name="Total Outflow" xml:space="preserve">
+    <value>Total Udflytning</value>
   </data>
   <data name="View All" xml:space="preserve">
     <value>Vis alle</value>

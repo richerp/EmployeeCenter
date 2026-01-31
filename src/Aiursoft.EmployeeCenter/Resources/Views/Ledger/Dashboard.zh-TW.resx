@@ -18,8 +18,14 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Amount" xml:space="preserve">
+      <data name="All Year" xml:space="preserve">
+    <value>全年</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
     <value>金額</value>
+  </data>
+  <data name="Current Balance" xml:space="preserve">
+    <value>目前餘額</value>
   </data>
   <data name="Dashboard" xml:space="preserve">
     <value>儀表板</value>
@@ -42,6 +48,12 @@
   <data name="Health Metrics" xml:space="preserve">
     <value>健康指標</value>
   </data>
+  <data name="Income &amp; Expense Chart" xml:space="preserve">
+    <value>收入與支出圖表</value>
+  </data>
+  <data name="Inflow" xml:space="preserve">
+    <value>流入</value>
+  </data>
   <data name="Invoice" xml:space="preserve">
     <value>下載</value>
   </data>
@@ -63,6 +75,9 @@
   <data name="No Material" xml:space="preserve">
     <value>無資料</value>
   </data>
+  <data name="Outflow" xml:space="preserve">
+    <value>支出</value>
+  </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>最近交易</value>
   </data>
@@ -74,6 +89,12 @@
   </data>
   <data name="To" xml:space="preserve">
     <value>到</value>
+  </data>
+  <data name="Total Inflow" xml:space="preserve">
+    <value>總流入</value>
+  </data>
+  <data name="Total Outflow" xml:space="preserve">
+    <value>總支出</value>
   </data>
   <data name="View All" xml:space="preserve">
     <value>檢視全部</value>

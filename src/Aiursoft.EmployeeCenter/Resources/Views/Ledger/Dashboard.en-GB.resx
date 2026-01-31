@@ -21,8 +21,14 @@
       <data name="Account Transactions" xml:space="preserve">
     <value>Account Transactions</value>
   </data>
+  <data name="All Year" xml:space="preserve">
+    <value>All Year</value>
+  </data>
   <data name="Amount" xml:space="preserve">
     <value>Amount</value>
+  </data>
+  <data name="Current Balance" xml:space="preserve">
+    <value>Current Balance</value>
   </data>
   <data name="Dashboard" xml:space="preserve">
     <value>Dashboard</value>
@@ -44,6 +50,12 @@
   </data>
   <data name="Health Metrics" xml:space="preserve">
     <value>Health Metrics</value>
+  </data>
+  <data name="Income &amp; Expense Chart" xml:space="preserve">
+    <value>Income &amp; Expense Chart</value>
+  </data>
+  <data name="Inflow" xml:space="preserve">
+    <value>Inflow</value>
   </data>
   <data name="Invoice" xml:space="preserve">
     <value>Invoice</value>
@@ -69,6 +81,9 @@
   <data name="No Material" xml:space="preserve">
     <value>No Material</value>
   </data>
+  <data name="Outflow" xml:space="preserve">
+    <value>Outflow</value>
+  </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Recent Transactions</value>
   </data>
@@ -84,6 +99,12 @@
   <data name="Total Assets" xml:space="preserve">
     <value>Total Assets</value>
   </data>
+  <data name="Total Inflow" xml:space="preserve">
+    <value>Total Inflow</value>
+  </data>
+  <data name="Total Outflow" xml:space="preserve">
+    <value>Total Outflow</value>
+  </data>
   <data name="View All" xml:space="preserve">
     <value>View All</value>
   </data>
@@ -95,27 +116,6 @@
   </data>
   <data name="Voucher" xml:space="preserve">
     <value>Voucher</value>
-  </data>
-  <data name="All Year" xml:space="preserve">
-    <value>All Year</value>
-  </data>
-  <data name="Total Inflow" xml:space="preserve">
-    <value>Total Inflow</value>
-  </data>
-  <data name="Total Outflow" xml:space="preserve">
-    <value>Total Outflow</value>
-  </data>
-  <data name="Income &amp; Expense Chart" xml:space="preserve">
-    <value>Income &amp; Expense Chart</value>
-  </data>
-  <data name="Inflow" xml:space="preserve">
-    <value>Inflow</value>
-  </data>
-  <data name="Outflow" xml:space="preserve">
-    <value>Outflow</value>
-  </data>
-  <data name="Current Balance" xml:space="preserve">
-    <value>Current Balance</value>
   </data>
 
 </root>

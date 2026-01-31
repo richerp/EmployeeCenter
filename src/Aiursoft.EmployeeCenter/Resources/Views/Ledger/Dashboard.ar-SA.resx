@@ -18,8 +18,14 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Amount" xml:space="preserve">
+      <data name="All Year" xml:space="preserve">
+    <value>كل العام</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
     <value>المبلغ</value>
+  </data>
+  <data name="Current Balance" xml:space="preserve">
+    <value>الرصيد الحالي</value>
   </data>
   <data name="Dashboard" xml:space="preserve">
     <value>لوحة التحكم</value>
@@ -42,6 +48,12 @@
   <data name="Health Metrics" xml:space="preserve">
     <value>مقاييس الصحة</value>
   </data>
+  <data name="Income &amp; Expense Chart" xml:space="preserve">
+    <value>مخطط الدخل والإنفاق</value>
+  </data>
+  <data name="Inflow" xml:space="preserve">
+    <value>التدفق الوارد</value>
+  </data>
   <data name="Invoice" xml:space="preserve">
     <value>فاتورة</value>
   </data>
@@ -63,6 +75,9 @@
   <data name="No Material" xml:space="preserve">
     <value>لا مواد</value>
   </data>
+  <data name="Outflow" xml:space="preserve">
+    <value>الانسياب</value>
+  </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>العمليات الأخيرة</value>
   </data>
@@ -74,6 +89,12 @@
   </data>
   <data name="To" xml:space="preserve">
     <value>إلى</value>
+  </data>
+  <data name="Total Inflow" xml:space="preserve">
+    <value>إجمالي التدفق الداخل</value>
+  </data>
+  <data name="Total Outflow" xml:space="preserve">
+    <value>إجمالي التدفق الخارجي</value>
   </data>
   <data name="View All" xml:space="preserve">
     <value>عرض الكل</value>

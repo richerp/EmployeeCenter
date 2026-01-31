@@ -63,6 +63,9 @@
   <data name="Status" xml:space="preserve">
     <value>Stato</value>
   </data>
+  <data name="Transactions" xml:space="preserve">
+    <value>Transazioni</value>
+  </data>
   <data name="Type" xml:space="preserve">
     <value>Tipo</value>
   </data>
