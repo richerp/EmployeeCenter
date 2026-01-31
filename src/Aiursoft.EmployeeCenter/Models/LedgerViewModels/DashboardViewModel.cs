@@ -18,4 +18,14 @@ public class DashboardViewModel : UiStackLayoutViewModel
     public decimal? RunwayMonths { get; set; }
     public FinanceAccount? FilteredAccount { get; set; }
     public decimal FilteredAccountBalance { get; set; }
+    
+    public int Year { get; set; }
+    public int? Month { get; set; }
+    
+    public decimal TotalInflow { get; set; }
+    public decimal TotalOutflow { get; set; }
+    
+    public string[] ChartLabels { get; set; } = [];
+    public decimal[] ChartInflowData { get; set; } = [];
+    public decimal[] ChartOutflowData { get; set; } = [];
 }
