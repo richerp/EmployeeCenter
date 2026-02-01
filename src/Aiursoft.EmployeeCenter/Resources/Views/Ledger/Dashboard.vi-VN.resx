@@ -54,6 +54,9 @@
   <data name="Inflow" xml:space="preserve">
     <value>Dòng tiền vào</value>
   </data>
+  <data name="Inflow Distribution" xml:space="preserve">
+    <value>Phân phối Dòng tiền vào</value>
+  </data>
   <data name="Invoice" xml:space="preserve">
     <value>Hóa đơn</value>
   </data>
@@ -77,6 +80,9 @@
   </data>
   <data name="Outflow" xml:space="preserve">
     <value>Chi phí</value>
+  </data>
+  <data name="Outflow Distribution" xml:space="preserve">
+    <value>Phân bổ Chi phí</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Giao dịch Gần đây</value>

@@ -54,6 +54,9 @@
   <data name="Inflow" xml:space="preserve">
     <value>Giriş</value>
   </data>
+  <data name="Inflow Distribution" xml:space="preserve">
+    <value>Giriş Dağılımı</value>
+  </data>
   <data name="Invoice" xml:space="preserve">
     <value>Fatura</value>
   </data>
@@ -77,6 +80,9 @@
   </data>
   <data name="Outflow" xml:space="preserve">
     <value>Gider</value>
+  </data>
+  <data name="Outflow Distribution" xml:space="preserve">
+    <value>Gider Dağılımı</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Son İşlemler</value>

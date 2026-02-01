@@ -54,6 +54,9 @@
   <data name="Inflow" xml:space="preserve">
     <value>आवक</value>
   </data>
+  <data name="Inflow Distribution" xml:space="preserve">
+    <value>आउटफ्लो वितरण</value>
+  </data>
   <data name="Invoice" xml:space="preserve">
     <value>बिल</value>
   </data>
@@ -77,6 +80,9 @@
   </data>
   <data name="Outflow" xml:space="preserve">
     <value>आउटफ्लो</value>
+  </data>
+  <data name="Outflow Distribution" xml:space="preserve">
+    <value>आउटफ्लो वितरण</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>हाल के लेनदेन</value>

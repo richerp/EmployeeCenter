@@ -54,6 +54,9 @@
   <data name="Inflow" xml:space="preserve">
     <value>การรับเข้า</value>
   </data>
+  <data name="Inflow Distribution" xml:space="preserve">
+    <value>การกระจายรายรับ</value>
+  </data>
   <data name="Invoice" xml:space="preserve">
     <value>ใบแจ้งหนี้</value>
   </data>
@@ -77,6 +80,9 @@
   </data>
   <data name="Outflow" xml:space="preserve">
     <value>การไหลออก</value>
+  </data>
+  <data name="Outflow Distribution" xml:space="preserve">
+    <value>การกระจายตัวของเงินออก</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>รายการธุรกรรมล่าสุด</value>

@@ -54,6 +54,9 @@
   <data name="Inflow" xml:space="preserve">
     <value>Tulo</value>
   </data>
+  <data name="Inflow Distribution" xml:space="preserve">
+    <value>Tulovirtauksen jakautuminen</value>
+  </data>
   <data name="Invoice" xml:space="preserve">
     <value>Lasku</value>
   </data>
@@ -77,6 +80,9 @@
   </data>
   <data name="Outflow" xml:space="preserve">
     <value>Poisto</value>
+  </data>
+  <data name="Outflow Distribution" xml:space="preserve">
+    <value>Ulosvirtausjakauma</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Viimeisimmät siirrot</value>

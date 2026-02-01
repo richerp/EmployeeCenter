@@ -54,6 +54,9 @@
   <data name="Inflow" xml:space="preserve">
     <value>수입</value>
   </data>
+  <data name="Inflow Distribution" xml:space="preserve">
+    <value>유입 분포</value>
+  </data>
   <data name="Invoice" xml:space="preserve">
     <value>송장</value>
   </data>
@@ -77,6 +80,9 @@
   </data>
   <data name="Outflow" xml:space="preserve">
     <value>지출</value>
+  </data>
+  <data name="Outflow Distribution" xml:space="preserve">
+    <value>유출 분포</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>최근 거래</value>

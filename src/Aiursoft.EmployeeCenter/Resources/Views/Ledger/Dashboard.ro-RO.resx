@@ -54,6 +54,9 @@
   <data name="Inflow" xml:space="preserve">
     <value>Intrare</value>
   </data>
+  <data name="Inflow Distribution" xml:space="preserve">
+    <value>Distribuția Inflow</value>
+  </data>
   <data name="Invoice" xml:space="preserve">
     <value>Factură</value>
   </data>
@@ -77,6 +80,9 @@
   </data>
   <data name="Outflow" xml:space="preserve">
     <value>Outflow</value>
+  </data>
+  <data name="Outflow Distribution" xml:space="preserve">
+    <value>Distribuția Outflow</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Tranzacții recente</value>
