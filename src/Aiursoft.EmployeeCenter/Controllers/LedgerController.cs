@@ -138,19 +138,8 @@ public class LedgerController(
                 if (t.DestinationAccountId == accountId) chartInflow[m] += t.Amount * t.ExchangeRate;
                 if (t.SourceAccountId == accountId) chartOutflow[m] += t.Amount;
             }
-            else
-            {
-                // If no account filtered, what to show in chart? 
-                // Maybe total income vs total expense for the entity?
-                if (t.DestinationAccount?.AccountType == FinanceAccountType.Expense && t.DestinationAccount.CompanyEntityId == id)
-                {
-                    chartOutflow[m] += t.Amount * t.ExchangeRate;
-                }
-                if (t.SourceAccount?.AccountType == FinanceAccountType.Income && t.SourceAccount.CompanyEntityId == id)
-                {
-                    chartInflow[m] += t.Amount;
-                }
-            }
+            // When no account is filtered, keep chart data at zero
+            // since all transactions are between internal accounts and net to zero
         }
 
         // Calculate Burn Rate (Expense in last 30 days) - Keep existing logic for now
