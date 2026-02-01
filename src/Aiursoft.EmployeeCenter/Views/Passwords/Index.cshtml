@@ -96,8 +96,11 @@
                     {
                         <tr>
                             <td><strong>@share.Password.Title</strong></td>
-                            <td>@share.Password.Creator.DisplayName</td>
-                            <td>
+                                                                        <td>
+                                                                            <a asp-controller="Users" asp-action="Details" asp-route-id="@share.Password.CreatorId" class="text-dark">
+                                                                                @share.Password.Creator.DisplayName
+                                                                            </a>
+                                                                        </td>                            <td>
                                 @if (share.Permission == SharePermission.Editable)
                                 {
                                     <span class="badge bg-success">@Localizer["Editable"]</span>

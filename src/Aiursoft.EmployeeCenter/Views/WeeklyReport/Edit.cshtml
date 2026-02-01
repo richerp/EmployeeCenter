@@ -8,17 +8,22 @@
                 <div class="card-header">
                     <h5 class="card-title mb-0">@Localizer["Edit Weekly Report"]</h5>
                 </div>
-                <div class="card-body">
-                    <div class="d-flex align-items-center mb-4">
-                        <img src="@(StorageService.RelativePathToInternetUrl(Model.User!.AvatarRelativePath) + "?w=100&square=true")" 
-                             class="rounded-circle me-3" 
-                             alt="@Model.User.DisplayName"
-                             style="width: 48px; height: 48px; object-fit: cover;" />
-                        <div>
-                            <h5 class="mb-0 fw-bold">@Model.User!.DisplayName</h5>
-                            <small class="text-muted">@Localizer["Week of"] <label data-utc-time="@Model.WeekStartDate.ToHtmlDateTime()"></label></small>
-                        </div>
-                    </div>
+        <div class="card-body">
+            <div class="d-flex align-items-center mb-4">
+                <a asp-controller="Users" asp-action="Details" asp-route-id="@Model.User!.Id">
+                    <img src="@(StorageService.RelativePathToInternetUrl(Model.User!.AvatarRelativePath) + "?w=100&square=true")"
+                         class="rounded-circle me-3"
+                         alt="@Model.User!.DisplayName"
+                         width="50"
+                         height="50">
+                </a>
+                <div>
+                    <a asp-controller="Users" asp-action="Details" asp-route-id="@Model.User!.Id" class="text-dark">
+                        <h5 class="mb-0 fw-bold">@Model.User!.DisplayName</h5>
+                    </a>
+                    <p class="text-muted small mb-0">@Model.User!.Title</p>
+                </div>
+            </div>
 
                     <form asp-action="Edit" method="post">
                         <input type="hidden" asp-for="Id" />

@@ -172,11 +172,10 @@
                                 <tr>
                                     <td>
                                         <div class="d-flex align-items-center">
-                                            <img src="@StorageService.RelativePathToInternetUrl(item.User.AvatarRelativePath)?w=64&square=true" class="rounded-circle me-2" alt="@item.User.DisplayName" width="32" height="32">
-                                            <div>
+                                            <a asp-controller="Users" asp-action="Details" asp-route-id="@item.UserId" class="text-dark d-flex align-items-center">
+                                                <img src="@StorageService.RelativePathToInternetUrl(item.User.AvatarRelativePath)?w=64&square=true" class="rounded-circle me-2" alt="@item.User.DisplayName" width="32" height="32">
                                                 <div class="fw-bold">@item.User.DisplayName</div>
-                                                <div class="small text-muted">@item.User.Email</div>
-                                            </div>
+                                            </a>
                                         </div>
                                     </td>
                                     <td>
@@ -253,11 +252,10 @@
                                 <tr>
                                     <td>
                                         <div class="d-flex align-items-center">
-                                            <img src="@StorageService.RelativePathToInternetUrl(item.User.AvatarRelativePath)?w=64&square=true" class="rounded-circle me-2" alt="@item.User.DisplayName" width="32" height="32">
-                                            <div>
+                                            <a asp-controller="Users" asp-action="Details" asp-route-id="@item.UserId" class="text-dark d-flex align-items-center">
+                                                <img src="@StorageService.RelativePathToInternetUrl(item.User.AvatarRelativePath)?w=64&square=true" class="rounded-circle me-2" alt="@item.User.DisplayName" width="32" height="32">
                                                 <div class="fw-bold">@item.User.DisplayName</div>
-                                                <div class="small text-muted">@item.User.Email</div>
-                                            </div>
+                                            </a>
                                         </div>
                                     </td>
                                     <td>
@@ -285,8 +283,18 @@
                                             <span class="badge bg-danger">@Localizer["Rejected"]</span>
                                         }
                                     </td>
-                                    <td>@(item.ReviewedBy?.DisplayName ?? "-")</td>
-                                    <td><label class="text-muted" data-utc-time="@item.ReviewedAt?.ToHtmlDateTime()"></label></td>
+                                                                                <td>
+                                                                                    @if (item.ReviewedBy != null)
+                                                                                    {
+                                                                                        <a asp-controller="Users" asp-action="Details" asp-route-id="@item.ReviewedById" class="text-dark">
+                                                                                            @item.ReviewedBy.DisplayName
+                                                                                        </a>
+                                                                                    }
+                                                                                    else
+                                                                                    {
+                                                                                        <span>-</span>
+                                                                                    }
+                                                                                </td>                                    <td><label class="text-muted" data-utc-time="@item.ReviewedAt?.ToHtmlDateTime()"></label></td>
                                 </tr>
                             }
                         }

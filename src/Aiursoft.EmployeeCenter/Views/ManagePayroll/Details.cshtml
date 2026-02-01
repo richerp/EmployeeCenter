@@ -24,10 +24,14 @@
             <div class="card-header bg-light">
                 <div class="row align-items-center">
                     <div class="col-auto">
-                        <img src="@StorageService.RelativePathToInternetUrl(Model.Payroll.Owner.AvatarRelativePath)?w=64&square=true" alt="@Model.Payroll.Owner.DisplayName" class="rounded-circle" width="64" height="64" />
+                        <a asp-controller="Users" asp-action="Details" asp-route-id="@Model.Payroll.OwnerId">
+                            <img src="@StorageService.RelativePathToInternetUrl(Model.Payroll.Owner.AvatarRelativePath)?w=64&square=true" alt="@Model.Payroll.Owner.DisplayName" class="rounded-circle" width="64" height="64" />
+                        </a>
                     </div>
                     <div class="col">
-                        <h4 class="mb-0">@Model.Payroll.Owner.DisplayName</h4>
+                        <a asp-controller="Users" asp-action="Details" asp-route-id="@Model.Payroll.OwnerId" class="text-dark">
+                            <h4 class="mb-0">@Model.Payroll.Owner.DisplayName</h4>
+                        </a>
                         <p class="text-muted mb-0">@Localizer["Job Level"]: @(Model.Payroll.Owner.JobLevel ?? "N/A") | @Localizer["Title"]: @(Model.Payroll.Owner.Title ?? "N/A") | @Localizer["Employee ID"]: @Model.Payroll.Owner.Id.Substring(0, 8)</p>
                     </div>
                     <div class="col-auto text-end">
@@ -68,7 +72,11 @@
                             </tr>
                             <tr>
                                 <td>@Localizer["Employee Name"]</td>
-                                <td class="text-end">@Model.Payroll.Owner.DisplayName</td>
+                                <td class="text-end">
+                                    <a asp-controller="Users" asp-action="Details" asp-route-id="@Model.Payroll.OwnerId" class="text-dark">
+                                        @Model.Payroll.Owner.DisplayName
+                                    </a>
+                                </td>
                                 <td>@Model.Payroll.Owner.Email</td>
                             </tr>
                             <tr>

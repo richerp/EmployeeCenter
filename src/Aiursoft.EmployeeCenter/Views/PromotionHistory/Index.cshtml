@@ -104,15 +104,19 @@
                             @foreach (var history in Model.Histories)
                             {
                                 <tr>
-                                    <td>
-                                        <div class="d-flex align-items-center">
-                                            <img src="@StorageService.RelativePathToInternetUrl(history.User?.AvatarRelativePath ?? Aiursoft.EmployeeCenter.Entities.User.DefaultAvatarPath)?w=40&h=40&square=true" class="rounded-circle me-2" width="32" height="32" alt="@history.User?.DisplayName">
-                                            <div>
-                                                <div class="fw-bold">@history.User?.DisplayName</div>
-                                                <div class="text-muted small">@history.User?.UserName</div>
-                                            </div>
-                                        </div>
-                                    </td>
+                            <td data-order="@history.User?.DisplayName">
+                                @if (history.User != null)
+                                {
+                                    <a asp-controller="Users" asp-action="Details" asp-route-id="@history.UserId" class="text-dark d-flex align-items-center">
+                                        <img src="@StorageService.RelativePathToInternetUrl(history.User?.AvatarRelativePath ?? Aiursoft.EmployeeCenter.Entities.User.DefaultAvatarPath)?w=40&h=40&square=true" class="rounded-circle me-2" width="32" height="32" alt="@history.User?.DisplayName">
+                                        <div class="fw-bold">@history.User?.DisplayName</div>
+                                    </a>
+                                }
+                                else
+                                {
+                                    <span class="text-muted">@Localizer["Unknown User"]</span>
+                                }
+                            </td>
                                     <td>
                                         <span class="badge bg-secondary">@(history.OldJobLevel ?? "N/A")</span>
                                         <div class="small text-muted">@(history.OldTitle ?? "N/A")</div>
@@ -124,19 +128,19 @@
                                     <td>
                                         <label class="text-muted" data-utc-time="@history.ChangeTime.ToHtmlDateTime()"></label>
                                     </td>
-                                    <td>
-                                        @if (history.Promoter != null)
-                                        {
-                                            <div class="d-flex align-items-center">
-                                                <img src="@StorageService.RelativePathToInternetUrl(history.Promoter.AvatarRelativePath)?w=40&h=40&square=true" class="rounded-circle me-2" width="24" height="24" alt="@history.Promoter.DisplayName">
-                                                <span class="small">@history.Promoter.DisplayName</span>
-                                            </div>
-                                        }
-                                        else
-                                        {
-                                            <span class="text-muted small">@Localizer["System"]</span>
-                                        }
-                                    </td>
+                            <td>
+                                @if (history.Promoter != null)
+                                {
+                                    <a asp-controller="Users" asp-action="Details" asp-route-id="@history.PromoterId" class="text-dark d-flex align-items-center">
+                                        <img src="@StorageService.RelativePathToInternetUrl(history.Promoter.AvatarRelativePath)?w=40&h=40&square=true" class="rounded-circle me-2" width="24" height="24" alt="@history.Promoter.DisplayName">
+                                        <span class="small">@history.Promoter.DisplayName</span>
+                                    </a>
+                                }
+                                else
+                                {
+                                    <span class="text-muted small">@Localizer["System"]</span>
+                                }
+                            </td>
                                 </tr>
                             }
                             @if (!Model.Histories.Any())

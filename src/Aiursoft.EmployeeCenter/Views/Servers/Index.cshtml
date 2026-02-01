@@ -62,17 +62,17 @@
                             <td>
                                 @(s.CompanyEntity?.CompanyName ?? "-")
                             </td>
-                            <td>
+                            <td class="align-middle">
                                 @if (s.Owner != null)
                                 {
-                                    <span class="badge bg-secondary">
+                                    <a asp-controller="Users" asp-action="Details" asp-route-id="@s.OwnerId" class="text-dark d-flex align-items-center">
                                         <img src="@Storage.RelativePathToInternetUrl(s.Owner.AvatarRelativePath)" class="avatar img-fluid rounded me-1" alt="@s.Owner.DisplayName" style="width: 20px; height: 20px;" />
                                         @s.Owner.DisplayName
-                                    </span>
+                                    </a>
                                 }
                                 else
                                 {
-                                    <span>-</span>
+                                    <span class="text-muted">@Localizer["No Owner"]</span>
                                 }
                             </td>
                             <td>

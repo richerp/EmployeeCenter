@@ -80,7 +80,9 @@
                             {
                                 <tr class="clickable-row" data-href="@Url.Action("Details", "Users", new { id = progress.User.Id })">
                                     <td>
-                                        <img src="@StorageService.RelativePathToInternetUrl(progress.User.AvatarRelativePath)?w=72&square=true" alt="@progress.User.DisplayName" class="rounded-circle" width="36" height="36" />
+                                        <a asp-controller="Users" asp-action="Details" asp-route-id="@progress.User.Id">
+                                            <img src="@StorageService.RelativePathToInternetUrl(progress.User.AvatarRelativePath)?w=72&square=true" alt="@progress.User.DisplayName" class="rounded-circle" width="36" height="36" />
+                                        </a>
                                     </td>
                                     <td>
                                         <a asp-controller="Users" asp-action="Details" asp-route-id="@progress.User.Id">

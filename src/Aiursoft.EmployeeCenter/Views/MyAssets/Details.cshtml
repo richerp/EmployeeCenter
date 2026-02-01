@@ -98,8 +98,12 @@
                             @foreach (var history in Model.Asset.Histories.OrderByDescending(h => h.Timestamp))
                             {
                                 <tr>
-                                    <td>@history.Timestamp.ToString("yyyy-MM-dd HH:mm")</td>
-                                    <td>@history.Operator.DisplayName</td>
+                                    <td><label class="text-muted" data-utc-time="@history.Timestamp.ToHtmlDateTime()"></label></td>
+                                    <td>
+                                        <a asp-controller="Users" asp-action="Details" asp-route-id="@history.OperatorId" class="text-dark">
+                                            @history.Operator.DisplayName
+                                        </a>
+                                    </td>
                                     <td><span class="badge bg-info">@history.ActionType</span></td>
                                     <td>@(history.FieldName ?? "-")</td>
                                     <td>

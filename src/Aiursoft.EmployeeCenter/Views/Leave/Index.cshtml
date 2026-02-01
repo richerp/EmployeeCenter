@@ -224,16 +224,18 @@
                                             <span class="badge bg-danger">@Localizer["Rejected"]</span>
                                         }
                                     </td>
-                                    <td>
-                                        @if (item.ReviewedBy != null)
-                                        {
-                                            @item.ReviewedBy.DisplayName
-                                        }
-                                        else
-                                        {
-                                            <span class="text-muted">-</span>
-                                        }
-                                    </td>
+                                            <td>
+                                                @if (item.ReviewedBy != null)
+                                                {
+                                                    <a asp-controller="Users" asp-action="Details" asp-route-id="@item.ReviewedById" class="text-dark">
+                                                        @item.ReviewedBy.DisplayName
+                                                    </a>
+                                                }
+                                                else
+                                                {
+                                                    <span>-</span>
+                                                }
+                                            </td>
                                     <td>
                                         @if (!item.IsWithdrawn && item.StartDate > DateTime.UtcNow.AddHours(24))
                                         {
