@@ -57,6 +57,9 @@
   <data name="Inflow" xml:space="preserve">
     <value>Inflow</value>
   </data>
+  <data name="Inflow Distribution" xml:space="preserve">
+    <value>Inflow Distribution</value>
+  </data>
   <data name="Invoice" xml:space="preserve">
     <value>Invoice</value>
   </data>
@@ -83,6 +86,9 @@
   </data>
   <data name="Outflow" xml:space="preserve">
     <value>Outflow</value>
+  </data>
+  <data name="Outflow Distribution" xml:space="preserve">
+    <value>Outflow Distribution</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Recent Transactions</value>

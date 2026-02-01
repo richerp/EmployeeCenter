@@ -103,6 +103,8 @@ public class LedgerController(
 
         decimal totalInflow = 0;
         decimal totalOutflow = 0;
+        var inflowDistribution = new Dictionary<string, decimal>();
+        var outflowDistribution = new Dictionary<string, decimal>();
 
         if (accountId.HasValue)
         {
@@ -112,6 +114,16 @@ public class LedgerController(
             totalOutflow = recentTransactions
                 .Where(t => t.SourceAccountId == accountId)
                 .Sum(t => t.Amount);
+
+            inflowDistribution = recentTransactions
+                .Where(t => t.DestinationAccountId == accountId)
+                .GroupBy(t => t.SourceAccount?.AccountName ?? "Unknown")
+                .ToDictionary(g => g.Key, g => g.Sum(t => t.Amount * t.ExchangeRate));
+
+            outflowDistribution = recentTransactions
+                .Where(t => t.SourceAccountId == accountId)
+                .GroupBy(t => t.DestinationAccount?.AccountName ?? "Unknown")
+                .ToDictionary(g => g.Key, g => g.Sum(t => t.Amount));
         }
 
         // Chart Data (Always for the whole year)
@@ -206,7 +218,9 @@ public class LedgerController(
             TotalOutflow = totalOutflow,
             ChartLabels = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
             ChartInflowData = chartInflow,
-            ChartOutflowData = chartOutflow
+            ChartOutflowData = chartOutflow,
+            InflowDistribution = inflowDistribution,
+            OutflowDistribution = outflowDistribution
         };
 
         return this.StackView(model);

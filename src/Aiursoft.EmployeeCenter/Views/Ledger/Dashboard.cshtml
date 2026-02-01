@@ -328,6 +328,31 @@
                     </div>
                 </div>
             </div>
+
+            @if (Model.FilteredAccount != null)
+            {
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary">@Localizer["Inflow Distribution"]</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="chart-pie">
+                            <canvas id="inflowPieChart" style="height: 250px;"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary">@Localizer["Outflow Distribution"]</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="chart-pie">
+                            <canvas id="outflowPieChart" style="height: 250px;"></canvas>
+                        </div>
+                    </div>
+                </div>
+            }
         </div>
     </div>
 </div>
@@ -435,15 +460,65 @@
                             intersect: false,
                             mode: 'index',
                             caretPadding: 10,
-                            callbacks: {
-                                label: function(tooltipItem) {
-                                    return tooltipItem.dataset.label + ': ' + tooltipItem.raw.toLocaleString();
-                                }
+                                                        callbacks: {
+                                                            label: function(tooltipItem) {
+                                                                return tooltipItem.dataset.label + ': ' + tooltipItem.raw.toLocaleString();
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        });
+                            
+                                        @if (Model.FilteredAccount != null)
+                                        {
+                                            <text>
+                                            new Chart(document.getElementById("inflowPieChart"), {
+                                                type: 'doughnut',
+                                                data: {
+                                                    labels: @Json.Serialize(Model.InflowDistribution.Keys),
+                                                    datasets: [{
+                                                        data: @Json.Serialize(Model.InflowDistribution.Values),
+                                                        backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc', '#f6c23e', '#e74a3b', '#858796', '#5a5c69'],
+                                                        hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf', '#dda20a', '#be2617', '#60616f', '#373840'],
+                                                        hoverBorderColor: "rgba(234, 236, 244, 1)",
+                                                    }],
+                                                },
+                                                options: {
+                                                    maintainAspectRatio: false,
+                                                    plugins: {
+                                                        legend: {
+                                                            display: true,
+                                                            position: 'bottom'
+                                                        }
+                                                    }
+                                                },
+                                            });
+                            
+                                            new Chart(document.getElementById("outflowPieChart"), {
+                                                type: 'doughnut',
+                                                data: {
+                                                    labels: @Json.Serialize(Model.OutflowDistribution.Keys),
+                                                    datasets: [{
+                                                        data: @Json.Serialize(Model.OutflowDistribution.Values),
+                                                        backgroundColor: ['#e74a3b', '#f6c23e', '#4e73df', '#1cc88a', '#36b9cc', '#858796', '#5a5c69'],
+                                                        hoverBackgroundColor: ['#be2617', '#dda20a', '#2e59d9', '#17a673', '#2c9faf', '#60616f', '#373840'],
+                                                        hoverBorderColor: "rgba(234, 236, 244, 1)",
+                                                    }],
+                                                },
+                                                options: {
+                                                    maintainAspectRatio: false,
+                                                    plugins: {
+                                                        legend: {
+                                                            display: true,
+                                                            position: 'bottom'
+                                                        }
+                                                    }
+                                                },
+                                            });
+                                            </text>
+                                        }
+                                    });
+                                </script>
                             }
-                        }
-                    }
-                }
-            });
-        });
-    </script>
-}
+                            
