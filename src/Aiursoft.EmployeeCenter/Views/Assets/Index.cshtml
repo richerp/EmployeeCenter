@@ -70,8 +70,18 @@
                         }
                     </td>
                     <td>@(item.CompanyEntity?.CompanyName ?? Localizer["N/A"].Value)</td>
-                    <td>@(item.Assignee?.DisplayName ?? Localizer["N/A"].Value)</td>
-                    <td>@(item.Location?.Name ?? Localizer["N/A"].Value)</td>
+                                                    <td>
+                                                        @if (item.Assignee != null)
+                                                        {
+                                                            <a asp-controller="Users" asp-action="Details" asp-route-id="@item.AssigneeId" class="text-dark">
+                                                                @item.Assignee.DisplayName
+                                                            </a>
+                                                        }
+                                                        else
+                                                        {
+                                                            @Localizer["N/A"]
+                                                        }
+                                                    </td>                    <td>@(item.Location?.Name ?? Localizer["N/A"].Value)</td>
                     <td class="text-end">
                         <div class="btn-group">
                             <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary" title="@Localizer["Details"]">

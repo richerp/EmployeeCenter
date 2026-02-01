@@ -72,8 +72,7 @@
                 </div>
                 <hr />
                 <div class="small text-muted">
-                    <p class="mb-1">@Localizer["Created by"]: @Model.Password.Creator.DisplayName</p>
-                    <p class="mb-0">@Localizer["Created on"]: <label class="text-muted" data-utc-time="@Model.Password.CreationTime.ToHtmlDateTime()"></label></p>
+                                            <p class="mb-1">@Localizer["Created by"]: <a asp-controller="Users" asp-action="Details" asp-route-id="@Model.Password.CreatorId" class="text-dark">@Model.Password.Creator.DisplayName</a></p>                    <p class="mb-0">@Localizer["Created on"]: <label class="text-muted" data-utc-time="@Model.Password.CreationTime.ToHtmlDateTime()"></label></p>
                 </div>
             </div>
         </div>
