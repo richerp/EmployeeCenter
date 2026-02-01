@@ -63,6 +63,9 @@
   <data name="Total Company Promotions (YTD)" xml:space="preserve">
     <value>Tổng số thăng chức của công ty (Tính đến nay)</value>
   </data>
+  <data name="Unknown User" xml:space="preserve">
+    <value>Người dùng không xác định</value>
+  </data>
   <data name="User" xml:space="preserve">
     <value>Người dùng</value>
   </data>

@@ -54,6 +54,9 @@
   <data name="Location" xml:space="preserve">
     <value>위치</value>
   </data>
+  <data name="No Owner" xml:space="preserve">
+    <value>소유자 없음</value>
+  </data>
   <data name="No servers found." xml:space="preserve">
     <value>서버를 찾을 수 없습니다.</value>
   </data>

@@ -84,6 +84,9 @@
   <data name="Model" xml:space="preserve">
     <value>Μοντέλο</value>
   </data>
+  <data name="N/A" xml:space="preserve">
+    <value>Δ/Α</value>
+  </data>
   <data name="Pending Accept" xml:space="preserve">
     <value>Εκκρεμεί Υποδοχή</value>
   </data>

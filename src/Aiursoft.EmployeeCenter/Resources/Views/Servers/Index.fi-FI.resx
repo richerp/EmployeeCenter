@@ -54,6 +54,9 @@
   <data name="Location" xml:space="preserve">
     <value>Sijainti</value>
   </data>
+  <data name="No Owner" xml:space="preserve">
+    <value>Ei omistajaa</value>
+  </data>
   <data name="No servers found." xml:space="preserve">
     <value>Palvelinta ei löytynyt.</value>
   </data>

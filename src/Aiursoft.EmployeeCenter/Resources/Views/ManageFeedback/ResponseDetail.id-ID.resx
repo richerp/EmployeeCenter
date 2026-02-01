@@ -24,5 +24,8 @@
   <data name="Back to Responses" xml:space="preserve">
     <value>Kembali ke Tanggapan</value>
   </data>
+  <data name="Response from" xml:space="preserve">
+    <value>Balasan dari</value>
+  </data>
 
 </root>

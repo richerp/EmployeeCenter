@@ -24,5 +24,8 @@
   <data name="Back to Responses" xml:space="preserve">
     <value>応答へ戻る</value>
   </data>
+  <data name="Response from" xml:space="preserve">
+    <value>返信元</value>
+  </data>
 
 </root>

@@ -24,5 +24,8 @@
   <data name="Back to Responses" xml:space="preserve">
     <value>Terug naar Antwoorden</value>
   </data>
+  <data name="Response from" xml:space="preserve">
+    <value>Antwoord van</value>
+  </data>
 
 </root>

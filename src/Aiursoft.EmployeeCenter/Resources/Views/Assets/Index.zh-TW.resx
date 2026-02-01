@@ -84,6 +84,9 @@
   <data name="Model" xml:space="preserve">
     <value>型號</value>
   </data>
+  <data name="N/A" xml:space="preserve">
+    <value>無資料</value>
+  </data>
   <data name="Pending Accept" xml:space="preserve">
     <value>待接受</value>
   </data>
