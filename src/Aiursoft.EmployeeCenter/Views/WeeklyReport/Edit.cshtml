@@ -13,7 +13,7 @@
                 <a asp-controller="Users" asp-action="Details" asp-route-id="@Model.User!.Id">
                     <img src="@(StorageService.RelativePathToInternetUrl(Model.User!.AvatarRelativePath) + "?w=100&square=true")"
                          class="rounded-circle me-3"
-                         alt="@Model.User.DisplayName"
+                         alt="@Model.User!.DisplayName"
                          width="50"
                          height="50">
                 </a>
@@ -21,7 +21,7 @@
                     <a asp-controller="Users" asp-action="Details" asp-route-id="@Model.User!.Id" class="text-dark">
                         <h5 class="mb-0 fw-bold">@Model.User!.DisplayName</h5>
                     </a>
-                    <p class="text-muted small mb-0">@Model.User.Title</p>
+                    <p class="text-muted small mb-0">@Model.User!.Title</p>
                 </div>
             </div>
 
