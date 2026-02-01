@@ -57,6 +57,9 @@
   <data name="Inflow" xml:space="preserve">
     <value>流入</value>
   </data>
+  <data name="Inflow Distribution" xml:space="preserve">
+    <value>资金来源分布</value>
+  </data>
   <data name="Invoice" xml:space="preserve">
     <value>发票</value>
   </data>
@@ -80,6 +83,9 @@
   </data>
   <data name="Outflow" xml:space="preserve">
     <value>流出</value>
+  </data>
+  <data name="Outflow Distribution" xml:space="preserve">
+    <value>资金流向分布</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>最近交易</value>

@@ -28,4 +28,7 @@ public class DashboardViewModel : UiStackLayoutViewModel
     public string[] ChartLabels { get; set; } = [];
     public decimal[] ChartInflowData { get; set; } = [];
     public decimal[] ChartOutflowData { get; set; } = [];
+
+    public Dictionary<string, decimal> InflowDistribution { get; set; } = new();
+    public Dictionary<string, decimal> OutflowDistribution { get; set; } = new();
 }
