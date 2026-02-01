@@ -63,6 +63,9 @@
   <data name="Total Company Promotions (YTD)" xml:space="preserve">
     <value>Yhteensä yrityksen palkkaukset (Tänä vuonna)</value>
   </data>
+  <data name="Unknown User" xml:space="preserve">
+    <value>Tuntematon käyttäjä</value>
+  </data>
   <data name="User" xml:space="preserve">
     <value>Käyttäjä</value>
   </data>

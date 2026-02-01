@@ -54,6 +54,9 @@
   <data name="Location" xml:space="preserve">
     <value>Lokasi</value>
   </data>
+  <data name="No Owner" xml:space="preserve">
+    <value>Tidak Ada Pemilik</value>
+  </data>
   <data name="No servers found." xml:space="preserve">
     <value>Tidak ditemukan server.</value>
   </data>

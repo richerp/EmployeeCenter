@@ -63,6 +63,9 @@
   <data name="Total Company Promotions (YTD)" xml:space="preserve">
     <value>Σύνολο Εταιρικών Αναβαθμίσεων (Μέχρι Σήμερα)</value>
   </data>
+  <data name="Unknown User" xml:space="preserve">
+    <value>Άγνωστος Χρήστης</value>
+  </data>
   <data name="User" xml:space="preserve">
     <value>Χρήστης</value>
   </data>

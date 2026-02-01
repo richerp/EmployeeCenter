@@ -63,6 +63,9 @@
   <data name="Total Company Promotions (YTD)" xml:space="preserve">
     <value>연간 누적 회사 승진 수 (YTD)</value>
   </data>
+  <data name="Unknown User" xml:space="preserve">
+    <value>알 수 없는 사용자</value>
+  </data>
   <data name="User" xml:space="preserve">
     <value>사용자</value>
   </data>

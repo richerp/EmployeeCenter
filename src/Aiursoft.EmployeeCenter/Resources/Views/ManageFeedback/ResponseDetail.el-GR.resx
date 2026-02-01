@@ -24,5 +24,8 @@
   <data name="Back to Responses" xml:space="preserve">
     <value>Επιστροφή στις Απαντήσεις</value>
   </data>
+  <data name="Response from" xml:space="preserve">
+    <value>Απάντηση από</value>
+  </data>
 
 </root>

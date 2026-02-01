@@ -24,5 +24,8 @@
   <data name="Back to Responses" xml:space="preserve">
     <value>응답으로 돌아가기</value>
   </data>
+  <data name="Response from" xml:space="preserve">
+    <value>응답자</value>
+  </data>
 
 </root>

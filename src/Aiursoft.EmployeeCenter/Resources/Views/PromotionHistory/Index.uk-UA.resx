@@ -63,6 +63,9 @@
   <data name="Total Company Promotions (YTD)" xml:space="preserve">
     <value>Загальні промоції компанії (на поточний рік)</value>
   </data>
+  <data name="Unknown User" xml:space="preserve">
+    <value>Невідомий користувач</value>
+  </data>
   <data name="User" xml:space="preserve">
     <value>Користувач</value>
   </data>

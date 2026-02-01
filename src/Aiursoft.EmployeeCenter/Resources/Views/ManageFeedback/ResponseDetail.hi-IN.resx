@@ -24,5 +24,8 @@
   <data name="Back to Responses" xml:space="preserve">
     <value>प्रतिक्रियाओं पर वापस जाएँ</value>
   </data>
+  <data name="Response from" xml:space="preserve">
+    <value>प्रतिक्रिया द्वारा</value>
+  </data>
 
 </root>

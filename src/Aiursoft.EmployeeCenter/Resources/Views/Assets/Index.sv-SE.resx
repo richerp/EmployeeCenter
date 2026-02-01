@@ -84,6 +84,9 @@
   <data name="Model" xml:space="preserve">
     <value>Modell</value>
   </data>
+  <data name="N/A" xml:space="preserve">
+    <value>Ej tillgängligt</value>
+  </data>
   <data name="Pending Accept" xml:space="preserve">
     <value>Väntar på godkännande</value>
   </data>

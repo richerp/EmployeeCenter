@@ -63,6 +63,9 @@
   <data name="Total Company Promotions (YTD)" xml:space="preserve">
     <value>Promociones totales de la empresa (Hasta la fecha)</value>
   </data>
+  <data name="Unknown User" xml:space="preserve">
+    <value>Usuario desconocido</value>
+  </data>
   <data name="User" xml:space="preserve">
     <value>Usuario</value>
   </data>

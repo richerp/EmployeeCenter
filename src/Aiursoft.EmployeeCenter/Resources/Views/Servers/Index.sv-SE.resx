@@ -54,6 +54,9 @@
   <data name="Location" xml:space="preserve">
     <value>Plats</value>
   </data>
+  <data name="No Owner" xml:space="preserve">
+    <value>Ingen ägare</value>
+  </data>
   <data name="No servers found." xml:space="preserve">
     <value>Inga servrar hittades.</value>
   </data>

@@ -84,6 +84,9 @@
   <data name="Model" xml:space="preserve">
     <value>모델</value>
   </data>
+  <data name="N/A" xml:space="preserve">
+    <value>없음</value>
+  </data>
   <data name="Pending Accept" xml:space="preserve">
     <value>승인 대기</value>
   </data>
