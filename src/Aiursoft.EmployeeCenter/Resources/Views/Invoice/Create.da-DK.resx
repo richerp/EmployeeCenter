@@ -69,6 +69,9 @@
   <data name="Invoice No" xml:space="preserve">
     <value>Fakturanummer</value>
   </data>
+  <data name="Invoice Type" xml:space="preserve">
+    <value>Fakturatype</value>
+  </data>
   <data name="Issue Invoice" xml:space="preserve">
     <value>Udsted faktura</value>
   </data>
@@ -81,8 +84,14 @@
   <data name="Preview &amp; Generate HTML" xml:space="preserve">
     <value>Forhåndsvis &amp; Generer HTML</value>
   </data>
+  <data name="Proforma Invoice / Billing Statement" xml:space="preserve">
+    <value>Proformainvoicen / Faktureringsseddel</value>
+  </data>
   <data name="Quantity" xml:space="preserve">
     <value>Antal</value>
+  </data>
+  <data name="Receipt / Paid Invoice" xml:space="preserve">
+    <value>Modtagelse / Betalt faktura</value>
   </data>
   <data name="Seller Address" xml:space="preserve">
     <value>Sælgeradresse</value>

@@ -69,6 +69,9 @@
   <data name="Invoice No" xml:space="preserve">
     <value>Номер рахунку</value>
   </data>
+  <data name="Invoice Type" xml:space="preserve">
+    <value>Тип рахунку</value>
+  </data>
   <data name="Issue Invoice" xml:space="preserve">
     <value>Видати рахунок</value>
   </data>
@@ -81,8 +84,14 @@
   <data name="Preview &amp; Generate HTML" xml:space="preserve">
     <value>Попередній перегляд та генерація HTML</value>
   </data>
+  <data name="Proforma Invoice / Billing Statement" xml:space="preserve">
+    <value>Проформа рахунку / Рахунок-фактура</value>
+  </data>
   <data name="Quantity" xml:space="preserve">
     <value>Кількість</value>
+  </data>
+  <data name="Receipt / Paid Invoice" xml:space="preserve">
+    <value>Рахунок-фактура / Оплачений рахунок</value>
   </data>
   <data name="Seller Address" xml:space="preserve">
     <value>Адреса продавця</value>

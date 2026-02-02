@@ -69,6 +69,9 @@
   <data name="Invoice No" xml:space="preserve">
     <value>इन्वॉइस नंबर</value>
   </data>
+  <data name="Invoice Type" xml:space="preserve">
+    <value>इनवॉइस प्रकार</value>
+  </data>
   <data name="Issue Invoice" xml:space="preserve">
     <value>इनवॉइस जारी करें</value>
   </data>
@@ -81,8 +84,14 @@
   <data name="Preview &amp; Generate HTML" xml:space="preserve">
     <value>पूर्वावलोकन और HTML उत्पन्न करें</value>
   </data>
+  <data name="Proforma Invoice / Billing Statement" xml:space="preserve">
+    <value>प्रोफॉर्मा इन्वॉइस / बिलिंग स्टेटमेंट</value>
+  </data>
   <data name="Quantity" xml:space="preserve">
     <value>मात्रा</value>
+  </data>
+  <data name="Receipt / Paid Invoice" xml:space="preserve">
+    <value>रसीद / भुगतान की गई बिल</value>
   </data>
   <data name="Seller Address" xml:space="preserve">
     <value>विक्रेता पता</value>

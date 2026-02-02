@@ -69,6 +69,9 @@
   <data name="Invoice No" xml:space="preserve">
     <value>Số hóa đơn</value>
   </data>
+  <data name="Invoice Type" xml:space="preserve">
+    <value>Loại hóa đơn</value>
+  </data>
   <data name="Issue Invoice" xml:space="preserve">
     <value>Tạo hóa đơn</value>
   </data>
@@ -81,8 +84,14 @@
   <data name="Preview &amp; Generate HTML" xml:space="preserve">
     <value>Xem trước &amp; Tạo HTML</value>
   </data>
+  <data name="Proforma Invoice / Billing Statement" xml:space="preserve">
+    <value>Hóa đơn tạm tính / Báo cáo thanh toán</value>
+  </data>
   <data name="Quantity" xml:space="preserve">
     <value>Số lượng</value>
+  </data>
+  <data name="Receipt / Paid Invoice" xml:space="preserve">
+    <value>Phiếu thu / Hóa đơn đã thanh toán</value>
   </data>
   <data name="Seller Address" xml:space="preserve">
     <value>Địa chỉ người bán</value>

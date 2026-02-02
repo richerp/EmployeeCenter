@@ -69,6 +69,9 @@
   <data name="Invoice No" xml:space="preserve">
     <value>Numer faktury</value>
   </data>
+  <data name="Invoice Type" xml:space="preserve">
+    <value>Typ faktury</value>
+  </data>
   <data name="Issue Invoice" xml:space="preserve">
     <value>Wystaw fakturę</value>
   </data>
@@ -81,8 +84,14 @@
   <data name="Preview &amp; Generate HTML" xml:space="preserve">
     <value>Podgląd i generuj HTML</value>
   </data>
+  <data name="Proforma Invoice / Billing Statement" xml:space="preserve">
+    <value>Faktura przedstawiona / Dokument rozliczeniowy</value>
+  </data>
   <data name="Quantity" xml:space="preserve">
     <value>Ilość</value>
+  </data>
+  <data name="Receipt / Paid Invoice" xml:space="preserve">
+    <value>Rachunek / Faktura zapłacona</value>
   </data>
   <data name="Seller Address" xml:space="preserve">
     <value>Adres sprzedawcy</value>

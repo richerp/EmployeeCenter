@@ -72,12 +72,6 @@
   <data name="Invoice Type" xml:space="preserve">
     <value>Invoice Type</value>
   </data>
-  <data name="Receipt / Paid Invoice" xml:space="preserve">
-    <value>Receipt / Paid Invoice</value>
-  </data>
-  <data name="Proforma Invoice / Billing Statement" xml:space="preserve">
-    <value>Proforma Invoice / Billing Statement</value>
-  </data>
   <data name="Issue Invoice" xml:space="preserve">
     <value>Issue Invoice</value>
   </data>
@@ -90,8 +84,14 @@
   <data name="Preview &amp; Generate HTML" xml:space="preserve">
     <value>Preview &amp; Generate HTML</value>
   </data>
+  <data name="Proforma Invoice / Billing Statement" xml:space="preserve">
+    <value>Proforma Invoice / Billing Statement</value>
+  </data>
   <data name="Quantity" xml:space="preserve">
     <value>Quantity</value>
+  </data>
+  <data name="Receipt / Paid Invoice" xml:space="preserve">
+    <value>Receipt / Paid Invoice</value>
   </data>
   <data name="Seller Address" xml:space="preserve">
     <value>Seller Address</value>

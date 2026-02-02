@@ -69,6 +69,9 @@
   <data name="Invoice No" xml:space="preserve">
     <value>Numero fattura</value>
   </data>
+  <data name="Invoice Type" xml:space="preserve">
+    <value>Tipo fattura</value>
+  </data>
   <data name="Issue Invoice" xml:space="preserve">
     <value>Emetti Fattura</value>
   </data>
@@ -81,8 +84,14 @@
   <data name="Preview &amp; Generate HTML" xml:space="preserve">
     <value>Anteprima &amp; Genera HTML</value>
   </data>
+  <data name="Proforma Invoice / Billing Statement" xml:space="preserve">
+    <value>Fattura Proforma / Dichiarazione di Addebito</value>
+  </data>
   <data name="Quantity" xml:space="preserve">
     <value>Quantità</value>
+  </data>
+  <data name="Receipt / Paid Invoice" xml:space="preserve">
+    <value>Bonifico / Fattura pagata</value>
   </data>
   <data name="Seller Address" xml:space="preserve">
     <value>Indirizzo del Venditore</value>

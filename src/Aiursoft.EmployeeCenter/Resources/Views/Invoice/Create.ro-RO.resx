@@ -69,6 +69,9 @@
   <data name="Invoice No" xml:space="preserve">
     <value>Număr factură</value>
   </data>
+  <data name="Invoice Type" xml:space="preserve">
+    <value>Tip factură</value>
+  </data>
   <data name="Issue Invoice" xml:space="preserve">
     <value>Emitere Factură</value>
   </data>
@@ -81,8 +84,14 @@
   <data name="Preview &amp; Generate HTML" xml:space="preserve">
     <value>Previzualizare &amp; Generare HTML</value>
   </data>
+  <data name="Proforma Invoice / Billing Statement" xml:space="preserve">
+    <value>Factură provizorie / Declarație de facturare</value>
+  </data>
   <data name="Quantity" xml:space="preserve">
     <value>Cantitate</value>
+  </data>
+  <data name="Receipt / Paid Invoice" xml:space="preserve">
+    <value>Recenzie / Factură plătită</value>
   </data>
   <data name="Seller Address" xml:space="preserve">
     <value>Adresa vânzătorului</value>

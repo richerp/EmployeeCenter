@@ -69,6 +69,9 @@
   <data name="Invoice No" xml:space="preserve">
     <value>رقم الفاتورة</value>
   </data>
+  <data name="Invoice Type" xml:space="preserve">
+    <value>نوع الفاتورة</value>
+  </data>
   <data name="Issue Invoice" xml:space="preserve">
     <value>إصدار الفاتورة</value>
   </data>
@@ -81,8 +84,14 @@
   <data name="Preview &amp; Generate HTML" xml:space="preserve">
     <value>معاينة وإنشاء HTML</value>
   </data>
+  <data name="Proforma Invoice / Billing Statement" xml:space="preserve">
+    <value>فاتورة احتسابية / بيان احتسابي</value>
+  </data>
   <data name="Quantity" xml:space="preserve">
     <value>الكمية</value>
+  </data>
+  <data name="Receipt / Paid Invoice" xml:space="preserve">
+    <value>إيصال / فاتورة مدفوعة</value>
   </data>
   <data name="Seller Address" xml:space="preserve">
     <value>عنوان البائع</value>

@@ -69,6 +69,9 @@
   <data name="Invoice No" xml:space="preserve">
     <value>請求書番号</value>
   </data>
+  <data name="Invoice Type" xml:space="preserve">
+    <value>請求書タイプ</value>
+  </data>
   <data name="Issue Invoice" xml:space="preserve">
     <value>請求書を発行する</value>
   </data>
@@ -81,8 +84,14 @@
   <data name="Preview &amp; Generate HTML" xml:space="preserve">
     <value>プレビュー &amp; HTML生成</value>
   </data>
+  <data name="Proforma Invoice / Billing Statement" xml:space="preserve">
+    <value>仮の請求書 / 請求明細書</value>
+  </data>
   <data name="Quantity" xml:space="preserve">
     <value>数量</value>
+  </data>
+  <data name="Receipt / Paid Invoice" xml:space="preserve">
+    <value>領収書 / 支払済み請求書</value>
   </data>
   <data name="Seller Address" xml:space="preserve">
     <value>販売者住所</value>
