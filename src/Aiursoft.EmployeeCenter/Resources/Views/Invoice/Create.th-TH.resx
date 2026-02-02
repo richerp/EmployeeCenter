@@ -69,6 +69,9 @@
   <data name="Invoice No" xml:space="preserve">
     <value>เลขที่ใบแจ้งหนี้</value>
   </data>
+  <data name="Invoice Type" xml:space="preserve">
+    <value>ประเภทใบแจ้งหนี้</value>
+  </data>
   <data name="Issue Invoice" xml:space="preserve">
     <value>ออกใบแจ้งหนี้</value>
   </data>
@@ -81,8 +84,14 @@
   <data name="Preview &amp; Generate HTML" xml:space="preserve">
     <value>ดูตัวอย่างและสร้าง HTML</value>
   </data>
+  <data name="Proforma Invoice / Billing Statement" xml:space="preserve">
+    <value>ใบแจ้งหนี้แบบร่าง / หนังสือแจ้งยอดหนี้</value>
+  </data>
   <data name="Quantity" xml:space="preserve">
     <value>จำนวน</value>
+  </data>
+  <data name="Receipt / Paid Invoice" xml:space="preserve">
+    <value>ใบเสร็จ / ใบแจ้งหนี้ที่ชำระแล้ว</value>
   </data>
   <data name="Seller Address" xml:space="preserve">
     <value>ที่อยู่ผู้ขาย</value>

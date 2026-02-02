@@ -69,6 +69,9 @@
   <data name="Invoice No" xml:space="preserve">
     <value>Αριθμός Τιμολογίου</value>
   </data>
+  <data name="Invoice Type" xml:space="preserve">
+    <value>Τύπος Τιμολογίου</value>
+  </data>
   <data name="Issue Invoice" xml:space="preserve">
     <value>Εκδόση Τιμολογίου</value>
   </data>
@@ -81,8 +84,14 @@
   <data name="Preview &amp; Generate HTML" xml:space="preserve">
     <value>Προεπισκόπηση &amp; Δημιουργία HTML</value>
   </data>
+  <data name="Proforma Invoice / Billing Statement" xml:space="preserve">
+    <value>Προσωρινή Παραστατική / Δήλωση Χρέωσης</value>
+  </data>
   <data name="Quantity" xml:space="preserve">
     <value>Ποσότητα</value>
+  </data>
+  <data name="Receipt / Paid Invoice" xml:space="preserve">
+    <value>Απόδειξη / Πληρωμένο Τιμολόγιο</value>
   </data>
   <data name="Seller Address" xml:space="preserve">
     <value>Διεύθυνση Πωλητή</value>

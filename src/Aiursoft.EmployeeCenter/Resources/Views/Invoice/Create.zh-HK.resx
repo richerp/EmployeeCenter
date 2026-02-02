@@ -72,12 +72,6 @@
   <data name="Invoice Type" xml:space="preserve">
     <value>發票類型</value>
   </data>
-  <data name="Receipt / Paid Invoice" xml:space="preserve">
-    <value>已付清憑據 (Receipt / Paid Invoice)</value>
-  </data>
-  <data name="Proforma Invoice / Billing Statement" xml:space="preserve">
-    <value>待付款帳單 (Proforma Invoice / Billing Statement)</value>
-  </data>
   <data name="Issue Invoice" xml:space="preserve">
     <value>發票</value>
   </data>
@@ -90,8 +84,14 @@
   <data name="Preview &amp; Generate HTML" xml:space="preserve">
     <value>預覽 &amp; 產生 HTML</value>
   </data>
+  <data name="Proforma Invoice / Billing Statement" xml:space="preserve">
+    <value>待付款帳單 (Proforma Invoice / Billing Statement)</value>
+  </data>
   <data name="Quantity" xml:space="preserve">
     <value>數量</value>
+  </data>
+  <data name="Receipt / Paid Invoice" xml:space="preserve">
+    <value>已付清憑據 (Receipt / Paid Invoice)</value>
   </data>
   <data name="Seller Address" xml:space="preserve">
     <value>賣方地址</value>

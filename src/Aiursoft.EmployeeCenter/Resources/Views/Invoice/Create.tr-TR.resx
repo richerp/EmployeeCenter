@@ -69,6 +69,9 @@
   <data name="Invoice No" xml:space="preserve">
     <value>Fatura No</value>
   </data>
+  <data name="Invoice Type" xml:space="preserve">
+    <value>Fatura Türü</value>
+  </data>
   <data name="Issue Invoice" xml:space="preserve">
     <value>Fatura Ver</value>
   </data>
@@ -81,8 +84,14 @@
   <data name="Preview &amp; Generate HTML" xml:space="preserve">
     <value>Ön İzle &amp; HTML Oluştur</value>
   </data>
+  <data name="Proforma Invoice / Billing Statement" xml:space="preserve">
+    <value>Proforma Fatura / Fatura Bildirimi</value>
+  </data>
   <data name="Quantity" xml:space="preserve">
     <value>Miktar</value>
+  </data>
+  <data name="Receipt / Paid Invoice" xml:space="preserve">
+    <value>Alınan Fatura / Ödenmiş Fatura</value>
   </data>
   <data name="Seller Address" xml:space="preserve">
     <value>Satıcı Adresi</value>

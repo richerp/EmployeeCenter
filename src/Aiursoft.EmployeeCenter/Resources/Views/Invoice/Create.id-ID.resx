@@ -69,6 +69,9 @@
   <data name="Invoice No" xml:space="preserve">
     <value>Nomor Faktur</value>
   </data>
+  <data name="Invoice Type" xml:space="preserve">
+    <value>Jenis Faktur</value>
+  </data>
   <data name="Issue Invoice" xml:space="preserve">
     <value>Terbitkan Faktur</value>
   </data>
@@ -81,8 +84,14 @@
   <data name="Preview &amp; Generate HTML" xml:space="preserve">
     <value>Pratinjau &amp; Hasilkan HTML</value>
   </data>
+  <data name="Proforma Invoice / Billing Statement" xml:space="preserve">
+    <value>Invoice Proforma / Surat Tagihan</value>
+  </data>
   <data name="Quantity" xml:space="preserve">
     <value>Jumlah</value>
+  </data>
+  <data name="Receipt / Paid Invoice" xml:space="preserve">
+    <value>Tanda Terima / Faktur Pembayaran</value>
   </data>
   <data name="Seller Address" xml:space="preserve">
     <value>Alamat Penjual</value>
