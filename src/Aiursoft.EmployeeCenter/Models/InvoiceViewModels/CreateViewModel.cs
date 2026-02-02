@@ -3,8 +3,20 @@ using Aiursoft.UiStack.Layout;
 
 namespace Aiursoft.EmployeeCenter.Models.InvoiceViewModels;
 
+public enum InvoiceType
+{
+    [Display(Name = "Receipt / Paid Invoice")]
+    Receipt,
+    
+    [Display(Name = "Proforma Invoice / Billing Statement")]
+    Proforma
+}
+
 public class CreateViewModel : UiStackLayoutViewModel
 {
+    [Required]
+    public InvoiceType Type { get; set; } = InvoiceType.Receipt;
+
     [Required]
     public int SellerId { get; set; }
     

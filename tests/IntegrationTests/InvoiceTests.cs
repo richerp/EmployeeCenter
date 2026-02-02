@@ -75,9 +75,38 @@ public class InvoiceTests : TestBase
         
         previewResponse.EnsureSuccessStatusCode();
         var previewContent = await previewResponse.Content.ReadAsStringAsync();
-        Assert.Contains("INVOICE", previewContent, "Preview should contain the title INVOICE.");
+        Assert.Contains("RECEIPT", previewContent, "Preview should contain the title RECEIPT.");
         Assert.Contains("INV-TEST-01", previewContent, "Preview should contain the invoice number.");
         Assert.Contains("Test Item", previewContent, "Preview should contain the item description.");
         Assert.Contains("1,000.00", previewContent, "Preview should contain the formatted unit price.");
+
+        // 6. Submit Proforma Preview
+        var proformaPreviewResponse = await PostForm("/Invoice/Preview", new Dictionary<string, string>
+        {
+            { "SellerId", sellerId.ToString() },
+            { "SellerName", "Seller Ltd" },
+            { "SellerAddress", "Seller Address" },
+            { "SellerCode", "SE001" },
+            { "BuyerId", buyerId.ToString() },
+            { "BuyerName", "Buyer Entity" },
+            { "BuyerAddress", "Buyer Address" },
+            { "InvoiceNo", "PRO-TEST-01" },
+            { "Type", "1" }, // InvoiceType.Proforma
+            { "Date", DateTime.Today.ToString("yyyy-MM-dd") },
+            { "Currency", "HKD" },
+            { "BankName", "Seller Bank" },
+            { "BankAccount", "123456" },
+            { "BeneficiaryName", "Seller Ltd" },
+            { "Items[0].Description", "Service Subscription" },
+            { "Items[0].Quantity", "1" },
+            { "Items[0].UnitPrice", "2000" }
+        }, tokenUrl: $"/Invoice/Create?sellerId={sellerId}&buyerId={buyerId}");
+
+        proformaPreviewResponse.EnsureSuccessStatusCode();
+        var proformaPreviewContent = await proformaPreviewResponse.Content.ReadAsStringAsync();
+        Assert.Contains("PROFORMA INVOICE", proformaPreviewContent, "Preview should contain the title PROFORMA INVOICE.");
+        Assert.Contains("PRO-TEST-01", proformaPreviewContent, "Preview should contain the invoice number.");
+        Assert.Contains("Service Subscription", proformaPreviewContent, "Preview should contain the item description.");
+        Assert.Contains("2,000.00", proformaPreviewContent, "Preview should contain the formatted unit price.");
     }
 }

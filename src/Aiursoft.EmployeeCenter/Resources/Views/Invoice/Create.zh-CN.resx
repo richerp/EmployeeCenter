@@ -69,6 +69,15 @@
   <data name="Invoice No" xml:space="preserve">
     <value>发票编号</value>
   </data>
+  <data name="Invoice Type" xml:space="preserve">
+    <value>发票类型</value>
+  </data>
+  <data name="Receipt / Paid Invoice" xml:space="preserve">
+    <value>已付清凭据 (Receipt / Paid Invoice)</value>
+  </data>
+  <data name="Proforma Invoice / Billing Statement" xml:space="preserve">
+    <value>待付款账单 (Proforma Invoice / Billing Statement)</value>
+  </data>
   <data name="Issue Invoice" xml:space="preserve">
     <value>开具发票</value>
   </data>
