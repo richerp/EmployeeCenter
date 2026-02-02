@@ -54,6 +54,9 @@
   <data name="Inflow" xml:space="preserve">
     <value>Εισροή</value>
   </data>
+  <data name="Inflow Distribution" xml:space="preserve">
+    <value>Κατανομή Εισροής</value>
+  </data>
   <data name="Invoice" xml:space="preserve">
     <value>Τιμολόγιο</value>
   </data>
@@ -77,6 +80,9 @@
   </data>
   <data name="Outflow" xml:space="preserve">
     <value>Εξροή</value>
+  </data>
+  <data name="Outflow Distribution" xml:space="preserve">
+    <value>Διανομή Εξόδων</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Πρόσφατες Συναλλαγές</value>

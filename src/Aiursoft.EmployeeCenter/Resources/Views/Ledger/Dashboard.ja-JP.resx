@@ -54,6 +54,9 @@
   <data name="Inflow" xml:space="preserve">
     <value>インフロー</value>
   </data>
+  <data name="Inflow Distribution" xml:space="preserve">
+    <value>インフロー分布</value>
+  </data>
   <data name="Invoice" xml:space="preserve">
     <value>請求書</value>
   </data>
@@ -77,6 +80,9 @@
   </data>
   <data name="Outflow" xml:space="preserve">
     <value>出金</value>
+  </data>
+  <data name="Outflow Distribution" xml:space="preserve">
+    <value>出金の分布</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>最近の取引</value>

@@ -54,6 +54,9 @@
   <data name="Inflow" xml:space="preserve">
     <value>Indflyd</value>
   </data>
+  <data name="Inflow Distribution" xml:space="preserve">
+    <value>Indkomstdistribution</value>
+  </data>
   <data name="Invoice" xml:space="preserve">
     <value>Faktura</value>
   </data>
@@ -77,6 +80,9 @@
   </data>
   <data name="Outflow" xml:space="preserve">
     <value>Udstrømning</value>
+  </data>
+  <data name="Outflow Distribution" xml:space="preserve">
+    <value>Udstrømning Fordeling</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Seneste transaktioner</value>
