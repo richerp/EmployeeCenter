@@ -78,6 +78,14 @@
                         <h6 class="m-0 font-weight-bold text-primary">@Localizer["Invoice Meta"]</h6>
                     </div>
                     <div class="card-body">
+                        <div class="form-group mb-3">
+                            <label asp-for="Type" class="control-label">@Localizer["Invoice Type"]</label>
+                            <select asp-for="Type" class="form-control">
+                                <option value="@((int)Aiursoft.EmployeeCenter.Models.InvoiceViewModels.InvoiceType.Receipt)">@Localizer["Receipt / Paid Invoice"]</option>
+                                <option value="@((int)Aiursoft.EmployeeCenter.Models.InvoiceViewModels.InvoiceType.Proforma)">@Localizer["Proforma Invoice / Billing Statement"]</option>
+                            </select>
+                            <span asp-validation-for="Type" class="text-danger"></span>
+                        </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group mb-3">

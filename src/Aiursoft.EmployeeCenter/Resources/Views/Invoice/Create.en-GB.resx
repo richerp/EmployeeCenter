@@ -69,6 +69,15 @@
   <data name="Invoice No" xml:space="preserve">
     <value>Invoice No</value>
   </data>
+  <data name="Invoice Type" xml:space="preserve">
+    <value>Invoice Type</value>
+  </data>
+  <data name="Receipt / Paid Invoice" xml:space="preserve">
+    <value>Receipt / Paid Invoice</value>
+  </data>
+  <data name="Proforma Invoice / Billing Statement" xml:space="preserve">
+    <value>Proforma Invoice / Billing Statement</value>
+  </data>
   <data name="Issue Invoice" xml:space="preserve">
     <value>Issue Invoice</value>
   </data>

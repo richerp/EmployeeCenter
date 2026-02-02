@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Commercial Invoice - @Model.SellerName</title>
+    <title>@(Model.Type == Aiursoft.EmployeeCenter.Models.InvoiceViewModels.InvoiceType.Receipt ? "Receipt" : "Proforma Invoice") - @Model.SellerName</title>
     <style>
         /* 页面基础设置 - 适配 A4 (紧凑版) */
         body {
@@ -294,9 +294,9 @@
             </div>
         </div>
         <div class="invoice-title">
-            <h1>INVOICE</h1>
+            <h1>@(Model.Type == Aiursoft.EmployeeCenter.Models.InvoiceViewModels.InvoiceType.Receipt ? "RECEIPT" : "PROFORMA INVOICE")</h1>
             <div class="invoice-meta">
-                <span><strong>Invoice No:</strong> @Model.InvoiceNo</span><br>
+                <span><strong>@(Model.Type == Aiursoft.EmployeeCenter.Models.InvoiceViewModels.InvoiceType.Receipt ? "Receipt No" : "Invoice No"):</strong> @Model.InvoiceNo</span><br>
                 <span><strong>Date:</strong> @Model.Date.ToString("MMMM dd, yyyy")</span><br>
                 @if (!string.IsNullOrEmpty(Model.ContractNo))
                 {
@@ -370,7 +370,7 @@
                 <span>@Model.Currency @Model.Tax.ToString("N2")</span>
             </div>
             <div class="total-row final">
-                <span>Total Due:</span>
+                <span>@(Model.Type == Aiursoft.EmployeeCenter.Models.InvoiceViewModels.InvoiceType.Receipt ? "Total Paid" : "Total Due"):</span>
                 <span>@Model.Currency @Model.TotalDue.ToString("N2")</span>
             </div>
         </div>
@@ -379,7 +379,7 @@
     <div class="footer-wrapper">
         <div class="footer-section">
             <div class="banking-info">
-                <h4>PAYMENT INSTRUCTIONS (BANK TRANSFER ONLY)</h4>
+                <h4>@(Model.Type == Aiursoft.EmployeeCenter.Models.InvoiceViewModels.InvoiceType.Receipt ? "PAYMENT DETAILS" : "PAYMENT INSTRUCTIONS (BANK TRANSFER ONLY)")</h4>
                 <table class="banking-table" style="width: 100%; font-size: 11px; border: none;">
                     <tr>
                         <td style="width: 110px; color: #666;">Beneficiary Name:</td>
