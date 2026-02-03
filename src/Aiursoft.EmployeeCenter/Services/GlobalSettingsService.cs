@@ -2,11 +2,15 @@ using Aiursoft.Scanner.Abstractions;
 using Aiursoft.EmployeeCenter.Configuration;
 using Aiursoft.EmployeeCenter.Entities;
 using Aiursoft.EmployeeCenter.Models;
+using Aiursoft.EmployeeCenter.Services.FileStorage;
 using Microsoft.EntityFrameworkCore;
 
 namespace Aiursoft.EmployeeCenter.Services;
 
-public class GlobalSettingsService(EmployeeCenterDbContext dbContext, IConfiguration configuration) : IScopedDependency
+public class GlobalSettingsService(
+    EmployeeCenterDbContext dbContext,
+    IConfiguration configuration,
+    StorageService storageService) : IScopedDependency
 {
     public async Task<string> GetSettingValueAsync(string key)
     {
@@ -83,6 +87,25 @@ public class GlobalSettingsService(EmployeeCenterDbContext dbContext, IConfigura
                 if (definition.ChoiceOptions != null && !definition.ChoiceOptions.ContainsKey(value))
                 {
                     throw new InvalidOperationException($"Value '{value}' is not a valid choice for setting {key}.");
+                }
+                break;
+            case SettingType.File:
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new InvalidOperationException($"File path cannot be empty for setting {key}.");
+                }
+                // Validate that the file exists and path is secure using StorageService
+                try
+                {
+                    var physicalPath = storageService.GetFilePhysicalPath(value, isVault: false);
+                    if (!File.Exists(physicalPath))
+                    {
+                        throw new InvalidOperationException($"File not found for setting {key}.");
+                    }
+                }
+                catch (ArgumentException)
+                {
+                    throw new InvalidOperationException($"Invalid file path for setting {key}.");
                 }
                 break;
             case SettingType.Text:
