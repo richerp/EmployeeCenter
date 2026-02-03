@@ -11,7 +11,8 @@ public class FileUpload(StorageService storageService) : ViewComponent
         string subfolder,
         int maxSizeInMb = 2000,
         string? allowedExtensions = null,
-        bool isVault = false)
+        bool isVault = false,
+        string? fieldName = null)
     {
         var uploadEndpoint = storageService.GetUploadUrl(subfolder, isVault);
         return View(new FileUploadViewModel
@@ -20,7 +21,8 @@ public class FileUpload(StorageService storageService) : ViewComponent
             UploadEndpoint = uploadEndpoint,
             MaxSizeInMb = maxSizeInMb,
             AllowedExtensions = allowedExtensions,
-            IsVault = isVault
+            IsVault = isVault,
+            FieldName = fieldName
         });
     }
 }
