@@ -53,6 +53,7 @@
                         <th>@Localizer["Self"]</th>
                         <th>@Localizer["Authentik"]</th>
                         <th>@Localizer["Cloudflare"]</th>
+                        <th>@Localizer["Via Frps"]</th>
                         <th>@Localizer["Status"]</th>
                         <th class="text-end">@Localizer["Actions"]</th>
                     </tr>
@@ -133,6 +134,15 @@
                                     <i class="text-warning align-middle" data-lucide="x-circle"></i>
                                 }
                             </td>
+                            <td data-order="@(s.IsViaFrps ? 1 : 0)">
+                                @if (s.IsViaFrps)
+                                {
+                                    <i class="text-success align-middle" data-lucide="check-circle"></i>
+                                }
+                                else
+                                {
+                                    <i class="text-warning align-middle" data-lucide="x-circle"></i>
+                                }
                             <td data-order="@((int)s.Status)">
                                 @switch (s.Status)
                                 {
