@@ -30,6 +30,7 @@ public abstract class EmployeeCenterDbContext(DbContextOptions options) : Identi
     public DbSet<Vendor> Vendors => Set<Vendor>();
     public DbSet<Asset> Assets => Set<Asset>();
     public DbSet<AssetHistory> AssetHistories => Set<AssetHistory>();
+    public DbSet<IntangibleAsset> IntangibleAssets => Set<IntangibleAsset>();
     public DbSet<Contract> Contracts => Set<Contract>();
     public DbSet<PromotionHistory> PromotionHistories => Set<PromotionHistory>();
     public DbSet<WeeklyReport> WeeklyReports => Set<WeeklyReport>();
