@@ -102,7 +102,7 @@ public class AppPermissions
                 localizer["Allows managing the company's financial accounts and recording transactions."]),
             new(AppPermissionNames.CanManageAssets,
                 localizer["Manage Assets"],
-                localizer["Allows managing the company's IT assets, including categories, models, and individual items. Also allows assigning and recovering assets to/from employees."]),
+                localizer["Allows managing the company's IT assets and intangible assets (like domains, licenses), including categories, models, and individual items. Also allows assigning and recovering assets to/from employees."]),
             new(AppPermissionNames.CanCreateWeeklyReport,
                 localizer["Create Weekly Report"],
                 localizer["Allows the user to create their own weekly reports."]),
