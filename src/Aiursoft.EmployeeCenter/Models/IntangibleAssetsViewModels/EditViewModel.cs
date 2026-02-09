@@ -1,5 +1,4 @@
 using System.ComponentModel.DataAnnotations;
-using Aiursoft.EmployeeCenter.Entities;
 
 namespace Aiursoft.EmployeeCenter.Models.IntangibleAssetsViewModels;
 
