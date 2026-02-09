@@ -84,7 +84,7 @@ public class AppPermissions
                 localizer["Allows viewing the report line of any user, including their manager, subordinates, and peers."]),
             new(AppPermissionNames.CanApproveAnyLeave,
                 localizer["Approve Any Leave"],
-                localizer["Allows approving or rejecting any leave application, regardless of the reporting line."]),
+                localizer["Allows approving or rejecting any leave application, regardless of the reporting line, and viewing any user's leave history."]),
             new(AppPermissionNames.CanManageOnboarding,
                 localizer["Manage Onboarding Tasks"],
                 localizer["Allows creating and managing onboarding task templates for new employees."]),

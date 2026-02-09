@@ -79,6 +79,71 @@ public class LeaveTests
         return user.Id;
     }
 
+    private async Task Login(string email, string password)
+    {
+        var loginToken = await GetAntiCsrfToken("/Account/Login");
+        var loginContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "EmailOrUserName", email },
+            { "Password", password },
+            { "__RequestVerificationToken", loginToken }
+        });
+        var response = await _http.PostAsync("/Account/Login", loginContent);
+        Assert.AreEqual(HttpStatusCode.Found, response.StatusCode);
+    }
+
+    [TestMethod]
+    public async Task CanSearchAnyoneLeaveHistoryWithPermissionTest()
+    {
+        // 1. Login as admin (who has CanApproveAnyLeave)
+        await Login("admin@default.com", "admin123");
+
+        // 2. Create another user (target user)
+        var targetUserEmail = $"target-{Guid.NewGuid()}@aiursoft.com";
+        string targetUserId;
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
+            var targetUser = new User
+            {
+                UserName = targetUserEmail.Split('@')[0],
+                Email = targetUserEmail,
+                DisplayName = "Target User",
+                AvatarRelativePath = User.DefaultAvatarPath
+            };
+            var result = await userManager.CreateAsync(targetUser, "Test-Password-123");
+            Assert.IsTrue(result.Succeeded);
+            targetUserId = targetUser.Id;
+
+            // Give some leave records to target user
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            db.LeaveApplications.Add(new LeaveApplication
+            {
+                UserId = targetUserId,
+                LeaveType = LeaveType.AnnualLeave,
+                StartDate = DateTime.UtcNow.Date.AddDays(5),
+                EndDate = DateTime.UtcNow.Date.AddDays(7),
+                TotalDays = 3,
+                Reason = "Target's Vacation",
+                IsPending = true,
+                IsApproved = false,
+                SubmittedAt = DateTime.UtcNow
+            });
+            await db.SaveChangesAsync();
+        }
+
+        // 3. Admin visits Team Calendar with searchUserId
+        var response = await _http.GetAsync($"/Leave/TeamCalendar?searchUserId={targetUserId}");
+        Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
+
+        var html = await response.Content.ReadAsStringAsync();
+
+        // 4. Verify search results are present
+        StringAssert.Contains(html, "Leave History: Target User");
+        StringAssert.Contains(html, "Target&#x27;s Vacation"); // HTML encoded
+        StringAssert.Contains(html, "Pending");
+    }
+
     [TestMethod]
     public async Task LeaveWithdrawalTest()
     {
@@ -99,19 +164,19 @@ public class LeaveTests
         // 2. Initialize Allocation (Visit Index)
         await _http.GetAsync("/Leave/Index");
 
-        // 3. Apply for FUTURE leave (5 days from now)
-        var fiveDaysFromNow = DateTime.UtcNow.Date.AddDays(5);
-        while (fiveDaysFromNow.DayOfWeek == DayOfWeek.Saturday || fiveDaysFromNow.DayOfWeek == DayOfWeek.Sunday)
+        // 3. Apply for FUTURE leave (30 days from now)
+        var thirtyDaysFromNow = DateTime.UtcNow.Date.AddDays(30);
+        while (thirtyDaysFromNow.DayOfWeek == DayOfWeek.Saturday || thirtyDaysFromNow.DayOfWeek == DayOfWeek.Sunday)
         {
-            fiveDaysFromNow = fiveDaysFromNow.AddDays(1);
+            thirtyDaysFromNow = thirtyDaysFromNow.AddDays(1);
         }
 
         var applyToken = await GetAntiCsrfToken("/Leave/Apply");
         var applyContent = new FormUrlEncodedContent(new Dictionary<string, string>
         {
             { "LeaveType", "AnnualLeave" },
-            { "StartDate", fiveDaysFromNow.ToString("yyyy-MM-dd") },
-            { "EndDate", fiveDaysFromNow.AddDays(3).ToString("yyyy-MM-dd") },
+            { "StartDate", thirtyDaysFromNow.ToString("yyyy-MM-dd") },
+            { "EndDate", thirtyDaysFromNow.AddDays(3).ToString("yyyy-MM-dd") },
             { "Reason", "Vacation" },
             { "__RequestVerificationToken", applyToken }
         });
