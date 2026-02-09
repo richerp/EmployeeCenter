@@ -258,11 +258,12 @@ public class LeaveController(
         CascadedLinksOrder = 5,
         LinkText = "Team Calendar",
         LinkOrder = 2)]
-    public async Task<IActionResult> TeamCalendar()
+    public async Task<IActionResult> TeamCalendar(string? searchUserId)
     {
         var user = await userManager.GetUserAsync(User);
         if (user == null) return NotFound();
 
+        var canApproveAny = (await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanApproveAnyLeave)).Succeeded;
         var teamLeaves = new List<TeamMemberLeave>();
 
         // 0. Me
@@ -325,8 +326,28 @@ public class LeaveController(
 
         var model = new TeamCalendarViewModel
         {
-            TeamLeaves = teamLeaves
+            TeamLeaves = teamLeaves,
+            CanApproveAnyLeave = canApproveAny
         };
+
+        if (canApproveAny && !string.IsNullOrEmpty(searchUserId))
+        {
+            var searchedUser = await context.Users.FindAsync(searchUserId);
+            if (searchedUser != null)
+            {
+                var oneYearAgo = DateTime.UtcNow.Date.AddDays(-365);
+                var oneYearLater = DateTime.UtcNow.Date.AddDays(365);
+
+                var searchedUserLeaves = await context.LeaveApplications
+                    .Include(l => l.ReviewedBy)
+                    .Where(l => l.UserId == searchUserId && l.StartDate >= oneYearAgo && l.StartDate <= oneYearLater)
+                    .OrderByDescending(l => l.StartDate)
+                    .ToListAsync();
+
+                model.SearchedUser = searchedUser;
+                model.SearchedUserLeaves = searchedUserLeaves;
+            }
+        }
 
         return this.StackView(model);
     }

@@ -7,8 +7,114 @@
     </div>
 </div>
 
+@if (Model.CanApproveAnyLeave)
+{
+    <div class="row mb-3">
+        <div class="col-12 col-xl-9">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">@Localizer["Search Any Employee"]</h5>
+                    <p class="card-subtitle text-muted mb-3">@Localizer["Search for any employee to view their full leave history for the past and future 365 days."]</p>
+                    <div class="position-relative">
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="align-middle" data-lucide="search"></i></span>
+                            <input type="text" id="user-search-input" class="form-control" placeholder="@Localizer["Type 3+ characters to search for an employee..."]" autocomplete="off">
+                            <button class="btn btn-outline-secondary" type="button" id="user-search-clear">@Localizer["Clear"]</button>
+                        </div>
+                        <div id="user-search-results" class="list-group position-absolute w-100 mt-1 shadow" style="z-index: 1000; display: none; max-height: 250px; overflow-y: auto;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
 <div class="row">
     <div class="col-12 col-xl-9">
+        @if (Model.SearchedUser != null)
+        {
+            <div class="card border-primary mb-4">
+                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                    <h5 class="card-title text-white mb-0">@Localizer["Leave History: {0}", Model.SearchedUser.DisplayName]</h5>
+                    <a asp-action="TeamCalendar" class="btn btn-sm btn-light">@Localizer["Close Search"]</a>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead>
+                            <tr>
+                                <th>@Localizer["Type"]</th>
+                                <th>@Localizer["Period"]</th>
+                                <th>@Localizer["Days"]</th>
+                                <th>@Localizer["Reason"]</th>
+                                <th>@Localizer["Status"]</th>
+                                <th>@Localizer["Reviewer"]</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model.SearchedUserLeaves.Count == 0)
+                            {
+                                <tr>
+                                    <td colspan="6" class="text-center text-muted py-4">@Localizer["No leave records found for this user in the specified range."]</td>
+                                </tr>
+                            }
+                            else
+                            {
+                                foreach (var leave in Model.SearchedUserLeaves)
+                                {
+                                    <tr>
+                                        <td>
+                                            @(leave.LeaveType == LeaveType.AnnualLeave ? Localizer["Annual"] : Localizer["Sick"])
+                                        </td>
+                                        <td>
+                                            <span data-utc-time="@leave.StartDate.ToHtmlDateTime()"></span> - <span data-utc-time="@leave.EndDate.ToHtmlDateTime()"></span>
+                                        </td>
+                                        <td>@leave.TotalDays.ToString("0.##")</td>
+                                        <td>@leave.Reason</td>
+                                        <td>
+                                            @if (leave.IsWithdrawn)
+                                            {
+                                                <span class="badge bg-secondary">@Localizer["Withdrawn"]</span>
+                                            }
+                                            else if (leave.IsPending)
+                                            {
+                                                <span class="badge bg-info text-dark">@Localizer["Pending"]</span>
+                                            }
+                                            else if (leave.IsApproved)
+                                            {
+                                                <span class="badge bg-success">@Localizer["Approved"]</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="badge bg-danger">@Localizer["Rejected"]</span>
+                                            }
+                                        </td>
+                                        <td>
+                                            @if (leave.ReviewedBy != null)
+                                            {
+                                                <div class="d-flex align-items-center">
+                                                    <img src="@StorageService.RelativePathToInternetUrl(leave.ReviewedBy.AvatarRelativePath)?w=40&square=true" class="rounded-circle me-2" alt="@leave.ReviewedBy.DisplayName" width="20" height="20">
+                                                    <span class="small">@leave.ReviewedBy.DisplayName</span>
+                                                </div>
+                                            }
+                                            else if (!leave.IsPending && !leave.IsWithdrawn)
+                                            {
+                                                <span class="text-muted small">@Localizer["System"]</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="text-muted small">-</span>
+                                            }
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        }
+
         <div class="card">
             <div class="card-header">
                 <h5 class="card-title">@Localizer["Team Members' Leave Status"]</h5>
@@ -142,3 +248,63 @@
         </div>
     </div>
 </div>
+
+@section scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const input = document.getElementById('user-search-input');
+            const resultsDiv = document.getElementById('user-search-results');
+            const clearBtn = document.getElementById('user-search-clear');
+            let timeout = null;
+
+            if (input) {
+                input.addEventListener('input', function() {
+                    clearTimeout(timeout);
+                    const query = input.value;
+                    if (query.length < 3) {
+                        resultsDiv.style.display = 'none';
+                        return;
+                    }
+
+                    timeout = setTimeout(() => {
+                        fetch(`/api/users/search?query=${encodeURIComponent(query)}`)
+                            .then(response => response.json())
+                            .then(data => {
+                                resultsDiv.innerHTML = '';
+                                if (data.users.length > 0) {
+                                    data.users.forEach(user => {
+                                        const item = document.createElement('a');
+                                        item.href = `?searchUserId=${user.id}`;
+                                        item.className = 'list-group-item list-group-item-action d-flex align-items-center';
+                                        item.innerHTML = `
+                                            <img src="${user.avatarUrl}" class="rounded-circle me-2" width="30" height="30" alt="${user.displayName}">
+                                            <div>
+                                                <strong>${user.displayName}</strong><br>
+                                                <small class="text-muted">@@${user.userName}</small>
+                                            </div>
+                                        `;
+                                        resultsDiv.appendChild(item);
+                                    });
+                                    resultsDiv.style.display = 'block';
+                                } else {
+                                    resultsDiv.innerHTML = '<div class="list-group-item">@Localizer["No users found"]</div>';
+                                    resultsDiv.style.display = 'block';
+                                }
+                            });
+                    }, 300);
+                });
+
+                clearBtn.addEventListener('click', function() {
+                    input.value = '';
+                    resultsDiv.style.display = 'none';
+                });
+
+                document.addEventListener('click', function(e) {
+                    if (!input.contains(e.target) && !resultsDiv.contains(e.target)) {
+                        resultsDiv.style.display = 'none';
+                    }
+                });
+            }
+        });
+    </script>
+}
