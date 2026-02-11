@@ -13,14 +13,14 @@
     {
         var avatarUrl = StorageService.RelativePathToInternetUrl(user.AvatarRelativePath) + "?w=100&square=true";
         var label = $@"
-<div style='display: block; width: 200px; height: 50px; overflow: hidden;'>
-    <a href='/ReportLine/Index/{user.Id}' style='text-decoration: none; color: inherit; display: flex; align-items: center; width: 100%; height: 100%;'>
+<div style='display: flex; align-items: center; justify-content: start; min-width: 150px;'>
+    <a href='/Users/Details/{user.Id}' style='text-decoration: none; color: inherit; display: flex; align-items: center; width: 100%;'>
         <div style='width: 40px; height: 40px; min-width: 40px; margin-right: 12px; display: flex; align-items: center; justify-content: center;'>
             <img src='{avatarUrl}' style='width: 40px !important; height: 40px !important; border-radius: 50% !important; object-fit: cover !important; max-width: none !important;' />
         </div>
-        <div style='text-align: left; line-height: 1.3; flex-grow: 1; overflow: hidden;'>
-            <div style='font-weight: 700; font-size: 14px; margin-bottom: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>{WebUtility.HtmlEncode(user.DisplayName)}</div>
-            @{(string.IsNullOrEmpty(user.JobLevel) && string.IsNullOrEmpty(user.Title) ? "" : $"<div style='font-size: 11px; background-color: rgba(0,0,0,0.06); padding: 1px 6px; border-radius: 4px; display: inline-block; color: #444; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;'>{WebUtility.HtmlEncode(user.JobLevel ?? "")}{(string.IsNullOrEmpty(user.JobLevel) || string.IsNullOrEmpty(user.Title) ? "" : " | ")}{WebUtility.HtmlEncode(user.Title ?? "")}</div>")}
+        <div style='text-align: left; line-height: 1.3;'>
+            <div style='font-weight: 700; font-size: 14px; margin-bottom: 2px;'>{WebUtility.HtmlEncode(user.DisplayName)}</div>
+            @{(string.IsNullOrEmpty(user.JobLevel) && string.IsNullOrEmpty(user.Title) ? "" : $"<div style='font-size: 11px; background-color: rgba(0,0,0,0.06); padding: 1px 6px; border-radius: 4px; display: inline-block; color: #444; font-weight: 500;'>{WebUtility.HtmlEncode(user.JobLevel ?? "")}{(string.IsNullOrEmpty(user.JobLevel) || string.IsNullOrEmpty(user.Title) ? "" : " | ")}{WebUtility.HtmlEncode(user.Title ?? "")}</div>")}
         </div>
     </a>
 </div>";
@@ -130,7 +130,7 @@
                                     <td>
                                         @if (Model.TargetUser.Manager != null)
                                         {
-                                            <a asp-controller="ReportLine" asp-action="Index" asp-route-id="@Model.TargetUser.ManagerId">
+                                            <a asp-controller="Users" asp-action="Details" asp-route-id="@Model.TargetUser.ManagerId">
                                                 @Model.TargetUser.Manager.DisplayName
                                             </a>
                                         }
@@ -250,15 +250,15 @@ else
         flowchart: {
             htmlLabels: true,
             curve: 'basis',
-            useMaxWidth: true
+            useMaxWidth: false
         }
     });
 </script>
 
 <style>
     .mermaid {
-        display: block;
-        text-align: center;
+        display: flex;
+        justify-content: center;
         min-height: 400px;
         background-color: #fff;
     }
@@ -266,9 +266,6 @@ else
     .mermaid svg {
         max-width: 100%;
         height: auto;
-    }
-
-    .mermaid .node foreignObject {
-        overflow: visible;
+        width: auto !important;
     }
 </style>
