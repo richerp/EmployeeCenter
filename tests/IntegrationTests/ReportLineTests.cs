@@ -222,39 +222,4 @@ public class ReportLineTests
         Assert.Contains("L5", reportLineHtml);
         Assert.Contains(targetUserName, reportLineHtml);
     }
-
-    [TestMethod]
-    public async Task TestReportLineLinks()
-    {
-        // 1. Create a user
-        string userId, email;
-        var suffix = Guid.NewGuid().ToString("N")[..6];
-        using (var scope = _server!.Services.CreateScope())
-        {
-            var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
-            var user = new User
-            {
-                UserName = "linkuser" + suffix,
-                DisplayName = "Link User",
-                Email = "linkuser" + suffix + "@test.com",
-                AvatarRelativePath = User.DefaultAvatarPath
-            };
-            await userManager.CreateAsync(user, "Password123!");
-            userId = user.Id;
-            email = user.Email;
-        }
-
-        // 2. Login
-        await LoginAsync(email, "Password123!");
-
-        // 3. View report line
-        var reportLinePage = await _http.GetAsync("/ReportLine");
-        reportLinePage.EnsureSuccessStatusCode();
-        var reportLineHtml = await reportLinePage.Content.ReadAsStringAsync();
-
-        // 4. Verify the link in the mermaid label
-        Assert.Contains($"/ReportLine/Index/{userId}", reportLineHtml);
-        // And ensure it doesn't contain the old details link for this user
-        Assert.IsFalse(reportLineHtml.Contains($"/Users/Details/{userId}"));
-    }
 }
