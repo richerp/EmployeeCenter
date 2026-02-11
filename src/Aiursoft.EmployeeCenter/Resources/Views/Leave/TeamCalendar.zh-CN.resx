@@ -24,11 +24,20 @@
   <data name="Annual" xml:space="preserve">
     <value>年假</value>
   </data>
+  <data name="Approved" xml:space="preserve">
+    <value>已批准</value>
+  </data>
   <data name="Blue - Approved future leave" xml:space="preserve">
     <value>蓝色 - 已批准的未来休假</value>
   </data>
   <data name="Boss" xml:space="preserve">
     <value>经理 / 汇报对象</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>清空</value>
+  </data>
+  <data name="Close Search" xml:space="preserve">
+    <value>关闭搜索</value>
   </data>
   <data name="Colleague" xml:space="preserve">
     <value>同事</value>
@@ -39,6 +48,9 @@
   <data name="days" xml:space="preserve">
     <value>天</value>
   </data>
+  <data name="Days" xml:space="preserve">
+    <value>天数</value>
+  </data>
   <data name="Direct Report" xml:space="preserve">
     <value>直接下属</value>
   </data>
@@ -48,11 +60,17 @@
   <data name="Leave Schedule" xml:space="preserve">
     <value>休假安排</value>
   </data>
+  <data name="No leave records found for this user in the specified range." xml:space="preserve">
+    <value>指定范围内未找到该用户的休假记录。</value>
+  </data>
   <data name="No team members found." xml:space="preserve">
     <value>未找到团队成员。</value>
   </data>
   <data name="No upcoming or past leave records." xml:space="preserve">
     <value>暂无即将到来或过去的休假记录。</value>
+  </data>
+  <data name="No users found" xml:space="preserve">
+    <value>未找到用户</value>
   </data>
   <data name="Not Yet Started" xml:space="preserve">
     <value>尚未开始</value>
@@ -66,17 +84,44 @@
   <data name="Overview of leave schedules for your manager, reports, and colleagues." xml:space="preserve">
     <value>您的经理、下属及同事的休假安排概览。</value>
   </data>
+  <data name="Pending" xml:space="preserve">
+    <value>待处理</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>期间</value>
+  </data>
+  <data name="Reason" xml:space="preserve">
+    <value>原因</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>已拒绝</value>
+  </data>
   <data name="Relation" xml:space="preserve">
     <value>关系</value>
   </data>
   <data name="Returned" xml:space="preserve">
     <value>已返程</value>
   </data>
+  <data name="Reviewer" xml:space="preserve">
+    <value>审批人</value>
+  </data>
+  <data name="Search Any Employee" xml:space="preserve">
+    <value>搜索任意员工</value>
+  </data>
+  <data name="Search for any employee to view their full leave history for the past and future 365 days." xml:space="preserve">
+    <value>搜索任何员工以查看其过去和未来365天的完整休假记录。</value>
+  </data>
   <data name="Sick" xml:space="preserve">
     <value>病假</value>
   </data>
+  <data name="Status" xml:space="preserve">
+    <value>状态</value>
+  </data>
   <data name="Status Legend" xml:space="preserve">
     <value>状态说明</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>系统</value>
   </data>
   <data name="Team Calendar" xml:space="preserve">
     <value>同组日历</value>
@@ -90,8 +135,17 @@
   <data name="This calendar helps you stay informed about your team&apos;s availability to facilitate work handovers and planning." xml:space="preserve">
     <value>此日历可帮助您了解团队成员的可用性，方便工作交接和计划安排。</value>
   </data>
+  <data name="Type" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="Type 3+ characters to search for an employee..." xml:space="preserve">
+    <value>输入 3 个或以上字符以搜索员工...</value>
+  </data>
   <data name="Upcoming" xml:space="preserve">
     <value>尚未开始</value>
+  </data>
+  <data name="Withdrawn" xml:space="preserve">
+    <value>已撤回</value>
   </data>
   <data name="Yellow - Employee is currently away" xml:space="preserve">
     <value>黄色 - 员工目前处于休假状态</value>

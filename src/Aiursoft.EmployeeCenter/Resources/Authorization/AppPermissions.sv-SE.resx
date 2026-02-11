@@ -27,6 +27,9 @@
   <data name="Add New Users" xml:space="preserve">
     <value>Lägg till nya användare</value>
   </data>
+  <data name="Allows approving or rejecting any leave application, regardless of the reporting line, and viewing any user&apos;s leave history." xml:space="preserve">
+    <value>Tillåter godkännande eller avslag av vilken som helst semesteransökan, oavsett rapportlinje, samt visning av semesterhistorik för vilken användare som helst.</value>
+  </data>
   <data name="Allows approving or rejecting any leave application, regardless of the reporting line." xml:space="preserve">
     <value>Tillåter godkännande eller avvisande av någon ansökan om semester, oavsett rapportlinje.</value>
   </data>
@@ -74,6 +77,9 @@
   </data>
   <data name="Allows managing the company&apos;s financial accounts and recording transactions." xml:space="preserve">
     <value>Tillåter hantering av företagets finansiella konton och registrering av transaktioner.</value>
+  </data>
+  <data name="Allows managing the company&apos;s IT assets and intangible assets (like domains, licenses), including categories, models, and individual items. Also allows assigning and recovering assets to/from employees." xml:space="preserve">
+    <value>Tillåter hantering av företagets IT-aktier och immateriella aktier (som domäner, licenser), inklusive kategorier, modeller och enskilda objekt. Tillåter också tilldelning och återhämtning av aktier till/från anställda.</value>
   </data>
   <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items." xml:space="preserve">
     <value>Tillåter hantering av företagets IT-aktier, inklusive kategorier, modeller och enskilda objekt.</value>

@@ -36,6 +36,9 @@
   <data name="Cloudflare" xml:space="preserve">
     <value>Cloudflare</value>
   </data>
+  <data name="Cloudflare Proxied" xml:space="preserve">
+    <value>क्लाउडफ्लेयर प्रॉक्सीड</value>
+  </data>
   <data name="Create New Service" xml:space="preserve">
     <value>नया सेवा बनाएं</value>
   </data>
@@ -107,6 +110,9 @@
   </data>
   <data name="Testing" xml:space="preserve">
     <value>परीक्षण</value>
+  </data>
+  <data name="Via Frps" xml:space="preserve">
+    <value>Frps के माध्यम से</value>
   </data>
 
 </root>

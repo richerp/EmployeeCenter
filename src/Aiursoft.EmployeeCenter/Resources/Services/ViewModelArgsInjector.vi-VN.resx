@@ -342,6 +342,9 @@
   <data name="Manage Feedback" xml:space="preserve">
     <value>Quản lý Phản hồi</value>
   </data>
+  <data name="Manage Intangible Assets" xml:space="preserve">
+    <value>Quản lý tài sản vô hình</value>
+  </data>
   <data name="Manage IT Assets" xml:space="preserve">
     <value>Quản lý tài sản CNTT</value>
   </data>

@@ -27,6 +27,9 @@
   <data name="Add New Users" xml:space="preserve">
     <value>Nieuwe gebruikers toevoegen</value>
   </data>
+  <data name="Allows approving or rejecting any leave application, regardless of the reporting line, and viewing any user&apos;s leave history." xml:space="preserve">
+    <value>Staat het toestaan om elke verlofaanvraag goed te keuren of af te wijzen, ongeacht de rapportagestructuur, en het bekijken van het verlofverleden van elke gebruiker.</value>
+  </data>
   <data name="Allows approving or rejecting any leave application, regardless of the reporting line." xml:space="preserve">
     <value>Staat het goedkeuren of afwijzen van elke verlofaanvraag toe, ongeacht de rapporteringslijn.</value>
   </data>
@@ -74,6 +77,9 @@
   </data>
   <data name="Allows managing the company&apos;s financial accounts and recording transactions." xml:space="preserve">
     <value>Staat het beheren van de financiële rekeningen van het bedrijf en het vastleggen van transacties toe.</value>
+  </data>
+  <data name="Allows managing the company&apos;s IT assets and intangible assets (like domains, licenses), including categories, models, and individual items. Also allows assigning and recovering assets to/from employees." xml:space="preserve">
+    <value>Staat het beheren van de IT-activa en immateriële activa van het bedrijf (zoals domeinnamen, licenties), inclusief categorieën, modellen en individuele items toe. Ook staat het toewijzen en terugwinnen van activa aan/ van medewerkers toe.</value>
   </data>
   <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items." xml:space="preserve">
     <value>Staat het beheren van de IT-activa van het bedrijf toe, inclusief categorieën, modellen en individuele items.</value>

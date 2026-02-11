@@ -339,6 +339,9 @@
   <data name="Manage Feedback" xml:space="preserve">
     <value>Управление отзывами</value>
   </data>
+  <data name="Manage Intangible Assets" xml:space="preserve">
+    <value>Управление нематериальными активами</value>
+  </data>
   <data name="Manage IT Assets" xml:space="preserve">
     <value>Управление ИТ-активами</value>
   </data>

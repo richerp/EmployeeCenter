@@ -159,6 +159,8 @@ public class ViewModelArgsInjector(
         _ = localizer["SSH Keys"];
     
         _ = localizer["Issue Invoice"];
+    
+        _ = localizer["Manage Intangible Assets"];
     }
 
     public void InjectSimple(

@@ -39,6 +39,9 @@
   <data name="Cloudflare" xml:space="preserve">
     <value>Cloudflare</value>
   </data>
+  <data name="Cloudflare Proxied" xml:space="preserve">
+    <value>Cloudflare 代理</value>
+  </data>
   <data name="Create New Service" xml:space="preserve">
     <value>创建新服务</value>
   </data>
@@ -119,6 +122,9 @@
   </data>
   <data name="Testing" xml:space="preserve">
     <value>测试中</value>
+  </data>
+  <data name="Via Frps" xml:space="preserve">
+    <value>Via Frps</value>
   </data>
 
 </root>

@@ -27,6 +27,9 @@
   <data name="Add New Users" xml:space="preserve">
     <value>Ajouter de nouveaux utilisateurs</value>
   </data>
+  <data name="Allows approving or rejecting any leave application, regardless of the reporting line, and viewing any user&apos;s leave history." xml:space="preserve">
+    <value>Permet d&apos;approuver ou de rejeter toute demande de congé, indépendamment de la ligne hiérarchique, et de visualiser l&apos;historique des congés de tout utilisateur.</value>
+  </data>
   <data name="Allows approving or rejecting any leave application, regardless of the reporting line." xml:space="preserve">
     <value>Permet d&apos;approuver ou de rejeter toute demande de congé, indépendamment de la ligne hiérarchique.</value>
   </data>
@@ -74,6 +77,9 @@
   </data>
   <data name="Allows managing the company&apos;s financial accounts and recording transactions." xml:space="preserve">
     <value>Permet de gérer les comptes financiers de l&apos;entreprise et d&apos;enregistrer les transactions.</value>
+  </data>
+  <data name="Allows managing the company&apos;s IT assets and intangible assets (like domains, licenses), including categories, models, and individual items. Also allows assigning and recovering assets to/from employees." xml:space="preserve">
+    <value>Permet de gérer les actifs informatiques de l&apos;entreprise ainsi que les actifs incorporels (comme les domaines, les licences), y compris les catégories, les modèles et les articles individuels. Permet également d&apos;affecter et de récupérer des actifs auprès des employés.</value>
   </data>
   <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items." xml:space="preserve">
     <value>Permet de gérer les actifs informatiques de l&apos;entreprise, y compris les catégories, les modèles et les éléments individuels.</value>

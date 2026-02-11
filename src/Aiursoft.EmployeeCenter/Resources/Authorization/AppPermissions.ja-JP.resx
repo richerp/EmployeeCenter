@@ -27,6 +27,9 @@
   <data name="Add New Users" xml:space="preserve">
     <value>新規ユーザーの追加</value>
   </data>
+  <data name="Allows approving or rejecting any leave application, regardless of the reporting line, and viewing any user&apos;s leave history." xml:space="preserve">
+    <value>報告ラインに関係なく、すべての休暇申請の承認または却下および、任意のユーザーの休暇履歴の閲覧を許可します。</value>
+  </data>
   <data name="Allows approving or rejecting any leave application, regardless of the reporting line." xml:space="preserve">
     <value>報告ラインを問わず、任意の休暇申請の承認または却下が可能です。</value>
   </data>
@@ -74,6 +77,9 @@
   </data>
   <data name="Allows managing the company&apos;s financial accounts and recording transactions." xml:space="preserve">
     <value>会社の財務勘定を管理し、取引を記録することを許可します。</value>
+  </data>
+  <data name="Allows managing the company&apos;s IT assets and intangible assets (like domains, licenses), including categories, models, and individual items. Also allows assigning and recovering assets to/from employees." xml:space="preserve">
+    <value>会社のIT資産および無形資産（ドメイン、ライセンスなど）の管理を許可します。カテゴリ、モデル、個々のアイテムを含みます。また、従業員への資産の割り当ておよび回収も許可します。</value>
   </data>
   <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items." xml:space="preserve">
     <value>会社のIT資産（カテゴリ、モデル、個別アイテムを含む）を管理できるようにします。</value>

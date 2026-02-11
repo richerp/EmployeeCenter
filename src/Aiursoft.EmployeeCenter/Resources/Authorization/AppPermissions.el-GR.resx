@@ -27,6 +27,9 @@
   <data name="Add New Users" xml:space="preserve">
     <value>Προσθήκη Νέων Χρηστών</value>
   </data>
+  <data name="Allows approving or rejecting any leave application, regardless of the reporting line, and viewing any user&apos;s leave history." xml:space="preserve">
+    <value>Επιτρέπει την έγκριση ή την απόρριψη οποιασδήποτε αίτησης άδειας, ανεξάρτητα από την γραμμή αναφοράς, και την προβολή της ιστορίας άδειας οποιουδήποτε χρήστη.</value>
+  </data>
   <data name="Allows approving or rejecting any leave application, regardless of the reporting line." xml:space="preserve">
     <value>Επιτρέπει την εγκρίση ή την απόρριψη οποιασδήποτε αίτησης άδειας, ανεξάρτητα από τη γραμμή αναφοράς.</value>
   </data>
@@ -74,6 +77,9 @@
   </data>
   <data name="Allows managing the company&apos;s financial accounts and recording transactions." xml:space="preserve">
     <value>Επιτρέπει τη διαχείριση των χρηματοοικονομικών λογαριασμών της εταιρείας και την καταχώρηση συναλλαγών.</value>
+  </data>
+  <data name="Allows managing the company&apos;s IT assets and intangible assets (like domains, licenses), including categories, models, and individual items. Also allows assigning and recovering assets to/from employees." xml:space="preserve">
+    <value>Επιτρέπει τη διαχείριση των εταιρικών περιουσιακών στοιχείων και απρόσωπων περιουσιακών στοιχείων (όπως περιοχές, άδειες), συμπεριλαμβανομένων κατηγοριών, μοντέλων και ενδιαφερόμενων στοιχείων. Επιτρέπει επίσης την ανάθεση και την επαναφορά περιουσιακών στοιχείων σε/από υπαλλήλους.</value>
   </data>
   <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items." xml:space="preserve">
     <value>Επιτρέπει τη διαχείριση των ΤΠ εξοπλισμών της εταιρείας, συμπεριλαμβανομένων κατηγοριών, μοντέλων και μονάδων.</value>
