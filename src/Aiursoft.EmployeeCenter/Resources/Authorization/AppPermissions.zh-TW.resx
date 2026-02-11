@@ -27,6 +27,9 @@
   <data name="Add New Users" xml:space="preserve">
     <value>新增使用者</value>
   </data>
+  <data name="Allows approving or rejecting any leave application, regardless of the reporting line, and viewing any user&apos;s leave history." xml:space="preserve">
+    <value>允許核可或拒絕任何假勤申請，不受上下屬關係限制，並可檢視任何使用者的假勤紀錄。</value>
+  </data>
   <data name="Allows approving or rejecting any leave application, regardless of the reporting line." xml:space="preserve">
     <value>允許批准或拒絕任何請假申請，不受匯報線限制。</value>
   </data>
@@ -74,6 +77,9 @@
   </data>
   <data name="Allows managing the company&apos;s financial accounts and recording transactions." xml:space="preserve">
     <value>允許管理公司的財務帳戶並記錄交易。</value>
+  </data>
+  <data name="Allows managing the company&apos;s IT assets and intangible assets (like domains, licenses), including categories, models, and individual items. Also allows assigning and recovering assets to/from employees." xml:space="preserve">
+    <value>允許管理公司的資訊科技資產與無形資產（例如網域、授權），包含分類、型號與單一項目。亦允許將資產指派給或從員工收回資產。</value>
   </data>
   <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items." xml:space="preserve">
     <value>允許管理公司的IT資產，包括類別、型號及單一項目。</value>

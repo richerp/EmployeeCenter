@@ -27,6 +27,9 @@
   <data name="Add New Users" xml:space="preserve">
     <value>새 사용자 추가</value>
   </data>
+  <data name="Allows approving or rejecting any leave application, regardless of the reporting line, and viewing any user&apos;s leave history." xml:space="preserve">
+    <value>보고선과 관계없이 어떤 사용자의 휴가 신청도 승인하거나 거부할 수 있으며, 모든 사용자의 휴가 내역을 확인할 수 있습니다.</value>
+  </data>
   <data name="Allows approving or rejecting any leave application, regardless of the reporting line." xml:space="preserve">
     <value>보고선에 관계없이 모든 휴가 신청을 승인하거나 거절할 수 있습니다.</value>
   </data>
@@ -74,6 +77,9 @@
   </data>
   <data name="Allows managing the company&apos;s financial accounts and recording transactions." xml:space="preserve">
     <value>회사의 재무 계정을 관리하고 거래 내역을 기록할 수 있습니다.</value>
+  </data>
+  <data name="Allows managing the company&apos;s IT assets and intangible assets (like domains, licenses), including categories, models, and individual items. Also allows assigning and recovering assets to/from employees." xml:space="preserve">
+    <value>회사의 IT 자산 및 무형 자산(도메인, 라이선스 등)을 관리할 수 있으며, 카테고리, 모델 및 개별 항목을 포함합니다. 또한 자산을 직원에게 할당하거나 직원으로부터 회수할 수 있습니다.</value>
   </data>
   <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items." xml:space="preserve">
     <value>회사의 IT 자산을 관리할 수 있도록 허용하며, 카테고리, 모델 및 개별 항목을 포함합니다.</value>

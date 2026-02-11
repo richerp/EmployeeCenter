@@ -342,6 +342,9 @@
   <data name="Manage Feedback" xml:space="preserve">
     <value>管理回饋</value>
   </data>
+  <data name="Manage Intangible Assets" xml:space="preserve">
+    <value>管理無形資產</value>
+  </data>
   <data name="Manage IT Assets" xml:space="preserve">
     <value>管理 IT 資產</value>
   </data>

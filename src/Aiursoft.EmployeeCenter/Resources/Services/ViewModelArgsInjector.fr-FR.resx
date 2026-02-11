@@ -342,6 +342,9 @@
   <data name="Manage Feedback" xml:space="preserve">
     <value>Gérer les retours</value>
   </data>
+  <data name="Manage Intangible Assets" xml:space="preserve">
+    <value>Gérer les actifs incorporels</value>
+  </data>
   <data name="Manage IT Assets" xml:space="preserve">
     <value>Gérer les actifs informatiques</value>
   </data>

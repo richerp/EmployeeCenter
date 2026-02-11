@@ -27,6 +27,9 @@
   <data name="Add New Users" xml:space="preserve">
     <value>Thêm Người Dùng Mới</value>
   </data>
+  <data name="Allows approving or rejecting any leave application, regardless of the reporting line, and viewing any user&apos;s leave history." xml:space="preserve">
+    <value>Cho phép phê duyệt hoặc từ chối bất kỳ đơn xin nghỉ nào, bất kể đường báo cáo, và xem lịch sử nghỉ phép của bất kỳ người dùng nào.</value>
+  </data>
   <data name="Allows approving or rejecting any leave application, regardless of the reporting line." xml:space="preserve">
     <value>Cho phép phê duyệt hoặc từ chối bất kỳ đơn xin nghỉ nào, bất kể đường báo cáo.</value>
   </data>
@@ -74,6 +77,9 @@
   </data>
   <data name="Allows managing the company&apos;s financial accounts and recording transactions." xml:space="preserve">
     <value>Cho phép quản lý các tài khoản tài chính của công ty và ghi nhận các giao dịch.</value>
+  </data>
+  <data name="Allows managing the company&apos;s IT assets and intangible assets (like domains, licenses), including categories, models, and individual items. Also allows assigning and recovering assets to/from employees." xml:space="preserve">
+    <value>Cho phép quản lý các tài sản CNTT và tài sản vô hình của công ty (như tên miền, giấy phép), bao gồm danh mục, mẫu mã và các mục riêng lẻ. Cũng cho phép gán và thu hồi tài sản cho/từ nhân viên.</value>
   </data>
   <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items." xml:space="preserve">
     <value>Cho phép quản lý các tài sản CNTT của công ty, bao gồm các danh mục, mẫu mã và các mục riêng lẻ.</value>

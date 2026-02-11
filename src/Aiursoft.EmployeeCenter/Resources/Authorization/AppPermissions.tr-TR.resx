@@ -27,6 +27,9 @@
   <data name="Add New Users" xml:space="preserve">
     <value>Yeni Kullanıcı Ekle</value>
   </data>
+  <data name="Allows approving or rejecting any leave application, regardless of the reporting line, and viewing any user&apos;s leave history." xml:space="preserve">
+    <value>Herhangi bir izin başvurusunu, raporlama hattına bakılmaksızın onaylama veya reddetme ve herhangi bir kullanıcının izin geçmişine erişme izni verir.</value>
+  </data>
   <data name="Allows approving or rejecting any leave application, regardless of the reporting line." xml:space="preserve">
     <value>Herhangi bir izin başvurusunu, raporlama hattına bakılmaksızın onaylama veya reddetme izni verir.</value>
   </data>
@@ -74,6 +77,9 @@
   </data>
   <data name="Allows managing the company&apos;s financial accounts and recording transactions." xml:space="preserve">
     <value>Şirketin mali hesaplarını yönetmeyi ve işlemler kaydetmeyi sağlar.</value>
+  </data>
+  <data name="Allows managing the company&apos;s IT assets and intangible assets (like domains, licenses), including categories, models, and individual items. Also allows assigning and recovering assets to/from employees." xml:space="preserve">
+    <value>Şirketin IT varlıklarını ve soyutsal varlıklarını (alan adları, lisanslar gibi) yönetmeyi sağlar, kategoriler, modeller ve bireysel unsurlar dahil. Ayrıca varlıkları çalışanlara atamayı ve geri almayı sağlar.</value>
   </data>
   <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items." xml:space="preserve">
     <value>Şirketin IT varlıklarını, kategorileri, modelleri ve bireysel öğeleri yönetmeyi sağlar.</value>

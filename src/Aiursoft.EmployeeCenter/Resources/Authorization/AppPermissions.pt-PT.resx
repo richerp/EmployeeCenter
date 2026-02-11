@@ -27,6 +27,9 @@
   <data name="Add New Users" xml:space="preserve">
     <value>Adicionar Novos Utilizadores</value>
   </data>
+  <data name="Allows approving or rejecting any leave application, regardless of the reporting line, and viewing any user&apos;s leave history." xml:space="preserve">
+    <value>Permite aprovar ou rejeitar qualquer pedido de férias, independentemente da linha de reporting, e visualizar o histórico de férias de qualquer utilizador.</value>
+  </data>
   <data name="Allows approving or rejecting any leave application, regardless of the reporting line." xml:space="preserve">
     <value>Permite aprovar ou rejeitar qualquer pedido de férias, independentemente da linha de reporting.</value>
   </data>
@@ -74,6 +77,9 @@
   </data>
   <data name="Allows managing the company&apos;s financial accounts and recording transactions." xml:space="preserve">
     <value>Permite gerir as contas financeiras da empresa e registar transações.</value>
+  </data>
+  <data name="Allows managing the company&apos;s IT assets and intangible assets (like domains, licenses), including categories, models, and individual items. Also allows assigning and recovering assets to/from employees." xml:space="preserve">
+    <value>Permite gerir os ativos de TI da empresa e ativos intangíveis (como domínios, licenças), incluindo categorias, modelos e itens individuais. Também permite atribuir e recuperar ativos de/para os colaboradores.</value>
   </data>
   <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items." xml:space="preserve">
     <value>Permite gerir os ativos de TI da empresa, incluindo categorias, modelos e itens individuais.</value>

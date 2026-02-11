@@ -339,6 +339,9 @@
   <data name="Manage Feedback" xml:space="preserve">
     <value>Gestionare feedback</value>
   </data>
+  <data name="Manage Intangible Assets" xml:space="preserve">
+    <value>Gestionare active intangibile</value>
+  </data>
   <data name="Manage IT Assets" xml:space="preserve">
     <value>Gestionare active IT</value>
   </data>

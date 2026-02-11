@@ -339,6 +339,9 @@
   <data name="Manage Feedback" xml:space="preserve">
     <value>Hantera feedback</value>
   </data>
+  <data name="Manage Intangible Assets" xml:space="preserve">
+    <value>Hantera immateriella tillgångar</value>
+  </data>
   <data name="Manage IT Assets" xml:space="preserve">
     <value>Hantera IT-aktier</value>
   </data>

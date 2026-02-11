@@ -39,6 +39,9 @@
   <data name="Cloudflare" xml:space="preserve">
     <value>Cloudflare</value>
   </data>
+  <data name="Cloudflare Proxied" xml:space="preserve">
+    <value>Cloudflare Proxied</value>
+  </data>
   <data name="Create New Service" xml:space="preserve">
     <value>Create New Service</value>
   </data>
@@ -119,6 +122,9 @@
   </data>
   <data name="Testing" xml:space="preserve">
     <value>Testing</value>
+  </data>
+  <data name="Via Frps" xml:space="preserve">
+    <value>Via Frps</value>
   </data>
 
 </root>

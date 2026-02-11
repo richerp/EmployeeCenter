@@ -27,6 +27,9 @@
   <data name="Add New Users" xml:space="preserve">
     <value>नए उपयोगकर्ता जोड़ें</value>
   </data>
+  <data name="Allows approving or rejecting any leave application, regardless of the reporting line, and viewing any user&apos;s leave history." xml:space="preserve">
+    <value>किसी भी छुट्टी के आवेदन को मंजूर करने या अस्वीकार करने की अनुमति देता है, चाहे रिपोर्टिंग लाइन के आधार पर हो या न हो, और किसी भी उपयोगकर्ता के छुट्टी के इतिहास को देखने की अनुमति देता है।</value>
+  </data>
   <data name="Allows approving or rejecting any leave application, regardless of the reporting line." xml:space="preserve">
     <value>किसी भी छुट्टी के आवेदन को मान्यता देने या अस्वीकार करने की अनुमति देता है, चाहे वह रिपोर्टिंग लाइन के अनुसार हो या न हो।</value>
   </data>
@@ -74,6 +77,9 @@
   </data>
   <data name="Allows managing the company&apos;s financial accounts and recording transactions." xml:space="preserve">
     <value>कंपनी के वित्तीय खातों के प्रबंधन और लेन-देन के रिकॉर्ड करने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows managing the company&apos;s IT assets and intangible assets (like domains, licenses), including categories, models, and individual items. Also allows assigning and recovering assets to/from employees." xml:space="preserve">
+    <value>कंपनी के आईटी संपत्ति और अदृश्य संपत्ति (जैसे डोमेन, लाइसेंस) के प्रबंधन की अनुमति देता है, जिसमें श्रेणियाँ, मॉडल और व्यक्तिगत आइटम शामिल हैं। साथ ही कर्मचारियों को संपत्ति आवंटित करने और उन्हें वापस लेने की अनुमति देता है।</value>
   </data>
   <data name="Allows managing the company&apos;s IT assets, including categories, models, and individual items." xml:space="preserve">
     <value>कंपनी के आईटी संपत्ति के प्रबंधन की अनुमति देता है, जिसमें शामिल हैं श्रेणियाँ, मॉडल और व्यक्तिगत आइटम।</value>

@@ -342,6 +342,9 @@
   <data name="Manage Feedback" xml:space="preserve">
     <value>จัดการความคิดเห็น</value>
   </data>
+  <data name="Manage Intangible Assets" xml:space="preserve">
+    <value>จัดการสินทรัพย์ที่ไม่มีรูปธรรม</value>
+  </data>
   <data name="Manage IT Assets" xml:space="preserve">
     <value>จัดการสินทรัพย์ไอที</value>
   </data>
