@@ -27,14 +27,38 @@
   <data name="Annual Leave Per Year" xml:space="preserve">
     <value>연간 연차 일수</value>
   </data>
+  <data name="Brand Home URL" xml:space="preserve">
+    <value>브랜드 홈 URL</value>
+  </data>
+  <data name="Brand Name" xml:space="preserve">
+    <value>브랜드 이름</value>
+  </data>
   <data name="Default Payroll Currency" xml:space="preserve">
     <value>기본 급여 통화</value>
+  </data>
+  <data name="Project Logo" xml:space="preserve">
+    <value>프로젝트 로고</value>
+  </data>
+  <data name="Project Name" xml:space="preserve">
+    <value>프로젝트 이름</value>
+  </data>
+  <data name="The brand name of the company or project. E.g. Aiursoft." xml:space="preserve">
+    <value>회사 또는 프로젝트의 브랜드 이름입니다. 예: Aiursoft.</value>
   </data>
   <data name="The default currency to use when issuing a new payroll." xml:space="preserve">
     <value>새로운 급여를 발행할 때 사용할 기본 통화입니다.</value>
   </data>
+  <data name="The logo of the project displayed in the navbar and footer. Support jpg, png, svg." xml:space="preserve">
+    <value>네비게이션 바와 푸터에 표시되는 프로젝트의 로고입니다. jpg, png, svg 형식을 지원합니다.</value>
+  </data>
+  <data name="The name of the project displayed in the frontend." xml:space="preserve">
+    <value>프론트엔드에 표시되는 프로젝트의 이름입니다.</value>
+  </data>
   <data name="The number of paid annual leave days allocated to each employee every year." xml:space="preserve">
     <value>연간 지급되는 연차 유급 휴가 일수 (각 직원당 연 1회 배정)</value>
+  </data>
+  <data name="The URL of the company or project. E.g. https://www.aiursoft.com" xml:space="preserve">
+    <value>회사 또는 프로젝트의 URL입니다. 예: https://www.aiursoft.com</value>
   </data>
 
 </root>
