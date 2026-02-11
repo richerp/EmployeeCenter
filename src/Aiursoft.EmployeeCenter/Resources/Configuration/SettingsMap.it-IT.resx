@@ -27,14 +27,38 @@
   <data name="Annual Leave Per Year" xml:space="preserve">
     <value>Congedo Annuale All&apos;Anno</value>
   </data>
+  <data name="Brand Home URL" xml:space="preserve">
+    <value>URL home del marchio</value>
+  </data>
+  <data name="Brand Name" xml:space="preserve">
+    <value>Nome del marchio</value>
+  </data>
   <data name="Default Payroll Currency" xml:space="preserve">
     <value>Valuta dello stipendio predefinita</value>
+  </data>
+  <data name="Project Logo" xml:space="preserve">
+    <value>Logo del progetto</value>
+  </data>
+  <data name="Project Name" xml:space="preserve">
+    <value>Nome progetto</value>
+  </data>
+  <data name="The brand name of the company or project. E.g. Aiursoft." xml:space="preserve">
+    <value>Il nome del marchio dell&apos;azienda o del progetto. Esempio: Aiursoft.</value>
   </data>
   <data name="The default currency to use when issuing a new payroll." xml:space="preserve">
     <value>La valuta predefinita da utilizzare quando si emette un nuovo stipendio.</value>
   </data>
+  <data name="The logo of the project displayed in the navbar and footer. Support jpg, png, svg." xml:space="preserve">
+    <value>Il logo del progetto visualizzato nella navbar e nel footer. Supporta jpg, png, svg.</value>
+  </data>
+  <data name="The name of the project displayed in the frontend." xml:space="preserve">
+    <value>Il nome del progetto visualizzato nel frontend.</value>
+  </data>
   <data name="The number of paid annual leave days allocated to each employee every year." xml:space="preserve">
     <value>Il numero di giorni di ferie annuali retribuite assegnati a ciascun dipendente ogni anno.</value>
+  </data>
+  <data name="The URL of the company or project. E.g. https://www.aiursoft.com" xml:space="preserve">
+    <value>L&apos;URL dell&apos;azienda o del progetto. Esempio: https://www.aiursoft.com</value>
   </data>
 
 </root>

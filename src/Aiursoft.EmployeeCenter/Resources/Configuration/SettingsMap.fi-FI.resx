@@ -27,14 +27,38 @@
   <data name="Annual Leave Per Year" xml:space="preserve">
     <value>Vuosiloma vuodessa</value>
   </data>
+  <data name="Brand Home URL" xml:space="preserve">
+    <value>Brändin kotisivun URL</value>
+  </data>
+  <data name="Brand Name" xml:space="preserve">
+    <value>Brändin nimi</value>
+  </data>
   <data name="Default Payroll Currency" xml:space="preserve">
     <value>Oletuspalkkalaskentan valuutta</value>
+  </data>
+  <data name="Project Logo" xml:space="preserve">
+    <value>Projektin logo</value>
+  </data>
+  <data name="Project Name" xml:space="preserve">
+    <value>Projektin nimi</value>
+  </data>
+  <data name="The brand name of the company or project. E.g. Aiursoft." xml:space="preserve">
+    <value>Yrityksen tai projektin brändinimi. Esim. Aiursoft.</value>
   </data>
   <data name="The default currency to use when issuing a new payroll." xml:space="preserve">
     <value>Oletusvaluutta, jota käytetään uuden palkkailmoituksen myöntämisessä.</value>
   </data>
+  <data name="The logo of the project displayed in the navbar and footer. Support jpg, png, svg." xml:space="preserve">
+    <value>Projektin logo näytetään navigointipalkissa ja alatunnisteessa. Tuki jpg, png, svg.</value>
+  </data>
+  <data name="The name of the project displayed in the frontend." xml:space="preserve">
+    <value>Projektin nimi, joka näytetään etusivulla.</value>
+  </data>
   <data name="The number of paid annual leave days allocated to each employee every year." xml:space="preserve">
     <value>Vuoden aikana työntekijälle myönnettävien maksutonta vuosilomapäivien määrä.</value>
+  </data>
+  <data name="The URL of the company or project. E.g. https://www.aiursoft.com" xml:space="preserve">
+    <value>Yrityksen tai projektin verkkosivuosoite. Esim. https://www.aiursoft.com</value>
   </data>
 
 </root>

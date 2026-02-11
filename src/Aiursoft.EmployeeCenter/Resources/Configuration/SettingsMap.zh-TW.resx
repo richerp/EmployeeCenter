@@ -27,14 +27,38 @@
   <data name="Annual Leave Per Year" xml:space="preserve">
     <value>每年年假天數</value>
   </data>
+  <data name="Brand Home URL" xml:space="preserve">
+    <value>品牌首頁網址</value>
+  </data>
+  <data name="Brand Name" xml:space="preserve">
+    <value>品牌名稱</value>
+  </data>
   <data name="Default Payroll Currency" xml:space="preserve">
     <value>預設薪資貨幣</value>
+  </data>
+  <data name="Project Logo" xml:space="preserve">
+    <value>專案標誌</value>
+  </data>
+  <data name="Project Name" xml:space="preserve">
+    <value>專案名稱</value>
+  </data>
+  <data name="The brand name of the company or project. E.g. Aiursoft." xml:space="preserve">
+    <value>公司或專案的商標名稱。例如：Aiursoft。</value>
   </data>
   <data name="The default currency to use when issuing a new payroll." xml:space="preserve">
     <value>發放新薪資時預設使用的貨幣。</value>
   </data>
+  <data name="The logo of the project displayed in the navbar and footer. Support jpg, png, svg." xml:space="preserve">
+    <value>專案的登錄檔顯示於導覽列與頁尾。支援 jpg、png、svg 格式。</value>
+  </data>
+  <data name="The name of the project displayed in the frontend." xml:space="preserve">
+    <value>專案在前端顯示的名稱。</value>
+  </data>
   <data name="The number of paid annual leave days allocated to each employee every year." xml:space="preserve">
     <value>每年分配給每位員工的有薪年假天數。</value>
+  </data>
+  <data name="The URL of the company or project. E.g. https://www.aiursoft.com" xml:space="preserve">
+    <value>公司或專案的網址。例如：https://www.aiursoft.com</value>
   </data>
 
 </root>
