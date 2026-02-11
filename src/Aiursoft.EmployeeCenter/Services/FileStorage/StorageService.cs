@@ -28,6 +28,7 @@ public class StorageService(
     {
         // 1. Get Workspace root
         var root = isVault ? folders.GetVaultFolder() : folders.GetWorkspaceFolder();
+
         // 2. Resolve physical path
         var physicalPath = Path.GetFullPath(Path.Combine(root, logicalPath));
 
@@ -68,6 +69,7 @@ public class StorageService(
         // 6. Write file content
         await using var fileStream = new FileStream(physicalPath, FileMode.Create);
         await file.CopyToAsync(fileStream);
+
         // 7. Return logical path (relative to Workspace)
         return Path.GetRelativePath(root, physicalPath).Replace("\\", "/");
     }
@@ -126,7 +128,7 @@ public class StorageService(
             // Fix: Enforce trailing slash to prevent partial directory matching (e.g. "A" matching "AA")
             var normalizedRequestPath = requestPath.TrimEnd('/') + "/";
             var normalizedAuthorizedPath = authorizedPath.TrimEnd('/') + "/";
-            
+
             return normalizedRequestPath.StartsWith(normalizedAuthorizedPath, StringComparison.OrdinalIgnoreCase);
         }
         catch
