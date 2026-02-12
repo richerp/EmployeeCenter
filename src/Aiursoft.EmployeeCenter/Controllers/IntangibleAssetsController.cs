@@ -28,6 +28,7 @@ public class IntangibleAssetsController(
     {
         var assets = await context.IntangibleAssets
             .Include(a => a.Assignee)
+            .Include(a => a.CompanyEntity)
             .OrderByDescending(a => a.CreatedAt)
             .ToListAsync();
 
@@ -41,7 +42,9 @@ public class IntangibleAssetsController(
     {
         return this.StackView(new CreateViewModel
         {
-            AllUsers = await context.Users.ToListAsync()
+            AllUsers = await context.Users.ToListAsync(),
+            AllCompanyEntities = await context.CompanyEntities.ToListAsync(),
+            CurrencyOptions = Configuration.SettingsMap.Definitions.First(d => d.Key == Configuration.SettingsMap.DefaultPayrollCurrency).ChoiceOptions!
         });
     }
 
@@ -66,7 +69,11 @@ public class IntangibleAssetsController(
                 RegistrationDate = model.RegistrationDate,
                 ExpirationDate = model.ExpirationDate,
                 PurchasePrice = model.PurchasePrice,
+                Currency = model.Currency,
                 InvoiceFileUrl = model.InvoiceFileUrl,
+                RegistrationCertificateUrl = model.RegistrationCertificateUrl,
+                IsPublic = model.IsPublic,
+                CompanyEntityId = model.CompanyEntityId,
                 AssigneeId = model.AssigneeId,
                 Status = model.Status,
                 Description = model.Description,
@@ -79,6 +86,8 @@ public class IntangibleAssetsController(
         }
 
         model.AllUsers = await context.Users.ToListAsync();
+        model.AllCompanyEntities = await context.CompanyEntities.ToListAsync();
+        model.CurrencyOptions = Configuration.SettingsMap.Definitions.First(d => d.Key == Configuration.SettingsMap.DefaultPayrollCurrency).ChoiceOptions!;
         return this.StackView(model);
     }
 
@@ -86,6 +95,7 @@ public class IntangibleAssetsController(
     {
         var asset = await context.IntangibleAssets
             .Include(a => a.Assignee)
+            .Include(a => a.CompanyEntity)
             .FirstOrDefaultAsync(a => a.Id == id);
 
         if (asset == null) return NotFound();
@@ -116,11 +126,17 @@ public class IntangibleAssetsController(
             RegistrationDate = asset.RegistrationDate,
             ExpirationDate = asset.ExpirationDate,
             PurchasePrice = asset.PurchasePrice,
+            Currency = asset.Currency,
             InvoiceFileUrl = asset.InvoiceFileUrl,
+            RegistrationCertificateUrl = asset.RegistrationCertificateUrl,
+            IsPublic = asset.IsPublic,
+            CompanyEntityId = asset.CompanyEntityId,
             AssigneeId = asset.AssigneeId,
             Status = asset.Status,
             Description = asset.Description,
-            AllUsers = await context.Users.ToListAsync()
+            AllUsers = await context.Users.ToListAsync(),
+            AllCompanyEntities = await context.CompanyEntities.ToListAsync(),
+            CurrencyOptions = Configuration.SettingsMap.Definitions.First(d => d.Key == Configuration.SettingsMap.DefaultPayrollCurrency).ChoiceOptions!
         });
     }
 
@@ -145,7 +161,11 @@ public class IntangibleAssetsController(
             asset.RegistrationDate = model.RegistrationDate;
             asset.ExpirationDate = model.ExpirationDate;
             asset.PurchasePrice = model.PurchasePrice;
+            asset.Currency = model.Currency;
             asset.InvoiceFileUrl = model.InvoiceFileUrl;
+            asset.RegistrationCertificateUrl = model.RegistrationCertificateUrl;
+            asset.IsPublic = model.IsPublic;
+            asset.CompanyEntityId = model.CompanyEntityId;
             asset.AssigneeId = model.AssigneeId;
             asset.Status = model.Status;
             asset.Description = model.Description;
@@ -156,6 +176,8 @@ public class IntangibleAssetsController(
         }
 
         model.AllUsers = await context.Users.ToListAsync();
+        model.AllCompanyEntities = await context.CompanyEntities.ToListAsync();
+        model.CurrencyOptions = Configuration.SettingsMap.Definitions.First(d => d.Key == Configuration.SettingsMap.DefaultPayrollCurrency).ChoiceOptions!;
         return this.StackView(model);
     }
 

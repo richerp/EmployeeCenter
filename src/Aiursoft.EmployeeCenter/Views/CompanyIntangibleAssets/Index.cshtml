@@ -2,19 +2,13 @@
 
 <div class="row mb-2 mb-xl-3">
     <div class="col-auto d-none d-sm-block">
-        <h3>@Localizer["Manage Intangible Assets"]</h3>
-    </div>
-
-    <div class="col-auto ms-auto mt-n1">
-        <a asp-action="Create" class="btn btn-primary">
-            <i class="align-middle" data-lucide="plus-circle"></i> @Localizer["Add New"]
-        </a>
+        <h3>@Localizer["Company Intangible Assets"]</h3>
     </div>
 </div>
 
 <div class="card">
     <div class="card-header">
-        <h5 class="card-title">@Localizer["All Intangible Assets"]</h5>
+        <h5 class="card-title">@Localizer["Shared Intangible Assets"]</h5>
     </div>
     <div class="table-responsive">
         <table class="table table-hover mb-0">
@@ -26,7 +20,6 @@
                 <th>@Localizer["Supplier"]</th>
                 <th>@Localizer["Belongs to Entity"]</th>
                 <th>@Localizer["Assignee"]</th>
-                <th>@Localizer["Expiration Date"]</th>
                 <th class="text-end">@Localizer["Actions"]</th>
             </tr>
             </thead>
@@ -60,9 +53,7 @@
                     <td>
                         @if (item.CompanyEntity != null)
                         {
-                            <a asp-controller="CompanyEntity" asp-action="Details" asp-route-id="@item.CompanyEntityId" class="text-dark">
-                                @item.CompanyEntity.CompanyName
-                            </a>
+                            @item.CompanyEntity.CompanyName
                         }
                         else
                         {
@@ -72,28 +63,17 @@
                     <td>
                         @if (item.Assignee != null)
                         {
-                            <a asp-controller="Users" asp-action="Details" asp-route-id="@item.AssigneeId" class="text-dark">
-                                @item.Assignee.DisplayName
-                            </a>
+                            @item.Assignee.DisplayName
                         }
                         else
                         {
                             @Localizer["N/A"]
                         }
                     </td>
-                    <td>@(item.ExpirationDate?.ToString("yyyy-MM-dd") ?? Localizer["N/A"].Value)</td>
                     <td class="text-end">
-                        <div class="btn-group">
-                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary" title="@Localizer["Details"]">
-                                <i class="align-middle" data-lucide="eye"></i>
-                            </a>
-                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary" title="@Localizer["Edit"]">
-                                <i class="align-middle" data-lucide="edit"></i>
-                            </a>
-                            <a asp-action="Assign" asp-route-id="@item.Id" class="btn btn-sm btn-outline-success" title="@Localizer["Assign"]">
-                                <i class="align-middle" data-lucide="user-plus"></i>
-                            </a>
-                        </div>
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary" title="@Localizer["Details"]">
+                            <i class="align-middle" data-lucide="eye"></i> @Localizer["Details"]
+                        </a>
                     </td>
                 </tr>
             }
