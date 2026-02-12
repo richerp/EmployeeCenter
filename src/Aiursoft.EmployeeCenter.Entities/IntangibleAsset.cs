@@ -43,9 +43,22 @@ public class IntangibleAsset
 
     public decimal? PurchasePrice { get; set; }
 
+    [MaxLength(10)]
+    public string Currency { get; set; } = "CNY";
+
     [MaxLength(500)]
-    [Url]
     public string? InvoiceFileUrl { get; set; }
+
+    [MaxLength(500)]
+    public string? RegistrationCertificateUrl { get; set; }
+
+    public bool IsPublic { get; set; }
+
+    public int? CompanyEntityId { get; set; }
+
+    [JsonIgnore]
+    [ForeignKey(nameof(CompanyEntityId))]
+    public CompanyEntity? CompanyEntity { get; set; }
 
     [MaxLength(255)]
     public string? AssigneeId { get; set; }

@@ -17,7 +17,7 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "10.0.2")
+                .HasAnnotation("ProductVersion", "10.0.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
@@ -675,8 +675,16 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("varchar(255)");
 
+                    b.Property<int?>("CompanyEntityId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Currency")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("varchar(10)");
 
                     b.Property<string>("Description")
                         .HasMaxLength(2000)
@@ -701,6 +709,9 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("varchar(500)");
 
+                    b.Property<bool>("IsPublic")
+                        .HasColumnType("tinyint(1)");
+
                     b.Property<string>("ManagementUrl")
                         .HasMaxLength(500)
                         .HasColumnType("varchar(500)");
@@ -716,6 +727,10 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
 
                     b.Property<decimal?>("PurchasePrice")
                         .HasColumnType("decimal(65,30)");
+
+                    b.Property<string>("RegistrationCertificateUrl")
+                        .HasMaxLength(500)
+                        .HasColumnType("varchar(500)");
 
                     b.Property<DateTime?>("RegistrationDate")
                         .HasColumnType("datetime(6)");
@@ -736,6 +751,8 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("AssigneeId");
+
+                    b.HasIndex("CompanyEntityId");
 
                     b.ToTable("IntangibleAssets");
                 });
@@ -1985,7 +2002,13 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .WithMany()
                         .HasForeignKey("AssigneeId");
 
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.CompanyEntity", "CompanyEntity")
+                        .WithMany()
+                        .HasForeignKey("CompanyEntityId");
+
                     b.Navigation("Assignee");
+
+                    b.Navigation("CompanyEntity");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.LeaveApplication", b =>

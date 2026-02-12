@@ -78,10 +78,16 @@ public class CompanyEntityController(
             .OrderBy(s => s.Hostname)
             .ToListAsync();
 
+        var intangibleAssets = await dbContext.IntangibleAssets
+            .Where(a => a.CompanyEntityId == id)
+            .OrderBy(a => a.Name)
+            .ToListAsync();
+
         var model = new DetailsViewModel
         {
             Entity = entity,
-            Servers = servers
+            Servers = servers,
+            IntangibleAssets = intangibleAssets
         };
         return this.StackView(model);
     }
