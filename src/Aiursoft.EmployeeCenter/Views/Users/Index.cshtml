@@ -47,7 +47,7 @@
                 @* The clickable-row class and data-href attribute are fully preserved. *@
                 <tr class="clickable-row" data-href="@Url.Action("Details", new { id = item.User.Id })">
                                 <td>
-                                    <a asp-action="Details" asp-route-id="@item.User.Id" class="text-dark d-flex align-items-center">
+                                    <a asp-action="Details" asp-route-id="@item.User.Id" class="text-body d-flex align-items-center">
                                         <img src="@StorageService.RelativePathToInternetUrl(item.User.AvatarRelativePath)?w=72&square=true" alt="@item.User.DisplayName" class="rounded-circle" width="36" height="36" />
                                         <span class="ms-2">@item.User.DisplayName</span>
                                     </a>

@@ -163,7 +163,7 @@
                             <h5 class="card-title text-primary font-weight-bold">@Model.Entity.CompanyName</h5>
                             <dl class="row mb-0">
                                 <dt class="col-sm-4">@Localizer["Tax ID"]</dt>
-                                <dd class="col-sm-8 text-dark font-weight-bold">@Model.Entity.EntityCode</dd>
+                                <dd class="col-sm-8 text-body font-weight-bold">@Model.Entity.EntityCode</dd>
 
                                 <dt class="col-sm-4">@Localizer["Address"]</dt>
                                 <dd class="col-sm-8 small">@Model.Entity.RegisteredAddress</dd>
@@ -172,7 +172,7 @@
                                 <dd class="col-sm-8 small">@Model.Entity.BankName</dd>
 
                                 <dt class="col-sm-4">@Localizer["Account"]</dt>
-                                <dd class="col-sm-8 text-dark font-weight-bold">@Model.Entity.BankAccount</dd>
+                                <dd class="col-sm-8 text-body font-weight-bold">@Model.Entity.BankAccount</dd>
 
                                 @if (!string.IsNullOrEmpty(Model.Entity.SwiftCode))
                                 {

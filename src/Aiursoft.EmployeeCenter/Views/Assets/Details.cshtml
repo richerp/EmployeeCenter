@@ -52,7 +52,7 @@
                         @Localizer["Assignee"]
                         @if (Model.Asset.Assignee != null)
                         {
-                            <a asp-controller="Users" asp-action="Details" asp-route-id="@Model.Asset.AssigneeId" class="text-dark d-flex align-items-center">
+                            <a asp-controller="Users" asp-action="Details" asp-route-id="@Model.Asset.AssigneeId" class="text-body d-flex align-items-center">
                                 <img src="@Storage.RelativePathToInternetUrl(Model.Asset.Assignee.AvatarRelativePath)?w=40&square=true" class="rounded-circle me-2" width="20" height="20" />
                                 @Model.Asset.Assignee.DisplayName
                             </a>
@@ -129,7 +129,7 @@
                                 <tr>
                                     <td><label class="text-muted" data-utc-time="@history.Timestamp.ToHtmlDateTime()"></label></td>
                                     <td>
-                                        <a asp-controller="Users" asp-action="Details" asp-route-id="@history.OperatorId" class="text-dark">
+                                        <a asp-controller="Users" asp-action="Details" asp-route-id="@history.OperatorId" class="text-body">
                                             @history.Operator.DisplayName
                                         </a>
                                     </td>
