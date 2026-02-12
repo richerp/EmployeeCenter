@@ -126,5 +126,16 @@
   <data name="Type" xml:space="preserve">
     <value>Type</value>
   </data>
-
+  <data name="My Team" xml:space="preserve">
+    <value>My Team</value>
+  </data>
+  <data name="All Company" xml:space="preserve">
+    <value>All Company</value>
+  </data>
+  <data name="awaiting review across company" xml:space="preserve">
+    <value>awaiting review across company</value>
+  </data>
+  <data name="Company on Leave" xml:space="preserve">
+    <value>Company on Leave</value>
+  </data>
 </root>

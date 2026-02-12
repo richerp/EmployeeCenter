@@ -5,6 +5,19 @@
     <div class="col-auto d-none d-sm-block">
         <h3>@Localizer["Approval Center"]</h3>
     </div>
+    @if (Model.CanApproveAnyLeave)
+    {
+        <div class="col-auto ms-auto text-end mt-n1">
+            <div class="btn-group" role="group">
+                <a asp-action="Incoming" asp-route-showAll="false" class="btn btn-outline-primary @(!Model.ShowAll ? "active" : "")">
+                    <i class="align-middle" data-lucide="users"></i> @Localizer["My Team"]
+                </a>
+                <a asp-action="Incoming" asp-route-showAll="true" class="btn btn-outline-primary @(Model.ShowAll ? "active" : "")">
+                    <i class="align-middle" data-lucide="globe"></i> @Localizer["All Company"]
+                </a>
+            </div>
+        </div>
+    }
 </div>
 
 <!-- Statistics Cards -->
@@ -20,7 +33,16 @@
                         <h3 class="d-flex align-items-center mb-0 fw-light">
                             @Model.PendingCount
                         </h3>
-                        <small class="text-muted">@Localizer["awaiting your review"]</small>
+                        <small class="text-muted">
+                            @if (Model.ShowAll)
+                            {
+                                @Localizer["awaiting review across company"]
+                            }
+                            else
+                            {
+                                @Localizer["awaiting your review"]
+                            }
+                        </small>
                     </div>
                 </div>
                 <div class="progress progress-sm shadow-sm mb-1">
@@ -72,7 +94,9 @@
     <div class="col-lg-6 col-xl-3 d-flex">
         <div class="card flex-fill">
             <div class="card-header">
-                <h5 class="card-title mb-0 mt-2">@Localizer["Team on Leave"]</h5>
+                <h5 class="card-title mb-0 mt-2">
+                    @(Model.ShowAll ? Localizer["Company on Leave"] : Localizer["Team on Leave"])
+                </h5>
             </div>
             <div class="card-body my-0 pt-0">
                 <div class="row d-flex align-items-center mb-3">

@@ -369,12 +369,18 @@ public class LeaveController(
         LinkText = "Approval Center",
         LinkOrder = 3)]
     [HttpGet]
-    public async Task<IActionResult> Incoming()
+    public async Task<IActionResult> Incoming(bool showAll = true)
     {
         var user = await userManager.GetUserAsync(User);
         if (user == null) return NotFound();
 
         var canApproveAny = (await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanApproveAnyLeave)).Succeeded;
+
+        // If user cannot approve any leave, they can only see their subordinates.
+        if (!canApproveAny)
+        {
+            showAll = false;
+        }
 
         // Get leaves that are pending approval
         // Condition:
@@ -386,7 +392,7 @@ public class LeaveController(
             .Include(l => l.User)
             .Where(l => l.IsPending && !l.IsWithdrawn && l.UserId != user.Id);
 
-        if (!canApproveAny)
+        if (!showAll)
         {
             // Get all subordinates recursively
             var approverSubordinates = await GetAllSubordinatesRecursivelyAsync(user.Id);
@@ -403,7 +409,7 @@ public class LeaveController(
             .Include(l => l.ReviewedBy)
             .Where(l => l.ReviewedById != null);
 
-        if (!canApproveAny)
+        if (!showAll)
         {
             historyQuery = historyQuery.Where(l => l.ReviewedById == user.Id);
         }
@@ -418,8 +424,8 @@ public class LeaveController(
         var approvedThisMonth = approvalHistory.Count(l => l.IsApproved && l.ReviewedAt >= startOfMonth);
         var rejectedThisMonth = approvalHistory.Count(l => !l.IsApproved && l.ReviewedAt >= startOfMonth);
 
-        // Count team members currently on leave
-        var subordinateIds = canApproveAny
+        // Count members currently on leave
+        var subordinateIds = showAll
             ? (await context.Users.Select(u => u.Id).ToListAsync()).ToHashSet()
             : await GetAllSubordinatesRecursivelyAsync(user.Id);
 
@@ -439,7 +445,9 @@ public class LeaveController(
             PendingCount = incomingLeaves.Count,
             ApprovedThisMonth = approvedThisMonth,
             RejectedThisMonth = rejectedThisMonth,
-            TeamOnLeaveCount = teamOnLeaveCount
+            TeamOnLeaveCount = teamOnLeaveCount,
+            CanApproveAnyLeave = canApproveAny,
+            ShowAll = showAll
         });
     }
 
