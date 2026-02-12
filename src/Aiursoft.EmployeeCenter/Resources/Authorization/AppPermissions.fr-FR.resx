@@ -33,6 +33,9 @@
   <data name="Allows approving or rejecting any leave application, regardless of the reporting line." xml:space="preserve">
     <value>Permet d&apos;approuver ou de rejeter toute demande de congé, indépendamment de la ligne hiérarchique.</value>
   </data>
+  <data name="Allows approving, rejecting, or requesting changes for project requirements. Everyone can submit requirements and comment on them." xml:space="preserve">
+    <value>Permet d&apos;approuver, de rejeter ou de demander des modifications pour les exigences du projet. Tout le monde peut soumettre des exigences et commenter celles-ci.</value>
+  </data>
   <data name="Allows assigning or removing roles for any user." xml:space="preserve">
     <value>Permet d&apos;attribuer ou de retirer des rôles à tout utilisateur.</value>
   </data>
@@ -155,6 +158,9 @@
   </data>
   <data name="Approve Any Leave" xml:space="preserve">
     <value>Approuver toutes les demandes de congé</value>
+  </data>
+  <data name="Approve Project Requirements" xml:space="preserve">
+    <value>Approuver les exigences du projet</value>
   </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>Attribuer des rôles aux utilisateurs</value>

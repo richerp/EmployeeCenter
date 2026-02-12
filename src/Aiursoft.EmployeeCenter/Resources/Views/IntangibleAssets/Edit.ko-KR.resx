@@ -30,6 +30,9 @@
   <data name="Back" xml:space="preserve">
     <value>뒤로</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>통화</value>
+  </data>
   <data name="Delete" xml:space="preserve">
     <value>삭제</value>
   </data>
@@ -51,6 +54,9 @@
   <data name="Filing Subject" xml:space="preserve">
     <value>출원 제목</value>
   </data>
+  <data name="Invoice File" xml:space="preserve">
+    <value>청구서 파일</value>
+  </data>
   <data name="Invoice URL" xml:space="preserve">
     <value>청구서 URL</value>
   </data>
@@ -60,20 +66,35 @@
   <data name="Name / Description" xml:space="preserve">
     <value>이름 / 설명</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>신규</value>
+  </data>
   <data name="None" xml:space="preserve">
     <value>없음</value>
   </data>
   <data name="Password (Optional)" xml:space="preserve">
     <value>비밀번호 (선택 사항)</value>
   </data>
+  <data name="Public Intangible Asset" xml:space="preserve">
+    <value>공개 무형 자산</value>
+  </data>
   <data name="Purchase Price" xml:space="preserve">
     <value>구매 가격</value>
+  </data>
+  <data name="Registration Certificate" xml:space="preserve">
+    <value>등록 증명서</value>
   </data>
   <data name="Registration Date" xml:space="preserve">
     <value>등록 일자</value>
   </data>
+  <data name="Reload" xml:space="preserve">
+    <value>새로고침</value>
+  </data>
   <data name="Save Changes" xml:space="preserve">
     <value>변경 사항 저장</value>
+  </data>
+  <data name="Select Entity" xml:space="preserve">
+    <value>엔티티 선택</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>상태</value>

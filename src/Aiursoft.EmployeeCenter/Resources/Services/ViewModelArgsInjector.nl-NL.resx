@@ -54,6 +54,18 @@
   <data name="Approval Center" xml:space="preserve">
     <value>Goedkeuringscentrum</value>
   </data>
+  <data name="Approval History" xml:space="preserve">
+    <value>Goedkeuringsgeschiedenis</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>Goedkeuren</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>Goedgekeurd</value>
+  </data>
+  <data name="Approved Projects" xml:space="preserve">
+    <value>Goedgekeurde projecten</value>
+  </data>
   <data name="Asset Categories" xml:space="preserve">
     <value>Assetcategorieën</value>
   </data>
@@ -120,6 +132,9 @@
   <data name="Code" xml:space="preserve">
     <value>Code</value>
   </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Opmerkingen</value>
+  </data>
   <data name="Company Entities" xml:space="preserve">
     <value>Bedrijfseenheden</value>
   </data>
@@ -128,6 +143,9 @@
   </data>
   <data name="Company Entity Info" xml:space="preserve">
     <value>Bedrijfseenheidinformatie</value>
+  </data>
+  <data name="Company Intangible Assets" xml:space="preserve">
+    <value>Bedrijfsvaste activa</value>
   </data>
   <data name="Company Name" xml:space="preserve">
     <value>Bedrijfsnaam</value>
@@ -212,6 +230,9 @@
   </data>
   <data name="Edit Payroll" xml:space="preserve">
     <value>Werkloondetails bewerken</value>
+  </data>
+  <data name="Edit Requirement" xml:space="preserve">
+    <value>Bewerk vereiste</value>
   </data>
   <data name="Edit Role" xml:space="preserve">
     <value>Rol bewerken</value>
@@ -366,6 +387,9 @@
   <data name="Manage Questions" xml:space="preserve">
     <value>Vragen beheren</value>
   </data>
+  <data name="Manage Requirements" xml:space="preserve">
+    <value>Aanvragen beheren</value>
+  </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>Beheer gedeelde items</value>
   </data>
@@ -392,6 +416,9 @@
   </data>
   <data name="My Report Line" xml:space="preserve">
     <value>Mijn rapportlijn</value>
+  </data>
+  <data name="My Requirements" xml:space="preserve">
+    <value>Mijn vereisten</value>
   </data>
   <data name="Not Found" xml:space="preserve">
     <value>Niet gevonden</value>
@@ -420,6 +447,9 @@
   <data name="Payrolls" xml:space="preserve">
     <value>Loonlijsten</value>
   </data>
+  <data name="PendingApproval" xml:space="preserve">
+    <value>In afwachting van goedkeuring</value>
+  </data>
   <data name="Permission Details" xml:space="preserve">
     <value>Toegangsdetails</value>
   </data>
@@ -441,6 +471,9 @@
   <data name="Profile Settings" xml:space="preserve">
     <value>Profielinstellingen</value>
   </data>
+  <data name="Project Requirements" xml:space="preserve">
+    <value>Projectvereisten</value>
+  </data>
   <data name="Projects" xml:space="preserve">
     <value>Projecten</value>
   </data>
@@ -456,8 +489,38 @@
   <data name="Register" xml:space="preserve">
     <value>Registreren</value>
   </data>
+  <data name="Reject" xml:space="preserve">
+    <value>Afwijzen</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>Afgekeurd</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>Antwoord</value>
+  </data>
+  <data name="Replying to" xml:space="preserve">
+    <value>Antwoorden op</value>
+  </data>
   <data name="Report Line" xml:space="preserve">
     <value>Rapportlijn</value>
+  </data>
+  <data name="Request Changes" xml:space="preserve">
+    <value>Wijzigen aanvragen</value>
+  </data>
+  <data name="RequestChanges" xml:space="preserve">
+    <value>Wijzigingen aanvragen</value>
+  </data>
+  <data name="Requirement" xml:space="preserve">
+    <value>Vereiste</value>
+  </data>
+  <data name="Requirement Details" xml:space="preserve">
+    <value>Aanvraagdetails</value>
+  </data>
+  <data name="Requirement saved successfully." xml:space="preserve">
+    <value>Anvraag succesvol opgeslagen.</value>
+  </data>
+  <data name="Requirement Title" xml:space="preserve">
+    <value>Aanvraag titel</value>
   </data>
   <data name="Resources" xml:space="preserve">
     <value>Resources</value>
@@ -507,6 +570,18 @@
   <data name="Status" xml:space="preserve">
     <value>Status</value>
   </data>
+  <data name="Submit Comment" xml:space="preserve">
+    <value>Comment indienen</value>
+  </data>
+  <data name="Submit for Approval" xml:space="preserve">
+    <value>Indienen voor goedkeuring</value>
+  </data>
+  <data name="Submit New Requirement" xml:space="preserve">
+    <value>Nieuwe vereiste indienen</value>
+  </data>
+  <data name="Submit Requirement" xml:space="preserve">
+    <value>Verzoek indienen</value>
+  </data>
   <data name="System" xml:space="preserve">
     <value>Systeem</value>
   </data>
@@ -539,6 +614,9 @@
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>Wekelijkse rapportage</value>
+  </data>
+  <data name="Write a comment..." xml:space="preserve">
+    <value>Een opmerking toevoegen...</value>
   </data>
 
 </root>

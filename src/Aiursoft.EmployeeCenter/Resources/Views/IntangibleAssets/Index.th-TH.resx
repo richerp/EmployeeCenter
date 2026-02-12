@@ -39,6 +39,9 @@
   <data name="Assignee" xml:space="preserve">
     <value>ผู้รับผิดชอบ</value>
   </data>
+  <data name="Belongs to Entity" xml:space="preserve">
+    <value>สังกัดองค์กร</value>
+  </data>
   <data name="Details" xml:space="preserve">
     <value>รายละเอียด</value>
   </data>

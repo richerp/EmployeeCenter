@@ -54,6 +54,18 @@
   <data name="Approval Center" xml:space="preserve">
     <value>Κέντρο Εγκρίσεων</value>
   </data>
+  <data name="Approval History" xml:space="preserve">
+    <value>Ιστορικό Εγκρίσεων</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>Εγκρίνω</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>Εγκρίθηκε</value>
+  </data>
+  <data name="Approved Projects" xml:space="preserve">
+    <value>Εγκεκριμένα Έργα</value>
+  </data>
   <data name="Asset Categories" xml:space="preserve">
     <value>Κατηγορίες Περιουσιακών Στοιχείων</value>
   </data>
@@ -120,6 +132,9 @@
   <data name="Code" xml:space="preserve">
     <value>Κωδικός</value>
   </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Σχόλια</value>
+  </data>
   <data name="Company Entities" xml:space="preserve">
     <value>Εταιρικά Οντότητα</value>
   </data>
@@ -128,6 +143,9 @@
   </data>
   <data name="Company Entity Info" xml:space="preserve">
     <value>Πληροφορίες Εταιρικής Οντότητας</value>
+  </data>
+  <data name="Company Intangible Assets" xml:space="preserve">
+    <value>Εταιρικά Ανυλικά Περιουσιακά Στοιχεία</value>
   </data>
   <data name="Company Name" xml:space="preserve">
     <value>Όνομα Εταιρείας</value>
@@ -212,6 +230,9 @@
   </data>
   <data name="Edit Payroll" xml:space="preserve">
     <value>Επεξεργασία Μισθοδοσίας</value>
+  </data>
+  <data name="Edit Requirement" xml:space="preserve">
+    <value>Επεξεργασία Anαγκαιότητας</value>
   </data>
   <data name="Edit Role" xml:space="preserve">
     <value>Επεξεργασία Ρόλου</value>
@@ -366,6 +387,9 @@
   <data name="Manage Questions" xml:space="preserve">
     <value>Διαχείριση Ερωτήσεων</value>
   </data>
+  <data name="Manage Requirements" xml:space="preserve">
+    <value>Διαχείριση Anαγκαιοτήτων</value>
+  </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>Διαχείριση Κοινόχρηστων</value>
   </data>
@@ -392,6 +416,9 @@
   </data>
   <data name="My Report Line" xml:space="preserve">
     <value>Η Γραμμή Αναφορών Μου</value>
+  </data>
+  <data name="My Requirements" xml:space="preserve">
+    <value>Τα Απαιτούμενα μου</value>
   </data>
   <data name="Not Found" xml:space="preserve">
     <value>Όχι βρέθηκε</value>
@@ -420,6 +447,9 @@
   <data name="Payrolls" xml:space="preserve">
     <value>Μισθοδοσίες</value>
   </data>
+  <data name="PendingApproval" xml:space="preserve">
+    <value>Εκκρεμεί Έγκριση</value>
+  </data>
   <data name="Permission Details" xml:space="preserve">
     <value>Λεπτομέρειες Εξουσιοδότησης</value>
   </data>
@@ -441,6 +471,9 @@
   <data name="Profile Settings" xml:space="preserve">
     <value>Ρυθμίσεις Προφίλ</value>
   </data>
+  <data name="Project Requirements" xml:space="preserve">
+    <value>Anathesi Proyektou</value>
+  </data>
   <data name="Projects" xml:space="preserve">
     <value>Έργα</value>
   </data>
@@ -456,8 +489,38 @@
   <data name="Register" xml:space="preserve">
     <value>Εγγραφή</value>
   </data>
+  <data name="Reject" xml:space="preserve">
+    <value>Απόρριψη</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>Απορρίφθηκε</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>Απάντηση</value>
+  </data>
+  <data name="Replying to" xml:space="preserve">
+    <value>Απαντώντας σε</value>
+  </data>
   <data name="Report Line" xml:space="preserve">
     <value>Γραμμή Αναφοράς</value>
+  </data>
+  <data name="Request Changes" xml:space="preserve">
+    <value>Ζητήστε Αλλαγές</value>
+  </data>
+  <data name="RequestChanges" xml:space="preserve">
+    <value>Ζητήστε Αλλαγές</value>
+  </data>
+  <data name="Requirement" xml:space="preserve">
+    <value>Anágrafo</value>
+  </data>
+  <data name="Requirement Details" xml:space="preserve">
+    <value>Λεπτομέρειες Anαγκαιότητας</value>
+  </data>
+  <data name="Requirement saved successfully." xml:space="preserve">
+    <value>Η αίτηση αποθηκεύτηκε επιτυχώς.</value>
+  </data>
+  <data name="Requirement Title" xml:space="preserve">
+    <value>Τίτλος Anαφοράς</value>
   </data>
   <data name="Resources" xml:space="preserve">
     <value>Πόροι</value>
@@ -507,6 +570,18 @@
   <data name="Status" xml:space="preserve">
     <value>Κατάσταση</value>
   </data>
+  <data name="Submit Comment" xml:space="preserve">
+    <value>Υποβολή Σχολίου</value>
+  </data>
+  <data name="Submit for Approval" xml:space="preserve">
+    <value>Υποβολή για Έγκριση</value>
+  </data>
+  <data name="Submit New Requirement" xml:space="preserve">
+    <value>Υποβολή Νέας Anαζήτησης</value>
+  </data>
+  <data name="Submit Requirement" xml:space="preserve">
+    <value>Υποβολή Anαγκαιότητας</value>
+  </data>
   <data name="System" xml:space="preserve">
     <value>Σύστημα</value>
   </data>
@@ -539,6 +614,9 @@
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>Εβδομαδιαία Αναφορά</value>
+  </data>
+  <data name="Write a comment..." xml:space="preserve">
+    <value>Γράψτε ένα σχόλιο...</value>
   </data>
 
 </root>

@@ -30,6 +30,9 @@
   <data name="Back" xml:space="preserve">
     <value>Înapoi</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Valută</value>
+  </data>
   <data name="Delete" xml:space="preserve">
     <value>Șterge</value>
   </data>
@@ -51,6 +54,9 @@
   <data name="Filing Subject" xml:space="preserve">
     <value>Subiect depunere</value>
   </data>
+  <data name="Invoice File" xml:space="preserve">
+    <value>Factură</value>
+  </data>
   <data name="Invoice URL" xml:space="preserve">
     <value>URL factură</value>
   </data>
@@ -60,20 +66,35 @@
   <data name="Name / Description" xml:space="preserve">
     <value>Nume / Descriere</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>Nou</value>
+  </data>
   <data name="None" xml:space="preserve">
     <value>Nimic</value>
   </data>
   <data name="Password (Optional)" xml:space="preserve">
     <value>Parolă (Opțional)</value>
   </data>
+  <data name="Public Intangible Asset" xml:space="preserve">
+    <value>Activ intangibil public</value>
+  </data>
   <data name="Purchase Price" xml:space="preserve">
     <value>Preț de achiziție</value>
+  </data>
+  <data name="Registration Certificate" xml:space="preserve">
+    <value>Certificat de înregistrare</value>
   </data>
   <data name="Registration Date" xml:space="preserve">
     <value>Data înregistrării</value>
   </data>
+  <data name="Reload" xml:space="preserve">
+    <value>Reîncarcă</value>
+  </data>
   <data name="Save Changes" xml:space="preserve">
     <value>Salvează modificările</value>
+  </data>
+  <data name="Select Entity" xml:space="preserve">
+    <value>Selectați entitatea</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>Stare</value>

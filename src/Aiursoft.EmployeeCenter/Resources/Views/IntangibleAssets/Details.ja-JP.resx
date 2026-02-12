@@ -27,6 +27,9 @@
   <data name="Assignee" xml:space="preserve">
     <value>担当者</value>
   </data>
+  <data name="Belongs to Entity" xml:space="preserve">
+    <value>エンティティ所属</value>
+  </data>
   <data name="Description" xml:space="preserve">
     <value>説明</value>
   </data>
@@ -72,11 +75,17 @@
   <data name="Password" xml:space="preserve">
     <value>パスワード</value>
   </data>
+  <data name="Public" xml:space="preserve">
+    <value>公開</value>
+  </data>
   <data name="Purchase Price" xml:space="preserve">
     <value>購入価格</value>
   </data>
   <data name="Query Method" xml:space="preserve">
     <value>照会方法</value>
+  </data>
+  <data name="Registration Certificate" xml:space="preserve">
+    <value>登録証明書</value>
   </data>
   <data name="Registration Date" xml:space="preserve">
     <value>登録日</value>
@@ -89,6 +98,9 @@
   </data>
   <data name="Type" xml:space="preserve">
     <value>種類</value>
+  </data>
+  <data name="View Certificate" xml:space="preserve">
+    <value>証明書を表示</value>
   </data>
   <data name="View Invoice" xml:space="preserve">
     <value>請求書を表示</value>

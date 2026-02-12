@@ -39,6 +39,9 @@
   <data name="Assignee" xml:space="preserve">
     <value>负责人</value>
   </data>
+  <data name="Belongs to Entity" xml:space="preserve">
+    <value>所属实体</value>
+  </data>
   <data name="Details" xml:space="preserve">
     <value>详情</value>
   </data>

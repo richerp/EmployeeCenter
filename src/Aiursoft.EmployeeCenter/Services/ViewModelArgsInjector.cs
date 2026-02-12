@@ -189,6 +189,8 @@ public class ViewModelArgsInjector(
         _ = localizer["Issue Invoice"];
     
         _ = localizer["Manage Intangible Assets"];
+    
+        _ = localizer["Company Intangible Assets"];
     }
 
     public void InjectSimple(

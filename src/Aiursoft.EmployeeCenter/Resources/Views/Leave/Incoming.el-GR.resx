@@ -21,6 +21,9 @@
       <data name="Actions" xml:space="preserve">
     <value>Ενέργειες</value>
   </data>
+  <data name="All Company" xml:space="preserve">
+    <value>Όλη η Εταιρεία</value>
+  </data>
   <data name="Annual Leave" xml:space="preserve">
     <value>Ετήσια άδεια</value>
   </data>
@@ -51,6 +54,9 @@
   <data name="Approver" xml:space="preserve">
     <value>Εγκριτής</value>
   </data>
+  <data name="awaiting review across company" xml:space="preserve">
+    <value>εκκρεμεί αξιολόγηση σε όλη την εταιρεία</value>
+  </data>
   <data name="awaiting your review" xml:space="preserve">
     <value>αναμονή κρίσης σας</value>
   </data>
@@ -71,6 +77,9 @@
   </data>
   <data name="Important: Approval Decisions Are Final" xml:space="preserve">
     <value>Σημαντικό: Οι Αποφάσεις Εγκρίσεως είναι Τελικές</value>
+  </data>
+  <data name="My Team" xml:space="preserve">
+    <value>Η Ομάδα Μου</value>
   </data>
   <data name="No approval history." xml:space="preserve">
     <value>Καμία ιστορία εγκρίσεων.</value>

@@ -39,6 +39,9 @@
   <data name="Assignee" xml:space="preserve">
     <value>Ανάθεση</value>
   </data>
+  <data name="Belongs to Entity" xml:space="preserve">
+    <value>Ανήκει σε Οντότητα</value>
+  </data>
   <data name="Details" xml:space="preserve">
     <value>Λεπτομέρειες</value>
   </data>

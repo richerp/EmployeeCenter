@@ -21,6 +21,9 @@
       <data name="Actions" xml:space="preserve">
     <value>कार्रवाई</value>
   </data>
+  <data name="All Company" xml:space="preserve">
+    <value>सभी कंपनी</value>
+  </data>
   <data name="Annual Leave" xml:space="preserve">
     <value>वार्षिक छुट्टी</value>
   </data>
@@ -51,6 +54,9 @@
   <data name="Approver" xml:space="preserve">
     <value>अनुमोदक</value>
   </data>
+  <data name="awaiting review across company" xml:space="preserve">
+    <value>कंपनी भर में समीक्षा के लिए प्रतीक्षा कर रहा है</value>
+  </data>
   <data name="awaiting your review" xml:space="preserve">
     <value>आपकी समीक्षा की प्रतीक्षा में</value>
   </data>
@@ -71,6 +77,9 @@
   </data>
   <data name="Important: Approval Decisions Are Final" xml:space="preserve">
     <value>महत्वपूर्ण: अनुमोदन निर्णय अंतिम हैं</value>
+  </data>
+  <data name="My Team" xml:space="preserve">
+    <value>मेरी टीम</value>
   </data>
   <data name="No approval history." xml:space="preserve">
     <value>अनुमोदन इतिहास नहीं है।</value>

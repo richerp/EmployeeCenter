@@ -30,6 +30,9 @@
   <data name="Back" xml:space="preserve">
     <value>वापस</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>मुद्रा</value>
+  </data>
   <data name="Delete" xml:space="preserve">
     <value>हटाएँ</value>
   </data>
@@ -51,6 +54,9 @@
   <data name="Filing Subject" xml:space="preserve">
     <value>दाखिल करने का विषय</value>
   </data>
+  <data name="Invoice File" xml:space="preserve">
+    <value>बिल फ़ाइल</value>
+  </data>
   <data name="Invoice URL" xml:space="preserve">
     <value>बिल का URL</value>
   </data>
@@ -60,20 +66,35 @@
   <data name="Name / Description" xml:space="preserve">
     <value>नाम / विवरण</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>नया</value>
+  </data>
   <data name="None" xml:space="preserve">
     <value>कोई नहीं</value>
   </data>
   <data name="Password (Optional)" xml:space="preserve">
     <value>पासवर्ड (वैकल्पिक)</value>
   </data>
+  <data name="Public Intangible Asset" xml:space="preserve">
+    <value>सार्वजनिक अभौतिक परिसंपत्ति</value>
+  </data>
   <data name="Purchase Price" xml:space="preserve">
     <value>खरीद मूल्य</value>
+  </data>
+  <data name="Registration Certificate" xml:space="preserve">
+    <value>पंजीकरण प्रमाणपत्र</value>
   </data>
   <data name="Registration Date" xml:space="preserve">
     <value>पंजीकरण तिथि</value>
   </data>
+  <data name="Reload" xml:space="preserve">
+    <value>रीलोड</value>
+  </data>
   <data name="Save Changes" xml:space="preserve">
     <value>परिवर्तन सहेजें</value>
+  </data>
+  <data name="Select Entity" xml:space="preserve">
+    <value>एकता चुनें</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>स्थिति</value>

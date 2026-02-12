@@ -27,6 +27,9 @@
   <data name="Assignee" xml:space="preserve">
     <value>नियुक्त व्यक्ति</value>
   </data>
+  <data name="Belongs to Entity" xml:space="preserve">
+    <value>ईकाई से संबंधित</value>
+  </data>
   <data name="Description" xml:space="preserve">
     <value>विवरण</value>
   </data>
@@ -72,11 +75,17 @@
   <data name="Password" xml:space="preserve">
     <value>पासवर्ड</value>
   </data>
+  <data name="Public" xml:space="preserve">
+    <value>सार्वजनिक</value>
+  </data>
   <data name="Purchase Price" xml:space="preserve">
     <value>खरीद मूल्य</value>
   </data>
   <data name="Query Method" xml:space="preserve">
     <value>प्रश्न विधि</value>
+  </data>
+  <data name="Registration Certificate" xml:space="preserve">
+    <value>पंजीकरण प्रमाणपत्र</value>
   </data>
   <data name="Registration Date" xml:space="preserve">
     <value>पंजीकरण तिथि</value>
@@ -89,6 +98,9 @@
   </data>
   <data name="Type" xml:space="preserve">
     <value>प्रकार</value>
+  </data>
+  <data name="View Certificate" xml:space="preserve">
+    <value>प्रमाणपत्र देखें</value>
   </data>
   <data name="View Invoice" xml:space="preserve">
     <value>इन्वॉइस देखें</value>

@@ -30,6 +30,9 @@
   <data name="Back" xml:space="preserve">
     <value>Tillbaka</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Valuta</value>
+  </data>
   <data name="Delete" xml:space="preserve">
     <value>Ta bort</value>
   </data>
@@ -51,6 +54,9 @@
   <data name="Filing Subject" xml:space="preserve">
     <value>Ärendetyp</value>
   </data>
+  <data name="Invoice File" xml:space="preserve">
+    <value>Fakturadokument</value>
+  </data>
   <data name="Invoice URL" xml:space="preserve">
     <value>Fakturans URL</value>
   </data>
@@ -60,20 +66,35 @@
   <data name="Name / Description" xml:space="preserve">
     <value>Namn / Beskrivning</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>Nytt</value>
+  </data>
   <data name="None" xml:space="preserve">
     <value>Ingen</value>
   </data>
   <data name="Password (Optional)" xml:space="preserve">
     <value>Lösenord (valfritt)</value>
   </data>
+  <data name="Public Intangible Asset" xml:space="preserve">
+    <value>Offentlig immateriell tillgång</value>
+  </data>
   <data name="Purchase Price" xml:space="preserve">
     <value>Köp pris</value>
+  </data>
+  <data name="Registration Certificate" xml:space="preserve">
+    <value>Registreringsbevis</value>
   </data>
   <data name="Registration Date" xml:space="preserve">
     <value>Registreringsdatum</value>
   </data>
+  <data name="Reload" xml:space="preserve">
+    <value>Uppdatera</value>
+  </data>
   <data name="Save Changes" xml:space="preserve">
     <value>Spara ändringar</value>
+  </data>
+  <data name="Select Entity" xml:space="preserve">
+    <value>Välj enhet</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>Status</value>

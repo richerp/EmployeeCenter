@@ -21,6 +21,9 @@
       <data name="Actions" xml:space="preserve">
     <value>작업</value>
   </data>
+  <data name="All Company" xml:space="preserve">
+    <value>전사</value>
+  </data>
   <data name="Annual Leave" xml:space="preserve">
     <value>연차 휴가</value>
   </data>
@@ -51,6 +54,9 @@
   <data name="Approver" xml:space="preserve">
     <value>승인자</value>
   </data>
+  <data name="awaiting review across company" xml:space="preserve">
+    <value>회사 전체에서 검토 대기 중</value>
+  </data>
   <data name="awaiting your review" xml:space="preserve">
     <value>귀하의 검토를 기다리는 중</value>
   </data>
@@ -71,6 +77,9 @@
   </data>
   <data name="Important: Approval Decisions Are Final" xml:space="preserve">
     <value>중요: 승인 결정은 최종입니다</value>
+  </data>
+  <data name="My Team" xml:space="preserve">
+    <value>내 팀</value>
   </data>
   <data name="No approval history." xml:space="preserve">
     <value>승인 내역이 없습니다.</value>

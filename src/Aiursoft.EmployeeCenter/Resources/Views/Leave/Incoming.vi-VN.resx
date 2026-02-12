@@ -21,6 +21,9 @@
       <data name="Actions" xml:space="preserve">
     <value>Hành động</value>
   </data>
+  <data name="All Company" xml:space="preserve">
+    <value>Toàn công ty</value>
+  </data>
   <data name="Annual Leave" xml:space="preserve">
     <value>Nghỉ phép năm</value>
   </data>
@@ -51,6 +54,9 @@
   <data name="Approver" xml:space="preserve">
     <value>Người duyệt</value>
   </data>
+  <data name="awaiting review across company" xml:space="preserve">
+    <value>đang chờ duyệt trên toàn công ty</value>
+  </data>
   <data name="awaiting your review" xml:space="preserve">
     <value>đang chờ bạn xem xét</value>
   </data>
@@ -71,6 +77,9 @@
   </data>
   <data name="Important: Approval Decisions Are Final" xml:space="preserve">
     <value>Quan trọng: Quyết định phê duyệt là cuối cùng</value>
+  </data>
+  <data name="My Team" xml:space="preserve">
+    <value>Đội của tôi</value>
   </data>
   <data name="No approval history." xml:space="preserve">
     <value>Không có lịch sử phê duyệt.</value>

@@ -33,6 +33,9 @@
   <data name="Create" xml:space="preserve">
     <value>Create</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Currency</value>
+  </data>
   <data name="Description" xml:space="preserve">
     <value>Description</value>
   </data>
@@ -51,6 +54,9 @@
   <data name="Filing Subject" xml:space="preserve">
     <value>Filing Subject</value>
   </data>
+  <data name="Invoice File" xml:space="preserve">
+    <value>Invoice File</value>
+  </data>
   <data name="Invoice URL" xml:space="preserve">
     <value>Invoice URL</value>
   </data>
@@ -60,17 +66,32 @@
   <data name="Name / Description" xml:space="preserve">
     <value>Name / Description</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>New</value>
+  </data>
   <data name="None" xml:space="preserve">
     <value>None</value>
   </data>
   <data name="Password (Optional)" xml:space="preserve">
     <value>Password (Optional)</value>
   </data>
+  <data name="Public Intangible Asset" xml:space="preserve">
+    <value>Public Intangible Asset</value>
+  </data>
   <data name="Purchase Price" xml:space="preserve">
     <value>Purchase Price</value>
   </data>
+  <data name="Registration Certificate" xml:space="preserve">
+    <value>Registration Certificate</value>
+  </data>
   <data name="Registration Date" xml:space="preserve">
     <value>Registration Date</value>
+  </data>
+  <data name="Reload" xml:space="preserve">
+    <value>Reload</value>
+  </data>
+  <data name="Select Entity" xml:space="preserve">
+    <value>Select Entity</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>Status</value>

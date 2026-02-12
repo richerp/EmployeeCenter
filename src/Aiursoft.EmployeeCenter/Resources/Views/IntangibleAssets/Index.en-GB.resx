@@ -39,6 +39,9 @@
   <data name="Assignee" xml:space="preserve">
     <value>Assignee</value>
   </data>
+  <data name="Belongs to Entity" xml:space="preserve">
+    <value>Belongs to Entity</value>
+  </data>
   <data name="Details" xml:space="preserve">
     <value>Details</value>
   </data>

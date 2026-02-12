@@ -27,6 +27,9 @@
   <data name="Assignee" xml:space="preserve">
     <value>Покладач</value>
   </data>
+  <data name="Belongs to Entity" xml:space="preserve">
+    <value>Належить організації</value>
+  </data>
   <data name="Description" xml:space="preserve">
     <value>Опис</value>
   </data>
@@ -72,11 +75,17 @@
   <data name="Password" xml:space="preserve">
     <value>Пароль</value>
   </data>
+  <data name="Public" xml:space="preserve">
+    <value>Публічний</value>
+  </data>
   <data name="Purchase Price" xml:space="preserve">
     <value>Ціна придбання</value>
   </data>
   <data name="Query Method" xml:space="preserve">
     <value>Спосіб запиту</value>
+  </data>
+  <data name="Registration Certificate" xml:space="preserve">
+    <value>Свідоцтво про реєстрацію</value>
   </data>
   <data name="Registration Date" xml:space="preserve">
     <value>Дата реєстрації</value>
@@ -89,6 +98,9 @@
   </data>
   <data name="Type" xml:space="preserve">
     <value>Тип</value>
+  </data>
+  <data name="View Certificate" xml:space="preserve">
+    <value>Переглянути сертифікат</value>
   </data>
   <data name="View Invoice" xml:space="preserve">
     <value>Переглянути рахунок</value>

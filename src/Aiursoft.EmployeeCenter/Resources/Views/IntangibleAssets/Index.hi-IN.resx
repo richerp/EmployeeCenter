@@ -39,6 +39,9 @@
   <data name="Assignee" xml:space="preserve">
     <value>नियुक्ति प्राप्तकर्ता</value>
   </data>
+  <data name="Belongs to Entity" xml:space="preserve">
+    <value>एंटिटी को संबंधित</value>
+  </data>
   <data name="Details" xml:space="preserve">
     <value>विवरण</value>
   </data>

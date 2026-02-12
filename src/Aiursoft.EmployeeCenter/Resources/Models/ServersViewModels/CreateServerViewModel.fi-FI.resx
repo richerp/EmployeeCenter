@@ -39,5 +39,8 @@
   <data name="Provider" xml:space="preserve">
     <value>Toimittaja</value>
   </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0} ei saa ylittää {1} merkkiä.</value>
+  </data>
 
 </root>

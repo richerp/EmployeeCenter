@@ -33,6 +33,9 @@
   <data name="Allows approving or rejecting any leave application, regardless of the reporting line." xml:space="preserve">
     <value>允許批准或拒絕任何請假申請，不論報告線。</value>
   </data>
+  <data name="Allows approving, rejecting, or requesting changes for project requirements. Everyone can submit requirements and comment on them." xml:space="preserve">
+    <value>容許批准、拒絕或要求修改項目需求。所有人均可提交需求及發表評論。</value>
+  </data>
   <data name="Allows assigning or removing roles for any user." xml:space="preserve">
     <value>允許為任何用戶分配或移除角色。</value>
   </data>
@@ -149,6 +152,9 @@
   </data>
   <data name="Approve Any Leave" xml:space="preserve">
     <value>審批任何請假</value>
+  </data>
+  <data name="Approve Project Requirements" xml:space="preserve">
+    <value>批准項目需求</value>
   </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>為用戶分配角色</value>

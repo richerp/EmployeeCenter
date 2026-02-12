@@ -57,6 +57,18 @@
   <data name="Approval Center" xml:space="preserve">
     <value>Trung tâm phê duyệt</value>
   </data>
+  <data name="Approval History" xml:space="preserve">
+    <value>Lịch sử phê duyệt</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>Duyệt</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>Đã duyệt</value>
+  </data>
+  <data name="Approved Projects" xml:space="preserve">
+    <value>Dự án đã được phê duyệt</value>
+  </data>
   <data name="Asset Categories" xml:space="preserve">
     <value>Danh mục tài sản</value>
   </data>
@@ -123,6 +135,9 @@
   <data name="Code" xml:space="preserve">
     <value>Mã</value>
   </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Bình luận</value>
+  </data>
   <data name="Company Entities" xml:space="preserve">
     <value>Các đơn vị công ty</value>
   </data>
@@ -131,6 +146,9 @@
   </data>
   <data name="Company Entity Info" xml:space="preserve">
     <value>Thông tin Đơn vị Công ty</value>
+  </data>
+  <data name="Company Intangible Assets" xml:space="preserve">
+    <value>Tài sản vô hình của công ty</value>
   </data>
   <data name="Company Name" xml:space="preserve">
     <value>Tên công ty</value>
@@ -215,6 +233,9 @@
   </data>
   <data name="Edit Payroll" xml:space="preserve">
     <value>Chỉnh sửa bảng lương</value>
+  </data>
+  <data name="Edit Requirement" xml:space="preserve">
+    <value>Chỉnh sửa Yêu cầu</value>
   </data>
   <data name="Edit Role" xml:space="preserve">
     <value>Chỉnh sửa Vai trò</value>
@@ -369,6 +390,9 @@
   <data name="Manage Questions" xml:space="preserve">
     <value>Quản lý Câu hỏi</value>
   </data>
+  <data name="Manage Requirements" xml:space="preserve">
+    <value>Quản lý Yêu cầu</value>
+  </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>Quản lý chia sẻ</value>
   </data>
@@ -395,6 +419,9 @@
   </data>
   <data name="My Report Line" xml:space="preserve">
     <value>Dòng báo cáo của tôi</value>
+  </data>
+  <data name="My Requirements" xml:space="preserve">
+    <value>Yêu cầu của tôi</value>
   </data>
   <data name="Not Found" xml:space="preserve">
     <value>Không tìm thấy</value>
@@ -423,6 +450,9 @@
   <data name="Payrolls" xml:space="preserve">
     <value>Bảng lương</value>
   </data>
+  <data name="PendingApproval" xml:space="preserve">
+    <value>Đang chờ phê duyệt</value>
+  </data>
   <data name="Permission Details" xml:space="preserve">
     <value>Chi tiết quyền truy cập</value>
   </data>
@@ -444,6 +474,9 @@
   <data name="Profile Settings" xml:space="preserve">
     <value>Cài đặt Hồ sơ</value>
   </data>
+  <data name="Project Requirements" xml:space="preserve">
+    <value>Yêu cầu Dự án</value>
+  </data>
   <data name="Projects" xml:space="preserve">
     <value>Dự án</value>
   </data>
@@ -459,8 +492,38 @@
   <data name="Register" xml:space="preserve">
     <value>Đăng ký</value>
   </data>
+  <data name="Reject" xml:space="preserve">
+    <value>Từ chối</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>Đã từ chối</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>Trả lời</value>
+  </data>
+  <data name="Replying to" xml:space="preserve">
+    <value>Đang trả lời</value>
+  </data>
   <data name="Report Line" xml:space="preserve">
     <value>Dòng báo cáo</value>
+  </data>
+  <data name="Request Changes" xml:space="preserve">
+    <value>Yêu cầu chỉnh sửa</value>
+  </data>
+  <data name="RequestChanges" xml:space="preserve">
+    <value>Yêu cầu chỉnh sửa</value>
+  </data>
+  <data name="Requirement" xml:space="preserve">
+    <value>Yêu cầu</value>
+  </data>
+  <data name="Requirement Details" xml:space="preserve">
+    <value>Chi tiết yêu cầu</value>
+  </data>
+  <data name="Requirement saved successfully." xml:space="preserve">
+    <value>Yêu cầu đã được lưu thành công.</value>
+  </data>
+  <data name="Requirement Title" xml:space="preserve">
+    <value>Tiêu đề yêu cầu</value>
   </data>
   <data name="Resources" xml:space="preserve">
     <value>Tài nguyên</value>
@@ -510,6 +573,18 @@
   <data name="Status" xml:space="preserve">
     <value>Trạng thái</value>
   </data>
+  <data name="Submit Comment" xml:space="preserve">
+    <value>Gửi bình luận</value>
+  </data>
+  <data name="Submit for Approval" xml:space="preserve">
+    <value>Gửi để phê duyệt</value>
+  </data>
+  <data name="Submit New Requirement" xml:space="preserve">
+    <value>Gửi yêu cầu mới</value>
+  </data>
+  <data name="Submit Requirement" xml:space="preserve">
+    <value>Gửi yêu cầu</value>
+  </data>
   <data name="System" xml:space="preserve">
     <value>Hệ thống</value>
   </data>
@@ -542,6 +617,9 @@
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>Báo cáo hàng tuần</value>
+  </data>
+  <data name="Write a comment..." xml:space="preserve">
+    <value>Viết một bình luận...</value>
   </data>
 
 </root>

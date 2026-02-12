@@ -21,6 +21,9 @@
       <data name="Actions" xml:space="preserve">
     <value>Acțiuni</value>
   </data>
+  <data name="All Company" xml:space="preserve">
+    <value>Toată compania</value>
+  </data>
   <data name="Annual Leave" xml:space="preserve">
     <value>Congiună anuală</value>
   </data>
@@ -51,6 +54,9 @@
   <data name="Approver" xml:space="preserve">
     <value>Aprobat de</value>
   </data>
+  <data name="awaiting review across company" xml:space="preserve">
+    <value>așteaptă verificare în întreaga companie</value>
+  </data>
   <data name="awaiting your review" xml:space="preserve">
     <value>în așteptarea recenziei dumneavoastră</value>
   </data>
@@ -71,6 +77,9 @@
   </data>
   <data name="Important: Approval Decisions Are Final" xml:space="preserve">
     <value>Important: Deciziile de aprobare sunt definitive</value>
+  </data>
+  <data name="My Team" xml:space="preserve">
+    <value>Echipa Mea</value>
   </data>
   <data name="No approval history." xml:space="preserve">
     <value>Nicio istoric de aprobare.</value>

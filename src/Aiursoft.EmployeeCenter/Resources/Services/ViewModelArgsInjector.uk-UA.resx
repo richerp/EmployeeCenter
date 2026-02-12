@@ -54,6 +54,18 @@
   <data name="Approval Center" xml:space="preserve">
     <value>Центр затвердження</value>
   </data>
+  <data name="Approval History" xml:space="preserve">
+    <value>Історія затвердження</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>Затвердити</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>Затверджено</value>
+  </data>
+  <data name="Approved Projects" xml:space="preserve">
+    <value>Затверджені проекти</value>
+  </data>
   <data name="Asset Categories" xml:space="preserve">
     <value>Категорії активів</value>
   </data>
@@ -120,6 +132,9 @@
   <data name="Code" xml:space="preserve">
     <value>Код</value>
   </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Коментарі</value>
+  </data>
   <data name="Company Entities" xml:space="preserve">
     <value>Компанії та структурні підрозділи</value>
   </data>
@@ -128,6 +143,9 @@
   </data>
   <data name="Company Entity Info" xml:space="preserve">
     <value>Інформація про компанію</value>
+  </data>
+  <data name="Company Intangible Assets" xml:space="preserve">
+    <value>Компанійні нематеріальні активи</value>
   </data>
   <data name="Company Name" xml:space="preserve">
     <value>Назва компанії</value>
@@ -212,6 +230,9 @@
   </data>
   <data name="Edit Payroll" xml:space="preserve">
     <value>Редагувати зарплатню</value>
+  </data>
+  <data name="Edit Requirement" xml:space="preserve">
+    <value>Редагувати вимогу</value>
   </data>
   <data name="Edit Role" xml:space="preserve">
     <value>Редагувати роль</value>
@@ -366,6 +387,9 @@
   <data name="Manage Questions" xml:space="preserve">
     <value>Керування питаннями</value>
   </data>
+  <data name="Manage Requirements" xml:space="preserve">
+    <value>Керування вимогами</value>
+  </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>Керування спільним доступом</value>
   </data>
@@ -392,6 +416,9 @@
   </data>
   <data name="My Report Line" xml:space="preserve">
     <value>Моя лінія звітів</value>
+  </data>
+  <data name="My Requirements" xml:space="preserve">
+    <value>Мої вимоги</value>
   </data>
   <data name="Not Found" xml:space="preserve">
     <value>Не знайдено</value>
@@ -420,6 +447,9 @@
   <data name="Payrolls" xml:space="preserve">
     <value>Відомості про заробітну плату</value>
   </data>
+  <data name="PendingApproval" xml:space="preserve">
+    <value>Очікує підтвердження</value>
+  </data>
   <data name="Permission Details" xml:space="preserve">
     <value>Деталі дозволів</value>
   </data>
@@ -441,6 +471,9 @@
   <data name="Profile Settings" xml:space="preserve">
     <value>Налаштування профілю</value>
   </data>
+  <data name="Project Requirements" xml:space="preserve">
+    <value>Вимоги до проекту</value>
+  </data>
   <data name="Projects" xml:space="preserve">
     <value>Проєкти</value>
   </data>
@@ -456,8 +489,38 @@
   <data name="Register" xml:space="preserve">
     <value>Реєстрація</value>
   </data>
+  <data name="Reject" xml:space="preserve">
+    <value>Відхилити</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>Відхилено</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>Відповісти</value>
+  </data>
+  <data name="Replying to" xml:space="preserve">
+    <value>Відповідаючи на</value>
+  </data>
   <data name="Report Line" xml:space="preserve">
     <value>Лінія звітів</value>
+  </data>
+  <data name="Request Changes" xml:space="preserve">
+    <value>Запитати зміни</value>
+  </data>
+  <data name="RequestChanges" xml:space="preserve">
+    <value>Запитати зміни</value>
+  </data>
+  <data name="Requirement" xml:space="preserve">
+    <value>Вимога</value>
+  </data>
+  <data name="Requirement Details" xml:space="preserve">
+    <value>Деталі вимоги</value>
+  </data>
+  <data name="Requirement saved successfully." xml:space="preserve">
+    <value>Вимога успішно збережена.</value>
+  </data>
+  <data name="Requirement Title" xml:space="preserve">
+    <value>Назва вимоги</value>
   </data>
   <data name="Resources" xml:space="preserve">
     <value>Ресурси</value>
@@ -507,6 +570,18 @@
   <data name="Status" xml:space="preserve">
     <value>Статус</value>
   </data>
+  <data name="Submit Comment" xml:space="preserve">
+    <value>Надіслати коментар</value>
+  </data>
+  <data name="Submit for Approval" xml:space="preserve">
+    <value>Надіслати на затвердження</value>
+  </data>
+  <data name="Submit New Requirement" xml:space="preserve">
+    <value>Надіслати новий вимогу</value>
+  </data>
+  <data name="Submit Requirement" xml:space="preserve">
+    <value>Надіслати вимогу</value>
+  </data>
   <data name="System" xml:space="preserve">
     <value>Система</value>
   </data>
@@ -539,6 +614,9 @@
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>Тижневий звіт</value>
+  </data>
+  <data name="Write a comment..." xml:space="preserve">
+    <value>Напишіть коментар...</value>
   </data>
 
 </root>

@@ -54,6 +54,18 @@
   <data name="Approval Center" xml:space="preserve">
     <value>Centrul de Aprobare</value>
   </data>
+  <data name="Approval History" xml:space="preserve">
+    <value>Istoricul Aprobării</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>Aproba</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>Aprobat</value>
+  </data>
+  <data name="Approved Projects" xml:space="preserve">
+    <value>Proiecte aprobate</value>
+  </data>
   <data name="Asset Categories" xml:space="preserve">
     <value>Categorii active</value>
   </data>
@@ -120,6 +132,9 @@
   <data name="Code" xml:space="preserve">
     <value>Cod</value>
   </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Comentarii</value>
+  </data>
   <data name="Company Entities" xml:space="preserve">
     <value>Entități companii</value>
   </data>
@@ -128,6 +143,9 @@
   </data>
   <data name="Company Entity Info" xml:space="preserve">
     <value>Informații despre entitatea companiei</value>
+  </data>
+  <data name="Company Intangible Assets" xml:space="preserve">
+    <value>Active intangibile ale companiei</value>
   </data>
   <data name="Company Name" xml:space="preserve">
     <value>Numele companiei</value>
@@ -212,6 +230,9 @@
   </data>
   <data name="Edit Payroll" xml:space="preserve">
     <value>Editare salarii</value>
+  </data>
+  <data name="Edit Requirement" xml:space="preserve">
+    <value>Editare Cerință</value>
   </data>
   <data name="Edit Role" xml:space="preserve">
     <value>Editează Rol</value>
@@ -366,6 +387,9 @@
   <data name="Manage Questions" xml:space="preserve">
     <value>Gestionare întrebări</value>
   </data>
+  <data name="Manage Requirements" xml:space="preserve">
+    <value>Gestionare cerințe</value>
+  </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>Gestionează Partajări</value>
   </data>
@@ -392,6 +416,9 @@
   </data>
   <data name="My Report Line" xml:space="preserve">
     <value>Linia mea de raportare</value>
+  </data>
+  <data name="My Requirements" xml:space="preserve">
+    <value>Cerintele Mele</value>
   </data>
   <data name="Not Found" xml:space="preserve">
     <value>Nu a fost găsit</value>
@@ -420,6 +447,9 @@
   <data name="Payrolls" xml:space="preserve">
     <value>Plăți</value>
   </data>
+  <data name="PendingApproval" xml:space="preserve">
+    <value>În așteptarea aprobării</value>
+  </data>
   <data name="Permission Details" xml:space="preserve">
     <value>Detalii permisiuni</value>
   </data>
@@ -441,6 +471,9 @@
   <data name="Profile Settings" xml:space="preserve">
     <value>Setări Profil</value>
   </data>
+  <data name="Project Requirements" xml:space="preserve">
+    <value>Cerințe Proiect</value>
+  </data>
   <data name="Projects" xml:space="preserve">
     <value>Proiecte</value>
   </data>
@@ -456,8 +489,38 @@
   <data name="Register" xml:space="preserve">
     <value>Înregistrare</value>
   </data>
+  <data name="Reject" xml:space="preserve">
+    <value>Respinge</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>Respins</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>Răspuns</value>
+  </data>
+  <data name="Replying to" xml:space="preserve">
+    <value>Răspunzând la</value>
+  </data>
   <data name="Report Line" xml:space="preserve">
     <value>Linie de raportare</value>
+  </data>
+  <data name="Request Changes" xml:space="preserve">
+    <value>Cere modificări</value>
+  </data>
+  <data name="RequestChanges" xml:space="preserve">
+    <value>Solicită modificări</value>
+  </data>
+  <data name="Requirement" xml:space="preserve">
+    <value>Cerință</value>
+  </data>
+  <data name="Requirement Details" xml:space="preserve">
+    <value>Detalii cerință</value>
+  </data>
+  <data name="Requirement saved successfully." xml:space="preserve">
+    <value>Cererea a fost salvată cu succes.</value>
+  </data>
+  <data name="Requirement Title" xml:space="preserve">
+    <value>Titlu cerință</value>
   </data>
   <data name="Resources" xml:space="preserve">
     <value>Resurse</value>
@@ -507,6 +570,18 @@
   <data name="Status" xml:space="preserve">
     <value>Stare</value>
   </data>
+  <data name="Submit Comment" xml:space="preserve">
+    <value>Trimite Comentariu</value>
+  </data>
+  <data name="Submit for Approval" xml:space="preserve">
+    <value>Trimite pentru aprobare</value>
+  </data>
+  <data name="Submit New Requirement" xml:space="preserve">
+    <value>Trimite cerință nouă</value>
+  </data>
+  <data name="Submit Requirement" xml:space="preserve">
+    <value>Trimite Cerință</value>
+  </data>
   <data name="System" xml:space="preserve">
     <value>Sistem</value>
   </data>
@@ -539,6 +614,9 @@
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>Raport săptămânal</value>
+  </data>
+  <data name="Write a comment..." xml:space="preserve">
+    <value>Scrie un comentariu...</value>
   </data>
 
 </root>

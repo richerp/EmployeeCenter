@@ -27,6 +27,9 @@
   <data name="Assignee" xml:space="preserve">
     <value>Penerima Tugas</value>
   </data>
+  <data name="Belongs to Entity" xml:space="preserve">
+    <value>Milik Entitas</value>
+  </data>
   <data name="Description" xml:space="preserve">
     <value>Deskripsi</value>
   </data>
@@ -72,11 +75,17 @@
   <data name="Password" xml:space="preserve">
     <value>Kata Sandi</value>
   </data>
+  <data name="Public" xml:space="preserve">
+    <value>Publik</value>
+  </data>
   <data name="Purchase Price" xml:space="preserve">
     <value>Harga Pembelian</value>
   </data>
   <data name="Query Method" xml:space="preserve">
     <value>Metode Pencarian</value>
+  </data>
+  <data name="Registration Certificate" xml:space="preserve">
+    <value>Sertifikat Pendaftaran</value>
   </data>
   <data name="Registration Date" xml:space="preserve">
     <value>Tanggal Pendaftaran</value>
@@ -89,6 +98,9 @@
   </data>
   <data name="Type" xml:space="preserve">
     <value>Jenis</value>
+  </data>
+  <data name="View Certificate" xml:space="preserve">
+    <value>Lihat Sertifikat</value>
   </data>
   <data name="View Invoice" xml:space="preserve">
     <value>Lihat Faktur</value>

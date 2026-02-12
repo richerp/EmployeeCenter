@@ -21,6 +21,9 @@
       <data name="Actions" xml:space="preserve">
     <value>Actions</value>
   </data>
+  <data name="All Company" xml:space="preserve">
+    <value>All Company</value>
+  </data>
   <data name="Annual Leave" xml:space="preserve">
     <value>Annual Leave</value>
   </data>
@@ -51,8 +54,14 @@
   <data name="Approver" xml:space="preserve">
     <value>Approver</value>
   </data>
+  <data name="awaiting review across company" xml:space="preserve">
+    <value>awaiting review across company</value>
+  </data>
   <data name="awaiting your review" xml:space="preserve">
     <value>awaiting your review</value>
+  </data>
+  <data name="Company on Leave" xml:space="preserve">
+    <value>Company on Leave</value>
   </data>
   <data name="currently absent" xml:space="preserve">
     <value>currently absent</value>
@@ -71,6 +80,9 @@
   </data>
   <data name="Important: Approval Decisions Are Final" xml:space="preserve">
     <value>Important: Approval Decisions Are Final</value>
+  </data>
+  <data name="My Team" xml:space="preserve">
+    <value>My Team</value>
   </data>
   <data name="No approval history." xml:space="preserve">
     <value>No approval history.</value>
@@ -126,16 +138,5 @@
   <data name="Type" xml:space="preserve">
     <value>Type</value>
   </data>
-  <data name="My Team" xml:space="preserve">
-    <value>My Team</value>
-  </data>
-  <data name="All Company" xml:space="preserve">
-    <value>All Company</value>
-  </data>
-  <data name="awaiting review across company" xml:space="preserve">
-    <value>awaiting review across company</value>
-  </data>
-  <data name="Company on Leave" xml:space="preserve">
-    <value>Company on Leave</value>
-  </data>
+
 </root>

@@ -57,6 +57,18 @@
   <data name="Approval Center" xml:space="preserve">
     <value>ศูนย์การอนุมัติ</value>
   </data>
+  <data name="Approval History" xml:space="preserve">
+    <value>ประวัติการอนุมัติ</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>อนุมัติ</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>อนุมัติแล้ว</value>
+  </data>
+  <data name="Approved Projects" xml:space="preserve">
+    <value>โครงการที่ได้รับการอนุมัติ</value>
+  </data>
   <data name="Asset Categories" xml:space="preserve">
     <value>หมวดหมู่สินทรัพย์</value>
   </data>
@@ -123,6 +135,9 @@
   <data name="Code" xml:space="preserve">
     <value>รหัส</value>
   </data>
+  <data name="Comments" xml:space="preserve">
+    <value>ความคิดเห็น</value>
+  </data>
   <data name="Company Entities" xml:space="preserve">
     <value>หน่วยงานของบริษัท</value>
   </data>
@@ -131,6 +146,9 @@
   </data>
   <data name="Company Entity Info" xml:space="preserve">
     <value>ข้อมูลหน่วยงานบริษัท</value>
+  </data>
+  <data name="Company Intangible Assets" xml:space="preserve">
+    <value>สินทรัพย์ไม่มีตัวตนของบริษัท</value>
   </data>
   <data name="Company Name" xml:space="preserve">
     <value>ชื่อบริษัท</value>
@@ -215,6 +233,9 @@
   </data>
   <data name="Edit Payroll" xml:space="preserve">
     <value>แก้ไขเงินเดือน</value>
+  </data>
+  <data name="Edit Requirement" xml:space="preserve">
+    <value>แก้ไขความต้องการ</value>
   </data>
   <data name="Edit Role" xml:space="preserve">
     <value>แก้ไขบทบาท</value>
@@ -369,6 +390,9 @@
   <data name="Manage Questions" xml:space="preserve">
     <value>จัดการคำถาม</value>
   </data>
+  <data name="Manage Requirements" xml:space="preserve">
+    <value>จัดการความต้องการ</value>
+  </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>จัดการการแชร์</value>
   </data>
@@ -395,6 +419,9 @@
   </data>
   <data name="My Report Line" xml:space="preserve">
     <value>สายการรายงานของฉัน</value>
+  </data>
+  <data name="My Requirements" xml:space="preserve">
+    <value>ความต้องการของฉัน</value>
   </data>
   <data name="Not Found" xml:space="preserve">
     <value>ไม่พบ</value>
@@ -423,6 +450,9 @@
   <data name="Payrolls" xml:space="preserve">
     <value>เงินเดือน</value>
   </data>
+  <data name="PendingApproval" xml:space="preserve">
+    <value>รอดำเนินการอนุมัติ</value>
+  </data>
   <data name="Permission Details" xml:space="preserve">
     <value>รายละเอียดสิทธิ์</value>
   </data>
@@ -444,6 +474,9 @@
   <data name="Profile Settings" xml:space="preserve">
     <value>การตั้งค่าโปรไฟล์</value>
   </data>
+  <data name="Project Requirements" xml:space="preserve">
+    <value>ข้อกำหนดโครงการ</value>
+  </data>
   <data name="Projects" xml:space="preserve">
     <value>โครงการ</value>
   </data>
@@ -459,8 +492,38 @@
   <data name="Register" xml:space="preserve">
     <value>สมัครสมาชิก</value>
   </data>
+  <data name="Reject" xml:space="preserve">
+    <value>ปฏิเสธ</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>ถูกปฏิเสธ</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>ตอบกลับ</value>
+  </data>
+  <data name="Replying to" xml:space="preserve">
+    <value>กำลังตอบกลับถึง</value>
+  </data>
   <data name="Report Line" xml:space="preserve">
     <value>สายรายงาน</value>
+  </data>
+  <data name="Request Changes" xml:space="preserve">
+    <value>ขอเปลี่ยนแปลง</value>
+  </data>
+  <data name="RequestChanges" xml:space="preserve">
+    <value>ขอแก้ไข</value>
+  </data>
+  <data name="Requirement" xml:space="preserve">
+    <value>ความต้องการ</value>
+  </data>
+  <data name="Requirement Details" xml:space="preserve">
+    <value>รายละเอียดข้อกำหนด</value>
+  </data>
+  <data name="Requirement saved successfully." xml:space="preserve">
+    <value>บันทึกข้อกำหนดเรียบร้อยแล้ว</value>
+  </data>
+  <data name="Requirement Title" xml:space="preserve">
+    <value>ชื่อเรื่องความต้องการ</value>
   </data>
   <data name="Resources" xml:space="preserve">
     <value>ทรัพยากร</value>
@@ -510,6 +573,18 @@
   <data name="Status" xml:space="preserve">
     <value>สถานะ</value>
   </data>
+  <data name="Submit Comment" xml:space="preserve">
+    <value>ส่งความคิดเห็น</value>
+  </data>
+  <data name="Submit for Approval" xml:space="preserve">
+    <value>ส่งเพื่อขออนุมัติ</value>
+  </data>
+  <data name="Submit New Requirement" xml:space="preserve">
+    <value>ส่งคำขอใหม่</value>
+  </data>
+  <data name="Submit Requirement" xml:space="preserve">
+    <value>ส่งคำขอ</value>
+  </data>
   <data name="System" xml:space="preserve">
     <value>ระบบ</value>
   </data>
@@ -542,6 +617,9 @@
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>รายงานรายสัปดาห์</value>
+  </data>
+  <data name="Write a comment..." xml:space="preserve">
+    <value>พิมพ์ความคิดเห็น...</value>
   </data>
 
 </root>

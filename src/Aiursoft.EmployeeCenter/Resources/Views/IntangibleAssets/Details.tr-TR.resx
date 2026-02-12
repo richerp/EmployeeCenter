@@ -27,6 +27,9 @@
   <data name="Assignee" xml:space="preserve">
     <value>Atanan Kişi</value>
   </data>
+  <data name="Belongs to Entity" xml:space="preserve">
+    <value>Varlıkla İlişkili</value>
+  </data>
   <data name="Description" xml:space="preserve">
     <value>Açıklama</value>
   </data>
@@ -72,11 +75,17 @@
   <data name="Password" xml:space="preserve">
     <value>Şifre</value>
   </data>
+  <data name="Public" xml:space="preserve">
+    <value>Halka Açık</value>
+  </data>
   <data name="Purchase Price" xml:space="preserve">
     <value>Satın Alma Fiyatı</value>
   </data>
   <data name="Query Method" xml:space="preserve">
     <value>Sorgulama Yöntemi</value>
+  </data>
+  <data name="Registration Certificate" xml:space="preserve">
+    <value>Kayıt Belgesi</value>
   </data>
   <data name="Registration Date" xml:space="preserve">
     <value>Kayıt Tarihi</value>
@@ -89,6 +98,9 @@
   </data>
   <data name="Type" xml:space="preserve">
     <value>Tür</value>
+  </data>
+  <data name="View Certificate" xml:space="preserve">
+    <value>Sertifikayı Görüntüle</value>
   </data>
   <data name="View Invoice" xml:space="preserve">
     <value>Faturayı Görüntüle</value>

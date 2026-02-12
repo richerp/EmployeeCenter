@@ -21,6 +21,9 @@
       <data name="Actions" xml:space="preserve">
     <value>ดำเนินการ</value>
   </data>
+  <data name="All Company" xml:space="preserve">
+    <value>ทั้งบริษัท</value>
+  </data>
   <data name="Annual Leave" xml:space="preserve">
     <value>การลาพักร้อนประจำปี</value>
   </data>
@@ -51,6 +54,9 @@
   <data name="Approver" xml:space="preserve">
     <value>ผู้อนุมัติ</value>
   </data>
+  <data name="awaiting review across company" xml:space="preserve">
+    <value>รอดำเนินการตรวจสอบทั่วทั้งบริษัท</value>
+  </data>
   <data name="awaiting your review" xml:space="preserve">
     <value>รอดำเนินการตรวจสอบของคุณ</value>
   </data>
@@ -71,6 +77,9 @@
   </data>
   <data name="Important: Approval Decisions Are Final" xml:space="preserve">
     <value>สำคัญ: คำตัดสินการอนุมัติถือเป็นที่สิ้นสุด</value>
+  </data>
+  <data name="My Team" xml:space="preserve">
+    <value>ทีมของฉัน</value>
   </data>
   <data name="No approval history." xml:space="preserve">
     <value>ไม่มีประวัติการอนุมัติ</value>

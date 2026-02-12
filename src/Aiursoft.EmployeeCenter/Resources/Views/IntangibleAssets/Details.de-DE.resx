@@ -27,6 +27,9 @@
   <data name="Assignee" xml:space="preserve">
     <value>Zuweisung</value>
   </data>
+  <data name="Belongs to Entity" xml:space="preserve">
+    <value>Zugehörigkeit zur Einheit</value>
+  </data>
   <data name="Description" xml:space="preserve">
     <value>Beschreibung</value>
   </data>
@@ -72,11 +75,17 @@
   <data name="Password" xml:space="preserve">
     <value>Passwort</value>
   </data>
+  <data name="Public" xml:space="preserve">
+    <value>Öffentlich</value>
+  </data>
   <data name="Purchase Price" xml:space="preserve">
     <value>Anschaffungspreis</value>
   </data>
   <data name="Query Method" xml:space="preserve">
     <value>Abfragemethode</value>
+  </data>
+  <data name="Registration Certificate" xml:space="preserve">
+    <value>Registrierungsbescheinigung</value>
   </data>
   <data name="Registration Date" xml:space="preserve">
     <value>Registrierungsdatum</value>
@@ -89,6 +98,9 @@
   </data>
   <data name="Type" xml:space="preserve">
     <value>Typ</value>
+  </data>
+  <data name="View Certificate" xml:space="preserve">
+    <value>Zertifikat anzeigen</value>
   </data>
   <data name="View Invoice" xml:space="preserve">
     <value>Rechnung anzeigen</value>

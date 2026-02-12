@@ -30,6 +30,9 @@
   <data name="Back" xml:space="preserve">
     <value>Geri</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Para Birimi</value>
+  </data>
   <data name="Delete" xml:space="preserve">
     <value>Sil</value>
   </data>
@@ -51,6 +54,9 @@
   <data name="Filing Subject" xml:space="preserve">
     <value>Dosya Konusu</value>
   </data>
+  <data name="Invoice File" xml:space="preserve">
+    <value>Fatura Dosyası</value>
+  </data>
   <data name="Invoice URL" xml:space="preserve">
     <value>Fatura URL&apos;si</value>
   </data>
@@ -60,20 +66,35 @@
   <data name="Name / Description" xml:space="preserve">
     <value>İsim / Açıklama</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>Yeni</value>
+  </data>
   <data name="None" xml:space="preserve">
     <value>Hiçbiri</value>
   </data>
   <data name="Password (Optional)" xml:space="preserve">
     <value>Şifre (İsteğe Bağlı)</value>
   </data>
+  <data name="Public Intangible Asset" xml:space="preserve">
+    <value>Halka Açık Maddi Olmayan Varlık</value>
+  </data>
   <data name="Purchase Price" xml:space="preserve">
     <value>Alım Fiyatı</value>
+  </data>
+  <data name="Registration Certificate" xml:space="preserve">
+    <value>Kayıt Belgesi</value>
   </data>
   <data name="Registration Date" xml:space="preserve">
     <value>Kayıt Tarihi</value>
   </data>
+  <data name="Reload" xml:space="preserve">
+    <value>Yenile</value>
+  </data>
   <data name="Save Changes" xml:space="preserve">
     <value>Değişiklikleri Kaydet</value>
+  </data>
+  <data name="Select Entity" xml:space="preserve">
+    <value>Varlık Seç</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>Durum</value>

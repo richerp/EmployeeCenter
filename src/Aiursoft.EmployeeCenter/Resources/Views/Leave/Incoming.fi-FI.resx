@@ -21,6 +21,9 @@
       <data name="Actions" xml:space="preserve">
     <value>Toiminnot</value>
   </data>
+  <data name="All Company" xml:space="preserve">
+    <value>Kaikki yritys</value>
+  </data>
   <data name="Annual Leave" xml:space="preserve">
     <value>Vuosiloma</value>
   </data>
@@ -51,6 +54,9 @@
   <data name="Approver" xml:space="preserve">
     <value>Hyväksyjä</value>
   </data>
+  <data name="awaiting review across company" xml:space="preserve">
+    <value>odottaa tarkastusta koko yrityksessä</value>
+  </data>
   <data name="awaiting your review" xml:space="preserve">
     <value>odotetaan arviointiasi</value>
   </data>
@@ -71,6 +77,9 @@
   </data>
   <data name="Important: Approval Decisions Are Final" xml:space="preserve">
     <value>Tärkeää: Hyvityspäätökset ovat lopullisia</value>
+  </data>
+  <data name="My Team" xml:space="preserve">
+    <value>Minun tiimi</value>
   </data>
   <data name="No approval history." xml:space="preserve">
     <value>Ei hyvityshistoriaa.</value>

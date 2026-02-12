@@ -27,6 +27,9 @@
   <data name="Assignee" xml:space="preserve">
     <value>Alocat</value>
   </data>
+  <data name="Belongs to Entity" xml:space="preserve">
+    <value>Apartine entității</value>
+  </data>
   <data name="Description" xml:space="preserve">
     <value>Descriere</value>
   </data>
@@ -72,11 +75,17 @@
   <data name="Password" xml:space="preserve">
     <value>Parolă</value>
   </data>
+  <data name="Public" xml:space="preserve">
+    <value>Public</value>
+  </data>
   <data name="Purchase Price" xml:space="preserve">
     <value>Preț de achiziție</value>
   </data>
   <data name="Query Method" xml:space="preserve">
     <value>Metodă de căutare</value>
+  </data>
+  <data name="Registration Certificate" xml:space="preserve">
+    <value>Certificat de înregistrare</value>
   </data>
   <data name="Registration Date" xml:space="preserve">
     <value>Data înregistrării</value>
@@ -89,6 +98,9 @@
   </data>
   <data name="Type" xml:space="preserve">
     <value>Tip</value>
+  </data>
+  <data name="View Certificate" xml:space="preserve">
+    <value>Vizualizează certificatul</value>
   </data>
   <data name="View Invoice" xml:space="preserve">
     <value>Vizualizează factură</value>

@@ -57,6 +57,18 @@
   <data name="Approval Center" xml:space="preserve">
     <value>Centro de aprobación</value>
   </data>
+  <data name="Approval History" xml:space="preserve">
+    <value>Historial de aprobación</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>Aprobar</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>Aprobado</value>
+  </data>
+  <data name="Approved Projects" xml:space="preserve">
+    <value>Proyectos aprobados</value>
+  </data>
   <data name="Asset Categories" xml:space="preserve">
     <value>Categorías de activos</value>
   </data>
@@ -123,6 +135,9 @@
   <data name="Code" xml:space="preserve">
     <value>Código</value>
   </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Comentarios</value>
+  </data>
   <data name="Company Entities" xml:space="preserve">
     <value>Entidades de la empresa</value>
   </data>
@@ -131,6 +146,9 @@
   </data>
   <data name="Company Entity Info" xml:space="preserve">
     <value>Información de la entidad de la empresa</value>
+  </data>
+  <data name="Company Intangible Assets" xml:space="preserve">
+    <value>Activos Intangibles de la Empresa</value>
   </data>
   <data name="Company Name" xml:space="preserve">
     <value>Nombre de la empresa</value>
@@ -215,6 +233,9 @@
   </data>
   <data name="Edit Payroll" xml:space="preserve">
     <value>Editar nómina</value>
+  </data>
+  <data name="Edit Requirement" xml:space="preserve">
+    <value>Editar requisito</value>
   </data>
   <data name="Edit Role" xml:space="preserve">
     <value>Editar rol</value>
@@ -369,6 +390,9 @@
   <data name="Manage Questions" xml:space="preserve">
     <value>Administrar preguntas</value>
   </data>
+  <data name="Manage Requirements" xml:space="preserve">
+    <value>Gestionar requisitos</value>
+  </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>Administrar Compartidos</value>
   </data>
@@ -395,6 +419,9 @@
   </data>
   <data name="My Report Line" xml:space="preserve">
     <value>Mi línea de reporte</value>
+  </data>
+  <data name="My Requirements" xml:space="preserve">
+    <value>Mis requisitos</value>
   </data>
   <data name="Not Found" xml:space="preserve">
     <value>No encontrado</value>
@@ -423,6 +450,9 @@
   <data name="Payrolls" xml:space="preserve">
     <value>Nóminas</value>
   </data>
+  <data name="PendingApproval" xml:space="preserve">
+    <value>Pendiente de aprobación</value>
+  </data>
   <data name="Permission Details" xml:space="preserve">
     <value>Detalles de permisos</value>
   </data>
@@ -444,6 +474,9 @@
   <data name="Profile Settings" xml:space="preserve">
     <value>Configuración del perfil</value>
   </data>
+  <data name="Project Requirements" xml:space="preserve">
+    <value>Requisitos del proyecto</value>
+  </data>
   <data name="Projects" xml:space="preserve">
     <value>Proyectos</value>
   </data>
@@ -459,8 +492,38 @@
   <data name="Register" xml:space="preserve">
     <value>Registrarse</value>
   </data>
+  <data name="Reject" xml:space="preserve">
+    <value>Rechazar</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>Rechazado</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>Responder</value>
+  </data>
+  <data name="Replying to" xml:space="preserve">
+    <value>Respondiendo a</value>
+  </data>
   <data name="Report Line" xml:space="preserve">
     <value>Línea de Reporte</value>
+  </data>
+  <data name="Request Changes" xml:space="preserve">
+    <value>Solicitar cambios</value>
+  </data>
+  <data name="RequestChanges" xml:space="preserve">
+    <value>Solicitar cambios</value>
+  </data>
+  <data name="Requirement" xml:space="preserve">
+    <value>Requisito</value>
+  </data>
+  <data name="Requirement Details" xml:space="preserve">
+    <value>Detalles del requisito</value>
+  </data>
+  <data name="Requirement saved successfully." xml:space="preserve">
+    <value>Requisito guardado correctamente.</value>
+  </data>
+  <data name="Requirement Title" xml:space="preserve">
+    <value>Título del requisito</value>
   </data>
   <data name="Resources" xml:space="preserve">
     <value>Recursos</value>
@@ -510,6 +573,18 @@
   <data name="Status" xml:space="preserve">
     <value>Estado</value>
   </data>
+  <data name="Submit Comment" xml:space="preserve">
+    <value>Enviar comentario</value>
+  </data>
+  <data name="Submit for Approval" xml:space="preserve">
+    <value>Enviar para aprobación</value>
+  </data>
+  <data name="Submit New Requirement" xml:space="preserve">
+    <value>Enviar nueva solicitud</value>
+  </data>
+  <data name="Submit Requirement" xml:space="preserve">
+    <value>Enviar solicitud</value>
+  </data>
   <data name="System" xml:space="preserve">
     <value>Sistema</value>
   </data>
@@ -542,6 +617,9 @@
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>Informe Semanal</value>
+  </data>
+  <data name="Write a comment..." xml:space="preserve">
+    <value>Escribe un comentario...</value>
   </data>
 
 </root>

@@ -54,6 +54,18 @@
   <data name="Approval Center" xml:space="preserve">
     <value>Hyväksyntäkeskus</value>
   </data>
+  <data name="Approval History" xml:space="preserve">
+    <value>Hyväksynnän historia</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>Hyväksy</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>Hyväksytty</value>
+  </data>
+  <data name="Approved Projects" xml:space="preserve">
+    <value>Hyväksytyt projektit</value>
+  </data>
   <data name="Asset Categories" xml:space="preserve">
     <value>Resurssikategoriat</value>
   </data>
@@ -120,6 +132,9 @@
   <data name="Code" xml:space="preserve">
     <value>Koodi</value>
   </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Kommentit</value>
+  </data>
   <data name="Company Entities" xml:space="preserve">
     <value>Yrityksen yksiköt</value>
   </data>
@@ -128,6 +143,9 @@
   </data>
   <data name="Company Entity Info" xml:space="preserve">
     <value>Yrityksen yksikön tiedot</value>
+  </data>
+  <data name="Company Intangible Assets" xml:space="preserve">
+    <value>Yrityksen ei-aineelliset omaisuudet</value>
   </data>
   <data name="Company Name" xml:space="preserve">
     <value>Yrityksen nimi</value>
@@ -212,6 +230,9 @@
   </data>
   <data name="Edit Payroll" xml:space="preserve">
     <value>Muokkaa palkkaa</value>
+  </data>
+  <data name="Edit Requirement" xml:space="preserve">
+    <value>Muokkaa vaatimusta</value>
   </data>
   <data name="Edit Role" xml:space="preserve">
     <value>Muokkaa roolia</value>
@@ -366,6 +387,9 @@
   <data name="Manage Questions" xml:space="preserve">
     <value>Kysymysten hallinta</value>
   </data>
+  <data name="Manage Requirements" xml:space="preserve">
+    <value>Hallinnoi vaatimuksia</value>
+  </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>Hallitse Jakoja</value>
   </data>
@@ -392,6 +416,9 @@
   </data>
   <data name="My Report Line" xml:space="preserve">
     <value>Oma raporttirivini</value>
+  </data>
+  <data name="My Requirements" xml:space="preserve">
+    <value>Omat vaatimukset</value>
   </data>
   <data name="Not Found" xml:space="preserve">
     <value>Ei löytynyt</value>
@@ -420,6 +447,9 @@
   <data name="Payrolls" xml:space="preserve">
     <value>Palkkalaskelmat</value>
   </data>
+  <data name="PendingApproval" xml:space="preserve">
+    <value>Odottaa hyväksyntää</value>
+  </data>
   <data name="Permission Details" xml:space="preserve">
     <value>Oikeuksien tiedot</value>
   </data>
@@ -441,6 +471,9 @@
   <data name="Profile Settings" xml:space="preserve">
     <value>Profiilin asetukset</value>
   </data>
+  <data name="Project Requirements" xml:space="preserve">
+    <value>Projektin vaatimukset</value>
+  </data>
   <data name="Projects" xml:space="preserve">
     <value>Projektit</value>
   </data>
@@ -456,8 +489,38 @@
   <data name="Register" xml:space="preserve">
     <value>Rekisteröidy</value>
   </data>
+  <data name="Reject" xml:space="preserve">
+    <value>Hylätä</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>Hylätty</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>Vastaus</value>
+  </data>
+  <data name="Replying to" xml:space="preserve">
+    <value>Vastataan</value>
+  </data>
   <data name="Report Line" xml:space="preserve">
     <value>Raporttirivi</value>
+  </data>
+  <data name="Request Changes" xml:space="preserve">
+    <value>Muuta muutoksia</value>
+  </data>
+  <data name="RequestChanges" xml:space="preserve">
+    <value>Muokkauskysely</value>
+  </data>
+  <data name="Requirement" xml:space="preserve">
+    <value>Vaatimus</value>
+  </data>
+  <data name="Requirement Details" xml:space="preserve">
+    <value>Vaatimustiedot</value>
+  </data>
+  <data name="Requirement saved successfully." xml:space="preserve">
+    <value>Vaatimus tallennettu onnistuneesti.</value>
+  </data>
+  <data name="Requirement Title" xml:space="preserve">
+    <value>Vaatimusotsikko</value>
   </data>
   <data name="Resources" xml:space="preserve">
     <value>Resurssit</value>
@@ -507,6 +570,18 @@
   <data name="Status" xml:space="preserve">
     <value>Tila</value>
   </data>
+  <data name="Submit Comment" xml:space="preserve">
+    <value>Lähetä kommentti</value>
+  </data>
+  <data name="Submit for Approval" xml:space="preserve">
+    <value>Lähetä hyväksyntää varten</value>
+  </data>
+  <data name="Submit New Requirement" xml:space="preserve">
+    <value>Lähetä uusi vaatimus</value>
+  </data>
+  <data name="Submit Requirement" xml:space="preserve">
+    <value>Lähetä vaatimus</value>
+  </data>
   <data name="System" xml:space="preserve">
     <value>Järjestelmä</value>
   </data>
@@ -539,6 +614,9 @@
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>Viikko raportti</value>
+  </data>
+  <data name="Write a comment..." xml:space="preserve">
+    <value>Kirjoita kommentti...</value>
   </data>
 
 </root>

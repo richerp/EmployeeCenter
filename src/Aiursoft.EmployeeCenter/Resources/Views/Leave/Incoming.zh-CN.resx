@@ -21,6 +21,9 @@
       <data name="Actions" xml:space="preserve">
     <value>操作</value>
   </data>
+  <data name="All Company" xml:space="preserve">
+    <value>全公司</value>
+  </data>
   <data name="Annual Leave" xml:space="preserve">
     <value>年假</value>
   </data>
@@ -51,8 +54,14 @@
   <data name="Approver" xml:space="preserve">
     <value>审批人</value>
   </data>
+  <data name="awaiting review across company" xml:space="preserve">
+    <value>全公司待审核</value>
+  </data>
   <data name="awaiting your review" xml:space="preserve">
     <value>待您审核</value>
+  </data>
+  <data name="Company on Leave" xml:space="preserve">
+    <value>全公司休假中</value>
   </data>
   <data name="currently absent" xml:space="preserve">
     <value>当前缺席</value>
@@ -83,6 +92,9 @@
   </data>
   <data name="Leave Type" xml:space="preserve">
     <value>请假类型</value>
+  </data>
+  <data name="My Team" xml:space="preserve">
+    <value>我的团队</value>
   </data>
   <data name="No approval history." xml:space="preserve">
     <value>暂无审批记录。</value>
@@ -147,16 +159,5 @@
   <data name="Type" xml:space="preserve">
     <value>类型</value>
   </data>
-  <data name="My Team" xml:space="preserve">
-    <value>我的团队</value>
-  </data>
-  <data name="All Company" xml:space="preserve">
-    <value>全公司</value>
-  </data>
-  <data name="awaiting review across company" xml:space="preserve">
-    <value>全公司待审核</value>
-  </data>
-  <data name="Company on Leave" xml:space="preserve">
-    <value>全公司休假中</value>
-  </data>
+
 </root>

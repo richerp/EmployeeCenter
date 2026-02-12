@@ -57,6 +57,18 @@
   <data name="Approval Center" xml:space="preserve">
     <value>审批中心</value>
   </data>
+  <data name="Approval History" xml:space="preserve">
+    <value>审批历史</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>同意</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>已通过</value>
+  </data>
+  <data name="Approved Projects" xml:space="preserve">
+    <value>已通过项目</value>
+  </data>
   <data name="Asset Categories" xml:space="preserve">
     <value>资产类别</value>
   </data>
@@ -123,6 +135,9 @@
   <data name="Code" xml:space="preserve">
     <value>代码</value>
   </data>
+  <data name="Comments" xml:space="preserve">
+    <value>评论</value>
+  </data>
   <data name="Company Entities" xml:space="preserve">
     <value>公司实体</value>
   </data>
@@ -131,6 +146,9 @@
   </data>
   <data name="Company Entity Info" xml:space="preserve">
     <value>公司实体信息</value>
+  </data>
+  <data name="Company Intangible Assets" xml:space="preserve">
+    <value>公司无形资产</value>
   </data>
   <data name="Company Name" xml:space="preserve">
     <value>公司名称</value>
@@ -218,6 +236,9 @@
   </data>
   <data name="Edit Payroll" xml:space="preserve">
     <value>编辑薪资</value>
+  </data>
+  <data name="Edit Requirement" xml:space="preserve">
+    <value>编辑需求</value>
   </data>
   <data name="Edit Role" xml:space="preserve">
     <value>编辑角色</value>
@@ -372,6 +393,9 @@
   <data name="Manage Questions" xml:space="preserve">
     <value>管理问题</value>
   </data>
+  <data name="Manage Requirements" xml:space="preserve">
+    <value>管理项目需求</value>
+  </data>
   <data name="Manage Services" xml:space="preserve">
     <value>管理服务</value>
   </data>
@@ -402,6 +426,9 @@
   <data name="My Report Line" xml:space="preserve">
     <value>我的汇报线</value>
   </data>
+  <data name="My Requirements" xml:space="preserve">
+    <value>我的需求</value>
+  </data>
   <data name="Not Found" xml:space="preserve">
     <value>未找到</value>
   </data>
@@ -429,6 +456,9 @@
   <data name="Payrolls" xml:space="preserve">
     <value>薪资</value>
   </data>
+  <data name="PendingApproval" xml:space="preserve">
+    <value>待审批</value>
+  </data>
   <data name="Permission Details" xml:space="preserve">
     <value>权限详情</value>
   </data>
@@ -453,78 +483,6 @@
   <data name="Project Requirements" xml:space="preserve">
     <value>项目需求</value>
   </data>
-  <data name="Approved Projects" xml:space="preserve">
-    <value>已通过项目</value>
-  </data>
-  <data name="My Requirements" xml:space="preserve">
-    <value>我的需求</value>
-  </data>
-  <data name="Approval History" xml:space="preserve">
-    <value>审批历史</value>
-  </data>
-  <data name="Manage Requirements" xml:space="preserve">
-    <value>管理项目需求</value>
-  </data>
-  <data name="Submit New Requirement" xml:space="preserve">
-    <value>提交新需求</value>
-  </data>
-  <data name="Requirement Details" xml:space="preserve">
-    <value>需求详情</value>
-  </data>
-  <data name="Requirement" xml:space="preserve">
-    <value>需求</value>
-  </data>
-  <data name="Submit Requirement" xml:space="preserve">
-    <value>提交需求</value>
-  </data>
-  <data name="Edit Requirement" xml:space="preserve">
-    <value>编辑需求</value>
-  </data>
-  <data name="Requirement Title" xml:space="preserve">
-    <value>需求标题</value>
-  </data>
-  <data name="Submit for Approval" xml:space="preserve">
-    <value>提交审批</value>
-  </data>
-  <data name="Requirement saved successfully." xml:space="preserve">
-    <value>需求保存成功。</value>
-  </data>
-  <data name="Comments" xml:space="preserve">
-    <value>评论</value>
-  </data>
-  <data name="Reply" xml:space="preserve">
-    <value>回复</value>
-  </data>
-  <data name="Replying to" xml:space="preserve">
-    <value>正在回复</value>
-  </data>
-  <data name="Write a comment..." xml:space="preserve">
-    <value>写下评论...</value>
-  </data>
-  <data name="Submit Comment" xml:space="preserve">
-    <value>提交评论</value>
-  </data>
-  <data name="Approve" xml:space="preserve">
-    <value>同意</value>
-  </data>
-  <data name="Reject" xml:space="preserve">
-    <value>拒绝</value>
-  </data>
-  <data name="Request Changes" xml:space="preserve">
-    <value>要求变更</value>
-  </data>
-  <data name="PendingApproval" xml:space="preserve">
-    <value>待审批</value>
-  </data>
-  <data name="Approved" xml:space="preserve">
-    <value>已通过</value>
-  </data>
-  <data name="Rejected" xml:space="preserve">
-    <value>已拒绝</value>
-  </data>
-  <data name="RequestChanges" xml:space="preserve">
-    <value>要求变更</value>
-  </data>
   <data name="Projects" xml:space="preserve">
     <value>项目</value>
   </data>
@@ -540,8 +498,38 @@
   <data name="Register" xml:space="preserve">
     <value>注册</value>
   </data>
+  <data name="Reject" xml:space="preserve">
+    <value>拒绝</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>已拒绝</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>回复</value>
+  </data>
+  <data name="Replying to" xml:space="preserve">
+    <value>正在回复</value>
+  </data>
   <data name="Report Line" xml:space="preserve">
     <value>汇报线</value>
+  </data>
+  <data name="Request Changes" xml:space="preserve">
+    <value>要求变更</value>
+  </data>
+  <data name="RequestChanges" xml:space="preserve">
+    <value>要求变更</value>
+  </data>
+  <data name="Requirement" xml:space="preserve">
+    <value>需求</value>
+  </data>
+  <data name="Requirement Details" xml:space="preserve">
+    <value>需求详情</value>
+  </data>
+  <data name="Requirement saved successfully." xml:space="preserve">
+    <value>需求保存成功。</value>
+  </data>
+  <data name="Requirement Title" xml:space="preserve">
+    <value>需求标题</value>
   </data>
   <data name="Resources" xml:space="preserve">
     <value>资源</value>
@@ -591,6 +579,18 @@
   <data name="Status" xml:space="preserve">
     <value>状态</value>
   </data>
+  <data name="Submit Comment" xml:space="preserve">
+    <value>提交评论</value>
+  </data>
+  <data name="Submit for Approval" xml:space="preserve">
+    <value>提交审批</value>
+  </data>
+  <data name="Submit New Requirement" xml:space="preserve">
+    <value>提交新需求</value>
+  </data>
+  <data name="Submit Requirement" xml:space="preserve">
+    <value>提交需求</value>
+  </data>
   <data name="System" xml:space="preserve">
     <value>系统</value>
   </data>
@@ -623,6 +623,9 @@
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>周报</value>
+  </data>
+  <data name="Write a comment..." xml:space="preserve">
+    <value>写下评论...</value>
   </data>
 
 </root>
