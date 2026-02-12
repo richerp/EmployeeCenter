@@ -36,6 +36,9 @@
   <data name="Default Payroll Currency" xml:space="preserve">
     <value>Varsayılan Ödeme Para Birimi</value>
   </data>
+  <data name="ICP Number" xml:space="preserve">
+    <value>ICP Numarası</value>
+  </data>
   <data name="Project Logo" xml:space="preserve">
     <value>Proje Logosu</value>
   </data>
@@ -47,6 +50,9 @@
   </data>
   <data name="The default currency to use when issuing a new payroll." xml:space="preserve">
     <value>Yeni bir maaş listesi çıkartılırken kullanılacak varsayılan para birimi.</value>
+  </data>
+  <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
+    <value>Çin ana karasında kullanıcılar için ICP lisans numarası. Gizlemek için boş bırakın.</value>
   </data>
   <data name="The logo of the project displayed in the navbar and footer. Support jpg, png, svg." xml:space="preserve">
     <value>Projenin navbar ve footer&apos;da görünen logosu. jpg, png, svg desteklenir.</value>

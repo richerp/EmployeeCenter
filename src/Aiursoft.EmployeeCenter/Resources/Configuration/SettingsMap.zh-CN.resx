@@ -36,6 +36,9 @@
   <data name="Default Payroll Currency" xml:space="preserve">
     <value>默认工资货币</value>
   </data>
+  <data name="ICP Number" xml:space="preserve">
+    <value>ICP 备案号</value>
+  </data>
   <data name="Project Logo" xml:space="preserve">
     <value>项目图标</value>
   </data>
@@ -47,6 +50,9 @@
   </data>
   <data name="The default currency to use when issuing a new payroll." xml:space="preserve">
     <value>发放新工资单时使用的默认货币。</value>
+  </data>
+  <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
+    <value>中国大陆用户使用的ICP许可证号。留空以隐藏。</value>
   </data>
   <data name="The logo of the project displayed in the navbar and footer. Support jpg, png, svg." xml:space="preserve">
     <value>项目在导航栏和页脚中显示的标志。支持 jpg、png、svg 格式。</value>
