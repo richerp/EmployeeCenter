@@ -24,6 +24,7 @@
                 <th>@Localizer["Type"]</th>
                 <th>@Localizer["Status"]</th>
                 <th>@Localizer["Supplier"]</th>
+                <th>@Localizer["Belongs to Entity"]</th>
                 <th>@Localizer["Assignee"]</th>
                 <th>@Localizer["Expiration Date"]</th>
                 <th class="text-end">@Localizer["Actions"]</th>
@@ -56,6 +57,18 @@
                         }
                     </td>
                     <td>@(item.Supplier ?? Localizer["N/A"].Value)</td>
+                    <td>
+                        @if (item.CompanyEntity != null)
+                        {
+                            <a asp-controller="CompanyEntity" asp-action="Details" asp-route-id="@item.CompanyEntityId" class="text-dark">
+                                @item.CompanyEntity.CompanyName
+                            </a>
+                        }
+                        else
+                        {
+                            @Localizer["N/A"]
+                        }
+                    </td>
                     <td>
                         @if (item.Assignee != null)
                         {

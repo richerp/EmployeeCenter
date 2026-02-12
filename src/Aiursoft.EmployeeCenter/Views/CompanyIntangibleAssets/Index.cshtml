@@ -1,0 +1,83 @@
+@model Aiursoft.EmployeeCenter.Models.IntangibleAssetsViewModels.IndexViewModel
+
+<div class="row mb-2 mb-xl-3">
+    <div class="col-auto d-none d-sm-block">
+        <h3>@Localizer["Company Intangible Assets"]</h3>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title">@Localizer["Shared Intangible Assets"]</h5>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-hover mb-0">
+            <thead>
+            <tr>
+                <th>@Localizer["Name"]</th>
+                <th>@Localizer["Type"]</th>
+                <th>@Localizer["Status"]</th>
+                <th>@Localizer["Supplier"]</th>
+                <th>@Localizer["Belongs to Entity"]</th>
+                <th>@Localizer["Assignee"]</th>
+                <th class="text-end">@Localizer["Actions"]</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model.Assets)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Type</td>
+                    <td>
+                        @switch (item.Status)
+                        {
+                            case IntangibleAssetStatus.Applying:
+                                <span class="badge bg-warning">@Localizer["Applying"]</span>
+                                break;
+                            case IntangibleAssetStatus.Active:
+                                <span class="badge bg-success">@Localizer["Active"]</span>
+                                break;
+                            case IntangibleAssetStatus.Revoked:
+                                <span class="badge bg-danger">@Localizer["Revoked"]</span>
+                                break;
+                            case IntangibleAssetStatus.Running:
+                                <span class="badge bg-info">@Localizer["Running"]</span>
+                                break;
+                            case IntangibleAssetStatus.Suspended:
+                                <span class="badge bg-secondary">@Localizer["Suspended"]</span>
+                                break;
+                        }
+                    </td>
+                    <td>@(item.Supplier ?? Localizer["N/A"].Value)</td>
+                    <td>
+                        @if (item.CompanyEntity != null)
+                        {
+                            @item.CompanyEntity.CompanyName
+                        }
+                        else
+                        {
+                            @Localizer["N/A"]
+                        }
+                    </td>
+                    <td>
+                        @if (item.Assignee != null)
+                        {
+                            @item.Assignee.DisplayName
+                        }
+                        else
+                        {
+                            @Localizer["N/A"]
+                        }
+                    </td>
+                    <td class="text-end">
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary" title="@Localizer["Details"]">
+                            <i class="align-middle" data-lucide="eye"></i> @Localizer["Details"]
+                        </a>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

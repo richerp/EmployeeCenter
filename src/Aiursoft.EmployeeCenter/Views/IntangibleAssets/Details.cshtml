@@ -1,4 +1,6 @@
+@using Aiursoft.EmployeeCenter.Services.FileStorage
 @model Aiursoft.EmployeeCenter.Models.IntangibleAssetsViewModels.DetailsViewModel
+@inject StorageService Storage
 
 <div class="row mb-2 mb-xl-3">
     <div class="col-auto d-none d-sm-block">
@@ -30,6 +32,14 @@
 
                     <dt class="col-sm-4">@Localizer["Supplier"]</dt>
                     <dd class="col-sm-8">@(Model.Asset.Supplier ?? "-")</dd>
+
+                    <dt class="col-sm-4">@Localizer["Belongs to Entity"]</dt>
+                    <dd class="col-sm-8">@(Model.Asset.CompanyEntity?.CompanyName ?? "-")</dd>
+
+                    <dt class="col-sm-4">@Localizer["Public"]</dt>
+                    <dd class="col-sm-8">
+                        <span class="badge @(Model.Asset.IsPublic ? "bg-success" : "bg-warning")">@(Model.Asset.IsPublic ? Localizer["Public"] : Localizer["Private"])</span>
+                    </dd>
                     
                     <dt class="col-sm-4">@Localizer["Description"]</dt>
                     <dd class="col-sm-8">@(Model.Asset.Description ?? "-")</dd>
@@ -106,13 +116,25 @@
             <div class="card-body">
                 <dl class="row">
                     <dt class="col-sm-4">@Localizer["Purchase Price"]</dt>
-                    <dd class="col-sm-8">@(Model.Asset.PurchasePrice?.ToString("C") ?? "-")</dd>
+                    <dd class="col-sm-8">@(Model.Asset.PurchasePrice?.ToString("N2") ?? "-") @Model.Asset.Currency</dd>
 
                     <dt class="col-sm-4">@Localizer["Invoice"]</dt>
                     <dd class="col-sm-8">
                          @if (!string.IsNullOrEmpty(Model.Asset.InvoiceFileUrl))
                         {
-                            <a href="@Model.Asset.InvoiceFileUrl" target="_blank">@Localizer["View Invoice"]</a>
+                            <a href="@Storage.RelativePathToInternetUrl(Model.Asset.InvoiceFileUrl)" target="_blank">@Localizer["View Invoice"]</a>
+                        }
+                        else
+                        {
+                            <span>-</span>
+                        }
+                    </dd>
+
+                    <dt class="col-sm-4">@Localizer["Registration Certificate"]</dt>
+                    <dd class="col-sm-8">
+                        @if (!string.IsNullOrEmpty(Model.Asset.RegistrationCertificateUrl))
+                        {
+                            <a href="@Storage.RelativePathToInternetUrl(Model.Asset.RegistrationCertificateUrl)" target="_blank">@Localizer["View Certificate"]</a>
                         }
                         else
                         {

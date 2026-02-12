@@ -45,7 +45,7 @@ public class CreateViewModel : UiStackLayoutViewModel
     public string? LegalRepresentative { get; set; }
 
     [Display(Name = "Legal Representative Legal Name")]
-    [MaxLength(100)]
+    [MaxLength(100, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string? LegalRepresentativeLegalName { get; set; }
 
     [Display(Name = "Company Type")]

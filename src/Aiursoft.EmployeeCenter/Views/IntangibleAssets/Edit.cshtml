@@ -102,28 +102,69 @@
                             <div class="col-md-6 mb-3">
                                 <label asp-for="PurchasePrice" class="form-label">@Localizer["Purchase Price"]</label>
                                 <div class="input-group">
-                                    <span class="input-group-text">$</span>
                                     <input asp-for="PurchasePrice" type="number" step="0.01" class="form-control" />
                                 </div>
                                 <span asp-validation-for="PurchasePrice" class="text-danger"></span>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <label asp-for="InvoiceFileUrl" class="form-label">@Localizer["Invoice URL"]</label>
-                                <input asp-for="InvoiceFileUrl" class="form-control" />
+                                <label asp-for="Currency" class="form-label">@Localizer["Currency"]</label>
+                                <select asp-for="Currency" class="form-select" asp-items="@(new SelectList(Model.CurrencyOptions, "Key", "Value"))"></select>
+                                <span asp-validation-for="Currency" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="CompanyEntityId" class="form-label"></label>
+                                <div class="input-group">
+                                    <select asp-for="CompanyEntityId" class="form-select" asp-items="@(new SelectList(Model.AllCompanyEntities, "Id", "CompanyName"))">
+                                        <option value="">-- @Localizer["Select Entity"] --</option>
+                                    </select>
+                                    <a asp-controller="CompanyEntity" asp-action="Create" target="_blank" class="btn btn-outline-secondary" title="@Localizer["New"]">
+                                        <i class="align-middle" data-lucide="plus-circle"></i>
+                                    </a>
+                                    <button type="button" class="btn btn-outline-secondary reload-dropdown" 
+                                            data-url="@Url.Action("GetCompanyEntities", "Assets")" 
+                                            data-target="CompanyEntityId" 
+                                            data-placeholder="@Localizer["Select Entity"]"
+                                            data-name-key="CompanyName"
+                                            title="@Localizer["Reload"]">
+                                        <i class="align-middle" data-lucide="rotate-cw"></i>
+                                    </button>
+                                </div>
+                                <span asp-validation-for="CompanyEntityId" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="AssigneeId" class="form-label">@Localizer["Assignee"]</label>
+                                <select asp-for="AssigneeId" class="form-select">
+                                    <option value="">@Localizer["None"]</option>
+                                    @foreach (var user in Model.AllUsers)
+                                    {
+                                        <option value="@user.Id">@user.DisplayName</option>
+                                    }
+                                </select>
+                                <span asp-validation-for="AssigneeId" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="InvoiceFileUrl" class="form-label">@Localizer["Invoice File"]</label>
+                                <vc:file-upload asp-for="InvoiceFileUrl" subfolder="intangible-assets/invoices" allowed-extensions="pdf jpg png" max-size-in-mb="10"></vc:file-upload>
                                 <span asp-validation-for="InvoiceFileUrl" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="RegistrationCertificateUrl" class="form-label">@Localizer["Registration Certificate"]</label>
+                                <vc:file-upload asp-for="RegistrationCertificateUrl" subfolder="intangible-assets/certificates" allowed-extensions="pdf jpg png" max-size-in-mb="10"></vc:file-upload>
+                                <span asp-validation-for="RegistrationCertificateUrl" class="text-danger"></span>
                             </div>
                         </div>
 
                         <div class="mb-3">
-                            <label asp-for="AssigneeId" class="form-label">@Localizer["Assignee"]</label>
-                            <select asp-for="AssigneeId" class="form-select">
-                                <option value="">@Localizer["None"]</option>
-                                @foreach (var user in Model.AllUsers)
-                                {
-                                    <option value="@user.Id">@user.DisplayName</option>
-                                }
-                            </select>
-                            <span asp-validation-for="AssigneeId" class="text-danger"></span>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" asp-for="IsPublic">
+                                <label class="form-check-label" asp-for="IsPublic">@Localizer["Public Intangible Asset"]</label>
+                            </div>
                         </div>
 
                         <div class="mb-3">
@@ -142,3 +183,15 @@
         </div>
     </div>
 </div>
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section styles {
+    <link rel="stylesheet" href="~/node_modules/dropify/dist/css/dropify.min.css" />
+    <link rel="stylesheet" href="~/styles/uploader.css" />
+}
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section scripts {
+    <script src="~/node_modules/dropify/dist/js/dropify.min.js"></script>
+    <partial name="_DropdownReload" />
+}

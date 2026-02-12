@@ -116,6 +116,33 @@ public class ViewModelArgsInjector(
     
         _ = localizer["Servers"];
     
+        _ = localizer["Project Requirements"];
+        _ = localizer["Approved Projects"];
+        _ = localizer["My Requirements"];
+        _ = localizer["Approval History"];
+        _ = localizer["Manage Requirements"];
+        _ = localizer["Submit New Requirement"];
+        _ = localizer["Requirement Details"];
+        _ = localizer["Requirement"];
+        _ = localizer["Submit Requirement"];
+        _ = localizer["Edit Requirement"];
+        _ = localizer["Requirement Title"];
+        _ = localizer["Submit for Approval"];
+        _ = localizer["Requirement saved successfully."];
+        _ = localizer["Comments"];
+        _ = localizer["Reply"];
+        _ = localizer["Replying to"];
+        _ = localizer["Write a comment..."];
+        _ = localizer["Submit Comment"];
+        _ = localizer["Approve"];
+        _ = localizer["Reject"];
+        _ = localizer["Request Changes"];
+    
+        _ = localizer["PendingApproval"];
+        _ = localizer["Approved"];
+        _ = localizer["Rejected"];
+        _ = localizer["RequestChanges"];
+    
         _ = localizer["Access Denied"];
         _ = localizer["Add SSH Key"];
         _ = localizer["Bad Request"];
