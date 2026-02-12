@@ -132,7 +132,10 @@ public class AppPermissions
                 localizer["Allows viewing and modifying global application settings."]),
             new(AppPermissionNames.CanManageBlueprints,
                 localizer["Manage Blueprints"],
-                localizer["Allows creating, updating, and deleting blueprints. Every user can view blueprints by default."])
+                localizer["Allows creating, updating, and deleting blueprints. Every user can view blueprints by default."]),
+            new(AppPermissionNames.CanApproveProjectRequirements,
+                localizer["Approve Project Requirements"],
+                localizer["Allows approving, rejecting, or requesting changes for project requirements. Everyone can submit requirements and comment on them."])
         ];
         return allPermission;
     }
