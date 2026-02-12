@@ -1,11 +1,4 @@
 using Aiursoft.EmployeeCenter.Authorization;
-using Aiursoft.EmployeeCenter.Entities;
-using Aiursoft.EmployeeCenter.Models.LeaveViewModels;
-using Aiursoft.UiStack.Navigation;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.DependencyInjection;
-using System.Security.Claims;
-using System.Net;
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
@@ -79,8 +72,8 @@ public class LeaveIncomingPermissionTests
     public async Task TestIncomingViewPermissions()
     {
         string managerId, managerEmail;
-        string employeeId, employeeEmail;
-        string hrId, hrEmail;
+        string employeeId;
+        string hrEmail;
         string otherId, otherEmail;
 
         using (var scope = _server!.Services.CreateScope())
@@ -99,12 +92,10 @@ public class LeaveIncomingPermissionTests
             var employee = new User { UserName = "employee", Email = "employee@test.com", DisplayName = "Employee", ManagerId = managerId, AvatarRelativePath = User.DefaultAvatarPath };
             await userManager.CreateAsync(employee, "Password123!");
             employeeId = employee.Id;
-            employeeEmail = employee.Email;
 
             // Create HR with CanApproveAnyLeave
             var hr = new User { UserName = "hr", Email = "hr@test.com", DisplayName = "HR", AvatarRelativePath = User.DefaultAvatarPath };
             await userManager.CreateAsync(hr, "Password123!");
-            hrId = hr.Id;
             hrEmail = hr.Email;
 
             var hrRole = new IdentityRole("HRRole");
