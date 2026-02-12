@@ -450,6 +450,81 @@
   <data name="Profile Settings" xml:space="preserve">
     <value>资料设置</value>
   </data>
+  <data name="Project Requirements" xml:space="preserve">
+    <value>项目需求</value>
+  </data>
+  <data name="Approved Projects" xml:space="preserve">
+    <value>已通过项目</value>
+  </data>
+  <data name="My Requirements" xml:space="preserve">
+    <value>我的需求</value>
+  </data>
+  <data name="Approval History" xml:space="preserve">
+    <value>审批历史</value>
+  </data>
+  <data name="Manage Requirements" xml:space="preserve">
+    <value>管理项目需求</value>
+  </data>
+  <data name="Submit New Requirement" xml:space="preserve">
+    <value>提交新需求</value>
+  </data>
+  <data name="Requirement Details" xml:space="preserve">
+    <value>需求详情</value>
+  </data>
+  <data name="Requirement" xml:space="preserve">
+    <value>需求</value>
+  </data>
+  <data name="Submit Requirement" xml:space="preserve">
+    <value>提交需求</value>
+  </data>
+  <data name="Edit Requirement" xml:space="preserve">
+    <value>编辑需求</value>
+  </data>
+  <data name="Requirement Title" xml:space="preserve">
+    <value>需求标题</value>
+  </data>
+  <data name="Submit for Approval" xml:space="preserve">
+    <value>提交审批</value>
+  </data>
+  <data name="Requirement saved successfully." xml:space="preserve">
+    <value>需求保存成功。</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>评论</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>回复</value>
+  </data>
+  <data name="Replying to" xml:space="preserve">
+    <value>正在回复</value>
+  </data>
+  <data name="Write a comment..." xml:space="preserve">
+    <value>写下评论...</value>
+  </data>
+  <data name="Submit Comment" xml:space="preserve">
+    <value>提交评论</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>同意</value>
+  </data>
+  <data name="Reject" xml:space="preserve">
+    <value>拒绝</value>
+  </data>
+  <data name="Request Changes" xml:space="preserve">
+    <value>要求变更</value>
+  </data>
+  <data name="PendingApproval" xml:space="preserve">
+    <value>待审批</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>已通过</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>已拒绝</value>
+  </data>
+  <data name="RequestChanges" xml:space="preserve">
+    <value>要求变更</value>
+  </data>
   <data name="Projects" xml:space="preserve">
     <value>项目</value>
   </data>

@@ -1163,6 +1163,79 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.ToTable("Providers");
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Requirement", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CreationTime")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("RenderedHtml")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("SubmitterId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("UpdateTime")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SubmitterId");
+
+                    b.ToTable("Requirements");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.RequirementComment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("AuthorId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CreateTime")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("ParentCommentId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("RequirementId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AuthorId");
+
+                    b.HasIndex("ParentCommentId");
+
+                    b.HasIndex("RequirementId");
+
+                    b.ToTable("RequirementComments");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Server", b =>
                 {
                     b.Property<int>("Id")
@@ -2057,6 +2130,42 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Requirement", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "Submitter")
+                        .WithMany()
+                        .HasForeignKey("SubmitterId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Submitter");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.RequirementComment", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "Author")
+                        .WithMany()
+                        .HasForeignKey("AuthorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.RequirementComment", "ParentComment")
+                        .WithMany("Replies")
+                        .HasForeignKey("ParentCommentId");
+
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.Requirement", "Requirement")
+                        .WithMany("Comments")
+                        .HasForeignKey("RequirementId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Author");
+
+                    b.Navigation("ParentComment");
+
+                    b.Navigation("Requirement");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Server", b =>
                 {
                     b.HasOne("Aiursoft.EmployeeCenter.Entities.CompanyEntity", "CompanyEntity")
@@ -2312,6 +2421,16 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Provider", b =>
                 {
                     b.Navigation("Servers");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Requirement", b =>
+                {
+                    b.Navigation("Comments");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.RequirementComment", b =>
+                {
+                    b.Navigation("Replies");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Server", b =>

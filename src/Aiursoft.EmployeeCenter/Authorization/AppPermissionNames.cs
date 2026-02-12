@@ -78,4 +78,5 @@ public static class AppPermissionNames
     public const string CanViewBackgroundJobs = nameof(CanViewBackgroundJobs);
     public const string CanManageGlobalSettings = nameof(CanManageGlobalSettings);
     public const string CanManageBlueprints = nameof(CanManageBlueprints);
+    public const string CanApproveProjectRequirements = nameof(CanApproveProjectRequirements);
 }

@@ -4,6 +4,7 @@ using Aiursoft.EmployeeCenter.MySql;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Aiursoft.EmployeeCenter.MySql.Migrations
 {
     [DbContext(typeof(MySqlContext))]
-    partial class MySqlContextModelSnapshot : ModelSnapshot
+    [Migration("20260212103700_AddRequirements")]
+    partial class AddRequirements
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -675,16 +678,8 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("varchar(255)");
 
-                    b.Property<int?>("CompanyEntityId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime(6)");
-
-                    b.Property<string>("Currency")
-                        .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("varchar(10)");
 
                     b.Property<string>("Description")
                         .HasMaxLength(2000)
@@ -709,9 +704,6 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("varchar(500)");
 
-                    b.Property<bool>("IsPublic")
-                        .HasColumnType("tinyint(1)");
-
                     b.Property<string>("ManagementUrl")
                         .HasMaxLength(500)
                         .HasColumnType("varchar(500)");
@@ -727,10 +719,6 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
 
                     b.Property<decimal?>("PurchasePrice")
                         .HasColumnType("decimal(65,30)");
-
-                    b.Property<string>("RegistrationCertificateUrl")
-                        .HasMaxLength(500)
-                        .HasColumnType("varchar(500)");
 
                     b.Property<DateTime?>("RegistrationDate")
                         .HasColumnType("datetime(6)");
@@ -751,8 +739,6 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("AssigneeId");
-
-                    b.HasIndex("CompanyEntityId");
 
                     b.ToTable("IntangibleAssets");
                 });
@@ -2079,13 +2065,7 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .WithMany()
                         .HasForeignKey("AssigneeId");
 
-                    b.HasOne("Aiursoft.EmployeeCenter.Entities.CompanyEntity", "CompanyEntity")
-                        .WithMany()
-                        .HasForeignKey("CompanyEntityId");
-
                     b.Navigation("Assignee");
-
-                    b.Navigation("CompanyEntity");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.LeaveApplication", b =>
