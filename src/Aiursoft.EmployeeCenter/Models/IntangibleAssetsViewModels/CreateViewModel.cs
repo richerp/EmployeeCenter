@@ -41,9 +41,23 @@ public class CreateViewModel : UiStackLayoutViewModel
 
     public decimal? PurchasePrice { get; set; }
 
+    [Display(Name = "Currency")]
+    [MaxLength(10)]
+    public string Currency { get; set; } = "CNY";
+
     [MaxLength(500)]
-    [Url]
+    [Display(Name = "Invoice File")]
     public string? InvoiceFileUrl { get; set; }
+
+    [MaxLength(500)]
+    [Display(Name = "Registration Certificate")]
+    public string? RegistrationCertificateUrl { get; set; }
+
+    [Display(Name = "Public")]
+    public bool IsPublic { get; set; }
+
+    [Display(Name = "Belongs to Entity")]
+    public int? CompanyEntityId { get; set; }
 
     [MaxLength(255)]
     public string? AssigneeId { get; set; }
@@ -55,4 +69,8 @@ public class CreateViewModel : UiStackLayoutViewModel
     public string? Description { get; set; }
 
     public IEnumerable<User> AllUsers { get; set; } = new List<User>();
+
+    public IEnumerable<CompanyEntity> AllCompanyEntities { get; set; } = new List<CompanyEntity>();
+
+    public Dictionary<string, string> CurrencyOptions { get; set; } = new();
 }

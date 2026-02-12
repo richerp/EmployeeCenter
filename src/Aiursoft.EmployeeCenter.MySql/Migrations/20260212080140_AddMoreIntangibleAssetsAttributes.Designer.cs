@@ -4,6 +4,7 @@ using Aiursoft.EmployeeCenter.MySql;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Aiursoft.EmployeeCenter.MySql.Migrations
 {
     [DbContext(typeof(MySqlContext))]
-    partial class MySqlContextModelSnapshot : ModelSnapshot
+    [Migration("20260212080140_AddMoreIntangibleAssetsAttributes")]
+    partial class AddMoreIntangibleAssetsAttributes
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -1205,83 +1208,6 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.ToTable("Providers");
                 });
 
-            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Requirement", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Content")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<DateTime>("CreationTime")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("RenderedHtml")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
-
-                    b.Property<string>("SubmitterId")
-                        .IsRequired()
-                        .HasColumnType("varchar(255)");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("varchar(200)");
-
-                    b.Property<DateTime>("UpdateTime")
-                        .HasColumnType("datetime(6)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("SubmitterId");
-
-                    b.ToTable("Requirements");
-                });
-
-            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.RequirementComment", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("AuthorId")
-                        .IsRequired()
-                        .HasColumnType("varchar(255)");
-
-                    b.Property<string>("Content")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<DateTime>("CreateTime")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<int?>("ParentCommentId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("RequirementId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AuthorId");
-
-                    b.HasIndex("ParentCommentId");
-
-                    b.HasIndex("RequirementId");
-
-                    b.ToTable("RequirementComments");
-                });
-
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Server", b =>
                 {
                     b.Property<int>("Id")
@@ -2202,42 +2128,6 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Requirement", b =>
-                {
-                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "Submitter")
-                        .WithMany()
-                        .HasForeignKey("SubmitterId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Submitter");
-                });
-
-            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.RequirementComment", b =>
-                {
-                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "Author")
-                        .WithMany()
-                        .HasForeignKey("AuthorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Aiursoft.EmployeeCenter.Entities.RequirementComment", "ParentComment")
-                        .WithMany("Replies")
-                        .HasForeignKey("ParentCommentId");
-
-                    b.HasOne("Aiursoft.EmployeeCenter.Entities.Requirement", "Requirement")
-                        .WithMany("Comments")
-                        .HasForeignKey("RequirementId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Author");
-
-                    b.Navigation("ParentComment");
-
-                    b.Navigation("Requirement");
-                });
-
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Server", b =>
                 {
                     b.HasOne("Aiursoft.EmployeeCenter.Entities.CompanyEntity", "CompanyEntity")
@@ -2493,16 +2383,6 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Provider", b =>
                 {
                     b.Navigation("Servers");
-                });
-
-            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Requirement", b =>
-                {
-                    b.Navigation("Comments");
-                });
-
-            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.RequirementComment", b =>
-                {
-                    b.Navigation("Replies");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Server", b =>

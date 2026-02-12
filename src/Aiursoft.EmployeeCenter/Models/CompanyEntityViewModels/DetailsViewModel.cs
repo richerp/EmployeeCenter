@@ -11,4 +11,5 @@ public class DetailsViewModel : UiStackLayoutViewModel
     }
     public required CompanyEntity Entity { get; set; }
     public IEnumerable<Server> Servers { get; set; } = new List<Server>();
+    public IEnumerable<IntangibleAsset> IntangibleAssets { get; set; } = new List<IntangibleAsset>();
 }

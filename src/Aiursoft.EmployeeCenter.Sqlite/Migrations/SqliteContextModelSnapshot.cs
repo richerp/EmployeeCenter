@@ -651,7 +651,15 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("TEXT");
 
+                    b.Property<int?>("CompanyEntityId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Currency")
+                        .IsRequired()
+                        .HasMaxLength(10)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Description")
@@ -677,6 +685,9 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("TEXT");
 
+                    b.Property<bool>("IsPublic")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("ManagementUrl")
                         .HasMaxLength(500)
                         .HasColumnType("TEXT");
@@ -691,6 +702,10 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<decimal?>("PurchasePrice")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("RegistrationCertificateUrl")
+                        .HasMaxLength(500)
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime?>("RegistrationDate")
@@ -712,6 +727,8 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("AssigneeId");
+
+                    b.HasIndex("CompanyEntityId");
 
                     b.ToTable("IntangibleAssets");
                 });
@@ -1990,7 +2007,13 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .WithMany()
                         .HasForeignKey("AssigneeId");
 
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.CompanyEntity", "CompanyEntity")
+                        .WithMany()
+                        .HasForeignKey("CompanyEntityId");
+
                     b.Navigation("Assignee");
+
+                    b.Navigation("CompanyEntity");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.LeaveApplication", b =>

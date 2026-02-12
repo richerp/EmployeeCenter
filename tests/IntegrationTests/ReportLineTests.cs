@@ -221,5 +221,43 @@ public class ReportLineTests
         Assert.Contains("User Details", reportLineHtml);
         Assert.Contains("L5", reportLineHtml);
         Assert.Contains(targetUserName, reportLineHtml);
+
+        // 6. Verify Mermaid graph links
+        Assert.Contains($"/ReportLine/Index/{targetUserId}", reportLineHtml);
+        Assert.IsFalse(reportLineHtml.Contains($"/Users/Details/{targetUserId}"), "Graph should not link to User Details anymore");
+    }
+
+    [TestMethod]
+    public async Task TestReportLineLinks()
+    {
+        // 1. Create a user
+        string userId, email;
+        var suffix = Guid.NewGuid().ToString("N")[..6];
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
+            var user = new User
+            {
+                UserName = "user" + suffix,
+                DisplayName = "Report User",
+                Email = "user" + suffix + "@test.com",
+                AvatarRelativePath = User.DefaultAvatarPath
+            };
+            await userManager.CreateAsync(user, "Password123!");
+            userId = user.Id;
+            email = user.Email;
+        }
+
+        // 2. Login
+        await LoginAsync(email, "Password123!");
+
+        // 3. View report line
+        var response = await _http.GetAsync("/ReportLine");
+        response.EnsureSuccessStatusCode();
+        var html = await response.Content.ReadAsStringAsync();
+
+        // 4. Verify link in Mermaid label
+        Assert.Contains($"/ReportLine/Index/{userId}", html);
+        Assert.IsFalse(html.Contains($"/Users/Details/{userId}"), "Mermaid label should link to ReportLine Index");
     }
 }
