@@ -32,7 +32,7 @@ public class LeaveBalanceService(
 
     public async Task<decimal> GetAnnualLeavePerYearAsync()
     {
-        return await _globalSettingsService.GetDecimalSettingAsync(Configuration.SettingsMap.AnnualLeavePerYear);
+        return await _globalSettingsService.GetIntSettingAsync(Configuration.SettingsMap.AnnualLeavePerYear);
     }
 
     /// <summary>

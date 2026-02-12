@@ -46,7 +46,7 @@ public class LeaveController(
         var remainingAnnual = await leaveBalanceService.GetRemainingAnnualLeaveAsync(user.Id, currentYear);
         var (carriedOver, _) = await leaveBalanceService.GetRemainingByTypeAsync(user.Id, currentYear);
         var remainingSick = await leaveBalanceService.GetRemainingSickLeaveAsync(user.Id, currentYear);
-        var annualLeavePerYearPolicy = await globalSettingsService.GetDecimalSettingAsync(Configuration.SettingsMap.AnnualLeavePerYear);
+        var annualLeavePerYearPolicy = await globalSettingsService.GetIntSettingAsync(Configuration.SettingsMap.AnnualLeavePerYear);
 
         // Get leave history
         var leaveHistory = await context.LeaveApplications
