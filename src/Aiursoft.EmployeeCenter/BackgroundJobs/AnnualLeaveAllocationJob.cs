@@ -71,7 +71,7 @@ public class AnnualLeaveAllocationJob(
         try
         {
             var currentYear = DateTime.UtcNow.Year;
-            var annualLeavePerYear = await settings.GetDecimalSettingAsync(Configuration.SettingsMap.AnnualLeavePerYear);
+            var annualLeavePerYear = await settings.GetIntSettingAsync(Configuration.SettingsMap.AnnualLeavePerYear);
             logger.LogInformation("Checking annual leave allocations for year {Year}. Annual leave per year: {AnnualLeave}", currentYear, annualLeavePerYear);
 
             // 获取所有用户
