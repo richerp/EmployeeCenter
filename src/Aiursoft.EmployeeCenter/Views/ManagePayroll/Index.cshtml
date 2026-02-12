@@ -79,7 +79,7 @@
             {
                 <tr class="clickable-row" data-href="@Url.Action("Details", new { id = item.Id })">
                                                     <td data-order="@item.Owner.DisplayName">
-                                                        <a asp-controller="Users" asp-action="Details" asp-route-id="@item.OwnerId" class="text-dark d-flex align-items-center">
+                                                        <a asp-controller="Users" asp-action="Details" asp-route-id="@item.OwnerId" class="text-body d-flex align-items-center">
                                                             <img src="@StorageService.RelativePathToInternetUrl(item.Owner.AvatarRelativePath)?w=72&square=true" alt="@item.Owner.DisplayName" class="rounded-circle" width="36" height="36" />
                                                             <span class="ms-2">@item.Owner.DisplayName</span>
                                                         </a>

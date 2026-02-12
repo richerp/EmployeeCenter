@@ -172,7 +172,7 @@
                                 <tr>
                                     <td>
                                         <div class="d-flex align-items-center">
-                                            <a asp-controller="Users" asp-action="Details" asp-route-id="@item.UserId" class="text-dark d-flex align-items-center">
+                                            <a asp-controller="Users" asp-action="Details" asp-route-id="@item.UserId" class="text-body d-flex align-items-center">
                                                 <img src="@StorageService.RelativePathToInternetUrl(item.User.AvatarRelativePath)?w=64&square=true" class="rounded-circle me-2" alt="@item.User.DisplayName" width="32" height="32">
                                                 <div class="fw-bold">@item.User.DisplayName</div>
                                             </a>
@@ -252,7 +252,7 @@
                                 <tr>
                                     <td>
                                         <div class="d-flex align-items-center">
-                                            <a asp-controller="Users" asp-action="Details" asp-route-id="@item.UserId" class="text-dark d-flex align-items-center">
+                                            <a asp-controller="Users" asp-action="Details" asp-route-id="@item.UserId" class="text-body d-flex align-items-center">
                                                 <img src="@StorageService.RelativePathToInternetUrl(item.User.AvatarRelativePath)?w=64&square=true" class="rounded-circle me-2" alt="@item.User.DisplayName" width="32" height="32">
                                                 <div class="fw-bold">@item.User.DisplayName</div>
                                             </a>
@@ -286,7 +286,7 @@
                                                                                 <td>
                                                                                     @if (item.ReviewedBy != null)
                                                                                     {
-                                                                                        <a asp-controller="Users" asp-action="Details" asp-route-id="@item.ReviewedById" class="text-dark">
+                                                                                        <a asp-controller="Users" asp-action="Details" asp-route-id="@item.ReviewedById" class="text-body">
                                                                                             @item.ReviewedBy.DisplayName
                                                                                         </a>
                                                                                     }

@@ -47,7 +47,7 @@
                             <td class="align-middle">
                                 @if (doc.Author != null)
                                 {
-                                    <a asp-controller="Users" asp-action="Details" asp-route-id="@doc.AuthorId" class="text-dark d-flex align-items-center">
+                                    <a asp-controller="Users" asp-action="Details" asp-route-id="@doc.AuthorId" class="text-body d-flex align-items-center">
                                         <img src="@StorageService.RelativePathToInternetUrl(doc.Author?.AvatarRelativePath ?? "images/default-avatar.jpg")?w=30&square=true" class="avatar img-fluid rounded me-1" alt="@doc.Author?.DisplayName" />
                                         @doc.Author?.DisplayName
                                     </a>

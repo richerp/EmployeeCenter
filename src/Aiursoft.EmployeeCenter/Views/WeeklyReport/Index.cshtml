@@ -83,7 +83,7 @@
                                 <i class="align-middle" data-lucide="filter"></i>
                             </div>
                             <div class="alert-message">
-                                @Localizer["Showing weekly reports from"]: <strong><a asp-controller="Users" asp-action="Details" asp-route-id="@Model.FilterUser.Id" class="text-dark">@Model.FilterUser.DisplayName</a></strong>
+                                @Localizer["Showing weekly reports from"]: <strong><a asp-controller="Users" asp-action="Details" asp-route-id="@Model.FilterUser.Id" class="text-body">@Model.FilterUser.DisplayName</a></strong>
                             </div>
                         </div>
                         <a asp-action="Index" asp-route-userId="" class="btn btn-sm btn-outline-info">@Localizer["Show All"]</a>

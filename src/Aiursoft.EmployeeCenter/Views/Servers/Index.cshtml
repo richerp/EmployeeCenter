@@ -65,7 +65,7 @@
                             <td class="align-middle">
                                 @if (s.Owner != null)
                                 {
-                                    <a asp-controller="Users" asp-action="Details" asp-route-id="@s.OwnerId" class="text-dark d-flex align-items-center">
+                                    <a asp-controller="Users" asp-action="Details" asp-route-id="@s.OwnerId" class="text-body d-flex align-items-center">
                                         <img src="@Storage.RelativePathToInternetUrl(s.Owner.AvatarRelativePath)" class="avatar img-fluid rounded me-1" alt="@s.Owner.DisplayName" style="width: 20px; height: 20px;" />
                                         @s.Owner.DisplayName
                                     </a>
