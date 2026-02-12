@@ -204,7 +204,7 @@ public class OnboardingTests
         var logoFileName = "custom-logo.png";
         using (var scope = _server!.Services.CreateScope())
         {
-            var storage = scope.ServiceProvider.GetRequiredService<Aiursoft.EmployeeCenter.Services.FileStorage.StorageService>();
+            var storage = scope.ServiceProvider.GetRequiredService<Services.FileStorage.StorageService>();
             var physicalPath = storage.GetFilePhysicalPath(logoFileName);
             var dir = Path.GetDirectoryName(physicalPath);
             if (!Directory.Exists(dir)) Directory.CreateDirectory(dir!);
