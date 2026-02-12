@@ -1,4 +1,7 @@
 @using Aiursoft.EmployeeCenter.Services
+@using Aiursoft.EmployeeCenter.Configuration
+@inject Aiursoft.EmployeeCenter.Services.GlobalSettingsService GlobalSettings
+@inject Aiursoft.EmployeeCenter.Services.FileStorage.StorageService StorageService
 @model Aiursoft.EmployeeCenter.Models.DashboardViewModels.IndexViewModel
 @{
     ViewData["Title"] = Localizer["Onboarding Wizard"];
@@ -27,6 +30,12 @@
     }
     
     var allCompleted = tasks.Any() && !foundIncomplete;
+
+    var logoPath = await GlobalSettings.GetSettingValueAsync(SettingsMap.ProjectLogo);
+    var logoUrl = string.IsNullOrWhiteSpace(logoPath) 
+        ? Url.Content("~/logo.svg") 
+        : StorageService.RelativePathToInternetUrl(logoPath);
+    var brandName = await GlobalSettings.GetSettingValueAsync(SettingsMap.BrandName);
 }
 
 <div class="container-fluid p-0">
@@ -175,7 +184,7 @@
                                 <div class="card bg-light border-0 shadow-sm mx-auto" style="max-width: 600px;">
                                     <div class="card-body p-5">
                                         <div class="mb-4">
-                                            <img src="~/logo.svg" alt="Aiursoft" style="height: 40px;" />
+                                            <img src="@logoUrl" alt="@brandName" style="height: 40px;" />
                                         </div>
                                         <h3 class="card-title">@Localizer["Certificate"]</h3>
                                         <hr />

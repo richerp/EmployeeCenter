@@ -173,5 +173,69 @@ public class OnboardingTests
         Assert.Contains("You have completed all onboarding tasks", dashboardHtml);
         Assert.Contains("Certificate", dashboardHtml);
         Assert.Contains("Wish your career takes off at Aiursoft!", dashboardHtml);
+        
+        // 12. Verify logo and brand name
+        Assert.Contains("logo.svg", dashboardHtml);
+        Assert.Contains("alt=\"Aiursoft\"", dashboardHtml);
+
+        // 13. Update logo and brand name in settings
+        // Login as admin again
+        loginToken = await GetAntiCsrfToken("/Account/Login");
+        loginContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "EmailOrUserName", "admin" },
+            { "Password", "admin123" },
+            { "__RequestVerificationToken", loginToken }
+        });
+        await _http.PostAsync("/Account/Login", loginContent);
+
+        // Update Brand Name
+        var editBrandToken = await GetAntiCsrfToken("/GlobalSettings/Index");
+        var editBrandContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Key", "BrandName" },
+            { "Value", "NewBrand" },
+            { "__RequestVerificationToken", editBrandToken }
+        });
+        var editBrandResponse = await _http.PostAsync("/GlobalSettings/Edit", editBrandContent);
+        Assert.AreEqual(HttpStatusCode.Found, editBrandResponse.StatusCode);
+
+        // Create a dummy logo file to pass validation
+        var logoFileName = "custom-logo.png";
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var storage = scope.ServiceProvider.GetRequiredService<Aiursoft.EmployeeCenter.Services.FileStorage.StorageService>();
+            var physicalPath = storage.GetFilePhysicalPath(logoFileName);
+            var dir = Path.GetDirectoryName(physicalPath);
+            if (!Directory.Exists(dir)) Directory.CreateDirectory(dir!);
+            await File.WriteAllTextAsync(physicalPath, "fake image content");
+        }
+
+        // Update Logo
+        var editLogoToken = await GetAntiCsrfToken("/GlobalSettings/Index");
+        var editLogoContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Key", "ProjectLogo" },
+            { "Value", logoFileName },
+            { "__RequestVerificationToken", editLogoToken }
+        });
+        var editLogoResponse = await _http.PostAsync("/GlobalSettings/Edit", editLogoContent);
+        Assert.AreEqual(HttpStatusCode.Found, editLogoResponse.StatusCode);
+
+        // 14. Verify updated logo and brand name on Dashboard as the user
+        await _http.GetAsync("/Account/LogOff");
+        loginToken = await GetAntiCsrfToken("/Account/Login");
+        await _http.PostAsync("/Account/Login", new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "EmailOrUserName", email },
+            { "Password", password },
+            { "__RequestVerificationToken", loginToken }
+        }));
+
+        dashboardResponse = await _http.GetAsync("/Dashboard");
+        dashboardResponse.EnsureSuccessStatusCode();
+        dashboardHtml = await dashboardResponse.Content.ReadAsStringAsync();
+        Assert.Contains(logoFileName, dashboardHtml);
+        Assert.Contains("alt=\"NewBrand\"", dashboardHtml);
     }
 }
