@@ -17,4 +17,8 @@ public class IncomingViewModel : UiStackLayoutViewModel
     public int RejectedThisMonth { get; set; }
 
     public int TeamOnLeaveCount { get; set; }
+
+    public bool CanApproveAnyLeave { get; set; }
+
+    public bool ShowAll { get; set; }
 }

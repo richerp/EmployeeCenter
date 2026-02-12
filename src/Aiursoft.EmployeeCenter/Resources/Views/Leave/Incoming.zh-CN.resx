@@ -147,5 +147,16 @@
   <data name="Type" xml:space="preserve">
     <value>类型</value>
   </data>
-
+  <data name="My Team" xml:space="preserve">
+    <value>我的团队</value>
+  </data>
+  <data name="All Company" xml:space="preserve">
+    <value>全公司</value>
+  </data>
+  <data name="awaiting review across company" xml:space="preserve">
+    <value>全公司待审核</value>
+  </data>
+  <data name="Company on Leave" xml:space="preserve">
+    <value>全公司休假中</value>
+  </data>
 </root>
