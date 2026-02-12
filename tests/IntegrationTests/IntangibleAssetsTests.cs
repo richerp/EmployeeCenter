@@ -1,8 +1,3 @@
-using Aiursoft.EmployeeCenter.Entities;
-using Aiursoft.EmployeeCenter.Tests.IntegrationTests;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
 [TestClass]
