@@ -4,7 +4,12 @@ namespace Aiursoft.EmployeeCenter.Configuration;
 
 public class SettingsMap
 {
+    public const string ProjectName = "ProjectName";
+    public const string BrandName = "BrandName";
+    public const string BrandHomeUrl = "BrandHomeUrl";
+    public const string ProjectLogo = "ProjectLogo";
     public const string AllowUserAdjustNickname = "Allow_User_Adjust_Nickname";
+    public const string Icp = "Icp";
     public const string AnnualLeavePerYear = "Annual_Leave_Per_Year";
     public const string DefaultPayrollCurrency = "Default_Payroll_Currency";
 
@@ -19,7 +24,7 @@ public class SettingsMap
     {
         new GlobalSettingDefinition
         {
-            Key = "ProjectName",
+            Key = ProjectName,
             Name = Localizer["Project Name"],
             Description = Localizer["The name of the project displayed in the frontend."],
             Type = SettingType.Text,
@@ -27,7 +32,7 @@ public class SettingsMap
         },
         new GlobalSettingDefinition
         {
-            Key = "BrandName",
+            Key = BrandName,
             Name = Localizer["Brand Name"],
             Description = Localizer["The brand name of the company or project. E.g. Aiursoft."],
             Type = SettingType.Text,
@@ -35,7 +40,7 @@ public class SettingsMap
         },
         new GlobalSettingDefinition
         {
-            Key = "BrandHomeUrl",
+            Key = BrandHomeUrl,
             Name = Localizer["Brand Home URL"],
             Description = Localizer["The URL of the company or project. E.g. https://www.aiursoft.com"],
             Type = SettingType.Text,
@@ -43,7 +48,7 @@ public class SettingsMap
         },
         new GlobalSettingDefinition
         {
-            Key = "ProjectLogo",
+            Key = ProjectLogo,
             Name = Localizer["Project Logo"],
             Description = Localizer["The logo of the project displayed in the navbar and footer. Support jpg, png, svg."],
             Type = SettingType.File,
@@ -59,6 +64,14 @@ public class SettingsMap
             Description = Localizer["Allow users to adjust their nickname in the profile management page."],
             Type = SettingType.Bool,
             DefaultValue = "True"
+        },
+        new GlobalSettingDefinition
+        {
+            Key = Icp,
+            Name = Localizer["ICP Number"],
+            Description = Localizer["The ICP license number for China mainland users. Leave empty to hide."],
+            Type = SettingType.Text,
+            DefaultValue = ""
         },
         new GlobalSettingDefinition
         {
