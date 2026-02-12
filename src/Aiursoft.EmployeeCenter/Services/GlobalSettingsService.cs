@@ -4,16 +4,26 @@ using Aiursoft.EmployeeCenter.Entities;
 using Aiursoft.EmployeeCenter.Models;
 using Aiursoft.EmployeeCenter.Services.FileStorage;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace Aiursoft.EmployeeCenter.Services;
 
 public class GlobalSettingsService(
-    EmployeeCenterDbContext dbContext,
+    EmployeeCenterDbContext dbContext, 
     IConfiguration configuration,
-    StorageService storageService) : IScopedDependency
+    StorageService storageService,
+    IMemoryCache cache) : IScopedDependency
 {
+    private string GetCacheKey(string key) => $"global-setting-{key}";
+
     public async Task<string> GetSettingValueAsync(string key)
     {
+        var cacheKey = GetCacheKey(key);
+        if (cache.TryGetValue(cacheKey, out string? cachedValue) && cachedValue != null)
+        {
+            return cachedValue;
+        }
+
         // 1. Check configuration (Environment variables, appsettings.json, etc.)
         var configValue = configuration[$"GlobalSettings:{key}"] ?? configuration[key];
         if (!string.IsNullOrWhiteSpace(configValue))
@@ -23,14 +33,20 @@ public class GlobalSettingsService(
 
         // 2. Check database
         var dbSetting = await dbContext.GlobalSettings.AsNoTracking().FirstOrDefaultAsync(s => s.Key == key);
+        string result;
         if (dbSetting != null && dbSetting.Value != null)
         {
-            return dbSetting.Value;
+            result = dbSetting.Value;
+        }
+        else
+        {
+            // 3. Fallback to default
+            var definition = SettingsMap.Definitions.FirstOrDefault(d => d.Key == key);
+            result = definition?.DefaultValue ?? string.Empty;
         }
 
-        // 3. Fallback to default
-        var definition = SettingsMap.Definitions.FirstOrDefault(d => d.Key == key);
-        return definition?.DefaultValue ?? string.Empty;
+        cache.Set(cacheKey, result, TimeSpan.FromHours(2));
+        return result;
     }
 
     public async Task<bool> GetBoolSettingAsync(string key)
@@ -44,12 +60,6 @@ public class GlobalSettingsService(
     {
         var value = await GetSettingValueAsync(key);
         return int.TryParse(value, out var result) ? result : 0;
-    }
-
-    public async Task<decimal> GetDecimalSettingAsync(string key)
-    {
-        var value = await GetSettingValueAsync(key);
-        return decimal.TryParse(value, out var result) ? result : 0m;
     }
 
     public bool IsOverriddenByConfig(string key)
@@ -125,7 +135,9 @@ public class GlobalSettingsService(
         }
 
         await dbContext.SaveChangesAsync();
+        cache.Remove(GetCacheKey(key));
     }
+
     public async Task SeedSettingsAsync()
     {
         foreach (var definition in SettingsMap.Definitions)
@@ -141,6 +153,7 @@ public class GlobalSettingsService(
                     Key = definition.Key,
                     Value = initialValue
                 });
+                cache.Remove(GetCacheKey(definition.Key));
             }
         }
         await dbContext.SaveChangesAsync();
