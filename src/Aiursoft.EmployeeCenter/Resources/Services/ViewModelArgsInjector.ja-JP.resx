@@ -57,6 +57,18 @@
   <data name="Approval Center" xml:space="preserve">
     <value>承認センター</value>
   </data>
+  <data name="Approval History" xml:space="preserve">
+    <value>承認履歴</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>承認</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>承認済み</value>
+  </data>
+  <data name="Approved Projects" xml:space="preserve">
+    <value>承認済みプロジェクト</value>
+  </data>
   <data name="Asset Categories" xml:space="preserve">
     <value>資産カテゴリ</value>
   </data>
@@ -123,6 +135,9 @@
   <data name="Code" xml:space="preserve">
     <value>コード</value>
   </data>
+  <data name="Comments" xml:space="preserve">
+    <value>コメント</value>
+  </data>
   <data name="Company Entities" xml:space="preserve">
     <value>会社エンティティ</value>
   </data>
@@ -131,6 +146,9 @@
   </data>
   <data name="Company Entity Info" xml:space="preserve">
     <value>会社エンティティ情報</value>
+  </data>
+  <data name="Company Intangible Assets" xml:space="preserve">
+    <value>企業の無形資産</value>
   </data>
   <data name="Company Name" xml:space="preserve">
     <value>会社名</value>
@@ -215,6 +233,9 @@
   </data>
   <data name="Edit Payroll" xml:space="preserve">
     <value>給与情報編集</value>
+  </data>
+  <data name="Edit Requirement" xml:space="preserve">
+    <value>要件の編集</value>
   </data>
   <data name="Edit Role" xml:space="preserve">
     <value>ロールを編集</value>
@@ -369,6 +390,9 @@
   <data name="Manage Questions" xml:space="preserve">
     <value>質問の管理</value>
   </data>
+  <data name="Manage Requirements" xml:space="preserve">
+    <value>要件の管理</value>
+  </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>共有管理</value>
   </data>
@@ -395,6 +419,9 @@
   </data>
   <data name="My Report Line" xml:space="preserve">
     <value>私のレポートライン</value>
+  </data>
+  <data name="My Requirements" xml:space="preserve">
+    <value>私の要件</value>
   </data>
   <data name="Not Found" xml:space="preserve">
     <value>見つかりません</value>
@@ -423,6 +450,9 @@
   <data name="Payrolls" xml:space="preserve">
     <value>給与</value>
   </data>
+  <data name="PendingApproval" xml:space="preserve">
+    <value>承認待ち</value>
+  </data>
   <data name="Permission Details" xml:space="preserve">
     <value>権限の詳細</value>
   </data>
@@ -444,6 +474,9 @@
   <data name="Profile Settings" xml:space="preserve">
     <value>プロフィール設定</value>
   </data>
+  <data name="Project Requirements" xml:space="preserve">
+    <value>プロジェクト要件</value>
+  </data>
   <data name="Projects" xml:space="preserve">
     <value>プロジェクト</value>
   </data>
@@ -459,8 +492,38 @@
   <data name="Register" xml:space="preserve">
     <value>登録</value>
   </data>
+  <data name="Reject" xml:space="preserve">
+    <value>却下</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>却下</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>返信</value>
+  </data>
+  <data name="Replying to" xml:space="preserve">
+    <value>返信中...</value>
+  </data>
   <data name="Report Line" xml:space="preserve">
     <value>レポートライン</value>
+  </data>
+  <data name="Request Changes" xml:space="preserve">
+    <value>変更を依頼する</value>
+  </data>
+  <data name="RequestChanges" xml:space="preserve">
+    <value>変更を依頼する</value>
+  </data>
+  <data name="Requirement" xml:space="preserve">
+    <value>要件</value>
+  </data>
+  <data name="Requirement Details" xml:space="preserve">
+    <value>要件の詳細</value>
+  </data>
+  <data name="Requirement saved successfully." xml:space="preserve">
+    <value>要件が正常に保存されました。</value>
+  </data>
+  <data name="Requirement Title" xml:space="preserve">
+    <value>要件タイトル</value>
   </data>
   <data name="Resources" xml:space="preserve">
     <value>リソース</value>
@@ -510,6 +573,18 @@
   <data name="Status" xml:space="preserve">
     <value>ステータス</value>
   </data>
+  <data name="Submit Comment" xml:space="preserve">
+    <value>コメントを送信</value>
+  </data>
+  <data name="Submit for Approval" xml:space="preserve">
+    <value>承認を依頼する</value>
+  </data>
+  <data name="Submit New Requirement" xml:space="preserve">
+    <value>新しい要件を提出する</value>
+  </data>
+  <data name="Submit Requirement" xml:space="preserve">
+    <value>要件を提出する</value>
+  </data>
   <data name="System" xml:space="preserve">
     <value>システム</value>
   </data>
@@ -542,6 +617,9 @@
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>週次レポート</value>
+  </data>
+  <data name="Write a comment..." xml:space="preserve">
+    <value>コメントを入力してください...</value>
   </data>
 
 </root>

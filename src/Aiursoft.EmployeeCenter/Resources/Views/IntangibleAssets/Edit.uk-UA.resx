@@ -30,6 +30,9 @@
   <data name="Back" xml:space="preserve">
     <value>Назад</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Валюта</value>
+  </data>
   <data name="Delete" xml:space="preserve">
     <value>Видалити</value>
   </data>
@@ -51,6 +54,9 @@
   <data name="Filing Subject" xml:space="preserve">
     <value>Предмет подання</value>
   </data>
+  <data name="Invoice File" xml:space="preserve">
+    <value>Рахунок-фактура</value>
+  </data>
   <data name="Invoice URL" xml:space="preserve">
     <value>URL рахунку</value>
   </data>
@@ -60,20 +66,35 @@
   <data name="Name / Description" xml:space="preserve">
     <value>Назва / Опис</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>Новий</value>
+  </data>
   <data name="None" xml:space="preserve">
     <value>Немає</value>
   </data>
   <data name="Password (Optional)" xml:space="preserve">
     <value>Пароль (не обов&apos;язково)</value>
   </data>
+  <data name="Public Intangible Asset" xml:space="preserve">
+    <value>Громадський нематеріальний актив</value>
+  </data>
   <data name="Purchase Price" xml:space="preserve">
     <value>Ціна придбання</value>
+  </data>
+  <data name="Registration Certificate" xml:space="preserve">
+    <value>Посвідчення про реєстрацію</value>
   </data>
   <data name="Registration Date" xml:space="preserve">
     <value>Дата реєстрації</value>
   </data>
+  <data name="Reload" xml:space="preserve">
+    <value>Оновити</value>
+  </data>
   <data name="Save Changes" xml:space="preserve">
     <value>Зберегти зміни</value>
+  </data>
+  <data name="Select Entity" xml:space="preserve">
+    <value>Вибрати організацію</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>Статус</value>

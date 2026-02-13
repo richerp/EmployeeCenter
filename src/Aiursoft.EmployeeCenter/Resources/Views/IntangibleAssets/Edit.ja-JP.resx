@@ -30,6 +30,9 @@
   <data name="Back" xml:space="preserve">
     <value>戻る</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>通貨</value>
+  </data>
   <data name="Delete" xml:space="preserve">
     <value>削除</value>
   </data>
@@ -51,6 +54,9 @@
   <data name="Filing Subject" xml:space="preserve">
     <value>出願対象</value>
   </data>
+  <data name="Invoice File" xml:space="preserve">
+    <value>請求書ファイル</value>
+  </data>
   <data name="Invoice URL" xml:space="preserve">
     <value>請求書のURL</value>
   </data>
@@ -60,20 +66,35 @@
   <data name="Name / Description" xml:space="preserve">
     <value>名前 / 説明</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>新規</value>
+  </data>
   <data name="None" xml:space="preserve">
     <value>なし</value>
   </data>
   <data name="Password (Optional)" xml:space="preserve">
     <value>パスワード（任意）</value>
   </data>
+  <data name="Public Intangible Asset" xml:space="preserve">
+    <value>公開無形資産</value>
+  </data>
   <data name="Purchase Price" xml:space="preserve">
     <value>購入価格</value>
+  </data>
+  <data name="Registration Certificate" xml:space="preserve">
+    <value>登録証明書</value>
   </data>
   <data name="Registration Date" xml:space="preserve">
     <value>登録日</value>
   </data>
+  <data name="Reload" xml:space="preserve">
+    <value>再読み込み</value>
+  </data>
   <data name="Save Changes" xml:space="preserve">
     <value>変更を保存</value>
+  </data>
+  <data name="Select Entity" xml:space="preserve">
+    <value>エンティティを選択</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>状態</value>

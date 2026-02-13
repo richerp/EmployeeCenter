@@ -45,6 +45,18 @@
   <data name="Approval Center" xml:space="preserve">
     <value>Approval Centre</value>
   </data>
+  <data name="Approval History" xml:space="preserve">
+    <value>Approval History</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="Approved Projects" xml:space="preserve">
+    <value>Approved Projects</value>
+  </data>
   <data name="Asset Categories" xml:space="preserve">
     <value>Asset Categories</value>
   </data>
@@ -111,6 +123,9 @@
   <data name="Code" xml:space="preserve">
     <value>Code</value>
   </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Comments</value>
+  </data>
   <data name="Company Entities" xml:space="preserve">
     <value>Company Entities</value>
   </data>
@@ -119,6 +134,9 @@
   </data>
   <data name="Company Entity Info" xml:space="preserve">
     <value>Company Entity Info</value>
+  </data>
+  <data name="Company Intangible Assets" xml:space="preserve">
+    <value>Company Intangible Assets</value>
   </data>
   <data name="Company Name" xml:space="preserve">
     <value>Company Name</value>
@@ -203,6 +221,9 @@
   </data>
   <data name="Edit Payroll" xml:space="preserve">
     <value>Edit Payroll</value>
+  </data>
+  <data name="Edit Requirement" xml:space="preserve">
+    <value>Edit Requirement</value>
   </data>
   <data name="Edit Role" xml:space="preserve">
     <value>Edit Role</value>
@@ -357,6 +378,9 @@
   <data name="Manage Questions" xml:space="preserve">
     <value>Manage Questions</value>
   </data>
+  <data name="Manage Requirements" xml:space="preserve">
+    <value>Manage Requirements</value>
+  </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>Manage Shares</value>
   </data>
@@ -383,6 +407,9 @@
   </data>
   <data name="My Report Line" xml:space="preserve">
     <value>My Report Line</value>
+  </data>
+  <data name="My Requirements" xml:space="preserve">
+    <value>My Requirements</value>
   </data>
   <data name="Not Found" xml:space="preserve">
     <value>Not Found</value>
@@ -411,6 +438,9 @@
   <data name="Payrolls" xml:space="preserve">
     <value>Payrolls</value>
   </data>
+  <data name="PendingApproval" xml:space="preserve">
+    <value>Pending Approval</value>
+  </data>
   <data name="Permission Details" xml:space="preserve">
     <value>Permission Details</value>
   </data>
@@ -432,6 +462,9 @@
   <data name="Profile Settings" xml:space="preserve">
     <value>Profile Settings</value>
   </data>
+  <data name="Project Requirements" xml:space="preserve">
+    <value>Project Requirements</value>
+  </data>
   <data name="Projects" xml:space="preserve">
     <value>Projects</value>
   </data>
@@ -447,8 +480,38 @@
   <data name="Register" xml:space="preserve">
     <value>Register</value>
   </data>
+  <data name="Reject" xml:space="preserve">
+    <value>Reject</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>Rejected</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>Reply</value>
+  </data>
+  <data name="Replying to" xml:space="preserve">
+    <value>Replying to</value>
+  </data>
   <data name="Report Line" xml:space="preserve">
     <value>Report Line</value>
+  </data>
+  <data name="Request Changes" xml:space="preserve">
+    <value>Request Changes</value>
+  </data>
+  <data name="RequestChanges" xml:space="preserve">
+    <value>Request Changes</value>
+  </data>
+  <data name="Requirement" xml:space="preserve">
+    <value>Requirement</value>
+  </data>
+  <data name="Requirement Details" xml:space="preserve">
+    <value>Requirement Details</value>
+  </data>
+  <data name="Requirement saved successfully." xml:space="preserve">
+    <value>Requirement saved successfully.</value>
+  </data>
+  <data name="Requirement Title" xml:space="preserve">
+    <value>Requirement Title</value>
   </data>
   <data name="Resources" xml:space="preserve">
     <value>Resources</value>
@@ -498,6 +561,18 @@
   <data name="Status" xml:space="preserve">
     <value>Status</value>
   </data>
+  <data name="Submit Comment" xml:space="preserve">
+    <value>Submit Comment</value>
+  </data>
+  <data name="Submit for Approval" xml:space="preserve">
+    <value>Submit for Approval</value>
+  </data>
+  <data name="Submit New Requirement" xml:space="preserve">
+    <value>Submit New Requirement</value>
+  </data>
+  <data name="Submit Requirement" xml:space="preserve">
+    <value>Submit Requirement</value>
+  </data>
   <data name="System" xml:space="preserve">
     <value>System</value>
   </data>
@@ -527,6 +602,9 @@
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>Weekly Report</value>
+  </data>
+  <data name="Write a comment..." xml:space="preserve">
+    <value>Write a comment...</value>
   </data>
 
 </root>

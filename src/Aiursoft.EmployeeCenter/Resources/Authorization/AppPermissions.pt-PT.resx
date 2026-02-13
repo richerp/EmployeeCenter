@@ -33,6 +33,9 @@
   <data name="Allows approving or rejecting any leave application, regardless of the reporting line." xml:space="preserve">
     <value>Permite aprovar ou rejeitar qualquer pedido de férias, independentemente da linha de reporting.</value>
   </data>
+  <data name="Allows approving, rejecting, or requesting changes for project requirements. Everyone can submit requirements and comment on them." xml:space="preserve">
+    <value>Permite aprovar, rejeitar ou solicitar alterações para os requisitos do projeto. Todos podem submeter requisitos e comentar sobre eles.</value>
+  </data>
   <data name="Allows assigning or removing roles for any user." xml:space="preserve">
     <value>Permite atribuir ou remover funções a qualquer utilizador.</value>
   </data>
@@ -155,6 +158,9 @@
   </data>
   <data name="Approve Any Leave" xml:space="preserve">
     <value>Aprovar Férias de Qualquer Pessoa</value>
+  </data>
+  <data name="Approve Project Requirements" xml:space="preserve">
+    <value>Aprovar Requisitos do Projeto</value>
   </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>Atribuir Funções a Utilizadores</value>

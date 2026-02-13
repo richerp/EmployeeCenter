@@ -54,6 +54,18 @@
   <data name="Approval Center" xml:space="preserve">
     <value>अनुमोदन केंद्र</value>
   </data>
+  <data name="Approval History" xml:space="preserve">
+    <value>स्वीकृति इतिहास</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>मंजूर करें</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>अनुमोदित</value>
+  </data>
+  <data name="Approved Projects" xml:space="preserve">
+    <value>मंजूर प्रोजेक्ट्स</value>
+  </data>
   <data name="Asset Categories" xml:space="preserve">
     <value>संपत्ति श्रेणियाँ</value>
   </data>
@@ -120,6 +132,9 @@
   <data name="Code" xml:space="preserve">
     <value>कोड</value>
   </data>
+  <data name="Comments" xml:space="preserve">
+    <value>टिप्पणियाँ</value>
+  </data>
   <data name="Company Entities" xml:space="preserve">
     <value>कंपनी एंटिटीज़</value>
   </data>
@@ -128,6 +143,9 @@
   </data>
   <data name="Company Entity Info" xml:space="preserve">
     <value>कंपनी एंटिटी जानकारी</value>
+  </data>
+  <data name="Company Intangible Assets" xml:space="preserve">
+    <value>कंपनी अभौतिक संपत्ति</value>
   </data>
   <data name="Company Name" xml:space="preserve">
     <value>कंपनी का नाम</value>
@@ -212,6 +230,9 @@
   </data>
   <data name="Edit Payroll" xml:space="preserve">
     <value>पेरॉल संपादित करें</value>
+  </data>
+  <data name="Edit Requirement" xml:space="preserve">
+    <value>आवश्यकता संपादित करें</value>
   </data>
   <data name="Edit Role" xml:space="preserve">
     <value>भूमिका संपादित करें</value>
@@ -366,6 +387,9 @@
   <data name="Manage Questions" xml:space="preserve">
     <value>प्रश्न प्रबंधित करें</value>
   </data>
+  <data name="Manage Requirements" xml:space="preserve">
+    <value>मानेज रिक्वायरमेंट्स</value>
+  </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>शेयर प्रबंधित करें</value>
   </data>
@@ -392,6 +416,9 @@
   </data>
   <data name="My Report Line" xml:space="preserve">
     <value>मेरी रिपोर्ट लाइन</value>
+  </data>
+  <data name="My Requirements" xml:space="preserve">
+    <value>मेरी आवश्यकताएँ</value>
   </data>
   <data name="Not Found" xml:space="preserve">
     <value>नहीं मिला</value>
@@ -420,6 +447,9 @@
   <data name="Payrolls" xml:space="preserve">
     <value>वेतन सूची</value>
   </data>
+  <data name="PendingApproval" xml:space="preserve">
+    <value>अनुमोदन के लिए प्रतीक्षा</value>
+  </data>
   <data name="Permission Details" xml:space="preserve">
     <value>अनुमति विवरण</value>
   </data>
@@ -441,6 +471,9 @@
   <data name="Profile Settings" xml:space="preserve">
     <value>प्रोफ़ाइल सेटिंग्स</value>
   </data>
+  <data name="Project Requirements" xml:space="preserve">
+    <value>प्रोजेक्ट आवश्यकताएं</value>
+  </data>
   <data name="Projects" xml:space="preserve">
     <value>प्रोजेक्ट्स</value>
   </data>
@@ -456,8 +489,38 @@
   <data name="Register" xml:space="preserve">
     <value>पंजीकरण करें</value>
   </data>
+  <data name="Reject" xml:space="preserve">
+    <value>अस्वीकार करें</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>अस्वीकृत</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>प्रतिक्रिया</value>
+  </data>
+  <data name="Replying to" xml:space="preserve">
+    <value>के उत्तर में</value>
+  </data>
   <data name="Report Line" xml:space="preserve">
     <value>रिपोर्ट लाइन</value>
+  </data>
+  <data name="Request Changes" xml:space="preserve">
+    <value>परिवर्तन के लिए अनुरोध करें</value>
+  </data>
+  <data name="RequestChanges" xml:space="preserve">
+    <value>परिवर्तन के लिए अनुरोध</value>
+  </data>
+  <data name="Requirement" xml:space="preserve">
+    <value>आवश्यकता</value>
+  </data>
+  <data name="Requirement Details" xml:space="preserve">
+    <value>आवश्यकता विवरण</value>
+  </data>
+  <data name="Requirement saved successfully." xml:space="preserve">
+    <value>आवश्यकता सफलतापूर्वक सहेजी गई।</value>
+  </data>
+  <data name="Requirement Title" xml:space="preserve">
+    <value>आवश्यकता शीर्षक</value>
   </data>
   <data name="Resources" xml:space="preserve">
     <value>संसाधन</value>
@@ -507,6 +570,18 @@
   <data name="Status" xml:space="preserve">
     <value>स्थिति</value>
   </data>
+  <data name="Submit Comment" xml:space="preserve">
+    <value>टिप्पणी जमा करें</value>
+  </data>
+  <data name="Submit for Approval" xml:space="preserve">
+    <value>अनुमोदन के लिए जमा करें</value>
+  </data>
+  <data name="Submit New Requirement" xml:space="preserve">
+    <value>नए आवश्यकता का उपलब्ध कराएं</value>
+  </data>
+  <data name="Submit Requirement" xml:space="preserve">
+    <value>आवश्यकता जमा करें</value>
+  </data>
   <data name="System" xml:space="preserve">
     <value>सिस्टम</value>
   </data>
@@ -539,6 +614,9 @@
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>साप्ताहिक रिपोर्ट</value>
+  </data>
+  <data name="Write a comment..." xml:space="preserve">
+    <value>टिप्पणी लिखें...</value>
   </data>
 
 </root>

@@ -57,6 +57,18 @@
   <data name="Approval Center" xml:space="preserve">
     <value>승인 센터</value>
   </data>
+  <data name="Approval History" xml:space="preserve">
+    <value>승인 내역</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>승인</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>승인됨</value>
+  </data>
+  <data name="Approved Projects" xml:space="preserve">
+    <value>승인된 프로젝트</value>
+  </data>
   <data name="Asset Categories" xml:space="preserve">
     <value>자산 카테고리</value>
   </data>
@@ -123,6 +135,9 @@
   <data name="Code" xml:space="preserve">
     <value>코드</value>
   </data>
+  <data name="Comments" xml:space="preserve">
+    <value>댓글</value>
+  </data>
   <data name="Company Entities" xml:space="preserve">
     <value>회사 엔티티</value>
   </data>
@@ -131,6 +146,9 @@
   </data>
   <data name="Company Entity Info" xml:space="preserve">
     <value>회사 엔티티 정보</value>
+  </data>
+  <data name="Company Intangible Assets" xml:space="preserve">
+    <value>회사 무형 자산</value>
   </data>
   <data name="Company Name" xml:space="preserve">
     <value>회사 이름</value>
@@ -215,6 +233,9 @@
   </data>
   <data name="Edit Payroll" xml:space="preserve">
     <value>급여 수정</value>
+  </data>
+  <data name="Edit Requirement" xml:space="preserve">
+    <value>요구사항 편집</value>
   </data>
   <data name="Edit Role" xml:space="preserve">
     <value>역할 편집</value>
@@ -369,6 +390,9 @@
   <data name="Manage Questions" xml:space="preserve">
     <value>질문 관리</value>
   </data>
+  <data name="Manage Requirements" xml:space="preserve">
+    <value>요구사항 관리</value>
+  </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>공유 관리</value>
   </data>
@@ -395,6 +419,9 @@
   </data>
   <data name="My Report Line" xml:space="preserve">
     <value>내 보고선</value>
+  </data>
+  <data name="My Requirements" xml:space="preserve">
+    <value>내 요구사항</value>
   </data>
   <data name="Not Found" xml:space="preserve">
     <value>찾을 수 없음</value>
@@ -423,6 +450,9 @@
   <data name="Payrolls" xml:space="preserve">
     <value>급여</value>
   </data>
+  <data name="PendingApproval" xml:space="preserve">
+    <value>승인 대기</value>
+  </data>
   <data name="Permission Details" xml:space="preserve">
     <value>권한 세부 정보</value>
   </data>
@@ -444,6 +474,9 @@
   <data name="Profile Settings" xml:space="preserve">
     <value>프로필 설정</value>
   </data>
+  <data name="Project Requirements" xml:space="preserve">
+    <value>프로젝트 요구사항</value>
+  </data>
   <data name="Projects" xml:space="preserve">
     <value>프로젝트</value>
   </data>
@@ -459,8 +492,38 @@
   <data name="Register" xml:space="preserve">
     <value>회원가입</value>
   </data>
+  <data name="Reject" xml:space="preserve">
+    <value>거부</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>거부됨</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>답글</value>
+  </data>
+  <data name="Replying to" xml:space="preserve">
+    <value>답글 달기</value>
+  </data>
   <data name="Report Line" xml:space="preserve">
     <value>보고선</value>
+  </data>
+  <data name="Request Changes" xml:space="preserve">
+    <value>변경 요청</value>
+  </data>
+  <data name="RequestChanges" xml:space="preserve">
+    <value>변경 요청</value>
+  </data>
+  <data name="Requirement" xml:space="preserve">
+    <value>요구사항</value>
+  </data>
+  <data name="Requirement Details" xml:space="preserve">
+    <value>요구사항 세부 정보</value>
+  </data>
+  <data name="Requirement saved successfully." xml:space="preserve">
+    <value>요구사항이 성공적으로 저장되었습니다.</value>
+  </data>
+  <data name="Requirement Title" xml:space="preserve">
+    <value>요구사항 제목</value>
   </data>
   <data name="Resources" xml:space="preserve">
     <value>자원</value>
@@ -510,6 +573,18 @@
   <data name="Status" xml:space="preserve">
     <value>상태</value>
   </data>
+  <data name="Submit Comment" xml:space="preserve">
+    <value>댓글 제출</value>
+  </data>
+  <data name="Submit for Approval" xml:space="preserve">
+    <value>승인 요청 제출</value>
+  </data>
+  <data name="Submit New Requirement" xml:space="preserve">
+    <value>새 요구사항 제출</value>
+  </data>
+  <data name="Submit Requirement" xml:space="preserve">
+    <value>요구사항 제출</value>
+  </data>
   <data name="System" xml:space="preserve">
     <value>시스템</value>
   </data>
@@ -542,6 +617,9 @@
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>주간 보고서</value>
+  </data>
+  <data name="Write a comment..." xml:space="preserve">
+    <value>댓글을 작성하세요...</value>
   </data>
 
 </root>

@@ -27,6 +27,9 @@
   <data name="Assignee" xml:space="preserve">
     <value>Ανάθεση</value>
   </data>
+  <data name="Belongs to Entity" xml:space="preserve">
+    <value>Ανήκει σε Οντότητα</value>
+  </data>
   <data name="Description" xml:space="preserve">
     <value>Περιγραφή</value>
   </data>
@@ -72,11 +75,17 @@
   <data name="Password" xml:space="preserve">
     <value>Κωδικός</value>
   </data>
+  <data name="Public" xml:space="preserve">
+    <value>Δημόσιο</value>
+  </data>
   <data name="Purchase Price" xml:space="preserve">
     <value>Τιμή αγοράς</value>
   </data>
   <data name="Query Method" xml:space="preserve">
     <value>Μέθοδος Αναζήτησης</value>
+  </data>
+  <data name="Registration Certificate" xml:space="preserve">
+    <value>Πιστοποιητικό Εγγραφής</value>
   </data>
   <data name="Registration Date" xml:space="preserve">
     <value>Ημερομηνία Εγγραφής</value>
@@ -89,6 +98,9 @@
   </data>
   <data name="Type" xml:space="preserve">
     <value>Τύπος</value>
+  </data>
+  <data name="View Certificate" xml:space="preserve">
+    <value>Προβολή Πιστοποιητικού</value>
   </data>
   <data name="View Invoice" xml:space="preserve">
     <value>Προβολή Παραστατικού</value>

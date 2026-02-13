@@ -54,6 +54,18 @@
   <data name="Approval Center" xml:space="preserve">
     <value>Godkendelsescenter</value>
   </data>
+  <data name="Approval History" xml:space="preserve">
+    <value>Godkendelseshistorik</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>Godkend</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>Godkendt</value>
+  </data>
+  <data name="Approved Projects" xml:space="preserve">
+    <value>Godkendte projekter</value>
+  </data>
   <data name="Asset Categories" xml:space="preserve">
     <value>Aktivkategorier</value>
   </data>
@@ -120,6 +132,9 @@
   <data name="Code" xml:space="preserve">
     <value>Kode</value>
   </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Kommentarer</value>
+  </data>
   <data name="Company Entities" xml:space="preserve">
     <value>Virksomhedsentiteter</value>
   </data>
@@ -128,6 +143,9 @@
   </data>
   <data name="Company Entity Info" xml:space="preserve">
     <value>Virksomhedsentitet Info</value>
+  </data>
+  <data name="Company Intangible Assets" xml:space="preserve">
+    <value>Virksomhedens immaterielle aktiver</value>
   </data>
   <data name="Company Name" xml:space="preserve">
     <value>Virksomhedsnavn</value>
@@ -212,6 +230,9 @@
   </data>
   <data name="Edit Payroll" xml:space="preserve">
     <value>Rediger løn</value>
+  </data>
+  <data name="Edit Requirement" xml:space="preserve">
+    <value>Rediger krav</value>
   </data>
   <data name="Edit Role" xml:space="preserve">
     <value>Rediger Rolle</value>
@@ -366,6 +387,9 @@
   <data name="Manage Questions" xml:space="preserve">
     <value>Håndtér spørgsmål</value>
   </data>
+  <data name="Manage Requirements" xml:space="preserve">
+    <value>Håndtér krav</value>
+  </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>Administrer Delinger</value>
   </data>
@@ -392,6 +416,9 @@
   </data>
   <data name="My Report Line" xml:space="preserve">
     <value>Min Rapportlinje</value>
+  </data>
+  <data name="My Requirements" xml:space="preserve">
+    <value>Mine krav</value>
   </data>
   <data name="Not Found" xml:space="preserve">
     <value>Ikke fundet</value>
@@ -420,6 +447,9 @@
   <data name="Payrolls" xml:space="preserve">
     <value>Lønninger</value>
   </data>
+  <data name="PendingApproval" xml:space="preserve">
+    <value>Venter på godkendelse</value>
+  </data>
   <data name="Permission Details" xml:space="preserve">
     <value>Tilladelsesdetaljer</value>
   </data>
@@ -441,6 +471,9 @@
   <data name="Profile Settings" xml:space="preserve">
     <value>Profilindstillinger</value>
   </data>
+  <data name="Project Requirements" xml:space="preserve">
+    <value>Projektkrav</value>
+  </data>
   <data name="Projects" xml:space="preserve">
     <value>Projekter</value>
   </data>
@@ -456,8 +489,38 @@
   <data name="Register" xml:space="preserve">
     <value>Registrer</value>
   </data>
+  <data name="Reject" xml:space="preserve">
+    <value>Afvise</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>Afslået</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>Svar</value>
+  </data>
+  <data name="Replying to" xml:space="preserve">
+    <value>Svarer til</value>
+  </data>
   <data name="Report Line" xml:space="preserve">
     <value>Rapportlinje</value>
+  </data>
+  <data name="Request Changes" xml:space="preserve">
+    <value>Anmod om ændringer</value>
+  </data>
+  <data name="RequestChanges" xml:space="preserve">
+    <value>Anmod om ændringer</value>
+  </data>
+  <data name="Requirement" xml:space="preserve">
+    <value>Krav</value>
+  </data>
+  <data name="Requirement Details" xml:space="preserve">
+    <value>Kravdetaljer</value>
+  </data>
+  <data name="Requirement saved successfully." xml:space="preserve">
+    <value>Krav gemt successfullt.</value>
+  </data>
+  <data name="Requirement Title" xml:space="preserve">
+    <value>Anmodningstitel</value>
   </data>
   <data name="Resources" xml:space="preserve">
     <value>Ressourcer</value>
@@ -507,6 +570,18 @@
   <data name="Status" xml:space="preserve">
     <value>Status</value>
   </data>
+  <data name="Submit Comment" xml:space="preserve">
+    <value>Indsend kommentar</value>
+  </data>
+  <data name="Submit for Approval" xml:space="preserve">
+    <value>Indsend til godkendelse</value>
+  </data>
+  <data name="Submit New Requirement" xml:space="preserve">
+    <value>Indsend ny krav</value>
+  </data>
+  <data name="Submit Requirement" xml:space="preserve">
+    <value>Indsend krav</value>
+  </data>
   <data name="System" xml:space="preserve">
     <value>System</value>
   </data>
@@ -539,6 +614,9 @@
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>Ugentlig rapport</value>
+  </data>
+  <data name="Write a comment..." xml:space="preserve">
+    <value>Skriv en kommentar...</value>
   </data>
 
 </root>

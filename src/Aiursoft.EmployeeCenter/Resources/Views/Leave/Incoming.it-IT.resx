@@ -21,6 +21,9 @@
       <data name="Actions" xml:space="preserve">
     <value>Azioni</value>
   </data>
+  <data name="All Company" xml:space="preserve">
+    <value>Tutta l&apos;azienda</value>
+  </data>
   <data name="Annual Leave" xml:space="preserve">
     <value>Congedo annuale</value>
   </data>
@@ -51,6 +54,9 @@
   <data name="Approver" xml:space="preserve">
     <value>Approvatore</value>
   </data>
+  <data name="awaiting review across company" xml:space="preserve">
+    <value>in attesa di revisione in tutta l&apos;azienda</value>
+  </data>
   <data name="awaiting your review" xml:space="preserve">
     <value>in attesa della tua revisione</value>
   </data>
@@ -71,6 +77,9 @@
   </data>
   <data name="Important: Approval Decisions Are Final" xml:space="preserve">
     <value>Importante: Le decisioni di approvazione sono definitive</value>
+  </data>
+  <data name="My Team" xml:space="preserve">
+    <value>Il mio team</value>
   </data>
   <data name="No approval history." xml:space="preserve">
     <value>Nessun cronologia di approvazione.</value>

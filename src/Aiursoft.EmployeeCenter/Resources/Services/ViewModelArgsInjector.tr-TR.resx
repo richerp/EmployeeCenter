@@ -54,6 +54,18 @@
   <data name="Approval Center" xml:space="preserve">
     <value>Onay Merkezi</value>
   </data>
+  <data name="Approval History" xml:space="preserve">
+    <value>Onay Geçmişi</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>Onayla</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>Onaylandı</value>
+  </data>
+  <data name="Approved Projects" xml:space="preserve">
+    <value>Onaylı Projeler</value>
+  </data>
   <data name="Asset Categories" xml:space="preserve">
     <value>Varlık Kategorileri</value>
   </data>
@@ -120,6 +132,9 @@
   <data name="Code" xml:space="preserve">
     <value>Kod</value>
   </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Yorumlar</value>
+  </data>
   <data name="Company Entities" xml:space="preserve">
     <value>Şirket Varlıkları</value>
   </data>
@@ -128,6 +143,9 @@
   </data>
   <data name="Company Entity Info" xml:space="preserve">
     <value>Şirket Varlık Bilgisi</value>
+  </data>
+  <data name="Company Intangible Assets" xml:space="preserve">
+    <value>Şirket İtibari Varlıkları</value>
   </data>
   <data name="Company Name" xml:space="preserve">
     <value>Şirket Adı</value>
@@ -212,6 +230,9 @@
   </data>
   <data name="Edit Payroll" xml:space="preserve">
     <value>Maaş Düzenle</value>
+  </data>
+  <data name="Edit Requirement" xml:space="preserve">
+    <value>Gereksinimi Düzenle</value>
   </data>
   <data name="Edit Role" xml:space="preserve">
     <value>Rolü Düzenle</value>
@@ -366,6 +387,9 @@
   <data name="Manage Questions" xml:space="preserve">
     <value>Soruları Yönet</value>
   </data>
+  <data name="Manage Requirements" xml:space="preserve">
+    <value>Gereksinimleri Yönet</value>
+  </data>
   <data name="Manage Shares" xml:space="preserve">
     <value>Paylaşımları Yönet</value>
   </data>
@@ -392,6 +416,9 @@
   </data>
   <data name="My Report Line" xml:space="preserve">
     <value>Rapor Hattım</value>
+  </data>
+  <data name="My Requirements" xml:space="preserve">
+    <value>Benim Taleplerim</value>
   </data>
   <data name="Not Found" xml:space="preserve">
     <value>Bulunamadı</value>
@@ -420,6 +447,9 @@
   <data name="Payrolls" xml:space="preserve">
     <value>Maaşlar</value>
   </data>
+  <data name="PendingApproval" xml:space="preserve">
+    <value>BekleyenOnay</value>
+  </data>
   <data name="Permission Details" xml:space="preserve">
     <value>İzin Detayları</value>
   </data>
@@ -441,6 +471,9 @@
   <data name="Profile Settings" xml:space="preserve">
     <value>Profil Ayarları</value>
   </data>
+  <data name="Project Requirements" xml:space="preserve">
+    <value>Proje Gereksinimleri</value>
+  </data>
   <data name="Projects" xml:space="preserve">
     <value>Projeler</value>
   </data>
@@ -456,8 +489,38 @@
   <data name="Register" xml:space="preserve">
     <value>Kayıt Ol</value>
   </data>
+  <data name="Reject" xml:space="preserve">
+    <value>Reddet</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>Reddedildi</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>Yanıtla</value>
+  </data>
+  <data name="Replying to" xml:space="preserve">
+    <value>Yanıtlanan</value>
+  </data>
   <data name="Report Line" xml:space="preserve">
     <value>Rapor Hattı</value>
+  </data>
+  <data name="Request Changes" xml:space="preserve">
+    <value>Değişiklik Talep Et</value>
+  </data>
+  <data name="RequestChanges" xml:space="preserve">
+    <value>Değişiklik Talep Et</value>
+  </data>
+  <data name="Requirement" xml:space="preserve">
+    <value>Gereklilik</value>
+  </data>
+  <data name="Requirement Details" xml:space="preserve">
+    <value>Gereksinim Detayları</value>
+  </data>
+  <data name="Requirement saved successfully." xml:space="preserve">
+    <value>Gereksinim başarıyla kaydedildi.</value>
+  </data>
+  <data name="Requirement Title" xml:space="preserve">
+    <value>Gereklilik Başlığı</value>
   </data>
   <data name="Resources" xml:space="preserve">
     <value>Kaynaklar</value>
@@ -507,6 +570,18 @@
   <data name="Status" xml:space="preserve">
     <value>Durum</value>
   </data>
+  <data name="Submit Comment" xml:space="preserve">
+    <value>Yorumu Gönder</value>
+  </data>
+  <data name="Submit for Approval" xml:space="preserve">
+    <value>Onay İçin Gönder</value>
+  </data>
+  <data name="Submit New Requirement" xml:space="preserve">
+    <value>Yeni Gereklilik Gönder</value>
+  </data>
+  <data name="Submit Requirement" xml:space="preserve">
+    <value>Talep Gönder</value>
+  </data>
   <data name="System" xml:space="preserve">
     <value>Sistem</value>
   </data>
@@ -539,6 +614,9 @@
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>Haftalık Rapor</value>
+  </data>
+  <data name="Write a comment..." xml:space="preserve">
+    <value>Yorum yazın...</value>
   </data>
 
 </root>

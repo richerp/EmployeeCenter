@@ -30,6 +30,9 @@
   <data name="Back" xml:space="preserve">
     <value>Takaisin</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Valuutta</value>
+  </data>
   <data name="Delete" xml:space="preserve">
     <value>Poista</value>
   </data>
@@ -51,6 +54,9 @@
   <data name="Filing Subject" xml:space="preserve">
     <value>Tiedostojen aihe</value>
   </data>
+  <data name="Invoice File" xml:space="preserve">
+    <value>Laskutusasiakirja</value>
+  </data>
   <data name="Invoice URL" xml:space="preserve">
     <value>Laskutusosoite</value>
   </data>
@@ -60,20 +66,35 @@
   <data name="Name / Description" xml:space="preserve">
     <value>Nimi / Kuvaus</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>Uusi</value>
+  </data>
   <data name="None" xml:space="preserve">
     <value>Ei mitään</value>
   </data>
   <data name="Password (Optional)" xml:space="preserve">
     <value>Salasana (valinnainen)</value>
   </data>
+  <data name="Public Intangible Asset" xml:space="preserve">
+    <value>Julkinen ei-aineellinen omaisuus</value>
+  </data>
   <data name="Purchase Price" xml:space="preserve">
     <value>Ostohinta</value>
+  </data>
+  <data name="Registration Certificate" xml:space="preserve">
+    <value>Rekisteröintikuitto</value>
   </data>
   <data name="Registration Date" xml:space="preserve">
     <value>Rekisteröintipäivä</value>
   </data>
+  <data name="Reload" xml:space="preserve">
+    <value>Lataa uudelleen</value>
+  </data>
   <data name="Save Changes" xml:space="preserve">
     <value>Tallenna muutokset</value>
+  </data>
+  <data name="Select Entity" xml:space="preserve">
+    <value>Valitse yksikkö</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>Tila</value>

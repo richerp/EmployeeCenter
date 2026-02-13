@@ -21,6 +21,9 @@
       <data name="Actions" xml:space="preserve">
     <value>Działania</value>
   </data>
+  <data name="All Company" xml:space="preserve">
+    <value>Wszystka firma</value>
+  </data>
   <data name="Annual Leave" xml:space="preserve">
     <value>Urlop urlopowy</value>
   </data>
@@ -51,6 +54,9 @@
   <data name="Approver" xml:space="preserve">
     <value>Zatwierdzający</value>
   </data>
+  <data name="awaiting review across company" xml:space="preserve">
+    <value>oczekujące na przegląd w całej firmie</value>
+  </data>
   <data name="awaiting your review" xml:space="preserve">
     <value>oczekiwanie na Twoją ocenę</value>
   </data>
@@ -71,6 +77,9 @@
   </data>
   <data name="Important: Approval Decisions Are Final" xml:space="preserve">
     <value>Ważne: Decyzje dotyczące zatwierdzenia są ostateczne</value>
+  </data>
+  <data name="My Team" xml:space="preserve">
+    <value>Moja drużyna</value>
   </data>
   <data name="No approval history." xml:space="preserve">
     <value>Brak historii zatwierdzeń.</value>

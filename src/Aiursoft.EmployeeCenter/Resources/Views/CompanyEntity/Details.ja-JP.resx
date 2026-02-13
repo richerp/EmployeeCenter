@@ -33,6 +33,9 @@
   <data name="Ask merchants for electronic invoices (PDF/OFD) sent to your email or employees@aiursoft.com." xml:space="preserve">
     <value>電子請求書（PDF/OFD）を、メールまたはemployees@aiursoft.comに送ってもらうよう商社に依頼してください。</value>
   </data>
+  <data name="Associated Intangible Assets" xml:space="preserve">
+    <value>関連する無形資産</value>
+  </data>
   <data name="Associated Servers" xml:space="preserve">
     <value>関連サーバー</value>
   </data>
@@ -116,6 +119,9 @@
   </data>
   <data name="Must be real business expenses. No fake invoices." xml:space="preserve">
     <value>本物の業務費用でなければなりません。偽の領収書は不可。</value>
+  </data>
+  <data name="No intangible assets associated." xml:space="preserve">
+    <value>関連する無形資産はありません。</value>
   </data>
   <data name="No servers associated." xml:space="preserve">
     <value>関連するサーバーがありません。</value>

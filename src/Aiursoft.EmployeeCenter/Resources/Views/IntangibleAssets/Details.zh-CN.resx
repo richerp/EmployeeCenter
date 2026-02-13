@@ -27,6 +27,9 @@
   <data name="Assignee" xml:space="preserve">
     <value>负责人</value>
   </data>
+  <data name="Belongs to Entity" xml:space="preserve">
+    <value>所属实体</value>
+  </data>
   <data name="Description" xml:space="preserve">
     <value>描述</value>
   </data>
@@ -72,11 +75,17 @@
   <data name="Password" xml:space="preserve">
     <value>密码</value>
   </data>
+  <data name="Public" xml:space="preserve">
+    <value>公开</value>
+  </data>
   <data name="Purchase Price" xml:space="preserve">
     <value>采购价格</value>
   </data>
   <data name="Query Method" xml:space="preserve">
     <value>查询方式</value>
+  </data>
+  <data name="Registration Certificate" xml:space="preserve">
+    <value>注册证书</value>
   </data>
   <data name="Registration Date" xml:space="preserve">
     <value>注册日期</value>
@@ -89,6 +98,9 @@
   </data>
   <data name="Type" xml:space="preserve">
     <value>类型</value>
+  </data>
+  <data name="View Certificate" xml:space="preserve">
+    <value>查看证书</value>
   </data>
   <data name="View Invoice" xml:space="preserve">
     <value>查看发票</value>

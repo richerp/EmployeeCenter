@@ -33,6 +33,9 @@
   <data name="Ask merchants for electronic invoices (PDF/OFD) sent to your email or employees@aiursoft.com." xml:space="preserve">
     <value>Be om elektroniska fakturor (PDF/OFD) från leverantörer som skickas till din e-post eller employees@aiursoft.com.</value>
   </data>
+  <data name="Associated Intangible Assets" xml:space="preserve">
+    <value>Associerade immateriella tillgångar</value>
+  </data>
   <data name="Associated Servers" xml:space="preserve">
     <value>Associerade servrar</value>
   </data>
@@ -116,6 +119,9 @@
   </data>
   <data name="Must be real business expenses. No fake invoices." xml:space="preserve">
     <value>Måste vara verkliga affärsutgifter. Inga falska fakturor.</value>
+  </data>
+  <data name="No intangible assets associated." xml:space="preserve">
+    <value>Inga immateriella tillgångar kopplade.</value>
   </data>
   <data name="No servers associated." xml:space="preserve">
     <value>Inga servrar kopplade.</value>

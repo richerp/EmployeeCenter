@@ -30,6 +30,9 @@
   <data name="Back" xml:space="preserve">
     <value>Quay lại</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Tiền tệ</value>
+  </data>
   <data name="Delete" xml:space="preserve">
     <value>Xóa</value>
   </data>
@@ -51,6 +54,9 @@
   <data name="Filing Subject" xml:space="preserve">
     <value>Chủ thể đăng ký</value>
   </data>
+  <data name="Invoice File" xml:space="preserve">
+    <value>Hóa đơn</value>
+  </data>
   <data name="Invoice URL" xml:space="preserve">
     <value>URL Hóa đơn</value>
   </data>
@@ -60,20 +66,35 @@
   <data name="Name / Description" xml:space="preserve">
     <value>Tên / Mô tả</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>Mới</value>
+  </data>
   <data name="None" xml:space="preserve">
     <value>Không có</value>
   </data>
   <data name="Password (Optional)" xml:space="preserve">
     <value>Mật khẩu (Tùy chọn)</value>
   </data>
+  <data name="Public Intangible Asset" xml:space="preserve">
+    <value>Tài sản vô hình công khai</value>
+  </data>
   <data name="Purchase Price" xml:space="preserve">
     <value>Giá mua</value>
+  </data>
+  <data name="Registration Certificate" xml:space="preserve">
+    <value>Chứng nhận đăng ký</value>
   </data>
   <data name="Registration Date" xml:space="preserve">
     <value>Ngày đăng ký</value>
   </data>
+  <data name="Reload" xml:space="preserve">
+    <value>Tải lại</value>
+  </data>
   <data name="Save Changes" xml:space="preserve">
     <value>Lưu thay đổi</value>
+  </data>
+  <data name="Select Entity" xml:space="preserve">
+    <value>Chọn Tổ chức</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>Trạng thái</value>

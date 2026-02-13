@@ -21,6 +21,9 @@
       <data name="Actions" xml:space="preserve">
     <value>Åtgärder</value>
   </data>
+  <data name="All Company" xml:space="preserve">
+    <value>Alla i företaget</value>
+  </data>
   <data name="Annual Leave" xml:space="preserve">
     <value>Årlig ledighet</value>
   </data>
@@ -51,6 +54,9 @@
   <data name="Approver" xml:space="preserve">
     <value>Godkännare</value>
   </data>
+  <data name="awaiting review across company" xml:space="preserve">
+    <value>väntar på granskning över hela företaget</value>
+  </data>
   <data name="awaiting your review" xml:space="preserve">
     <value>väntar på din granskning</value>
   </data>
@@ -71,6 +77,9 @@
   </data>
   <data name="Important: Approval Decisions Are Final" xml:space="preserve">
     <value>Wiktigt: Godkännandeavgöranden är slutgiltiga</value>
+  </data>
+  <data name="My Team" xml:space="preserve">
+    <value>Mitt team</value>
   </data>
   <data name="No approval history." xml:space="preserve">
     <value>Ingen godkännandehistorik.</value>

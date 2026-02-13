@@ -33,6 +33,9 @@
   <data name="Ask merchants for electronic invoices (PDF/OFD) sent to your email or employees@aiursoft.com." xml:space="preserve">
     <value>优先让商家开具电子发票（PDF或OFD格式），直接发送到员工邮箱或公司指定财务邮箱 (employees@aiursoft.com)。</value>
   </data>
+  <data name="Associated Intangible Assets" xml:space="preserve">
+    <value>关联的无形资产</value>
+  </data>
   <data name="Associated Servers" xml:space="preserve">
     <value>关联服务器</value>
   </data>
@@ -122,6 +125,9 @@
   </data>
   <data name="Must be real business expenses. No fake invoices." xml:space="preserve">
     <value>注意：必须是真实发生的费用，严禁虚假虚开（如购买购物卡开成办公用品等），这是红线。</value>
+  </data>
+  <data name="No intangible assets associated." xml:space="preserve">
+    <value>暂无关联的无形资产。</value>
   </data>
   <data name="No servers associated." xml:space="preserve">
     <value>暂无关联服务器。</value>

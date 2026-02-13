@@ -33,6 +33,9 @@
   <data name="Create" xml:space="preserve">
     <value>Δημιουργία</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Νόμισμα</value>
+  </data>
   <data name="Description" xml:space="preserve">
     <value>Περιγραφή</value>
   </data>
@@ -51,6 +54,9 @@
   <data name="Filing Subject" xml:space="preserve">
     <value>Θέμα Καταχώρησης</value>
   </data>
+  <data name="Invoice File" xml:space="preserve">
+    <value>Αρχείο Παραστατικού</value>
+  </data>
   <data name="Invoice URL" xml:space="preserve">
     <value>URL της Παραστατικής</value>
   </data>
@@ -60,17 +66,32 @@
   <data name="Name / Description" xml:space="preserve">
     <value>Όνομα / Περιγραφή</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>Νέο</value>
+  </data>
   <data name="None" xml:space="preserve">
     <value>Κανένας</value>
   </data>
   <data name="Password (Optional)" xml:space="preserve">
     <value>Κωδικός (Προαιρετικό)</value>
   </data>
+  <data name="Public Intangible Asset" xml:space="preserve">
+    <value>Δημόσιο Ακίνητο Περιουσιακό Στοιχείο</value>
+  </data>
   <data name="Purchase Price" xml:space="preserve">
     <value>Τιμή Αγοράς</value>
   </data>
+  <data name="Registration Certificate" xml:space="preserve">
+    <value>Πιστοποιητικό Εγγραφής</value>
+  </data>
   <data name="Registration Date" xml:space="preserve">
     <value>Ημερομηνία Εγγραφής</value>
+  </data>
+  <data name="Reload" xml:space="preserve">
+    <value>Επαναφόρτωση</value>
+  </data>
+  <data name="Select Entity" xml:space="preserve">
+    <value>Επιλέξτε Οντότητα</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>Κατάσταση</value>

@@ -27,6 +27,9 @@
   <data name="Assignee" xml:space="preserve">
     <value>할당자</value>
   </data>
+  <data name="Belongs to Entity" xml:space="preserve">
+    <value>소유 기관</value>
+  </data>
   <data name="Description" xml:space="preserve">
     <value>설명</value>
   </data>
@@ -72,11 +75,17 @@
   <data name="Password" xml:space="preserve">
     <value>비밀번호</value>
   </data>
+  <data name="Public" xml:space="preserve">
+    <value>공개</value>
+  </data>
   <data name="Purchase Price" xml:space="preserve">
     <value>구매 가격</value>
   </data>
   <data name="Query Method" xml:space="preserve">
     <value>조회 방법</value>
+  </data>
+  <data name="Registration Certificate" xml:space="preserve">
+    <value>등록 증명서</value>
   </data>
   <data name="Registration Date" xml:space="preserve">
     <value>등록 일자</value>
@@ -89,6 +98,9 @@
   </data>
   <data name="Type" xml:space="preserve">
     <value>유형</value>
+  </data>
+  <data name="View Certificate" xml:space="preserve">
+    <value>증명서 보기</value>
   </data>
   <data name="View Invoice" xml:space="preserve">
     <value>견적서 보기</value>

@@ -21,6 +21,9 @@
       <data name="Actions" xml:space="preserve">
     <value>操作</value>
   </data>
+  <data name="All Company" xml:space="preserve">
+    <value>全公司</value>
+  </data>
   <data name="Annual Leave" xml:space="preserve">
     <value>年假</value>
   </data>
@@ -50,6 +53,9 @@
   </data>
   <data name="Approver" xml:space="preserve">
     <value>審批人</value>
+  </data>
+  <data name="awaiting review across company" xml:space="preserve">
+    <value>待公司範圍內審核</value>
   </data>
   <data name="awaiting your review" xml:space="preserve">
     <value>待您審核</value>
@@ -83,6 +89,9 @@
   </data>
   <data name="Leave Type" xml:space="preserve">
     <value>請假類型</value>
+  </data>
+  <data name="My Team" xml:space="preserve">
+    <value>我的團隊</value>
   </data>
   <data name="No approval history." xml:space="preserve">
     <value>沒有審批紀錄。</value>

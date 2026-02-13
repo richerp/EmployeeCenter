@@ -21,6 +21,9 @@
       <data name="Actions" xml:space="preserve">
     <value>操作</value>
   </data>
+  <data name="All Company" xml:space="preserve">
+    <value>すべての部署</value>
+  </data>
   <data name="Annual Leave" xml:space="preserve">
     <value>年次有給休暇</value>
   </data>
@@ -51,6 +54,9 @@
   <data name="Approver" xml:space="preserve">
     <value>承認者</value>
   </data>
+  <data name="awaiting review across company" xml:space="preserve">
+    <value>会社全体の承認を待機中</value>
+  </data>
   <data name="awaiting your review" xml:space="preserve">
     <value>ご審査をお待ちしています</value>
   </data>
@@ -71,6 +77,9 @@
   </data>
   <data name="Important: Approval Decisions Are Final" xml:space="preserve">
     <value>重要: 承認の決定は最終的です</value>
+  </data>
+  <data name="My Team" xml:space="preserve">
+    <value>マイチーム</value>
   </data>
   <data name="No approval history." xml:space="preserve">
     <value>承認履歴はありません。</value>

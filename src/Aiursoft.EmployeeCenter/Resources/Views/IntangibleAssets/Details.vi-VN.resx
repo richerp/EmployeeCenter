@@ -27,6 +27,9 @@
   <data name="Assignee" xml:space="preserve">
     <value>Người được giao nhiệm vụ</value>
   </data>
+  <data name="Belongs to Entity" xml:space="preserve">
+    <value>Thuộc về Tổ chức</value>
+  </data>
   <data name="Description" xml:space="preserve">
     <value>Mô tả</value>
   </data>
@@ -72,11 +75,17 @@
   <data name="Password" xml:space="preserve">
     <value>Mật khẩu</value>
   </data>
+  <data name="Public" xml:space="preserve">
+    <value>Công khai</value>
+  </data>
   <data name="Purchase Price" xml:space="preserve">
     <value>Giá mua</value>
   </data>
   <data name="Query Method" xml:space="preserve">
     <value>Phương thức truy vấn</value>
+  </data>
+  <data name="Registration Certificate" xml:space="preserve">
+    <value>Giấy chứng nhận đăng ký</value>
   </data>
   <data name="Registration Date" xml:space="preserve">
     <value>Ngày đăng ký</value>
@@ -89,6 +98,9 @@
   </data>
   <data name="Type" xml:space="preserve">
     <value>Loại</value>
+  </data>
+  <data name="View Certificate" xml:space="preserve">
+    <value>Xem chứng chỉ</value>
   </data>
   <data name="View Invoice" xml:space="preserve">
     <value>Xem hóa đơn</value>
