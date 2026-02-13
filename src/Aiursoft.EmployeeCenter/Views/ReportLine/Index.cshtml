@@ -236,8 +236,8 @@ else
     </div>
 }
 
-<script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+<script src="~/node_modules/mermaid/dist/mermaid.min.js" asp-append-version="true"></script>
+<script>
     mermaid.initialize({ 
         startOnLoad: true,
         securityLevel: 'loose',
