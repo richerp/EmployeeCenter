@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using Aiursoft.EmployeeCenter.Entities;
 using Aiursoft.UiStack.Layout;
 
@@ -9,5 +10,7 @@ public class IndexViewModel : UiStackLayoutViewModel
     {
         PageTitle = "Blueprints";
     }
+
+    [Display(Name = "Blueprints")]
     public required List<Blueprint> Blueprints { get; set; }
 }

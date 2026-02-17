@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using Aiursoft.EmployeeCenter.Entities;
 using Aiursoft.UiStack.Layout;
 
@@ -10,6 +11,9 @@ public class IndexViewModel : UiStackLayoutViewModel
         PageTitle = "Passwords Management";
     }
 
+    [Display(Name = "My Passwords")]
     public List<Password> MyPasswords { get; set; } = [];
+
+    [Display(Name = "Shared With Me")]
     public List<PasswordShare> SharedWithMe { get; set; } = [];
 }

@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using Aiursoft.EmployeeCenter.Entities;
 using Aiursoft.UiStack.Layout;
 
@@ -10,6 +11,9 @@ public class IndexViewModel : UiStackLayoutViewModel
         PageTitle = "SSH Keys";
     }
 
+    [Display(Name = "SSH Keys")]
     public required List<SshKey> SshKeys { get; set; }
+
+    [Display(Name = "Target User")]
     public required User TargetUser { get; set; }
 }

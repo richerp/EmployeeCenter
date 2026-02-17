@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using Aiursoft.EmployeeCenter.Entities;
 using Aiursoft.UiStack.Layout;
 
@@ -10,7 +11,12 @@ public class IndexViewModel : UiStackLayoutViewModel
         PageTitle = "Dashboard";
     }
 
+    [Display(Name = "Tasks")]
     public required List<OnboardingTask> Tasks { get; set; }
+
+    [Display(Name = "Logs")]
     public required List<OnboardingTaskLog> Logs { get; set; }
+
+    [Display(Name = "User")]
     public required User User { get; set; }
 }
