@@ -129,6 +129,21 @@
                 </div>
                 <div class="list-group-item">
                     <div class="row">
+                        <strong class="col-sm-3">@Localizer["Signing Entity"]</strong>
+                        <div class="col-sm-9">
+                            @if (Model.User.SigningEntity != null)
+                            {
+                                <a asp-controller="CompanyEntity" asp-action="Details" asp-route-id="@Model.User.SigningEntityId">@Model.User.SigningEntity.CompanyName</a>
+                            }
+                            else
+                            {
+                                <span>N/A</span>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="row">
                         <strong class="col-sm-3">@Localizer["Report Line"]</strong>
                         <div class="col-sm-9">
                             <a asp-controller="ReportLine" asp-action="Index" asp-route-id="@Model.User.Id">@Localizer["View Report Line"]</a>

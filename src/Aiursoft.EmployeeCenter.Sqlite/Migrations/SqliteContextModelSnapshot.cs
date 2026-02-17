@@ -1648,6 +1648,9 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("TEXT");
 
+                    b.Property<int?>("SigningEntityId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("Title")
                         .HasMaxLength(100)
                         .HasColumnType("TEXT");
@@ -1669,6 +1672,8 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.HasIndex("NormalizedUserName")
                         .IsUnique()
                         .HasDatabaseName("UserNameIndex");
+
+                    b.HasIndex("SigningEntityId");
 
                     b.ToTable("AspNetUsers", (string)null);
                 });
@@ -2313,7 +2318,13 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .WithMany("Reports")
                         .HasForeignKey("ManagerId");
 
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.CompanyEntity", "SigningEntity")
+                        .WithMany()
+                        .HasForeignKey("SigningEntityId");
+
                     b.Navigation("Manager");
+
+                    b.Navigation("SigningEntity");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.WeeklyReport", b =>

@@ -8,6 +8,7 @@ using Aiursoft.WebTools.Attributes;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 
 namespace Aiursoft.EmployeeCenter.Controllers;
@@ -30,12 +31,15 @@ public class CertificateController(
         LinkOrder = 1)]
     public async Task<IActionResult> Employment()
     {
-        var user = await userManager.GetUserAsync(User);
+        var user = await userManager.Users
+            .Include(u => u.SigningEntity)
+            .FirstOrDefaultAsync(u => u.Id == userManager.GetUserId(User));
         return this.StackView(new PrintViewModel
         {
             TargetUser = user,
             Type = CertificateType.Employment,
-            CompanyName = appSettings.Value.CompanyName
+            CompanyName = user?.SigningEntity?.CompanyName ?? appSettings.Value.CompanyName,
+            CompanyNameEnglish = user?.SigningEntity?.CompanyNameEnglish
         });
     }
 
@@ -51,12 +55,15 @@ public class CertificateController(
         LinkOrder = 2)]
     public async Task<IActionResult> Income()
     {
-        var user = await userManager.GetUserAsync(User);
+        var user = await userManager.Users
+            .Include(u => u.SigningEntity)
+            .FirstOrDefaultAsync(u => u.Id == userManager.GetUserId(User));
         return this.StackView(new PrintViewModel
         {
             TargetUser = user,
             Type = CertificateType.Income,
-            CompanyName = appSettings.Value.CompanyName
+            CompanyName = user?.SigningEntity?.CompanyName ?? appSettings.Value.CompanyName,
+            CompanyNameEnglish = user?.SigningEntity?.CompanyNameEnglish
         });
     }
 
@@ -71,7 +78,9 @@ public class CertificateController(
             {
                 return Forbid();
             }
-            targetUser = await userManager.GetUserAsync(User);
+            targetUser = await userManager.Users
+                .Include(u => u.SigningEntity)
+                .FirstOrDefaultAsync(u => u.Id == userManager.GetUserId(User));
         }
         else
         {
@@ -79,7 +88,9 @@ public class CertificateController(
             {
                 return Forbid();
             }
-            targetUser = await userManager.FindByIdAsync(userId);
+            targetUser = await userManager.Users
+                .Include(u => u.SigningEntity)
+                .FirstOrDefaultAsync(u => u.Id == userId);
         }
 
         if (targetUser == null)
@@ -92,7 +103,8 @@ public class CertificateController(
             TargetUser = targetUser,
             Type = type,
             Language = lang,
-            CompanyName = appSettings.Value.CompanyName
+            CompanyName = targetUser.SigningEntity?.CompanyName ?? appSettings.Value.CompanyName,
+            CompanyNameEnglish = targetUser.SigningEntity?.CompanyNameEnglish
         });
     }
 }

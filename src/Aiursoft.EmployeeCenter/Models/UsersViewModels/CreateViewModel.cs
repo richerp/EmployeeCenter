@@ -1,6 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
 using Aiursoft.CSTools.Attributes;
+using Aiursoft.EmployeeCenter.Entities;
 using Aiursoft.UiStack.Layout;
 
 namespace Aiursoft.EmployeeCenter.Models.UsersViewModels;
@@ -74,4 +75,9 @@ public class CreateViewModel : UiStackLayoutViewModel
     public string? ManagerId { get; set; }
 
     public string? ManagerDisplayName { get; set; }
+
+    [Display(Name = "Signing Entity")]
+    public int? SigningEntityId { get; set; }
+
+    public IEnumerable<CompanyEntity> AllCompanyEntities { get; set; } = new List<CompanyEntity>();
 }

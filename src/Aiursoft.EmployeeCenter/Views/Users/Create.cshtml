@@ -121,6 +121,14 @@
                         <partial name="_UserSelector" model='("ManagerId", "ManagerDisplayName", Model.ManagerId, Model.ManagerDisplayName)' />
                     </div>
 
+                    <div class="mb-3">
+                        <label asp-for="SigningEntityId" class="form-label">@Localizer["Signing Entity"]</label>
+                        <select asp-for="SigningEntityId" class="form-select" asp-items="@(new SelectList(Model.AllCompanyEntities, "Id", "CompanyName"))">
+                            <option value="">@Localizer["-- No Signing Entity --"]</option>
+                        </select>
+                        <span asp-validation-for="SigningEntityId" class="text-danger"></span>
+                    </div>
+
                     <div class="mt-4">
                         <button type="submit" class="btn btn-primary">
                             <i class="align-middle me-2" data-lucide="user-plus"></i> @Localizer["Create User"]

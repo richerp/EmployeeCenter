@@ -26,7 +26,9 @@ public class DashboardController(
         LinkOrder = 1)]
     public async Task<IActionResult> Index()
     {
-        var user = await userManager.GetUserAsync(User);
+        var user = await userManager.Users
+            .Include(u => u.SigningEntity)
+            .FirstOrDefaultAsync(u => u.Id == userManager.GetUserId(User));
         var tasks = await context.OnboardingTasks
             .OrderBy(t => t.Order)
             .ToListAsync();

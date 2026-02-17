@@ -156,8 +156,8 @@
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>Why use the Aiursoft Template?</value>
   </data>
-  <data name="Wish your career takes off at Aiursoft!" xml:space="preserve">
-    <value>Wish your career takes off at Aiursoft!</value>
+  <data name="Wish your career takes off at {0}!" xml:space="preserve">
+    <value>Wish your career takes off at {0}!</value>
   </data>
   <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">
     <value>You have completed all onboarding tasks. You are now a fully qualified official employee!</value>

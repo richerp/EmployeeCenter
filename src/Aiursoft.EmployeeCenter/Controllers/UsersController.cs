@@ -101,6 +101,7 @@ public class UsersController(
         if (id == null) return NotFound();
         var user = await context.Users
             .Include(u => u.Manager)
+            .Include(u => u.SigningEntity)
             .FirstOrDefaultAsync(u => u.Id == id);
         if (user == null) return NotFound();
 
@@ -148,9 +149,12 @@ public class UsersController(
     }
 
     [Authorize(Policy = AppPermissionNames.CanAddUsers)]
-    public IActionResult Create()
+    public async Task<IActionResult> Create()
     {
-        return this.StackView(new CreateViewModel());
+        return this.StackView(new CreateViewModel
+        {
+            AllCompanyEntities = await context.CompanyEntities.ToListAsync()
+        });
     }
 
     [Authorize(Policy = AppPermissionNames.CanAddUsers)]
@@ -174,6 +178,7 @@ public class UsersController(
                 BankName = newUser.BankName,
                 BankAccountName = newUser.BankAccountName,
                 ManagerId = newUser.ManagerId,
+                SigningEntityId = newUser.SigningEntityId,
                 CreationTime = newUser.CreationTime,
                 AvatarRelativePath = Aiursoft.EmployeeCenter.Entities.User.DefaultAvatarPath
             };
@@ -184,11 +189,13 @@ public class UsersController(
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
                 }
+                newUser.AllCompanyEntities = await context.CompanyEntities.ToListAsync();
                 return this.StackView(newUser);
             }
 
             return RedirectToAction(nameof(Details), new { id = user.Id });
         }
+        newUser.AllCompanyEntities = await context.CompanyEntities.ToListAsync();
         return this.StackView(newUser);
     }
 
@@ -224,6 +231,8 @@ public class UsersController(
             BankAccountName = user.BankAccountName,
             ManagerId = user.ManagerId,
             ManagerDisplayName = user.Manager?.DisplayName,
+            SigningEntityId = user.SigningEntityId,
+            AllCompanyEntities = await context.CompanyEntities.ToListAsync(),
             AllRoles = allRoles.Select(role => new UserRoleViewModel
             {
                 RoleName = role.Name!,
@@ -243,6 +252,7 @@ public class UsersController(
     {
         if (!ModelState.IsValid)
         {
+            model.AllCompanyEntities = await context.CompanyEntities.ToListAsync();
             return this.StackView(model);
         }
         var userInDb = await userManager.FindByIdAsync(model.Id);
@@ -301,6 +311,7 @@ public class UsersController(
         }
 
         userInDb.ManagerId = model.ManagerId;
+        userInDb.SigningEntityId = model.SigningEntityId;
         await userManager.UpdateAsync(userInDb);
         await context.SaveChangesAsync();
 

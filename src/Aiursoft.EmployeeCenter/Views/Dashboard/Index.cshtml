@@ -31,11 +31,11 @@
     
     var allCompleted = tasks.Any() && !foundIncomplete;
 
-    var logoPath = await GlobalSettings.GetSettingValueAsync(SettingsMap.ProjectLogo);
+    var brandName = Model.User.SigningEntity?.CompanyName ?? await GlobalSettings.GetSettingValueAsync(SettingsMap.BrandName);
+    var logoPath = Model.User.SigningEntity?.LogoPath ?? await GlobalSettings.GetSettingValueAsync(SettingsMap.ProjectLogo);
     var logoUrl = string.IsNullOrWhiteSpace(logoPath) 
         ? Url.Content("~/logo.svg") 
         : StorageService.RelativePathToInternetUrl(logoPath);
-    var brandName = await GlobalSettings.GetSettingValueAsync(SettingsMap.BrandName);
 }
 
 <div class="container-fluid p-0">
@@ -192,7 +192,7 @@
                                 <p class="fs-4 mb-4">@(Model.User.LegalName ?? Model.User.DisplayName)</p>
                             </a>
                                         <p class="text-muted">
-                                            @Localizer["Wish your career takes off at Aiursoft!"]
+                                            @Localizer["Wish your career takes off at {0}!", brandName]
                                         </p>
                                         <div class="mt-4">
                                             <small class="text-muted" data-utc-time="@DateTime.UtcNow.ToHtmlDateTime()"></small>

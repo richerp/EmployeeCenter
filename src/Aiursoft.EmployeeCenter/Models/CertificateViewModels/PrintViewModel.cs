@@ -9,4 +9,5 @@ public class PrintViewModel : UiStackLayoutViewModel
     public CertificateType Type { get; set; }
     public string Language { get; set; } = "zh-CN";
     public string CompanyName { get; set; } = string.Empty;
+    public string? CompanyNameEnglish { get; set; }
 }
