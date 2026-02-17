@@ -123,4 +123,9 @@ public class User : IdentityUser
     [Newtonsoft.Json.JsonIgnore]
     [InverseProperty(nameof(Notepad.User))]
     public Notepad? Notepad { get; set; }
+
+    public int? SigningEntityId { get; set; }
+
+    [ForeignKey(nameof(SigningEntityId))]
+    public CompanyEntity? SigningEntity { get; set; }
 }

@@ -4,6 +4,9 @@
     Layout = null;
     var isEnglish = Model.Language == "en-US";
     var user = Model.TargetUser!;
+    var displayedCompanyName = (isEnglish && !string.IsNullOrWhiteSpace(Model.CompanyNameEnglish)) 
+        ? Model.CompanyNameEnglish 
+        : Model.CompanyName;
 }
 
 <!DOCTYPE html>
@@ -71,7 +74,7 @@
             {
                 <p>
                     This is to certify that Mr./Ms. <strong>@(user.LegalName ?? user.DisplayName)</strong>,
-                    has been employed by <strong>@Model.CompanyName</strong> since <strong>@user.CreationTime.ToString("MMMM dd, yyyy")</strong>.
+                    has been employed by <strong>@displayedCompanyName</strong> since <strong>@user.CreationTime.ToString("MMMM dd, yyyy")</strong>.
                     He/She currently holds the position of <strong>@(user.Title ?? "Employee")</strong>.
                 </p>
                 <p>This certificate is issued at the request of the employee.</p>
@@ -80,7 +83,7 @@
             {
                 <p>
                     This is to certify that Mr./Ms. <strong>@(user.LegalName ?? user.DisplayName)</strong>,
-                    has been employed by <strong>@Model.CompanyName</strong> since <strong>@user.CreationTime.ToString("MMMM dd, yyyy")</strong>.
+                    has been employed by <strong>@displayedCompanyName</strong> since <strong>@user.CreationTime.ToString("MMMM dd, yyyy")</strong>.
                     He/She currently holds the position of <strong>@(user.Title ?? "Employee")</strong>.
                     His/Her monthly salary is <strong>RMB @user.BaseSalary.ToString("N2")</strong>.
                 </p>
@@ -111,7 +114,7 @@
     </div>
 
     <div class="footer">
-        <div class="company-name">@Model.CompanyName</div>
+        <div class="company-name">@displayedCompanyName</div>
         <div class="date">
             @(isEnglish ? DateTime.Today.ToString("MMMM dd, yyyy") : DateTime.Today.ToString("yyyy年MM月dd日"))
         </div>

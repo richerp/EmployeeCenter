@@ -156,7 +156,7 @@
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>Aiursoft 템플릿을 사용하는 이유는 무엇인가요?</value>
   </data>
-  <data name="Wish your career takes off at Aiursoft!" xml:space="preserve">
+  <data name="Wish your career takes off at {0}!" xml:space="preserve">
     <value>Aiursoft에서 경력이 빛나기를 기원합니다!</value>
   </data>
   <data name="You have completed all onboarding tasks. You are now a fully qualified official employee!" xml:space="preserve">

@@ -252,7 +252,7 @@ public class LeaveTests
         {
             { "LeaveType", "AnnualLeave" },
             { "StartDate", today.ToString("yyyy-MM-dd") },
-            { "EndDate", today.AddDays(3).ToString("yyyy-MM-dd") },
+            { "EndDate", today.AddDays(14).ToString("yyyy-MM-dd") },
             { "Reason", "Sick" },
             { "__RequestVerificationToken", applyToken }
         });
