@@ -165,6 +165,9 @@
   <data name="Retired" xml:space="preserve">
     <value>Retirado</value>
   </data>
+  <data name="Signing Entity" xml:space="preserve">
+    <value>Entidade Signatária</value>
+  </data>
   <data name="Status" xml:space="preserve">
     <value>Estado</value>
   </data>

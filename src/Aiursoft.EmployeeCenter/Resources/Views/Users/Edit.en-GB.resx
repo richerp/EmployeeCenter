@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Assigned Roles" xml:space="preserve">
+      <data name="-- No Signing Entity --" xml:space="preserve">
+    <value>-- No Signing Entity --</value>
+  </data>
+  <data name="Assigned Roles" xml:space="preserve">
     <value>Assigned Roles</value>
   </data>
   <data name="Back to List" xml:space="preserve">
@@ -77,6 +80,9 @@
   </data>
   <data name="Save User Details" xml:space="preserve">
     <value>Save User Details</value>
+  </data>
+  <data name="Signing Entity" xml:space="preserve">
+    <value>Signing Entity</value>
   </data>
   <data name="This user account is synchronized with an OpenID Connect (OIDC) provider. Any modifications made here (e.g., to the display name or email) may be overwritten during the next data sync. For permanent changes, please update the user&apos;s profile directly on your OIDC provider." xml:space="preserve">
     <value>This user account is synchronized with an OpenID Connect (OIDC) provider. Any modifications made here (e.g., to the display name or email) may be overwritten during the next data sync. For permanent changes, please update the user&apos;s profile directly on your OIDC provider.</value>

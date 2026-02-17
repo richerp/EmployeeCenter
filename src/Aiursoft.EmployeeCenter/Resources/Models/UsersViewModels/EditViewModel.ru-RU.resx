@@ -69,6 +69,9 @@
   <data name="Reset Password (leave empty to keep the same password)" xml:space="preserve">
     <value>Сбросить пароль (оставьте пустым, чтобы сохранить текущий пароль)</value>
   </data>
+  <data name="Signing Entity" xml:space="preserve">
+    <value>Юридическое лицо, подписывающее документ</value>
+  </data>
   <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
     <value>{0} не может превышать {1} символов.</value>
   </data>

@@ -54,6 +54,9 @@
   <data name="Phone Number" xml:space="preserve">
     <value>Phone Number</value>
   </data>
+  <data name="Signing Entity" xml:space="preserve">
+    <value>Signing Entity</value>
+  </data>
   <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
     <value>The {0} cannot exceed {1} characters.</value>
   </data>

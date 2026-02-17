@@ -60,6 +60,9 @@
   <data name="Phone Number" xml:space="preserve">
     <value>Telefon Numarası</value>
   </data>
+  <data name="Signing Entity" xml:space="preserve">
+    <value>İmzalayan Kurum</value>
+  </data>
   <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
     <value>{0} alanı {1} karakterden fazla olamaz.</value>
   </data>

@@ -165,6 +165,9 @@
   <data name="Retired" xml:space="preserve">
     <value>Αποσυνδέθηκε</value>
   </data>
+  <data name="Signing Entity" xml:space="preserve">
+    <value>Υπογραφή Οντότητας</value>
+  </data>
   <data name="Status" xml:space="preserve">
     <value>Κατάσταση</value>
   </data>

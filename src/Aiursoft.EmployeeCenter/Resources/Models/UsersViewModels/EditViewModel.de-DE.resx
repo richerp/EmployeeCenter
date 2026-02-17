@@ -69,6 +69,9 @@
   <data name="Reset Password (leave empty to keep the same password)" xml:space="preserve">
     <value>Passwort zurücksetzen (leer lassen, um das aktuelle Passwort beizubehalten)</value>
   </data>
+  <data name="Signing Entity" xml:space="preserve">
+    <value>Unterschreibende Partei</value>
+  </data>
   <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
     <value>Der {0} darf {1} Zeichen nicht überschreiten.</value>
   </data>

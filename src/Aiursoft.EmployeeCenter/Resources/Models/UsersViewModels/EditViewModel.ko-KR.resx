@@ -69,6 +69,9 @@
   <data name="Reset Password (leave empty to keep the same password)" xml:space="preserve">
     <value>비밀번호 재설정 (기존 비밀번호 유지 시 공백으로 남겨두세요)</value>
   </data>
+  <data name="Signing Entity" xml:space="preserve">
+    <value>서명 엔티티</value>
+  </data>
   <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
     <value>{0}은 {1}자를 초과할 수 없습니다.</value>
   </data>

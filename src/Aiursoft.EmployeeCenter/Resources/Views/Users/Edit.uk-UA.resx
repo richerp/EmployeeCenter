@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Assigned Roles" xml:space="preserve">
+      <data name="-- No Signing Entity --" xml:space="preserve">
+    <value>-- Жодна сторона, що підписує --</value>
+  </data>
+  <data name="Assigned Roles" xml:space="preserve">
     <value>Призначені ролі</value>
   </data>
   <data name="Back to Details" xml:space="preserve">
@@ -83,6 +86,9 @@
   </data>
   <data name="Save User Details" xml:space="preserve">
     <value>Зберегти дані користувача</value>
+  </data>
+  <data name="Signing Entity" xml:space="preserve">
+    <value>Підписуюча сторона</value>
   </data>
   <data name="This user account is synchronized with an OpenID Connect (OIDC) provider. Any modifications made here (e.g., to the display name or email) may be overwritten during the next data sync. For permanent changes, please update the user&apos;s profile directly on your OIDC provider." xml:space="preserve">
     <value>Цей обліковий запис синхронізовано з провайдером OpenID Connect (OIDC). Будь-які зміни, внесені тут (наприклад, до відображуваного імені чи електронної пошти), можуть бути перезаписані під час наступної синхронізації даних. Для постійних змін будь ласка оновіть профіль користувача безпосередньо у вашому провайдері OIDC.</value>

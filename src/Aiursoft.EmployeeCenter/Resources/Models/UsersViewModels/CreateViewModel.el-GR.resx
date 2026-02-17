@@ -60,6 +60,9 @@
   <data name="Phone Number" xml:space="preserve">
     <value>Τηλέφωνο</value>
   </data>
+  <data name="Signing Entity" xml:space="preserve">
+    <value>Υπεύθυνος Υπογραφής</value>
+  </data>
   <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
     <value>Το {0} δεν μπορεί να υπερβαίνει τα {1} χαρακτήρες.</value>
   </data>

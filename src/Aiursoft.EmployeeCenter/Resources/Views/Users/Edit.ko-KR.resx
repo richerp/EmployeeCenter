@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Assigned Roles" xml:space="preserve">
+      <data name="-- No Signing Entity --" xml:space="preserve">
+    <value>-- 서명 엔티티 없음 --</value>
+  </data>
+  <data name="Assigned Roles" xml:space="preserve">
     <value>할당된 역할</value>
   </data>
   <data name="Back to Details" xml:space="preserve">
@@ -83,6 +86,9 @@
   </data>
   <data name="Save User Details" xml:space="preserve">
     <value>사용자 정보 저장</value>
+  </data>
+  <data name="Signing Entity" xml:space="preserve">
+    <value>서명 엔티티</value>
   </data>
   <data name="This user account is synchronized with an OpenID Connect (OIDC) provider. Any modifications made here (e.g., to the display name or email) may be overwritten during the next data sync. For permanent changes, please update the user&apos;s profile directly on your OIDC provider." xml:space="preserve">
     <value>이 사용자 계정은 OpenID Connect(OIDC) 공급자와 동기화되어 있습니다. 여기서 수행된 모든 수정 사항(예: 표시 이름 또는 이메일)은 다음 데이터 동기화 중 덮어쓰여질 수 있습니다. 영구적인 변경을 원하시면 OIDC 공급자에서 직접 사용자 프로필을 업데이트해 주십시오.</value>

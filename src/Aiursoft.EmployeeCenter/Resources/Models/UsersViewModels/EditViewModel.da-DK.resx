@@ -69,6 +69,9 @@
   <data name="Reset Password (leave empty to keep the same password)" xml:space="preserve">
     <value>Nulstil adgangskode (lad være tom for at beholde den samme adgangskode)</value>
   </data>
+  <data name="Signing Entity" xml:space="preserve">
+    <value>Underskrivende entitet</value>
+  </data>
   <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
     <value>{0} må ikke overstige {1} tegn.</value>
   </data>
