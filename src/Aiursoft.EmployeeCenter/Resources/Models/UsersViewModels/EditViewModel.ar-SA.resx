@@ -69,6 +69,9 @@
   <data name="Reset Password (leave empty to keep the same password)" xml:space="preserve">
     <value>إعادة تعيين كلمة المرور (اترك الحقل فارغًا للحفاظ على كلمة المرور الحالية)</value>
   </data>
+  <data name="Signing Entity" xml:space="preserve">
+    <value>الكيان الموقع</value>
+  </data>
   <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
     <value>لا يمكن أن يتجاوز {0} عدد {1} حرفًا.</value>
   </data>

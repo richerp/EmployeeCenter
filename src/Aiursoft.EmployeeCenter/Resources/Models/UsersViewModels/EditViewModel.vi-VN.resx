@@ -69,6 +69,9 @@
   <data name="Reset Password (leave empty to keep the same password)" xml:space="preserve">
     <value>Đặt lại mật khẩu (để trống nếu muốn giữ nguyên mật khẩu hiện tại)</value>
   </data>
+  <data name="Signing Entity" xml:space="preserve">
+    <value>Đơn vị ký kết</value>
+  </data>
   <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
     <value>{0} không được vượt quá {1} ký tự.</value>
   </data>

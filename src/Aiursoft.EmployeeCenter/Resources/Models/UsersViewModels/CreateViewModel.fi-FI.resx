@@ -60,6 +60,9 @@
   <data name="Phone Number" xml:space="preserve">
     <value>Puhelinnumero</value>
   </data>
+  <data name="Signing Entity" xml:space="preserve">
+    <value>Allekirjoittava osapuoli</value>
+  </data>
   <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
     <value>{0} ei saa ylittää {1} merkkiä.</value>
   </data>

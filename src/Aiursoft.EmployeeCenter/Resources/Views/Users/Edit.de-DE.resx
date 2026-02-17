@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Assigned Roles" xml:space="preserve">
+      <data name="-- No Signing Entity --" xml:space="preserve">
+    <value>-- Kein Unterzeichnungs-Entität --</value>
+  </data>
+  <data name="Assigned Roles" xml:space="preserve">
     <value>Zugewiesene Rollen</value>
   </data>
   <data name="Back to Details" xml:space="preserve">
@@ -83,6 +86,9 @@
   </data>
   <data name="Save User Details" xml:space="preserve">
     <value>Benutzerdetails speichern</value>
+  </data>
+  <data name="Signing Entity" xml:space="preserve">
+    <value>Unterzeichnende Einheit</value>
   </data>
   <data name="This user account is synchronized with an OpenID Connect (OIDC) provider. Any modifications made here (e.g., to the display name or email) may be overwritten during the next data sync. For permanent changes, please update the user&apos;s profile directly on your OIDC provider." xml:space="preserve">
     <value>Dieses Benutzerkonto wird mit einem OpenID Connect (OIDC)-Provider synchronisiert. Änderungen, die hier vorgenommen werden (z. B. am Anzeigenamen oder der E-Mail-Adresse), können bei der nächsten Datensynchronisation überschrieben werden. Für dauerhafte Änderungen aktualisieren Sie bitte das Benutzerprofil direkt bei Ihrem OIDC-Provider.</value>

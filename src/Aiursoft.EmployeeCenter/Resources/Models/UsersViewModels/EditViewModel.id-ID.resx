@@ -69,6 +69,9 @@
   <data name="Reset Password (leave empty to keep the same password)" xml:space="preserve">
     <value>Atur Ulang Kata Sandi (biarkan kosong untuk menggunakan kata sandi yang sama)</value>
   </data>
+  <data name="Signing Entity" xml:space="preserve">
+    <value>Entitas Penandatangan</value>
+  </data>
   <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
     <value>{0} tidak boleh melebihi {1} karakter.</value>
   </data>

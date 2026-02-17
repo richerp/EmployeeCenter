@@ -141,6 +141,9 @@
   <data name="Retired" xml:space="preserve">
     <value>Retired</value>
   </data>
+  <data name="Signing Entity" xml:space="preserve">
+    <value>Signing Entity</value>
+  </data>
   <data name="Status" xml:space="preserve">
     <value>Status</value>
   </data>

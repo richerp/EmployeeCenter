@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Assigned Roles" xml:space="preserve">
+      <data name="-- No Signing Entity --" xml:space="preserve">
+    <value>-- İmza Veren Varlık Yok --</value>
+  </data>
+  <data name="Assigned Roles" xml:space="preserve">
     <value>Atanmış Roller</value>
   </data>
   <data name="Back to Details" xml:space="preserve">
@@ -83,6 +86,9 @@
   </data>
   <data name="Save User Details" xml:space="preserve">
     <value>Kullanıcı Bilgilerini Kaydet</value>
+  </data>
+  <data name="Signing Entity" xml:space="preserve">
+    <value>İmzalayan Varlık</value>
   </data>
   <data name="This user account is synchronized with an OpenID Connect (OIDC) provider. Any modifications made here (e.g., to the display name or email) may be overwritten during the next data sync. For permanent changes, please update the user&apos;s profile directly on your OIDC provider." xml:space="preserve">
     <value>Bu kullanıcı hesabı bir OpenID Connect (OIDC) sağlayıcısı ile senkronize edilmiştir. Burada yapılan değişiklikler (örneğin, görünen ad veya e-posta adresi) bir sonraki veri senkronizasyonu sırasında üzerine yazılabilir. Kalıcı değişiklikler için lütfen kullanıcı profilini doğrudan OIDC sağlayıcınızda güncelleyin.</value>

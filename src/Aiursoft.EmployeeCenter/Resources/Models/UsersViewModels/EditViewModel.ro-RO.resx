@@ -69,6 +69,9 @@
   <data name="Reset Password (leave empty to keep the same password)" xml:space="preserve">
     <value>Resetează parola (lăsați necompletat pentru a păstra parola actuală)</value>
   </data>
+  <data name="Signing Entity" xml:space="preserve">
+    <value>Entitatea care semnează</value>
+  </data>
   <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
     <value>{0} nu poate depăși {1} caractere.</value>
   </data>

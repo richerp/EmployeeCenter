@@ -165,6 +165,9 @@
   <data name="Retired" xml:space="preserve">
     <value>폐기됨</value>
   </data>
+  <data name="Signing Entity" xml:space="preserve">
+    <value>서명 기관</value>
+  </data>
   <data name="Status" xml:space="preserve">
     <value>상태</value>
   </data>

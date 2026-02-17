@@ -165,6 +165,9 @@
   <data name="Retired" xml:space="preserve">
     <value>หมดอายุการใช้งาน</value>
   </data>
+  <data name="Signing Entity" xml:space="preserve">
+    <value>หน่วยงานที่ลงนาม</value>
+  </data>
   <data name="Status" xml:space="preserve">
     <value>สถานะ</value>
   </data>
