@@ -27,6 +27,9 @@
   <data name="The {0} is required." xml:space="preserve">
     <value>{0} 為必填項目。</value>
   </data>
+  <data name="User" xml:space="preserve">
+    <value>使用者</value>
+  </data>
   <data name="Week Start Date" xml:space="preserve">
     <value>週起始日期</value>
   </data>

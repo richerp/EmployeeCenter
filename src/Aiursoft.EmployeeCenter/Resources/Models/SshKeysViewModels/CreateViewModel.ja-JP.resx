@@ -24,6 +24,9 @@
   <data name="Public Key" xml:space="preserve">
     <value>公開鍵</value>
   </data>
+  <data name="Target User Id" xml:space="preserve">
+    <value>ターゲットユーザーID</value>
+  </data>
   <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
     <value>{0}は{1}文字を超えることはできません。</value>
   </data>

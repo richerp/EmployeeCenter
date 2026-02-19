@@ -195,5 +195,11 @@
   <data name="View Report Line" xml:space="preserve">
     <value>レポートラインを表示</value>
   </data>
+  <data name="View Weekly Reports" xml:space="preserve">
+    <value>週次レポートを表示</value>
+  </data>
+  <data name="Weekly Reports" xml:space="preserve">
+    <value>週次レポート</value>
+  </data>
 
 </root>

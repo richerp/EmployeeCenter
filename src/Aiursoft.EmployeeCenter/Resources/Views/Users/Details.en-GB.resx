@@ -171,5 +171,11 @@
   <data name="View Report Line" xml:space="preserve">
     <value>View Report Line</value>
   </data>
+  <data name="View Weekly Reports" xml:space="preserve">
+    <value>View Weekly Reports</value>
+  </data>
+  <data name="Weekly Reports" xml:space="preserve">
+    <value>Weekly Reports</value>
+  </data>
 
 </root>

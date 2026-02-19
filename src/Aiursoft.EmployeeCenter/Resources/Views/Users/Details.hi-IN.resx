@@ -195,5 +195,11 @@
   <data name="View Report Line" xml:space="preserve">
     <value>रिपोर्ट लाइन देखें</value>
   </data>
+  <data name="View Weekly Reports" xml:space="preserve">
+    <value>साप्ताहिक रिपोर्ट्स देखें</value>
+  </data>
+  <data name="Weekly Reports" xml:space="preserve">
+    <value>साप्ताहिक रिपोर्ट्स</value>
+  </data>
 
 </root>

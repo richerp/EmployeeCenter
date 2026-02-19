@@ -27,6 +27,9 @@
   <data name="The {0} is required." xml:space="preserve">
     <value>Поле {0} обязательно для заполнения.</value>
   </data>
+  <data name="User" xml:space="preserve">
+    <value>Пользователь</value>
+  </data>
   <data name="Week Start Date" xml:space="preserve">
     <value>Дата начала недели</value>
   </data>

@@ -27,6 +27,9 @@
   <data name="The {0} is required." xml:space="preserve">
     <value>El {0} es obligatorio.</value>
   </data>
+  <data name="User" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
   <data name="Week Start Date" xml:space="preserve">
     <value>Fecha de inicio de semana</value>
   </data>
