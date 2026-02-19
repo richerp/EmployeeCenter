@@ -27,6 +27,9 @@
   <data name="The {0} is required." xml:space="preserve">
     <value>{0} on pakollinen.</value>
   </data>
+  <data name="User" xml:space="preserve">
+    <value>Käyttäjä</value>
+  </data>
   <data name="Week Start Date" xml:space="preserve">
     <value>Viikon aloituspäivä</value>
   </data>

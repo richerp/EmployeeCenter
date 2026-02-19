@@ -27,6 +27,9 @@
   <data name="The {0} is required." xml:space="preserve">
     <value>The {0} is required.</value>
   </data>
+  <data name="User" xml:space="preserve">
+    <value>User</value>
+  </data>
   <data name="Week Start Date" xml:space="preserve">
     <value>Week Start Date</value>
   </data>

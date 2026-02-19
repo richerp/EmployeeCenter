@@ -195,5 +195,11 @@
   <data name="View Report Line" xml:space="preserve">
     <value>عرض خط التقرير</value>
   </data>
+  <data name="View Weekly Reports" xml:space="preserve">
+    <value>عرض التقارير الأسبوعية</value>
+  </data>
+  <data name="Weekly Reports" xml:space="preserve">
+    <value>التقارير الأسبوعية</value>
+  </data>
 
 </root>

@@ -24,6 +24,9 @@
   <data name="Public Key" xml:space="preserve">
     <value>Genel Anahtar</value>
   </data>
+  <data name="Target User Id" xml:space="preserve">
+    <value>Hedef Kullanıcı Kimliği</value>
+  </data>
   <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
     <value>{0} alanı {1} karakteri geçemez.</value>
   </data>

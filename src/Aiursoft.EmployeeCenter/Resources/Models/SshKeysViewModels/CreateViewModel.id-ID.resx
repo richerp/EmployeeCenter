@@ -24,6 +24,9 @@
   <data name="Public Key" xml:space="preserve">
     <value>Kunci Publik</value>
   </data>
+  <data name="Target User Id" xml:space="preserve">
+    <value>ID Pengguna Tujuan</value>
+  </data>
   <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
     <value>{0} tidak boleh melebihi {1} karakter.</value>
   </data>

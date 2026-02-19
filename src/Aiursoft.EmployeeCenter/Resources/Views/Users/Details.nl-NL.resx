@@ -195,5 +195,11 @@
   <data name="View Report Line" xml:space="preserve">
     <value>Rapportlijn bekijken</value>
   </data>
+  <data name="View Weekly Reports" xml:space="preserve">
+    <value>Wekelijks rapporten weergeven</value>
+  </data>
+  <data name="Weekly Reports" xml:space="preserve">
+    <value>Wekelijks verslag</value>
+  </data>
 
 </root>

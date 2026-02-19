@@ -24,6 +24,9 @@
   <data name="Public Key" xml:space="preserve">
     <value>Публічний ключ</value>
   </data>
+  <data name="Target User Id" xml:space="preserve">
+    <value>Id користувача призначення</value>
+  </data>
   <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
     <value>{0} не може перевищувати {1} символів.</value>
   </data>
