@@ -150,6 +150,14 @@
                         </div>
                     </div>
                 </div>
+                <div class="list-group-item">
+                    <div class="row">
+                        <strong class="col-sm-3">@Localizer["Weekly Reports"]</strong>
+                        <div class="col-sm-9">
+                            <a asp-controller="WeeklyReport" asp-action="Index" asp-route-userId="@Model.User.Id">@Localizer["View Weekly Reports"]</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="card flex-fill mb-4">

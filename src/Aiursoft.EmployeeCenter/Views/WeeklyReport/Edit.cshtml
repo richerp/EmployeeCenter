@@ -10,7 +10,7 @@
                 </div>
         <div class="card-body">
             <div class="d-flex align-items-center mb-4">
-                <a asp-controller="Users" asp-action="Details" asp-route-id="@Model.User!.Id">
+                <a asp-controller="WeeklyReport" asp-action="Index" asp-route-userId="@Model.User!.Id">
                     <img src="@(StorageService.RelativePathToInternetUrl(Model.User!.AvatarRelativePath) + "?w=100&square=true")"
                          class="rounded-circle me-3"
                          alt="@Model.User!.DisplayName"
@@ -18,7 +18,7 @@
                          height="50">
                 </a>
                 <div>
-                    <a asp-controller="Users" asp-action="Details" asp-route-id="@Model.User!.Id" class="text-decoration-none text-body">
+                    <a asp-controller="WeeklyReport" asp-action="Index" asp-route-userId="@Model.User!.Id" class="text-decoration-none text-body">
                         <h5 class="mb-0 fw-bold">@Model.User!.DisplayName</h5>
                     </a>
                     <p class="text-muted small mb-0">@Model.User!.Title</p>
