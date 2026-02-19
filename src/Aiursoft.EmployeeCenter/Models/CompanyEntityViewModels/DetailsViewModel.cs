@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using Aiursoft.EmployeeCenter.Entities;
 using Aiursoft.UiStack.Layout;
 
@@ -9,7 +10,13 @@ public class DetailsViewModel : UiStackLayoutViewModel
     {
         PageTitle = "Company Entity Details";
     }
+
+    [Display(Name = "Entity")]
     public required CompanyEntity Entity { get; set; }
+
+    [Display(Name = "Servers")]
     public IEnumerable<Server> Servers { get; set; } = new List<Server>();
+
+    [Display(Name = "Intangible Assets")]
     public IEnumerable<IntangibleAsset> IntangibleAssets { get; set; } = new List<IntangibleAsset>();
 }

@@ -22,5 +22,6 @@ public class EditViewModel : UiStackLayoutViewModel
     [Display(Name = "Week Start Date")]
     public DateTime WeekStartDate { get; set; }
     
+    [Display(Name = "User")]
     public User? User { get; set; }
 }

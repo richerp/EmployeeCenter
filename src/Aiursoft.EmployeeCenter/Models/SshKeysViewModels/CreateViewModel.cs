@@ -10,6 +10,7 @@ public class CreateViewModel : UiStackLayoutViewModel
         PageTitle = "Add SSH Key";
     }
 
+    [Display(Name = "Target User Id")]
     public string? TargetUserId { get; set; }
 
     [Required(ErrorMessage = "The {0} is required.")]

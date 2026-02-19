@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using Aiursoft.EmployeeCenter.Entities;
 using Aiursoft.UiStack.Layout;
 
@@ -10,6 +11,9 @@ public class ManageViewModel : UiStackLayoutViewModel
         PageTitle = "Manage Payrolls";
     }
 
+    [Display(Name = "Payrolls")]
     public List<Payroll> Payrolls { get; set; } = [];
+
+    [Display(Name = "All Users")]
     public List<User> AllUsers { get; set; } = [];
 }

@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using Aiursoft.EmployeeCenter.Entities;
 using Aiursoft.UiStack.Layout;
 
@@ -10,5 +11,6 @@ public class IndexViewModel : UiStackLayoutViewModel
         PageTitle = "Contracts";
     }
 
+    [Display(Name = "Contracts")]
     public IEnumerable<Contract> Contracts { get; set; } = new List<Contract>();
 }

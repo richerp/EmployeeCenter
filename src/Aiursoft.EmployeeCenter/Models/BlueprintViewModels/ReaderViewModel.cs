@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using Aiursoft.EmployeeCenter.Entities;
 using Aiursoft.UiStack.Layout;
 
@@ -9,5 +10,7 @@ public class ReaderViewModel : UiStackLayoutViewModel
     {
         PageTitle = "Blueprint";
     }
+
+    [Display(Name = "Blueprint")]
     public required Blueprint Blueprint { get; set; }
 }
