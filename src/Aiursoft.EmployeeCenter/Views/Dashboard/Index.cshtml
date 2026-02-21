@@ -4,8 +4,6 @@
 @inject Aiursoft.EmployeeCenter.Services.FileStorage.StorageService StorageService
 @model Aiursoft.EmployeeCenter.Models.DashboardViewModels.IndexViewModel
 @{
-    ViewData["Title"] = Localizer["Onboarding Wizard"];
-    
     var tasks = Model.Tasks.OrderBy(t => t.Order).ToList();
     var logs = Model.Logs;
     

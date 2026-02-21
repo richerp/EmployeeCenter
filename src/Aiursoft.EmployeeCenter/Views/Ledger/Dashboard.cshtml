@@ -1,7 +1,6 @@
 @model Aiursoft.EmployeeCenter.Models.LedgerViewModels.DashboardViewModel
 @inject Aiursoft.EmployeeCenter.Services.FileStorage.StorageService StorageService
 @{
-    ViewData["Title"] = Model.Entity.CompanyName + " - " + (Model.FilteredAccount != null ? Model.FilteredAccount.AccountName : Localizer["Ledger Dashboard"]);
 }
 
 <div class="container-fluid">

@@ -4,7 +4,6 @@
 @inject Microsoft.AspNetCore.Authorization.IAuthorizationService AuthorizationService
 
 @{
-    ViewData["Title"] = Localizer["Customer Relationship Details"];
     var canManage = (await AuthorizationService.AuthorizeAsync(User, null, AppPermissionNames.CanManageCustomerRelationships)).Succeeded;
 }
 

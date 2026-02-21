@@ -8,12 +8,15 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
+using Microsoft.Extensions.Localization;
+
 namespace Aiursoft.EmployeeCenter.Controllers;
 
 [Authorize(Policy = AppPermissionNames.CanManageLedger)]
 [LimitPerMin]
 public class InvoiceController(
-    EmployeeCenterDbContext dbContext) : Controller
+    EmployeeCenterDbContext dbContext,
+    IStringLocalizer<InvoiceController> localizer) : Controller
 {
     [HttpGet]
     [RenderInNavBar(
@@ -31,7 +34,8 @@ public class InvoiceController(
             .ToListAsync();
         var model = new IndexViewModel
         {
-            Entities = entities
+            Entities = entities,
+            PageTitle = localizer["Issue Invoice"]
         };
         return this.StackView(model);
     }
@@ -74,7 +78,8 @@ public class InvoiceController(
             Items = new List<InvoiceItemViewModel>
             {
                 new()
-            }
+            },
+            PageTitle = localizer["Issue Invoice"]
         };
 
         return this.StackView(model);

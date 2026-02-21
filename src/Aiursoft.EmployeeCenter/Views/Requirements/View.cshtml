@@ -2,12 +2,10 @@
 @using Aiursoft.EmployeeCenter.Authorization
 @model Aiursoft.EmployeeCenter.Models.RequirementViewModels.ReaderViewModel
 @inject Aiursoft.EmployeeCenter.Services.FileStorage.StorageService StorageService
-@{ 
-    ViewData["Title"] = Model.Requirement.Title;
+@{
     var isDarkMode = Context.Request.Cookies[ThemeController.ThemeCookieKey] == true.ToString();
     var canApprove = User.HasClaim(AppPermissions.Type, AppPermissionNames.CanApproveProjectRequirements);
 }
-
 <div class="row mb-2 mb-xl-3">
     <div class="col-auto d-none d-sm-block">
         <h3>@Model.Requirement.Title</h3>

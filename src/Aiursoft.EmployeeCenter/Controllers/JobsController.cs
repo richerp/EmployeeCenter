@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Aiursoft.EmployeeCenter.Services;
 
+using Microsoft.Extensions.Localization;
+
 namespace Aiursoft.EmployeeCenter.Controllers;
 
 /// <summary>
@@ -14,7 +16,9 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 /// </summary>
 [Authorize]
 [LimitPerMin]
-public class JobsController(BackgroundJobQueue backgroundJobQueue) : Controller
+public class JobsController(
+    BackgroundJobQueue backgroundJobQueue,
+    IStringLocalizer<JobsController> localizer) : Controller
 {
     [Authorize(Policy = AppPermissionNames.CanViewBackgroundJobs)]
     [RenderInNavBar(
@@ -41,7 +45,8 @@ public class JobsController(BackgroundJobQueue backgroundJobQueue) : Controller
 
         var viewModel = new JobsIndexViewModel
         {
-            AllRecentJobs = allJobs
+            AllRecentJobs = allJobs,
+            PageTitle = localizer["Background Jobs"]
         };
 
         return this.StackView(viewModel);

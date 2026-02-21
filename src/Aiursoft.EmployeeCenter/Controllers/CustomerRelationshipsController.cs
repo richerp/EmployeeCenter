@@ -8,11 +8,14 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
+using Microsoft.Extensions.Localization;
+
 namespace Aiursoft.EmployeeCenter.Controllers;
 
 [Authorize]
 public class CustomerRelationshipsController(
-    EmployeeCenterDbContext dbContext) : Controller
+    EmployeeCenterDbContext dbContext,
+    IStringLocalizer<CustomerRelationshipsController> localizer) : Controller
 {
     [HttpGet]
     [RenderInNavBar(
@@ -29,7 +32,11 @@ public class CustomerRelationshipsController(
             .Include(t => t.CompanyEntity)
             .OrderByDescending(t => t.CreationTime)
             .ToListAsync();
-        return this.StackView(new IndexViewModel { CustomerRelationships = relationships });
+        return this.StackView(new IndexViewModel
+        {
+            CustomerRelationships = relationships,
+            PageTitle = localizer["View Customer Relations"]
+        });
     }
 
     [HttpGet]
@@ -49,7 +56,8 @@ public class CustomerRelationshipsController(
             Phone = relationship.Phone,
             Address = relationship.Address,
             Remark = relationship.Remark,
-            AvailableCompanyEntities = [] // Not needed for details view
+            AvailableCompanyEntities = [], // Not needed for details view
+            PageTitle = localizer["Customer Relationship Details"]
         };
         return this.StackView(model);
     }
@@ -70,7 +78,11 @@ public class CustomerRelationshipsController(
             .Include(t => t.CompanyEntity)
             .OrderByDescending(t => t.CreationTime)
             .ToListAsync();
-        return this.StackView(new IndexViewModel { CustomerRelationships = relationships });
+        return this.StackView(new IndexViewModel
+        {
+            CustomerRelationships = relationships,
+            PageTitle = localizer["Manage Customer Relations"]
+        });
     }
 
     [HttpGet]
@@ -79,7 +91,8 @@ public class CustomerRelationshipsController(
     {
         var model = new EditorViewModel
         {
-            AvailableCompanyEntities = await GetCompanyEntities()
+            AvailableCompanyEntities = await GetCompanyEntities(),
+            PageTitle = localizer["Create Customer Relationship"]
         };
         return this.StackView(model, "Editor");
     }
@@ -91,6 +104,7 @@ public class CustomerRelationshipsController(
     {
         if (!ModelState.IsValid)
         {
+            model.PageTitle = localizer["Create Customer Relationship"];
             model.AvailableCompanyEntities = await GetCompanyEntities();
             return this.StackView(model, "Editor");
         }
@@ -129,7 +143,8 @@ public class CustomerRelationshipsController(
             Phone = relationship.Phone,
             Address = relationship.Address,
             Remark = relationship.Remark,
-            AvailableCompanyEntities = await GetCompanyEntities()
+            AvailableCompanyEntities = await GetCompanyEntities(),
+            PageTitle = localizer["Edit Customer Relationship"]
         };
         return this.StackView(model, "Editor");
     }
@@ -141,6 +156,7 @@ public class CustomerRelationshipsController(
     {
         if (!ModelState.IsValid)
         {
+            model.PageTitle = localizer["Edit Customer Relationship"];
             model.AvailableCompanyEntities = await GetCompanyEntities();
             return this.StackView(model, "Editor");
         }
