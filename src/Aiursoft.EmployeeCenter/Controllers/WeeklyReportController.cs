@@ -165,7 +165,10 @@ public class WeeklyReportController(
             .Select(s => s.Value)
             .FirstOrDefaultAsync();
 
-        if (forceProjectAssociationStr == "True" && (!model.Requirements.Any() || model.Requirements.All(r => r.Hours <= 0)))
+        var forceProjectAssociation = forceProjectAssociationStr == "True";
+        var modelRequirements = model.Requirements ?? [];
+
+        if (forceProjectAssociation && (!modelRequirements.Any() || modelRequirements.All(r => r.Hours <= 0)))
         {
              // Ideally return error. But for now redirect to index. Maybe add error message?
              // Since we don't have a good way to show errors on index (it reloads page), just redirect.
@@ -208,7 +211,7 @@ public class WeeklyReportController(
             existing.WeekStartDate = targetWeek;
             
             // Append requirements
-            foreach (var req in model.Requirements.Where(r => r.Hours > 0))
+            foreach (var req in modelRequirements.Where(r => r.Hours > 0))
             {
                 // Check if already exists? Maybe just add new entry even if duplicate project?
                 // Or sum hours? The requirement says "add multiple".
@@ -237,7 +240,7 @@ public class WeeklyReportController(
         await dbContext.SaveChangesAsync();
 
         // Add requirements
-        foreach (var req in model.Requirements.Where(r => r.Hours > 0))
+        foreach (var req in modelRequirements.Where(r => r.Hours > 0))
         {
             dbContext.WeeklyReportRequirements.Add(new WeeklyReportRequirement
             {

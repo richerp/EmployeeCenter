@@ -1,5 +1,6 @@
 
 using Aiursoft.EmployeeCenter.Authorization;
+using Aiursoft.EmployeeCenter.Configuration;
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
@@ -710,10 +711,10 @@ public class WeeklyReportTests
         {
             var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
             // Enable Force Project Association
-            var setting = await db.GlobalSettings.FindAsync(Aiursoft.EmployeeCenter.Configuration.SettingsMap.ForceProjectAssociation);
+            var setting = await db.GlobalSettings.FindAsync(SettingsMap.ForceProjectAssociation);
             if (setting == null)
             {
-                setting = new GlobalSetting { Key = Aiursoft.EmployeeCenter.Configuration.SettingsMap.ForceProjectAssociation, Value = "True" };
+                setting = new GlobalSetting { Key = SettingsMap.ForceProjectAssociation, Value = "True" };
                 db.GlobalSettings.Add(setting);
             }
             else

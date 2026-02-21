@@ -11,5 +11,5 @@ public class CreateViewModel
 
     public DateTime? WeekStartDate { get; set; }
 
-    public List<WeeklyReportRequirementViewModel> Requirements { get; set; } = new();
+    public List<WeeklyReportRequirementViewModel>? Requirements { get; set; }
 }

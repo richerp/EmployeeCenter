@@ -37,7 +37,7 @@
             
             <div class="d-flex align-items-center">
                 @{
-                    var totalHours = report.WeeklyReportRequirements?.Sum(r => r.Hours) ?? 0;
+                    var totalHours = report.WeeklyReportRequirements.Sum(r => r.Hours);
                 }
                 @if (totalHours > 0)
                 {
