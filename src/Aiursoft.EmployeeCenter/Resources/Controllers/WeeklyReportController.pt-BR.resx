@@ -24,6 +24,9 @@
   <data name="Current Week" xml:space="preserve">
     <value>Semana Atual</value>
   </data>
+  <data name="Project association is required." xml:space="preserve">
+    <value>A associação ao projeto é obrigatória.</value>
+  </data>
   <data name="You can only edit reports published within 4 weeks." xml:space="preserve">
     <value>Você só pode editar relatórios publicados nos últimos 4 semanas.</value>
   </data>

@@ -18,11 +18,20 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Content" xml:space="preserve">
+      <data name="Approved Projects" xml:space="preserve">
+    <value>अनुमोदित प्रोजेक्ट्स</value>
+  </data>
+  <data name="Content" xml:space="preserve">
     <value>सामग्री</value>
+  </data>
+  <data name="Force Project Association" xml:space="preserve">
+    <value>प्रोजेक्ट संबंध को बल दें</value>
   </data>
   <data name="Id" xml:space="preserve">
     <value>आईडी</value>
+  </data>
+  <data name="Requirements" xml:space="preserve">
+    <value>आवश्यकताएँ</value>
   </data>
   <data name="The {0} is required." xml:space="preserve">
     <value>{0} आवश्यक है।</value>

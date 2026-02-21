@@ -27,6 +27,9 @@
   <data name="Extremely Dangerous!" xml:space="preserve">
     <value>Extremely Dangerous!</value>
   </data>
+  <data name="Hours" xml:space="preserve">
+    <value>Hours</value>
+  </data>
   <data name="Incomplete Submission" xml:space="preserve">
     <value>Incomplete Submission</value>
   </data>
@@ -54,11 +57,20 @@
   <data name="Post Report" xml:space="preserve">
     <value>Post Report</value>
   </data>
+  <data name="Project Associations" xml:space="preserve">
+    <value>Project Associations</value>
+  </data>
   <data name="Reports are ordered by time. Scroll down to see older reports." xml:space="preserve">
     <value>Reports are ordered by time. Scroll down to see older reports.</value>
   </data>
+  <data name="Required" xml:space="preserve">
+    <value>Required</value>
+  </data>
   <data name="Saved" xml:space="preserve">
     <value>Saved</value>
+  </data>
+  <data name="Select Project..." xml:space="preserve">
+    <value>Select Project...</value>
   </data>
   <data name="Select Week" xml:space="preserve">
     <value>Select Week</value>

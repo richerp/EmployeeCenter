@@ -24,6 +24,9 @@
   <data name="Current Week" xml:space="preserve">
     <value>目前這週</value>
   </data>
+  <data name="Project association is required." xml:space="preserve">
+    <value>專案關聯是必要的。</value>
+  </data>
   <data name="You can only edit reports published within 4 weeks." xml:space="preserve">
     <value>您只能編輯發布於 4 週內的報告。</value>
   </data>

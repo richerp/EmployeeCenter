@@ -27,6 +27,9 @@
   <data name="Extremely Dangerous!" xml:space="preserve">
     <value>极其危险！</value>
   </data>
+  <data name="Hours" xml:space="preserve">
+    <value>小时</value>
+  </data>
   <data name="Incomplete Submission" xml:space="preserve">
     <value>提交不完整</value>
   </data>
@@ -54,11 +57,20 @@
   <data name="Post Report" xml:space="preserve">
     <value>发布周报</value>
   </data>
+  <data name="Project Associations" xml:space="preserve">
+    <value>项目关联</value>
+  </data>
   <data name="Reports are ordered by time. Scroll down to see older reports." xml:space="preserve">
     <value>周报按时间排序。向下滚动以查看更早的内容。</value>
   </data>
+  <data name="Required" xml:space="preserve">
+    <value>必填</value>
+  </data>
   <data name="Saved" xml:space="preserve">
     <value>已保存</value>
+  </data>
+  <data name="Select Project..." xml:space="preserve">
+    <value>选择项目...</value>
   </data>
   <data name="Select Week" xml:space="preserve">
     <value>选择周</value>

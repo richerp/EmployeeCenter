@@ -21,6 +21,9 @@
       <data name="All Users" xml:space="preserve">
     <value>Semua Pengguna</value>
   </data>
+  <data name="Approved Projects" xml:space="preserve">
+    <value>Proyek yang Disetujui</value>
+  </data>
   <data name="Available Weeks" xml:space="preserve">
     <value>Minggu yang Tersedia</value>
   </data>
@@ -41,6 +44,9 @@
   </data>
   <data name="Filter User Id" xml:space="preserve">
     <value>Filter Id Pengguna</value>
+  </data>
+  <data name="Force Project Association" xml:space="preserve">
+    <value>Paksa Asosiasi Proyek</value>
   </data>
   <data name="Has Recent Missing Reports" xml:space="preserve">
     <value>Memiliki Laporan yang Hilang Baru-baru Ini</value>

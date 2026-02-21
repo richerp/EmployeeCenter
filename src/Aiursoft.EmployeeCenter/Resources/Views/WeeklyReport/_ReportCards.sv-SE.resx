@@ -27,5 +27,8 @@
   <data name="Edit" xml:space="preserve">
     <value>Redigera</value>
   </data>
+  <data name="Total Project Duration" xml:space="preserve">
+    <value>Total projektperiod</value>
+  </data>
 
 </root>

@@ -27,6 +27,9 @@
   <data name="Extremely Dangerous!" xml:space="preserve">
     <value>極めて危険！</value>
   </data>
+  <data name="Hours" xml:space="preserve">
+    <value>時間</value>
+  </data>
   <data name="Incomplete Submission" xml:space="preserve">
     <value>未完了の提出</value>
   </data>
@@ -54,11 +57,20 @@
   <data name="Post Report" xml:space="preserve">
     <value>レポートを投稿</value>
   </data>
+  <data name="Project Associations" xml:space="preserve">
+    <value>プロジェクト関連</value>
+  </data>
   <data name="Reports are ordered by time. Scroll down to see older reports." xml:space="preserve">
     <value>レポートは時刻順に並んでいます。古いレポートを見るには下にスクロールしてください。</value>
   </data>
+  <data name="Required" xml:space="preserve">
+    <value>必須</value>
+  </data>
   <data name="Saved" xml:space="preserve">
     <value>保存されました</value>
+  </data>
+  <data name="Select Project..." xml:space="preserve">
+    <value>プロジェクトを選択...</value>
   </data>
   <data name="Select Week" xml:space="preserve">
     <value>週を選択</value>

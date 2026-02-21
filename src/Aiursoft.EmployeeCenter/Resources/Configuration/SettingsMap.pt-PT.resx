@@ -36,6 +36,9 @@
   <data name="Default Payroll Currency" xml:space="preserve">
     <value>Moeda Padrão de Folha de Pagamento</value>
   </data>
+  <data name="Force Project Association" xml:space="preserve">
+    <value>Associação Forçada ao Projeto</value>
+  </data>
   <data name="ICP Number" xml:space="preserve">
     <value>Número ICP</value>
   </data>
@@ -44,6 +47,9 @@
   </data>
   <data name="Project Name" xml:space="preserve">
     <value>Nome do Projeto</value>
+  </data>
+  <data name="Require employees to associate at least one project when submitting a weekly report." xml:space="preserve">
+    <value>Exigir que os colaboradores associem pelo menos um projeto ao submeter um relatório semanal.</value>
   </data>
   <data name="The brand name of the company or project. E.g. Aiursoft." xml:space="preserve">
     <value>O nome da marca da empresa ou projeto. Por exemplo: Aiursoft.</value>

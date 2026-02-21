@@ -36,6 +36,9 @@
   <data name="Default Payroll Currency" xml:space="preserve">
     <value>默认工资货币</value>
   </data>
+  <data name="Force Project Association" xml:space="preserve">
+    <value>强制项目关联</value>
+  </data>
   <data name="ICP Number" xml:space="preserve">
     <value>ICP 备案号</value>
   </data>
@@ -44,6 +47,9 @@
   </data>
   <data name="Project Name" xml:space="preserve">
     <value>项目名称</value>
+  </data>
+  <data name="Require employees to associate at least one project when submitting a weekly report." xml:space="preserve">
+    <value>提交周报时，要求员工至少关联一个项目。</value>
   </data>
   <data name="The brand name of the company or project. E.g. Aiursoft." xml:space="preserve">
     <value>公司或项目的品牌名称。例如：Aiursoft。</value>

@@ -21,6 +21,9 @@
       <data name="All Users" xml:space="preserve">
     <value>Alle brugere</value>
   </data>
+  <data name="Approved Projects" xml:space="preserve">
+    <value>Godkendte projekter</value>
+  </data>
   <data name="Available Weeks" xml:space="preserve">
     <value>Tilgængelige uger</value>
   </data>
@@ -41,6 +44,9 @@
   </data>
   <data name="Filter User Id" xml:space="preserve">
     <value>Filter Bruger-ID</value>
+  </data>
+  <data name="Force Project Association" xml:space="preserve">
+    <value>Tving projekttilknytning</value>
   </data>
   <data name="Has Recent Missing Reports" xml:space="preserve">
     <value>Har nyeste manglende rapporter</value>

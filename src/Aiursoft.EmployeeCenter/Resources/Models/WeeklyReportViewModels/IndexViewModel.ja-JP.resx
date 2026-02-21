@@ -21,6 +21,9 @@
       <data name="All Users" xml:space="preserve">
     <value>すべてのユーザー</value>
   </data>
+  <data name="Approved Projects" xml:space="preserve">
+    <value>承認済みプロジェクト</value>
+  </data>
   <data name="Available Weeks" xml:space="preserve">
     <value>利用可能な週</value>
   </data>
@@ -41,6 +44,9 @@
   </data>
   <data name="Filter User Id" xml:space="preserve">
     <value>ユーザーIDのフィルター</value>
+  </data>
+  <data name="Force Project Association" xml:space="preserve">
+    <value>プロジェクト関連の強制</value>
   </data>
   <data name="Has Recent Missing Reports" xml:space="preserve">
     <value>最近の未提出レポートがある</value>

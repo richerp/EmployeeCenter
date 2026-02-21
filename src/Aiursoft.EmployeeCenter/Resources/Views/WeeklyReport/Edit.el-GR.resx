@@ -24,8 +24,20 @@
   <data name="Edit Weekly Report" xml:space="preserve">
     <value>Επεξεργασία Εβδομαδιαίου Αναφοράς</value>
   </data>
+  <data name="Hours" xml:space="preserve">
+    <value>Ωρών</value>
+  </data>
+  <data name="Project Associations" xml:space="preserve">
+    <value>Συνδέσεις Έργων</value>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>Απαραίτητο</value>
+  </data>
   <data name="Save Changes" xml:space="preserve">
     <value>Αποθήκευση Αλλαγών</value>
+  </data>
+  <data name="Select Project..." xml:space="preserve">
+    <value>Επιλέξτε Έργο...</value>
   </data>
   <data name="Update your weekly report... (Markdown supported)" xml:space="preserve">
     <value>Ενημερώστε την εβδομαδιαία αναφορά σας... (Υποστηρίζεται το Markdown)</value>

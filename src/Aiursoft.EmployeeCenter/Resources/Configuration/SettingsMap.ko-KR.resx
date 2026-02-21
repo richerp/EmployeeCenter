@@ -36,6 +36,9 @@
   <data name="Default Payroll Currency" xml:space="preserve">
     <value>기본 급여 통화</value>
   </data>
+  <data name="Force Project Association" xml:space="preserve">
+    <value>프로젝트 연계 강제</value>
+  </data>
   <data name="ICP Number" xml:space="preserve">
     <value>ICP 번호</value>
   </data>
@@ -44,6 +47,9 @@
   </data>
   <data name="Project Name" xml:space="preserve">
     <value>프로젝트 이름</value>
+  </data>
+  <data name="Require employees to associate at least one project when submitting a weekly report." xml:space="preserve">
+    <value>주간 보고서를 제출할 때 직원들이 적어도 하나의 프로젝트와 연계하도록 요구합니다.</value>
   </data>
   <data name="The brand name of the company or project. E.g. Aiursoft." xml:space="preserve">
     <value>회사 또는 프로젝트의 브랜드 이름입니다. 예: Aiursoft.</value>

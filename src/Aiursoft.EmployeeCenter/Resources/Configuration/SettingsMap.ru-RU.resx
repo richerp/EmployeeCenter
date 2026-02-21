@@ -36,6 +36,9 @@
   <data name="Default Payroll Currency" xml:space="preserve">
     <value>Валюта по умолчанию для расчета заработной платы</value>
   </data>
+  <data name="Force Project Association" xml:space="preserve">
+    <value>Принудительная привязка проекта</value>
+  </data>
   <data name="ICP Number" xml:space="preserve">
     <value>Номер ICP</value>
   </data>
@@ -44,6 +47,9 @@
   </data>
   <data name="Project Name" xml:space="preserve">
     <value>Название проекта</value>
+  </data>
+  <data name="Require employees to associate at least one project when submitting a weekly report." xml:space="preserve">
+    <value>Требовать от сотрудников связывать хотя бы один проект при подаче еженедельного отчета.</value>
   </data>
   <data name="The brand name of the company or project. E.g. Aiursoft." xml:space="preserve">
     <value>Название бренда компании или проекта. Например: Aiursoft.</value>

@@ -36,6 +36,9 @@
   <data name="Default Payroll Currency" xml:space="preserve">
     <value>Tiền tệ lương mặc định</value>
   </data>
+  <data name="Force Project Association" xml:space="preserve">
+    <value>Bắt buộc liên kết dự án</value>
+  </data>
   <data name="ICP Number" xml:space="preserve">
     <value>Số đăng ký ICP</value>
   </data>
@@ -44,6 +47,9 @@
   </data>
   <data name="Project Name" xml:space="preserve">
     <value>Tên dự án</value>
+  </data>
+  <data name="Require employees to associate at least one project when submitting a weekly report." xml:space="preserve">
+    <value>Yêu cầu nhân viên liên kết ít nhất một dự án khi nộp báo cáo hàng tuần.</value>
   </data>
   <data name="The brand name of the company or project. E.g. Aiursoft." xml:space="preserve">
     <value>Tên thương hiệu của công ty hoặc dự án. Ví dụ: Aiursoft.</value>

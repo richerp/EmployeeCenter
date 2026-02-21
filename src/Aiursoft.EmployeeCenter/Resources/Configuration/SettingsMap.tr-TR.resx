@@ -36,6 +36,9 @@
   <data name="Default Payroll Currency" xml:space="preserve">
     <value>Varsayılan Ödeme Para Birimi</value>
   </data>
+  <data name="Force Project Association" xml:space="preserve">
+    <value>Proje Bağlantısını Zorunlu Kıl</value>
+  </data>
   <data name="ICP Number" xml:space="preserve">
     <value>ICP Numarası</value>
   </data>
@@ -44,6 +47,9 @@
   </data>
   <data name="Project Name" xml:space="preserve">
     <value>Proje Adı</value>
+  </data>
+  <data name="Require employees to associate at least one project when submitting a weekly report." xml:space="preserve">
+    <value>Haftalık rapor gönderirken çalışanların en az bir projeyle ilişkilendirilmesini zorunlu kıl.</value>
   </data>
   <data name="The brand name of the company or project. E.g. Aiursoft." xml:space="preserve">
     <value>Şirketin veya projenin marka adı. Örnek: Aiursoft.</value>

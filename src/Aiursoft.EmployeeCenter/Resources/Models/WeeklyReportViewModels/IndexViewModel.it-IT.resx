@@ -21,6 +21,9 @@
       <data name="All Users" xml:space="preserve">
     <value>Tutti gli utenti</value>
   </data>
+  <data name="Approved Projects" xml:space="preserve">
+    <value>Progetti Approvati</value>
+  </data>
   <data name="Available Weeks" xml:space="preserve">
     <value>Settimane Disponibili</value>
   </data>
@@ -41,6 +44,9 @@
   </data>
   <data name="Filter User Id" xml:space="preserve">
     <value>Filtra ID utente</value>
+  </data>
+  <data name="Force Project Association" xml:space="preserve">
+    <value>Associazione forzata al progetto</value>
   </data>
   <data name="Has Recent Missing Reports" xml:space="preserve">
     <value>Ha rapporti mancanti recenti</value>

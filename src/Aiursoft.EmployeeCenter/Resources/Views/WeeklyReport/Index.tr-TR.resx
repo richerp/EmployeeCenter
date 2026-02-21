@@ -27,6 +27,9 @@
   <data name="Extremely Dangerous!" xml:space="preserve">
     <value>Çok Kritik!</value>
   </data>
+  <data name="Hours" xml:space="preserve">
+    <value>Saat</value>
+  </data>
   <data name="Incomplete Submission" xml:space="preserve">
     <value>Eksik Gönderim</value>
   </data>
@@ -54,11 +57,20 @@
   <data name="Post Report" xml:space="preserve">
     <value>Raporu Gönder</value>
   </data>
+  <data name="Project Associations" xml:space="preserve">
+    <value>Proje İlişkileri</value>
+  </data>
   <data name="Reports are ordered by time. Scroll down to see older reports." xml:space="preserve">
     <value>Raporlar zaman sırasına göre sıralanmıştır. Eski raporlara ulaşmak için aşağı kaydırın.</value>
   </data>
+  <data name="Required" xml:space="preserve">
+    <value>Gerekli</value>
+  </data>
   <data name="Saved" xml:space="preserve">
     <value>Kaydedildi</value>
+  </data>
+  <data name="Select Project..." xml:space="preserve">
+    <value>Proje Seç...</value>
   </data>
   <data name="Select Week" xml:space="preserve">
     <value>Haftayı Seç</value>

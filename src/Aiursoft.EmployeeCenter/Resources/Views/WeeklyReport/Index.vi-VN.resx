@@ -27,6 +27,9 @@
   <data name="Extremely Dangerous!" xml:space="preserve">
     <value>Cực kỳ nguy hiểm!</value>
   </data>
+  <data name="Hours" xml:space="preserve">
+    <value>Giờ</value>
+  </data>
   <data name="Incomplete Submission" xml:space="preserve">
     <value>Báo cáo chưa hoàn tất</value>
   </data>
@@ -54,11 +57,20 @@
   <data name="Post Report" xml:space="preserve">
     <value>Gửi báo cáo</value>
   </data>
+  <data name="Project Associations" xml:space="preserve">
+    <value>Liên kết dự án</value>
+  </data>
   <data name="Reports are ordered by time. Scroll down to see older reports." xml:space="preserve">
     <value>Báo cáo được sắp xếp theo thời gian. Cuộn xuống để xem các báo cáo cũ hơn.</value>
   </data>
+  <data name="Required" xml:space="preserve">
+    <value>Bắt buộc</value>
+  </data>
   <data name="Saved" xml:space="preserve">
     <value>Đã lưu</value>
+  </data>
+  <data name="Select Project..." xml:space="preserve">
+    <value>Chọn dự án...</value>
   </data>
   <data name="Select Week" xml:space="preserve">
     <value>Chọn tuần</value>

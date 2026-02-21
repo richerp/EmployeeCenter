@@ -24,8 +24,20 @@
   <data name="Edit Weekly Report" xml:space="preserve">
     <value>編輯週報</value>
   </data>
+  <data name="Hours" xml:space="preserve">
+    <value>小時</value>
+  </data>
+  <data name="Project Associations" xml:space="preserve">
+    <value>專案關聯</value>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>必要</value>
+  </data>
   <data name="Save Changes" xml:space="preserve">
     <value>儲存變更</value>
+  </data>
+  <data name="Select Project..." xml:space="preserve">
+    <value>選擇專案...</value>
   </data>
   <data name="Update your weekly report... (Markdown supported)" xml:space="preserve">
     <value>更新您的週報... (支援 Markdown)</value>

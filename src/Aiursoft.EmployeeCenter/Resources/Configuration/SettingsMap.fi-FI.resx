@@ -36,6 +36,9 @@
   <data name="Default Payroll Currency" xml:space="preserve">
     <value>Oletuspalkkalaskentan valuutta</value>
   </data>
+  <data name="Force Project Association" xml:space="preserve">
+    <value>Pakota projektin liittäminen</value>
+  </data>
   <data name="ICP Number" xml:space="preserve">
     <value>ICP-numero</value>
   </data>
@@ -44,6 +47,9 @@
   </data>
   <data name="Project Name" xml:space="preserve">
     <value>Projektin nimi</value>
+  </data>
+  <data name="Require employees to associate at least one project when submitting a weekly report." xml:space="preserve">
+    <value>Vaadi työntekijöitä liittämään vähintään yhden projektin, kun lähettävät viikko-raportin.</value>
   </data>
   <data name="The brand name of the company or project. E.g. Aiursoft." xml:space="preserve">
     <value>Yrityksen tai projektin brändinimi. Esim. Aiursoft.</value>

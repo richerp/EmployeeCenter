@@ -21,6 +21,9 @@
       <data name="All Users" xml:space="preserve">
     <value>सभी उपयोगकर्ता</value>
   </data>
+  <data name="Approved Projects" xml:space="preserve">
+    <value>अनुमोदित प्रोजेक्ट्स</value>
+  </data>
   <data name="Available Weeks" xml:space="preserve">
     <value>उपलब्ध सप्ताह</value>
   </data>
@@ -41,6 +44,9 @@
   </data>
   <data name="Filter User Id" xml:space="preserve">
     <value>उपयोगकर्ता आईडी फ़िल्टर करें</value>
+  </data>
+  <data name="Force Project Association" xml:space="preserve">
+    <value>प्रोजेक्ट संबंध को बलपूर्वक निर्धारित करें</value>
   </data>
   <data name="Has Recent Missing Reports" xml:space="preserve">
     <value>हाल के लापता रिपोर्ट्स हैं</value>

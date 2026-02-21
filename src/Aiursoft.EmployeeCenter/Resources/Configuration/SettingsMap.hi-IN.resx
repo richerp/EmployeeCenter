@@ -36,6 +36,9 @@
   <data name="Default Payroll Currency" xml:space="preserve">
     <value>डिफ़ॉल्ट पेरॉल मुद्रा</value>
   </data>
+  <data name="Force Project Association" xml:space="preserve">
+    <value>प्रोजेक्ट संबंध को बाध्य करें</value>
+  </data>
   <data name="ICP Number" xml:space="preserve">
     <value>आईसीपी नंबर</value>
   </data>
@@ -44,6 +47,9 @@
   </data>
   <data name="Project Name" xml:space="preserve">
     <value>प्रोजेक्ट नाम</value>
+  </data>
+  <data name="Require employees to associate at least one project when submitting a weekly report." xml:space="preserve">
+    <value>सप्ताहिक रिपोर्ट जमा करते समय कम से कम एक प्रोजेक्ट के साथ संलग्न करने के लिए कर्मचारियों को अनिवार्य करें।</value>
   </data>
   <data name="The brand name of the company or project. E.g. Aiursoft." xml:space="preserve">
     <value>कंपनी या प्रोजेक्ट का ब्रांड नाम। उदाहरण: Aiursoft।</value>

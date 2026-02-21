@@ -24,6 +24,9 @@
   <data name="Current Week" xml:space="preserve">
     <value>Tuần hiện tại</value>
   </data>
+  <data name="Project association is required." xml:space="preserve">
+    <value>Yêu cầu liên kết dự án.</value>
+  </data>
   <data name="You can only edit reports published within 4 weeks." xml:space="preserve">
     <value>Bạn chỉ có thể chỉnh sửa các báo cáo đã đăng trong vòng 4 tuần.</value>
   </data>

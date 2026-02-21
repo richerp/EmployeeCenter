@@ -24,6 +24,9 @@
   <data name="Current Week" xml:space="preserve">
     <value>Τρέχουσα Εβδομάδα</value>
   </data>
+  <data name="Project association is required." xml:space="preserve">
+    <value>Η σύνδεση με έργο είναι απαραίτητη.</value>
+  </data>
   <data name="You can only edit reports published within 4 weeks." xml:space="preserve">
     <value>Μπορείτε να επεξεργαστείτε μόνο αναφορές που δημοσιεύτηκαν εντός των τελευταίων 4 εβδομάδων.</value>
   </data>

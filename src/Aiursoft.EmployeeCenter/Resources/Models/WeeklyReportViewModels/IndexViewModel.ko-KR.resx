@@ -21,6 +21,9 @@
       <data name="All Users" xml:space="preserve">
     <value>모든 사용자</value>
   </data>
+  <data name="Approved Projects" xml:space="preserve">
+    <value>승인된 프로젝트</value>
+  </data>
   <data name="Available Weeks" xml:space="preserve">
     <value>사용 가능한 주</value>
   </data>
@@ -41,6 +44,9 @@
   </data>
   <data name="Filter User Id" xml:space="preserve">
     <value>사용자 ID 필터</value>
+  </data>
+  <data name="Force Project Association" xml:space="preserve">
+    <value>프로젝트 연계 강제</value>
   </data>
   <data name="Has Recent Missing Reports" xml:space="preserve">
     <value>최근 누락 보고서 있음</value>

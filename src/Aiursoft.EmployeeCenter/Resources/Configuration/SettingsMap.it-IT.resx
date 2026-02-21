@@ -36,6 +36,9 @@
   <data name="Default Payroll Currency" xml:space="preserve">
     <value>Valuta dello stipendio predefinita</value>
   </data>
+  <data name="Force Project Association" xml:space="preserve">
+    <value>Associazione Progetto Obbligatoria</value>
+  </data>
   <data name="ICP Number" xml:space="preserve">
     <value>Numero ICP</value>
   </data>
@@ -44,6 +47,9 @@
   </data>
   <data name="Project Name" xml:space="preserve">
     <value>Nome progetto</value>
+  </data>
+  <data name="Require employees to associate at least one project when submitting a weekly report." xml:space="preserve">
+    <value>Richiedi agli impiegati di associare almeno un progetto quando inviano una relazione settimanale.</value>
   </data>
   <data name="The brand name of the company or project. E.g. Aiursoft." xml:space="preserve">
     <value>Il nome del marchio dell&apos;azienda o del progetto. Esempio: Aiursoft.</value>

@@ -27,5 +27,8 @@
   <data name="Edit" xml:space="preserve">
     <value>編輯</value>
   </data>
+  <data name="Total Project Duration" xml:space="preserve">
+    <value>總項目時長</value>
+  </data>
 
 </root>

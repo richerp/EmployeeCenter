@@ -36,6 +36,9 @@
   <data name="Default Payroll Currency" xml:space="preserve">
     <value>Standard lönevaluta</value>
   </data>
+  <data name="Force Project Association" xml:space="preserve">
+    <value>Tvinga projektanslutning</value>
+  </data>
   <data name="ICP Number" xml:space="preserve">
     <value>ICP-nummer</value>
   </data>
@@ -44,6 +47,9 @@
   </data>
   <data name="Project Name" xml:space="preserve">
     <value>Projektnamn</value>
+  </data>
+  <data name="Require employees to associate at least one project when submitting a weekly report." xml:space="preserve">
+    <value>Kräv att anställda kopplar minst ett projekt när de lämnar in en veckorapport.</value>
   </data>
   <data name="The brand name of the company or project. E.g. Aiursoft." xml:space="preserve">
     <value>Det är varumärket för företaget eller projektet. T.ex. Aiursoft.</value>

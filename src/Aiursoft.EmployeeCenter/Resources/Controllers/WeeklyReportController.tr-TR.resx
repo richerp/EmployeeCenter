@@ -24,6 +24,9 @@
   <data name="Current Week" xml:space="preserve">
     <value>Geçerli Hafta</value>
   </data>
+  <data name="Project association is required." xml:space="preserve">
+    <value>Proje ilişkilendirilmesi gerekli.</value>
+  </data>
   <data name="You can only edit reports published within 4 weeks." xml:space="preserve">
     <value>Sadece son 4 hafta içinde yayınlanan raporları düzenleyebilirsiniz.</value>
   </data>

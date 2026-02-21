@@ -21,6 +21,9 @@
       <data name="All Users" xml:space="preserve">
     <value>Kaikki käyttäjät</value>
   </data>
+  <data name="Approved Projects" xml:space="preserve">
+    <value>Hyväksytyt projektit</value>
+  </data>
   <data name="Available Weeks" xml:space="preserve">
     <value>Saapuvat viikot</value>
   </data>
@@ -41,6 +44,9 @@
   </data>
   <data name="Filter User Id" xml:space="preserve">
     <value>Suodata käyttäjätunnus</value>
+  </data>
+  <data name="Force Project Association" xml:space="preserve">
+    <value>Pakota projektityöskentely</value>
   </data>
   <data name="Has Recent Missing Reports" xml:space="preserve">
     <value>On viimeaikaisia puuttuvia raportteja</value>
