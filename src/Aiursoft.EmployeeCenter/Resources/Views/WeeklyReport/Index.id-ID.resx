@@ -27,6 +27,9 @@
   <data name="Extremely Dangerous!" xml:space="preserve">
     <value>Sangat Berbahaya!</value>
   </data>
+  <data name="Hours" xml:space="preserve">
+    <value>Jam</value>
+  </data>
   <data name="Incomplete Submission" xml:space="preserve">
     <value>Penyerahan Tidak Lengkap</value>
   </data>
@@ -54,11 +57,20 @@
   <data name="Post Report" xml:space="preserve">
     <value>Kirim Laporan</value>
   </data>
+  <data name="Project Associations" xml:space="preserve">
+    <value>Asosiasi Proyek</value>
+  </data>
   <data name="Reports are ordered by time. Scroll down to see older reports." xml:space="preserve">
     <value>Laporan diurutkan berdasarkan waktu. Gulir ke bawah untuk melihat laporan yang lebih lama.</value>
   </data>
+  <data name="Required" xml:space="preserve">
+    <value>Wajib</value>
+  </data>
   <data name="Saved" xml:space="preserve">
     <value>Tersimpan</value>
+  </data>
+  <data name="Select Project..." xml:space="preserve">
+    <value>Pilih Proyek...</value>
   </data>
   <data name="Select Week" xml:space="preserve">
     <value>Pilih Minggu</value>

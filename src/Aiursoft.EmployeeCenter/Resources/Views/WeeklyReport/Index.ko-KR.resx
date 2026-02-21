@@ -27,6 +27,9 @@
   <data name="Extremely Dangerous!" xml:space="preserve">
     <value>매우 위험합니다!</value>
   </data>
+  <data name="Hours" xml:space="preserve">
+    <value>시간</value>
+  </data>
   <data name="Incomplete Submission" xml:space="preserve">
     <value>부분 제출</value>
   </data>
@@ -54,11 +57,20 @@
   <data name="Post Report" xml:space="preserve">
     <value>보고서 게시</value>
   </data>
+  <data name="Project Associations" xml:space="preserve">
+    <value>프로젝트 연관 정보</value>
+  </data>
   <data name="Reports are ordered by time. Scroll down to see older reports." xml:space="preserve">
     <value>보고서는 시간 순으로 정렬되어 있습니다. 더 오래된 보고서를 보려면 아래로 스크롤하세요.</value>
   </data>
+  <data name="Required" xml:space="preserve">
+    <value>필수</value>
+  </data>
   <data name="Saved" xml:space="preserve">
     <value>저장됨</value>
+  </data>
+  <data name="Select Project..." xml:space="preserve">
+    <value>프로젝트 선택...</value>
   </data>
   <data name="Select Week" xml:space="preserve">
     <value>주간 선택</value>

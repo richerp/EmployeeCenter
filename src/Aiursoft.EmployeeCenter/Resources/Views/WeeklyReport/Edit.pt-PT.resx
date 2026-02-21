@@ -24,8 +24,20 @@
   <data name="Edit Weekly Report" xml:space="preserve">
     <value>Editar Relatório Semanal</value>
   </data>
+  <data name="Hours" xml:space="preserve">
+    <value>Horas</value>
+  </data>
+  <data name="Project Associations" xml:space="preserve">
+    <value>Associações de Projetos</value>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>Obrigatório</value>
+  </data>
   <data name="Save Changes" xml:space="preserve">
     <value>Guardar Alterações</value>
+  </data>
+  <data name="Select Project..." xml:space="preserve">
+    <value>Selecionar Projeto...</value>
   </data>
   <data name="Update your weekly report... (Markdown supported)" xml:space="preserve">
     <value>Atualize o seu relatório semanal... (suporta Markdown)</value>

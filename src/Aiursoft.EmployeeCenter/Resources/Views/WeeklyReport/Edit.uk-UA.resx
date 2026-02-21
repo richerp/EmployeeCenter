@@ -24,8 +24,20 @@
   <data name="Edit Weekly Report" xml:space="preserve">
     <value>Редагувати тижневий звіт</value>
   </data>
+  <data name="Hours" xml:space="preserve">
+    <value>Години</value>
+  </data>
+  <data name="Project Associations" xml:space="preserve">
+    <value>Пов’язані проекти</value>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>Обов&apos;язково</value>
+  </data>
   <data name="Save Changes" xml:space="preserve">
     <value>Зберегти зміни</value>
+  </data>
+  <data name="Select Project..." xml:space="preserve">
+    <value>Вибрати проект...</value>
   </data>
   <data name="Update your weekly report... (Markdown supported)" xml:space="preserve">
     <value>Оновіть свій тижневий звіт... (підтримка Markdown)</value>

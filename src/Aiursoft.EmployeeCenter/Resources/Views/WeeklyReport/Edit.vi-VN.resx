@@ -24,8 +24,20 @@
   <data name="Edit Weekly Report" xml:space="preserve">
     <value>Chỉnh sửa báo cáo hàng tuần</value>
   </data>
+  <data name="Hours" xml:space="preserve">
+    <value>Giờ</value>
+  </data>
+  <data name="Project Associations" xml:space="preserve">
+    <value>Liên kết dự án</value>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>Bắt buộc</value>
+  </data>
   <data name="Save Changes" xml:space="preserve">
     <value>Lưu thay đổi</value>
+  </data>
+  <data name="Select Project..." xml:space="preserve">
+    <value>Chọn dự án...</value>
   </data>
   <data name="Update your weekly report... (Markdown supported)" xml:space="preserve">
     <value>Cập nhật báo cáo hàng tuần của bạn... (Hỗ trợ Markdown)</value>

@@ -27,6 +27,9 @@
   <data name="Extremely Dangerous!" xml:space="preserve">
     <value>Небезпечно небезпечно!</value>
   </data>
+  <data name="Hours" xml:space="preserve">
+    <value>Години</value>
+  </data>
   <data name="Incomplete Submission" xml:space="preserve">
     <value>Неповна подача</value>
   </data>
@@ -54,11 +57,20 @@
   <data name="Post Report" xml:space="preserve">
     <value>Надіслати звіт</value>
   </data>
+  <data name="Project Associations" xml:space="preserve">
+    <value>Пов’язані проекти</value>
+  </data>
   <data name="Reports are ordered by time. Scroll down to see older reports." xml:space="preserve">
     <value>Звіти відсортовано за часом. Прокрутіть вниз, щоб побачити старіші звіти.</value>
   </data>
+  <data name="Required" xml:space="preserve">
+    <value>Обов&apos;язково</value>
+  </data>
   <data name="Saved" xml:space="preserve">
     <value>Збережено</value>
+  </data>
+  <data name="Select Project..." xml:space="preserve">
+    <value>Вибрати проект...</value>
   </data>
   <data name="Select Week" xml:space="preserve">
     <value>Вибрати тиждень</value>

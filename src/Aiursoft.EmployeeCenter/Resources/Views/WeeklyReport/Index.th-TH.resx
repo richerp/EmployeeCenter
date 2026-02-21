@@ -27,6 +27,9 @@
   <data name="Extremely Dangerous!" xml:space="preserve">
     <value>อันตรายมาก!</value>
   </data>
+  <data name="Hours" xml:space="preserve">
+    <value>ชั่วโมง</value>
+  </data>
   <data name="Incomplete Submission" xml:space="preserve">
     <value>การส่งรายงานไม่สมบูรณ์</value>
   </data>
@@ -54,11 +57,20 @@
   <data name="Post Report" xml:space="preserve">
     <value>ส่งรายงาน</value>
   </data>
+  <data name="Project Associations" xml:space="preserve">
+    <value>การเชื่อมโยงโครงการ</value>
+  </data>
   <data name="Reports are ordered by time. Scroll down to see older reports." xml:space="preserve">
     <value>รายงานถูกจัดเรียงตามเวลา ทำเลื่อนลงเพื่อดูรายงานย้อนหลัง</value>
   </data>
+  <data name="Required" xml:space="preserve">
+    <value>จำเป็น</value>
+  </data>
   <data name="Saved" xml:space="preserve">
     <value>บันทึกแล้ว</value>
+  </data>
+  <data name="Select Project..." xml:space="preserve">
+    <value>เลือกโครงการ...</value>
   </data>
   <data name="Select Week" xml:space="preserve">
     <value>เลือกสัปดาห์</value>

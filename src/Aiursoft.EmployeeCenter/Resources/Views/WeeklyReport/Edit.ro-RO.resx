@@ -24,8 +24,20 @@
   <data name="Edit Weekly Report" xml:space="preserve">
     <value>Editare Raport Săptămânal</value>
   </data>
+  <data name="Hours" xml:space="preserve">
+    <value>Ore</value>
+  </data>
+  <data name="Project Associations" xml:space="preserve">
+    <value>Asocieri Proiecte</value>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>Obligatoriu</value>
+  </data>
   <data name="Save Changes" xml:space="preserve">
     <value>Salvează modificările</value>
+  </data>
+  <data name="Select Project..." xml:space="preserve">
+    <value>Selectați Proiectul...</value>
   </data>
   <data name="Update your weekly report... (Markdown supported)" xml:space="preserve">
     <value>Actualizează-ți raportul săptămânal... (suport pentru Markdown)</value>

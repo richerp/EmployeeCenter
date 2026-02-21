@@ -18,11 +18,20 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Content" xml:space="preserve">
+      <data name="Approved Projects" xml:space="preserve">
+    <value>승인된 프로젝트</value>
+  </data>
+  <data name="Content" xml:space="preserve">
     <value>내용</value>
+  </data>
+  <data name="Force Project Association" xml:space="preserve">
+    <value>프로젝트 연관 강제</value>
   </data>
   <data name="Id" xml:space="preserve">
     <value>ID</value>
+  </data>
+  <data name="Requirements" xml:space="preserve">
+    <value>요구사항</value>
   </data>
   <data name="The {0} is required." xml:space="preserve">
     <value>{0}은 필수 항목입니다.</value>

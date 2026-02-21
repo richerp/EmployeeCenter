@@ -24,6 +24,9 @@
   <data name="Current Week" xml:space="preserve">
     <value>Поточний тиждень</value>
   </data>
+  <data name="Project association is required." xml:space="preserve">
+    <value>Потрібне призначення проекту.</value>
+  </data>
   <data name="You can only edit reports published within 4 weeks." xml:space="preserve">
     <value>Ви можете редагувати звіти, опубліковані протягом останніх 4 тижнів.</value>
   </data>

@@ -27,6 +27,9 @@
   <data name="Extremely Dangerous!" xml:space="preserve">
     <value>Extremt farligt!</value>
   </data>
+  <data name="Hours" xml:space="preserve">
+    <value>Timmar</value>
+  </data>
   <data name="Incomplete Submission" xml:space="preserve">
     <value>Oavslutad inlämning</value>
   </data>
@@ -54,11 +57,20 @@
   <data name="Post Report" xml:space="preserve">
     <value>Skicka rapport</value>
   </data>
+  <data name="Project Associations" xml:space="preserve">
+    <value>Projektanslutningar</value>
+  </data>
   <data name="Reports are ordered by time. Scroll down to see older reports." xml:space="preserve">
     <value>Rapporter är sorterade i kronologisk ordning. Scrolla ner för att se äldre rapporter.</value>
   </data>
+  <data name="Required" xml:space="preserve">
+    <value>Obligatoriskt</value>
+  </data>
   <data name="Saved" xml:space="preserve">
     <value>Sparat</value>
+  </data>
+  <data name="Select Project..." xml:space="preserve">
+    <value>Välj projekt...</value>
   </data>
   <data name="Select Week" xml:space="preserve">
     <value>Välj vecka</value>

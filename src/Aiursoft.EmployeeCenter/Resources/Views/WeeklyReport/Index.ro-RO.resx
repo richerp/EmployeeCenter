@@ -27,6 +27,9 @@
   <data name="Extremely Dangerous!" xml:space="preserve">
     <value>Extrem de periculos!</value>
   </data>
+  <data name="Hours" xml:space="preserve">
+    <value>Ore</value>
+  </data>
   <data name="Incomplete Submission" xml:space="preserve">
     <value>Înregistrare incompletă</value>
   </data>
@@ -54,11 +57,20 @@
   <data name="Post Report" xml:space="preserve">
     <value>Trimite raportul</value>
   </data>
+  <data name="Project Associations" xml:space="preserve">
+    <value>Asocieri proiecte</value>
+  </data>
   <data name="Reports are ordered by time. Scroll down to see older reports." xml:space="preserve">
     <value>Raportele sunt ordonate după timp. Scrollați în jos pentru a vedea rapoartele mai vechi.</value>
   </data>
+  <data name="Required" xml:space="preserve">
+    <value>Obligatoriu</value>
+  </data>
   <data name="Saved" xml:space="preserve">
     <value>Salvat</value>
+  </data>
+  <data name="Select Project..." xml:space="preserve">
+    <value>Selectează Proiect...</value>
   </data>
   <data name="Select Week" xml:space="preserve">
     <value>Selectați săptămâna</value>

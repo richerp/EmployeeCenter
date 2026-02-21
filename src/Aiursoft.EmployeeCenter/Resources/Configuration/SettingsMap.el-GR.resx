@@ -36,6 +36,9 @@
   <data name="Default Payroll Currency" xml:space="preserve">
     <value>Προεπιλεγμένο Νόμισμα Μισθοδοσίας</value>
   </data>
+  <data name="Force Project Association" xml:space="preserve">
+    <value>Αναγκαστική Σύνδεση Έργου</value>
+  </data>
   <data name="ICP Number" xml:space="preserve">
     <value>Αριθμός ICP</value>
   </data>
@@ -44,6 +47,9 @@
   </data>
   <data name="Project Name" xml:space="preserve">
     <value>Όνομα Έργου</value>
+  </data>
+  <data name="Require employees to associate at least one project when submitting a weekly report." xml:space="preserve">
+    <value>Απαιτείται από τους υπαλλήλους να συνδέσουν τουλάχιστον ένα έργο κατά την υποβολή μιας εβδομαδιαίας αναφοράς.</value>
   </data>
   <data name="The brand name of the company or project. E.g. Aiursoft." xml:space="preserve">
     <value>Το όνομα του σήματος της εταιρείας ή του έργου. Π.χ. Aiursoft.</value>

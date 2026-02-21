@@ -18,11 +18,20 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Content" xml:space="preserve">
+      <data name="Approved Projects" xml:space="preserve">
+    <value>Approved Projects</value>
+  </data>
+  <data name="Content" xml:space="preserve">
     <value>Content</value>
+  </data>
+  <data name="Force Project Association" xml:space="preserve">
+    <value>Force Project Association</value>
   </data>
   <data name="Id" xml:space="preserve">
     <value>Id</value>
+  </data>
+  <data name="Requirements" xml:space="preserve">
+    <value>Requirements</value>
   </data>
   <data name="The {0} is required." xml:space="preserve">
     <value>The {0} is required.</value>

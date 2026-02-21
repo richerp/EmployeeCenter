@@ -24,8 +24,20 @@
   <data name="Edit Weekly Report" xml:space="preserve">
     <value>Haftalık Raporu Düzenle</value>
   </data>
+  <data name="Hours" xml:space="preserve">
+    <value>Saatler</value>
+  </data>
+  <data name="Project Associations" xml:space="preserve">
+    <value>Proje İlişkileri</value>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>Gerekli</value>
+  </data>
   <data name="Save Changes" xml:space="preserve">
     <value>Değişiklikleri Kaydet</value>
+  </data>
+  <data name="Select Project..." xml:space="preserve">
+    <value>Proje Seç...</value>
   </data>
   <data name="Update your weekly report... (Markdown supported)" xml:space="preserve">
     <value>Haftalık raporunuzu güncelleyin... (Markdown desteklenir)</value>

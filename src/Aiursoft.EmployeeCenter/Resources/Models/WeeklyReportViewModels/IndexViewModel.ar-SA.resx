@@ -21,6 +21,9 @@
       <data name="All Users" xml:space="preserve">
     <value>جميع المستخدمين</value>
   </data>
+  <data name="Approved Projects" xml:space="preserve">
+    <value>المشاريع المعتمدة</value>
+  </data>
   <data name="Available Weeks" xml:space="preserve">
     <value>الأسبوع المتاحة</value>
   </data>
@@ -41,6 +44,9 @@
   </data>
   <data name="Filter User Id" xml:space="preserve">
     <value>تصفية معرف المستخدم</value>
+  </data>
+  <data name="Force Project Association" xml:space="preserve">
+    <value>إجبار ارتباط المشروع</value>
   </data>
   <data name="Has Recent Missing Reports" xml:space="preserve">
     <value>يحتوي على تقارير مفقودة حديثة</value>

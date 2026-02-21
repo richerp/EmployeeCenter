@@ -21,6 +21,9 @@
       <data name="All Users" xml:space="preserve">
     <value>所有用戶</value>
   </data>
+  <data name="Approved Projects" xml:space="preserve">
+    <value>已批准項目</value>
+  </data>
   <data name="Available Weeks" xml:space="preserve">
     <value>可用週數</value>
   </data>
@@ -41,6 +44,9 @@
   </data>
   <data name="Filter User Id" xml:space="preserve">
     <value>篩選用戶 ID</value>
+  </data>
+  <data name="Force Project Association" xml:space="preserve">
+    <value>強制項目關聯</value>
   </data>
   <data name="Has Recent Missing Reports" xml:space="preserve">
     <value>有近期遺漏的報告</value>
