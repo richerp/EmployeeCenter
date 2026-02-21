@@ -24,4 +24,13 @@ public class EditViewModel : UiStackLayoutViewModel
     
     [Display(Name = "User")]
     public User? User { get; set; }
+
+    [Display(Name = "Approved Projects")]
+    public List<Requirement> ApprovedProjects { get; set; } = new();
+
+    [Display(Name = "Requirements")]
+    public List<WeeklyReportRequirementViewModel> Requirements { get; set; } = new();
+
+    [Display(Name = "Force Project Association")]
+    public bool ForceProjectAssociation { get; set; }
 }

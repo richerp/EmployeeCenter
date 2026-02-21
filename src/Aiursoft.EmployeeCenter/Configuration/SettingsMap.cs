@@ -12,6 +12,7 @@ public class SettingsMap
     public const string Icp = "Icp";
     public const string AnnualLeavePerYear = "Annual_Leave_Per_Year";
     public const string DefaultPayrollCurrency = "Default_Payroll_Currency";
+    public const string ForceProjectAssociation = "Force_Project_Association";
 
     public class FakeLocalizer
     {
@@ -95,6 +96,14 @@ public class SettingsMap
                 { "HKD", "港币 (HKD)" },
                 { "USD", "美元 (USD)" }
             }
+        },
+        new GlobalSettingDefinition
+        {
+            Key = ForceProjectAssociation,
+            Name = Localizer["Force Project Association"],
+            Description = Localizer["Require employees to associate at least one project when submitting a weekly report."],
+            Type = SettingType.Bool,
+            DefaultValue = "False"
         }
     };
 }

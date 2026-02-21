@@ -1,4 +1,5 @@
 using Aiursoft.EmployeeCenter.Authorization;
+using Aiursoft.EmployeeCenter.Configuration;
 using Aiursoft.EmployeeCenter.Entities;
 using Aiursoft.EmployeeCenter.Models.WeeklyReportViewModels;
 using Aiursoft.EmployeeCenter.Services;
@@ -38,6 +39,7 @@ public class WeeklyReportController(
 
         var query = dbContext.WeeklyReports
             .Include(r => r.User)
+            .Include(r => r.WeeklyReportRequirements)
             .AsNoTracking();
 
         if (!string.IsNullOrEmpty(userId))
@@ -85,6 +87,18 @@ public class WeeklyReportController(
 
         var submittedThisWeek = existingWeeks.Contains(thisWeekStart);
 
+        var approvedProjects = await dbContext.Requirements
+            .Where(r => r.Status == RequirementStatus.Approved)
+            .OrderByDescending(r => r.CreationTime)
+            .ToListAsync();
+
+        var forceProjectAssociationStr = await dbContext.GlobalSettings
+            .Where(s => s.Key == SettingsMap.ForceProjectAssociation)
+            .Select(s => s.Value)
+            .FirstOrDefaultAsync();
+        
+        var forceProjectAssociation = forceProjectAssociationStr == "True";
+
         var model = new IndexViewModel
         {
             Reports = reports,
@@ -96,7 +110,9 @@ public class WeeklyReportController(
             HasRecentMissingReports = missingWeeksCount > 0,
             CriticalMissingReports = missingWeeksCount >= 4,
             MissingWeeksCount = missingWeeksCount,
-            FilterUserId = userId
+            FilterUserId = userId,
+            ApprovedProjects = approvedProjects,
+            ForceProjectAssociation = forceProjectAssociation
         };
 
         if (canManageAnyone)
@@ -116,9 +132,9 @@ public class WeeklyReportController(
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create(string content, string? onBehalfOf, DateTime? weekStartDate)
+    public async Task<IActionResult> Create(CreateViewModel model)
     {
-        if (string.IsNullOrWhiteSpace(content))
+        if (string.IsNullOrWhiteSpace(model.Content))
         {
             return RedirectToAction(nameof(Index));
         }
@@ -130,9 +146,9 @@ public class WeeklyReportController(
         var canManageAnyone = (await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanManageAnyoneWeeklyReport)).Succeeded;
 
         string targetUserId;
-        if (!string.IsNullOrEmpty(onBehalfOf) && canManageAnyone)
+        if (!string.IsNullOrEmpty(model.OnBehalfOf) && canManageAnyone)
         {
-            targetUserId = onBehalfOf;
+            targetUserId = model.OnBehalfOf;
         }
         else if (canCreate)
         {
@@ -143,11 +159,30 @@ public class WeeklyReportController(
             return Unauthorized();
         }
 
+        // Global Setting Check
+        var forceProjectAssociationStr = await dbContext.GlobalSettings
+            .Where(s => s.Key == SettingsMap.ForceProjectAssociation)
+            .Select(s => s.Value)
+            .FirstOrDefaultAsync();
+
+        var forceProjectAssociation = forceProjectAssociationStr == "True";
+        var modelRequirements = model.Requirements ?? [];
+
+        if (forceProjectAssociation && (!modelRequirements.Any() || modelRequirements.All(r => r.Hours <= 0)))
+        {
+             // Ideally return error. But for now redirect to index. Maybe add error message?
+             // Since we don't have a good way to show errors on index (it reloads page), just redirect.
+             // Or maybe implement error via TempData? No, user might lose content.
+             // Given constraint, I will return BadRequest for now if validation fails, or just ignore (which is bad).
+             // Let's rely on frontend validation mostly, and here just reject if invalid.
+             return BadRequest(localizer["Project association is required."]);
+        }
+
         // Week validation
         var now = DateTime.UtcNow;
         var offset = (int)now.DayOfWeek;
         var thisWeekStart = now.AddDays(-offset).Date;
-        var targetWeek = weekStartDate ?? thisWeekStart;
+        var targetWeek = model.WeekStartDate ?? thisWeekStart;
 
         // Ensure targetWeek is a Sunday
         if (targetWeek.DayOfWeek != DayOfWeek.Sunday)
@@ -165,14 +200,30 @@ public class WeeklyReportController(
 
         // Check if report already exists for this week
         var existing = await dbContext.WeeklyReports
+            .Include(t => t.WeeklyReportRequirements)
             .FirstOrDefaultAsync(r => r.UserId == targetUserId &&
                            (r.WeekStartDate == targetWeek ||
                            (r.WeekStartDate == DateTime.MinValue && r.CreateTime >= targetWeek && r.CreateTime < targetWeek.AddDays(7))));
 
         if (existing != null)
         {
-            existing.Content += "\r\n\r\n" + content;
+            existing.Content += "\r\n\r\n" + model.Content;
             existing.WeekStartDate = targetWeek;
+            
+            // Append requirements
+            foreach (var req in modelRequirements.Where(r => r.Hours > 0))
+            {
+                // Check if already exists? Maybe just add new entry even if duplicate project?
+                // Or sum hours? The requirement says "add multiple".
+                // I will add as new entries.
+                dbContext.WeeklyReportRequirements.Add(new WeeklyReportRequirement
+                {
+                    WeeklyReportId = existing.Id,
+                    RequirementId = req.RequirementId,
+                    Hours = req.Hours
+                });
+            }
+
             await dbContext.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
@@ -180,12 +231,24 @@ public class WeeklyReportController(
         var report = new WeeklyReport
         {
             UserId = targetUserId,
-            Content = content,
+            Content = model.Content,
             CreateTime = DateTime.UtcNow,
             WeekStartDate = targetWeek
         };
 
         dbContext.WeeklyReports.Add(report);
+        await dbContext.SaveChangesAsync();
+
+        // Add requirements
+        foreach (var req in modelRequirements.Where(r => r.Hours > 0))
+        {
+            dbContext.WeeklyReportRequirements.Add(new WeeklyReportRequirement
+            {
+                WeeklyReportId = report.Id,
+                RequirementId = req.RequirementId,
+                Hours = req.Hours
+            });
+        }
         await dbContext.SaveChangesAsync();
 
         return RedirectToAction(nameof(Index));
@@ -199,6 +262,7 @@ public class WeeklyReportController(
 
         var report = await dbContext.WeeklyReports
             .Include(r => r.User)
+            .Include(r => r.WeeklyReportRequirements)
             .FirstOrDefaultAsync(r => r.Id == id);
 
         if (report == null) return NotFound();
@@ -214,12 +278,33 @@ public class WeeklyReportController(
             return BadRequest(localizer["You can only edit reports published within 4 weeks."]);
         }
 
+        var approvedProjects = await dbContext.Requirements
+            .Where(r => r.Status == RequirementStatus.Approved)
+            .OrderByDescending(r => r.CreationTime)
+            .ToListAsync();
+
+        var forceProjectAssociationStr = await dbContext.GlobalSettings
+            .Where(s => s.Key == SettingsMap.ForceProjectAssociation)
+            .Select(s => s.Value)
+            .FirstOrDefaultAsync();
+        
+        var forceProjectAssociation = forceProjectAssociationStr == "True";
+
         var model = new EditViewModel
         {
             Id = report.Id,
             Content = report.Content,
             WeekStartDate = report.WeekStartDate,
-            User = report.User
+            User = report.User,
+            Requirements = report.WeeklyReportRequirements
+                .Select(r => new WeeklyReportRequirementViewModel
+                {
+                    RequirementId = r.RequirementId,
+                    Hours = r.Hours
+                })
+                .ToList(),
+            ApprovedProjects = approvedProjects,
+            ForceProjectAssociation = forceProjectAssociation
         };
 
         return this.StackView(model);
@@ -232,7 +317,10 @@ public class WeeklyReportController(
         var user = await userManager.GetUserAsync(User);
         if (user == null) return Unauthorized();
 
-        var report = await dbContext.WeeklyReports.FirstOrDefaultAsync(r => r.Id == model.Id);
+        var report = await dbContext.WeeklyReports
+            .Include(r => r.WeeklyReportRequirements)
+            .FirstOrDefaultAsync(r => r.Id == model.Id);
+
         if (report == null) return NotFound();
 
         var canManageAnyone = (await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanManageAnyoneWeeklyReport)).Succeeded;
@@ -246,7 +334,30 @@ public class WeeklyReportController(
             return BadRequest(localizer["You can only edit reports published within 4 weeks."]);
         }
 
+        var forceProjectAssociationStr = await dbContext.GlobalSettings
+            .Where(s => s.Key == SettingsMap.ForceProjectAssociation)
+            .Select(s => s.Value)
+            .FirstOrDefaultAsync();
+
+        if (forceProjectAssociationStr == "True" && (!model.Requirements.Any() || model.Requirements.All(r => r.Hours <= 0)))
+        {
+             return BadRequest(localizer["Project association is required."]);
+        }
+
         report.Content = model.Content;
+        
+        // Update requirements: remove all and add new
+        dbContext.WeeklyReportRequirements.RemoveRange(report.WeeklyReportRequirements);
+        foreach (var req in model.Requirements.Where(r => r.Hours > 0))
+        {
+            dbContext.WeeklyReportRequirements.Add(new WeeklyReportRequirement
+            {
+                WeeklyReportId = report.Id,
+                RequirementId = req.RequirementId,
+                Hours = req.Hours
+            });
+        }
+
         await dbContext.SaveChangesAsync();
 
         return RedirectToAction(nameof(Index));
@@ -307,6 +418,7 @@ public class WeeklyReportController(
     {
         var query = dbContext.WeeklyReports
             .Include(r => r.User)
+            .Include(r => r.WeeklyReportRequirements)
             .Where(r => r.WeekStartDate < beforeWeek.ToUniversalTime() ||
                        (r.WeekStartDate == beforeWeek.ToUniversalTime() && r.CreateTime < beforeCreate.ToUniversalTime()))
             .AsNoTracking();

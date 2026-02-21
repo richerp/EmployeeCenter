@@ -1,5 +1,6 @@
 
 using Aiursoft.EmployeeCenter.Authorization;
+using Aiursoft.EmployeeCenter.Configuration;
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
@@ -681,6 +682,91 @@ public class WeeklyReportTests
             var reports = await db.WeeklyReports.Where(r => r.UserId == userId).ToListAsync();
             Assert.HasCount(1, reports);
             Assert.AreEqual("User's original report\r\n\r\nAdmin's appended report", reports[0].Content);
+        }
+    }
+
+    [TestMethod]
+    public async Task TestWeeklyReportWithProjects()
+    {
+        var email = $"test-proj-{Guid.NewGuid()}@aiursoft.com";
+        var password = "Test-Password-123";
+
+        // 1. Register
+        var registerToken = await GetAntiCsrfToken("/Account/Register");
+        var registerContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Email", email },
+            { "Password", password },
+            { "ConfirmPassword", password },
+            { "__RequestVerificationToken", registerToken }
+        });
+        await _http.PostAsync("/Account/Register", registerContent);
+        var userId = await GetUserIdByEmail(email);
+        await GrantPermission(userId, AppPermissionNames.CanCreateWeeklyReport);
+        await LoginAs(email, password);
+
+        // 2. Create Approved Project (Requirement)
+        int projectId;
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            // Enable Force Project Association
+            var setting = await db.GlobalSettings.FindAsync(SettingsMap.ForceProjectAssociation);
+            if (setting == null)
+            {
+                setting = new GlobalSetting { Key = SettingsMap.ForceProjectAssociation, Value = "True" };
+                db.GlobalSettings.Add(setting);
+            }
+            else
+            {
+                setting.Value = "True";
+            }
+
+            var req = new Requirement 
+            { 
+                Title = "Test Project", 
+                Content = "Desc", 
+                RenderedHtml = "Desc", 
+                SubmitterId = userId, 
+                Status = RequirementStatus.Approved 
+            };
+            db.Requirements.Add(req);
+            await db.SaveChangesAsync();
+            projectId = req.Id;
+        }
+
+        // 3. Try to submit without project
+        var createToken = await GetAntiCsrfToken("/WeeklyReport/Index");
+        var createContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Content", "Report without project" },
+            { "__RequestVerificationToken", createToken }
+        });
+        var response = await _http.PostAsync("/WeeklyReport/Create", createContent);
+        Assert.AreEqual(HttpStatusCode.BadRequest, response.StatusCode);
+
+        // 4. Submit with project
+        createContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Content", "Report with project" },
+            { "Requirements[0].RequirementId", projectId.ToString() },
+            { "Requirements[0].Hours", "5" },
+            { "__RequestVerificationToken", createToken }
+        });
+        response = await _http.PostAsync("/WeeklyReport/Create", createContent);
+        Assert.AreEqual(HttpStatusCode.Found, response.StatusCode);
+
+        // 5. Verify
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var report = await db.WeeklyReports
+                .Include(r => r.WeeklyReportRequirements)
+                .FirstAsync(r => r.UserId == userId);
+            
+            Assert.AreEqual(1, report.WeeklyReportRequirements.Count());
+            Assert.AreEqual(projectId, report.WeeklyReportRequirements.First().RequirementId);
+            Assert.AreEqual(5, report.WeeklyReportRequirements.First().Hours);
         }
     }
 }
