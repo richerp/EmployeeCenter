@@ -22,4 +22,7 @@ public class WeeklyReport
     public DateTime WeekStartDate { get; set; }
 
     public DateTime CreateTime { get; init; } = DateTime.UtcNow;
+
+    [InverseProperty(nameof(WeeklyReportRequirement.WeeklyReport))]
+    public IEnumerable<WeeklyReportRequirement> WeeklyReportRequirements { get; set; } = new List<WeeklyReportRequirement>();
 }

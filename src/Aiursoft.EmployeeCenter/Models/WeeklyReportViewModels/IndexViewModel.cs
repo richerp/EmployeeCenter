@@ -46,4 +46,10 @@ public class IndexViewModel : UiStackLayoutViewModel
 
     [Display(Name = "Filter User")]
     public User? FilterUser { get; set; }
+
+    [Display(Name = "Approved Projects")]
+    public List<Requirement> ApprovedProjects { get; set; } = new();
+
+    [Display(Name = "Force Project Association")]
+    public bool ForceProjectAssociation { get; set; }
 }

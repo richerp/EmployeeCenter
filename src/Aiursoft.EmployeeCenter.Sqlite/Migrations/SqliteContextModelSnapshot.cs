@@ -1725,6 +1725,30 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.ToTable("WeeklyReports");
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.WeeklyReportRequirement", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Hours")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("RequirementId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("WeeklyReportId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RequirementId");
+
+                    b.HasIndex("WeeklyReportId");
+
+                    b.ToTable("WeeklyReportRequirements");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -2338,6 +2362,25 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.WeeklyReportRequirement", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.Requirement", "Requirement")
+                        .WithMany()
+                        .HasForeignKey("RequirementId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.WeeklyReport", "WeeklyReport")
+                        .WithMany("WeeklyReportRequirements")
+                        .HasForeignKey("WeeklyReportId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Requirement");
+
+                    b.Navigation("WeeklyReport");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -2502,6 +2545,11 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Vendor", b =>
                 {
                     b.Navigation("Assets");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.WeeklyReport", b =>
+                {
+                    b.Navigation("WeeklyReportRequirements");
                 });
 #pragma warning restore 612, 618
         }

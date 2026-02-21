@@ -49,6 +49,34 @@
                                 </select>
                             </div>
 
+                            <div class="mb-3">
+                                <label class="form-label small text-muted">@Localizer["Project Associations"]</label>
+                                @if(Model.ForceProjectAssociation)
+                                {
+                                    <span class="badge bg-danger">@Localizer["Required"]</span>
+                                }
+                                <div id="project-list" class="mb-2"></div>
+                                <div class="row g-2">
+                                    <div class="col">
+                                        <select class="form-select" id="new-project-select">
+                                            <option value="">@Localizer["Select Project..."]</option>
+                                            @foreach (var project in Model.ApprovedProjects)
+                                            {
+                                                <option value="@project.Id">@project.Title</option>
+                                            }
+                                        </select>
+                                    </div>
+                                    <div class="col-auto">
+                                        <input type="number" class="form-control" id="new-project-hours" placeholder="@Localizer["Hours"]" min="1" style="width: 100px;">
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="button" class="btn btn-secondary" id="add-project-btn">
+                                            <i class="align-middle" data-lucide="plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="d-flex align-items-center justify-content-between">
                                 <div class="flex-grow-1 me-3">
                                     @if (Model.CanManageAnyoneWeeklyReport)
@@ -305,6 +333,72 @@
                 }
             }, 1000);
         });
+
+        // Project Association Logic
+        const projectSelect = document.getElementById('new-project-select');
+        const projectHours = document.getElementById('new-project-hours');
+        const addProjectBtn = document.getElementById('add-project-btn');
+        const projectList = document.getElementById('project-list');
+        let projectIndex = 0;
+
+        if (addProjectBtn && projectSelect && projectHours && projectList) {
+            addProjectBtn.addEventListener('click', function() {
+                const projectId = projectSelect.value;
+                const projectText = projectSelect.options[projectSelect.selectedIndex].text;
+                const hours = projectHours.value;
+
+                if (!projectId || !hours || hours <= 0) {
+                    alert('Please select a project and enter valid hours.');
+                    return;
+                }
+
+                const itemDiv = document.createElement('div');
+                itemDiv.className = 'd-flex justify-content-between align-items-center mb-1 p-2 bg-light rounded border';
+                itemDiv.innerHTML = `
+                    <span class="fw-bold">${projectText} <span class="badge bg-secondary ms-2">${hours}h</span></span>
+                    <input type="hidden" name="Requirements[${projectIndex}].RequirementId" value="${projectId}">
+                    <input type="hidden" name="Requirements[${projectIndex}].Hours" value="${hours}">
+                    <button type="button" class="btn btn-sm btn-outline-danger remove-project-btn">
+                        <i data-lucide="trash-2"></i>
+                    </button>
+                `;
+                
+                projectList.appendChild(itemDiv);
+                
+                // Initialize icon
+                if (window.lucide) {
+                    lucide.createIcons({
+                        root: itemDiv
+                    });
+                }
+                
+                // Reset inputs
+                projectSelect.value = '';
+                projectHours.value = '';
+                
+                // Handle remove
+                itemDiv.querySelector('.remove-project-btn').addEventListener('click', function() {
+                    itemDiv.remove();
+                    reIndexProjects();
+                });
+
+                reIndexProjects();
+            });
+
+            function reIndexProjects() {
+                const items = projectList.children;
+                projectIndex = 0;
+                for (let i = 0; i < items.length; i++) {
+                    const idInput = items[i].querySelector('input[name*="RequirementId"]');
+                    const hoursInput = items[i].querySelector('input[name*="Hours"]');
+                    if (idInput && hoursInput) {
+                        idInput.name = `Requirements[${projectIndex}].RequirementId`;
+                        hoursInput.name = `Requirements[${projectIndex}].Hours`;
+                        projectIndex++;
+                    }
+                }
+            }
+        }
     });
 </script>
 
