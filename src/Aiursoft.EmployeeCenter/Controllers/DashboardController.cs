@@ -8,13 +8,16 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
+using Microsoft.Extensions.Localization;
+
 namespace Aiursoft.EmployeeCenter.Controllers;
 
 [LimitPerMin]
 [Authorize]
 public class DashboardController(
     EmployeeCenterDbContext context,
-    UserManager<User> userManager) : Controller
+    UserManager<User> userManager,
+    IStringLocalizer<DashboardController> localizer) : Controller
 {
     [RenderInNavBar(
         NavGroupName = "Career",
@@ -41,7 +44,8 @@ public class DashboardController(
         {
             Tasks = tasks,
             Logs = logs,
-            User = user!
+            User = user!,
+            PageTitle = localizer["Onboarding Wizard"]
         });
     }
 }

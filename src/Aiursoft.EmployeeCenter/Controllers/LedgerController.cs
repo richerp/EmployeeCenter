@@ -8,12 +8,15 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
+using Microsoft.Extensions.Localization;
+
 namespace Aiursoft.EmployeeCenter.Controllers;
 
 [Authorize(Policy = AppPermissionNames.CanManageLedger)]
 [LimitPerMin]
 public class LedgerController(
-    EmployeeCenterDbContext dbContext) : Controller
+    EmployeeCenterDbContext dbContext,
+    IStringLocalizer<LedgerController> localizer) : Controller
 {
     [HttpGet]
     [RenderInNavBar(
@@ -31,7 +34,8 @@ public class LedgerController(
             .ToListAsync();
         var model = new IndexViewModel
         {
-            Entities = entities
+            Entities = entities,
+            PageTitle = localizer["Manage Ledger"]
         };
         return this.StackView(model);
     }
@@ -209,7 +213,8 @@ public class LedgerController(
             ChartInflowData = chartInflow,
             ChartOutflowData = chartOutflow,
             InflowDistribution = inflowDistribution,
-            OutflowDistribution = outflowDistribution
+            OutflowDistribution = outflowDistribution,
+            PageTitle = $"{entity.CompanyName} - {(filteredAccount != null ? filteredAccount.AccountName : localizer["Ledger Dashboard"])}"
         };
 
         return this.StackView(model);
@@ -244,7 +249,8 @@ public class LedgerController(
         {
             EntityId = id,
             EntityName = entity.CompanyName,
-            Accounts = accountsWithBalance
+            Accounts = accountsWithBalance,
+            PageTitle = $"{entity.CompanyName} - {localizer["Manage Accounts"]}"
         };
         return this.StackView(model);
     }
@@ -254,7 +260,8 @@ public class LedgerController(
     {
         return this.StackView(new CreateAccountViewModel
         {
-            EntityId = id
+            EntityId = id,
+            PageTitle = localizer["Create New Account"]
         });
     }
 
@@ -264,6 +271,7 @@ public class LedgerController(
     {
         if (!ModelState.IsValid)
         {
+            model.PageTitle = localizer["Create New Account"];
             return this.StackView(model);
         }
 
@@ -299,7 +307,8 @@ public class LedgerController(
             AccountType = account.AccountType,
             Currency = account.Currency,
             ShowInDashboard = account.ShowInDashboard,
-            IsArchived = account.IsArchived
+            IsArchived = account.IsArchived,
+            PageTitle = $"{localizer["Edit Account"]} - {account.AccountName}"
         };
 
         return this.StackView(model);
@@ -311,6 +320,7 @@ public class LedgerController(
     {
         if (!ModelState.IsValid)
         {
+            model.PageTitle = $"{localizer["Edit Account"]} - {model.AccountName}";
             return this.StackView(model);
         }
 
@@ -350,7 +360,8 @@ public class LedgerController(
         var model = new TransactionsViewModel
         {
             Entity = entity,
-            Transactions = transactions
+            Transactions = transactions,
+            PageTitle = $"{entity.CompanyName} - {localizer["Transactions"]}"
         };
 
         return this.StackView(model);
@@ -373,7 +384,8 @@ public class LedgerController(
         return this.StackView(new CreateTransactionViewModel
         {
             EntityId = id,
-            TransactionTime = DateTime.UtcNow
+            TransactionTime = DateTime.UtcNow,
+            PageTitle = localizer["New Transaction"]
         });
     }
 
@@ -386,6 +398,7 @@ public class LedgerController(
             ViewBag.Accounts = await dbContext.FinanceAccounts
                 .Where(a => a.CompanyEntityId == model.EntityId && !a.IsArchived)
                 .ToListAsync();
+            model.PageTitle = localizer["New Transaction"];
             return this.StackView(model);
         }
 
@@ -434,7 +447,8 @@ public class LedgerController(
             InvoicePath = transaction.InvoicePath,
             MT103Path = transaction.MT103Path,
             PaymentVoucherPath = transaction.PaymentVoucherPath,
-            TransactionTime = transaction.TransactionTime
+            TransactionTime = transaction.TransactionTime,
+            PageTitle = localizer["Edit Transaction"]
         };
 
         return this.StackView(model);
@@ -449,6 +463,7 @@ public class LedgerController(
             ViewBag.Accounts = await dbContext.FinanceAccounts
                 .Where(a => a.CompanyEntityId == model.EntityId && !a.IsArchived)
                 .ToListAsync();
+            model.PageTitle = localizer["Edit Transaction"];
             return this.StackView(model);
         }
 

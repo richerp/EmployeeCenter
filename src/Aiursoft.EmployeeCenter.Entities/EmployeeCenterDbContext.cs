@@ -43,6 +43,7 @@ public abstract class EmployeeCenterDbContext(DbContextOptions options) : Identi
     public DbSet<Provider> Providers => Set<Provider>();
     public DbSet<Server> Servers => Set<Server>();
     public DbSet<Service> Services => Set<Service>();
+    public DbSet<CustomerRelationship> CustomerRelationships => Set<CustomerRelationship>();
 
     public DbSet<SignalQuestion> SignalQuestions => Set<SignalQuestion>();
     public DbSet<SignalQuestionnaire> SignalQuestionnaires => Set<SignalQuestionnaire>();

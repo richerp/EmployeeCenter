@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 
+using Microsoft.Extensions.Localization;
+
 namespace Aiursoft.EmployeeCenter.Controllers;
 
 [Authorize]
@@ -16,11 +18,16 @@ public class ProjectsController : Controller
 {
     private readonly GitLabService _gitLabService;
     private readonly GitLabSettings _gitLabSettings;
+    private readonly IStringLocalizer<ProjectsController> _localizer;
 
-    public ProjectsController(GitLabService gitLabService, IOptions<GitLabSettings> gitLabSettings)
+    public ProjectsController(
+        GitLabService gitLabService,
+        IOptions<GitLabSettings> gitLabSettings,
+        IStringLocalizer<ProjectsController> localizer)
     {
         _gitLabService = gitLabService;
         _gitLabSettings = gitLabSettings.Value;
+        _localizer = localizer;
     }
 
     [RenderInNavBar(
@@ -40,7 +47,8 @@ public class ProjectsController : Controller
         {
             ProjectsByTags = projectsByTags,
             RequiredStarUsername = _gitLabSettings.ProjectMustBeStaredBy,
-            RequiredGitHubOrgMirrored = _gitLabSettings.EnsureGitHubOrgMirrored
+            RequiredGitHubOrgMirrored = _gitLabSettings.EnsureGitHubOrgMirrored,
+            PageTitle = _localizer["Projects"]
         };
 
         return this.StackView(model);

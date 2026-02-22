@@ -8,11 +8,15 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
+using Microsoft.Extensions.Localization;
+
 namespace Aiursoft.EmployeeCenter.Controllers;
 
 [Authorize(Policy = AppPermissionNames.CanManageServices)]
 [LimitPerMin]
-public class ServersController(EmployeeCenterDbContext context) : Controller
+public class ServersController(
+    EmployeeCenterDbContext context,
+    IStringLocalizer<ServersController> localizer) : Controller
 {
     [RenderInNavBar(
         NavGroupName = "Career",
@@ -34,7 +38,8 @@ public class ServersController(EmployeeCenterDbContext context) : Controller
 
         return this.StackView(new IndexServerViewModel
         {
-            Servers = servers
+            Servers = servers,
+            PageTitle = localizer["Servers"]
         });
     }
 
@@ -45,7 +50,8 @@ public class ServersController(EmployeeCenterDbContext context) : Controller
             AllLocations = await context.Locations.ToListAsync(),
             AllOwners = await context.Users.ToListAsync(),
             AllProviders = await context.Providers.ToListAsync(),
-            AllCompanyEntities = await context.CompanyEntities.ToListAsync()
+            AllCompanyEntities = await context.CompanyEntities.ToListAsync(),
+            PageTitle = localizer["Create Server"]
         });
     }
 
@@ -97,7 +103,8 @@ public class ServersController(EmployeeCenterDbContext context) : Controller
             AllLocations = await context.Locations.ToListAsync(),
             AllOwners = await context.Users.ToListAsync(),
             AllProviders = await context.Providers.ToListAsync(),
-            AllCompanyEntities = await context.CompanyEntities.ToListAsync()
+            AllCompanyEntities = await context.CompanyEntities.ToListAsync(),
+            PageTitle = localizer["Edit Server"]
         });
     }
 

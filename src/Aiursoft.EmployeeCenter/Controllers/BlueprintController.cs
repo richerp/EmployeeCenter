@@ -8,12 +8,15 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
+using Microsoft.Extensions.Localization;
+
 namespace Aiursoft.EmployeeCenter.Controllers;
 
 [Authorize]
 public class BlueprintController(
     EmployeeCenterDbContext dbContext,
-    UserManager<User> userManager) : Controller
+    UserManager<User> userManager,
+    IStringLocalizer<BlueprintController> localizer) : Controller
 {
     [HttpGet]
     [RenderInNavBar(
@@ -30,7 +33,11 @@ public class BlueprintController(
             .Include(t => t.Author)
             .OrderByDescending(t => t.CreationTime)
             .ToListAsync();
-        return this.StackView(new IndexViewModel { Blueprints = blueprints });
+        return this.StackView(new IndexViewModel
+        {
+            Blueprints = blueprints,
+            PageTitle = localizer["View Blueprints"]
+        });
     }
 
     [HttpGet]
@@ -49,14 +56,21 @@ public class BlueprintController(
             .Include(t => t.Author)
             .OrderByDescending(t => t.CreationTime)
             .ToListAsync();
-        return this.StackView(new IndexViewModel { Blueprints = blueprints });
+        return this.StackView(new IndexViewModel
+        {
+            Blueprints = blueprints,
+            PageTitle = localizer["Manage Blueprints"]
+        });
     }
 
     [HttpGet]
     [Authorize(Policy = AppPermissionNames.CanManageBlueprints)]
     public IActionResult Create()
     {
-        return this.StackView(new EditorViewModel(), "Editor");
+        return this.StackView(new EditorViewModel
+        {
+            PageTitle = localizer["Create Blueprint"]
+        }, "Editor");
     }
 
     [HttpPost]
@@ -66,6 +80,7 @@ public class BlueprintController(
     {
         if (!ModelState.IsValid)
         {
+             model.PageTitle = localizer["Create Blueprint"];
              return this.StackView(model, "Editor");
         }
 
@@ -105,7 +120,8 @@ public class BlueprintController(
             Title = blueprint.Title,
             InputMarkdown = blueprint.Content,
             OutputHtml = blueprint.RenderedHtml,
-            SavedSuccessfully = saved
+            SavedSuccessfully = saved,
+            PageTitle = localizer["Edit Blueprint"]
         };
         return this.StackView(model, "Editor");
     }
@@ -117,6 +133,7 @@ public class BlueprintController(
     {
         if (!ModelState.IsValid)
         {
+            model.PageTitle = localizer["Edit Blueprint"];
             return this.StackView(model, "Editor");
         }
 
@@ -132,6 +149,7 @@ public class BlueprintController(
 
         model.OutputHtml = blueprint.RenderedHtml;
         model.SavedSuccessfully = true;
+        model.PageTitle = localizer["Edit Blueprint"];
 
         return this.StackView(model, "Editor");
     }
@@ -157,6 +175,10 @@ public class BlueprintController(
             .FirstOrDefaultAsync(t => t.Id == id);
         if (blueprint == null) return NotFound();
 
-        return this.StackView(new ReaderViewModel { Blueprint = blueprint });
+        return this.StackView(new ReaderViewModel
+        {
+            Blueprint = blueprint,
+            PageTitle = blueprint.Title
+        });
     }
 }

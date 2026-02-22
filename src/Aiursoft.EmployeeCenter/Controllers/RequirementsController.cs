@@ -8,12 +8,15 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
+using Microsoft.Extensions.Localization;
+
 namespace Aiursoft.EmployeeCenter.Controllers;
 
 [Authorize]
 public class RequirementsController(
     EmployeeCenterDbContext dbContext,
-    UserManager<User> userManager) : Controller
+    UserManager<User> userManager,
+    IStringLocalizer<RequirementsController> localizer) : Controller
 {
     [HttpGet]
     [RenderInNavBar(
@@ -35,7 +38,7 @@ public class RequirementsController(
         var model = new IndexViewModel 
         { 
             Requirements = requirements,
-            PageTitle = "Approved Projects"
+            PageTitle = localizer["Approved Projects"]
         };
         return this.StackView(model, "Index");
     }
@@ -63,7 +66,7 @@ public class RequirementsController(
         var model = new IndexViewModel 
         { 
             Requirements = requirements,
-            PageTitle = "My Requirements"
+            PageTitle = localizer["My Requirements"]
         };
         return this.StackView(model, "Index");
     }
@@ -87,7 +90,7 @@ public class RequirementsController(
         var model = new IndexViewModel 
         { 
             Requirements = requirements,
-            PageTitle = "Approval History"
+            PageTitle = localizer["Approval History"]
         };
         return this.StackView(model, "Index");
     }
@@ -113,7 +116,7 @@ public class RequirementsController(
         var model = new IndexViewModel 
         { 
             Requirements = requirements,
-            PageTitle = "Manage Requirements"
+            PageTitle = localizer["Manage Requirements"]
         };
         return this.StackView(model, "Index");
     }
@@ -121,7 +124,10 @@ public class RequirementsController(
     [HttpGet]
     public IActionResult Create()
     {
-        return this.StackView(new EditorViewModel(), "Editor");
+        return this.StackView(new EditorViewModel
+        {
+            PageTitle = localizer["Submit Requirement"]
+        }, "Editor");
     }
 
     [HttpPost]
@@ -130,6 +136,7 @@ public class RequirementsController(
     {
         if (!ModelState.IsValid)
         {
+            model.PageTitle = localizer["Submit Requirement"];
             return this.StackView(model, "Editor");
         }
 
@@ -175,7 +182,8 @@ public class RequirementsController(
             RequirementId = requirement.Id,
             Title = requirement.Title,
             InputMarkdown = requirement.Content,
-            OutputHtml = requirement.RenderedHtml
+            OutputHtml = requirement.RenderedHtml,
+            PageTitle = localizer["Edit Requirement"]
         };
         return this.StackView(model, "Editor");
     }
@@ -186,6 +194,7 @@ public class RequirementsController(
     {
         if (!ModelState.IsValid)
         {
+            model.PageTitle = localizer["Edit Requirement"];
             return this.StackView(model, "Editor");
         }
 
@@ -225,7 +234,11 @@ public class RequirementsController(
         
         if (requirement == null) return NotFound();
 
-        var model = new ReaderViewModel { Requirement = requirement };
+        var model = new ReaderViewModel 
+        { 
+            Requirement = requirement,
+            PageTitle = requirement.Title
+        };
         return this.StackView(model);
     }
 

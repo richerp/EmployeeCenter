@@ -14,7 +14,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"]</title>
+    <title>@(Model.Type == CertificateType.Employment ? (isEnglish ? "Certificate of Employment" : "在职证明") : (isEnglish ? "Certificate of Income" : "收入证明"))</title>
     <style>
         body {
             font-family: "Microsoft YaHei", Arial, sans-serif;

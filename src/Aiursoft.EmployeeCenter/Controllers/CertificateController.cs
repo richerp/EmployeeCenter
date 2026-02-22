@@ -11,13 +11,16 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 
+using Microsoft.Extensions.Localization;
+
 namespace Aiursoft.EmployeeCenter.Controllers;
 
 [Authorize]
 [LimitPerMin]
 public class CertificateController(
     UserManager<User> userManager,
-    IOptions<AppSettings> appSettings) : Controller
+    IOptions<AppSettings> appSettings,
+    IStringLocalizer<CertificateController> localizer) : Controller
 {
     [HttpGet]
     [Authorize(Policy = AppPermissionNames.CanPrintSelfCertificates)]
@@ -39,7 +42,8 @@ public class CertificateController(
             TargetUser = user,
             Type = CertificateType.Employment,
             CompanyName = user?.SigningEntity?.CompanyName ?? appSettings.Value.CompanyName,
-            CompanyNameEnglish = user?.SigningEntity?.CompanyNameEnglish
+            CompanyNameEnglish = user?.SigningEntity?.CompanyNameEnglish,
+            PageTitle = localizer["Print Certificate of Employment"]
         });
     }
 
@@ -63,7 +67,8 @@ public class CertificateController(
             TargetUser = user,
             Type = CertificateType.Income,
             CompanyName = user?.SigningEntity?.CompanyName ?? appSettings.Value.CompanyName,
-            CompanyNameEnglish = user?.SigningEntity?.CompanyNameEnglish
+            CompanyNameEnglish = user?.SigningEntity?.CompanyNameEnglish,
+            PageTitle = localizer["Print Certificate of Income"]
         });
     }
 
@@ -104,7 +109,8 @@ public class CertificateController(
             Type = type,
             Language = lang,
             CompanyName = targetUser.SigningEntity?.CompanyName ?? appSettings.Value.CompanyName,
-            CompanyNameEnglish = targetUser.SigningEntity?.CompanyNameEnglish
+            CompanyNameEnglish = targetUser.SigningEntity?.CompanyNameEnglish,
+            PageTitle = type == CertificateType.Employment ? "Certificate of Employment" : "Certificate of Income"
         });
     }
 }

@@ -8,12 +8,15 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
+using Microsoft.Extensions.Localization;
+
 namespace Aiursoft.EmployeeCenter.Controllers;
 
 [Authorize]
 [LimitPerMin]
 public class ServicesController(
-    EmployeeCenterDbContext context)
+    EmployeeCenterDbContext context,
+    IStringLocalizer<ServicesController> localizer)
     : Controller
 {
     [RenderInNavBar(
@@ -37,7 +40,8 @@ public class ServicesController(
 
         return this.StackView(new IndexViewModel
         {
-            Services = services
+            Services = services,
+            PageTitle = localizer["Services"]
         });
     }
 

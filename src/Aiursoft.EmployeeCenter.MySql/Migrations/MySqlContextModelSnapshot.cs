@@ -488,6 +488,50 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.ToTable("Contracts");
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.CustomerRelationship", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Address")
+                        .HasMaxLength(500)
+                        .HasColumnType("varchar(500)");
+
+                    b.Property<int?>("CompanyEntityId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreationTime")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("Phone")
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<string>("Remark")
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("UpdateTime")
+                        .HasColumnType("datetime(6)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CompanyEntityId");
+
+                    b.ToTable("CustomerRelationships");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.DnsProvider", b =>
                 {
                     b.Property<int>("Id")
@@ -2059,6 +2103,15 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.Navigation("CompanyEntity");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.CustomerRelationship", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.CompanyEntity", "CompanyEntity")
+                        .WithMany()
+                        .HasForeignKey("CompanyEntityId");
+
+                    b.Navigation("CompanyEntity");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.FinanceAccount", b =>

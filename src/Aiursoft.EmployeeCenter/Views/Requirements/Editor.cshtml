@@ -1,10 +1,8 @@
 @using Aiursoft.EmployeeCenter.Controllers
 @model Aiursoft.EmployeeCenter.Models.RequirementViewModels.EditorViewModel
-@{ 
-    ViewData["Title"] = Model.IsEditing ? Localizer["Edit Requirement"] : Localizer["Submit Requirement"];
+@{
     var isDarkMode = Context.Request.Cookies[ThemeController.ThemeCookieKey] == true.ToString();
 }
-
 <div class="row mb-2 mb-xl-3">
     <div class="col-auto d-none d-sm-block">
         <h3>@(Model.IsEditing ? Localizer["Edit Requirement"] : Localizer["Submit Requirement"])</h3>
