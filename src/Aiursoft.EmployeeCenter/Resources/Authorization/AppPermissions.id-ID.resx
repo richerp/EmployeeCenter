@@ -69,6 +69,9 @@
   <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
     <value>Memungkinkan pembuatan, pembaruan, dan penghapusan informasi entitas perusahaan. Setiap pengguna dapat melihat informasi entitas perusahaan secara default.</value>
   </data>
+  <data name="Allows creating, updating, and deleting customer relationship information. Every user can view customer relationships by default." xml:space="preserve">
+    <value>Memungkinkan pembuatan, pembaruan, dan penghapusan informasi hubungan pelanggan. Setiap pengguna dapat melihat hubungan pelanggan secara default.</value>
+  </data>
   <data name="Allows creating, updating, and deleting services and DNS providers. Every user can view services by default." xml:space="preserve">
     <value>Memungkinkan pembuatan, pembaruan, dan penghapusan layanan serta penyedia DNS. Setiap pengguna dapat melihat layanan secara default.</value>
   </data>
@@ -221,6 +224,9 @@
   </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Kelola Entitas Perusahaan</value>
+  </data>
+  <data name="Manage Customer Relationships" xml:space="preserve">
+    <value>Kelola Hubungan Pelanggan</value>
   </data>
   <data name="Manage Feedback" xml:space="preserve">
     <value>Kelola Umpan Balik</value>

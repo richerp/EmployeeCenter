@@ -69,6 +69,9 @@
   <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
     <value>회사 엔티티 정보의 생성, 수정 및 삭제를 허용합니다. 기본적으로 모든 사용자가 회사 엔티티 정보를 조회할 수 있습니다.</value>
   </data>
+  <data name="Allows creating, updating, and deleting customer relationship information. Every user can view customer relationships by default." xml:space="preserve">
+    <value>고객 관계 정보의 생성, 수정 및 삭제를 허용합니다. 기본적으로 모든 사용자가 고객 관계를 볼 수 있습니다.</value>
+  </data>
   <data name="Allows creating, updating, and deleting services and DNS providers. Every user can view services by default." xml:space="preserve">
     <value>서비스 및 DNS 공급자 생성, 수정 및 삭제를 허용합니다. 기본적으로 모든 사용자가 서비스를 볼 수 있습니다.</value>
   </data>
@@ -221,6 +224,9 @@
   </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>회사 엔티티 관리</value>
+  </data>
+  <data name="Manage Customer Relationships" xml:space="preserve">
+    <value>고객 관계 관리</value>
   </data>
   <data name="Manage Feedback" xml:space="preserve">
     <value>피드백 관리</value>

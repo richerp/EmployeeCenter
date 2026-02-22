@@ -192,6 +192,12 @@
   <data name="Create User" xml:space="preserve">
     <value>Skapa användare</value>
   </data>
+  <data name="Customer Relations" xml:space="preserve">
+    <value>Kundrelationer</value>
+  </data>
+  <data name="Customer Relationships" xml:space="preserve">
+    <value>Kundrelationer</value>
+  </data>
   <data name="Dashboard" xml:space="preserve">
     <value>Instrumentbräda</value>
   </data>
@@ -221,6 +227,9 @@
   </data>
   <data name="Edit Contract" xml:space="preserve">
     <value>Redigera kontrakt</value>
+  </data>
+  <data name="Edit Customer Relationship" xml:space="preserve">
+    <value>Redigera kundrelation</value>
   </data>
   <data name="Edit Onboarding Task" xml:space="preserve">
     <value>Redigera påbörjningsuppgift</value>
@@ -356,6 +365,9 @@
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>Hantera avtal</value>
+  </data>
+  <data name="Manage Customer Relations" xml:space="preserve">
+    <value>Hantera kundrelationer</value>
   </data>
   <data name="Manage Feedback" xml:space="preserve">
     <value>Hantera feedback</value>
@@ -611,6 +623,9 @@
   </data>
   <data name="View Contracts" xml:space="preserve">
     <value>Visa avtal</value>
+  </data>
+  <data name="View Customer Relations" xml:space="preserve">
+    <value>Visa kundrelationer</value>
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>Veckorapport</value>

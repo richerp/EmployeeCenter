@@ -69,6 +69,9 @@
   <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
     <value>允許建立、更新及刪除公司實體資訊。預設情況下，每位使用者皆可檢視公司實體資訊。</value>
   </data>
+  <data name="Allows creating, updating, and deleting customer relationship information. Every user can view customer relationships by default." xml:space="preserve">
+    <value>允許建立、更新及刪除客戶關係資訊。預設情況下，所有使用者皆可檢視客戶關係。</value>
+  </data>
   <data name="Allows creating, updating, and deleting services and DNS providers. Every user can view services by default." xml:space="preserve">
     <value>允許建立、更新及刪除服務與 DNS 提供者。預設情況下，每位使用者皆可檢視服務。</value>
   </data>
@@ -221,6 +224,9 @@
   </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>管理公司基本實體資訊</value>
+  </data>
+  <data name="Manage Customer Relationships" xml:space="preserve">
+    <value>管理客戶關係</value>
   </data>
   <data name="Manage Feedback" xml:space="preserve">
     <value>管理意見回饋</value>

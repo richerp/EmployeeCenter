@@ -195,6 +195,12 @@
   <data name="Create User" xml:space="preserve">
     <value>ユーザーを作成</value>
   </data>
+  <data name="Customer Relations" xml:space="preserve">
+    <value>顧客関係</value>
+  </data>
+  <data name="Customer Relationships" xml:space="preserve">
+    <value>顧客関係</value>
+  </data>
   <data name="Dashboard" xml:space="preserve">
     <value>ダッシュボード</value>
   </data>
@@ -224,6 +230,9 @@
   </data>
   <data name="Edit Contract" xml:space="preserve">
     <value>契約を編集</value>
+  </data>
+  <data name="Edit Customer Relationship" xml:space="preserve">
+    <value>顧客関係の編集</value>
   </data>
   <data name="Edit Onboarding Task" xml:space="preserve">
     <value>オンボーディングタスクの編集</value>
@@ -359,6 +368,9 @@
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>契約を管理する</value>
+  </data>
+  <data name="Manage Customer Relations" xml:space="preserve">
+    <value>顧客関係の管理</value>
   </data>
   <data name="Manage Feedback" xml:space="preserve">
     <value>フィードバックの管理</value>
@@ -614,6 +626,9 @@
   </data>
   <data name="View Contracts" xml:space="preserve">
     <value>契約を表示</value>
+  </data>
+  <data name="View Customer Relations" xml:space="preserve">
+    <value>顧客関係を表示</value>
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>週次レポート</value>

@@ -192,6 +192,12 @@
   <data name="Create User" xml:space="preserve">
     <value>Luo käyttäjä</value>
   </data>
+  <data name="Customer Relations" xml:space="preserve">
+    <value>Asiakassuhteet</value>
+  </data>
+  <data name="Customer Relationships" xml:space="preserve">
+    <value>Asiakassuhteet</value>
+  </data>
   <data name="Dashboard" xml:space="preserve">
     <value>Ohjainpaneeli</value>
   </data>
@@ -221,6 +227,9 @@
   </data>
   <data name="Edit Contract" xml:space="preserve">
     <value>Muokkaa sopimusta</value>
+  </data>
+  <data name="Edit Customer Relationship" xml:space="preserve">
+    <value>Muokkaa asiakassuhdetta</value>
   </data>
   <data name="Edit Onboarding Task" xml:space="preserve">
     <value>Muokkaa alustustarvetta</value>
@@ -356,6 +365,9 @@
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>Hallinnoi sopimuksia</value>
+  </data>
+  <data name="Manage Customer Relations" xml:space="preserve">
+    <value>Hallinnoi asiakassuhteita</value>
   </data>
   <data name="Manage Feedback" xml:space="preserve">
     <value>Feedbackin hallinta</value>
@@ -611,6 +623,9 @@
   </data>
   <data name="View Contracts" xml:space="preserve">
     <value>Näytä sopimukset</value>
+  </data>
+  <data name="View Customer Relations" xml:space="preserve">
+    <value>Näytä asiakassuhteet</value>
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>Viikko raportti</value>

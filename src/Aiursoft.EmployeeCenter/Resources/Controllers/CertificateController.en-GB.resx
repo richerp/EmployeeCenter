@@ -36,5 +36,11 @@
   <data name="Print Certificate" xml:space="preserve">
     <value>Print Certificate</value>
   </data>
+  <data name="Print Certificate of Employment" xml:space="preserve">
+    <value>Print Certificate of Employment</value>
+  </data>
+  <data name="Print Certificate of Income" xml:space="preserve">
+    <value>Print Certificate of Income</value>
+  </data>
 
 </root>

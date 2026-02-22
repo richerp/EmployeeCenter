@@ -192,6 +192,12 @@
   <data name="Create User" xml:space="preserve">
     <value>उपयोगकर्ता बनाएं</value>
   </data>
+  <data name="Customer Relations" xml:space="preserve">
+    <value>ग्राहक संबंध</value>
+  </data>
+  <data name="Customer Relationships" xml:space="preserve">
+    <value>ग्राहक संबंध</value>
+  </data>
   <data name="Dashboard" xml:space="preserve">
     <value>डैशबोर्ड</value>
   </data>
@@ -221,6 +227,9 @@
   </data>
   <data name="Edit Contract" xml:space="preserve">
     <value>संविदा संपादित करें</value>
+  </data>
+  <data name="Edit Customer Relationship" xml:space="preserve">
+    <value>ग्राहक संबंध संपादित करें</value>
   </data>
   <data name="Edit Onboarding Task" xml:space="preserve">
     <value>ऑनबोर्डिंग कार्य संपादित करें</value>
@@ -356,6 +365,9 @@
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>संविदाओं का प्रबंधन करें</value>
+  </data>
+  <data name="Manage Customer Relations" xml:space="preserve">
+    <value>ग्राहक संबंधों का प्रबंधन</value>
   </data>
   <data name="Manage Feedback" xml:space="preserve">
     <value>फीडबैक प्रबंधित करें</value>
@@ -611,6 +623,9 @@
   </data>
   <data name="View Contracts" xml:space="preserve">
     <value>कॉन्ट्रैक्ट्स देखें</value>
+  </data>
+  <data name="View Customer Relations" xml:space="preserve">
+    <value>ग्राहक संबंध देखें</value>
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>साप्ताहिक रिपोर्ट</value>
