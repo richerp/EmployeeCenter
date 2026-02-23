@@ -384,6 +384,42 @@ public class LedgerTests : TestBase
         Assert.DoesNotContain("Transaction B Only", filteredContent);
     }
 
+    [TestMethod]
+    public async Task TestLedgerIndexFiltering()
+    {
+        // 1. Setup - Create two entities, one with CreateLedger = true, one with false
+        using (var scope = Server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            db.CompanyEntities.AddRange(
+                new CompanyEntity
+                {
+                    CompanyName = "Show In Ledger",
+                    EntityCode = "SIL01",
+                    CreateLedger = true
+                },
+                new CompanyEntity
+                {
+                    CompanyName = "Hide From Ledger",
+                    EntityCode = "HFL01",
+                    CreateLedger = false
+                }
+            );
+            await db.SaveChangesAsync();
+        }
+
+        // 2. Login as Admin
+        await LoginAsAdmin();
+
+        // 3. View Ledger Index
+        var response = await Http.GetAsync("/Ledger/Index");
+        var content = await response.Content.ReadAsStringAsync();
+
+        // 4. Verify
+        Assert.Contains("Show In Ledger", content);
+        Assert.DoesNotContain("Hide From Ledger", content);
+    }
+
     private async Task<decimal> GetBalance(EmployeeCenterDbContext db, int accountId)
     {
         var account = await db.FinanceAccounts.FindAsync(accountId);
