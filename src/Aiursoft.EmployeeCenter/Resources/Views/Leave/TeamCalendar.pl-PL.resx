@@ -36,7 +36,7 @@
   <data name="Currently on Leave" xml:space="preserve">
     <value>Obecnie w urlopie</value>
   </data>
-  <data name="days" xml:space="preserve">
+  <data name="Days label" xml:space="preserve">
     <value>dni</value>
   </data>
   <data name="Days" xml:space="preserve">

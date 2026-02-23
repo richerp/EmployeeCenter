@@ -45,7 +45,7 @@
   <data name="Currently on Leave" xml:space="preserve">
     <value>正在休假</value>
   </data>
-  <data name="days" xml:space="preserve">
+  <data name="Days label" xml:space="preserve">
     <value>天</value>
   </data>
   <data name="Days" xml:space="preserve">
