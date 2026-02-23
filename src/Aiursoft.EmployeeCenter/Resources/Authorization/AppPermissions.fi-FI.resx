@@ -69,6 +69,9 @@
   <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
     <value>Sallii yrityksen yksikön tietojen luomisen, päivittämisen ja poistamisen. Kaikki käyttäjät voivat nähdä yrityksen yksikön tiedot oletuksena.</value>
   </data>
+  <data name="Allows creating, updating, and deleting customer relationship information. Every user can view customer relationships by default." xml:space="preserve">
+    <value>Sallii asiakassuhteiden tietojen luomisen, päivittämisen ja poiston. Kaikki käyttäjät voivat nähdä asiakassuhteet oletuksena.</value>
+  </data>
   <data name="Allows creating, updating, and deleting services and DNS providers. Every user can view services by default." xml:space="preserve">
     <value>Sallii palveluiden ja DNS-toimittajien luomisen, päivittämisen ja poistamisen. Kaikki käyttäjät voivat oletuksena tarkastella palveluja.</value>
   </data>
@@ -221,6 +224,9 @@
   </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Hallinnoi yrityksen yksiköitä</value>
+  </data>
+  <data name="Manage Customer Relationships" xml:space="preserve">
+    <value>Hallinnoi asiakassuhteita</value>
   </data>
   <data name="Manage Feedback" xml:space="preserve">
     <value>Hallinnoi palautetta</value>

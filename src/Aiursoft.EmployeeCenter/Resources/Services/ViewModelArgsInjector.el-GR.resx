@@ -192,6 +192,12 @@
   <data name="Create User" xml:space="preserve">
     <value>Δημιουργία Χρήστη</value>
   </data>
+  <data name="Customer Relations" xml:space="preserve">
+    <value>Σχέσεις με τους Πελάτες</value>
+  </data>
+  <data name="Customer Relationships" xml:space="preserve">
+    <value>Σχέσεις με τους Πελάτες</value>
+  </data>
   <data name="Dashboard" xml:space="preserve">
     <value>Πίνακας Ελέγχου</value>
   </data>
@@ -221,6 +227,9 @@
   </data>
   <data name="Edit Contract" xml:space="preserve">
     <value>Επεξεργασία Σύμβασης</value>
+  </data>
+  <data name="Edit Customer Relationship" xml:space="preserve">
+    <value>Επεξεργασία Σχέσης με Πελάτη</value>
   </data>
   <data name="Edit Onboarding Task" xml:space="preserve">
     <value>Επεξεργασία Εργασίας Εγγραφής</value>
@@ -356,6 +365,9 @@
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>Διαχείριση Συμβάσεων</value>
+  </data>
+  <data name="Manage Customer Relations" xml:space="preserve">
+    <value>Διαχείριση Σχέσεων με Πελάτες</value>
   </data>
   <data name="Manage Feedback" xml:space="preserve">
     <value>Διαχείριση Σχολίων</value>
@@ -611,6 +623,9 @@
   </data>
   <data name="View Contracts" xml:space="preserve">
     <value>Προβολή Συμβάσεων</value>
+  </data>
+  <data name="View Customer Relations" xml:space="preserve">
+    <value>Προβολή Σχέσεων με Πελάτες</value>
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>Εβδομαδιαία Αναφορά</value>

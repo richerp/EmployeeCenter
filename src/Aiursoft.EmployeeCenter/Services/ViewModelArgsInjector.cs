@@ -191,6 +191,12 @@ public class ViewModelArgsInjector(
         _ = localizer["Manage Intangible Assets"];
     
         _ = localizer["Company Intangible Assets"];
+    
+        _ = localizer["Customer Relations"];
+        _ = localizer["Customer Relationships"];
+        _ = localizer["Edit Customer Relationship"];
+        _ = localizer["Manage Customer Relations"];
+        _ = localizer["View Customer Relations"];
     }
 
     public void InjectSimple(

@@ -192,6 +192,12 @@
   <data name="Create User" xml:space="preserve">
     <value>Criar Utilizador</value>
   </data>
+  <data name="Customer Relations" xml:space="preserve">
+    <value>Relações com Clientes</value>
+  </data>
+  <data name="Customer Relationships" xml:space="preserve">
+    <value>Relações com Clientes</value>
+  </data>
   <data name="Dashboard" xml:space="preserve">
     <value>Painel de Controlo</value>
   </data>
@@ -221,6 +227,9 @@
   </data>
   <data name="Edit Contract" xml:space="preserve">
     <value>Editar Contrato</value>
+  </data>
+  <data name="Edit Customer Relationship" xml:space="preserve">
+    <value>Editar Relação com Cliente</value>
   </data>
   <data name="Edit Onboarding Task" xml:space="preserve">
     <value>Editar Tarefa de Onboarding</value>
@@ -356,6 +365,9 @@
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>Gerir Contratos</value>
+  </data>
+  <data name="Manage Customer Relations" xml:space="preserve">
+    <value>Gerir Relações com Clientes</value>
   </data>
   <data name="Manage Feedback" xml:space="preserve">
     <value>Gestão de Feedback</value>
@@ -611,6 +623,9 @@
   </data>
   <data name="View Contracts" xml:space="preserve">
     <value>Ver Contratos</value>
+  </data>
+  <data name="View Customer Relations" xml:space="preserve">
+    <value>Ver Relações com Clientes</value>
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>Relatório Semanal</value>

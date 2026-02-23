@@ -195,6 +195,12 @@
   <data name="Create User" xml:space="preserve">
     <value>사용자 생성</value>
   </data>
+  <data name="Customer Relations" xml:space="preserve">
+    <value>고객 관계</value>
+  </data>
+  <data name="Customer Relationships" xml:space="preserve">
+    <value>고객 관계</value>
+  </data>
   <data name="Dashboard" xml:space="preserve">
     <value>대시보드</value>
   </data>
@@ -224,6 +230,9 @@
   </data>
   <data name="Edit Contract" xml:space="preserve">
     <value>계약 수정</value>
+  </data>
+  <data name="Edit Customer Relationship" xml:space="preserve">
+    <value>고객 관계 수정</value>
   </data>
   <data name="Edit Onboarding Task" xml:space="preserve">
     <value>온보딩 작업 수정</value>
@@ -359,6 +368,9 @@
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>계약 관리</value>
+  </data>
+  <data name="Manage Customer Relations" xml:space="preserve">
+    <value>고객 관계 관리</value>
   </data>
   <data name="Manage Feedback" xml:space="preserve">
     <value>피드백 관리</value>
@@ -614,6 +626,9 @@
   </data>
   <data name="View Contracts" xml:space="preserve">
     <value>계약 보기</value>
+  </data>
+  <data name="View Customer Relations" xml:space="preserve">
+    <value>고객 관계 보기</value>
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>주간 보고서</value>

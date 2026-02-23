@@ -195,6 +195,12 @@
   <data name="Create User" xml:space="preserve">
     <value>创建用户</value>
   </data>
+  <data name="Customer Relations" xml:space="preserve">
+    <value>客户关系</value>
+  </data>
+  <data name="Customer Relationships" xml:space="preserve">
+    <value>客户关系</value>
+  </data>
   <data name="Dashboard" xml:space="preserve">
     <value>仪表板</value>
   </data>
@@ -227,6 +233,9 @@
   </data>
   <data name="Edit Contract" xml:space="preserve">
     <value>编辑合同</value>
+  </data>
+  <data name="Edit Customer Relationship" xml:space="preserve">
+    <value>编辑客户关系</value>
   </data>
   <data name="Edit Onboarding Task" xml:space="preserve">
     <value>编辑入职任务</value>
@@ -362,6 +371,9 @@
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>管理合同</value>
+  </data>
+  <data name="Manage Customer Relations" xml:space="preserve">
+    <value>管理客户关系</value>
   </data>
   <data name="Manage Feedback" xml:space="preserve">
     <value>管理反馈</value>
@@ -620,6 +632,9 @@
   </data>
   <data name="View Contracts" xml:space="preserve">
     <value>查看合同</value>
+  </data>
+  <data name="View Customer Relations" xml:space="preserve">
+    <value>查看客户关系</value>
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>周报</value>

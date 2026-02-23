@@ -192,6 +192,12 @@
   <data name="Create User" xml:space="preserve">
     <value>Создать пользователя</value>
   </data>
+  <data name="Customer Relations" xml:space="preserve">
+    <value>Отношения с клиентами</value>
+  </data>
+  <data name="Customer Relationships" xml:space="preserve">
+    <value>Отношения с клиентами</value>
+  </data>
   <data name="Dashboard" xml:space="preserve">
     <value>Панель управления</value>
   </data>
@@ -221,6 +227,9 @@
   </data>
   <data name="Edit Contract" xml:space="preserve">
     <value>Редактировать контракт</value>
+  </data>
+  <data name="Edit Customer Relationship" xml:space="preserve">
+    <value>Редактировать взаимоотношения с клиентами</value>
   </data>
   <data name="Edit Onboarding Task" xml:space="preserve">
     <value>Редактировать задачу настройки</value>
@@ -356,6 +365,9 @@
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>Управление контрактами</value>
+  </data>
+  <data name="Manage Customer Relations" xml:space="preserve">
+    <value>Управление отношениями с клиентами</value>
   </data>
   <data name="Manage Feedback" xml:space="preserve">
     <value>Управление отзывами</value>
@@ -611,6 +623,9 @@
   </data>
   <data name="View Contracts" xml:space="preserve">
     <value>Просмотреть контракты</value>
+  </data>
+  <data name="View Customer Relations" xml:space="preserve">
+    <value>Просмотр отношений с клиентами</value>
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>Еженедельный отчет</value>

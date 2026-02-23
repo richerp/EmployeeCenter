@@ -36,5 +36,11 @@
   <data name="Print Certificate" xml:space="preserve">
     <value>打印证明</value>
   </data>
+  <data name="Print Certificate of Employment" xml:space="preserve">
+    <value>打印在职证明</value>
+  </data>
+  <data name="Print Certificate of Income" xml:space="preserve">
+    <value>打印收入证明</value>
+  </data>
 
 </root>

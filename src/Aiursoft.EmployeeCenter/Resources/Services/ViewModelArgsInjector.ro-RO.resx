@@ -192,6 +192,12 @@
   <data name="Create User" xml:space="preserve">
     <value>Creează utilizator</value>
   </data>
+  <data name="Customer Relations" xml:space="preserve">
+    <value>Relații cu clienții</value>
+  </data>
+  <data name="Customer Relationships" xml:space="preserve">
+    <value>Relații cu clienții</value>
+  </data>
   <data name="Dashboard" xml:space="preserve">
     <value>Panou de control</value>
   </data>
@@ -221,6 +227,9 @@
   </data>
   <data name="Edit Contract" xml:space="preserve">
     <value>Editare Contract</value>
+  </data>
+  <data name="Edit Customer Relationship" xml:space="preserve">
+    <value>Editare relație cu clientul</value>
   </data>
   <data name="Edit Onboarding Task" xml:space="preserve">
     <value>Editează sarcina de peboarding</value>
@@ -356,6 +365,9 @@
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>Gestionare contracte</value>
+  </data>
+  <data name="Manage Customer Relations" xml:space="preserve">
+    <value>Gestionare relații cu clienții</value>
   </data>
   <data name="Manage Feedback" xml:space="preserve">
     <value>Gestionare feedback</value>
@@ -611,6 +623,9 @@
   </data>
   <data name="View Contracts" xml:space="preserve">
     <value>Vizualizează Contracte</value>
+  </data>
+  <data name="View Customer Relations" xml:space="preserve">
+    <value>Vizualizează Relațiile cu Clienții</value>
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>Raport săptămânal</value>

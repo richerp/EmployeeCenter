@@ -192,6 +192,12 @@
   <data name="Create User" xml:space="preserve">
     <value>Gebruiker aanmaken</value>
   </data>
+  <data name="Customer Relations" xml:space="preserve">
+    <value>Klantrelaties</value>
+  </data>
+  <data name="Customer Relationships" xml:space="preserve">
+    <value>Klantrelaties</value>
+  </data>
   <data name="Dashboard" xml:space="preserve">
     <value>Dashboard</value>
   </data>
@@ -221,6 +227,9 @@
   </data>
   <data name="Edit Contract" xml:space="preserve">
     <value>Contract bewerken</value>
+  </data>
+  <data name="Edit Customer Relationship" xml:space="preserve">
+    <value>Wijzig relaties met klanten</value>
   </data>
   <data name="Edit Onboarding Task" xml:space="preserve">
     <value>Bewerk onboardingtaak</value>
@@ -356,6 +365,9 @@
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>Contracten beheren</value>
+  </data>
+  <data name="Manage Customer Relations" xml:space="preserve">
+    <value>Klantenrelaties beheren</value>
   </data>
   <data name="Manage Feedback" xml:space="preserve">
     <value>Feedback beheren</value>
@@ -611,6 +623,9 @@
   </data>
   <data name="View Contracts" xml:space="preserve">
     <value>Contracten weergeven</value>
+  </data>
+  <data name="View Customer Relations" xml:space="preserve">
+    <value>Bekijk klantrelaties</value>
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>Wekelijkse rapportage</value>

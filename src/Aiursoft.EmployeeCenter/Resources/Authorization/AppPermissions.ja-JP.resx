@@ -69,6 +69,9 @@
   <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
     <value>会社エンティティ情報の作成、更新、削除を許可します。デフォルトでは、すべてのユーザーが会社エンティティ情報の閲覧が可能です。</value>
   </data>
+  <data name="Allows creating, updating, and deleting customer relationship information. Every user can view customer relationships by default." xml:space="preserve">
+    <value>顧客関係情報の作成、更新、削除を許可します。デフォルトでは、すべてのユーザーが顧客関係を閲覧できます。</value>
+  </data>
   <data name="Allows creating, updating, and deleting services and DNS providers. Every user can view services by default." xml:space="preserve">
     <value>サービスおよびDNSプロバイダーの作成、更新、削除を許可します。デフォルトでは、すべてのユーザーがサービスを閲覧できます。</value>
   </data>
@@ -221,6 +224,9 @@
   </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>会社エンティティの管理</value>
+  </data>
+  <data name="Manage Customer Relationships" xml:space="preserve">
+    <value>顧客関係を管理する</value>
   </data>
   <data name="Manage Feedback" xml:space="preserve">
     <value>フィードバックの管理</value>

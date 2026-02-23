@@ -195,6 +195,12 @@
   <data name="Create User" xml:space="preserve">
     <value>建立使用者</value>
   </data>
+  <data name="Customer Relations" xml:space="preserve">
+    <value>客戶關係</value>
+  </data>
+  <data name="Customer Relationships" xml:space="preserve">
+    <value>客戶關係</value>
+  </data>
   <data name="Dashboard" xml:space="preserve">
     <value>儀表板</value>
   </data>
@@ -224,6 +230,9 @@
   </data>
   <data name="Edit Contract" xml:space="preserve">
     <value>編輯合約</value>
+  </data>
+  <data name="Edit Customer Relationship" xml:space="preserve">
+    <value>編輯客戶關係</value>
   </data>
   <data name="Edit Onboarding Task" xml:space="preserve">
     <value>編輯入職任務</value>
@@ -359,6 +368,9 @@
   </data>
   <data name="Manage Contracts" xml:space="preserve">
     <value>管理合約</value>
+  </data>
+  <data name="Manage Customer Relations" xml:space="preserve">
+    <value>管理客戶關係</value>
   </data>
   <data name="Manage Feedback" xml:space="preserve">
     <value>管理回饋</value>
@@ -614,6 +626,9 @@
   </data>
   <data name="View Contracts" xml:space="preserve">
     <value>檢視合約</value>
+  </data>
+  <data name="View Customer Relations" xml:space="preserve">
+    <value>檢視客戶關係</value>
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>週報</value>

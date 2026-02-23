@@ -69,6 +69,9 @@
   <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
     <value>Tillader oprettelse, opdatering og sletning af virksomhedsentytetsoplysninger. Alle brugere kan se virksomhedsentytetsoplysninger som standard.</value>
   </data>
+  <data name="Allows creating, updating, and deleting customer relationship information. Every user can view customer relationships by default." xml:space="preserve">
+    <value>Tillader oprettelse, opdatering og sletning af kundeforholdsinformation. Alle brugere kan se kundeforhold per standard.</value>
+  </data>
   <data name="Allows creating, updating, and deleting services and DNS providers. Every user can view services by default." xml:space="preserve">
     <value>Tillader oprettelse, opdatering og sletning af tjenester og DNS-udbydere. Alle brugere kan se tjenester som standard.</value>
   </data>
@@ -221,6 +224,9 @@
   </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Håndtér virksomhedsenheder</value>
+  </data>
+  <data name="Manage Customer Relationships" xml:space="preserve">
+    <value>Håndtér kundeforhold</value>
   </data>
   <data name="Manage Feedback" xml:space="preserve">
     <value>Håndtér Feedback</value>

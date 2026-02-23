@@ -69,6 +69,9 @@
   <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
     <value>Permite criar, atualizar e eliminar informações sobre entidades da empresa. Por predefinição, todos os utilizadores podem visualizar informações sobre entidades da empresa.</value>
   </data>
+  <data name="Allows creating, updating, and deleting customer relationship information. Every user can view customer relationships by default." xml:space="preserve">
+    <value>Permite criar, atualizar e eliminar informações sobre relações com clientes. Por predefinição, todos os utilizadores podem visualizar as relações com clientes.</value>
+  </data>
   <data name="Allows creating, updating, and deleting services and DNS providers. Every user can view services by default." xml:space="preserve">
     <value>Permite a criação, atualização e eliminação de serviços e fornecedores de DNS. Por defeito, todos os utilizadores podem visualizar os serviços.</value>
   </data>
@@ -221,6 +224,9 @@
   </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Gerir Entidades da Empresa</value>
+  </data>
+  <data name="Manage Customer Relationships" xml:space="preserve">
+    <value>Gerir Relações com Clientes</value>
   </data>
   <data name="Manage Feedback" xml:space="preserve">
     <value>Gerir Feedback</value>

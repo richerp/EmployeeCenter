@@ -69,6 +69,9 @@
   <data name="Allows creating, updating, and deleting company entity information. Every user can view company entity information by default." xml:space="preserve">
     <value>Cho phép tạo, cập nhật và xóa thông tin thực thể công ty. Mọi người dùng đều có thể xem thông tin thực thể công ty theo mặc định.</value>
   </data>
+  <data name="Allows creating, updating, and deleting customer relationship information. Every user can view customer relationships by default." xml:space="preserve">
+    <value>Cho phép tạo, cập nhật và xóa thông tin quan hệ khách hàng. Mọi người dùng đều có thể xem thông tin quan hệ khách hàng theo mặc định.</value>
+  </data>
   <data name="Allows creating, updating, and deleting services and DNS providers. Every user can view services by default." xml:space="preserve">
     <value>Cho phép tạo, cập nhật và xóa các dịch vụ và nhà cung cấp DNS. Mọi người dùng đều có thể xem dịch vụ theo mặc định.</value>
   </data>
@@ -221,6 +224,9 @@
   </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Quản lý các thực thể công ty</value>
+  </data>
+  <data name="Manage Customer Relationships" xml:space="preserve">
+    <value>Quản lý Quan hệ Khách hàng</value>
   </data>
   <data name="Manage Feedback" xml:space="preserve">
     <value>Quản lý Phản hồi</value>
