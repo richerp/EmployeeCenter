@@ -149,6 +149,18 @@ public class LeaveController(
             ModelState.AddModelError(nameof(model.EndDate), "End date must be within the current year.");
         }
 
+        // Check for overlapping pending leave applications
+        var overlappingLeave = await context.LeaveApplications
+            .Where(l => l.UserId == user.Id)
+            .Where(l => l.IsPending && !l.IsWithdrawn)
+            .Where(l => l.StartDate <= model.EndDate && l.EndDate >= model.StartDate)
+            .FirstOrDefaultAsync();
+
+        if (overlappingLeave != null)
+        {
+            ModelState.AddModelError(string.Empty, $"You already have a pending leave application for {overlappingLeave.StartDate:yyyy-MM-dd} to {overlappingLeave.EndDate:yyyy-MM-dd}. Please withdraw it before applying for a new one that overlaps.");
+        }
+
         // Calculate working days
         var holidays = await holidayService.GetPublicHolidaysInRangeAsync(model.StartDate, model.EndDate);
         var workingDays = await leaveBalanceService.CalculateWorkingDaysAsync(model.StartDate, model.EndDate, holidays);
