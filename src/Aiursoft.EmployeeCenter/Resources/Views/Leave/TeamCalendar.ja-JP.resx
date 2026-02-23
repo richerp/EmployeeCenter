@@ -36,11 +36,11 @@
   <data name="Currently on Leave" xml:space="preserve">
     <value>現在休暇中</value>
   </data>
-  <data name="Days label" xml:space="preserve">
-    <value>日</value>
-  </data>
   <data name="Days" xml:space="preserve">
     <value>日数</value>
+  </data>
+  <data name="Days label" xml:space="preserve">
+    <value>日</value>
   </data>
   <data name="Green - Leave period has finished" xml:space="preserve">
     <value>緑色 - 休暇期間が終了しました</value>

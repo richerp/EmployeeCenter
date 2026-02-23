@@ -45,11 +45,11 @@
   <data name="Currently on Leave" xml:space="preserve">
     <value>正在休假</value>
   </data>
-  <data name="Days label" xml:space="preserve">
-    <value>天</value>
-  </data>
   <data name="Days" xml:space="preserve">
     <value>天数</value>
+  </data>
+  <data name="Days label" xml:space="preserve">
+    <value>天</value>
   </data>
   <data name="Direct Report" xml:space="preserve">
     <value>直接下属</value>

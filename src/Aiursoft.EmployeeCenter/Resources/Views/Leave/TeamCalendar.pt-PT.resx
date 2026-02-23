@@ -36,11 +36,11 @@
   <data name="Currently on Leave" xml:space="preserve">
     <value>Atualmente em Férias</value>
   </data>
-  <data name="Days label" xml:space="preserve">
-    <value>dias</value>
-  </data>
   <data name="Days" xml:space="preserve">
     <value>Dias</value>
+  </data>
+  <data name="Days label" xml:space="preserve">
+    <value>dias</value>
   </data>
   <data name="Green - Leave period has finished" xml:space="preserve">
     <value>Verde - O período de férias terminou</value>

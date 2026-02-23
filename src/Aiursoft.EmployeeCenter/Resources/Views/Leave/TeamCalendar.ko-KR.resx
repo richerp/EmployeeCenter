@@ -36,11 +36,11 @@
   <data name="Currently on Leave" xml:space="preserve">
     <value>현재 휴가 중</value>
   </data>
-  <data name="Days label" xml:space="preserve">
-    <value>일</value>
-  </data>
   <data name="Days" xml:space="preserve">
     <value>일수</value>
+  </data>
+  <data name="Days label" xml:space="preserve">
+    <value>일</value>
   </data>
   <data name="Green - Leave period has finished" xml:space="preserve">
     <value>초록색 - 휴가 기간이 종료되었습니다</value>
