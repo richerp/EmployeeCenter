@@ -329,6 +329,9 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("TEXT");
 
+                    b.Property<bool>("CreateLedger")
+                        .HasColumnType("INTEGER");
+
                     b.Property<DateTime>("CreationTime")
                         .HasColumnType("TEXT");
 

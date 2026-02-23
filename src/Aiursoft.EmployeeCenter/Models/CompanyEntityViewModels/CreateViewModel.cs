@@ -119,4 +119,7 @@ public class CreateViewModel : UiStackLayoutViewModel
     [Display(Name = "Company Secretary (HK)")]
     [MaxLength(100, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string? CompanySecretary { get; set; }
+
+    [Display(Name = "Create corresponding ledger")]
+    public bool CreateLedger { get; set; }
 }
