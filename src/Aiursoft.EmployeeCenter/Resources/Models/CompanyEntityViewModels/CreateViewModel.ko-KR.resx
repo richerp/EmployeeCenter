@@ -60,6 +60,9 @@
   <data name="Company Type" xml:space="preserve">
     <value>회사 유형</value>
   </data>
+  <data name="Create corresponding ledger" xml:space="preserve">
+    <value>해당 원장 생성</value>
+  </data>
   <data name="Entity Code (Social Credit Code / BR Number)" xml:space="preserve">
     <value>기관 코드 (사회신용코드 / BR 번호)</value>
   </data>

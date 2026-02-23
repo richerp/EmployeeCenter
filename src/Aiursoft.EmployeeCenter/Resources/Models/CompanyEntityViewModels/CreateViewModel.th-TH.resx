@@ -60,6 +60,9 @@
   <data name="Company Type" xml:space="preserve">
     <value>ประเภทบริษัท</value>
   </data>
+  <data name="Create corresponding ledger" xml:space="preserve">
+    <value>สร้างบัญชีสมุดบัญชีที่เกี่ยวข้อง</value>
+  </data>
   <data name="Entity Code (Social Credit Code / BR Number)" xml:space="preserve">
     <value>รหัสหน่วยงาน (รหัสเครดิตสังคม / หมายเลข BR)</value>
   </data>

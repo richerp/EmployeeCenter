@@ -60,6 +60,9 @@
   <data name="Company Type" xml:space="preserve">
     <value>公司類型</value>
   </data>
+  <data name="Create corresponding ledger" xml:space="preserve">
+    <value>建立對應的會計帳冊</value>
+  </data>
   <data name="Entity Code (Social Credit Code / BR Number)" xml:space="preserve">
     <value>統一編號 (社會信用代碼 / BR 編號)</value>
   </data>

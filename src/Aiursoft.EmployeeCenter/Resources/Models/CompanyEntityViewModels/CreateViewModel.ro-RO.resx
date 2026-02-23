@@ -60,6 +60,9 @@
   <data name="Company Type" xml:space="preserve">
     <value>Tip companie</value>
   </data>
+  <data name="Create corresponding ledger" xml:space="preserve">
+    <value>Creează jurnalul corespunzător</value>
+  </data>
   <data name="Entity Code (Social Credit Code / BR Number)" xml:space="preserve">
     <value>Cod entitate (Cod credit social / Număr BR)</value>
   </data>

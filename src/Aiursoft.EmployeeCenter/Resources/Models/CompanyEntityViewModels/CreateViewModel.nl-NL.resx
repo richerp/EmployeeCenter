@@ -60,6 +60,9 @@
   <data name="Company Type" xml:space="preserve">
     <value>Bedrijftype</value>
   </data>
+  <data name="Create corresponding ledger" xml:space="preserve">
+    <value>Maak overeenkomstige boekhouding aan</value>
+  </data>
   <data name="Entity Code (Social Credit Code / BR Number)" xml:space="preserve">
     <value>Entiteitscode (Social Credit Code / BR-nummer)</value>
   </data>

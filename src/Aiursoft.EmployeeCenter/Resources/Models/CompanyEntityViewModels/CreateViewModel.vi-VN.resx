@@ -60,6 +60,9 @@
   <data name="Company Type" xml:space="preserve">
     <value>Loại hình công ty</value>
   </data>
+  <data name="Create corresponding ledger" xml:space="preserve">
+    <value>Tạo sổ kế toán tương ứng</value>
+  </data>
   <data name="Entity Code (Social Credit Code / BR Number)" xml:space="preserve">
     <value>Mã định danh (Mã tín dụng xã hội / Số BR)</value>
   </data>

@@ -60,6 +60,9 @@
   <data name="Company Type" xml:space="preserve">
     <value>Jenis Perusahaan</value>
   </data>
+  <data name="Create corresponding ledger" xml:space="preserve">
+    <value>Buat buku besar yang sesuai</value>
+  </data>
   <data name="Entity Code (Social Credit Code / BR Number)" xml:space="preserve">
     <value>Kode Entitas (Kode Kredit Sosial / Nomor BR)</value>
   </data>

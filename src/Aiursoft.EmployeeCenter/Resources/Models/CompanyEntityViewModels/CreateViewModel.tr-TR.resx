@@ -60,6 +60,9 @@
   <data name="Company Type" xml:space="preserve">
     <value>Şirket Türü</value>
   </data>
+  <data name="Create corresponding ledger" xml:space="preserve">
+    <value>Karşılık gelen defteri oluştur</value>
+  </data>
   <data name="Entity Code (Social Credit Code / BR Number)" xml:space="preserve">
     <value>Varlık Kodu (Sosyal Kredi Kodu / BR Numarası)</value>
   </data>

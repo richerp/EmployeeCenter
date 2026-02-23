@@ -60,6 +60,9 @@
   <data name="Company Type" xml:space="preserve">
     <value>कंपनी प्रकार</value>
   </data>
+  <data name="Create corresponding ledger" xml:space="preserve">
+    <value>संगत लेजर बनाएं</value>
+  </data>
   <data name="Entity Code (Social Credit Code / BR Number)" xml:space="preserve">
     <value>एंटिटी कोड (सोशल क्रेडिट कोड / बीआर नंबर)</value>
   </data>

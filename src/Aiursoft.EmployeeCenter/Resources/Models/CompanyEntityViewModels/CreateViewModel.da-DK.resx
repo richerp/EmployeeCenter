@@ -60,6 +60,9 @@
   <data name="Company Type" xml:space="preserve">
     <value>Virksomhedstype</value>
   </data>
+  <data name="Create corresponding ledger" xml:space="preserve">
+    <value>Opret tilsvarende bogføring</value>
+  </data>
   <data name="Entity Code (Social Credit Code / BR Number)" xml:space="preserve">
     <value>Enhedskode (Socialkreditkode / BR-nummer)</value>
   </data>
