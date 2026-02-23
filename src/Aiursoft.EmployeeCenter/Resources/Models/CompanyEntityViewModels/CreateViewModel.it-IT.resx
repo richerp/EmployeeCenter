@@ -60,6 +60,9 @@
   <data name="Company Type" xml:space="preserve">
     <value>Tipo di Azienda</value>
   </data>
+  <data name="Create corresponding ledger" xml:space="preserve">
+    <value>Crea il libro contabile corrispondente</value>
+  </data>
   <data name="Entity Code (Social Credit Code / BR Number)" xml:space="preserve">
     <value>Codice Entità (Codice di Credito Sociale / Numero BR)</value>
   </data>

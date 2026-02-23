@@ -60,6 +60,9 @@
   <data name="Company Type" xml:space="preserve">
     <value>Company Type</value>
   </data>
+  <data name="Create corresponding ledger" xml:space="preserve">
+    <value>Create corresponding ledger</value>
+  </data>
   <data name="Entity Code (Social Credit Code / BR Number)" xml:space="preserve">
     <value>Entity Code (Social Credit Code / BR Number)</value>
   </data>

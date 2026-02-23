@@ -60,6 +60,9 @@
   <data name="Company Type" xml:space="preserve">
     <value>Τύπος Εταιρείας</value>
   </data>
+  <data name="Create corresponding ledger" xml:space="preserve">
+    <value>Δημιουργία αντίστοιχου λογαριασμού</value>
+  </data>
   <data name="Entity Code (Social Credit Code / BR Number)" xml:space="preserve">
     <value>Κωδικός Οντότητας (Κωδικός Κοινωνικής Εμπιστοσύνης / Αριθμός BR)</value>
   </data>

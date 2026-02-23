@@ -60,6 +60,9 @@
   <data name="Company Type" xml:space="preserve">
     <value>会社種別</value>
   </data>
+  <data name="Create corresponding ledger" xml:space="preserve">
+    <value>対応する台帳を作成する</value>
+  </data>
   <data name="Entity Code (Social Credit Code / BR Number)" xml:space="preserve">
     <value>エンティティコード（社会信用コード / BR番号）</value>
   </data>

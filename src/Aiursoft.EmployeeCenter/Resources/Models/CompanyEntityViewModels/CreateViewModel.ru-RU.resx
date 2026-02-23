@@ -60,6 +60,9 @@
   <data name="Company Type" xml:space="preserve">
     <value>Тип компании</value>
   </data>
+  <data name="Create corresponding ledger" xml:space="preserve">
+    <value>Создать соответствующий журнал</value>
+  </data>
   <data name="Entity Code (Social Credit Code / BR Number)" xml:space="preserve">
     <value>Код организации (код социального кредита / номер BR)</value>
   </data>
