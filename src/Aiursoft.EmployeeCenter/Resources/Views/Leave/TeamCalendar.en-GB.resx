@@ -36,11 +36,11 @@
   <data name="Currently on Leave" xml:space="preserve">
     <value>Currently on Leave</value>
   </data>
-  <data name="Days label" xml:space="preserve">
-    <value>days</value>
-  </data>
   <data name="Days" xml:space="preserve">
     <value>Days</value>
+  </data>
+  <data name="Days label" xml:space="preserve">
+    <value>days</value>
   </data>
   <data name="Green - Leave period has finished" xml:space="preserve">
     <value>Green - Leave period has finished</value>

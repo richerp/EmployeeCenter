@@ -36,11 +36,11 @@
   <data name="Currently on Leave" xml:space="preserve">
     <value>Đang nghỉ phép</value>
   </data>
-  <data name="Days label" xml:space="preserve">
-    <value>ngày</value>
-  </data>
   <data name="Days" xml:space="preserve">
     <value>Ngày</value>
+  </data>
+  <data name="Days label" xml:space="preserve">
+    <value>ngày</value>
   </data>
   <data name="Green - Leave period has finished" xml:space="preserve">
     <value>Xanh lá - Thời gian nghỉ đã kết thúc</value>

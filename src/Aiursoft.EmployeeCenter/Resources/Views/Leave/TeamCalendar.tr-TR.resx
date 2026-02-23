@@ -36,11 +36,11 @@
   <data name="Currently on Leave" xml:space="preserve">
     <value>Şu an izinde</value>
   </data>
-  <data name="Days label" xml:space="preserve">
-    <value>gün</value>
-  </data>
   <data name="Days" xml:space="preserve">
     <value>Günler</value>
+  </data>
+  <data name="Days label" xml:space="preserve">
+    <value>gün</value>
   </data>
   <data name="Green - Leave period has finished" xml:space="preserve">
     <value>Yeşil - İzne ayrılan süre sona erdi</value>

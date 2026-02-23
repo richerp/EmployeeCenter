@@ -36,11 +36,11 @@
   <data name="Currently on Leave" xml:space="preserve">
     <value>Εν ενεργεία άδεια</value>
   </data>
-  <data name="Days label" xml:space="preserve">
-    <value>ημέρες</value>
-  </data>
   <data name="Days" xml:space="preserve">
     <value>Ημέρες</value>
+  </data>
+  <data name="Days label" xml:space="preserve">
+    <value>ημέρες</value>
   </data>
   <data name="Green - Leave period has finished" xml:space="preserve">
     <value>Πράσινο - Το περίοδος άδειας έχει ολοκληρωθεί</value>

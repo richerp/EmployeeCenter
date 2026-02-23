@@ -36,11 +36,11 @@
   <data name="Currently on Leave" xml:space="preserve">
     <value>For øjeblikket på ferie</value>
   </data>
-  <data name="Days label" xml:space="preserve">
-    <value>dage</value>
-  </data>
   <data name="Days" xml:space="preserve">
     <value>Dage</value>
+  </data>
+  <data name="Days label" xml:space="preserve">
+    <value>dage</value>
   </data>
   <data name="Green - Leave period has finished" xml:space="preserve">
     <value>Grøn - Ferieperioden er afsluttet</value>

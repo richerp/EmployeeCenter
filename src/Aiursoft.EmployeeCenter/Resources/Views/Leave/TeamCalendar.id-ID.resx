@@ -36,11 +36,11 @@
   <data name="Currently on Leave" xml:space="preserve">
     <value>Sedang Cuti</value>
   </data>
-  <data name="Days label" xml:space="preserve">
-    <value>hari</value>
-  </data>
   <data name="Days" xml:space="preserve">
     <value>Hari</value>
+  </data>
+  <data name="Days label" xml:space="preserve">
+    <value>hari</value>
   </data>
   <data name="Green - Leave period has finished" xml:space="preserve">
     <value>Hijau - Masa cuti telah berakhir</value>

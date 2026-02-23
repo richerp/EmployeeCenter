@@ -36,11 +36,11 @@
   <data name="Currently on Leave" xml:space="preserve">
     <value>För närvarande på semester</value>
   </data>
-  <data name="Days label" xml:space="preserve">
-    <value>dagar</value>
-  </data>
   <data name="Days" xml:space="preserve">
     <value>Dagar</value>
+  </data>
+  <data name="Days label" xml:space="preserve">
+    <value>dagar</value>
   </data>
   <data name="Green - Leave period has finished" xml:space="preserve">
     <value>Grön - Semesterperioden är avslutad</value>
