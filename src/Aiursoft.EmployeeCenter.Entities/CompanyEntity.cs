@@ -103,6 +103,8 @@ public class CompanyEntity
     [MaxLength(10)]
     public string BaseCurrency { get; set; } = "CNY";
 
+    public bool CreateLedger { get; set; } = false;
+
     public DateTime CreationTime { get; init; } = DateTime.UtcNow;
 
     public DateTime UpdateTime { get; set; } = DateTime.UtcNow;

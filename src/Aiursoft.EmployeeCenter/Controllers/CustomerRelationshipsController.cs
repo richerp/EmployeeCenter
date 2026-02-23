@@ -19,11 +19,11 @@ public class CustomerRelationshipsController(
 {
     [HttpGet]
     [RenderInNavBar(
-        NavGroupName = "Customer Relations",
-        NavGroupOrder = 5,
+        NavGroupName = "Administration",
+        NavGroupOrder = 3,
         CascadedLinksGroupName = "Customer Relations",
         CascadedLinksIcon = "users",
-        CascadedLinksOrder = 1,
+        CascadedLinksOrder = 6,
         LinkText = "View Customer Relations",
         LinkOrder = 1)]
     public async Task<IActionResult> Index()
@@ -65,11 +65,11 @@ public class CustomerRelationshipsController(
     [HttpGet]
     [Authorize(Policy = AppPermissionNames.CanManageCustomerRelationships)]
     [RenderInNavBar(
-        NavGroupName = "Customer Relations",
-        NavGroupOrder = 5,
+        NavGroupName = "Administration",
+        NavGroupOrder = 3,
         CascadedLinksGroupName = "Customer Relations",
         CascadedLinksIcon = "users",
-        CascadedLinksOrder = 1,
+        CascadedLinksOrder = 6,
         LinkText = "Manage Customer Relations",
         LinkOrder = 2)]
     public async Task<IActionResult> Manage()

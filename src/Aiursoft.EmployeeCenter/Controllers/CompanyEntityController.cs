@@ -177,7 +177,8 @@ public class CompanyEntityController(
             RegisteredCapital = model.RegisteredCapital,
             OperationStatus = model.OperationStatus,
             SCRLocation = model.SCRLocation,
-            CompanySecretary = model.CompanySecretary
+            CompanySecretary = model.CompanySecretary,
+            CreateLedger = model.CreateLedger
         };
 
         dbContext.CompanyEntities.Add(entity);
@@ -236,7 +237,8 @@ public class CompanyEntityController(
             RegisteredCapital = entity.RegisteredCapital,
             OperationStatus = entity.OperationStatus,
             SCRLocation = entity.SCRLocation,
-            CompanySecretary = entity.CompanySecretary
+            CompanySecretary = entity.CompanySecretary,
+            CreateLedger = entity.CreateLedger
         };
 
         return this.StackView(model);
@@ -323,6 +325,7 @@ public class CompanyEntityController(
         entity.OperationStatus = model.OperationStatus;
         entity.SCRLocation = model.SCRLocation;
         entity.CompanySecretary = model.CompanySecretary;
+        entity.CreateLedger = model.CreateLedger;
         entity.UpdateTime = DateTime.UtcNow;
 
         await dbContext.SaveChangesAsync();
