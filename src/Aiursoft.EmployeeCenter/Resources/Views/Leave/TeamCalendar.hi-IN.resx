@@ -36,7 +36,7 @@
   <data name="Currently on Leave" xml:space="preserve">
     <value>वर्तमान में छुट्टी पर</value>
   </data>
-  <data name="days" xml:space="preserve">
+  <data name="Days label" xml:space="preserve">
     <value>दिन</value>
   </data>
   <data name="Days" xml:space="preserve">
