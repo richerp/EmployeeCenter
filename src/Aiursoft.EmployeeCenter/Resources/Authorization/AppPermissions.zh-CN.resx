@@ -270,5 +270,10 @@
   <data name="View User Operation Log" xml:space="preserve">
     <value>查看用户操作日志</value>
   </data>
-
+  <data name="Manage Market Channels" xml:space="preserve">
+    <value>管理市场渠道</value>
+  </data>
+  <data name="Allows creating, updating, and deleting market channel information. Every user can view market channels by default." xml:space="preserve">
+    <value>允许创建、更新和删除市场渠道信息。默认情况下，每个用户都可以查看市场渠道。</value>
+  </data>
 </root>

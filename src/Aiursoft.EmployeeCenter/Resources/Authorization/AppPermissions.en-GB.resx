@@ -267,5 +267,10 @@
   <data name="View User Operation Log" xml:space="preserve">
     <value>View User Operation Log</value>
   </data>
-
+  <data name="Manage Market Channels" xml:space="preserve">
+    <value>Manage Market Channels</value>
+  </data>
+  <data name="Allows creating, updating, and deleting market channel information. Every user can view market channels by default." xml:space="preserve">
+    <value>Allows creating, updating, and deleting market channel information. Every user can view market channels by default.</value>
+  </data>
 </root>
