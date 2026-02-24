@@ -15,13 +15,13 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 public class HolidayAdjustmentController(EmployeeCenterDbContext context) : Controller
 {
     [RenderInNavBar(
-        NavGroupName = "Administration",
-        NavGroupOrder = 9999,
-        CascadedLinksGroupName = "System",
-        CascadedLinksIcon = "settings",
-        CascadedLinksOrder = 9999,
+        NavGroupName = "Career",
+        NavGroupOrder = 1,
+        CascadedLinksGroupName = "Leave Management",
+        CascadedLinksIcon = "calendar-days",
+        CascadedLinksOrder = 5,
         LinkText = "Holiday Adjustments",
-        LinkOrder = 2)]
+        LinkOrder = 4)]
     public async Task<IActionResult> Index()
     {
         var adjustments = await context.AdjustedHolidays
