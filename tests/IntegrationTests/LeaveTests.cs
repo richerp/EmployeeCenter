@@ -375,4 +375,80 @@ public class LeaveTests
         StringAssert.Contains(html, "Submitted", "Incoming view should have 'Submitted' column.");
         StringAssert.Contains(html, "Actions", "Incoming view should have 'Actions' column.");
     }
+
+    [TestMethod]
+    public async Task HolidayAdjustmentAffectsLeaveCalculationTest()
+    {
+        var email = $"test-{Guid.NewGuid()}@aiursoft.com";
+        var password = "Test-Password-123";
+
+        // 1. Register and Login
+        var registerToken = await GetAntiCsrfToken("/Account/Register");
+        var registerContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Email", email },
+            { "Password", password },
+            { "ConfirmPassword", password },
+            { "__RequestVerificationToken", registerToken }
+        });
+        await _http.PostAsync("/Account/Register", registerContent);
+
+        // 2. Initialize Allocation (Visit Index)
+        await _http.GetAsync("/Leave/Index");
+
+        // 3. Find an upcoming Saturday
+        var targetSaturday = DateTime.UtcNow.Date;
+        while (targetSaturday.DayOfWeek != DayOfWeek.Saturday)
+        {
+            targetSaturday = targetSaturday.AddDays(1);
+        }
+        
+        // Let's test a 3-day leave from Friday to Sunday enveloping the target Saturday.
+        var startDate = targetSaturday.AddDays(-1);
+        var endDate = targetSaturday.AddDays(1);
+
+        // Normal calculation: Friday + Saturday + Sunday = 1 Working day (Friday only)
+        // With Adjustment (Saturday = WorkDay): Friday + Saturday + Sunday = 2 Working days
+
+        // Apply Adjustment
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            db.AdjustedHolidays.Add(new AdjustedHoliday
+            {
+                Date = targetSaturday,
+                Type = HolidayType.WorkDay,
+                Reason = "Compensatory work day"
+            });
+            await db.SaveChangesAsync();
+        }
+
+        // Apply for leave enveloping the Saturday
+        var applyToken = await GetAntiCsrfToken("/Leave/Apply");
+        var applyContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "LeaveType", "AnnualLeave" },
+            { "StartDate", startDate.ToString("yyyy-MM-dd") },
+            { "EndDate", endDate.ToString("yyyy-MM-dd") },
+            { "Reason", "Vacation over adjusted weekend" },
+            { "__RequestVerificationToken", applyToken }
+        });
+        
+        var applyResponse = await _http.PostAsync("/Leave/Apply", applyContent);
+        Assert.AreEqual(HttpStatusCode.Found, applyResponse.StatusCode);
+
+        // Verify total days calculated
+        var userId = await GetUserIdByEmail(email);
+        var leaveId = await GetLatestLeaveId(userId);
+
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var leave = await db.LeaveApplications.FindAsync(leaveId);
+            Assert.IsNotNull(leave);
+
+            // Since Friday is normal working day + Saturday is now adjusted as working day = 2 days
+            Assert.AreEqual(2m, leave.TotalDays);
+        }
+    }
 }

@@ -1,3 +1,5 @@
+using Aiursoft.EmployeeCenter.Entities;
+using Microsoft.EntityFrameworkCore;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using Microsoft.Extensions.Caching.Memory;
@@ -6,32 +8,47 @@ namespace Aiursoft.EmployeeCenter.Services;
 
 /// <summary>
 /// Service for fetching Chinese public holiday information from external API
-/// Uses api.haoshenqi.top API with caching to minimize API calls
+/// Uses api.haoshenqi.top API with caching to minimize API calls, and honors local overrides.
 /// </summary>
 public class HolidayService
 {
     private readonly HttpClient _httpClient;
     private readonly IMemoryCache _cache;
     private readonly ILogger<HolidayService> _logger;
+    private readonly EmployeeCenterDbContext _context;
     private const string ApiBaseUrl = "http://api.haoshenqi.top/holiday";
 
     public HolidayService(
         IHttpClientFactory httpClientFactory,
         IMemoryCache cache,
-        ILogger<HolidayService> logger)
+        ILogger<HolidayService> logger,
+        EmployeeCenterDbContext context)
     {
         _httpClient = httpClientFactory.CreateClient();
         _cache = cache;
         _logger = logger;
+        _context = context;
     }
 
     /// <summary>
-    /// Check if a specific date is a public holiday in China
+    /// Check if a specific date is a public holiday in China, respecting local adjustments.
     /// </summary>
     /// <param name="date">Date to check</param>
     /// <returns>True if the date is a public holiday, false otherwise</returns>
     public async Task<bool> IsPublicHolidayAsync(DateTime date)
     {
+        var targetDate = date.Date;
+
+        // 1. Check local manual adjustments first (overrides API logic)
+        var adjustment = await _context.AdjustedHolidays
+            .FirstOrDefaultAsync(a => a.Date.Date == targetDate);
+
+        if (adjustment != null)
+        {
+            return adjustment.Type == HolidayType.RestDay;
+        }
+
+        // 2. Fallback to API logic
         var dateKey = date.ToString("yyyy-MM-dd");
         var cacheKey = $"holiday_{dateKey}";
 

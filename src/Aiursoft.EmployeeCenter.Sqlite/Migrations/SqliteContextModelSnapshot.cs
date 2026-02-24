@@ -17,6 +17,28 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "10.0.3");
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.AdjustedHoliday", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Reason")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Type")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("AdjustedHolidays");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Asset", b =>
                 {
                     b.Property<Guid>("Id")
