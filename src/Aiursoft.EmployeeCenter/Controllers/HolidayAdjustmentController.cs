@@ -1,9 +1,9 @@
 using Aiursoft.EmployeeCenter.Authorization;
 using Aiursoft.EmployeeCenter.Entities;
 using Aiursoft.EmployeeCenter.Models.HolidayAdjustmentViewModels;
+using Aiursoft.EmployeeCenter.Services;
 using Aiursoft.UiStack.Navigation;
 using Aiursoft.WebTools.Attributes;
-using Aiursoft.EmployeeCenter.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -12,7 +12,7 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 
 [Authorize(Policy = AppPermissionNames.CanManageGlobalSettings)]
 [LimitPerMin]
-public class HolidayAdjustmentController(EmployeeCenterDbContext context) : Controller
+public class HolidayAdjustmentController(EmployeeCenterDbContext context, HolidayService holidayService) : Controller
 {
     [RenderInNavBar(
         NavGroupName = "Career",
@@ -22,71 +22,107 @@ public class HolidayAdjustmentController(EmployeeCenterDbContext context) : Cont
         CascadedLinksOrder = 5,
         LinkText = "Holiday Adjustments",
         LinkOrder = 4)]
-    public async Task<IActionResult> Index()
+    public IActionResult Index()
     {
+        return this.StackView(new IndexViewModel());
+    }
+
+    /// <summary>
+    /// JSON API: get holidays and adjustments for a date range (used by the calendar JS)
+    /// </summary>
+    [HttpGet]
+    public async Task<IActionResult> GetCalendarData(DateTime start, DateTime end)
+    {
+        // Get all holidays in the range (includes weekends, public holidays, and adjustments)
+        var holidays = await holidayService.GetPublicHolidaysInRangeAsync(start, end);
+
+        // Get all manual adjustments in the range
         var adjustments = await context.AdjustedHolidays
-            .OrderByDescending(a => a.Date)
+            .Where(a => a.Date >= start.Date && a.Date <= end.Date)
             .ToListAsync();
-            
-        var model = new IndexViewModel
-        {
-            Adjustments = adjustments
-        };
-        
-        return this.StackView(model);
+
+        var adjustmentMap = adjustments.ToDictionary(
+            a => a.Date.Date.ToString("yyyy-MM-dd"),
+            a => new { type = a.Type == HolidayType.WorkDay ? "work" : "rest", a.Reason });
+
+        var holidayStrings = holidays.Select(h => h.ToString("yyyy-MM-dd")).ToList();
+
+        return Json(new { holidays = holidayStrings, adjustments = adjustmentMap });
     }
 
-    public IActionResult Create()
-    {
-        return this.StackView(new CreateViewModel
-        {
-            Date = DateTime.UtcNow.Date,
-            Type = HolidayType.WorkDay
-        });
-    }
-
+    /// <summary>
+    /// JSON API: toggle a day's adjustment status.
+    /// If already adjusted, remove the adjustment (revert to natural).
+    /// If not adjusted, create an adjustment that flips the natural status.
+    /// </summary>
     [HttpPost]
-    [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create(CreateViewModel model)
+    public async Task<IActionResult> ToggleDay([FromBody] ToggleDayRequest request)
     {
-        if (!ModelState.IsValid)
-        {
-            return this.StackView(model);
-        }
+        var targetDate = request.Date.Date;
 
+        // Check if an adjustment already exists
         var existing = await context.AdjustedHolidays
-            .FirstOrDefaultAsync(a => a.Date.Date == model.Date.Date);
+            .FirstOrDefaultAsync(a => a.Date.Date == targetDate);
 
         if (existing != null)
         {
-            ModelState.AddModelError(nameof(model.Date), "An adjustment for this date already exists.");
-            return this.StackView(model);
+            // Remove it — revert to natural
+            context.AdjustedHolidays.Remove(existing);
+            await context.SaveChangesAsync();
+
+            // Re-check the natural status after removal
+            var isNaturalHoliday = await holidayService.IsPublicHolidayAsync(targetDate);
+            return Json(new
+            {
+                date = targetDate.ToString("yyyy-MM-dd"),
+                isNonWorking = isNaturalHoliday,
+                isAdjusted = false,
+                adjustmentType = (string?)null
+            });
         }
 
-        var adjustment = new AdjustedHoliday
-        {
-            Date = model.Date.Date,
-            Type = model.Type,
-            Reason = model.Reason
-        };
+        // Determine the natural status of this day
+        var isNaturallyNonWorking = await IsNaturallyNonWorkingAsync(targetDate);
 
-        context.AdjustedHolidays.Add(adjustment);
+        // Create an adjustment that flips the natural status
+        var newType = isNaturallyNonWorking ? HolidayType.WorkDay : HolidayType.RestDay;
+        var reason = isNaturallyNonWorking ? "Compensatory work day (调休上班)" : "Holiday adjustment (调休放假)";
+
+        context.AdjustedHolidays.Add(new AdjustedHoliday
+        {
+            Date = targetDate,
+            Type = newType,
+            Reason = reason
+        });
         await context.SaveChangesAsync();
 
-        return RedirectToAction(nameof(Index));
+        return Json(new
+        {
+            date = targetDate.ToString("yyyy-MM-dd"),
+            isNonWorking = newType == HolidayType.RestDay,
+            isAdjusted = true,
+            adjustmentType = newType == HolidayType.WorkDay ? "work" : "rest"
+        });
     }
 
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Delete(int id)
+    /// <summary>
+    /// Check the "natural" (without adjustments) status of a date.
+    /// A date is naturally non-working if it's a weekend or an API-reported holiday.
+    /// </summary>
+    private async Task<bool> IsNaturallyNonWorkingAsync(DateTime date)
     {
-        var adjustment = await context.AdjustedHolidays.FindAsync(id);
-        if (adjustment != null)
+        var dayOfWeek = date.DayOfWeek;
+        if (dayOfWeek is DayOfWeek.Saturday or DayOfWeek.Sunday)
         {
-            context.AdjustedHolidays.Remove(adjustment);
-            await context.SaveChangesAsync();
+            return true;
         }
 
-        return RedirectToAction(nameof(Index));
+        // Check the API (ignoring local adjustments — we already removed any existing adjustment above)
+        return await holidayService.IsPublicHolidayAsync(date);
+    }
+
+    public class ToggleDayRequest
+    {
+        public DateTime Date { get; set; }
     }
 }
