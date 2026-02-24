@@ -1,6 +1,3 @@
-using System.Net;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
 [TestClass]
@@ -9,7 +6,7 @@ public class MarketChannelsTests : TestBase
     private async Task<string> GetUserIdByEmail(string email)
     {
         using var scope = Server!.Services.CreateScope();
-        var userManager = scope.ServiceProvider.GetRequiredService<Microsoft.AspNetCore.Identity.UserManager<User>>();
+        var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
         var user = await userManager.FindByEmailAsync(email);
         return user?.Id ?? throw new Exception($"User with email {email} not found");
     }
