@@ -24,6 +24,9 @@
   <data name="Creation Time" xml:space="preserve">
     <value>Час створення</value>
   </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Редагувати</value>
+  </data>
   <data name="Last Updated" xml:space="preserve">
     <value>Останнє оновлення</value>
   </data>

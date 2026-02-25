@@ -24,6 +24,9 @@
   <data name="Creation Time" xml:space="preserve">
     <value>Hora de creación</value>
   </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
   <data name="Last Updated" xml:space="preserve">
     <value>Última actualización</value>
   </data>

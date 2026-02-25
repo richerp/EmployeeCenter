@@ -24,6 +24,9 @@
   <data name="Comments" xml:space="preserve">
     <value>Comentarios</value>
   </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
   <data name="Print" xml:space="preserve">
     <value>Imprimir</value>
   </data>

@@ -24,6 +24,9 @@
   <data name="Comments" xml:space="preserve">
     <value>Yorumlar</value>
   </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Düzenle</value>
+  </data>
   <data name="Print" xml:space="preserve">
     <value>Yazdır</value>
   </data>

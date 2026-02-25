@@ -24,6 +24,9 @@
   <data name="Approved Projects" xml:space="preserve">
     <value>Proyek yang Disetujui</value>
   </data>
+  <data name="Cannot edit a requirement that is already approved." xml:space="preserve">
+    <value>Tidak dapat mengedit persyaratan yang sudah disetujui.</value>
+  </data>
   <data name="Edit Requirement" xml:space="preserve">
     <value>Edit Persyaratan</value>
   </data>

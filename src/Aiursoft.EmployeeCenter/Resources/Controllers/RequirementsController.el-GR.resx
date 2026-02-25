@@ -24,6 +24,9 @@
   <data name="Approved Projects" xml:space="preserve">
     <value>Εγκριθέντα Έργα</value>
   </data>
+  <data name="Cannot edit a requirement that is already approved." xml:space="preserve">
+    <value>Δεν μπορείτε να τροποποιήσετε αίτημα που έχει ήδη εγκριθεί.</value>
+  </data>
   <data name="Edit Requirement" xml:space="preserve">
     <value>Επεξεργασία Anαγκαιότητας</value>
   </data>

@@ -24,6 +24,9 @@
   <data name="Approved Projects" xml:space="preserve">
     <value>Godkendte projekter</value>
   </data>
+  <data name="Cannot edit a requirement that is already approved." xml:space="preserve">
+    <value>Kan ikke redigere en krav, der allerede er godkendt.</value>
+  </data>
   <data name="Edit Requirement" xml:space="preserve">
     <value>Rediger krav</value>
   </data>

@@ -24,6 +24,9 @@
   <data name="Approved Projects" xml:space="preserve">
     <value>已批准项目</value>
   </data>
+  <data name="Cannot edit a requirement that is already approved." xml:space="preserve">
+    <value>无法编辑已经批准的需求。</value>
+  </data>
   <data name="Edit Requirement" xml:space="preserve">
     <value>编辑需求</value>
   </data>
@@ -35,9 +38,6 @@
   </data>
   <data name="Submit Requirement" xml:space="preserve">
     <value>提交需求</value>
-  </data>
-  <data name="Cannot edit a requirement that is already approved." xml:space="preserve">
-    <value>无法编辑已经批准的需求。</value>
   </data>
 
 </root>

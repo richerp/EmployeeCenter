@@ -24,6 +24,9 @@
   <data name="Approved Projects" xml:space="preserve">
     <value>المشاريع المعتمدة</value>
   </data>
+  <data name="Cannot edit a requirement that is already approved." xml:space="preserve">
+    <value>لا يمكن تعديل متطلبات تم الموافقة عليها بالفعل.</value>
+  </data>
   <data name="Edit Requirement" xml:space="preserve">
     <value>تحرير الطلب</value>
   </data>

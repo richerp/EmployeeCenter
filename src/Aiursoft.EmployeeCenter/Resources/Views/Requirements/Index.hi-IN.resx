@@ -24,6 +24,9 @@
   <data name="Creation Time" xml:space="preserve">
     <value>रचना समय</value>
   </data>
+  <data name="Edit" xml:space="preserve">
+    <value>संपादित करें</value>
+  </data>
   <data name="Last Updated" xml:space="preserve">
     <value>अंतिम अद्यतन</value>
   </data>
