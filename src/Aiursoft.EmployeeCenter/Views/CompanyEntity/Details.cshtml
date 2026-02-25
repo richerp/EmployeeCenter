@@ -150,69 +150,72 @@
                 </div>
             </div>
 
-            <!-- Invoice Guide Card -->
-            <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">@Localizer["Invoice Issuance Guide"]</h6>
-                </div>
-                <div class="card-body">
-                    <p>@Localizer["Please show the following information to the merchant when making a payment:"]</p>
-
-                    <div class="card bg-light mb-3">
-                        <div class="card-body">
-                            <h5 class="card-title text-primary font-weight-bold">@Model.Entity.CompanyName</h5>
-                            <dl class="row mb-0">
-                                <dt class="col-sm-4">@Localizer["Tax ID"]</dt>
-                                <dd class="col-sm-8 text-body font-weight-bold">@Model.Entity.EntityCode</dd>
-
-                                <dt class="col-sm-4">@Localizer["Address"]</dt>
-                                <dd class="col-sm-8 small">@Model.Entity.RegisteredAddress</dd>
-
-                                <dt class="col-sm-4">@Localizer["Bank"]</dt>
-                                <dd class="col-sm-8 small">@Model.Entity.BankName</dd>
-
-                                <dt class="col-sm-4">@Localizer["Account"]</dt>
-                                <dd class="col-sm-8 text-body font-weight-bold">@Model.Entity.BankAccount</dd>
-
-                                @if (!string.IsNullOrEmpty(Model.Entity.SwiftCode))
-                                {
-                                    <dt class="col-sm-4">@Localizer["SWIFT Code"]</dt>
-                                    <dd class="col-sm-8 small">@Model.Entity.SwiftCode</dd>
-                                }
-                                
-                                @if (!string.IsNullOrEmpty(Model.Entity.BankCode))
-                                {
-                                    <dt class="col-sm-4">@Localizer["Bank Code"]</dt>
-                                    <dd class="col-sm-8 small">@Model.Entity.BankCode</dd>
-                                }
-                            </dl>
-                        </div>
+            @if (Model.Entity.CreateLedger)
+            {
+                <!-- Invoice Guide Card -->
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary">@Localizer["Invoice Issuance Guide"]</h6>
                     </div>
+                    <div class="card-body">
+                        <p>@Localizer["Please show the following information to the merchant when making a payment:"]</p>
 
-                    <hr />
+                        <div class="card bg-light mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary font-weight-bold">@Model.Entity.CompanyName</h5>
+                                <dl class="row mb-0">
+                                    <dt class="col-sm-4">@Localizer["Tax ID"]</dt>
+                                    <dd class="col-sm-8 text-body font-weight-bold">@Model.Entity.EntityCode</dd>
 
-                    <h6 class="font-weight-bold">@Localizer["Instructions for Employees"]</h6>
-                    <ol class="pl-3">
-                        <li class="mb-2">
-                            <strong>@Localizer["Prefer Electronic Invoices (Fully Digitalized)"]</strong>:
-                            @Localizer["Ask merchants for electronic invoices (PDF/OFD) sent to your email or employees@aiursoft.com."]
-                            @Localizer["Avoid paper invoices to prevent loss."]
-                        </li>
-                        <li class="mb-2">
-                             <strong>@Localizer["Reimbursement Categories"]</strong>:
-                             @Localizer["Meals, Transportation, Communication, Electronics (Computers/Peripherals)."]
-                             @Localizer["Must be real business expenses. No fake invoices."]
-                        </li>
-                        <li class="mb-2">
-                             <strong>@Localizer["Special Cases"]</strong>:
-                             @Localizer["Accommodation: Must issue VAT Special Invoice with full company name. Avoid fixed-amount paper invoices if possible."]
-                        </li>
-                    </ol>
-                    <p class="small text-muted mb-0">
-                        @Localizer["Tip: When incurring business or welfare expenses, please request an invoice. Prefer electronic invoices. Keep the original PDF."]
-                    </p>
+                                    <dt class="col-sm-4">@Localizer["Address"]</dt>
+                                    <dd class="col-sm-8 small">@Model.Entity.RegisteredAddress</dd>
+
+                                    <dt class="col-sm-4">@Localizer["Bank"]</dt>
+                                    <dd class="col-sm-8 small">@Model.Entity.BankName</dd>
+
+                                    <dt class="col-sm-4">@Localizer["Account"]</dt>
+                                    <dd class="col-sm-8 text-body font-weight-bold">@Model.Entity.BankAccount</dd>
+
+                                    @if (!string.IsNullOrEmpty(Model.Entity.SwiftCode))
+                                    {
+                                        <dt class="col-sm-4">@Localizer["SWIFT Code"]</dt>
+                                        <dd class="col-sm-8 small">@Model.Entity.SwiftCode</dd>
+                                    }
+
+                                    @if (!string.IsNullOrEmpty(Model.Entity.BankCode))
+                                    {
+                                        <dt class="col-sm-4">@Localizer["Bank Code"]</dt>
+                                        <dd class="col-sm-8 small">@Model.Entity.BankCode</dd>
+                                    }
+                                </dl>
+                            </div>
+                        </div>
+
+                        <hr/>
+
+                        <h6 class="font-weight-bold">@Localizer["Instructions for Employees"]</h6>
+                        <ol class="pl-3">
+                            <li class="mb-2">
+                                <strong>@Localizer["Prefer Electronic Invoices (Fully Digitalized)"]</strong>:
+                                @Localizer["Ask merchants for electronic invoices (PDF/OFD) sent to your email or employees@aiursoft.com."]
+                                @Localizer["Avoid paper invoices to prevent loss."]
+                            </li>
+                            <li class="mb-2">
+                                <strong>@Localizer["Reimbursement Categories"]</strong>:
+                                @Localizer["Meals, Transportation, Communication, Electronics (Computers/Peripherals)."]
+                                @Localizer["Must be real business expenses. No fake invoices."]
+                            </li>
+                            <li class="mb-2">
+                                <strong>@Localizer["Special Cases"]</strong>:
+                                @Localizer["Accommodation: Must issue VAT Special Invoice with full company name. Avoid fixed-amount paper invoices if possible."]
+                            </li>
+                        </ol>
+                        <p class="small text-muted mb-0">
+                            @Localizer["Tip: When incurring business or welfare expenses, please request an invoice. Prefer electronic invoices. Keep the original PDF."]
+                        </p>
+                    </div>
                 </div>
-            </div>
+            }
         </div>
 
         <div class="col-lg-6">
@@ -307,65 +310,68 @@
                 </div>
             }
 
-            <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">@Localizer["Associated Servers"]</h6>
+            @if (Model.Entity.CreateLedger)
+            {
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary">@Localizer["Associated Servers"]</h6>
+                    </div>
+                    <div class="card-body">
+                        @if (Model.Servers.Any())
+                        {
+                            <ul class="list-group list-group-flush">
+                                @foreach (var server in Model.Servers)
+                                {
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <strong>@server.Hostname</strong>
+                                            <br/>
+                                            <small class="text-muted">@server.ServerIp</small>
+                                        </div>
+                                        <a asp-controller="Servers" asp-action="Edit" asp-route-id="@server.Id" class="btn btn-sm btn-outline-primary">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </li>
+                                }
+                            </ul>
+                        }
+                        else
+                        {
+                            <p class="text-muted mb-0">@Localizer["No servers associated."]</p>
+                        }
+                    </div>
                 </div>
-                <div class="card-body">
-                    @if (Model.Servers.Any())
-                    {
-                        <ul class="list-group list-group-flush">
-                            @foreach (var server in Model.Servers)
-                            {
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <strong>@server.Hostname</strong>
-                                        <br/>
-                                        <small class="text-muted">@server.ServerIp</small>
-                                    </div>
-                                    <a asp-controller="Servers" asp-action="Edit" asp-route-id="@server.Id" class="btn btn-sm btn-outline-primary">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </li>
-                            }
-                        </ul>
-                    }
-                    else
-                    {
-                        <p class="text-muted mb-0">@Localizer["No servers associated."]</p>
-                    }
-                </div>
-            </div>
 
-            <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">@Localizer["Associated Intangible Assets"]</h6>
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary">@Localizer["Associated Intangible Assets"]</h6>
+                    </div>
+                    <div class="card-body">
+                        @if (Model.IntangibleAssets.Any())
+                        {
+                            <ul class="list-group list-group-flush">
+                                @foreach (var asset in Model.IntangibleAssets)
+                                {
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <strong>@asset.Name</strong>
+                                            <br/>
+                                            <small class="text-muted">@asset.Type - @asset.Status</small>
+                                        </div>
+                                        <a asp-controller="IntangibleAssets" asp-action="Details" asp-route-id="@asset.Id" class="btn btn-sm btn-outline-primary">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </li>
+                                }
+                            </ul>
+                        }
+                        else
+                        {
+                            <p class="text-muted mb-0">@Localizer["No intangible assets associated."]</p>
+                        }
+                    </div>
                 </div>
-                <div class="card-body">
-                    @if (Model.IntangibleAssets.Any())
-                    {
-                        <ul class="list-group list-group-flush">
-                            @foreach (var asset in Model.IntangibleAssets)
-                            {
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <strong>@asset.Name</strong>
-                                        <br/>
-                                        <small class="text-muted">@asset.Type - @asset.Status</small>
-                                    </div>
-                                    <a asp-controller="IntangibleAssets" asp-action="Details" asp-route-id="@asset.Id" class="btn btn-sm btn-outline-primary">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </li>
-                            }
-                        </ul>
-                    }
-                    else
-                    {
-                        <p class="text-muted mb-0">@Localizer["No intangible assets associated."]</p>
-                    }
-                </div>
-            </div>
+            }
         </div>
     </div>
 </div>

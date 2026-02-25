@@ -49,7 +49,7 @@ public class AssetsController(
         {
             AllModels = await context.AssetModels.Include(m => m.Category).ToListAsync(),
             AllLocations = await context.Locations.ToListAsync(),
-            AllCompanyEntities = await context.CompanyEntities.ToListAsync(),
+            AllCompanyEntities = await context.CompanyEntities.Where(c => c.CreateLedger).ToListAsync(),
             AllVendors = await context.Vendors.ToListAsync(),
             AllUsers = await context.Users.ToListAsync()
         });
@@ -100,7 +100,7 @@ public class AssetsController(
 
         model.AllModels = await context.AssetModels.Include(m => m.Category).ToListAsync();
         model.AllLocations = await context.Locations.ToListAsync();
-        model.AllCompanyEntities = await context.CompanyEntities.ToListAsync();
+        model.AllCompanyEntities = await context.CompanyEntities.Where(c => c.CreateLedger).ToListAsync();
         model.AllVendors = await context.Vendors.ToListAsync();
         model.AllUsers = await context.Users.ToListAsync();
         return this.StackView(model);
@@ -150,7 +150,7 @@ public class AssetsController(
             IsReimbursed = asset.IsReimbursed,
             AllModels = await context.AssetModels.Include(m => m.Category).ToListAsync(),
             AllLocations = await context.Locations.ToListAsync(),
-            AllCompanyEntities = await context.CompanyEntities.ToListAsync(),
+            AllCompanyEntities = await context.CompanyEntities.Where(c => c.CreateLedger).ToListAsync(),
             AllVendors = await context.Vendors.ToListAsync(),
             AllUsers = await context.Users.ToListAsync()
         });
@@ -209,7 +209,7 @@ public class AssetsController(
 
         model.AllModels = await context.AssetModels.Include(m => m.Category).ToListAsync();
         model.AllLocations = await context.Locations.ToListAsync();
-        model.AllCompanyEntities = await context.CompanyEntities.ToListAsync();
+        model.AllCompanyEntities = await context.CompanyEntities.Where(c => c.CreateLedger).ToListAsync();
         model.AllVendors = await context.Vendors.ToListAsync();
         model.AllUsers = await context.Users.ToListAsync();
         return this.StackView(model);
@@ -355,6 +355,7 @@ public class AssetsController(
     public async Task<IActionResult> GetCompanyEntities()
     {
         var entities = await context.CompanyEntities
+            .Where(c => c.CreateLedger)
             .OrderBy(e => e.CompanyName)
             .ToListAsync();
         return Json(entities.Select(e => new { e.Id, e.CompanyName }));

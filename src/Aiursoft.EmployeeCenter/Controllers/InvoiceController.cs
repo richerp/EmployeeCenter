@@ -30,6 +30,7 @@ public class InvoiceController(
     public async Task<IActionResult> Index()
     {
         var entities = await dbContext.CompanyEntities
+            .Where(t => t.CreateLedger)
             .OrderByDescending(t => t.CreationTime)
             .ToListAsync();
         var model = new IndexViewModel
