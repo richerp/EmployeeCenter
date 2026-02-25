@@ -1,3 +1,5 @@
+@using System.Security.Claims
+@using Aiursoft.EmployeeCenter.Authorization
 @model Aiursoft.EmployeeCenter.Models.RequirementViewModels.IndexViewModel
 @inject Aiursoft.EmployeeCenter.Services.FileStorage.StorageService StorageService
 @{
@@ -80,10 +82,22 @@
                         <td>
                              <label class="text-muted" data-utc-time="@req.UpdateTime.ToHtmlDateTime()"></label>
                         </td>
-                        <td class="text-end">
+                        <td class="text-end text-nowrap">
                             <a asp-action="View" asp-route-id="@req.Id" class="btn btn-sm btn-outline-primary">
                                 <i class="align-middle" data-lucide="eye"></i> @Localizer["View"]
                             </a>
+                            @{
+                                var canApprove = User.HasClaim(AppPermissions.Type, AppPermissionNames.CanApproveProjectRequirements);
+                                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                                var isCreator = req.SubmitterId == userId;
+                                var canEdit = canApprove || (isCreator && req.Status != RequirementStatus.Approved);
+                            }
+                            @if (canEdit)
+                            {
+                                <a asp-action="Edit" asp-route-id="@req.Id" class="btn btn-sm btn-outline-warning">
+                                    <i class="align-middle" data-lucide="edit"></i> @Localizer["Edit"]
+                                </a>
+                            }
                         </td>
                     </tr>
                 }
