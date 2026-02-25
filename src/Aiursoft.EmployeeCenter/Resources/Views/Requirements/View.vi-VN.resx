@@ -24,6 +24,9 @@
   <data name="Comments" xml:space="preserve">
     <value>Bình luận</value>
   </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Chỉnh sửa</value>
+  </data>
   <data name="Print" xml:space="preserve">
     <value>In</value>
   </data>

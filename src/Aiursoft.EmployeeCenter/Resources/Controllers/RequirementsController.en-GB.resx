@@ -24,6 +24,9 @@
   <data name="Approved Projects" xml:space="preserve">
     <value>Approved Projects</value>
   </data>
+  <data name="Cannot edit a requirement that is already approved." xml:space="preserve">
+    <value>Cannot edit a requirement that is already approved.</value>
+  </data>
   <data name="Edit Requirement" xml:space="preserve">
     <value>Edit Requirement</value>
   </data>
@@ -35,9 +38,6 @@
   </data>
   <data name="Submit Requirement" xml:space="preserve">
     <value>Submit Requirement</value>
-  </data>
-  <data name="Cannot edit a requirement that is already approved." xml:space="preserve">
-    <value>Cannot edit a requirement that is already approved.</value>
   </data>
 
 </root>

@@ -24,6 +24,9 @@
   <data name="Approved Projects" xml:space="preserve">
     <value>Các dự án đã được duyệt</value>
   </data>
+  <data name="Cannot edit a requirement that is already approved." xml:space="preserve">
+    <value>Không thể chỉnh sửa yêu cầu đã được duyệt.</value>
+  </data>
   <data name="Edit Requirement" xml:space="preserve">
     <value>Chỉnh sửa Yêu cầu</value>
   </data>

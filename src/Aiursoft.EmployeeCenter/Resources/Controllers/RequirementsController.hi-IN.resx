@@ -24,6 +24,9 @@
   <data name="Approved Projects" xml:space="preserve">
     <value>अनुमोदित प्रोजेक्ट्स</value>
   </data>
+  <data name="Cannot edit a requirement that is already approved." xml:space="preserve">
+    <value>एक आवश्यकता को स्वीकृत कर दिए जाने के बाद उसमें संपादन नहीं किया जा सकता है।</value>
+  </data>
   <data name="Edit Requirement" xml:space="preserve">
     <value>संपादित आवश्यकता</value>
   </data>

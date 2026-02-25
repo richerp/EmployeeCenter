@@ -24,6 +24,9 @@
   <data name="Comments" xml:space="preserve">
     <value>评论</value>
   </data>
+  <data name="Edit" xml:space="preserve">
+    <value>编辑</value>
+  </data>
   <data name="Print" xml:space="preserve">
     <value>打印</value>
   </data>
