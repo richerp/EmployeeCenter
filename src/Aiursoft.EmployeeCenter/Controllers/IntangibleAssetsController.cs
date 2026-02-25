@@ -43,7 +43,7 @@ public class IntangibleAssetsController(
         return this.StackView(new CreateViewModel
         {
             AllUsers = await context.Users.ToListAsync(),
-            AllCompanyEntities = await context.CompanyEntities.ToListAsync(),
+            AllCompanyEntities = await context.CompanyEntities.Where(c => c.CreateLedger).ToListAsync(),
             CurrencyOptions = Configuration.SettingsMap.Definitions.First(d => d.Key == Configuration.SettingsMap.DefaultPayrollCurrency).ChoiceOptions!
         });
     }
@@ -86,7 +86,7 @@ public class IntangibleAssetsController(
         }
 
         model.AllUsers = await context.Users.ToListAsync();
-        model.AllCompanyEntities = await context.CompanyEntities.ToListAsync();
+        model.AllCompanyEntities = await context.CompanyEntities.Where(c => c.CreateLedger).ToListAsync();
         model.CurrencyOptions = Configuration.SettingsMap.Definitions.First(d => d.Key == Configuration.SettingsMap.DefaultPayrollCurrency).ChoiceOptions!;
         return this.StackView(model);
     }
@@ -135,7 +135,7 @@ public class IntangibleAssetsController(
             Status = asset.Status,
             Description = asset.Description,
             AllUsers = await context.Users.ToListAsync(),
-            AllCompanyEntities = await context.CompanyEntities.ToListAsync(),
+            AllCompanyEntities = await context.CompanyEntities.Where(c => c.CreateLedger).ToListAsync(),
             CurrencyOptions = Configuration.SettingsMap.Definitions.First(d => d.Key == Configuration.SettingsMap.DefaultPayrollCurrency).ChoiceOptions!
         });
     }
@@ -176,7 +176,7 @@ public class IntangibleAssetsController(
         }
 
         model.AllUsers = await context.Users.ToListAsync();
-        model.AllCompanyEntities = await context.CompanyEntities.ToListAsync();
+        model.AllCompanyEntities = await context.CompanyEntities.Where(c => c.CreateLedger).ToListAsync();
         model.CurrencyOptions = Configuration.SettingsMap.Definitions.First(d => d.Key == Configuration.SettingsMap.DefaultPayrollCurrency).ChoiceOptions!;
         return this.StackView(model);
     }

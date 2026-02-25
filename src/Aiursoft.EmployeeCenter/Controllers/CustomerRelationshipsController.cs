@@ -193,6 +193,7 @@ public class CustomerRelationshipsController(
     private async Task<IEnumerable<SelectListItem>> GetCompanyEntities()
     {
         var entities = await dbContext.CompanyEntities
+            .Where(c => c.CreateLedger)
             .OrderBy(c => c.CompanyName)
             .Select(c => new SelectListItem
             {

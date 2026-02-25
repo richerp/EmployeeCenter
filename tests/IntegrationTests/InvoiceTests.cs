@@ -19,13 +19,15 @@ public class InvoiceTests : TestBase
                 OfficeAddress = "Seller Address",
                 BankName = "Seller Bank",
                 BankAccount = "123456",
-                BankAccountName = "Seller Ltd"
+                BankAccountName = "Seller Ltd",
+                CreateLedger = true
             };
             var buyer = new CompanyEntity
             {
                 CompanyName = "Buyer Entity",
                 EntityCode = "BE001",
-                OfficeAddress = "Buyer Address"
+                OfficeAddress = "Buyer Address",
+                CreateLedger = true
             };
             db.CompanyEntities.AddRange(seller, buyer);
             await db.SaveChangesAsync();

@@ -15,7 +15,8 @@ public class LedgerTests : TestBase
             {
                 CompanyName = "Test Entity",
                 EntityCode = "TE001",
-                BaseCurrency = "HKD"
+                BaseCurrency = "HKD",
+                CreateLedger = true
             };
             db.CompanyEntities.Add(entity);
             await db.SaveChangesAsync();
@@ -184,7 +185,8 @@ public class LedgerTests : TestBase
             {
                 CompanyName = "Materials Test Entity",
                 EntityCode = "MTE01",
-                BaseCurrency = "USD"
+                BaseCurrency = "USD",
+                CreateLedger = true
             };
             db.CompanyEntities.Add(entity);
             await db.SaveChangesAsync();
@@ -256,7 +258,8 @@ public class LedgerTests : TestBase
             {
                 CompanyName = "Filter Test Entity",
                 EntityCode = "FTE01",
-                BaseCurrency = "USD"
+                BaseCurrency = "USD",
+                CreateLedger = true
             };
             db.CompanyEntities.Add(entity);
             await db.SaveChangesAsync();
@@ -339,7 +342,8 @@ public class LedgerTests : TestBase
             {
                 CompanyName = "Filtered Dashboard Entity",
                 EntityCode = "FDE01",
-                BaseCurrency = "USD"
+                BaseCurrency = "USD",
+                CreateLedger = true
             };
             db.CompanyEntities.Add(entity);
             await db.SaveChangesAsync();

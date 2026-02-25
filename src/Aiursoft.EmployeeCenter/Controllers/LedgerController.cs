@@ -45,7 +45,7 @@ public class LedgerController(
     public async Task<IActionResult> Dashboard(int id, int? accountId, int? year, int? month)
     {
         var entity = await dbContext.CompanyEntities.FindAsync(id);
-        if (entity == null)
+        if (entity == null || !entity.CreateLedger)
         {
             return NotFound();
         }
@@ -225,7 +225,7 @@ public class LedgerController(
     public async Task<IActionResult> Accounts(int id)
     {
         var entity = await dbContext.CompanyEntities.FindAsync(id);
-        if (entity == null)
+        if (entity == null || !entity.CreateLedger)
         {
             return NotFound();
         }
@@ -346,7 +346,7 @@ public class LedgerController(
     public async Task<IActionResult> Transactions(int id)
     {
         var entity = await dbContext.CompanyEntities.FindAsync(id);
-        if (entity == null)
+        if (entity == null || !entity.CreateLedger)
         {
             return NotFound();
         }

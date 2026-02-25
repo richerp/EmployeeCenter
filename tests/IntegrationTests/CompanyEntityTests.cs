@@ -204,7 +204,8 @@ public class CompanyEntityTests : TestBase
             { "CompanyName", "Invoice Guide Company" },
             { "EntityCode", "INV123456" },
             { "BankName", "Guide Bank" },
-            { "BankAccount", "GB123456789" }
+            { "BankAccount", "GB123456789" },
+            { "CreateLedger", "true" }
         });
         Assert.AreEqual(HttpStatusCode.Found, createResponse.StatusCode);
 
