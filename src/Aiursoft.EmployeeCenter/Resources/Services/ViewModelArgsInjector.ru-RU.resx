@@ -381,6 +381,9 @@
   <data name="Manage Ledger" xml:space="preserve">
     <value>Управление журналом</value>
   </data>
+  <data name="Manage Market Channels" xml:space="preserve">
+    <value>Управление каналами сбыта</value>
+  </data>
   <data name="Manage Onboarding" xml:space="preserve">
     <value>Управление onboarding</value>
   </data>
@@ -407,6 +410,9 @@
   </data>
   <data name="Manage Tasks" xml:space="preserve">
     <value>Управление задачами</value>
+  </data>
+  <data name="Market Channels" xml:space="preserve">
+    <value>Рыночные каналы</value>
   </data>
   <data name="Missions" xml:space="preserve">
     <value>Миссии</value>
@@ -626,6 +632,9 @@
   </data>
   <data name="View Customer Relations" xml:space="preserve">
     <value>Просмотр отношений с клиентами</value>
+  </data>
+  <data name="View Market Channels" xml:space="preserve">
+    <value>Просмотр каналов продаж</value>
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>Еженедельный отчет</value>

@@ -387,6 +387,9 @@
   <data name="Manage Ledger" xml:space="preserve">
     <value>管理账本</value>
   </data>
+  <data name="Manage Market Channels" xml:space="preserve">
+    <value>管理市场渠道</value>
+  </data>
   <data name="Manage Onboarding" xml:space="preserve">
     <value>管理入职</value>
   </data>
@@ -416,6 +419,9 @@
   </data>
   <data name="Manage Tasks" xml:space="preserve">
     <value>管理任务</value>
+  </data>
+  <data name="Market Channels" xml:space="preserve">
+    <value>市场渠道</value>
   </data>
   <data name="Missions" xml:space="preserve">
     <value>任务</value>
@@ -635,6 +641,9 @@
   </data>
   <data name="View Customer Relations" xml:space="preserve">
     <value>查看客户关系</value>
+  </data>
+  <data name="View Market Channels" xml:space="preserve">
+    <value>查看市场渠道</value>
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>周报</value>

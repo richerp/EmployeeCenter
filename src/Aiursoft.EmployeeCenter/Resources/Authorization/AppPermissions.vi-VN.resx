@@ -72,6 +72,9 @@
   <data name="Allows creating, updating, and deleting customer relationship information. Every user can view customer relationships by default." xml:space="preserve">
     <value>Cho phép tạo, cập nhật và xóa thông tin quan hệ khách hàng. Mọi người dùng đều có thể xem thông tin quan hệ khách hàng theo mặc định.</value>
   </data>
+  <data name="Allows creating, updating, and deleting market channel information. Every user can view market channels by default." xml:space="preserve">
+    <value>Cho phép tạo, cập nhật và xóa thông tin kênh thị trường. Mọi người dùng đều có thể xem các kênh thị trường theo mặc định.</value>
+  </data>
   <data name="Allows creating, updating, and deleting services and DNS providers. Every user can view services by default." xml:space="preserve">
     <value>Cho phép tạo, cập nhật và xóa các dịch vụ và nhà cung cấp DNS. Mọi người dùng đều có thể xem dịch vụ theo mặc định.</value>
   </data>
@@ -239,6 +242,9 @@
   </data>
   <data name="Manage Ledger" xml:space="preserve">
     <value>Quản lý sổ kế toán</value>
+  </data>
+  <data name="Manage Market Channels" xml:space="preserve">
+    <value>Quản lý Kênh Thị trường</value>
   </data>
   <data name="Manage Onboarding Tasks" xml:space="preserve">
     <value>Quản lý Nhiệm vụ Đào tạo Nhân viên Mới</value>

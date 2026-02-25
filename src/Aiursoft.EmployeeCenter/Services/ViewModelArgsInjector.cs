@@ -197,6 +197,10 @@ public class ViewModelArgsInjector(
         _ = localizer["Edit Customer Relationship"];
         _ = localizer["Manage Customer Relations"];
         _ = localizer["View Customer Relations"];
+    
+        _ = localizer["Manage Market Channels"];
+        _ = localizer["Market Channels"];
+        _ = localizer["View Market Channels"];
     }
 
     public void InjectSimple(

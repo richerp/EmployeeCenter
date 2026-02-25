@@ -72,6 +72,9 @@
   <data name="Allows creating, updating, and deleting customer relationship information. Every user can view customer relationships by default." xml:space="preserve">
     <value>Sallii asiakassuhteiden tietojen luomisen, päivittämisen ja poiston. Kaikki käyttäjät voivat nähdä asiakassuhteet oletuksena.</value>
   </data>
+  <data name="Allows creating, updating, and deleting market channel information. Every user can view market channels by default." xml:space="preserve">
+    <value>Sallii markkinakanavien tiedon luomisen, päivittämisen ja poistamisen. Kaikki käyttäjät voivat nähdä markkinakanavat oletuksena.</value>
+  </data>
   <data name="Allows creating, updating, and deleting services and DNS providers. Every user can view services by default." xml:space="preserve">
     <value>Sallii palveluiden ja DNS-toimittajien luomisen, päivittämisen ja poistamisen. Kaikki käyttäjät voivat oletuksena tarkastella palveluja.</value>
   </data>
@@ -239,6 +242,9 @@
   </data>
   <data name="Manage Ledger" xml:space="preserve">
     <value>Hallinnoi tilikonttia</value>
+  </data>
+  <data name="Manage Market Channels" xml:space="preserve">
+    <value>Hallinnoi markkinakanavia</value>
   </data>
   <data name="Manage Onboarding Tasks" xml:space="preserve">
     <value>Hallinnoi rekrytoinnin tehtäviä</value>
