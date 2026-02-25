@@ -169,12 +169,14 @@ public class RequirementsController(
         if (requirement == null) return NotFound();
 
         var user = await userManager.GetUserAsync(User);
-        if (requirement.SubmitterId != user?.Id) return Unauthorized();
-        
-        // Only allow editing if pending or request changes
-        if (requirement.Status != RequirementStatus.PendingApproval && requirement.Status != RequirementStatus.RequestChanges)
+        var canManage = User.HasClaim(AppPermissions.Type, AppPermissionNames.CanApproveProjectRequirements);
+        var isCreator = requirement.SubmitterId == user?.Id;
+
+        if (!canManage && !isCreator) return Unauthorized();
+
+        if (!canManage && requirement.Status == RequirementStatus.Approved)
         {
-            return BadRequest("Cannot edit a requirement that is already approved or rejected.");
+            return BadRequest(localizer["Cannot edit a requirement that is already approved."]);
         }
 
         var model = new EditorViewModel
@@ -202,17 +204,23 @@ public class RequirementsController(
         if (requirement == null) return NotFound();
 
         var user = await userManager.GetUserAsync(User);
-        if (requirement.SubmitterId != user?.Id) return Unauthorized();
+        var canManage = User.HasClaim(AppPermissions.Type, AppPermissionNames.CanApproveProjectRequirements);
+        var isCreator = requirement.SubmitterId == user?.Id;
 
-        if (requirement.Status != RequirementStatus.PendingApproval && requirement.Status != RequirementStatus.RequestChanges)
+        if (!canManage && !isCreator) return Unauthorized();
+
+        if (!canManage && requirement.Status == RequirementStatus.Approved)
         {
-            return BadRequest("Cannot edit a requirement that is already approved or rejected.");
+            return BadRequest(localizer["Cannot edit a requirement that is already approved."]);
         }
 
         requirement.Title = model.Title;
         requirement.Content = model.InputMarkdown;
         requirement.RenderedHtml = MarkdownService.RenderMarkdown(model.InputMarkdown).Value ?? string.Empty;
-        requirement.Status = RequirementStatus.PendingApproval; // Re-submit for approval
+        if (!canManage)
+        {
+            requirement.Status = RequirementStatus.PendingApproval; // Re-submit for approval
+        }
         requirement.UpdateTime = DateTime.UtcNow;
 
         await dbContext.SaveChangesAsync();

@@ -36,5 +36,8 @@
   <data name="Submit Requirement" xml:space="preserve">
     <value>Submit Requirement</value>
   </data>
+  <data name="Cannot edit a requirement that is already approved." xml:space="preserve">
+    <value>Cannot edit a requirement that is already approved.</value>
+  </data>
 
 </root>
