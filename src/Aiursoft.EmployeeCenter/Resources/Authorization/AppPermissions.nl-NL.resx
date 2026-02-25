@@ -72,6 +72,9 @@
   <data name="Allows creating, updating, and deleting customer relationship information. Every user can view customer relationships by default." xml:space="preserve">
     <value>Staat het maken, bijwerken en verwijderen van klantrelatie-informatie toe. Elke gebruiker kan standaard klantrelaties bekijken.</value>
   </data>
+  <data name="Allows creating, updating, and deleting market channel information. Every user can view market channels by default." xml:space="preserve">
+    <value>Staats het maken, bijwerken en verwijderen van marktkanaalinformatie toe. Elke gebruiker kan marktkanalen standaard bekijken.</value>
+  </data>
   <data name="Allows creating, updating, and deleting services and DNS providers. Every user can view services by default." xml:space="preserve">
     <value>Staats het aanmaken, bijwerken en verwijderen van services en DNS-leveranciers toe. Elke gebruiker kan services standaard bekijken.</value>
   </data>
@@ -239,6 +242,9 @@
   </data>
   <data name="Manage Ledger" xml:space="preserve">
     <value>Ledger beheren</value>
+  </data>
+  <data name="Manage Market Channels" xml:space="preserve">
+    <value>Marktkanalen beheren</value>
   </data>
   <data name="Manage Onboarding Tasks" xml:space="preserve">
     <value>Onboardingtaken beheren</value>

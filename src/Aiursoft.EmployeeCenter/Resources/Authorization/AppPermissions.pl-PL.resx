@@ -72,6 +72,9 @@
   <data name="Allows creating, updating, and deleting customer relationship information. Every user can view customer relationships by default." xml:space="preserve">
     <value>Zezwala na tworzenie, aktualizowanie i usuwanie informacji o relacjach z klientami. Domyślnie każdy użytkownik może przeglądać relacje z klientami.</value>
   </data>
+  <data name="Allows creating, updating, and deleting market channel information. Every user can view market channels by default." xml:space="preserve">
+    <value>Zezwala na tworzenie, aktualizowanie i usuwanie informacji o kanałach rynkowych. Domyślnie każdy użytkownik może przeglądać kanały rynkowe.</value>
+  </data>
   <data name="Allows creating, updating, and deleting services and DNS providers. Every user can view services by default." xml:space="preserve">
     <value>Umożliwia tworzenie, aktualizowanie i usuwanie usług oraz dostawców DNS. Domyślnie każdy użytkownik może przeglądać usługi.</value>
   </data>
@@ -239,6 +242,9 @@
   </data>
   <data name="Manage Ledger" xml:space="preserve">
     <value>Zarządzaj księgowością</value>
+  </data>
+  <data name="Manage Market Channels" xml:space="preserve">
+    <value>Zarządzaj kanałami rynkowymi</value>
   </data>
   <data name="Manage Onboarding Tasks" xml:space="preserve">
     <value>Zarządzaj zadaniami onboardingu</value>

@@ -381,6 +381,9 @@
   <data name="Manage Ledger" xml:space="preserve">
     <value>Gestisci il registro</value>
   </data>
+  <data name="Manage Market Channels" xml:space="preserve">
+    <value>Gestisci canali di mercato</value>
+  </data>
   <data name="Manage Onboarding" xml:space="preserve">
     <value>Gestisci Onboarding</value>
   </data>
@@ -407,6 +410,9 @@
   </data>
   <data name="Manage Tasks" xml:space="preserve">
     <value>Gestisci attività</value>
+  </data>
+  <data name="Market Channels" xml:space="preserve">
+    <value>Canali di mercato</value>
   </data>
   <data name="Missions" xml:space="preserve">
     <value>Missioni</value>
@@ -626,6 +632,9 @@
   </data>
   <data name="View Customer Relations" xml:space="preserve">
     <value>Visualizza Relazioni con i Clienti</value>
+  </data>
+  <data name="View Market Channels" xml:space="preserve">
+    <value>Visualizza canali di mercato</value>
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>Relazione settimanale</value>

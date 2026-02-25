@@ -384,6 +384,9 @@
   <data name="Manage Ledger" xml:space="preserve">
     <value>จัดการบัญชีรายชื่อ</value>
   </data>
+  <data name="Manage Market Channels" xml:space="preserve">
+    <value>จัดการช่องทางตลาด</value>
+  </data>
   <data name="Manage Onboarding" xml:space="preserve">
     <value>จัดการการรับเข้าทำงาน</value>
   </data>
@@ -410,6 +413,9 @@
   </data>
   <data name="Manage Tasks" xml:space="preserve">
     <value>จัดการงาน</value>
+  </data>
+  <data name="Market Channels" xml:space="preserve">
+    <value>ช่องทางการตลาด</value>
   </data>
   <data name="Missions" xml:space="preserve">
     <value>ภารกิจ</value>
@@ -629,6 +635,9 @@
   </data>
   <data name="View Customer Relations" xml:space="preserve">
     <value>ดูความสัมพันธ์กับลูกค้า</value>
+  </data>
+  <data name="View Market Channels" xml:space="preserve">
+    <value>ดูช่องทางตลาด</value>
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>รายงานรายสัปดาห์</value>

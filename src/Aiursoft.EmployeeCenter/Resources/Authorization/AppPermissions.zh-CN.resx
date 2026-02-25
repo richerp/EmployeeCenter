@@ -69,6 +69,9 @@
   <data name="Allows creating, updating, and deleting customer relationship information. Every user can view customer relationships by default." xml:space="preserve">
     <value>允许创建、更新和删除客户关系信息。默认情况下，所有用户均可查看客户关系。</value>
   </data>
+  <data name="Allows creating, updating, and deleting market channel information. Every user can view market channels by default." xml:space="preserve">
+    <value>允许创建、更新和删除市场渠道信息。默认情况下，每个用户都可以查看市场渠道。</value>
+  </data>
   <data name="Allows creating, updating, and deleting services and DNS providers. Every user can view services by default." xml:space="preserve">
     <value>允许创建、更新和删除服务及DNS提供商。默认情况下，每个用户都可以查看服务。</value>
   </data>
@@ -222,6 +225,9 @@
   <data name="Manage Ledger" xml:space="preserve">
     <value>管理账簿</value>
   </data>
+  <data name="Manage Market Channels" xml:space="preserve">
+    <value>管理市场渠道</value>
+  </data>
   <data name="Manage Onboarding Tasks" xml:space="preserve">
     <value>管理入职任务</value>
   </data>
@@ -270,10 +276,5 @@
   <data name="View User Operation Log" xml:space="preserve">
     <value>查看用户操作日志</value>
   </data>
-  <data name="Manage Market Channels" xml:space="preserve">
-    <value>管理市场渠道</value>
-  </data>
-  <data name="Allows creating, updating, and deleting market channel information. Every user can view market channels by default." xml:space="preserve">
-    <value>允许创建、更新和删除市场渠道信息。默认情况下，每个用户都可以查看市场渠道。</value>
-  </data>
+
 </root>

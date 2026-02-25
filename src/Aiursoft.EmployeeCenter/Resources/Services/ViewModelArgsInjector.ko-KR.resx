@@ -384,6 +384,9 @@
   <data name="Manage Ledger" xml:space="preserve">
     <value>원장 관리</value>
   </data>
+  <data name="Manage Market Channels" xml:space="preserve">
+    <value>마켓 채널 관리</value>
+  </data>
   <data name="Manage Onboarding" xml:space="preserve">
     <value>온보딩 관리</value>
   </data>
@@ -410,6 +413,9 @@
   </data>
   <data name="Manage Tasks" xml:space="preserve">
     <value>작업 관리</value>
+  </data>
+  <data name="Market Channels" xml:space="preserve">
+    <value>시장 채널</value>
   </data>
   <data name="Missions" xml:space="preserve">
     <value>미션</value>
@@ -629,6 +635,9 @@
   </data>
   <data name="View Customer Relations" xml:space="preserve">
     <value>고객 관계 보기</value>
+  </data>
+  <data name="View Market Channels" xml:space="preserve">
+    <value>마켓 채널 보기</value>
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>주간 보고서</value>

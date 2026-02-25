@@ -72,6 +72,9 @@
   <data name="Allows creating, updating, and deleting customer relationship information. Every user can view customer relationships by default." xml:space="preserve">
     <value>Позволяет создавать, обновлять и удалять информацию о клиентах. По умолчанию каждый пользователь может просматривать сведения о клиентах.</value>
   </data>
+  <data name="Allows creating, updating, and deleting market channel information. Every user can view market channels by default." xml:space="preserve">
+    <value>Позволяет создавать, обновлять и удалять информацию о каналах сбыта. По умолчанию каждый пользователь может просматривать каналы сбыта.</value>
+  </data>
   <data name="Allows creating, updating, and deleting services and DNS providers. Every user can view services by default." xml:space="preserve">
     <value>Позволяет создавать, обновлять и удалять службы и провайдеров DNS. По умолчанию все пользователи могут просматривать службы.</value>
   </data>
@@ -239,6 +242,9 @@
   </data>
   <data name="Manage Ledger" xml:space="preserve">
     <value>Управление бухгалтерским учетом</value>
+  </data>
+  <data name="Manage Market Channels" xml:space="preserve">
+    <value>Управление каналами продаж</value>
   </data>
   <data name="Manage Onboarding Tasks" xml:space="preserve">
     <value>Управление задачами наboarding</value>

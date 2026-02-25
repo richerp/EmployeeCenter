@@ -381,6 +381,9 @@
   <data name="Manage Ledger" xml:space="preserve">
     <value>إدارة السجل</value>
   </data>
+  <data name="Manage Market Channels" xml:space="preserve">
+    <value>إدارة قنوات السوق</value>
+  </data>
   <data name="Manage Onboarding" xml:space="preserve">
     <value>إدارة التوجيه</value>
   </data>
@@ -407,6 +410,9 @@
   </data>
   <data name="Manage Tasks" xml:space="preserve">
     <value>إدارة المهام</value>
+  </data>
+  <data name="Market Channels" xml:space="preserve">
+    <value>قنوات السوق</value>
   </data>
   <data name="Missions" xml:space="preserve">
     <value>مهمات</value>
@@ -626,6 +632,9 @@
   </data>
   <data name="View Customer Relations" xml:space="preserve">
     <value>عرض علاقات العملاء</value>
+  </data>
+  <data name="View Market Channels" xml:space="preserve">
+    <value>عرض قنوات السوق</value>
   </data>
   <data name="Weekly Report" xml:space="preserve">
     <value>تقرير أسبوعي</value>

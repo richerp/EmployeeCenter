@@ -72,6 +72,9 @@
   <data name="Allows creating, updating, and deleting customer relationship information. Every user can view customer relationships by default." xml:space="preserve">
     <value>允許建立、更新及刪除客戶關係資訊。預設情況下，所有使用者皆可檢視客戶關係。</value>
   </data>
+  <data name="Allows creating, updating, and deleting market channel information. Every user can view market channels by default." xml:space="preserve">
+    <value>允許建立、更新及刪除市場管道資訊。預設情況下，每位使用者均可檢視市場管道。</value>
+  </data>
   <data name="Allows creating, updating, and deleting services and DNS providers. Every user can view services by default." xml:space="preserve">
     <value>允許建立、更新及刪除服務與 DNS 提供者。預設情況下，每位使用者皆可檢視服務。</value>
   </data>
@@ -239,6 +242,9 @@
   </data>
   <data name="Manage Ledger" xml:space="preserve">
     <value>管理總帳</value>
+  </data>
+  <data name="Manage Market Channels" xml:space="preserve">
+    <value>管理市場管道</value>
   </data>
   <data name="Manage Onboarding Tasks" xml:space="preserve">
     <value>管理新進員工任務</value>
