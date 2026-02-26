@@ -79,7 +79,7 @@ public class CompanyEntityTests : TestBase
             detailsResponse.EnsureSuccessStatusCode();
             var detailsHtml = await detailsResponse.Content.ReadAsStringAsync();
             Assert.Contains("Johnathan Doe", detailsHtml);
-            
+
             // 5. Verify Edit page
             var editResponse = await Http.GetAsync($"/CompanyEntity/Edit/{entity.Id}");
             editResponse.EnsureSuccessStatusCode();
@@ -167,12 +167,12 @@ public class CompanyEntityTests : TestBase
             var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
             var entity = await db.CompanyEntities.FirstOrDefaultAsync(e => e.EntityCode == "999888777");
             Assert.IsNotNull(entity);
-            
+
             // 4. Verify Details page (as admin)
             var detailsResponse = await Http.GetAsync($"/CompanyEntity/Details/{entity.Id}");
             detailsResponse.EnsureSuccessStatusCode();
             var detailsHtml = await detailsResponse.Content.ReadAsStringAsync();
-            
+
             Assert.Contains("Copy Summary", detailsHtml);
             Assert.Contains("Copy Full Info", detailsHtml);
             StringAssert.DoesNotMatch(detailsHtml, new Regex("Microsoft.AspNetCore.Mvc.Localization.LocalizedHtmlString"), "Copy text contains type name instead of value!");
@@ -215,12 +215,12 @@ public class CompanyEntityTests : TestBase
             var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
             var entity = await db.CompanyEntities.FirstOrDefaultAsync(e => e.EntityCode == "INV123456");
             Assert.IsNotNull(entity);
-            
+
             // 4. Verify Details page
             var detailsResponse = await Http.GetAsync($"/CompanyEntity/Details/{entity.Id}");
             detailsResponse.EnsureSuccessStatusCode();
             var detailsHtml = await detailsResponse.Content.ReadAsStringAsync();
-            
+
             Assert.Contains("Invoice Issuance Guide", detailsHtml);
             Assert.Contains("Instructions for Employees", detailsHtml);
             Assert.Contains("Guide Bank", detailsHtml);

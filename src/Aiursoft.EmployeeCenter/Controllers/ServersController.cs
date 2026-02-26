@@ -144,7 +144,7 @@ public class ServersController(
         var server = await context.Servers
             .Include(s => s.Services)
             .FirstOrDefaultAsync(s => s.Id == id);
-        
+
         if (server == null) return NotFound();
 
         if (server.Services.Any())

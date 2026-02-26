@@ -35,19 +35,19 @@ public class DashboardViewModel : UiStackLayoutViewModel
 
     [Display(Name = "Filtered Account Balance")]
     public decimal FilteredAccountBalance { get; set; }
-    
+
     [Display(Name = "Year")]
     public int Year { get; set; }
 
     [Display(Name = "Month")]
     public int? Month { get; set; }
-    
+
     [Display(Name = "Total Inflow")]
     public decimal TotalInflow { get; set; }
 
     [Display(Name = "Total Outflow")]
     public decimal TotalOutflow { get; set; }
-    
+
     [Display(Name = "Chart Labels")]
     public string[] ChartLabels { get; set; } = [];
 

@@ -23,7 +23,7 @@ public class MarketChannelsTests : TestBase
     public async Task AdminCanCreateChannel()
     {
         await LoginAsAdmin();
-        
+
         var name = "Test Channel " + Guid.NewGuid();
         var adminId = await GetUserIdByEmail("admin@default.com");
 
@@ -40,7 +40,7 @@ public class MarketChannelsTests : TestBase
         // Verify it's created
         var managePage = await Http.GetStringAsync("/MarketChannels/Manage");
         Assert.IsTrue(managePage.Contains(name));
-        
+
         // Verify details page
         var indexPage = await Http.GetStringAsync("/MarketChannels/Index");
         Assert.IsTrue(indexPage.Contains(name));

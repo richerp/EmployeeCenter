@@ -58,7 +58,7 @@ public class RequirementTests : TestBase
 
         // Should redirect to View
         Assert.AreEqual(HttpStatusCode.Found, postResponse.StatusCode);
-        
+
         using var scope = Server!.Services.CreateScope();
         var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
         var requirement = await db.Requirements.FirstOrDefaultAsync(r => r.Title == "Test Requirement");
@@ -170,7 +170,7 @@ public class RequirementTests : TestBase
     {
         // Let's create it as a regular user, then approve as admin, then try to edit as regular user.
         var (email, password) = await RegisterAndLoginAsync();
-        
+
         await PostForm("/Requirements/Create", new Dictionary<string, string>
         {
             { "Title", "Approved Creator Edit Test" },

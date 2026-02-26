@@ -173,7 +173,7 @@ public class OnboardingTests
         Assert.Contains("You have completed all onboarding tasks", dashboardHtml);
         Assert.Contains("Certificate", dashboardHtml);
         Assert.Contains("Wish your career takes off at Aiursoft!", dashboardHtml);
-        
+
         // 12. Verify logo and brand name
         Assert.Contains("logo.svg", dashboardHtml);
         Assert.Contains("alt=\"Aiursoft\"", dashboardHtml);

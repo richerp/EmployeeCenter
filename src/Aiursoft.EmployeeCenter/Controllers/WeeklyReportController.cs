@@ -96,7 +96,7 @@ public class WeeklyReportController(
             .Where(s => s.Key == SettingsMap.ForceProjectAssociation)
             .Select(s => s.Value)
             .FirstOrDefaultAsync();
-        
+
         var forceProjectAssociation = forceProjectAssociationStr == "True";
 
         var model = new IndexViewModel
@@ -170,12 +170,12 @@ public class WeeklyReportController(
 
         if (forceProjectAssociation && (!modelRequirements.Any() || modelRequirements.All(r => r.Hours <= 0)))
         {
-             // Ideally return error. But for now redirect to index. Maybe add error message?
-             // Since we don't have a good way to show errors on index (it reloads page), just redirect.
-             // Or maybe implement error via TempData? No, user might lose content.
-             // Given constraint, I will return BadRequest for now if validation fails, or just ignore (which is bad).
-             // Let's rely on frontend validation mostly, and here just reject if invalid.
-             return BadRequest(localizer["Project association is required."]);
+            // Ideally return error. But for now redirect to index. Maybe add error message?
+            // Since we don't have a good way to show errors on index (it reloads page), just redirect.
+            // Or maybe implement error via TempData? No, user might lose content.
+            // Given constraint, I will return BadRequest for now if validation fails, or just ignore (which is bad).
+            // Let's rely on frontend validation mostly, and here just reject if invalid.
+            return BadRequest(localizer["Project association is required."]);
         }
 
         // Week validation
@@ -187,8 +187,8 @@ public class WeeklyReportController(
         // Ensure targetWeek is a Sunday
         if (targetWeek.DayOfWeek != DayOfWeek.Sunday)
         {
-             // Fallback or error. Let's align it just in case.
-             targetWeek = targetWeek.AddDays(-(int)targetWeek.DayOfWeek).Date;
+            // Fallback or error. Let's align it just in case.
+            targetWeek = targetWeek.AddDays(-(int)targetWeek.DayOfWeek).Date;
         }
 
         // Verify it is within allowed range (last 50 weeks)
@@ -209,7 +209,7 @@ public class WeeklyReportController(
         {
             existing.Content += "\r\n\r\n" + model.Content;
             existing.WeekStartDate = targetWeek;
-            
+
             // Append requirements
             foreach (var req in modelRequirements.Where(r => r.Hours > 0))
             {
@@ -287,7 +287,7 @@ public class WeeklyReportController(
             .Where(s => s.Key == SettingsMap.ForceProjectAssociation)
             .Select(s => s.Value)
             .FirstOrDefaultAsync();
-        
+
         var forceProjectAssociation = forceProjectAssociationStr == "True";
 
         var model = new EditViewModel
@@ -341,11 +341,11 @@ public class WeeklyReportController(
 
         if (forceProjectAssociationStr == "True" && (!model.Requirements.Any() || model.Requirements.All(r => r.Hours <= 0)))
         {
-             return BadRequest(localizer["Project association is required."]);
+            return BadRequest(localizer["Project association is required."]);
         }
 
         report.Content = model.Content;
-        
+
         // Update requirements: remove all and add new
         dbContext.WeeklyReportRequirements.RemoveRange(report.WeeklyReportRequirements);
         foreach (var req in model.Requirements.Where(r => r.Hours > 0))

@@ -74,7 +74,7 @@ public class InvoiceTests : TestBase
             { "Items[0].Quantity", "1" },
             { "Items[0].UnitPrice", "1000" }
         }, tokenUrl: $"/Invoice/Create?sellerId={sellerId}&buyerId={buyerId}");
-        
+
         previewResponse.EnsureSuccessStatusCode();
         var previewContent = await previewResponse.Content.ReadAsStringAsync();
         Assert.Contains("RECEIPT", previewContent, "Preview should contain the title RECEIPT.");

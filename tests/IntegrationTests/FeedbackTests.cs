@@ -115,7 +115,7 @@ public class FeedbackTests
         // 6. Give normal user the permission to submit feedback
         // In this test environment, we'll just log in as admin again to submit, 
         // because admin has CanSubmitFeedback as well (by default role).
-        
+
         // 7. View available questionnaires
         var feedbackIndexResponse = await _http.GetAsync("/Feedback/Index");
         feedbackIndexResponse.EnsureSuccessStatusCode();

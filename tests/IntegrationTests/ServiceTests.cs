@@ -28,7 +28,7 @@ public class ServiceTests : TestBase
             { "Purpose", "1" },
             { "IsSelfDeveloped", "false" }
         });
-        
+
         Assert.AreEqual(HttpStatusCode.Redirect, postResponse.StatusCode);
 
         var db = GetService<EmployeeCenterDbContext>();
@@ -41,7 +41,7 @@ public class ServiceTests : TestBase
     public async Task TestProviders()
     {
         await LoginAsAdmin();
-        
+
         // Create Provider
         var response = await PostForm("/Services/CreateProvider", new Dictionary<string, string>
         {

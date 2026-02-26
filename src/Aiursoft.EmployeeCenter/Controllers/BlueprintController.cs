@@ -80,8 +80,8 @@ public class BlueprintController(
     {
         if (!ModelState.IsValid)
         {
-             model.PageTitle = localizer["Create Blueprint"];
-             return this.StackView(model, "Editor");
+            model.PageTitle = localizer["Create Blueprint"];
+            return this.StackView(model, "Editor");
         }
 
         var user = await userManager.GetUserAsync(User);

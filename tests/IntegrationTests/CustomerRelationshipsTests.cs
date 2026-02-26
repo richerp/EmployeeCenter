@@ -15,7 +15,7 @@ public class CustomerRelationshipsTests : TestBase
     public async Task AdminCanCreateRelationship()
     {
         await LoginAsAdmin();
-        
+
         var name = "Test Customer " + Guid.NewGuid();
 
         var response = await PostForm("/CustomerRelationships/Create", new Dictionary<string, string>
