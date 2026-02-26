@@ -52,6 +52,8 @@ public abstract class EmployeeCenterDbContext(DbContextOptions options) : Identi
     public DbSet<SignalResponse> SignalResponses => Set<SignalResponse>();
     public DbSet<SignalQuestionResponse> SignalQuestionResponses => Set<SignalQuestionResponse>();
 
+    public DbSet<AdjustedHoliday> AdjustedHolidays => Set<AdjustedHoliday>();
+
     public virtual Task MigrateAsync(CancellationToken cancellationToken) =>
         Database.MigrateAsync(cancellationToken);
 

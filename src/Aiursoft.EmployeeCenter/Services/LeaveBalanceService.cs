@@ -135,28 +135,42 @@ public class LeaveBalanceService(
     }
 
     /// <summary>
-    /// Calculate working days in a date range, excluding weekends and public holidays
+    /// Calculate working days in a date range, excluding weekends and public holidays, but respecting Adjusted Holidays
     /// </summary>
     public async Task<decimal> CalculateWorkingDaysAsync(DateTime start, DateTime end, HashSet<DateTime>? publicHolidays = null)
     {
         // Fetch public holidays if not provided
         publicHolidays ??= await _holidayService.GetPublicHolidaysInRangeAsync(start, end);
 
+        var adjustments = await _context.AdjustedHolidays
+            .Where(a => a.Date >= start.Date && a.Date <= end.Date)
+            .ToDictionaryAsync(a => a.Date.Date);
+
         var workingDays = 0m;
         var currentDate = start.Date;
 
         while (currentDate <= end.Date)
         {
-            // Skip weekends (Saturday = 6, Sunday = 0)
-            var dayOfWeek = (int)currentDate.DayOfWeek;
-            var isWeekend = dayOfWeek == 0 || dayOfWeek == 6;
-
-            // Skip public holidays
-            var isPublicHoliday = publicHolidays.Contains(currentDate);
-
-            if (!isWeekend && !isPublicHoliday)
+            if (adjustments.TryGetValue(currentDate, out var adjustment))
             {
-                workingDays += 1m;
+                if (adjustment.Type == HolidayType.WorkDay)
+                {
+                    workingDays += 1m;
+                }
+            }
+            else
+            {
+                // Skip weekends (Saturday = 6, Sunday = 0)
+                var dayOfWeek = (int)currentDate.DayOfWeek;
+                var isWeekend = dayOfWeek == 0 || dayOfWeek == 6;
+
+                // Skip public holidays
+                var isPublicHoliday = publicHolidays.Contains(currentDate);
+
+                if (!isWeekend && !isPublicHoliday)
+                {
+                    workingDays += 1m;
+                }
             }
 
             currentDate = currentDate.AddDays(1);
