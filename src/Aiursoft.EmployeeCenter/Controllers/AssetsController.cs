@@ -418,7 +418,7 @@ public class AssetsController(
         var category = await context.AssetCategories
             .Include(c => c.Models)
             .FirstOrDefaultAsync(c => c.Id == id);
-        
+
         if (category == null)
         {
             return NotFound();

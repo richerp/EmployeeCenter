@@ -9,7 +9,7 @@ using Microsoft.Extensions.Caching.Memory;
 namespace Aiursoft.EmployeeCenter.Services;
 
 public class GlobalSettingsService(
-    EmployeeCenterDbContext dbContext, 
+    EmployeeCenterDbContext dbContext,
     IConfiguration configuration,
     StorageService storageService,
     IMemoryCache cache) : IScopedDependency

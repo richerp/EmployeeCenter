@@ -9,7 +9,7 @@ public class EditorViewModel : UiStackLayoutViewModel
     {
         PageTitle = "Edit Requirement";
     }
-    
+
     [Display(Name = "Requirement Id")]
     public int? RequirementId { get; set; }
 

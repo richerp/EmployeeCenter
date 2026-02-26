@@ -13,7 +13,7 @@ public class LeaveConflictTests
         var handler = new HttpClientHandler
         {
             CookieContainer = cookieContainer,
-            AllowAutoRedirect = false 
+            AllowAutoRedirect = false
         };
         _port = Network.GetAvailablePort();
         _http = new HttpClient(handler)
@@ -42,11 +42,11 @@ public class LeaveConflictTests
     private async Task<string> GetAntiCsrfToken(string url)
     {
         var response = await _http.GetAsync(url);
-        
+
         if (response.StatusCode == HttpStatusCode.Found)
         {
-             var redirectUrl = response.Headers.Location;
-             response = await _http.GetAsync(redirectUrl);
+            var redirectUrl = response.Headers.Location;
+            response = await _http.GetAsync(redirectUrl);
         }
 
         response.EnsureSuccessStatusCode();
@@ -77,7 +77,7 @@ public class LeaveConflictTests
             { "__RequestVerificationToken", registerToken }
         });
         var registerResponse = await _http.PostAsync("/Account/Register", registerContent);
-        Assert.AreEqual(HttpStatusCode.Found, registerResponse.StatusCode); 
+        Assert.AreEqual(HttpStatusCode.Found, registerResponse.StatusCode);
 
         // 2. Initialize Allocation (Visit Index)
         await _http.GetAsync("/Leave/Index");
@@ -97,7 +97,7 @@ public class LeaveConflictTests
             { "__RequestVerificationToken", applyToken }
         });
         var response1 = await _http.PostAsync("/Leave/Apply", applyContent1);
-        Assert.AreEqual(HttpStatusCode.Found, response1.StatusCode); 
+        Assert.AreEqual(HttpStatusCode.Found, response1.StatusCode);
 
         // 4. Apply for overlapping leave (e.g., Tuesday to Thursday of the same week)
         var startDate2 = startDate1.AddDays(1);

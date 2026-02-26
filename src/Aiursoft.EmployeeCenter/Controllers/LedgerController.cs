@@ -164,7 +164,7 @@ public class LedgerController(
         var monthlyExpensesQuery = dbContext.Transactions
             .Include(t => t.SourceAccount)
             .Include(t => t.DestinationAccount)
-            .Where(t => t.DestinationAccount!.CompanyEntityId == id && 
+            .Where(t => t.DestinationAccount!.CompanyEntityId == id &&
                         t.DestinationAccount!.AccountType == FinanceAccountType.Expense &&
                         t.TransactionTime >= thirtyDaysAgo);
 
@@ -174,9 +174,9 @@ public class LedgerController(
         }
 
         var monthlyExpenses = await monthlyExpensesQuery.ToListAsync();
-        
+
         decimal totalBurn = 0;
-        foreach(var exp in monthlyExpenses)
+        foreach (var exp in monthlyExpenses)
         {
             if (exp.DestinationAccount!.Currency == entity.BaseCurrency)
             {
@@ -380,7 +380,7 @@ public class LedgerController(
         // But for MVP, let's stick to accounts of the current entity + maybe global accounts if any.
         // Actually, "Anduin's Wallet" might be shared or per-entity.
         // Requirement says "Belongs To Entity" for accounts.
-        
+
         ViewBag.Accounts = accounts;
         return this.StackView(new CreateTransactionViewModel
         {

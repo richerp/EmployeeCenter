@@ -17,7 +17,7 @@ public class WeeklyReportTests
         var handler = new HttpClientHandler
         {
             CookieContainer = cookieContainer,
-            AllowAutoRedirect = false 
+            AllowAutoRedirect = false
         };
         _port = Network.GetAvailablePort();
         _http = new HttpClient(handler)
@@ -47,21 +47,21 @@ public class WeeklyReportTests
     {
         var response = await _http.GetAsync(url);
         // Redirects to login are possible if not authenticated, but Register shouldn't.
-        if (response.StatusCode == HttpStatusCode.Found) 
+        if (response.StatusCode == HttpStatusCode.Found)
         {
-             // Follow redirect once if needed, or assume caller handles it.
-             // For Register/Login pages, usually 200.
+            // Follow redirect once if needed, or assume caller handles it.
+            // For Register/Login pages, usually 200.
         }
-        
+
         var html = await response.Content.ReadAsStringAsync();
         var match = Regex.Match(html,
             @"<input name=""__RequestVerificationToken"" type=""hidden"" value=""([^""]+)"" />");
         if (!match.Success)
         {
-             // If we are redirected to login, maybe we are unauthorized.
-             // But usually we call this on a page we expect to see form.
-             // throw new InvalidOperationException($"Could not find anti-CSRF token on page: {url}. Status: {response.StatusCode}");
-             // Return empty or let it fail later.
+            // If we are redirected to login, maybe we are unauthorized.
+            // But usually we call this on a page we expect to see form.
+            // throw new InvalidOperationException($"Could not find anti-CSRF token on page: {url}. Status: {response.StatusCode}");
+            // Return empty or let it fail later.
         }
         return match.Groups[1].Value;
     }
@@ -105,8 +105,8 @@ public class WeeklyReportTests
         var loginResponse = await _http.PostAsync("/Account/Login", loginContent);
         if (loginResponse.StatusCode != HttpStatusCode.Found)
         {
-             // Fallback: maybe already logged in or error?
-             // But usually expects redirect to ReturnUrl or Home
+            // Fallback: maybe already logged in or error?
+            // But usually expects redirect to ReturnUrl or Home
         }
     }
 
@@ -138,12 +138,12 @@ public class WeeklyReportTests
         var indexResponse = await _http.GetAsync("/WeeklyReport/Index");
         Assert.AreEqual(HttpStatusCode.OK, indexResponse.StatusCode);
         var indexHtml = await indexResponse.Content.ReadAsStringAsync();
-        
+
         // Should show "New Weekly Report"
         Assert.Contains("New Weekly Report", indexHtml);
         // Assert.IsFalse(indexHtml.Contains("New Weekly Report"));
 
-        
+
         // 3. Submit Report for Current Week
         // We need to pick a valid Sunday. 
         // The form defaults to current week start.
@@ -182,7 +182,7 @@ public class WeeklyReportTests
             { "__RequestVerificationToken", createToken }
         });
         createResponse = await _http.PostAsync("/WeeklyReport/Create", createContent);
-        Assert.AreEqual(HttpStatusCode.Found, createResponse.StatusCode); 
+        Assert.AreEqual(HttpStatusCode.Found, createResponse.StatusCode);
         // Logic says: if exists, it should append.
 
         using (var scope = _server!.Services.CreateScope())
@@ -219,14 +219,14 @@ public class WeeklyReportTests
         // 7. Verify sorting in Index
         var sortedResponse = await _http.GetAsync("/WeeklyReport/Index");
         var sortedHtml = await sortedResponse.Content.ReadAsStringAsync();
-        
+
         // Find indices of the reports in the HTML
         var indexFirst = sortedHtml.IndexOf("UNIQUE_REPORT_THIS_WEEK", StringComparison.Ordinal);
         var indexPast = sortedHtml.IndexOf("UNIQUE_REPORT_PAST_WEEK", StringComparison.Ordinal);
-        
+
         Assert.AreNotEqual(-1, indexFirst, "Could not find 'UNIQUE_REPORT_THIS_WEEK' in index");
         Assert.AreNotEqual(-1, indexPast, "Could not find 'UNIQUE_REPORT_PAST_WEEK' in index");
-        
+
         // Since we sort by WeekStartDate DESC, "UNIQUE_REPORT_THIS_WEEK" (this week) should appear BEFORE "UNIQUE_REPORT_PAST_WEEK" (past week)
         Assert.IsLessThan(indexPast, indexFirst, "Reports are not sorted correctly by WeekStartDate DESC");
 
@@ -260,7 +260,7 @@ public class WeeklyReportTests
 
         var indexOther = finalHtml.IndexOf("UNIQUE_REPORT_OTHER_USER_SAME_WEEK", StringComparison.Ordinal);
         indexFirst = finalHtml.IndexOf("UNIQUE_REPORT_THIS_WEEK", StringComparison.Ordinal);
-        
+
         // Both are this week. "Other user report same week" was created LATER, so it should be ABOVE "My first report"
         // Order: WeekStartDate DESC (same), then CreateTime DESC
         Assert.IsLessThan(indexFirst, indexOther, "Reports are not sorted correctly by CreateTime DESC within same week");
@@ -402,10 +402,10 @@ public class WeeklyReportTests
             { "__RequestVerificationToken", registerTokenOther }
         });
         await _http.PostAsync("/Account/Register", registerContentOther);
-        
+
         var otherId = await GetUserIdByEmail(otherEmail);
         await GrantPermission(otherId, AppPermissionNames.CanCreateWeeklyReport); // Grant permission so we can get token from Index
-        
+
         await LoginAs(otherEmail, password);
 
         var editGetResponseOther = await _http.GetAsync($"/WeeklyReport/Edit/{reportId}");
@@ -592,7 +592,7 @@ public class WeeklyReportTests
         var adminId = await GetUserIdByEmail(adminEmail);
         await GrantPermission(adminId, AppPermissionNames.CanCreateWeeklyReport);
         await GrantPermission(adminId, AppPermissionNames.CanManageAnyoneWeeklyReport);
-        
+
         // 2. Admin submits for themselves for current week
         await LoginAs(adminEmail, password);
         var now = DateTime.UtcNow;
@@ -612,7 +612,7 @@ public class WeeklyReportTests
         // 3. Admin checks their own available weeks (via Index)
         var indexResponse = await _http.GetAsync("/WeeklyReport/Index");
         var indexHtml = await indexResponse.Content.ReadAsStringAsync();
-        
+
         // Current week SHOULD be available for admin because they have CanManageAnyoneWeeklyReport permission
         Assert.Contains("value=\"" + weekStartStr + "\"", indexHtml);
     }
@@ -645,7 +645,7 @@ public class WeeklyReportTests
         await GrantPermission(adminId, AppPermissionNames.CanCreateWeeklyReport);
         await GrantPermission(adminId, AppPermissionNames.CanManageAnyoneWeeklyReport);
         await GrantPermission(userId, AppPermissionNames.CanCreateWeeklyReport);
-        
+
         // 2. User submits their own report
         await LoginAs(userEmail, password);
         var now = DateTime.UtcNow;
@@ -722,13 +722,13 @@ public class WeeklyReportTests
                 setting.Value = "True";
             }
 
-            var req = new Requirement 
-            { 
-                Title = "Test Project", 
-                Content = "Desc", 
-                RenderedHtml = "Desc", 
-                SubmitterId = userId, 
-                Status = RequirementStatus.Approved 
+            var req = new Requirement
+            {
+                Title = "Test Project",
+                Content = "Desc",
+                RenderedHtml = "Desc",
+                SubmitterId = userId,
+                Status = RequirementStatus.Approved
             };
             db.Requirements.Add(req);
             await db.SaveChangesAsync();
@@ -763,7 +763,7 @@ public class WeeklyReportTests
             var report = await db.WeeklyReports
                 .Include(r => r.WeeklyReportRequirements)
                 .FirstAsync(r => r.UserId == userId);
-            
+
             Assert.AreEqual(1, report.WeeklyReportRequirements.Count());
             Assert.AreEqual(projectId, report.WeeklyReportRequirements.First().RequirementId);
             Assert.AreEqual(5, report.WeeklyReportRequirements.First().Hours);

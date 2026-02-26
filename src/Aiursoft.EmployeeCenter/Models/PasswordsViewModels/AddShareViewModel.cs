@@ -7,7 +7,7 @@ public class AddShareViewModel
 {
     [Display(Name = "Target User")]
     public string? TargetUserId { get; set; }
-    
+
     [Display(Name = "Target Role")]
     public string? TargetRoleId { get; set; }
 

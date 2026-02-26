@@ -9,7 +9,7 @@ public class PayrollExportViewModel
 
     [CsvProperty("OwnerId")]
     public string OwnerId { get; set; } = string.Empty;
-    
+
     // Adding OwnerName for convenience, as requested by "Raw export" usually implies valuable data.
     // However, sticking to the raw fields first. But Owner Name is nice.
     // I will add OwnerName just in case, but keep it optional.

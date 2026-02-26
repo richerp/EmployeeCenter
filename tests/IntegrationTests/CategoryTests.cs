@@ -122,7 +122,7 @@ public class CategoryTests
             { "id", unusedCategoryId.ToString() },
             { "__RequestVerificationToken", await GetAntiCsrfToken("/Assets/Categories") }
         }));
-        
+
         // Redirect implies success in this controller logic
         Assert.AreEqual(HttpStatusCode.Redirect, deleteUnusedResponse.StatusCode);
 

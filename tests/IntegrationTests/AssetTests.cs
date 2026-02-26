@@ -347,7 +347,7 @@ public class AssetTests
         {
             var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
             var asset = await db.Assets.FirstAsync(a => a.AssetTag == "ENTITY-ASSET");
-            
+
             var detailsResponse = await _http.GetAsync($"/Assets/Details/{asset.Id}");
             var detailsHtml = await detailsResponse.Content.ReadAsStringAsync();
             Assert.Contains("ENTITY-ASSET", detailsHtml);
@@ -420,7 +420,7 @@ public class AssetTests
         {
             var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
             var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
-            
+
             var cat = new AssetCategory { Name = "DetailsTest Cat", Code = "DTC" };
             db.AssetCategories.Add(cat);
             await db.SaveChangesAsync();

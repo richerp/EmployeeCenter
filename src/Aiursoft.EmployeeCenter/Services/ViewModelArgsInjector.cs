@@ -70,7 +70,7 @@ public class ViewModelArgsInjector(
         _ = localizer["Permissions"];
         _ = localizer["Background Jobs"];
         _ = localizer["Global Settings"];
-    
+
         _ = localizer["Approval Center"];
         _ = localizer["Assets"];
         _ = localizer["Certificate of Employment"];
@@ -102,20 +102,20 @@ public class ViewModelArgsInjector(
         _ = localizer["Resources"];
         _ = localizer["Shared Passwords"];
         _ = localizer["Team Calendar"];
-    
+
         _ = localizer["Promotion History"];
-    
+
         _ = localizer["Employee Signals"];
         _ = localizer["Manage Feedback"];
-    
+
         _ = localizer["Manage Ledger"];
-    
+
         _ = localizer["Blueprints"];
         _ = localizer["Manage Blueprints"];
         _ = localizer["View Blueprints"];
-    
+
         _ = localizer["Servers"];
-    
+
         _ = localizer["Project Requirements"];
         _ = localizer["Approved Projects"];
         _ = localizer["My Requirements"];
@@ -137,12 +137,12 @@ public class ViewModelArgsInjector(
         _ = localizer["Approve"];
         _ = localizer["Reject"];
         _ = localizer["Request Changes"];
-    
+
         _ = localizer["PendingApproval"];
         _ = localizer["Approved"];
         _ = localizer["Rejected"];
         _ = localizer["RequestChanges"];
-    
+
         _ = localizer["Access Denied"];
         _ = localizer["Add SSH Key"];
         _ = localizer["Bad Request"];
@@ -185,19 +185,19 @@ public class ViewModelArgsInjector(
         _ = localizer["Register"];
         _ = localizer["Response Detail"];
         _ = localizer["SSH Keys"];
-    
+
         _ = localizer["Issue Invoice"];
-    
+
         _ = localizer["Manage Intangible Assets"];
-    
+
         _ = localizer["Company Intangible Assets"];
-    
+
         _ = localizer["Customer Relations"];
         _ = localizer["Customer Relationships"];
         _ = localizer["Edit Customer Relationship"];
         _ = localizer["Manage Customer Relations"];
         _ = localizer["View Customer Relations"];
-    
+
         _ = localizer["Manage Market Channels"];
         _ = localizer["Market Channels"];
         _ = localizer["View Market Channels"];

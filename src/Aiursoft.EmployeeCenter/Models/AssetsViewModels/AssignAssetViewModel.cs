@@ -12,7 +12,7 @@ public class AssignAssetViewModel : UiStackLayoutViewModel
 
     [Display(Name = "Asset Tag")]
     public string AssetTag { get; set; } = string.Empty;
-    
+
     [Display(Name = "Model Name")]
     public string ModelName { get; set; } = string.Empty;
 

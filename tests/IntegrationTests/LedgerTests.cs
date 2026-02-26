@@ -70,7 +70,7 @@ public class LedgerTests : TestBase
         using (var scope = Server!.Services.CreateScope())
         {
             var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
-            
+
             // Asset: Destination - Source = 10000 - 0 = 10000
             var bankBalance = await GetBalance(db, bankId);
             Assert.AreEqual(10000, bankBalance);
@@ -113,10 +113,10 @@ public class LedgerTests : TestBase
         using (var scope = Server!.Services.CreateScope())
         {
             var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
-            
+
             // Bank: 10000 - 3000 = 7000
             Assert.AreEqual(7000, await GetBalance(db, bankId));
-            
+
             // Expense: 3000 - 0 = 3000
             Assert.AreEqual(3000, await GetBalance(db, expenseAccountId));
         }
@@ -148,7 +148,7 @@ public class LedgerTests : TestBase
             var transaction = await db.Transactions.FindAsync(transactionId);
             Assert.AreEqual("Sleek fee updated", transaction!.Description);
             Assert.AreEqual(4000, transaction.Amount);
-            
+
             // Bank: 10000 - 4000 = 6000
             Assert.AreEqual(6000, await GetBalance(db, bankId));
         }
@@ -166,7 +166,7 @@ public class LedgerTests : TestBase
             var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
             var transaction = await db.Transactions.FindAsync(transactionId);
             Assert.IsNull(transaction);
-            
+
             // Bank: 10000 - 0 = 10000 (since only one transaction remains)
             Assert.AreEqual(10000, await GetBalance(db, bankId));
         }
@@ -376,14 +376,14 @@ public class LedgerTests : TestBase
         // 4. View Filtered Dashboard for Account A
         var filteredResponse = await Http.GetAsync($"/Ledger/Dashboard/{entityId}?accountId={accountAId}");
         var filteredContent = await filteredResponse.Content.ReadAsStringAsync();
-        
+
         // Should contain account name and transaction A
         Assert.Contains("Account A - Dashboard", filteredContent);
         Assert.Contains("Transaction A", filteredContent);
-        
+
         // Should NOT contain Account B card (since filtered view hides cards)
         Assert.DoesNotContain("text-success text-uppercase mb-1\">\n                                    Account B", filteredContent);
-        
+
         // Should NOT contain Transaction B Only
         Assert.DoesNotContain("Transaction B Only", filteredContent);
     }

@@ -2,7 +2,7 @@ using Aiursoft.UiStack.Layout;
 
 namespace Aiursoft.EmployeeCenter.Models.ErrorViewModels;
 
-public class UnauthorizedViewModel: UiStackLayoutViewModel
+public class UnauthorizedViewModel : UiStackLayoutViewModel
 {
     public UnauthorizedViewModel()
     {

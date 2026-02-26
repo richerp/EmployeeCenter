@@ -7,7 +7,7 @@ public class EditTransactionViewModel : UiStackLayoutViewModel
 {
     [Display(Name = "Entity Id")]
     public int EntityId { get; set; }
-    
+
     [Display(Name = "Transaction Id")]
     public int TransactionId { get; set; }
 

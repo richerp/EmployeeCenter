@@ -212,7 +212,7 @@ public class ServicesController(
         var provider = await context.DnsProviders
             .Include(p => p.Services)
             .FirstOrDefaultAsync(p => p.Id == id);
-        
+
         if (provider == null) return NotFound();
 
         if (provider.Services.Any())
@@ -258,7 +258,7 @@ public class ServicesController(
         var provider = await context.Providers
             .Include(p => p.Servers)
             .FirstOrDefaultAsync(p => p.Id == id);
-        
+
         if (provider == null) return NotFound();
 
         if (provider.Servers.Any())

@@ -58,9 +58,9 @@ public class ServersTests : TestBase
             { "ServerIp", "192.168.1.101" },
             { "CompanyEntityId", company.Id.ToString() }
         });
-        
+
         Assert.AreEqual(HttpStatusCode.Redirect, editResponse.StatusCode);
-        
+
         db = GetService<EmployeeCenterDbContext>();
         db.Entry(server).Reload();
         Assert.AreEqual("test-server-01-updated", server.Hostname);

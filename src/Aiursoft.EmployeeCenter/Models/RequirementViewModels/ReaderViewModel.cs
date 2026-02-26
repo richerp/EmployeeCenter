@@ -11,8 +11,8 @@ public class ReaderViewModel : UiStackLayoutViewModel
     }
 
     public required Requirement Requirement { get; set; }
-    
+
     public string? NewCommentContent { get; set; }
-    
+
     public int? ReplyToCommentId { get; set; }
 }

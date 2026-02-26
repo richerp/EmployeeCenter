@@ -43,6 +43,8 @@ public class Startup : IWebStartup
         services.AddMemoryCache();
         services.AddHttpClient();
         services.AddTaskCanon();
+        services.AddHealthChecks()
+            .AddDbContextCheck<Entities.EmployeeCenterDbContext>();
 
         // Leave Management Services
         services.AddScoped<Services.HolidayService>();
@@ -79,5 +81,6 @@ public class Startup : IWebStartup
         app.UseAuthentication();
         app.UseAuthorization();
         app.MapDefaultControllerRoute();
+        app.MapHealthChecks("/health");
     }
 }

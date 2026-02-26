@@ -61,7 +61,7 @@ public class DropdownApiTests
         response.EnsureSuccessStatusCode();
         var json = await response.Content.ReadAsStringAsync();
         var array = JArray.Parse(json);
-        
+
         if (array.Count > 0)
         {
             var firstItem = (JObject)array[0];

@@ -34,9 +34,9 @@ public class RequirementsController(
             .Where(t => t.Status == RequirementStatus.Approved)
             .OrderByDescending(t => t.CreationTime)
             .ToListAsync();
-        
-        var model = new IndexViewModel 
-        { 
+
+        var model = new IndexViewModel
+        {
             Requirements = requirements,
             PageTitle = localizer["Approved Projects"]
         };
@@ -62,9 +62,9 @@ public class RequirementsController(
             .Where(t => t.SubmitterId == user.Id)
             .OrderByDescending(t => t.CreationTime)
             .ToListAsync();
-        
-        var model = new IndexViewModel 
-        { 
+
+        var model = new IndexViewModel
+        {
             Requirements = requirements,
             PageTitle = localizer["My Requirements"]
         };
@@ -86,9 +86,9 @@ public class RequirementsController(
             .Include(t => t.Submitter)
             .OrderByDescending(t => t.UpdateTime)
             .ToListAsync();
-        
-        var model = new IndexViewModel 
-        { 
+
+        var model = new IndexViewModel
+        {
             Requirements = requirements,
             PageTitle = localizer["Approval History"]
         };
@@ -112,9 +112,9 @@ public class RequirementsController(
             .Where(t => t.Status == RequirementStatus.PendingApproval)
             .OrderByDescending(t => t.CreationTime)
             .ToListAsync();
-        
-        var model = new IndexViewModel 
-        { 
+
+        var model = new IndexViewModel
+        {
             Requirements = requirements,
             PageTitle = localizer["Manage Requirements"]
         };
@@ -239,11 +239,11 @@ public class RequirementsController(
                 .ThenInclude(c => c.Replies)
                     .ThenInclude(r => r.Author)
             .FirstOrDefaultAsync(t => t.Id == id);
-        
+
         if (requirement == null) return NotFound();
 
-        var model = new ReaderViewModel 
-        { 
+        var model = new ReaderViewModel
+        {
             Requirement = requirement,
             PageTitle = requirement.Title
         };
