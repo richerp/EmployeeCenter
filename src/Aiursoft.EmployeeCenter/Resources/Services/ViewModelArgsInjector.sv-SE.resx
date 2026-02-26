@@ -294,6 +294,9 @@
   <data name="Global Settings" xml:space="preserve">
     <value>Globala inställningar</value>
   </data>
+  <data name="Holiday Adjustments" xml:space="preserve">
+    <value>Semesterjusteringar</value>
+  </data>
   <data name="Home" xml:space="preserve">
     <value>Hem</value>
   </data>

@@ -294,6 +294,9 @@
   <data name="Global Settings" xml:space="preserve">
     <value>Καθολικές Ρυθμίσεις</value>
   </data>
+  <data name="Holiday Adjustments" xml:space="preserve">
+    <value>Ρυθμίσεις Αδειών</value>
+  </data>
   <data name="Home" xml:space="preserve">
     <value>Αρχική</value>
   </data>

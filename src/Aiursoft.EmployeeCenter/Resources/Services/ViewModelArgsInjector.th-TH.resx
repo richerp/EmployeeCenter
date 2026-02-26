@@ -297,6 +297,9 @@
   <data name="Global Settings" xml:space="preserve">
     <value>การตั้งค่าทั่วไป</value>
   </data>
+  <data name="Holiday Adjustments" xml:space="preserve">
+    <value>การปรับวันหยุด</value>
+  </data>
   <data name="Home" xml:space="preserve">
     <value>หน้าแรก</value>
   </data>

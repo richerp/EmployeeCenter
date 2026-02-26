@@ -294,6 +294,9 @@
   <data name="Global Settings" xml:space="preserve">
     <value>Ustawienia globalne</value>
   </data>
+  <data name="Holiday Adjustments" xml:space="preserve">
+    <value>Dostosowania urlopowe</value>
+  </data>
   <data name="Home" xml:space="preserve">
     <value>Strona główna</value>
   </data>

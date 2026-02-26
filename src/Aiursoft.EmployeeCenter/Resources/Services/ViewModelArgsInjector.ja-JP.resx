@@ -297,6 +297,9 @@
   <data name="Global Settings" xml:space="preserve">
     <value>グローバル設定</value>
   </data>
+  <data name="Holiday Adjustments" xml:space="preserve">
+    <value>休日調整</value>
+  </data>
   <data name="Home" xml:space="preserve">
     <value>ホーム</value>
   </data>

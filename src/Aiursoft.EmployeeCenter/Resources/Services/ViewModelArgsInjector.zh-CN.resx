@@ -300,6 +300,9 @@
   <data name="Global Settings" xml:space="preserve">
     <value>全局设置</value>
   </data>
+  <data name="Holiday Adjustments" xml:space="preserve">
+    <value>假期调整</value>
+  </data>
   <data name="Home" xml:space="preserve">
     <value>主页</value>
   </data>

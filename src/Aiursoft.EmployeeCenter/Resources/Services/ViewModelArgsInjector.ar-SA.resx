@@ -294,6 +294,9 @@
   <data name="Global Settings" xml:space="preserve">
     <value>الإعدادات العامة</value>
   </data>
+  <data name="Holiday Adjustments" xml:space="preserve">
+    <value>تعديلات الإجازات</value>
+  </data>
   <data name="Home" xml:space="preserve">
     <value>الرئيسية</value>
   </data>
