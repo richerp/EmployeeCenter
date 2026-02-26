@@ -294,6 +294,9 @@
   <data name="Global Settings" xml:space="preserve">
     <value>Genel Ayarlar</value>
   </data>
+  <data name="Holiday Adjustments" xml:space="preserve">
+    <value>Tatil Ayarlamaları</value>
+  </data>
   <data name="Home" xml:space="preserve">
     <value>Ana Sayfa</value>
   </data>

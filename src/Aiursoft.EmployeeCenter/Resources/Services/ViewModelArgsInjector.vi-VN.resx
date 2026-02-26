@@ -297,6 +297,9 @@
   <data name="Global Settings" xml:space="preserve">
     <value>Cài đặt chung</value>
   </data>
+  <data name="Holiday Adjustments" xml:space="preserve">
+    <value>Điều chỉnh nghỉ lễ</value>
+  </data>
   <data name="Home" xml:space="preserve">
     <value>Trang Chủ</value>
   </data>

@@ -297,6 +297,9 @@
   <data name="Global Settings" xml:space="preserve">
     <value>全域設定</value>
   </data>
+  <data name="Holiday Adjustments" xml:space="preserve">
+    <value>假期調整</value>
+  </data>
   <data name="Home" xml:space="preserve">
     <value>首頁</value>
   </data>

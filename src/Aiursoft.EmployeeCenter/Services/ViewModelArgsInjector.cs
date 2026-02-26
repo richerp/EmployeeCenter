@@ -201,6 +201,8 @@ public class ViewModelArgsInjector(
         _ = localizer["Manage Market Channels"];
         _ = localizer["Market Channels"];
         _ = localizer["View Market Channels"];
+    
+        _ = localizer["Holiday Adjustments"];
     }
 
     public void InjectSimple(
