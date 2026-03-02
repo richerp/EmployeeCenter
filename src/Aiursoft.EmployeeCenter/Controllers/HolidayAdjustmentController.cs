@@ -111,13 +111,8 @@ public class HolidayAdjustmentController(EmployeeCenterDbContext context, Holida
     /// </summary>
     private async Task<bool> IsNaturallyNonWorkingAsync(DateTime date)
     {
-        var dayOfWeek = date.DayOfWeek;
-        if (dayOfWeek is DayOfWeek.Saturday or DayOfWeek.Sunday)
-        {
-            return true;
-        }
-
         // Check the API (ignoring local adjustments — we already removed any existing adjustment above)
+        // The service will automatically fallback to weekend logic if the date is not in the API list.
         return await holidayService.IsPublicHolidayAsync(date);
     }
 
