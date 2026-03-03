@@ -127,9 +127,6 @@ public class HolidayService
 
     private class HolidayDay
     {
-        [JsonPropertyName("name")]
-        public string Name { get; set; } = string.Empty;
-
         [JsonPropertyName("date")]
         public string Date { get; set; } = string.Empty;
 
