@@ -8,7 +8,7 @@ namespace Aiursoft.EmployeeCenter.Services;
 
 /// <summary>
 /// Service for fetching Chinese public holiday information from external API
-/// Uses api.haoshenqi.top API with caching to minimize API calls, and honors local overrides.
+/// Uses NateScarlet/holiday-cn API with caching to minimize API calls, and honors local overrides.
 /// </summary>
 public class HolidayService
 {
@@ -16,7 +16,7 @@ public class HolidayService
     private readonly IMemoryCache _cache;
     private readonly ILogger<HolidayService> _logger;
     private readonly EmployeeCenterDbContext _context;
-    private const string ApiBaseUrl = "http://api.haoshenqi.top/holiday";
+    private const string ApiBaseUrl = "https://cdn.jsdelivr.net/gh/NateScarlet/holiday-cn@master";
 
     public HolidayService(
         IHttpClientFactory httpClientFactory,
@@ -49,37 +49,45 @@ public class HolidayService
         }
 
         // 2. Fallback to API logic
+        var year = date.Year;
+        var cacheKey = $"holidays_cn_{year}";
+
+        if (!_cache.TryGetValue<Dictionary<string, bool>>(cacheKey, out var yearHolidays) || yearHolidays == null)
+        {
+            yearHolidays = new Dictionary<string, bool>();
+            try
+            {
+                var url = $"{ApiBaseUrl}/{year}.json";
+                var response = await _httpClient.GetStringAsync(url);
+                var result = JsonSerializer.Deserialize<HolidayApiResponse>(response);
+
+                if (result?.Days != null)
+                {
+                    foreach (var day in result.Days)
+                    {
+                        yearHolidays[day.Date] = day.IsOffDay;
+                    }
+                }
+
+                // Cache for 7 days (holidays don't change retroactively)
+                _cache.Set(cacheKey, yearHolidays, TimeSpan.FromDays(7));
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning(ex, "Failed to fetch holiday information for year {Year}. Falling back to weekends.", year);
+                // On error, cache empty dictionary for a shorter period (1 hour) to enable retry
+                _cache.Set(cacheKey, yearHolidays, TimeSpan.FromHours(1));
+            }
+        }
+
         var dateKey = date.ToString("yyyy-MM-dd");
-        var cacheKey = $"holiday_{dateKey}";
-
-        if (_cache.TryGetValue<bool>(cacheKey, out var cachedResult))
+        if (yearHolidays.TryGetValue(dateKey, out var isOffDay))
         {
-            return cachedResult;
+            return isOffDay;
         }
 
-        try
-        {
-            // API format: http://api.haoshenqi.top/holiday?date=yyyy-MM-dd
-            var url = $"{ApiBaseUrl}?date={dateKey}";
-            var response = await _httpClient.GetStringAsync(url);
-            var results = JsonSerializer.Deserialize<List<HolidayApiResponse>>(response);
-
-            // Status: 0 = working day, 1 = weekend, 2 = statutory holiday, 3 = major statutory holiday
-            var status = results?.FirstOrDefault()?.Status ?? 0;
-            var isHoliday = status == 1 || status == 2 || status == 3;
-
-            // Cache for 7 days (holidays don't change retroactively)
-            _cache.Set(cacheKey, isHoliday, TimeSpan.FromDays(7));
-
-            return isHoliday;
-        }
-        catch (Exception ex)
-        {
-            _logger.LogWarning(ex, "Failed to fetch holiday information for {Date}. Assuming it's not a holiday.", dateKey);
-            // On error, cache false for a shorter period (1 hour) to enable retry
-            _cache.Set(cacheKey, false, TimeSpan.FromHours(1));
-            return false;
-        }
+        // 3. Fallback to default weekend logic if not in holiday list
+        return date.DayOfWeek == DayOfWeek.Saturday || date.DayOfWeek == DayOfWeek.Sunday;
     }
 
     /// <summary>
@@ -110,14 +118,19 @@ public class HolidayService
     /// </summary>
     private class HolidayApiResponse
     {
-        // [{"date":"2026-01-01","year":2026,"month":1,"day":1,"status":3}]
+        [JsonPropertyName("year")]
+        public int Year { get; set; }
 
+        [JsonPropertyName("days")]
+        public List<HolidayDay> Days { get; set; } = new();
+    }
 
+    private class HolidayDay
+    {
+        [JsonPropertyName("date")]
+        public string Date { get; set; } = string.Empty;
 
-        /// <summary>
-        /// Status: 0 = working day, 1 = weekend, 2 = statutory holiday, 3 = major statutory holiday
-        /// </summary>
-        [JsonPropertyName("status")]
-        public int Status { get; set; }
+        [JsonPropertyName("isOffDay")]
+        public bool IsOffDay { get; set; }
     }
 }
