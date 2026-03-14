@@ -62,4 +62,22 @@ public class DashboardViewModel : UiStackLayoutViewModel
 
     [Display(Name = "Outflow Distribution")]
     public Dictionary<string, decimal> OutflowDistribution { get; set; } = new();
+
+    [Display(Name = "Total Assets")]
+    public decimal TotalAssets { get; set; }
+
+    [Display(Name = "Total Liabilities")]
+    public decimal TotalLiabilities { get; set; }
+
+    [Display(Name = "Total Equity")]
+    public decimal TotalEquity { get; set; }
+
+    [Display(Name = "Revenue for Period")]
+    public decimal RevenueForPeriod { get; set; }
+
+    [Display(Name = "Expenses for Period")]
+    public decimal ExpensesForPeriod { get; set; }
+
+    [Display(Name = "Net Income for Period")]
+    public decimal NetIncomeForPeriod { get; set; }
 }
