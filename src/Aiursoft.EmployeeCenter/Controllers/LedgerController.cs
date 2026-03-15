@@ -41,6 +41,29 @@ public class LedgerController(
         return this.StackView(model);
     }
 
+    private async Task<Dictionary<string, decimal>> GetLatestExchangeRates(int entityId, string baseCurrency)
+    {
+        var rates = new Dictionary<string, decimal> { [baseCurrency] = 1 };
+        var accounts = await dbContext.FinanceAccounts
+            .Where(a => a.CompanyEntityId == entityId && !a.IsArchived)
+            .ToListAsync();
+        
+        var currencies = accounts.Select(a => a.Currency).Distinct().Where(c => c != baseCurrency).ToList();
+        
+        foreach (var currency in currencies)
+        {
+            var rate = await dbContext.Transactions
+                .Where(t => (t.SourceAccount!.Currency == currency && t.DestinationAccount!.Currency == baseCurrency) ||
+                            (t.SourceAccount!.Currency == baseCurrency && t.DestinationAccount!.Currency == currency))
+                .OrderByDescending(t => t.TransactionTime)
+                .Select(t => t.SourceAccount!.Currency == currency ? t.ExchangeRate : 1 / t.ExchangeRate)
+                .FirstOrDefaultAsync();
+            rates[currency] = rate == 0 ? 1 : rate;
+        }
+        
+        return rates;
+    }
+
     [HttpGet]
     public async Task<IActionResult> Dashboard(int id, int? accountId, int? year, int? month)
     {
@@ -62,8 +85,8 @@ public class LedgerController(
             }
         }
 
-        var accounts = await dbContext.FinanceAccounts
-            .Where(a => a.CompanyEntityId == id && !a.IsArchived && a.ShowInDashboard)
+        var allActiveAccounts = await dbContext.FinanceAccounts
+            .Where(a => a.CompanyEntityId == id && !a.IsArchived)
             .ToListAsync();
 
         DateTime startTime;
@@ -79,15 +102,31 @@ public class LedgerController(
             endTime = startTime.AddYears(1);
         }
 
-        var accountsWithBalance = new List<AccountWithBalance>();
-        foreach (var account in accounts)
+        // Optimize Balance Calculation (Avoid N+1)
+        var sourceSums = await dbContext.Transactions
+            .Where(t => t.SourceAccount!.CompanyEntityId == id && t.TransactionTime < endTime)
+            .GroupBy(t => t.SourceAccountId)
+            .Select(g => new { AccountId = g.Key, Sum = (decimal?)g.Sum(t => t.Amount) ?? 0 })
+            .ToDictionaryAsync(x => x.AccountId, x => x.Sum);
+
+        var destinationSums = await dbContext.Transactions
+            .Where(t => t.DestinationAccount!.CompanyEntityId == id && t.TransactionTime < endTime)
+            .GroupBy(t => t.DestinationAccountId)
+            .Select(g => new { AccountId = g.Key, Sum = (decimal?)g.Sum(t => t.Amount * t.ExchangeRate) ?? 0 })
+            .ToDictionaryAsync(x => x.AccountId, x => x.Sum);
+
+        var accountsWithBalance = allActiveAccounts.Select(a => new AccountWithBalance
         {
-            accountsWithBalance.Add(new AccountWithBalance
+            Account = a,
+            Balance = a.AccountType switch
             {
-                Account = account,
-                Balance = await GetBalance(account.Id, endTime)
-            });
-        }
+                FinanceAccountType.Asset or FinanceAccountType.Expense => (destinationSums.GetValueOrDefault(a.Id) - sourceSums.GetValueOrDefault(a.Id)),
+                FinanceAccountType.Liability or FinanceAccountType.Equity or FinanceAccountType.Income => (sourceSums.GetValueOrDefault(a.Id) - destinationSums.GetValueOrDefault(a.Id)),
+                _ => 0
+            }
+        }).ToList();
+
+        var rates = await GetLatestExchangeRates(id, entity.BaseCurrency);
 
         var recentTransactionsQuery = dbContext.Transactions
             .Include(t => t.SourceAccount)
@@ -103,6 +142,7 @@ public class LedgerController(
 
         var recentTransactions = await recentTransactionsQuery
             .OrderByDescending(t => t.TransactionTime)
+            .Take(100) // Limit for performance
             .ToListAsync();
 
         decimal totalInflow = 0;
@@ -131,14 +171,14 @@ public class LedgerController(
         }
         else
         {
-            // Company-wide stats for the period
+            // Company-wide stats for the period (Converted to Base Currency)
             totalInflow = recentTransactions
                 .Where(t => t.SourceAccount!.AccountType == FinanceAccountType.Income)
-                .Sum(t => t.Amount); // Amount is in SourceAccount currency (Income)
+                .Sum(t => t.Amount * rates.GetValueOrDefault(t.SourceAccount!.Currency, 1));
 
             totalOutflow = recentTransactions
                 .Where(t => t.DestinationAccount!.AccountType == FinanceAccountType.Expense)
-                .Sum(t => t.Amount * t.ExchangeRate); // Amount * ExchangeRate is in DestinationAccount currency (Expense)
+                .Sum(t => t.Amount * t.ExchangeRate * rates.GetValueOrDefault(t.DestinationAccount!.Currency, 1));
         }
 
         // Chart Data (Always for the whole year)
@@ -147,98 +187,97 @@ public class LedgerController(
         var yearStart = new DateTime(year.Value, 1, 1, 0, 0, 0, DateTimeKind.Utc);
         var yearEnd = yearStart.AddYears(1);
 
-        var yearTransactionsQuery = dbContext.Transactions
-            .Include(t => t.SourceAccount)
-            .Include(t => t.DestinationAccount)
-            .Where(t => (t.SourceAccount!.CompanyEntityId == id || t.DestinationAccount!.CompanyEntityId == id) &&
-                        t.TransactionTime >= yearStart && t.TransactionTime < yearEnd);
+        // Optimize Chart Data (Database Aggregation)
+        var yearInflowByCurrency = await dbContext.Transactions
+            .Where(t => t.SourceAccount!.CompanyEntityId == id && 
+                        t.SourceAccount!.AccountType == FinanceAccountType.Income &&
+                        t.TransactionTime >= yearStart && t.TransactionTime < yearEnd)
+            .GroupBy(t => new { t.TransactionTime.Month, t.SourceAccount!.Currency })
+            .Select(g => new { g.Key.Month, g.Key.Currency, Sum = (decimal?)g.Sum(t => t.Amount) ?? 0 })
+            .ToListAsync();
+
+        var yearOutflowByCurrency = await dbContext.Transactions
+            .Where(t => t.DestinationAccount!.CompanyEntityId == id && 
+                        t.DestinationAccount!.AccountType == FinanceAccountType.Expense &&
+                        t.TransactionTime >= yearStart && t.TransactionTime < yearEnd)
+            .GroupBy(t => new { t.TransactionTime.Month, t.DestinationAccount!.Currency })
+            .Select(g => new { g.Key.Month, g.Key.Currency, Sum = (decimal?)g.Sum(t => t.Amount * t.ExchangeRate) ?? 0 })
+            .ToListAsync();
 
         if (accountId.HasValue)
         {
-            yearTransactionsQuery = yearTransactionsQuery.Where(t => t.SourceAccountId == accountId || t.DestinationAccountId == accountId);
-        }
+            // ... (keep account specific logic as it is already in SQL)
+            var accountInflow = await dbContext.Transactions
+                .Where(t => t.DestinationAccountId == accountId && t.TransactionTime >= yearStart && t.TransactionTime < yearEnd)
+                .GroupBy(t => t.TransactionTime.Month)
+                .Select(g => new { Month = g.Key, Sum = (decimal?)g.Sum(t => t.Amount * t.ExchangeRate) ?? 0 })
+                .ToListAsync();
+            
+            var accountOutflow = await dbContext.Transactions
+                .Where(t => t.SourceAccountId == accountId && t.TransactionTime >= yearStart && t.TransactionTime < yearEnd)
+                .GroupBy(t => t.TransactionTime.Month)
+                .Select(g => new { Month = g.Key, Sum = (decimal?)g.Sum(t => t.Amount) ?? 0 })
+                .ToListAsync();
 
-        var yearTransactions = await yearTransactionsQuery.ToListAsync();
-        foreach (var t in yearTransactions)
+            foreach (var d in accountInflow) chartInflow[d.Month - 1] = d.Sum;
+            foreach (var d in accountOutflow) chartOutflow[d.Month - 1] = d.Sum;
+        }
+        else
         {
-            var m = t.TransactionTime.Month - 1;
-            if (accountId.HasValue)
+            foreach (var d in yearInflowByCurrency)
             {
-                if (t.DestinationAccountId == accountId) chartInflow[m] += t.Amount * t.ExchangeRate;
-                if (t.SourceAccountId == accountId) chartOutflow[m] += t.Amount;
+                chartInflow[d.Month - 1] += d.Sum * rates.GetValueOrDefault(d.Currency, 1);
             }
-            else
+            foreach (var d in yearOutflowByCurrency)
             {
-                // Company-wide: Income vs Expense
-                if (t.SourceAccount!.AccountType == FinanceAccountType.Income)
-                {
-                    chartInflow[m] += t.Amount;
-                }
-                if (t.DestinationAccount!.AccountType == FinanceAccountType.Expense)
-                {
-                    chartOutflow[m] += t.Amount * t.ExchangeRate;
-                }
+                chartOutflow[d.Month - 1] += d.Sum * rates.GetValueOrDefault(d.Currency, 1);
             }
         }
 
-        // Company-wide snapshot
+        // Company-wide snapshot (Converted to Base Currency)
         var totalAssets = accountsWithBalance
             .Where(a => a.Account.AccountType == FinanceAccountType.Asset)
-            .Sum(a => a.Balance);
+            .Sum(a => a.Balance * rates.GetValueOrDefault(a.Account.Currency, 1));
         var totalLiabilities = accountsWithBalance
             .Where(a => a.Account.AccountType == FinanceAccountType.Liability)
-            .Sum(a => a.Balance);
+            .Sum(a => a.Balance * rates.GetValueOrDefault(a.Account.Currency, 1));
         var totalEquity = accountsWithBalance
             .Where(a => a.Account.AccountType == FinanceAccountType.Equity)
-            .Sum(a => a.Balance);
+            .Sum(a => a.Balance * rates.GetValueOrDefault(a.Account.Currency, 1));
 
-        // Calculate Burn Rate (Expense in last 30 days) - Keep existing logic for now
+        // Calculate Burn Rate (Expense in last 30 days)
         var thirtyDaysAgo = DateTime.UtcNow.AddDays(-30);
-        var monthlyExpensesQuery = dbContext.Transactions
-            .Include(t => t.SourceAccount)
-            .Include(t => t.DestinationAccount)
+        var burnByCurrency = await dbContext.Transactions
             .Where(t => t.DestinationAccount!.CompanyEntityId == id &&
                         t.DestinationAccount!.AccountType == FinanceAccountType.Expense &&
-                        t.TransactionTime >= thirtyDaysAgo);
-
-        if (accountId.HasValue)
-        {
-            monthlyExpensesQuery = monthlyExpensesQuery.Where(t => t.SourceAccountId == accountId);
-        }
-
-        var monthlyExpenses = await monthlyExpensesQuery.ToListAsync();
-
-        decimal totalBurn = 0;
-        foreach (var exp in monthlyExpenses)
-        {
-            if (exp.DestinationAccount!.Currency == entity.BaseCurrency)
-            {
-                totalBurn += exp.Amount * exp.ExchangeRate;
-            }
-        }
+                        t.TransactionTime >= thirtyDaysAgo)
+            .GroupBy(t => t.DestinationAccount!.Currency)
+            .Select(g => new { Currency = g.Key, Sum = (decimal?)g.Sum(t => t.Amount * t.ExchangeRate) ?? 0 })
+            .ToListAsync();
+        
+        var totalBurn = burnByCurrency.Sum(b => b.Sum * rates.GetValueOrDefault(b.Currency, 1));
 
         // Calculate Runway: Total Assets / Burn Rate
         decimal totalAssetsToRun;
         if (accountId.HasValue)
         {
-            totalAssetsToRun = await GetBalance(accountId.Value, endTime);
+            var account = accountsWithBalance.First(a => a.Account.Id == accountId.Value);
+            totalAssetsToRun = account.Balance * (account.Account.AccountType == FinanceAccountType.Asset ? 1 : 0); // Only assets contribute to runway
         }
         else
         {
-            totalAssetsToRun = accountsWithBalance
-                .Where(a => a.Account.AccountType == FinanceAccountType.Asset && a.Account.Currency == entity.BaseCurrency)
-                .Sum(a => a.Balance);
+            totalAssetsToRun = totalAssets;
         }
 
         var model = new DashboardViewModel
         {
             Entity = entity,
-            Accounts = accountsWithBalance,
+            Accounts = accountsWithBalance.Where(a => a.Account.ShowInDashboard).ToList(),
             RecentTransactions = recentTransactions,
             MonthlyBurnRate = totalBurn,
             RunwayMonths = totalBurn > 0 ? totalAssetsToRun / totalBurn : null,
             FilteredAccount = filteredAccount,
-            FilteredAccountBalance = accountId.HasValue ? totalAssetsToRun : 0,
+            FilteredAccountBalance = accountId.HasValue ? accountsWithBalance.First(a => a.Account.Id == accountId).Balance : 0,
             Year = year.Value,
             Month = month,
             TotalInflow = totalInflow,
@@ -275,15 +314,28 @@ public class LedgerController(
             .ThenBy(a => a.AccountName)
             .ToListAsync();
 
-        var accountsWithBalance = new List<AccountWithBalance>();
-        foreach (var account in accounts)
+        var sourceSums = await dbContext.Transactions
+            .Where(t => t.SourceAccount!.CompanyEntityId == id)
+            .GroupBy(t => t.SourceAccountId)
+            .Select(g => new { AccountId = g.Key, Sum = (decimal?)g.Sum(t => t.Amount) ?? 0 })
+            .ToDictionaryAsync(x => x.AccountId, x => x.Sum);
+
+        var destinationSums = await dbContext.Transactions
+            .Where(t => t.DestinationAccount!.CompanyEntityId == id)
+            .GroupBy(t => t.DestinationAccountId)
+            .Select(g => new { AccountId = g.Key, Sum = (decimal?)g.Sum(t => t.Amount * t.ExchangeRate) ?? 0 })
+            .ToDictionaryAsync(x => x.AccountId, x => x.Sum);
+
+        var accountsWithBalance = accounts.Select(a => new AccountWithBalance
         {
-            accountsWithBalance.Add(new AccountWithBalance
+            Account = a,
+            Balance = a.AccountType switch
             {
-                Account = account,
-                Balance = await GetBalance(account.Id, endTime)
-            });
-        }
+                FinanceAccountType.Asset or FinanceAccountType.Expense => (destinationSums.GetValueOrDefault(a.Id) - sourceSums.GetValueOrDefault(a.Id)),
+                FinanceAccountType.Liability or FinanceAccountType.Equity or FinanceAccountType.Income => (sourceSums.GetValueOrDefault(a.Id) - destinationSums.GetValueOrDefault(a.Id)),
+                _ => 0
+            }
+        }).ToList();
 
         var model = new AccountsViewModel
         {
@@ -435,6 +487,24 @@ public class LedgerController(
     {
         if (!ModelState.IsValid)
         {
+            ViewBag.Accounts = await dbContext.FinanceAccounts
+                .Where(a => a.CompanyEntityId == model.EntityId && !a.IsArchived)
+                .ToListAsync();
+            model.PageTitle = localizer["New Transaction"];
+            return this.StackView(model);
+        }
+
+        var sourceAccount = await dbContext.FinanceAccounts.FindAsync(model.SourceAccountId);
+        var destinationAccount = await dbContext.FinanceAccounts.FindAsync(model.DestinationAccountId);
+
+        if (sourceAccount == null || destinationAccount == null)
+        {
+            return NotFound();
+        }
+
+        if (sourceAccount.CompanyEntityId != model.EntityId && destinationAccount.CompanyEntityId != model.EntityId)
+        {
+            ModelState.AddModelError(string.Empty, "At least one of the accounts must belong to the current entity.");
             ViewBag.Accounts = await dbContext.FinanceAccounts
                 .Where(a => a.CompanyEntityId == model.EntityId && !a.IsArchived)
                 .ToListAsync();

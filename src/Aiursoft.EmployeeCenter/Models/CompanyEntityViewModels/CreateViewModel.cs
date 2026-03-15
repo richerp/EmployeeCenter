@@ -120,6 +120,11 @@ public class CreateViewModel : UiStackLayoutViewModel
     [MaxLength(100, ErrorMessage = "The {0} cannot exceed {1} characters.")]
     public string? CompanySecretary { get; set; }
 
+    [Required(ErrorMessage = "The {0} is required.")]
+    [Display(Name = "Base Currency")]
+    [MaxLength(10, ErrorMessage = "The {0} cannot exceed {1} characters.")]
+    public string BaseCurrency { get; set; } = "CNY";
+
     [Display(Name = "Create corresponding ledger")]
     public bool CreateLedger { get; set; }
 }

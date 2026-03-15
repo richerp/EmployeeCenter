@@ -158,6 +158,18 @@
                             <input asp-for="CompanySecretary" class="form-control" />
                             <span asp-validation-for="CompanySecretary" class="text-danger"></span>
                         </div>
+                        <div class="form-group">
+                            <label asp-for="BaseCurrency"></label>
+                            <select asp-for="BaseCurrency" class="form-control">
+                                <option value="CNY">CNY - Chinese Yuan</option>
+                                <option value="HKD">HKD - Hong Kong Dollar</option>
+                                <option value="USD">USD - US Dollar</option>
+                                <option value="EUR">EUR - Euro</option>
+                                <option value="GBP">GBP - British Pound</option>
+                                <option value="JPY">JPY - Japanese Yen</option>
+                            </select>
+                            <span asp-validation-for="BaseCurrency" class="text-danger"></span>
+                        </div>
                         <div class="form-group form-check">
                             <input asp-for="CreateLedger" class="form-check-input" />
                             <label asp-for="CreateLedger" class="form-check-label"></label>

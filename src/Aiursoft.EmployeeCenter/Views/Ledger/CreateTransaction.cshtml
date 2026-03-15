@@ -61,6 +61,10 @@
                         <div class="form-group">
                             <label asp-for="ExchangeRate">@Localizer["Exchange Rate"] (Source / Destination)</label>
                             <input asp-for="ExchangeRate" class="form-control" type="number" step="0.000001" />
+                            <div id="exchangeRateHint" class="alert alert-info mt-2" style="display: none;">
+                                <i class="fas fa-info-circle mr-1"></i>
+                                <span id="hintText"></span>
+                            </div>
                             <small class="form-text text-muted">@Localizer["Default is 1. How much Destination currency equals 1 Source currency unit."]</small>
                             <span asp-validation-for="ExchangeRate" class="text-danger"></span>
                         </div>
@@ -113,4 +117,33 @@
 @* ReSharper disable once Razor.SectionNotResolved *@
 @section scripts {
     <script src="~/node_modules/dropify/dist/js/dropify.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            function updateExchangeRateHint() {
+                var sourceOption = $('#SourceAccountId option:selected');
+                var destOption = $('#DestinationAccountId option:selected');
+                
+                if (sourceOption.val() && destOption.val()) {
+                    var sourceText = sourceOption.text();
+                    var destText = destOption.text();
+                    
+                    var sourceCurrency = sourceText.substring(sourceText.lastIndexOf(' - ') + 3, sourceText.lastIndexOf(')'));
+                    var destCurrency = destText.substring(destText.lastIndexOf(' - ') + 3, destText.lastIndexOf(')'));
+                    
+                    if (sourceCurrency !== destCurrency) {
+                        $('#hintText').text("You are transferring from " + sourceCurrency + " to " + destCurrency + ". The exchange rate should be: 1 " + sourceCurrency + " = [Exchange Rate] " + destCurrency + ".");
+                        $('#exchangeRateHint').fadeIn();
+                    } else {
+                        $('#exchangeRateHint').fadeOut();
+                        $('#ExchangeRate').val(1);
+                    }
+                } else {
+                    $('#exchangeRateHint').fadeOut();
+                }
+            }
+            
+            $('#SourceAccountId, #DestinationAccountId').change(updateExchangeRateHint);
+            updateExchangeRateHint();
+        });
+    </script>
 }
