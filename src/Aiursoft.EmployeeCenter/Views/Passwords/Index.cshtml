@@ -95,7 +95,7 @@
                     @foreach (var share in Model.SharedWithMe)
                     {
                         <tr>
-                            <td><strong>@share.Password!.Title</strong></td>
+                            <td><strong>@share.Password.Title</strong></td>
                                                                         <td>
                                                                             <a asp-controller="Users" asp-action="Details" asp-route-id="@share.Password.CreatorId" class="text-body">
                                                                                 @share.Password.Creator!.DisplayName
