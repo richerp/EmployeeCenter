@@ -153,7 +153,7 @@ public class UsersController(
     {
         return this.StackView(new CreateViewModel
         {
-            AllCompanyEntities = await context.CompanyEntities.Where(c => c.CreateLedger).ToListAsync()
+            AllCompanyEntities = await context.CompanyEntities.ToListAsync()
         });
     }
 
@@ -189,13 +189,13 @@ public class UsersController(
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
                 }
-                newUser.AllCompanyEntities = await context.CompanyEntities.Where(c => c.CreateLedger).ToListAsync();
+                newUser.AllCompanyEntities = await context.CompanyEntities.ToListAsync();
                 return this.StackView(newUser);
             }
 
             return RedirectToAction(nameof(Details), new { id = user.Id });
         }
-        newUser.AllCompanyEntities = await context.CompanyEntities.Where(c => c.CreateLedger).ToListAsync();
+        newUser.AllCompanyEntities = await context.CompanyEntities.ToListAsync();
         return this.StackView(newUser);
     }
 
@@ -232,7 +232,7 @@ public class UsersController(
             ManagerId = user.ManagerId,
             ManagerDisplayName = user.Manager?.DisplayName,
             SigningEntityId = user.SigningEntityId,
-            AllCompanyEntities = await context.CompanyEntities.Where(c => c.CreateLedger).ToListAsync(),
+            AllCompanyEntities = await context.CompanyEntities.ToListAsync(),
             AllRoles = allRoles.Select(role => new UserRoleViewModel
             {
                 RoleName = role.Name!,
@@ -252,7 +252,7 @@ public class UsersController(
     {
         if (!ModelState.IsValid)
         {
-            model.AllCompanyEntities = await context.CompanyEntities.Where(c => c.CreateLedger).ToListAsync();
+            model.AllCompanyEntities = await context.CompanyEntities.ToListAsync();
             return this.StackView(model);
         }
         var userInDb = await userManager.FindByIdAsync(model.Id);

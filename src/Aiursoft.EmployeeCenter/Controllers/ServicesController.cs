@@ -50,7 +50,7 @@ public class ServicesController(
     {
         return this.StackView(new CreateServiceViewModel
         {
-            AllOwners = await context.CompanyEntities.Where(c => c.CreateLedger).ToListAsync(),
+            AllOwners = await context.CompanyEntities.ToListAsync(),
             AllDnsProviders = await context.DnsProviders.ToListAsync(),
             AllServices = await context.Services.ToListAsync(),
             AllServers = await context.Servers.ToListAsync()
@@ -87,7 +87,7 @@ public class ServicesController(
             return RedirectToAction(nameof(Index));
         }
 
-        model.AllOwners = await context.CompanyEntities.Where(c => c.CreateLedger).ToListAsync();
+        model.AllOwners = await context.CompanyEntities.ToListAsync();
         model.AllDnsProviders = await context.DnsProviders.ToListAsync();
         model.AllServices = await context.Services.ToListAsync();
         model.AllServers = await context.Servers.ToListAsync();
@@ -116,7 +116,7 @@ public class ServicesController(
             AuthentikIntegrated = service.AuthentikIntegrated,
             IsSelfDeveloped = service.IsSelfDeveloped,
             Remark = service.Remark,
-            AllOwners = await context.CompanyEntities.Where(c => c.CreateLedger).ToListAsync(),
+            AllOwners = await context.CompanyEntities.ToListAsync(),
             AllDnsProviders = await context.DnsProviders.ToListAsync(),
             AllServices = await context.Services.Where(s => s.Id != id).ToListAsync(),
             AllServers = await context.Servers.ToListAsync()
@@ -152,7 +152,7 @@ public class ServicesController(
             return RedirectToAction(nameof(Index));
         }
 
-        model.AllOwners = await context.CompanyEntities.Where(c => c.CreateLedger).ToListAsync();
+        model.AllOwners = await context.CompanyEntities.ToListAsync();
         model.AllDnsProviders = await context.DnsProviders.ToListAsync();
         model.AllServices = await context.Services.Where(s => s.Id != model.Id).ToListAsync();
         model.AllServers = await context.Servers.ToListAsync();
@@ -320,7 +320,6 @@ public class ServicesController(
     public async Task<IActionResult> GetCompanyEntities()
     {
         var entities = await context.CompanyEntities
-            .Where(e => e.CreateLedger)
             .OrderBy(e => e.CompanyName)
             .ToListAsync();
         return Json(entities.Select(e => new { e.Id, e.CompanyName }));
