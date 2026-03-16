@@ -19,6 +19,7 @@ public class PasswordsController(
     RoleManager<IdentityRole> roleManager,
     IAuthorizationService authorizationService,
     StorageService storageService,
+    ILogger<PasswordsController> logger,
     EmployeeCenterDbContext context)
     : Controller
 {
@@ -182,17 +183,18 @@ public class PasswordsController(
             // Cleanup old file if changed or removed
             if (!string.IsNullOrWhiteSpace(password.FilePath) && password.FilePath != model.FilePath)
             {
+                var oldPhysicalPath = string.Empty;
                 try
                 {
-                    var oldPhysicalPath = storageService.GetFilePhysicalPath(password.FilePath, isVault: true);
+                    oldPhysicalPath = storageService.GetFilePhysicalPath(password.FilePath, isVault: true);
                     if (System.IO.File.Exists(oldPhysicalPath))
                     {
                         System.IO.File.Delete(oldPhysicalPath);
                     }
                 }
-                catch
+                catch (Exception e)
                 {
-                    // Ignore cleanup failures
+                    logger.LogError(e, "Failed to cleanup old password attachment at {Path}", oldPhysicalPath);
                 }
             }
 
@@ -224,17 +226,18 @@ public class PasswordsController(
         // Cleanup attachment file
         if (!string.IsNullOrWhiteSpace(password.FilePath))
         {
+            var physicalPath = string.Empty;
             try
             {
-                var physicalPath = storageService.GetFilePhysicalPath(password.FilePath, isVault: true);
+                physicalPath = storageService.GetFilePhysicalPath(password.FilePath, isVault: true);
                 if (System.IO.File.Exists(physicalPath))
                 {
                     System.IO.File.Delete(physicalPath);
                 }
             }
-            catch
+            catch (Exception e)
             {
-                // Ignore cleanup failures
+                logger.LogError(e, "Failed to cleanup password attachment at {Path}", physicalPath);
             }
         }
 

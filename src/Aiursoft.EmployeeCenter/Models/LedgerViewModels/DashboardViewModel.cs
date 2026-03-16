@@ -13,71 +13,21 @@ public class AccountWithBalance
     public decimal Balance { get; set; }
 }
 
+/// <summary>
+/// Lightweight view model for the Dashboard page skeleton.
+/// All heavy statistics are loaded asynchronously via JavaScript calling separate API endpoints.
+/// </summary>
 public class DashboardViewModel : UiStackLayoutViewModel
 {
     [Display(Name = "Entity")]
     public required CompanyEntity Entity { get; set; }
 
-    [Display(Name = "Accounts")]
-    public List<AccountWithBalance> Accounts { get; set; } = new();
-
-    [Display(Name = "Recent Transactions")]
-    public List<Transaction> RecentTransactions { get; set; } = new();
-
-    [Display(Name = "Monthly Burn Rate")]
-    public decimal MonthlyBurnRate { get; set; }
-
-    [Display(Name = "Runway (Months)")]
-    public decimal? RunwayMonths { get; set; }
-
     [Display(Name = "Filtered Account")]
     public FinanceAccount? FilteredAccount { get; set; }
-
-    [Display(Name = "Filtered Account Balance")]
-    public decimal FilteredAccountBalance { get; set; }
 
     [Display(Name = "Year")]
     public int Year { get; set; }
 
     [Display(Name = "Month")]
     public int? Month { get; set; }
-
-    [Display(Name = "Total Inflow")]
-    public decimal TotalInflow { get; set; }
-
-    [Display(Name = "Total Outflow")]
-    public decimal TotalOutflow { get; set; }
-
-    [Display(Name = "Chart Labels")]
-    public string[] ChartLabels { get; set; } = [];
-
-    [Display(Name = "Chart Inflow Data")]
-    public decimal[] ChartInflowData { get; set; } = [];
-
-    [Display(Name = "Chart Outflow Data")]
-    public decimal[] ChartOutflowData { get; set; } = [];
-
-    [Display(Name = "Inflow Distribution")]
-    public Dictionary<string, decimal> InflowDistribution { get; set; } = new();
-
-    [Display(Name = "Outflow Distribution")]
-    public Dictionary<string, decimal> OutflowDistribution { get; set; } = new();
-
-    [Display(Name = "Total Assets")]
-    public decimal TotalAssets { get; set; }
-
-    [Display(Name = "Total Liabilities")]
-    public decimal TotalLiabilities { get; set; }
-
-    [Display(Name = "Total Equity")]
-    public decimal TotalEquity { get; set; }
-
-    [Display(Name = "Revenue for Period")]
-    public decimal RevenueForPeriod { get; set; }
-
-    [Display(Name = "Expenses for Period")]
-    public decimal ExpensesForPeriod { get; set; }
-
-    [Display(Name = "Net Income for Period")]
-    public decimal NetIncomeForPeriod { get; set; }
 }
