@@ -51,6 +51,9 @@
   <data name="Bank Info" xml:space="preserve">
     <value>Τραπεζικά Στοιχεία</value>
   </data>
+  <data name="Base Currency" xml:space="preserve">
+    <value>Βασικό Νομίσμα</value>
+  </data>
   <data name="Basic Information" xml:space="preserve">
     <value>Βασικές Πληροφορίες</value>
   </data>

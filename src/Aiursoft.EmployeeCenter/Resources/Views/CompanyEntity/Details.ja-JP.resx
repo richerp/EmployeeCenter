@@ -51,6 +51,9 @@
   <data name="Bank Info" xml:space="preserve">
     <value>銀行情報</value>
   </data>
+  <data name="Base Currency" xml:space="preserve">
+    <value>基本通貨</value>
+  </data>
   <data name="Basic Information" xml:space="preserve">
     <value>基本情報</value>
   </data>

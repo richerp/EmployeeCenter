@@ -39,6 +39,9 @@
   <data name="Entity" xml:space="preserve">
     <value>Organisaatio</value>
   </data>
+  <data name="Expenses for Period" xml:space="preserve">
+    <value>Kauden kulut</value>
+  </data>
   <data name="Filtered Account" xml:space="preserve">
     <value>Suodatettu tili</value>
   </data>
@@ -54,17 +57,32 @@
   <data name="Monthly Burn Rate" xml:space="preserve">
     <value>Kuukausittainen palamisnopeus</value>
   </data>
+  <data name="Net Income for Period" xml:space="preserve">
+    <value>Kauden nettotulos</value>
+  </data>
   <data name="Outflow Distribution" xml:space="preserve">
     <value>Maksujen jakautuminen</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Viimeisimmät siirrot</value>
   </data>
+  <data name="Revenue for Period" xml:space="preserve">
+    <value>Kauden tuotot</value>
+  </data>
   <data name="Runway (Months)" xml:space="preserve">
     <value>Lentokenttä (kuukaudet)</value>
   </data>
+  <data name="Total Assets" xml:space="preserve">
+    <value>Koko omaisuus</value>
+  </data>
+  <data name="Total Equity" xml:space="preserve">
+    <value>Kokonaisoma</value>
+  </data>
   <data name="Total Inflow" xml:space="preserve">
     <value>Yhteensä saapuva</value>
+  </data>
+  <data name="Total Liabilities" xml:space="preserve">
+    <value>Kokonaisvelat</value>
   </data>
   <data name="Total Outflow" xml:space="preserve">
     <value>Yhteinen ulosvirtaus</value>

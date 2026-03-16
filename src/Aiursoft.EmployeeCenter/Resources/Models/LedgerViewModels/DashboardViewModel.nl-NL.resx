@@ -39,6 +39,9 @@
   <data name="Entity" xml:space="preserve">
     <value>Entiteit</value>
   </data>
+  <data name="Expenses for Period" xml:space="preserve">
+    <value>Kosten voor periode</value>
+  </data>
   <data name="Filtered Account" xml:space="preserve">
     <value>Gefilterd account</value>
   </data>
@@ -54,17 +57,32 @@
   <data name="Monthly Burn Rate" xml:space="preserve">
     <value>Maandelijkse verbrandingscijfer</value>
   </data>
+  <data name="Net Income for Period" xml:space="preserve">
+    <value>Netto-inkomen voor periode</value>
+  </data>
   <data name="Outflow Distribution" xml:space="preserve">
     <value>Uitstroomverdeling</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Recent Transacties</value>
   </data>
+  <data name="Revenue for Period" xml:space="preserve">
+    <value>Omzet voor periode</value>
+  </data>
   <data name="Runway (Months)" xml:space="preserve">
     <value>Vliegveld (maanden)</value>
   </data>
+  <data name="Total Assets" xml:space="preserve">
+    <value>Totale activa</value>
+  </data>
+  <data name="Total Equity" xml:space="preserve">
+    <value>Totaal Eigen Vermogen</value>
+  </data>
   <data name="Total Inflow" xml:space="preserve">
     <value>Totale Inflow</value>
+  </data>
+  <data name="Total Liabilities" xml:space="preserve">
+    <value>Totale Schulden</value>
   </data>
   <data name="Total Outflow" xml:space="preserve">
     <value>Totaal uitstroom</value>

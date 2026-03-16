@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="All Year" xml:space="preserve">
+      <data name="Account Balances" xml:space="preserve">
+    <value>Ισοζύγια Λογαριασμών</value>
+  </data>
+  <data name="All Year" xml:space="preserve">
     <value>Όλο το έτος</value>
   </data>
   <data name="Amount" xml:space="preserve">
@@ -38,6 +41,9 @@
   </data>
   <data name="Edit" xml:space="preserve">
     <value>Επεξεργασία</value>
+  </data>
+  <data name="Equity" xml:space="preserve">
+    <value>Κεφάλαιο</value>
   </data>
   <data name="Fix Error" xml:space="preserve">
     <value>Διόρθωση Σφάλματος</value>
@@ -69,6 +75,9 @@
   <data name="Months" xml:space="preserve">
     <value>Μήνες</value>
   </data>
+  <data name="Net Profit" xml:space="preserve">
+    <value>Καθαρό Κέρδος</value>
+  </data>
   <data name="New Transaction" xml:space="preserve">
     <value>Νέα Συναλλαγή</value>
   </data>
@@ -96,11 +105,23 @@
   <data name="To" xml:space="preserve">
     <value>Προς</value>
   </data>
+  <data name="Total Assets" xml:space="preserve">
+    <value>Σύνολο Περιουσιακών Στοιχείων</value>
+  </data>
+  <data name="Total Expenses" xml:space="preserve">
+    <value>Συνολικά Έξοδα</value>
+  </data>
   <data name="Total Inflow" xml:space="preserve">
     <value>Σύνολο Εισροών</value>
   </data>
+  <data name="Total Liabilities" xml:space="preserve">
+    <value>Σύνολο Υποχρεώσεων</value>
+  </data>
   <data name="Total Outflow" xml:space="preserve">
     <value>Συνολική Εξόδου</value>
+  </data>
+  <data name="Total Revenue" xml:space="preserve">
+    <value>Συνολικά Έσοδα</value>
   </data>
   <data name="View All" xml:space="preserve">
     <value>Προβολή Όλων</value>

@@ -39,6 +39,9 @@
   <data name="Entity" xml:space="preserve">
     <value>Entitate</value>
   </data>
+  <data name="Expenses for Period" xml:space="preserve">
+    <value>Cheltuieli pentru Perioadă</value>
+  </data>
   <data name="Filtered Account" xml:space="preserve">
     <value>Cont filtrat</value>
   </data>
@@ -54,17 +57,32 @@
   <data name="Monthly Burn Rate" xml:space="preserve">
     <value>Rata lunară de consum</value>
   </data>
+  <data name="Net Income for Period" xml:space="preserve">
+    <value>Câștig Net pentru Perioadă</value>
+  </data>
   <data name="Outflow Distribution" xml:space="preserve">
     <value>Distribuția Cheltuielilor</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Tranzacții recente</value>
   </data>
+  <data name="Revenue for Period" xml:space="preserve">
+    <value>Venituri pentru Perioadă</value>
+  </data>
   <data name="Runway (Months)" xml:space="preserve">
     <value>Runway (Luni)</value>
   </data>
+  <data name="Total Assets" xml:space="preserve">
+    <value>Total Active Assets</value>
+  </data>
+  <data name="Total Equity" xml:space="preserve">
+    <value>Totalul Capitalurilor Proprii</value>
+  </data>
   <data name="Total Inflow" xml:space="preserve">
     <value>Intrare Totală</value>
+  </data>
+  <data name="Total Liabilities" xml:space="preserve">
+    <value>Datorii Totale</value>
   </data>
   <data name="Total Outflow" xml:space="preserve">
     <value>Total Cheltuieli</value>

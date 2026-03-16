@@ -33,6 +33,9 @@
   <data name="Bank Name" xml:space="preserve">
     <value>Banknavn</value>
   </data>
+  <data name="Base Currency" xml:space="preserve">
+    <value>Basisvaluta</value>
+  </data>
   <data name="Business License / BR Scan" xml:space="preserve">
     <value>Erhvervslicens / BR-scan</value>
   </data>

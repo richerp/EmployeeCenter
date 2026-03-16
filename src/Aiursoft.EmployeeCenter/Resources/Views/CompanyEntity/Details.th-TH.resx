@@ -51,6 +51,9 @@
   <data name="Bank Info" xml:space="preserve">
     <value>ข้อมูลธนาคาร</value>
   </data>
+  <data name="Base Currency" xml:space="preserve">
+    <value>สกุลเงินหลัก</value>
+  </data>
   <data name="Basic Information" xml:space="preserve">
     <value>ข้อมูลพื้นฐาน</value>
   </data>

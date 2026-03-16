@@ -39,6 +39,9 @@
   <data name="Entity" xml:space="preserve">
     <value>Enhed</value>
   </data>
+  <data name="Expenses for Period" xml:space="preserve">
+    <value>Udgifter for periode</value>
+  </data>
   <data name="Filtered Account" xml:space="preserve">
     <value>Filteret konto</value>
   </data>
@@ -54,17 +57,32 @@
   <data name="Monthly Burn Rate" xml:space="preserve">
     <value>Månedlig forbrugsrate</value>
   </data>
+  <data name="Net Income for Period" xml:space="preserve">
+    <value>Nettoindtjening for periode</value>
+  </data>
   <data name="Outflow Distribution" xml:space="preserve">
     <value>Udstrømning Fordeling</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Seneste transaktioner</value>
   </data>
+  <data name="Revenue for Period" xml:space="preserve">
+    <value>Omsætning for periode</value>
+  </data>
   <data name="Runway (Months)" xml:space="preserve">
     <value>Flyvebane (Måneder)</value>
   </data>
+  <data name="Total Assets" xml:space="preserve">
+    <value>Samlede Aktiver</value>
+  </data>
+  <data name="Total Equity" xml:space="preserve">
+    <value>Samlet Egenkapital</value>
+  </data>
   <data name="Total Inflow" xml:space="preserve">
     <value>Samlet indflydelse</value>
+  </data>
+  <data name="Total Liabilities" xml:space="preserve">
+    <value>Samlede forpligtelser</value>
   </data>
   <data name="Total Outflow" xml:space="preserve">
     <value>Total udstrømning</value>

@@ -51,6 +51,9 @@
   <data name="Bank Info" xml:space="preserve">
     <value>Pankkitiedot</value>
   </data>
+  <data name="Base Currency" xml:space="preserve">
+    <value>Peruspääomavaluutta</value>
+  </data>
   <data name="Basic Information" xml:space="preserve">
     <value>Perustiedot</value>
   </data>

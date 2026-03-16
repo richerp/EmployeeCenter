@@ -39,6 +39,9 @@
   <data name="Entity" xml:space="preserve">
     <value>實體</value>
   </data>
+  <data name="Expenses for Period" xml:space="preserve">
+    <value>本期費用</value>
+  </data>
   <data name="Filtered Account" xml:space="preserve">
     <value>已篩選的帳戶</value>
   </data>
@@ -54,17 +57,32 @@
   <data name="Monthly Burn Rate" xml:space="preserve">
     <value>每月燒錢率</value>
   </data>
+  <data name="Net Income for Period" xml:space="preserve">
+    <value>本期淨利</value>
+  </data>
   <data name="Outflow Distribution" xml:space="preserve">
     <value>支出分布</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>最近交易</value>
   </data>
+  <data name="Revenue for Period" xml:space="preserve">
+    <value>本期營收</value>
+  </data>
   <data name="Runway (Months)" xml:space="preserve">
     <value>航程（月數）</value>
   </data>
+  <data name="Total Assets" xml:space="preserve">
+    <value>總資產</value>
+  </data>
+  <data name="Total Equity" xml:space="preserve">
+    <value>總權益</value>
+  </data>
   <data name="Total Inflow" xml:space="preserve">
     <value>總流入</value>
+  </data>
+  <data name="Total Liabilities" xml:space="preserve">
+    <value>總負債</value>
   </data>
   <data name="Total Outflow" xml:space="preserve">
     <value>總支出</value>

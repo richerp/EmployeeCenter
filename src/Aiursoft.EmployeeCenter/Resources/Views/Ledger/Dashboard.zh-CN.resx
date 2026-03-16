@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Account Transactions" xml:space="preserve">
+      <data name="Account Balances" xml:space="preserve">
+    <value>账户余额</value>
+  </data>
+  <data name="Account Transactions" xml:space="preserve">
     <value>账户交易</value>
   </data>
   <data name="All Year" xml:space="preserve">
@@ -41,6 +44,9 @@
   </data>
   <data name="Edit" xml:space="preserve">
     <value>编辑</value>
+  </data>
+  <data name="Equity" xml:space="preserve">
+    <value>权益</value>
   </data>
   <data name="Fix Error" xml:space="preserve">
     <value>修正错误</value>
@@ -72,6 +78,9 @@
   <data name="Months" xml:space="preserve">
     <value>月</value>
   </data>
+  <data name="Net Profit" xml:space="preserve">
+    <value>净利润</value>
+  </data>
   <data name="New Transaction" xml:space="preserve">
     <value>新建交易</value>
   </data>
@@ -102,11 +111,20 @@
   <data name="Total Assets" xml:space="preserve">
     <value>总资产</value>
   </data>
+  <data name="Total Expenses" xml:space="preserve">
+    <value>总支出</value>
+  </data>
   <data name="Total Inflow" xml:space="preserve">
     <value>总流入</value>
   </data>
+  <data name="Total Liabilities" xml:space="preserve">
+    <value>总负债</value>
+  </data>
   <data name="Total Outflow" xml:space="preserve">
     <value>总流出</value>
+  </data>
+  <data name="Total Revenue" xml:space="preserve">
+    <value>总收入</value>
   </data>
   <data name="View All" xml:space="preserve">
     <value>查看全部</value>

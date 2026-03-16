@@ -39,6 +39,9 @@
   <data name="Entity" xml:space="preserve">
     <value>Организация</value>
   </data>
+  <data name="Expenses for Period" xml:space="preserve">
+    <value>Расходы за период</value>
+  </data>
   <data name="Filtered Account" xml:space="preserve">
     <value>Отфильтрованный счёт</value>
   </data>
@@ -54,17 +57,32 @@
   <data name="Monthly Burn Rate" xml:space="preserve">
     <value>Месячная норма расходов</value>
   </data>
+  <data name="Net Income for Period" xml:space="preserve">
+    <value>Чистая прибыль за период</value>
+  </data>
   <data name="Outflow Distribution" xml:space="preserve">
     <value>Распределение расходов</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Последние транзакции</value>
   </data>
+  <data name="Revenue for Period" xml:space="preserve">
+    <value>Выручка за период</value>
+  </data>
   <data name="Runway (Months)" xml:space="preserve">
     <value>Запасы (месяцы)</value>
   </data>
+  <data name="Total Assets" xml:space="preserve">
+    <value>Общие активы</value>
+  </data>
+  <data name="Total Equity" xml:space="preserve">
+    <value>Общий капитал</value>
+  </data>
   <data name="Total Inflow" xml:space="preserve">
     <value>Общий приток</value>
+  </data>
+  <data name="Total Liabilities" xml:space="preserve">
+    <value>Общие обязательства</value>
   </data>
   <data name="Total Outflow" xml:space="preserve">
     <value>Общий отток</value>
