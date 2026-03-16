@@ -188,36 +188,56 @@ public class LedgerController(
         var yearEnd = yearStart.AddYears(1);
 
         // Optimize Chart Data (Database Aggregation)
-        var yearInflowByCurrency = await dbContext.Transactions
+        var yearInflowRows = await dbContext.Transactions
             .Where(t => t.SourceAccount!.CompanyEntityId == id && 
                         t.SourceAccount!.AccountType == FinanceAccountType.Income &&
                         t.TransactionTime >= yearStart && t.TransactionTime < yearEnd)
-            .GroupBy(t => new { t.TransactionTime.Month, t.SourceAccount!.Currency })
-            .Select(g => new { g.Key.Month, g.Key.Currency, Sum = g.Sum(t => t.Amount) })
+            .Select(t => new { t.TransactionTime, Currency = t.SourceAccount!.Currency, t.Amount })
+            .AsNoTracking()
             .ToListAsync();
 
-        var yearOutflowByCurrency = await dbContext.Transactions
+        var yearInflowByCurrency = yearInflowRows
+            .GroupBy(t => new { t.TransactionTime.Month, t.Currency })
+            .Select(g => new { g.Key.Month, g.Key.Currency, Sum = g.Sum(t => t.Amount) })
+            .ToList();
+
+        var yearOutflowRows = await dbContext.Transactions
             .Where(t => t.DestinationAccount!.CompanyEntityId == id && 
                         t.DestinationAccount!.AccountType == FinanceAccountType.Expense &&
                         t.TransactionTime >= yearStart && t.TransactionTime < yearEnd)
-            .GroupBy(t => new { t.TransactionTime.Month, t.DestinationAccount!.Currency })
-            .Select(g => new { g.Key.Month, g.Key.Currency, Sum = g.Sum(t => t.Amount * t.ExchangeRate) })
+            .Select(t => new { t.TransactionTime, Currency = t.DestinationAccount!.Currency, ConvertedAmount = t.Amount * t.ExchangeRate })
+            .AsNoTracking()
             .ToListAsync();
+
+        var yearOutflowByCurrency = yearOutflowRows
+            .GroupBy(t => new { t.TransactionTime.Month, t.Currency })
+            .Select(g => new { g.Key.Month, g.Key.Currency, Sum = g.Sum(t => t.ConvertedAmount) })
+            .ToList();
 
         if (accountId.HasValue)
         {
             // ... (keep account specific logic as it is already in SQL)
-            var accountInflow = await dbContext.Transactions
+            var accountInflowRows = await dbContext.Transactions
                 .Where(t => t.DestinationAccountId == accountId && t.TransactionTime >= yearStart && t.TransactionTime < yearEnd)
-                .GroupBy(t => t.TransactionTime.Month)
-                .Select(g => new { Month = g.Key, Sum = g.Sum(t => t.Amount * t.ExchangeRate) })
+                .Select(t => new { t.TransactionTime, ConvertedAmount = t.Amount * t.ExchangeRate })
+                .AsNoTracking()
                 .ToListAsync();
+
+            var accountInflow = accountInflowRows
+                .GroupBy(t => t.TransactionTime.Month)
+                .Select(g => new { Month = g.Key, Sum = g.Sum(t => t.ConvertedAmount) })
+                .ToList();
             
-            var accountOutflow = await dbContext.Transactions
+            var accountOutflowRows = await dbContext.Transactions
                 .Where(t => t.SourceAccountId == accountId && t.TransactionTime >= yearStart && t.TransactionTime < yearEnd)
+                .Select(t => new { t.TransactionTime, t.Amount })
+                .AsNoTracking()
+                .ToListAsync();
+
+            var accountOutflow = accountOutflowRows
                 .GroupBy(t => t.TransactionTime.Month)
                 .Select(g => new { Month = g.Key, Sum = g.Sum(t => t.Amount) })
-                .ToListAsync();
+                .ToList();
 
             foreach (var d in accountInflow) chartInflow[d.Month - 1] = d.Sum;
             foreach (var d in accountOutflow) chartOutflow[d.Month - 1] = d.Sum;
