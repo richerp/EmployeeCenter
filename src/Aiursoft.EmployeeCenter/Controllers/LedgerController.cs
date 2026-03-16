@@ -192,7 +192,7 @@ public class LedgerController(
             .Where(t => t.SourceAccount!.CompanyEntityId == id && 
                         t.SourceAccount!.AccountType == FinanceAccountType.Income &&
                         t.TransactionTime >= yearStart && t.TransactionTime < yearEnd)
-            .Select(t => new { t.TransactionTime, Currency = t.SourceAccount!.Currency, t.Amount })
+            .Select(t => new { t.TransactionTime, t.SourceAccount!.Currency, t.Amount })
             .AsNoTracking()
             .ToListAsync();
 
@@ -205,7 +205,7 @@ public class LedgerController(
             .Where(t => t.DestinationAccount!.CompanyEntityId == id && 
                         t.DestinationAccount!.AccountType == FinanceAccountType.Expense &&
                         t.TransactionTime >= yearStart && t.TransactionTime < yearEnd)
-            .Select(t => new { t.TransactionTime, Currency = t.DestinationAccount!.Currency, ConvertedAmount = t.Amount * t.ExchangeRate })
+            .Select(t => new { t.TransactionTime, t.DestinationAccount!.Currency, ConvertedAmount = t.Amount * t.ExchangeRate })
             .AsNoTracking()
             .ToListAsync();
 
