@@ -1,3 +1,4 @@
+using Aiursoft.EmployeeCenter.Services.FileStorage;
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
@@ -258,7 +259,7 @@ public class PasswordTests
         string logicalPath = "password-attachments/test-file.txt";
         using (var scope = _server!.Services.CreateScope())
         {
-            var folders = scope.ServiceProvider.GetRequiredService<Aiursoft.EmployeeCenter.Services.FileStorage.FeatureFoldersProvider>();
+            var folders = scope.ServiceProvider.GetRequiredService<FeatureFoldersProvider>();
             var vaultRoot = folders.GetVaultFolder();
             var physicalPath = Path.Combine(vaultRoot, logicalPath);
             Directory.CreateDirectory(Path.GetDirectoryName(physicalPath)!);
