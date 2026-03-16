@@ -39,6 +39,9 @@
   <data name="Entity" xml:space="preserve">
     <value>Entitas</value>
   </data>
+  <data name="Expenses for Period" xml:space="preserve">
+    <value>Pengeluaran Periode</value>
+  </data>
   <data name="Filtered Account" xml:space="preserve">
     <value>Akun yang Disaring</value>
   </data>
@@ -54,17 +57,32 @@
   <data name="Monthly Burn Rate" xml:space="preserve">
     <value>Tingkat Pembakaran Bulanan</value>
   </data>
+  <data name="Net Income for Period" xml:space="preserve">
+    <value>Laba Bersih Periode</value>
+  </data>
   <data name="Outflow Distribution" xml:space="preserve">
     <value>Distribusi Pengeluaran</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Transaksi Terkini</value>
   </data>
+  <data name="Revenue for Period" xml:space="preserve">
+    <value>Pendapatan untuk Periode</value>
+  </data>
   <data name="Runway (Months)" xml:space="preserve">
     <value>Runway (Bulan)</value>
   </data>
+  <data name="Total Assets" xml:space="preserve">
+    <value>Total Aset</value>
+  </data>
+  <data name="Total Equity" xml:space="preserve">
+    <value>Total Ekuitas</value>
+  </data>
   <data name="Total Inflow" xml:space="preserve">
     <value>Total Masuk</value>
+  </data>
+  <data name="Total Liabilities" xml:space="preserve">
+    <value>Total Kewajiban</value>
   </data>
   <data name="Total Outflow" xml:space="preserve">
     <value>Total Keluaran</value>

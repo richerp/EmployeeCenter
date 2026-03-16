@@ -51,6 +51,9 @@
   <data name="Bank Info" xml:space="preserve">
     <value>Thông tin ngân hàng</value>
   </data>
+  <data name="Base Currency" xml:space="preserve">
+    <value>Tiền tệ cơ sở</value>
+  </data>
   <data name="Basic Information" xml:space="preserve">
     <value>Thông tin cơ bản</value>
   </data>

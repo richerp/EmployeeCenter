@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="All Year" xml:space="preserve">
+      <data name="Account Balances" xml:space="preserve">
+    <value>Saldos das Contas</value>
+  </data>
+  <data name="All Year" xml:space="preserve">
     <value>Todo o Ano</value>
   </data>
   <data name="Amount" xml:space="preserve">
@@ -38,6 +41,9 @@
   </data>
   <data name="Edit" xml:space="preserve">
     <value>Editar</value>
+  </data>
+  <data name="Equity" xml:space="preserve">
+    <value>Patrimônio Líquido</value>
   </data>
   <data name="Fix Error" xml:space="preserve">
     <value>Corrigir Erro</value>
@@ -69,6 +75,9 @@
   <data name="Months" xml:space="preserve">
     <value>Meses</value>
   </data>
+  <data name="Net Profit" xml:space="preserve">
+    <value>Lucro Líquido</value>
+  </data>
   <data name="New Transaction" xml:space="preserve">
     <value>Nova Transação</value>
   </data>
@@ -96,11 +105,23 @@
   <data name="To" xml:space="preserve">
     <value>Para</value>
   </data>
+  <data name="Total Assets" xml:space="preserve">
+    <value>Ativo Total</value>
+  </data>
+  <data name="Total Expenses" xml:space="preserve">
+    <value>Despesas Totais</value>
+  </data>
   <data name="Total Inflow" xml:space="preserve">
     <value>Total de Entradas</value>
   </data>
+  <data name="Total Liabilities" xml:space="preserve">
+    <value>Total de Passivos</value>
+  </data>
   <data name="Total Outflow" xml:space="preserve">
     <value>Total Saída</value>
+  </data>
+  <data name="Total Revenue" xml:space="preserve">
+    <value>Receita Total</value>
   </data>
   <data name="View All" xml:space="preserve">
     <value>Ver Todos</value>

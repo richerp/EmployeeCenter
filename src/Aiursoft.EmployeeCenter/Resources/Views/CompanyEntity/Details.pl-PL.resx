@@ -51,6 +51,9 @@
   <data name="Bank Info" xml:space="preserve">
     <value>Informacje bankowe</value>
   </data>
+  <data name="Base Currency" xml:space="preserve">
+    <value>Waluta bazowa</value>
+  </data>
   <data name="Basic Information" xml:space="preserve">
     <value>Informacje podstawowe</value>
   </data>

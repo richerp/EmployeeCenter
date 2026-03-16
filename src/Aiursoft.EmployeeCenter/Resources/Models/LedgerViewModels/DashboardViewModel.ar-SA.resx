@@ -39,6 +39,9 @@
   <data name="Entity" xml:space="preserve">
     <value>الكيان</value>
   </data>
+  <data name="Expenses for Period" xml:space="preserve">
+    <value>المصروفات للفترة</value>
+  </data>
   <data name="Filtered Account" xml:space="preserve">
     <value>الحساب المُرَشَّح</value>
   </data>
@@ -54,17 +57,32 @@
   <data name="Monthly Burn Rate" xml:space="preserve">
     <value>معدل الاحتراق الشهري</value>
   </data>
+  <data name="Net Income for Period" xml:space="preserve">
+    <value>صافي الدخل للفترة</value>
+  </data>
   <data name="Outflow Distribution" xml:space="preserve">
     <value>توزيع المصروفات</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>المعاملات الحديثة</value>
   </data>
+  <data name="Revenue for Period" xml:space="preserve">
+    <value>الإيرادات للفترة</value>
+  </data>
   <data name="Runway (Months)" xml:space="preserve">
     <value>مدة البقاء (أشهر)</value>
   </data>
+  <data name="Total Assets" xml:space="preserve">
+    <value>إجمالي الأصول</value>
+  </data>
+  <data name="Total Equity" xml:space="preserve">
+    <value>إجمالي حقوق الملكية</value>
+  </data>
   <data name="Total Inflow" xml:space="preserve">
     <value>إجمالي التدفق الوارد</value>
+  </data>
+  <data name="Total Liabilities" xml:space="preserve">
+    <value>إجمالي الخصوم</value>
   </data>
   <data name="Total Outflow" xml:space="preserve">
     <value>إجمالي التدفقات الخارجة</value>

@@ -39,6 +39,9 @@
   <data name="Entity" xml:space="preserve">
     <value>संस्था</value>
   </data>
+  <data name="Expenses for Period" xml:space="preserve">
+    <value>कालावधि के खर्च</value>
+  </data>
   <data name="Filtered Account" xml:space="preserve">
     <value>फ़िल्टर्ड अकाउंट</value>
   </data>
@@ -54,17 +57,32 @@
   <data name="Monthly Burn Rate" xml:space="preserve">
     <value>मासिक बर्न दर</value>
   </data>
+  <data name="Net Income for Period" xml:space="preserve">
+    <value>काल के लिए शुद्ध आय</value>
+  </data>
   <data name="Outflow Distribution" xml:space="preserve">
     <value>निर्गम वितरण</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>हाल के लेनदेन</value>
   </data>
+  <data name="Revenue for Period" xml:space="preserve">
+    <value>कालावधि के लिए राजस्व</value>
+  </data>
   <data name="Runway (Months)" xml:space="preserve">
     <value>रनवे (महीने)</value>
   </data>
+  <data name="Total Assets" xml:space="preserve">
+    <value>कुल संपत्ति</value>
+  </data>
+  <data name="Total Equity" xml:space="preserve">
+    <value>कुल इक्विटी</value>
+  </data>
   <data name="Total Inflow" xml:space="preserve">
     <value>कुल प्रवाह</value>
+  </data>
+  <data name="Total Liabilities" xml:space="preserve">
+    <value>कुल देयताएं</value>
   </data>
   <data name="Total Outflow" xml:space="preserve">
     <value>कुल निकास</value>

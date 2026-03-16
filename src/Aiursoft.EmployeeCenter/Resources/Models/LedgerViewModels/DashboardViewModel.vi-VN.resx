@@ -39,6 +39,9 @@
   <data name="Entity" xml:space="preserve">
     <value>Đơn vị</value>
   </data>
+  <data name="Expenses for Period" xml:space="preserve">
+    <value>Chi phí trong kỳ</value>
+  </data>
   <data name="Filtered Account" xml:space="preserve">
     <value>Tài khoản đã lọc</value>
   </data>
@@ -54,17 +57,32 @@
   <data name="Monthly Burn Rate" xml:space="preserve">
     <value>Tỷ lệ tiêu hao hàng tháng</value>
   </data>
+  <data name="Net Income for Period" xml:space="preserve">
+    <value>Lợi nhuận ròng trong kỳ</value>
+  </data>
   <data name="Outflow Distribution" xml:space="preserve">
     <value>Phân bố chi phí</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Giao dịch Gần đây</value>
   </data>
+  <data name="Revenue for Period" xml:space="preserve">
+    <value>Doanh thu trong kỳ</value>
+  </data>
   <data name="Runway (Months)" xml:space="preserve">
     <value>Thời gian tồn tại (tháng)</value>
   </data>
+  <data name="Total Assets" xml:space="preserve">
+    <value>Tổng tài sản</value>
+  </data>
+  <data name="Total Equity" xml:space="preserve">
+    <value>Tổng Vốn Chủ Sở Hữu</value>
+  </data>
   <data name="Total Inflow" xml:space="preserve">
     <value>Tổng dòng tiền vào</value>
+  </data>
+  <data name="Total Liabilities" xml:space="preserve">
+    <value>Tổng Nợ Phải Trả</value>
   </data>
   <data name="Total Outflow" xml:space="preserve">
     <value>Tổng dòng ra</value>

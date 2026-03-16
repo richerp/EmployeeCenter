@@ -39,6 +39,9 @@
   <data name="Entity" xml:space="preserve">
     <value>Організація</value>
   </data>
+  <data name="Expenses for Period" xml:space="preserve">
+    <value>Витрати за період</value>
+  </data>
   <data name="Filtered Account" xml:space="preserve">
     <value>Фільтрована особиста картка</value>
   </data>
@@ -54,17 +57,32 @@
   <data name="Monthly Burn Rate" xml:space="preserve">
     <value>Місячний темп витрат</value>
   </data>
+  <data name="Net Income for Period" xml:space="preserve">
+    <value>Чистий прибуток за період</value>
+  </data>
   <data name="Outflow Distribution" xml:space="preserve">
     <value>Розподіл витрат</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Останні операції</value>
   </data>
+  <data name="Revenue for Period" xml:space="preserve">
+    <value>Дохід за період</value>
+  </data>
   <data name="Runway (Months)" xml:space="preserve">
     <value>Ресурс (місяці)</value>
   </data>
+  <data name="Total Assets" xml:space="preserve">
+    <value>Загальні активи</value>
+  </data>
+  <data name="Total Equity" xml:space="preserve">
+    <value>Загальний власний капітал</value>
+  </data>
   <data name="Total Inflow" xml:space="preserve">
     <value>Загальний надходження</value>
+  </data>
+  <data name="Total Liabilities" xml:space="preserve">
+    <value>Загальні зобов&apos;язання</value>
   </data>
   <data name="Total Outflow" xml:space="preserve">
     <value>Загальний витік</value>

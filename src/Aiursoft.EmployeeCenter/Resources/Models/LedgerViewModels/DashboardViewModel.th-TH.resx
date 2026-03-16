@@ -39,6 +39,9 @@
   <data name="Entity" xml:space="preserve">
     <value>หน่วยงาน</value>
   </data>
+  <data name="Expenses for Period" xml:space="preserve">
+    <value>ค่าใช้จ่ายสำหรับงวด</value>
+  </data>
   <data name="Filtered Account" xml:space="preserve">
     <value>บัญชีที่กรองแล้ว</value>
   </data>
@@ -54,17 +57,32 @@
   <data name="Monthly Burn Rate" xml:space="preserve">
     <value>อัตราการใช้จ่ายต่อเดือน</value>
   </data>
+  <data name="Net Income for Period" xml:space="preserve">
+    <value>กำไรสุทธิสำหรับงวดนี้</value>
+  </data>
   <data name="Outflow Distribution" xml:space="preserve">
     <value>การกระจายค่าใช้จ่าย</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>ธุรกรรมล่าสุด</value>
   </data>
+  <data name="Revenue for Period" xml:space="preserve">
+    <value>รายได้ในช่วงเวลา</value>
+  </data>
   <data name="Runway (Months)" xml:space="preserve">
     <value>ระยะเวลารอด (เดือน)</value>
   </data>
+  <data name="Total Assets" xml:space="preserve">
+    <value>สินทรัพย์รวม</value>
+  </data>
+  <data name="Total Equity" xml:space="preserve">
+    <value>ทุนรวม</value>
+  </data>
   <data name="Total Inflow" xml:space="preserve">
     <value>ยอดเงินเข้ารวมทั้งหมด</value>
+  </data>
+  <data name="Total Liabilities" xml:space="preserve">
+    <value>หนี้สินรวม</value>
   </data>
   <data name="Total Outflow" xml:space="preserve">
     <value>ยอดเงินออกทั้งหมด</value>

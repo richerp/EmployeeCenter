@@ -51,6 +51,9 @@
   <data name="Bank Info" xml:space="preserve">
     <value>Банківська інформація</value>
   </data>
+  <data name="Base Currency" xml:space="preserve">
+    <value>Базова валюта</value>
+  </data>
   <data name="Basic Information" xml:space="preserve">
     <value>Основна інформація</value>
   </data>

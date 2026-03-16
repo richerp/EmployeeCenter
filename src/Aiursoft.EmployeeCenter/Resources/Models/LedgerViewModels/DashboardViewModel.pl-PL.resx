@@ -39,6 +39,9 @@
   <data name="Entity" xml:space="preserve">
     <value>Organizacja</value>
   </data>
+  <data name="Expenses for Period" xml:space="preserve">
+    <value>Wydatki za okres</value>
+  </data>
   <data name="Filtered Account" xml:space="preserve">
     <value>Filtrowany kontos</value>
   </data>
@@ -54,17 +57,32 @@
   <data name="Monthly Burn Rate" xml:space="preserve">
     <value>Miesięczny temp o spalania</value>
   </data>
+  <data name="Net Income for Period" xml:space="preserve">
+    <value>Zysk netto za okres</value>
+  </data>
   <data name="Outflow Distribution" xml:space="preserve">
     <value>Rozkład wydatków</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Ostatnie transakcje</value>
   </data>
+  <data name="Revenue for Period" xml:space="preserve">
+    <value>Przychody za okres</value>
+  </data>
   <data name="Runway (Months)" xml:space="preserve">
     <value>Bazowanie (miesiące)</value>
   </data>
+  <data name="Total Assets" xml:space="preserve">
+    <value>Całkowite Aktywa</value>
+  </data>
+  <data name="Total Equity" xml:space="preserve">
+    <value>Całkowity Kapitał Własny</value>
+  </data>
   <data name="Total Inflow" xml:space="preserve">
     <value>Łączne Przepływy Dostępowe</value>
+  </data>
+  <data name="Total Liabilities" xml:space="preserve">
+    <value>Całkowite Zobowiązania</value>
   </data>
   <data name="Total Outflow" xml:space="preserve">
     <value>Łączny odpływ</value>

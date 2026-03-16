@@ -39,6 +39,9 @@
   <data name="Entity" xml:space="preserve">
     <value>組織</value>
   </data>
+  <data name="Expenses for Period" xml:space="preserve">
+    <value>期間費用</value>
+  </data>
   <data name="Filtered Account" xml:space="preserve">
     <value>絞り込みアカウント</value>
   </data>
@@ -54,17 +57,32 @@
   <data name="Monthly Burn Rate" xml:space="preserve">
     <value>月間消費率</value>
   </data>
+  <data name="Net Income for Period" xml:space="preserve">
+    <value>当期純利益</value>
+  </data>
   <data name="Outflow Distribution" xml:space="preserve">
     <value>出金配分</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>最近の取引</value>
   </data>
+  <data name="Revenue for Period" xml:space="preserve">
+    <value>期間収益</value>
+  </data>
   <data name="Runway (Months)" xml:space="preserve">
     <value>運用期間（ヶ月）</value>
   </data>
+  <data name="Total Assets" xml:space="preserve">
+    <value>総資産</value>
+  </data>
+  <data name="Total Equity" xml:space="preserve">
+    <value>総株主資本</value>
+  </data>
   <data name="Total Inflow" xml:space="preserve">
     <value>合計流入</value>
+  </data>
+  <data name="Total Liabilities" xml:space="preserve">
+    <value>総負債</value>
   </data>
   <data name="Total Outflow" xml:space="preserve">
     <value>合計出金</value>

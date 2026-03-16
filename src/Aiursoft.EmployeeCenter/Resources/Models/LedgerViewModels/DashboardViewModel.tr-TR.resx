@@ -39,6 +39,9 @@
   <data name="Entity" xml:space="preserve">
     <value>Varlık</value>
   </data>
+  <data name="Expenses for Period" xml:space="preserve">
+    <value>Dönem Giderleri</value>
+  </data>
   <data name="Filtered Account" xml:space="preserve">
     <value>Filtrelenmiş Hesap</value>
   </data>
@@ -54,17 +57,32 @@
   <data name="Monthly Burn Rate" xml:space="preserve">
     <value>Aylık Yanma Hızı</value>
   </data>
+  <data name="Net Income for Period" xml:space="preserve">
+    <value>Dönem Net Karı</value>
+  </data>
   <data name="Outflow Distribution" xml:space="preserve">
     <value>Gider Dağılımı</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Son İşlemler</value>
   </data>
+  <data name="Revenue for Period" xml:space="preserve">
+    <value>Dönem Geliri</value>
+  </data>
   <data name="Runway (Months)" xml:space="preserve">
     <value>Kalkış Bantı (Ay)</value>
   </data>
+  <data name="Total Assets" xml:space="preserve">
+    <value>Toplam Varlıklar</value>
+  </data>
+  <data name="Total Equity" xml:space="preserve">
+    <value>Toplam Özsermaye</value>
+  </data>
   <data name="Total Inflow" xml:space="preserve">
     <value>Toplam Girdi</value>
+  </data>
+  <data name="Total Liabilities" xml:space="preserve">
+    <value>Toplam Borçlar</value>
   </data>
   <data name="Total Outflow" xml:space="preserve">
     <value>Toplam Giden</value>

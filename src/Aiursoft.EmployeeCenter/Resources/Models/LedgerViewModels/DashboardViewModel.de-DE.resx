@@ -39,6 +39,9 @@
   <data name="Entity" xml:space="preserve">
     <value>Unternehmen</value>
   </data>
+  <data name="Expenses for Period" xml:space="preserve">
+    <value>Aufwendungen für die Periode</value>
+  </data>
   <data name="Filtered Account" xml:space="preserve">
     <value>Gefiltertes Konto</value>
   </data>
@@ -54,17 +57,32 @@
   <data name="Monthly Burn Rate" xml:space="preserve">
     <value>Monatlicher Verbrauchsraten</value>
   </data>
+  <data name="Net Income for Period" xml:space="preserve">
+    <value>Nettoeinkommen für den Zeitraum</value>
+  </data>
   <data name="Outflow Distribution" xml:space="preserve">
     <value>Ausgabenverteilung</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Letzte Transaktionen</value>
   </data>
+  <data name="Revenue for Period" xml:space="preserve">
+    <value>Umsatz für die Periode</value>
+  </data>
   <data name="Runway (Months)" xml:space="preserve">
     <value>Laufzeit (Monate)</value>
   </data>
+  <data name="Total Assets" xml:space="preserve">
+    <value>Gesamtvermögen</value>
+  </data>
+  <data name="Total Equity" xml:space="preserve">
+    <value>Gesamteigenkapital</value>
+  </data>
   <data name="Total Inflow" xml:space="preserve">
     <value>Gesamteinzahlung</value>
+  </data>
+  <data name="Total Liabilities" xml:space="preserve">
+    <value>Gesamtschulden</value>
   </data>
   <data name="Total Outflow" xml:space="preserve">
     <value>Gesamtausfluss</value>

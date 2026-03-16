@@ -33,6 +33,9 @@
   <data name="Bank Name" xml:space="preserve">
     <value>銀行名稱</value>
   </data>
+  <data name="Base Currency" xml:space="preserve">
+    <value>基準貨幣</value>
+  </data>
   <data name="Business License / BR Scan" xml:space="preserve">
     <value>商業登記證 / BR 證書掃描</value>
   </data>

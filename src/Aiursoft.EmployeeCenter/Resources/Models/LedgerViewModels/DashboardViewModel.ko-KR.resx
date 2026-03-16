@@ -39,6 +39,9 @@
   <data name="Entity" xml:space="preserve">
     <value>기관</value>
   </data>
+  <data name="Expenses for Period" xml:space="preserve">
+    <value>기간별 비용</value>
+  </data>
   <data name="Filtered Account" xml:space="preserve">
     <value>필터링된 계좌</value>
   </data>
@@ -54,17 +57,32 @@
   <data name="Monthly Burn Rate" xml:space="preserve">
     <value>월간 소비율</value>
   </data>
+  <data name="Net Income for Period" xml:space="preserve">
+    <value>기간별 순이익</value>
+  </data>
   <data name="Outflow Distribution" xml:space="preserve">
     <value>지출 분포</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>최근 거래</value>
   </data>
+  <data name="Revenue for Period" xml:space="preserve">
+    <value>기간별 수익</value>
+  </data>
   <data name="Runway (Months)" xml:space="preserve">
     <value>운행 가능 기간 (개월)</value>
   </data>
+  <data name="Total Assets" xml:space="preserve">
+    <value>총 자산</value>
+  </data>
+  <data name="Total Equity" xml:space="preserve">
+    <value>총 자본금</value>
+  </data>
   <data name="Total Inflow" xml:space="preserve">
     <value>총 수입</value>
+  </data>
+  <data name="Total Liabilities" xml:space="preserve">
+    <value>총 부채</value>
   </data>
   <data name="Total Outflow" xml:space="preserve">
     <value>총 지출액</value>

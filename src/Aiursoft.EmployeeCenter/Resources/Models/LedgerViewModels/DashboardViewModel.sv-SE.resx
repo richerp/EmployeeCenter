@@ -39,6 +39,9 @@
   <data name="Entity" xml:space="preserve">
     <value>Entitet</value>
   </data>
+  <data name="Expenses for Period" xml:space="preserve">
+    <value>Kostnader för perioden</value>
+  </data>
   <data name="Filtered Account" xml:space="preserve">
     <value>Filterat konto</value>
   </data>
@@ -54,17 +57,32 @@
   <data name="Monthly Burn Rate" xml:space="preserve">
     <value>Månatlig förbrukningshastighet</value>
   </data>
+  <data name="Net Income for Period" xml:space="preserve">
+    <value>Nettoinkomst för perioden</value>
+  </data>
   <data name="Outflow Distribution" xml:space="preserve">
     <value>Utflödesfördelning</value>
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Senaste transaktioner</value>
   </data>
+  <data name="Revenue for Period" xml:space="preserve">
+    <value>Intäkter för perioden</value>
+  </data>
   <data name="Runway (Months)" xml:space="preserve">
     <value>Flygplats (Månader)</value>
   </data>
+  <data name="Total Assets" xml:space="preserve">
+    <value>Total tillgångar</value>
+  </data>
+  <data name="Total Equity" xml:space="preserve">
+    <value>Totalt eget kapital</value>
+  </data>
   <data name="Total Inflow" xml:space="preserve">
     <value>Total inflöde</value>
+  </data>
+  <data name="Total Liabilities" xml:space="preserve">
+    <value>Totala skulder</value>
   </data>
   <data name="Total Outflow" xml:space="preserve">
     <value>Total utflöde</value>
