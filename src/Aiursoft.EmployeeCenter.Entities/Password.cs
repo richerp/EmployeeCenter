@@ -30,6 +30,9 @@ public class Password
     [MaxLength(1000)]
     public string? Note { get; set; }
 
+    [MaxLength(200)]
+    public string? FilePath { get; set; }
+
     [MaxLength(255)]
     public required string CreatorId { get; set; }
 

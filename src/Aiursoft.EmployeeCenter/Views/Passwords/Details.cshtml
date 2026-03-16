@@ -1,7 +1,9 @@
 @using Aiursoft.EmployeeCenter.Authorization
+@using Aiursoft.EmployeeCenter.Services.FileStorage
 @using Microsoft.AspNetCore.Authorization
 @model Aiursoft.EmployeeCenter.Models.PasswordsViewModels.DetailsViewModel
 @inject IAuthorizationService AuthorizationService
+@inject StorageService StorageService
 
 <div class="row mb-3">
     <div class="col-12">
@@ -70,6 +72,17 @@
                     <label class="form-label text-muted">@Localizer["Note"]</label>
                     <div class="p-3 bg-light rounded" style="white-space: pre-wrap;">@(string.IsNullOrWhiteSpace(Model.Password.Note) ? Localizer["No notes."] : Model.Password.Note)</div>
                 </div>
+                @if (!string.IsNullOrWhiteSpace(Model.Password.FilePath))
+                {
+                    <div class="mb-3">
+                        <label class="form-label text-muted">@Localizer["Attachment"]</label>
+                        <div>
+                            <a href="@StorageService.RelativePathToInternetUrl(Model.Password.FilePath, isVault: true)" class="btn btn-outline-primary" target="_blank">
+                                <i class="align-middle" data-lucide="download"></i> @Localizer["Download Attachment"]
+                            </a>
+                        </div>
+                    </div>
+                }
                 <hr />
                 <div class="small text-muted">
                                             <p class="mb-1">@Localizer["Created by"]: <a asp-controller="Users" asp-action="Details" asp-route-id="@Model.Password.CreatorId" class="text-body">@Model.Password.Creator.DisplayName</a></p>                    <p class="mb-0">@Localizer["Created on"]: <label class="text-muted" data-utc-time="@Model.Password.CreationTime.ToHtmlDateTime()"></label></p>
