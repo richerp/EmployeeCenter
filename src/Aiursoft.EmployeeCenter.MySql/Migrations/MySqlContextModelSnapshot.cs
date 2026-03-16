@@ -1089,8 +1089,8 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasColumnType("varchar(255)");
 
                     b.Property<string>("FilePath")
-                        .HasMaxLength(200)
-                        .HasColumnType("varchar(200)");
+                        .HasMaxLength(500)
+                        .HasColumnType("varchar(500)");
 
                     b.Property<string>("Note")
                         .HasMaxLength(1000)

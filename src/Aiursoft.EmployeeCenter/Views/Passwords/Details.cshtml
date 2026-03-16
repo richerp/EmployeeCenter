@@ -85,7 +85,7 @@
                 }
                 <hr />
                 <div class="small text-muted">
-                                            <p class="mb-1">@Localizer["Created by"]: <a asp-controller="Users" asp-action="Details" asp-route-id="@Model.Password.CreatorId" class="text-body">@Model.Password.Creator.DisplayName</a></p>                    <p class="mb-0">@Localizer["Created on"]: <label class="text-muted" data-utc-time="@Model.Password.CreationTime.ToHtmlDateTime()"></label></p>
+                                            <p class="mb-1">@Localizer["Created by"]: <a asp-controller="Users" asp-action="Details" asp-route-id="@Model.Password.CreatorId" class="text-body">@Model.Password.Creator!.DisplayName</a></p>                    <p class="mb-0">@Localizer["Created on"]: <label class="text-muted" data-utc-time="@Model.Password.CreationTime.ToHtmlDateTime()"></label></p>
                 </div>
             </div>
         </div>
@@ -95,27 +95,49 @@
 @* ReSharper disable once Razor.SectionNotResolved *@
 @section scripts {
     <script>
+        function copyToClipboard(text, btn) {
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(text).then(function() {
+                    updateButton(btn);
+                }, function(err) {
+                    console.error('Could not copy text: ', err);
+                });
+            } else {
+                // Fallback for older browsers or non-secure context
+                let textArea = document.createElement("textarea");
+                textArea.value = text;
+                textArea.style.position = "fixed";
+                textArea.style.left = "-9999px";
+                document.body.appendChild(textArea);
+                textArea.focus();
+                textArea.select();
+                try {
+                    document.execCommand('copy');
+                    updateButton(btn);
+                } catch (err) {
+                    console.error('Unable to copy', err);
+                }
+                document.body.removeChild(textArea);
+            }
+        }
+
+        function updateButton(btn) {
+            const originalHTML = btn.innerHTML;
+            btn.innerHTML = '<i class="align-middle" data-lucide="check"></i>';
+            lucide.createIcons();
+            setTimeout(() => {
+                btn.innerHTML = originalHTML;
+                lucide.createIcons();
+            }, 2000);
+        }
+
         document.addEventListener('DOMContentLoaded', function() {
             const copyBtns = document.querySelectorAll('.copy-btn');
             copyBtns.forEach(btn => {
                 btn.addEventListener('click', function() {
                     const targetId = this.dataset.target;
                     const input = document.getElementById(targetId);
-                    
-                    // Temp change type to text to copy if it's password
-                    const originalType = input.type;
-                    input.type = 'text';
-                    input.select();
-                    document.execCommand('copy');
-                    input.type = originalType;
-                    
-                    const originalHTML = this.innerHTML;
-                    this.innerHTML = '<i class="align-middle" data-lucide="check"></i>';
-                    lucide.createIcons();
-                    setTimeout(() => {
-                        this.innerHTML = originalHTML;
-                        lucide.createIcons();
-                    }, 2000);
+                    copyToClipboard(input.value, this);
                 });
             });
         });

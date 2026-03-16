@@ -28,7 +28,7 @@ public class CreateViewModel : UiStackLayoutViewModel
     [Display(Name = "Note")]
     public string? Note { get; set; }
 
-    [MaxLength(200)]
+    [MaxLength(500)]
     [RegularExpression(@"^password-attachments/.*", ErrorMessage = "Please upload a valid file.")]
     [Display(Name = "Attachment")]
     public string? FilePath { get; set; }

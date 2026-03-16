@@ -162,7 +162,7 @@ public class PasswordsController(
 
             if (permission != SharePermission.Editable) return Unauthorized();
 
-            if (!string.IsNullOrWhiteSpace(model.FilePath))
+            if (!string.IsNullOrWhiteSpace(model.FilePath) && model.FilePath != password.FilePath)
             {
                 try
                 {
@@ -176,6 +176,23 @@ public class PasswordsController(
                 catch (ArgumentException)
                 {
                     return BadRequest();
+                }
+            }
+
+            // Cleanup old file if changed or removed
+            if (!string.IsNullOrWhiteSpace(password.FilePath) && password.FilePath != model.FilePath)
+            {
+                try
+                {
+                    var oldPhysicalPath = storageService.GetFilePhysicalPath(password.FilePath, isVault: true);
+                    if (System.IO.File.Exists(oldPhysicalPath))
+                    {
+                        System.IO.File.Delete(oldPhysicalPath);
+                    }
+                }
+                catch
+                {
+                    // Ignore cleanup failures
                 }
             }
 
@@ -203,6 +220,23 @@ public class PasswordsController(
         var canManageAny = (await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanManageAnyPassword)).Succeeded;
 
         if (!isOwner && !canManageAny) return Unauthorized();
+
+        // Cleanup attachment file
+        if (!string.IsNullOrWhiteSpace(password.FilePath))
+        {
+            try
+            {
+                var physicalPath = storageService.GetFilePhysicalPath(password.FilePath, isVault: true);
+                if (System.IO.File.Exists(physicalPath))
+                {
+                    System.IO.File.Delete(physicalPath);
+                }
+            }
+            catch
+            {
+                // Ignore cleanup failures
+            }
+        }
 
         context.Passwords.Remove(password);
         await context.SaveChangesAsync();

@@ -30,7 +30,7 @@ public class Password
     [MaxLength(1000)]
     public string? Note { get; set; }
 
-    [MaxLength(200)]
+    [MaxLength(500)]
     public string? FilePath { get; set; }
 
     [MaxLength(255)]
@@ -38,7 +38,6 @@ public class Password
 
     [ForeignKey(nameof(CreatorId))]
     [JsonIgnore]
-    [NotNull]
     public User? Creator { get; set; }
 
     public DateTime CreationTime { get; init; } = DateTime.UtcNow;
