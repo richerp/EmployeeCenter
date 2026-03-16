@@ -1,6 +1,10 @@
 @model Aiursoft.EmployeeCenter.Models.LedgerViewModels.DashboardViewModel
-@inject Aiursoft.EmployeeCenter.Services.FileStorage.StorageService StorageService
 @{
+    // Query parameters for API calls
+    var entityId = Model.Entity.Id;
+    var accountId = Model.FilteredAccount?.Id;
+    var year = Model.Year;
+    var month = Model.Month;
 }
 
 <div class="container-fluid">
@@ -54,9 +58,10 @@
         </div>
     </div>
 
+    @* ── Filtered Account Summary Cards ── *@
     @if (Model.FilteredAccount != null)
     {
-        <div class="row">
+        <div class="row" id="account-summary-cards">
             <div class="col-xl-3 col-md-6 mb-4">
                 @{
                     var colorClass = "primary";
@@ -89,8 +94,8 @@
                                 <div class="text-xs font-weight-bold text-@colorClass text-uppercase mb-1">
                                     @Model.FilteredAccount.AccountName (@Model.FilteredAccount.Currency) - @Localizer["Current Balance"]
                                 </div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                    @Model.FilteredAccountBalance.ToString("N2")
+                                <div class="h5 mb-0 font-weight-bold text-gray-800" id="filtered-account-balance">
+                                    <span class="spinner-border spinner-border-sm" role="status"></span>
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -109,8 +114,8 @@
                                 <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                     @Localizer["Total Inflow"]
                                 </div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                    @Model.TotalInflow.ToString("N2")
+                                <div class="h5 mb-0 font-weight-bold text-gray-800" id="total-inflow">
+                                    <span class="spinner-border spinner-border-sm" role="status"></span>
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -129,8 +134,8 @@
                                 <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
                                     @Localizer["Total Outflow"]
                                 </div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                    @Model.TotalOutflow.ToString("N2")
+                                <div class="h5 mb-0 font-weight-bold text-gray-800" id="total-outflow">
+                                    <span class="spinner-border spinner-border-sm" role="status"></span>
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -143,6 +148,7 @@
         </div>
     }
 
+    @* ── Company Financial Overview Cards ── *@
     @if (Model.FilteredAccount == null)
     {
         <!-- Company Financial Overview -->
@@ -155,8 +161,8 @@
                                 <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                     @Localizer["Total Revenue"] (@Model.Entity.BaseCurrency)
                                 </div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                    @Model.RevenueForPeriod.ToString("N2")
+                                <div class="h5 mb-0 font-weight-bold text-gray-800" id="revenue-for-period">
+                                    <span class="spinner-border spinner-border-sm" role="status"></span>
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -175,8 +181,8 @@
                                 <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
                                     @Localizer["Total Expenses"] (@Model.Entity.BaseCurrency)
                                 </div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                    @Model.ExpensesForPeriod.ToString("N2")
+                                <div class="h5 mb-0 font-weight-bold text-gray-800" id="expenses-for-period">
+                                    <span class="spinner-border spinner-border-sm" role="status"></span>
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -195,8 +201,8 @@
                                 <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
                                     @Localizer["Net Profit"] (@Model.Entity.BaseCurrency)
                                 </div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                    @Model.NetIncomeForPeriod.ToString("N2")
+                                <div class="h5 mb-0 font-weight-bold text-gray-800" id="net-income-for-period">
+                                    <span class="spinner-border spinner-border-sm" role="status"></span>
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -217,8 +223,8 @@
                                 <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                     @Localizer["Total Assets"] (@Model.Entity.BaseCurrency)
                                 </div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                    @Model.TotalAssets.ToString("N2")
+                                <div class="h5 mb-0 font-weight-bold text-gray-800" id="total-assets">
+                                    <span class="spinner-border spinner-border-sm" role="status"></span>
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -237,8 +243,8 @@
                                 <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
                                     @Localizer["Total Liabilities"] (@Model.Entity.BaseCurrency)
                                 </div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                    @Model.TotalLiabilities.ToString("N2")
+                                <div class="h5 mb-0 font-weight-bold text-gray-800" id="total-liabilities">
+                                    <span class="spinner-border spinner-border-sm" role="status"></span>
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -257,8 +263,8 @@
                                 <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">
                                     @Localizer["Equity"] (@Model.Entity.BaseCurrency)
                                 </div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                    @Model.TotalEquity.ToString("N2")
+                                <div class="h5 mb-0 font-weight-bold text-gray-800" id="total-equity">
+                                    <span class="spinner-border spinner-border-sm" role="status"></span>
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -270,62 +276,16 @@
             </div>
         </div>
 
-        <!-- Content Row -->
+        <!-- Account Balance Cards (populated via JS) -->
         <div class="row">
             <div class="col-12">
                 <h5 class="mb-3">@Localizer["Account Balances"]</h5>
             </div>
-            <!-- Asset Snapshots -->
-            @foreach (var ab in Model.Accounts.Where(a => a.Account.AccountType == FinanceAccountType.Asset))
-            {
-                <div class="col-xl-3 col-md-6 mb-4">
-                    <a asp-action="Dashboard" asp-route-id="@Model.Entity.Id" asp-route-accountId="@ab.Account.Id" class="text-decoration-none">
-                        <div class="card border-left-success shadow h-100 py-2">
-                            <div class="card-body">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col mr-2">
-                                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                            @ab.Account.AccountName (@ab.Account.Currency)
-                                        </div>
-                                        <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                            @ab.Balance.ToString("N2")
-                                        </div>
-                                    </div>
-                                    <div class="col-auto">
-                                        <i class="fas fa-wallet fa-2x text-gray-300"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+            <div class="col-12" id="account-balance-cards">
+                <div class="text-center py-3">
+                    <span class="spinner-border spinner-border-sm" role="status"></span> @Localizer["Loading..."]
                 </div>
-            }
-
-            <!-- Liability Snapshots -->
-            @foreach (var ab in Model.Accounts.Where(a => a.Account.AccountType == FinanceAccountType.Liability))
-            {
-                <div class="col-xl-3 col-md-6 mb-4">
-                    <a asp-action="Dashboard" asp-route-id="@Model.Entity.Id" asp-route-accountId="@ab.Account.Id" class="text-decoration-none">
-                        <div class="card border-left-danger shadow h-100 py-2">
-                            <div class="card-body">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col mr-2">
-                                        <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                                            @ab.Account.AccountName (@ab.Account.Currency)
-                                        </div>
-                                        <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                            @ab.Balance.ToString("N2")
-                                        </div>
-                                    </div>
-                                    <div class="col-auto">
-                                        <i class="fas fa-hand-holding-usd fa-2x text-gray-300"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            }
+            </div>
         </div>
     }
 
@@ -333,13 +293,11 @@
         <!-- Area Chart -->
         <div class="col-xl-12 col-lg-12">
             <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                     <h6 class="m-0 font-weight-bold text-primary">
                         @(Model.FilteredAccount != null ? Localizer["Income & Expense Chart"] : Localizer["Company Revenue & Expenses"]) (@Model.Year)
                     </h6>
                 </div>
-                <!-- Card Body -->
                 <div class="card-body">
                     <div class="chart-area">
                         <canvas id="myAreaChart" style="height: 300px;"></canvas>
@@ -363,71 +321,10 @@
                     }
                 </div>
                 <div class="card-body">
-                    <div class="table-responsive">
-                        <table class="table table-hover" id="transactionTable">
-                            <thead>
-                                <tr>
-                                    <th>@Localizer["Date"]</th>
-                                    <th>@Localizer["Description"]</th>
-                                    <th>@Localizer["From"]</th>
-                                    <th>@Localizer["To"]</th>
-                                    <th>@Localizer["Amount"]</th>
-                                    <th>@Localizer["Supporting Materials"]</th>
-                                    <th>@Localizer["Fix Error"]</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach (var t in Model.RecentTransactions)
-                                {
-                                    <tr>
-                                        <td>@t.TransactionTime.ToString("yyyy-MM-dd HH:mm")</td>
-                                        <td>@t.Description</td>
-                                        <td>@t.SourceAccount?.AccountName</td>
-                                        <td>@t.DestinationAccount?.AccountName</td>
-                                        <td>
-                                            @t.Amount.ToString("N2") @t.SourceAccount?.Currency
-                                            @if (t.ExchangeRate != 1)
-                                            {
-                                                <br />
-                                                <small class="text-muted">
-                                                    (@((t.Amount * t.ExchangeRate).ToString("N2")) @t.DestinationAccount?.Currency)
-                                                </small>
-                                            }
-                                        </td>
-                                        <td>
-                                            @if (!string.IsNullOrEmpty(t.InvoicePath))
-                                            {
-                                                <a href="@StorageService.RelativePathToInternetUrl(t.InvoicePath, true)" target="_blank" title="@Localizer["Invoice"]">
-                                                    <i class="fas fa-file-invoice"></i>
-                                                </a>
-                                            }
-                                            @if (!string.IsNullOrEmpty(t.MT103Path))
-                                            {
-                                                <a href="@StorageService.RelativePathToInternetUrl(t.MT103Path, true)" target="_blank" title="MT103">
-                                                    <i class="fas fa-file-contract"></i>
-                                                </a>
-                                            }
-                                            @if (!string.IsNullOrEmpty(t.PaymentVoucherPath))
-                                            {
-                                                <a href="@StorageService.RelativePathToInternetUrl(t.PaymentVoucherPath, true)" target="_blank" title="@Localizer["Voucher"]">
-                                                    <i class="fas fa-receipt"></i>
-                                                </a>
-                                            }
-
-                                            @if (string.IsNullOrEmpty(t.InvoicePath) && string.IsNullOrEmpty(t.MT103Path) && string.IsNullOrEmpty(t.PaymentVoucherPath))
-                                            {
-                                                <i class="fas fa-paperclip text-gray-300" title="@Localizer["No Material"]"></i>
-                                            }
-                                        </td>
-                                        <td>
-                                            <a asp-action="EditTransaction" asp-route-id="@t.Id" asp-route-entityId="@Model.Entity.Id" title="@Localizer["Edit"]">
-                                                <i class="fas fa-edit"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                }
-                            </tbody>
-                        </table>
+                    <div class="table-responsive" id="transactions-container">
+                        <div class="text-center py-3">
+                            <span class="spinner-border spinner-border-sm" role="status"></span> @Localizer["Loading..."]
+                        </div>
                     </div>
                 </div>
             </div>
@@ -444,21 +341,16 @@
                         <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
                             @Localizer["Monthly Burn Rate"] (@Model.Entity.BaseCurrency)
                         </div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800">@Model.MonthlyBurnRate.ToString("N2")</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800" id="monthly-burn-rate">
+                            <span class="spinner-border spinner-border-sm" role="status"></span>
+                        </div>
                     </div>
                     <div>
                         <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
                             @Localizer["Runway"]
                         </div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800">
-                            @if (Model.RunwayMonths.HasValue)
-                            {
-                                @Model.RunwayMonths.Value.ToString("N1") @Localizer["Months"]
-                            }
-                            else
-                            {
-                                <span class="text-success">∞</span>
-                            }
+                        <div class="h5 mb-0 font-weight-bold text-gray-800" id="runway-months">
+                            <span class="spinner-border spinner-border-sm" role="status"></span>
                         </div>
                     </div>
                 </div>
@@ -496,164 +388,271 @@
 @section scripts {
     <script src="~/node_modules/chart.js/dist/chart.umd.min.js" asp-append-version="true"></script>
     <script>
+        // ──────────────────────────────────────────────
+        //  Dashboard async data loader
+        // ──────────────────────────────────────────────
         $(document).ready(function () {
-            $('#transactionTable').DataTable({
-                "destroy": true,
-                "responsive": true,
-                "paging": true,
-                "pageLength": 25,
-                "searching": true,
-                "info": false,
-                "order": [[0, "desc"]]
+            var entityId = @entityId;
+            var accountId = @(accountId.HasValue ? accountId.Value.ToString() : "null");
+            var year = @year;
+            var month = @(month.HasValue ? month.Value.ToString() : "null");
+            var hasFilteredAccount = @(Model.FilteredAccount != null ? "true" : "false");
+
+            var inflowLabel = hasFilteredAccount ? "@Localizer["Inflow"]" : "@Localizer["Revenue"]";
+            var outflowLabel = hasFilteredAccount ? "@Localizer["Outflow"]" : "@Localizer["Expenses"]";
+
+            function buildApiUrl(action) {
+                var url = '@Url.Action("DashboardSummaryApi", "Ledger")'.replace('DashboardSummaryApi', action);
+                url += '?id=' + entityId;
+                if (accountId !== null) url += '&accountId=' + accountId;
+                if (year !== null) url += '&year=' + year;
+                if (month !== null) url += '&month=' + month;
+                return url;
+            }
+
+            function formatNumber(val) {
+                return Number(val).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+            }
+
+            function escapeHtml(text) {
+                if (!text) return '';
+                var div = document.createElement('div');
+                div.appendChild(document.createTextNode(text));
+                return div.innerHTML;
+            }
+
+            // ── 1. Load Summary (cards + health metrics) ──
+            $.getJSON(buildApiUrl('DashboardSummaryApi'), function (data) {
+                if (hasFilteredAccount) {
+                    $('#filtered-account-balance').text(formatNumber(data.FilteredAccountBalance));
+                    $('#total-inflow').text(formatNumber(data.TotalInflow));
+                    $('#total-outflow').text(formatNumber(data.TotalOutflow));
+                } else {
+                    $('#revenue-for-period').text(formatNumber(data.RevenueForPeriod));
+                    $('#expenses-for-period').text(formatNumber(data.ExpensesForPeriod));
+                    $('#net-income-for-period').text(formatNumber(data.NetIncomeForPeriod));
+                    $('#total-assets').text(formatNumber(data.TotalAssets));
+                    $('#total-liabilities').text(formatNumber(data.TotalLiabilities));
+                    $('#total-equity').text(formatNumber(data.TotalEquity));
+
+                    // Render account balance cards
+                    renderAccountCards(data.Accounts);
+                }
+                $('#monthly-burn-rate').text(formatNumber(data.MonthlyBurnRate));
+                if (data.RunwayMonths !== null) {
+                    $('#runway-months').text(Number(data.RunwayMonths).toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + ' @Localizer["Months"]');
+                } else {
+                    $('#runway-months').html('<span class="text-success">∞</span>');
+                }
             });
 
-            var ctx = document.getElementById("myAreaChart");
-            new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: @Json.Serialize(Model.ChartLabels),
-                    datasets: [{
-                        label: "@(Model.FilteredAccount != null ? Localizer["Inflow"] : Localizer["Revenue"])",
-                        lineTension: 0.3,
-                        backgroundColor: "rgba(78, 115, 223, 0.05)",
-                        borderColor: "rgba(78, 115, 223, 1)",
-                        pointRadius: 3,
-                        pointBackgroundColor: "rgba(78, 115, 223, 1)",
-                        pointBorderColor: "rgba(78, 115, 223, 1)",
-                        pointHoverRadius: 3,
-                        pointHoverBackgroundColor: "rgba(78, 115, 223, 1)",
-                        pointHoverBorderColor: "rgba(78, 115, 223, 1)",
-                        pointHitRadius: 10,
-                        pointBorderWidth: 2,
-                        data: @Json.Serialize(Model.ChartInflowData),
-                    }, {
-                        label: "@(Model.FilteredAccount != null ? Localizer["Outflow"] : Localizer["Expenses"])",
-                        lineTension: 0.3,
-                        backgroundColor: "rgba(231, 74, 59, 0.05)",
-                        borderColor: "rgba(231, 74, 59, 1)",
-                        pointRadius: 3,
-                        pointBackgroundColor: "rgba(231, 74, 59, 1)",
-                        pointBorderColor: "rgba(231, 74, 59, 1)",
-                        pointHoverRadius: 3,
-                        pointHoverBackgroundColor: "rgba(231, 74, 59, 1)",
-                        pointHoverBorderColor: "rgba(231, 74, 59, 1)",
-                        pointHitRadius: 10,
-                        pointBorderWidth: 2,
-                        data: @Json.Serialize(Model.ChartOutflowData),
-                    }],
-                },
-                options: {
-                    maintainAspectRatio: false,
-                    layout: {
-                        padding: {
-                            left: 10,
-                            right: 25,
-                            top: 25,
-                            bottom: 0
-                        }
+            function renderAccountCards(accounts) {
+                var container = $('#account-balance-cards');
+                container.empty();
+                var row = $('<div class="row"></div>');
+
+                // Asset (AccountType == 0)
+                accounts.filter(function(a) { return a.AccountType === 0; }).forEach(function(ab) {
+                    row.append(buildAccountCard(ab, 'success', 'fa-wallet'));
+                });
+                // Liability (AccountType == 1)
+                accounts.filter(function(a) { return a.AccountType === 1; }).forEach(function(ab) {
+                    row.append(buildAccountCard(ab, 'danger', 'fa-hand-holding-usd'));
+                });
+
+                container.append(row);
+            }
+
+            function buildAccountCard(ab, colorClass, iconClass) {
+                var url = '@Url.Action("Dashboard", "Ledger")' + '?id=' + entityId + '&accountId=' + ab.Id;
+                return '<div class="col-xl-3 col-md-6 mb-4">' +
+                    '<a href="' + url + '" class="text-decoration-none">' +
+                    '<div class="card border-left-' + colorClass + ' shadow h-100 py-2"><div class="card-body">' +
+                    '<div class="row no-gutters align-items-center"><div class="col mr-2">' +
+                    '<div class="text-xs font-weight-bold text-' + colorClass + ' text-uppercase mb-1">' +
+                    escapeHtml(ab.AccountName) + ' (' + escapeHtml(ab.Currency) + ')' +
+                    '</div>' +
+                    '<div class="h5 mb-0 font-weight-bold text-gray-800">' + formatNumber(ab.Balance) + '</div>' +
+                    '</div><div class="col-auto"><i class="fas ' + iconClass + ' fa-2x text-gray-300"></i></div>' +
+                    '</div></div></div></a></div>';
+            }
+
+            // ── 2. Load Chart Data ──
+            $.getJSON(buildApiUrl('DashboardChartApi'), function (data) {
+                var ctx = document.getElementById("myAreaChart");
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: data.Labels,
+                        datasets: [{
+                            label: inflowLabel,
+                            lineTension: 0.3,
+                            backgroundColor: "rgba(78, 115, 223, 0.05)",
+                            borderColor: "rgba(78, 115, 223, 1)",
+                            pointRadius: 3,
+                            pointBackgroundColor: "rgba(78, 115, 223, 1)",
+                            pointBorderColor: "rgba(78, 115, 223, 1)",
+                            pointHoverRadius: 3,
+                            pointHoverBackgroundColor: "rgba(78, 115, 223, 1)",
+                            pointHoverBorderColor: "rgba(78, 115, 223, 1)",
+                            pointHitRadius: 10,
+                            pointBorderWidth: 2,
+                            data: data.InflowData,
+                        }, {
+                            label: outflowLabel,
+                            lineTension: 0.3,
+                            backgroundColor: "rgba(231, 74, 59, 0.05)",
+                            borderColor: "rgba(231, 74, 59, 1)",
+                            pointRadius: 3,
+                            pointBackgroundColor: "rgba(231, 74, 59, 1)",
+                            pointBorderColor: "rgba(231, 74, 59, 1)",
+                            pointHoverRadius: 3,
+                            pointHoverBackgroundColor: "rgba(231, 74, 59, 1)",
+                            pointHoverBorderColor: "rgba(231, 74, 59, 1)",
+                            pointHitRadius: 10,
+                            pointBorderWidth: 2,
+                            data: data.OutflowData,
+                        }],
                     },
-                    scales: {
-                        x: {
-                            grid: {
-                                display: false,
-                                drawBorder: false
-                            }
-                        },
-                        y: {
-                            ticks: {
-                                maxTicksLimit: 5,
-                                padding: 10,
-                                callback: function(value) {
-                                    return value.toLocaleString();
+                    options: {
+                        maintainAspectRatio: false,
+                        layout: { padding: { left: 10, right: 25, top: 25, bottom: 0 } },
+                        scales: {
+                            x: { grid: { display: false, drawBorder: false } },
+                            y: {
+                                ticks: {
+                                    maxTicksLimit: 5, padding: 10,
+                                    callback: function(value) { return value.toLocaleString(); }
+                                },
+                                grid: {
+                                    color: "rgb(234, 236, 244)", zeroLineColor: "rgb(234, 236, 244)",
+                                    drawBorder: false, borderDash: [2], zeroLineBorderDash: [2]
                                 }
-                            },
-                            grid: {
-                                color: "rgb(234, 236, 244)",
-                                zeroLineColor: "rgb(234, 236, 244)",
-                                drawBorder: false,
-                                borderDash: [2],
-                                zeroLineBorderDash: [2]
+                            }
+                        },
+                        plugins: {
+                            legend: { display: true },
+                            tooltip: {
+                                backgroundColor: "rgb(255,255,255)", bodyColor: "#858796",
+                                titleMarginBottom: 10, titleColor: '#6e707e',
+                                titleFont: { size: 14 }, borderColor: '#dddfeb', borderWidth: 1,
+                                padding: 15, displayColors: false, intersect: false, mode: 'index',
+                                caretPadding: 10,
+                                callbacks: {
+                                    label: function(tooltipItem) {
+                                        return tooltipItem.dataset.label + ': ' + tooltipItem.raw.toLocaleString();
+                                    }
+                                }
                             }
                         }
-                    },
-                    plugins: {
-                        legend: {
-                            display: true
+                    }
+                });
+            });
+
+            // ── 3. Load Transactions ──
+            $.getJSON(buildApiUrl('DashboardTransactionsApi'), function (data) {
+                var container = $('#transactions-container');
+                var html = '<table class="table table-hover" id="transactionTable">' +
+                    '<thead><tr>' +
+                    '<th>@Localizer["Date"]</th>' +
+                    '<th>@Localizer["Description"]</th>' +
+                    '<th>@Localizer["From"]</th>' +
+                    '<th>@Localizer["To"]</th>' +
+                    '<th>@Localizer["Amount"]</th>' +
+                    '<th>@Localizer["Supporting Materials"]</th>' +
+                    '<th>@Localizer["Fix Error"]</th>' +
+                    '</tr></thead><tbody>';
+
+                data.forEach(function (t) {
+                    html += '<tr>';
+                    html += '<td>' + escapeHtml(t.TransactionTime) + '</td>';
+                    html += '<td>' + escapeHtml(t.Description) + '</td>';
+                    html += '<td>' + escapeHtml(t.SourceAccountName || '') + '</td>';
+                    html += '<td>' + escapeHtml(t.DestinationAccountName || '') + '</td>';
+                    html += '<td>' + formatNumber(t.Amount) + ' ' + escapeHtml(t.SourceCurrency || '');
+                    if (t.ExchangeRate !== 1) {
+                        html += '<br/><small class="text-muted">(' + formatNumber(t.ConvertedAmount) + ' ' + escapeHtml(t.DestinationCurrency || '') + ')</small>';
+                    }
+                    html += '</td>';
+                    // Supporting materials
+                    html += '<td>';
+                    var hasMaterial = false;
+                    if (t.InvoiceUrl) {
+                        html += '<a href="' + t.InvoiceUrl + '" target="_blank" title="@Localizer["Invoice"]"><i class="fas fa-file-invoice"></i></a> ';
+                        hasMaterial = true;
+                    }
+                    if (t.MT103Url) {
+                        html += '<a href="' + t.MT103Url + '" target="_blank" title="MT103"><i class="fas fa-file-contract"></i></a> ';
+                        hasMaterial = true;
+                    }
+                    if (t.PaymentVoucherUrl) {
+                        html += '<a href="' + t.PaymentVoucherUrl + '" target="_blank" title="@Localizer["Voucher"]"><i class="fas fa-receipt"></i></a> ';
+                        hasMaterial = true;
+                    }
+                    if (!hasMaterial) {
+                        html += '<i class="fas fa-paperclip text-gray-300" title="@Localizer["No Material"]"></i>';
+                    }
+                    html += '</td>';
+                    // Edit link
+                    html += '<td><a href="@Url.Action("EditTransaction", "Ledger")?id=' + t.Id + '&entityId=' + t.EntityId + '" title="@Localizer["Edit"]"><i class="fas fa-edit"></i></a></td>';
+                    html += '</tr>';
+                });
+
+                html += '</tbody></table>';
+                container.html(html);
+
+                $('#transactionTable').DataTable({
+                    "destroy": true,
+                    "responsive": true,
+                    "paging": true,
+                    "pageLength": 25,
+                    "searching": true,
+                    "info": false,
+                    "order": [[0, "desc"]]
+                });
+            });
+
+            // ── 4. Load Distribution (pie charts) – only for filtered account ──
+            @if (Model.FilteredAccount != null)
+            {
+                <text>
+                $.getJSON(buildApiUrl('DashboardDistributionApi'), function (data) {
+                    new Chart(document.getElementById("inflowPieChart"), {
+                        type: 'doughnut',
+                        data: {
+                            labels: Object.keys(data.InflowDistribution),
+                            datasets: [{
+                                data: Object.values(data.InflowDistribution),
+                                backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc', '#f6c23e', '#e74a3b', '#858796', '#5a5c69'],
+                                hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf', '#dda20a', '#be2617', '#60616f', '#373840'],
+                                hoverBorderColor: "rgba(234, 236, 244, 1)",
+                            }],
                         },
-                        tooltip: {
-                            backgroundColor: "rgb(255,255,255)",
-                            bodyColor: "#858796",
-                            titleMarginBottom: 10,
-                            titleColor: '#6e707e',
-                            titleFont: {
-                                size: 14
-                            },
-                            borderColor: '#dddfeb',
-                            borderWidth: 1,
-                            padding: 15,
-                            displayColors: false,
-                            intersect: false,
-                            mode: 'index',
-                            caretPadding: 10,
-                                                        callbacks: {
-                                                            label: function(tooltipItem) {
-                                                                return tooltipItem.dataset.label + ': ' + tooltipItem.raw.toLocaleString();
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        });
-                            
-                                        @if (Model.FilteredAccount != null)
-                                        {
-                                            <text>
-                                            new Chart(document.getElementById("inflowPieChart"), {
-                                                type: 'doughnut',
-                                                data: {
-                                                    labels: @Json.Serialize(Model.InflowDistribution.Keys),
-                                                    datasets: [{
-                                                        data: @Json.Serialize(Model.InflowDistribution.Values),
-                                                        backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc', '#f6c23e', '#e74a3b', '#858796', '#5a5c69'],
-                                                        hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf', '#dda20a', '#be2617', '#60616f', '#373840'],
-                                                        hoverBorderColor: "rgba(234, 236, 244, 1)",
-                                                    }],
-                                                },
-                                                options: {
-                                                    maintainAspectRatio: false,
-                                                    plugins: {
-                                                        legend: {
-                                                            display: true,
-                                                            position: 'bottom'
-                                                        }
-                                                    }
-                                                },
-                                            });
-                            
-                                            new Chart(document.getElementById("outflowPieChart"), {
-                                                type: 'doughnut',
-                                                data: {
-                                                    labels: @Json.Serialize(Model.OutflowDistribution.Keys),
-                                                    datasets: [{
-                                                        data: @Json.Serialize(Model.OutflowDistribution.Values),
-                                                        backgroundColor: ['#e74a3b', '#f6c23e', '#4e73df', '#1cc88a', '#36b9cc', '#858796', '#5a5c69'],
-                                                        hoverBackgroundColor: ['#be2617', '#dda20a', '#2e59d9', '#17a673', '#2c9faf', '#60616f', '#373840'],
-                                                        hoverBorderColor: "rgba(234, 236, 244, 1)",
-                                                    }],
-                                                },
-                                                options: {
-                                                    maintainAspectRatio: false,
-                                                    plugins: {
-                                                        legend: {
-                                                            display: true,
-                                                            position: 'bottom'
-                                                        }
-                                                    }
-                                                },
-                                            });
-                                            </text>
-                                        }
-                                    });
-                                </script>
-                            }
-                            
+                        options: {
+                            maintainAspectRatio: false,
+                            plugins: { legend: { display: true, position: 'bottom' } }
+                        },
+                    });
+
+                    new Chart(document.getElementById("outflowPieChart"), {
+                        type: 'doughnut',
+                        data: {
+                            labels: Object.keys(data.OutflowDistribution),
+                            datasets: [{
+                                data: Object.values(data.OutflowDistribution),
+                                backgroundColor: ['#e74a3b', '#f6c23e', '#4e73df', '#1cc88a', '#36b9cc', '#858796', '#5a5c69'],
+                                hoverBackgroundColor: ['#be2617', '#dda20a', '#2e59d9', '#17a673', '#2c9faf', '#60616f', '#373840'],
+                                hoverBorderColor: "rgba(234, 236, 244, 1)",
+                            }],
+                        },
+                        options: {
+                            maintainAspectRatio: false,
+                            plugins: { legend: { display: true, position: 'bottom' } }
+                        },
+                    });
+                });
+                </text>
+            }
+        });
+    </script>
+}

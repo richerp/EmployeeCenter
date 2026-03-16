@@ -306,10 +306,14 @@ public class LedgerTests : TestBase
             Assert.IsFalse(account.ShowInDashboard);
         }
 
-        // 5. Verify Dashboard does not show the hidden account
+        // 5. Verify Dashboard page loads successfully
         var dashboardResponse = await Http.GetAsync("/Ledger/Dashboard/" + entityId);
-        var dashboardContent = await dashboardResponse.Content.ReadAsStringAsync();
-        Assert.DoesNotContain("Updated Name", dashboardContent, "Hidden account should not be in dashboard.");
+        dashboardResponse.EnsureSuccessStatusCode();
+
+        // 5b. Verify DashboardSummaryApi does not include the hidden account
+        var summaryResponse = await Http.GetAsync($"/Ledger/DashboardSummaryApi?id={entityId}");
+        var summaryContent = await summaryResponse.Content.ReadAsStringAsync();
+        Assert.DoesNotContain("Updated Name", summaryContent, "Hidden account should not be in dashboard summary API.");
 
         // 6. Show it again
         await PostForm("/Ledger/EditAccount", new Dictionary<string, string>
@@ -323,10 +327,10 @@ public class LedgerTests : TestBase
             { "IsArchived", "false" }
         });
 
-        // 7. Verify Dashboard shows it
-        var dashboardResponse2 = await Http.GetAsync("/Ledger/Dashboard/" + entityId);
-        var dashboardContent2 = await dashboardResponse2.Content.ReadAsStringAsync();
-        Assert.Contains("Updated Name", dashboardContent2, "Visible account should be in dashboard.");
+        // 7. Verify DashboardSummaryApi now includes the account
+        var summaryResponse2 = await Http.GetAsync($"/Ledger/DashboardSummaryApi?id={entityId}");
+        var summaryContent2 = await summaryResponse2.Content.ReadAsStringAsync();
+        Assert.Contains("Updated Name", summaryContent2, "Visible account should be in dashboard summary API.");
     }
 
     [TestMethod]
@@ -366,26 +370,35 @@ public class LedgerTests : TestBase
         // 2. Login
         await LoginAsAdmin();
 
-        // 3. View Main Dashboard
+        // 3. View Main Dashboard (page loads successfully)
         var dashboardResponse = await Http.GetAsync($"/Ledger/Dashboard/{entityId}");
-        var dashboardContent = await dashboardResponse.Content.ReadAsStringAsync();
-        Assert.Contains("Account A", dashboardContent);
-        Assert.Contains("Account B", dashboardContent);
-        Assert.Contains("Transaction A", dashboardContent);
+        dashboardResponse.EnsureSuccessStatusCode();
+
+        // 3b. Verify Summary API contains both accounts
+        var summaryResponse = await Http.GetAsync($"/Ledger/DashboardSummaryApi?id={entityId}");
+        var summaryContent = await summaryResponse.Content.ReadAsStringAsync();
+        Assert.Contains("Account A", summaryContent);
+        Assert.Contains("Account B", summaryContent);
+
+        // 3c. Verify Transactions API contains Transaction A
+        var txResponse = await Http.GetAsync($"/Ledger/DashboardTransactionsApi?id={entityId}");
+        var txContent = await txResponse.Content.ReadAsStringAsync();
+        Assert.Contains("Transaction A", txContent);
 
         // 4. View Filtered Dashboard for Account A
         var filteredResponse = await Http.GetAsync($"/Ledger/Dashboard/{entityId}?accountId={accountAId}");
         var filteredContent = await filteredResponse.Content.ReadAsStringAsync();
 
-        // Should contain account name and transaction A
+        // Should contain account name in the filtered view header
         Assert.Contains("Account A - Dashboard", filteredContent);
-        Assert.Contains("Transaction A", filteredContent);
 
-        // Should NOT contain Account B card (since filtered view hides cards)
-        Assert.DoesNotContain("text-success text-uppercase mb-1\">\n                                    Account B", filteredContent);
+        // 4b. Verify Transactions API for filtered account contains Transaction A
+        var filteredTxResponse = await Http.GetAsync($"/Ledger/DashboardTransactionsApi?id={entityId}&accountId={accountAId}");
+        var filteredTxContent = await filteredTxResponse.Content.ReadAsStringAsync();
+        Assert.Contains("Transaction A", filteredTxContent);
 
-        // Should NOT contain Transaction B Only
-        Assert.DoesNotContain("Transaction B Only", filteredContent);
+        // Should NOT contain Transaction B Only (it doesn't involve Account A)
+        Assert.DoesNotContain("Transaction B Only", filteredTxContent);
     }
 
     [TestMethod]

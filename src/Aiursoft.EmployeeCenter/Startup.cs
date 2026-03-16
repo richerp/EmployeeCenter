@@ -50,6 +50,11 @@ public class Startup : IWebStartup
         services.AddScoped<Services.HolidayService>();
         services.AddScoped<Services.LeaveBalanceService>();
 
+        // Ledger Services
+        services.AddScoped<Services.LedgerExchangeRateService>();
+        services.AddScoped<Services.LedgerBalanceService>();
+        services.AddScoped<Services.LedgerStatisticsService>();
+
         // Background Jobs
         services.AddHostedService<BackgroundJobs.AnnualLeaveAllocationJob>();
         services.AddAssemblyDependencies(typeof(Startup).Assembly);
