@@ -178,6 +178,7 @@ public class CompanyEntityController(
             OperationStatus = model.OperationStatus,
             SCRLocation = model.SCRLocation,
             CompanySecretary = model.CompanySecretary,
+            BaseCurrency = model.BaseCurrency,
             CreateLedger = model.CreateLedger
         };
 
@@ -238,6 +239,7 @@ public class CompanyEntityController(
             OperationStatus = entity.OperationStatus,
             SCRLocation = entity.SCRLocation,
             CompanySecretary = entity.CompanySecretary,
+            BaseCurrency = entity.BaseCurrency,
             CreateLedger = entity.CreateLedger
         };
 
@@ -325,6 +327,7 @@ public class CompanyEntityController(
         entity.OperationStatus = model.OperationStatus;
         entity.SCRLocation = model.SCRLocation;
         entity.CompanySecretary = model.CompanySecretary;
+        entity.BaseCurrency = model.BaseCurrency;
         entity.CreateLedger = model.CreateLedger;
         entity.UpdateTime = DateTime.UtcNow;
 

@@ -145,8 +145,136 @@
 
     @if (Model.FilteredAccount == null)
     {
+        <!-- Company Financial Overview -->
+        <div class="row">
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                    @Localizer["Total Revenue"] (@Model.Entity.BaseCurrency)
+                                </div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                    @Model.RevenueForPeriod.ToString("N2")
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fas fa-hand-holding-usd fa-2x text-gray-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card border-left-danger shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
+                                    @Localizer["Total Expenses"] (@Model.Entity.BaseCurrency)
+                                </div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                    @Model.ExpensesForPeriod.ToString("N2")
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fas fa-shopping-cart fa-2x text-gray-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card border-left-info shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                    @Localizer["Net Profit"] (@Model.Entity.BaseCurrency)
+                                </div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                    @Model.NetIncomeForPeriod.ToString("N2")
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fas fa-chart-line fa-2x text-gray-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card border-left-success shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                    @Localizer["Total Assets"] (@Model.Entity.BaseCurrency)
+                                </div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                    @Model.TotalAssets.ToString("N2")
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fas fa-wallet fa-2x text-gray-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card border-left-warning shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                    @Localizer["Total Liabilities"] (@Model.Entity.BaseCurrency)
+                                </div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                    @Model.TotalLiabilities.ToString("N2")
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fas fa-file-invoice-dollar fa-2x text-gray-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card border-left-secondary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">
+                                    @Localizer["Equity"] (@Model.Entity.BaseCurrency)
+                                </div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                    @Model.TotalEquity.ToString("N2")
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="fas fa-building fa-2x text-gray-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Content Row -->
         <div class="row">
+            <div class="col-12">
+                <h5 class="mb-3">@Localizer["Account Balances"]</h5>
+            </div>
             <!-- Asset Snapshots -->
             @foreach (var ab in Model.Accounts.Where(a => a.Account.AccountType == FinanceAccountType.Asset))
             {
@@ -201,26 +329,25 @@
         </div>
     }
 
-    @if (Model.FilteredAccount != null)
-    {
-        <div class="row">
-            <!-- Area Chart -->
-            <div class="col-xl-12 col-lg-12">
-                <div class="card shadow mb-4">
-                    <!-- Card Header - Dropdown -->
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                        <h6 class="m-0 font-weight-bold text-primary">@Localizer["Income & Expense Chart"] (@Model.Year)</h6>
-                    </div>
-                    <!-- Card Body -->
-                    <div class="card-body">
-                        <div class="chart-area">
-                            <canvas id="myAreaChart" style="height: 300px;"></canvas>
-                        </div>
+    <div class="row">
+        <!-- Area Chart -->
+        <div class="col-xl-12 col-lg-12">
+            <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                        @(Model.FilteredAccount != null ? Localizer["Income & Expense Chart"] : Localizer["Company Revenue & Expenses"]) (@Model.Year)
+                    </h6>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                    <div class="chart-area">
+                        <canvas id="myAreaChart" style="height: 300px;"></canvas>
                     </div>
                 </div>
             </div>
         </div>
-    }
+    </div>
 
     <div class="row">
         <!-- Transaction Feed -->
@@ -386,7 +513,7 @@
                 data: {
                     labels: @Json.Serialize(Model.ChartLabels),
                     datasets: [{
-                        label: "@Localizer["Inflow"]",
+                        label: "@(Model.FilteredAccount != null ? Localizer["Inflow"] : Localizer["Revenue"])",
                         lineTension: 0.3,
                         backgroundColor: "rgba(78, 115, 223, 0.05)",
                         borderColor: "rgba(78, 115, 223, 1)",
@@ -400,7 +527,7 @@
                         pointBorderWidth: 2,
                         data: @Json.Serialize(Model.ChartInflowData),
                     }, {
-                        label: "@Localizer["Outflow"]",
+                        label: "@(Model.FilteredAccount != null ? Localizer["Outflow"] : Localizer["Expenses"])",
                         lineTension: 0.3,
                         backgroundColor: "rgba(231, 74, 59, 0.05)",
                         borderColor: "rgba(231, 74, 59, 1)",
