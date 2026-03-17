@@ -21,6 +21,9 @@
       <data name="Account / Username" xml:space="preserve">
     <value>Обліковий запис / Ім&apos;я користувача</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>Вкладення</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Скасувати</value>
   </data>

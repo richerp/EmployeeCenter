@@ -21,6 +21,9 @@
       <data name="Account / Username" xml:space="preserve">
     <value>Konto / Brugernavn</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>Vedhæftning</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Annuller</value>
   </data>

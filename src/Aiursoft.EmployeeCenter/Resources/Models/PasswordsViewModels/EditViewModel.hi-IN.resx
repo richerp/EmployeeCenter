@@ -21,11 +21,17 @@
       <data name="Account" xml:space="preserve">
     <value>खाता</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>संलग्नक</value>
+  </data>
   <data name="Id" xml:space="preserve">
     <value>आईडी</value>
   </data>
   <data name="Note" xml:space="preserve">
     <value>टिप्पणी</value>
+  </data>
+  <data name="Please upload a valid file." xml:space="preserve">
+    <value>कृपया एक मान्य फ़ाइल अपलोड करें।</value>
   </data>
   <data name="Secret" xml:space="preserve">
     <value>रहस्य</value>

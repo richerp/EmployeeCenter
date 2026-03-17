@@ -24,6 +24,9 @@
   <data name="Are you sure you want to delete this password?" xml:space="preserve">
     <value>¿Estás seguro de que quieres eliminar esta contraseña?</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>Adjunto</value>
+  </data>
   <data name="Back" xml:space="preserve">
     <value>Atrás</value>
   </data>
@@ -35,6 +38,9 @@
   </data>
   <data name="Delete" xml:space="preserve">
     <value>Eliminar</value>
+  </data>
+  <data name="Download Attachment" xml:space="preserve">
+    <value>Descargar archivo adjunto</value>
   </data>
   <data name="Edit" xml:space="preserve">
     <value>Editar</value>

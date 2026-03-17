@@ -21,11 +21,17 @@
       <data name="Account" xml:space="preserve">
     <value>บัญชี</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>ไฟล์แนบ</value>
+  </data>
   <data name="Id" xml:space="preserve">
     <value>รหัส</value>
   </data>
   <data name="Note" xml:space="preserve">
     <value>หมายเหตุ</value>
+  </data>
+  <data name="Please upload a valid file." xml:space="preserve">
+    <value>กรุณาอัปโหลดไฟล์ที่ถูกต้อง</value>
   </data>
   <data name="Secret" xml:space="preserve">
     <value>รหัสลับ</value>

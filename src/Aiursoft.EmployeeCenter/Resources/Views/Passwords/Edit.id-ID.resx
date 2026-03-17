@@ -21,6 +21,9 @@
       <data name="Account / Username" xml:space="preserve">
     <value>Akun / Nama Pengguna</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>Lampiran</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Batal</value>
   </data>

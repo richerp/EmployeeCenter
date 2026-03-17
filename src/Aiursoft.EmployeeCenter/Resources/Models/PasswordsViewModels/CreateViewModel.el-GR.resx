@@ -21,8 +21,14 @@
       <data name="Account" xml:space="preserve">
     <value>Λογαριασμός</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>Συνημμένο</value>
+  </data>
   <data name="Note" xml:space="preserve">
     <value>Σημείωση</value>
+  </data>
+  <data name="Please upload a valid file." xml:space="preserve">
+    <value>Παρακαλώ ανεβάστε ένα έγκυρο αρχείο.</value>
   </data>
   <data name="Secret" xml:space="preserve">
     <value>Κρυφός</value>

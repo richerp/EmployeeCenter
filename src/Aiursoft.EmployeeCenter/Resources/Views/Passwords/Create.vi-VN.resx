@@ -21,6 +21,9 @@
       <data name="Account / Username" xml:space="preserve">
     <value>Tài khoản / Tên đăng nhập</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>Đính kèm</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Hủy</value>
   </data>

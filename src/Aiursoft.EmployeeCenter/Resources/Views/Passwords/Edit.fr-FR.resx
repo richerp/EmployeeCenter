@@ -21,6 +21,9 @@
       <data name="Account / Username" xml:space="preserve">
     <value>Compte / Nom d&apos;utilisateur</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>Pièce jointe</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Annuler</value>
   </data>

@@ -24,6 +24,9 @@
   <data name="Are you sure you want to delete this password?" xml:space="preserve">
     <value>Oletko varma, että haluat poistaa tämän salasanan?</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>Liite</value>
+  </data>
   <data name="Back" xml:space="preserve">
     <value>Takaisin</value>
   </data>
@@ -35,6 +38,9 @@
   </data>
   <data name="Delete" xml:space="preserve">
     <value>Poista</value>
+  </data>
+  <data name="Download Attachment" xml:space="preserve">
+    <value>Lata liite</value>
   </data>
   <data name="Edit" xml:space="preserve">
     <value>Muokkaa</value>

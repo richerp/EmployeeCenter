@@ -21,6 +21,9 @@
       <data name="Account / Username" xml:space="preserve">
     <value>Hesap / Kullanıcı Adı</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>Ek</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>İptal</value>
   </data>

@@ -24,6 +24,9 @@
   <data name="Are you sure you want to delete this password?" xml:space="preserve">
     <value>Sigur doriți să ștergeți această parolă?</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>Atașament</value>
+  </data>
   <data name="Back" xml:space="preserve">
     <value>Înapoi</value>
   </data>
@@ -35,6 +38,9 @@
   </data>
   <data name="Delete" xml:space="preserve">
     <value>Șterge</value>
+  </data>
+  <data name="Download Attachment" xml:space="preserve">
+    <value>Descarcă atașamentul</value>
   </data>
   <data name="Edit" xml:space="preserve">
     <value>Editează</value>

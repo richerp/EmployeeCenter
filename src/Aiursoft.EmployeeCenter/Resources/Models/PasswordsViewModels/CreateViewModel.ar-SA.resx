@@ -21,8 +21,14 @@
       <data name="Account" xml:space="preserve">
     <value>الحساب</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>المرفق</value>
+  </data>
   <data name="Note" xml:space="preserve">
     <value>ملاحظة</value>
+  </data>
+  <data name="Please upload a valid file." xml:space="preserve">
+    <value>يرجى رفع ملف صالح.</value>
   </data>
   <data name="Secret" xml:space="preserve">
     <value>السر</value>

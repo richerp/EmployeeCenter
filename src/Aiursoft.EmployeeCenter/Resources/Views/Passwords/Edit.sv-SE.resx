@@ -21,6 +21,9 @@
       <data name="Account / Username" xml:space="preserve">
     <value>Konto / Användarnamn</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>Bifogad fil</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Avbryt</value>
   </data>

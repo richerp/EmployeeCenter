@@ -45,6 +45,9 @@
   <data name="Equity" xml:space="preserve">
     <value>Öz Sermaye</value>
   </data>
+  <data name="Expenses" xml:space="preserve">
+    <value>Giderler</value>
+  </data>
   <data name="Fix Error" xml:space="preserve">
     <value>Hata Düzelt</value>
   </data>
@@ -65,6 +68,9 @@
   </data>
   <data name="Invoice" xml:space="preserve">
     <value>Fatura</value>
+  </data>
+  <data name="Loading..." xml:space="preserve">
+    <value>Yükleniyor...</value>
   </data>
   <data name="Manage Accounts" xml:space="preserve">
     <value>Hesapları Yönet</value>
@@ -95,6 +101,9 @@
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Son İşlemler</value>
+  </data>
+  <data name="Revenue" xml:space="preserve">
+    <value>Gelir</value>
   </data>
   <data name="Runway" xml:space="preserve">
     <value>Kalkış</value>

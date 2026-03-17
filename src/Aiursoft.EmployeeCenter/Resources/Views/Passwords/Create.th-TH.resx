@@ -21,6 +21,9 @@
       <data name="Account / Username" xml:space="preserve">
     <value>บัญชี / ชื่อผู้ใช้</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>ไฟล์แนบ</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>ยกเลิก</value>
   </data>

@@ -21,6 +21,9 @@
       <data name="Account / Username" xml:space="preserve">
     <value>खाता / उपयोगकर्ता नाम</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>संलग्नक</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>रद्द करें</value>
   </data>

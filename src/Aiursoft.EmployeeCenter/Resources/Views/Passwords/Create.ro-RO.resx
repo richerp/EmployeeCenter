@@ -21,6 +21,9 @@
       <data name="Account / Username" xml:space="preserve">
     <value>Cont / Nume de utilizator</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>Atașament</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Anulează</value>
   </data>

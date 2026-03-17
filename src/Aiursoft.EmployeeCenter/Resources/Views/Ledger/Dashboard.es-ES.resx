@@ -45,6 +45,9 @@
   <data name="Equity" xml:space="preserve">
     <value>Patrimonio</value>
   </data>
+  <data name="Expenses" xml:space="preserve">
+    <value>Gastos</value>
+  </data>
   <data name="Fix Error" xml:space="preserve">
     <value>Corregir error</value>
   </data>
@@ -65,6 +68,9 @@
   </data>
   <data name="Invoice" xml:space="preserve">
     <value>Factura</value>
+  </data>
+  <data name="Loading..." xml:space="preserve">
+    <value>Cargando...</value>
   </data>
   <data name="Manage Accounts" xml:space="preserve">
     <value>Gestionar cuentas</value>
@@ -95,6 +101,9 @@
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Transacciones recientes</value>
+  </data>
+  <data name="Revenue" xml:space="preserve">
+    <value>Ingresos</value>
   </data>
   <data name="Runway" xml:space="preserve">
     <value>Plazo de supervivencia</value>

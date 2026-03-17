@@ -21,8 +21,14 @@
       <data name="Account" xml:space="preserve">
     <value>Konto</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>Bifogning</value>
+  </data>
   <data name="Note" xml:space="preserve">
     <value>Anteckning</value>
+  </data>
+  <data name="Please upload a valid file." xml:space="preserve">
+    <value>Välj en giltig fil att ladda upp.</value>
   </data>
   <data name="Secret" xml:space="preserve">
     <value>Hemlighet</value>

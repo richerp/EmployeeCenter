@@ -21,8 +21,14 @@
       <data name="Account" xml:space="preserve">
     <value>Обліковий запис</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>Додаток</value>
+  </data>
   <data name="Note" xml:space="preserve">
     <value>Нотатка</value>
+  </data>
+  <data name="Please upload a valid file." xml:space="preserve">
+    <value>Будь ласка, завантажте дійсний файл.</value>
   </data>
   <data name="Secret" xml:space="preserve">
     <value>Пароль</value>
