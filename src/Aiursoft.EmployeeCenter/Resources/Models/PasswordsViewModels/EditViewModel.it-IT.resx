@@ -21,11 +21,17 @@
       <data name="Account" xml:space="preserve">
     <value>Account</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>Allegato</value>
+  </data>
   <data name="Id" xml:space="preserve">
     <value>ID</value>
   </data>
   <data name="Note" xml:space="preserve">
     <value>Nota</value>
+  </data>
+  <data name="Please upload a valid file." xml:space="preserve">
+    <value>Carica un file valido.</value>
   </data>
   <data name="Secret" xml:space="preserve">
     <value>Segreto</value>

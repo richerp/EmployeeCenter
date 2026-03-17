@@ -21,11 +21,17 @@
       <data name="Account" xml:space="preserve">
     <value>Tili</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>Liite</value>
+  </data>
   <data name="Id" xml:space="preserve">
     <value>Tunnus</value>
   </data>
   <data name="Note" xml:space="preserve">
     <value>Huomautus</value>
+  </data>
+  <data name="Please upload a valid file." xml:space="preserve">
+    <value>Lataa kelvollinen tiedosto.</value>
   </data>
   <data name="Secret" xml:space="preserve">
     <value>Salaisuus</value>

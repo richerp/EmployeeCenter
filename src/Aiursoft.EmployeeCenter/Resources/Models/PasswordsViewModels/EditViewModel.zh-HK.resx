@@ -21,11 +21,17 @@
       <data name="Account" xml:space="preserve">
     <value>帳戶</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>附件</value>
+  </data>
   <data name="Id" xml:space="preserve">
     <value>ID</value>
   </data>
   <data name="Note" xml:space="preserve">
     <value>備註</value>
+  </data>
+  <data name="Please upload a valid file." xml:space="preserve">
+    <value>請上傳有效的檔案。</value>
   </data>
   <data name="Secret" xml:space="preserve">
     <value>密碼</value>

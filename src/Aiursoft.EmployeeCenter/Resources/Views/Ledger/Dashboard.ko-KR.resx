@@ -45,6 +45,9 @@
   <data name="Equity" xml:space="preserve">
     <value>자본금</value>
   </data>
+  <data name="Expenses" xml:space="preserve">
+    <value>지출</value>
+  </data>
   <data name="Fix Error" xml:space="preserve">
     <value>오류 수정</value>
   </data>
@@ -65,6 +68,9 @@
   </data>
   <data name="Invoice" xml:space="preserve">
     <value>송장</value>
+  </data>
+  <data name="Loading..." xml:space="preserve">
+    <value>로딩 중...</value>
   </data>
   <data name="Manage Accounts" xml:space="preserve">
     <value>계정 관리</value>
@@ -95,6 +101,9 @@
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>최근 거래</value>
+  </data>
+  <data name="Revenue" xml:space="preserve">
+    <value>수익</value>
   </data>
   <data name="Runway" xml:space="preserve">
     <value>운영 자금 지속 기간</value>

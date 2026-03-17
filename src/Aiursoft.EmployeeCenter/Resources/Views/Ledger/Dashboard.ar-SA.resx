@@ -45,6 +45,9 @@
   <data name="Equity" xml:space="preserve">
     <value>حقوق الملكية</value>
   </data>
+  <data name="Expenses" xml:space="preserve">
+    <value>المصروفات</value>
+  </data>
   <data name="Fix Error" xml:space="preserve">
     <value>تصحيح الخطأ</value>
   </data>
@@ -65,6 +68,9 @@
   </data>
   <data name="Invoice" xml:space="preserve">
     <value>فاتورة</value>
+  </data>
+  <data name="Loading..." xml:space="preserve">
+    <value>جاري التحميل...</value>
   </data>
   <data name="Manage Accounts" xml:space="preserve">
     <value>إدارة الحسابات</value>
@@ -95,6 +101,9 @@
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>العمليات الأخيرة</value>
+  </data>
+  <data name="Revenue" xml:space="preserve">
+    <value>الإيرادات</value>
   </data>
   <data name="Runway" xml:space="preserve">
     <value>الوقت المتبقي</value>

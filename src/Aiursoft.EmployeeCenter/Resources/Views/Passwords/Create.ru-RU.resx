@@ -21,6 +21,9 @@
       <data name="Account / Username" xml:space="preserve">
     <value>Учётная запись / Имя пользователя</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>Вложение</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Отмена</value>
   </data>

@@ -48,6 +48,9 @@
   <data name="Equity" xml:space="preserve">
     <value>Equity</value>
   </data>
+  <data name="Expenses" xml:space="preserve">
+    <value>Expenses</value>
+  </data>
   <data name="Fix Error" xml:space="preserve">
     <value>Fix Error</value>
   </data>
@@ -71,6 +74,9 @@
   </data>
   <data name="Ledger Dashboard" xml:space="preserve">
     <value>Ledger Dashboard</value>
+  </data>
+  <data name="Loading..." xml:space="preserve">
+    <value>Loading...</value>
   </data>
   <data name="Manage Accounts" xml:space="preserve">
     <value>Manage Accounts</value>
@@ -101,6 +107,9 @@
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>Recent Transactions</value>
+  </data>
+  <data name="Revenue" xml:space="preserve">
+    <value>Revenue</value>
   </data>
   <data name="Runway" xml:space="preserve">
     <value>Runway</value>

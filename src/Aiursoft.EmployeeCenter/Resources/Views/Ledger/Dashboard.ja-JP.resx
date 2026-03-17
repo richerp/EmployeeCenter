@@ -45,6 +45,9 @@
   <data name="Equity" xml:space="preserve">
     <value>純資産</value>
   </data>
+  <data name="Expenses" xml:space="preserve">
+    <value>経費</value>
+  </data>
   <data name="Fix Error" xml:space="preserve">
     <value>エラーを修正</value>
   </data>
@@ -65,6 +68,9 @@
   </data>
   <data name="Invoice" xml:space="preserve">
     <value>請求書</value>
+  </data>
+  <data name="Loading..." xml:space="preserve">
+    <value>読み込み中...</value>
   </data>
   <data name="Manage Accounts" xml:space="preserve">
     <value>アカウントの管理</value>
@@ -95,6 +101,9 @@
   </data>
   <data name="Recent Transactions" xml:space="preserve">
     <value>最近の取引</value>
+  </data>
+  <data name="Revenue" xml:space="preserve">
+    <value>収益</value>
   </data>
   <data name="Runway" xml:space="preserve">
     <value>運用期間</value>

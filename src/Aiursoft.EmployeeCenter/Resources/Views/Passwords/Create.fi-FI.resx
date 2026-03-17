@@ -21,6 +21,9 @@
       <data name="Account / Username" xml:space="preserve">
     <value>Tili / Käyttäjätunnus</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>Liite</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Peruuta</value>
   </data>

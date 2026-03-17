@@ -21,8 +21,14 @@
       <data name="Account" xml:space="preserve">
     <value>Rekening</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>Bijlage</value>
+  </data>
   <data name="Note" xml:space="preserve">
     <value>Opmerking</value>
+  </data>
+  <data name="Please upload a valid file." xml:space="preserve">
+    <value>Upload een geldig bestand.</value>
   </data>
   <data name="Secret" xml:space="preserve">
     <value>Wachtwoord</value>

@@ -24,6 +24,9 @@
   <data name="Are you sure you want to delete this password?" xml:space="preserve">
     <value>คุณแน่ใจหรือว่าต้องการลบรหัสผ่านนี้?</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>ไฟล์แนบ</value>
+  </data>
   <data name="Back" xml:space="preserve">
     <value>ย้อนกลับ</value>
   </data>
@@ -35,6 +38,9 @@
   </data>
   <data name="Delete" xml:space="preserve">
     <value>ลบ</value>
+  </data>
+  <data name="Download Attachment" xml:space="preserve">
+    <value>ดาวน์โหลดไฟล์แนบ</value>
   </data>
   <data name="Edit" xml:space="preserve">
     <value>แก้ไข</value>

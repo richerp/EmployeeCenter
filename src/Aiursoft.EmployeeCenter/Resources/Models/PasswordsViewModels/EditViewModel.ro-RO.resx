@@ -21,11 +21,17 @@
       <data name="Account" xml:space="preserve">
     <value>Cont</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>Atașament</value>
+  </data>
   <data name="Id" xml:space="preserve">
     <value>ID</value>
   </data>
   <data name="Note" xml:space="preserve">
     <value>Notă</value>
+  </data>
+  <data name="Please upload a valid file." xml:space="preserve">
+    <value>Vă rugăm să încărcați un fișier valid.</value>
   </data>
   <data name="Secret" xml:space="preserve">
     <value>Secret</value>

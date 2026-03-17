@@ -24,6 +24,9 @@
   <data name="Are you sure you want to delete this password?" xml:space="preserve">
     <value>このパスワードを削除してもよろしいですか？</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>添付ファイル</value>
+  </data>
   <data name="Back" xml:space="preserve">
     <value>戻る</value>
   </data>
@@ -35,6 +38,9 @@
   </data>
   <data name="Delete" xml:space="preserve">
     <value>削除</value>
+  </data>
+  <data name="Download Attachment" xml:space="preserve">
+    <value>添付ファイルをダウンロード</value>
   </data>
   <data name="Edit" xml:space="preserve">
     <value>編集</value>

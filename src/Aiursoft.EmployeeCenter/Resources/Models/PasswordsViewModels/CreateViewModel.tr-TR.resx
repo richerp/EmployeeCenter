@@ -21,8 +21,14 @@
       <data name="Account" xml:space="preserve">
     <value>Hesap</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>Ek</value>
+  </data>
   <data name="Note" xml:space="preserve">
     <value>Not</value>
+  </data>
+  <data name="Please upload a valid file." xml:space="preserve">
+    <value>Lütfen geçerli bir dosya yükleyin.</value>
   </data>
   <data name="Secret" xml:space="preserve">
     <value>Gizli</value>

@@ -24,6 +24,9 @@
   <data name="Are you sure you want to delete this password?" xml:space="preserve">
     <value>Apakah Anda yakin ingin menghapus kata sandi ini?</value>
   </data>
+  <data name="Attachment" xml:space="preserve">
+    <value>Lampiran</value>
+  </data>
   <data name="Back" xml:space="preserve">
     <value>Kembali</value>
   </data>
@@ -35,6 +38,9 @@
   </data>
   <data name="Delete" xml:space="preserve">
     <value>Hapus</value>
+  </data>
+  <data name="Download Attachment" xml:space="preserve">
+    <value>Unduh Lampiran</value>
   </data>
   <data name="Edit" xml:space="preserve">
     <value>Edit</value>
