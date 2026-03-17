@@ -98,7 +98,7 @@
                             <td><strong>@share.Password.Title</strong></td>
                                                                         <td>
                                                                             <a asp-controller="Users" asp-action="Details" asp-route-id="@share.Password.CreatorId" class="text-body">
-                                                                                @share.Password.Creator.DisplayName
+                                                                                @share.Password.Creator!.DisplayName
                                                                             </a>
                                                                         </td>                            <td>
                                 @if (share.Permission == SharePermission.Editable)

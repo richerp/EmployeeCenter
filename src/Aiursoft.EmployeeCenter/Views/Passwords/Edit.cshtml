@@ -33,6 +33,15 @@
                         <textarea asp-for="Note" class="form-control" rows="3"></textarea>
                         <span asp-validation-for="Note" class="text-danger"></span>
                     </div>
+                    <div class="mb-3">
+                        <label asp-for="FilePath" class="form-label">@Localizer["Attachment"]</label>
+                        <vc:file-upload 
+                            asp-for="FilePath" 
+                            subfolder="password-attachments" 
+                            is-vault="true">
+                        </vc:file-upload>
+                        <span asp-validation-for="FilePath" class="text-danger"></span>
+                    </div>
                     <div class="mt-4">
                         <button type="submit" class="btn btn-primary">@Localizer["Save Changes"]</button>
                         <a asp-action="Details" asp-route-id="@Model.Id" class="btn btn-outline-secondary">@Localizer["Cancel"]</a>
@@ -42,3 +51,14 @@
         </div>
     </div>
 </div>
+
+@* ReSharper disable once Razor.SectionNotResolved *@                                                                                               
+@section styles {
+    <link rel="stylesheet" href="~/node_modules/dropify/dist/css/dropify.min.css" />
+    <link rel="stylesheet" href="~/styles/uploader.css" />
+}
+
+@* ReSharper disable once Razor.SectionNotResolved *@                                                                                               
+@section scripts {
+    <script src="~/node_modules/dropify/dist/js/dropify.min.js"></script>
+}

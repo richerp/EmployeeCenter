@@ -1,6 +1,5 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Diagnostics.CodeAnalysis;
 using Newtonsoft.Json;
 
 namespace Aiursoft.EmployeeCenter.Entities;
@@ -30,12 +29,14 @@ public class Password
     [MaxLength(1000)]
     public string? Note { get; set; }
 
+    [MaxLength(500)]
+    public string? FilePath { get; set; }
+
     [MaxLength(255)]
     public required string CreatorId { get; set; }
 
     [ForeignKey(nameof(CreatorId))]
     [JsonIgnore]
-    [NotNull]
     public User? Creator { get; set; }
 
     public DateTime CreationTime { get; init; } = DateTime.UtcNow;

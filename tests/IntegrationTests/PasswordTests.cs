@@ -1,3 +1,4 @@
+using Aiursoft.EmployeeCenter.Services.FileStorage;
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
@@ -238,6 +239,79 @@ public class PasswordTests
             var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
             var p = await db.Passwords.FindAsync(passwordId);
             Assert.AreEqual(newTitle, p!.Title);
+        }
+    }
+
+    [TestMethod]
+    public async Task TestPasswordWithAttachment()
+    {
+        // 1. Login as admin
+        var loginToken = await GetAntiCsrfToken("/Account/Login");
+        var loginContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "EmailOrUserName", "admin" },
+            { "Password", "admin123" },
+            { "__RequestVerificationToken", loginToken }
+        });
+        await _http.PostAsync("/Account/Login", loginContent);
+
+        // 2. Create a dummy file in the Vault to pass validation
+        string logicalPath = "password-attachments/test-file.txt";
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var folders = scope.ServiceProvider.GetRequiredService<FeatureFoldersProvider>();
+            var vaultRoot = folders.GetVaultFolder();
+            var physicalPath = Path.Combine(vaultRoot, logicalPath);
+            Directory.CreateDirectory(Path.GetDirectoryName(physicalPath)!);
+            await File.WriteAllTextAsync(physicalPath, "test content");
+        }
+
+        // 3. Create a password with attachment
+        var createToken = await GetAntiCsrfToken("/Passwords/Create");
+        var createContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Title", "Password with Attachment" },
+            { "Secret", "Secret123!" },
+            { "FilePath", logicalPath },
+            { "__RequestVerificationToken", createToken }
+        });
+        var createResponse = await _http.PostAsync("/Passwords/Create", createContent);
+        Assert.AreEqual(HttpStatusCode.Found, createResponse.StatusCode);
+
+        Guid passwordId;
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var p = await db.Passwords.FirstAsync(p => p.Title == "Password with Attachment");
+            Assert.AreEqual(logicalPath, p.FilePath);
+            passwordId = p.Id;
+        }
+
+        // 4. Verify attachment link in Details
+        var detailsResponse = await _http.GetAsync("/Passwords/Details/" + passwordId);
+        detailsResponse.EnsureSuccessStatusCode();
+        var detailsHtml = await detailsResponse.Content.ReadAsStringAsync();
+        StringAssert.Contains(detailsHtml, "Download Attachment");
+        StringAssert.Contains(detailsHtml, "/download-private/password-attachments/test-file.txt");
+
+        // 5. Edit password and change/remove attachment
+        var editToken = await GetAntiCsrfToken("/Passwords/Edit/" + passwordId);
+        var editContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Id", passwordId.ToString() },
+            { "Title", "Updated Password" },
+            { "Secret", "NewSecret123!" },
+            { "FilePath", "" }, // Remove attachment
+            { "__RequestVerificationToken", editToken }
+        });
+        var editResponse = await _http.PostAsync("/Passwords/Edit", editContent);
+        Assert.AreEqual(HttpStatusCode.Found, editResponse.StatusCode);
+
+        using (var scope = _server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var p = await db.Passwords.FindAsync(passwordId);
+            Assert.IsNull(p!.FilePath);
         }
     }
 }

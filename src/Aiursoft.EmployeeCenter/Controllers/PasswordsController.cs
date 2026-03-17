@@ -2,6 +2,7 @@ using Aiursoft.EmployeeCenter.Authorization;
 using Aiursoft.EmployeeCenter.Entities;
 using Aiursoft.EmployeeCenter.Models.PasswordsViewModels;
 using Aiursoft.EmployeeCenter.Services;
+using Aiursoft.EmployeeCenter.Services.FileStorage;
 using Aiursoft.UiStack.Navigation;
 using Aiursoft.WebTools.Attributes;
 using Microsoft.AspNetCore.Authorization;
@@ -17,6 +18,8 @@ public class PasswordsController(
     UserManager<User> userManager,
     RoleManager<IdentityRole> roleManager,
     IAuthorizationService authorizationService,
+    StorageService storageService,
+    ILogger<PasswordsController> logger,
     EmployeeCenterDbContext context)
     : Controller
 {
@@ -71,6 +74,23 @@ public class PasswordsController(
     {
         if (ModelState.IsValid)
         {
+            if (!string.IsNullOrWhiteSpace(model.FilePath))
+            {
+                try
+                {
+                    var physicalPath = storageService.GetFilePhysicalPath(model.FilePath, isVault: true);
+                    if (!System.IO.File.Exists(physicalPath))
+                    {
+                        ModelState.AddModelError(nameof(model.FilePath), "The file upload failed or the file is missing. Please re-upload.");
+                        return this.StackView(model);
+                    }
+                }
+                catch (ArgumentException)
+                {
+                    return BadRequest();
+                }
+            }
+
             var user = await userManager.GetUserAsync(User);
             var password = new Password
             {
@@ -78,6 +98,7 @@ public class PasswordsController(
                 Account = model.Account,
                 Secret = model.Secret!,
                 Note = model.Note,
+                FilePath = model.FilePath,
                 CreatorId = user!.Id
             };
             context.Passwords.Add(password);
@@ -123,7 +144,8 @@ public class PasswordsController(
             Title = password.Title,
             Account = password.Account,
             Secret = password.Secret,
-            Note = password.Note
+            Note = password.Note,
+            FilePath = password.FilePath
         });
     }
 
@@ -141,10 +163,46 @@ public class PasswordsController(
 
             if (permission != SharePermission.Editable) return Unauthorized();
 
+            if (!string.IsNullOrWhiteSpace(model.FilePath) && model.FilePath != password.FilePath)
+            {
+                try
+                {
+                    var physicalPath = storageService.GetFilePhysicalPath(model.FilePath, isVault: true);
+                    if (!System.IO.File.Exists(physicalPath))
+                    {
+                        ModelState.AddModelError(nameof(model.FilePath), "The file upload failed or the file is missing. Please re-upload.");
+                        return this.StackView(model);
+                    }
+                }
+                catch (ArgumentException)
+                {
+                    return BadRequest();
+                }
+            }
+
+            // Cleanup old file if changed or removed
+            if (!string.IsNullOrWhiteSpace(password.FilePath) && password.FilePath != model.FilePath)
+            {
+                var oldPhysicalPath = string.Empty;
+                try
+                {
+                    oldPhysicalPath = storageService.GetFilePhysicalPath(password.FilePath, isVault: true);
+                    if (System.IO.File.Exists(oldPhysicalPath))
+                    {
+                        System.IO.File.Delete(oldPhysicalPath);
+                    }
+                }
+                catch (Exception e)
+                {
+                    logger.LogError(e, "Failed to cleanup old password attachment at {Path}", oldPhysicalPath);
+                }
+            }
+
             password.Title = model.Title!;
             password.Account = model.Account;
             password.Secret = model.Secret!;
             password.Note = model.Note;
+            password.FilePath = model.FilePath;
 
             await context.SaveChangesAsync();
             return RedirectToAction(nameof(Details), new { id = password.Id });
@@ -164,6 +222,24 @@ public class PasswordsController(
         var canManageAny = (await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanManageAnyPassword)).Succeeded;
 
         if (!isOwner && !canManageAny) return Unauthorized();
+
+        // Cleanup attachment file
+        if (!string.IsNullOrWhiteSpace(password.FilePath))
+        {
+            var physicalPath = string.Empty;
+            try
+            {
+                physicalPath = storageService.GetFilePhysicalPath(password.FilePath, isVault: true);
+                if (System.IO.File.Exists(physicalPath))
+                {
+                    System.IO.File.Delete(physicalPath);
+                }
+            }
+            catch (Exception e)
+            {
+                logger.LogError(e, "Failed to cleanup password attachment at {Path}", physicalPath);
+            }
+        }
 
         context.Passwords.Remove(password);
         await context.SaveChangesAsync();
