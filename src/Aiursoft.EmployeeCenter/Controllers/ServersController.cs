@@ -50,7 +50,7 @@ public class ServersController(
             AllLocations = await context.Locations.ToListAsync(),
             AllOwners = await context.Users.ToListAsync(),
             AllProviders = await context.Providers.ToListAsync(),
-            AllCompanyEntities = await context.CompanyEntities.Where(c => c.CreateLedger).ToListAsync(),
+            AllCompanyEntities = await context.CompanyEntities.ToListAsync(),
             PageTitle = localizer["Create Server"]
         });
     }
@@ -81,7 +81,7 @@ public class ServersController(
         model.AllLocations = await context.Locations.ToListAsync();
         model.AllOwners = await context.Users.ToListAsync();
         model.AllProviders = await context.Providers.ToListAsync();
-        model.AllCompanyEntities = await context.CompanyEntities.Where(c => c.CreateLedger).ToListAsync();
+        model.AllCompanyEntities = await context.CompanyEntities.ToListAsync();
         return this.StackView(model);
     }
 
@@ -103,7 +103,7 @@ public class ServersController(
             AllLocations = await context.Locations.ToListAsync(),
             AllOwners = await context.Users.ToListAsync(),
             AllProviders = await context.Providers.ToListAsync(),
-            AllCompanyEntities = await context.CompanyEntities.Where(c => c.CreateLedger).ToListAsync(),
+            AllCompanyEntities = await context.CompanyEntities.ToListAsync(),
             PageTitle = localizer["Edit Server"]
         });
     }
@@ -133,7 +133,7 @@ public class ServersController(
         model.AllLocations = await context.Locations.ToListAsync();
         model.AllOwners = await context.Users.ToListAsync();
         model.AllProviders = await context.Providers.ToListAsync();
-        model.AllCompanyEntities = await context.CompanyEntities.Where(c => c.CreateLedger).ToListAsync();
+        model.AllCompanyEntities = await context.CompanyEntities.ToListAsync();
         return this.StackView(model);
     }
 
@@ -188,7 +188,6 @@ public class ServersController(
     public async Task<IActionResult> GetCompanyEntities()
     {
         var companyEntities = await context.CompanyEntities
-            .Where(c => c.CreateLedger)
             .OrderBy(c => c.CompanyName)
             .ToListAsync();
         return Json(companyEntities.Select(c => new { c.Id, Name = c.CompanyName }));

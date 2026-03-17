@@ -1,5 +1,4 @@
 using Aiursoft.EmployeeCenter.Entities;
-using Aiursoft.EmployeeCenter.Models.LedgerViewModels;
 using Microsoft.EntityFrameworkCore;
 
 namespace Aiursoft.EmployeeCenter.Services;
@@ -56,7 +55,7 @@ public class LedgerStatisticsService(EmployeeCenterDbContext dbContext)
                 .Where(t => t.SourceAccount!.CompanyEntityId == entityId &&
                             t.SourceAccount!.AccountType == FinanceAccountType.Income &&
                             t.TransactionTime >= yearStart && t.TransactionTime < yearEnd)
-                .Select(t => new { t.TransactionTime, Currency = t.SourceAccount!.Currency, t.Amount })
+                .Select(t => new { t.TransactionTime, t.SourceAccount!.Currency, t.Amount })
                 .AsNoTracking()
                 .ToListAsync();
 
@@ -67,7 +66,7 @@ public class LedgerStatisticsService(EmployeeCenterDbContext dbContext)
                 .Where(t => t.DestinationAccount!.CompanyEntityId == entityId &&
                             t.DestinationAccount!.AccountType == FinanceAccountType.Expense &&
                             t.TransactionTime >= yearStart && t.TransactionTime < yearEnd)
-                .Select(t => new { t.TransactionTime, Currency = t.DestinationAccount!.Currency, ConvertedAmount = t.Amount * t.ExchangeRate })
+                .Select(t => new { t.TransactionTime, t.DestinationAccount!.Currency, ConvertedAmount = t.Amount * t.ExchangeRate })
                 .AsNoTracking()
                 .ToListAsync();
 
