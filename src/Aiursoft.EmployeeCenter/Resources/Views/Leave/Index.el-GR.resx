@@ -48,6 +48,9 @@
   <data name="days" xml:space="preserve">
     <value>μέρες</value>
   </data>
+  <data name="Days" xml:space="preserve">
+    <value>Ημέρες</value>
+  </data>
   <data name="days away" xml:space="preserve">
     <value>μέρες από τώρα</value>
   </data>
