@@ -65,18 +65,18 @@
 }
 
 <div class="container-fluid">
-    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <div class="d-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">@Localizer["Entity Details"]</h1>
         <div>
-            <button class="d-none d-sm-inline-block btn btn-sm btn-secondary shadow-sm mr-2" data-text="@summaryInfo" onclick="copyToClipboard(this.getAttribute('data-text'))">
+            <button class="btn btn-sm btn-secondary shadow-sm mr-2" data-text="@summaryInfo" onclick="copyToClipboard(this.getAttribute('data-text'))">
                 <i class="fas fa-copy fa-sm text-white-50"></i> @Localizer["Copy Summary"]
             </button>
             @if (canManage)
             {
-                <button class="d-none d-sm-inline-block btn btn-sm btn-secondary shadow-sm mr-2" data-text="@fullInfo" onclick="copyToClipboard(this.getAttribute('data-text'))">
+                <button class="btn btn-sm btn-secondary shadow-sm mr-2" data-text="@fullInfo" onclick="copyToClipboard(this.getAttribute('data-text'))">
                     <i class="fas fa-copy fa-sm text-white-50"></i> @Localizer["Copy Full Info"]
                 </button>
-                <a asp-controller="CompanyEntity" asp-action="Edit" asp-route-id="@Model.Entity.Id" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                <a asp-controller="CompanyEntity" asp-action="Edit" asp-route-id="@Model.Entity.Id" class="btn btn-sm btn-primary shadow-sm">
                     <i class="fas fa-edit fa-sm text-white-50"></i> @Localizer["Edit"]
                 </a>
             }
