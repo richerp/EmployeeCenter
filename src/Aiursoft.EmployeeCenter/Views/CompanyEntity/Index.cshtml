@@ -7,11 +7,11 @@
 }
 
 <div class="container-fluid">
-    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <div class="d-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">@Localizer["Company Entities"]</h1>
         @if (canManage)
         {
-            <a asp-controller="CompanyEntity" asp-action="Create" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+            <a asp-controller="CompanyEntity" asp-action="Create" class="btn btn-sm btn-primary shadow-sm">
                 <i class="fas fa-plus fa-sm text-white-50"></i> @Localizer["Create New"]
             </a>
         }
