@@ -7,7 +7,7 @@ namespace Aiursoft.EmployeeCenter.Models.BackgroundJobs;
 /// </summary>
 public class JobInfo
 {
-    [Display(Name = "Job Id")]
+    [Display(Name = "Job ID")]
     public Guid JobId { get; init; } = Guid.NewGuid();
 
     [Display(Name = "Queue Name")]
@@ -19,21 +19,20 @@ public class JobInfo
     [Display(Name = "Status")]
     public JobStatus Status { get; set; } = JobStatus.Pending;
 
-    [Display(Name = "Queued At")]
+    [Display(Name = "Queued at")]
     public DateTime QueuedAt { get; init; } = DateTime.UtcNow;
 
-    [Display(Name = "Started At")]
+    [Display(Name = "Started at")]
     public DateTime? StartedAt { get; set; }
 
-    [Display(Name = "Completed At")]
+    [Display(Name = "Completed at")]
     public DateTime? CompletedAt { get; set; }
 
-    [Display(Name = "Error Message")]
+    [Display(Name = "Error message")]
     public string? ErrorMessage { get; set; }
 
-    [Display(Name = "Service Type")]
+    [Display(Name = "Service type")]
     public required Type ServiceType { get; init; }
 
-    [Display(Name = "Job Action")]
     public required Func<object, Task> JobAction { get; init; }
 }

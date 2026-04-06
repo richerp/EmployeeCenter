@@ -1,4 +1,3 @@
-using Aiursoft.Canon;
 using Aiursoft.CSTools.Tools;
 using Aiursoft.DbTools.Switchable;
 using Aiursoft.Scanner;
@@ -14,6 +13,9 @@ using Microsoft.AspNetCore.Mvc.Razor;
 using Aiursoft.ClickhouseLoggerProvider;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
+using Aiursoft.Canon.TaskQueue;
+using Aiursoft.Canon.BackgroundJobs;
+using Aiursoft.Canon.ScheduledTasks;
 
 namespace Aiursoft.EmployeeCenter;
 
@@ -48,7 +50,6 @@ public class Startup : IWebStartup
         // Services
         services.AddMemoryCache();
         services.AddHttpClient();
-        services.AddTaskCanon();
         services.AddHealthChecks()
             .AddDbContextCheck<Entities.EmployeeCenterDbContext>();
 
@@ -61,14 +62,18 @@ public class Startup : IWebStartup
         services.AddScoped<Services.LedgerBalanceService>();
         services.AddScoped<Services.LedgerStatisticsService>();
 
-        // Background Jobs
-        services.AddHostedService<BackgroundJobs.AnnualLeaveAllocationJob>();
+        // Background Jobs (handled by scheduled task engine below)
         services.AddAssemblyDependencies(typeof(Startup).Assembly);
         services.AddSingleton<NavigationState<Startup>>();
 
         // Background job queue
-        services.AddSingleton<Services.BackgroundJobs.BackgroundJobQueue>();
-        services.AddHostedService<Services.BackgroundJobs.QueueWorkerService>();
+        services.AddTaskQueueEngine();
+        services.AddScheduledTaskEngine();
+        services.RegisterBackgroundJob<Services.BackgroundJobs.DummyJob>();
+        var orphanAvatarCleanupJob = services.RegisterBackgroundJob<Services.BackgroundJobs.OrphanAvatarCleanupJob>();
+        services.RegisterScheduledTask(registration: orphanAvatarCleanupJob, period: TimeSpan.FromHours(6), startDelay: TimeSpan.FromMinutes(5));
+        var annualLeaveJob = services.RegisterBackgroundJob<Services.BackgroundJobs.AnnualLeaveAllocationJob>();
+        services.RegisterScheduledTask(registration: annualLeaveJob, period: TimeSpan.FromHours(8), startDelay: TimeSpan.FromSeconds(25));
 
         // Controllers and localization
         services.AddControllersWithViews()

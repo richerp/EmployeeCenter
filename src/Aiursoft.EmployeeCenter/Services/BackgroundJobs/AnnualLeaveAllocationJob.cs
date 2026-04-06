@@ -1,19 +1,15 @@
-using Aiursoft.CSTools.Tools;
+using Aiursoft.Canon.BackgroundJobs;
 using Aiursoft.EmployeeCenter.Entities;
-using Aiursoft.EmployeeCenter.Services;
-using Aiursoft.Scanner.Abstractions;
 using Microsoft.EntityFrameworkCore;
 
-namespace Aiursoft.EmployeeCenter.BackgroundJobs;
+namespace Aiursoft.EmployeeCenter.Services.BackgroundJobs;
 
 public class AnnualLeaveAllocationJob(
-    ILogger<AnnualLeaveAllocationJob> logger,
-    IServiceScopeFactory scopeFactory)
-    : IHostedService, IDisposable, ISingletonDependency
+    EmployeeCenterDbContext db,
+    GlobalSettingsService settings,
+    ILogger<AnnualLeaveAllocationJob> logger) : IBackgroundJob
 {
     private const int IntervalHours = 8;
-    private const int StartupDelaySeconds = 25;
-    private Timer? _timer;
 
     public static DateTime LastRunTime = DateTime.MinValue;
     public static bool LastRunSuccess;
@@ -21,38 +17,16 @@ public class AnnualLeaveAllocationJob(
     public static int CreatedAllocationCount;
     public static DateTime EstimatedNextRunTime = DateTime.MinValue;
 
-    public Task StartAsync(CancellationToken cancellationToken)
-    {
-        if (!EntryExtends.IsProgramEntry())
-        {
-            logger.LogInformation("Skip annual leave allocation job in test environment.");
-            return Task.CompletedTask;
-        }
+    public string Name => "Annual Leave Allocation";
+    public string Description => "Creates annual leave balance records for all users at the start of each year, including carry-over calculation from the previous year.";
 
-        logger.LogInformation(
-            "Annual Leave Allocation Background Service is starting. Will run every {Interval} hours.",
-            IntervalHours);
-
-        _timer = new Timer(
-            DoWork,
-            null,
-            TimeSpan.FromSeconds(StartupDelaySeconds),
-            TimeSpan.FromHours(IntervalHours));
-
-        return Task.CompletedTask;
-    }
-
-    private async void DoWork(object? state)
+    public async Task ExecuteAsync()
     {
         try
         {
             logger.LogInformation("Annual leave allocation job started");
             EstimatedNextRunTime = DateTime.UtcNow.AddHours(IntervalHours);
-
-            using var scope = scopeFactory.CreateScope();
-            var context = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
-            var settings = scope.ServiceProvider.GetRequiredService<GlobalSettingsService>();
-            await AllocateAnnualLeave(context, settings);
+            await AllocateAnnualLeave();
         }
         catch (Exception ex)
         {
@@ -61,7 +35,7 @@ public class AnnualLeaveAllocationJob(
         }
     }
 
-    private async Task AllocateAnnualLeave(EmployeeCenterDbContext context, GlobalSettingsService settings)
+    private async Task AllocateAnnualLeave()
     {
         var startTime = DateTime.UtcNow;
         LastRunTime = startTime;
@@ -74,16 +48,15 @@ public class AnnualLeaveAllocationJob(
             var annualLeavePerYear = await settings.GetIntSettingAsync(Configuration.SettingsMap.AnnualLeavePerYear);
             logger.LogInformation("Checking annual leave allocations for year {Year}. Annual leave per year: {AnnualLeave}", currentYear, annualLeavePerYear);
 
-            // 获取所有用户
-            var allUsers = await context.Users.ToListAsync();
+            // Get all users
+            var allUsers = await db.Users.ToListAsync();
             ProcessedUserCount = allUsers.Count;
-
             logger.LogInformation("Found {Count} users to process", allUsers.Count);
 
             foreach (var user in allUsers)
             {
                 // Check if allocation exists for current year
-                var existingAllocation = await context.LeaveBalances
+                var existingAllocation = await db.LeaveBalances
                     .FirstOrDefaultAsync(lb => lb.UserId == user.Id && lb.Year == currentYear);
 
                 if (existingAllocation == null)
@@ -92,7 +65,7 @@ public class AnnualLeaveAllocationJob(
                     var previousYear = currentYear - 1;
                     var carriedOver = 0m;
 
-                    var previousAllocation = await context.LeaveBalances
+                    var previousAllocation = await db.LeaveBalances
                         .FirstOrDefaultAsync(lb => lb.UserId == user.Id && lb.Year == previousYear);
 
                     if (previousAllocation != null)
@@ -101,7 +74,7 @@ public class AnnualLeaveAllocationJob(
                         var previousYearStart = new DateTime(previousYear, 1, 1);
                         var previousYearEnd = previousYearStart.AddYears(1);
 
-                        var usedInPreviousYear = await context.LeaveApplications
+                        var usedInPreviousYear = await db.LeaveApplications
                             .Where(la => la.UserId == user.Id
                                 && la.LeaveType == LeaveType.AnnualLeave
                                 && la.StartDate >= previousYearStart
@@ -133,7 +106,7 @@ public class AnnualLeaveAllocationJob(
                         CarriedOverAnnualLeave = carriedOver
                     };
 
-                    context.LeaveBalances.Add(newAllocation);
+                    db.LeaveBalances.Add(newAllocation);
                     CreatedAllocationCount++;
 
                     logger.LogInformation(
@@ -144,7 +117,7 @@ public class AnnualLeaveAllocationJob(
 
             if (CreatedAllocationCount > 0)
             {
-                await context.SaveChangesAsync();
+                await db.SaveChangesAsync();
                 logger.LogInformation(
                     "Successfully created {Count} new leave allocations for year {Year}",
                     CreatedAllocationCount, currentYear);
@@ -171,17 +144,5 @@ public class AnnualLeaveAllocationJob(
                 "Annual leave allocation job completed in {Duration}. Processed: {Processed}, Created: {Created}, Success: {Success}",
                 duration, ProcessedUserCount, CreatedAllocationCount, LastRunSuccess);
         }
-    }
-
-    public Task StopAsync(CancellationToken cancellationToken)
-    {
-        logger.LogInformation("Annual Leave Allocation Background Service is stopping");
-        _timer?.Change(Timeout.Infinite, 0);
-        return Task.CompletedTask;
-    }
-
-    public void Dispose()
-    {
-        _timer?.Dispose();
     }
 }
