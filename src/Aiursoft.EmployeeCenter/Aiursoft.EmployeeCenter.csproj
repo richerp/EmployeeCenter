@@ -10,8 +10,8 @@
     <Nullable>enable</Nullable>
     <Company>Aiursoft</Company>
     <Product>EmployeeCenter</Product>
-    <Description>Nuget package of 'EmployeeCenter' provided by Aiursoft</Description>
-    <PackageTags>nuget package dotnet csproj dependencies</PackageTags>
+    <Description>Aiursoft Employee Center - A modern, feature-rich, and highly extensible foundation for your enterprise operations.</Description>
+    <PackageTags>employee-management enterprise office-center aiursoft</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://gitlab.aiursoft.com/aiursoft/employeecenter</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>

@@ -97,7 +97,7 @@ public static class ProgramExtends
             {
                 UserName = "admin",
                 DisplayName = "Super Administrator",
-                Email = "admin@default.com",
+                Email = "admin@employeecenter.com",
                 AvatarRelativePath = User.DefaultAvatarPath
             };
             _ = await userManager.CreateAsync(user, "admin123");

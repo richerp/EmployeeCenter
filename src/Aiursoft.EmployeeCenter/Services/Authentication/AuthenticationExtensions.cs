@@ -14,7 +14,7 @@ namespace Aiursoft.EmployeeCenter.Services.Authentication;
 [ExcludeFromCodeCoverage]
 public static class AuthenticationExtensions
 {
-    public static IServiceCollection AddTemplateAuth(
+    public static IServiceCollection AddEmployeeCenterAuth(
         this IServiceCollection services,
         IConfiguration configuration)
     {
