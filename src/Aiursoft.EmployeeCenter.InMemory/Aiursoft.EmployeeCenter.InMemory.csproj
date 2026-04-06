@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <Version>1.0.74</Version>
+    <Version>1.0.75</Version>
     <TargetFramework>net10.0</TargetFramework>
     <AssemblyName>Aiursoft.EmployeeCenter.InMemory</AssemblyName>
     <RootNamespace>Aiursoft.EmployeeCenter.InMemory</RootNamespace>
@@ -11,10 +11,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Company>Aiursoft</Company>
-    <Product>InMemory</Product>
-    <Description>Nuget package of 'InMemory' provided by Aiursoft</Description>
+    <Product>Employee Center InMemory Storage</Product>
+    <Description>In-memory storage provider for Aiursoft Employee Center.</Description>
     <PackageId>Aiursoft.EmployeeCenter.InMemory</PackageId>
-    <PackageTags>nuget package dotnet csproj dependencies</PackageTags>
+    <PackageTags>employee-management in-memory storage aiursoft</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://gitlab.aiursoft.com/aiursoft/employeecenter</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>

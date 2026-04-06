@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <Version>1.0.81</Version>
+    <Version>1.0.82</Version>
     <TargetFramework>net10.0</TargetFramework>
     <AssemblyName>Aiursoft.EmployeeCenter.Sqlite</AssemblyName>
     <RootNamespace>Aiursoft.EmployeeCenter.Sqlite</RootNamespace>
@@ -11,10 +11,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Company>Aiursoft</Company>
-    <Product>Sqlite</Product>
-    <Description>Nuget package of 'Sqlite' provided by Aiursoft</Description>
+    <Product>Employee Center Sqlite Storage</Product>
+    <Description>Sqlite storage provider for Aiursoft Employee Center.</Description>
     <PackageId>Aiursoft.EmployeeCenter.Sqlite</PackageId>
-    <PackageTags>nuget package dotnet csproj dependencies</PackageTags>
+    <PackageTags>employee-management sqlite storage aiursoft</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://gitlab.aiursoft.com/aiursoft/employeecenter</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
