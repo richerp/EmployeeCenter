@@ -25,7 +25,7 @@ public class MarketChannelsTests : TestBase
         await LoginAsAdmin();
 
         var name = "Test Channel " + Guid.NewGuid();
-        var adminId = await GetUserIdByEmail("admin@employeecenter.com");
+        var adminId = await GetUserIdByEmail("admin@default.com");
 
         var response = await PostForm("/MarketChannels/Create", new Dictionary<string, string>
         {
