@@ -8,6 +8,7 @@ public class AppSettings
 
     public required OidcSettings OIDC { get; init; }
     public required LocalSettings Local { get; init; }
+    public required OcrSettings OCR { get; init; }
 
     /// <summary>
     /// The name of the company. Used in certificates.

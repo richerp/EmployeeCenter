@@ -502,10 +502,16 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.Property<bool>("IsPublic")
                         .HasColumnType("tinyint(1)");
 
+                    b.Property<DateTime?>("LastOcrAttemptTime")
+                        .HasColumnType("datetime(6)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("varchar(200)");
+
+                    b.Property<int>("OcrAttemptCount")
+                        .HasColumnType("int");
 
                     b.Property<int>("Status")
                         .HasColumnType("int");
@@ -513,6 +519,35 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Contracts");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.ContractOcrResult", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ContractId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreateTime")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("JsonResult")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("PlainText")
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ContractId")
+                        .IsUnique();
+
+                    b.ToTable("ContractOcrResults");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.CustomerRelationship", b =>
@@ -2172,6 +2207,17 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.Navigation("CompanyEntity");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.ContractOcrResult", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.Contract", "Contract")
+                        .WithMany()
+                        .HasForeignKey("ContractId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Contract");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.CustomerRelationship", b =>

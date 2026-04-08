@@ -32,6 +32,7 @@ public abstract class EmployeeCenterDbContext(DbContextOptions options) : Identi
     public DbSet<AssetHistory> AssetHistories => Set<AssetHistory>();
     public DbSet<IntangibleAsset> IntangibleAssets => Set<IntangibleAsset>();
     public DbSet<Contract> Contracts => Set<Contract>();
+    public DbSet<ContractOcrResult> ContractOcrResults => Set<ContractOcrResult>();
     public DbSet<PromotionHistory> PromotionHistories => Set<PromotionHistory>();
     public DbSet<WeeklyReport> WeeklyReports => Set<WeeklyReport>();
     public DbSet<WeeklyReportRequirement> WeeklyReportRequirements => Set<WeeklyReportRequirement>();
@@ -53,6 +54,15 @@ public abstract class EmployeeCenterDbContext(DbContextOptions options) : Identi
     public DbSet<SignalQuestionResponse> SignalQuestionResponses => Set<SignalQuestionResponse>();
 
     public DbSet<AdjustedHoliday> AdjustedHolidays => Set<AdjustedHoliday>();
+
+    protected override void OnModelCreating(ModelBuilder builder)
+    {
+        base.OnModelCreating(builder);
+
+        builder.Entity<ContractOcrResult>()
+            .HasIndex(r => r.ContractId)
+            .IsUnique();
+    }
 
     public virtual Task MigrateAsync(CancellationToken cancellationToken) =>
         Database.MigrateAsync(cancellationToken);

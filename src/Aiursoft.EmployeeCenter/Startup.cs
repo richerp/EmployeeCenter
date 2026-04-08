@@ -49,7 +49,10 @@ public class Startup : IWebStartup
 
         // Services
         services.AddMemoryCache();
-        services.AddHttpClient();
+        services.AddHttpClient<Services.OcrService>(client =>
+        {
+            client.Timeout = TimeSpan.FromMinutes(10);
+        });
         services.AddHealthChecks()
             .AddDbContextCheck<Entities.EmployeeCenterDbContext>();
 
@@ -74,6 +77,9 @@ public class Startup : IWebStartup
         services.RegisterScheduledTask(registration: orphanAvatarCleanupJob, period: TimeSpan.FromHours(6), startDelay: TimeSpan.FromMinutes(5));
         var annualLeaveJob = services.RegisterBackgroundJob<Services.BackgroundJobs.AnnualLeaveAllocationJob>();
         services.RegisterScheduledTask(registration: annualLeaveJob, period: TimeSpan.FromHours(8), startDelay: TimeSpan.FromSeconds(25));
+        
+        var contractOcrJob = services.RegisterBackgroundJob<Services.BackgroundJobs.ContractOcrJob>();
+        services.RegisterScheduledTask(registration: contractOcrJob, period: TimeSpan.FromHours(12), startDelay: TimeSpan.FromMinutes(15));
 
         // Controllers and localization
         services.AddControllersWithViews()
