@@ -11,6 +11,10 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropForeignKey(
+                name: "FK_ContractOcrResults_Contracts_ContractId",
+                table: "ContractOcrResults");
+
             migrationBuilder.DropIndex(
                 name: "IX_ContractOcrResults_ContractId",
                 table: "ContractOcrResults");
@@ -40,11 +44,23 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                 table: "ContractOcrResults",
                 column: "ContractId",
                 unique: true);
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_ContractOcrResults_Contracts_ContractId",
+                table: "ContractOcrResults",
+                column: "ContractId",
+                principalTable: "Contracts",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Cascade);
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropForeignKey(
+                name: "FK_ContractOcrResults_Contracts_ContractId",
+                table: "ContractOcrResults");
+
             migrationBuilder.DropIndex(
                 name: "IX_ContractOcrResults_ContractId",
                 table: "ContractOcrResults");
@@ -65,6 +81,14 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                 name: "IX_ContractOcrResults_ContractId",
                 table: "ContractOcrResults",
                 column: "ContractId");
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_ContractOcrResults_Contracts_ContractId",
+                table: "ContractOcrResults",
+                column: "ContractId",
+                principalTable: "Contracts",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Cascade);
         }
     }
 }
