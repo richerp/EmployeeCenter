@@ -1,10 +1,8 @@
-using Aiursoft.EmployeeCenter.Entities;
 using Aiursoft.EmployeeCenter.Services;
 using Aiursoft.EmployeeCenter.Services.BackgroundJobs;
 using Aiursoft.EmployeeCenter.Services.FileStorage;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
