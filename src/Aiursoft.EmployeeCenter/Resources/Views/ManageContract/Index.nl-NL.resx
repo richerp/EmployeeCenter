@@ -60,6 +60,9 @@
   <data name="Pending Signature" xml:space="preserve">
     <value>In afwachting van handtekening</value>
   </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Voorbeeld</value>
+  </data>
   <data name="Private" xml:space="preserve">
     <value>Privé</value>
   </data>

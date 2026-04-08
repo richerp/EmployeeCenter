@@ -483,6 +483,9 @@
   <data name="Personal" xml:space="preserve">
     <value>個人</value>
   </data>
+  <data name="Preview" xml:space="preserve">
+    <value>預覽</value>
+  </data>
   <data name="Print" xml:space="preserve">
     <value>列印</value>
   </data>

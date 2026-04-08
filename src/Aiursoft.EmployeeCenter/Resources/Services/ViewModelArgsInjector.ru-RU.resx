@@ -480,6 +480,9 @@
   <data name="Personal" xml:space="preserve">
     <value>Личное</value>
   </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Предпросмотр</value>
+  </data>
   <data name="Print" xml:space="preserve">
     <value>Печать</value>
   </data>

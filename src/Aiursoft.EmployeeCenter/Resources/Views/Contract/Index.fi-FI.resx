@@ -57,6 +57,9 @@
   <data name="Pending Signature" xml:space="preserve">
     <value>Odottaa allekirjoitusta</value>
   </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Esitarkastelu</value>
+  </data>
   <data name="Shared" xml:space="preserve">
     <value>Jaettu</value>
   </data>

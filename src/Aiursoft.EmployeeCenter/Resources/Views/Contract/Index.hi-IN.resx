@@ -57,6 +57,9 @@
   <data name="Pending Signature" xml:space="preserve">
     <value>प्रतीक्षा में हस्ताक्षर</value>
   </data>
+  <data name="Preview" xml:space="preserve">
+    <value>पूर्वदर्शन</value>
+  </data>
   <data name="Shared" xml:space="preserve">
     <value>साझा किया गया</value>
   </data>
