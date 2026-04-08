@@ -203,6 +203,8 @@ public class ViewModelArgsInjector(
         _ = localizer["View Market Channels"];
     
         _ = localizer["Holiday Adjustments"];
+    
+        _ = localizer["Preview"];
     }
 
     public void InjectSimple(

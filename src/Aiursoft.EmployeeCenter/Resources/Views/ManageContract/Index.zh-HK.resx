@@ -60,6 +60,9 @@
   <data name="Pending Signature" xml:space="preserve">
     <value>待簽署</value>
   </data>
+  <data name="Preview" xml:space="preserve">
+    <value>預覽</value>
+  </data>
   <data name="Private" xml:space="preserve">
     <value>私人</value>
   </data>

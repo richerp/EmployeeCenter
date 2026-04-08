@@ -489,6 +489,9 @@
   <data name="Personal" xml:space="preserve">
     <value>个人</value>
   </data>
+  <data name="Preview" xml:space="preserve">
+    <value>预览</value>
+  </data>
   <data name="Print" xml:space="preserve">
     <value>打印</value>
   </data>

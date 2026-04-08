@@ -60,6 +60,9 @@
   <data name="Pending Signature" xml:space="preserve">
     <value>Ausstehende Unterschrift</value>
   </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Vorschau</value>
+  </data>
   <data name="Private" xml:space="preserve">
     <value>Privat</value>
   </data>

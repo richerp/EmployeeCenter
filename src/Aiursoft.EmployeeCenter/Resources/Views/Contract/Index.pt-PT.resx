@@ -57,6 +57,9 @@
   <data name="Pending Signature" xml:space="preserve">
     <value>Assinatura Pendente</value>
   </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Pré-visualizar</value>
+  </data>
   <data name="Shared" xml:space="preserve">
     <value>Partilhado</value>
   </data>

@@ -480,6 +480,9 @@
   <data name="Personal" xml:space="preserve">
     <value>Henkilökohtainen</value>
   </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Esikatsele</value>
+  </data>
   <data name="Print" xml:space="preserve">
     <value>Tulosta</value>
   </data>

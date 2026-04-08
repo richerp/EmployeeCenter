@@ -483,6 +483,9 @@
   <data name="Personal" xml:space="preserve">
     <value>Personnel</value>
   </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Aperçu</value>
+  </data>
   <data name="Print" xml:space="preserve">
     <value>Imprimer</value>
   </data>

@@ -480,6 +480,9 @@
   <data name="Personal" xml:space="preserve">
     <value>व्यक्तिगत</value>
   </data>
+  <data name="Preview" xml:space="preserve">
+    <value>पूर्व-दृश्य</value>
+  </data>
   <data name="Print" xml:space="preserve">
     <value>प्रिंट</value>
   </data>

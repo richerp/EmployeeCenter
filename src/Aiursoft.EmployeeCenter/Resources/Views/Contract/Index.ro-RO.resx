@@ -57,6 +57,9 @@
   <data name="Pending Signature" xml:space="preserve">
     <value>Așteptând semnătură</value>
   </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Previzualizare</value>
+  </data>
   <data name="Shared" xml:space="preserve">
     <value>Partajat</value>
   </data>

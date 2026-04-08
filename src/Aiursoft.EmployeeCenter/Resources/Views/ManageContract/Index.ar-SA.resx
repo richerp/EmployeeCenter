@@ -60,6 +60,9 @@
   <data name="Pending Signature" xml:space="preserve">
     <value>قيد التوقيع</value>
   </data>
+  <data name="Preview" xml:space="preserve">
+    <value>معاينة</value>
+  </data>
   <data name="Private" xml:space="preserve">
     <value>خاص</value>
   </data>

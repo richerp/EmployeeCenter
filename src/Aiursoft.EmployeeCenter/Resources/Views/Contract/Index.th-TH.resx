@@ -57,6 +57,9 @@
   <data name="Pending Signature" xml:space="preserve">
     <value>รอดำเนินการลงนาม</value>
   </data>
+  <data name="Preview" xml:space="preserve">
+    <value>ดูตัวอย่าง</value>
+  </data>
   <data name="Shared" xml:space="preserve">
     <value>ร่วมใช้</value>
   </data>
