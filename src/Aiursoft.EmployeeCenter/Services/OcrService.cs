@@ -57,7 +57,7 @@ public class OcrService(
 
         try
         {
-            var filePath = storageService.GetFilePhysicalPath(contract.FilePath);
+            var filePath = storageService.GetFilePhysicalPath(contract.FilePath, isVault: true);
             if (!File.Exists(filePath))
             {
                 logger.LogError("File not found at {FilePath} for contract {ContractId}", filePath, contractId);
