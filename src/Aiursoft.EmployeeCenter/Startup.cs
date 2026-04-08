@@ -25,6 +25,7 @@ public class Startup : IWebStartup
     {
         // AppSettings.
         services.Configure<AppSettings>(configuration.GetSection("AppSettings"));
+        services.Configure<OcrSettings>(configuration.GetSection("AppSettings:OCR"));
         services.Configure<GitLabSettings>(configuration.GetSection("GitLab"));
 
         // Relational database

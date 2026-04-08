@@ -44,6 +44,9 @@
                     </td>
                     <td><label class="text-muted" data-utc-time="@item.CreateTime.ToHtmlDateTime()"></label></td>
                     <td class="text-end">
+                        <a asp-action="Preview" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary" title="@Localizer["Preview"]">
+                            <i class="align-middle" data-lucide="eye"></i> @Localizer["Preview"]
+                        </a>
                         <a href="@StorageService.RelativePathToInternetUrl(item.FilePath, isVault: true)" class="btn btn-sm btn-outline-info" target="_blank">
                             <i class="align-middle" data-lucide="download"></i> @Localizer["Download"]
                         </a>

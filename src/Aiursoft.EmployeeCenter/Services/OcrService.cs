@@ -29,12 +29,12 @@ public class OcrResultItem
 
 public class OcrService(
     HttpClient httpClient,
-    IOptions<AppSettings> appSettings,
+    IOptions<OcrSettings> ocrSettings,
     EmployeeCenterDbContext dbContext,
     StorageService storageService,
     ILogger<OcrService> logger) : ITransientDependency
 {
-    private readonly OcrSettings _ocrSettings = appSettings.Value.OCR;
+    private readonly OcrSettings _ocrSettings = ocrSettings.Value;
 
     public async Task ProcessContractOcrAsync(int contractId)
     {

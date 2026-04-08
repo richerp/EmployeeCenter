@@ -81,6 +81,24 @@ public class ManageContractController(
         });
     }
 
+    [Authorize(Policy = AppPermissionNames.CanCreateContract)]
+    public async Task<IActionResult> OcrResults(int id)
+    {
+        var contract = await context.Contracts
+            .FirstOrDefaultAsync(c => c.Id == id);
+        if (contract == null) return NotFound();
+
+        var ocrResult = await context.ContractOcrResults
+            .FirstOrDefaultAsync(r => r.ContractId == id);
+
+        return this.StackView(new OcrPreviewViewModel
+        {
+            Contract = contract,
+            PlainText = ocrResult?.PlainText,
+            JsonResult = ocrResult?.JsonResult
+        });
+    }
+
     [HttpPost]
     [ValidateAntiForgeryToken]
     [Authorize(Policy = AppPermissionNames.CanCreateContract)]

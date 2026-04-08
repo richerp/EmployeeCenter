@@ -39,4 +39,27 @@ public class ContractController(
             Contracts = contracts
         });
     }
+
+    public async Task<IActionResult> Preview(int id)
+    {
+        var canViewHistory = (await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanViewContractHistory)).Succeeded;
+
+        var contract = await context.Contracts
+            .FirstOrDefaultAsync(c => c.Id == id && (c.IsPublic || canViewHistory));
+
+        if (contract == null)
+        {
+            return NotFound();
+        }
+
+        var ocrResult = await context.ContractOcrResults
+            .FirstOrDefaultAsync(r => r.ContractId == id);
+
+        return this.StackView(new OcrPreviewViewModel
+        {
+            Contract = contract,
+            PlainText = ocrResult?.PlainText,
+            JsonResult = ocrResult?.JsonResult
+        });
+    }
 }
