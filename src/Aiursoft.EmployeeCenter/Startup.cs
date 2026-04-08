@@ -49,7 +49,10 @@ public class Startup : IWebStartup
 
         // Services
         services.AddMemoryCache();
-        services.AddHttpClient();
+        services.AddHttpClient<Services.OcrService>(client =>
+        {
+            client.Timeout = TimeSpan.FromMinutes(10);
+        });
         services.AddHealthChecks()
             .AddDbContextCheck<Entities.EmployeeCenterDbContext>();
 

@@ -55,6 +55,15 @@ public abstract class EmployeeCenterDbContext(DbContextOptions options) : Identi
 
     public DbSet<AdjustedHoliday> AdjustedHolidays => Set<AdjustedHoliday>();
 
+    protected override void OnModelCreating(ModelBuilder builder)
+    {
+        base.OnModelCreating(builder);
+
+        builder.Entity<ContractOcrResult>()
+            .HasIndex(r => r.ContractId)
+            .IsUnique();
+    }
+
     public virtual Task MigrateAsync(CancellationToken cancellationToken) =>
         Database.MigrateAsync(cancellationToken);
 

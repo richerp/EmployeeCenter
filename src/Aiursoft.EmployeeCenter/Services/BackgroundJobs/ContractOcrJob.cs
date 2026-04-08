@@ -18,12 +18,14 @@ public class ContractOcrJob(
         {
             logger.LogInformation("Contract OCR job started");
             
-            // Find contracts that don't have OCR results yet
+            // Find contracts that don't have OCR results yet AND have not exceeded retry limit (5)
             var unprocessedContractIds = await db.Contracts
                 .Where(c => !db.ContractOcrResults.Any(r => r.ContractId == c.Id))
-                .OrderByDescending(c => c.CreateTime)
+                .Where(c => c.OcrAttemptCount < 5)
+                .OrderBy(c => c.OcrAttemptCount) // Try those with fewer attempts first
+                .ThenByDescending(c => c.CreateTime) // Then newer ones
                 .Select(c => c.Id)
-                .Take(10) // Process 10 at a time to avoid long running job
+                .Take(50) // Process more at once to clear backlog
                 .ToListAsync();
 
             if (unprocessedContractIds.Count == 0)

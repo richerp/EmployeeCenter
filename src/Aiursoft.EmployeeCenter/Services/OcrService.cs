@@ -32,7 +32,7 @@ public class OcrService(
     IOptions<AppSettings> appSettings,
     EmployeeCenterDbContext dbContext,
     StorageService storageService,
-    ILogger<OcrService> logger) : IScopedDependency
+    ILogger<OcrService> logger) : ITransientDependency
 {
     private readonly OcrSettings _ocrSettings = appSettings.Value.OCR;
 
@@ -50,6 +50,10 @@ public class OcrService(
             logger.LogWarning("OCR settings are not configured. Skipping OCR for contract {ContractId}", contractId);
             return;
         }
+
+        contract.OcrAttemptCount++;
+        contract.LastOcrAttemptTime = DateTime.UtcNow;
+        await dbContext.SaveChangesAsync();
 
         try
         {
@@ -77,10 +81,12 @@ public class OcrService(
                 var ocrResponse = JsonConvert.DeserializeObject<OcrResponse>(content);
                 if (ocrResponse?.Status == "ok")
                 {
+                    var plainText = string.Join("\n", ocrResponse.Results.Select(r => r.Text));
                     var result = new ContractOcrResult
                     {
                         ContractId = contractId,
-                        JsonResult = content
+                        JsonResult = content,
+                        PlainText = plainText
                     };
                     dbContext.ContractOcrResults.Add(result);
                     await dbContext.SaveChangesAsync();

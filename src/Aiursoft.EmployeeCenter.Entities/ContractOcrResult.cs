@@ -15,5 +15,7 @@ public class ContractOcrResult
 
     public required string JsonResult { get; set; }
 
+    public string? PlainText { get; set; }
+
     public DateTime CreateTime { get; set; } = DateTime.UtcNow;
 }

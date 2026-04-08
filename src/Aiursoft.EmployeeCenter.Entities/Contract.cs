@@ -17,5 +17,9 @@ public class Contract
 
     public bool IsPublic { get; set; }
 
+    public int OcrAttemptCount { get; set; }
+
+    public DateTime? LastOcrAttemptTime { get; set; }
+
     public DateTime CreateTime { get; set; } = DateTime.UtcNow;
 }
