@@ -493,6 +493,29 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.ToTable("Contracts");
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.ContractOcrResult", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("ContractId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("CreateTime")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("JsonResult")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ContractId");
+
+                    b.ToTable("ContractOcrResults");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.CustomerRelationship", b =>
                 {
                     b.Property<int>("Id")
@@ -2092,6 +2115,17 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.Navigation("CompanyEntity");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.ContractOcrResult", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.Contract", "Contract")
+                        .WithMany()
+                        .HasForeignKey("ContractId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Contract");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.CustomerRelationship", b =>
