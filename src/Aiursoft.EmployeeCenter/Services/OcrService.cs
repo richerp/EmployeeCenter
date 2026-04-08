@@ -14,7 +14,7 @@ public class OcrResponse
     public string Status { get; set; } = string.Empty;
     public double DurationS { get; set; }
     public string Device { get; set; } = string.Empty;
-    public List<OcrResultItem> Results { get; set; } = new();
+    public List<OcrResultItem>? Results { get; set; }
     public string? Error { get; set; }
 }
 
@@ -81,7 +81,10 @@ public class OcrService(
                 var ocrResponse = JsonConvert.DeserializeObject<OcrResponse>(content);
                 if (ocrResponse?.Status == "ok")
                 {
-                    var plainText = string.Join("\n", ocrResponse.Results.Select(r => r.Text));
+                    var plainText = ocrResponse.Results != null 
+                        ? string.Join("\n", ocrResponse.Results.Select(r => r.Text))
+                        : string.Empty;
+                        
                     var result = new ContractOcrResult
                     {
                         ContractId = contractId,
