@@ -72,6 +72,9 @@
                         </a>
                         @if ((await AuthorizationService.AuthorizeAsync(User, AppPermissionNames.CanCreateContract)).Succeeded)
                         {
+                            <a asp-action="OcrResults" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary" title="@Localizer["Preview"]">
+                                <i class="align-middle" data-lucide="eye"></i> @Localizer["Preview"]
+                            </a>
                             <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary">
                                 <i class="align-middle" data-lucide="edit-2"></i> @Localizer["Edit"]
                             </a>
