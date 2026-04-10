@@ -1,19 +1,30 @@
 using Aiursoft.Canon.BackgroundJobs;
+using Aiursoft.EmployeeCenter.Configuration;
 using Aiursoft.EmployeeCenter.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 
 namespace Aiursoft.EmployeeCenter.Services.BackgroundJobs;
 
 public class ContractOcrJob(
     EmployeeCenterDbContext db,
     OcrService ocrService,
+    IOptions<OcrSettings> ocrSettings,
     ILogger<ContractOcrJob> logger) : IBackgroundJob
 {
+    private readonly OcrSettings _ocrSettings = ocrSettings.Value;
+
     public string Name => "Contract OCR Job";
     public string Description => "Scans for contracts that haven't been OCR processed yet and performs OCR recognition.";
 
     public async Task ExecuteAsync()
     {
+        if (!_ocrSettings.Enabled)
+        {
+            logger.LogInformation("Contract OCR job skipped because OCR is disabled in configuration.");
+            return;
+        }
+
         try
         {
             logger.LogInformation("Contract OCR job started");

@@ -38,6 +38,11 @@ public class OcrService(
 
     public async Task ProcessContractOcrAsync(int contractId)
     {
+        if (!_ocrSettings.Enabled)
+        {
+            return;
+        }
+
         var contract = await dbContext.Contracts.FindAsync(contractId);
         if (contract == null)
         {
