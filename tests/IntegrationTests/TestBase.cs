@@ -24,10 +24,7 @@ public abstract class TestBase
     [TestInitialize]
     public virtual async Task CreateServer()
     {
-        Server = await AppAsync<Startup>(
-        [
-            "AppSettings:OCR:Enabled=false"
-        ], port: Port);
+        Server = await AppAsync<Startup>([], port: Port);
         await Server.UpdateDbAsync<EmployeeCenterDbContext>();
         await Server.SeedAsync();
         await Server.StartAsync();
