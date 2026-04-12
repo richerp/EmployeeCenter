@@ -33,6 +33,9 @@
   <data name="Allows approving or rejecting any leave application, regardless of the reporting line." xml:space="preserve">
     <value>Staat het goedkeuren of afwijzen van elke verlofaanvraag toe, ongeacht de rapporteringslijn.</value>
   </data>
+  <data name="Allows approving, acknowledging, or rejecting reimbursement requests from any employee." xml:space="preserve">
+    <value>Staat toe om terugbetalingsverzoeken van elke medewerker te goedkeuren, te bevestigen of te weigeren.</value>
+  </data>
   <data name="Allows approving, rejecting, or requesting changes for project requirements. Everyone can submit requirements and comment on them." xml:space="preserve">
     <value>Staat goedkeuring, afwijzing of wijzigingen van projectvereisten toe. Iedereen kan vereisten indienen en hierop reageren.</value>
   </data>
@@ -126,6 +129,9 @@
   <data name="Allows the user to fill out and submit feedback questionnaires." xml:space="preserve">
     <value>Staat de gebruiker toe om feedbackvragenlijsten in te vullen en te versturen.</value>
   </data>
+  <data name="Allows the user to submit reimbursement requests for their expenses." xml:space="preserve">
+    <value>Staat de gebruiker toe om vergoedingsaanvragen voor hun uitgaven in te dienen.</value>
+  </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Staats het bekijken van alle bedrijfscontracten, inclusief die die als privé zijn gemarkeerd.</value>
   </data>
@@ -167,6 +173,9 @@
   </data>
   <data name="Approve Project Requirements" xml:space="preserve">
     <value>Projectvereisten goedkeuren</value>
+  </data>
+  <data name="Approve Reimbursement" xml:space="preserve">
+    <value>Reimbursement goedkeuren</value>
   </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>Rollen toewijzen aan gebruikers</value>
@@ -278,6 +287,9 @@
   </data>
   <data name="Submit Feedback" xml:space="preserve">
     <value>Feedback indienen</value>
+  </data>
+  <data name="Submit Reimbursement" xml:space="preserve">
+    <value>Indiening terugbetaling</value>
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>Bekijk elke bedrijfscontract, inclusief particuliere contracten</value>

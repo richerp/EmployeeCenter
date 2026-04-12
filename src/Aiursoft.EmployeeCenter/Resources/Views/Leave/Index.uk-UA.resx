@@ -1,6 +1,7 @@
-<?xml version='1.0' encoding='utf-8'?>
-<root xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <xsd:schema id="root">
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <xsd:element name="root" msdata:IsDataSet="true">
 
         </xsd:element>
@@ -44,6 +45,9 @@
   <data name="Carried Over" xml:space="preserve">
     <value>Перенесено</value>
   </data>
+  <data name="days" xml:space="preserve">
+    <value>днів</value>
+  </data>
   <data name="Days" xml:space="preserve">
     <value>Днів</value>
   </data>
@@ -72,7 +76,7 @@
     <value>Максимальна перенесена кількість: {0} днів (термін дії закінчується через 1 рік)</value>
   </data>
   <data name="Mental health: no documents required" xml:space="preserve">
-    <value>Психічне здоров'я: документи не потрібні</value>
+    <value>Психічне здоров&apos;я: документи не потрібні</value>
   </data>
   <data name="My Leave Balance" xml:space="preserve">
     <value>Мій залишок відпустки</value>

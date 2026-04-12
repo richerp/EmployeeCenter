@@ -33,6 +33,9 @@
   <data name="Allows approving or rejecting any leave application, regardless of the reporting line." xml:space="preserve">
     <value>Tillåter godkännande eller avvisande av någon ansökan om semester, oavsett rapportlinje.</value>
   </data>
+  <data name="Allows approving, acknowledging, or rejecting reimbursement requests from any employee." xml:space="preserve">
+    <value>Tillåter att godkänna, bekräfta eller avslå ersättningsansökningar från alla anställda.</value>
+  </data>
   <data name="Allows approving, rejecting, or requesting changes for project requirements. Everyone can submit requirements and comment on them." xml:space="preserve">
     <value>Tillåter godkännande, avvisning eller begäran om ändringar av projektkrav. Alla kan lämna in krav och kommentera dem.</value>
   </data>
@@ -126,6 +129,9 @@
   <data name="Allows the user to fill out and submit feedback questionnaires." xml:space="preserve">
     <value>Tillåter användaren att fylla i och skicka in feedbackfrågeformulär.</value>
   </data>
+  <data name="Allows the user to submit reimbursement requests for their expenses." xml:space="preserve">
+    <value>Tillåter användaren att skicka in ansökningar om ersättning för sina utgifter.</value>
+  </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Tillåter visning av alla företagsavtal, inklusive de som är markerade som privata.</value>
   </data>
@@ -167,6 +173,9 @@
   </data>
   <data name="Approve Project Requirements" xml:space="preserve">
     <value>Godkänn projektkrav</value>
+  </data>
+  <data name="Approve Reimbursement" xml:space="preserve">
+    <value>Godkänn ersättning</value>
   </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>Tilldela roller till användare</value>
@@ -278,6 +287,9 @@
   </data>
   <data name="Submit Feedback" xml:space="preserve">
     <value>Skicka återkoppling</value>
+  </data>
+  <data name="Submit Reimbursement" xml:space="preserve">
+    <value>Skicka in ersättning</value>
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>Visa vilken som helst företagsavtal, inklusive privata</value>

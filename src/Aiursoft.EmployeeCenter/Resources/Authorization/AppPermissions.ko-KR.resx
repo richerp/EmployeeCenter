@@ -33,6 +33,9 @@
   <data name="Allows approving or rejecting any leave application, regardless of the reporting line." xml:space="preserve">
     <value>보고선에 관계없이 모든 휴가 신청을 승인하거나 거절할 수 있습니다.</value>
   </data>
+  <data name="Allows approving, acknowledging, or rejecting reimbursement requests from any employee." xml:space="preserve">
+    <value>모든 직원의 보상금 요청을 승인, 승인 확인 또는 거부할 수 있습니다.</value>
+  </data>
   <data name="Allows approving, rejecting, or requesting changes for project requirements. Everyone can submit requirements and comment on them." xml:space="preserve">
     <value>프로젝트 요구사항에 대한 승인, 거부 또는 수정 요청을 허용합니다. 모든 사용자가 요구사항을 제출하고 댓글을 달 수 있습니다.</value>
   </data>
@@ -126,6 +129,9 @@
   <data name="Allows the user to fill out and submit feedback questionnaires." xml:space="preserve">
     <value>사용자가 피드백 설문지를 작성하고 제출할 수 있도록 허용합니다.</value>
   </data>
+  <data name="Allows the user to submit reimbursement requests for their expenses." xml:space="preserve">
+    <value>사용자가 자신의 지출에 대한 환급 요청을 제출할 수 있도록 합니다.</value>
+  </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>모든 회사 계약서를 포함하여 비공개로 표시된 계약서도 볼 수 있도록 허용합니다.</value>
   </data>
@@ -167,6 +173,9 @@
   </data>
   <data name="Approve Project Requirements" xml:space="preserve">
     <value>프로젝트 요구사항 승인</value>
+  </data>
+  <data name="Approve Reimbursement" xml:space="preserve">
+    <value>재정 청구 승인</value>
   </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>사용자에게 역할 할당</value>
@@ -278,6 +287,9 @@
   </data>
   <data name="Submit Feedback" xml:space="preserve">
     <value>피드백 제출</value>
+  </data>
+  <data name="Submit Reimbursement" xml:space="preserve">
+    <value>청구서 제출</value>
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>모든 회사 계약서(비공개 계약서 포함) 보기</value>

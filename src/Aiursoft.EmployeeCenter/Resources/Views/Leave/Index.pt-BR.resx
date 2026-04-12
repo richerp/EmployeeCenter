@@ -1,6 +1,7 @@
-<?xml version='1.0' encoding='utf-8'?>
-<root xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <xsd:schema id="root">
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <xsd:element name="root" msdata:IsDataSet="true">
 
         </xsd:element>
@@ -43,6 +44,9 @@
   </data>
   <data name="Carried Over" xml:space="preserve">
     <value>Carregado para o próximo ano</value>
+  </data>
+  <data name="days" xml:space="preserve">
+    <value>dias</value>
   </data>
   <data name="Days" xml:space="preserve">
     <value>Dias</value>

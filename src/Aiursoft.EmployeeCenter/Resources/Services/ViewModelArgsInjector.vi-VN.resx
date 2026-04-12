@@ -438,6 +438,9 @@
   <data name="My Payrolls" xml:space="preserve">
     <value>Bảng lương của tôi</value>
   </data>
+  <data name="My Reimbursements" xml:space="preserve">
+    <value>Chi trả của tôi</value>
+  </data>
   <data name="My Report Line" xml:space="preserve">
     <value>Dòng báo cáo của tôi</value>
   </data>
@@ -515,6 +518,9 @@
   </data>
   <data name="Register" xml:space="preserve">
     <value>Đăng ký</value>
+  </data>
+  <data name="Reimbursement" xml:space="preserve">
+    <value>Hoàn trả</value>
   </data>
   <data name="Reject" xml:space="preserve">
     <value>Từ chối</value>

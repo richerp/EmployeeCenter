@@ -33,6 +33,9 @@
   <data name="Allows approving or rejecting any leave application, regardless of the reporting line." xml:space="preserve">
     <value>Sallii hyväksyä tai hylätä minkä tahansa lomapyyntö, riippumatta raportointirakenteesta.</value>
   </data>
+  <data name="Allows approving, acknowledging, or rejecting reimbursement requests from any employee." xml:space="preserve">
+    <value>Mahdollistaa tilitysopyyntöjen hyväksymisen, vahvistamisen tai hylkämisen mistä tahansa työntekijästä.</value>
+  </data>
   <data name="Allows approving, rejecting, or requesting changes for project requirements. Everyone can submit requirements and comment on them." xml:space="preserve">
     <value>Mahdollistaa projektivaatimusten hyväksymisen, hylkäämisen tai muutoksia vaativien pyyntöjen tekemisen. Kaikki voivat esittää vaatimuksia ja kommentoida niitä.</value>
   </data>
@@ -126,6 +129,9 @@
   <data name="Allows the user to fill out and submit feedback questionnaires." xml:space="preserve">
     <value>Sallii käyttäjän täyttää ja lähettää palautetta koskevat kyselyt.</value>
   </data>
+  <data name="Allows the user to submit reimbursement requests for their expenses." xml:space="preserve">
+    <value>Käyttäjä voi jättää korvauspyyntöjä menoistaan.</value>
+  </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Sallii kaikkien yrityksen sopimusten tarkastelun, mukaan lukien ne, jotka on merkitty yksityisiksi.</value>
   </data>
@@ -167,6 +173,9 @@
   </data>
   <data name="Approve Project Requirements" xml:space="preserve">
     <value>Hyväksy projektivaatimukset</value>
+  </data>
+  <data name="Approve Reimbursement" xml:space="preserve">
+    <value>Hyväksy korvauksia</value>
   </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>Anna roolit käyttäjille</value>
@@ -278,6 +287,9 @@
   </data>
   <data name="Submit Feedback" xml:space="preserve">
     <value>Lähetä palautetta</value>
+  </data>
+  <data name="Submit Reimbursement" xml:space="preserve">
+    <value>Lähetä korvaus</value>
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>Näytä mikä tahansa yrityksen sopimus, mukaan lukien yksityiset</value>

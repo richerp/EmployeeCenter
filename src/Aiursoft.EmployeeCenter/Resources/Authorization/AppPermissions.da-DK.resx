@@ -33,6 +33,9 @@
   <data name="Allows approving or rejecting any leave application, regardless of the reporting line." xml:space="preserve">
     <value>Tillader godkendelse eller afvisning af enhver fraværsansøgning, uanset rapportlinje.</value>
   </data>
+  <data name="Allows approving, acknowledging, or rejecting reimbursement requests from any employee." xml:space="preserve">
+    <value>Tillader godkendelse, anerkendelse eller afvisning af erstatningsanmodninger fra enhver ansat.</value>
+  </data>
   <data name="Allows approving, rejecting, or requesting changes for project requirements. Everyone can submit requirements and comment on them." xml:space="preserve">
     <value>Tillader godkendelse, afvisning eller anmodning om ændringer af projektkrav. Alle kan indsende krav og kommentere på dem.</value>
   </data>
@@ -126,6 +129,9 @@
   <data name="Allows the user to fill out and submit feedback questionnaires." xml:space="preserve">
     <value>Giver brugeren mulighed for at udfylde og indsende feedbackspørgeskemaer.</value>
   </data>
+  <data name="Allows the user to submit reimbursement requests for their expenses." xml:space="preserve">
+    <value>Brugeren kan indsende ansøgninger om refusion af udgifter.</value>
+  </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Tillader visning af alle virksomhedskontrakter, herunder de, der er markeret som private.</value>
   </data>
@@ -167,6 +173,9 @@
   </data>
   <data name="Approve Project Requirements" xml:space="preserve">
     <value>Godkend projektkrav</value>
+  </data>
+  <data name="Approve Reimbursement" xml:space="preserve">
+    <value>Godkend refusion</value>
   </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>Tildel roller til brugere</value>
@@ -278,6 +287,9 @@
   </data>
   <data name="Submit Feedback" xml:space="preserve">
     <value>Indsend Feedback</value>
+  </data>
+  <data name="Submit Reimbursement" xml:space="preserve">
+    <value>Indsend refusion</value>
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>Vis enhver virksomhedskontrakt, herunder private</value>

@@ -435,6 +435,9 @@
   <data name="My Payrolls" xml:space="preserve">
     <value>Mijn loonafrekeningen</value>
   </data>
+  <data name="My Reimbursements" xml:space="preserve">
+    <value>Mijn vergoedingen</value>
+  </data>
   <data name="My Report Line" xml:space="preserve">
     <value>Mijn rapportlijn</value>
   </data>
@@ -512,6 +515,9 @@
   </data>
   <data name="Register" xml:space="preserve">
     <value>Registreren</value>
+  </data>
+  <data name="Reimbursement" xml:space="preserve">
+    <value>Vergoeding</value>
   </data>
   <data name="Reject" xml:space="preserve">
     <value>Afwijzen</value>

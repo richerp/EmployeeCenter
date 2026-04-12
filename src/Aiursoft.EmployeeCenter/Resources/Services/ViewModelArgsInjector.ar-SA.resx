@@ -435,6 +435,9 @@
   <data name="My Payrolls" xml:space="preserve">
     <value>رواتبي</value>
   </data>
+  <data name="My Reimbursements" xml:space="preserve">
+    <value>استرداداتي</value>
+  </data>
   <data name="My Report Line" xml:space="preserve">
     <value>خط إبلاغي</value>
   </data>
@@ -512,6 +515,9 @@
   </data>
   <data name="Register" xml:space="preserve">
     <value>تسجيل</value>
+  </data>
+  <data name="Reimbursement" xml:space="preserve">
+    <value>استرداد</value>
   </data>
   <data name="Reject" xml:space="preserve">
     <value>رفض</value>

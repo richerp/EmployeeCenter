@@ -33,6 +33,9 @@
   <data name="Allows approving or rejecting any leave application, regardless of the reporting line." xml:space="preserve">
     <value>Erlaubt die Genehmigung oder Ablehnung jeder Urlaubsanfrage, unabhängig von der Berichtslinie.</value>
   </data>
+  <data name="Allows approving, acknowledging, or rejecting reimbursement requests from any employee." xml:space="preserve">
+    <value>Ermöglicht die Genehmigung, Bestätigung oder Ablehnung von Erstattungsanträgen von beliebigen Mitarbeitern.</value>
+  </data>
   <data name="Allows approving, rejecting, or requesting changes for project requirements. Everyone can submit requirements and comment on them." xml:space="preserve">
     <value>Erlaubt die Genehmigung, Ablehnung oder Anforderung von Änderungen für Projektanforderungen. Jeder kann Anforderungen einreichen und dazu Stellung nehmen.</value>
   </data>
@@ -126,6 +129,9 @@
   <data name="Allows the user to fill out and submit feedback questionnaires." xml:space="preserve">
     <value>Ermöglicht dem Benutzer, Feedback-Befragungen auszufüllen und einzureichen.</value>
   </data>
+  <data name="Allows the user to submit reimbursement requests for their expenses." xml:space="preserve">
+    <value>Der Benutzer kann Erstattungsanträge für seine Ausgaben einreichen.</value>
+  </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Ermöglicht das Ansehen aller Unternehmensverträge, einschließlich solcher, die als privat gekennzeichnet sind.</value>
   </data>
@@ -167,6 +173,9 @@
   </data>
   <data name="Approve Project Requirements" xml:space="preserve">
     <value>Projektanforderungen genehmigen</value>
+  </data>
+  <data name="Approve Reimbursement" xml:space="preserve">
+    <value>Erstattung genehmigen</value>
   </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>Rollen Benutzern zuweisen</value>
@@ -278,6 +287,9 @@
   </data>
   <data name="Submit Feedback" xml:space="preserve">
     <value>Feedback einreichen</value>
+  </data>
+  <data name="Submit Reimbursement" xml:space="preserve">
+    <value>Erstattung einreichen</value>
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>Jeden Unternehmensvertrag anzeigen, einschließlich privater</value>

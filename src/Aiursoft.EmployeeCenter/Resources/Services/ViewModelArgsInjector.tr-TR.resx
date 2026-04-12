@@ -435,6 +435,9 @@
   <data name="My Payrolls" xml:space="preserve">
     <value>Maaşlarım</value>
   </data>
+  <data name="My Reimbursements" xml:space="preserve">
+    <value>İade Taleplerim</value>
+  </data>
   <data name="My Report Line" xml:space="preserve">
     <value>Rapor Hattım</value>
   </data>
@@ -512,6 +515,9 @@
   </data>
   <data name="Register" xml:space="preserve">
     <value>Kayıt Ol</value>
+  </data>
+  <data name="Reimbursement" xml:space="preserve">
+    <value>İade</value>
   </data>
   <data name="Reject" xml:space="preserve">
     <value>Reddet</value>

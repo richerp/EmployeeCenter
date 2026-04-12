@@ -435,6 +435,9 @@
   <data name="My Payrolls" xml:space="preserve">
     <value>Minun palkkalaskelmani</value>
   </data>
+  <data name="My Reimbursements" xml:space="preserve">
+    <value>Omat korvaukseni</value>
+  </data>
   <data name="My Report Line" xml:space="preserve">
     <value>Oma raporttirivini</value>
   </data>
@@ -512,6 +515,9 @@
   </data>
   <data name="Register" xml:space="preserve">
     <value>Rekisteröidy</value>
+  </data>
+  <data name="Reimbursement" xml:space="preserve">
+    <value>Korvaus</value>
   </data>
   <data name="Reject" xml:space="preserve">
     <value>Hylätä</value>

@@ -438,6 +438,9 @@
   <data name="My Payrolls" xml:space="preserve">
     <value>Mis nóminas</value>
   </data>
+  <data name="My Reimbursements" xml:space="preserve">
+    <value>Mis Reembolsos</value>
+  </data>
   <data name="My Report Line" xml:space="preserve">
     <value>Mi línea de reporte</value>
   </data>
@@ -515,6 +518,9 @@
   </data>
   <data name="Register" xml:space="preserve">
     <value>Registrarse</value>
+  </data>
+  <data name="Reimbursement" xml:space="preserve">
+    <value>Reembolso</value>
   </data>
   <data name="Reject" xml:space="preserve">
     <value>Rechazar</value>
