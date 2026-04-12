@@ -438,6 +438,9 @@
   <data name="My Payrolls" xml:space="preserve">
     <value>내 급여</value>
   </data>
+  <data name="My Reimbursements" xml:space="preserve">
+    <value>내 비용 청구</value>
+  </data>
   <data name="My Report Line" xml:space="preserve">
     <value>내 보고선</value>
   </data>
@@ -515,6 +518,9 @@
   </data>
   <data name="Register" xml:space="preserve">
     <value>회원가입</value>
+  </data>
+  <data name="Reimbursement" xml:space="preserve">
+    <value>비용 정산</value>
   </data>
   <data name="Reject" xml:space="preserve">
     <value>거부</value>

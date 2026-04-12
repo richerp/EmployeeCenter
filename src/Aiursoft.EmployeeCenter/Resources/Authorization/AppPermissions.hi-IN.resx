@@ -33,6 +33,9 @@
   <data name="Allows approving or rejecting any leave application, regardless of the reporting line." xml:space="preserve">
     <value>किसी भी छुट्टी के आवेदन को मान्यता देने या अस्वीकार करने की अनुमति देता है, चाहे वह रिपोर्टिंग लाइन के अनुसार हो या न हो।</value>
   </data>
+  <data name="Allows approving, acknowledging, or rejecting reimbursement requests from any employee." xml:space="preserve">
+    <value>किसी भी कर्मचारी से प्राप्त भुगतान की मांगों को स्वीकार करने, मान्य करने या अस्वीकार करने की अनुमति देता है।</value>
+  </data>
   <data name="Allows approving, rejecting, or requesting changes for project requirements. Everyone can submit requirements and comment on them." xml:space="preserve">
     <value>प्रोजेक्ट आवश्यकताओं के लिए अनुमोदन, अस्वीकृति या बदलाव के लिए मांगने की अनुमति देता है। हर कोई आवश्यकताएं जमा कर सकता है और उन पर टिप्पणी कर सकता है।</value>
   </data>
@@ -126,6 +129,9 @@
   <data name="Allows the user to fill out and submit feedback questionnaires." xml:space="preserve">
     <value>उपयोगकर्ता को प्रतिक्रिया प्रश्नावली भरने और जमा करने की अनुमति देता है।</value>
   </data>
+  <data name="Allows the user to submit reimbursement requests for their expenses." xml:space="preserve">
+    <value>उपयोगकर्ता को अपने व्यय के लिए वापसी की मांगें जमा करने की अनुमति देता है।</value>
+  </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>सभी कंपनी के समझौतों को देखने की अनुमति देता है, जिनमें निजी चिह्नित किए गए शामिल हैं।</value>
   </data>
@@ -167,6 +173,9 @@
   </data>
   <data name="Approve Project Requirements" xml:space="preserve">
     <value>प्रोजेक्ट आवश्यकताओं को मंजूरी दें</value>
+  </data>
+  <data name="Approve Reimbursement" xml:space="preserve">
+    <value>पुष्टि करें</value>
   </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>उपयोगकर्ताओं को भूमिकाएँ नियत करें</value>
@@ -278,6 +287,9 @@
   </data>
   <data name="Submit Feedback" xml:space="preserve">
     <value>फीडबैक जमा करें</value>
+  </data>
+  <data name="Submit Reimbursement" xml:space="preserve">
+    <value>पुनर्भुगतान जमा करें</value>
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>किसी भी कंपनी के संविदा को देखें, जिसमें निजी संविदाएं भी शामिल हों</value>

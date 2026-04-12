@@ -438,6 +438,9 @@
   <data name="My Payrolls" xml:space="preserve">
     <value>ค่าจ้างของฉัน</value>
   </data>
+  <data name="My Reimbursements" xml:space="preserve">
+    <value>การเบิกเงินคืนของฉัน</value>
+  </data>
   <data name="My Report Line" xml:space="preserve">
     <value>สายการรายงานของฉัน</value>
   </data>
@@ -515,6 +518,9 @@
   </data>
   <data name="Register" xml:space="preserve">
     <value>สมัครสมาชิก</value>
+  </data>
+  <data name="Reimbursement" xml:space="preserve">
+    <value>การชำระเงินคืน</value>
   </data>
   <data name="Reject" xml:space="preserve">
     <value>ปฏิเสธ</value>

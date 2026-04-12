@@ -438,6 +438,9 @@
   <data name="My Payrolls" xml:space="preserve">
     <value>我的薪金</value>
   </data>
+  <data name="My Reimbursements" xml:space="preserve">
+    <value>我的報銷款項</value>
+  </data>
   <data name="My Report Line" xml:space="preserve">
     <value>我的匯報線</value>
   </data>
@@ -515,6 +518,9 @@
   </data>
   <data name="Register" xml:space="preserve">
     <value>註冊</value>
+  </data>
+  <data name="Reimbursement" xml:space="preserve">
+    <value>報銷</value>
   </data>
   <data name="Reject" xml:space="preserve">
     <value>拒絕</value>

@@ -435,6 +435,9 @@
   <data name="My Payrolls" xml:space="preserve">
     <value>Οι Μισθοδοσίες Μου</value>
   </data>
+  <data name="My Reimbursements" xml:space="preserve">
+    <value>Οι αποζημιώσεις μου</value>
+  </data>
   <data name="My Report Line" xml:space="preserve">
     <value>Η Γραμμή Αναφορών Μου</value>
   </data>
@@ -512,6 +515,9 @@
   </data>
   <data name="Register" xml:space="preserve">
     <value>Εγγραφή</value>
+  </data>
+  <data name="Reimbursement" xml:space="preserve">
+    <value>Επιστροφή</value>
   </data>
   <data name="Reject" xml:space="preserve">
     <value>Απόρριψη</value>

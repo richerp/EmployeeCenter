@@ -33,6 +33,9 @@
   <data name="Allows approving or rejecting any leave application, regardless of the reporting line." xml:space="preserve">
     <value>Cho phép phê duyệt hoặc từ chối bất kỳ đơn xin nghỉ nào, bất kể đường báo cáo.</value>
   </data>
+  <data name="Allows approving, acknowledging, or rejecting reimbursement requests from any employee." xml:space="preserve">
+    <value>Cho phép phê duyệt, ghi nhận hoặc từ chối các yêu cầu hoàn tiền từ bất kỳ nhân viên nào.</value>
+  </data>
   <data name="Allows approving, rejecting, or requesting changes for project requirements. Everyone can submit requirements and comment on them." xml:space="preserve">
     <value>Cho phép phê duyệt, từ chối hoặc yêu cầu chỉnh sửa đối với các yêu cầu dự án. Mọi người đều có thể gửi yêu cầu và bình luận về chúng.</value>
   </data>
@@ -126,6 +129,9 @@
   <data name="Allows the user to fill out and submit feedback questionnaires." xml:space="preserve">
     <value>Cho phép người dùng điền vào và gửi các bảng khảo sát phản hồi.</value>
   </data>
+  <data name="Allows the user to submit reimbursement requests for their expenses." xml:space="preserve">
+    <value>Cho phép người dùng gửi yêu cầu hoàn trả chi phí cho các khoản chi tiêu của họ.</value>
+  </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Cho phép xem tất cả hợp đồng công ty, bao gồm cả những hợp đồng được đánh dấu là riêng tư.</value>
   </data>
@@ -167,6 +173,9 @@
   </data>
   <data name="Approve Project Requirements" xml:space="preserve">
     <value>Duyệt yêu cầu dự án</value>
+  </data>
+  <data name="Approve Reimbursement" xml:space="preserve">
+    <value>Duyệt yêu cầu hoàn tiền</value>
   </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>Gán Vai trò cho Người dùng</value>
@@ -278,6 +287,9 @@
   </data>
   <data name="Submit Feedback" xml:space="preserve">
     <value>Gửi phản hồi</value>
+  </data>
+  <data name="Submit Reimbursement" xml:space="preserve">
+    <value>Gửi yêu cầu hoàn tiền</value>
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>Xem bất kỳ hợp đồng công ty nào, bao gồm cả những hợp đồng riêng tư</value>

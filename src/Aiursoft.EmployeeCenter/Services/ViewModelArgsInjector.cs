@@ -205,6 +205,9 @@ public class ViewModelArgsInjector(
         _ = localizer["Holiday Adjustments"];
     
         _ = localizer["Preview"];
+    
+        _ = localizer["My Reimbursements"];
+        _ = localizer["Reimbursement"];
     }
 
     public void InjectSimple(

@@ -33,6 +33,9 @@
   <data name="Allows approving or rejecting any leave application, regardless of the reporting line." xml:space="preserve">
     <value>Zezwala na zatwierdzanie lub odrzucanie dowolnej prośby o urlop, niezależnie od linii raportowej.</value>
   </data>
+  <data name="Allows approving, acknowledging, or rejecting reimbursement requests from any employee." xml:space="preserve">
+    <value>Umożliwia zatwierdzanie, potwierdzanie lub odrzucanie wniosków o zwrot kosztów od dowolnego pracownika.</value>
+  </data>
   <data name="Allows approving, rejecting, or requesting changes for project requirements. Everyone can submit requirements and comment on them." xml:space="preserve">
     <value>Zezwala na zatwierdzanie, odrzucanie lub żądanie zmian w wymaganiach projektu. Każdy może przesyłać wymagania i komentować je.</value>
   </data>
@@ -126,6 +129,9 @@
   <data name="Allows the user to fill out and submit feedback questionnaires." xml:space="preserve">
     <value>Umożliwia użytkownikowi wypełnianie i przesyłanie ankiet z opiniami.</value>
   </data>
+  <data name="Allows the user to submit reimbursement requests for their expenses." xml:space="preserve">
+    <value>Umożliwia użytkownikowi składanie wniosków o zwrot wydatków.</value>
+  </data>
   <data name="Allows viewing all company contracts, including those marked as private." xml:space="preserve">
     <value>Zezwala na przeglądanie wszystkich umów firmowych, w tym tych oznaczonych jako prywatne.</value>
   </data>
@@ -167,6 +173,9 @@
   </data>
   <data name="Approve Project Requirements" xml:space="preserve">
     <value>Zatwierdź wymagania projektu</value>
+  </data>
+  <data name="Approve Reimbursement" xml:space="preserve">
+    <value>Zatwierdź zwrot kosztów</value>
   </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>Przypisywanie ról użytkownikom</value>
@@ -278,6 +287,9 @@
   </data>
   <data name="Submit Feedback" xml:space="preserve">
     <value>Prześlij Opinie</value>
+  </data>
+  <data name="Submit Reimbursement" xml:space="preserve">
+    <value>Zgłoś zwrot kosztów</value>
   </data>
   <data name="View any company contract, including private ones" xml:space="preserve">
     <value>Wyświetl dowolny kontrakt firmy, w tym prywatne</value>

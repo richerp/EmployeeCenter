@@ -435,6 +435,9 @@
   <data name="My Payrolls" xml:space="preserve">
     <value>Мои зарплаты</value>
   </data>
+  <data name="My Reimbursements" xml:space="preserve">
+    <value>Мои возмещения</value>
+  </data>
   <data name="My Report Line" xml:space="preserve">
     <value>Моя линия отчетности</value>
   </data>
@@ -512,6 +515,9 @@
   </data>
   <data name="Register" xml:space="preserve">
     <value>Зарегистрироваться</value>
+  </data>
+  <data name="Reimbursement" xml:space="preserve">
+    <value>Возмещение</value>
   </data>
   <data name="Reject" xml:space="preserve">
     <value>Отклонить</value>

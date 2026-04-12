@@ -1,6 +1,7 @@
-<?xml version='1.0' encoding='utf-8'?>
-<root xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <xsd:schema id="root">
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <xsd:element name="root" msdata:IsDataSet="true">
 
         </xsd:element>
@@ -39,10 +40,13 @@
     <value>Approbateur</value>
   </data>
   <data name="awaiting approval" xml:space="preserve">
-    <value>en attente d'approbation</value>
+    <value>en attente d&apos;approbation</value>
   </data>
   <data name="Carried Over" xml:space="preserve">
     <value>Reporté</value>
+  </data>
+  <data name="days" xml:space="preserve">
+    <value>jours</value>
   </data>
   <data name="Days" xml:space="preserve">
     <value>Jours</value>
@@ -105,7 +109,7 @@
     <value>Maladie physique : certificat médical requis</value>
   </data>
   <data name="Please ensure your leave complies with company policy, all work has been handed over, and you have sent an email to your team." xml:space="preserve">
-    <value>Veuillez vous assurer que votre congé respecte la politique de l'entreprise, que tout le travail a été transféré et que vous avez envoyé un e-mail à votre équipe.</value>
+    <value>Veuillez vous assurer que votre congé respecte la politique de l&apos;entreprise, que tout le travail a été transféré et que vous avez envoyé un e-mail à votre équipe.</value>
   </data>
   <data name="Quick Actions" xml:space="preserve">
     <value>Actions rapides</value>
@@ -117,7 +121,7 @@
     <value>demandes</value>
   </data>
   <data name="Requires manager approval before use" xml:space="preserve">
-    <value>Exige l'approbation du responsable avant utilisation</value>
+    <value>Exige l&apos;approbation du responsable avant utilisation</value>
   </data>
   <data name="Sick Leave" xml:space="preserve">
     <value>Congés maladie</value>
@@ -135,10 +139,10 @@
     <value>Type</value>
   </data>
   <data name="Unauthorized absences are considered absence without leave and will result in salary deductions and disciplinary action." xml:space="preserve">
-    <value>Les absences non autorisées sont considérées comme des absences non justifiées et entraîneront des retenues sur salaire ainsi qu'une sanction disciplinaire.</value>
+    <value>Les absences non autorisées sont considérées comme des absences non justifiées et entraîneront des retenues sur salaire ainsi qu&apos;une sanction disciplinaire.</value>
   </data>
   <data name="Unused days carry over to next year" xml:space="preserve">
-    <value>Les jours non utilisés sont reportés à l'année suivante</value>
+    <value>Les jours non utilisés sont reportés à l&apos;année suivante</value>
   </data>
   <data name="Upcoming Leave" xml:space="preserve">
     <value>Congés à venir</value>
