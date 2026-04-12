@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<root>
-    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:schema id="root">
         <xsd:element name="root" msdata:IsDataSet="true">
 
         </xsd:element>
@@ -18,23 +17,14 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Completed at" xml:space="preserve">
-    <value>Voltooid om</value>
-  </data>
-  <data name="Completed At" xml:space="preserve">
+      <data name="Completed At" xml:space="preserve">
     <value>Voltooid op</value>
-  </data>
-  <data name="Error message" xml:space="preserve">
-    <value>Foutbericht</value>
   </data>
   <data name="Error Message" xml:space="preserve">
     <value>Foutbericht</value>
   </data>
   <data name="Job Action" xml:space="preserve">
     <value>Taakactie</value>
-  </data>
-  <data name="Job Id" xml:space="preserve">
-    <value>Taak-ID</value>
   </data>
   <data name="Job ID" xml:space="preserve">
     <value>Job-ID</value>
@@ -45,20 +35,11 @@
   <data name="Queue Name" xml:space="preserve">
     <value>Wachtrijnaam</value>
   </data>
-  <data name="Queued at" xml:space="preserve">
-    <value>Gekwalificeerd op</value>
-  </data>
   <data name="Queued At" xml:space="preserve">
     <value>In wachtrij gezet op</value>
   </data>
-  <data name="Service type" xml:space="preserve">
-    <value>Diensttype</value>
-  </data>
   <data name="Service Type" xml:space="preserve">
     <value>Diensttype</value>
-  </data>
-  <data name="Started at" xml:space="preserve">
-    <value>Gestart op</value>
   </data>
   <data name="Started At" xml:space="preserve">
     <value>Gestart op</value>
