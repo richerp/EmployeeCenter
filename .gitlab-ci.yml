@@ -18,6 +18,7 @@ variables:
     DOTNET_CLI_TELEMETRY_OPTOUT: "1"
     DOTNET_TieredCompilation: "0"
     DOTNET_QuickJit: "0"
+    DOTNET_gcServer: "0"
 
 restore:
     stage: build
