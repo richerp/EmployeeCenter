@@ -1,10 +1,4 @@
 using Aiursoft.EmployeeCenter.Authorization;
-using Aiursoft.EmployeeCenter.Entities;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
