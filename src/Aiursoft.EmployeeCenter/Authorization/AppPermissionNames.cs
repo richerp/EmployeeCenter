@@ -81,4 +81,8 @@ public static class AppPermissionNames
     public const string CanManageGlobalSettings = nameof(CanManageGlobalSettings);
     public const string CanManageBlueprints = nameof(CanManageBlueprints);
     public const string CanApproveProjectRequirements = nameof(CanApproveProjectRequirements);
+
+    // Reimbursement Management
+    public const string CanSubmitReimbursement = nameof(CanSubmitReimbursement);
+    public const string CanApproveReimbursement = nameof(CanApproveReimbursement);
 }

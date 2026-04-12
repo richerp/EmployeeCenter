@@ -1303,6 +1303,67 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.ToTable("Providers");
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Reimbursement", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<decimal>("Amount")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Category")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Comment")
+                        .HasMaxLength(500)
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("ExpenseTime")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("InvoicePath")
+                        .HasMaxLength(255)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Purpose")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime?>("ReviewedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ReviewedById")
+                        .HasMaxLength(255)
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("SubmittedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("SubmitterId")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("SupportingEmail")
+                        .HasMaxLength(500)
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ReviewedById");
+
+                    b.HasIndex("SubmitterId");
+
+                    b.ToTable("Reimbursements");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Requirement", b =>
                 {
                     b.Property<int>("Id")
@@ -2328,6 +2389,23 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.Navigation("Promoter");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Reimbursement", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "ReviewedBy")
+                        .WithMany()
+                        .HasForeignKey("ReviewedById");
+
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.User", "Submitter")
+                        .WithMany()
+                        .HasForeignKey("SubmitterId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ReviewedBy");
+
+                    b.Navigation("Submitter");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Requirement", b =>

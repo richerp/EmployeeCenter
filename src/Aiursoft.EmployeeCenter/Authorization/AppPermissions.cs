@@ -141,7 +141,13 @@ public class AppPermissions
                 localizer["Allows creating, updating, and deleting blueprints. Every user can view blueprints by default."]),
             new(AppPermissionNames.CanApproveProjectRequirements,
                 localizer["Approve Project Requirements"],
-                localizer["Allows approving, rejecting, or requesting changes for project requirements. Everyone can submit requirements and comment on them."])
+                localizer["Allows approving, rejecting, or requesting changes for project requirements. Everyone can submit requirements and comment on them."]),
+            new(AppPermissionNames.CanSubmitReimbursement,
+                localizer["Submit Reimbursement"],
+                localizer["Allows the user to submit reimbursement requests for their expenses."]),
+            new(AppPermissionNames.CanApproveReimbursement,
+                localizer["Approve Reimbursement"],
+                localizer["Allows approving, acknowledging, or rejecting reimbursement requests from any employee."])
         ];
         return allPermission;
     }

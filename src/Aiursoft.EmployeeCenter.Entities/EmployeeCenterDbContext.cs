@@ -54,6 +54,7 @@ public abstract class EmployeeCenterDbContext(DbContextOptions options) : Identi
     public DbSet<SignalQuestionResponse> SignalQuestionResponses => Set<SignalQuestionResponse>();
 
     public DbSet<AdjustedHoliday> AdjustedHolidays => Set<AdjustedHoliday>();
+    public DbSet<Reimbursement> Reimbursements => Set<Reimbursement>();
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
