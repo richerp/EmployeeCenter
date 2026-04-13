@@ -5,72 +5,86 @@
 
 <div class="row mb-2 mb-xl-3">
     <div class="col-auto d-none d-sm-block">
-        <h3>@Localizer["Blueprints"]</h3>
+        <h3>@Localizer["Blueprints"] @(Model.CurrentFolder != null ? $"- {Model.CurrentFolder.Name}" : "")</h3>
+    </div>
+
+    <div class="col-auto ms-auto mt-n1">
+        @if (Model.FolderId != null)
+        {
+            <a asp-action="Index" asp-route-id="@Model.CurrentFolder?.ParentFolderId" class="btn btn-secondary">
+                <i class="align-middle" data-lucide="arrow-left"></i> @Localizer["Back"]
+            </a>
+        }
     </div>
 </div>
 
 <div class="card">
     <div class="card-header">
-        <h5 class="card-title mb-0">@Localizer["All Blueprints"]</h5>
+        <h5 class="card-title mb-0">@Localizer["Contents"]</h5>
     </div>
-    @if (!Model.Blueprints.Any())
-    {
-        <div class="card-body">
-            <div class="alert alert-info mb-0" role="alert">
-                <div class="alert-message">
-                    @Localizer["No blueprints found."]
-                </div>
-            </div>
-        </div>
-    }
-    else
-    {
-        <div class="table-responsive">
-            <table class="table table-hover mb-0">
-                <thead>
+    <div class="table-responsive">
+        <table class="table table-hover mb-0">
+            <thead>
+            <tr>
+                <th>@Localizer["Name"]</th>
+                <th>@Localizer["Author"]</th>
+                <th>@Localizer["Creation Time"]</th>
+                <th>@Localizer["Last Updated"]</th>
+                <th class="text-end">@Localizer["Actions"]</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var folder in Model.SubFolders)
+            {
                 <tr>
-                    <th>@Localizer["Title"]</th>
-                    <th>@Localizer["Author"]</th>
-                    <th>@Localizer["Creation Time"]</th>
-                    <th>@Localizer["Last Updated"]</th>
-                    <th class="text-end">@Localizer["Actions"]</th>
+                    <td>
+                        <a asp-action="Index" asp-route-id="@folder.Id">
+                            <i class="align-middle me-2" data-lucide="folder"></i> @folder.Name
+                        </a>
+                    </td>
+                    <td>-</td>
+                    <td><label class="text-muted" data-utc-time="@folder.CreateTime.ToHtmlDateTime()"></label></td>
+                    <td>-</td>
+                    <td class="text-end">
+                        <a asp-action="Index" asp-route-id="@folder.Id" class="btn btn-sm btn-outline-primary">
+                            <i class="align-middle" data-lucide="external-link"></i> @Localizer["Open"]
+                        </a>
+                    </td>
                 </tr>
-                </thead>
-                <tbody>
-                @foreach (var doc in Model.Blueprints)
-                {
-                    <tr>
-                        <td>
-                            @doc.Title
-                        </td>
-                            <td class="align-middle">
-                                @if (doc.Author != null)
-                                {
-                                    <a asp-controller="Users" asp-action="Details" asp-route-id="@doc.AuthorId" class="text-body d-flex align-items-center">
-                                        <img src="@StorageService.RelativePathToInternetUrl(doc.Author?.AvatarRelativePath ?? "images/default-avatar.jpg")?w=30&square=true" class="avatar img-fluid rounded me-1" alt="@doc.Author?.DisplayName" />
-                                        @doc.Author?.DisplayName
-                                    </a>
-                                }
-                                else
-                                {
-                                    <span class="text-muted">@Localizer["Unknown Author"]</span>
-                                }
-                            </td>
-                        <td>
-                            <label class="text-muted" data-utc-time="@doc.CreationTime.ToHtmlDateTime()"></label>
-                        </td>
-                        <td>
-                             <label class="text-muted" data-utc-time="@doc.UpdateTime.ToHtmlDateTime()"></label>
-                        </td>
-                        <td class="text-end">
-                            <a asp-action="View" asp-route-id="@doc.Id" class="btn btn-sm btn-outline-primary">
-                                <i class="align-middle" data-lucide="eye"></i> @Localizer["View"]
+            }
+            @foreach (var doc in Model.Blueprints)
+            {
+                <tr>
+                    <td>
+                        <i class="align-middle me-2" data-lucide="map"></i> @doc.Title
+                    </td>
+                    <td class="align-middle">
+                        @if (doc.Author != null)
+                        {
+                            <a asp-controller="Users" asp-action="Details" asp-route-id="@doc.AuthorId" class="text-body d-flex align-items-center">
+                                <img src="@StorageService.RelativePathToInternetUrl(doc.Author?.AvatarRelativePath ?? "images/default-avatar.jpg")?w=30&square=true" class="avatar img-fluid rounded me-1" alt="@doc.Author?.DisplayName" />
+                                @doc.Author?.DisplayName
                             </a>
-                        </td>
-                    </tr>
-                }
-                </tbody>
-            </table>
-        </div>
-    }
+                        }
+                        else
+                        {
+                            <span class="text-muted">@Localizer["Unknown Author"]</span>
+                        }
+                    </td>
+                    <td>
+                        <label class="text-muted" data-utc-time="@doc.CreationTime.ToHtmlDateTime()"></label>
+                    </td>
+                    <td>
+                        <label class="text-muted" data-utc-time="@doc.UpdateTime.ToHtmlDateTime()"></label>
+                    </td>
+                    <td class="text-end">
+                        <a asp-action="View" asp-route-id="@doc.Id" class="btn btn-sm btn-outline-primary">
+                            <i class="align-middle" data-lucide="eye"></i> @Localizer["View"]
+                        </a>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
 </div>

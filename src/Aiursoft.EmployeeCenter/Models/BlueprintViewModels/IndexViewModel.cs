@@ -11,6 +11,13 @@ public class IndexViewModel : UiStackLayoutViewModel
         PageTitle = "Blueprints";
     }
 
+    public int? FolderId { get; set; }
+
+    public BlueprintFolder? CurrentFolder { get; set; }
+
+    [Display(Name = "Sub Folders")]
+    public IEnumerable<BlueprintFolder> SubFolders { get; set; } = new List<BlueprintFolder>();
+
     [Display(Name = "Blueprints")]
-    public required List<Blueprint> Blueprints { get; set; }
+    public IEnumerable<Blueprint> Blueprints { get; set; } = new List<Blueprint>();
 }

@@ -23,4 +23,8 @@ public class Blueprint
 
     [ForeignKey(nameof(AuthorId))]
     public User? Author { get; set; }
+
+    public int? FolderId { get; set; }
+    [ForeignKey(nameof(FolderId))]
+    public BlueprintFolder? Folder { get; set; }
 }

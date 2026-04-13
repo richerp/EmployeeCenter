@@ -280,6 +280,9 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.Property<DateTime>("CreationTime")
                         .HasColumnType("TEXT");
 
+                    b.Property<int?>("FolderId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("RenderedHtml")
                         .IsRequired()
                         .HasColumnType("TEXT");
@@ -296,7 +299,34 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
 
                     b.HasIndex("AuthorId");
 
+                    b.HasIndex("FolderId");
+
                     b.ToTable("Blueprints");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.BlueprintFolder", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("CreateTime")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("ParentFolderId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ParentFolderId", "Name")
+                        .IsUnique();
+
+                    b.ToTable("BlueprintFolders");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.CompanyEntity", b =>
@@ -2198,7 +2228,22 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.BlueprintFolder", "Folder")
+                        .WithMany("Blueprints")
+                        .HasForeignKey("FolderId");
+
                     b.Navigation("Author");
+
+                    b.Navigation("Folder");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.BlueprintFolder", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.BlueprintFolder", "ParentFolder")
+                        .WithMany("SubFolders")
+                        .HasForeignKey("ParentFolderId");
+
+                    b.Navigation("ParentFolder");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.CompanyEntityLog", b =>
@@ -2742,6 +2787,13 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.AssetModel", b =>
                 {
                     b.Navigation("Assets");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.BlueprintFolder", b =>
+                {
+                    b.Navigation("Blueprints");
+
+                    b.Navigation("SubFolders");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.ContractFolder", b =>

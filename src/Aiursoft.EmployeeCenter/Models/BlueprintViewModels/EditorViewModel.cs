@@ -31,4 +31,6 @@ public class EditorViewModel : UiStackLayoutViewModel
 
     [Display(Name = "Public Link")]
     public string? PublicLink { get; set; }
+
+    public int? FolderId { get; set; }
 }

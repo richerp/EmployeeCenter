@@ -39,6 +39,7 @@ public abstract class EmployeeCenterDbContext(DbContextOptions options) : Identi
     public DbSet<WeeklyReportRequirement> WeeklyReportRequirements => Set<WeeklyReportRequirement>();
     public DbSet<Notepad> Notepads => Set<Notepad>();
     public DbSet<Blueprint> Blueprints => Set<Blueprint>();
+    public DbSet<BlueprintFolder> BlueprintFolders => Set<BlueprintFolder>();
     public DbSet<Requirement> Requirements => Set<Requirement>();
     public DbSet<RequirementComment> RequirementComments => Set<RequirementComment>();
     public DbSet<DnsProvider> DnsProviders => Set<DnsProvider>();
@@ -66,6 +67,10 @@ public abstract class EmployeeCenterDbContext(DbContextOptions options) : Identi
             .IsUnique();
 
         builder.Entity<ContractFolder>()
+            .HasIndex(f => new { f.ParentFolderId, f.Name })
+            .IsUnique();
+
+        builder.Entity<BlueprintFolder>()
             .HasIndex(f => new { f.ParentFolderId, f.Name })
             .IsUnique();
     }

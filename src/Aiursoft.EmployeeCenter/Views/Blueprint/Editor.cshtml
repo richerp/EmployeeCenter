@@ -48,11 +48,32 @@
                             <label class="btn btn-outline-secondary" for="view-preview-mobile" title="@Localizer["Preview"]"> <i class="align-middle" data-lucide="eye"></i></label>
                         </div>
 
-                        <div class="flex-grow-1">
+                        <div class="flex-grow-1 me-2">
                             <div class="input-group input-group-sm">
                                 <span class="input-group-text bg-white text-muted">@Localizer["Title"]</span>
                                 <input asp-for="Title" class="form-control" placeholder="@Localizer["Blueprint Title"]" />
                                 <input type="hidden" asp-for="DocumentId" />
+                            </div>
+                        </div>
+
+                        <div class="flex-grow-1 me-2">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-text bg-white text-muted">@Localizer["Folder"]</span>
+                                @if (Model.IsEditing)
+                                {
+                                    <select asp-for="FolderId" class="form-select">
+                                        <option value="">@Localizer["(Root)"]</option>
+                                        @foreach (var folder in (IEnumerable<SelectListItem>)ViewData["Folders"]!)
+                                        {
+                                            <option value="@folder.Value" selected="@(folder.Selected ? "selected" : null)">@folder.Text</option>
+                                        }
+                                    </select>
+                                }
+                                else
+                                {
+                                    <input type="hidden" asp-for="FolderId" />
+                                    <input type="text" class="form-control" value="@((ViewData["Folders"] as IEnumerable<SelectListItem>)?.FirstOrDefault(f => f.Selected)?.Text ?? Localizer["(Root)"].Value)" readonly disabled />
+                                }
                             </div>
                         </div>
 
