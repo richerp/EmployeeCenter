@@ -36,6 +36,9 @@
   <data name="Expense Time" xml:space="preserve">
     <value>花費時間</value>
   </data>
+  <data name="Invalid file path." xml:space="preserve">
+    <value>無效的檔案路徑。</value>
+  </data>
   <data name="Purpose" xml:space="preserve">
     <value>用途</value>
   </data>

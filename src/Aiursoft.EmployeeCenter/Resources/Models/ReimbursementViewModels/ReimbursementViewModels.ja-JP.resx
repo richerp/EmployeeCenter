@@ -36,6 +36,9 @@
   <data name="Expense Time" xml:space="preserve">
     <value>経費日時</value>
   </data>
+  <data name="Invalid file path." xml:space="preserve">
+    <value>無効なファイルパスです。</value>
+  </data>
   <data name="Purpose" xml:space="preserve">
     <value>目的</value>
   </data>

@@ -36,6 +36,9 @@
   <data name="Expense Time" xml:space="preserve">
     <value>وقت المصروف</value>
   </data>
+  <data name="Invalid file path." xml:space="preserve">
+    <value>مسار الملف غير صالح.</value>
+  </data>
   <data name="Purpose" xml:space="preserve">
     <value>الغرض</value>
   </data>
