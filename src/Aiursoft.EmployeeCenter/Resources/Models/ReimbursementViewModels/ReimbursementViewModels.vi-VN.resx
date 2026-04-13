@@ -36,6 +36,9 @@
   <data name="Expense Time" xml:space="preserve">
     <value>Thời gian chi tiêu</value>
   </data>
+  <data name="Invalid file path." xml:space="preserve">
+    <value>Đường dẫn tệp không hợp lệ.</value>
+  </data>
   <data name="Purpose" xml:space="preserve">
     <value>Mục đích</value>
   </data>

@@ -36,6 +36,9 @@
   <data name="Expense Time" xml:space="preserve">
     <value>Gider Zamanı</value>
   </data>
+  <data name="Invalid file path." xml:space="preserve">
+    <value>Geçersiz dosya yolu.</value>
+  </data>
   <data name="Purpose" xml:space="preserve">
     <value>Amaç</value>
   </data>

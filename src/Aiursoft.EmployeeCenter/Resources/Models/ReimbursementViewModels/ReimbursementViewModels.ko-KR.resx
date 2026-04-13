@@ -36,6 +36,9 @@
   <data name="Expense Time" xml:space="preserve">
     <value>비용 발생 시간</value>
   </data>
+  <data name="Invalid file path." xml:space="preserve">
+    <value>잘못된 파일 경로입니다.</value>
+  </data>
   <data name="Purpose" xml:space="preserve">
     <value>용도</value>
   </data>
