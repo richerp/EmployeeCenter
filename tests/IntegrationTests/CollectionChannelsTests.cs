@@ -1,6 +1,3 @@
-using Aiursoft.EmployeeCenter.Authorization;
-using Aiursoft.UiStack.Navigation;
-
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
 [TestClass]
