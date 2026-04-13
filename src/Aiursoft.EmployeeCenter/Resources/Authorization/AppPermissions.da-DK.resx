@@ -66,6 +66,9 @@
   <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
     <value>Tillader oprettelse, opdatering og sletning af blueprints. Alle brugere kan se blueprints som standard.</value>
   </data>
+  <data name="Allows creating, updating, and deleting collection channels and their records." xml:space="preserve">
+    <value>Tillader oprettelse, opdatering og sletning af indsamlingsspor og deres poster.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Tillader oprettelse, opdatering og sletning af virksomhedsentitetsoplysninger.</value>
   </data>
@@ -149,6 +152,9 @@
   </data>
   <data name="Allows viewing the contract history of any user." xml:space="preserve">
     <value>Tillader visning af kontrakthistorikken for enhver bruger.</value>
+  </data>
+  <data name="Allows viewing the list of all collection channels and their records." xml:space="preserve">
+    <value>Tillader visning af listen over alle indbetalingskanaler og deres poster.</value>
   </data>
   <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
     <value>Tillader visning af listen over alle tilladelser og deres tilknytninger til roller og brugere.</value>
@@ -234,6 +240,9 @@
   <data name="Manage Blueprints" xml:space="preserve">
     <value>Håndtér skitser</value>
   </data>
+  <data name="Manage Collection Channels" xml:space="preserve">
+    <value>Administrer indkassationskanaler</value>
+  </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Håndtér virksomhedsenheder</value>
   </data>
@@ -296,6 +305,9 @@
   </data>
   <data name="View Background Jobs" xml:space="preserve">
     <value>Vis baggrundstasker</value>
+  </data>
+  <data name="View Collection Channels" xml:space="preserve">
+    <value>Se indkassationskanaler</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>Vis kontrakthistorik</value>

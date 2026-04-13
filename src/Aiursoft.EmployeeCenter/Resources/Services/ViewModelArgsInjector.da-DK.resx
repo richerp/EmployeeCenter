@@ -132,6 +132,9 @@
   <data name="Code" xml:space="preserve">
     <value>Kode</value>
   </data>
+  <data name="Collection Channels" xml:space="preserve">
+    <value>Indtægtskanaler</value>
+  </data>
   <data name="Comments" xml:space="preserve">
     <value>Kommentarer</value>
   </data>
@@ -168,8 +171,14 @@
   <data name="Create New" xml:space="preserve">
     <value>Opret ny</value>
   </data>
+  <data name="Create New Blueprint Folder" xml:space="preserve">
+    <value>Opret ny Blueprint-mappe</value>
+  </data>
   <data name="Create New Contract" xml:space="preserve">
     <value>Opret ny kontrakt</value>
+  </data>
+  <data name="Create New Folder" xml:space="preserve">
+    <value>Opret ny mappe</value>
   </data>
   <data name="Create Onboarding Task" xml:space="preserve">
     <value>Opret påbegyndelsesopgave</value>
@@ -222,6 +231,9 @@
   <data name="Edit Blueprint" xml:space="preserve">
     <value>Rediger blueprint</value>
   </data>
+  <data name="Edit Blueprint Folder" xml:space="preserve">
+    <value>Rediger blueprint-mappe</value>
+  </data>
   <data name="Edit Company Entity" xml:space="preserve">
     <value>Rediger virksomhedsentitet</value>
   </data>
@@ -230,6 +242,9 @@
   </data>
   <data name="Edit Customer Relationship" xml:space="preserve">
     <value>Rediger kundeforhold</value>
+  </data>
+  <data name="Edit Folder" xml:space="preserve">
+    <value>Rediger mappe</value>
   </data>
   <data name="Edit Onboarding Task" xml:space="preserve">
     <value>Rediger påbegyndelsesopgave</value>

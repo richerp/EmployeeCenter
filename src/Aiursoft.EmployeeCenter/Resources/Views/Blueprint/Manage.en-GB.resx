@@ -27,8 +27,20 @@
   <data name="Are you sure you want to delete this blueprint?" xml:space="preserve">
     <value>Are you sure you want to delete this blueprint?</value>
   </data>
+  <data name="Are you sure you want to delete this folder?" xml:space="preserve">
+    <value>Are you sure you want to delete this folder?</value>
+  </data>
   <data name="Author" xml:space="preserve">
     <value>Author</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>Contents</value>
+  </data>
+  <data name="Create Folder" xml:space="preserve">
+    <value>Create Folder</value>
   </data>
   <data name="Create New Blueprint" xml:space="preserve">
     <value>Create New Blueprint</value>
@@ -47,6 +59,9 @@
   </data>
   <data name="Manage Blueprints" xml:space="preserve">
     <value>Manage Blueprints</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
   </data>
   <data name="No blueprints found." xml:space="preserve">
     <value>No blueprints found.</value>

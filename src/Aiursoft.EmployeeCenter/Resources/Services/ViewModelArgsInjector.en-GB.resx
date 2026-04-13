@@ -123,6 +123,9 @@
   <data name="Code" xml:space="preserve">
     <value>Code</value>
   </data>
+  <data name="Collection Channels" xml:space="preserve">
+    <value>Collection Channels</value>
+  </data>
   <data name="Comments" xml:space="preserve">
     <value>Comments</value>
   </data>
@@ -159,8 +162,14 @@
   <data name="Create New" xml:space="preserve">
     <value>Create New</value>
   </data>
+  <data name="Create New Blueprint Folder" xml:space="preserve">
+    <value>Create New Blueprint Folder</value>
+  </data>
   <data name="Create New Contract" xml:space="preserve">
     <value>Create New Contract</value>
+  </data>
+  <data name="Create New Folder" xml:space="preserve">
+    <value>Create New Folder</value>
   </data>
   <data name="Create Onboarding Task" xml:space="preserve">
     <value>Create Onboarding Task</value>
@@ -213,6 +222,9 @@
   <data name="Edit Blueprint" xml:space="preserve">
     <value>Edit Blueprint</value>
   </data>
+  <data name="Edit Blueprint Folder" xml:space="preserve">
+    <value>Edit Blueprint Folder</value>
+  </data>
   <data name="Edit Company Entity" xml:space="preserve">
     <value>Edit Company Entity</value>
   </data>
@@ -221,6 +233,9 @@
   </data>
   <data name="Edit Customer Relationship" xml:space="preserve">
     <value>Edit Customer Relationship</value>
+  </data>
+  <data name="Edit Folder" xml:space="preserve">
+    <value>Edit Folder</value>
   </data>
   <data name="Edit Onboarding Task" xml:space="preserve">
     <value>Edit Onboarding Task</value>

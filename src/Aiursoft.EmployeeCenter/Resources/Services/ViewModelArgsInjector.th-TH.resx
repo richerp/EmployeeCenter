@@ -135,6 +135,9 @@
   <data name="Code" xml:space="preserve">
     <value>รหัส</value>
   </data>
+  <data name="Collection Channels" xml:space="preserve">
+    <value>ช่องทางเก็บเงิน</value>
+  </data>
   <data name="Comments" xml:space="preserve">
     <value>ความคิดเห็น</value>
   </data>
@@ -171,8 +174,14 @@
   <data name="Create New" xml:space="preserve">
     <value>สร้างใหม่</value>
   </data>
+  <data name="Create New Blueprint Folder" xml:space="preserve">
+    <value>สร้างโฟลเดอร์แบบแปลนใหม่</value>
+  </data>
   <data name="Create New Contract" xml:space="preserve">
     <value>สร้างสัญญาใหม่</value>
+  </data>
+  <data name="Create New Folder" xml:space="preserve">
+    <value>สร้างโฟลเดอร์ใหม่</value>
   </data>
   <data name="Create Onboarding Task" xml:space="preserve">
     <value>สร้างงานการนำเข้า</value>
@@ -225,6 +234,9 @@
   <data name="Edit Blueprint" xml:space="preserve">
     <value>แก้ไขแบบร่าง</value>
   </data>
+  <data name="Edit Blueprint Folder" xml:space="preserve">
+    <value>แก้ไขโฟลเดอร์แบบแปลน</value>
+  </data>
   <data name="Edit Company Entity" xml:space="preserve">
     <value>แก้ไขหน่วยงานบริษัท</value>
   </data>
@@ -233,6 +245,9 @@
   </data>
   <data name="Edit Customer Relationship" xml:space="preserve">
     <value>แก้ไขความสัมพันธ์กับลูกค้า</value>
+  </data>
+  <data name="Edit Folder" xml:space="preserve">
+    <value>แก้ไขโฟลเดอร์</value>
   </data>
   <data name="Edit Onboarding Task" xml:space="preserve">
     <value>แก้ไขงานที่ต้องทำในขั้นตอนการเริ่มต้น</value>

@@ -24,11 +24,20 @@
   <data name="A list of all your contracts." xml:space="preserve">
     <value>您所有合同的列表。</value>
   </data>
+  <data name="A list of folders and contracts in this location." xml:space="preserve">
+    <value>此位置下的文件夹和合同列表。</value>
+  </data>
   <data name="Actions" xml:space="preserve">
     <value>操作</value>
   </data>
   <data name="Active" xml:space="preserve">
     <value>生效</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>目录</value>
   </data>
   <data name="Contract History" xml:space="preserve">
     <value>合同历史</value>
@@ -50,6 +59,9 @@
   </data>
   <data name="Name" xml:space="preserve">
     <value>名称</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>打开</value>
   </data>
   <data name="Owner" xml:space="preserve">
     <value>所有者</value>

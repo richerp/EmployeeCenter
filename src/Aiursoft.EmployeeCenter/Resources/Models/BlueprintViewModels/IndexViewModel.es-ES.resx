@@ -21,5 +21,8 @@
       <data name="Blueprints" xml:space="preserve">
     <value>Planes</value>
   </data>
+  <data name="Sub Folders" xml:space="preserve">
+    <value>Subcarpetas</value>
+  </data>
 
 </root>

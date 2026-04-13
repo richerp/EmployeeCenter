@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Cancel" xml:space="preserve">
+      <data name="(Root)" xml:space="preserve">
+    <value>(根目錄)</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
     <value>取消</value>
   </data>
   <data name="Contract Details" xml:space="preserve">
@@ -32,6 +35,9 @@
   </data>
   <data name="Edit Contract" xml:space="preserve">
     <value>編輯合約</value>
+  </data>
+  <data name="Folder" xml:space="preserve">
+    <value>資料夾</value>
   </data>
   <data name="Leave empty to keep current file." xml:space="preserve">
     <value>留空以保留目前的檔案。</value>

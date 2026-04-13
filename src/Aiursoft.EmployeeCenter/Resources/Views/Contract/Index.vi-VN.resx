@@ -24,11 +24,20 @@
   <data name="A list of all your contracts." xml:space="preserve">
     <value>Danh sách tất cả các hợp đồng của bạn.</value>
   </data>
+  <data name="A list of folders and contracts in this location." xml:space="preserve">
+    <value>Danh sách các thư mục và hợp đồng tại vị trí này.</value>
+  </data>
   <data name="Actions" xml:space="preserve">
     <value>Hành động</value>
   </data>
   <data name="Active" xml:space="preserve">
     <value>Đang hoạt động</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Quay lại</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>Nội dung</value>
   </data>
   <data name="Contract History" xml:space="preserve">
     <value>Lịch sử hợp đồng</value>
@@ -50,6 +59,9 @@
   </data>
   <data name="Name" xml:space="preserve">
     <value>Tên</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Mở</value>
   </data>
   <data name="Owner" xml:space="preserve">
     <value>Chủ sở hữu</value>

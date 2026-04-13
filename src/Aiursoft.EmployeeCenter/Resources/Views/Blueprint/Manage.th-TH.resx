@@ -27,8 +27,20 @@
   <data name="Are you sure you want to delete this blueprint?" xml:space="preserve">
     <value>คุณแน่ใจหรือไม่ว่าต้องการลบแบบร่างนี้?</value>
   </data>
+  <data name="Are you sure you want to delete this folder?" xml:space="preserve">
+    <value>คุณแน่ใจหรือไม่ว่าต้องการลบโฟลเดอร์นี้?</value>
+  </data>
   <data name="Author" xml:space="preserve">
     <value>ผู้แต่ง</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>กลับ</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>เนื้อหา</value>
+  </data>
+  <data name="Create Folder" xml:space="preserve">
+    <value>สร้างโฟลเดอร์</value>
   </data>
   <data name="Create New Blueprint" xml:space="preserve">
     <value>สร้างแบบร่างใหม่</value>
@@ -47,6 +59,9 @@
   </data>
   <data name="Manage Blueprints" xml:space="preserve">
     <value>จัดการแบบร่าง</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>ชื่อ</value>
   </data>
   <data name="No blueprints found." xml:space="preserve">
     <value>ไม่พบแบบแปลนใด ๆ</value>

@@ -132,6 +132,9 @@
   <data name="Code" xml:space="preserve">
     <value>Code</value>
   </data>
+  <data name="Collection Channels" xml:space="preserve">
+    <value>Inningkanalen</value>
+  </data>
   <data name="Comments" xml:space="preserve">
     <value>Opmerkingen</value>
   </data>
@@ -168,8 +171,14 @@
   <data name="Create New" xml:space="preserve">
     <value>Nieuw aanmaken</value>
   </data>
+  <data name="Create New Blueprint Folder" xml:space="preserve">
+    <value>Nieuwe blueprintmap maken</value>
+  </data>
   <data name="Create New Contract" xml:space="preserve">
     <value>Nieuw contract aanmaken</value>
+  </data>
+  <data name="Create New Folder" xml:space="preserve">
+    <value>Nieuwe map maken</value>
   </data>
   <data name="Create Onboarding Task" xml:space="preserve">
     <value>Nieuwe onboardingtaak aanmaken</value>
@@ -222,6 +231,9 @@
   <data name="Edit Blueprint" xml:space="preserve">
     <value>Blueprint bewerken</value>
   </data>
+  <data name="Edit Blueprint Folder" xml:space="preserve">
+    <value>Blueprintmap bewerken</value>
+  </data>
   <data name="Edit Company Entity" xml:space="preserve">
     <value>Bedrijfseenheid bewerken</value>
   </data>
@@ -230,6 +242,9 @@
   </data>
   <data name="Edit Customer Relationship" xml:space="preserve">
     <value>Wijzig relaties met klanten</value>
+  </data>
+  <data name="Edit Folder" xml:space="preserve">
+    <value>Mappe bewerken</value>
   </data>
   <data name="Edit Onboarding Task" xml:space="preserve">
     <value>Bewerk onboardingtaak</value>

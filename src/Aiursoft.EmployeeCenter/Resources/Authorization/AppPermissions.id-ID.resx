@@ -66,6 +66,9 @@
   <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
     <value>Memungkinkan pembuatan, pembaruan, dan penghapusan blueprints. Setiap pengguna dapat melihat blueprints secara default.</value>
   </data>
+  <data name="Allows creating, updating, and deleting collection channels and their records." xml:space="preserve">
+    <value>Memungkinkan pembuatan, pembaruan, dan penghapusan saluran koleksi dan catatan mereka.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Memungkinkan pembuatan, pembaruan, dan penghapusan informasi entitas perusahaan.</value>
   </data>
@@ -149,6 +152,9 @@
   </data>
   <data name="Allows viewing the contract history of any user." xml:space="preserve">
     <value>Memungkinkan melihat riwayat kontrak dari pengguna mana pun.</value>
+  </data>
+  <data name="Allows viewing the list of all collection channels and their records." xml:space="preserve">
+    <value>Memungkinkan melihat daftar semua saluran koleksi dan catatannya.</value>
   </data>
   <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
     <value>Memungkinkan melihat daftar semua izin dan penugasan mereka ke peran serta pengguna.</value>
@@ -234,6 +240,9 @@
   <data name="Manage Blueprints" xml:space="preserve">
     <value>Kelola Blueprint</value>
   </data>
+  <data name="Manage Collection Channels" xml:space="preserve">
+    <value>Kelola Saluran Koleksi</value>
+  </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Kelola Entitas Perusahaan</value>
   </data>
@@ -296,6 +305,9 @@
   </data>
   <data name="View Background Jobs" xml:space="preserve">
     <value>Lihat Pekerjaan Latar Belakang</value>
+  </data>
+  <data name="View Collection Channels" xml:space="preserve">
+    <value>Lihat Saluran Koleksi</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>Lihat Riwayat Kontrak</value>

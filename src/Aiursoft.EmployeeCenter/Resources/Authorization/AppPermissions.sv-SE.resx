@@ -66,6 +66,9 @@
   <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
     <value>Tillåter skapande, uppdatering och borttagning av ritningar. Alla användare kan se ritningar som standard.</value>
   </data>
+  <data name="Allows creating, updating, and deleting collection channels and their records." xml:space="preserve">
+    <value>Tillåter att skapa, uppdatera och ta bort samlingkanaler och deras poster.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Tillåter att skapa, uppdatera och ta bort information om företagsentiteter.</value>
   </data>
@@ -149,6 +152,9 @@
   </data>
   <data name="Allows viewing the contract history of any user." xml:space="preserve">
     <value>Tillåter visning av kontraktshistorik för valfri användare.</value>
+  </data>
+  <data name="Allows viewing the list of all collection channels and their records." xml:space="preserve">
+    <value>Tillåter att se listan över alla insamlingskanaler och deras poster.</value>
   </data>
   <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
     <value>Tillåter visning av listan över alla behörigheter och deras tilldelningar till roller och användare.</value>
@@ -234,6 +240,9 @@
   <data name="Manage Blueprints" xml:space="preserve">
     <value>Hantera mallar</value>
   </data>
+  <data name="Manage Collection Channels" xml:space="preserve">
+    <value>Hantera insamlingskanaler</value>
+  </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Hantera företagsentiteter</value>
   </data>
@@ -296,6 +305,9 @@
   </data>
   <data name="View Background Jobs" xml:space="preserve">
     <value>Visa bakgrundsjobb</value>
+  </data>
+  <data name="View Collection Channels" xml:space="preserve">
+    <value>Visa insamlingskanaler</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>Visa kontraktshistorik</value>

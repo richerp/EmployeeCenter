@@ -21,5 +21,8 @@
       <data name="Blueprints" xml:space="preserve">
     <value>藍圖</value>
   </data>
+  <data name="Sub Folders" xml:space="preserve">
+    <value>子資料夾</value>
+  </data>
 
 </root>

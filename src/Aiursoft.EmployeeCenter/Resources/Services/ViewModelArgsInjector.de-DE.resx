@@ -135,6 +135,9 @@
   <data name="Code" xml:space="preserve">
     <value>Code</value>
   </data>
+  <data name="Collection Channels" xml:space="preserve">
+    <value>Einzugsstellen</value>
+  </data>
   <data name="Comments" xml:space="preserve">
     <value>Kommentare</value>
   </data>
@@ -171,8 +174,14 @@
   <data name="Create New" xml:space="preserve">
     <value>Neu erstellen</value>
   </data>
+  <data name="Create New Blueprint Folder" xml:space="preserve">
+    <value>Neuen Blueprint-Ordner erstellen</value>
+  </data>
   <data name="Create New Contract" xml:space="preserve">
     <value>Neuen Vertrag erstellen</value>
+  </data>
+  <data name="Create New Folder" xml:space="preserve">
+    <value>Neuen Ordner erstellen</value>
   </data>
   <data name="Create Onboarding Task" xml:space="preserve">
     <value>Onboarding-Aufgabe erstellen</value>
@@ -225,6 +234,9 @@
   <data name="Edit Blueprint" xml:space="preserve">
     <value>Blueprint bearbeiten</value>
   </data>
+  <data name="Edit Blueprint Folder" xml:space="preserve">
+    <value>Blueprint-Ordner bearbeiten</value>
+  </data>
   <data name="Edit Company Entity" xml:space="preserve">
     <value>Unternehmen bearbeiten</value>
   </data>
@@ -233,6 +245,9 @@
   </data>
   <data name="Edit Customer Relationship" xml:space="preserve">
     <value>Kundenbeziehung bearbeiten</value>
+  </data>
+  <data name="Edit Folder" xml:space="preserve">
+    <value>Ordner bearbeiten</value>
   </data>
   <data name="Edit Onboarding Task" xml:space="preserve">
     <value>Onboarding-Aufgabe bearbeiten</value>

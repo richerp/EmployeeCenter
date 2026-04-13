@@ -132,6 +132,9 @@
   <data name="Code" xml:space="preserve">
     <value>Kod</value>
   </data>
+  <data name="Collection Channels" xml:space="preserve">
+    <value>Toplama Kanalları</value>
+  </data>
   <data name="Comments" xml:space="preserve">
     <value>Yorumlar</value>
   </data>
@@ -168,8 +171,14 @@
   <data name="Create New" xml:space="preserve">
     <value>Yeni Oluştur</value>
   </data>
+  <data name="Create New Blueprint Folder" xml:space="preserve">
+    <value>Yeni Taslak Klasörü Oluştur</value>
+  </data>
   <data name="Create New Contract" xml:space="preserve">
     <value>Yeni Sözleşme Oluştur</value>
+  </data>
+  <data name="Create New Folder" xml:space="preserve">
+    <value>Yeni Klasör Oluştur</value>
   </data>
   <data name="Create Onboarding Task" xml:space="preserve">
     <value>Yeni Başlangıç Görevi Oluştur</value>
@@ -222,6 +231,9 @@
   <data name="Edit Blueprint" xml:space="preserve">
     <value>Mimariyi Düzenle</value>
   </data>
+  <data name="Edit Blueprint Folder" xml:space="preserve">
+    <value>Blueprint Klasörünü Düzenle</value>
+  </data>
   <data name="Edit Company Entity" xml:space="preserve">
     <value>Şirket Varlığı Düzenle</value>
   </data>
@@ -230,6 +242,9 @@
   </data>
   <data name="Edit Customer Relationship" xml:space="preserve">
     <value>Müşteri İlişkisini Düzenle</value>
+  </data>
+  <data name="Edit Folder" xml:space="preserve">
+    <value>Klasörü Düzenle</value>
   </data>
   <data name="Edit Onboarding Task" xml:space="preserve">
     <value>Onboarding Görevini Düzenle</value>

@@ -66,6 +66,9 @@
   <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
     <value>Permite crearea, actualizarea și ștergerea de planuri. Toți utilizatorii pot vizualiza planurile implicit.</value>
   </data>
+  <data name="Allows creating, updating, and deleting collection channels and their records." xml:space="preserve">
+    <value>Permite crearea, actualizarea și ștergerea canalelor de colectare și a înregistrărilor acestora.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Permite crearea, actualizarea și ștergerea informațiilor despre entitățile companiei.</value>
   </data>
@@ -149,6 +152,9 @@
   </data>
   <data name="Allows viewing the contract history of any user." xml:space="preserve">
     <value>Permite vizualizarea istoricului contractelor pentru orice utilizator.</value>
+  </data>
+  <data name="Allows viewing the list of all collection channels and their records." xml:space="preserve">
+    <value>Permite vizualizarea listei tuturor canalelor de colectare și a înregistrărilor acestora.</value>
   </data>
   <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
     <value>Permite vizualizarea listei tuturor permisiunilor și a atribuirilor lor către roluri și utilizatori.</value>
@@ -234,6 +240,9 @@
   <data name="Manage Blueprints" xml:space="preserve">
     <value>Gestionează modelele</value>
   </data>
+  <data name="Manage Collection Channels" xml:space="preserve">
+    <value>Gestionați canalele de colectare</value>
+  </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Gestionează entitățile companiei</value>
   </data>
@@ -296,6 +305,9 @@
   </data>
   <data name="View Background Jobs" xml:space="preserve">
     <value>Vizualizează sarcinile în fundal</value>
+  </data>
+  <data name="View Collection Channels" xml:space="preserve">
+    <value>Vizualizare canale de colectare</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>Vizualizează istoricul contractelor</value>

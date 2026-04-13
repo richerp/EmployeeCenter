@@ -132,6 +132,9 @@
   <data name="Code" xml:space="preserve">
     <value>Код</value>
   </data>
+  <data name="Collection Channels" xml:space="preserve">
+    <value>Канали збору коштів</value>
+  </data>
   <data name="Comments" xml:space="preserve">
     <value>Коментарі</value>
   </data>
@@ -168,8 +171,14 @@
   <data name="Create New" xml:space="preserve">
     <value>Створити нове</value>
   </data>
+  <data name="Create New Blueprint Folder" xml:space="preserve">
+    <value>Створити нову папку ескізу</value>
+  </data>
   <data name="Create New Contract" xml:space="preserve">
     <value>Створити новий договір</value>
+  </data>
+  <data name="Create New Folder" xml:space="preserve">
+    <value>Створити нову папку</value>
   </data>
   <data name="Create Onboarding Task" xml:space="preserve">
     <value>Створити завдання ознайомлення</value>
@@ -222,6 +231,9 @@
   <data name="Edit Blueprint" xml:space="preserve">
     <value>Редагувати макет</value>
   </data>
+  <data name="Edit Blueprint Folder" xml:space="preserve">
+    <value>Редагувати папку синьорів</value>
+  </data>
   <data name="Edit Company Entity" xml:space="preserve">
     <value>Редагувати юридичну особу компанії</value>
   </data>
@@ -230,6 +242,9 @@
   </data>
   <data name="Edit Customer Relationship" xml:space="preserve">
     <value>Редагувати відносини з клієнтами</value>
+  </data>
+  <data name="Edit Folder" xml:space="preserve">
+    <value>Редагувати папку</value>
   </data>
   <data name="Edit Onboarding Task" xml:space="preserve">
     <value>Редагувати завдання ознайомлення</value>

@@ -66,6 +66,9 @@
   <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
     <value>ブループリントの作成、更新、削除を許可します。デフォルトでは、すべてのユーザーがブループリントを閲覧できます。</value>
   </data>
+  <data name="Allows creating, updating, and deleting collection channels and their records." xml:space="preserve">
+    <value>コレクションチャンネルとそのレコードの作成、更新、および削除を許可します。</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>会社エンティティ情報の作成、更新、削除を許可します。</value>
   </data>
@@ -149,6 +152,9 @@
   </data>
   <data name="Allows viewing the contract history of any user." xml:space="preserve">
     <value>任意のユーザーの契約履歴を閲覧できるようにします。</value>
+  </data>
+  <data name="Allows viewing the list of all collection channels and their records." xml:space="preserve">
+    <value>すべての収集チャネルとそのレコードの一覧を表示できます。</value>
   </data>
   <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
     <value>すべての権限およびそのロールおよびユーザーへの割り当ての一覧を表示できるようにします。</value>
@@ -234,6 +240,9 @@
   <data name="Manage Blueprints" xml:space="preserve">
     <value>ブループリントの管理</value>
   </data>
+  <data name="Manage Collection Channels" xml:space="preserve">
+    <value>コレクションチャンネルの管理</value>
+  </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>会社エンティティの管理</value>
   </data>
@@ -296,6 +305,9 @@
   </data>
   <data name="View Background Jobs" xml:space="preserve">
     <value>バックグラウンドジョブの表示</value>
+  </data>
+  <data name="View Collection Channels" xml:space="preserve">
+    <value>コレクションチャネルの表示</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>契約履歴を表示</value>

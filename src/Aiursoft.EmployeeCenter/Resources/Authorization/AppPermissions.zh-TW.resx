@@ -66,6 +66,9 @@
   <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
     <value>允許建立、更新及刪除藍圖。預設情況下，所有使用者均可檢視藍圖。</value>
   </data>
+  <data name="Allows creating, updating, and deleting collection channels and their records." xml:space="preserve">
+    <value>允許建立、更新及刪除收款通道及其記錄。</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>允許建立、更新及刪除公司實體資訊。</value>
   </data>
@@ -149,6 +152,9 @@
   </data>
   <data name="Allows viewing the contract history of any user." xml:space="preserve">
     <value>允許檢視任何使用者的合約歷程。</value>
+  </data>
+  <data name="Allows viewing the list of all collection channels and their records." xml:space="preserve">
+    <value>允許查看所有收款渠道及其記錄的列表。</value>
   </data>
   <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
     <value>允許檢視所有權限及其指派給角色和使用者的清單。</value>
@@ -234,6 +240,9 @@
   <data name="Manage Blueprints" xml:space="preserve">
     <value>管理藍圖</value>
   </data>
+  <data name="Manage Collection Channels" xml:space="preserve">
+    <value>管理收款渠道</value>
+  </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>管理公司基本實體資訊</value>
   </data>
@@ -296,6 +305,9 @@
   </data>
   <data name="View Background Jobs" xml:space="preserve">
     <value>檢視背景工作</value>
+  </data>
+  <data name="View Collection Channels" xml:space="preserve">
+    <value>查看收款渠道</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>檢視合約歷史</value>

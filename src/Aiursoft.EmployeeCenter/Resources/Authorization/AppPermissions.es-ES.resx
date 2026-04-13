@@ -66,6 +66,9 @@
   <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
     <value>Permite crear, actualizar y eliminar plantillas. Por defecto, todos los usuarios pueden ver las plantillas.</value>
   </data>
+  <data name="Allows creating, updating, and deleting collection channels and their records." xml:space="preserve">
+    <value>Permite crear, actualizar y eliminar canales de cobro y sus registros.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Permite crear, actualizar y eliminar información de entidades de la empresa.</value>
   </data>
@@ -149,6 +152,9 @@
   </data>
   <data name="Allows viewing the contract history of any user." xml:space="preserve">
     <value>Permite ver el historial de contratos de cualquier usuario.</value>
+  </data>
+  <data name="Allows viewing the list of all collection channels and their records." xml:space="preserve">
+    <value>Permite ver la lista de todos los canales de cobro y sus registros.</value>
   </data>
   <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
     <value>Permite ver la lista de todos los permisos y sus asignaciones a roles y usuarios.</value>
@@ -234,6 +240,9 @@
   <data name="Manage Blueprints" xml:space="preserve">
     <value>Administrar plantillas</value>
   </data>
+  <data name="Manage Collection Channels" xml:space="preserve">
+    <value>Gestionar canales de cobro</value>
+  </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Administrar entidades de la empresa</value>
   </data>
@@ -296,6 +305,9 @@
   </data>
   <data name="View Background Jobs" xml:space="preserve">
     <value>Ver trabajos en segundo plano</value>
+  </data>
+  <data name="View Collection Channels" xml:space="preserve">
+    <value>Ver canales de cobro</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>Ver historial de contratos</value>

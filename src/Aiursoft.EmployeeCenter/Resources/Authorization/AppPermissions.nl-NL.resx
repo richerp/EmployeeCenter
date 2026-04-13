@@ -66,6 +66,9 @@
   <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
     <value>Staats het maken, bijwerken en verwijderen van sjablonen toe. Elke gebruiker kan standaard sjablonen bekijken.</value>
   </data>
+  <data name="Allows creating, updating, and deleting collection channels and their records." xml:space="preserve">
+    <value>Staat toe het maken, bijwerken en verwijderen van collectiekanalen en hun records.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Staats het maken, bijwerken en verwijderen van informatie over bedrijfseenheden toe.</value>
   </data>
@@ -149,6 +152,9 @@
   </data>
   <data name="Allows viewing the contract history of any user." xml:space="preserve">
     <value>Staats het bekijken van het contractverleden van elke gebruiker toe.</value>
+  </data>
+  <data name="Allows viewing the list of all collection channels and their records." xml:space="preserve">
+    <value>Staand het bekijken van de lijst met alle verzamelingkanalen en hun records.</value>
   </data>
   <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
     <value>Staat het bekijken van de lijst met alle machtigingen en hun toewijzingen aan rollen en gebruikers toe.</value>
@@ -234,6 +240,9 @@
   <data name="Manage Blueprints" xml:space="preserve">
     <value>Blauwdrukken beheren</value>
   </data>
+  <data name="Manage Collection Channels" xml:space="preserve">
+    <value>Beheer inzamelingkanalen</value>
+  </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Bedrijfseenheden beheren</value>
   </data>
@@ -296,6 +305,9 @@
   </data>
   <data name="View Background Jobs" xml:space="preserve">
     <value>Achtergrondtaken weergeven</value>
+  </data>
+  <data name="View Collection Channels" xml:space="preserve">
+    <value>Verzamelkanalen bekijken</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>Contractgeschiedenis weergeven</value>

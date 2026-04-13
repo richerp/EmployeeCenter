@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Back" xml:space="preserve">
+      <data name="(Root)" xml:space="preserve">
+    <value>(Wurzel)</value>
+  </data>
+  <data name="Back" xml:space="preserve">
     <value>Zurück</value>
   </data>
   <data name="Blueprint saved successfully." xml:space="preserve">
@@ -32,6 +35,9 @@
   </data>
   <data name="Editor Only" xml:space="preserve">
     <value>Editor nur</value>
+  </data>
+  <data name="Folder" xml:space="preserve">
+    <value>Ordner</value>
   </data>
   <data name="HTML" xml:space="preserve">
     <value>HTML</value>

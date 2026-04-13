@@ -66,6 +66,9 @@
   <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
     <value>Permite criar, atualizar e excluir modelos. Todos os usuários podem visualizar modelos por padrão.</value>
   </data>
+  <data name="Allows creating, updating, and deleting collection channels and their records." xml:space="preserve">
+    <value>Permite criar, atualizar e excluir canais de cobrança e seus registros.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Permite criar, atualizar e excluir informações de entidades da empresa.</value>
   </data>
@@ -149,6 +152,9 @@
   </data>
   <data name="Allows viewing the contract history of any user." xml:space="preserve">
     <value>Permite visualizar o histórico de contratos de qualquer usuário.</value>
+  </data>
+  <data name="Allows viewing the list of all collection channels and their records." xml:space="preserve">
+    <value>Permite visualizar a lista de todos os canais de cobrança e seus registros.</value>
   </data>
   <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
     <value>Permite visualizar a lista de todas as permissões e suas atribuições a funções e usuários.</value>
@@ -234,6 +240,9 @@
   <data name="Manage Blueprints" xml:space="preserve">
     <value>Gerenciar Modelos</value>
   </data>
+  <data name="Manage Collection Channels" xml:space="preserve">
+    <value>Gerenciar Canais de Cobrança</value>
+  </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Gerenciar Entidades da Empresa</value>
   </data>
@@ -296,6 +305,9 @@
   </data>
   <data name="View Background Jobs" xml:space="preserve">
     <value>Visualizar Tarefas em Segundo Plano</value>
+  </data>
+  <data name="View Collection Channels" xml:space="preserve">
+    <value>Ver Canais de Cobrança</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>Visualizar Histórico de Contratos</value>
