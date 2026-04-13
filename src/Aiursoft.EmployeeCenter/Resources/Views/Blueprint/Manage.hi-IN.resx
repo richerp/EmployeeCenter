@@ -27,8 +27,20 @@
   <data name="Are you sure you want to delete this blueprint?" xml:space="preserve">
     <value>क्या आप वाकई इस ब्लूप्रिंट को हटाना चाहते हैं?</value>
   </data>
+  <data name="Are you sure you want to delete this folder?" xml:space="preserve">
+    <value>क्या आप निश्चित हैं कि आप इस फ़ोल्डर को हटाना चाहते हैं?</value>
+  </data>
   <data name="Author" xml:space="preserve">
     <value>लेखक</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>वापस</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>सामग्री</value>
+  </data>
+  <data name="Create Folder" xml:space="preserve">
+    <value>फ़ोल्डर बनाएं</value>
   </data>
   <data name="Create New Blueprint" xml:space="preserve">
     <value>नया ब्लूप्रिंट बनाएं</value>
@@ -47,6 +59,9 @@
   </data>
   <data name="Manage Blueprints" xml:space="preserve">
     <value>ब्लूप्रिंट्स का प्रबंधन करें</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>नाम</value>
   </data>
   <data name="No blueprints found." xml:space="preserve">
     <value>कोई ब्लूप्रिंट नहीं मिला।</value>

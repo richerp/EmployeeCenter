@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Cancel" xml:space="preserve">
+      <data name="(Root)" xml:space="preserve">
+    <value>(Korzeń)</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
     <value>Anuluj</value>
   </data>
   <data name="Contract Details" xml:space="preserve">
@@ -32,6 +35,9 @@
   </data>
   <data name="Edit Contract" xml:space="preserve">
     <value>Edytuj kontrakt</value>
+  </data>
+  <data name="Folder" xml:space="preserve">
+    <value>Folder</value>
   </data>
   <data name="Leave empty to keep current file." xml:space="preserve">
     <value>Pozostaw puste, aby zachować aktualny plik.</value>

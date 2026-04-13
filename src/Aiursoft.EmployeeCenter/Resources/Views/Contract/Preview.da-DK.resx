@@ -18,14 +18,44 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Back to List" xml:space="preserve">
+      <data name="Actions" xml:space="preserve">
+    <value>Handlinger</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Aktiv</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>Beløb</value>
+  </data>
+  <data name="Back to List" xml:space="preserve">
     <value>Tilbage til liste</value>
+  </data>
+  <data name="Collection Channels" xml:space="preserve">
+    <value>Kanaler for indsamling</value>
+  </data>
+  <data name="Create channel from this contract" xml:space="preserve">
+    <value>Opret kanal fra denne kontrakt</value>
+  </data>
+  <data name="Method" xml:space="preserve">
+    <value>Betalingsmetode</value>
   </data>
   <data name="No preview text available for this contract." xml:space="preserve">
     <value>Ingen forhåndsvisningstekst tilgængelig for denne kontrakt.</value>
   </data>
   <data name="No raw JSON data available." xml:space="preserve">
     <value>Ingen rå JSON-data tilgængelig.</value>
+  </data>
+  <data name="No related collection channels found." xml:space="preserve">
+    <value>Ingen relaterede opkrævningskanaler fundet.</value>
+  </data>
+  <data name="Paused" xml:space="preserve">
+    <value>Pause</value>
+  </data>
+  <data name="Payee" xml:space="preserve">
+    <value>Modtager</value>
+  </data>
+  <data name="Payer" xml:space="preserve">
+    <value>Betaler</value>
   </data>
   <data name="Plain Text" xml:space="preserve">
     <value>Ren tekst</value>
@@ -35,6 +65,15 @@
   </data>
   <data name="Raw JSON" xml:space="preserve">
     <value>Rå JSON</value>
+  </data>
+  <data name="Related Collection Channels" xml:space="preserve">
+    <value>Relaterede kanalforbindelser</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Terminated" xml:space="preserve">
+    <value>Terminering</value>
   </data>
 
 </root>

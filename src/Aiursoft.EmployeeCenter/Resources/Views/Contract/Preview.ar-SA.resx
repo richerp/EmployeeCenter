@@ -18,14 +18,44 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Back to List" xml:space="preserve">
+      <data name="Actions" xml:space="preserve">
+    <value>الإجراءات</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>نشط</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>المبلغ</value>
+  </data>
+  <data name="Back to List" xml:space="preserve">
     <value>عودة إلى القائمة</value>
+  </data>
+  <data name="Collection Channels" xml:space="preserve">
+    <value>قنوات التجميع</value>
+  </data>
+  <data name="Create channel from this contract" xml:space="preserve">
+    <value>إنشاء قناة من هذا العقد</value>
+  </data>
+  <data name="Method" xml:space="preserve">
+    <value>طريقة</value>
   </data>
   <data name="No preview text available for this contract." xml:space="preserve">
     <value>لا توجد نص معاينة متاح لهذا العقد.</value>
   </data>
   <data name="No raw JSON data available." xml:space="preserve">
     <value>لا توجد بيانات JSON خام متاحة.</value>
+  </data>
+  <data name="No related collection channels found." xml:space="preserve">
+    <value>لم يتم العثور على قنوات تحصيل ذات صلة.</value>
+  </data>
+  <data name="Paused" xml:space="preserve">
+    <value>مُوقَف</value>
+  </data>
+  <data name="Payee" xml:space="preserve">
+    <value>المدفوع إليه</value>
+  </data>
+  <data name="Payer" xml:space="preserve">
+    <value>الدافع</value>
   </data>
   <data name="Plain Text" xml:space="preserve">
     <value>النص العادي</value>
@@ -35,6 +65,15 @@
   </data>
   <data name="Raw JSON" xml:space="preserve">
     <value>JSON خام</value>
+  </data>
+  <data name="Related Collection Channels" xml:space="preserve">
+    <value>قنوات الجمع ذات الصلة</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>الحالة</value>
+  </data>
+  <data name="Terminated" xml:space="preserve">
+    <value>منتهية</value>
   </data>
 
 </root>

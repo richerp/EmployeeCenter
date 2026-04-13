@@ -18,14 +18,44 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Back to List" xml:space="preserve">
+      <data name="Actions" xml:space="preserve">
+    <value>İşlemler</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Aktif</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>Miktar</value>
+  </data>
+  <data name="Back to List" xml:space="preserve">
     <value>Listeye Dön</value>
+  </data>
+  <data name="Collection Channels" xml:space="preserve">
+    <value>Toplama Kanalları</value>
+  </data>
+  <data name="Create channel from this contract" xml:space="preserve">
+    <value>Bu sözleşmeden kanal oluştur</value>
+  </data>
+  <data name="Method" xml:space="preserve">
+    <value>Yöntem</value>
   </data>
   <data name="No preview text available for this contract." xml:space="preserve">
     <value>Bu sözleşk için önizleme metni mevcut değil.</value>
   </data>
   <data name="No raw JSON data available." xml:space="preserve">
     <value>Ham JSON verisi mevcut değil.</value>
+  </data>
+  <data name="No related collection channels found." xml:space="preserve">
+    <value>İlgili tahsilat kanalı bulunamadı.</value>
+  </data>
+  <data name="Paused" xml:space="preserve">
+    <value>Duraklatıldı</value>
+  </data>
+  <data name="Payee" xml:space="preserve">
+    <value>Alıcı</value>
+  </data>
+  <data name="Payer" xml:space="preserve">
+    <value>Ödeyen</value>
   </data>
   <data name="Plain Text" xml:space="preserve">
     <value>Düz Metin</value>
@@ -35,6 +65,15 @@
   </data>
   <data name="Raw JSON" xml:space="preserve">
     <value>Ham JSON</value>
+  </data>
+  <data name="Related Collection Channels" xml:space="preserve">
+    <value>İlgili Toplama Kanalları</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Durum</value>
+  </data>
+  <data name="Terminated" xml:space="preserve">
+    <value>İptal Edildi</value>
   </data>
 
 </root>

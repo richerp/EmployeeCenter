@@ -27,8 +27,20 @@
   <data name="Are you sure you want to delete this blueprint?" xml:space="preserve">
     <value>Tem certeza de que deseja excluir este projeto?</value>
   </data>
+  <data name="Are you sure you want to delete this folder?" xml:space="preserve">
+    <value>Tem certeza de que deseja excluir esta pasta?</value>
+  </data>
   <data name="Author" xml:space="preserve">
     <value>Autor</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Voltar</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>Conteúdo</value>
+  </data>
+  <data name="Create Folder" xml:space="preserve">
+    <value>Criar Pasta</value>
   </data>
   <data name="Create New Blueprint" xml:space="preserve">
     <value>Criar Novo Modelo</value>
@@ -47,6 +59,9 @@
   </data>
   <data name="Manage Blueprints" xml:space="preserve">
     <value>Gerenciar Plantas</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nome</value>
   </data>
   <data name="No blueprints found." xml:space="preserve">
     <value>Nenhum projeto encontrado.</value>

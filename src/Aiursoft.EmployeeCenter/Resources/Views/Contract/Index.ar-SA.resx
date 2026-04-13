@@ -24,11 +24,20 @@
   <data name="A list of all your contracts." xml:space="preserve">
     <value>قائمة بجميع عقودك.</value>
   </data>
+  <data name="A list of folders and contracts in this location." xml:space="preserve">
+    <value>قائمة بالمجلدات والعقود الموجودة في هذا الموقع.</value>
+  </data>
   <data name="Actions" xml:space="preserve">
     <value>إجراءات</value>
   </data>
   <data name="Active" xml:space="preserve">
     <value>نشط</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>رجوع</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>المحتويات</value>
   </data>
   <data name="Contract History" xml:space="preserve">
     <value>سجل العقود</value>
@@ -50,6 +59,9 @@
   </data>
   <data name="Name" xml:space="preserve">
     <value>الاسم</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>فتح</value>
   </data>
   <data name="Owner" xml:space="preserve">
     <value>المُالِك</value>
