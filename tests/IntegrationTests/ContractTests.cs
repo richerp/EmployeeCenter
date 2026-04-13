@@ -209,4 +209,112 @@ public class ContractTests
         Assert.Contains("Public Company Policy", manageHtml);
         Assert.Contains("Private Secret Document", manageHtml);
     }
+
+    [TestMethod]
+    public async Task ManageFolderTest()
+    {
+        // 1. Login as admin
+        var loginToken = await GetAntiCsrfToken("/Account/Login");
+        var loginContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "EmailOrUserName", "admin" },
+            { "Password", "admin123" },
+            { "__RequestVerificationToken", loginToken }
+        });
+        var loginResponse = await _http.PostAsync("/Account/Login", loginContent);
+        Assert.AreEqual(HttpStatusCode.Found, loginResponse.StatusCode);
+
+        // 2. Create Root Folder A
+        var createFolderToken = await GetAntiCsrfToken("/ManageContract/CreateFolder");
+        var createFolderAContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Name", "Folder A" },
+            { "__RequestVerificationToken", createFolderToken }
+        });
+        var createFolderAResponse = await _http.PostAsync("/ManageContract/CreateFolder", createFolderAContent);
+        Assert.AreEqual(HttpStatusCode.Found, createFolderAResponse.StatusCode);
+
+        // Get Folder A Id
+        var dbContext = GetService<EmployeeCenterDbContext>();
+        var folderA = await dbContext.ContractFolders.FirstAsync(f => f.Name == "Folder A");
+
+        // 3. Create Sub Folder A1 inside Folder A
+        var createSubFolderToken = await GetAntiCsrfToken($"/ManageContract/CreateFolder/{folderA.Id}");
+        var createSubFolderA1Content = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Name", "Sub A1" },
+            { "ParentFolderId", folderA.Id.ToString() },
+            { "__RequestVerificationToken", createSubFolderToken }
+        });
+        var createSubFolderA1Response = await _http.PostAsync("/ManageContract/CreateFolder", createSubFolderA1Content);
+        Assert.AreEqual(HttpStatusCode.Found, createSubFolderA1Response.StatusCode);
+
+        var subA1 = await dbContext.ContractFolders.FirstAsync(f => f.Name == "Sub A1");
+        Assert.AreEqual(folderA.Id, subA1.ParentFolderId);
+
+        // 4. Create a contract in Sub A1
+        var createContractToken = await GetAntiCsrfToken($"/ManageContract/Create?folderId={subA1.Id}");
+        var createContractContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Name", "Contract in Sub A1" },
+            { "FilePath", "contract/mock-path.pdf" },
+            { "Status", "1" },
+            { "FolderId", subA1.Id.ToString() },
+            { "__RequestVerificationToken", createContractToken }
+        });
+        var createContractResponse = await _http.PostAsync("/ManageContract/Create", createContractContent);
+        Assert.AreEqual(HttpStatusCode.Found, createContractResponse.StatusCode);
+
+        // 5. Verify navigation
+        var subA1IndexResponse = await _http.GetAsync($"/ManageContract/Index/{subA1.Id}");
+        var subA1IndexHtml = await subA1IndexResponse.Content.ReadAsStringAsync();
+        Assert.Contains("Contract in Sub A1", subA1IndexHtml);
+
+        // 6. Test Circular Reference: Move Folder A into Sub A1
+        var editFolderAToken = await GetAntiCsrfToken($"/ManageContract/EditFolder/{folderA.Id}");
+        var moveAtoSubA1Content = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "Id", folderA.Id.ToString() },
+            { "Name", "Folder A renamed" },
+            { "ParentFolderId", subA1.Id.ToString() },
+            { "__RequestVerificationToken", editFolderAToken }
+        });
+        var moveAtoSubA1Response = await _http.PostAsync("/ManageContract/EditFolder", moveAtoSubA1Content);
+        // Should NOT be found (302), because it should return the view with error (200)
+        Assert.AreEqual(HttpStatusCode.OK, moveAtoSubA1Response.StatusCode);
+        var moveAtoSubA1Html = await moveAtoSubA1Response.Content.ReadAsStringAsync();
+        Assert.Contains("Cannot move a folder to its own child!", moveAtoSubA1Html);
+
+        // 7. Test Deletion Restriction: Delete non-empty Folder A
+        var deleteFolderAToken = await GetAntiCsrfToken($"/ManageContract/Index/{folderA.ParentFolderId}");
+        var deleteFolderAContent = new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "__RequestVerificationToken", deleteFolderAToken }
+        });
+        var deleteFolderAResponse = await _http.PostAsync($"/ManageContract/DeleteFolder/{folderA.Id}", deleteFolderAContent);
+        Assert.AreEqual(HttpStatusCode.BadRequest, deleteFolderAResponse.StatusCode);
+
+        // 8. Clean up: Delete contract, then Sub A1, then Folder A
+        var contract = await dbContext.Contracts.FirstAsync(c => c.Name == "Contract in Sub A1");
+        var deleteContractToken = await GetAntiCsrfToken($"/ManageContract/Index/{subA1.Id}");
+        await _http.PostAsync($"/ManageContract/Delete/{contract.Id}", new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "__RequestVerificationToken", deleteContractToken }
+        }));
+
+        var deleteSubA1Token = await GetAntiCsrfToken($"/ManageContract/Index/{folderA.Id}");
+        await _http.PostAsync($"/ManageContract/DeleteFolder/{subA1.Id}", new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "__RequestVerificationToken", deleteSubA1Token }
+        }));
+
+        var deleteFolderAFinalToken = await GetAntiCsrfToken("/ManageContract/Index");
+        var deleteFolderAFinalResponse = await _http.PostAsync($"/ManageContract/DeleteFolder/{folderA.Id}", new FormUrlEncodedContent(new Dictionary<string, string>
+        {
+            { "__RequestVerificationToken", deleteFolderAFinalToken }
+        }));
+        Assert.AreEqual(HttpStatusCode.Found, deleteFolderAFinalResponse.StatusCode);
+
+        Assert.IsFalse(await dbContext.ContractFolders.AnyAsync(f => f.Id == folderA.Id));
+    }
 }

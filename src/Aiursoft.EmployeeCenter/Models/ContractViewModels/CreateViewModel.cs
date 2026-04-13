@@ -29,4 +29,6 @@ public class CreateViewModel : UiStackLayoutViewModel
     [Required(ErrorMessage = "The {0} is required.")]
     [Display(Name = "Status")]
     public ContractStatus Status { get; set; } = ContractStatus.PendingSignature;
+
+    public int? FolderId { get; set; }
 }

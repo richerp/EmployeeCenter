@@ -32,6 +32,7 @@ public abstract class EmployeeCenterDbContext(DbContextOptions options) : Identi
     public DbSet<AssetHistory> AssetHistories => Set<AssetHistory>();
     public DbSet<IntangibleAsset> IntangibleAssets => Set<IntangibleAsset>();
     public DbSet<Contract> Contracts => Set<Contract>();
+    public DbSet<ContractFolder> ContractFolders => Set<ContractFolder>();
     public DbSet<ContractOcrResult> ContractOcrResults => Set<ContractOcrResult>();
     public DbSet<PromotionHistory> PromotionHistories => Set<PromotionHistory>();
     public DbSet<WeeklyReport> WeeklyReports => Set<WeeklyReport>();
@@ -62,6 +63,10 @@ public abstract class EmployeeCenterDbContext(DbContextOptions options) : Identi
 
         builder.Entity<ContractOcrResult>()
             .HasIndex(r => r.ContractId)
+            .IsUnique();
+
+        builder.Entity<ContractFolder>()
+            .HasIndex(f => new { f.ParentFolderId, f.Name })
             .IsUnique();
     }
 

@@ -499,6 +499,9 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("varchar(200)");
 
+                    b.Property<int?>("FolderId")
+                        .HasColumnType("int");
+
                     b.Property<bool>("IsPublic")
                         .HasColumnType("tinyint(1)");
 
@@ -518,7 +521,36 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("FolderId");
+
                     b.ToTable("Contracts");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.ContractFolder", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreateTime")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("varchar(200)");
+
+                    b.Property<int?>("ParentFolderId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ParentFolderId", "Name")
+                        .IsUnique();
+
+                    b.ToTable("ContractFolders");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.ContractOcrResult", b =>
@@ -2272,6 +2304,24 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Contract", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.ContractFolder", "Folder")
+                        .WithMany("Contracts")
+                        .HasForeignKey("FolderId");
+
+                    b.Navigation("Folder");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.ContractFolder", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.ContractFolder", "ParentFolder")
+                        .WithMany("SubFolders")
+                        .HasForeignKey("ParentFolderId");
+
+                    b.Navigation("ParentFolder");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.ContractOcrResult", b =>
                 {
                     b.HasOne("Aiursoft.EmployeeCenter.Entities.Contract", "Contract")
@@ -2778,6 +2828,13 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.AssetModel", b =>
                 {
                     b.Navigation("Assets");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.ContractFolder", b =>
+                {
+                    b.Navigation("Contracts");
+
+                    b.Navigation("SubFolders");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.DnsProvider", b =>

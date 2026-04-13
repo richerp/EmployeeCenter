@@ -25,17 +25,30 @@ public class ContractController(
         CascadedLinksOrder = 6,
         LinkText = "Company Public Contracts",
         LinkOrder = 1)]
-    public async Task<IActionResult> Index()
+    public async Task<IActionResult> Index(int? id)
     {
         var canViewHistory = (await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanViewContractHistory)).Succeeded;
 
+        var currentFolder = id.HasValue
+            ? await context.ContractFolders.FindAsync(id.Value)
+            : null;
+
         var contracts = await context.Contracts
+            .Where(c => c.FolderId == id)
             .Where(c => canViewHistory || c.IsPublic)
             .OrderByDescending(c => c.CreateTime)
             .ToListAsync();
 
+        var subFolders = await context.ContractFolders
+            .Where(f => f.ParentFolderId == id)
+            .OrderBy(f => f.Name)
+            .ToListAsync();
+
         return this.StackView(new IndexViewModel
         {
+            FolderId = id,
+            CurrentFolder = currentFolder,
+            SubFolders = subFolders,
             Contracts = contracts
         });
     }

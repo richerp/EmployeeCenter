@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Aiursoft.EmployeeCenter.Entities;
 
@@ -22,4 +23,8 @@ public class Contract
     public DateTime? LastOcrAttemptTime { get; set; }
 
     public DateTime CreateTime { get; set; } = DateTime.UtcNow;
+
+    public int? FolderId { get; set; }
+    [ForeignKey(nameof(FolderId))]
+    public ContractFolder? Folder { get; set; }
 }

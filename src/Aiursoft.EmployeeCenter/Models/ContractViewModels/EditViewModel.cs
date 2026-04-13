@@ -31,4 +31,6 @@ public class EditViewModel : UiStackLayoutViewModel
     [Required(ErrorMessage = "The {0} is required.")]
     [Display(Name = "Status")]
     public ContractStatus Status { get; set; }
+
+    public int? FolderId { get; set; }
 }
