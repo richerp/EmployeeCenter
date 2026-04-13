@@ -61,16 +61,25 @@ public class ReimbursementController(
             ModelState.AddModelError(nameof(model.ExpenseTime), "Expense time cannot be in the future.");
         }
 
+        try 
+        {
+            if (!string.IsNullOrEmpty(model.InvoicePath))
+            {
+                var physicalPath = storage.GetFilePhysicalPath(model.InvoicePath, isVault: true);
+                if (!System.IO.File.Exists(physicalPath))
+                {
+                    ModelState.AddModelError(nameof(model.InvoicePath), "File upload failed or missing. Please re-upload.");
+                }
+            }
+        }
+        catch (ArgumentException)
+        {
+            return BadRequest();
+        }
+
         if (!ModelState.IsValid)
         {
             return this.StackView(model);
-        }
-
-        string? invoicePath = null;
-        if (model.InvoiceFile != null)
-        {
-            var subfolder = $"reimbursements/{user.Id}/{DateTime.UtcNow:yyyy/MM/dd}";
-            invoicePath = await storage.Save(Path.Combine(subfolder, model.InvoiceFile.FileName), model.InvoiceFile, isVault: true);
         }
 
         var reimbursement = new Reimbursement
@@ -79,7 +88,7 @@ public class ReimbursementController(
             ExpenseTime = model.ExpenseTime,
             Purpose = model.Purpose,
             SupportingEmail = model.SupportingEmail,
-            InvoicePath = invoicePath,
+            InvoicePath = model.InvoicePath,
             Amount = model.Amount,
             Category = model.Category,
             Status = model.SaveAsDraft ? ReimbursementStatus.Draft : ReimbursementStatus.Applying
@@ -115,7 +124,8 @@ public class ReimbursementController(
             SupportingEmail = reimbursement.SupportingEmail,
             Amount = reimbursement.Amount,
             Category = reimbursement.Category,
-            ExistingInvoicePath = reimbursement.InvoicePath
+            ExistingInvoicePath = reimbursement.InvoicePath,
+            InvoicePath = reimbursement.InvoicePath
         };
 
         return this.StackView(model);
@@ -144,15 +154,30 @@ public class ReimbursementController(
             ModelState.AddModelError(nameof(model.ExpenseTime), "Expense time cannot be in the future.");
         }
 
+        try 
+        {
+            if (!string.IsNullOrEmpty(model.InvoicePath))
+            {
+                var physicalPath = storage.GetFilePhysicalPath(model.InvoicePath, isVault: true);
+                if (!System.IO.File.Exists(physicalPath))
+                {
+                    ModelState.AddModelError(nameof(model.InvoicePath), "File upload failed or missing. Please re-upload.");
+                }
+            }
+        }
+        catch (ArgumentException)
+        {
+            return BadRequest();
+        }
+
         if (!ModelState.IsValid)
         {
             return this.StackView(model);
         }
 
-        if (model.InvoiceFile != null)
+        if (!string.IsNullOrEmpty(model.InvoicePath) && reimbursement.InvoicePath != model.InvoicePath)
         {
-            var subfolder = $"reimbursements/{user.Id}/{DateTime.UtcNow:yyyy/MM/dd}";
-            reimbursement.InvoicePath = await storage.Save(Path.Combine(subfolder, model.InvoiceFile.FileName), model.InvoiceFile, isVault: true);
+            reimbursement.InvoicePath = model.InvoicePath;
         }
 
         reimbursement.ExpenseTime = model.ExpenseTime;

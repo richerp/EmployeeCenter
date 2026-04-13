@@ -19,7 +19,7 @@
     <div class="container-xl">
         <div class="card">
             <div class="card-body">
-                <form asp-action="Edit" method="post" enctype="multipart/form-data">
+                <form asp-action="Edit" method="post">
                     <input type="hidden" asp-for="Id" />
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     
@@ -65,9 +65,15 @@
                             <span asp-validation-for="Amount" class="text-danger"></span>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label asp-for="InvoiceFile" class="form-label"></label>
-                            <input asp-for="InvoiceFile" class="form-control" type="file" />
-                            <span asp-validation-for="InvoiceFile" class="text-danger"></span>
+                            <label asp-for="InvoicePath" class="form-label"></label>
+                            <vc:file-upload 
+                                asp-for="InvoicePath" 
+                                subfolder="reimbursement" 
+                                is-vault="true"
+                                allowed-extensions="pdf docx jpg jpeg png zip rar 7z"
+                                max-size-in-mb="20">
+                            </vc:file-upload>
+                            <span asp-validation-for="InvoicePath" class="text-danger"></span>
                             @if (!string.IsNullOrEmpty(Model.ExistingInvoicePath))
                             {
                                 <div class="text-muted small mt-1">
@@ -91,5 +97,13 @@
         </div>
     </div>
 </div>
+
+@section styles {
+    <link rel="stylesheet" href="~/node_modules/dropify/dist/css/dropify.min.css" />
+    <link rel="stylesheet" href="~/styles/uploader.css" />
+}
+@section scripts {
+    <script src="~/node_modules/dropify/dist/js/dropify.min.js"></script>
+}
 
 
