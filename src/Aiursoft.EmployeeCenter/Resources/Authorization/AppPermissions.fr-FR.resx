@@ -66,6 +66,9 @@
   <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
     <value>Permet la création, la mise à jour et la suppression de modèles. Par défaut, tout utilisateur peut visualiser les modèles.</value>
   </data>
+  <data name="Allows creating, updating, and deleting collection channels and their records." xml:space="preserve">
+    <value>Permet de créer, mettre à jour et supprimer les canaux de recouvrement et leurs enregistrements.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Permet la création, la mise à jour et la suppression des informations relatives aux entités de l&apos;entreprise.</value>
   </data>
@@ -149,6 +152,9 @@
   </data>
   <data name="Allows viewing the contract history of any user." xml:space="preserve">
     <value>Permet de visualiser l&apos;historique des contrats de tout utilisateur.</value>
+  </data>
+  <data name="Allows viewing the list of all collection channels and their records." xml:space="preserve">
+    <value>Autorise l&apos;affichage de la liste de tous les canaux de recouvrement et de leurs enregistrements.</value>
   </data>
   <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
     <value>Permet de visualiser la liste de toutes les autorisations et leurs affectations aux rôles et aux utilisateurs.</value>
@@ -234,6 +240,9 @@
   <data name="Manage Blueprints" xml:space="preserve">
     <value>Gérer les maquettes</value>
   </data>
+  <data name="Manage Collection Channels" xml:space="preserve">
+    <value>Gérer les canaux de recouvrement</value>
+  </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Gérer les entités de l&apos;entreprise</value>
   </data>
@@ -296,6 +305,9 @@
   </data>
   <data name="View Background Jobs" xml:space="preserve">
     <value>Afficher les tâches en arrière-plan</value>
+  </data>
+  <data name="View Collection Channels" xml:space="preserve">
+    <value>Afficher les canaux de recouvrement</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>Visualiser l&apos;historique des contrats</value>

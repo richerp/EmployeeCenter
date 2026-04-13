@@ -21,5 +21,8 @@
       <data name="Blueprints" xml:space="preserve">
     <value>ब्लूप्रिंट्स</value>
   </data>
+  <data name="Sub Folders" xml:space="preserve">
+    <value>उप फोल्डर</value>
+  </data>
 
 </root>

@@ -132,6 +132,9 @@
   <data name="Code" xml:space="preserve">
     <value>Kod</value>
   </data>
+  <data name="Collection Channels" xml:space="preserve">
+    <value>Insamlingskanaler</value>
+  </data>
   <data name="Comments" xml:space="preserve">
     <value>Kommentarer</value>
   </data>
@@ -168,8 +171,14 @@
   <data name="Create New" xml:space="preserve">
     <value>Skapa ny</value>
   </data>
+  <data name="Create New Blueprint Folder" xml:space="preserve">
+    <value>Skapa ny mapp för Blueprint</value>
+  </data>
   <data name="Create New Contract" xml:space="preserve">
     <value>Skapa ny avtal</value>
+  </data>
+  <data name="Create New Folder" xml:space="preserve">
+    <value>Skapa ny mapp</value>
   </data>
   <data name="Create Onboarding Task" xml:space="preserve">
     <value>Skapa påbörjandeuppgift</value>
@@ -222,6 +231,9 @@
   <data name="Edit Blueprint" xml:space="preserve">
     <value>Redigera blueprinf</value>
   </data>
+  <data name="Edit Blueprint Folder" xml:space="preserve">
+    <value>Redigera blueprint-mapp</value>
+  </data>
   <data name="Edit Company Entity" xml:space="preserve">
     <value>Redigera företagsentitet</value>
   </data>
@@ -230,6 +242,9 @@
   </data>
   <data name="Edit Customer Relationship" xml:space="preserve">
     <value>Redigera kundrelation</value>
+  </data>
+  <data name="Edit Folder" xml:space="preserve">
+    <value>Redigera mapp</value>
   </data>
   <data name="Edit Onboarding Task" xml:space="preserve">
     <value>Redigera påbörjningsuppgift</value>

@@ -66,6 +66,9 @@
   <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
     <value>Sallii luoda, päivittää ja poistaa luonnoksia. Kaikki käyttäjät voivat oletuksena tarkastella luonnoksia.</value>
   </data>
+  <data name="Allows creating, updating, and deleting collection channels and their records." xml:space="preserve">
+    <value>Salli kokoelmakanavien ja niiden tietojen luominen, päivittäminen ja poistaminen.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Sallii yritysentiteettitietojen luomisen, päivittämisen ja poiston.</value>
   </data>
@@ -149,6 +152,9 @@
   </data>
   <data name="Allows viewing the contract history of any user." xml:space="preserve">
     <value>Sallii käyttäjän sopimushistorian tarkastelun.</value>
+  </data>
+  <data name="Allows viewing the list of all collection channels and their records." xml:space="preserve">
+    <value>Sallii kaikkien keräyskanavien ja niiden tietojen luettelon tarkastelun.</value>
   </data>
   <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
     <value>Sallii kaikkien oikeuksien ja niiden roolien sekä käyttäjien käyttöoikeuksien näkymisen.</value>
@@ -234,6 +240,9 @@
   <data name="Manage Blueprints" xml:space="preserve">
     <value>Hallinnoi luonnoksia</value>
   </data>
+  <data name="Manage Collection Channels" xml:space="preserve">
+    <value>Hallitse perintäkanavia</value>
+  </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Hallinnoi yrityksen yksiköitä</value>
   </data>
@@ -296,6 +305,9 @@
   </data>
   <data name="View Background Jobs" xml:space="preserve">
     <value>Näytä taustatehtävät</value>
+  </data>
+  <data name="View Collection Channels" xml:space="preserve">
+    <value>Näytä keräyskanavia</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>Näytä sopimushistoria</value>

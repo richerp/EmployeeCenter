@@ -21,5 +21,8 @@
       <data name="Contracts" xml:space="preserve">
     <value>संविदाएँ</value>
   </data>
+  <data name="Sub Folders" xml:space="preserve">
+    <value>उप-फोल्डर</value>
+  </data>
 
 </root>

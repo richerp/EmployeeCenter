@@ -63,6 +63,9 @@
   <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
     <value>Allows creating, updating, and deleting blueprints. Every user can view blueprints by default.</value>
   </data>
+  <data name="Allows creating, updating, and deleting collection channels and their records." xml:space="preserve">
+    <value>Allows creating, updating, and deleting collection channels and their records.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Allows creating, updating, and deleting company entity information.</value>
   </data>
@@ -141,6 +144,9 @@
   <data name="Allows viewing the background job dashboard and managing jobs." xml:space="preserve">
     <value>Allows viewing the background job dashboard and managing jobs.</value>
   </data>
+  <data name="Allows viewing the list of all collection channels and their records." xml:space="preserve">
+    <value>Allows viewing the list of all collection channels and their records.</value>
+  </data>
   <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
     <value>Allows viewing the list of all permissions and their assignments to roles and users.</value>
   </data>
@@ -216,6 +222,9 @@
   <data name="Manage Blueprints" xml:space="preserve">
     <value>Manage Blueprints</value>
   </data>
+  <data name="Manage Collection Channels" xml:space="preserve">
+    <value>Manage Collection Channels</value>
+  </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Manage Company Entity Information</value>
   </data>
@@ -275,6 +284,9 @@
   </data>
   <data name="View Background Jobs" xml:space="preserve">
     <value>View Background Jobs</value>
+  </data>
+  <data name="View Collection Channels" xml:space="preserve">
+    <value>View Collection Channels</value>
   </data>
   <data name="View Report Line" xml:space="preserve">
     <value>View Report Line</value>

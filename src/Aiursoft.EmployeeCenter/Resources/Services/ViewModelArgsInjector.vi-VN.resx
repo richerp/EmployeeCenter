@@ -135,6 +135,9 @@
   <data name="Code" xml:space="preserve">
     <value>Mã</value>
   </data>
+  <data name="Collection Channels" xml:space="preserve">
+    <value>Kênh Thu</value>
+  </data>
   <data name="Comments" xml:space="preserve">
     <value>Bình luận</value>
   </data>
@@ -171,8 +174,14 @@
   <data name="Create New" xml:space="preserve">
     <value>Tạo mới</value>
   </data>
+  <data name="Create New Blueprint Folder" xml:space="preserve">
+    <value>Tạo Thư mục Bản vẽ Mới</value>
+  </data>
   <data name="Create New Contract" xml:space="preserve">
     <value>Tạo hợp đồng mới</value>
+  </data>
+  <data name="Create New Folder" xml:space="preserve">
+    <value>Tạo Thư Mục Mới</value>
   </data>
   <data name="Create Onboarding Task" xml:space="preserve">
     <value>Tạo nhiệm vụ trênboarding</value>
@@ -225,6 +234,9 @@
   <data name="Edit Blueprint" xml:space="preserve">
     <value>Chỉnh sửa Bản thiết kế</value>
   </data>
+  <data name="Edit Blueprint Folder" xml:space="preserve">
+    <value>Chỉnh sửa thư mục bản thiết kế</value>
+  </data>
   <data name="Edit Company Entity" xml:space="preserve">
     <value>Chỉnh sửa Tổ chức Công ty</value>
   </data>
@@ -233,6 +245,9 @@
   </data>
   <data name="Edit Customer Relationship" xml:space="preserve">
     <value>Chỉnh sửa quan hệ khách hàng</value>
+  </data>
+  <data name="Edit Folder" xml:space="preserve">
+    <value>Sửa thư mục</value>
   </data>
   <data name="Edit Onboarding Task" xml:space="preserve">
     <value>Chỉnh sửa Nhiệm vụ Đào tạo</value>

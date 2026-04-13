@@ -132,6 +132,9 @@
   <data name="Code" xml:space="preserve">
     <value>Cod</value>
   </data>
+  <data name="Collection Channels" xml:space="preserve">
+    <value>Canale de colectare</value>
+  </data>
   <data name="Comments" xml:space="preserve">
     <value>Comentarii</value>
   </data>
@@ -168,8 +171,14 @@
   <data name="Create New" xml:space="preserve">
     <value>Creează Nou</value>
   </data>
+  <data name="Create New Blueprint Folder" xml:space="preserve">
+    <value>Creează un dosar nou de planuri</value>
+  </data>
   <data name="Create New Contract" xml:space="preserve">
     <value>Crează Contract Nou</value>
+  </data>
+  <data name="Create New Folder" xml:space="preserve">
+    <value>Creează un nou folder</value>
   </data>
   <data name="Create Onboarding Task" xml:space="preserve">
     <value>Crează sarcină de integrare</value>
@@ -222,6 +231,9 @@
   <data name="Edit Blueprint" xml:space="preserve">
     <value>Editare Plan</value>
   </data>
+  <data name="Edit Blueprint Folder" xml:space="preserve">
+    <value>Editează folderul de schiță</value>
+  </data>
   <data name="Edit Company Entity" xml:space="preserve">
     <value>Editare Entitate Companie</value>
   </data>
@@ -230,6 +242,9 @@
   </data>
   <data name="Edit Customer Relationship" xml:space="preserve">
     <value>Editare relație cu clientul</value>
+  </data>
+  <data name="Edit Folder" xml:space="preserve">
+    <value>Edit Folder</value>
   </data>
   <data name="Edit Onboarding Task" xml:space="preserve">
     <value>Editează sarcina de peboarding</value>

@@ -132,6 +132,9 @@
   <data name="Code" xml:space="preserve">
     <value>Kode</value>
   </data>
+  <data name="Collection Channels" xml:space="preserve">
+    <value>Saluran Penagihan</value>
+  </data>
   <data name="Comments" xml:space="preserve">
     <value>Komentar</value>
   </data>
@@ -168,8 +171,14 @@
   <data name="Create New" xml:space="preserve">
     <value>Buat Baru</value>
   </data>
+  <data name="Create New Blueprint Folder" xml:space="preserve">
+    <value>Buat Folder Blueprint Baru</value>
+  </data>
   <data name="Create New Contract" xml:space="preserve">
     <value>Buat Kontrak Baru</value>
+  </data>
+  <data name="Create New Folder" xml:space="preserve">
+    <value>Buat Folder Baru</value>
   </data>
   <data name="Create Onboarding Task" xml:space="preserve">
     <value>Buat Tugas Onboarding</value>
@@ -222,6 +231,9 @@
   <data name="Edit Blueprint" xml:space="preserve">
     <value>Edit Blueprint</value>
   </data>
+  <data name="Edit Blueprint Folder" xml:space="preserve">
+    <value>Edit Folder Blueprint</value>
+  </data>
   <data name="Edit Company Entity" xml:space="preserve">
     <value>Edit Entitas Perusahaan</value>
   </data>
@@ -230,6 +242,9 @@
   </data>
   <data name="Edit Customer Relationship" xml:space="preserve">
     <value>Edit Hubungan Pelanggan</value>
+  </data>
+  <data name="Edit Folder" xml:space="preserve">
+    <value>Edit Folder</value>
   </data>
   <data name="Edit Onboarding Task" xml:space="preserve">
     <value>Edit Tugas Onboarding</value>

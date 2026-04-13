@@ -66,6 +66,9 @@
   <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
     <value>블루프린트를 생성, 수정 및 삭제할 수 있습니다. 기본적으로 모든 사용자가 블루프린트를 볼 수 있습니다.</value>
   </data>
+  <data name="Allows creating, updating, and deleting collection channels and their records." xml:space="preserve">
+    <value>모집 채널 및 해당 기록을 생성, 업데이트 및 삭제할 수 있습니다.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>회사 엔티티 정보의 생성, 수정 및 삭제를 허용합니다.</value>
   </data>
@@ -149,6 +152,9 @@
   </data>
   <data name="Allows viewing the contract history of any user." xml:space="preserve">
     <value>모든 사용자의 계약 내역을 볼 수 있도록 허용합니다.</value>
+  </data>
+  <data name="Allows viewing the list of all collection channels and their records." xml:space="preserve">
+    <value>모든 수집 채널과 해당 기록 목록을 조회할 수 있습니다.</value>
   </data>
   <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
     <value>모든 권한과 그 권한이 할당된 역할 및 사용자 목록을 볼 수 있도록 허용합니다.</value>
@@ -234,6 +240,9 @@
   <data name="Manage Blueprints" xml:space="preserve">
     <value>블루프린트 관리</value>
   </data>
+  <data name="Manage Collection Channels" xml:space="preserve">
+    <value>집합 채널 관리</value>
+  </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>회사 엔티티 관리</value>
   </data>
@@ -296,6 +305,9 @@
   </data>
   <data name="View Background Jobs" xml:space="preserve">
     <value>백그라운드 작업 보기</value>
+  </data>
+  <data name="View Collection Channels" xml:space="preserve">
+    <value>채널 목록 보기</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>계약 이력 보기</value>

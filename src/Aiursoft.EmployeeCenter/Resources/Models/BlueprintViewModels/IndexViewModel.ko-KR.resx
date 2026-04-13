@@ -21,5 +21,8 @@
       <data name="Blueprints" xml:space="preserve">
     <value>블루프린트</value>
   </data>
+  <data name="Sub Folders" xml:space="preserve">
+    <value>하위 폴더</value>
+  </data>
 
 </root>

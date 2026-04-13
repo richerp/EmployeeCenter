@@ -21,5 +21,8 @@
       <data name="Blueprints" xml:space="preserve">
     <value>المخططات</value>
   </data>
+  <data name="Sub Folders" xml:space="preserve">
+    <value>المجلدات الفرعية</value>
+  </data>
 
 </root>

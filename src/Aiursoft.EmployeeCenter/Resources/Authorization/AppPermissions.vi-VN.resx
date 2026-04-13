@@ -66,6 +66,9 @@
   <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
     <value>Cho phép tạo, cập nhật và xóa các bản thiết kế. Mọi người dùng đều có thể xem bản thiết kế theo mặc định.</value>
   </data>
+  <data name="Allows creating, updating, and deleting collection channels and their records." xml:space="preserve">
+    <value>Cho phép tạo, cập nhật và xóa các kênh thu thập và hồ sơ của chúng.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Cho phép tạo, cập nhật và xóa thông tin thực thể công ty.</value>
   </data>
@@ -149,6 +152,9 @@
   </data>
   <data name="Allows viewing the contract history of any user." xml:space="preserve">
     <value>Cho phép xem lịch sử hợp đồng của bất kỳ người dùng nào.</value>
+  </data>
+  <data name="Allows viewing the list of all collection channels and their records." xml:space="preserve">
+    <value>Cho phép xem danh sách tất cả các kênh thu thập và các bản ghi của chúng.</value>
   </data>
   <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
     <value>Cho phép xem danh sách tất cả các quyền và việc gán chúng cho vai trò và người dùng.</value>
@@ -234,6 +240,9 @@
   <data name="Manage Blueprints" xml:space="preserve">
     <value>Quản lý Bản thiết kế</value>
   </data>
+  <data name="Manage Collection Channels" xml:space="preserve">
+    <value>Quản lý Kênh Thu Thập</value>
+  </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Quản lý các thực thể công ty</value>
   </data>
@@ -296,6 +305,9 @@
   </data>
   <data name="View Background Jobs" xml:space="preserve">
     <value>Xem các Nhiệm vụ nền</value>
+  </data>
+  <data name="View Collection Channels" xml:space="preserve">
+    <value>Xem kênh thu thập</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>Xem lịch sử hợp đồng</value>

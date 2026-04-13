@@ -208,6 +208,12 @@ public class ViewModelArgsInjector(
     
         _ = localizer["My Reimbursements"];
         _ = localizer["Reimbursement"];
+    
+        _ = localizer["Collection Channels"];
+        _ = localizer["Create New Blueprint Folder"];
+        _ = localizer["Create New Folder"];
+        _ = localizer["Edit Blueprint Folder"];
+        _ = localizer["Edit Folder"];
     }
 
     public void InjectSimple(

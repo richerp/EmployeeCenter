@@ -135,6 +135,9 @@
   <data name="Code" xml:space="preserve">
     <value>代码</value>
   </data>
+  <data name="Collection Channels" xml:space="preserve">
+    <value>收款渠道</value>
+  </data>
   <data name="Comments" xml:space="preserve">
     <value>评论</value>
   </data>
@@ -171,8 +174,14 @@
   <data name="Create New" xml:space="preserve">
     <value>新建</value>
   </data>
+  <data name="Create New Blueprint Folder" xml:space="preserve">
+    <value>创建新蓝图文件夹</value>
+  </data>
   <data name="Create New Contract" xml:space="preserve">
     <value>创建新合同</value>
+  </data>
+  <data name="Create New Folder" xml:space="preserve">
+    <value>新建文件夹</value>
   </data>
   <data name="Create Onboarding Task" xml:space="preserve">
     <value>创建入职任务</value>
@@ -228,6 +237,9 @@
   <data name="Edit Blueprint" xml:space="preserve">
     <value>编辑蓝图</value>
   </data>
+  <data name="Edit Blueprint Folder" xml:space="preserve">
+    <value>编辑蓝图文件夹</value>
+  </data>
   <data name="Edit Company Entity" xml:space="preserve">
     <value>编辑公司实体</value>
   </data>
@@ -236,6 +248,9 @@
   </data>
   <data name="Edit Customer Relationship" xml:space="preserve">
     <value>编辑客户关系</value>
+  </data>
+  <data name="Edit Folder" xml:space="preserve">
+    <value>编辑文件夹</value>
   </data>
   <data name="Edit Onboarding Task" xml:space="preserve">
     <value>编辑入职任务</value>

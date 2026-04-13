@@ -66,6 +66,9 @@
   <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
     <value>ब्लूप्रिंट्स को बनाने, अपडेट करने और हटाने की अनुमति देता है। डिफ़ॉल्ट रूप से हर उपयोगकर्ता ब्लूप्रिंट्स को देख सकता है।</value>
   </data>
+  <data name="Allows creating, updating, and deleting collection channels and their records." xml:space="preserve">
+    <value>संग्रह चैनलों और उनके रिकॉर्डों को बनाने, अपडेट करने और हटाने की अनुमति देता है।</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>कंपनी इकाई की जानकारी के निर्माण, अद्यतन और हटाने की अनुमति देता है।</value>
   </data>
@@ -149,6 +152,9 @@
   </data>
   <data name="Allows viewing the contract history of any user." xml:space="preserve">
     <value>किसी भी उपयोगकर्ता के कॉन्ट्रैक्ट इतिहास को देखने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows viewing the list of all collection channels and their records." xml:space="preserve">
+    <value>सभी संग्रह चैनलों और उनके रिकॉर्ड की सूची देखने की अनुमति देता है।</value>
   </data>
   <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
     <value>सभी अनुमतियों और उनके भूमिकाओं और उपयोगकर्ताओं के लिए नियुक्तियों की सूची को देखने की अनुमति देता है।</value>
@@ -234,6 +240,9 @@
   <data name="Manage Blueprints" xml:space="preserve">
     <value>ब्लूप्रिंट्स को प्रबंधित करें</value>
   </data>
+  <data name="Manage Collection Channels" xml:space="preserve">
+    <value>संग्रह चैनलों का प्रबंधन करें</value>
+  </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>कंपनी एंटिटीज का प्रबंधन करें</value>
   </data>
@@ -296,6 +305,9 @@
   </data>
   <data name="View Background Jobs" xml:space="preserve">
     <value>बैकग्राउंड जॉब्स देखें</value>
+  </data>
+  <data name="View Collection Channels" xml:space="preserve">
+    <value>संग्रह चैनल देखें</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>कॉन्ट्रैक्ट इतिहास देखें</value>

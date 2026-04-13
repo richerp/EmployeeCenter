@@ -66,6 +66,9 @@
   <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
     <value>Consente la creazione, l&apos;aggiornamento e l&apos;eliminazione di modelli. Tutti gli utenti possono visualizzare i modelli per impostazione predefinita.</value>
   </data>
+  <data name="Allows creating, updating, and deleting collection channels and their records." xml:space="preserve">
+    <value>Consente la creazione, l&apos;aggiornamento e l&apos;eliminazione dei canali di raccolta e dei relativi record.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Consente la creazione, l&apos;aggiornamento e l&apos;eliminazione delle informazioni relative alle entità aziendali.</value>
   </data>
@@ -149,6 +152,9 @@
   </data>
   <data name="Allows viewing the contract history of any user." xml:space="preserve">
     <value>Consente di visualizzare la cronologia dei contratti di qualsiasi utente.</value>
+  </data>
+  <data name="Allows viewing the list of all collection channels and their records." xml:space="preserve">
+    <value>Consente di visualizzare l&apos;elenco di tutti i canali di raccolta e i relativi record.</value>
   </data>
   <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
     <value>Consente di visualizzare l&apos;elenco di tutti i permessi e le loro assegnazioni a ruoli e utenti.</value>
@@ -234,6 +240,9 @@
   <data name="Manage Blueprints" xml:space="preserve">
     <value>Gestisci i Blueprint</value>
   </data>
+  <data name="Manage Collection Channels" xml:space="preserve">
+    <value>Gestisci canali di raccolta</value>
+  </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Gestisci entità aziendali</value>
   </data>
@@ -296,6 +305,9 @@
   </data>
   <data name="View Background Jobs" xml:space="preserve">
     <value>Visualizza i processi in background</value>
+  </data>
+  <data name="View Collection Channels" xml:space="preserve">
+    <value>Visualizza canali di incasso</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>Visualizza la cronologia dei contratti</value>

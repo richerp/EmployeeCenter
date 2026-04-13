@@ -66,6 +66,9 @@
   <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
     <value>Дозволяє створювати, оновлювати та видаляти макети. За замовчуванням кожен користувач може переглядати макети.</value>
   </data>
+  <data name="Allows creating, updating, and deleting collection channels and their records." xml:space="preserve">
+    <value>Дозволяє створювати, оновлювати та видаляти канали збору та їхні записи.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Дозволяє створювати, оновлювати та видаляти інформацію про компанійні сутності.</value>
   </data>
@@ -149,6 +152,9 @@
   </data>
   <data name="Allows viewing the contract history of any user." xml:space="preserve">
     <value>Дозволяє переглядати історію контрактів будь-якого користувача.</value>
+  </data>
+  <data name="Allows viewing the list of all collection channels and their records." xml:space="preserve">
+    <value>Дозволяє переглядати список усіх каналів збору коштів та їхніх записів.</value>
   </data>
   <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
     <value>Дозволяє переглядати список усіх дозволів та їхніх призначень ролям та користувачам.</value>
@@ -234,6 +240,9 @@
   <data name="Manage Blueprints" xml:space="preserve">
     <value>Керувати макетами</value>
   </data>
+  <data name="Manage Collection Channels" xml:space="preserve">
+    <value>Керувати каналами збору</value>
+  </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Керувати компанійними сутностями</value>
   </data>
@@ -296,6 +305,9 @@
   </data>
   <data name="View Background Jobs" xml:space="preserve">
     <value>Переглянути фонові завдання</value>
+  </data>
+  <data name="View Collection Channels" xml:space="preserve">
+    <value>Переглянути канали збору</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>Переглянути історію контрактів</value>

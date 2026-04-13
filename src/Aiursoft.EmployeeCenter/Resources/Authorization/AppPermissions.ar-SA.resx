@@ -66,6 +66,9 @@
   <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
     <value>يُمكّن من إنشاء وتحديث وحذف المخططات. يمكن لكل مستخدم عرض المخططات افتراضيًا.</value>
   </data>
+  <data name="Allows creating, updating, and deleting collection channels and their records." xml:space="preserve">
+    <value>يسمح بإنشاء قنوات التحصيل وتحديثها وحذفها وسجلاتها.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>يُمكّن من إنشاء معلومات الكيانات الخاصة بالشركة وتحديثها وحذفها.</value>
   </data>
@@ -149,6 +152,9 @@
   </data>
   <data name="Allows viewing the contract history of any user." xml:space="preserve">
     <value>يُسمح بعرض سجل العقود لأي مستخدم.</value>
+  </data>
+  <data name="Allows viewing the list of all collection channels and their records." xml:space="preserve">
+    <value>يسمح بعرض قائمة بجميع قنوات التحصيل وسجلاتها.</value>
   </data>
   <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
     <value>يسمح بعرض قائمة بجميع الصلاحيات وتوزيعها على الأدوار والمستخدمين.</value>
@@ -234,6 +240,9 @@
   <data name="Manage Blueprints" xml:space="preserve">
     <value>إدارة النماذج</value>
   </data>
+  <data name="Manage Collection Channels" xml:space="preserve">
+    <value>إدارة قنوات التحصيل</value>
+  </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>إدارة الكيانات المؤسسية</value>
   </data>
@@ -296,6 +305,9 @@
   </data>
   <data name="View Background Jobs" xml:space="preserve">
     <value>عرض مهام الخلفية</value>
+  </data>
+  <data name="View Collection Channels" xml:space="preserve">
+    <value>عرض قنوات التحصيل</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>عرض سجل العقود</value>

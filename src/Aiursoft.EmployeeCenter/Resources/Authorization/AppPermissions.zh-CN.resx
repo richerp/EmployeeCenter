@@ -63,6 +63,9 @@
   <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
     <value>允许创建、更新和删除蓝图。默认情况下，每个用户都可以查看蓝图。</value>
   </data>
+  <data name="Allows creating, updating, and deleting collection channels and their records." xml:space="preserve">
+    <value>允许创建、更新和删除收集渠道及其记录。</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>允许创建、更新和删除公司实体信息。</value>
   </data>
@@ -141,6 +144,9 @@
   <data name="Allows viewing the background job dashboard and managing jobs." xml:space="preserve">
     <value>允许查看后台任务仪表板并管理任务。</value>
   </data>
+  <data name="Allows viewing the list of all collection channels and their records." xml:space="preserve">
+    <value>允许查看所有集合渠道及其记录列表。</value>
+  </data>
   <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
     <value>允许查看所有权限及其分配给角色和用户的列表。</value>
   </data>
@@ -216,6 +222,9 @@
   <data name="Manage Blueprints" xml:space="preserve">
     <value>管理蓝图</value>
   </data>
+  <data name="Manage Collection Channels" xml:space="preserve">
+    <value>管理收款渠道</value>
+  </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>管理公司基本实体信息</value>
   </data>
@@ -278,6 +287,9 @@
   </data>
   <data name="View Background Jobs" xml:space="preserve">
     <value>查看后台任务</value>
+  </data>
+  <data name="View Collection Channels" xml:space="preserve">
+    <value>查看收款渠道</value>
   </data>
   <data name="View Report Line" xml:space="preserve">
     <value>查看汇报线</value>

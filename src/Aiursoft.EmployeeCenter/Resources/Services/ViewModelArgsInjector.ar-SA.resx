@@ -132,6 +132,9 @@
   <data name="Code" xml:space="preserve">
     <value>الرمز</value>
   </data>
+  <data name="Collection Channels" xml:space="preserve">
+    <value>قنوات التحصيل</value>
+  </data>
   <data name="Comments" xml:space="preserve">
     <value>ملاحظات</value>
   </data>
@@ -168,8 +171,14 @@
   <data name="Create New" xml:space="preserve">
     <value>إنشاء جديد</value>
   </data>
+  <data name="Create New Blueprint Folder" xml:space="preserve">
+    <value>إنشاء مجلد مخطط جديد</value>
+  </data>
   <data name="Create New Contract" xml:space="preserve">
     <value>إنشاء عقد جديد</value>
+  </data>
+  <data name="Create New Folder" xml:space="preserve">
+    <value>إنشاء مجلد جديد</value>
   </data>
   <data name="Create Onboarding Task" xml:space="preserve">
     <value>إنشاء مهمة التدريب</value>
@@ -222,6 +231,9 @@
   <data name="Edit Blueprint" xml:space="preserve">
     <value>تحرير المخطط التفصيلي</value>
   </data>
+  <data name="Edit Blueprint Folder" xml:space="preserve">
+    <value>تحرير مجلد مخطط التصميم</value>
+  </data>
   <data name="Edit Company Entity" xml:space="preserve">
     <value>تعديل الكيان المؤسسي</value>
   </data>
@@ -230,6 +242,9 @@
   </data>
   <data name="Edit Customer Relationship" xml:space="preserve">
     <value>تعديل علاقة العميل</value>
+  </data>
+  <data name="Edit Folder" xml:space="preserve">
+    <value>تحرير المجلد</value>
   </data>
   <data name="Edit Onboarding Task" xml:space="preserve">
     <value>تحرير مهمة التسجيل</value>

@@ -66,6 +66,9 @@
   <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
     <value>อนุญาตให้สร้าง แก้ไข และลบแบบร่างได้ ทุกผู้ใช้สามารถดูแบบร่างได้โดยค่าเริ่มต้น</value>
   </data>
+  <data name="Allows creating, updating, and deleting collection channels and their records." xml:space="preserve">
+    <value>อนุญาตให้สร้าง อัปเดต และลบช่องทางการเรียกเก็บเงินและบันทึกข้อมูลของพวกเขา</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>อนุญาตให้สร้าง แก้ไข และลบข้อมูลหน่วยงานของบริษัท</value>
   </data>
@@ -149,6 +152,9 @@
   </data>
   <data name="Allows viewing the contract history of any user." xml:space="preserve">
     <value>อนุญาตให้ดูประวัติสัญญาของผู้ใช้ทุกคน</value>
+  </data>
+  <data name="Allows viewing the list of all collection channels and their records." xml:space="preserve">
+    <value>อนุญาตให้ดูรายการช่องทางการเก็บหนี้ทั้งหมดและบันทึกข้อมูล</value>
   </data>
   <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
     <value>อนุญาตให้ดูรายการสิทธิ์ทั้งหมดและสิทธิ์ที่ถูกกำหนดให้กับบทบาทและผู้ใช้</value>
@@ -234,6 +240,9 @@
   <data name="Manage Blueprints" xml:space="preserve">
     <value>จัดการแบบร่าง</value>
   </data>
+  <data name="Manage Collection Channels" xml:space="preserve">
+    <value>จัดการช่องทางเรียกเก็บเงิน</value>
+  </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>จัดการหน่วยงานของบริษัท</value>
   </data>
@@ -296,6 +305,9 @@
   </data>
   <data name="View Background Jobs" xml:space="preserve">
     <value>ดูงานพื้นหลัง</value>
+  </data>
+  <data name="View Collection Channels" xml:space="preserve">
+    <value>ดูช่องทางการเก็บเงิน</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>ดูประวัติสัญญา</value>

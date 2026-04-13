@@ -66,6 +66,9 @@
   <data name="Allows creating, updating, and deleting blueprints. Every user can view blueprints by default." xml:space="preserve">
     <value>Bölümler oluşturma, güncelleme ve silme izni verir. Her kullanıcı varsayılan olarak bölümleri görüntüleyebilir.</value>
   </data>
+  <data name="Allows creating, updating, and deleting collection channels and their records." xml:space="preserve">
+    <value>Toplama kanallarını ve kayıtlarını oluşturma, güncelleme ve silme izni verir.</value>
+  </data>
   <data name="Allows creating, updating, and deleting company entity information." xml:space="preserve">
     <value>Şirket varlık bilgilerinin oluşturulmasına, güncellenmesine ve silinmesine izin verir.</value>
   </data>
@@ -149,6 +152,9 @@
   </data>
   <data name="Allows viewing the contract history of any user." xml:space="preserve">
     <value>Herhangi bir kullanıcının sözleşmelerinin geçmişini görüntülemeye izin verir.</value>
+  </data>
+  <data name="Allows viewing the list of all collection channels and their records." xml:space="preserve">
+    <value>Tüm toplama kanallarının ve kayıtlarının listesini görüntülemeye izin verir.</value>
   </data>
   <data name="Allows viewing the list of all permissions and their assignments to roles and users." xml:space="preserve">
     <value>Tüm izinlerin listesini ve roller ve kullanıcılar için atamalarını görüntülemeyi sağlar.</value>
@@ -234,6 +240,9 @@
   <data name="Manage Blueprints" xml:space="preserve">
     <value>Mimariyi Yönet</value>
   </data>
+  <data name="Manage Collection Channels" xml:space="preserve">
+    <value>Koleksiyon Kanallarını Yönet</value>
+  </data>
   <data name="Manage Company Entity Information" xml:space="preserve">
     <value>Şirket Varlıkları Yönet</value>
   </data>
@@ -296,6 +305,9 @@
   </data>
   <data name="View Background Jobs" xml:space="preserve">
     <value>Arka Plan Görevlerini Görüntüle</value>
+  </data>
+  <data name="View Collection Channels" xml:space="preserve">
+    <value>Toplama Kanallarını Görüntüle</value>
   </data>
   <data name="View Contract History" xml:space="preserve">
     <value>Sözleşme Geçmişi Görüntüle</value>
