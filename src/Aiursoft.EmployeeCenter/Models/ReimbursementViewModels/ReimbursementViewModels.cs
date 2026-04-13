@@ -26,7 +26,9 @@ public class CreateViewModel : UiStackLayoutViewModel
     public string? SupportingEmail { get; set; }
 
     [Display(Name = "Electronic Invoice")]
-    public IFormFile? InvoiceFile { get; set; }
+    [MaxLength(200)]
+    [RegularExpression(@"^reimbursement/.*", ErrorMessage = "Invalid file path.")]
+    public string? InvoicePath { get; set; }
 
     [Required]
     [Range(0.01, double.MaxValue, ErrorMessage = "Amount must be greater than 0")]
