@@ -36,6 +36,9 @@
   <data name="Expense Time" xml:space="preserve">
     <value>Tiempo del gasto</value>
   </data>
+  <data name="Invalid file path." xml:space="preserve">
+    <value>Ruta de archivo no válida.</value>
+  </data>
   <data name="Purpose" xml:space="preserve">
     <value>Motivo</value>
   </data>

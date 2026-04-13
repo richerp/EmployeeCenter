@@ -36,6 +36,9 @@
   <data name="Expense Time" xml:space="preserve">
     <value>Utgiftstid</value>
   </data>
+  <data name="Invalid file path." xml:space="preserve">
+    <value>Ogiltig sökväg.</value>
+  </data>
   <data name="Purpose" xml:space="preserve">
     <value>Ändamål</value>
   </data>
