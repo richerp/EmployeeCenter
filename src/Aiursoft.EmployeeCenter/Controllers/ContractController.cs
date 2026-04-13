@@ -58,6 +58,10 @@ public class ContractController(
         var canViewHistory = (await authorizationService.AuthorizeAsync(User, AppPermissionNames.CanViewContractHistory)).Succeeded;
 
         var contract = await context.Contracts
+            .Include(c => c.CollectionChannels)
+            .ThenInclude(cc => cc.Payer)
+            .Include(c => c.CollectionChannels)
+            .ThenInclude(cc => cc.Payee)
             .FirstOrDefaultAsync(c => c.Id == id && (c.IsPublic || canViewHistory));
 
         if (contract == null)

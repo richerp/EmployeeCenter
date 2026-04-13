@@ -1,0 +1,161 @@
+using Aiursoft.EmployeeCenter.Authorization;
+using Aiursoft.EmployeeCenter.Entities;
+using Aiursoft.EmployeeCenter.Models.CollectionRecordsViewModels;
+using Aiursoft.EmployeeCenter.Services;
+using Aiursoft.WebTools.Attributes;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+namespace Aiursoft.EmployeeCenter.Controllers;
+
+[Authorize(Policy = AppPermissionNames.CanViewCollectionChannels)]
+[LimitPerMin]
+public class CollectionRecordsController(EmployeeCenterDbContext context) : Controller
+{
+    [Authorize(Policy = AppPermissionNames.CanManageCollectionChannels)]
+    public async Task<IActionResult> Create(int channelId)
+    {
+        var channel = await context.CollectionChannels
+            .Include(c => c.Records)
+            .FirstOrDefaultAsync(c => c.Id == channelId);
+
+        if (channel == null)
+        {
+            return NotFound();
+        }
+
+        if (!channel.IsRecurring && channel.Records.Count > 0)
+        {
+            return BadRequest("Non-recurring channel can only have one record.");
+        }
+
+        return this.StackView(new CreateViewModel
+        {
+            ChannelId = channelId,
+            Channel = channel,
+            ExpectedAmount = channel.ReferenceAmount
+        });
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    [Authorize(Policy = AppPermissionNames.CanManageCollectionChannels)]
+    public async Task<IActionResult> Create(CreateViewModel model)
+    {
+        var channel = await context.CollectionChannels
+            .Include(c => c.Records)
+            .FirstOrDefaultAsync(c => c.Id == model.ChannelId);
+
+        if (channel == null)
+        {
+            return NotFound();
+        }
+
+        if (!channel.IsRecurring && channel.Records.Count > 0)
+        {
+            ModelState.AddModelError(string.Empty, "Non-recurring channel can only have one record.");
+        }
+
+        if (ModelState.IsValid)
+        {
+            var record = new CollectionRecord
+            {
+                ChannelId = model.ChannelId,
+                ExpectedAmount = model.ExpectedAmount,
+                ActualAmount = model.ActualAmount,
+                DueDate = model.DueDate,
+                PaidDate = model.PaidDate,
+                ReceiptPath = model.ReceiptPath,
+                InvoicePath = model.InvoicePath,
+                TransactionId = model.TransactionId,
+                SwiftReceiptPath = model.SwiftReceiptPath,
+                Status = model.Status,
+                CreateTime = DateTime.UtcNow
+            };
+            context.CollectionRecords.Add(record);
+            await context.SaveChangesAsync();
+            return RedirectToAction("Details", "CollectionChannels", new { id = model.ChannelId });
+        }
+
+        model.Channel = channel;
+        return this.StackView(model);
+    }
+
+    [Authorize(Policy = AppPermissionNames.CanManageCollectionChannels)]
+    public async Task<IActionResult> Edit(int id)
+    {
+        var record = await context.CollectionRecords
+            .Include(r => r.Channel)
+            .FirstOrDefaultAsync(r => r.Id == id);
+
+        if (record == null)
+        {
+            return NotFound();
+        }
+
+        return this.StackView(new EditViewModel
+        {
+            Id = record.Id,
+            ChannelId = record.ChannelId,
+            Channel = record.Channel,
+            ExpectedAmount = record.ExpectedAmount,
+            ActualAmount = record.ActualAmount,
+            DueDate = record.DueDate,
+            PaidDate = record.PaidDate,
+            ReceiptPath = record.ReceiptPath,
+            InvoicePath = record.InvoicePath,
+            TransactionId = record.TransactionId,
+            SwiftReceiptPath = record.SwiftReceiptPath,
+            Status = record.Status
+        });
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    [Authorize(Policy = AppPermissionNames.CanManageCollectionChannels)]
+    public async Task<IActionResult> Edit(EditViewModel model)
+    {
+        if (ModelState.IsValid)
+        {
+            var record = await context.CollectionRecords.FindAsync(model.Id);
+            if (record == null)
+            {
+                return NotFound();
+            }
+
+            record.ExpectedAmount = model.ExpectedAmount;
+            record.ActualAmount = model.ActualAmount;
+            record.DueDate = model.DueDate;
+            record.PaidDate = model.PaidDate;
+            record.ReceiptPath = model.ReceiptPath;
+            record.InvoicePath = model.InvoicePath;
+            record.TransactionId = model.TransactionId;
+            record.SwiftReceiptPath = model.SwiftReceiptPath;
+            record.Status = model.Status;
+
+            await context.SaveChangesAsync();
+            return RedirectToAction("Details", "CollectionChannels", new { id = record.ChannelId });
+        }
+
+        model.Channel = await context.CollectionChannels.FindAsync(model.ChannelId);
+        return this.StackView(model);
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    [Authorize(Policy = AppPermissionNames.CanManageCollectionChannels)]
+    public async Task<IActionResult> Delete(int id)
+    {
+        var record = await context.CollectionRecords.FindAsync(id);
+        if (record == null)
+        {
+            return NotFound();
+        }
+
+        var channelId = record.ChannelId;
+        context.CollectionRecords.Remove(record);
+        await context.SaveChangesAsync();
+        return RedirectToAction("Details", "CollectionChannels", new { id = channelId });
+    }
+}

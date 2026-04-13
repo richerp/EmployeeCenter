@@ -27,4 +27,6 @@ public class Contract
     public int? FolderId { get; set; }
     [ForeignKey(nameof(FolderId))]
     public ContractFolder? Folder { get; set; }
+
+    public List<CollectionChannel> CollectionChannels { get; set; } = [];
 }
