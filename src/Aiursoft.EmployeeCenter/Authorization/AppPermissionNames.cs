@@ -64,6 +64,10 @@ public static class AppPermissionNames
     public const string CanViewContractHistory = nameof(CanViewContractHistory);
     public const string CanCreateContract = nameof(CanCreateContract);
 
+    // Collection Channel Management
+    public const string CanViewCollectionChannels = nameof(CanViewCollectionChannels);
+    public const string CanManageCollectionChannels = nameof(CanManageCollectionChannels);
+
     // Feedback Management (Employee Signals)
     public const string CanSubmitFeedback = nameof(CanSubmitFeedback);
     public const string CanManageFeedback = nameof(CanManageFeedback);

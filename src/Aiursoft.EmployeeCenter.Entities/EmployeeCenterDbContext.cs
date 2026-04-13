@@ -34,6 +34,8 @@ public abstract class EmployeeCenterDbContext(DbContextOptions options) : Identi
     public DbSet<Contract> Contracts => Set<Contract>();
     public DbSet<ContractFolder> ContractFolders => Set<ContractFolder>();
     public DbSet<ContractOcrResult> ContractOcrResults => Set<ContractOcrResult>();
+    public DbSet<CollectionChannel> CollectionChannels => Set<CollectionChannel>();
+    public DbSet<CollectionRecord> CollectionRecords => Set<CollectionRecord>();
     public DbSet<PromotionHistory> PromotionHistories => Set<PromotionHistory>();
     public DbSet<WeeklyReport> WeeklyReports => Set<WeeklyReport>();
     public DbSet<WeeklyReportRequirement> WeeklyReportRequirements => Set<WeeklyReportRequirement>();

@@ -347,6 +347,117 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.ToTable("BlueprintFolders");
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.CollectionChannel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("ContractId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreateTime")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Currency")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("varchar(10)");
+
+                    b.Property<DateTime>("FirstPaymentDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<bool>("IsRecurring")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<int>("PayeeId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PayerId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("PaymentMethod")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("varchar(200)");
+
+                    b.Property<int>("RecurringPeriod")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("ReferenceAmount")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<DateTime>("StartBillingDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ContractId");
+
+                    b.HasIndex("PayeeId");
+
+                    b.HasIndex("PayerId");
+
+                    b.ToTable("CollectionChannels");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.CollectionRecord", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<decimal>("ActualAmount")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<int>("ChannelId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreateTime")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<DateTime>("DueDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<decimal>("ExpectedAmount")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<string>("InvoicePath")
+                        .HasMaxLength(500)
+                        .HasColumnType("varchar(500)");
+
+                    b.Property<DateTime?>("PaidDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("ReceiptPath")
+                        .HasMaxLength(500)
+                        .HasColumnType("varchar(500)");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<string>("SwiftReceiptPath")
+                        .HasMaxLength(500)
+                        .HasColumnType("varchar(500)");
+
+                    b.Property<string>("TransactionId")
+                        .HasMaxLength(200)
+                        .HasColumnType("varchar(200)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ChannelId");
+
+                    b.ToTable("CollectionRecords");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.CompanyEntity", b =>
                 {
                     b.Property<int>("Id")
@@ -2334,6 +2445,42 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.Navigation("ParentFolder");
                 });
 
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.CollectionChannel", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.Contract", "Contract")
+                        .WithMany("CollectionChannels")
+                        .HasForeignKey("ContractId");
+
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.CompanyEntity", "Payee")
+                        .WithMany()
+                        .HasForeignKey("PayeeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.CompanyEntity", "Payer")
+                        .WithMany()
+                        .HasForeignKey("PayerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Contract");
+
+                    b.Navigation("Payee");
+
+                    b.Navigation("Payer");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.CollectionRecord", b =>
+                {
+                    b.HasOne("Aiursoft.EmployeeCenter.Entities.CollectionChannel", "Channel")
+                        .WithMany("Records")
+                        .HasForeignKey("ChannelId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Channel");
+                });
+
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.CompanyEntityLog", b =>
                 {
                     b.HasOne("Aiursoft.EmployeeCenter.Entities.CompanyEntity", "CompanyEntity")
@@ -2882,6 +3029,16 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                     b.Navigation("Blueprints");
 
                     b.Navigation("SubFolders");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.CollectionChannel", b =>
+                {
+                    b.Navigation("Records");
+                });
+
+            modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.Contract", b =>
+                {
+                    b.Navigation("CollectionChannels");
                 });
 
             modelBuilder.Entity("Aiursoft.EmployeeCenter.Entities.ContractFolder", b =>
