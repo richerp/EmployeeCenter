@@ -27,8 +27,20 @@
   <data name="Are you sure you want to delete this blueprint?" xml:space="preserve">
     <value>Oletko varma, että haluat poistaa tämän luonnoksen?</value>
   </data>
+  <data name="Are you sure you want to delete this folder?" xml:space="preserve">
+    <value>Haluatko varmasti poistaa tämän kansion?</value>
+  </data>
   <data name="Author" xml:space="preserve">
     <value>Tekijä</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Takaisin</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>Sisältö</value>
+  </data>
+  <data name="Create Folder" xml:space="preserve">
+    <value>Luo kansio</value>
   </data>
   <data name="Create New Blueprint" xml:space="preserve">
     <value>Luo uusi piirustus</value>
@@ -47,6 +59,9 @@
   </data>
   <data name="Manage Blueprints" xml:space="preserve">
     <value>Hallinnoi luonnoksia</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nimi</value>
   </data>
   <data name="No blueprints found." xml:space="preserve">
     <value>Ei löytynyt piirustuksia.</value>

@@ -24,11 +24,20 @@
   <data name="A list of all your contracts." xml:space="preserve">
     <value>Une liste de tous vos contrats.</value>
   </data>
+  <data name="A list of folders and contracts in this location." xml:space="preserve">
+    <value>Une liste de dossiers et de contrats dans cet emplacement.</value>
+  </data>
   <data name="Actions" xml:space="preserve">
     <value>Actions</value>
   </data>
   <data name="Active" xml:space="preserve">
     <value>Actif</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Retour</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>Contenu</value>
   </data>
   <data name="Contract History" xml:space="preserve">
     <value>Historique des contrats</value>
@@ -50,6 +59,9 @@
   </data>
   <data name="Name" xml:space="preserve">
     <value>Nom</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Ouvrir</value>
   </data>
   <data name="Owner" xml:space="preserve">
     <value>Propriétaire</value>

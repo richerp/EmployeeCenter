@@ -27,8 +27,14 @@
   <data name="Author" xml:space="preserve">
     <value>Forfatter</value>
   </data>
+  <data name="Back" xml:space="preserve">
+    <value>Tilbage</value>
+  </data>
   <data name="Blueprints" xml:space="preserve">
     <value>Blueprints</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>Indhold</value>
   </data>
   <data name="Creation Time" xml:space="preserve">
     <value>Oprettelsestid</value>
@@ -36,8 +42,14 @@
   <data name="Last Updated" xml:space="preserve">
     <value>Sidst opdateret</value>
   </data>
+  <data name="Name" xml:space="preserve">
+    <value>Navn</value>
+  </data>
   <data name="No blueprints found." xml:space="preserve">
     <value>Ingen blueprints fundet.</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Åbn</value>
   </data>
   <data name="Title" xml:space="preserve">
     <value>Titel</value>

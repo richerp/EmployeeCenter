@@ -18,14 +18,44 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Back to List" xml:space="preserve">
+      <data name="Actions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Actif</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>Montant</value>
+  </data>
+  <data name="Back to List" xml:space="preserve">
     <value>Retour à la liste</value>
+  </data>
+  <data name="Collection Channels" xml:space="preserve">
+    <value>Chaînes de collecte</value>
+  </data>
+  <data name="Create channel from this contract" xml:space="preserve">
+    <value>Créer un canal à partir de ce contrat</value>
+  </data>
+  <data name="Method" xml:space="preserve">
+    <value>Méthode</value>
   </data>
   <data name="No preview text available for this contract." xml:space="preserve">
     <value>Aucun texte d&apos;aperçu disponible pour ce contrat.</value>
   </data>
   <data name="No raw JSON data available." xml:space="preserve">
     <value>Aucune donnée JSON brute disponible.</value>
+  </data>
+  <data name="No related collection channels found." xml:space="preserve">
+    <value>Aucun canal de recouvrement lié trouvé.</value>
+  </data>
+  <data name="Paused" xml:space="preserve">
+    <value>En pause</value>
+  </data>
+  <data name="Payee" xml:space="preserve">
+    <value>Bénéficiaire</value>
+  </data>
+  <data name="Payer" xml:space="preserve">
+    <value>Payeur</value>
   </data>
   <data name="Plain Text" xml:space="preserve">
     <value>Texte brut</value>
@@ -35,6 +65,15 @@
   </data>
   <data name="Raw JSON" xml:space="preserve">
     <value>JSON brut</value>
+  </data>
+  <data name="Related Collection Channels" xml:space="preserve">
+    <value>Chaînes de collecte associées</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>État</value>
+  </data>
+  <data name="Terminated" xml:space="preserve">
+    <value>Terminé</value>
   </data>
 
 </root>

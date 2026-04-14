@@ -27,8 +27,20 @@
   <data name="Are you sure you want to delete this blueprint?" xml:space="preserve">
     <value>هل أنت متأكد أنك تريد حذف هذا المخطط؟</value>
   </data>
+  <data name="Are you sure you want to delete this folder?" xml:space="preserve">
+    <value>هل أنت متأكد من رغبتك في حذف هذا المجلد؟</value>
+  </data>
   <data name="Author" xml:space="preserve">
     <value>المُؤلف</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>رجوع</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>المحتويات</value>
+  </data>
+  <data name="Create Folder" xml:space="preserve">
+    <value>إنشاء مجلد</value>
   </data>
   <data name="Create New Blueprint" xml:space="preserve">
     <value>إنشاء مخطط جديد</value>
@@ -47,6 +59,9 @@
   </data>
   <data name="Manage Blueprints" xml:space="preserve">
     <value>إدارة المخططات</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>الاسم</value>
   </data>
   <data name="No blueprints found." xml:space="preserve">
     <value>لا توجد مخططات متوفرة.</value>

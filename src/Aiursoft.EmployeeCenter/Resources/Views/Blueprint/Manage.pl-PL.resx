@@ -27,8 +27,20 @@
   <data name="Are you sure you want to delete this blueprint?" xml:space="preserve">
     <value>Czy na pewno chcesz usunąć ten szablon?</value>
   </data>
+  <data name="Are you sure you want to delete this folder?" xml:space="preserve">
+    <value>Czy na pewno chcesz usunąć ten folder?</value>
+  </data>
   <data name="Author" xml:space="preserve">
     <value>Autor</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Wstecz</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>Zawartość</value>
+  </data>
+  <data name="Create Folder" xml:space="preserve">
+    <value>Utwórz folder</value>
   </data>
   <data name="Create New Blueprint" xml:space="preserve">
     <value>Utwórz nowy szablon</value>
@@ -47,6 +59,9 @@
   </data>
   <data name="Manage Blueprints" xml:space="preserve">
     <value>Zarządzaj szablonami</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nazwa</value>
   </data>
   <data name="No blueprints found." xml:space="preserve">
     <value>Nie znaleziono szablonów.</value>
