@@ -46,6 +46,7 @@ public class ManageContractController(
             : null;
 
         var contracts = await context.Contracts
+            .Include(c => c.CollectionChannels)
             .Where(c => c.FolderId == id)
             .OrderByDescending(c => c.CreateTime)
             .ToListAsync();
@@ -62,6 +63,101 @@ public class ManageContractController(
             SubFolders = subFolders,
             Contracts = contracts
         });
+    }
+
+    public async Task<IActionResult> Finance(int id)
+    {
+        var contract = await context.Contracts
+            .Include(c => c.CollectionChannels)
+            .ThenInclude(cc => cc.Payer)
+            .Include(c => c.CollectionChannels)
+            .ThenInclude(cc => cc.Payee)
+            .Include(c => c.CollectionChannels)
+            .ThenInclude(cc => cc.Records)
+            .FirstOrDefaultAsync(c => c.Id == id);
+
+        if (contract == null)
+        {
+            return NotFound();
+        }
+
+        var model = new FinanceDetailsViewModel
+        {
+            Contract = contract,
+            TotalExpectedIncome = contract.CollectionChannels
+                .Where(cc => cc.Payee?.CreateLedger == true)
+                .SelectMany(cc => cc.Records)
+                .Where(r => r.Status != CollectionRecordStatus.Cancelled)
+                .Sum(r => r.ExpectedAmount),
+            TotalActualIncome = contract.CollectionChannels
+                .Where(cc => cc.Payee?.CreateLedger == true)
+                .SelectMany(cc => cc.Records)
+                .Sum(r => r.ActualAmount),
+            TotalExpectedExpense = contract.CollectionChannels
+                .Where(cc => cc.Payer?.CreateLedger == true)
+                .SelectMany(cc => cc.Records)
+                .Where(r => r.Status != CollectionRecordStatus.Cancelled)
+                .Sum(r => r.ExpectedAmount),
+            TotalActualExpense = contract.CollectionChannels
+                .Where(cc => cc.Payer?.CreateLedger == true)
+                .SelectMany(cc => cc.Records)
+                .Sum(r => r.ActualAmount),
+            Currency = contract.CollectionChannels.FirstOrDefault()?.Currency ?? "CNY"
+        };
+
+        return this.StackView(model);
+    }
+
+    [RenderInNavBar(
+        NavGroupName = "Administration",
+        NavGroupOrder = 3,
+        CascadedLinksGroupName = "Finance",
+        CascadedLinksIcon = "dollar-sign",
+        CascadedLinksOrder = 5,
+        LinkText = "Contract Finance Statistics",
+        LinkOrder = 1)]
+    public async Task<IActionResult> FinanceStats()
+    {
+        var contracts = await context.Contracts
+            .Include(c => c.CollectionChannels)
+            .ThenInclude(cc => cc.Payer)
+            .Include(c => c.CollectionChannels)
+            .ThenInclude(cc => cc.Payee)
+            .Include(c => c.CollectionChannels)
+            .ThenInclude(cc => cc.Records)
+            .ToListAsync();
+
+        var model = new FinanceStatsViewModel
+        {
+            Summaries = contracts
+                .Where(c => c.CollectionChannels.Any())
+                .Select(c => new ContractFinanceSummary
+                {
+                    Contract = c,
+                    TotalExpectedIncome = c.CollectionChannels
+                        .Where(cc => cc.Payee?.CreateLedger == true)
+                        .SelectMany(cc => cc.Records)
+                        .Where(r => r.Status != CollectionRecordStatus.Cancelled)
+                        .Sum(r => r.ExpectedAmount),
+                    TotalActualIncome = c.CollectionChannels
+                        .Where(cc => cc.Payee?.CreateLedger == true)
+                        .SelectMany(cc => cc.Records)
+                        .Sum(r => r.ActualAmount),
+                    TotalExpectedExpense = c.CollectionChannels
+                        .Where(cc => cc.Payer?.CreateLedger == true)
+                        .SelectMany(cc => cc.Records)
+                        .Where(r => r.Status != CollectionRecordStatus.Cancelled)
+                        .Sum(r => r.ExpectedAmount),
+                    TotalActualExpense = c.CollectionChannels
+                        .Where(cc => cc.Payer?.CreateLedger == true)
+                        .SelectMany(cc => cc.Records)
+                        .Sum(r => r.ActualAmount),
+                    Currency = c.CollectionChannels.FirstOrDefault()?.Currency ?? "CNY"
+                })
+                .ToList()
+        };
+
+        return this.StackView(model);
     }
 
     [Authorize(Policy = AppPermissionNames.CanCreateContract)]
