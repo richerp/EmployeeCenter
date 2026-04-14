@@ -2,6 +2,7 @@ using Aiursoft.EmployeeCenter.Authorization;
 using Aiursoft.EmployeeCenter.Entities;
 using Aiursoft.EmployeeCenter.Models.CollectionRecordsViewModels;
 using Aiursoft.EmployeeCenter.Services;
+using Aiursoft.EmployeeCenter.Services.FileStorage;
 using Aiursoft.WebTools.Attributes;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -11,7 +12,9 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 
 [Authorize(Policy = AppPermissionNames.CanViewCollectionChannels)]
 [LimitPerMin]
-public class CollectionRecordsController(EmployeeCenterDbContext context) : Controller
+public class CollectionRecordsController(
+    EmployeeCenterDbContext context,
+    StorageService storageService) : Controller
 {
     [Authorize(Policy = AppPermissionNames.CanManageCollectionChannels)]
     public async Task<IActionResult> Create(int channelId)
@@ -56,6 +59,10 @@ public class CollectionRecordsController(EmployeeCenterDbContext context) : Cont
         {
             ModelState.AddModelError(string.Empty, "Non-recurring channel can only have one record.");
         }
+
+        ValidateFile(model.ReceiptPath, nameof(model.ReceiptPath));
+        ValidateFile(model.InvoicePath, nameof(model.InvoicePath));
+        ValidateFile(model.SwiftReceiptPath, nameof(model.SwiftReceiptPath));
 
         if (ModelState.IsValid)
         {
@@ -109,13 +116,17 @@ public class CollectionRecordsController(EmployeeCenterDbContext context) : Cont
             SwiftReceiptPath = record.SwiftReceiptPath,
             Status = record.Status
         });
-        }
+    }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        [Authorize(Policy = AppPermissionNames.CanManageCollectionChannels)]
-        public async Task<IActionResult> Edit(EditViewModel model)
-        {
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    [Authorize(Policy = AppPermissionNames.CanManageCollectionChannels)]
+    public async Task<IActionResult> Edit(EditViewModel model)
+    {
+        ValidateFile(model.ReceiptPath, nameof(model.ReceiptPath));
+        ValidateFile(model.InvoicePath, nameof(model.InvoicePath));
+        ValidateFile(model.SwiftReceiptPath, nameof(model.SwiftReceiptPath));
+
         if (ModelState.IsValid)
         {
             var record = await context.CollectionRecords.FindAsync(model.Id);
@@ -157,5 +168,22 @@ public class CollectionRecordsController(EmployeeCenterDbContext context) : Cont
         context.CollectionRecords.Remove(record);
         await context.SaveChangesAsync();
         return RedirectToAction("Details", "CollectionChannels", new { id = channelId });
+    }
+
+    private void ValidateFile(string? path, string propertyName)
+    {
+        if (string.IsNullOrEmpty(path)) return;
+        try 
+        {
+            var physicalPath = storageService.GetFilePhysicalPath(path, isVault: true);
+            if (!System.IO.File.Exists(physicalPath))
+            {
+                 ModelState.AddModelError(propertyName, "File upload failed or missing. Please re-upload.");
+            }
+        }
+        catch (ArgumentException)
+        {
+            ModelState.AddModelError(propertyName, "Invalid file path.");
+        }
     }
 }

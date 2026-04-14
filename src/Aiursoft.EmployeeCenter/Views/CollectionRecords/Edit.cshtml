@@ -43,12 +43,12 @@
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <label asp-for="ReceiptPath" class="form-label"></label>
-                    <input asp-for="ReceiptPath" class="form-control" />
+                    <vc:file-upload asp-for="ReceiptPath" subfolder="collection-record" is-vault="true" allowed-extensions="pdf docx doc jpg jpeg png zip rar"></vc:file-upload>
                     <span asp-validation-for="ReceiptPath" class="text-danger"></span>
                 </div>
                 <div class="col-md-6 mb-3">
                     <label asp-for="InvoicePath" class="form-label"></label>
-                    <input asp-for="InvoicePath" class="form-control" />
+                    <vc:file-upload asp-for="InvoicePath" subfolder="collection-record" is-vault="true" allowed-extensions="pdf docx doc jpg jpeg png zip rar"></vc:file-upload>
                     <span asp-validation-for="InvoicePath" class="text-danger"></span>
                 </div>
             </div>
@@ -61,7 +61,7 @@
                 </div>
                 <div class="col-md-6 mb-3">
                     <label asp-for="SwiftReceiptPath" class="form-label"></label>
-                    <input asp-for="SwiftReceiptPath" class="form-control" />
+                    <vc:file-upload asp-for="SwiftReceiptPath" subfolder="collection-record" is-vault="true" allowed-extensions="pdf docx doc jpg jpeg png zip rar"></vc:file-upload>
                     <span asp-validation-for="SwiftReceiptPath" class="text-danger"></span>
                 </div>
             </div>
@@ -111,3 +111,14 @@
         </div>
     </div>
 </div>
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section styles {
+    <link rel="stylesheet" href="~/node_modules/dropify/dist/css/dropify.min.css" />
+    <link rel="stylesheet" href="~/styles/uploader.css" />
+}
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section scripts {
+    <script src="~/node_modules/dropify/dist/js/dropify.min.js"></script>
+}
