@@ -30,6 +30,9 @@
   <data name="Comment" xml:space="preserve">
     <value>Σχόλιο</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Νόμισμα</value>
+  </data>
   <data name="Electronic Invoice" xml:space="preserve">
     <value>Ηλεκτρονική Τιμολόγηση</value>
   </data>
@@ -38,6 +41,12 @@
   </data>
   <data name="Invalid file path." xml:space="preserve">
     <value>Μη έγκυρη διαδρομή αρχείου.</value>
+  </data>
+  <data name="Invoice Source Website" xml:space="preserve">
+    <value>Πηγή Τιμολογίου (Ιστοσελίδα)</value>
+  </data>
+  <data name="Please enter a valid URL." xml:space="preserve">
+    <value>Παρακαλώ εισάγετε έγκυρο URL.</value>
   </data>
   <data name="Purpose" xml:space="preserve">
     <value>Σκοπός</value>

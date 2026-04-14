@@ -30,6 +30,9 @@
   <data name="Comment" xml:space="preserve">
     <value>Comment</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>मुद्रा</value>
+  </data>
   <data name="Electronic Invoice" xml:space="preserve">
     <value>इलेक्ट्रॉनिक बिल</value>
   </data>
@@ -38,6 +41,12 @@
   </data>
   <data name="Invalid file path." xml:space="preserve">
     <value>अमान्य फ़ाइल पथ।</value>
+  </data>
+  <data name="Invoice Source Website" xml:space="preserve">
+    <value>इनवॉइस स्रोत वेबसाइट</value>
+  </data>
+  <data name="Please enter a valid URL." xml:space="preserve">
+    <value>कृपया एक मान्य URL दर्ज करें।</value>
   </data>
   <data name="Purpose" xml:space="preserve">
     <value>उद्देश्य</value>

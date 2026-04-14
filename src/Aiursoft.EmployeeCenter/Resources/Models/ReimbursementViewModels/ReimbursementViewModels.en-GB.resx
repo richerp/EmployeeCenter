@@ -30,6 +30,9 @@
   <data name="Comment" xml:space="preserve">
     <value>Comment</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Currency</value>
+  </data>
   <data name="Electronic Invoice" xml:space="preserve">
     <value>Electronic Invoice</value>
   </data>
@@ -38,6 +41,12 @@
   </data>
   <data name="Invalid file path." xml:space="preserve">
     <value>Invalid file path.</value>
+  </data>
+  <data name="Invoice Source Website" xml:space="preserve">
+    <value>Invoice Source Website</value>
+  </data>
+  <data name="Please enter a valid URL." xml:space="preserve">
+    <value>Please enter a valid URL.</value>
   </data>
   <data name="Purpose" xml:space="preserve">
     <value>Purpose</value>

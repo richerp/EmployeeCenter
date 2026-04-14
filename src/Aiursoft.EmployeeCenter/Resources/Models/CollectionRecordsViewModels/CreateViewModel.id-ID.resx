@@ -27,6 +27,9 @@
   <data name="Expected Amount" xml:space="preserve">
     <value>Jumlah yang Diharapkan</value>
   </data>
+  <data name="Invalid file path." xml:space="preserve">
+    <value>Jalur file tidak valid.</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>File Faktur</value>
   </data>
@@ -41,6 +44,12 @@
   </data>
   <data name="SWIFT / Bank Receipt File" xml:space="preserve">
     <value>SWIFT / Bukti Penerimaan Bank</value>
+  </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0} tidak dapat melebihi {1} karakter.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0} diperlukan.</value>
   </data>
   <data name="Transaction ID" xml:space="preserve">
     <value>ID Transaksi</value>

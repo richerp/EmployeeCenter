@@ -30,6 +30,9 @@
   <data name="Comment" xml:space="preserve">
     <value>Kommentar</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Valuta</value>
+  </data>
   <data name="Electronic Invoice" xml:space="preserve">
     <value>Elektronisk faktura</value>
   </data>
@@ -38,6 +41,12 @@
   </data>
   <data name="Invalid file path." xml:space="preserve">
     <value>Ugyldig filsti.</value>
+  </data>
+  <data name="Invoice Source Website" xml:space="preserve">
+    <value>Faktura Kilde Webside</value>
+  </data>
+  <data name="Please enter a valid URL." xml:space="preserve">
+    <value>Indtast en gyldig URL.</value>
   </data>
   <data name="Purpose" xml:space="preserve">
     <value>Formål</value>

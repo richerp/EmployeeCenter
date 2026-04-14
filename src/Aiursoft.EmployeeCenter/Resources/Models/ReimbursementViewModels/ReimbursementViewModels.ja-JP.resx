@@ -30,6 +30,9 @@
   <data name="Comment" xml:space="preserve">
     <value>コメント</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>通貨</value>
+  </data>
   <data name="Electronic Invoice" xml:space="preserve">
     <value>電子領収書</value>
   </data>
@@ -38,6 +41,12 @@
   </data>
   <data name="Invalid file path." xml:space="preserve">
     <value>無効なファイルパスです。</value>
+  </data>
+  <data name="Invoice Source Website" xml:space="preserve">
+    <value>請求書の発生源ウェブサイト</value>
+  </data>
+  <data name="Please enter a valid URL." xml:space="preserve">
+    <value>有効なURLを入力してください</value>
   </data>
   <data name="Purpose" xml:space="preserve">
     <value>目的</value>
