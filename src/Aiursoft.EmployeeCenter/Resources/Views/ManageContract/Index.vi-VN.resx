@@ -84,6 +84,9 @@
   <data name="Public" xml:space="preserve">
     <value>Công khai</value>
   </data>
+  <data name="Rename" xml:space="preserve">
+    <value>Đổi tên</value>
+  </data>
   <data name="Shared" xml:space="preserve">
     <value>Chia sẻ</value>
   </data>

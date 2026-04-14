@@ -84,6 +84,9 @@
   <data name="Public" xml:space="preserve">
     <value>Общедоступный</value>
   </data>
+  <data name="Rename" xml:space="preserve">
+    <value>Переименовать</value>
+  </data>
   <data name="Shared" xml:space="preserve">
     <value>Общий</value>
   </data>

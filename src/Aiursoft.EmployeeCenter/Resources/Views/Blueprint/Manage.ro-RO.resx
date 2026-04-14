@@ -66,6 +66,9 @@
   <data name="No blueprints found." xml:space="preserve">
     <value>Nu s-au găsit planuri.</value>
   </data>
+  <data name="Rename" xml:space="preserve">
+    <value>Redenumește</value>
+  </data>
   <data name="Title" xml:space="preserve">
     <value>Titlu</value>
   </data>

@@ -84,6 +84,9 @@
   <data name="Public" xml:space="preserve">
     <value>Public</value>
   </data>
+  <data name="Rename" xml:space="preserve">
+    <value>Rename</value>
+  </data>
   <data name="Shared" xml:space="preserve">
     <value>Shared</value>
   </data>

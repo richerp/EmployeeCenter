@@ -84,6 +84,9 @@
   <data name="Public" xml:space="preserve">
     <value>Julkinen</value>
   </data>
+  <data name="Rename" xml:space="preserve">
+    <value>Nimeä uudelleen</value>
+  </data>
   <data name="Shared" xml:space="preserve">
     <value>Jaettu</value>
   </data>

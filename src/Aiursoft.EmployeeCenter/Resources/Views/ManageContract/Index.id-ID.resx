@@ -84,6 +84,9 @@
   <data name="Public" xml:space="preserve">
     <value>Umum</value>
   </data>
+  <data name="Rename" xml:space="preserve">
+    <value>Ubah Nama</value>
+  </data>
   <data name="Shared" xml:space="preserve">
     <value>Dibagikan</value>
   </data>

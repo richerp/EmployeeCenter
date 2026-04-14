@@ -33,6 +33,9 @@
   <data name="Active" xml:space="preserve">
     <value>Actif</value>
   </data>
+  <data name="Are you sure you want to delete this folder?" xml:space="preserve">
+    <value>Êtes-vous sûr de vouloir supprimer ce dossier ?</value>
+  </data>
   <data name="Back" xml:space="preserve">
     <value>Retour</value>
   </data>
@@ -48,8 +51,14 @@
   <data name="Created Time" xml:space="preserve">
     <value>Heure de création</value>
   </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
   <data name="Download" xml:space="preserve">
     <value>Télécharger</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Modifier</value>
   </data>
   <data name="Invalid" xml:space="preserve">
     <value>Non valide</value>
@@ -71,6 +80,9 @@
   </data>
   <data name="Preview" xml:space="preserve">
     <value>Aperçu</value>
+  </data>
+  <data name="Rename" xml:space="preserve">
+    <value>Renommer</value>
   </data>
   <data name="Shared" xml:space="preserve">
     <value>Partagé</value>
