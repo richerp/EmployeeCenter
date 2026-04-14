@@ -61,10 +61,22 @@ public class Reimbursement
     public decimal Amount { get; set; }
 
     /// <summary>
+    /// Currency of the reimbursement
+    /// </summary>
+    [MaxLength(10)]
+    public string Currency { get; set; } = "CNY";
+
+    /// <summary>
     /// Category of the reimbursement (e.g., Transport, Meals, Procurement, Travel)
     /// </summary>
     [MaxLength(50)]
     public required string Category { get; set; }
+
+    /// <summary>
+    /// The source website of the invoice for cross-checking
+    /// </summary>
+    [MaxLength(1000)]
+    public string? InvoiceSourceUrl { get; set; }
 
     /// <summary>
     /// Current status of this reimbursement

@@ -45,7 +45,7 @@
                             <tr>
                                 <td>@item.Submitter.DisplayName</td>
                                 <td>@item.Purpose</td>
-                                <td>@item.Amount.ToString("C")</td>
+                                <td>@item.Amount.ToString("N2") @item.Currency</td>
                                 <td>@item.SubmittedAt.ToString("g")</td>
                                 <td>
                                     <div class="btn-list flex-nowrap">
@@ -91,7 +91,7 @@
                             <tr>
                                 <td>@item.Submitter.DisplayName</td>
                                 <td>@item.Purpose</td>
-                                <td>@item.Amount.ToString("C")</td>
+                                <td>@item.Amount.ToString("N2") @item.Currency</td>
                                 <td>@item.ReviewedAt?.ToString("g")</td>
                                 <td>
                                     <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-white btn-sm">
@@ -128,7 +128,7 @@
                             <tr>
                                 <td>@item.Submitter.DisplayName</td>
                                 <td>@item.Purpose</td>
-                                <td>@item.Amount.ToString("C")</td>
+                                <td>@item.Amount.ToString("N2") @item.Currency</td>
                                 <td>
                                     @switch (item.Status)
                                     {

@@ -110,6 +110,8 @@ public class ReimbursementTests
         createContent.Add(new StringContent("Transport"), "Category");
         createContent.Add(new StringContent("Taxi to client"), "Purpose");
         createContent.Add(new StringContent("50.5"), "Amount");
+        createContent.Add(new StringContent("HKD"), "Currency");
+        createContent.Add(new StringContent("https://example.com/invoice"), "InvoiceSourceUrl");
         createContent.Add(new StringContent("false"), "SaveAsDraft");
         createContent.Add(new StringContent(createToken), "__RequestVerificationToken");
 
@@ -124,6 +126,8 @@ public class ReimbursementTests
             var reimbursement = await db.Reimbursements.FirstAsync(r => r.SubmitterId == userId);
             Assert.AreEqual("Transport", reimbursement.Category);
             Assert.AreEqual(50.5m, reimbursement.Amount);
+            Assert.AreEqual("HKD", reimbursement.Currency);
+            Assert.AreEqual("https://example.com/invoice", reimbursement.InvoiceSourceUrl);
             Assert.AreEqual(ReimbursementStatus.Applying, reimbursement.Status);
             reimbursementId = reimbursement.Id;
         }

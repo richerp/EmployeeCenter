@@ -1548,12 +1548,21 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("varchar(500)");
 
+                    b.Property<string>("Currency")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("varchar(10)");
+
                     b.Property<DateTime>("ExpenseTime")
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("InvoicePath")
                         .HasMaxLength(255)
                         .HasColumnType("varchar(255)");
+
+                    b.Property<string>("InvoiceSourceUrl")
+                        .HasMaxLength(1000)
+                        .HasColumnType("varchar(1000)");
 
                     b.Property<string>("Purpose")
                         .IsRequired()
