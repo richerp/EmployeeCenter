@@ -19,40 +19,25 @@
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
       <data name="(Root)" xml:space="preserve">
-    <value>(Αρχείο)</value>
+    <value>(Ρίζα)</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Ακύρωση</value>
   </data>
-  <data name="Contract Details" xml:space="preserve">
-    <value>Λεπτομέρειες Συμβάσεως</value>
+  <data name="Edit Folder" xml:space="preserve">
+    <value>Επεξεργασία φακέλου</value>
   </data>
-  <data name="Contract File" xml:space="preserve">
-    <value>Αρχείο Σύμβασης</value>
+  <data name="Folder Details" xml:space="preserve">
+    <value>Λεπτομέρειες φακέλου</value>
   </data>
-  <data name="Contract Name" xml:space="preserve">
-    <value>Όνομα Συμβάσεως</value>
+  <data name="Folder Name" xml:space="preserve">
+    <value>Όνομα φακέλου</value>
   </data>
-  <data name="Edit Contract" xml:space="preserve">
-    <value>Επεξεργασία Συμβάσεως</value>
-  </data>
-  <data name="Folder" xml:space="preserve">
-    <value>Φάκελος</value>
-  </data>
-  <data name="Leave empty to keep current file." xml:space="preserve">
-    <value>Αφήστε κενό για να διατηρήσετε το τρέχον αρχείο.</value>
-  </data>
-  <data name="Public Contract (Everyone can see)" xml:space="preserve">
-    <value>Δημόσιο Σύμβασμα (Όλοι μπορούν να το δουν)</value>
+  <data name="Parent Folder" xml:space="preserve">
+    <value>Γονικός Φάκελος</value>
   </data>
   <data name="Save Changes" xml:space="preserve">
     <value>Αποθήκευση Αλλαγών</value>
-  </data>
-  <data name="Status" xml:space="preserve">
-    <value>Κατάσταση</value>
-  </data>
-  <data name="User" xml:space="preserve">
-    <value>Χρήστης</value>
   </data>
 
 </root>
