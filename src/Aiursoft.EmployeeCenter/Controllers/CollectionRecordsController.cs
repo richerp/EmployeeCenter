@@ -77,6 +77,7 @@ public class CollectionRecordsController(
                 InvoicePath = model.InvoicePath,
                 TransactionId = model.TransactionId,
                 SwiftReceiptPath = model.SwiftReceiptPath,
+                Remark = model.Remark,
                 Status = model.Status,
                 CreateTime = DateTime.UtcNow
             };
@@ -114,6 +115,7 @@ public class CollectionRecordsController(
             InvoicePath = record.InvoicePath,
             TransactionId = record.TransactionId,
             SwiftReceiptPath = record.SwiftReceiptPath,
+            Remark = record.Remark,
             Status = record.Status
         });
     }
@@ -143,6 +145,7 @@ public class CollectionRecordsController(
             record.InvoicePath = model.InvoicePath;
             record.TransactionId = model.TransactionId;
             record.SwiftReceiptPath = model.SwiftReceiptPath;
+            record.Remark = model.Remark;
             record.Status = model.Status;
 
             await context.SaveChangesAsync();

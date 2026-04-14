@@ -42,5 +42,10 @@
   <data name="Save Changes" xml:space="preserve">
     <value>保存更改</value>
   </data>
-
+  <data name="Remark" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="e.g. First phase payment" xml:space="preserve">
+    <value>例如：第一阶段款项</value>
+  </data>
 </root>

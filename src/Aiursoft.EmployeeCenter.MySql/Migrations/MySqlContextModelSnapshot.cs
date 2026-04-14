@@ -440,6 +440,10 @@ namespace Aiursoft.EmployeeCenter.MySql.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("varchar(500)");
 
+                    b.Property<string>("Remark")
+                        .HasMaxLength(1000)
+                        .HasColumnType("varchar(1000)");
+
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
