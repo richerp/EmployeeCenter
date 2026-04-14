@@ -84,6 +84,9 @@
   <data name="Public" xml:space="preserve">
     <value>Genel</value>
   </data>
+  <data name="Rename" xml:space="preserve">
+    <value>Yeniden Adlandır</value>
+  </data>
   <data name="Shared" xml:space="preserve">
     <value>Paylaşılan</value>
   </data>

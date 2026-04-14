@@ -33,6 +33,9 @@
   <data name="Active" xml:space="preserve">
     <value>Aktif</value>
   </data>
+  <data name="Are you sure you want to delete this folder?" xml:space="preserve">
+    <value>Apakah Anda yakin ingin menghapus folder ini?</value>
+  </data>
   <data name="Back" xml:space="preserve">
     <value>Kembali</value>
   </data>
@@ -48,8 +51,14 @@
   <data name="Created Time" xml:space="preserve">
     <value>Waktu Dibuat</value>
   </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Hapus</value>
+  </data>
   <data name="Download" xml:space="preserve">
     <value>Unduh</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
   </data>
   <data name="Invalid" xml:space="preserve">
     <value>Tidak Valid</value>
@@ -71,6 +80,9 @@
   </data>
   <data name="Preview" xml:space="preserve">
     <value>Pratinjau</value>
+  </data>
+  <data name="Rename" xml:space="preserve">
+    <value>Ubah Nama</value>
   </data>
   <data name="Shared" xml:space="preserve">
     <value>Dibagikan</value>

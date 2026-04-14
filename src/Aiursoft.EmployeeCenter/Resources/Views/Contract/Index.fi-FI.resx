@@ -33,6 +33,9 @@
   <data name="Active" xml:space="preserve">
     <value>Aktiivinen</value>
   </data>
+  <data name="Are you sure you want to delete this folder?" xml:space="preserve">
+    <value>Haluatko varmasti poistaa tämän kansion?</value>
+  </data>
   <data name="Back" xml:space="preserve">
     <value>Takaisin</value>
   </data>
@@ -48,8 +51,14 @@
   <data name="Created Time" xml:space="preserve">
     <value>Luotu aika</value>
   </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Poista</value>
+  </data>
   <data name="Download" xml:space="preserve">
     <value>Lataa</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Muokkaa</value>
   </data>
   <data name="Invalid" xml:space="preserve">
     <value>Epäkelpo</value>
@@ -71,6 +80,9 @@
   </data>
   <data name="Preview" xml:space="preserve">
     <value>Esitarkastelu</value>
+  </data>
+  <data name="Rename" xml:space="preserve">
+    <value>Nimeä uudelleen</value>
   </data>
   <data name="Shared" xml:space="preserve">
     <value>Jaettu</value>

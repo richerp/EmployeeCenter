@@ -84,6 +84,9 @@
   <data name="Public" xml:space="preserve">
     <value>सार्वजनिक</value>
   </data>
+  <data name="Rename" xml:space="preserve">
+    <value>पुनर्नामित करें</value>
+  </data>
   <data name="Shared" xml:space="preserve">
     <value>साझा किया गया</value>
   </data>
