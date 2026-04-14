@@ -113,7 +113,7 @@ public class CollectionChannelsTests
             var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
             var channel = await db.CollectionChannels.FirstOrDefaultAsync(c => c.PayerId == payerId);
             Assert.IsNotNull(channel);
-            Assert.AreEqual(1000.50m, channel.ReferenceAmount);
+            Assert.AreEqual(100050, channel.ReferenceAmount);
             Assert.AreEqual("USD", channel.Currency);
             channelId = channel.Id;
         }

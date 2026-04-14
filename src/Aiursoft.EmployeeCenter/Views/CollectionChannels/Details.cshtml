@@ -35,7 +35,7 @@
                     </tr>
                     <tr>
                         <th>@Localizer["Reference Amount"]</th>
-                        <td>@Model.Channel.ReferenceAmount @Model.Channel.Currency</td>
+                        <td>@((Model.Channel.ReferenceAmount / 100.0).ToString("N2")) @Model.Channel.Currency</td>
                     </tr>
                     <tr>
                         <th>@Localizer["Payment Method"]</th>
@@ -120,8 +120,8 @@
                     {
                         <tr>
                             <td>@record.DueDate.ToShortDateString()</td>
-                            <td>@record.ExpectedAmount @Model.Channel.Currency</td>
-                            <td>@record.ActualAmount @Model.Channel.Currency</td>
+                            <td>@((record.ExpectedAmount / 100.0).ToString("N2")) @Model.Channel.Currency</td>
+                            <td>@((record.ActualAmount / 100.0).ToString("N2")) @Model.Channel.Currency</td>
                             <td>@(record.PaidDate?.ToShortDateString() ?? Localizer["N/A"].Value)</td>
                             <td>
                                 @switch (record.Status)
