@@ -30,6 +30,9 @@
   <data name="Comment" xml:space="preserve">
     <value>비고</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>통화</value>
+  </data>
   <data name="Electronic Invoice" xml:space="preserve">
     <value>전자 영수증</value>
   </data>
@@ -38,6 +41,12 @@
   </data>
   <data name="Invalid file path." xml:space="preserve">
     <value>잘못된 파일 경로입니다.</value>
+  </data>
+  <data name="Invoice Source Website" xml:space="preserve">
+    <value>송장 출처 웹사이트</value>
+  </data>
+  <data name="Please enter a valid URL." xml:space="preserve">
+    <value>유효한 URL을 입력하세요.</value>
   </data>
   <data name="Purpose" xml:space="preserve">
     <value>용도</value>

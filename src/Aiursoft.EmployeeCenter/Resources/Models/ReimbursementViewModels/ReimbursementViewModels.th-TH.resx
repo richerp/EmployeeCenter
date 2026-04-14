@@ -30,6 +30,9 @@
   <data name="Comment" xml:space="preserve">
     <value>ความคิดเห็น</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>สกุลเงิน</value>
+  </data>
   <data name="Electronic Invoice" xml:space="preserve">
     <value>ใบแจ้งหนี้อิเล็กทรอนิกส์</value>
   </data>
@@ -38,6 +41,12 @@
   </data>
   <data name="Invalid file path." xml:space="preserve">
     <value>เส้นทางไฟล์ไม่ถูกต้อง</value>
+  </data>
+  <data name="Invoice Source Website" xml:space="preserve">
+    <value>เว็บไซต์แหล่งที่มาของใบเสร็จ</value>
+  </data>
+  <data name="Please enter a valid URL." xml:space="preserve">
+    <value>โปรดป้อน URL ที่ถูกต้อง</value>
   </data>
   <data name="Purpose" xml:space="preserve">
     <value>วัตถุประสงค์</value>

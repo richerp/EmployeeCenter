@@ -30,6 +30,9 @@
   <data name="Comment" xml:space="preserve">
     <value>تعليق</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>العملة</value>
+  </data>
   <data name="Electronic Invoice" xml:space="preserve">
     <value>الفاتورة الإلكترونية</value>
   </data>
@@ -38,6 +41,12 @@
   </data>
   <data name="Invalid file path." xml:space="preserve">
     <value>مسار الملف غير صالح.</value>
+  </data>
+  <data name="Invoice Source Website" xml:space="preserve">
+    <value>مصدر الفاتورة: موقع إلكتروني</value>
+  </data>
+  <data name="Please enter a valid URL." xml:space="preserve">
+    <value>يرجى إدخال عنوان URL صالح.</value>
   </data>
   <data name="Purpose" xml:space="preserve">
     <value>الغرض</value>

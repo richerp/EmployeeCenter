@@ -30,6 +30,9 @@
   <data name="Comment" xml:space="preserve">
     <value>Yorum</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Para Birimi</value>
+  </data>
   <data name="Electronic Invoice" xml:space="preserve">
     <value>Elektronik Fatura</value>
   </data>
@@ -38,6 +41,12 @@
   </data>
   <data name="Invalid file path." xml:space="preserve">
     <value>Geçersiz dosya yolu.</value>
+  </data>
+  <data name="Invoice Source Website" xml:space="preserve">
+    <value>Fatura Kaynağı Web Sitesi</value>
+  </data>
+  <data name="Please enter a valid URL." xml:space="preserve">
+    <value>Lütfen geçerli bir URL girin.</value>
   </data>
   <data name="Purpose" xml:space="preserve">
     <value>Amaç</value>

@@ -30,6 +30,9 @@
   <data name="Comment" xml:space="preserve">
     <value>Комментарий</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Валюта</value>
+  </data>
   <data name="Electronic Invoice" xml:space="preserve">
     <value>Электронный счет-фактура</value>
   </data>
@@ -38,6 +41,12 @@
   </data>
   <data name="Invalid file path." xml:space="preserve">
     <value>Недопустимый путь к файлу.</value>
+  </data>
+  <data name="Invoice Source Website" xml:space="preserve">
+    <value>Источник счета-фактуры (веб-сайт)</value>
+  </data>
+  <data name="Please enter a valid URL." xml:space="preserve">
+    <value>Пожалуйста, введите действительный URL-адрес.</value>
   </data>
   <data name="Purpose" xml:space="preserve">
     <value>Цель</value>

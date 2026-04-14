@@ -30,6 +30,9 @@
   <data name="Comment" xml:space="preserve">
     <value>Komentarz</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Waluta</value>
+  </data>
   <data name="Electronic Invoice" xml:space="preserve">
     <value>Faktura elektroniczna</value>
   </data>
@@ -38,6 +41,12 @@
   </data>
   <data name="Invalid file path." xml:space="preserve">
     <value>Nieprawidłowa ścieżka pliku.</value>
+  </data>
+  <data name="Invoice Source Website" xml:space="preserve">
+    <value>Źródło faktury (strona www)</value>
+  </data>
+  <data name="Please enter a valid URL." xml:space="preserve">
+    <value>Proszę wprowadzić poprawny adres URL.</value>
   </data>
   <data name="Purpose" xml:space="preserve">
     <value>Cel</value>

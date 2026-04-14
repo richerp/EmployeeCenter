@@ -30,6 +30,9 @@
   <data name="Comment" xml:space="preserve">
     <value>Коментар</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Валюта</value>
+  </data>
   <data name="Electronic Invoice" xml:space="preserve">
     <value>Електронний рахунок</value>
   </data>
@@ -38,6 +41,12 @@
   </data>
   <data name="Invalid file path." xml:space="preserve">
     <value>Неправильний шлях до файлу.</value>
+  </data>
+  <data name="Invoice Source Website" xml:space="preserve">
+    <value>Веб-сайт джерела рахунку</value>
+  </data>
+  <data name="Please enter a valid URL." xml:space="preserve">
+    <value>Будь ласка, введіть дійсну URL-адресу.</value>
   </data>
   <data name="Purpose" xml:space="preserve">
     <value>Мета</value>
