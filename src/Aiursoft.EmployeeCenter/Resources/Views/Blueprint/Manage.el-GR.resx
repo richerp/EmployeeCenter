@@ -27,8 +27,20 @@
   <data name="Are you sure you want to delete this blueprint?" xml:space="preserve">
     <value>Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το σχέδιο;</value>
   </data>
+  <data name="Are you sure you want to delete this folder?" xml:space="preserve">
+    <value>Είστε σίγουροι ότι θέλετε να διαγράψετε αυτόν τον φάκελο;</value>
+  </data>
   <data name="Author" xml:space="preserve">
     <value>Συγγραφέας</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Πίσω</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>Περιεχόμενα</value>
+  </data>
+  <data name="Create Folder" xml:space="preserve">
+    <value>Δημιουργία Φακέλου</value>
   </data>
   <data name="Create New Blueprint" xml:space="preserve">
     <value>Δημιουργία Νέου Σχεδίου</value>
@@ -47,6 +59,9 @@
   </data>
   <data name="Manage Blueprints" xml:space="preserve">
     <value>Διαχείριση Σχεδίων</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Όνομα</value>
   </data>
   <data name="No blueprints found." xml:space="preserve">
     <value>Δεν βρέθηκαν σχέδια.</value>
