@@ -60,7 +60,7 @@ public class CollectionChannelsController(EmployeeCenterDbContext context) : Con
                 PayerId = model.PayerId,
                 PayeeId = model.PayeeId,
                 ContractId = model.ContractId,
-                ReferenceAmount = model.ReferenceAmount,
+                ReferenceAmount = (long)(model.ReferenceAmount * 100),
                 Currency = model.Currency,
                 PaymentMethod = model.PaymentMethod,
                 StartBillingDate = model.StartBillingDate,
@@ -115,7 +115,7 @@ public class CollectionChannelsController(EmployeeCenterDbContext context) : Con
             PayerId = channel.PayerId,
             PayeeId = channel.PayeeId,
             ContractId = channel.ContractId,
-            ReferenceAmount = channel.ReferenceAmount,
+            ReferenceAmount = channel.ReferenceAmount / 100.0m,
             Currency = channel.Currency,
             PaymentMethod = channel.PaymentMethod,
             StartBillingDate = channel.StartBillingDate,
@@ -126,13 +126,13 @@ public class CollectionChannelsController(EmployeeCenterDbContext context) : Con
             AllCompanyEntities = await context.CompanyEntities.ToListAsync(),
             AllContracts = await context.Contracts.ToListAsync()
         });
-    }
+        }
 
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-    [Authorize(Policy = AppPermissionNames.CanManageCollectionChannels)]
-    public async Task<IActionResult> Edit(EditViewModel model)
-    {
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize(Policy = AppPermissionNames.CanManageCollectionChannels)]
+        public async Task<IActionResult> Edit(EditViewModel model)
+        {
         if (ModelState.IsValid)
         {
             var channel = await context.CollectionChannels.FindAsync(model.Id);
@@ -144,7 +144,7 @@ public class CollectionChannelsController(EmployeeCenterDbContext context) : Con
             channel.PayerId = model.PayerId;
             channel.PayeeId = model.PayeeId;
             channel.ContractId = model.ContractId;
-            channel.ReferenceAmount = model.ReferenceAmount;
+            channel.ReferenceAmount = (long)(model.ReferenceAmount * 100);
             channel.Currency = model.Currency;
             channel.PaymentMethod = model.PaymentMethod;
             channel.StartBillingDate = model.StartBillingDate;

@@ -366,8 +366,8 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.Property<int>("RecurringPeriod")
                         .HasColumnType("INTEGER");
 
-                    b.Property<decimal>("ReferenceAmount")
-                        .HasColumnType("TEXT");
+                    b.Property<long>("ReferenceAmount")
+                        .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("StartBillingDate")
                         .HasColumnType("TEXT");
@@ -392,8 +392,8 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<decimal>("ActualAmount")
-                        .HasColumnType("TEXT");
+                    b.Property<long>("ActualAmount")
+                        .HasColumnType("INTEGER");
 
                     b.Property<int>("ChannelId")
                         .HasColumnType("INTEGER");
@@ -404,8 +404,8 @@ namespace Aiursoft.EmployeeCenter.Sqlite.Migrations
                     b.Property<DateTime>("DueDate")
                         .HasColumnType("TEXT");
 
-                    b.Property<decimal>("ExpectedAmount")
-                        .HasColumnType("TEXT");
+                    b.Property<long>("ExpectedAmount")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("InvoicePath")
                         .HasMaxLength(500)

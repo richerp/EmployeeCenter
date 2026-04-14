@@ -84,6 +84,9 @@
   <data name="Public" xml:space="preserve">
     <value>公開</value>
   </data>
+  <data name="Rename" xml:space="preserve">
+    <value>重新命名</value>
+  </data>
   <data name="Shared" xml:space="preserve">
     <value>共用</value>
   </data>

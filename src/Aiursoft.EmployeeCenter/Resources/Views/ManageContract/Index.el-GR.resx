@@ -84,6 +84,9 @@
   <data name="Public" xml:space="preserve">
     <value>Δημόσιος</value>
   </data>
+  <data name="Rename" xml:space="preserve">
+    <value>Μετονομασία</value>
+  </data>
   <data name="Shared" xml:space="preserve">
     <value>Κοινός</value>
   </data>

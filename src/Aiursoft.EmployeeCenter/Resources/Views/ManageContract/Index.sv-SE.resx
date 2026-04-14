@@ -84,6 +84,9 @@
   <data name="Public" xml:space="preserve">
     <value>Offentlig</value>
   </data>
+  <data name="Rename" xml:space="preserve">
+    <value>Byt namn</value>
+  </data>
   <data name="Shared" xml:space="preserve">
     <value>Delad</value>
   </data>

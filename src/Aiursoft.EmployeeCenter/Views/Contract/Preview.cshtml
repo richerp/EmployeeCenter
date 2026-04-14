@@ -79,7 +79,7 @@
                             <tr>
                                 <td>@(item.Payer?.CompanyName ?? Localizer["N/A"].Value)</td>
                                 <td>@(item.Payee?.CompanyName ?? Localizer["N/A"].Value)</td>
-                                <td>@item.ReferenceAmount @item.Currency</td>
+                                <td>@((item.ReferenceAmount / 100.0).ToString("N2")) @item.Currency</td>
                                 <td>@item.PaymentMethod</td>
                                 <td>
                                     @switch (item.Status)

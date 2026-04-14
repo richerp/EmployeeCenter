@@ -37,7 +37,7 @@ public class CollectionRecordsController(
         {
             ChannelId = channelId,
             Channel = channel,
-            ExpectedAmount = channel.ReferenceAmount
+            ExpectedAmount = channel.ReferenceAmount / 100.0m
         });
     }
 
@@ -69,8 +69,8 @@ public class CollectionRecordsController(
             var record = new CollectionRecord
             {
                 ChannelId = model.ChannelId,
-                ExpectedAmount = model.ExpectedAmount,
-                ActualAmount = model.ActualAmount,
+                ExpectedAmount = (long)(model.ExpectedAmount * 100),
+                ActualAmount = (long)(model.ActualAmount * 100),
                 DueDate = model.DueDate,
                 PaidDate = model.PaidDate,
                 ReceiptPath = model.ReceiptPath,
@@ -106,8 +106,8 @@ public class CollectionRecordsController(
             Id = record.Id,
             ChannelId = record.ChannelId,
             Channel = record.Channel,
-            ExpectedAmount = record.ExpectedAmount,
-            ActualAmount = record.ActualAmount,
+            ExpectedAmount = record.ExpectedAmount / 100.0m,
+            ActualAmount = record.ActualAmount / 100.0m,
             DueDate = record.DueDate,
             PaidDate = record.PaidDate,
             ReceiptPath = record.ReceiptPath,
@@ -135,8 +135,8 @@ public class CollectionRecordsController(
                 return NotFound();
             }
 
-            record.ExpectedAmount = model.ExpectedAmount;
-            record.ActualAmount = model.ActualAmount;
+            record.ExpectedAmount = (long)(model.ExpectedAmount * 100);
+            record.ActualAmount = (long)(model.ActualAmount * 100);
             record.DueDate = model.DueDate;
             record.PaidDate = model.PaidDate;
             record.ReceiptPath = model.ReceiptPath;
