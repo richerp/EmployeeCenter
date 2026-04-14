@@ -56,7 +56,7 @@
                                         <div class="text-muted small">@item.SupportingEmail</div>
                                     }
                                 </td>
-                                <td>@item.Amount.ToString("C")</td>
+                                <td>@item.Amount.ToString("N2") @item.Currency</td>
                                 <td>@item.Category</td>
                                 <td>@item.ExpenseTime.ToShortDateString()</td>
                                 <td>

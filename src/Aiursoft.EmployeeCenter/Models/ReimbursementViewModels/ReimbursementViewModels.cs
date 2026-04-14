@@ -36,9 +36,21 @@ public class CreateViewModel : UiStackLayoutViewModel
     public decimal Amount { get; set; }
 
     [Required]
+    [MaxLength(10)]
+    [Display(Name = "Currency")]
+    public string Currency { get; set; } = "CNY";
+
+    public Dictionary<string, string>? CurrencyOptions { get; set; }
+
+    [Required]
     [MaxLength(50)]
     [Display(Name = "Category")]
     public string Category { get; set; } = string.Empty;
+
+    [MaxLength(1000)]
+    [Display(Name = "Invoice Source Website")]
+    [Url(ErrorMessage = "Please enter a valid URL.")]
+    public string? InvoiceSourceUrl { get; set; }
 
     public bool SaveAsDraft { get; set; }
 }

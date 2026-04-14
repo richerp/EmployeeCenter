@@ -47,7 +47,7 @@
                             </div>
                             <div class="datagrid-item">
                                 <div class="datagrid-title">Amount</div>
-                                <div class="datagrid-content"><strong>@reimbursement.Amount.ToString("C")</strong></div>
+                                <div class="datagrid-content"><strong>@reimbursement.Amount.ToString("N2") @reimbursement.Currency</strong></div>
                             </div>
                             <div class="datagrid-item">
                                 <div class="datagrid-title">Category</div>
@@ -91,6 +91,18 @@
                             <div class="mt-4">
                                 <h4>Supporting Context / Email</h4>
                                 <div class="p-3 bg-light border rounded pre-wrap">@reimbursement.SupportingEmail</div>
+                            </div>
+                        }
+
+                        @if (!string.IsNullOrEmpty(reimbursement.InvoiceSourceUrl))
+                        {
+                            <div class="mt-4">
+                                <h4>Invoice Source Website (发票来源网站)</h4>
+                                <div class="p-3 bg-light border rounded">
+                                    <a href="@reimbursement.InvoiceSourceUrl" target="_blank" rel="noopener noreferrer" class="text-truncate d-block">
+                                        <i class="ti ti-external-link me-1"></i> @reimbursement.InvoiceSourceUrl
+                                    </a>
+                                </div>
                             </div>
                         }
 

@@ -1,4 +1,5 @@
 using Aiursoft.EmployeeCenter.Authorization;
+using Aiursoft.EmployeeCenter.Configuration;
 using Aiursoft.EmployeeCenter.Entities;
 using Aiursoft.EmployeeCenter.Models.ReimbursementViewModels;
 using Aiursoft.EmployeeCenter.Services;
@@ -21,6 +22,12 @@ public class ReimbursementController(
     IAuthorizationService authorizationService)
     : Controller
 {
+    private Dictionary<string, string> GetCurrencyOptions()
+    {
+        return SettingsMap.Definitions
+            .First(d => d.Key == SettingsMap.DefaultPayrollCurrency).ChoiceOptions!;
+    }
+
     [RenderInNavBar(
         NavGroupName = "Career",
         NavGroupOrder = 1,
@@ -45,7 +52,10 @@ public class ReimbursementController(
     [Authorize(AppPermissionNames.CanSubmitReimbursement)]
     public IActionResult Create()
     {
-        return this.StackView(new CreateViewModel());
+        return this.StackView(new CreateViewModel
+        {
+            CurrencyOptions = GetCurrencyOptions()
+        });
     }
 
     [HttpPost]
@@ -79,6 +89,7 @@ public class ReimbursementController(
 
         if (!ModelState.IsValid)
         {
+            model.CurrencyOptions = GetCurrencyOptions();
             return this.StackView(model);
         }
 
@@ -90,7 +101,9 @@ public class ReimbursementController(
             SupportingEmail = model.SupportingEmail,
             InvoicePath = model.InvoicePath,
             Amount = model.Amount,
+            Currency = model.Currency,
             Category = model.Category,
+            InvoiceSourceUrl = model.InvoiceSourceUrl,
             Status = model.SaveAsDraft ? ReimbursementStatus.Draft : ReimbursementStatus.Applying
         };
 
@@ -123,9 +136,12 @@ public class ReimbursementController(
             Purpose = reimbursement.Purpose,
             SupportingEmail = reimbursement.SupportingEmail,
             Amount = reimbursement.Amount,
+            Currency = reimbursement.Currency,
+            CurrencyOptions = GetCurrencyOptions(),
             Category = reimbursement.Category,
             ExistingInvoicePath = reimbursement.InvoicePath,
-            InvoicePath = reimbursement.InvoicePath
+            InvoicePath = reimbursement.InvoicePath,
+            InvoiceSourceUrl = reimbursement.InvoiceSourceUrl
         };
 
         return this.StackView(model);
@@ -172,6 +188,7 @@ public class ReimbursementController(
 
         if (!ModelState.IsValid)
         {
+            model.CurrencyOptions = GetCurrencyOptions();
             return this.StackView(model);
         }
 
@@ -184,7 +201,9 @@ public class ReimbursementController(
         reimbursement.Purpose = model.Purpose;
         reimbursement.SupportingEmail = model.SupportingEmail;
         reimbursement.Amount = model.Amount;
+        reimbursement.Currency = model.Currency;
         reimbursement.Category = model.Category;
+        reimbursement.InvoiceSourceUrl = model.InvoiceSourceUrl;
         reimbursement.Status = model.SaveAsDraft ? ReimbursementStatus.Draft : ReimbursementStatus.Applying;
 
         await context.SaveChangesAsync();
