@@ -20,7 +20,7 @@ public class CollectionChannel
     [ForeignKey(nameof(ContractId))]
     public Contract? Contract { get; set; }
 
-    public decimal ReferenceAmount { get; set; }
+    public long ReferenceAmount { get; set; }
 
     [MaxLength(10)]
     public required string Currency { get; set; }

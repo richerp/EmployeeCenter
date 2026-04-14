@@ -12,9 +12,9 @@ public class CollectionRecord
     [ForeignKey(nameof(ChannelId))]
     public CollectionChannel? Channel { get; set; }
 
-    public decimal ExpectedAmount { get; set; }
+    public long ExpectedAmount { get; set; }
 
-    public decimal ActualAmount { get; set; }
+    public long ActualAmount { get; set; }
 
     public DateTime DueDate { get; set; }
 
