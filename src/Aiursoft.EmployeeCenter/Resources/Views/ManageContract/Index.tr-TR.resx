@@ -63,6 +63,9 @@
   <data name="Edit" xml:space="preserve">
     <value>Düzenle</value>
   </data>
+  <data name="Finance" xml:space="preserve">
+    <value>Finans</value>
+  </data>
   <data name="Invalid" xml:space="preserve">
     <value>Geçersiz</value>
   </data>

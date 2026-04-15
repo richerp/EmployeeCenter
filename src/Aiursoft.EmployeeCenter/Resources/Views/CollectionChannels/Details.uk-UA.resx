@@ -99,6 +99,9 @@
   <data name="Reference Amount" xml:space="preserve">
     <value>Реферна сума</value>
   </data>
+  <data name="Remark" xml:space="preserve">
+    <value>Коментар</value>
+  </data>
   <data name="Settled" xml:space="preserve">
     <value>Оплачено</value>
   </data>

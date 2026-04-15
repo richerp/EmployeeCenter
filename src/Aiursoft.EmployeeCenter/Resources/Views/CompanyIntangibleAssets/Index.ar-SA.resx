@@ -39,11 +39,20 @@
   <data name="Details" xml:space="preserve">
     <value>التفاصيل</value>
   </data>
+  <data name="My Assigned Assets" xml:space="preserve">
+    <value>أصولي المخصصة</value>
+  </data>
   <data name="N/A" xml:space="preserve">
     <value>غير متاح</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>الاسم</value>
+  </data>
+  <data name="No assigned assets found." xml:space="preserve">
+    <value>لم يتم العثور على أصول مُخصصة.</value>
+  </data>
+  <data name="No shared assets found." xml:space="preserve">
+    <value>لم يتم العثور على أصول مشتركة.</value>
   </data>
   <data name="Revoked" xml:space="preserve">
     <value>ملغى</value>

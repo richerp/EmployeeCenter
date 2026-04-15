@@ -39,6 +39,9 @@
   <data name="Receipt File" xml:space="preserve">
     <value>File di ricevuta</value>
   </data>
+  <data name="Remark" xml:space="preserve">
+    <value>Osservazioni</value>
+  </data>
   <data name="Status" xml:space="preserve">
     <value>Stato</value>
   </data>

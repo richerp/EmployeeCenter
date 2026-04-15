@@ -39,6 +39,9 @@
   <data name="Receipt File" xml:space="preserve">
     <value>Αρχείο απόδειξης</value>
   </data>
+  <data name="Remark" xml:space="preserve">
+    <value>Σχόλιο</value>
+  </data>
   <data name="Status" xml:space="preserve">
     <value>Κατάσταση</value>
   </data>

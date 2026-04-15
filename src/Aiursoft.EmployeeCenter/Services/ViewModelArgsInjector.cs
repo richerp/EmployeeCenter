@@ -214,6 +214,9 @@ public class ViewModelArgsInjector(
         _ = localizer["Create New Folder"];
         _ = localizer["Edit Blueprint Folder"];
         _ = localizer["Edit Folder"];
+    
+        _ = localizer["Contract Finance Details"];
+        _ = localizer["Contract Finance Statistics"];
     }
 
     public void InjectSimple(

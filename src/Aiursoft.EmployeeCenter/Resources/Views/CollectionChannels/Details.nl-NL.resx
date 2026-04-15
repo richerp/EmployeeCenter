@@ -99,6 +99,9 @@
   <data name="Reference Amount" xml:space="preserve">
     <value>Referentiebedrag</value>
   </data>
+  <data name="Remark" xml:space="preserve">
+    <value>Opmerking</value>
+  </data>
   <data name="Settled" xml:space="preserve">
     <value>Afgerond</value>
   </data>

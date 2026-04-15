@@ -162,6 +162,12 @@
   <data name="Confirm Delete" xml:space="preserve">
     <value>Bekräfta radering</value>
   </data>
+  <data name="Contract Finance Details" xml:space="preserve">
+    <value>Detaljer om avtalsfinansiering</value>
+  </data>
+  <data name="Contract Finance Statistics" xml:space="preserve">
+    <value>Kontraktfinansstatistik</value>
+  </data>
   <data name="Contracts" xml:space="preserve">
     <value>Kontrakt</value>
   </data>

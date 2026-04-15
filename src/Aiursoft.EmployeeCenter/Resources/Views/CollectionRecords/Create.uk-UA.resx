@@ -27,6 +27,9 @@
   <data name="Back to Channel" xml:space="preserve">
     <value>Повернутися до каналу</value>
   </data>
+  <data name="e.g. First phase payment" xml:space="preserve">
+    <value>напр. Перший етап оплати</value>
+  </data>
   <data name="For channel:" xml:space="preserve">
     <value>Для каналу:</value>
   </data>

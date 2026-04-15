@@ -39,11 +39,20 @@
   <data name="Details" xml:space="preserve">
     <value>Tiedot</value>
   </data>
+  <data name="My Assigned Assets" xml:space="preserve">
+    <value>Minut nimitetyt omaisuuserät</value>
+  </data>
   <data name="N/A" xml:space="preserve">
     <value>Ei saatavilla</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Nimi</value>
+  </data>
+  <data name="No assigned assets found." xml:space="preserve">
+    <value>Ei liitetyjä omaisuuseriä.</value>
+  </data>
+  <data name="No shared assets found." xml:space="preserve">
+    <value>Yhteisiä omaisuuseriä ei löytynyt.</value>
   </data>
   <data name="Revoked" xml:space="preserve">
     <value>Peruttu</value>

@@ -33,19 +33,20 @@
   <data name="Delete Collection Record" xml:space="preserve">
     <value>删除集合记录</value>
   </data>
+  <data name="e.g. First phase payment" xml:space="preserve">
+    <value>例如：第一阶段款项</value>
+  </data>
   <data name="Edit collection record" xml:space="preserve">
     <value>编辑收款记录</value>
   </data>
   <data name="For channel:" xml:space="preserve">
     <value>渠道：</value>
   </data>
-  <data name="Save Changes" xml:space="preserve">
-    <value>保存更改</value>
-  </data>
   <data name="Remark" xml:space="preserve">
     <value>备注</value>
   </data>
-  <data name="e.g. First phase payment" xml:space="preserve">
-    <value>例如：第一阶段款项</value>
+  <data name="Save Changes" xml:space="preserve">
+    <value>保存更改</value>
   </data>
+
 </root>

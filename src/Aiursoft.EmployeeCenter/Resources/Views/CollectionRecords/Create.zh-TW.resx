@@ -27,6 +27,9 @@
   <data name="Back to Channel" xml:space="preserve">
     <value>返回頻道</value>
   </data>
+  <data name="e.g. First phase payment" xml:space="preserve">
+    <value>例如：首期付款</value>
+  </data>
   <data name="For channel:" xml:space="preserve">
     <value>用於渠道：</value>
   </data>

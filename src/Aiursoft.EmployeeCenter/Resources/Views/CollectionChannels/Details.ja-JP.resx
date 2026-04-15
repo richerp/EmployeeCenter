@@ -99,6 +99,9 @@
   <data name="Reference Amount" xml:space="preserve">
     <value>参照額</value>
   </data>
+  <data name="Remark" xml:space="preserve">
+    <value>備考</value>
+  </data>
   <data name="Settled" xml:space="preserve">
     <value>決済済み</value>
   </data>

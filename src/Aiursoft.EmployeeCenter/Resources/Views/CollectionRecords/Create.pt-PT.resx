@@ -27,6 +27,9 @@
   <data name="Back to Channel" xml:space="preserve">
     <value>Voltar ao Canal</value>
   </data>
+  <data name="e.g. First phase payment" xml:space="preserve">
+    <value>ex. pagamento da primeira fase</value>
+  </data>
   <data name="For channel:" xml:space="preserve">
     <value>Para o canal:</value>
   </data>

@@ -63,6 +63,9 @@
   <data name="Edit" xml:space="preserve">
     <value>Editar</value>
   </data>
+  <data name="Finance" xml:space="preserve">
+    <value>Finanzas</value>
+  </data>
   <data name="Invalid" xml:space="preserve">
     <value>Inválido</value>
   </data>

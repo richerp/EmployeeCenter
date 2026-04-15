@@ -39,6 +39,9 @@
   <data name="Receipt File" xml:space="preserve">
     <value>Fiş Dosyası</value>
   </data>
+  <data name="Remark" xml:space="preserve">
+    <value>Not</value>
+  </data>
   <data name="Status" xml:space="preserve">
     <value>Durum</value>
   </data>

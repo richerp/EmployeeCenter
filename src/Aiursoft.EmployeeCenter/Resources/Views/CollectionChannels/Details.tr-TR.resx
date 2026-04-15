@@ -99,6 +99,9 @@
   <data name="Reference Amount" xml:space="preserve">
     <value>Referans Tutar</value>
   </data>
+  <data name="Remark" xml:space="preserve">
+    <value>Açıklama</value>
+  </data>
   <data name="Settled" xml:space="preserve">
     <value>Ödenmiş</value>
   </data>

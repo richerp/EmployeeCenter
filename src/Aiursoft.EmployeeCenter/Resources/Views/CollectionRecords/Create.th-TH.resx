@@ -27,6 +27,9 @@
   <data name="Back to Channel" xml:space="preserve">
     <value>กลับไปที่ช่อง</value>
   </data>
+  <data name="e.g. First phase payment" xml:space="preserve">
+    <value>เช่น การชำระเงินระยะแรก</value>
+  </data>
   <data name="For channel:" xml:space="preserve">
     <value>สำหรับช่องทาง:</value>
   </data>

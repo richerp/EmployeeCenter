@@ -99,6 +99,9 @@
   <data name="Reference Amount" xml:space="preserve">
     <value>संदर्भ राशि</value>
   </data>
+  <data name="Remark" xml:space="preserve">
+    <value>टिप्पणी</value>
+  </data>
   <data name="Settled" xml:space="preserve">
     <value>समाप्त</value>
   </data>

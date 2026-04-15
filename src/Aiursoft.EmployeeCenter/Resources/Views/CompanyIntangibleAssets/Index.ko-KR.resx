@@ -39,11 +39,20 @@
   <data name="Details" xml:space="preserve">
     <value>상세 정보</value>
   </data>
+  <data name="My Assigned Assets" xml:space="preserve">
+    <value>할당된 내 자산</value>
+  </data>
   <data name="N/A" xml:space="preserve">
     <value>N/A</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>이름</value>
+  </data>
+  <data name="No assigned assets found." xml:space="preserve">
+    <value>할당된 자산이 없습니다.</value>
+  </data>
+  <data name="No shared assets found." xml:space="preserve">
+    <value>공유 자산이 없습니다.</value>
   </data>
   <data name="Revoked" xml:space="preserve">
     <value>취소됨</value>

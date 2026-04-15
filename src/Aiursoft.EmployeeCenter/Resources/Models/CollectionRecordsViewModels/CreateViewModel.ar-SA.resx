@@ -39,6 +39,9 @@
   <data name="Receipt File" xml:space="preserve">
     <value>ملف الإيصال</value>
   </data>
+  <data name="Remark" xml:space="preserve">
+    <value>ملاحظة</value>
+  </data>
   <data name="Status" xml:space="preserve">
     <value>الحالة</value>
   </data>

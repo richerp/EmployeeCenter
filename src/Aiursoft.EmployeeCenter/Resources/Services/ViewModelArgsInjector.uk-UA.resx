@@ -162,6 +162,12 @@
   <data name="Confirm Delete" xml:space="preserve">
     <value>Підтвердити видалення</value>
   </data>
+  <data name="Contract Finance Details" xml:space="preserve">
+    <value>Деталі фінансів договору</value>
+  </data>
+  <data name="Contract Finance Statistics" xml:space="preserve">
+    <value>Статистика фінансів за контрактами</value>
+  </data>
   <data name="Contracts" xml:space="preserve">
     <value>Договори</value>
   </data>
