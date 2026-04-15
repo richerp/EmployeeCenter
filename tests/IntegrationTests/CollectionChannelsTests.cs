@@ -126,6 +126,7 @@ public class CollectionChannelsTests
             { "ExpectedAmount", "1000.50" },
             { "ActualAmount", "0" },
             { "DueDate", "2024-02-01" },
+            { "Remark", "Phase 1 payment" },
             { "Status", "Pending" },
             { "__RequestVerificationToken", recordCreateToken }
         });
@@ -139,6 +140,7 @@ public class CollectionChannelsTests
             var record = await db.CollectionRecords.FirstOrDefaultAsync(r => r.ChannelId == channelId);
             Assert.IsNotNull(record);
             Assert.AreEqual(CollectionRecordStatus.Pending, record.Status);
+            Assert.AreEqual("Phase 1 payment", record.Remark);
             recordId = record.Id;
         }
 
@@ -152,6 +154,7 @@ public class CollectionChannelsTests
             { "ActualAmount", "1000.50" },
             { "DueDate", "2024-02-01" },
             { "PaidDate", "2024-02-05" },
+            { "Remark", "Phase 1 payment - updated" },
             { "Status", "Settled" },
             { "TransactionId", "TX12345" },
             { "__RequestVerificationToken", recordEditToken }
@@ -165,6 +168,7 @@ public class CollectionChannelsTests
             var record = await db.CollectionRecords.FindAsync(recordId);
             Assert.AreEqual(CollectionRecordStatus.Settled, record!.Status);
             Assert.AreEqual("TX12345", record.TransactionId);
+            Assert.AreEqual("Phase 1 payment - updated", record.Remark);
         }
 
         // 6. Terminate Channel

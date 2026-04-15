@@ -71,6 +71,11 @@
                     <select asp-for="Status" class="form-select" asp-items="Html.GetEnumSelectList<CollectionRecordStatus>()"></select>
                     <span asp-validation-for="Status" class="text-danger"></span>
                 </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Remark" class="form-label"></label>
+                    <input asp-for="Remark" class="form-control" placeholder="@Localizer["e.g. First phase payment"]" />
+                    <span asp-validation-for="Remark" class="text-danger"></span>
+                </div>
             </div>
 
             <hr />

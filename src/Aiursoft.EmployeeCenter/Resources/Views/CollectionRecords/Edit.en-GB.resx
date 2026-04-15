@@ -42,5 +42,10 @@
   <data name="Save Changes" xml:space="preserve">
     <value>Save Changes</value>
   </data>
-
+  <data name="Remark" xml:space="preserve">
+    <value>Remark</value>
+  </data>
+  <data name="e.g. First phase payment" xml:space="preserve">
+    <value>e.g. First phase payment</value>
+  </data>
 </root>
