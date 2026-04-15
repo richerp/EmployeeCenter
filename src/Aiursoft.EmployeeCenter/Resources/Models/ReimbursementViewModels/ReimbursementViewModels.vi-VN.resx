@@ -30,6 +30,9 @@
   <data name="Comment" xml:space="preserve">
     <value>Bình luận</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Tiền tệ</value>
+  </data>
   <data name="Electronic Invoice" xml:space="preserve">
     <value>Hóa đơn điện tử</value>
   </data>
@@ -38,6 +41,12 @@
   </data>
   <data name="Invalid file path." xml:space="preserve">
     <value>Đường dẫn tệp không hợp lệ.</value>
+  </data>
+  <data name="Invoice Source Website" xml:space="preserve">
+    <value>Trang web nguồn hóa đơn</value>
+  </data>
+  <data name="Please enter a valid URL." xml:space="preserve">
+    <value>Vui lòng nhập URL hợp lệ.</value>
   </data>
   <data name="Purpose" xml:space="preserve">
     <value>Mục đích</value>

@@ -30,6 +30,9 @@
   <data name="Comment" xml:space="preserve">
     <value>Comentariu</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>Valută</value>
+  </data>
   <data name="Electronic Invoice" xml:space="preserve">
     <value>Factură electronică</value>
   </data>
@@ -38,6 +41,12 @@
   </data>
   <data name="Invalid file path." xml:space="preserve">
     <value>Cale de fișier invalidă.</value>
+  </data>
+  <data name="Invoice Source Website" xml:space="preserve">
+    <value>Sursa facturii (sit web)</value>
+  </data>
+  <data name="Please enter a valid URL." xml:space="preserve">
+    <value>Introduceți un URL valid.</value>
   </data>
   <data name="Purpose" xml:space="preserve">
     <value>Scop</value>

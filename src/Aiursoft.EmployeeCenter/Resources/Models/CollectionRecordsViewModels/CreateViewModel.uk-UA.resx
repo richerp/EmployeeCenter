@@ -27,6 +27,9 @@
   <data name="Expected Amount" xml:space="preserve">
     <value>Очікувана сума</value>
   </data>
+  <data name="Invalid file path." xml:space="preserve">
+    <value>Неправильний шлях до файлу.</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>Рахунок</value>
   </data>
@@ -41,6 +44,12 @@
   </data>
   <data name="SWIFT / Bank Receipt File" xml:space="preserve">
     <value>Файл квитанції SWIFT / банку</value>
+  </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>Поле «{0}» не може містити більше ніж {1} символів.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>Поле &quot;{0}&quot; є обов&apos;язковим.</value>
   </data>
   <data name="Transaction ID" xml:space="preserve">
     <value>ID транзакції</value>

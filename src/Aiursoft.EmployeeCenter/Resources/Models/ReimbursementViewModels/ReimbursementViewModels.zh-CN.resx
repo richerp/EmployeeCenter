@@ -30,6 +30,9 @@
   <data name="Comment" xml:space="preserve">
     <value>评论</value>
   </data>
+  <data name="Currency" xml:space="preserve">
+    <value>货币</value>
+  </data>
   <data name="Electronic Invoice" xml:space="preserve">
     <value>电子发票</value>
   </data>
@@ -38,6 +41,12 @@
   </data>
   <data name="Invalid file path." xml:space="preserve">
     <value>无效的文件路径。</value>
+  </data>
+  <data name="Invoice Source Website" xml:space="preserve">
+    <value>发票来源网站</value>
+  </data>
+  <data name="Please enter a valid URL." xml:space="preserve">
+    <value>请输入有效的 URL。</value>
   </data>
   <data name="Purpose" xml:space="preserve">
     <value>用途</value>

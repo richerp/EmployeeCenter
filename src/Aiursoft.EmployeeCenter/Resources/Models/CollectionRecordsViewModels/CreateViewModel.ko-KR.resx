@@ -27,6 +27,9 @@
   <data name="Expected Amount" xml:space="preserve">
     <value>예상 금액</value>
   </data>
+  <data name="Invalid file path." xml:space="preserve">
+    <value>잘못된 파일 경로입니다.</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>송장 파일</value>
   </data>
@@ -41,6 +44,12 @@
   </data>
   <data name="SWIFT / Bank Receipt File" xml:space="preserve">
     <value>SWIFT / 은행 영수증 파일</value>
+  </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0}은(는) {1}자를 초과할 수 없습니다.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0}이(가) 필요합니다.</value>
   </data>
   <data name="Transaction ID" xml:space="preserve">
     <value>거래 ID</value>

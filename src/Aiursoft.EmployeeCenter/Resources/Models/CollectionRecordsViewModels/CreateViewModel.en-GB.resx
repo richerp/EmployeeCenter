@@ -27,6 +27,9 @@
   <data name="Expected Amount" xml:space="preserve">
     <value>Expected Amount</value>
   </data>
+  <data name="Invalid file path." xml:space="preserve">
+    <value>Invalid file path.</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>Invoice File</value>
   </data>
@@ -44,6 +47,12 @@
   </data>
   <data name="SWIFT / Bank Receipt File" xml:space="preserve">
     <value>SWIFT / Bank Receipt File</value>
+  </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>The {0} cannot exceed {1} characters.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>The {0} is required.</value>
   </data>
   <data name="Transaction ID" xml:space="preserve">
     <value>Transaction ID</value>

@@ -27,6 +27,9 @@
   <data name="Expected Amount" xml:space="preserve">
     <value>Số tiền mong đợi</value>
   </data>
+  <data name="Invalid file path." xml:space="preserve">
+    <value>Đường dẫn tệp không hợp lệ.</value>
+  </data>
   <data name="Invoice File" xml:space="preserve">
     <value>Tệp hóa đơn</value>
   </data>
@@ -41,6 +44,12 @@
   </data>
   <data name="SWIFT / Bank Receipt File" xml:space="preserve">
     <value>Tệp biên lai SWIFT / Ngân hàng</value>
+  </data>
+  <data name="The {0} cannot exceed {1} characters." xml:space="preserve">
+    <value>{0} không được vượt quá {1} ký tự.</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0} là bắt buộc.</value>
   </data>
   <data name="Transaction ID" xml:space="preserve">
     <value>Mã Giao Dịch</value>
