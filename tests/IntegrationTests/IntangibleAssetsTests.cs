@@ -108,7 +108,27 @@ public class IntangibleAssetTests : TestBase
         var publicDetailsResponse = await Http.GetAsync($"/CompanyIntangibleAssets/Details/{assetId}");
         Assert.AreEqual(HttpStatusCode.NotFound, publicDetailsResponse.StatusCode);
 
-        // 6. Delete
+        // 6. Test Assigned Visibility
+        using (var scope = Server!.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<EmployeeCenterDbContext>();
+            var asset = await db.IntangibleAssets.FirstAsync(a => a.Id == assetId);
+            var user = await db.Users.FirstAsync(u => u.UserName == "admin");
+            asset.IsPublic = false;
+            asset.AssigneeId = user.Id;
+            await db.SaveChangesAsync();
+        }
+
+        // Should now be visible because assigned to me (admin)
+        var assignedIndexResponse = await Http.GetAsync("/CompanyIntangibleAssets");
+        assignedIndexResponse.EnsureSuccessStatusCode();
+        var assignedHtml = await assignedIndexResponse.Content.ReadAsStringAsync();
+        Assert.IsTrue(assignedHtml.Contains("Updated Domain Name"));
+
+        var assignedDetailsResponse = await Http.GetAsync($"/CompanyIntangibleAssets/Details/{assetId}");
+        assignedDetailsResponse.EnsureSuccessStatusCode();
+
+        // 7. Delete
         var deleteResponse = await PostForm($"/IntangibleAssets/Delete/{assetId}", new Dictionary<string, string>());
         AssertRedirect(deleteResponse, "/IntangibleAssets");
     }

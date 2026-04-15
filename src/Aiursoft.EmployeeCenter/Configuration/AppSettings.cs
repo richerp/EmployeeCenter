@@ -24,4 +24,9 @@ public class AppSettings
     /// Automatically assign the user to this role when they log in.
     /// </summary>
     public string? DefaultRole { get; init; } = string.Empty;
+
+    /// <summary>
+    /// The path to export data to.
+    /// </summary>
+    public string ExportPath { get; init; } = "/tmp/export";
 }

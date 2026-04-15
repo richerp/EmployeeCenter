@@ -25,27 +25,42 @@ public class CompanyIntangibleAssetsController(
         LinkOrder = 2)]
     public async Task<IActionResult> Index()
     {
-        var assets = await context.IntangibleAssets
+        var user = await context.Users
+            .FirstOrDefaultAsync(u => u.UserName == User.Identity!.Name);
+        
+        var publicAssets = await context.IntangibleAssets
             .Include(a => a.Assignee)
             .Include(a => a.CompanyEntity)
             .Where(a => a.IsPublic)
             .OrderByDescending(a => a.CreatedAt)
             .ToListAsync();
 
+        var myAssets = await context.IntangibleAssets
+            .Include(a => a.Assignee)
+            .Include(a => a.CompanyEntity)
+            .Where(a => a.AssigneeId == user!.Id)
+            .OrderByDescending(a => a.CreatedAt)
+            .ToListAsync();
+
         return this.StackView(new IndexViewModel
         {
-            Assets = assets
+            Assets = publicAssets,
+            MyAssets = myAssets
         });
     }
 
     public async Task<IActionResult> Details(Guid id)
     {
+        var user = await context.Users
+            .FirstOrDefaultAsync(u => u.UserName == User.Identity!.Name);
+        
         var asset = await context.IntangibleAssets
             .Include(a => a.Assignee)
             .Include(a => a.CompanyEntity)
             .FirstOrDefaultAsync(a => a.Id == id);
 
-        if (asset == null || !asset.IsPublic) return NotFound();
+        if (asset == null) return NotFound();
+        if (!asset.IsPublic && asset.AssigneeId != user?.Id) return NotFound();
 
         return this.StackView(new DetailsViewModel
         {

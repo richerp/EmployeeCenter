@@ -37,24 +37,7 @@
                     <td>@item.Name</td>
                     <td>@item.Type</td>
                     <td>
-                        @switch (item.Status)
-                        {
-                            case IntangibleAssetStatus.Applying:
-                                <span class="badge bg-warning">@Localizer["Applying"]</span>
-                                break;
-                            case IntangibleAssetStatus.Active:
-                                <span class="badge bg-success">@Localizer["Active"]</span>
-                                break;
-                            case IntangibleAssetStatus.Revoked:
-                                <span class="badge bg-danger">@Localizer["Revoked"]</span>
-                                break;
-                            case IntangibleAssetStatus.Running:
-                                <span class="badge bg-info">@Localizer["Running"]</span>
-                                break;
-                            case IntangibleAssetStatus.Suspended:
-                                <span class="badge bg-secondary">@Localizer["Suspended"]</span>
-                                break;
-                        }
+                        @await Html.PartialAsync("_AssetStatus", item.Status)
                     </td>
                     <td>@(item.Supplier ?? Localizer["N/A"].Value)</td>
                     <td>
