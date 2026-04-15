@@ -43,6 +43,10 @@ public class CreateViewModel : UiStackLayoutViewModel
     [Display(Name = "SWIFT / Bank Receipt File")]
     public string? SwiftReceiptPath { get; set; }
 
+    [MaxLength(1000, ErrorMessage = "The {0} cannot exceed {1} characters.")]
+    [Display(Name = "Remark")]
+    public string? Remark { get; set; }
+
     [Required(ErrorMessage = "The {0} is required.")]
     [Display(Name = "Status")]
     public CollectionRecordStatus Status { get; set; }

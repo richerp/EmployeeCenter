@@ -32,6 +32,9 @@ public class CollectionRecord
     [MaxLength(500)]
     public string? SwiftReceiptPath { get; set; }
 
+    [MaxLength(1000)]
+    public string? Remark { get; set; }
+
     public CollectionRecordStatus Status { get; set; }
 
     public DateTime CreateTime { get; set; } = DateTime.UtcNow;

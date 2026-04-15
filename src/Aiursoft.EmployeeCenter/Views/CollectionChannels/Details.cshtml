@@ -108,6 +108,7 @@
                     <thead>
                     <tr>
                         <th>@Localizer["Due Date"]</th>
+                        <th>@Localizer["Remark"]</th>
                         <th>@Localizer["Expected"]</th>
                         <th>@Localizer["Actual"]</th>
                         <th>@Localizer["Paid Date"]</th>
@@ -120,6 +121,7 @@
                     {
                         <tr>
                             <td>@record.DueDate.ToShortDateString()</td>
+                            <td>@(record.Remark ?? Localizer["N/A"].Value)</td>
                             <td>@((record.ExpectedAmount / 100.0).ToString("N2")) @Model.Channel.Currency</td>
                             <td>@((record.ActualAmount / 100.0).ToString("N2")) @Model.Channel.Currency</td>
                             <td>@(record.PaidDate?.ToShortDateString() ?? Localizer["N/A"].Value)</td>
@@ -155,7 +157,7 @@
                     @if (!Model.Channel.Records.Any())
                     {
                         <tr>
-                            <td colspan="6" class="text-center">@Localizer["No records found."]</td>
+                            <td colspan="7" class="text-center">@Localizer["No records found."]</td>
                         </tr>
                     }
                     </tbody>
