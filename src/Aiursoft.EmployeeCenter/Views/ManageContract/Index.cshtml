@@ -115,6 +115,12 @@
                         <a href="@StorageService.RelativePathToInternetUrl(item.FilePath, isVault: true)" class="btn btn-sm btn-outline-info" target="_blank">
                             <i class="align-middle" data-lucide="download"></i> @Localizer["Download"]
                         </a>
+                        @if (item.CollectionChannels.Any())
+                        {
+                            <a asp-action="Finance" asp-route-id="@item.Id" class="btn btn-sm btn-outline-success" title="@Localizer["Finance"]">
+                                <i class="align-middle" data-lucide="dollar-sign"></i> @Localizer["Finance"]
+                            </a>
+                        }
                         @if ((await AuthorizationService.AuthorizeAsync(User, AppPermissionNames.CanCreateContract)).Succeeded)
                         {
                             <a asp-action="OcrResults" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary" title="@Localizer["Preview"]">
