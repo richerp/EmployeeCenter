@@ -39,6 +39,9 @@
   <data name="Receipt File" xml:space="preserve">
     <value>Tệp biên lai</value>
   </data>
+  <data name="Remark" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
   <data name="Status" xml:space="preserve">
     <value>Trạng thái</value>
   </data>

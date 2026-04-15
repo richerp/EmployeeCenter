@@ -33,19 +33,20 @@
   <data name="Delete Collection Record" xml:space="preserve">
     <value>Delete Collection Record</value>
   </data>
+  <data name="e.g. First phase payment" xml:space="preserve">
+    <value>e.g. First phase payment</value>
+  </data>
   <data name="Edit collection record" xml:space="preserve">
     <value>Edit collection record</value>
   </data>
   <data name="For channel:" xml:space="preserve">
     <value>For channel:</value>
   </data>
-  <data name="Save Changes" xml:space="preserve">
-    <value>Save Changes</value>
-  </data>
   <data name="Remark" xml:space="preserve">
     <value>Remark</value>
   </data>
-  <data name="e.g. First phase payment" xml:space="preserve">
-    <value>e.g. First phase payment</value>
+  <data name="Save Changes" xml:space="preserve">
+    <value>Save Changes</value>
   </data>
+
 </root>

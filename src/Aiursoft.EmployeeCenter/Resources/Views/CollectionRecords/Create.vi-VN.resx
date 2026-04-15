@@ -27,6 +27,9 @@
   <data name="Back to Channel" xml:space="preserve">
     <value>Quay lại kênh</value>
   </data>
+  <data name="e.g. First phase payment" xml:space="preserve">
+    <value>ví dụ: Thanh toán giai đoạn đầu tiên</value>
+  </data>
   <data name="For channel:" xml:space="preserve">
     <value>Dành cho kênh:</value>
   </data>

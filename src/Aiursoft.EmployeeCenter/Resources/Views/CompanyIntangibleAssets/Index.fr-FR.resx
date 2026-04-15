@@ -39,11 +39,20 @@
   <data name="Details" xml:space="preserve">
     <value>Détails</value>
   </data>
+  <data name="My Assigned Assets" xml:space="preserve">
+    <value>Mes actifs assignés</value>
+  </data>
   <data name="N/A" xml:space="preserve">
     <value>N/D</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Nom</value>
+  </data>
+  <data name="No assigned assets found." xml:space="preserve">
+    <value>Aucun actif attribué trouvé.</value>
+  </data>
+  <data name="No shared assets found." xml:space="preserve">
+    <value>Aucun actif partagé trouvé.</value>
   </data>
   <data name="Revoked" xml:space="preserve">
     <value>Révoqué</value>

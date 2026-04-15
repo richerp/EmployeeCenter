@@ -39,11 +39,20 @@
   <data name="Details" xml:space="preserve">
     <value>Rincian</value>
   </data>
+  <data name="My Assigned Assets" xml:space="preserve">
+    <value>Aset yang Ditugaskan kepada Saya</value>
+  </data>
   <data name="N/A" xml:space="preserve">
     <value>T/S</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Nama</value>
+  </data>
+  <data name="No assigned assets found." xml:space="preserve">
+    <value>Tidak ada aset yang ditugaskan ditemukan.</value>
+  </data>
+  <data name="No shared assets found." xml:space="preserve">
+    <value>Tidak ada aset bersama yang ditemukan.</value>
   </data>
   <data name="Revoked" xml:space="preserve">
     <value>Dibatalkan</value>

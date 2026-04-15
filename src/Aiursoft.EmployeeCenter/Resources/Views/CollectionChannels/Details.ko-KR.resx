@@ -99,6 +99,9 @@
   <data name="Reference Amount" xml:space="preserve">
     <value>기준 금액</value>
   </data>
+  <data name="Remark" xml:space="preserve">
+    <value>비고</value>
+  </data>
   <data name="Settled" xml:space="preserve">
     <value>결제됨</value>
   </data>

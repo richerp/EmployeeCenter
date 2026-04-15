@@ -39,11 +39,20 @@
   <data name="Details" xml:space="preserve">
     <value>รายละเอียด</value>
   </data>
+  <data name="My Assigned Assets" xml:space="preserve">
+    <value>สินทรัพย์ที่มอบหมายให้ผม</value>
+  </data>
   <data name="N/A" xml:space="preserve">
     <value>ไม่ระบุ</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>ชื่อ</value>
+  </data>
+  <data name="No assigned assets found." xml:space="preserve">
+    <value>ไม่พบสินทรัพย์ที่กำหนดให้</value>
+  </data>
+  <data name="No shared assets found." xml:space="preserve">
+    <value>ไม่พบทรัพย์สินร่วมกัน</value>
   </data>
   <data name="Revoked" xml:space="preserve">
     <value>ถูกเพิกถอน</value>

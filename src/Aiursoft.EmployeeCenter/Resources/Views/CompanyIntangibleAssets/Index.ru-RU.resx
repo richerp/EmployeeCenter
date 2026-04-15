@@ -39,11 +39,20 @@
   <data name="Details" xml:space="preserve">
     <value>Сведения</value>
   </data>
+  <data name="My Assigned Assets" xml:space="preserve">
+    <value>Мои назначенные активы</value>
+  </data>
   <data name="N/A" xml:space="preserve">
     <value>N/A</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Имя</value>
+  </data>
+  <data name="No assigned assets found." xml:space="preserve">
+    <value>Назначенные активы не найдены.</value>
+  </data>
+  <data name="No shared assets found." xml:space="preserve">
+    <value>Общие активы не найдены.</value>
   </data>
   <data name="Revoked" xml:space="preserve">
     <value>Отозвано</value>

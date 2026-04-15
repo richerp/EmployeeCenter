@@ -39,6 +39,9 @@
   <data name="Receipt File" xml:space="preserve">
     <value>Kuittitiedosto</value>
   </data>
+  <data name="Remark" xml:space="preserve">
+    <value>Huomio</value>
+  </data>
   <data name="Status" xml:space="preserve">
     <value>Tila</value>
   </data>

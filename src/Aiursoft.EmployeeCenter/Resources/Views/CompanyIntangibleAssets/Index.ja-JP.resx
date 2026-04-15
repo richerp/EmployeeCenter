@@ -39,11 +39,20 @@
   <data name="Details" xml:space="preserve">
     <value>詳細</value>
   </data>
+  <data name="My Assigned Assets" xml:space="preserve">
+    <value>私の割当て資産</value>
+  </data>
   <data name="N/A" xml:space="preserve">
     <value>N/A</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>名前</value>
+  </data>
+  <data name="No assigned assets found." xml:space="preserve">
+    <value>アセットが割り当てられていません。</value>
+  </data>
+  <data name="No shared assets found." xml:space="preserve">
+    <value>共有アセットが見つかりません</value>
   </data>
   <data name="Revoked" xml:space="preserve">
     <value>失効</value>

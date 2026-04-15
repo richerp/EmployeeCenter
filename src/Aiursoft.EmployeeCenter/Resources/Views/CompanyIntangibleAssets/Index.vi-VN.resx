@@ -39,11 +39,20 @@
   <data name="Details" xml:space="preserve">
     <value>Chi tiết</value>
   </data>
+  <data name="My Assigned Assets" xml:space="preserve">
+    <value>Tài sản được chỉ định của tôi</value>
+  </data>
   <data name="N/A" xml:space="preserve">
     <value>Không áp dụng</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Tên</value>
+  </data>
+  <data name="No assigned assets found." xml:space="preserve">
+    <value>Không tìm thấy tài sản nào được phân công.</value>
+  </data>
+  <data name="No shared assets found." xml:space="preserve">
+    <value>Không tìm thấy tài sản dùng chung.</value>
   </data>
   <data name="Revoked" xml:space="preserve">
     <value>Đã thu hồi</value>

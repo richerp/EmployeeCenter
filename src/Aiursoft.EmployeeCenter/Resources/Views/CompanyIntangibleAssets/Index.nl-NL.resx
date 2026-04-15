@@ -39,11 +39,20 @@
   <data name="Details" xml:space="preserve">
     <value>Details</value>
   </data>
+  <data name="My Assigned Assets" xml:space="preserve">
+    <value>Mijn toegewezen activa</value>
+  </data>
   <data name="N/A" xml:space="preserve">
     <value>N.v.t.</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Naam</value>
+  </data>
+  <data name="No assigned assets found." xml:space="preserve">
+    <value>Geen toegewezen activa gevonden.</value>
+  </data>
+  <data name="No shared assets found." xml:space="preserve">
+    <value>Geen gedeelde activa gevonden.</value>
   </data>
   <data name="Revoked" xml:space="preserve">
     <value>Ingetrokken</value>

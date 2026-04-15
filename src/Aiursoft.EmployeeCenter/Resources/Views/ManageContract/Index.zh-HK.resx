@@ -63,6 +63,9 @@
   <data name="Edit" xml:space="preserve">
     <value>編輯</value>
   </data>
+  <data name="Finance" xml:space="preserve">
+    <value>財務</value>
+  </data>
   <data name="Invalid" xml:space="preserve">
     <value>無效</value>
   </data>

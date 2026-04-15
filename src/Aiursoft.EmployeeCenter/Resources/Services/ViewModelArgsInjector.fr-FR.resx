@@ -165,6 +165,12 @@
   <data name="Confirm Delete" xml:space="preserve">
     <value>Confirmer la suppression</value>
   </data>
+  <data name="Contract Finance Details" xml:space="preserve">
+    <value>Détails financiers du contrat</value>
+  </data>
+  <data name="Contract Finance Statistics" xml:space="preserve">
+    <value>Statistiques financières des contrats</value>
+  </data>
   <data name="Contracts" xml:space="preserve">
     <value>Contrats</value>
   </data>

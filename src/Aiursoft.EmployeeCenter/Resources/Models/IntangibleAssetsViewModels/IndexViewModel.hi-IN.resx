@@ -21,5 +21,8 @@
       <data name="Assets" xml:space="preserve">
     <value>संपत्ति</value>
   </data>
+  <data name="My Assets" xml:space="preserve">
+    <value>मेरी संपत्ति</value>
+  </data>
 
 </root>

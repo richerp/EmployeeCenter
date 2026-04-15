@@ -162,6 +162,12 @@
   <data name="Confirm Delete" xml:space="preserve">
     <value>Bevestig verwijderen</value>
   </data>
+  <data name="Contract Finance Details" xml:space="preserve">
+    <value>Contractfinancieringsgegevens</value>
+  </data>
+  <data name="Contract Finance Statistics" xml:space="preserve">
+    <value>Statistieken contractfinanciering</value>
+  </data>
   <data name="Contracts" xml:space="preserve">
     <value>Overeenkomsten</value>
   </data>

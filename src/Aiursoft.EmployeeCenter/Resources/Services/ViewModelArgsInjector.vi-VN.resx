@@ -165,6 +165,12 @@
   <data name="Confirm Delete" xml:space="preserve">
     <value>Xác nhận xóa</value>
   </data>
+  <data name="Contract Finance Details" xml:space="preserve">
+    <value>Chi tiết Tài chính Hợp đồng</value>
+  </data>
+  <data name="Contract Finance Statistics" xml:space="preserve">
+    <value>Thống kê Tài chính Hợp đồng</value>
+  </data>
   <data name="Contracts" xml:space="preserve">
     <value>Hợp đồng</value>
   </data>

@@ -39,11 +39,20 @@
   <data name="Details" xml:space="preserve">
     <value>Λεπτομέρειες</value>
   </data>
+  <data name="My Assigned Assets" xml:space="preserve">
+    <value>Τα Ανατεθειμένα Στοιχεία Μου</value>
+  </data>
   <data name="N/A" xml:space="preserve">
     <value>Δ/Α</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Όνομα</value>
+  </data>
+  <data name="No assigned assets found." xml:space="preserve">
+    <value>Δεν βρέθηκαν ανατεθειμένα περιουσιακά στοιχεία.</value>
+  </data>
+  <data name="No shared assets found." xml:space="preserve">
+    <value>Δεν βρέθηκαν κοινόχρηστα περιουσιακά στοιχεία.</value>
   </data>
   <data name="Revoked" xml:space="preserve">
     <value>Ανακλήθηκε</value>

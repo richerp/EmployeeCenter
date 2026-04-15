@@ -33,6 +33,9 @@
   <data name="Delete Collection Record" xml:space="preserve">
     <value>모집 기록 삭제</value>
   </data>
+  <data name="e.g. First phase payment" xml:space="preserve">
+    <value>예: 1 단계 지급</value>
+  </data>
   <data name="Edit collection record" xml:space="preserve">
     <value>집합 기록 편집</value>
   </data>

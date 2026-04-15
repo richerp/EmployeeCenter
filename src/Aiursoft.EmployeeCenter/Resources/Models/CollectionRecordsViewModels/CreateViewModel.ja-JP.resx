@@ -39,6 +39,9 @@
   <data name="Receipt File" xml:space="preserve">
     <value>領収書ファイル</value>
   </data>
+  <data name="Remark" xml:space="preserve">
+    <value>備考</value>
+  </data>
   <data name="Status" xml:space="preserve">
     <value>ステータス</value>
   </data>

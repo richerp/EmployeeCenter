@@ -39,11 +39,20 @@
   <data name="Details" xml:space="preserve">
     <value>詳細</value>
   </data>
+  <data name="My Assigned Assets" xml:space="preserve">
+    <value>我的指派資產</value>
+  </data>
   <data name="N/A" xml:space="preserve">
     <value>N/A</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>名稱</value>
+  </data>
+  <data name="No assigned assets found." xml:space="preserve">
+    <value>未找到已分配的資產</value>
+  </data>
+  <data name="No shared assets found." xml:space="preserve">
+    <value>未找到共享資產</value>
   </data>
   <data name="Revoked" xml:space="preserve">
     <value>已撤銷</value>

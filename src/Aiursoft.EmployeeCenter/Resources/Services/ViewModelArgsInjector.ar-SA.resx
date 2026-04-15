@@ -162,6 +162,12 @@
   <data name="Confirm Delete" xml:space="preserve">
     <value>تأكيد الحذف</value>
   </data>
+  <data name="Contract Finance Details" xml:space="preserve">
+    <value>تفاصيل مالية العقد</value>
+  </data>
+  <data name="Contract Finance Statistics" xml:space="preserve">
+    <value>إحصائيات مالية العقود</value>
+  </data>
   <data name="Contracts" xml:space="preserve">
     <value>العقود</value>
   </data>
