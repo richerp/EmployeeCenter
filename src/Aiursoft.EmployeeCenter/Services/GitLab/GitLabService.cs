@@ -2,7 +2,6 @@ using Aiursoft.Canon;
 using Aiursoft.EmployeeCenter.Configuration;
 using Aiursoft.EmployeeCenter.Models.ProjectsViewModels;
 using Aiursoft.Scanner.Abstractions;
-using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 
 namespace Aiursoft.EmployeeCenter.Services.GitLab;
