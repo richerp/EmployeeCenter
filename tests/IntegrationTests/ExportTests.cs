@@ -115,7 +115,8 @@ public class ExportTests : TestBase
                 EmailPropertyName = "email",
                 UserIdentityPropertyName = "sub"
             },
-            OCR = new OcrSettings { Enabled = false }
+            OCR = new OcrSettings { Enabled = false },
+            Agent = new AgentSettings { Endpoint = "http://localhost:8000/ask" }
         });
         
         var exportService = new ExportService(db, options, storageService, GetService<ILogger<ExportService>>());

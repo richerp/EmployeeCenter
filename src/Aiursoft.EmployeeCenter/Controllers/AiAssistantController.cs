@@ -4,7 +4,6 @@ using Aiursoft.UiStack.Navigation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
-using System.Net.Http.Json;
 
 using System.Text.Json.Serialization;
 
@@ -31,20 +30,28 @@ public class AiAssistantController(
     [HttpPost]
     public async Task<IActionResult> Ask([FromBody] AskRequest request)
     {
-        var client = httpClientFactory.CreateClient();
-        var response = await client.PostAsJsonAsync(appSettings.Value.Agent.Endpoint, new
+        try
         {
-            system_prompt = "You are an AI assistant for EmployeeCenter. Answer questions based on the provided context. If you don't know, say you don't know.",
-            question = request.Question
-        });
+            var client = httpClientFactory.CreateClient();
+            var response = await client.PostAsJsonAsync(appSettings.Value.Agent.Endpoint, new
+            {
+                system_prompt =
+                    "You are an AI assistant for EmployeeCenter. Answer questions based on the provided context. If you don't know, say you don't know.",
+                question = request.Question
+            });
 
-        if (!response.IsSuccessStatusCode)
-        {
-            return BadRequest(new { error = "Agent is not responding." });
+            if (!response.IsSuccessStatusCode)
+            {
+                return BadRequest(new { error = "Agent is not responding." });
+            }
+
+            var result = await response.Content.ReadFromJsonAsync<AgentResponse>();
+            return Json(new { answer = result?.Answer ?? "No answer received." });
         }
-
-        var result = await response.Content.ReadFromJsonAsync<AgentResponse>();
-        return Json(new { answer = result?.Answer ?? "No answer received." });
+        catch (Exception ex)
+        {
+            return BadRequest(new { error = $"Agent failed to respond: {ex.Message}" });
+        }
     }
 }
 

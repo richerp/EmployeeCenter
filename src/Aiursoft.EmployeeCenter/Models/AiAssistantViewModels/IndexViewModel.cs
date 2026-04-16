@@ -1,5 +1,7 @@
+using Aiursoft.UiStack.Layout;
+
 namespace Aiursoft.EmployeeCenter.Models.AiAssistantViewModels;
 
-public class IndexViewModel
+public class IndexViewModel : UiStackLayoutViewModel
 {
 }
