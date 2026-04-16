@@ -21,12 +21,23 @@ public class ExportService(
         {
             logger.LogInformation("Starting export task to {ExportRoot}...", _exportRoot);
             
-            // Re-create export directory
+            // Clear export directory content instead of deleting the directory itself
+            // because the directory itself might be a mount point.
             if (Directory.Exists(_exportRoot))
             {
-                Directory.Delete(_exportRoot, true);
+                foreach (var directory in Directory.GetDirectories(_exportRoot))
+                {
+                    Directory.Delete(directory, true);
+                }
+                foreach (var file in Directory.GetFiles(_exportRoot))
+                {
+                    File.Delete(file);
+                }
             }
-            Directory.CreateDirectory(_exportRoot);
+            else
+            {
+                Directory.CreateDirectory(_exportRoot);
+            }
 
             await ExportBlueprints();
             await ExportContracts();
