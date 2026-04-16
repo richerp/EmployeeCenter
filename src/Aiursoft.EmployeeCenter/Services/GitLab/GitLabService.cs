@@ -28,6 +28,11 @@ public class GitLabService : IScopedDependency
 
     public async Task<List<GitLabProject>> GetAllProjectsAsync()
     {
+        if (string.IsNullOrWhiteSpace(_gitLabSettings.OrganizationUrl))
+        {
+            return new List<GitLabProject>();
+        }
+
         // Parse organization URL to get the GitLab base URL and organization name
         var orgUrl = _gitLabSettings.OrganizationUrl.TrimEnd('/');
         var segments = orgUrl.Split('/');
