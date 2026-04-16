@@ -42,6 +42,9 @@
   <data name="How to create an onboarding task?" xml:space="preserve">
     <value>¿Cómo crear una tarea de incorporación?</value>
   </data>
+  <data name="https://" xml:space="preserve">
+    <value>https://</value>
+  </data>
   <data name="Markdown supported..." xml:space="preserve">
     <value>Soporte para Markdown...</value>
   </data>

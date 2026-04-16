@@ -42,6 +42,12 @@
   <data name="DNS Providers" xml:space="preserve">
     <value>DNS 服務提供者</value>
   </data>
+  <data name="e.g. Cloudflare" xml:space="preserve">
+    <value>例如 Cloudflare</value>
+  </data>
+  <data name="e.g. Global CDN &amp; DNS" xml:space="preserve">
+    <value>例如：全球 CDN &amp; DNS</value>
+  </data>
   <data name="Existing DNS Providers" xml:space="preserve">
     <value>現有的 DNS 提供商</value>
   </data>

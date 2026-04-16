@@ -39,8 +39,17 @@
   <data name="Insert Blank" xml:space="preserve">
     <value>Chèn khoảng trống</value>
   </data>
+  <data name="Option" xml:space="preserve">
+    <value>Tùy chọn</value>
+  </data>
   <data name="Options" xml:space="preserve">
     <value>Các tùy chọn</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="Security, Health, etc. (comma separated)" xml:space="preserve">
+    <value>Bảo mật, Sức khỏe, v.v. (phân cách bằng dấu phẩy)</value>
   </data>
   <data name="Tags" xml:space="preserve">
     <value>Thẻ</value>

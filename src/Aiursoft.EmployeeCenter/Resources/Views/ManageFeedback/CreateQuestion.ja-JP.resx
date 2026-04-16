@@ -39,8 +39,17 @@
   <data name="Insert Blank" xml:space="preserve">
     <value>ブランクを挿入</value>
   </data>
+  <data name="Option" xml:space="preserve">
+    <value>オプション</value>
+  </data>
   <data name="Options" xml:space="preserve">
     <value>オプション</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="Security, Health, etc. (comma separated)" xml:space="preserve">
+    <value>セキュリティ、ヘルスケアなど（カンマ区切り）</value>
   </data>
   <data name="Tags" xml:space="preserve">
     <value>タグ</value>

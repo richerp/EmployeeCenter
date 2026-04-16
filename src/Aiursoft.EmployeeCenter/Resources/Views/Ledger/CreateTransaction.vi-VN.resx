@@ -33,6 +33,12 @@
   <data name="Destination Account" xml:space="preserve">
     <value>Tài khoản đích</value>
   </data>
+  <data name="Destination Account (To)" xml:space="preserve">
+    <value>Tài khoản nhận (Nhận)</value>
+  </data>
+  <data name="e.g. Pay Sleek for Professional Fee" xml:space="preserve">
+    <value>ví dụ: Thanh toán Sleek cho phí chuyên nghiệp</value>
+  </data>
   <data name="Exchange Rate" xml:space="preserve">
     <value>Tỷ giá hối đoái</value>
   </data>
@@ -59,6 +65,9 @@
   </data>
   <data name="Source Account" xml:space="preserve">
     <value>Tài khoản nguồn</value>
+  </data>
+  <data name="Source Account (From)" xml:space="preserve">
+    <value>Tài khoản nguồn (Từ)</value>
   </data>
   <data name="Transaction Time" xml:space="preserve">
     <value>Thời gian giao dịch</value>

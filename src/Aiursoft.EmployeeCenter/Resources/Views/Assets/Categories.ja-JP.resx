@@ -48,6 +48,12 @@
   <data name="Delete" xml:space="preserve">
     <value>削除</value>
   </data>
+  <data name="e.g. LAP" xml:space="preserve">
+    <value>例：LAP</value>
+  </data>
+  <data name="e.g. Laptop" xml:space="preserve">
+    <value>例：ラップトップ</value>
+  </data>
   <data name="Existing Categories" xml:space="preserve">
     <value>既存のカテゴリ</value>
   </data>

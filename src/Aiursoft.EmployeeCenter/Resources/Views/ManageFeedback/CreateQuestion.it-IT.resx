@@ -39,8 +39,17 @@
   <data name="Insert Blank" xml:space="preserve">
     <value>Inserisci vuoto</value>
   </data>
+  <data name="Option" xml:space="preserve">
+    <value>Opzione</value>
+  </data>
   <data name="Options" xml:space="preserve">
     <value>Opzioni</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Rimuovi</value>
+  </data>
+  <data name="Security, Health, etc. (comma separated)" xml:space="preserve">
+    <value>Sicurezza, salute, ecc. (separati da virgola)</value>
   </data>
   <data name="Tags" xml:space="preserve">
     <value>Etichette</value>

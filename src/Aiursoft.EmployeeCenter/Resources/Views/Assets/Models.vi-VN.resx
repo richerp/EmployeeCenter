@@ -36,6 +36,12 @@
   <data name="Category" xml:space="preserve">
     <value>Danh mục</value>
   </data>
+  <data name="e.g. Apple" xml:space="preserve">
+    <value>ví dụ: Apple</value>
+  </data>
+  <data name="e.g. MacBook Pro M3" xml:space="preserve">
+    <value>ví dụ: MacBook Pro M3</value>
+  </data>
   <data name="Existing Models" xml:space="preserve">
     <value>Mô hình hiện có</value>
   </data>

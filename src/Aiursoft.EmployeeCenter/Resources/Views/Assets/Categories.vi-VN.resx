@@ -48,6 +48,12 @@
   <data name="Delete" xml:space="preserve">
     <value>Xóa</value>
   </data>
+  <data name="e.g. LAP" xml:space="preserve">
+    <value>ví dụ: LAP</value>
+  </data>
+  <data name="e.g. Laptop" xml:space="preserve">
+    <value>ví dụ: Laptop</value>
+  </data>
   <data name="Existing Categories" xml:space="preserve">
     <value>Danh mục hiện có</value>
   </data>

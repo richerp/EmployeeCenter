@@ -69,6 +69,12 @@
   <data name="Director loans (money you lent to the company), Unpaid invoices, Credit card debt." xml:space="preserve">
     <value>เงินกู้จากผู้จัดการ (เงินที่คุณให้กู้บริษัท), ใบแจ้งหนี้ที่ยังไม่ได้จ่าย, หนี้บัตรเครดิต</value>
   </data>
+  <data name="e.g. HKD, CNY" xml:space="preserve">
+    <value>เช่น HKD, CNY</value>
+  </data>
+  <data name="e.g. Statrys Checking" xml:space="preserve">
+    <value>เช่น Statrys Checking</value>
+  </data>
   <data name="Equity" xml:space="preserve">
     <value>ส่วนของเจ้าของ</value>
   </data>

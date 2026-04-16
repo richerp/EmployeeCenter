@@ -30,6 +30,12 @@
   <data name="Domain should be the primary entry point for the service." xml:space="preserve">
     <value>Домен должен быть основной точкой входа для сервиса.</value>
   </data>
+  <data name="e.g. example.com" xml:space="preserve">
+    <value>напр. example.com</value>
+  </data>
+  <data name="e.g. HTTPS, TCP" xml:space="preserve">
+    <value>например, HTTPS, TCP</value>
+  </data>
   <data name="Edit Service" xml:space="preserve">
     <value>Редактировать службу</value>
   </data>

@@ -48,6 +48,12 @@
   <data name="Delete" xml:space="preserve">
     <value>Удалить</value>
   </data>
+  <data name="e.g. LAP" xml:space="preserve">
+    <value>напр. LAP</value>
+  </data>
+  <data name="e.g. Laptop" xml:space="preserve">
+    <value>например, ноутбук</value>
+  </data>
   <data name="Existing Categories" xml:space="preserve">
     <value>Существующие категории</value>
   </data>

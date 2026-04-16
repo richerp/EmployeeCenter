@@ -33,6 +33,12 @@
   <data name="Destination Account" xml:space="preserve">
     <value>宛先口座</value>
   </data>
+  <data name="Destination Account (To)" xml:space="preserve">
+    <value>宛先口座（宛先）</value>
+  </data>
+  <data name="e.g. Pay Sleek for Professional Fee" xml:space="preserve">
+    <value>例：Sleek の専門手数料を支払う</value>
+  </data>
   <data name="Exchange Rate" xml:space="preserve">
     <value>為替レート</value>
   </data>
@@ -59,6 +65,9 @@
   </data>
   <data name="Source Account" xml:space="preserve">
     <value>送金元口座</value>
+  </data>
+  <data name="Source Account (From)" xml:space="preserve">
+    <value>出金元口座</value>
   </data>
   <data name="Transaction Time" xml:space="preserve">
     <value>取引時間</value>

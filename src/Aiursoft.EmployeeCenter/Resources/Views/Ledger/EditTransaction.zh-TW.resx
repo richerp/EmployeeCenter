@@ -42,6 +42,12 @@
   <data name="Destination Account" xml:space="preserve">
     <value>目的地帳戶</value>
   </data>
+  <data name="Destination Account (To)" xml:space="preserve">
+    <value>目標帳戶（入）</value>
+  </data>
+  <data name="e.g. Pay Sleek for Professional Fee" xml:space="preserve">
+    <value>例如：支付 Sleek 專業服務費</value>
+  </data>
   <data name="Edit Transaction" xml:space="preserve">
     <value>編輯交易</value>
   </data>
@@ -65,6 +71,9 @@
   </data>
   <data name="Source Account" xml:space="preserve">
     <value>來源帳戶</value>
+  </data>
+  <data name="Source Account (From)" xml:space="preserve">
+    <value>來源帳戶（從）</value>
   </data>
   <data name="Transaction Time" xml:space="preserve">
     <value>交易時間</value>

@@ -33,6 +33,12 @@
   <data name="Create New Password" xml:space="preserve">
     <value>Créer un nouveau mot de passe</value>
   </data>
+  <data name="e.g. GitLab Admin Account" xml:space="preserve">
+    <value>par ex. Compte administrateur GitLab</value>
+  </data>
+  <data name="e.g. root" xml:space="preserve">
+    <value>p. ex. root</value>
+  </data>
   <data name="Note" xml:space="preserve">
     <value>Note</value>
   </data>

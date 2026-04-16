@@ -42,6 +42,12 @@
   <data name="DNS Providers" xml:space="preserve">
     <value>Провайдеры DNS</value>
   </data>
+  <data name="e.g. Cloudflare" xml:space="preserve">
+    <value>напр. Cloudflare</value>
+  </data>
+  <data name="e.g. Global CDN &amp; DNS" xml:space="preserve">
+    <value>например, глобальная CDN и DNS</value>
+  </data>
   <data name="Existing DNS Providers" xml:space="preserve">
     <value>Существующие провайдеры DNS</value>
   </data>

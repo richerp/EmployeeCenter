@@ -30,6 +30,9 @@
   <data name="Contact Info" xml:space="preserve">
     <value>Thông tin liên hệ</value>
   </data>
+  <data name="e.g. JD.com" xml:space="preserve">
+    <value>ví dụ: JD.com</value>
+  </data>
   <data name="Existing Vendors" xml:space="preserve">
     <value>Nhà cung cấp hiện có</value>
   </data>
