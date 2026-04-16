@@ -17,38 +17,31 @@ public class ExportService(
 
     public async Task ExportAsync()
     {
-        try
-        {
-            logger.LogInformation("Starting export task to {ExportRoot}...", _exportRoot);
-            
-            // Clear export directory content instead of deleting the directory itself
-            // because the directory itself might be a mount point.
-            if (Directory.Exists(_exportRoot))
-            {
-                foreach (var directory in Directory.GetDirectories(_exportRoot))
-                {
-                    Directory.Delete(directory, true);
-                }
-                foreach (var file in Directory.GetFiles(_exportRoot))
-                {
-                    File.Delete(file);
-                }
-            }
-            else
-            {
-                Directory.CreateDirectory(_exportRoot);
-            }
+        logger.LogInformation("Starting export task to {ExportRoot}...", _exportRoot);
 
-            await ExportBlueprints();
-            await ExportContracts();
-            await ExportWeeklyReports();
-            
-            logger.LogInformation("Export task completed successfully.");
-        }
-        catch (Exception ex)
+        // Clear export directory content instead of deleting the directory itself
+        // because the directory itself might be a mount point.
+        if (Directory.Exists(_exportRoot))
         {
-            logger.LogError(ex, "Failed to complete export task.");
+            foreach (var directory in Directory.GetDirectories(_exportRoot))
+            {
+                Directory.Delete(directory, true);
+            }
+            foreach (var file in Directory.GetFiles(_exportRoot))
+            {
+                File.Delete(file);
+            }
         }
+        else
+        {
+            Directory.CreateDirectory(_exportRoot);
+        }
+
+        await ExportBlueprints();
+        await ExportContracts();
+        await ExportWeeklyReports();
+
+        logger.LogInformation("Export task completed successfully.");
     }
 
     private async Task ExportWeeklyReports()
