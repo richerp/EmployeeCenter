@@ -38,7 +38,7 @@
                 <form asp-action="CreateVendor">
                     <div class="mb-3">
                         <label class="form-label">@Localizer["Vendor Name"]</label>
-                        <input asp-for="NewName" class="form-control" required placeholder="e.g. JD.com" />
+                        <input asp-for="NewName" class="form-control" required placeholder="@Localizer["e.g. JD.com"]" />
                     </div>
                     <div class="mb-3">
                         <label class="form-label">@Localizer["Contact Info"]</label>

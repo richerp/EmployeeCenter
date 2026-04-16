@@ -1,6 +1,6 @@
 @model Aiursoft.EmployeeCenter.Models.ReimbursementViewModels.IndexViewModel
 @{
-    ViewData["Title"] = "My Reimbursements";
+    ViewData["Title"] = Localizer["My Reimbursements"];
 }
 
 <div class="container-xl">
@@ -8,15 +8,15 @@
         <div class="row align-items-center">
             <div class="col">
                 <h2 class="page-title">
-                    My Reimbursements
+                    @Localizer["My Reimbursements"]
                 </h2>
-                <div class="text-muted mt-1">Manage and track your expense reimbursement requests.</div>
+                <div class="text-muted mt-1">@Localizer["Manage and track your expense reimbursement requests."]</div>
             </div>
             <div class="col-auto ms-auto d-print-none">
                 <div class="btn-list">
                     <a asp-action="Create" class="btn btn-primary d-none d-sm-inline-block">
                         <i class="ti ti-plus me-1"></i>
-                        New Request
+                        @Localizer["New Request"]
                     </a>
                 </div>
             </div>
@@ -31,11 +31,11 @@
                 <table class="table table-vcenter card-table table-striped">
                     <thead>
                         <tr>
-                            <th>Purpose</th>
-                            <th>Amount</th>
-                            <th>Category</th>
-                            <th>Expense Time</th>
-                            <th>Status</th>
+                            <th>@Localizer["Purpose"]</th>
+                            <th>@Localizer["Amount"]</th>
+                            <th>@Localizer["Category"]</th>
+                            <th>@Localizer["Expense Time"]</th>
+                            <th>@Localizer["Status"]</th>
                             <th class="w-1"></th>
                         </tr>
                     </thead>
@@ -43,7 +43,7 @@
                         @if (Model.MyReimbursements.Count == 0)
                         {
                             <tr>
-                                <td colspan="6" class="text-center text-muted">No reimbursement records found.</td>
+                                <td colspan="6" class="text-center text-muted">@Localizer["No reimbursement records found."]</td>
                             </tr>
                         }
                         @foreach (var item in Model.MyReimbursements)
@@ -63,43 +63,43 @@
                                     @switch (item.Status)
                                     {
                                         case ReimbursementStatus.Draft:
-                                            <span class="badge bg-secondary">Draft</span>
+                                            <span class="badge bg-secondary">@Localizer["Draft"]</span>
                                             break;
                                         case ReimbursementStatus.Applying:
-                                            <span class="badge bg-blue">Applying</span>
+                                            <span class="badge bg-blue">@Localizer["Applying"]</span>
                                             break;
                                         case ReimbursementStatus.Revoked:
-                                            <span class="badge bg-warning">Revoked</span>
+                                            <span class="badge bg-warning">@Localizer["Revoked"]</span>
                                             break;
                                         case ReimbursementStatus.Acknowledged:
-                                            <span class="badge bg-info">Acknowledged</span>
+                                            <span class="badge bg-info">@Localizer["Acknowledged"]</span>
                                             break;
                                         case ReimbursementStatus.Reimbursed:
-                                            <span class="badge bg-success">Reimbursed</span>
+                                            <span class="badge bg-success">@Localizer["Reimbursed"]</span>
                                             break;
                                         case ReimbursementStatus.Rejected:
-                                            <span class="badge bg-danger">Rejected</span>
+                                            <span class="badge bg-danger">@Localizer["Rejected"]</span>
                                             break;
                                     }
                                 </td>
                                 <td>
                                     <div class="btn-list flex-nowrap">
                                         <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-white btn-sm">
-                                            Details
+                                            @Localizer["Details"]
                                         </a>
                                         @if (item.Status == ReimbursementStatus.Draft)
                                         {
                                             <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-white btn-sm">
-                                                Edit
+                                                @Localizer["Edit"]
                                             </a>
-                                            <form asp-action="Delete" asp-route-id="@item.Id" method="post" onsubmit="return confirm('Are you sure you want to delete this draft?');">
-                                                <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                            <form asp-action="Delete" asp-route-id="@item.Id" method="post" onsubmit="return confirm(getLocalizedText('delete-draft-confirm', 'Are you sure you want to delete this draft?'));">
+                                                <button type="submit" class="btn btn-danger btn-sm">@Localizer["Delete"]</button>
                                             </form>
                                         }
                                         @if (item.Status == ReimbursementStatus.Applying)
                                         {
-                                            <form asp-action="Revoke" asp-route-id="@item.Id" method="post" onsubmit="return confirm('Are you sure you want to revoke this application?');">
-                                                <button type="submit" class="btn btn-warning btn-sm">Revoke</button>
+                                            <form asp-action="Revoke" asp-route-id="@item.Id" method="post" onsubmit="return confirm(getLocalizedText('revoke-application-confirm', 'Are you sure you want to revoke this application?'));">
+                                                <button type="submit" class="btn btn-warning btn-sm">@Localizer["Revoke"]</button>
                                             </form>
                                         }
                                     </div>
@@ -112,3 +112,13 @@
         </div>
     </div>
 </div>
+
+<div id="loc-data" hidden>
+    <span data-key="delete-draft-confirm">@Localizer["Are you sure you want to delete this draft?"]</span>
+    <span data-key="revoke-application-confirm">@Localizer["Are you sure you want to revoke this application?"]</span>
+</div>
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section scripts {
+    <partial name="_LocalizationHelper" />
+}

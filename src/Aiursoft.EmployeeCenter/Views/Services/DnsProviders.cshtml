@@ -24,7 +24,7 @@
                                 <td>@p.Name</td>
                                 <td>@p.Description</td>
                                 <td class="text-end">
-                                    <form asp-action="DeleteDnsProvider" asp-route-id="@p.Id" method="post" onsubmit="return confirm('@Localizer["Are you sure?"]');">
+                                    <form asp-action="DeleteDnsProvider" asp-route-id="@p.Id" method="post" onsubmit="return confirm(getLocalizedText('confirm-are-you-sure', '@Localizer["Are you sure?"]'));">
                                         <button type="submit" class="btn btn-sm btn-outline-danger">
                                             <i class="align-middle" data-lucide="trash-2"></i> @Localizer["Delete"]
                                         </button>
@@ -46,12 +46,12 @@
                 <form asp-action="CreateDnsProvider">
                     <div class="mb-3">
                         <label asp-for="NewName" class="form-label"></label>
-                        <input asp-for="NewName" class="form-control" required placeholder="e.g. Cloudflare" />
+                        <input asp-for="NewName" class="form-control" required placeholder="@Localizer["e.g. Cloudflare"]" />
                         <span asp-validation-for="NewName" class="text-danger"></span>
                     </div>
                     <div class="mb-3">
                         <label asp-for="NewDescription" class="form-label"></label>
-                        <input asp-for="NewDescription" class="form-control" placeholder="e.g. Global CDN & DNS" />
+                        <input asp-for="NewDescription" class="form-control" placeholder="@Localizer["e.g. Global CDN & DNS"]" />
                         <span asp-validation-for="NewDescription" class="text-danger"></span>
                     </div>
                     <button type="submit" class="btn btn-primary w-100">@Localizer["Add Provider"]</button>
@@ -64,3 +64,11 @@
 <div class="mt-3">
     <a asp-action="Index" class="btn btn-light">@Localizer["Back to Services"]</a>
 </div>
+
+<div id="loc-data" hidden>
+    <span data-key="confirm-are-you-sure">@Localizer["Are you sure?"]</span>
+</div>
+
+@section scripts {
+    <partial name="_LocalizationHelper" />
+}

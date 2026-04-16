@@ -28,7 +28,7 @@
 
                     <div class="mb-3">
                         <label asp-for="Tags" class="form-label">@Localizer["Tags"]</label>
-                        <input asp-for="Tags" class="form-control" placeholder="Security, Health, etc. (comma separated)" />
+                        <input asp-for="Tags" class="form-control" placeholder="@Localizer["Security, Health, etc. (comma separated)"]" />
                         <span asp-validation-for="Tags" class="text-danger"></span>
                     </div>
 
@@ -60,114 +60,122 @@
     </div>
 </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const typeSelect = document.getElementById('question-type');
-        const metaInput = document.getElementById('meta-input');
-        const multipleChoiceSection = document.getElementById('multiple-choice-section');
-        const fillInBlankSection = document.getElementById('fill-in-blank-section');
-        const optionsContainer = document.getElementById('options-container');
-        const addOptionBtn = document.getElementById('add-option-btn');
-        const addBlankBtn = document.getElementById('add-blank-btn');
-        const titleInput = document.getElementById('question-title');
+<div id="loc-data" class="d-none">
+    <span data-key="option">@Localizer["Option"]</span>
+    <span data-key="remove">@Localizer["Remove"]</span>
+</div>
 
-        let options = [];
+@section scripts {
+    <partial name="_LocalizationHelper" />
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const typeSelect = document.getElementById('question-type');
+            const metaInput = document.getElementById('meta-input');
+            const multipleChoiceSection = document.getElementById('multiple-choice-section');
+            const fillInBlankSection = document.getElementById('fill-in-blank-section');
+            const optionsContainer = document.getElementById('options-container');
+            const addOptionBtn = document.getElementById('add-option-btn');
+            const addBlankBtn = document.getElementById('add-blank-btn');
+            const titleInput = document.getElementById('question-title');
 
-        // Try to parse existing meta
-        try {
-            if (metaInput.value) {
-                const parsed = JSON.parse(metaInput.value);
-                if (parsed.Options && Array.isArray(parsed.Options)) {
-                    options = parsed.Options;
+            let options = [];
+
+            // Try to parse existing meta
+            try {
+                if (metaInput.value) {
+                    const parsed = JSON.parse(metaInput.value);
+                    if (parsed.Options && Array.isArray(parsed.Options)) {
+                        options = parsed.Options;
+                    }
+                }
+            } catch (e) {
+                console.error("Failed to parse meta", e);
+            }
+
+            if (options.length === 0) {
+                options = ['', '']; // Default 2 options
+            }
+
+            function renderOptions() {
+                optionsContainer.innerHTML = '';
+                options.forEach((opt, index) => {
+                    const row = document.createElement('div');
+                    row.className = 'input-group mb-2';
+                    
+                    const input = document.createElement('input');
+                    input.type = 'text';
+                    input.className = 'form-control';
+                    input.value = opt;
+                    input.placeholder = `${getLocalizedText('option', 'Option')} ${index + 1}`;
+                    input.oninput = (e) => {
+                        options[index] = e.target.value;
+                        updateMeta();
+                    };
+
+                    const removeBtn = document.createElement('button');
+                    removeBtn.type = 'button';
+                    removeBtn.className = 'btn btn-outline-danger';
+                    removeBtn.textContent = getLocalizedText('remove', 'Remove');
+                    removeBtn.onclick = () => {
+                        options.splice(index, 1);
+                        renderOptions();
+                        updateMeta();
+                    };
+
+                    row.appendChild(input);
+                    row.appendChild(removeBtn);
+                    optionsContainer.appendChild(row);
+                });
+                updateMeta();
+            }
+
+            function updateMeta() {
+                if (typeSelect.value === '0') { // MultipleChoice
+                    // Filter out empty options? Maybe not, let validation handle it or just send it.
+                    // Better to send what user sees.
+                    metaInput.value = JSON.stringify({ Options: options });
+                } else {
+                    metaInput.value = '';
                 }
             }
-        } catch (e) {
-            console.error("Failed to parse meta", e);
-        }
 
-        if (options.length === 0) {
-            options = ['', '']; // Default 2 options
-        }
-
-        function renderOptions() {
-            optionsContainer.innerHTML = '';
-            options.forEach((opt, index) => {
-                const row = document.createElement('div');
-                row.className = 'input-group mb-2';
-                
-                const input = document.createElement('input');
-                input.type = 'text';
-                input.className = 'form-control';
-                input.value = opt;
-                input.placeholder = `Option ${index + 1}`;
-                input.oninput = (e) => {
-                    options[index] = e.target.value;
-                    updateMeta();
-                };
-
-                const removeBtn = document.createElement('button');
-                removeBtn.type = 'button';
-                removeBtn.className = 'btn btn-outline-danger';
-                removeBtn.textContent = 'Remove';
-                removeBtn.onclick = () => {
-                    options.splice(index, 1);
-                    renderOptions();
-                    updateMeta();
-                };
-
-                row.appendChild(input);
-                row.appendChild(removeBtn);
-                optionsContainer.appendChild(row);
-            });
-            updateMeta();
-        }
-
-        function updateMeta() {
-            if (typeSelect.value === '0') { // MultipleChoice
-                // Filter out empty options? Maybe not, let validation handle it or just send it.
-                // Better to send what user sees.
-                metaInput.value = JSON.stringify({ Options: options });
-            } else {
-                metaInput.value = '';
+            function toggleSections() {
+                const val = typeSelect.value;
+                if (val === '0') { // MultipleChoice
+                    multipleChoiceSection.style.display = 'block';
+                    fillInBlankSection.style.display = 'none';
+                    updateMeta(); // Update meta when switching back to multiple choice
+                } else if (val === '1') { // FillInTheBlank
+                    multipleChoiceSection.style.display = 'none';
+                    fillInBlankSection.style.display = 'block';
+                    metaInput.value = '';
+                } else {
+                    multipleChoiceSection.style.display = 'none';
+                    fillInBlankSection.style.display = 'none';
+                    metaInput.value = '';
+                }
             }
-        }
 
-        function toggleSections() {
-            const val = typeSelect.value;
-            if (val === '0') { // MultipleChoice
-                multipleChoiceSection.style.display = 'block';
-                fillInBlankSection.style.display = 'none';
-                updateMeta(); // Update meta when switching back to multiple choice
-            } else if (val === '1') { // FillInTheBlank
-                multipleChoiceSection.style.display = 'none';
-                fillInBlankSection.style.display = 'block';
-                metaInput.value = '';
-            } else {
-                multipleChoiceSection.style.display = 'none';
-                fillInBlankSection.style.display = 'none';
-                metaInput.value = '';
-            }
-        }
+            addOptionBtn.onclick = () => {
+                options.push('');
+                renderOptions();
+            };
 
-        addOptionBtn.onclick = () => {
-            options.push('');
+            addBlankBtn.onclick = () => {
+                const cursorStart = titleInput.selectionStart;
+                const cursorEnd = titleInput.selectionEnd;
+                const text = titleInput.value;
+                const before = text.substring(0, cursorStart);
+                const after = text.substring(cursorEnd);
+                titleInput.value = before + '[____]' + after;
+                titleInput.focus();
+                titleInput.selectionStart = titleInput.selectionEnd = cursorStart + 6;
+            };
+
+            typeSelect.onchange = toggleSections;
+
             renderOptions();
-        };
-
-        addBlankBtn.onclick = () => {
-            const cursorStart = titleInput.selectionStart;
-            const cursorEnd = titleInput.selectionEnd;
-            const text = titleInput.value;
-            const before = text.substring(0, cursorStart);
-            const after = text.substring(cursorEnd);
-            titleInput.value = before + '[____]' + after;
-            titleInput.focus();
-            titleInput.selectionStart = titleInput.selectionEnd = cursorStart + 6;
-        };
-
-        typeSelect.onchange = toggleSections;
-
-        renderOptions();
-        toggleSections();
-    });
-</script>
+            toggleSections();
+        });
+    </script>
+}

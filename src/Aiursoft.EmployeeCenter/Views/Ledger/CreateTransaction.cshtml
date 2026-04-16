@@ -16,14 +16,14 @@
 
                 <div class="form-group">
                     <label asp-for="Description">@Localizer["Description"]</label>
-                    <input asp-for="Description" class="form-control" placeholder="e.g. Pay Sleek for Professional Fee" />
+                    <input asp-for="Description" class="form-control" placeholder="@Localizer["e.g. Pay Sleek for Professional Fee"]" />
                     <span asp-validation-for="Description" class="text-danger"></span>
                 </div>
 
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label asp-for="SourceAccountId">@Localizer["Source Account"] (From)</label>
+                            <label asp-for="SourceAccountId">@Localizer["Source Account (From)"]</label>
                             <select asp-for="SourceAccountId" class="form-control">
                                 <option value="">-- @Localizer["Select Account"] --</option>
                                 @foreach (var account in accounts)
@@ -36,7 +36,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label asp-for="DestinationAccountId">@Localizer["Destination Account"] (To)</label>
+                            <label asp-for="DestinationAccountId">@Localizer["Destination Account (To)"]</label>
                             <select asp-for="DestinationAccountId" class="form-control">
                                 <option value="">-- @Localizer["Select Account"] --</option>
                                 @foreach (var account in accounts)
@@ -108,6 +108,10 @@
     </div>
 </div>
 
+<div id="loc-data" class="d-none">
+    <span data-key="transfer-hint">@Localizer["You are transferring from {0} to {1}. The exchange rate should be: 1 {0} = [Exchange Rate] {1}.", "{0}", "{1}"]</span>
+</div>
+
 @* ReSharper disable once Razor.SectionNotResolved *@
 @section styles {
     <link rel="stylesheet" href="~/node_modules/dropify/dist/css/dropify.min.css" />
@@ -117,6 +121,7 @@
 @* ReSharper disable once Razor.SectionNotResolved *@
 @section scripts {
     <script src="~/node_modules/dropify/dist/js/dropify.min.js"></script>
+    <partial name="_LocalizationHelper" />
     <script>
         $(document).ready(function () {
             function updateExchangeRateHint() {
@@ -131,7 +136,9 @@
                     var destCurrency = destText.substring(destText.lastIndexOf(' - ') + 3, destText.lastIndexOf(')'));
                     
                     if (sourceCurrency !== destCurrency) {
-                        $('#hintText').text("You are transferring from " + sourceCurrency + " to " + destCurrency + ". The exchange rate should be: 1 " + sourceCurrency + " = [Exchange Rate] " + destCurrency + ".");
+                        var hint = getLocalizedText('transfer-hint', "You are transferring from {0} to {1}. The exchange rate should be: 1 {0} = [Exchange Rate] {1}.");
+                        hint = hint.replace(/\{0\}/g, sourceCurrency).replace(/\{1\}/g, destCurrency);
+                        $('#hintText').text(hint);
                         $('#exchangeRateHint').fadeIn();
                     } else {
                         $('#exchangeRateHint').fadeOut();

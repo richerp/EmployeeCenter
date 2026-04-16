@@ -196,7 +196,7 @@
                                         <label class="text-muted" data-utc-time="@share.CreationTime.ToString("o")"></label>
                                     </td>
                                     <td class="text-end">
-                                        <form asp-action="RemoveShare" asp-route-id="@share.Id" method="post" class="d-inline" onsubmit="return confirm('@Localizer["Are you sure you want to remove this share?"]')">
+                                        <form asp-action="RemoveShare" asp-route-id="@share.Id" method="post" class="d-inline" onsubmit="return confirm(getLocalizedText('confirm-remove-share', '@Localizer["Are you sure you want to remove this share?"]'))">
                                             @Html.AntiForgeryToken()
                                             <button type="submit" class="btn btn-sm btn-outline-danger">
                                                 <i class="align-middle" data-lucide="trash-2"></i> @Localizer["Remove"]
@@ -212,6 +212,10 @@
             </div>
         </div>
     </div>
+</div>
+
+<div id="loc-data" hidden>
+    <span data-key="confirm-remove-share">@Localizer["Are you sure you want to remove this share?"]</span>
 </div>
 
 @* Error Modal *@

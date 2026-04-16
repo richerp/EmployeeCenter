@@ -14,7 +14,7 @@
                     
                     <div class="mb-3">
                         <label asp-for="Domain" class="form-label"></label>
-                        <input asp-for="Domain" class="form-control" placeholder="e.g. example.com" />
+                        <input asp-for="Domain" class="form-control" placeholder="@Localizer["e.g. example.com"]" />
                         <span asp-validation-for="Domain" class="text-danger"></span>
                     </div>
 
@@ -64,7 +64,7 @@
                     <div class="row">
                         <div class="col-md-12 mb-3">
                             <label asp-for="Protocols" class="form-label"></label>
-                            <input asp-for="Protocols" class="form-control" placeholder="e.g. HTTPS, TCP" />
+                            <input asp-for="Protocols" class="form-control" placeholder="@Localizer["e.g. HTTPS, TCP"]" />
                             <span asp-validation-for="Protocols" class="text-danger"></span>
                         </div>
                     </div>

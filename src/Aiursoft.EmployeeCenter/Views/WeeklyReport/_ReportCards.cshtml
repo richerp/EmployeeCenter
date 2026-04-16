@@ -12,6 +12,19 @@
     var canManageAnyone = (await AuthorizationService.AuthorizeAsync(User, AppPermissionNames.CanManageAnyoneWeeklyReport)).Succeeded;
 }
 
+<div id="loc-data" hidden>
+    <span data-key="delete-report-confirm">@Localizer["Are you sure you want to delete this weekly report?"]</span>
+</div>
+
+<script>
+    if (typeof getLocalizedText === 'undefined') {
+        function getLocalizedText(key, defaultText) {
+            const el = document.querySelector(`#loc-data span[data-key="${key}"]`);
+            return el ? el.innerText : defaultText;
+        }
+    }
+</script>
+
 @foreach (var report in Model)
 {
     <div class="card mb-4 weekly-report-card" 
@@ -55,7 +68,7 @@
                         </a>
                     }
                     
-                    <form asp-action="Delete" asp-route-id="@report.Id" method="post" onsubmit="return confirm('@Localizer["Are you sure you want to delete this weekly report?"]');" class="d-inline">
+                    <form asp-action="Delete" asp-route-id="@report.Id" method="post" onsubmit="return confirm(getLocalizedText('delete-report-confirm', 'Are you sure you want to delete this weekly report?'));" class="d-inline">
                         <button type="submit" class="btn btn-sm btn-outline-danger">
                             <i class="align-middle me-1" data-lucide="trash-2"></i> @Localizer["Delete"]
                         </button>
