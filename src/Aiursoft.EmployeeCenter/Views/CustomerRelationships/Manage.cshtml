@@ -83,7 +83,7 @@
                                     <li><a class="dropdown-item" asp-action="Details" asp-route-id="@relationship.Id">@Localizer["Details"]</a></li>
                                     <li><a class="dropdown-item" asp-action="Edit" asp-route-id="@relationship.Id">@Localizer["Edit"]</a></li>
                                     <li>
-                                        <form asp-action="Delete" asp-route-id="@relationship.Id" method="post" onsubmit="return confirm('@Localizer["Are you sure you want to delete this customer relationship?"]');">
+                                        <form asp-action="Delete" asp-route-id="@relationship.Id" method="post" onsubmit="return confirm(getLocalizedText('delete-confirm', 'Are you sure you want to delete this customer relationship?'));">
                                             <button type="submit" class="dropdown-item text-danger">@Localizer["Delete"]</button>
                                         </form>
                                     </li>
@@ -97,3 +97,11 @@
         </div>
     }
 </div>
+
+<div id="loc-data" class="d-none">
+    <span data-key="delete-confirm">@Localizer["Are you sure you want to delete this customer relationship?"]</span>
+</div>
+
+@section scripts {
+    <partial name="_LocalizationHelper" />
+}

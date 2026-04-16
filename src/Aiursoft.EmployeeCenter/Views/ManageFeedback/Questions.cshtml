@@ -41,7 +41,7 @@
                                 <td>@q.CreationTime.ToLocalTime().ToString("g")</td>
                                 <td class="text-end">
                                     <a asp-action="EditQuestion" asp-route-id="@q.Id" class="btn btn-sm btn-outline-primary me-1">@Localizer["Edit"]</a>
-                                    <form asp-action="DeleteQuestion" asp-route-id="@q.Id" method="post" class="d-inline" onsubmit="return confirm('@Localizer["Are you sure?"]');">
+                                    <form asp-action="DeleteQuestion" asp-route-id="@q.Id" method="post" class="d-inline" onsubmit="return confirm(getLocalizedText('delete-confirm', 'Are you sure?'));">
                                         <button type="submit" class="btn btn-sm btn-outline-danger">@Localizer["Delete"]</button>
                                     </form>
                                 </td>
@@ -59,3 +59,11 @@
         </div>
     </div>
 </div>
+
+<div id="loc-data" class="d-none">
+    <span data-key="delete-confirm">@Localizer["Are you sure?"]</span>
+</div>
+
+@section scripts {
+    <partial name="_LocalizationHelper" />
+}

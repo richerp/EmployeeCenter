@@ -36,7 +36,7 @@
                 <form asp-action="CreateLocation">
                     <div class="mb-3">
                         <label class="form-label">@Localizer["Location Name"]</label>
-                        <input asp-for="NewName" class="form-control" required placeholder="e.g. SH Office - Room 101" />
+                        <input asp-for="NewName" class="form-control" required placeholder="@Localizer["e.g. SH Office - Room 101"]" />
                     </div>
                     <button type="submit" class="btn btn-primary w-100">@Localizer["Add Location"]</button>
                 </form>

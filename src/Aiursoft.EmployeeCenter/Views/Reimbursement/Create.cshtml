@@ -1,6 +1,6 @@
 @model Aiursoft.EmployeeCenter.Models.ReimbursementViewModels.CreateViewModel
 @{
-    ViewData["Title"] = "New Reimbursement Request";
+    ViewData["Title"] = Localizer["New Reimbursement Request"];
 }
 
 <div class="container-xl">
@@ -8,7 +8,7 @@
         <div class="row align-items-center">
             <div class="col">
                 <h2 class="page-title">
-                    New Reimbursement Request
+                    @Localizer["New Reimbursement Request"]
                 </h2>
             </div>
         </div>
@@ -31,12 +31,12 @@
                         <div class="col-md-6 mb-3">
                             <label asp-for="Category" class="form-label"></label>
                             <select asp-for="Category" class="form-select">
-                                <option value="">-- Select Category --</option>
-                                <option value="Transport">Transport (交通费)</option>
-                                <option value="Meals">Meals (餐饮费)</option>
-                                <option value="Procurement">Procurement (采购费)</option>
-                                <option value="Travel">Travel (差旅费)</option>
-                                <option value="Others">Others (其他)</option>
+                                <option value="">@Localizer["-- Select Category --"]</option>
+                                <option value="Transport">@Localizer["Transport (交通费)"]</option>
+                                <option value="Meals">@Localizer["Meals (餐饮费)"]</option>
+                                <option value="Procurement">@Localizer["Procurement (采购费)"]</option>
+                                <option value="Travel">@Localizer["Travel (差旅费)"]</option>
+                                <option value="Others">@Localizer["Others (其他)"]</option>
                             </select>
                             <span asp-validation-for="Category" class="text-danger"></span>
                         </div>
@@ -44,13 +44,13 @@
 
                     <div class="mb-3">
                         <label asp-for="Purpose" class="form-label"></label>
-                        <input asp-for="Purpose" class="form-control" placeholder="What was this expense for?" />
+                        <input asp-for="Purpose" class="form-control" placeholder="@Localizer["What was this expense for?"]" />
                         <span asp-validation-for="Purpose" class="text-danger"></span>
                     </div>
 
                     <div class="mb-3">
                         <label asp-for="SupportingEmail" class="form-label"></label>
-                        <textarea asp-for="SupportingEmail" class="form-control" rows="3" placeholder="Paste supporting email content or other context here..."></textarea>
+                        <textarea asp-for="SupportingEmail" class="form-control" rows="3" placeholder="@Localizer["Paste supporting email content or other context here..."]"></textarea>
                         <span asp-validation-for="SupportingEmail" class="text-danger"></span>
                     </div>
 
@@ -79,18 +79,18 @@
 
                     <div class="mb-3">
                         <label asp-for="InvoiceSourceUrl" class="form-label"></label>
-                        <input asp-for="InvoiceSourceUrl" class="form-control" placeholder="https://..." />
+                        <input asp-for="InvoiceSourceUrl" class="form-control" placeholder="@Localizer["https://..."]" />
                         <span asp-validation-for="InvoiceSourceUrl" class="text-danger"></span>
                     </div>
 
                     <div class="mt-4">
                         <button type="submit" name="SaveAsDraft" value="true" class="btn btn-secondary">
-                            Save as Draft
+                            @Localizer["Save as Draft"]
                         </button>
                         <button type="submit" name="SaveAsDraft" value="false" class="btn btn-primary">
-                            Submit Request
+                            @Localizer["Submit Request"]
                         </button>
-                        <a asp-action="Index" class="btn btn-link">Cancel</a>
+                        <a asp-action="Index" class="btn btn-link">@Localizer["Cancel"]</a>
                     </div>
                 </form>
             </div>

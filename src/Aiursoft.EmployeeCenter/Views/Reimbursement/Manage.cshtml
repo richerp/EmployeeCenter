@@ -1,6 +1,6 @@
 @model Aiursoft.EmployeeCenter.Models.ReimbursementViewModels.ManageIndexViewModel
 @{
-    ViewData["Title"] = "Reimbursement Approval Center";
+    ViewData["Title"] = Localizer["Reimbursement Approval Center"];
 }
 
 <div class="container-xl">
@@ -8,9 +8,9 @@
         <div class="row align-items-center">
             <div class="col">
                 <h2 class="page-title">
-                    Reimbursement Approval Center
+                    @Localizer["Reimbursement Approval Center"]
                 </h2>
-                <div class="text-muted mt-1">Review and process reimbursement requests from employees.</div>
+                <div class="text-muted mt-1">@Localizer["Review and process reimbursement requests from employees."]</div>
             </div>
         </div>
     </div>
@@ -20,16 +20,16 @@
     <div class="container-xl">
         <div class="card mb-3">
             <div class="card-header">
-                <h3 class="card-title">Pending Requests (@Model.PendingRequests.Count)</h3>
+                <h3 class="card-title">@Localizer["Pending Requests ({0})", Model.PendingRequests.Count]</h3>
             </div>
             <div class="table-responsive">
                 <table class="table table-vcenter card-table">
                     <thead>
                         <tr>
-                            <th>Submitter</th>
-                            <th>Purpose</th>
-                            <th>Amount</th>
-                            <th>Submitted At</th>
+                            <th>@Localizer["Submitter"]</th>
+                            <th>@Localizer["Purpose"]</th>
+                            <th>@Localizer["Amount"]</th>
+                            <th>@Localizer["Submitted At"]</th>
                             <th class="w-1"></th>
                         </tr>
                     </thead>
@@ -37,7 +37,7 @@
                         @if (Model.PendingRequests.Count == 0)
                         {
                             <tr>
-                                <td colspan="5" class="text-center text-muted">No pending requests.</td>
+                                <td colspan="5" class="text-center text-muted">@Localizer["No pending requests."]</td>
                             </tr>
                         }
                         @foreach (var item in Model.PendingRequests)
@@ -50,10 +50,10 @@
                                 <td>
                                     <div class="btn-list flex-nowrap">
                                         <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-white btn-sm">
-                                            Review
+                                            @Localizer["Review"]
                                         </a>
                                         <form asp-action="Acknowledge" asp-route-id="@item.Id" method="post">
-                                            <button type="submit" class="btn btn-info btn-sm">Acknowledge</button>
+                                            <button type="submit" class="btn btn-info btn-sm">@Localizer["Acknowledge"]</button>
                                         </form>
                                     </div>
                                 </td>
@@ -66,16 +66,16 @@
 
         <div class="card mb-3">
             <div class="card-header">
-                <h3 class="card-title">Acknowledged (Wait for Payment) (@Model.AcknowledgedRequests.Count)</h3>
+                <h3 class="card-title">@Localizer["Acknowledged (Wait for Payment) ({0})", Model.AcknowledgedRequests.Count]</h3>
             </div>
             <div class="table-responsive">
                 <table class="table table-vcenter card-table">
                     <thead>
                         <tr>
-                            <th>Submitter</th>
-                            <th>Purpose</th>
-                            <th>Amount</th>
-                            <th>Acknowledged At</th>
+                            <th>@Localizer["Submitter"]</th>
+                            <th>@Localizer["Purpose"]</th>
+                            <th>@Localizer["Amount"]</th>
+                            <th>@Localizer["Acknowledged At"]</th>
                             <th class="w-1"></th>
                         </tr>
                     </thead>
@@ -83,7 +83,7 @@
                         @if (Model.AcknowledgedRequests.Count == 0)
                         {
                             <tr>
-                                <td colspan="5" class="text-center text-muted">No acknowledged requests waiting for payment.</td>
+                                <td colspan="5" class="text-center text-muted">@Localizer["No acknowledged requests waiting for payment."]</td>
                             </tr>
                         }
                         @foreach (var item in Model.AcknowledgedRequests)
@@ -95,7 +95,7 @@
                                 <td>@item.ReviewedAt?.ToString("g")</td>
                                 <td>
                                     <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-white btn-sm">
-                                        Process
+                                        @Localizer["Process"]
                                     </a>
                                 </td>
                             </tr>
@@ -107,18 +107,18 @@
 
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">Recent History (Last 100)</h3>
+                <h3 class="card-title">@Localizer["Recent History (Last 100)"]</h3>
             </div>
             <div class="table-responsive">
                 <table class="table table-vcenter card-table table-striped">
                     <thead>
                         <tr>
-                            <th>Submitter</th>
-                            <th>Purpose</th>
-                            <th>Amount</th>
-                            <th>Status</th>
-                            <th>Reviewed By</th>
-                            <th>Processed At</th>
+                            <th>@Localizer["Submitter"]</th>
+                            <th>@Localizer["Purpose"]</th>
+                            <th>@Localizer["Amount"]</th>
+                            <th>@Localizer["Status"]</th>
+                            <th>@Localizer["Reviewed By"]</th>
+                            <th>@Localizer["Processed At"]</th>
                             <th class="w-1"></th>
                         </tr>
                     </thead>
@@ -133,13 +133,13 @@
                                     @switch (item.Status)
                                     {
                                         case ReimbursementStatus.Reimbursed:
-                                            <span class="badge bg-success">Reimbursed</span>
+                                            <span class="badge bg-success">@Localizer["Reimbursed"]</span>
                                             break;
                                         case ReimbursementStatus.Rejected:
-                                            <span class="badge bg-danger">Rejected</span>
+                                            <span class="badge bg-danger">@Localizer["Rejected"]</span>
                                             break;
                                         case ReimbursementStatus.Revoked:
-                                            <span class="badge bg-warning">Revoked</span>
+                                            <span class="badge bg-warning">@Localizer["Revoked"]</span>
                                             break;
                                     }
                                 </td>
@@ -147,7 +147,7 @@
                                 <td>@(item.ReviewedAt?.ToString("g") ?? item.SubmittedAt.ToString("g"))</td>
                                 <td>
                                     <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-white btn-sm">
-                                        Details
+                                        @Localizer["Details"]
                                     </a>
                                 </td>
                             </tr>

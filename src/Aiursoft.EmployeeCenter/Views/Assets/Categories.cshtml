@@ -32,7 +32,7 @@
                                     }
                                     else
                                     {
-                                        <form asp-action="DeleteCategory" method="post" onsubmit="return confirm('@Localizer["Are you sure to delete this category?"]');">
+                                        <form asp-action="DeleteCategory" method="post" onsubmit="return confirm(getLocalizedText('delete-confirm', 'Are you sure to delete this category?'));">
                                             <input type="hidden" name="id" value="@category.Id" />
                                             <button type="submit" class="btn btn-sm btn-danger">@Localizer["Delete"]</button>
                                         </form>
@@ -54,11 +54,11 @@
                 <form asp-action="CreateCategory">
                     <div class="mb-3">
                         <label class="form-label">@Localizer["Category Name"]</label>
-                        <input asp-for="NewName" class="form-control" required placeholder="e.g. Laptop" />
+                        <input asp-for="NewName" class="form-control" required placeholder="@Localizer["e.g. Laptop"]" />
                     </div>
                     <div class="mb-3">
                         <label class="form-label">@Localizer["Code Prefix"]</label>
-                        <input asp-for="NewCode" class="form-control" required placeholder="e.g. LAP" />
+                        <input asp-for="NewCode" class="form-control" required placeholder="@Localizer["e.g. LAP"]" />
                     </div>
                     <button type="submit" class="btn btn-primary w-100">@Localizer["Add Category"]</button>
                 </form>
@@ -70,3 +70,11 @@
 <div class="mt-3">
     <a asp-action="Index" class="btn btn-light">@Localizer["Back to Assets"]</a>
 </div>
+
+<div id="loc-data" class="d-none">
+    <span data-key="delete-confirm">@Localizer["Are you sure to delete this category?"]</span>
+</div>
+
+@section scripts {
+    <partial name="_LocalizationHelper" />
+}

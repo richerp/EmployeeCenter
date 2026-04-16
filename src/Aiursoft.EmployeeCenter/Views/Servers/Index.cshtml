@@ -91,7 +91,7 @@
                                 <a asp-action="Edit" asp-route-id="@s.Id" class="btn btn-sm btn-outline-primary">
                                     <i class="align-middle" data-lucide="edit-2"></i> @Localizer["Edit"]
                                 </a>
-                                <form asp-action="Delete" asp-route-id="@s.Id" method="post" class="d-inline" onsubmit="return confirm('@Localizer["Are you sure?"]');">
+                                <form asp-action="Delete" asp-route-id="@s.Id" method="post" class="d-inline" onsubmit="return confirm(getLocalizedText('delete-confirm', 'Are you sure?'));">
                                     <button type="submit" class="btn btn-sm btn-outline-danger">
                                         <i class="align-middle" data-lucide="trash-2"></i> @Localizer["Delete"]
                                     </button>
@@ -104,3 +104,12 @@
         </div>
     }
 </div>
+
+<div id="loc-data" hidden>
+    <span data-key="delete-confirm">@Localizer["Are you sure?"]</span>
+</div>
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section scripts {
+    <partial name="_LocalizationHelper" />
+}

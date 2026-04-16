@@ -65,7 +65,7 @@
                             <a asp-action="EditFolder" asp-route-id="@folder.Id" class="btn btn-sm btn-outline-primary">
                                 <i class="align-middle" data-lucide="edit-2"></i> @Localizer["Edit"]
                             </a>
-                            <form asp-action="DeleteFolder" asp-route-id="@folder.Id" method="post" class="d-inline" onsubmit="return confirm('@Localizer["Are you sure you want to delete this folder?"]');">
+                            <form asp-action="DeleteFolder" asp-route-id="@folder.Id" method="post" class="d-inline" onsubmit="return confirm(getLocalizedText('delete-folder-confirm', 'Are you sure you want to delete this folder?'));">
                                 <button type="submit" class="btn btn-sm btn-outline-danger">
                                     <i class="align-middle" data-lucide="trash-2"></i> @Localizer["Delete"]
                                 </button>
@@ -110,3 +110,11 @@
         </table>
     </div>
 </div>
+
+<div id="loc-data" class="d-none">
+    <span data-key="delete-folder-confirm">@Localizer["Are you sure you want to delete this folder?"]</span>
+</div>
+
+@section scripts {
+    <partial name="_LocalizationHelper" />
+}

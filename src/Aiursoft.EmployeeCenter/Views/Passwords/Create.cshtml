@@ -14,12 +14,12 @@
                     <div asp-validation-summary="All" class="text-danger"></div>
                     <div class="mb-3">
                         <label asp-for="Title" class="form-label">@Localizer["Title"]</label>
-                        <input asp-for="Title" class="form-control" placeholder="e.g. GitLab Admin Account" required />
+                        <input asp-for="Title" class="form-control" placeholder="@Localizer["e.g. GitLab Admin Account"]" required />
                         <span asp-validation-for="Title" class="text-danger"></span>
                     </div>
                     <div class="mb-3">
                         <label asp-for="Account" class="form-label">@Localizer["Account / Username"]</label>
-                        <input asp-for="Account" class="form-control" placeholder="e.g. root" />
+                        <input asp-for="Account" class="form-control" placeholder="@Localizer["e.g. root"]" />
                         <span asp-validation-for="Account" class="text-danger"></span>
                     </div>
                     <div class="mb-3">

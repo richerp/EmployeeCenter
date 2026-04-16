@@ -17,14 +17,14 @@
 
                 <div class="form-group">
                     <label asp-for="Description">@Localizer["Description"]</label>
-                    <input asp-for="Description" class="form-control" placeholder="e.g. Pay Sleek for Professional Fee" />
+                    <input asp-for="Description" class="form-control" placeholder="@Localizer["e.g. Pay Sleek for Professional Fee"]" />
                     <span asp-validation-for="Description" class="text-danger"></span>
                 </div>
 
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label asp-for="SourceAccountId">@Localizer["Source Account"] (From)</label>
+                            <label asp-for="SourceAccountId">@Localizer["Source Account (From)"]</label>
                             <select asp-for="SourceAccountId" class="form-control">
                                 <option value="">-- @Localizer["Select Account"] --</option>
                                 @foreach (var account in accounts)
@@ -37,7 +37,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label asp-for="DestinationAccountId">@Localizer["Destination Account"] (To)</label>
+                            <label asp-for="DestinationAccountId">@Localizer["Destination Account (To)"]</label>
                             <select asp-for="DestinationAccountId" class="form-control">
                                 <option value="">-- @Localizer["Select Account"] --</option>
                                 @foreach (var account in accounts)

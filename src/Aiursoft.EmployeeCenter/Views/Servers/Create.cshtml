@@ -15,12 +15,12 @@
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label asp-for="Hostname" class="form-label"></label>
-                            <input asp-for="Hostname" class="form-control" placeholder="e.g. web-server-01" />
+                            <input asp-for="Hostname" class="form-control" placeholder="@Localizer["e.g. web-server-01"]" />
                             <span asp-validation-for="Hostname" class="text-danger"></span>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label asp-for="ServerIp" class="form-label"></label>
-                            <input asp-for="ServerIp" class="form-control" placeholder="e.g. 192.168.1.10" />
+                            <input asp-for="ServerIp" class="form-control" placeholder="@Localizer["e.g. 192.168.1.10"]" />
                             <span asp-validation-for="ServerIp" class="text-danger"></span>
                         </div>
                     </div>
@@ -109,7 +109,7 @@
 
                     <div class="mb-3">
                         <label asp-for="DetailLink" class="form-label"></label>
-                        <input asp-for="DetailLink" class="form-control" placeholder="https://..." />
+                        <input asp-for="DetailLink" class="form-control" placeholder="@Localizer["https://..."]" />
                         <span asp-validation-for="DetailLink" class="text-danger"></span>
                     </div>
 
