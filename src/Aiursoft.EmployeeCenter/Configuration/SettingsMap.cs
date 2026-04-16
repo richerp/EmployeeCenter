@@ -17,6 +17,7 @@ public class SettingsMap
     public const string GitLabProjectMustBeStaredBy = "GitLab_Project_Must_Be_Stared_By";
     public const string GitLabEnsureGitHubOrgMirrored = "GitLab_Ensure_GitHub_Org_Mirrored";
     public const string GitLabGitHubToken = "GitLab_GitHub_Token";
+    public const string AiAssistantSystemPrompt = "Ai_Assistant_System_Prompt";
 
     public class FakeLocalizer
     {
@@ -140,6 +141,14 @@ public class SettingsMap
             Description = Localizer["Optional GitHub personal access token to increase API rate limits for mirroring checks."],
             Type = SettingType.Text,
             DefaultValue = ""
+        },
+        new GlobalSettingDefinition
+        {
+            Key = AiAssistantSystemPrompt,
+            Name = Localizer["AI Assistant System Prompt"],
+            Description = Localizer["The system prompt for the AI assistant."],
+            Type = SettingType.Text,
+            DefaultValue = "You are a professional AI assistant for Aiursoft EmployeeCenter. Your role is to help employees with their questions and provide information about the company's policies and procedures. You do NOT have permission to modify any data or perform any actions on behalf of the user. Please provide helpful and accurate information."
         }
     };
 }
