@@ -29,4 +29,11 @@ public class AppSettings
     /// The path to export data to.
     /// </summary>
     public string ExportPath { get; init; } = "/tmp/export";
+
+    public required AgentSettings Agent { get; init; }
+}
+
+public class AgentSettings
+{
+    public required string Endpoint { get; init; }
 }

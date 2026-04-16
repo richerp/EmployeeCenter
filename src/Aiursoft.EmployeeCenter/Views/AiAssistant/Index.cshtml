@@ -1,0 +1,127 @@
+@model Aiursoft.EmployeeCenter.Models.AiAssistantViewModels.IndexViewModel
+
+<div class="container-fluid p-0">
+    <div class="row mb-3">
+        <div class="col-auto">
+            <h1 class="h3 mb-3">@Localizer["AI Assistant"]</h1>
+        </div>
+    </div>
+
+    <div class="card flex-fill w-100" style="min-height: calc(100vh - 350px);">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h5 class="card-title mb-0">@Localizer["Chat with EmployeeCenter AI"]</h5>
+            <button class="btn btn-sm btn-outline-secondary" id="btnClearChat">@Localizer["Clear Session"]</button>
+        </div>
+        <div class="card-body d-flex flex-column p-0">
+            <div id="chatMessages" class="flex-grow-1 overflow-auto p-3" style="background-color: #f8f9fa;">
+                <div class="text-center text-muted my-5" id="welcomeMessage">
+                    <i class="align-middle me-2" data-lucide="sparkles" style="width: 48px; height: 48px; color: #ffc107;"></i>
+                    <p class="mt-2">@Localizer["Hello! Ask me anything about employee handbook, blueprints or weekly reports."]</p>
+                </div>
+            </div>
+            
+            <div class="p-3 border-top bg-white">
+                <form id="chatForm" class="input-group">
+                    <input type="text" id="userInput" class="form-control" placeholder="@Localizer["Ask anything..."]" autocomplete="off" required>
+                    <button class="btn btn-primary" type="submit" id="btnSend">
+                        <i class="align-middle" data-lucide="send"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .message {
+        margin-bottom: 1rem;
+        max-width: 85%;
+        padding: 0.75rem 1rem;
+        border-radius: 1rem;
+        position: relative;
+        word-wrap: break-word;
+    }
+    .message-user {
+        background-color: #3b7ddd;
+        color: white;
+        align-self: flex-end;
+        margin-left: auto;
+        border-bottom-right-radius: 0.25rem;
+    }
+    .message-assistant {
+        background-color: #ffffff;
+        color: #212529;
+        align-self: flex-start;
+        border-bottom-left-radius: 0.25rem;
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    }
+    #chatMessages {
+        display: flex;
+        flex-direction: column;
+    }
+</style>
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section scripts {
+    <script>
+        const chatMessages = document.getElementById('chatMessages');
+        const chatForm = document.getElementById('chatForm');
+        const userInput = document.getElementById('userInput');
+        const btnSend = document.getElementById('btnSend');
+        const btnClearChat = document.getElementById('btnClearChat');
+        
+        function appendMessage(role, content) {
+            const welcome = document.getElementById('welcomeMessage');
+            if (welcome) welcome.remove();
+
+            const msgDiv = document.createElement('div');
+            msgDiv.className = `message message-${role}`;
+            msgDiv.innerText = content;
+            
+            chatMessages.appendChild(msgDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+            return msgDiv;
+        }
+
+        btnClearChat.addEventListener('click', () => {
+            chatMessages.innerHTML = `
+                <div class="text-center text-muted my-5" id="welcomeMessage">
+                    <i class="align-middle me-2" data-lucide="sparkles" style="width: 48px; height: 48px; color: #ffc107;"></i>
+                    <p class="mt-2">@Localizer["Session cleared. Ask me anything!"]</p>
+                </div>`;
+        });
+
+        chatForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const message = userInput.value.trim();
+            if (!message) return;
+
+            userInput.value = '';
+            userInput.disabled = true;
+            btnSend.disabled = true;
+
+            appendMessage('user', message);
+            const assistantMsgDiv = appendMessage('assistant', '...');
+
+            try {
+                const response = await fetch('/AiAssistant/Ask', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ question: message })
+                });
+
+                if (!response.ok) throw new Error(await response.text());
+                const data = await response.json();
+                assistantMsgDiv.innerText = data.answer;
+            } catch (error) {
+                assistantMsgDiv.classList.add('text-danger');
+                assistantMsgDiv.innerText = "@Localizer["Error: "]" + error.message;
+            } finally {
+                userInput.disabled = false;
+                btnSend.disabled = false;
+                userInput.focus();
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+        });
+    </script>
+}
