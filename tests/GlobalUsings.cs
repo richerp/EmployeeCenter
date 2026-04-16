@@ -10,3 +10,4 @@ global using Microsoft.VisualStudio.TestTools.UnitTesting;
 global using Microsoft.Extensions.Hosting;
 global using Microsoft.Extensions.DependencyInjection;
 global using static Aiursoft.WebTools.Extends;
+global using System.Net.Http.Json;
