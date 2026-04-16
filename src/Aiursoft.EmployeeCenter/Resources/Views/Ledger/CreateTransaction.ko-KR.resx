@@ -33,6 +33,12 @@
   <data name="Destination Account" xml:space="preserve">
     <value>목적 계좌</value>
   </data>
+  <data name="Destination Account (To)" xml:space="preserve">
+    <value>수신 계좌 (수신)</value>
+  </data>
+  <data name="e.g. Pay Sleek for Professional Fee" xml:space="preserve">
+    <value>예: Sleek 에 대한 전문 수수료 지급</value>
+  </data>
   <data name="Exchange Rate" xml:space="preserve">
     <value>환율</value>
   </data>
@@ -59,6 +65,9 @@
   </data>
   <data name="Source Account" xml:space="preserve">
     <value>출금 계좌</value>
+  </data>
+  <data name="Source Account (From)" xml:space="preserve">
+    <value>소스 계좌 (보낸 사람)</value>
   </data>
   <data name="Transaction Time" xml:space="preserve">
     <value>거래 시간</value>

@@ -48,6 +48,12 @@
   <data name="Delete" xml:space="preserve">
     <value>Delete</value>
   </data>
+  <data name="e.g. LAP" xml:space="preserve">
+    <value>e.g. LAP</value>
+  </data>
+  <data name="e.g. Laptop" xml:space="preserve">
+    <value>e.g. Laptop</value>
+  </data>
   <data name="Existing Categories" xml:space="preserve">
     <value>Existing Categories</value>
   </data>

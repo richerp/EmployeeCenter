@@ -42,6 +42,12 @@
   <data name="Domestic" xml:space="preserve">
     <value>对国内服务</value>
   </data>
+  <data name="e.g. example.com" xml:space="preserve">
+    <value>例如 example.com</value>
+  </data>
+  <data name="e.g. HTTPS, TCP" xml:space="preserve">
+    <value>例如：HTTPS、TCP</value>
+  </data>
   <data name="Edit Service" xml:space="preserve">
     <value>编辑服务</value>
   </data>

@@ -33,6 +33,12 @@
   <data name="Create New Password" xml:space="preserve">
     <value>创建新密码</value>
   </data>
+  <data name="e.g. GitLab Admin Account" xml:space="preserve">
+    <value>例如：GitLab 管理员账户</value>
+  </data>
+  <data name="e.g. root" xml:space="preserve">
+    <value>例如：root</value>
+  </data>
   <data name="Note" xml:space="preserve">
     <value>备注</value>
   </data>

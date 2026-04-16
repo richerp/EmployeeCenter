@@ -42,6 +42,12 @@
   <data name="Destination Account" xml:space="preserve">
     <value>บัญชีปลายทาง</value>
   </data>
+  <data name="Destination Account (To)" xml:space="preserve">
+    <value>บัญชีปลายทาง (รับ)</value>
+  </data>
+  <data name="e.g. Pay Sleek for Professional Fee" xml:space="preserve">
+    <value>เช่น จ่าย Sleek สำหรับค่าธรรมเนียมวิชาชีพ</value>
+  </data>
   <data name="Edit Transaction" xml:space="preserve">
     <value>แก้ไขธุรกรรม</value>
   </data>
@@ -65,6 +71,9 @@
   </data>
   <data name="Source Account" xml:space="preserve">
     <value>บัญชีต้นทาง</value>
+  </data>
+  <data name="Source Account (From)" xml:space="preserve">
+    <value>บัญชีต้นทาง (จาก)</value>
   </data>
   <data name="Transaction Time" xml:space="preserve">
     <value>เวลาการทำธุรกรรม</value>

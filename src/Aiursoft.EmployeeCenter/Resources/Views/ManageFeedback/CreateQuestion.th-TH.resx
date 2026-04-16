@@ -39,8 +39,17 @@
   <data name="Insert Blank" xml:space="preserve">
     <value>แทรกช่องว่าง</value>
   </data>
+  <data name="Option" xml:space="preserve">
+    <value>ตัวเลือก</value>
+  </data>
   <data name="Options" xml:space="preserve">
     <value>ตัวเลือก</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>ลบ</value>
+  </data>
+  <data name="Security, Health, etc. (comma separated)" xml:space="preserve">
+    <value>ความปลอดภัย, สุขภาพ, ฯลฯ (คั่นด้วยเครื่องหมายจุลภาค)</value>
   </data>
   <data name="Tags" xml:space="preserve">
     <value>แท็ก</value>

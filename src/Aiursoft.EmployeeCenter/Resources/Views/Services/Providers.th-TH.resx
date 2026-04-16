@@ -36,6 +36,9 @@
   <data name="Delete" xml:space="preserve">
     <value>ลบ</value>
   </data>
+  <data name="e.g. AWS" xml:space="preserve">
+    <value>เช่น AWS</value>
+  </data>
   <data name="Existing Providers" xml:space="preserve">
     <value>ผู้ให้บริการที่มีอยู่</value>
   </data>

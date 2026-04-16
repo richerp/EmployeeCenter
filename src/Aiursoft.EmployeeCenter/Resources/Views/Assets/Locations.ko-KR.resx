@@ -27,6 +27,9 @@
   <data name="Back to Assets" xml:space="preserve">
     <value>자산으로 돌아가기</value>
   </data>
+  <data name="e.g. SH Office - Room 101" xml:space="preserve">
+    <value>예: SH 사무실 - 101 호</value>
+  </data>
   <data name="Existing Locations" xml:space="preserve">
     <value>기존 위치</value>
   </data>
