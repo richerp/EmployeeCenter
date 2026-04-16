@@ -92,6 +92,8 @@ public class Startup : IWebStartup
         var exportJob = services.RegisterBackgroundJob<Services.BackgroundJobs.ExportJob>();
         services.RegisterScheduledTask(registration: exportJob, period: TimeSpan.FromMinutes(15), startDelay: TimeSpan.FromSeconds(35));
 
+        services.AddHttpClient();
+
         // Controllers and localization
         services.AddControllersWithViews()
             .AddNewtonsoftJson(options =>

@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using System.Net.Http.Json;
 
+using System.Text.Json.Serialization;
+
 namespace Aiursoft.EmployeeCenter.Controllers;
 
 [Authorize]
@@ -53,5 +55,6 @@ public class AskRequest
 
 public class AgentResponse
 {
+    [JsonPropertyName("answer")]
     public string? Answer { get; set; }
 }
