@@ -1,33 +1,31 @@
 @model Aiursoft.EmployeeCenter.Models.AiAssistantViewModels.IndexViewModel
 
-<div class="container-fluid p-0">
-    <div class="row mb-3">
-        <div class="col-auto">
-            <h1 class="h3 mb-3">@Localizer["AI Assistant"]</h1>
-        </div>
+<div class="row mb-2 mb-xl-3">
+    <div class="col-auto d-none d-sm-block">
+        <h3>@Localizer["AI Assistant"]</h3>
     </div>
+</div>
 
-    <div class="card flex-fill w-100" style="min-height: calc(100vh - 350px);">
-        <div class="card-header d-flex justify-content-between align-items-center">
-            <h5 class="card-title mb-0">@Localizer["Chat with EmployeeCenter AI"]</h5>
-            <button class="btn btn-sm btn-outline-secondary" id="btnClearChat">@Localizer["Clear Session"]</button>
+<div class="card flex-fill w-100" style="min-height: calc(100vh - 350px);">
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <h5 class="card-title mb-0">@Localizer["Chat with EmployeeCenter AI"]</h5>
+        <button class="btn btn-sm btn-outline-secondary" id="btnClearChat">@Localizer["Clear Session"]</button>
+    </div>
+    <div class="card-body d-flex flex-column p-0">
+        <div id="chatMessages" class="flex-grow-1 overflow-auto p-3" style="background-color: #f8f9fa;">
+            <div class="text-center text-muted my-5" id="welcomeMessage">
+                <i class="align-middle me-2" data-lucide="sparkles" style="width: 48px; height: 48px; color: #ffc107;"></i>
+                <p class="mt-2">@Localizer["Hello! Ask me anything about employee handbook, blueprints or weekly reports."]</p>
+            </div>
         </div>
-        <div class="card-body d-flex flex-column p-0">
-            <div id="chatMessages" class="flex-grow-1 overflow-auto p-3" style="background-color: #f8f9fa;">
-                <div class="text-center text-muted my-5" id="welcomeMessage">
-                    <i class="align-middle me-2" data-lucide="sparkles" style="width: 48px; height: 48px; color: #ffc107;"></i>
-                    <p class="mt-2">@Localizer["Hello! Ask me anything about employee handbook, blueprints or weekly reports."]</p>
-                </div>
-            </div>
-            
-            <div class="p-3 border-top bg-white">
-                <form id="chatForm" class="input-group">
-                    <input type="text" id="userInput" class="form-control" placeholder="@Localizer["Ask anything..."]" autocomplete="off" required>
-                    <button class="btn btn-primary" type="submit" id="btnSend">
-                        <i class="align-middle" data-lucide="send"></i>
-                    </button>
-                </form>
-            </div>
+        
+        <div class="p-3 border-top bg-white">
+            <form id="chatForm" class="input-group">
+                <input type="text" id="userInput" class="form-control" placeholder="@Localizer["Ask anything..."]" autocomplete="off" required>
+                <button class="btn btn-primary" type="submit" id="btnSend">
+                    <i class="align-middle" data-lucide="send"></i>
+                </button>
+            </form>
         </div>
     </div>
 </div>
@@ -110,8 +108,10 @@
                     body: JSON.stringify({ question: message })
                 });
 
-                if (!response.ok) throw new Error(await response.text());
                 const data = await response.json();
+                if (!response.ok) {
+                    throw new Error(data.error || "@Localizer["Unknown error occurred."]");
+                }
                 assistantMsgDiv.innerText = data.answer;
             } catch (error) {
                 assistantMsgDiv.classList.add('text-danger');

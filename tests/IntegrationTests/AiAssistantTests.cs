@@ -1,3 +1,6 @@
+using Aiursoft.EmployeeCenter.Configuration;
+using Aiursoft.EmployeeCenter.Services;
+
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
 [TestClass]
@@ -23,13 +26,32 @@ public class AiAssistantTests : TestBase
     }
 
     [TestMethod]
-    public async Task Ask_Authenticated_ReturnsErrorWhenNoAgent()
+    public async Task Ask_RateLimited_ReturnsTooManyRequests()
     {
         await LoginAsAdmin();
         var request = new { Question = "Hello" };
-        var response = await Http.PostAsJsonAsync("/AiAssistant/Ask", request);
-        Assert.AreEqual(HttpStatusCode.BadRequest, response.StatusCode);
-        var content = await response.Content.ReadAsStringAsync();
-        Assert.IsTrue(content.Contains("Agent failed to respond"));
+
+        for (int i = 1; i <= 5; i++)
+        {
+            var response = await Http.PostAsJsonAsync("/AiAssistant/Ask", request);
+            var content = await response.Content.ReadAsStringAsync();
+            Assert.AreEqual(HttpStatusCode.BadRequest, response.StatusCode);
+            Assert.IsTrue(content.Contains("Agent failed to respond") || content.Contains("Agent is not responding"));
+        }
+
+        // 6th request should be rate limited
+        var lastResponse = await Http.PostAsJsonAsync("/AiAssistant/Ask", request);
+        var lastContent = await lastResponse.Content.ReadAsStringAsync();
+        Assert.AreEqual(HttpStatusCode.BadRequest, lastResponse.StatusCode);
+        Assert.IsTrue(lastContent.Contains("Too many requests. Please try again in a minute."));
+    }
+
+    [TestMethod]
+    public async Task AiAssistantSystemPrompt_IsSeeded()
+    {
+        var settingsService = GetService<GlobalSettingsService>();
+        var prompt = await settingsService.GetSettingValueAsync(SettingsMap.AiAssistantSystemPrompt);
+        Assert.IsFalse(string.IsNullOrWhiteSpace(prompt));
+        Assert.IsTrue(prompt.Contains("professional AI assistant"));
     }
 }
