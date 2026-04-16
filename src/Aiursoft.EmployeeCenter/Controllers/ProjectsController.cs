@@ -17,16 +17,16 @@ namespace Aiursoft.EmployeeCenter.Controllers;
 public class ProjectsController : Controller
 {
     private readonly GitLabService _gitLabService;
-    private readonly GitLabSettings _gitLabSettings;
+    private readonly GlobalSettingsService _globalSettings;
     private readonly IStringLocalizer<ProjectsController> _localizer;
 
     public ProjectsController(
         GitLabService gitLabService,
-        IOptions<GitLabSettings> gitLabSettings,
+        GlobalSettingsService globalSettings,
         IStringLocalizer<ProjectsController> localizer)
     {
         _gitLabService = gitLabService;
-        _gitLabSettings = gitLabSettings.Value;
+        _globalSettings = globalSettings;
         _localizer = localizer;
     }
 
@@ -46,8 +46,8 @@ public class ProjectsController : Controller
         var model = new IndexViewModel
         {
             ProjectsByTags = projectsByTags,
-            RequiredStarUsername = _gitLabSettings.ProjectMustBeStaredBy,
-            RequiredGitHubOrgMirrored = _gitLabSettings.EnsureGitHubOrgMirrored,
+            RequiredStarUsername = await _globalSettings.GetSettingValueAsync(SettingsMap.GitLabProjectMustBeStaredBy),
+            RequiredGitHubOrgMirrored = await _globalSettings.GetSettingValueAsync(SettingsMap.GitLabEnsureGitHubOrgMirrored),
             PageTitle = _localizer["Projects"]
         };
 

@@ -10,37 +10,42 @@ namespace Aiursoft.EmployeeCenter.Services.GitLab;
 public class GitLabService : IScopedDependency
 {
     private readonly HttpClient _httpClient;
-    private readonly GitLabSettings _gitLabSettings;
+    private readonly GlobalSettingsService _globalSettings;
     private readonly CanonPool _canonPool;
     private readonly CacheService _cache;
 
     public GitLabService(
         HttpClient httpClient,
-        IOptions<GitLabSettings> gitLabSettings,
+        GlobalSettingsService globalSettings,
         CanonPool canonPool,
         CacheService cache)
     {
         _httpClient = httpClient;
-        _gitLabSettings = gitLabSettings.Value;
+        _globalSettings = globalSettings;
         _canonPool = canonPool;
         _cache = cache;
     }
 
     public async Task<List<GitLabProject>> GetAllProjectsAsync()
     {
-        if (string.IsNullOrWhiteSpace(_gitLabSettings.OrganizationUrl))
+        var organizationUrl = await _globalSettings.GetSettingValueAsync(SettingsMap.GitLabOrganizationUrl);
+        var projectMustBeStaredBy = await _globalSettings.GetSettingValueAsync(SettingsMap.GitLabProjectMustBeStaredBy);
+        var ensureGitHubOrgMirrored = await _globalSettings.GetSettingValueAsync(SettingsMap.GitLabEnsureGitHubOrgMirrored);
+        var githubToken = await _globalSettings.GetSettingValueAsync(SettingsMap.GitLabGitHubToken);
+
+        if (string.IsNullOrWhiteSpace(organizationUrl))
         {
             return new List<GitLabProject>();
         }
 
         // Parse organization URL to get the GitLab base URL and organization name
-        var orgUrl = _gitLabSettings.OrganizationUrl.TrimEnd('/');
+        var orgUrl = organizationUrl.TrimEnd('/');
         var segments = orgUrl.Split('/');
         var orgName = segments[^1];
         var baseUrl = string.Join('/', segments[0..^1]);
 
         // Get the user ID for the configured username
-        var userId = await GetUserIdByUsernameAsync(baseUrl, _gitLabSettings.ProjectMustBeStaredBy);
+        var userId = await GetUserIdByUsernameAsync(baseUrl, projectMustBeStaredBy);
 
         // Get group ID by name
         var groupSearchUrl = $"{baseUrl}/api/v4/groups?search={orgName}";
@@ -99,9 +104,9 @@ public class GitLabService : IScopedDependency
                 }
 
                 // Check if the project is mirrored on GitHub
-                if (!string.IsNullOrEmpty(_gitLabSettings.EnsureGitHubOrgMirrored))
+                if (!string.IsNullOrEmpty(ensureGitHubOrgMirrored))
                 {
-                    project.IsMirroredOnGitHub = await IsProjectMirroredOnGitHubAsync(_gitLabSettings.EnsureGitHubOrgMirrored, projectDto.Name);
+                    project.IsMirroredOnGitHub = await IsProjectMirroredOnGitHubAsync(ensureGitHubOrgMirrored, projectDto.Name, githubToken);
                 }
 
                 lock (resultProjects)
@@ -191,6 +196,11 @@ public class GitLabService : IScopedDependency
 
     private async Task<int?> GetUserIdByUsernameAsync(string baseUrl, string username)
     {
+        if (string.IsNullOrWhiteSpace(username))
+        {
+            return null;
+        }
+
         try
         {
             var userSearchUrl = $"{baseUrl}/api/v4/users?username={username}";
@@ -227,7 +237,7 @@ public class GitLabService : IScopedDependency
         }
     }
 
-    private async Task<bool> IsProjectMirroredOnGitHubAsync(string githubOrg, string projectName)
+    private async Task<bool> IsProjectMirroredOnGitHubAsync(string githubOrg, string projectName, string? githubToken)
     {
         // Use cache to avoid hitting GitHub API rate limits
         // Cache key is unique per org and project
@@ -245,9 +255,9 @@ public class GitLabService : IScopedDependency
                 request.Headers.Add("User-Agent", "EmployeeCenter-GitLab-Checker");
 
                 // Add GitHub token if configured (increases rate limit from 60/hr to 5000/hr)
-                if (!string.IsNullOrEmpty(_gitLabSettings.GitHubToken))
+                if (!string.IsNullOrEmpty(githubToken))
                 {
-                    request.Headers.Add("Authorization", $"Bearer {_gitLabSettings.GitHubToken}");
+                    request.Headers.Add("Authorization", $"Bearer {githubToken}");
                 }
 
                 var response = await _httpClient.SendAsync(request);

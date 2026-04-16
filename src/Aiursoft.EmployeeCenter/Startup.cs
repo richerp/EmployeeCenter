@@ -26,7 +26,6 @@ public class Startup : IWebStartup
         // AppSettings.
         services.Configure<AppSettings>(configuration.GetSection("AppSettings"));
         services.Configure<OcrSettings>(configuration.GetSection("AppSettings:OCR"));
-        services.Configure<GitLabSettings>(configuration.GetSection("GitLab"));
 
         // Validate OCR configuration (Skip in unit tests to avoid failing all tests)
         var ocrSettings = configuration.GetSection("AppSettings:OCR").Get<OcrSettings>();
