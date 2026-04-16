@@ -42,6 +42,12 @@
   <data name="Destination Account" xml:space="preserve">
     <value>Contul Destinatar</value>
   </data>
+  <data name="Destination Account (To)" xml:space="preserve">
+    <value>Cont de destinație (Către)</value>
+  </data>
+  <data name="e.g. Pay Sleek for Professional Fee" xml:space="preserve">
+    <value>e.g. Plătește Sleek pentru taxă profesională</value>
+  </data>
   <data name="Edit Transaction" xml:space="preserve">
     <value>Editare Tranzacție</value>
   </data>
@@ -65,6 +71,9 @@
   </data>
   <data name="Source Account" xml:space="preserve">
     <value>Contul sursă</value>
+  </data>
+  <data name="Source Account (From)" xml:space="preserve">
+    <value>Cont sursă (De la)</value>
   </data>
   <data name="Transaction Time" xml:space="preserve">
     <value>Ora tranzacției</value>

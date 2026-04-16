@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Allow User Adjust Nickname" xml:space="preserve">
+      <data name="AI Assistant System Prompt" xml:space="preserve">
+    <value>एआई सहायक सिस्टम संकेत</value>
+  </data>
+  <data name="Allow User Adjust Nickname" xml:space="preserve">
     <value>उपयोगकर्ता नाम समायोजित करने की अनुमति दें</value>
   </data>
   <data name="Allow users to adjust their nickname in the profile management page." xml:space="preserve">
@@ -33,14 +36,35 @@
   <data name="Brand Name" xml:space="preserve">
     <value>ब्रांड नाम</value>
   </data>
+  <data name="Check if the project is mirrored to this GitHub organization. Leave empty to disable check. E.g. aiursoftweb" xml:space="preserve">
+    <value>जाँचें कि परियोजना इस GitHub संगठन में प्रतिबिंबित है या नहीं। जाँच को अक्षम करने के लिए खाली छोड़ दें। उदाहरण के लिए: aiursoftweb</value>
+  </data>
   <data name="Default Payroll Currency" xml:space="preserve">
     <value>डिफ़ॉल्ट पेरॉल मुद्रा</value>
   </data>
   <data name="Force Project Association" xml:space="preserve">
     <value>प्रोजेक्ट संबंध को बाध्य करें</value>
   </data>
+  <data name="GitLab Ensure GitHub Org Mirrored" xml:space="preserve">
+    <value>GitLab गिटहब संगठन प्रतिबिंबित सुनिश्चित करें</value>
+  </data>
+  <data name="GitLab GitHub Token" xml:space="preserve">
+    <value>गिटलैब गिटहब टोकन</value>
+  </data>
+  <data name="GitLab Organization URL" xml:space="preserve">
+    <value>गिटलैब संगठन URL</value>
+  </data>
+  <data name="GitLab Project Must Be Stared By" xml:space="preserve">
+    <value>GitLab परियोजना को इस उपयोगकर्ता द्वारा स्टार किया जाना चाहिए</value>
+  </data>
   <data name="ICP Number" xml:space="preserve">
     <value>आईसीपी नंबर</value>
+  </data>
+  <data name="Only projects starred by this user will be displayed. Leave empty to show all projects. E.g. anduin" xml:space="preserve">
+    <value>केवल उस उपयोगकर्ता द्वारा स्टार किए गए परियोजनाएं प्रदर्शित की जाएंगी। सभी परियोजनाएं दिखाने के लिए खाली छोड़ दें। उदाहरण: anduin</value>
+  </data>
+  <data name="Optional GitHub personal access token to increase API rate limits for mirroring checks." xml:space="preserve">
+    <value>GitHub पर्सनल एक्सेस टोकन, जो मिररिंग चेक के लिए API दर सीमाओं को बढ़ाने के लिए वैकल्पिक है।</value>
   </data>
   <data name="Project Logo" xml:space="preserve">
     <value>प्रोजेक्ट लोगो</value>
@@ -69,8 +93,14 @@
   <data name="The number of paid annual leave days allocated to each employee every year." xml:space="preserve">
     <value>प्रत्येक कर्मचारी को प्रति वर्ष आवंटित भुगतान योग्य वार्षिक छुट्टी के दिनों की संख्या।</value>
   </data>
+  <data name="The system prompt for the AI assistant." xml:space="preserve">
+    <value>एआई सहायक के लिए सिस्टम प्रॉम्प्ट।</value>
+  </data>
   <data name="The URL of the company or project. E.g. https://www.aiursoft.com" xml:space="preserve">
     <value>कंपनी या प्रोजेक्ट का URL। उदाहरण के लिए https://www.aiursoft.com</value>
+  </data>
+  <data name="The URL of the GitLab organization to fetch projects from. E.g. https://gitlab.aiursoft.com/aiursoft" xml:space="preserve">
+    <value>GitLab संगठन का URL जिससे परियोजनाएं प्राप्त की जाएं। उदाहरण: https://gitlab.aiursoft.com/aiursoft</value>
   </data>
 
 </root>

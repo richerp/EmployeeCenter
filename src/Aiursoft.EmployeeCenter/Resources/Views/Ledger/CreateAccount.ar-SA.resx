@@ -69,6 +69,12 @@
   <data name="Director loans (money you lent to the company), Unpaid invoices, Credit card debt." xml:space="preserve">
     <value>قروض المدير (المال الذي قدمته للشركة)، الفواتير غير المدفوعة، ديون بطاقات الائتمان.</value>
   </data>
+  <data name="e.g. HKD, CNY" xml:space="preserve">
+    <value>مثلاً: هونج كونج دولار، يوان صيني</value>
+  </data>
+  <data name="e.g. Statrys Checking" xml:space="preserve">
+    <value>مثال: حساب ستاتريس</value>
+  </data>
   <data name="Equity" xml:space="preserve">
     <value>الحقوق</value>
   </data>

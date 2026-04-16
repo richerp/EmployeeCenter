@@ -42,6 +42,9 @@
   <data name="Administrative Details" xml:space="preserve">
     <value>Адміністративні відомості</value>
   </data>
+  <data name="AI Assistant" xml:space="preserve">
+    <value>AI Assistant</value>
+  </data>
   <data name="Aiursoft Employee Center" xml:space="preserve">
     <value>Центр співробітників Aiursoft</value>
   </data>
@@ -122,6 +125,9 @@
   </data>
   <data name="Change Profile" xml:space="preserve">
     <value>Змінити профіль</value>
+  </data>
+  <data name="Chat" xml:space="preserve">
+    <value>Чат</value>
   </data>
   <data name="CI Number" xml:space="preserve">
     <value>Номер CI</value>

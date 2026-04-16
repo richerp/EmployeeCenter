@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Allow User Adjust Nickname" xml:space="preserve">
+      <data name="AI Assistant System Prompt" xml:space="preserve">
+    <value>Lời nhắc hệ thống Trợ lý AI</value>
+  </data>
+  <data name="Allow User Adjust Nickname" xml:space="preserve">
     <value>Cho phép người dùng chỉnh sửa biệt danh</value>
   </data>
   <data name="Allow users to adjust their nickname in the profile management page." xml:space="preserve">
@@ -33,14 +36,35 @@
   <data name="Brand Name" xml:space="preserve">
     <value>Tên thương hiệu</value>
   </data>
+  <data name="Check if the project is mirrored to this GitHub organization. Leave empty to disable check. E.g. aiursoftweb" xml:space="preserve">
+    <value>Kiểm tra xem dự án có được mirror sang tổ chức GitHub này không. Để trống để tắt kiểm tra. Ví dụ: aiursoftweb</value>
+  </data>
   <data name="Default Payroll Currency" xml:space="preserve">
     <value>Tiền tệ lương mặc định</value>
   </data>
   <data name="Force Project Association" xml:space="preserve">
     <value>Bắt buộc liên kết dự án</value>
   </data>
+  <data name="GitLab Ensure GitHub Org Mirrored" xml:space="preserve">
+    <value>GitLab Đảm bảo Cơ quan GitHub được Sao chép</value>
+  </data>
+  <data name="GitLab GitHub Token" xml:space="preserve">
+    <value>GitLab GitHub Token</value>
+  </data>
+  <data name="GitLab Organization URL" xml:space="preserve">
+    <value>URL Tổ chức GitLab</value>
+  </data>
+  <data name="GitLab Project Must Be Stared By" xml:space="preserve">
+    <value>Dự án GitLab Phải Được Đánh Dấu</value>
+  </data>
   <data name="ICP Number" xml:space="preserve">
     <value>Số đăng ký ICP</value>
+  </data>
+  <data name="Only projects starred by this user will be displayed. Leave empty to show all projects. E.g. anduin" xml:space="preserve">
+    <value>Chỉ các dự án được người dùng này đánh dấu sao mới được hiển thị. Để trống để hiển thị tất cả dự án. Ví dụ: anduin</value>
+  </data>
+  <data name="Optional GitHub personal access token to increase API rate limits for mirroring checks." xml:space="preserve">
+    <value>Token truy cập cá nhân GitHub tùy chọn để tăng giới hạn tốc độ API cho các kiểm tra sao chép.</value>
   </data>
   <data name="Project Logo" xml:space="preserve">
     <value>Logo Dự Án</value>
@@ -69,8 +93,14 @@
   <data name="The number of paid annual leave days allocated to each employee every year." xml:space="preserve">
     <value>Số ngày nghỉ phép có lương được phân bổ cho mỗi nhân viên mỗi năm.</value>
   </data>
+  <data name="The system prompt for the AI assistant." xml:space="preserve">
+    <value>Hướng dẫn hệ thống cho trợ lý AI.</value>
+  </data>
   <data name="The URL of the company or project. E.g. https://www.aiursoft.com" xml:space="preserve">
     <value>Địa chỉ URL của công ty hoặc dự án. Ví dụ: https://www.aiursoft.com</value>
+  </data>
+  <data name="The URL of the GitLab organization to fetch projects from. E.g. https://gitlab.aiursoft.com/aiursoft" xml:space="preserve">
+    <value>URL của tổ chức GitLab để lấy dự án. Ví dụ: https://gitlab.aiursoft.com/aiursoft</value>
   </data>
 
 </root>

@@ -27,6 +27,9 @@
   <data name="Back to Assets" xml:space="preserve">
     <value>Takaisin resursseihin</value>
   </data>
+  <data name="e.g. SH Office - Room 101" xml:space="preserve">
+    <value>esim. SH-toimisto - Huone 101</value>
+  </data>
   <data name="Existing Locations" xml:space="preserve">
     <value>Olemassa olevat sijainnit</value>
   </data>

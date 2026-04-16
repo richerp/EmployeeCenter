@@ -39,8 +39,17 @@
   <data name="Insert Blank" xml:space="preserve">
     <value>Sisipkan Kosong</value>
   </data>
+  <data name="Option" xml:space="preserve">
+    <value>Pilihan</value>
+  </data>
   <data name="Options" xml:space="preserve">
     <value>Opsi</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Hapus</value>
+  </data>
+  <data name="Security, Health, etc. (comma separated)" xml:space="preserve">
+    <value>Keamanan, Kesehatan, dll. (dipisahkan dengan koma)</value>
   </data>
   <data name="Tags" xml:space="preserve">
     <value>Tag</value>

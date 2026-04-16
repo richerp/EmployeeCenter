@@ -45,6 +45,9 @@
   <data name="Administrative Details" xml:space="preserve">
     <value>行政信息</value>
   </data>
+  <data name="AI Assistant" xml:space="preserve">
+    <value>AI 助手</value>
+  </data>
   <data name="Aiursoft Employee Center" xml:space="preserve">
     <value>Aiursoft 员工中心</value>
   </data>
@@ -125,6 +128,9 @@
   </data>
   <data name="Change Profile" xml:space="preserve">
     <value>修改个人资料</value>
+  </data>
+  <data name="Chat" xml:space="preserve">
+    <value>聊天</value>
   </data>
   <data name="CI Number" xml:space="preserve">
     <value>统一社会信用代码</value>

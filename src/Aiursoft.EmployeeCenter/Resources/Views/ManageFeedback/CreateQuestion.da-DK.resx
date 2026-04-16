@@ -39,8 +39,17 @@
   <data name="Insert Blank" xml:space="preserve">
     <value>Indsæt tom plads</value>
   </data>
+  <data name="Option" xml:space="preserve">
+    <value>Mulighed</value>
+  </data>
   <data name="Options" xml:space="preserve">
     <value>Mulige svar</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Fjern</value>
+  </data>
+  <data name="Security, Health, etc. (comma separated)" xml:space="preserve">
+    <value>Sikkerhed, sundhed, mv. (kommaadskilt)</value>
   </data>
   <data name="Tags" xml:space="preserve">
     <value>Emner</value>

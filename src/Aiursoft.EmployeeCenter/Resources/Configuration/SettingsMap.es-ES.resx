@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Allow User Adjust Nickname" xml:space="preserve">
+      <data name="AI Assistant System Prompt" xml:space="preserve">
+    <value>Instrucciones del sistema del asistente de IA</value>
+  </data>
+  <data name="Allow User Adjust Nickname" xml:space="preserve">
     <value>Permitir que el usuario cambie el apodo</value>
   </data>
   <data name="Allow users to adjust their nickname in the profile management page." xml:space="preserve">
@@ -33,14 +36,35 @@
   <data name="Brand Name" xml:space="preserve">
     <value>Nombre de marca</value>
   </data>
+  <data name="Check if the project is mirrored to this GitHub organization. Leave empty to disable check. E.g. aiursoftweb" xml:space="preserve">
+    <value>Compruebe si el proyecto está reflejado en esta organización de GitHub. Deje vacío para desactivar la comprobación. Ej. aiursoftweb</value>
+  </data>
   <data name="Default Payroll Currency" xml:space="preserve">
     <value>Moneda de nómina predeterminada</value>
   </data>
   <data name="Force Project Association" xml:space="preserve">
     <value>Asociación forzada con proyecto</value>
   </data>
+  <data name="GitLab Ensure GitHub Org Mirrored" xml:space="preserve">
+    <value>GitLab Asegurar que la Org de GitHub esté Espejada</value>
+  </data>
+  <data name="GitLab GitHub Token" xml:space="preserve">
+    <value>GitLab GitHub Token</value>
+  </data>
+  <data name="GitLab Organization URL" xml:space="preserve">
+    <value>URL de la organización de GitLab</value>
+  </data>
+  <data name="GitLab Project Must Be Stared By" xml:space="preserve">
+    <value>El proyecto de GitLab debe estar marcado con estrella</value>
+  </data>
   <data name="ICP Number" xml:space="preserve">
     <value>Número ICP</value>
+  </data>
+  <data name="Only projects starred by this user will be displayed. Leave empty to show all projects. E.g. anduin" xml:space="preserve">
+    <value>Solo se mostrarán los proyectos marcados con estrella por este usuario. Dejar vacío para mostrar todos los proyectos. Ej. anduin</value>
+  </data>
+  <data name="Optional GitHub personal access token to increase API rate limits for mirroring checks." xml:space="preserve">
+    <value>Token de acceso personal de GitHub opcional para aumentar los límites de la API para las comprobaciones de espejo.</value>
   </data>
   <data name="Project Logo" xml:space="preserve">
     <value>Logotipo del proyecto</value>
@@ -69,8 +93,14 @@
   <data name="The number of paid annual leave days allocated to each employee every year." xml:space="preserve">
     <value>El número de días de vacaciones anuales remuneradas asignados a cada empleado cada año.</value>
   </data>
+  <data name="The system prompt for the AI assistant." xml:space="preserve">
+    <value>El mensaje del sistema para el asistente de IA.</value>
+  </data>
   <data name="The URL of the company or project. E.g. https://www.aiursoft.com" xml:space="preserve">
     <value>La URL de la empresa o proyecto. Por ejemplo: https://www.aiursoft.com</value>
+  </data>
+  <data name="The URL of the GitLab organization to fetch projects from. E.g. https://gitlab.aiursoft.com/aiursoft" xml:space="preserve">
+    <value>La URL de la organización de GitLab desde la que obtener los proyectos. Ej. https://gitlab.aiursoft.com/aiursoft</value>
   </data>
 
 </root>

@@ -39,8 +39,17 @@
   <data name="Insert Blank" xml:space="preserve">
     <value>Boşluk Ekle</value>
   </data>
+  <data name="Option" xml:space="preserve">
+    <value>Seçenek</value>
+  </data>
   <data name="Options" xml:space="preserve">
     <value>Seçenekler</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Kaldır</value>
+  </data>
+  <data name="Security, Health, etc. (comma separated)" xml:space="preserve">
+    <value>Güvenlik, Sağlık, vb. (virgülle ayrılmış)</value>
   </data>
   <data name="Tags" xml:space="preserve">
     <value>Etiketler</value>

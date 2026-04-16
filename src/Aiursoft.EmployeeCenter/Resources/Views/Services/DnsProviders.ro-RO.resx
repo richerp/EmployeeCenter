@@ -42,6 +42,12 @@
   <data name="DNS Providers" xml:space="preserve">
     <value>Producători DNS</value>
   </data>
+  <data name="e.g. Cloudflare" xml:space="preserve">
+    <value>de ex. Cloudflare</value>
+  </data>
+  <data name="e.g. Global CDN &amp; DNS" xml:space="preserve">
+    <value>de ex. Global CDN &amp; DNS</value>
+  </data>
   <data name="Existing DNS Providers" xml:space="preserve">
     <value>Furnizori DNS existenți</value>
   </data>

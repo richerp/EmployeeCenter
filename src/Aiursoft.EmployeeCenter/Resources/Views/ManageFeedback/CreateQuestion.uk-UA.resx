@@ -39,8 +39,17 @@
   <data name="Insert Blank" xml:space="preserve">
     <value>Вставити пропуск</value>
   </data>
+  <data name="Option" xml:space="preserve">
+    <value>Варіант</value>
+  </data>
   <data name="Options" xml:space="preserve">
     <value>Варіанти</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Видалити</value>
+  </data>
+  <data name="Security, Health, etc. (comma separated)" xml:space="preserve">
+    <value>Безпека, здоров&apos;я тощо (через кому)</value>
   </data>
   <data name="Tags" xml:space="preserve">
     <value>Мітки</value>
