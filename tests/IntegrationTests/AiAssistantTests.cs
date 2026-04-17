@@ -1,8 +1,6 @@
 using Aiursoft.EmployeeCenter.Authorization;
 using Aiursoft.EmployeeCenter.Configuration;
-using Aiursoft.EmployeeCenter.Entities;
 using Aiursoft.EmployeeCenter.Services;
-using Microsoft.AspNetCore.Identity;
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
