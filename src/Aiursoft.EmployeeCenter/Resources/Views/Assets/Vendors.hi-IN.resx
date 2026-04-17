@@ -30,6 +30,9 @@
   <data name="Contact Info" xml:space="preserve">
     <value>संपर्क जानकारी</value>
   </data>
+  <data name="e.g. JD.com" xml:space="preserve">
+    <value>उदाहरण के लिए, JD.com</value>
+  </data>
   <data name="Existing Vendors" xml:space="preserve">
     <value>मौजूदा विक्रेता</value>
   </data>

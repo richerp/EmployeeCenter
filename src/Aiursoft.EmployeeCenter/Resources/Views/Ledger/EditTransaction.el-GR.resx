@@ -42,6 +42,12 @@
   <data name="Destination Account" xml:space="preserve">
     <value>Προορισμός Λογαριασμού</value>
   </data>
+  <data name="Destination Account (To)" xml:space="preserve">
+    <value>Λογαριασμός Παραλήπτη (Προς)</value>
+  </data>
+  <data name="e.g. Pay Sleek for Professional Fee" xml:space="preserve">
+    <value>π.χ. Πληρωμή του τελικού τέλους στο Sleek</value>
+  </data>
   <data name="Edit Transaction" xml:space="preserve">
     <value>Επεξεργασία Συναλλαγής</value>
   </data>
@@ -65,6 +71,9 @@
   </data>
   <data name="Source Account" xml:space="preserve">
     <value>Πηγή λογαριασμού</value>
+  </data>
+  <data name="Source Account (From)" xml:space="preserve">
+    <value>Λογαριασμός Προέλευσης (Από)</value>
   </data>
   <data name="Transaction Time" xml:space="preserve">
     <value>Χρόνος Συναλλαγής</value>

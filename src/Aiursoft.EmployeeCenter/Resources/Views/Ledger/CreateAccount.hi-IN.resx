@@ -69,6 +69,12 @@
   <data name="Director loans (money you lent to the company), Unpaid invoices, Credit card debt." xml:space="preserve">
     <value>निदेशक ऋण (कंपनी को आपके द्वारा दिया गया पैसा), अनिच्छा बिल, क्रेडिट कार्ड का ऋण।</value>
   </data>
+  <data name="e.g. HKD, CNY" xml:space="preserve">
+    <value>उदा. HKD, CNY</value>
+  </data>
+  <data name="e.g. Statrys Checking" xml:space="preserve">
+    <value>e.g. Statrys Checking</value>
+  </data>
   <data name="Equity" xml:space="preserve">
     <value>स्वामित्व</value>
   </data>

@@ -48,6 +48,12 @@
   <data name="Delete" xml:space="preserve">
     <value>Διαγραφή</value>
   </data>
+  <data name="e.g. LAP" xml:space="preserve">
+    <value>π.χ. LAP</value>
+  </data>
+  <data name="e.g. Laptop" xml:space="preserve">
+    <value>π.χ. Laptop</value>
+  </data>
   <data name="Existing Categories" xml:space="preserve">
     <value>Υπάρχουσες Κατηγορίες</value>
   </data>

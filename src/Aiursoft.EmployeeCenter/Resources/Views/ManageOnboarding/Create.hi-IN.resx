@@ -42,6 +42,9 @@
   <data name="How to create an onboarding task?" xml:space="preserve">
     <value>ऑनबोर्डिंग कार्य कैसे बनाएं?</value>
   </data>
+  <data name="https://" xml:space="preserve">
+    <value>https://</value>
+  </data>
   <data name="Markdown supported..." xml:space="preserve">
     <value>मार्कडाउन समर्थित...</value>
   </data>
