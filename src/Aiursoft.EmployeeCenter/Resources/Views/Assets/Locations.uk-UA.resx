@@ -27,6 +27,9 @@
   <data name="Back to Assets" xml:space="preserve">
     <value>Повернутися до активів</value>
   </data>
+  <data name="e.g. SH Office - Room 101" xml:space="preserve">
+    <value>напр. офіс SH - кімната 101</value>
+  </data>
   <data name="Existing Locations" xml:space="preserve">
     <value>Існуючі локації</value>
   </data>

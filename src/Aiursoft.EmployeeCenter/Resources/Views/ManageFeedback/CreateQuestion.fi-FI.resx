@@ -39,8 +39,17 @@
   <data name="Insert Blank" xml:space="preserve">
     <value>Lisää tyhjä</value>
   </data>
+  <data name="Option" xml:space="preserve">
+    <value>Vaihtoehto</value>
+  </data>
   <data name="Options" xml:space="preserve">
     <value>Vaihtoehdot</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Poista</value>
+  </data>
+  <data name="Security, Health, etc. (comma separated)" xml:space="preserve">
+    <value>Turvallisuus, terveys, jne. (pilkuilla erotettuna)</value>
   </data>
   <data name="Tags" xml:space="preserve">
     <value>Tagit</value>

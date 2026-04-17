@@ -33,6 +33,12 @@
   <data name="Destination Account" xml:space="preserve">
     <value>Modtagerkonto</value>
   </data>
+  <data name="Destination Account (To)" xml:space="preserve">
+    <value>Destinationskonto (Til)</value>
+  </data>
+  <data name="e.g. Pay Sleek for Professional Fee" xml:space="preserve">
+    <value>f.eks. Betal Sleek for professionel gebyr</value>
+  </data>
   <data name="Exchange Rate" xml:space="preserve">
     <value>Værdi</value>
   </data>
@@ -59,6 +65,9 @@
   </data>
   <data name="Source Account" xml:space="preserve">
     <value>Kildekonto</value>
+  </data>
+  <data name="Source Account (From)" xml:space="preserve">
+    <value>Konto (Fra)</value>
   </data>
   <data name="Transaction Time" xml:space="preserve">
     <value>Transaktions tid</value>

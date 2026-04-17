@@ -39,8 +39,17 @@
   <data name="Insert Blank" xml:space="preserve">
     <value>Inserează spațiu gol</value>
   </data>
+  <data name="Option" xml:space="preserve">
+    <value>Opțiune</value>
+  </data>
   <data name="Options" xml:space="preserve">
     <value>Opțiuni</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Șterge</value>
+  </data>
+  <data name="Security, Health, etc. (comma separated)" xml:space="preserve">
+    <value>Securitate, Sănătate, etc. (separate prin virgulă)</value>
   </data>
   <data name="Tags" xml:space="preserve">
     <value>Etichete</value>

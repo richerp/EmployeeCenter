@@ -42,6 +42,12 @@
   <data name="Destination Account" xml:space="preserve">
     <value>Призначений рахунок</value>
   </data>
+  <data name="Destination Account (To)" xml:space="preserve">
+    <value>Призначення рахунок (Отримувач)</value>
+  </data>
+  <data name="e.g. Pay Sleek for Professional Fee" xml:space="preserve">
+    <value>напр. Сплатити Sleek за професійну плату</value>
+  </data>
   <data name="Edit Transaction" xml:space="preserve">
     <value>Редагувати операцію</value>
   </data>
@@ -65,6 +71,9 @@
   </data>
   <data name="Source Account" xml:space="preserve">
     <value>джерельний рахунок</value>
+  </data>
+  <data name="Source Account (From)" xml:space="preserve">
+    <value>Джерело (Від кого)</value>
   </data>
   <data name="Transaction Time" xml:space="preserve">
     <value>Час транзакції</value>

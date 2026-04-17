@@ -42,6 +42,12 @@
   <data name="Destination Account" xml:space="preserve">
     <value>Målkonto</value>
   </data>
+  <data name="Destination Account (To)" xml:space="preserve">
+    <value>Destinationskonto (Till)</value>
+  </data>
+  <data name="e.g. Pay Sleek for Professional Fee" xml:space="preserve">
+    <value>t.ex. Betala Sleek för professionell avgift</value>
+  </data>
   <data name="Edit Transaction" xml:space="preserve">
     <value>Redigera transaktion</value>
   </data>
@@ -65,6 +71,9 @@
   </data>
   <data name="Source Account" xml:space="preserve">
     <value>Källkonto</value>
+  </data>
+  <data name="Source Account (From)" xml:space="preserve">
+    <value>Konto (Från)</value>
   </data>
   <data name="Transaction Time" xml:space="preserve">
     <value>Transaktionsdatum</value>

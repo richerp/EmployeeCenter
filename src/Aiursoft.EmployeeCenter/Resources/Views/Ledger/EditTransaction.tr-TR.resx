@@ -42,6 +42,12 @@
   <data name="Destination Account" xml:space="preserve">
     <value>Hedef Hesap</value>
   </data>
+  <data name="Destination Account (To)" xml:space="preserve">
+    <value>Hesap (Alıcı)</value>
+  </data>
+  <data name="e.g. Pay Sleek for Professional Fee" xml:space="preserve">
+    <value>Örn. Sleek için profesyonel ücret ödemesi</value>
+  </data>
   <data name="Edit Transaction" xml:space="preserve">
     <value>İşlemi Düzenle</value>
   </data>
@@ -65,6 +71,9 @@
   </data>
   <data name="Source Account" xml:space="preserve">
     <value>Kaynak Hesap</value>
+  </data>
+  <data name="Source Account (From)" xml:space="preserve">
+    <value>Kaynak Hesap (Giden)</value>
   </data>
   <data name="Transaction Time" xml:space="preserve">
     <value>İşlem Zamanı</value>

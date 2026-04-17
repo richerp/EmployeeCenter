@@ -18,7 +18,10 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-      <data name="Allow User Adjust Nickname" xml:space="preserve">
+      <data name="AI Assistant System Prompt" xml:space="preserve">
+    <value>AI 助手系統提示</value>
+  </data>
+  <data name="Allow User Adjust Nickname" xml:space="preserve">
     <value>允許用戶修改暱稱</value>
   </data>
   <data name="Allow users to adjust their nickname in the profile management page." xml:space="preserve">
@@ -33,14 +36,35 @@
   <data name="Brand Name" xml:space="preserve">
     <value>品牌名</value>
   </data>
+  <data name="Check if the project is mirrored to this GitHub organization. Leave empty to disable check. E.g. aiursoftweb" xml:space="preserve">
+    <value>檢查項目是否已鏡像至該 GitHub 組織。留空以停用檢查。例如：aiursoftweb</value>
+  </data>
   <data name="Default Payroll Currency" xml:space="preserve">
     <value>預設薪金貨幣</value>
   </data>
   <data name="Force Project Association" xml:space="preserve">
     <value>強制關聯項目</value>
   </data>
+  <data name="GitLab Ensure GitHub Org Mirrored" xml:space="preserve">
+    <value>GitLab 確保 GitHub 組織已鏡像</value>
+  </data>
+  <data name="GitLab GitHub Token" xml:space="preserve">
+    <value>GitLab GitHub Token</value>
+  </data>
+  <data name="GitLab Organization URL" xml:space="preserve">
+    <value>GitLab 組織 URL</value>
+  </data>
+  <data name="GitLab Project Must Be Stared By" xml:space="preserve">
+    <value>GitLab 項目必須被標星</value>
+  </data>
   <data name="ICP Number" xml:space="preserve">
     <value>ICP編號</value>
+  </data>
+  <data name="Only projects starred by this user will be displayed. Leave empty to show all projects. E.g. anduin" xml:space="preserve">
+    <value>只有此用戶標記的項目會顯示。留空以顯示所有項目。例如 anduin</value>
+  </data>
+  <data name="Optional GitHub personal access token to increase API rate limits for mirroring checks." xml:space="preserve">
+    <value>可選的 GitHub 個人存取權杖，用於提高鏡像檢查的 API 速率限制。</value>
   </data>
   <data name="Project Logo" xml:space="preserve">
     <value>項目圖標</value>
@@ -69,8 +93,14 @@
   <data name="The number of paid annual leave days allocated to each employee every year." xml:space="preserve">
     <value>每年分配予每位員工的有薪年假日數。</value>
   </data>
+  <data name="The system prompt for the AI assistant." xml:space="preserve">
+    <value>AI 助理的系統提示</value>
+  </data>
   <data name="The URL of the company or project. E.g. https://www.aiursoft.com" xml:space="preserve">
     <value>公司或項目的網址。例如：https://www.aiursoft.com</value>
+  </data>
+  <data name="The URL of the GitLab organization to fetch projects from. E.g. https://gitlab.aiursoft.com/aiursoft" xml:space="preserve">
+    <value>GitLab 組織的 URL，用於獲取項目。例如：https://gitlab.aiursoft.com/aiursoft</value>
   </data>
 
 </root>

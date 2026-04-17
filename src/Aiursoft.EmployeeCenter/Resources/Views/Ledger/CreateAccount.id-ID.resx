@@ -69,6 +69,12 @@
   <data name="Director loans (money you lent to the company), Unpaid invoices, Credit card debt." xml:space="preserve">
     <value>Pinjaman direktur (uang yang Anda pinjamkan ke perusahaan), Faktur yang belum dibayar, Utang kartu kredit</value>
   </data>
+  <data name="e.g. HKD, CNY" xml:space="preserve">
+    <value>misalnya HKD, CNY</value>
+  </data>
+  <data name="e.g. Statrys Checking" xml:space="preserve">
+    <value>mis. Statrys Checking</value>
+  </data>
   <data name="Equity" xml:space="preserve">
     <value>Ekuitas</value>
   </data>

@@ -42,6 +42,12 @@
   <data name="Destination Account" xml:space="preserve">
     <value>Bestemmingsrekening</value>
   </data>
+  <data name="Destination Account (To)" xml:space="preserve">
+    <value>Bestemmingsrekening (Naar)</value>
+  </data>
+  <data name="e.g. Pay Sleek for Professional Fee" xml:space="preserve">
+    <value>bijv. Betaal Sleek voor professionele kosten</value>
+  </data>
   <data name="Edit Transaction" xml:space="preserve">
     <value>Transactie bewerken</value>
   </data>
@@ -65,6 +71,9 @@
   </data>
   <data name="Source Account" xml:space="preserve">
     <value>Bronrekening</value>
+  </data>
+  <data name="Source Account (From)" xml:space="preserve">
+    <value>Bronrekening (Van)</value>
   </data>
   <data name="Transaction Time" xml:space="preserve">
     <value>Transactietijd</value>

@@ -42,6 +42,12 @@
   <data name="Destination Account" xml:space="preserve">
     <value>Conta de Destino</value>
   </data>
+  <data name="Destination Account (To)" xml:space="preserve">
+    <value>Conta de Destino (Para)</value>
+  </data>
+  <data name="e.g. Pay Sleek for Professional Fee" xml:space="preserve">
+    <value>p. ex. Pagar ao Sleek pela taxa profissional</value>
+  </data>
   <data name="Edit Transaction" xml:space="preserve">
     <value>Editar Transação</value>
   </data>
@@ -65,6 +71,9 @@
   </data>
   <data name="Source Account" xml:space="preserve">
     <value>Conta de Origem</value>
+  </data>
+  <data name="Source Account (From)" xml:space="preserve">
+    <value>Conta de origem (De)</value>
   </data>
   <data name="Transaction Time" xml:space="preserve">
     <value>Hora da Transação</value>

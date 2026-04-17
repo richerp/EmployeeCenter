@@ -39,8 +39,17 @@
   <data name="Insert Blank" xml:space="preserve">
     <value>Infoga blanksteg</value>
   </data>
+  <data name="Option" xml:space="preserve">
+    <value>Alternativ</value>
+  </data>
   <data name="Options" xml:space="preserve">
     <value>Alternativ</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Ta bort</value>
+  </data>
+  <data name="Security, Health, etc. (comma separated)" xml:space="preserve">
+    <value>Säkerhet, Hälsa, osv. (komma separerat)</value>
   </data>
   <data name="Tags" xml:space="preserve">
     <value>Taggar</value>
