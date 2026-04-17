@@ -19,12 +19,12 @@ public class AiAssistantController(
     IMemoryCache cache) : Controller
 {
     [RenderInNavBar(
-        NavGroupName = "Personal",
-        NavGroupOrder = 10,
+        NavGroupName = "AI",
+        NavGroupOrder = 0,
         CascadedLinksGroupName = "AI Assistant",
         CascadedLinksIcon = "sparkles",
-        CascadedLinksOrder = 100,
-        LinkText = "Chat",
+        CascadedLinksOrder = 1,
+        LinkText = "Company Info Consultation",
         LinkOrder = 1)]
     public IActionResult Index()
     {

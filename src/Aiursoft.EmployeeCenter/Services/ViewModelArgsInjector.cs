@@ -218,8 +218,9 @@ public class ViewModelArgsInjector(
         _ = localizer["Contract Finance Details"];
         _ = localizer["Contract Finance Statistics"];
     
+        _ = localizer["AI"];
         _ = localizer["AI Assistant"];
-        _ = localizer["Chat"];
+        _ = localizer["Company Info Consultation"];
     }
 
     public void InjectSimple(
