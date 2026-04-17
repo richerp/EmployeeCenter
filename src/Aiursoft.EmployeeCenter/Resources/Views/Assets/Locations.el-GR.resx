@@ -27,6 +27,9 @@
   <data name="Back to Assets" xml:space="preserve">
     <value>Επιστροφή στα Περιουσιακά Στοιχεία</value>
   </data>
+  <data name="e.g. SH Office - Room 101" xml:space="preserve">
+    <value>π.χ. Γραφείο SH - Δωμάτιο 101</value>
+  </data>
   <data name="Existing Locations" xml:space="preserve">
     <value>Υπάρχοντα Τοποθεσίες</value>
   </data>

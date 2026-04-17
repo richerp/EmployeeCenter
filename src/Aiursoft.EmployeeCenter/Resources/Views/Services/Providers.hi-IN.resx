@@ -36,6 +36,9 @@
   <data name="Delete" xml:space="preserve">
     <value>हटाएँ</value>
   </data>
+  <data name="e.g. AWS" xml:space="preserve">
+    <value>उदाहरण के लिए AWS</value>
+  </data>
   <data name="Existing Providers" xml:space="preserve">
     <value>मौजूदा प्रदाता</value>
   </data>

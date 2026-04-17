@@ -42,6 +42,12 @@
   <data name="Destination Account" xml:space="preserve">
     <value>गंतव्य खाता</value>
   </data>
+  <data name="Destination Account (To)" xml:space="preserve">
+    <value>गंतव्य खाता (को)</value>
+  </data>
+  <data name="e.g. Pay Sleek for Professional Fee" xml:space="preserve">
+    <value>उदा. पेसिलेक के लिए पेशेवर शुल्क</value>
+  </data>
   <data name="Edit Transaction" xml:space="preserve">
     <value>लेनदेन संपादित करें</value>
   </data>
@@ -65,6 +71,9 @@
   </data>
   <data name="Source Account" xml:space="preserve">
     <value>स्रोत खाता</value>
+  </data>
+  <data name="Source Account (From)" xml:space="preserve">
+    <value>स्रोत खाता (से)</value>
   </data>
   <data name="Transaction Time" xml:space="preserve">
     <value>लेनदेन का समय</value>

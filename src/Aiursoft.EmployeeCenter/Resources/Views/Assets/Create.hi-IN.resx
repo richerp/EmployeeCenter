@@ -33,6 +33,9 @@
   <data name="Cancel" xml:space="preserve">
     <value>रद्द करें</value>
   </data>
+  <data name="e.g. ASM-2024-001" xml:space="preserve">
+    <value>उदा. ASM-2024-001</value>
+  </data>
   <data name="Financial Information" xml:space="preserve">
     <value>वित्तीय जानकारी</value>
   </data>
