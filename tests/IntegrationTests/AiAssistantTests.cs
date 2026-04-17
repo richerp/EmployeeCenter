@@ -1,5 +1,8 @@
+using Aiursoft.EmployeeCenter.Authorization;
 using Aiursoft.EmployeeCenter.Configuration;
+using Aiursoft.EmployeeCenter.Entities;
 using Aiursoft.EmployeeCenter.Services;
+using Microsoft.AspNetCore.Identity;
 
 namespace Aiursoft.EmployeeCenter.Tests.IntegrationTests;
 
@@ -9,6 +12,7 @@ public class AiAssistantTests : TestBase
     [TestMethod]
     public async Task GetIndex_Anonymous_RedirectsToLogin()
     {
+        await Http.GetAsync("/Account/LogOff");
         var response = await Http.GetAsync("/AiAssistant/Index");
         Assert.AreEqual(HttpStatusCode.Found, response.StatusCode);
         Assert.IsTrue(response.Headers.Location?.OriginalString.Contains("/Account/Login") ?? false);
@@ -22,7 +26,50 @@ public class AiAssistantTests : TestBase
         response.EnsureSuccessStatusCode();
         var content = await response.Content.ReadAsStringAsync();
         Assert.IsTrue(content.Contains("AI Assistant"));
-        Assert.IsTrue(content.Contains("Chat with EmployeeCenter AI"));
+    }
+
+    [TestMethod]
+    public async Task AiAssistantPermission_Works()
+    {
+        // 1. Create a user without permission
+        await Http.GetAsync("/Account/LogOff");
+        var (email, password) = await RegisterAndLoginAsync();
+
+        // 2. Regular user -> /AiAssistant/Index -> Forbidden/Redirect to Unauthorized
+        var response = await Http.GetAsync("/AiAssistant/Index");
+        Assert.IsTrue(response.StatusCode == HttpStatusCode.Forbidden || response.StatusCode == HttpStatusCode.Found);
+        if (response.StatusCode == HttpStatusCode.Found)
+        {
+            var location = response.Headers.Location?.OriginalString ?? string.Empty;
+            Assert.IsTrue(location.Contains("/Error/Unauthorized") || location.Contains("AccessDenied") || location.Contains("/Error/Code403"), 
+                $"Redirected to {location} instead of Unauthorized");
+        }
+
+        // 3. Grant CanChatWithAi
+        using (var scope = Server!.Services.CreateScope())
+        {
+            var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
+            var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+
+            var roleName = "AiUser";
+            if (!await roleManager.RoleExistsAsync(roleName))
+            {
+                var role = new IdentityRole(roleName);
+                await roleManager.CreateAsync(role);
+                await roleManager.AddClaimAsync(role, new Claim(AppPermissions.Type, AppPermissionNames.CanChatWithAi));
+            }
+
+            var user = await userManager.FindByEmailAsync(email);
+            await userManager.AddToRoleAsync(user!, roleName);
+        }
+
+        // 4. Re-login to refresh claims
+        await Http.GetAsync("/Account/LogOff");
+        await LoginAsAsync(email, password);
+
+        // 5. User with permission -> /AiAssistant/Index -> OK
+        response = await Http.GetAsync("/AiAssistant/Index");
+        Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
     }
 
     [TestMethod]

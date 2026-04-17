@@ -89,4 +89,7 @@ public static class AppPermissionNames
     // Reimbursement Management
     public const string CanSubmitReimbursement = nameof(CanSubmitReimbursement);
     public const string CanApproveReimbursement = nameof(CanApproveReimbursement);
+
+    // AI Management
+    public const string CanChatWithAi = nameof(CanChatWithAi);
 }

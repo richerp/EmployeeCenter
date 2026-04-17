@@ -153,7 +153,10 @@ public class AppPermissions
                 localizer["Allows the user to submit reimbursement requests for their expenses."]),
             new(AppPermissionNames.CanApproveReimbursement,
                 localizer["Approve Reimbursement"],
-                localizer["Allows approving, acknowledging, or rejecting reimbursement requests from any employee."])
+                localizer["Allows approving, acknowledging, or rejecting reimbursement requests from any employee."]),
+            new(AppPermissionNames.CanChatWithAi,
+                localizer["Chat with AI"],
+                localizer["Allows the user to chat with the AI assistant for company information."])
         ];
         return allPermission;
     }

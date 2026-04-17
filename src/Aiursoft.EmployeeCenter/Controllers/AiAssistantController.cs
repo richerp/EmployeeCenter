@@ -1,3 +1,4 @@
+using Aiursoft.EmployeeCenter.Authorization;
 using Aiursoft.EmployeeCenter.Configuration;
 using Aiursoft.EmployeeCenter.Models.AiAssistantViewModels;
 using Aiursoft.EmployeeCenter.Services;
@@ -11,7 +12,7 @@ using System.Text.Json.Serialization;
 
 namespace Aiursoft.EmployeeCenter.Controllers;
 
-[Authorize]
+[Authorize(Policy = AppPermissionNames.CanChatWithAi)]
 public class AiAssistantController(
     IOptions<AppSettings> appSettings,
     IHttpClientFactory httpClientFactory,

@@ -98,6 +98,16 @@ public abstract class TestBase
         Assert.AreEqual(HttpStatusCode.Found, loginResponse.StatusCode);
     }
 
+    protected async Task LoginAsAsync(string email, string password)
+    {
+        var loginResponse = await PostForm("/Account/Login", new Dictionary<string, string>
+        {
+            { "EmailOrUserName", email },
+            { "Password", password }
+        });
+        Assert.AreEqual(HttpStatusCode.Found, loginResponse.StatusCode);
+    }
+
     protected async Task<(string email, string password)> RegisterAndLoginAsync()
     {
         var email = $"test-{Guid.NewGuid()}@aiursoft.com";
